@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-4esfb3uv4aq0zm6wp18sf3o4r319kue">
+  <files names="Actor_Constraints.java:Collaboration_Constraints.java:Component_Constraints.java:ConstraintsAspectDescriptor.java:DataItemRef_Constraints.java:DataItem_Constraints.java:InitialContext_Constraints.java:NonSelfCall_Constraints.java:OwnedItemRef_Constraints.java:ParticipantRef_Constraints.java:Participant_Constraints.java:ReceivedItemRef_Constraints.java:ScenarioCall_Constraints.java:Scenario_Constraints.java:SelfCall_Constraints.java:SequentialCall_Constraints.java:UseCaseSummary_Constraints.java:UseCase_Constraints.java" />
+</product>
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:75af25f2-da3a-4dae-82b6-7c94d174bea9(com.mbeddr.mpsutil.lang.plugin.extensions.generator.model)/3023910107024030453">
+    <file name="GeneratorUtil.java">
+      <node id="3023910107024032017" at="17,45,18,19" concept="1" />
+      <node id="3023910107024032069" at="19,5,20,0" concept="2" />
+      <node id="3023910107024067830" at="21,139,22,147" concept="1" />
+      <node id="3023910107024070939" at="23,5,24,0" concept="2" />
+      <node id="3023910107024070664" at="25,153,26,168" concept="1" />
+      <node id="3023910107024072418" at="27,5,28,0" concept="2" />
+      <node id="3023910107024072070" at="29,169,30,192" concept="1" />
+      <node id="3023910107024069361" at="31,5,32,0" concept="2" />
+      <node id="3023910107024069111" at="32,0,33,17" concept="1" />
+      <node id="3023910107024032311" at="35,78,36,142" concept="1" />
+      <node id="3023910107024034748" at="39,79,40,286" concept="1" />
+      <node id="3023910107024057803" at="43,89,44,288" concept="1" />
+      <node id="3023910107024030453" at="48,0,49,0" concept="3" trace="StringLiteral$xu" />
+      <node id="3023910107024030453" at="49,0,50,0" concept="3" trace="StaticFieldReference$cU" />
+      <node id="3023910107024030453" at="50,0,51,0" concept="3" trace="InternalStaticFieldReference$Qt" />
+      <node id="3023910107024030453" at="54,0,55,0" concept="3" trace="value$w7MM" />
+      <node id="3023910107024030453" at="55,0,56,0" concept="3" trace="fieldName$xQ8R" />
+      <node id="3023910107024030453" at="56,0,57,0" concept="3" trace="fqClassName$fwRU" />
+      <node id="3023910107024030453" at="60,0,61,0" concept="3" trace="variableDeclaration$N1XG" />
+      <node id="3023910107024030453" at="61,0,62,0" concept="3" trace="classifier$BPY8" />
+      <node id="3023910107024030596" at="16,70,19,5" concept="0" />
+      <node id="3023910107024066021" at="20,0,23,5" concept="0" />
+      <node id="3023910107024070662" at="24,0,27,5" concept="0" />
+      <node id="3023910107024072068" at="28,0,31,5" concept="0" />
+      <node id="3023910107024032175" at="35,0,38,0" concept="4" trace="isEqualStringLiterals#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3023910107024034253" at="39,0,42,0" concept="4" trace="isEqualStaticFieldReferences#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3023910107024057220" at="43,0,46,0" concept="4" trace="isEqualInternalStaticFieldReferences#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3023910107024030502" at="16,0,35,0" concept="4" trace="isEqualExpressions#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <scope id="3023910107024030597" at="17,45,18,19" />
+      <scope id="3023910107024066023" at="21,139,22,147" />
+      <scope id="3023910107024070663" at="25,153,26,168" />
+      <scope id="3023910107024072069" at="29,169,30,192" />
+      <scope id="3023910107024032178" at="35,78,36,142" />
+      <scope id="3023910107024034256" at="39,79,40,286" />
+      <scope id="3023910107024057223" at="43,89,44,288" />
+      <scope id="3023910107024032175" at="35,0,38,0">
+        <var name="strLit1" id="3023910107024032212" />
+        <var name="strLit2" id="3023910107024032237" />
+      </scope>
+      <scope id="3023910107024034253" at="39,0,42,0">
+        <var name="sfr1" id="3023910107024034637" />
+        <var name="sfr2" id="3023910107024034662" />
+      </scope>
+      <scope id="3023910107024057220" at="43,0,46,0">
+        <var name="isfr1" id="3023910107024057304" />
+        <var name="isfr2" id="3023910107024057701" />
+      </scope>
+      <scope id="3023910107024030505" at="16,70,33,17" />
+      <scope id="3023910107024030502" at="16,0,35,0">
+        <var name="expr1" id="3023910107024030517" />
+        <var name="expr2" id="3023910107024030538" />
+      </scope>
+      <unit id="3023910107024030453" at="59,0,63,0" name="com.mbeddr.mpsutil.lang.plugin.extensions.generator.model.GeneratorUtil$LINKS" />
+      <unit id="3023910107024030453" at="47,0,52,0" name="com.mbeddr.mpsutil.lang.plugin.extensions.generator.model.GeneratorUtil$CONCEPTS" />
+      <unit id="3023910107024030453" at="53,0,58,0" name="com.mbeddr.mpsutil.lang.plugin.extensions.generator.model.GeneratorUtil$PROPS" />
+      <unit id="3023910107024030453" at="15,0,64,0" name="com.mbeddr.mpsutil.lang.plugin.extensions.generator.model.GeneratorUtil" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,28,0" name="com.mbeddr.core.buildconfig.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:87440094-81ea-45f7-a778-d8b328213110(com.mbeddr.core.buildconfig.actions)/1525129109274794818">
+    <file name="BuildConfigNodeFactories.java">
+      <node id="1525129109275770392" at="19,102,20,139" concept="4" />
+      <node id="1525129109274817159" at="21,31,22,243" concept="1" />
+      <node id="1525129109275776545" at="23,14,24,82" concept="1" />
+      <node id="1525129109274794818" at="30,0,31,0" concept="5" trace="BuildConfiguration$kH" />
+      <node id="1525129109274794818" at="31,0,32,0" concept="5" trace="None$aw" />
+      <node id="1525129109274794818" at="35,0,36,0" concept="5" trace="platform$sQSW" />
+      <node id="1525129109274794818" at="36,0,37,0" concept="5" trace="target$78yI" />
+      <node id="1525129109275775933" at="23,12,25,7" concept="0" />
+      <node id="1525129109275771731" at="20,139,25,7" concept="2" />
+      <node id="1525129109274794819" at="19,0,27,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="1525129109275771733" at="21,31,22,243" />
+      <scope id="1525129109275775934" at="23,14,24,82" />
+      <scope id="1525129109274794819" at="19,102,25,7">
+        <var name="platform" id="1525129109275770393" />
+      </scope>
+      <scope id="1525129109274794819" at="19,0,27,0">
+        <var name="enclosingNode" id="1525129109274794819" />
+        <var name="index" id="1525129109274794819" />
+        <var name="model" id="1525129109274794819" />
+        <var name="newNode" id="1525129109274794819" />
+        <var name="sampleNode" id="1525129109274794819" />
+      </scope>
+      <unit id="1525129109274794818" at="29,0,33,0" name="com.mbeddr.core.buildconfig.actions.BuildConfigNodeFactories$CONCEPTS" />
+      <unit id="1525129109274794818" at="34,0,38,0" name="com.mbeddr.core.buildconfig.actions.BuildConfigNodeFactories$LINKS" />
+      <unit id="1525129109274794819" at="18,0,28,0" name="com.mbeddr.core.buildconfig.actions.BuildConfigNodeFactories$NodeFactory_1525129109274794819" />
+      <unit id="1525129109274794818" at="17,0,39,0" name="com.mbeddr.core.buildconfig.actions.BuildConfigNodeFactories" />
+    </file>
+  </root>
+</debug-info>
+

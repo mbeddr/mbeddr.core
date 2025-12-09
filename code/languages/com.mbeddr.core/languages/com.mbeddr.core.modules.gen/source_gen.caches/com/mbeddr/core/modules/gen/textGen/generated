@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-pm0bt7iokl6vfwayrjvu7ouf9ygdga">
+  <files names="GenExtModuleImport_TextGen.java:GenForeignExtModuleImport_TextGen.java:GenImplModuleImport_TextGen.java:GenModuleC_TextGen.java:GenModuleH_TextGen.java:GenStdHeaderImport_TextGen.java:MultiPlatformStatement_TextGen.java:TextGenAspectDescriptor.java" />
+</product>
+

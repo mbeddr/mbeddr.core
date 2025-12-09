@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67/3751132065236767060:jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodInstance" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="8,0,13,0" name="com.mbeddr.core.statements.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:be293a79-c9de-44c7-848a-150147010751(com.mbeddr.core.statements.plugin)/2239254897980517326">
+    <file name="CCMenuExtensionsDescriptor.java">
+      <node id="2239254897980517326" at="15,0,16,0" concept="9" trace="INSTANCE" />
+      <node id="2239254897980517326" at="17,44,18,65" concept="6" />
+      <node id="2239254897980517326" at="21,41,22,59" concept="6" />
+      <node id="2239254897980517326" at="22,59,23,0" concept="8" />
+      <node id="2239254897980517326" at="26,48,27,91" concept="5" />
+      <node id="2239254897980517326" at="27,91,28,18" concept="6" />
+      <node id="2239254897980517326" at="17,0,20,0" concept="4" trace="getTabs#()Ljava/lang/Iterable;" />
+      <node id="2239254897980517326" at="20,0,25,0" concept="4" trace="getSorters#()Ljava/lang/Iterable;" />
+      <node id="2239254897980517326" at="25,0,30,0" concept="4" trace="getStyles#()Ljava/lang/Iterable;" />
+      <scope id="2239254897980517326" at="17,44,18,65" />
+      <scope id="2239254897980517326" at="21,41,23,0" />
+      <scope id="2239254897980517326" at="26,48,28,18">
+        <var name="result" id="2239254897980517326" />
+      </scope>
+      <scope id="2239254897980517326" at="17,0,20,0" />
+      <scope id="2239254897980517326" at="20,0,25,0" />
+      <scope id="2239254897980517326" at="25,0,30,0" />
+      <unit id="2239254897980517326" at="14,0,31,0" name="com.mbeddr.core.statements.plugin.CCMenuExtensionsDescriptor" />
+    </file>
+    <file name="CCMenuExtensionsDescriptor_extension_0.java">
+      <node id="2239254897980517326" at="9,51,10,75" concept="10" />
+      <node id="2239254897980517326" at="14,44,15,47" concept="6" />
+      <node id="2239254897980517326" at="9,0,12,0" concept="1" trace="CCMenuExtensionsDescriptor_extension_0#()V" />
+      <node id="2239254897980517326" at="14,0,17,0" concept="0" trace="get#()Lcom/mbeddr/mpsutil/ccmenu/runtime/descriptor/ICCMenuExtensionsDescriptor;" />
+      <scope id="2239254897980517326" at="9,51,10,75" />
+      <scope id="2239254897980517326" at="14,44,15,47" />
+      <scope id="2239254897980517326" at="9,0,12,0" />
+      <scope id="2239254897980517326" at="14,0,17,0" />
+      <unit id="2239254897980517326" at="8,0,18,0" name="com.mbeddr.core.statements.plugin.CCMenuExtensionsDescriptor_extension_0" />
+    </file>
+    <file name="TargetFilters_extension_a0.java">
+      <node id="2239254897980517332" at="18,39,19,73" concept="10" />
+      <node id="2239254897980517332" at="26,164,27,35" concept="5" />
+      <node id="2239254897980749872" at="30,135,31,65" concept="7" />
+      <node id="2239254897980770647" at="31,65,32,137" concept="6" />
+      <node id="2239254897980771276" at="33,13,34,25" concept="6" />
+      <node id="2239254897980517332" at="36,22,37,0" concept="8" />
+      <node id="2239254897980517332" at="37,0,38,42" concept="5" />
+      <node id="2239254897980749500" at="41,75,42,26" concept="6" />
+      <node id="2239254897980517332" at="45,9,46,22" concept="6" />
+      <node id="2239254897980517332" at="52,0,53,0" concept="9" trace="StatementList$y1" />
+      <node id="2239254897980517332" at="53,0,54,0" concept="9" trace="LocalVariableDeclaration$ft" />
+      <node id="2239254897980517332" at="18,0,21,0" concept="1" trace="TargetFilters_extension_a0#()V" />
+      <node id="2239254897980749500" at="41,0,44,0" concept="4" trace="modify#(Ljetbrains/mps/openapi/editor/cells/SubstituteAction;)Ljetbrains/mps/openapi/editor/cells/SubstituteAction;" />
+      <node id="2239254897980768541" at="29,38,33,13" concept="3" />
+      <node id="2239254897980749500" at="39,25,44,27" concept="2" />
+      <node id="2239254897980517347" at="29,0,36,0" concept="4" trace="condition#()Z" />
+      <node id="2239254897980517332" at="38,42,45,9" concept="3" />
+      <node id="2239254897980517347" at="27,35,36,22" concept="2" />
+      <node id="2239254897980517332" at="25,0,48,0" concept="4" trace="modify#(Ljetbrains/mps/openapi/editor/cells/SubstituteAction;Lcom/mbeddr/mpsutil/ccmenu/reftarget/runtime/plugin/TargetLink;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/SubstituteAction;" />
+      <node id="2239254897980517332" at="23,46,48,6" concept="6" />
+      <node id="2239254897980517332" at="23,0,50,0" concept="0" trace="get#()Lcom/mbeddr/mpsutil/ccmenu/reftarget/runtime/plugin/ITargetCreationActionModifier;" />
+      <scope id="2239254897980517332" at="18,39,19,73" />
+      <scope id="2239254897980749500" at="41,75,42,26" />
+      <scope id="2239254897980768543" at="30,135,32,137" />
+      <scope id="2239254897980517332" at="18,0,21,0" />
+      <scope id="2239254897980749500" at="41,0,44,0">
+        <var name="action" id="2239254897980749500" />
+      </scope>
+      <scope id="2239254897980517347" at="29,38,34,25" />
+      <scope id="2239254897980517332" at="39,25,44,27" />
+      <scope id="2239254897980517347" at="29,0,36,0" />
+      <scope id="2239254897980517332" at="26,164,46,22">
+        <var name="action" id="2239254897980517332" />
+        <var name="applicable" id="2239254897980517332" />
+      </scope>
+      <scope id="2239254897980517332" at="25,0,48,0">
+        <var name="_action" id="2239254897980517332" />
+        <var name="conceptToCreate" id="2239254897980517332" />
+        <var name="referenceParent" id="2239254897980517332" />
+        <var name="target" id="2239254897980517332" />
+      </scope>
+      <scope id="2239254897980517332" at="23,46,48,6" />
+      <scope id="2239254897980517332" at="23,0,50,0" />
+      <unit id="2239254897980749500" at="40,23,44,11" name="com.mbeddr.core.statements.plugin.TargetFilters_extension_a0$1$2" />
+      <unit id="2239254897980517332" at="51,0,55,0" name="com.mbeddr.core.statements.plugin.TargetFilters_extension_a0$CONCEPTS" />
+      <unit id="2239254897980517347" at="28,26,36,9" name="com.mbeddr.core.statements.plugin.TargetFilters_extension_a0$1$1" />
+      <unit id="2239254897980517332" at="24,15,48,5" name="com.mbeddr.core.statements.plugin.TargetFilters_extension_a0$1" />
+      <unit id="2239254897980517332" at="17,0,56,0" name="com.mbeddr.core.statements.plugin.TargetFilters_extension_a0" />
+    </file>
+  </root>
+</debug-info>
+

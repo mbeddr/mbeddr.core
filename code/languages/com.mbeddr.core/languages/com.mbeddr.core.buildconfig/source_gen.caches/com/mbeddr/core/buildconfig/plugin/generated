@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="210rnys13ypnmiti6kdvthi4gjdqd4e">
+  <files names="BuildVariableResolver.java:CrossCompilationToolchainProvider.java:DesktopPlatformTemplateProvider.java:ExtensionDescriptor.java:FacetAspectDescriptor.java:FacetManifest.java:PlatformTemplateProvider.java:ReportingPrintfFunctionCustomizer.java:RunPostProcessors_Facet.java:YoctoToolchainProvider.java" />
+</product>
+

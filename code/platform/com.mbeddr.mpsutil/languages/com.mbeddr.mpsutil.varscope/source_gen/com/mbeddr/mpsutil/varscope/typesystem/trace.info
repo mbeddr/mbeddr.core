@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="com.mbeddr.mpsutil.varscope.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:01b042d1-5482-41d2-a925-37a9761a5d65(com.mbeddr.mpsutil.varscope.typesystem)/1502994435834439979">
+    <file name="TypesystemDescriptor.java">
+      <node id="1502994435834439979" at="10,5,11,97" concept="6" />
+      <node id="1502994435834439979" at="11,97,12,55" concept="2" />
+      <node id="1502994435834439979" at="9,33,13,5" concept="0" />
+      <scope id="1502994435834439979" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="1502994435834439979" />
+      </scope>
+    </file>
+    <file name="check_IScopeProvider_NonTypesystemRule.java">
+      <node id="1502994435834441511" at="31,134,32,95" concept="6" />
+      <node id="1502994435834446461" at="33,146,34,120" concept="6" />
+      <node id="1502994435834459658" at="35,31,36,63" concept="2" />
+      <node id="1502994435834451037" at="36,63,37,110" concept="2" />
+      <node id="1502994435834462975" at="38,9,39,58" concept="2" />
+      <node id="1502994435834492732" at="44,13,45,72" concept="6" />
+      <node id="1502994435834492732" at="45,72,46,304" concept="6" />
+      <node id="1502994435834439979" at="53,50,54,37" concept="7" />
+      <node id="1502994435834439979" at="56,68,57,102" concept="7" />
+      <node id="1502994435834439979" at="59,30,60,17" concept="7" />
+      <node id="1502994435834439979" at="64,0,65,0" concept="8" trace="name$MnvL" />
+      <node id="1502994435834439979" at="68,0,69,0" concept="8" trace="IScopeProvider$s" />
+      <node id="1502994435834439979" at="28,0,30,0" concept="1" trace="check_IScopeProvider_NonTypesystemRule#()V" />
+      <node id="1502994435834439979" at="53,0,56,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1502994435834439979" at="56,0,59,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1502994435834439979" at="59,0,62,0" concept="5" trace="overrides#()Z" />
+      <node id="1502994435834447106" at="34,120,38,9" concept="4" />
+      <node id="1502994435834492732" at="43,63,47,13" concept="0" />
+      <node id="1502994435834492596" at="42,57,48,11" concept="3" />
+      <node id="1502994435834441772" at="32,95,40,7" concept="3" />
+      <node id="1502994435834479068" at="41,96,49,9" concept="4" />
+      <node id="1502994435834470281" at="40,7,50,7" concept="3" />
+      <node id="1502994435834439995" at="30,121,51,5" concept="4" />
+      <node id="1502994435834439979" at="30,0,53,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1502994435834439979" at="28,51,28,51" />
+      <scope id="1502994435834439979" at="53,50,54,37" />
+      <scope id="1502994435834439979" at="56,68,57,102" />
+      <scope id="1502994435834439979" at="59,30,60,17" />
+      <scope id="1502994435834439979" at="28,0,30,0" />
+      <scope id="1502994435834447108" at="35,31,37,110" />
+      <scope id="1502994435834492732" at="44,13,46,304">
+        <var name="_reporter_2309309498" id="1502994435834492732" />
+        <var name="errorTarget" id="1502994435834492732" />
+      </scope>
+      <scope id="1502994435834439979" at="53,0,56,0" />
+      <scope id="1502994435834439979" at="56,0,59,0">
+        <var name="argument" id="1502994435834439979" />
+      </scope>
+      <scope id="1502994435834439979" at="59,0,62,0" />
+      <scope id="1502994435834492602" at="43,63,47,13" />
+      <scope id="1502994435834441778" at="33,146,39,58">
+        <var name="elements" id="1502994435834446462" />
+      </scope>
+      <scope id="1502994435834479070" at="42,57,48,11" />
+      <scope id="1502994435834492596" at="42,57,48,11">
+        <var name="element" id="1502994435834492598" />
+      </scope>
+      <scope id="1502994435834441772" at="32,95,40,7">
+        <var name="element" id="1502994435834441774" />
+      </scope>
+      <scope id="1502994435834470287" at="41,96,49,9" />
+      <scope id="1502994435834470281" at="40,7,50,7">
+        <var name="elements" id="1502994435834470283" />
+      </scope>
+      <scope id="1502994435834439997" at="31,134,50,7">
+        <var name="nameMap" id="1502994435834441514" />
+      </scope>
+      <scope id="1502994435834439980" at="30,121,51,5" />
+      <scope id="1502994435834439979" at="30,0,53,0">
+        <var name="provider" id="1502994435834439979" />
+        <var name="status" id="1502994435834439979" />
+        <var name="typeCheckingContext" id="1502994435834439979" />
+      </scope>
+      <unit id="1502994435834439979" at="63,0,66,0" name="com.mbeddr.mpsutil.varscope.typesystem.check_IScopeProvider_NonTypesystemRule$PROPS" />
+      <unit id="1502994435834439979" at="67,0,70,0" name="com.mbeddr.mpsutil.varscope.typesystem.check_IScopeProvider_NonTypesystemRule$CONCEPTS" />
+      <unit id="1502994435834439979" at="27,0,71,0" name="com.mbeddr.mpsutil.varscope.typesystem.check_IScopeProvider_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

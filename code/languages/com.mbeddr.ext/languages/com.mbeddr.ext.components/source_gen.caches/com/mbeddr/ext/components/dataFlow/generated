@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="69mot86yg773n93gkysbm50aao8eoxj">
+  <files names="DataFlowAspectDescriptorImpl.java:FieldRefInitialization.java:FieldRef_DataFlow.java:Field_DataFlow.java:InterfaceOperationCallExprInitialization.java:InterfaceOperationCallExpr_DataFlow.java:InternalRunnableCall_DataFlow.java:PortAdapterOpCallExpr_DataFlow.java:RequiredPortOpCallExpr_DataFlow.java:WhenPortConnectedStatement_DataFlow.java:WhenPortVarConnectedStatement_DataFlow.java" />
+</product>
+

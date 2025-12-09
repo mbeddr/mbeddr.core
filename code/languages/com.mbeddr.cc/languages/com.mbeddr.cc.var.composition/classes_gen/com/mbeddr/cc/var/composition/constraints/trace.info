@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,33,0" name="com.mbeddr.cc.var.composition.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:9b1246b5-5c9a-4971-a490-3ce759a864aa(com.mbeddr.cc.var.composition.constraints)/4585428266436919617">
+    <file name="BinaryCompositionScope_Constraints.java">
+      <node id="4585428266436919617" at="26,47,27,46" concept="6" />
+      <node id="4585428266436919669" at="38,63,39,144" concept="4" />
+      <node id="6491070606984402483" at="42,80,43,206" concept="4" />
+      <node id="4585428266436919617" at="47,6,48,131" concept="3" />
+      <node id="4585428266436919669" at="48,131,49,42" concept="1" />
+      <node id="4585428266436919617" at="49,42,50,22" concept="4" />
+      <node id="4585428266436919617" at="54,0,55,0" concept="5" trace="BinaryCompositionScope$vH" />
+      <node id="4585428266436919617" at="55,0,56,0" concept="5" trace="BuildConfiguration$kH" />
+      <node id="4585428266436919617" at="59,0,60,0" concept="5" trace="binary$qYuB" />
+      <node id="4585428266436919617" at="60,0,61,0" concept="5" trace="binaries$R6lf" />
+      <node id="4585428266436919617" at="26,0,29,0" concept="0" trace="BinaryCompositionScope_Constraints#()V" />
+      <node id="4585428266436919669" at="37,0,41,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="4585428266436919669" at="41,0,45,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="4585428266436919669" at="35,56,45,10" concept="4" />
+      <node id="4585428266436919669" at="33,0,47,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="4585428266436919669" at="31,90,47,6" concept="3" />
+      <node id="4585428266436919617" at="30,0,52,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="4585428266436919617" at="26,47,27,46" />
+      <scope id="4585428266436919669" at="38,63,39,144" />
+      <scope id="4585428266436919669" at="42,80,43,206" />
+      <scope id="4585428266436919617" at="26,0,29,0" />
+      <scope id="4585428266436919669" at="37,0,41,0" />
+      <scope id="4585428266436919669" at="41,0,45,0">
+        <var name="_context" id="4585428266436919669" />
+      </scope>
+      <scope id="4585428266436919669" at="35,56,45,10" />
+      <scope id="4585428266436919669" at="33,0,47,0" />
+      <scope id="4585428266436919617" at="31,90,50,22">
+        <var name="d0" id="4585428266436919669" />
+        <var name="references" id="4585428266436919617" />
+      </scope>
+      <scope id="4585428266436919617" at="30,0,52,0" />
+      <unit id="4585428266436919617" at="53,0,57,0" name="com.mbeddr.cc.var.composition.constraints.BinaryCompositionScope_Constraints$CONCEPTS" />
+      <unit id="4585428266436919617" at="58,0,62,0" name="com.mbeddr.cc.var.composition.constraints.BinaryCompositionScope_Constraints$LINKS" />
+      <unit id="4585428266436919669" at="36,19,45,9" name="com.mbeddr.cc.var.composition.constraints.BinaryCompositionScope_Constraints$1$1" />
+      <unit id="4585428266436919669" at="32,48,47,5" name="com.mbeddr.cc.var.composition.constraints.BinaryCompositionScope_Constraints$1" />
+      <unit id="4585428266436919617" at="25,0,63,0" name="com.mbeddr.cc.var.composition.constraints.BinaryCompositionScope_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9b1246b5-5c9a-4971-a490-3ce759a864aa(com.mbeddr.cc.var.composition.constraints)/4585428266437115272">
+    <file name="ComposeChunkRef_Constraints.java">
+      <node id="4585428266437115272" at="27,40,28,39" concept="6" />
+      <node id="4585428266437115273" at="39,63,40,144" concept="4" />
+      <node id="6491070606984402562" at="43,80,44,294" concept="4" />
+      <node id="4585428266437115272" at="48,6,49,131" concept="3" />
+      <node id="4585428266437115273" at="49,131,50,42" concept="1" />
+      <node id="4585428266437115272" at="50,42,51,22" concept="4" />
+      <node id="4585428266437115272" at="55,0,56,0" concept="5" trace="ComposeChunkRef$3n" />
+      <node id="4585428266437115272" at="56,0,57,0" concept="5" trace="Chunk$sT" />
+      <node id="4585428266437115272" at="57,0,58,0" concept="5" trace="ComposeOnlyAnnotation$6d" />
+      <node id="4585428266437115272" at="61,0,62,0" concept="5" trace="chunk$RqGd" />
+      <node id="4585428266437115272" at="27,0,30,0" concept="0" trace="ComposeChunkRef_Constraints#()V" />
+      <node id="4585428266437115273" at="38,0,42,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="4585428266437115273" at="42,0,46,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="4585428266437115273" at="36,56,46,10" concept="4" />
+      <node id="4585428266437115273" at="34,0,48,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="4585428266437115273" at="32,90,48,6" concept="3" />
+      <node id="4585428266437115272" at="31,0,53,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="4585428266437115272" at="27,40,28,39" />
+      <scope id="4585428266437115273" at="39,63,40,144" />
+      <scope id="4585428266437115273" at="43,80,44,294" />
+      <scope id="4585428266437115272" at="27,0,30,0" />
+      <scope id="4585428266437115273" at="38,0,42,0" />
+      <scope id="4585428266437115273" at="42,0,46,0">
+        <var name="_context" id="4585428266437115273" />
+      </scope>
+      <scope id="4585428266437115273" at="36,56,46,10" />
+      <scope id="4585428266437115273" at="34,0,48,0" />
+      <scope id="4585428266437115272" at="32,90,51,22">
+        <var name="d0" id="4585428266437115273" />
+        <var name="references" id="4585428266437115272" />
+      </scope>
+      <scope id="4585428266437115272" at="31,0,53,0" />
+      <unit id="4585428266437115272" at="60,0,63,0" name="com.mbeddr.cc.var.composition.constraints.ComposeChunkRef_Constraints$LINKS" />
+      <unit id="4585428266437115272" at="54,0,59,0" name="com.mbeddr.cc.var.composition.constraints.ComposeChunkRef_Constraints$CONCEPTS" />
+      <unit id="4585428266437115273" at="37,19,46,9" name="com.mbeddr.cc.var.composition.constraints.ComposeChunkRef_Constraints$1$1" />
+      <unit id="4585428266437115273" at="33,48,48,5" name="com.mbeddr.cc.var.composition.constraints.ComposeChunkRef_Constraints$1" />
+      <unit id="4585428266437115272" at="26,0,64,0" name="com.mbeddr.cc.var.composition.constraints.ComposeChunkRef_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9b1246b5-5c9a-4971-a490-3ce759a864aa(com.mbeddr.cc.var.composition.constraints)/4585428266438351989">
+    <file name="MatchSameConceptByRef_Constraints.java">
+      <node id="4585428266438351989" at="25,46,26,45" concept="6" />
+      <node id="4585428266438352041" at="37,63,38,144" concept="4" />
+      <node id="8242871016534288746" at="41,80,42,329" concept="4" />
+      <node id="4585428266438351989" at="46,6,47,131" concept="3" />
+      <node id="4585428266438352041" at="47,131,48,42" concept="1" />
+      <node id="4585428266438351989" at="48,42,49,22" concept="4" />
+      <node id="4585428266438351989" at="53,0,54,0" concept="5" trace="MatchSameConceptByRef$t7" />
+      <node id="4585428266438351989" at="54,0,55,0" concept="5" trace="Chunk$sT" />
+      <node id="4585428266438351989" at="58,0,59,0" concept="5" trace="ref$27$d" />
+      <node id="4585428266438351989" at="25,0,28,0" concept="0" trace="MatchSameConceptByRef_Constraints#()V" />
+      <node id="4585428266438352041" at="36,0,40,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="4585428266438352041" at="40,0,44,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="4585428266438352041" at="34,56,44,10" concept="4" />
+      <node id="4585428266438352041" at="32,0,46,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="4585428266438352041" at="30,90,46,6" concept="3" />
+      <node id="4585428266438351989" at="29,0,51,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="4585428266438351989" at="25,46,26,45" />
+      <scope id="4585428266438352041" at="37,63,38,144" />
+      <scope id="4585428266438352041" at="41,80,42,329" />
+      <scope id="4585428266438351989" at="25,0,28,0" />
+      <scope id="4585428266438352041" at="36,0,40,0" />
+      <scope id="4585428266438352041" at="40,0,44,0">
+        <var name="_context" id="4585428266438352041" />
+      </scope>
+      <scope id="4585428266438352041" at="34,56,44,10" />
+      <scope id="4585428266438352041" at="32,0,46,0" />
+      <scope id="4585428266438351989" at="30,90,49,22">
+        <var name="d0" id="4585428266438352041" />
+        <var name="references" id="4585428266438351989" />
+      </scope>
+      <scope id="4585428266438351989" at="29,0,51,0" />
+      <unit id="4585428266438351989" at="57,0,60,0" name="com.mbeddr.cc.var.composition.constraints.MatchSameConceptByRef_Constraints$LINKS" />
+      <unit id="4585428266438351989" at="52,0,56,0" name="com.mbeddr.cc.var.composition.constraints.MatchSameConceptByRef_Constraints$CONCEPTS" />
+      <unit id="4585428266438352041" at="35,19,44,9" name="com.mbeddr.cc.var.composition.constraints.MatchSameConceptByRef_Constraints$1$1" />
+      <unit id="4585428266438352041" at="31,48,46,5" name="com.mbeddr.cc.var.composition.constraints.MatchSameConceptByRef_Constraints$1" />
+      <unit id="4585428266438351989" at="24,0,61,0" name="com.mbeddr.cc.var.composition.constraints.MatchSameConceptByRef_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:62e553c0-8df6-4920-af41-2a88b1d4e969(com.mbeddr.xmodel.build.build)/8334796989975356743">
+    <file name="com.mbeddr.xmodel.ex-tests.build.xml">
+      <unit id="8334796989975356743" at="1,0,179,10" name="com.mbeddr.xmodel.build.build.com$mbeddr$xmodel$ex-tests$build" />
+    </file>
+  </root>
+</debug-info>
+

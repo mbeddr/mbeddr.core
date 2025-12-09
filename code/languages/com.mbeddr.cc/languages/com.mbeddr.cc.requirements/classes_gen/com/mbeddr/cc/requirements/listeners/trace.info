@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <root>
+    <file name="ModelListenersDescriptor.java">
+      <unit at="63,0,67,0" name="com.mbeddr.cc.requirements.listeners.ModelListenersDescriptor$CONCEPTS" />
+      <unit at="68,0,72,0" name="com.mbeddr.cc.requirements.listeners.ModelListenersDescriptor$LINKS" />
+      <unit at="24,0,73,0" name="com.mbeddr.cc.requirements.listeners.ModelListenersDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:5a2ba91f-72b3-4612-86fb-f701b8f5c5a1(com.mbeddr.cc.requirements.listeners)/5186809684116699888">
+    <file name="ModelListenersDescriptor.java">
+      <node id="5186809684116845455" at="33,71,34,143" concept="4" />
+      <node id="3402431285977806113" at="35,68,36,234" concept="0" />
+      <node id="5186809684116888493" at="42,79,43,197" concept="4" />
+      <node id="5186809684118476947" at="43,197,44,155" concept="4" />
+      <node id="5186809684120057590" at="44,155,45,0" concept="6" />
+      <node id="8003364740793949232" at="45,0,46,95" concept="5" />
+      <node id="5186809684120060972" at="50,101,51,47" concept="0" />
+      <node id="5186809684120042887" at="55,11,56,0" concept="6" />
+      <node id="3402431285977806108" at="34,143,37,9" concept="1" />
+      <node id="5186809684116900007" at="49,102,52,15" concept="2" />
+      <node id="5186809684120062769" at="48,29,53,16" concept="0" />
+      <node id="5186809684116732629" at="32,0,39,0" concept="3" trace="childAdded#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5186809684120039579" at="48,0,55,0" concept="3" trace="run#()V" />
+      <node id="5186809684116732629" at="30,0,39,7" concept="0" />
+      <node id="5186809684120000050" at="46,95,55,11" concept="0" />
+      <node id="5186809684116883235" at="41,0,58,0" concept="3" trace="beforeChildRemoved#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5186809684116883235" at="39,7,58,7" concept="0" />
+      <scope id="3402431285977806111" at="35,68,36,234" />
+      <scope id="5186809684116900008" at="50,101,51,47" />
+      <scope id="3402431285977806108" at="34,143,37,9">
+        <var name="mc" id="3402431285977806109" />
+      </scope>
+      <scope id="5186809684116899784" at="49,102,52,15" />
+      <scope id="5186809684116732629" at="33,71,37,9">
+        <var name="missing" id="5186809684116845456" />
+      </scope>
+      <scope id="5186809684120039583" at="48,29,53,16" />
+      <scope id="5186809684116732629" at="32,0,39,0">
+        <var name="child" id="5186809684116732629" />
+        <var name="instance" id="5186809684116732629" />
+      </scope>
+      <scope id="5186809684120039579" at="48,0,55,0" />
+      <scope id="5186809684116883235" at="42,79,56,0">
+        <var name="copy" id="5186809684118476948" />
+        <var name="requiredDataKind" id="5186809684116888494" />
+      </scope>
+      <scope id="5186809684116883235" at="41,0,58,0">
+        <var name="child" id="5186809684116883235" />
+        <var name="instance" id="5186809684116883235" />
+      </scope>
+      <unit id="5186809684116732629" at="31,52,39,5" name="com.mbeddr.cc.requirements.listeners.ModelListenersDescriptor$1" />
+      <unit id="5186809684120039577" at="47,39,55,9" name="com.mbeddr.cc.requirements.listeners.ModelListenersDescriptor$2$1" />
+      <unit id="5186809684116883235" at="40,52,58,5" name="com.mbeddr.cc.requirements.listeners.ModelListenersDescriptor$2" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="c8o55cso5jlgjget3lxtyykqmehnzcw">
+  <files names="ConstraintsAspectDescriptor.java:IRestrictToTests_Constraints.java:MessageCountExpr_Constraints.java:MessageCountReset_Constraints.java:SameTypeTestStatement_Constraints.java:TestCaseRef_Constraints.java:TestCase_Constraints.java:TestCollectionRef_Constraints.java" />
+</product>
+

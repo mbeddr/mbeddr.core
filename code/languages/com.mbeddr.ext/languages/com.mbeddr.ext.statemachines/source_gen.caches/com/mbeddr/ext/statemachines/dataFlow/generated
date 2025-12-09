@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-9sdct38jv733w6q912ybn6fi51z7lr7">
+  <files names="AbstractAction_DataFlow.java:AbstractState_DataFlow.java:DataFlowAspectDescriptorImpl.java:DirectAssignmentExpressionInitialization.java:EventArgRefInitialization.java:EventArgRef_DataFlow.java:GenericDotExpressionInitialization_StateMachineInit.java:SendOutEventStatement_DataFlow.java:StatemachineVarRefInitialization.java:StatemachineVarRef_DataFlow.java:StatemachineVariableDeclaration_DataFlow.java:Statemachine_DataFlow.java:Transition_DataFlow.java" />
+</product>
+

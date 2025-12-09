@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="103,0,106,0" name="com.mbeddr.mpsutil.postprocessGeneratedFiles.generator.template.main.QueriesGenerated$PROPS" />
+      <unit at="107,0,112,0" name="com.mbeddr.mpsutil.postprocessGeneratedFiles.generator.template.main.QueriesGenerated$LINKS" />
+      <unit at="55,0,72,0" name="com.mbeddr.mpsutil.postprocessGeneratedFiles.generator.template.main.QueriesGenerated$SNsQ" />
+      <unit at="84,0,102,0" name="com.mbeddr.mpsutil.postprocessGeneratedFiles.generator.template.main.QueriesGenerated$PVQ" />
+      <unit at="26,0,113,0" name="com.mbeddr.mpsutil.postprocessGeneratedFiles.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:4c91ec0a-ccf6-434e-850e-de62db9cd901(com.mbeddr.mpsutil.postprocessGeneratedFiles.generator.template.main@generator)/6221197661420504434">
+    <file name="QueriesGenerated.java">
+      <node id="6221197661421367621" at="37,104,38,125" concept="1" />
+      <node id="6221197661421367614" at="45,14,46,58" concept="0" />
+      <node id="6221197661421367614" at="63,15,64,87" concept="1" />
+      <node id="6221197661421367614" at="37,0,40,0" concept="2" trace="sourceNodesQuery_0_0#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodesContext;)Ljava/lang/Iterable;" />
+      <scope id="6221197661421367615" at="37,104,38,125" />
+      <scope id="6221197661421367614" at="63,15,64,87" />
+      <scope id="6221197661421367614" at="37,0,40,0">
+        <var name="_context" id="6221197661421367614" />
+      </scope>
+    </file>
+  </root>
+  <root nodeRef="r:4c91ec0a-ccf6-434e-850e-de62db9cd901(com.mbeddr.mpsutil.postprocessGeneratedFiles.generator.template.main@generator)/6221197661421144508">
+    <file name="QueriesGenerated.java">
+      <node id="6221197661421281633" at="31,88,32,78" concept="1" />
+      <node id="6221197661421144591" at="34,88,35,78" concept="1" />
+      <node id="6221197661422136109" at="40,104,41,86" concept="1" />
+      <node id="6221197661422136102" at="46,58,47,58" concept="0" />
+      <node id="6221197661422136102" at="65,15,66,87" concept="1" />
+      <node id="6221197661421281508" at="74,14,75,173" concept="0" />
+      <node id="6221197661421144511" at="75,173,76,205" concept="0" />
+      <node id="6221197661421281508" at="93,15,94,66" concept="1" />
+      <node id="6221197661421144511" at="95,15,96,66" concept="1" />
+      <node id="6221197661421281509" at="31,0,34,0" concept="2" trace="propertyMacro_GetValue_1_0#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <node id="6221197661421144512" at="34,0,37,0" concept="2" trace="propertyMacro_GetValue_1_1#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <node id="6221197661422136102" at="40,0,43,0" concept="2" trace="sourceNodesQuery_1_0#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodesContext;)Ljava/lang/Iterable;" />
+      <scope id="6221197661421281510" at="31,88,32,78" />
+      <scope id="6221197661421144513" at="34,88,35,78" />
+      <scope id="6221197661422136103" at="40,104,41,86" />
+      <scope id="6221197661422136102" at="65,15,66,87" />
+      <scope id="6221197661421281508" at="93,15,94,66" />
+      <scope id="6221197661421144511" at="95,15,96,66" />
+      <scope id="6221197661421281509" at="31,0,34,0">
+        <var name="_context" id="6221197661421281509" />
+      </scope>
+      <scope id="6221197661421144512" at="34,0,37,0">
+        <var name="_context" id="6221197661421144512" />
+      </scope>
+      <scope id="6221197661422136102" at="40,0,43,0">
+        <var name="_context" id="6221197661422136102" />
+      </scope>
+    </file>
+  </root>
+</debug-info>
+

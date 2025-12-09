@@ -1,0 +1,1821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,415,0" name="com.mbeddr.ext.serialization.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,126,0" name="com.mbeddr.ext.serialization.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="14,0,706,0" name="com.mbeddr.ext.serialization.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877766504602">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877766504602" at="23,0,24,0" concept="1" trace="props_PrimitiveReadWriteTarget" />
+      <node id="2041600877766504602" at="143,53,144,76" concept="3" />
+      <node id="2041600877766504602" at="144,76,145,56" concept="0" />
+      <node id="2041600877766504602" at="146,9,147,46" concept="4" />
+      <node id="2041600877766504602" at="142,58,146,9" concept="2" />
+      <scope id="2041600877766504602" at="143,53,145,56">
+        <var name="cpb" id="2041600877766504602" />
+      </scope>
+      <scope id="2041600877766504602" at="142,58,147,46" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877766504602" at="23,0,24,0" concept="6" trace="PrimitiveReadWriteTarget" />
+      <node id="2041600877766504602" at="75,52,76,63" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877766504602" at="26,0,27,0" concept="1" trace="myConceptPrimitiveReadWriteTarget" />
+      <node id="2041600877766504602" at="112,58,113,49" concept="4" />
+      <node id="2041600877766504602" at="308,82,309,187" concept="3" />
+      <node id="2041600877766504602" at="309,187,310,33" concept="0" />
+      <node id="2041600877766504602" at="310,33,311,70" concept="5" />
+      <node id="2041600877766504602" at="311,70,312,76" concept="0" />
+      <node id="2041600877766504602" at="312,76,313,115" concept="0" />
+      <node id="2041600877766504602" at="313,115,314,17" concept="0" />
+      <node id="2041600877766537639" at="314,17,315,198" concept="0" />
+      <node id="2041600877766504602" at="315,198,316,22" concept="4" />
+      <node id="2041600877766504602" at="308,0,318,0" concept="7" trace="createDescriptorForPrimitiveReadWriteTarget#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877766504602" at="112,58,113,49" />
+      <scope id="2041600877766504602" at="308,82,316,22">
+        <var name="b" id="2041600877766504602" />
+      </scope>
+      <scope id="2041600877766504602" at="308,0,318,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877766511636">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877766511636" at="55,0,56,0" concept="1" trace="props_WriteInt8" />
+      <node id="2041600877766511636" at="363,38,364,76" concept="3" />
+      <node id="2041600877766511636" at="364,76,365,43" concept="0" />
+      <node id="2041600877766511636" at="365,43,366,41" concept="0" />
+      <node id="2041600877766511636" at="367,9,368,31" concept="4" />
+      <node id="2041600877766511636" at="362,43,367,9" concept="2" />
+      <scope id="2041600877766511636" at="363,38,366,41">
+        <var name="cpb" id="2041600877766511636" />
+      </scope>
+      <scope id="2041600877766511636" at="362,43,368,31" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877766511636" at="55,0,56,0" concept="6" trace="WriteInt8" />
+      <node id="2041600877766511636" at="107,49,108,48" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877766511636" at="58,0,59,0" concept="1" trace="myConceptWriteInt8" />
+      <node id="2041600877766511636" at="176,43,177,34" concept="4" />
+      <node id="2041600877766511636" at="633,67,634,172" concept="3" />
+      <node id="2041600877766511636" at="634,172,635,34" concept="0" />
+      <node id="2041600877766511636" at="635,34,636,69" concept="5" />
+      <node id="2041600877766511636" at="636,69,637,76" concept="0" />
+      <node id="2041600877766511636" at="637,76,638,115" concept="0" />
+      <node id="2041600877766511636" at="638,115,639,17" concept="0" />
+      <node id="2041600877766511636" at="639,17,640,25" concept="0" />
+      <node id="2041600877766511636" at="640,25,641,22" concept="4" />
+      <node id="2041600877766511636" at="633,0,643,0" concept="7" trace="createDescriptorForWriteInt8#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877766511636" at="176,43,177,34" />
+      <scope id="2041600877766511636" at="633,67,641,22">
+        <var name="b" id="2041600877766511636" />
+      </scope>
+      <scope id="2041600877766511636" at="633,0,643,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877766537631">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877766537631" at="24,0,25,0" concept="1" trace="props_PrimitiveWrite" />
+      <node id="2041600877766537631" at="149,43,150,76" concept="3" />
+      <node id="2041600877766537631" at="150,76,151,46" concept="0" />
+      <node id="2041600877766537631" at="152,9,153,36" concept="4" />
+      <node id="2041600877766537631" at="148,48,152,9" concept="2" />
+      <scope id="2041600877766537631" at="149,43,151,46">
+        <var name="cpb" id="2041600877766537631" />
+      </scope>
+      <scope id="2041600877766537631" at="148,48,153,36" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877766537631" at="24,0,25,0" concept="6" trace="PrimitiveWrite" />
+      <node id="2041600877766537631" at="76,63,77,53" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877766537631" at="27,0,28,0" concept="1" trace="myConceptPrimitiveWrite" />
+      <node id="2041600877766537631" at="114,48,115,39" concept="4" />
+      <node id="2041600877766537631" at="318,72,319,177" concept="3" />
+      <node id="2041600877766537631" at="319,177,320,33" concept="0" />
+      <node id="2041600877766537631" at="320,33,321,79" concept="5" />
+      <node id="2041600877766537631" at="321,79,322,76" concept="0" />
+      <node id="2041600877766537631" at="322,76,323,115" concept="0" />
+      <node id="2041600877766537631" at="323,115,324,17" concept="0" />
+      <node id="2041600877766537631" at="324,17,325,22" concept="4" />
+      <node id="2041600877766537631" at="318,0,327,0" concept="7" trace="createDescriptorForPrimitiveWrite#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877766537631" at="114,48,115,39" />
+      <scope id="2041600877766537631" at="318,72,325,22">
+        <var name="b" id="2041600877766537631" />
+      </scope>
+      <scope id="2041600877766537631" at="318,0,327,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877782683778">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877782683778" at="41,0,42,0" concept="1" trace="props_SerialContextType" />
+      <node id="2041600877782683778" at="267,46,268,76" concept="3" />
+      <node id="2041600877782683778" at="268,76,269,141" concept="0" />
+      <node id="2041600877782683778" at="269,141,270,49" concept="0" />
+      <node id="2041600877782683778" at="271,9,272,39" concept="4" />
+      <node id="2041600877782683778" at="266,51,271,9" concept="2" />
+      <scope id="2041600877782683778" at="267,46,270,49">
+        <var name="cpb" id="2041600877782683778" />
+      </scope>
+      <scope id="2041600877782683778" at="266,51,272,39" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877782683778" at="41,0,42,0" concept="6" trace="SerialContextType" />
+      <node id="2041600877782683778" at="93,55,94,56" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877782683778" at="44,0,45,0" concept="1" trace="myConceptSerialContextType" />
+      <node id="2041600877782683778" at="148,51,149,42" concept="4" />
+      <node id="2041600877782683778" at="488,75,489,180" concept="3" />
+      <node id="2041600877782683778" at="489,180,490,34" concept="0" />
+      <node id="2041600877782683778" at="490,34,491,58" concept="5" />
+      <node id="2041600877782683778" at="491,58,492,76" concept="0" />
+      <node id="2041600877782683778" at="493,76,494,115" concept="0" />
+      <node id="2041600877782683778" at="494,115,495,17" concept="0" />
+      <node id="8509854365003949476" at="495,17,496,171" concept="0" />
+      <node id="2041600877782683778" at="496,171,497,22" concept="4" />
+      <node id="2041600877782683778" at="488,0,499,0" concept="7" trace="createDescriptorForSerialContextType#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877782683778" at="148,51,149,42" />
+      <scope id="2041600877782683778" at="488,75,497,22">
+        <var name="b" id="2041600877782683778" />
+      </scope>
+      <scope id="2041600877782683778" at="488,0,499,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877782839158">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877782839158" at="44,0,45,0" concept="1" trace="props_SerialInitTarget" />
+      <node id="2041600877782839158" at="287,45,288,76" concept="3" />
+      <node id="2041600877782839158" at="288,76,289,38" concept="0" />
+      <node id="2041600877782839158" at="289,38,290,48" concept="0" />
+      <node id="2041600877782839158" at="291,9,292,38" concept="4" />
+      <node id="2041600877782839158" at="286,50,291,9" concept="2" />
+      <scope id="2041600877782839158" at="287,45,290,48">
+        <var name="cpb" id="2041600877782839158" />
+      </scope>
+      <scope id="2041600877782839158" at="286,50,292,38" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877782839158" at="44,0,45,0" concept="6" trace="SerialInitTarget" />
+      <node id="2041600877782839158" at="96,54,97,55" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877782839158" at="47,0,48,0" concept="1" trace="myConceptSerialInitTarget" />
+      <node id="2041600877782839158" at="154,50,155,41" concept="4" />
+      <node id="2041600877782839158" at="518,74,519,179" concept="3" />
+      <node id="2041600877782839158" at="519,179,520,34" concept="0" />
+      <node id="2041600877782839158" at="520,34,521,85" concept="5" />
+      <node id="2041600877782839158" at="521,85,522,76" concept="0" />
+      <node id="2041600877782839158" at="522,76,523,115" concept="0" />
+      <node id="2041600877782839158" at="523,115,524,17" concept="0" />
+      <node id="7384997130814584826" at="524,17,525,209" concept="0" />
+      <node id="2041600877782839158" at="525,209,526,20" concept="0" />
+      <node id="2041600877782839158" at="526,20,527,22" concept="4" />
+      <node id="2041600877782839158" at="518,0,529,0" concept="7" trace="createDescriptorForSerialInitTarget#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877782839158" at="154,50,155,41" />
+      <scope id="2041600877782839158" at="518,74,527,22">
+        <var name="b" id="2041600877782839158" />
+      </scope>
+      <scope id="2041600877782839158" at="518,0,529,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877784696435">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877784696435" at="29,0,30,0" concept="1" trace="props_ReadHandler" />
+      <node id="2041600877784696435" at="183,40,184,76" concept="3" />
+      <node id="2041600877784696435" at="184,76,185,35" concept="0" />
+      <node id="2041600877784696435" at="185,35,186,43" concept="0" />
+      <node id="2041600877784696435" at="187,9,188,33" concept="4" />
+      <node id="2041600877784696435" at="182,45,187,9" concept="2" />
+      <scope id="2041600877784696435" at="183,40,186,43">
+        <var name="cpb" id="2041600877784696435" />
+      </scope>
+      <scope id="2041600877784696435" at="182,45,188,33" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877784696435" at="29,0,30,0" concept="6" trace="ReadHandler" />
+      <node id="2041600877784696435" at="81,48,82,50" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877784696435" at="32,0,33,0" concept="1" trace="myConceptReadHandler" />
+      <node id="2041600877784696435" at="124,45,125,36" concept="4" />
+      <node id="2041600877784696435" at="367,69,368,174" concept="3" />
+      <node id="2041600877784696435" at="368,174,369,34" concept="0" />
+      <node id="2041600877784696435" at="369,34,370,70" concept="5" />
+      <node id="2041600877784696435" at="370,70,371,76" concept="0" />
+      <node id="2041600877784696435" at="371,76,372,115" concept="0" />
+      <node id="2041600877784696435" at="372,115,373,17" concept="0" />
+      <node id="2041600877784696435" at="373,17,374,22" concept="0" />
+      <node id="2041600877784696435" at="374,22,375,22" concept="4" />
+      <node id="2041600877784696435" at="367,0,377,0" concept="7" trace="createDescriptorForReadHandler#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877784696435" at="124,45,125,36" />
+      <scope id="2041600877784696435" at="367,69,375,22">
+        <var name="b" id="2041600877784696435" />
+      </scope>
+      <scope id="2041600877784696435" at="367,0,377,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877784697424">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877784697424" at="51,0,52,0" concept="1" trace="props_WriteHandler" />
+      <node id="2041600877784697424" at="335,41,336,76" concept="3" />
+      <node id="2041600877784697424" at="336,76,337,35" concept="0" />
+      <node id="2041600877784697424" at="337,35,338,44" concept="0" />
+      <node id="2041600877784697424" at="339,9,340,34" concept="4" />
+      <node id="2041600877784697424" at="334,46,339,9" concept="2" />
+      <scope id="2041600877784697424" at="335,41,338,44">
+        <var name="cpb" id="2041600877784697424" />
+      </scope>
+      <scope id="2041600877784697424" at="334,46,340,34" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877784697424" at="51,0,52,0" concept="6" trace="WriteHandler" />
+      <node id="2041600877784697424" at="103,49,104,51" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877784697424" at="54,0,55,0" concept="1" trace="myConceptWriteHandler" />
+      <node id="2041600877784697424" at="168,46,169,37" concept="4" />
+      <node id="2041600877784697424" at="593,70,594,175" concept="3" />
+      <node id="2041600877784697424" at="594,175,595,34" concept="0" />
+      <node id="2041600877784697424" at="595,34,596,70" concept="5" />
+      <node id="2041600877784697424" at="596,70,597,76" concept="0" />
+      <node id="2041600877784697424" at="597,76,598,115" concept="0" />
+      <node id="2041600877784697424" at="598,115,599,17" concept="0" />
+      <node id="2041600877784697424" at="599,17,600,23" concept="0" />
+      <node id="2041600877784697424" at="600,23,601,22" concept="4" />
+      <node id="2041600877784697424" at="593,0,603,0" concept="7" trace="createDescriptorForWriteHandler#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877784697424" at="168,46,169,37" />
+      <scope id="2041600877784697424" at="593,70,601,22">
+        <var name="b" id="2041600877784697424" />
+      </scope>
+      <scope id="2041600877784697424" at="593,0,603,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877784697460">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877784697460" at="17,0,18,0" concept="1" trace="props_HandlerFunction" />
+      <node id="2041600877784697460" at="104,44,105,76" concept="3" />
+      <node id="2041600877784697460" at="105,76,106,47" concept="0" />
+      <node id="2041600877784697460" at="107,9,108,37" concept="4" />
+      <node id="2041600877784697460" at="103,49,107,9" concept="2" />
+      <scope id="2041600877784697460" at="104,44,106,47">
+        <var name="cpb" id="2041600877784697460" />
+      </scope>
+      <scope id="2041600877784697460" at="103,49,108,37" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877784697460" at="17,0,18,0" concept="6" trace="HandlerFunction" />
+      <node id="2041600877784697460" at="69,51,70,54" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877784697460" at="20,0,21,0" concept="1" trace="myConceptHandlerFunction" />
+      <node id="2041600877784697460" at="100,49,101,40" concept="4" />
+      <node id="2041600877784697460" at="250,73,251,178" concept="3" />
+      <node id="2041600877784697460" at="251,178,252,33" concept="0" />
+      <node id="2041600877784697460" at="253,76,254,76" concept="0" />
+      <node id="2041600877784697460" at="254,76,255,115" concept="0" />
+      <node id="2041600877784697460" at="255,115,256,17" concept="0" />
+      <node id="1017957699896608816" at="256,17,257,197" concept="0" />
+      <node id="2041600877784697460" at="257,197,258,22" concept="4" />
+      <node id="2041600877784697460" at="250,0,260,0" concept="7" trace="createDescriptorForHandlerFunction#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877784697460" at="100,49,101,40" />
+      <scope id="2041600877784697460" at="250,73,258,22">
+        <var name="b" id="2041600877784697460" />
+      </scope>
+      <scope id="2041600877784697460" at="250,0,260,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877786294117">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877786294117" at="20,0,21,0" concept="1" trace="props_ISerialConstruct" />
+      <node id="2041600877786294117" at="124,45,125,76" concept="3" />
+      <node id="2041600877786294117" at="125,76,126,48" concept="0" />
+      <node id="2041600877786294117" at="127,9,128,38" concept="4" />
+      <node id="2041600877786294117" at="123,50,127,9" concept="2" />
+      <scope id="2041600877786294117" at="124,45,126,48">
+        <var name="cpb" id="2041600877786294117" />
+      </scope>
+      <scope id="2041600877786294117" at="123,50,128,38" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877786294117" at="20,0,21,0" concept="6" trace="ISerialConstruct" />
+      <node id="2041600877786294117" at="72,54,73,55" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877786294117" at="23,0,24,0" concept="1" trace="myConceptISerialConstruct" />
+      <node id="2041600877786294117" at="106,50,107,41" concept="4" />
+      <node id="2041600877786294117" at="252,33,253,76" concept="0" />
+      <node id="2041600877786294117" at="281,74,282,179" concept="3" />
+      <node id="2041600877786294117" at="282,179,283,19" concept="0" />
+      <node id="2041600877786294117" at="283,19,284,115" concept="0" />
+      <node id="2041600877786294117" at="284,115,285,17" concept="0" />
+      <node id="2041600877786294117" at="285,17,286,22" concept="4" />
+      <node id="2041600877786294117" at="492,76,493,76" concept="0" />
+      <node id="2041600877786294117" at="512,76,513,76" concept="0" />
+      <node id="2041600877786294117" at="281,0,288,0" concept="7" trace="createDescriptorForISerialConstruct#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877786294117" at="106,50,107,41" />
+      <scope id="2041600877786294117" at="281,74,286,22">
+        <var name="b" id="2041600877786294117" />
+      </scope>
+      <scope id="2041600877786294117" at="281,0,288,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877788867628">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877788867628" at="47,0,48,0" concept="1" trace="props_WriteArrayMarker" />
+      <node id="2041600877788867628" at="307,45,308,76" concept="3" />
+      <node id="2041600877788867628" at="308,76,309,50" concept="0" />
+      <node id="2041600877788867628" at="309,50,310,48" concept="0" />
+      <node id="2041600877788867628" at="311,9,312,38" concept="4" />
+      <node id="2041600877788867628" at="306,50,311,9" concept="2" />
+      <scope id="2041600877788867628" at="307,45,310,48">
+        <var name="cpb" id="2041600877788867628" />
+      </scope>
+      <scope id="2041600877788867628" at="306,50,312,38" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877788867628" at="47,0,48,0" concept="6" trace="WriteArrayMarker" />
+      <node id="2041600877788867628" at="99,69,100,55" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877788867628" at="50,0,51,0" concept="1" trace="myConceptWriteArrayMarker" />
+      <node id="2041600877788867628" at="160,50,161,41" concept="4" />
+      <node id="2041600877788867628" at="553,74,554,179" concept="3" />
+      <node id="2041600877788867628" at="554,179,555,34" concept="0" />
+      <node id="2041600877788867628" at="555,34,556,69" concept="5" />
+      <node id="2041600877788867628" at="556,69,557,76" concept="0" />
+      <node id="2041600877788867628" at="557,76,558,115" concept="0" />
+      <node id="2041600877788867628" at="558,115,559,17" concept="0" />
+      <node id="2041600877788867628" at="559,17,560,32" concept="0" />
+      <node id="2041600877788867628" at="560,32,561,22" concept="4" />
+      <node id="2041600877788867628" at="553,0,563,0" concept="7" trace="createDescriptorForWriteArrayMarker#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877788867628" at="160,50,161,41" />
+      <scope id="2041600877788867628" at="553,74,561,22">
+        <var name="b" id="2041600877788867628" />
+      </scope>
+      <scope id="2041600877788867628" at="553,0,563,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877789146537">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877789146537" at="52,0,53,0" concept="1" trace="props_WriteInt16" />
+      <node id="2041600877789146537" at="342,39,343,76" concept="3" />
+      <node id="2041600877789146537" at="343,76,344,44" concept="0" />
+      <node id="2041600877789146537" at="344,44,345,42" concept="0" />
+      <node id="2041600877789146537" at="346,9,347,32" concept="4" />
+      <node id="2041600877789146537" at="341,44,346,9" concept="2" />
+      <scope id="2041600877789146537" at="342,39,345,42">
+        <var name="cpb" id="2041600877789146537" />
+      </scope>
+      <scope id="2041600877789146537" at="341,44,347,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877789146537" at="52,0,53,0" concept="6" trace="WriteInt16" />
+      <node id="2041600877789146537" at="104,51,105,49" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877789146537" at="55,0,56,0" concept="1" trace="myConceptWriteInt16" />
+      <node id="2041600877789146537" at="170,44,171,35" concept="4" />
+      <node id="2041600877789146537" at="603,68,604,173" concept="3" />
+      <node id="2041600877789146537" at="604,173,605,34" concept="0" />
+      <node id="2041600877789146537" at="605,34,606,69" concept="5" />
+      <node id="2041600877789146537" at="606,69,607,76" concept="0" />
+      <node id="2041600877789146537" at="607,76,608,115" concept="0" />
+      <node id="2041600877789146537" at="608,115,609,17" concept="0" />
+      <node id="2041600877789146537" at="609,17,610,26" concept="0" />
+      <node id="2041600877789146537" at="610,26,611,22" concept="4" />
+      <node id="2041600877789146537" at="603,0,613,0" concept="7" trace="createDescriptorForWriteInt16#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877789146537" at="170,44,171,35" />
+      <scope id="2041600877789146537" at="603,68,611,22">
+        <var name="b" id="2041600877789146537" />
+      </scope>
+      <scope id="2041600877789146537" at="603,0,613,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877789146755">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877789146755" at="53,0,54,0" concept="1" trace="props_WriteInt32" />
+      <node id="2041600877789146755" at="349,39,350,76" concept="3" />
+      <node id="2041600877789146755" at="350,76,351,44" concept="0" />
+      <node id="2041600877789146755" at="351,44,352,42" concept="0" />
+      <node id="2041600877789146755" at="353,9,354,32" concept="4" />
+      <node id="2041600877789146755" at="348,44,353,9" concept="2" />
+      <scope id="2041600877789146755" at="349,39,352,42">
+        <var name="cpb" id="2041600877789146755" />
+      </scope>
+      <scope id="2041600877789146755" at="348,44,354,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877789146755" at="53,0,54,0" concept="6" trace="WriteInt32" />
+      <node id="2041600877789146755" at="105,49,106,49" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877789146755" at="56,0,57,0" concept="1" trace="myConceptWriteInt32" />
+      <node id="2041600877789146755" at="172,44,173,35" concept="4" />
+      <node id="2041600877789146755" at="613,68,614,173" concept="3" />
+      <node id="2041600877789146755" at="614,173,615,34" concept="0" />
+      <node id="2041600877789146755" at="615,34,616,69" concept="5" />
+      <node id="2041600877789146755" at="616,69,617,76" concept="0" />
+      <node id="2041600877789146755" at="617,76,618,115" concept="0" />
+      <node id="2041600877789146755" at="618,115,619,17" concept="0" />
+      <node id="2041600877789146755" at="619,17,620,26" concept="0" />
+      <node id="2041600877789146755" at="620,26,621,22" concept="4" />
+      <node id="2041600877789146755" at="613,0,623,0" concept="7" trace="createDescriptorForWriteInt32#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877789146755" at="172,44,173,35" />
+      <scope id="2041600877789146755" at="613,68,621,22">
+        <var name="b" id="2041600877789146755" />
+      </scope>
+      <scope id="2041600877789146755" at="613,0,623,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877789146759">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877789146759" at="54,0,55,0" concept="1" trace="props_WriteInt64" />
+      <node id="2041600877789146759" at="356,39,357,76" concept="3" />
+      <node id="2041600877789146759" at="357,76,358,44" concept="0" />
+      <node id="2041600877789146759" at="358,44,359,42" concept="0" />
+      <node id="2041600877789146759" at="360,9,361,32" concept="4" />
+      <node id="2041600877789146759" at="355,44,360,9" concept="2" />
+      <scope id="2041600877789146759" at="356,39,359,42">
+        <var name="cpb" id="2041600877789146759" />
+      </scope>
+      <scope id="2041600877789146759" at="355,44,361,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877789146759" at="54,0,55,0" concept="6" trace="WriteInt64" />
+      <node id="2041600877789146759" at="106,49,107,49" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877789146759" at="57,0,58,0" concept="1" trace="myConceptWriteInt64" />
+      <node id="2041600877789146759" at="174,44,175,35" concept="4" />
+      <node id="2041600877789146759" at="623,68,624,173" concept="3" />
+      <node id="2041600877789146759" at="624,173,625,34" concept="0" />
+      <node id="2041600877789146759" at="625,34,626,69" concept="5" />
+      <node id="2041600877789146759" at="626,69,627,76" concept="0" />
+      <node id="2041600877789146759" at="627,76,628,115" concept="0" />
+      <node id="2041600877789146759" at="628,115,629,17" concept="0" />
+      <node id="2041600877789146759" at="629,17,630,26" concept="0" />
+      <node id="2041600877789146759" at="630,26,631,22" concept="4" />
+      <node id="2041600877789146759" at="623,0,633,0" concept="7" trace="createDescriptorForWriteInt64#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877789146759" at="174,44,175,35" />
+      <scope id="2041600877789146759" at="623,68,631,22">
+        <var name="b" id="2041600877789146759" />
+      </scope>
+      <scope id="2041600877789146759" at="623,0,633,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877789146776">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877789146776" at="58,0,59,0" concept="1" trace="props_WriteUInt16" />
+      <node id="2041600877789146776" at="384,40,385,76" concept="3" />
+      <node id="2041600877789146776" at="385,76,386,45" concept="0" />
+      <node id="2041600877789146776" at="386,45,387,43" concept="0" />
+      <node id="2041600877789146776" at="388,9,389,33" concept="4" />
+      <node id="2041600877789146776" at="383,45,388,9" concept="2" />
+      <scope id="2041600877789146776" at="384,40,387,43">
+        <var name="cpb" id="2041600877789146776" />
+      </scope>
+      <scope id="2041600877789146776" at="383,45,389,33" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877789146776" at="58,0,59,0" concept="6" trace="WriteUInt16" />
+      <node id="2041600877789146776" at="110,50,111,50" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877789146776" at="61,0,62,0" concept="1" trace="myConceptWriteUInt16" />
+      <node id="2041600877789146776" at="182,45,183,36" concept="4" />
+      <node id="2041600877789146776" at="665,69,666,174" concept="3" />
+      <node id="2041600877789146776" at="666,174,667,34" concept="0" />
+      <node id="2041600877789146776" at="667,34,668,69" concept="5" />
+      <node id="2041600877789146776" at="668,69,669,76" concept="0" />
+      <node id="2041600877789146776" at="669,76,670,115" concept="0" />
+      <node id="2041600877789146776" at="670,115,671,17" concept="0" />
+      <node id="2041600877789146776" at="671,17,672,27" concept="0" />
+      <node id="2041600877789146776" at="672,27,673,22" concept="4" />
+      <node id="2041600877789146776" at="665,0,675,0" concept="7" trace="createDescriptorForWriteUInt16#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877789146776" at="182,45,183,36" />
+      <scope id="2041600877789146776" at="665,69,673,22">
+        <var name="b" id="2041600877789146776" />
+      </scope>
+      <scope id="2041600877789146776" at="665,0,675,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877789146777">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877789146777" at="59,0,60,0" concept="1" trace="props_WriteUInt32" />
+      <node id="2041600877789146777" at="391,40,392,76" concept="3" />
+      <node id="2041600877789146777" at="392,76,393,45" concept="0" />
+      <node id="2041600877789146777" at="393,45,394,43" concept="0" />
+      <node id="2041600877789146777" at="395,9,396,33" concept="4" />
+      <node id="2041600877789146777" at="390,45,395,9" concept="2" />
+      <scope id="2041600877789146777" at="391,40,394,43">
+        <var name="cpb" id="2041600877789146777" />
+      </scope>
+      <scope id="2041600877789146777" at="390,45,396,33" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877789146777" at="59,0,60,0" concept="6" trace="WriteUInt32" />
+      <node id="2041600877789146777" at="111,50,112,50" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877789146777" at="62,0,63,0" concept="1" trace="myConceptWriteUInt32" />
+      <node id="2041600877789146777" at="184,45,185,36" concept="4" />
+      <node id="2041600877789146777" at="675,69,676,174" concept="3" />
+      <node id="2041600877789146777" at="676,174,677,34" concept="0" />
+      <node id="2041600877789146777" at="677,34,678,69" concept="5" />
+      <node id="2041600877789146777" at="678,69,679,76" concept="0" />
+      <node id="2041600877789146777" at="679,76,680,115" concept="0" />
+      <node id="2041600877789146777" at="680,115,681,17" concept="0" />
+      <node id="2041600877789146777" at="681,17,682,27" concept="0" />
+      <node id="2041600877789146777" at="682,27,683,22" concept="4" />
+      <node id="2041600877789146777" at="675,0,685,0" concept="7" trace="createDescriptorForWriteUInt32#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877789146777" at="184,45,185,36" />
+      <scope id="2041600877789146777" at="675,69,683,22">
+        <var name="b" id="2041600877789146777" />
+      </scope>
+      <scope id="2041600877789146777" at="675,0,685,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877789146778">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877789146778" at="60,0,61,0" concept="1" trace="props_WriteUInt64" />
+      <node id="2041600877789146778" at="398,40,399,76" concept="3" />
+      <node id="2041600877789146778" at="399,76,400,45" concept="0" />
+      <node id="2041600877789146778" at="400,45,401,43" concept="0" />
+      <node id="2041600877789146778" at="402,9,403,33" concept="4" />
+      <node id="2041600877789146778" at="397,45,402,9" concept="2" />
+      <scope id="2041600877789146778" at="398,40,401,43">
+        <var name="cpb" id="2041600877789146778" />
+      </scope>
+      <scope id="2041600877789146778" at="397,45,403,33" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877789146778" at="60,0,61,0" concept="6" trace="WriteUInt64" />
+      <node id="2041600877789146778" at="112,50,113,50" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877789146778" at="63,0,64,0" concept="1" trace="myConceptWriteUInt64" />
+      <node id="2041600877789146778" at="186,45,187,36" concept="4" />
+      <node id="2041600877789146778" at="685,69,686,174" concept="3" />
+      <node id="2041600877789146778" at="686,174,687,34" concept="0" />
+      <node id="2041600877789146778" at="687,34,688,69" concept="5" />
+      <node id="2041600877789146778" at="688,69,689,76" concept="0" />
+      <node id="2041600877789146778" at="689,76,690,115" concept="0" />
+      <node id="2041600877789146778" at="690,115,691,17" concept="0" />
+      <node id="2041600877789146778" at="691,17,692,27" concept="0" />
+      <node id="2041600877789146778" at="692,27,693,22" concept="4" />
+      <node id="2041600877789146778" at="685,0,695,0" concept="7" trace="createDescriptorForWriteUInt64#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877789146778" at="186,45,187,36" />
+      <scope id="2041600877789146778" at="685,69,693,22">
+        <var name="b" id="2041600877789146778" />
+      </scope>
+      <scope id="2041600877789146778" at="685,0,695,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877789146779">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877789146779" at="61,0,62,0" concept="1" trace="props_WriteUInt8" />
+      <node id="2041600877789146779" at="405,39,406,76" concept="3" />
+      <node id="2041600877789146779" at="406,76,407,44" concept="0" />
+      <node id="2041600877789146779" at="407,44,408,42" concept="0" />
+      <node id="2041600877789146779" at="409,9,410,32" concept="4" />
+      <node id="2041600877789146779" at="404,44,409,9" concept="2" />
+      <scope id="2041600877789146779" at="405,39,408,42">
+        <var name="cpb" id="2041600877789146779" />
+      </scope>
+      <scope id="2041600877789146779" at="404,44,410,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877789146779" at="61,0,62,0" concept="6" trace="WriteUInt8" />
+      <node id="2041600877789146779" at="113,50,114,49" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877789146779" at="64,0,65,0" concept="1" trace="myConceptWriteUInt8" />
+      <node id="2041600877789146779" at="188,44,189,35" concept="4" />
+      <node id="2041600877789146779" at="695,68,696,173" concept="3" />
+      <node id="2041600877789146779" at="696,173,697,34" concept="0" />
+      <node id="2041600877789146779" at="697,34,698,69" concept="5" />
+      <node id="2041600877789146779" at="698,69,699,76" concept="0" />
+      <node id="2041600877789146779" at="699,76,700,115" concept="0" />
+      <node id="2041600877789146779" at="700,115,701,17" concept="0" />
+      <node id="2041600877789146779" at="701,17,702,26" concept="0" />
+      <node id="2041600877789146779" at="702,26,703,22" concept="4" />
+      <node id="2041600877789146779" at="695,0,705,0" concept="7" trace="createDescriptorForWriteUInt8#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877789146779" at="188,44,189,35" />
+      <scope id="2041600877789146779" at="695,68,703,22">
+        <var name="b" id="2041600877789146779" />
+      </scope>
+      <scope id="2041600877789146779" at="695,0,705,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877789146971">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877789146971" at="49,0,50,0" concept="1" trace="props_WriteDouble" />
+      <node id="2041600877789146971" at="321,40,322,76" concept="3" />
+      <node id="2041600877789146971" at="322,76,323,45" concept="0" />
+      <node id="2041600877789146971" at="323,45,324,43" concept="0" />
+      <node id="2041600877789146971" at="325,9,326,33" concept="4" />
+      <node id="2041600877789146971" at="320,45,325,9" concept="2" />
+      <scope id="2041600877789146971" at="321,40,324,43">
+        <var name="cpb" id="2041600877789146971" />
+      </scope>
+      <scope id="2041600877789146971" at="320,45,326,33" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877789146971" at="49,0,50,0" concept="6" trace="WriteDouble" />
+      <node id="2041600877789146971" at="101,48,102,50" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877789146971" at="52,0,53,0" concept="1" trace="myConceptWriteDouble" />
+      <node id="2041600877789146971" at="164,45,165,36" concept="4" />
+      <node id="2041600877789146971" at="573,69,574,174" concept="3" />
+      <node id="2041600877789146971" at="574,174,575,34" concept="0" />
+      <node id="2041600877789146971" at="575,34,576,69" concept="5" />
+      <node id="2041600877789146971" at="576,69,577,76" concept="0" />
+      <node id="2041600877789146971" at="577,76,578,115" concept="0" />
+      <node id="2041600877789146971" at="578,115,579,17" concept="0" />
+      <node id="2041600877789146971" at="579,17,580,27" concept="0" />
+      <node id="2041600877789146971" at="580,27,581,22" concept="4" />
+      <node id="2041600877789146971" at="573,0,583,0" concept="7" trace="createDescriptorForWriteDouble#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877789146971" at="164,45,165,36" />
+      <scope id="2041600877789146971" at="573,69,581,22">
+        <var name="b" id="2041600877789146971" />
+      </scope>
+      <scope id="2041600877789146971" at="573,0,583,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877789146976">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877789146976" at="50,0,51,0" concept="1" trace="props_WriteFloat" />
+      <node id="2041600877789146976" at="328,39,329,76" concept="3" />
+      <node id="2041600877789146976" at="329,76,330,44" concept="0" />
+      <node id="2041600877789146976" at="330,44,331,42" concept="0" />
+      <node id="2041600877789146976" at="332,9,333,32" concept="4" />
+      <node id="2041600877789146976" at="327,44,332,9" concept="2" />
+      <scope id="2041600877789146976" at="328,39,331,42">
+        <var name="cpb" id="2041600877789146976" />
+      </scope>
+      <scope id="2041600877789146976" at="327,44,333,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877789146976" at="50,0,51,0" concept="6" trace="WriteFloat" />
+      <node id="2041600877789146976" at="102,50,103,49" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877789146976" at="53,0,54,0" concept="1" trace="myConceptWriteFloat" />
+      <node id="2041600877789146976" at="166,44,167,35" concept="4" />
+      <node id="2041600877789146976" at="583,68,584,173" concept="3" />
+      <node id="2041600877789146976" at="584,173,585,34" concept="0" />
+      <node id="2041600877789146976" at="585,34,586,69" concept="5" />
+      <node id="2041600877789146976" at="586,69,587,76" concept="0" />
+      <node id="2041600877789146976" at="587,76,588,115" concept="0" />
+      <node id="2041600877789146976" at="588,115,589,17" concept="0" />
+      <node id="2041600877789146976" at="589,17,590,26" concept="0" />
+      <node id="2041600877789146976" at="590,26,591,22" concept="4" />
+      <node id="2041600877789146976" at="583,0,593,0" concept="7" trace="createDescriptorForWriteFloat#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877789146976" at="166,44,167,35" />
+      <scope id="2041600877789146976" at="583,68,591,22">
+        <var name="b" id="2041600877789146976" />
+      </scope>
+      <scope id="2041600877789146976" at="583,0,593,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877789689283">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877789689283" at="56,0,57,0" concept="1" trace="props_WriteStringArray" />
+      <node id="2041600877789689283" at="370,45,371,76" concept="3" />
+      <node id="2041600877789689283" at="371,76,372,50" concept="0" />
+      <node id="2041600877789689283" at="372,50,373,48" concept="0" />
+      <node id="2041600877789689283" at="374,9,375,38" concept="4" />
+      <node id="2041600877789689283" at="369,50,374,9" concept="2" />
+      <scope id="2041600877789689283" at="370,45,373,48">
+        <var name="cpb" id="2041600877789689283" />
+      </scope>
+      <scope id="2041600877789689283" at="369,50,375,38" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877789689283" at="56,0,57,0" concept="6" trace="WriteStringArray" />
+      <node id="2041600877789689283" at="108,48,109,55" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877789689283" at="59,0,60,0" concept="1" trace="myConceptWriteStringArray" />
+      <node id="2041600877789689283" at="178,50,179,41" concept="4" />
+      <node id="2041600877789689283" at="643,74,644,179" concept="3" />
+      <node id="2041600877789689283" at="644,179,645,34" concept="0" />
+      <node id="2041600877789689283" at="645,34,646,69" concept="5" />
+      <node id="2041600877789689283" at="646,69,647,76" concept="0" />
+      <node id="2041600877789689283" at="647,76,648,115" concept="0" />
+      <node id="2041600877789689283" at="648,115,649,17" concept="0" />
+      <node id="2041600877790286890" at="649,17,650,199" concept="0" />
+      <node id="2041600877789689283" at="650,199,651,32" concept="0" />
+      <node id="2041600877789689283" at="651,32,652,22" concept="4" />
+      <node id="2041600877789689283" at="643,0,654,0" concept="7" trace="createDescriptorForWriteStringArray#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877789689283" at="178,50,179,41" />
+      <scope id="2041600877789689283" at="643,74,652,22">
+        <var name="b" id="2041600877789689283" />
+      </scope>
+      <scope id="2041600877789689283" at="643,0,654,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2041600877789987272">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2041600877789987272" at="48,0,49,0" concept="1" trace="props_WriteBool" />
+      <node id="2041600877789987272" at="314,38,315,76" concept="3" />
+      <node id="2041600877789987272" at="315,76,316,43" concept="0" />
+      <node id="2041600877789987272" at="316,43,317,41" concept="0" />
+      <node id="2041600877789987272" at="318,9,319,31" concept="4" />
+      <node id="2041600877789987272" at="313,43,318,9" concept="2" />
+      <scope id="2041600877789987272" at="314,38,317,41">
+        <var name="cpb" id="2041600877789987272" />
+      </scope>
+      <scope id="2041600877789987272" at="313,43,319,31" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2041600877789987272" at="48,0,49,0" concept="6" trace="WriteBool" />
+      <node id="2041600877789987272" at="100,55,101,48" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2041600877789987272" at="51,0,52,0" concept="1" trace="myConceptWriteBool" />
+      <node id="2041600877789987272" at="162,43,163,34" concept="4" />
+      <node id="2041600877789987272" at="563,67,564,172" concept="3" />
+      <node id="2041600877789987272" at="564,172,565,34" concept="0" />
+      <node id="2041600877789987272" at="565,34,566,69" concept="5" />
+      <node id="2041600877789987272" at="566,69,567,76" concept="0" />
+      <node id="2041600877789987272" at="567,76,568,115" concept="0" />
+      <node id="2041600877789987272" at="568,115,569,17" concept="0" />
+      <node id="2041600877789987272" at="569,17,570,25" concept="0" />
+      <node id="2041600877789987272" at="570,25,571,22" concept="4" />
+      <node id="2041600877789987272" at="563,0,573,0" concept="7" trace="createDescriptorForWriteBool#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2041600877789987272" at="162,43,163,34" />
+      <scope id="2041600877789987272" at="563,67,571,22">
+        <var name="b" id="2041600877789987272" />
+      </scope>
+      <scope id="2041600877789987272" at="563,0,573,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2621052405191302303">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2621052405191302303" at="13,0,14,0" concept="1" trace="props_AnonymousSerialContextType" />
+      <node id="2621052405191302303" at="76,55,77,76" concept="3" />
+      <node id="2621052405191302303" at="77,76,78,49" concept="0" />
+      <node id="2621052405191302303" at="78,49,79,58" concept="0" />
+      <node id="2621052405191302303" at="80,9,81,48" concept="4" />
+      <node id="2621052405191302303" at="75,60,80,9" concept="2" />
+      <scope id="2621052405191302303" at="76,55,79,58">
+        <var name="cpb" id="2621052405191302303" />
+      </scope>
+      <scope id="2621052405191302303" at="75,60,81,48" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2621052405191302303" at="13,0,14,0" concept="6" trace="AnonymousSerialContextType" />
+      <node id="2621052405191302303" at="65,58,66,65" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2621052405191302303" at="16,0,17,0" concept="1" trace="myConceptAnonymousSerialContextType" />
+      <node id="2621052405191302303" at="92,60,93,51" concept="4" />
+      <node id="2621052405191302303" at="210,84,211,189" concept="3" />
+      <node id="2621052405191302303" at="211,189,212,34" concept="0" />
+      <node id="2621052405191302303" at="212,34,213,58" concept="5" />
+      <node id="2621052405191302303" at="213,58,214,76" concept="0" />
+      <node id="2621052405191302303" at="214,76,215,115" concept="0" />
+      <node id="2621052405191302303" at="215,115,216,17" concept="0" />
+      <node id="2621052405191302303" at="216,17,217,31" concept="0" />
+      <node id="2621052405191302303" at="217,31,218,22" concept="4" />
+      <node id="2621052405191302303" at="210,0,220,0" concept="7" trace="createDescriptorForAnonymousSerialContextType#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2621052405191302303" at="92,60,93,51" />
+      <scope id="2621052405191302303" at="210,84,218,22">
+        <var name="b" id="2621052405191302303" />
+      </scope>
+      <scope id="2621052405191302303" at="210,0,220,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351896">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351896" at="22,0,23,0" concept="1" trace="props_PrimitiveRead" />
+      <node id="2989754054787351896" at="137,42,138,76" concept="3" />
+      <node id="2989754054787351896" at="138,76,139,45" concept="0" />
+      <node id="2989754054787351896" at="140,9,141,35" concept="4" />
+      <node id="2989754054787351896" at="136,47,140,9" concept="2" />
+      <scope id="2989754054787351896" at="137,42,139,45">
+        <var name="cpb" id="2989754054787351896" />
+      </scope>
+      <scope id="2989754054787351896" at="136,47,141,35" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351896" at="22,0,23,0" concept="6" trace="PrimitiveRead" />
+      <node id="2989754054787351896" at="74,50,75,52" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351896" at="25,0,26,0" concept="1" trace="myConceptPrimitiveRead" />
+      <node id="2989754054787351896" at="110,47,111,38" concept="4" />
+      <node id="2989754054787351896" at="299,71,300,176" concept="3" />
+      <node id="2989754054787351896" at="300,176,301,33" concept="0" />
+      <node id="2989754054787351896" at="301,33,302,79" concept="5" />
+      <node id="2989754054787351896" at="302,79,303,76" concept="0" />
+      <node id="2989754054787351896" at="303,76,304,115" concept="0" />
+      <node id="2989754054787351896" at="304,115,305,17" concept="0" />
+      <node id="2989754054787351896" at="305,17,306,22" concept="4" />
+      <node id="2989754054787351896" at="299,0,308,0" concept="7" trace="createDescriptorForPrimitiveRead#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351896" at="110,47,111,38" />
+      <scope id="2989754054787351896" at="299,71,306,22">
+        <var name="b" id="2989754054787351896" />
+      </scope>
+      <scope id="2989754054787351896" at="299,0,308,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351897">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351897" at="25,0,26,0" concept="1" trace="props_ReadArrayMarker" />
+      <node id="2989754054787351897" at="155,44,156,76" concept="3" />
+      <node id="2989754054787351897" at="156,76,157,49" concept="0" />
+      <node id="2989754054787351897" at="157,49,158,47" concept="0" />
+      <node id="2989754054787351897" at="159,9,160,37" concept="4" />
+      <node id="2989754054787351897" at="154,49,159,9" concept="2" />
+      <scope id="2989754054787351897" at="155,44,158,47">
+        <var name="cpb" id="2989754054787351897" />
+      </scope>
+      <scope id="2989754054787351897" at="154,49,160,37" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351897" at="25,0,26,0" concept="6" trace="ReadArrayMarker" />
+      <node id="2989754054787351897" at="77,53,78,54" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351897" at="28,0,29,0" concept="1" trace="myConceptReadArrayMarker" />
+      <node id="2989754054787351897" at="116,49,117,40" concept="4" />
+      <node id="2989754054787351897" at="327,73,328,178" concept="3" />
+      <node id="2989754054787351897" at="328,178,329,34" concept="0" />
+      <node id="2989754054787351897" at="329,34,330,68" concept="5" />
+      <node id="2989754054787351897" at="330,68,331,76" concept="0" />
+      <node id="2989754054787351897" at="331,76,332,115" concept="0" />
+      <node id="2989754054787351897" at="332,115,333,17" concept="0" />
+      <node id="2989754054787351897" at="333,17,334,31" concept="0" />
+      <node id="2989754054787351897" at="334,31,335,22" concept="4" />
+      <node id="2989754054787351897" at="327,0,337,0" concept="7" trace="createDescriptorForReadArrayMarker#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351897" at="116,49,117,40" />
+      <scope id="2989754054787351897" at="327,73,335,22">
+        <var name="b" id="2989754054787351897" />
+      </scope>
+      <scope id="2989754054787351897" at="327,0,337,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351898">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351898" at="26,0,27,0" concept="1" trace="props_ReadBool" />
+      <node id="2989754054787351898" at="162,37,163,76" concept="3" />
+      <node id="2989754054787351898" at="163,76,164,42" concept="0" />
+      <node id="2989754054787351898" at="164,42,165,40" concept="0" />
+      <node id="2989754054787351898" at="166,9,167,30" concept="4" />
+      <node id="2989754054787351898" at="161,42,166,9" concept="2" />
+      <scope id="2989754054787351898" at="162,37,165,40">
+        <var name="cpb" id="2989754054787351898" />
+      </scope>
+      <scope id="2989754054787351898" at="161,42,167,30" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351898" at="26,0,27,0" concept="6" trace="ReadBool" />
+      <node id="2989754054787351898" at="78,54,79,47" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351898" at="29,0,30,0" concept="1" trace="myConceptReadBool" />
+      <node id="2989754054787351898" at="118,42,119,33" concept="4" />
+      <node id="2989754054787351898" at="337,66,338,171" concept="3" />
+      <node id="2989754054787351898" at="338,171,339,34" concept="0" />
+      <node id="2989754054787351898" at="339,34,340,68" concept="5" />
+      <node id="2989754054787351898" at="340,68,341,76" concept="0" />
+      <node id="2989754054787351898" at="341,76,342,115" concept="0" />
+      <node id="2989754054787351898" at="342,115,343,17" concept="0" />
+      <node id="2989754054787351898" at="343,17,344,24" concept="0" />
+      <node id="2989754054787351898" at="344,24,345,22" concept="4" />
+      <node id="2989754054787351898" at="337,0,347,0" concept="7" trace="createDescriptorForReadBool#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351898" at="118,42,119,33" />
+      <scope id="2989754054787351898" at="337,66,345,22">
+        <var name="b" id="2989754054787351898" />
+      </scope>
+      <scope id="2989754054787351898" at="337,0,347,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351899">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351899" at="27,0,28,0" concept="1" trace="props_ReadDouble" />
+      <node id="2989754054787351899" at="169,39,170,76" concept="3" />
+      <node id="2989754054787351899" at="170,76,171,44" concept="0" />
+      <node id="2989754054787351899" at="171,44,172,42" concept="0" />
+      <node id="2989754054787351899" at="173,9,174,32" concept="4" />
+      <node id="2989754054787351899" at="168,44,173,9" concept="2" />
+      <scope id="2989754054787351899" at="169,39,172,42">
+        <var name="cpb" id="2989754054787351899" />
+      </scope>
+      <scope id="2989754054787351899" at="168,44,174,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351899" at="27,0,28,0" concept="6" trace="ReadDouble" />
+      <node id="2989754054787351899" at="79,47,80,49" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351899" at="30,0,31,0" concept="1" trace="myConceptReadDouble" />
+      <node id="2989754054787351899" at="120,44,121,35" concept="4" />
+      <node id="2989754054787351899" at="347,68,348,173" concept="3" />
+      <node id="2989754054787351899" at="348,173,349,34" concept="0" />
+      <node id="2989754054787351899" at="349,34,350,68" concept="5" />
+      <node id="2989754054787351899" at="350,68,351,76" concept="0" />
+      <node id="2989754054787351899" at="351,76,352,115" concept="0" />
+      <node id="2989754054787351899" at="352,115,353,17" concept="0" />
+      <node id="2989754054787351899" at="353,17,354,26" concept="0" />
+      <node id="2989754054787351899" at="354,26,355,22" concept="4" />
+      <node id="2989754054787351899" at="347,0,357,0" concept="7" trace="createDescriptorForReadDouble#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351899" at="120,44,121,35" />
+      <scope id="2989754054787351899" at="347,68,355,22">
+        <var name="b" id="2989754054787351899" />
+      </scope>
+      <scope id="2989754054787351899" at="347,0,357,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351900">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351900" at="28,0,29,0" concept="1" trace="props_ReadFloat" />
+      <node id="2989754054787351900" at="176,38,177,76" concept="3" />
+      <node id="2989754054787351900" at="177,76,178,43" concept="0" />
+      <node id="2989754054787351900" at="178,43,179,41" concept="0" />
+      <node id="2989754054787351900" at="180,9,181,31" concept="4" />
+      <node id="2989754054787351900" at="175,43,180,9" concept="2" />
+      <scope id="2989754054787351900" at="176,38,179,41">
+        <var name="cpb" id="2989754054787351900" />
+      </scope>
+      <scope id="2989754054787351900" at="175,43,181,31" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351900" at="28,0,29,0" concept="6" trace="ReadFloat" />
+      <node id="2989754054787351900" at="80,49,81,48" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351900" at="31,0,32,0" concept="1" trace="myConceptReadFloat" />
+      <node id="2989754054787351900" at="122,43,123,34" concept="4" />
+      <node id="2989754054787351900" at="357,67,358,172" concept="3" />
+      <node id="2989754054787351900" at="358,172,359,34" concept="0" />
+      <node id="2989754054787351900" at="359,34,360,68" concept="5" />
+      <node id="2989754054787351900" at="360,68,361,76" concept="0" />
+      <node id="2989754054787351900" at="361,76,362,115" concept="0" />
+      <node id="2989754054787351900" at="362,115,363,17" concept="0" />
+      <node id="2989754054787351900" at="363,17,364,25" concept="0" />
+      <node id="2989754054787351900" at="364,25,365,22" concept="4" />
+      <node id="2989754054787351900" at="357,0,367,0" concept="7" trace="createDescriptorForReadFloat#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351900" at="122,43,123,34" />
+      <scope id="2989754054787351900" at="357,67,365,22">
+        <var name="b" id="2989754054787351900" />
+      </scope>
+      <scope id="2989754054787351900" at="357,0,367,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351901">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351901" at="30,0,31,0" concept="1" trace="props_ReadInt16" />
+      <node id="2989754054787351901" at="190,38,191,76" concept="3" />
+      <node id="2989754054787351901" at="191,76,192,43" concept="0" />
+      <node id="2989754054787351901" at="192,43,193,41" concept="0" />
+      <node id="2989754054787351901" at="194,9,195,31" concept="4" />
+      <node id="2989754054787351901" at="189,43,194,9" concept="2" />
+      <scope id="2989754054787351901" at="190,38,193,41">
+        <var name="cpb" id="2989754054787351901" />
+      </scope>
+      <scope id="2989754054787351901" at="189,43,195,31" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351901" at="30,0,31,0" concept="6" trace="ReadInt16" />
+      <node id="2989754054787351901" at="82,50,83,48" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351901" at="33,0,34,0" concept="1" trace="myConceptReadInt16" />
+      <node id="2989754054787351901" at="126,43,127,34" concept="4" />
+      <node id="2989754054787351901" at="377,67,378,172" concept="3" />
+      <node id="2989754054787351901" at="378,172,379,34" concept="0" />
+      <node id="2989754054787351901" at="379,34,380,68" concept="5" />
+      <node id="2989754054787351901" at="380,68,381,76" concept="0" />
+      <node id="2989754054787351901" at="381,76,382,115" concept="0" />
+      <node id="2989754054787351901" at="382,115,383,17" concept="0" />
+      <node id="2989754054787351901" at="383,17,384,25" concept="0" />
+      <node id="2989754054787351901" at="384,25,385,22" concept="4" />
+      <node id="2989754054787351901" at="377,0,387,0" concept="7" trace="createDescriptorForReadInt16#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351901" at="126,43,127,34" />
+      <scope id="2989754054787351901" at="377,67,385,22">
+        <var name="b" id="2989754054787351901" />
+      </scope>
+      <scope id="2989754054787351901" at="377,0,387,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351902">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351902" at="31,0,32,0" concept="1" trace="props_ReadInt32" />
+      <node id="2989754054787351902" at="197,38,198,76" concept="3" />
+      <node id="2989754054787351902" at="198,76,199,43" concept="0" />
+      <node id="2989754054787351902" at="199,43,200,41" concept="0" />
+      <node id="2989754054787351902" at="201,9,202,31" concept="4" />
+      <node id="2989754054787351902" at="196,43,201,9" concept="2" />
+      <scope id="2989754054787351902" at="197,38,200,41">
+        <var name="cpb" id="2989754054787351902" />
+      </scope>
+      <scope id="2989754054787351902" at="196,43,202,31" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351902" at="31,0,32,0" concept="6" trace="ReadInt32" />
+      <node id="2989754054787351902" at="83,48,84,48" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351902" at="34,0,35,0" concept="1" trace="myConceptReadInt32" />
+      <node id="2989754054787351902" at="128,43,129,34" concept="4" />
+      <node id="2989754054787351902" at="387,67,388,172" concept="3" />
+      <node id="2989754054787351902" at="388,172,389,34" concept="0" />
+      <node id="2989754054787351902" at="389,34,390,68" concept="5" />
+      <node id="2989754054787351902" at="390,68,391,76" concept="0" />
+      <node id="2989754054787351902" at="391,76,392,115" concept="0" />
+      <node id="2989754054787351902" at="392,115,393,17" concept="0" />
+      <node id="2989754054787351902" at="393,17,394,25" concept="0" />
+      <node id="2989754054787351902" at="394,25,395,22" concept="4" />
+      <node id="2989754054787351902" at="387,0,397,0" concept="7" trace="createDescriptorForReadInt32#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351902" at="128,43,129,34" />
+      <scope id="2989754054787351902" at="387,67,395,22">
+        <var name="b" id="2989754054787351902" />
+      </scope>
+      <scope id="2989754054787351902" at="387,0,397,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351903">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351903" at="32,0,33,0" concept="1" trace="props_ReadInt64" />
+      <node id="2989754054787351903" at="204,38,205,76" concept="3" />
+      <node id="2989754054787351903" at="205,76,206,43" concept="0" />
+      <node id="2989754054787351903" at="206,43,207,41" concept="0" />
+      <node id="2989754054787351903" at="208,9,209,31" concept="4" />
+      <node id="2989754054787351903" at="203,43,208,9" concept="2" />
+      <scope id="2989754054787351903" at="204,38,207,41">
+        <var name="cpb" id="2989754054787351903" />
+      </scope>
+      <scope id="2989754054787351903" at="203,43,209,31" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351903" at="32,0,33,0" concept="6" trace="ReadInt64" />
+      <node id="2989754054787351903" at="84,48,85,48" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351903" at="35,0,36,0" concept="1" trace="myConceptReadInt64" />
+      <node id="2989754054787351903" at="130,43,131,34" concept="4" />
+      <node id="2989754054787351903" at="397,67,398,172" concept="3" />
+      <node id="2989754054787351903" at="398,172,399,34" concept="0" />
+      <node id="2989754054787351903" at="399,34,400,68" concept="5" />
+      <node id="2989754054787351903" at="400,68,401,76" concept="0" />
+      <node id="2989754054787351903" at="401,76,402,115" concept="0" />
+      <node id="2989754054787351903" at="402,115,403,17" concept="0" />
+      <node id="2989754054787351903" at="403,17,404,25" concept="0" />
+      <node id="2989754054787351903" at="404,25,405,22" concept="4" />
+      <node id="2989754054787351903" at="397,0,407,0" concept="7" trace="createDescriptorForReadInt64#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351903" at="130,43,131,34" />
+      <scope id="2989754054787351903" at="397,67,405,22">
+        <var name="b" id="2989754054787351903" />
+      </scope>
+      <scope id="2989754054787351903" at="397,0,407,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351904">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351904" at="33,0,34,0" concept="1" trace="props_ReadInt8" />
+      <node id="2989754054787351904" at="211,37,212,76" concept="3" />
+      <node id="2989754054787351904" at="212,76,213,42" concept="0" />
+      <node id="2989754054787351904" at="213,42,214,40" concept="0" />
+      <node id="2989754054787351904" at="215,9,216,30" concept="4" />
+      <node id="2989754054787351904" at="210,42,215,9" concept="2" />
+      <scope id="2989754054787351904" at="211,37,214,40">
+        <var name="cpb" id="2989754054787351904" />
+      </scope>
+      <scope id="2989754054787351904" at="210,42,216,30" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351904" at="33,0,34,0" concept="6" trace="ReadInt8" />
+      <node id="2989754054787351904" at="85,48,86,47" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351904" at="36,0,37,0" concept="1" trace="myConceptReadInt8" />
+      <node id="2989754054787351904" at="132,42,133,33" concept="4" />
+      <node id="2989754054787351904" at="407,66,408,171" concept="3" />
+      <node id="2989754054787351904" at="408,171,409,34" concept="0" />
+      <node id="2989754054787351904" at="409,34,410,68" concept="5" />
+      <node id="2989754054787351904" at="410,68,411,76" concept="0" />
+      <node id="2989754054787351904" at="411,76,412,115" concept="0" />
+      <node id="2989754054787351904" at="412,115,413,17" concept="0" />
+      <node id="2989754054787351904" at="413,17,414,24" concept="0" />
+      <node id="2989754054787351904" at="414,24,415,22" concept="4" />
+      <node id="2989754054787351904" at="407,0,417,0" concept="7" trace="createDescriptorForReadInt8#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351904" at="132,42,133,33" />
+      <scope id="2989754054787351904" at="407,66,415,22">
+        <var name="b" id="2989754054787351904" />
+      </scope>
+      <scope id="2989754054787351904" at="407,0,417,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351905">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351905" at="34,0,35,0" concept="1" trace="props_ReadStringArray" />
+      <node id="2989754054787351905" at="218,44,219,76" concept="3" />
+      <node id="2989754054787351905" at="219,76,220,49" concept="0" />
+      <node id="2989754054787351905" at="220,49,221,47" concept="0" />
+      <node id="2989754054787351905" at="222,9,223,37" concept="4" />
+      <node id="2989754054787351905" at="217,49,222,9" concept="2" />
+      <scope id="2989754054787351905" at="218,44,221,47">
+        <var name="cpb" id="2989754054787351905" />
+      </scope>
+      <scope id="2989754054787351905" at="217,49,223,37" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351905" at="34,0,35,0" concept="6" trace="ReadStringArray" />
+      <node id="2989754054787351905" at="86,47,87,54" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351905" at="37,0,38,0" concept="1" trace="myConceptReadStringArray" />
+      <node id="2989754054787351905" at="134,49,135,40" concept="4" />
+      <node id="2989754054787351905" at="417,73,418,178" concept="3" />
+      <node id="2989754054787351905" at="418,178,419,34" concept="0" />
+      <node id="2989754054787351905" at="419,34,420,68" concept="5" />
+      <node id="2989754054787351905" at="420,68,421,76" concept="0" />
+      <node id="2989754054787351905" at="421,76,422,115" concept="0" />
+      <node id="2989754054787351905" at="422,115,423,17" concept="0" />
+      <node id="2989754054787351906" at="423,17,424,200" concept="0" />
+      <node id="2989754054787351905" at="424,200,425,31" concept="0" />
+      <node id="2989754054787351905" at="425,31,426,22" concept="4" />
+      <node id="2989754054787351905" at="417,0,428,0" concept="7" trace="createDescriptorForReadStringArray#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351905" at="134,49,135,40" />
+      <scope id="2989754054787351905" at="417,73,426,22">
+        <var name="b" id="2989754054787351905" />
+      </scope>
+      <scope id="2989754054787351905" at="417,0,428,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351907">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351907" at="36,0,37,0" concept="1" trace="props_ReadUInt16" />
+      <node id="2989754054787351907" at="232,39,233,76" concept="3" />
+      <node id="2989754054787351907" at="233,76,234,44" concept="0" />
+      <node id="2989754054787351907" at="234,44,235,42" concept="0" />
+      <node id="2989754054787351907" at="236,9,237,32" concept="4" />
+      <node id="2989754054787351907" at="231,44,236,9" concept="2" />
+      <scope id="2989754054787351907" at="232,39,235,42">
+        <var name="cpb" id="2989754054787351907" />
+      </scope>
+      <scope id="2989754054787351907" at="231,44,237,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351907" at="36,0,37,0" concept="6" trace="ReadUInt16" />
+      <node id="2989754054787351907" at="88,49,89,49" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351907" at="39,0,40,0" concept="1" trace="myConceptReadUInt16" />
+      <node id="2989754054787351907" at="138,44,139,35" concept="4" />
+      <node id="2989754054787351907" at="439,68,440,173" concept="3" />
+      <node id="2989754054787351907" at="440,173,441,34" concept="0" />
+      <node id="2989754054787351907" at="441,34,442,68" concept="5" />
+      <node id="2989754054787351907" at="442,68,443,76" concept="0" />
+      <node id="2989754054787351907" at="443,76,444,115" concept="0" />
+      <node id="2989754054787351907" at="444,115,445,17" concept="0" />
+      <node id="2989754054787351907" at="445,17,446,26" concept="0" />
+      <node id="2989754054787351907" at="446,26,447,22" concept="4" />
+      <node id="2989754054787351907" at="439,0,449,0" concept="7" trace="createDescriptorForReadUInt16#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351907" at="138,44,139,35" />
+      <scope id="2989754054787351907" at="439,68,447,22">
+        <var name="b" id="2989754054787351907" />
+      </scope>
+      <scope id="2989754054787351907" at="439,0,449,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351908">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351908" at="37,0,38,0" concept="1" trace="props_ReadUInt32" />
+      <node id="2989754054787351908" at="239,39,240,76" concept="3" />
+      <node id="2989754054787351908" at="240,76,241,44" concept="0" />
+      <node id="2989754054787351908" at="241,44,242,42" concept="0" />
+      <node id="2989754054787351908" at="243,9,244,32" concept="4" />
+      <node id="2989754054787351908" at="238,44,243,9" concept="2" />
+      <scope id="2989754054787351908" at="239,39,242,42">
+        <var name="cpb" id="2989754054787351908" />
+      </scope>
+      <scope id="2989754054787351908" at="238,44,244,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351908" at="37,0,38,0" concept="6" trace="ReadUInt32" />
+      <node id="2989754054787351908" at="89,49,90,49" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351908" at="40,0,41,0" concept="1" trace="myConceptReadUInt32" />
+      <node id="2989754054787351908" at="140,44,141,35" concept="4" />
+      <node id="2989754054787351908" at="449,68,450,173" concept="3" />
+      <node id="2989754054787351908" at="450,173,451,34" concept="0" />
+      <node id="2989754054787351908" at="451,34,452,68" concept="5" />
+      <node id="2989754054787351908" at="452,68,453,76" concept="0" />
+      <node id="2989754054787351908" at="453,76,454,115" concept="0" />
+      <node id="2989754054787351908" at="454,115,455,17" concept="0" />
+      <node id="2989754054787351908" at="455,17,456,26" concept="0" />
+      <node id="2989754054787351908" at="456,26,457,22" concept="4" />
+      <node id="2989754054787351908" at="449,0,459,0" concept="7" trace="createDescriptorForReadUInt32#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351908" at="140,44,141,35" />
+      <scope id="2989754054787351908" at="449,68,457,22">
+        <var name="b" id="2989754054787351908" />
+      </scope>
+      <scope id="2989754054787351908" at="449,0,459,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351909">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351909" at="38,0,39,0" concept="1" trace="props_ReadUInt64" />
+      <node id="2989754054787351909" at="246,39,247,76" concept="3" />
+      <node id="2989754054787351909" at="247,76,248,44" concept="0" />
+      <node id="2989754054787351909" at="248,44,249,42" concept="0" />
+      <node id="2989754054787351909" at="250,9,251,32" concept="4" />
+      <node id="2989754054787351909" at="245,44,250,9" concept="2" />
+      <scope id="2989754054787351909" at="246,39,249,42">
+        <var name="cpb" id="2989754054787351909" />
+      </scope>
+      <scope id="2989754054787351909" at="245,44,251,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351909" at="38,0,39,0" concept="6" trace="ReadUInt64" />
+      <node id="2989754054787351909" at="90,49,91,49" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351909" at="41,0,42,0" concept="1" trace="myConceptReadUInt64" />
+      <node id="2989754054787351909" at="142,44,143,35" concept="4" />
+      <node id="2989754054787351909" at="459,68,460,173" concept="3" />
+      <node id="2989754054787351909" at="460,173,461,34" concept="0" />
+      <node id="2989754054787351909" at="461,34,462,68" concept="5" />
+      <node id="2989754054787351909" at="462,68,463,76" concept="0" />
+      <node id="2989754054787351909" at="463,76,464,115" concept="0" />
+      <node id="2989754054787351909" at="464,115,465,17" concept="0" />
+      <node id="2989754054787351909" at="465,17,466,26" concept="0" />
+      <node id="2989754054787351909" at="466,26,467,22" concept="4" />
+      <node id="2989754054787351909" at="459,0,469,0" concept="7" trace="createDescriptorForReadUInt64#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351909" at="142,44,143,35" />
+      <scope id="2989754054787351909" at="459,68,467,22">
+        <var name="b" id="2989754054787351909" />
+      </scope>
+      <scope id="2989754054787351909" at="459,0,469,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/2989754054787351910">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2989754054787351910" at="39,0,40,0" concept="1" trace="props_ReadUInt8" />
+      <node id="2989754054787351910" at="253,38,254,76" concept="3" />
+      <node id="2989754054787351910" at="254,76,255,43" concept="0" />
+      <node id="2989754054787351910" at="255,43,256,41" concept="0" />
+      <node id="2989754054787351910" at="257,9,258,31" concept="4" />
+      <node id="2989754054787351910" at="252,43,257,9" concept="2" />
+      <scope id="2989754054787351910" at="253,38,256,41">
+        <var name="cpb" id="2989754054787351910" />
+      </scope>
+      <scope id="2989754054787351910" at="252,43,258,31" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2989754054787351910" at="39,0,40,0" concept="6" trace="ReadUInt8" />
+      <node id="2989754054787351910" at="91,49,92,48" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2989754054787351910" at="42,0,43,0" concept="1" trace="myConceptReadUInt8" />
+      <node id="2989754054787351910" at="144,43,145,34" concept="4" />
+      <node id="2989754054787351910" at="469,67,470,172" concept="3" />
+      <node id="2989754054787351910" at="470,172,471,34" concept="0" />
+      <node id="2989754054787351910" at="471,34,472,68" concept="5" />
+      <node id="2989754054787351910" at="472,68,473,76" concept="0" />
+      <node id="2989754054787351910" at="473,76,474,115" concept="0" />
+      <node id="2989754054787351910" at="474,115,475,17" concept="0" />
+      <node id="2989754054787351910" at="475,17,476,25" concept="0" />
+      <node id="2989754054787351910" at="476,25,477,22" concept="4" />
+      <node id="2989754054787351910" at="469,0,479,0" concept="7" trace="createDescriptorForReadUInt8#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2989754054787351910" at="144,43,145,34" />
+      <scope id="2989754054787351910" at="469,67,477,22">
+        <var name="b" id="2989754054787351910" />
+      </scope>
+      <scope id="2989754054787351910" at="469,0,479,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/4566548524300401677">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4566548524300401677" at="40,0,41,0" concept="1" trace="props_SerialAnnotation" />
+      <node id="4566548524300401677" at="260,45,261,76" concept="3" />
+      <node id="4566548524300401677" at="261,76,262,50" concept="0" />
+      <node id="4566548524300401677" at="262,50,263,48" concept="0" />
+      <node id="4566548524300401677" at="264,9,265,38" concept="4" />
+      <node id="4566548524300401677" at="259,50,264,9" concept="2" />
+      <scope id="4566548524300401677" at="260,45,263,48">
+        <var name="cpb" id="4566548524300401677" />
+      </scope>
+      <scope id="4566548524300401677" at="259,50,265,38" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4566548524300401677" at="40,0,41,0" concept="6" trace="SerialAnnotation" />
+      <node id="4566548524300401677" at="92,48,93,55" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4566548524300401677" at="43,0,44,0" concept="1" trace="myConceptSerialAnnotation" />
+      <node id="4566548524300401677" at="146,50,147,41" concept="4" />
+      <node id="4566548524300401677" at="479,74,480,179" concept="3" />
+      <node id="4566548524300401677" at="480,179,481,34" concept="0" />
+      <node id="4566548524300401677" at="481,34,482,63" concept="5" />
+      <node id="4566548524300401677" at="482,63,483,76" concept="0" />
+      <node id="4566548524300401677" at="483,76,484,115" concept="0" />
+      <node id="4566548524300401677" at="484,115,485,17" concept="0" />
+      <node id="4566548524300401677" at="485,17,486,22" concept="4" />
+      <node id="4566548524300401677" at="479,0,488,0" concept="7" trace="createDescriptorForSerialAnnotation#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4566548524300401677" at="146,50,147,41" />
+      <scope id="4566548524300401677" at="479,74,486,22">
+        <var name="b" id="4566548524300401677" />
+      </scope>
+      <scope id="4566548524300401677" at="479,0,488,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/4566548524300866823">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4566548524300866823" at="57,0,58,0" concept="1" trace="props_WriteTarget" />
+      <node id="4566548524300866823" at="377,40,378,76" concept="3" />
+      <node id="4566548524300866823" at="378,76,379,39" concept="0" />
+      <node id="4566548524300866823" at="379,39,380,43" concept="0" />
+      <node id="4566548524300866823" at="381,9,382,33" concept="4" />
+      <node id="4566548524300866823" at="376,45,381,9" concept="2" />
+      <scope id="4566548524300866823" at="377,40,380,43">
+        <var name="cpb" id="4566548524300866823" />
+      </scope>
+      <scope id="4566548524300866823" at="376,45,382,33" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4566548524300866823" at="57,0,58,0" concept="6" trace="WriteTarget" />
+      <node id="4566548524300866823" at="109,55,110,50" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4566548524300866823" at="60,0,61,0" concept="1" trace="myConceptWriteTarget" />
+      <node id="4566548524300866823" at="180,45,181,36" concept="4" />
+      <node id="4566548524300866823" at="654,69,655,174" concept="3" />
+      <node id="4566548524300866823" at="655,174,656,34" concept="0" />
+      <node id="4566548524300866823" at="656,34,657,85" concept="5" />
+      <node id="4566548524300866823" at="657,85,658,76" concept="0" />
+      <node id="4566548524300866823" at="658,76,659,115" concept="0" />
+      <node id="4566548524300866823" at="659,115,660,17" concept="0" />
+      <node id="4566548524300866929" at="660,17,661,201" concept="0" />
+      <node id="4566548524300866823" at="661,201,662,21" concept="0" />
+      <node id="4566548524300866823" at="662,21,663,22" concept="4" />
+      <node id="4566548524300866823" at="654,0,665,0" concept="7" trace="createDescriptorForWriteTarget#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4566548524300866823" at="180,45,181,36" />
+      <scope id="4566548524300866823" at="654,69,663,22">
+        <var name="b" id="4566548524300866823" />
+      </scope>
+      <scope id="4566548524300866823" at="654,0,665,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/4566548524301179982">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4566548524301179982" at="35,0,36,0" concept="1" trace="props_ReadTarget" />
+      <node id="4566548524301179982" at="225,39,226,76" concept="3" />
+      <node id="4566548524301179982" at="226,76,227,38" concept="0" />
+      <node id="4566548524301179982" at="227,38,228,42" concept="0" />
+      <node id="4566548524301179982" at="229,9,230,32" concept="4" />
+      <node id="4566548524301179982" at="224,44,229,9" concept="2" />
+      <scope id="4566548524301179982" at="225,39,228,42">
+        <var name="cpb" id="4566548524301179982" />
+      </scope>
+      <scope id="4566548524301179982" at="224,44,230,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4566548524301179982" at="35,0,36,0" concept="6" trace="ReadTarget" />
+      <node id="4566548524301179982" at="87,54,88,49" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4566548524301179982" at="38,0,39,0" concept="1" trace="myConceptReadTarget" />
+      <node id="4566548524301179982" at="136,44,137,35" concept="4" />
+      <node id="4566548524301179982" at="428,68,429,173" concept="3" />
+      <node id="4566548524301179982" at="429,173,430,34" concept="0" />
+      <node id="4566548524301179982" at="430,34,431,85" concept="5" />
+      <node id="4566548524301179982" at="431,85,432,76" concept="0" />
+      <node id="4566548524301179982" at="432,76,433,115" concept="0" />
+      <node id="4566548524301179982" at="433,115,434,17" concept="0" />
+      <node id="4566548524301179984" at="434,17,435,201" concept="0" />
+      <node id="4566548524301179982" at="435,201,436,20" concept="0" />
+      <node id="4566548524301179982" at="436,20,437,22" concept="4" />
+      <node id="4566548524301179982" at="428,0,439,0" concept="7" trace="createDescriptorForReadTarget#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4566548524301179982" at="136,44,137,35" />
+      <scope id="4566548524301179982" at="428,68,437,22">
+        <var name="b" id="4566548524301179982" />
+      </scope>
+      <scope id="4566548524301179982" at="428,0,439,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/5337910645946997270">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5337910645946997270" at="16,0,17,0" concept="1" trace="props_HandleTarget" />
+      <node id="5337910645946997270" at="97,41,98,76" concept="3" />
+      <node id="5337910645946997270" at="98,76,99,40" concept="0" />
+      <node id="5337910645946997270" at="99,40,100,44" concept="0" />
+      <node id="5337910645946997270" at="101,9,102,34" concept="4" />
+      <node id="5337910645946997270" at="96,46,101,9" concept="2" />
+      <scope id="5337910645946997270" at="97,41,100,44">
+        <var name="cpb" id="5337910645946997270" />
+      </scope>
+      <scope id="5337910645946997270" at="96,46,102,34" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5337910645946997270" at="16,0,17,0" concept="6" trace="HandleTarget" />
+      <node id="5337910645946997270" at="68,53,69,51" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5337910645946997270" at="19,0,20,0" concept="1" trace="myConceptHandleTarget" />
+      <node id="5337910645946997270" at="98,46,99,37" concept="4" />
+      <node id="5337910645946997270" at="240,70,241,175" concept="3" />
+      <node id="5337910645946997270" at="241,175,242,34" concept="0" />
+      <node id="5337910645946997270" at="242,34,243,70" concept="5" />
+      <node id="5337910645946997270" at="243,70,244,76" concept="0" />
+      <node id="5337910645946997270" at="244,76,245,115" concept="0" />
+      <node id="5337910645946997270" at="245,115,246,17" concept="0" />
+      <node id="5337910645946997270" at="246,17,247,22" concept="0" />
+      <node id="5337910645946997270" at="247,22,248,22" concept="4" />
+      <node id="5337910645946997270" at="240,0,250,0" concept="7" trace="createDescriptorForHandleTarget#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5337910645946997270" at="98,46,99,37" />
+      <scope id="5337910645946997270" at="240,70,248,22">
+        <var name="b" id="5337910645946997270" />
+      </scope>
+      <scope id="5337910645946997270" at="240,0,250,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/5337910645951973948">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5337910645951973948" at="14,0,15,0" concept="1" trace="props_BufferRef" />
+      <node id="5337910645951973948" at="83,38,84,76" concept="3" />
+      <node id="5337910645951973948" at="84,76,85,40" concept="0" />
+      <node id="5337910645951973948" at="85,40,86,41" concept="0" />
+      <node id="5337910645951973948" at="87,9,88,31" concept="4" />
+      <node id="5337910645951973948" at="82,43,87,9" concept="2" />
+      <scope id="5337910645951973948" at="83,38,86,41">
+        <var name="cpb" id="5337910645951973948" />
+      </scope>
+      <scope id="5337910645951973948" at="82,43,88,31" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5337910645951973948" at="14,0,15,0" concept="6" trace="BufferRef" />
+      <node id="5337910645951973948" at="66,65,67,48" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5337910645951973948" at="17,0,18,0" concept="1" trace="myConceptBufferRef" />
+      <node id="5337910645951973948" at="94,43,95,34" concept="4" />
+      <node id="5337910645951973948" at="220,67,221,172" concept="3" />
+      <node id="5337910645951973948" at="221,172,222,34" concept="0" />
+      <node id="5337910645951973948" at="222,34,223,64" concept="5" />
+      <node id="5337910645951973948" at="223,64,224,76" concept="0" />
+      <node id="5337910645951973948" at="224,76,225,115" concept="0" />
+      <node id="5337910645951973948" at="225,115,226,17" concept="0" />
+      <node id="5337910645951973948" at="226,17,227,22" concept="0" />
+      <node id="5337910645951973948" at="227,22,228,22" concept="4" />
+      <node id="5337910645951973948" at="220,0,230,0" concept="7" trace="createDescriptorForBufferRef#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5337910645951973948" at="94,43,95,34" />
+      <scope id="5337910645951973948" at="220,67,228,22">
+        <var name="b" id="5337910645951973948" />
+      </scope>
+      <scope id="5337910645951973948" at="220,0,230,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/7384997130811476772">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="7384997130811476772" at="21,0,22,0" concept="1" trace="props_InitHandler" />
+      <node id="7384997130811476772" at="130,40,131,76" concept="3" />
+      <node id="7384997130811476772" at="131,76,132,35" concept="0" />
+      <node id="7384997130811476772" at="132,35,133,43" concept="0" />
+      <node id="7384997130811476772" at="134,9,135,33" concept="4" />
+      <node id="7384997130811476772" at="129,45,134,9" concept="2" />
+      <scope id="7384997130811476772" at="130,40,133,43">
+        <var name="cpb" id="7384997130811476772" />
+      </scope>
+      <scope id="7384997130811476772" at="129,45,135,33" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="7384997130811476772" at="21,0,22,0" concept="6" trace="InitHandler" />
+      <node id="7384997130811476772" at="73,55,74,50" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="7384997130811476772" at="24,0,25,0" concept="1" trace="myConceptInitHandler" />
+      <node id="7384997130811476772" at="108,45,109,36" concept="4" />
+      <node id="7384997130811476772" at="288,69,289,174" concept="3" />
+      <node id="7384997130811476772" at="289,174,290,34" concept="0" />
+      <node id="7384997130811476772" at="290,34,291,70" concept="5" />
+      <node id="7384997130811476772" at="291,70,292,76" concept="0" />
+      <node id="7384997130811476772" at="292,76,293,115" concept="0" />
+      <node id="7384997130811476772" at="293,115,294,17" concept="0" />
+      <node id="5708867820623310661" at="294,17,295,211" concept="0" />
+      <node id="7384997130811476772" at="295,211,296,22" concept="0" />
+      <node id="7384997130811476772" at="296,22,297,22" concept="4" />
+      <node id="7384997130811476772" at="288,0,299,0" concept="7" trace="createDescriptorForInitHandler#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="7384997130811476772" at="108,45,109,36" />
+      <scope id="7384997130811476772" at="288,69,297,22">
+        <var name="b" id="7384997130811476772" />
+      </scope>
+      <scope id="7384997130811476772" at="288,0,299,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/7384997130811486357">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="7384997130811486357" at="15,0,16,0" concept="1" trace="props_DisposeHandler" />
+      <node id="7384997130811486357" at="90,43,91,76" concept="3" />
+      <node id="7384997130811486357" at="91,76,92,35" concept="0" />
+      <node id="7384997130811486357" at="92,35,93,46" concept="0" />
+      <node id="7384997130811486357" at="94,9,95,36" concept="4" />
+      <node id="7384997130811486357" at="89,48,94,9" concept="2" />
+      <scope id="7384997130811486357" at="90,43,93,46">
+        <var name="cpb" id="7384997130811486357" />
+      </scope>
+      <scope id="7384997130811486357" at="89,48,95,36" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="7384997130811486357" at="15,0,16,0" concept="6" trace="DisposeHandler" />
+      <node id="7384997130811486357" at="67,48,68,53" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="7384997130811486357" at="18,0,19,0" concept="1" trace="myConceptDisposeHandler" />
+      <node id="7384997130811486357" at="96,48,97,39" concept="4" />
+      <node id="7384997130811486357" at="230,72,231,177" concept="3" />
+      <node id="7384997130811486357" at="231,177,232,34" concept="0" />
+      <node id="7384997130811486357" at="232,34,233,70" concept="5" />
+      <node id="7384997130811486357" at="233,70,234,76" concept="0" />
+      <node id="7384997130811486357" at="234,76,235,115" concept="0" />
+      <node id="7384997130811486357" at="235,115,236,17" concept="0" />
+      <node id="7384997130811486357" at="236,17,237,25" concept="0" />
+      <node id="7384997130811486357" at="237,25,238,22" concept="4" />
+      <node id="7384997130811486357" at="230,0,240,0" concept="7" trace="createDescriptorForDisposeHandler#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="7384997130811486357" at="96,48,97,39" />
+      <scope id="7384997130811486357" at="230,72,238,22">
+        <var name="b" id="7384997130811486357" />
+      </scope>
+      <scope id="7384997130811486357" at="230,0,240,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/7384997130812013062">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="7384997130812013062" at="42,0,43,0" concept="1" trace="props_SerialDisposeTarget" />
+      <node id="7384997130812013062" at="274,48,275,76" concept="3" />
+      <node id="7384997130812013062" at="275,76,276,41" concept="0" />
+      <node id="7384997130812013062" at="276,41,277,51" concept="0" />
+      <node id="7384997130812013062" at="278,9,279,41" concept="4" />
+      <node id="7384997130812013062" at="273,53,278,9" concept="2" />
+      <scope id="7384997130812013062" at="274,48,277,51">
+        <var name="cpb" id="7384997130812013062" />
+      </scope>
+      <scope id="7384997130812013062" at="273,53,279,41" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="7384997130812013062" at="42,0,43,0" concept="6" trace="SerialDisposeTarget" />
+      <node id="7384997130812013062" at="94,56,95,58" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="7384997130812013062" at="45,0,46,0" concept="1" trace="myConceptSerialDisposeTarget" />
+      <node id="7384997130812013062" at="150,53,151,44" concept="4" />
+      <node id="7384997130812013062" at="499,77,500,182" concept="3" />
+      <node id="7384997130812013062" at="500,182,501,34" concept="0" />
+      <node id="7384997130812013062" at="501,34,502,85" concept="5" />
+      <node id="7384997130812013062" at="502,85,503,76" concept="0" />
+      <node id="7384997130812013062" at="503,76,504,115" concept="0" />
+      <node id="7384997130812013062" at="504,115,505,17" concept="0" />
+      <node id="7384997130812013062" at="505,17,506,23" concept="0" />
+      <node id="7384997130812013062" at="506,23,507,22" concept="4" />
+      <node id="7384997130812013062" at="499,0,509,0" concept="7" trace="createDescriptorForSerialDisposeTarget#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="7384997130812013062" at="150,53,151,44" />
+      <scope id="7384997130812013062" at="499,77,507,22">
+        <var name="b" id="7384997130812013062" />
+      </scope>
+      <scope id="7384997130812013062" at="499,0,509,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/7384997130812203021">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="7384997130812203021" at="46,0,47,0" concept="1" trace="props_StatementLevelSerialDotTargets" />
+      <node id="7384997130812203021" at="301,59,302,76" concept="3" />
+      <node id="7384997130812203021" at="302,76,303,62" concept="0" />
+      <node id="7384997130812203021" at="304,9,305,52" concept="4" />
+      <node id="7384997130812203021" at="300,64,304,9" concept="2" />
+      <scope id="7384997130812203021" at="301,59,303,62">
+        <var name="cpb" id="7384997130812203021" />
+      </scope>
+      <scope id="7384997130812203021" at="300,64,305,52" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="7384997130812203021" at="46,0,47,0" concept="6" trace="StatementLevelSerialDotTargets" />
+      <node id="7384997130812203021" at="98,59,99,69" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="7384997130812203021" at="49,0,50,0" concept="1" trace="myConceptStatementLevelSerialDotTargets" />
+      <node id="7384997130812203021" at="158,64,159,55" concept="4" />
+      <node id="7384997130812203021" at="544,88,545,193" concept="3" />
+      <node id="7384997130812203021" at="545,193,546,33" concept="0" />
+      <node id="7384997130812203021" at="546,33,547,70" concept="5" />
+      <node id="7384997130812203021" at="547,70,548,76" concept="0" />
+      <node id="7384997130812203021" at="548,76,549,115" concept="0" />
+      <node id="7384997130812203021" at="549,115,550,17" concept="0" />
+      <node id="7384997130812203021" at="550,17,551,22" concept="4" />
+      <node id="7384997130812203021" at="544,0,553,0" concept="7" trace="createDescriptorForStatementLevelSerialDotTargets#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="7384997130812203021" at="158,64,159,55" />
+      <scope id="7384997130812203021" at="544,88,551,22">
+        <var name="b" id="7384997130812203021" />
+      </scope>
+      <scope id="7384997130812203021" at="544,0,553,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/8509854365002205457">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="8509854365002205457" at="45,0,46,0" concept="1" trace="props_SerializationHandler" />
+      <node id="8509854365002205457" at="294,49,295,76" concept="3" />
+      <node id="8509854365002205457" at="295,76,296,35" concept="0" />
+      <node id="8509854365002205457" at="296,35,297,52" concept="0" />
+      <node id="8509854365002205457" at="298,9,299,42" concept="4" />
+      <node id="8509854365002205457" at="293,54,298,9" concept="2" />
+      <scope id="8509854365002205457" at="294,49,297,52">
+        <var name="cpb" id="8509854365002205457" />
+      </scope>
+      <scope id="8509854365002205457" at="293,54,299,42" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="8509854365002205457" at="45,0,46,0" concept="6" trace="SerializationHandler" />
+      <node id="8509854365002205457" at="97,55,98,59" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="8509854365002205457" at="48,0,49,0" concept="1" trace="myConceptSerializationHandler" />
+      <node id="8509854365002205457" at="156,54,157,45" concept="4" />
+      <node id="8509854365002205457" at="529,78,530,183" concept="3" />
+      <node id="8509854365002205457" at="530,183,531,34" concept="0" />
+      <node id="8509854365002205457" at="531,34,532,76" concept="0" />
+      <node id="8509854365002205457" at="532,76,533,115" concept="0" />
+      <node id="8509854365002205457" at="533,115,534,17" concept="0" />
+      <node id="8509854365002253710" at="534,17,535,204" concept="0" />
+      <node id="9032432967253581984" at="535,204,536,211" concept="0" />
+      <node id="7384997130811488819" at="536,211,537,204" concept="0" />
+      <node id="8509854365002263143" at="537,204,538,204" concept="0" />
+      <node id="8509854365002263146" at="538,204,539,205" concept="0" />
+      <node id="7384997130811488824" at="539,205,540,207" concept="0" />
+      <node id="8509854365002205457" at="540,207,541,26" concept="0" />
+      <node id="8509854365002205457" at="541,26,542,22" concept="4" />
+      <node id="8509854365002205457" at="529,0,544,0" concept="7" trace="createDescriptorForSerializationHandler#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8509854365002205457" at="156,54,157,45" />
+      <scope id="8509854365002205457" at="529,78,542,22">
+        <var name="b" id="8509854365002205457" />
+      </scope>
+      <scope id="8509854365002205457" at="529,0,544,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/8509854365005068691">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="8509854365005068691" at="43,0,44,0" concept="1" trace="props_SerialDotTarget" />
+      <node id="8509854365005068691" at="281,44,282,76" concept="3" />
+      <node id="8509854365005068691" at="282,76,283,47" concept="0" />
+      <node id="8509854365005068691" at="284,9,285,37" concept="4" />
+      <node id="8509854365005068691" at="280,49,284,9" concept="2" />
+      <scope id="8509854365005068691" at="281,44,283,47">
+        <var name="cpb" id="8509854365005068691" />
+      </scope>
+      <scope id="8509854365005068691" at="280,49,285,37" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="8509854365005068691" at="43,0,44,0" concept="6" trace="SerialDotTarget" />
+      <node id="8509854365005068691" at="95,58,96,54" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="8509854365005068691" at="46,0,47,0" concept="1" trace="myConceptSerialDotTarget" />
+      <node id="8509854365005068691" at="152,49,153,40" concept="4" />
+      <node id="8509854365005068691" at="509,73,510,178" concept="3" />
+      <node id="8509854365005068691" at="510,178,511,33" concept="0" />
+      <node id="8509854365005068691" at="511,33,512,76" concept="0" />
+      <node id="8509854365005068691" at="513,76,514,115" concept="0" />
+      <node id="8509854365005068691" at="514,115,515,17" concept="0" />
+      <node id="8509854365005068691" at="515,17,516,22" concept="4" />
+      <node id="8509854365005068691" at="509,0,518,0" concept="7" trace="createDescriptorForSerialDotTarget#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8509854365005068691" at="152,49,153,40" />
+      <scope id="8509854365005068691" at="509,73,516,22">
+        <var name="b" id="8509854365005068691" />
+      </scope>
+      <scope id="8509854365005068691" at="509,0,518,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/9032432967253409276">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="9032432967253409276" at="19,0,20,0" concept="1" trace="props_HandlerVariable" />
+      <node id="9032432967253409276" at="117,44,118,76" concept="3" />
+      <node id="9032432967253409276" at="118,76,119,35" concept="0" />
+      <node id="9032432967253409276" at="119,35,120,47" concept="0" />
+      <node id="9032432967253409276" at="121,9,122,37" concept="4" />
+      <node id="9032432967253409276" at="116,49,121,9" concept="2" />
+      <scope id="9032432967253409276" at="117,44,120,47">
+        <var name="cpb" id="9032432967253409276" />
+      </scope>
+      <scope id="9032432967253409276" at="116,49,122,37" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="9032432967253409276" at="19,0,20,0" concept="6" trace="HandlerVariable" />
+      <node id="9032432967253409276" at="71,52,72,54" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="9032432967253409276" at="22,0,23,0" concept="1" trace="myConceptHandlerVariable" />
+      <node id="9032432967253409276" at="104,49,105,40" concept="4" />
+      <node id="9032432967253409276" at="271,73,272,178" concept="3" />
+      <node id="9032432967253409276" at="272,178,273,34" concept="0" />
+      <node id="9032432967253409276" at="273,34,274,76" concept="0" />
+      <node id="9032432967253409276" at="274,76,275,75" concept="0" />
+      <node id="9032432967253409276" at="275,75,276,76" concept="0" />
+      <node id="9032432967253409276" at="276,76,277,115" concept="0" />
+      <node id="9032432967253409276" at="277,115,278,17" concept="0" />
+      <node id="9032432967253409276" at="278,17,279,22" concept="4" />
+      <node id="9032432967253409276" at="271,0,281,0" concept="7" trace="createDescriptorForHandlerVariable#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="9032432967253409276" at="104,49,105,40" />
+      <scope id="9032432967253409276" at="271,73,279,22">
+        <var name="b" id="9032432967253409276" />
+      </scope>
+      <scope id="9032432967253409276" at="271,0,281,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/9032432967254091484">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="9032432967254091484" at="18,0,19,0" concept="1" trace="props_HandlerVarRef" />
+      <node id="9032432967254091484" at="110,42,111,76" concept="3" />
+      <node id="9032432967254091484" at="111,76,112,137" concept="0" />
+      <node id="9032432967254091484" at="112,137,113,45" concept="0" />
+      <node id="9032432967254091484" at="114,9,115,35" concept="4" />
+      <node id="9032432967254091484" at="109,47,114,9" concept="2" />
+      <scope id="9032432967254091484" at="110,42,113,45">
+        <var name="cpb" id="9032432967254091484" />
+      </scope>
+      <scope id="9032432967254091484" at="109,47,115,35" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="9032432967254091484" at="18,0,19,0" concept="6" trace="HandlerVarRef" />
+      <node id="9032432967254091484" at="70,54,71,52" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="9032432967254091484" at="21,0,22,0" concept="1" trace="myConceptHandlerVarRef" />
+      <node id="9032432967254091484" at="102,47,103,38" concept="4" />
+      <node id="9032432967254091484" at="260,71,261,176" concept="3" />
+      <node id="9032432967254091484" at="261,176,262,34" concept="0" />
+      <node id="9032432967254091484" at="262,34,263,64" concept="5" />
+      <node id="9032432967254091484" at="263,64,264,76" concept="0" />
+      <node id="9032432967254091484" at="264,76,265,76" concept="0" />
+      <node id="9032432967254091484" at="265,76,266,115" concept="0" />
+      <node id="9032432967254091484" at="266,115,267,17" concept="0" />
+      <node id="9032432967254091493" at="267,17,268,167" concept="0" />
+      <node id="9032432967254091484" at="268,167,269,22" concept="4" />
+      <node id="9032432967254091484" at="260,0,271,0" concept="7" trace="createDescriptorForHandlerVarRef#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="9032432967254091484" at="102,47,103,38" />
+      <scope id="9032432967254091484" at="260,71,269,22">
+        <var name="b" id="9032432967254091484" />
+      </scope>
+      <scope id="9032432967254091484" at="260,0,271,0" />
+    </file>
+  </root>
+  <root nodeRef="r:6195361d-9fae-4e19-9198-fc3163b21774(com.mbeddr.ext.serialization.structure)/9032432967256351075">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="9032432967256351075" at="12,0,13,0" concept="1" trace="props_AdditionalVarTarget" />
+      <node id="9032432967256351075" at="69,48,70,76" concept="3" />
+      <node id="9032432967256351075" at="70,76,71,137" concept="0" />
+      <node id="9032432967256351075" at="71,137,72,51" concept="0" />
+      <node id="9032432967256351075" at="73,9,74,41" concept="4" />
+      <node id="9032432967256351075" at="68,53,73,9" concept="2" />
+      <scope id="9032432967256351075" at="69,48,72,51">
+        <var name="cpb" id="9032432967256351075" />
+      </scope>
+      <scope id="9032432967256351075" at="68,53,74,41" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="9032432967256351075" at="12,0,13,0" concept="6" trace="AdditionalVarTarget" />
+      <node id="9032432967256351075" at="64,116,65,58" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="9032432967256351075" at="15,0,16,0" concept="1" trace="myConceptAdditionalVarTarget" />
+      <node id="9032432967256351075" at="90,53,91,44" concept="4" />
+      <node id="9032432967256351075" at="200,77,201,182" concept="3" />
+      <node id="9032432967256351075" at="201,182,202,34" concept="0" />
+      <node id="9032432967256351075" at="202,34,203,70" concept="5" />
+      <node id="9032432967256351075" at="203,70,204,76" concept="0" />
+      <node id="9032432967256351075" at="204,76,205,115" concept="0" />
+      <node id="9032432967256351075" at="205,115,206,17" concept="0" />
+      <node id="9032432967256352627" at="206,17,207,167" concept="0" />
+      <node id="9032432967256351075" at="207,167,208,22" concept="4" />
+      <node id="9032432967256351075" at="200,0,210,0" concept="7" trace="createDescriptorForAdditionalVarTarget#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="9032432967256351075" at="90,53,91,44" />
+      <scope id="9032432967256351075" at="200,77,208,22">
+        <var name="b" id="9032432967256351075" />
+      </scope>
+      <scope id="9032432967256351075" at="200,0,210,0" />
+    </file>
+  </root>
+</debug-info>
+

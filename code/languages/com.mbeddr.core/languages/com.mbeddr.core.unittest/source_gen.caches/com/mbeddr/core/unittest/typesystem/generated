@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="4fqmu11maqsdcs50fvwqz7heq5wahzn">
+  <files names="TypesystemDescriptor.java:check_AssertStatement_Assignment_NonTypesystemRule.java:check_MessageCountExpr_NonTypesystemRule.java:check_RequiredTagsAnnotation_NonTypesystemRule.java:check_StructuredBinOpAssertStatement_NonTypesystemRule.java:check_TestCollection_NonTypesystemRule.java:check_functionCallToTestHelpers_NonTypesystemRule.java:exportAllUsedTests_QuickFix.java:typeof_AssertExprList_InferenceRule.java:typeof_AssertStatement_InferenceRule.java:typeof_ExecuteTestExpression_InferenceRule.java:typeof_MessageCountExpr_InferenceRule.java:typeof_SameTypeExpr_InferenceRule.java:typeof_StructuredBinOpAssertStatement_InferenceRule.java" />
+</product>
+

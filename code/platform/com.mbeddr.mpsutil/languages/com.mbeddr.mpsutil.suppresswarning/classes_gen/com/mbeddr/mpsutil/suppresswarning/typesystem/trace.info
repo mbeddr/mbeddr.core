@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="com.mbeddr.mpsutil.suppresswarning.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:b61bde82-ab60-46a0-986b-81515d72f0bf(com.mbeddr.mpsutil.suppresswarning.typesystem)/6777508457274483661">
+    <file name="SuppressWarnings_AddAll_QuickFix.java">
+      <node id="6777508457274483661" at="15,45,16,140" concept="8" />
+      <node id="6777508457274485001" at="18,35,19,361" concept="2" />
+      <node id="6777508457274483661" at="23,0,24,0" concept="7" trace="kinds$yFIV" />
+      <node id="6777508457274483661" at="15,0,18,0" concept="1" trace="SuppressWarnings_AddAll_QuickFix#()V" />
+      <node id="6777508457274483661" at="18,0,21,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6777508457274483661" at="15,45,16,140" />
+      <scope id="6777508457274483663" at="18,35,19,361" />
+      <scope id="6777508457274483661" at="15,0,18,0" />
+      <scope id="6777508457274483661" at="18,0,21,0">
+        <var name="node" id="6777508457274483661" />
+      </scope>
+      <unit id="6777508457274483661" at="22,0,25,0" name="com.mbeddr.mpsutil.suppresswarning.typesystem.SuppressWarnings_AddAll_QuickFix$LINKS" />
+      <unit id="6777508457274483661" at="14,0,26,0" name="com.mbeddr.mpsutil.suppresswarning.typesystem.SuppressWarnings_AddAll_QuickFix" />
+    </file>
+  </root>
+  <root nodeRef="r:b61bde82-ab60-46a0-986b-81515d72f0bf(com.mbeddr.mpsutil.suppresswarning.typesystem)/9116320848000879404">
+    <file name="TypesystemDescriptor.java">
+      <node id="9116320848000879404" at="10,5,11,99" concept="5" />
+      <node id="9116320848000879404" at="11,99,12,55" concept="2" />
+      <node id="9116320848000879404" at="9,33,13,5" concept="0" />
+      <scope id="9116320848000879404" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="9116320848000879404" />
+      </scope>
+    </file>
+    <file name="check_SuppressWarnings_NonTypesystemRule.java">
+      <node id="9116320848000879408" at="26,7,27,66" concept="5" />
+      <node id="9116320848000879408" at="27,66,28,240" concept="5" />
+      <node id="9116320848000879409" at="29,9,30,187" concept="5" />
+      <node id="9116320848000879410" at="30,187,31,78" concept="2" />
+      <node id="9116320848000879409" at="31,78,32,71" concept="2" />
+      <node id="9116320848000879404" at="37,50,38,40" concept="6" />
+      <node id="9116320848000879404" at="40,68,41,102" concept="6" />
+      <node id="9116320848000879404" at="43,30,44,17" concept="6" />
+      <node id="9116320848000879404" at="48,0,49,0" concept="7" trace="kinds$yFIV" />
+      <node id="9116320848000879404" at="52,0,53,0" concept="7" trace="SuppressWarnings$uu" />
+      <node id="9116320848000879404" at="22,0,24,0" concept="1" trace="check_SuppressWarnings_NonTypesystemRule#()V" />
+      <node id="9116320848000879404" at="37,0,40,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="9116320848000879404" at="40,0,43,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="9116320848000879404" at="43,0,46,0" concept="4" trace="overrides#()Z" />
+      <node id="9116320848000879409" at="28,240,33,9" concept="0" />
+      <node id="9116320848000879408" at="25,107,34,7" concept="0" />
+      <node id="9116320848000879406" at="24,129,35,5" concept="3" />
+      <node id="9116320848000879404" at="24,0,37,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="9116320848000879404" at="22,53,22,53" />
+      <scope id="9116320848000879404" at="37,50,38,40" />
+      <scope id="9116320848000879404" at="40,68,41,102" />
+      <scope id="9116320848000879404" at="43,30,44,17" />
+      <scope id="9116320848000879404" at="22,0,24,0" />
+      <scope id="9116320848000879409" at="29,9,32,71">
+        <var name="intentionProvider" id="9116320848000879409" />
+      </scope>
+      <scope id="9116320848000879404" at="37,0,40,0" />
+      <scope id="9116320848000879404" at="40,0,43,0">
+        <var name="argument" id="9116320848000879404" />
+      </scope>
+      <scope id="9116320848000879404" at="43,0,46,0" />
+      <scope id="9116320848000879408" at="26,7,33,9">
+        <var name="_reporter_2309309498" id="9116320848000879408" />
+        <var name="errorTarget" id="9116320848000879408" />
+      </scope>
+      <scope id="9116320848000879407" at="25,107,34,7" />
+      <scope id="9116320848000879405" at="24,129,35,5" />
+      <scope id="9116320848000879404" at="24,0,37,0">
+        <var name="status" id="9116320848000879404" />
+        <var name="suppressWarnings" id="9116320848000879404" />
+        <var name="typeCheckingContext" id="9116320848000879404" />
+      </scope>
+      <unit id="9116320848000879404" at="47,0,50,0" name="com.mbeddr.mpsutil.suppresswarning.typesystem.check_SuppressWarnings_NonTypesystemRule$LINKS" />
+      <unit id="9116320848000879404" at="51,0,54,0" name="com.mbeddr.mpsutil.suppresswarning.typesystem.check_SuppressWarnings_NonTypesystemRule$CONCEPTS" />
+      <unit id="9116320848000879404" at="21,0,55,0" name="com.mbeddr.mpsutil.suppresswarning.typesystem.check_SuppressWarnings_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

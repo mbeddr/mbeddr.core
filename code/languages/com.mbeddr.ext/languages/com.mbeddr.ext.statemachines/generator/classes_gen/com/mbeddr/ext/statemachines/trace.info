@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="Generator.java">
+      <unit at="20,0,63,0" name="com.mbeddr.ext.statemachines.Generator" />
+    </file>
+  </root>
+</debug-info>
+

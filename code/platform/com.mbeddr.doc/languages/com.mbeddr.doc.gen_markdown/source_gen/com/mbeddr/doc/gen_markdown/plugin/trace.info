@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="FacetAspectDescriptor.java">
+      <unit at="8,0,18,0" name="com.mbeddr.doc.gen_markdown.plugin.FacetAspectDescriptor" />
+    </file>
+    <file name="FacetManifest.java">
+      <unit at="11,0,23,0" name="com.mbeddr.doc.gen_markdown.plugin.FacetManifest" />
+    </file>
+  </root>
+  <root nodeRef="r:bde2bd5f-4391-4804-803d-13d421a91250(com.mbeddr.doc.gen_markdown.plugin)/3012164588648671299">
+    <file name="GeneratorHelper.java">
+      <node id="7773571022133796427" at="21,85,22,233" concept="7" />
+      <node id="7773571022133804840" at="22,233,23,157" concept="7" />
+      <node id="7773571022133856310" at="23,157,24,132" concept="7" />
+      <node id="7773571022133937949" at="25,59,26,104" concept="2" />
+      <node id="7773571022133937716" at="27,5,28,67" concept="8" />
+      <node id="1167243749507239125" at="32,54,33,100" concept="7" />
+      <node id="1167243749507253218" at="33,100,34,54" concept="8" />
+      <node id="1167243749509238095" at="35,5,36,20" concept="8" />
+      <node id="3012164588648671299" at="40,0,41,0" concept="9" trace="PlaceInFolder$Xz" />
+      <node id="3012164588648671299" at="41,0,42,0" concept="9" trace="IDocumentLike$h$" />
+      <node id="3012164588648671299" at="45,0,46,0" concept="9" trace="location$9iBH" />
+      <node id="3012164588648671299" at="46,0,47,0" concept="9" trace="fileName$6fRi" />
+      <node id="3012164588648671299" at="50,0,51,0" concept="9" trace="resource$t9jq" />
+      <node id="7773571022133937947" at="24,132,27,5" concept="5" />
+      <node id="1167243749507023386" at="31,102,35,5" concept="5" />
+      <node id="1167243749509709131" at="31,0,38,0" concept="10" trace="getFileRelativePath#(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="7773571022133784440" at="21,0,30,0" concept="10" trace="getImgPath#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/generator/template/TemplateQueryContext;)Ljava/lang/String;" />
+      <scope id="7773571022133937948" at="25,59,26,104" />
+      <scope id="1167243749507023388" at="32,54,34,54">
+        <var name="relativePath" id="1167243749507239126" />
+      </scope>
+      <scope id="1167243749509709134" at="31,102,36,20" />
+      <scope id="7773571022133784443" at="21,85,28,67">
+        <var name="fileName" id="7773571022133856313" />
+        <var name="fromLocation" id="7773571022133796430" />
+        <var name="toLocation" id="7773571022133804843" />
+      </scope>
+      <scope id="1167243749509709131" at="31,0,38,0">
+        <var name="fileName" id="1167243749509710310" />
+        <var name="fromLocation" id="1167243749509709812" />
+        <var name="toLocation" id="1167243749509709854" />
+      </scope>
+      <scope id="7773571022133784440" at="21,0,30,0">
+        <var name="genContext" id="7773571022133938667" />
+        <var name="paragraph" id="7773571022133796119" />
+      </scope>
+      <unit id="3012164588648671299" at="49,0,52,0" name="com.mbeddr.doc.gen_markdown.plugin.GeneratorHelper$LINKS" />
+      <unit id="3012164588648671299" at="39,0,43,0" name="com.mbeddr.doc.gen_markdown.plugin.GeneratorHelper$CONCEPTS" />
+      <unit id="3012164588648671299" at="44,0,48,0" name="com.mbeddr.doc.gen_markdown.plugin.GeneratorHelper$PROPS" />
+      <unit id="3012164588648671299" at="20,0,53,0" name="com.mbeddr.doc.gen_markdown.plugin.GeneratorHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:bde2bd5f-4391-4804-803d-13d421a91250(com.mbeddr.doc.gen_markdown.plugin)/8926200415926362783">
+    <file name="FacetManifest.java">
+      <node id="8926200415926362783" at="13,26,14,76" concept="2" />
+    </file>
+    <file name="MarkdownProcessor_Facet.java">
+      <node id="8926200415926362783" at="39,0,40,0" concept="9" trace="LOG" />
+      <node id="8926200415926362783" at="40,0,41,0" concept="3" trace="targets" />
+      <node id="8926200415926362783" at="41,0,42,0" concept="3" trace="name" />
+      <node id="8926200415926548788" at="42,36,43,65" concept="2" />
+      <node id="8926200415926362783" at="45,38,46,19" concept="8" />
+      <node id="8926200415926362783" at="48,43,49,16" concept="8" />
+      <node id="8926200415926362783" at="51,43,52,158" concept="8" />
+      <node id="8926200415926362783" at="54,43,55,16" concept="8" />
+      <node id="8926200415926362783" at="57,32,58,21" concept="8" />
+      <node id="8926200415926362783" at="60,57,61,34" concept="8" />
+      <node id="8926200415926548788" at="64,0,65,0" concept="9" trace="name" />
+      <node id="8926200415926548790" at="70,173,71,56" concept="7" />
+      <node id="8926200415926548790" at="71,56,72,112" concept="7" />
+      <node id="8319812321048277314" at="74,19,75,55" concept="7" />
+      <node id="8319812321048292444" at="75,55,76,69" concept="7" />
+      <node id="8319812321049017598" at="77,79,78,90" concept="7" />
+      <node id="8926200415926688214" at="78,90,79,73" concept="7" />
+      <node id="8319812321048697368" at="82,25,83,118" concept="7" />
+      <node id="8319812321049209529" at="83,118,84,130" concept="7" />
+      <node id="8319812321049035040" at="84,130,85,70" concept="2" />
+      <node id="8319812321048688679" at="87,47,88,100" concept="2" />
+      <node id="8319812321048694974" at="89,23,90,31" concept="1" />
+      <node id="8926200415926548790" at="95,20,96,37" concept="2" />
+      <node id="8926200415926548790" at="96,37,97,61" concept="8" />
+      <node id="8926200415926548788" at="102,35,103,18" concept="8" />
+      <node id="8926200415926548788" at="105,46,106,18" concept="8" />
+      <node id="8926200415926548788" at="108,43,109,183" concept="8" />
+      <node id="8926200415926548788" at="111,47,112,18" concept="8" />
+      <node id="8926200415926548788" at="114,44,115,181" concept="8" />
+      <node id="8926200415926548788" at="117,35,118,18" concept="8" />
+      <node id="8926200415926548788" at="120,33,121,19" concept="8" />
+      <node id="8926200415926548788" at="123,36,124,18" concept="8" />
+      <node id="8926200415926548788" at="126,37,127,19" concept="8" />
+      <node id="8926200415926548788" at="129,65,130,111" concept="7" />
+      <node id="8926200415926548788" at="130,111,131,73" concept="2" />
+      <node id="8926200415926548788" at="131,73,132,16" concept="8" />
+      <node id="8926200415926548788" at="134,66,135,18" concept="8" />
+      <node id="8926200415926548788" at="137,49,138,18" concept="8" />
+      <node id="8926200415926548788" at="140,61,141,34" concept="7" />
+      <node id="8926200415926548788" at="141,34,142,15" concept="8" />
+      <node id="8926200415926548788" at="65,0,67,0" concept="0" trace="Target_Html#()V" />
+      <node id="8926200415926362783" at="146,0,148,0" concept="0" trace="TargetProperties#()V" />
+      <node id="8926200415926362783" at="148,0,150,0" concept="6" trace="storeValues#(Ljava/util/Map;Ljetbrains/mps/make/script/IPropertiesPool;)V" />
+      <node id="8926200415926362783" at="42,0,45,0" concept="0" trace="MarkdownProcessor_Facet#()V" />
+      <node id="8926200415926362783" at="45,0,48,0" concept="6" trace="targets#()Ljava/lang/Iterable;" />
+      <node id="8926200415926362783" at="48,0,51,0" concept="6" trace="optional#()Ljava/lang/Iterable;" />
+      <node id="8926200415926362783" at="51,0,54,0" concept="6" trace="required#()Ljava/lang/Iterable;" />
+      <node id="8926200415926362783" at="54,0,57,0" concept="6" trace="extended#()Ljava/lang/Iterable;" />
+      <node id="8926200415926362783" at="57,0,60,0" concept="6" trace="getName#()Ljetbrains/mps/make/facet/IFacet/Name;" />
+      <node id="8926200415926362783" at="60,0,63,0" concept="6" trace="propertiesPersistence#()Ljetbrains/mps/make/resources/IPropertiesPersistence;" />
+      <node id="8319812321048688679" at="86,45,89,23" concept="5" />
+      <node id="8926200415926548788" at="102,0,105,0" concept="6" trace="createConfig#()Ljetbrains/mps/make/script/IConfig;" />
+      <node id="8926200415926548788" at="105,0,108,0" concept="6" trace="notAfter#()Ljava/lang/Iterable;" />
+      <node id="8926200415926548788" at="108,0,111,0" concept="6" trace="after#()Ljava/lang/Iterable;" />
+      <node id="8926200415926548788" at="111,0,114,0" concept="6" trace="notBefore#()Ljava/lang/Iterable;" />
+      <node id="8926200415926548788" at="114,0,117,0" concept="6" trace="before#()Ljava/lang/Iterable;" />
+      <node id="8926200415926548788" at="117,0,120,0" concept="6" trace="getName#()Ljetbrains/mps/make/facet/ITarget/Name;" />
+      <node id="8926200415926548788" at="120,0,123,0" concept="6" trace="isOptional#()Z" />
+      <node id="8926200415926548788" at="123,0,126,0" concept="6" trace="requiresInput#()Z" />
+      <node id="8926200415926548788" at="126,0,129,0" concept="6" trace="producesOutput#()Z" />
+      <node id="8926200415926548788" at="134,0,137,0" concept="6" trace="expectedOutput#()Ljava/lang/Iterable;" />
+      <node id="8926200415926548788" at="137,0,140,0" concept="6" trace="createParameters#(Ljava/lang/Class;)null" />
+      <node id="8926200415926362783" at="150,83,153,7" concept="12" />
+      <node id="8926200415926548788" at="140,0,144,0" concept="6" trace="createParameters#(Ljava/lang/Class;null)null" />
+      <node id="8926200415926548788" at="129,0,134,0" concept="6" trace="expectedInput#()Ljava/lang/Iterable;" />
+      <node id="8926200415926362783" at="150,0,155,0" concept="6" trace="loadValues#(Ljava/util/Map;Ljetbrains/mps/make/script/IPropertiesPool;)V" />
+      <node id="8319812321048475542" at="81,107,91,21" concept="12" />
+      <node id="8926200415926702342" at="80,68,92,19" concept="5" />
+      <node id="8926200415926701398" at="79,73,93,17" concept="4" />
+      <node id="8926200415926549647" at="76,69,94,15" concept="4" />
+      <node id="8926200415926548790" at="72,112,98,11" concept="11" />
+      <node id="8926200415926548790" at="69,0,100,0" concept="6" trace="execute#(Ljava/lang/Iterable;Ljetbrains/mps/make/script/IJobMonitor;Ljetbrains/mps/make/resources/IPropertiesAccessor;Lorg/jetbrains/mps/openapi/util/ProgressMonitor;)Ljetbrains/mps/make/script/IResult;" />
+      <node id="8926200415926548788" at="67,29,100,8" concept="8" />
+      <node id="8926200415926548788" at="67,0,102,0" concept="6" trace="createJob#()Ljetbrains/mps/make/script/IJob;" />
+      <scope id="8926200415926548788" at="65,26,65,26" />
+      <scope id="8926200415926362783" at="146,31,146,31" />
+      <scope id="8926200415926362783" at="148,84,148,84" />
+      <scope id="8926200415926362783" at="151,11,151,11" />
+      <scope id="8926200415926362783" at="152,37,152,37" />
+      <scope id="8926200415926362783" at="42,36,43,65" />
+      <scope id="8926200415926362783" at="45,38,46,19" />
+      <scope id="8926200415926362783" at="48,43,49,16" />
+      <scope id="8926200415926362783" at="51,43,52,158" />
+      <scope id="8926200415926362783" at="54,43,55,16" />
+      <scope id="8926200415926362783" at="57,32,58,21" />
+      <scope id="8926200415926362783" at="60,57,61,34" />
+      <scope id="8319812321048688679" at="87,47,88,100" />
+      <scope id="8926200415926548788" at="102,35,103,18" />
+      <scope id="8926200415926548788" at="105,46,106,18" />
+      <scope id="8926200415926548788" at="108,43,109,183" />
+      <scope id="8926200415926548788" at="111,47,112,18" />
+      <scope id="8926200415926548788" at="114,44,115,181" />
+      <scope id="8926200415926548788" at="117,35,118,18" />
+      <scope id="8926200415926548788" at="120,33,121,19" />
+      <scope id="8926200415926548788" at="123,36,124,18" />
+      <scope id="8926200415926548788" at="126,37,127,19" />
+      <scope id="8926200415926548788" at="134,66,135,18" />
+      <scope id="8926200415926548788" at="137,49,138,18" />
+      <scope id="8926200415926362783" at="152,7,153,7">
+        <var name="re" id="8926200415926362783" />
+      </scope>
+      <scope id="8926200415926548788" at="65,0,67,0" />
+      <scope id="8926200415926548790" at="95,20,97,61" />
+      <scope id="8926200415926548788" at="140,61,142,15">
+        <var name="t" id="8926200415926548788" />
+      </scope>
+      <scope id="8926200415926362783" at="146,0,148,0" />
+      <scope id="8926200415926362783" at="148,0,150,0">
+        <var name="properties" id="8926200415926362783" />
+        <var name="store" id="8926200415926362783" />
+      </scope>
+      <scope id="8926200415926362783" at="42,0,45,0" />
+      <scope id="8926200415926362783" at="45,0,48,0" />
+      <scope id="8926200415926362783" at="48,0,51,0" />
+      <scope id="8926200415926362783" at="51,0,54,0" />
+      <scope id="8926200415926362783" at="54,0,57,0" />
+      <scope id="8926200415926362783" at="57,0,60,0" />
+      <scope id="8926200415926362783" at="60,0,63,0" />
+      <scope id="8319812321048475544" at="82,25,85,70">
+        <var name="doc" id="8319812321048697369" />
+        <var name="htmlfile" id="8319812321049209530" />
+      </scope>
+      <scope id="8926200415926548788" at="102,0,105,0" />
+      <scope id="8926200415926548788" at="105,0,108,0" />
+      <scope id="8926200415926548788" at="108,0,111,0" />
+      <scope id="8926200415926548788" at="111,0,114,0" />
+      <scope id="8926200415926548788" at="114,0,117,0" />
+      <scope id="8926200415926548788" at="117,0,120,0" />
+      <scope id="8926200415926548788" at="120,0,123,0" />
+      <scope id="8926200415926548788" at="123,0,126,0" />
+      <scope id="8926200415926548788" at="126,0,129,0" />
+      <scope id="8926200415926548788" at="129,65,132,16">
+        <var name="rv" id="8926200415926548788" />
+      </scope>
+      <scope id="8926200415926548788" at="134,0,137,0" />
+      <scope id="8926200415926548788" at="137,0,140,0">
+        <var name="cls" id="8926200415926548788" />
+      </scope>
+      <scope id="8926200415926362783" at="150,83,153,7" />
+      <scope id="8319812321048685719" at="86,45,90,31" />
+      <scope id="8926200415926548788" at="140,0,144,0">
+        <var name="cls" id="8926200415926548788" />
+        <var name="copyFrom" id="8926200415926548788" />
+      </scope>
+      <scope id="8319812321048685716" at="86,21,91,21">
+        <var name="e" id="8319812321048685717" />
+      </scope>
+      <scope id="8926200415926548788" at="129,0,134,0" />
+      <scope id="8926200415926362783" at="150,0,155,0">
+        <var name="properties" id="8926200415926362783" />
+        <var name="store" id="8926200415926362783" />
+      </scope>
+      <scope id="8926200415926702344" at="81,107,91,21" />
+      <scope id="8926200415926701404" at="80,68,92,19" />
+      <scope id="8926200415926701398" at="79,73,93,17">
+        <var name="unit" id="8926200415926701400" />
+      </scope>
+      <scope id="8926200415926549650" at="77,79,93,17">
+        <var name="outputLocation" id="8319812321049017599" />
+        <var name="units" id="8926200415926688215" />
+      </scope>
+      <scope id="8926200415926549647" at="76,69,94,15">
+        <var name="res" id="8926200415926549648" />
+      </scope>
+      <scope id="8926200415926548790" at="74,19,94,15">
+        <var name="parser" id="8319812321048277315" />
+        <var name="rendered" id="8319812321048292445" />
+      </scope>
+      <scope id="8926200415926548790" at="70,173,98,11">
+        <var name="_output_1o4g0x_a0a" id="8926200415926548790" />
+        <var name="input" id="8926200415926548790" />
+      </scope>
+      <scope id="8926200415926548790" at="69,0,100,0">
+        <var name="monitor" id="8926200415926548790" />
+        <var name="pa" id="8926200415926548790" />
+        <var name="progressMonitor" id="8926200415926548790" />
+        <var name="rawInput" id="8926200415926548790" />
+      </scope>
+      <scope id="8926200415926548788" at="67,29,100,8" />
+      <scope id="8926200415926548788" at="67,0,102,0" />
+      <unit id="8926200415926362783" at="145,0,156,0" name="com.mbeddr.doc.gen_markdown.plugin.MarkdownProcessor_Facet$TargetProperties" />
+      <unit id="8926200415926548790" at="68,17,100,7" name="com.mbeddr.doc.gen_markdown.plugin.MarkdownProcessor_Facet$Target_Html$1" />
+      <unit id="8926200415926548788" at="63,0,145,0" name="com.mbeddr.doc.gen_markdown.plugin.MarkdownProcessor_Facet$Target_Html" />
+      <unit id="8926200415926362783" at="38,0,157,0" name="com.mbeddr.doc.gen_markdown.plugin.MarkdownProcessor_Facet" />
+    </file>
+  </root>
+</debug-info>
+

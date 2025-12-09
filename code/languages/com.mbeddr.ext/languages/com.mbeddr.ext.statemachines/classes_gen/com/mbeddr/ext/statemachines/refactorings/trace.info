@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="RefactoringAspectDescriptor.java">
+      <unit at="11,0,25,0" name="com.mbeddr.ext.statemachines.refactorings.RefactoringAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:2030a860-44ce-4086-9ae5-5641e63d6e26(com.mbeddr.ext.statemachines.refactorings)/5338908363446178317">
+    <file name="RefactoringAspectDescriptor.java">
+      <node id="5338908363446178317" at="16,41,17,43" concept="1" />
+    </file>
+    <file name="extractMacro.java">
+      <node id="5338908363446230045" at="27,25,28,44" concept="1" />
+      <node id="5338908363446178317" at="30,52,31,37" concept="6" />
+      <node id="5338908363446178317" at="33,39,34,27" concept="6" />
+      <node id="5338908363446222584" at="36,69,37,59" concept="5" />
+      <node id="5338908363446230244" at="37,59,38,98" concept="5" />
+      <node id="5338908363446222591" at="38,98,39,0" concept="7" />
+      <node id="5338908363446222594" at="39,0,40,202" concept="5" />
+      <node id="5338908363446222603" at="40,202,41,91" concept="1" />
+      <node id="5338908363446230082" at="41,91,42,112" concept="1" />
+      <node id="5338908363446274535" at="42,112,43,0" concept="7" />
+      <node id="5338908363446274600" at="44,149,45,284" concept="1" />
+      <node id="5338908363446448011" at="46,5,47,134" concept="5" />
+      <node id="5338908363446447987" at="48,62,49,225" concept="1" />
+      <node id="5338908363446230359" at="50,5,51,0" concept="7" />
+      <node id="5338908363446230288" at="51,0,52,129" concept="5" />
+      <node id="5338908363446230317" at="52,129,53,60" concept="5" />
+      <node id="5338908363446230327" at="55,50,56,64" concept="1" />
+      <node id="5338908363446230243" at="58,5,59,0" concept="7" />
+      <node id="5338908363446230420" at="60,63,61,196" concept="5" />
+      <node id="5338908363446230438" at="61,196,62,62" concept="1" />
+      <node id="5338908363446230493" at="62,62,63,49" concept="1" />
+      <node id="5338908363446230430" at="64,5,65,0" concept="7" />
+      <node id="5338908363446230360" at="65,0,66,104" concept="1" />
+      <node id="5338908363446222593" at="66,104,67,0" concept="7" />
+      <node id="5338908363446178317" at="71,0,72,0" concept="8" trace="Statemachine$h1" />
+      <node id="5338908363446178317" at="72,0,73,0" concept="8" trace="ITriggerContext$63" />
+      <node id="5338908363446178317" at="73,0,74,0" concept="8" trace="Trigger$Ah" />
+      <node id="5338908363446178317" at="74,0,75,0" concept="8" trace="EventArgRef$dW" />
+      <node id="5338908363446178317" at="75,0,76,0" concept="8" trace="MacroRef$Kr" />
+      <node id="5338908363446178317" at="76,0,77,0" concept="8" trace="Expression$bT" />
+      <node id="5338908363446178317" at="80,0,81,0" concept="8" trace="expr$JxQK" />
+      <node id="5338908363446178317" at="81,0,82,0" concept="8" trace="trigger$Jy5L" />
+      <node id="5338908363446178317" at="82,0,83,0" concept="8" trace="macro$PU2p" />
+      <node id="5338908363446178317" at="83,0,84,0" concept="8" trace="contents$wkjG" />
+      <node id="5338908363446178317" at="87,0,88,0" concept="8" trace="name$MnvL" />
+      <node id="5338908363446178317" at="27,0,30,0" concept="0" trace="extractMacro#()V" />
+      <node id="5338908363446178317" at="30,0,33,0" concept="4" trace="getRefactoringTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget;" />
+      <node id="5338908363446178317" at="33,0,36,0" concept="4" trace="getUserFriendlyName#()Ljava/lang/String;" />
+      <node id="5338908363446274537" at="43,0,46,5" concept="3" />
+      <node id="5338908363446447985" at="47,134,50,5" concept="3" />
+      <node id="5338908363446230308" at="54,59,57,7" concept="3" />
+      <node id="5338908363446230303" at="53,60,58,5" concept="2" />
+      <node id="5338908363446230432" at="59,0,64,5" concept="2" />
+      <node id="5338908363446178317" at="36,0,69,0" concept="4" trace="refactor#(Ljetbrains/mps/refactoring/framework/RefactoringContext;)V" />
+      <scope id="5338908363446178317" at="27,25,28,44" />
+      <scope id="5338908363446178317" at="30,52,31,37" />
+      <scope id="5338908363446178317" at="33,39,34,27" />
+      <scope id="5338908363446274538" at="44,149,45,284" />
+      <scope id="5338908363446447986" at="48,62,49,225" />
+      <scope id="5338908363446230310" at="55,50,56,64" />
+      <scope id="5338908363446178317" at="27,0,30,0" />
+      <scope id="5338908363446178317" at="30,0,33,0" />
+      <scope id="5338908363446178317" at="33,0,36,0" />
+      <scope id="5338908363446230306" at="54,59,57,7" />
+      <scope id="5338908363446230435" at="60,63,63,49">
+        <var name="ref" id="5338908363446230421" />
+      </scope>
+      <scope id="5338908363446230303" at="53,60,58,5">
+        <var name="e" id="5338908363446230304" />
+      </scope>
+      <scope id="5338908363446230432" at="59,0,64,5">
+        <var name="e" id="5338908363446230433" />
+      </scope>
+      <scope id="5338908363446178320" at="36,69,67,0">
+        <var name="allExpressions" id="5338908363446230289" />
+        <var name="candidate" id="5338908363446222585" />
+        <var name="containedMacros" id="5338908363446448012" />
+        <var name="macro" id="5338908363446222595" />
+        <var name="matchedExpressions" id="5338908363446230318" />
+        <var name="sm" id="5338908363446230245" />
+      </scope>
+      <scope id="5338908363446178317" at="36,0,69,0">
+        <var name="refactoringContext" id="5338908363446178317" />
+      </scope>
+      <unit id="5338908363446178317" at="86,0,89,0" name="com.mbeddr.ext.statemachines.refactorings.extractMacro$PROPS" />
+      <unit id="5338908363446178317" at="79,0,85,0" name="com.mbeddr.ext.statemachines.refactorings.extractMacro$LINKS" />
+      <unit id="5338908363446178317" at="70,0,78,0" name="com.mbeddr.ext.statemachines.refactorings.extractMacro$CONCEPTS" />
+      <unit id="5338908363446178317" at="26,0,90,0" name="com.mbeddr.ext.statemachines.refactorings.extractMacro" />
+    </file>
+    <file name="extractMacro_Target.java">
+      <node id="5338908363446178321" at="14,52,15,46" concept="6" />
+      <node id="5338908363446178321" at="17,41,18,17" concept="6" />
+      <node id="5338908363446178321" at="20,64,21,82" concept="6" />
+      <node id="5338908363446178321" at="24,51,25,19" concept="6" />
+      <node id="5338908363446178324" at="26,5,27,111" concept="6" />
+      <node id="5338908363446178321" at="31,0,32,0" concept="8" trace="Expression$bT" />
+      <node id="5338908363446178321" at="32,0,33,0" concept="8" trace="Statemachine$h1" />
+      <node id="5338908363446178321" at="12,0,14,0" concept="0" trace="extractMacro_Target#()V" />
+      <node id="5338908363446178321" at="14,0,17,0" concept="4" trace="getTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget/TargetType;" />
+      <node id="5338908363446178321" at="17,0,20,0" concept="4" trace="allowMultipleTargets#()Z" />
+      <node id="5338908363446178321" at="20,0,23,0" concept="4" trace="isApplicableToEntityType#(Ljava/lang/Object;)Z" />
+      <node id="5338908363446178321" at="23,52,26,5" concept="3" />
+      <node id="5338908363446178321" at="23,0,29,0" concept="4" trace="isApplicable#(Ljava/lang/Object;)Z" />
+      <scope id="5338908363446178321" at="12,32,12,32" />
+      <scope id="5338908363446178321" at="14,52,15,46" />
+      <scope id="5338908363446178321" at="17,41,18,17" />
+      <scope id="5338908363446178321" at="20,64,21,82" />
+      <scope id="5338908363446178321" at="24,51,25,19" />
+      <scope id="5338908363446178321" at="12,0,14,0" />
+      <scope id="5338908363446178321" at="14,0,17,0" />
+      <scope id="5338908363446178321" at="17,0,20,0" />
+      <scope id="5338908363446178321" at="20,0,23,0">
+        <var name="entity" id="5338908363446178321" />
+      </scope>
+      <scope id="5338908363446178321" at="23,52,27,111" />
+      <scope id="5338908363446178321" at="23,0,29,0">
+        <var name="entity" id="5338908363446178321" />
+      </scope>
+      <unit id="5338908363446178321" at="30,0,34,0" name="com.mbeddr.ext.statemachines.refactorings.extractMacro_Target$CONCEPTS" />
+      <unit id="5338908363446178321" at="11,0,35,0" name="com.mbeddr.ext.statemachines.refactorings.extractMacro_Target" />
+    </file>
+  </root>
+</debug-info>
+

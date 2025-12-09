@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,34,0" name="com.mbeddr.core.udt.dataFlow.DataFlowAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:10e52b33-7871-4eff-8eaa-7cbbe569f919(com.mbeddr.core.udt.dataFlow)/1131905706099589832">
+    <file name="MemberInitExpression_DataFlow.java">
+      <node id="1131905706099590536" at="14,60,15,105" concept="0" />
+      <node id="1131905706099594859" at="15,105,16,260" concept="0" />
+      <node id="1131905706099589832" at="20,0,21,0" concept="4" trace="value$bKKr" />
+      <node id="1131905706099589832" at="21,0,22,0" concept="4" trace="element$PlMr" />
+      <node id="1131905706099589832" at="14,0,18,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1131905706099589834" at="14,60,16,260" />
+      <scope id="1131905706099589832" at="14,0,18,0">
+        <var name="_context" id="1131905706099589832" />
+      </scope>
+      <unit id="1131905706099589832" at="19,0,23,0" name="com.mbeddr.core.udt.dataFlow.MemberInitExpression_DataFlow$LINKS" />
+      <unit id="1131905706099589832" at="13,0,24,0" name="com.mbeddr.core.udt.dataFlow.MemberInitExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:10e52b33-7871-4eff-8eaa-7cbbe569f919(com.mbeddr.core.udt.dataFlow)/1320626622328451478">
+    <file name="Abstract2IntExpression_DataFlow.java">
+      <node id="1320626622328451499" at="13,60,14,104" concept="0" />
+      <node id="1320626622328451478" at="18,0,19,0" concept="4" trace="expr$HUEp" />
+      <node id="1320626622328451478" at="13,0,16,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1320626622328451480" at="13,60,14,104" />
+      <scope id="1320626622328451478" at="13,0,16,0">
+        <var name="_context" id="1320626622328451478" />
+      </scope>
+      <unit id="1320626622328451478" at="17,0,20,0" name="com.mbeddr.core.udt.dataFlow.Abstract2IntExpression_DataFlow$LINKS" />
+      <unit id="1320626622328451478" at="12,0,21,0" name="com.mbeddr.core.udt.dataFlow.Abstract2IntExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:10e52b33-7871-4eff-8eaa-7cbbe569f919(com.mbeddr.core.udt.dataFlow)/1320626622329055702">
+    <file name="AbstractInt2Expression_DataFlow.java">
+      <node id="1320626622329055723" at="13,60,14,110" concept="0" />
+      <node id="1320626622329055727" at="14,110,15,104" concept="0" />
+      <node id="1320626622329055702" at="19,0,20,0" concept="4" trace="targetType$2PdA" />
+      <node id="1320626622329055702" at="20,0,21,0" concept="4" trace="expr$SEUF" />
+      <node id="1320626622329055702" at="13,0,17,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1320626622329055704" at="13,60,15,104" />
+      <scope id="1320626622329055702" at="13,0,17,0">
+        <var name="_context" id="1320626622329055702" />
+      </scope>
+      <unit id="1320626622329055702" at="18,0,22,0" name="com.mbeddr.core.udt.dataFlow.AbstractInt2Expression_DataFlow$LINKS" />
+      <unit id="1320626622329055702" at="12,0,23,0" name="com.mbeddr.core.udt.dataFlow.AbstractInt2Expression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:10e52b33-7871-4eff-8eaa-7cbbe569f919(com.mbeddr.core.udt.dataFlow)/6155817222677075886">
+    <file name="SUInitExpressionMemberHelper.java">
+      <node id="6155817222677075904" at="10,0,11,0" concept="4" trace="initTypeMap" />
+      <node id="6155817222677075921" at="12,64,13,42" concept="0" />
+      <node id="6155817222677075994" at="16,53,17,49" concept="2" />
+      <node id="6155817222677076005" at="17,49,18,39" concept="0" />
+      <node id="6155817222677075959" at="18,39,19,16" concept="3" />
+      <node id="6155817222677075892" at="12,0,15,0" concept="5" trace="setType#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6155817222677075952" at="16,0,21,0" concept="5" trace="getType#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="6155817222677075895" at="12,64,13,42" />
+      <scope id="6155817222677075892" at="12,0,15,0">
+        <var name="initExpression" id="6155817222677075901" />
+        <var name="type" id="6155817222677075897" />
+      </scope>
+      <scope id="6155817222677075955" at="16,53,19,16">
+        <var name="type" id="6155817222677075995" />
+      </scope>
+      <scope id="6155817222677075952" at="16,0,21,0">
+        <var name="initExpression" id="6155817222677075957" />
+      </scope>
+      <unit id="6155817222677075886" at="9,0,22,0" name="com.mbeddr.core.udt.dataFlow.SUInitExpressionMemberHelper" />
+    </file>
+  </root>
+</debug-info>
+

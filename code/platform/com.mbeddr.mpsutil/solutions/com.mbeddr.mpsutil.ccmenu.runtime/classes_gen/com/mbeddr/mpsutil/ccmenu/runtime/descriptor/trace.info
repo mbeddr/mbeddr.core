@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:1ea8b6ef-fdd3-44fe-8420-0322a5c98c7d(com.mbeddr.mpsutil.ccmenu.runtime.descriptor)/1711273135351697449">
+    <file name="ISorter.java">
+      <node id="1711273135351834556" at="14,0,15,0" concept="0" trace="isApplicable#(Ljava/lang/String;)Z" />
+      <node id="1711273135351713296" at="15,0,16,0" concept="0" trace="sort#(Ljava/util/List;)Ljava/util/List;" />
+      <scope id="1711273135351834556" at="14,0,15,0">
+        <var name="groupName" id="1711273135351835154" />
+      </scope>
+      <scope id="1711273135351713296" at="15,0,16,0">
+        <var name="entries" id="1711273135351713324" />
+      </scope>
+      <unit id="1711273135351697449" at="9,0,17,0" name="com.mbeddr.mpsutil.ccmenu.runtime.descriptor.ISorter" />
+    </file>
+  </root>
+  <root nodeRef="r:1ea8b6ef-fdd3-44fe-8420-0322a5c98c7d(com.mbeddr.mpsutil.ccmenu.runtime.descriptor)/1711273135351697543">
+    <file name="AbstractCCMenuExtensionsDescriptor.java">
+      <node id="1711273135351697748" at="12,44,13,73" concept="1" />
+      <node id="1711273135351700503" at="15,41,16,67" concept="1" />
+      <node id="1711273135353506696" at="18,48,19,67" concept="1" />
+      <node id="1711273135351697607" at="12,0,15,0" concept="0" trace="getTabs#()Ljava/lang/Iterable;" />
+      <node id="1711273135351697613" at="15,0,18,0" concept="0" trace="getSorters#()Ljava/lang/Iterable;" />
+      <node id="1711273135353506220" at="18,0,21,0" concept="0" trace="getStyles#()Ljava/lang/Iterable;" />
+      <scope id="1711273135351697612" at="12,44,13,73" />
+      <scope id="1711273135351697618" at="15,41,16,67" />
+      <scope id="1711273135353506227" at="18,48,19,67" />
+      <scope id="1711273135351697607" at="12,0,15,0" />
+      <scope id="1711273135351697613" at="15,0,18,0" />
+      <scope id="1711273135353506220" at="18,0,21,0" />
+      <unit id="1711273135351697543" at="11,0,22,0" name="com.mbeddr.mpsutil.ccmenu.runtime.descriptor.AbstractCCMenuExtensionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:1ea8b6ef-fdd3-44fe-8420-0322a5c98c7d(com.mbeddr.mpsutil.ccmenu.runtime.descriptor)/3038639843202679245">
+    <file name="ICCMenuExtensionsDescriptor.java">
+      <node id="3038639843202679565" at="8,0,9,0" concept="2" trace="CLASS_NAME" />
+      <node id="3038639843202679645" at="9,0,10,0" concept="2" trace="INSTANCE_FIELD_NAME" />
+      <node id="3038639843202679731" at="11,0,12,0" concept="0" trace="getTabs#()Ljava/lang/Iterable;" />
+      <node id="1711273135351697366" at="12,0,13,0" concept="0" trace="getSorters#()Ljava/lang/Iterable;" />
+      <node id="1711273135353459867" at="13,0,14,0" concept="0" trace="getStyles#()Ljava/lang/Iterable;" />
+      <scope id="3038639843202679731" at="11,0,12,0" />
+      <scope id="1711273135351697366" at="12,0,13,0" />
+      <scope id="1711273135353459867" at="13,0,14,0" />
+      <unit id="3038639843202679245" at="7,0,15,0" name="com.mbeddr.mpsutil.ccmenu.runtime.descriptor.ICCMenuExtensionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:1ea8b6ef-fdd3-44fe-8420-0322a5c98c7d(com.mbeddr.mpsutil.ccmenu.runtime.descriptor)/3038639843202679982">
+    <file name="ITabExtension.java">
+      <node id="3038639843202680081" at="9,0,10,0" concept="0" trace="getLabel#()Ljava/lang/String;" />
+      <node id="3038639843202680224" at="10,0,11,0" concept="0" trace="getActions#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Ljava/lang/Iterable;" />
+      <scope id="3038639843202680081" at="9,0,10,0" />
+      <scope id="3038639843202680224" at="10,0,11,0">
+        <var name="contextCell" id="3038639843205613418" />
+      </scope>
+      <unit id="3038639843202679982" at="8,0,12,0" name="com.mbeddr.mpsutil.ccmenu.runtime.descriptor.ITabExtension" />
+    </file>
+  </root>
+  <root nodeRef="r:1ea8b6ef-fdd3-44fe-8420-0322a5c98c7d(com.mbeddr.mpsutil.ccmenu.runtime.descriptor)/3038639843202687269">
+    <file name="DescriptorUtil.java">
+      <node id="490620444044334120" at="11,71,12,169" concept="1" />
+      <node id="3038639843202725016" at="11,0,14,0" concept="3" trace="getAllDescriptors#()Ljava/util/List;" />
+      <scope id="3038639843202708272" at="11,71,12,169" />
+      <scope id="3038639843202725016" at="11,0,14,0" />
+      <unit id="3038639843202687269" at="9,0,15,0" name="com.mbeddr.mpsutil.ccmenu.runtime.descriptor.DescriptorUtil" />
+    </file>
+  </root>
+</debug-info>
+

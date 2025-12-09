@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="2naefendiz5l2i0a50c8s1b5adinzeq">
+  <files names="AnyNodeItem_TextGen.java:ArbitraryFunctionCall_TextGen.java:ArbitraryTextExpression_TextGen.java:ArbitraryTextItem_TextGen.java:ArbitraryTextType_TextGen.java:BreakStatement_TextGen.java:CommentStatement_TextGen.java:ContinueStatement_TextGen.java:DesignatedInitializer_TextGen.java:DoWhileStatement_TextGen.java:ElseIfPart_TextGen.java:ElsePart_TextGen.java:ExpressionStatement_TextGen.java:ForStatement_TextGen.java:ForVarDecl_TextGen.java:ForVarRef_TextGen.java:IfStatement_TextGen.java:InitExpression_TextGen.java:LocalVarRef_TextGen.java:LocalVariableDeclaration_TextGen.java:PragmaStatement_TextGen.java:Prefix_TextGen.java:StatementList_TextGen.java:Statement_TextGen.java:SwitchCase_TextGen.java:SwitchDefault_TextGen.java:SwitchStatement_TextGen.java:TextGenAspectDescriptor.java:WhileStatement_TextGen.java" />
+</product>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="31k4lx26wc3du9lx7c7yxte1hqnk4i6">
+  <files names="AbstractMenuEntryStyle.java:CompositeMenuEntryStyle.java:DefaultMenuEntryStyle.java:Group.java:GroupListModel.java:GroupUtil.java:GroupedItemCellRenderer.java:GroupedSubstituteChooser.java:IActionProvider.java:IMenuEntryStyle.java:ISubstituteChooser.java:MenuEntry.java:MenuModel.java:SubstituteChooserAdapter.java:TabExtensionActionProvider.java" />
+</product>
+

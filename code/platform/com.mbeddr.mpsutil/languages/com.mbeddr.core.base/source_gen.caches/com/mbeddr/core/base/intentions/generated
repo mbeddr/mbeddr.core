@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="a6oq8570i47bwxe5d3w03zy42y88x5z">
+  <files names="CommandWithMessage.java:IntentionsDescriptor.java:ToggleKeepAliveInGeneration_Intention.java:addControlledPrefix_Intention.java:addDocumentation_Intention.java:addSuffix_Intention.java:addSuppressWarnings_Intention.java:clearResults_Intention.java:clearTextBlock_Intention.java:collapse_Intention.java:expandAll_Intention.java:expandOne_Intention.java:makeNameControlled_Intention.java:migrateManually_Intention.java:toggleReexport_Intention.java:updateAllQueries_Intention.java:updateHashForAssessmentResult_Intention.java:updateHashForIExtRef_Intention.java:updateQuery_Intention.java" />
+</product>
+

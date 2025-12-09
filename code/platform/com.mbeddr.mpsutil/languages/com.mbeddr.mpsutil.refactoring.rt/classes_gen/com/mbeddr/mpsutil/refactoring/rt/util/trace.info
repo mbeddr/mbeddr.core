@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="8f16104e-22e6-406d-8251-ef9688474557/r:ab202a93-2128-4d4d-ab72-2fb787f2aec3(com.mbeddr.mpsutil.refactoring.rt/com.mbeddr.mpsutil.refactoring.rt.util)/4189697348346196613">
+    <file name="EditorHintToggleAction.java">
+      <node id="6445798029994572086" at="26,0,27,0" concept="3" trace="hintsToRemove" />
+      <node id="4189697348346228465" at="29,56,30,16" concept="10" />
+      <node id="6445798029994419709" at="32,81,33,16" concept="10" />
+      <node id="6445798029994572091" at="33,16,34,39" concept="2" />
+      <node id="4189697348345875132" at="38,49,39,24" concept="2" />
+      <node id="4189697348345886124" at="39,24,40,0" concept="9" />
+      <node id="7863821876053889446" at="40,0,41,66" concept="7" />
+      <node id="4189697348347411559" at="42,26,43,96" concept="7" />
+      <node id="4189697348347107506" at="46,29,47,63" concept="7" />
+      <node id="4189697348347115463" at="47,63,48,213" concept="7" />
+      <node id="4189697348347117742" at="48,213,49,74" concept="2" />
+      <node id="4189697348347423893" at="51,11,52,15" concept="8" />
+      <node id="4189697348346139721" at="54,5,55,46" concept="2" />
+      <node id="4189697348346112836" at="58,50,59,66" concept="7" />
+      <node id="2815142247323321153" at="60,26,61,19" concept="8" />
+      <node id="4189697348346112844" at="62,5,63,114" concept="7" />
+      <node id="4189697348346113619" at="63,114,64,79" concept="8" />
+      <node id="4189697348346106794" at="67,66,68,66" concept="7" />
+      <node id="4189697348346067574" at="68,66,69,114" concept="7" />
+      <node id="4189697348346111647" at="69,114,70,0" concept="9" />
+      <node id="4189697348346156579" at="70,0,71,77" concept="7" />
+      <node id="6445798029994592491" at="73,34,74,61" concept="2" />
+      <node id="6445798029994583384" at="75,7,76,0" concept="9" />
+      <node id="4189697348346169101" at="76,0,77,36" concept="2" />
+      <node id="4189697348346182655" at="78,12,79,39" concept="2" />
+      <node id="4189697348346158890" at="80,5,81,0" concept="9" />
+      <node id="4189697348345886191" at="81,0,82,113" concept="7" />
+      <node id="4189697348345886194" at="82,113,83,43" concept="2" />
+      <node id="4189697348345886197" at="83,43,84,41" concept="2" />
+      <node id="4189697348345886217" at="87,132,88,43" concept="2" />
+      <node id="449350730585728478" at="91,7,92,50" concept="2" />
+      <node id="4189697348346208305" at="95,0,96,0" concept="6" trace="getHintID#()Ljava/lang/String;" />
+      <node id="4189697348347099176" at="96,0,97,0" concept="6" trace="getRequiredConcept#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4189697348346181675" at="78,10,80,5" concept="0" />
+      <node id="~ToggleAction.&lt;init&gt;(java.lang.String)" at="29,0,32,0" concept="1" trace="EditorHintToggleAction#(Ljava/lang/String;)V" />
+      <node id="2815142247323299119" at="59,66,62,5" concept="5" />
+      <node id="6445798029994583563" at="72,19,75,7" concept="5" />
+      <node id="4189697348345886214" at="86,25,89,9" concept="4" />
+      <node id="6445798029994419702" at="32,0,36,0" concept="1" trace="EditorHintToggleAction#(Ljava/lang/String;null)V" />
+      <node id="4189697348347479952" at="46,0,51,0" concept="6" trace="run#()V" />
+      <node id="4189697348345951991" at="86,0,91,0" concept="6" trace="run#()V" />
+      <node id="4189697348347459437" at="44,36,51,11" concept="2" />
+      <node id="4189697348345908554" at="84,41,91,7" concept="2" />
+      <node id="4189697348345873773" at="58,0,66,0" concept="6" trace="isSelected#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)Z" />
+      <node id="4189697348346163991" at="71,77,80,5" concept="5" />
+      <node id="4189697348347417403" at="43,96,53,7" concept="5" />
+      <node id="4189697348347031860" at="41,66,54,5" concept="5" />
+      <node id="4189697348345875122" at="37,0,57,0" concept="6" trace="update#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)V" />
+      <node id="4189697348345873782" at="67,0,94,0" concept="6" trace="setSelected#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Z)V" />
+      <scope id="4189697348346228287" at="29,56,30,16" />
+      <scope id="2815142247323299121" at="60,26,61,19" />
+      <scope id="6445798029994583566" at="73,34,74,61" />
+      <scope id="4189697348346181676" at="78,12,79,39" />
+      <scope id="4189697348345886216" at="87,132,88,43" />
+      <scope id="4189697348346208305" at="95,0,96,0" />
+      <scope id="4189697348347099176" at="96,0,97,0" />
+      <scope id="6445798029994419708" at="32,81,34,39" />
+      <scope id="~ToggleAction.&lt;init&gt;(java.lang.String)" at="29,0,32,0">
+        <var name="text" id="4189697348345623665" />
+      </scope>
+      <scope id="4189697348347479956" at="46,29,49,74">
+        <var name="editedNode" id="4189697348347107507" />
+        <var name="editorContainsReqConcepts" id="4189697348347115464" />
+      </scope>
+      <scope id="4189697348345886214" at="86,25,89,9">
+        <var name="component" id="4189697348345886219" />
+      </scope>
+      <scope id="4189697348345951995" at="86,25,89,9" />
+      <scope id="6445798029994419702" at="32,0,36,0">
+        <var name="hintsToRemove" id="6445798029994421565" />
+        <var name="text" id="6445798029994419705" />
+      </scope>
+      <scope id="4189697348347479952" at="46,0,51,0" />
+      <scope id="4189697348346163994" at="72,19,77,36" />
+      <scope id="4189697348345951991" at="86,0,91,0" />
+      <scope id="4189697348345873779" at="58,50,64,79">
+        <var name="project" id="4189697348346112837" />
+        <var name="settingsInstance" id="4189697348346112845" />
+      </scope>
+      <scope id="4189697348347417406" at="44,36,52,15" />
+      <scope id="4189697348345873773" at="58,0,66,0">
+        <var name="event" id="4189697348345873777" />
+      </scope>
+      <scope id="4189697348347031863" at="42,26,53,7">
+        <var name="editorComponent" id="4189697348347411560" />
+      </scope>
+      <scope id="4189697348345875128" at="38,49,55,46">
+        <var name="project" id="7863821876053889447" />
+      </scope>
+      <scope id="4189697348345875122" at="37,0,57,0">
+        <var name="event" id="4189697348345875126" />
+      </scope>
+      <scope id="4189697348345873790" at="67,66,92,50">
+        <var name="enabledHints" id="4189697348346156580" />
+        <var name="newState" id="4189697348345886190" />
+        <var name="project" id="4189697348346106795" />
+        <var name="settingsInstance" id="4189697348346067575" />
+      </scope>
+      <scope id="4189697348345873782" at="67,0,94,0">
+        <var name="event" id="4189697348345873786" />
+        <var name="pushHint" id="4189697348345873788" />
+      </scope>
+      <unit id="4189697348347479950" at="45,64,51,9" name="com.mbeddr.mpsutil.refactoring.rt.util.EditorHintToggleAction$1" />
+      <unit id="4189697348345951989" at="85,60,91,5" name="com.mbeddr.mpsutil.refactoring.rt.util.EditorHintToggleAction$2" />
+      <unit id="4189697348346196613" at="24,0,99,0" name="com.mbeddr.mpsutil.refactoring.rt.util.EditorHintToggleAction" />
+    </file>
+  </root>
+  <root nodeRef="8f16104e-22e6-406d-8251-ef9688474557/r:ab202a93-2128-4d4d-ab72-2fb787f2aec3(com.mbeddr.mpsutil.refactoring.rt/com.mbeddr.mpsutil.refactoring.rt.util)/6445798029994620852">
+    <file name="NoHintToggleAction.java">
+      <node id="6445798029994620854" at="27,0,28,0" concept="3" trace="hintsToCheck" />
+      <node id="6445798029994620880" at="30,76,31,16" concept="10" />
+      <node id="6445798029994620882" at="31,16,32,107" concept="2" />
+      <node id="6445798029994620895" at="36,49,37,24" concept="2" />
+      <node id="6445798029994620898" at="37,24,38,0" concept="9" />
+      <node id="7863821876053920144" at="38,0,39,66" concept="7" />
+      <node id="6445798029994620901" at="40,26,41,96" concept="7" />
+      <node id="6445798029994620922" at="44,29,45,63" concept="7" />
+      <node id="6445798029994620928" at="45,63,46,213" concept="7" />
+      <node id="6445798029994620940" at="46,213,47,74" concept="2" />
+      <node id="6445798029994620947" at="49,11,50,15" concept="8" />
+      <node id="6445798029994620957" at="52,5,53,46" concept="2" />
+      <node id="6445798029994620972" at="56,50,57,66" concept="7" />
+      <node id="4969821222485851891" at="58,26,59,19" concept="8" />
+      <node id="6445798029994620979" at="60,5,61,114" concept="7" />
+      <node id="6445798029994895883" at="61,114,62,79" concept="7" />
+      <node id="6445798029994804279" at="64,37,65,21" concept="8" />
+      <node id="6445798029994827426" at="67,5,68,16" concept="8" />
+      <node id="6445798029994621002" at="71,66,72,66" concept="7" />
+      <node id="6445798029994621009" at="72,66,73,114" concept="7" />
+      <node id="6445798029994621014" at="73,114,74,0" concept="9" />
+      <node id="6445798029994621015" at="74,0,75,77" concept="7" />
+      <node id="6445798029996231150" at="75,77,76,58" concept="2" />
+      <node id="6445798029996314722" at="76,58,77,0" concept="9" />
+      <node id="6445798029996329723" at="78,35,79,29" concept="2" />
+      <node id="6445798029996270731" at="80,5,81,53" concept="2" />
+      <node id="6445798029996266778" at="81,53,82,0" concept="9" />
+      <node id="6445798029994621052" at="82,0,83,113" concept="7" />
+      <node id="6445798029994621057" at="83,113,84,43" concept="2" />
+      <node id="6445798029994621062" at="84,43,85,41" concept="2" />
+      <node id="6445798029994621087" at="88,132,89,43" concept="2" />
+      <node id="6445798029994621096" at="95,0,96,0" concept="6" trace="getRequiredConcept#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4969821222485813558" at="57,66,60,5" concept="5" />
+      <node id="6445798029994796820" at="63,35,66,7" concept="5" />
+      <node id="6445798029996318822" at="77,0,80,5" concept="4" />
+      <node id="6445798029994621079" at="87,25,90,9" concept="4" />
+      <node id="6445798029994620870" at="30,0,34,0" concept="1" trace="NoHintToggleAction#(Ljava/lang/String;null)V" />
+      <node id="6445798029994620918" at="44,0,49,0" concept="6" trace="run#()V" />
+      <node id="6445798029994794316" at="62,79,67,5" concept="4" />
+      <node id="6445798029994621075" at="87,0,92,0" concept="6" trace="run#()V" />
+      <node id="6445798029994620910" at="42,36,49,11" concept="2" />
+      <node id="6445798029994621067" at="85,41,92,7" concept="2" />
+      <node id="6445798029994620908" at="41,96,51,7" concept="5" />
+      <node id="6445798029994620899" at="39,66,52,5" concept="5" />
+      <node id="6445798029994620966" at="56,0,70,0" concept="6" trace="isSelected#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)Z" />
+      <node id="6445798029994620889" at="35,0,55,0" concept="6" trace="update#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)V" />
+      <node id="6445798029994620994" at="71,0,94,0" concept="6" trace="setSelected#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Z)V" />
+      <scope id="4969821222485813560" at="58,26,59,19" />
+      <scope id="6445798029994796821" at="64,37,65,21" />
+      <scope id="6445798029996318828" at="78,35,79,29" />
+      <scope id="6445798029994621086" at="88,132,89,43" />
+      <scope id="6445798029994621096" at="95,0,96,0" />
+      <scope id="6445798029994620879" at="30,76,32,107" />
+      <scope id="6445798029994620921" at="44,29,47,74">
+        <var name="editedNode" id="6445798029994620923" />
+        <var name="editorContainsReqConcepts" id="6445798029994620929" />
+      </scope>
+      <scope id="6445798029994794322" at="63,35,66,7" />
+      <scope id="6445798029996318822" at="77,0,80,5">
+        <var name="h" id="6445798029996318824" />
+      </scope>
+      <scope id="6445798029994621078" at="87,25,90,9" />
+      <scope id="6445798029994621079" at="87,25,90,9">
+        <var name="component" id="6445798029994621084" />
+      </scope>
+      <scope id="6445798029994620870" at="30,0,34,0">
+        <var name="hintsToCheck" id="6445798029994620876" />
+        <var name="text" id="6445798029994620873" />
+      </scope>
+      <scope id="6445798029994620918" at="44,0,49,0" />
+      <scope id="6445798029994794316" at="62,79,67,5">
+        <var name="h" id="6445798029994794318" />
+      </scope>
+      <scope id="6445798029994621075" at="87,0,92,0" />
+      <scope id="6445798029994620909" at="42,36,50,15" />
+      <scope id="6445798029994620900" at="40,26,51,7">
+        <var name="editorComponent" id="6445798029994620902" />
+      </scope>
+      <scope id="6445798029994620971" at="56,50,68,16">
+        <var name="enabledHints" id="6445798029994895884" />
+        <var name="project" id="6445798029994620973" />
+        <var name="settingsInstance" id="6445798029994620980" />
+      </scope>
+      <scope id="6445798029994620966" at="56,0,70,0">
+        <var name="event" id="6445798029994620969" />
+      </scope>
+      <scope id="6445798029994620894" at="36,49,53,46">
+        <var name="project" id="7863821876053920145" />
+      </scope>
+      <scope id="6445798029994620889" at="35,0,55,0">
+        <var name="event" id="6445798029994620892" />
+      </scope>
+      <scope id="6445798029994621001" at="71,66,92,7">
+        <var name="enabledHints" id="6445798029994621016" />
+        <var name="newState" id="6445798029994621053" />
+        <var name="project" id="6445798029994621003" />
+        <var name="settingsInstance" id="6445798029994621010" />
+      </scope>
+      <scope id="6445798029994620994" at="71,0,94,0">
+        <var name="event" id="6445798029994620997" />
+        <var name="pushHint" id="6445798029994620999" />
+      </scope>
+      <unit id="6445798029994620916" at="43,64,49,9" name="com.mbeddr.mpsutil.refactoring.rt.util.NoHintToggleAction$1" />
+      <unit id="6445798029994621073" at="86,60,92,5" name="com.mbeddr.mpsutil.refactoring.rt.util.NoHintToggleAction$2" />
+      <unit id="6445798029994620852" at="25,0,98,0" name="com.mbeddr.mpsutil.refactoring.rt.util.NoHintToggleAction" />
+    </file>
+  </root>
+</debug-info>
+

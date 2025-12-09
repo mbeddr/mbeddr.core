@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="4pb4935owbuy2nkjdjz8mnax64m5qy6">
+  <files names="BehaviorAspectDescriptor.java:ComponentInstanceFieldRef__BehaviorDescriptor.java:ComponentInstanceReference__BehaviorDescriptor.java:ComponentInstanceRunnableCall__BehaviorDescriptor.java:IComponentInstanceReference__BehaviorDescriptor.java:IConcurrencyInComponent__BehaviorDescriptor.java:InternalComponentInstanceReference__BehaviorDescriptor.java:NameOfComponentInstanceFunction__BehaviorDescriptor.java:ScheduleSpecificationInComponent__BehaviorDescriptor.java:TaskInComponentReference__BehaviorDescriptor.java:TaskInComponent__BehaviorDescriptor.java" />
+</product>
+

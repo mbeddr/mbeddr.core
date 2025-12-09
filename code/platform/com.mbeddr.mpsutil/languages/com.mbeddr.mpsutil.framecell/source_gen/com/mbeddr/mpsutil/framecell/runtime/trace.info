@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="b33d119e-196d-4497-977c-5c167b21fe33/r:8077d170-2614-4b30-988b-3ce31615d69d(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.runtime)/8760592470372954446">
+    <file name="FrameCell.java">
+      <node id="8760592470373066007" at="17,61,18,60" concept="7" />
+      <node id="5918211902457682789" at="22,45,23,31" concept="1" />
+      <node id="5918211902457683816" at="23,31,24,0" concept="6" />
+      <node id="5918211902457684070" at="24,0,25,38" concept="4" />
+      <node id="5918211902457684442" at="25,38,26,21" concept="1" />
+      <node id="5918211902457698206" at="26,21,27,21" concept="1" />
+      <node id="5918211902457712545" at="27,21,28,29" concept="1" />
+      <node id="5918211902457725984" at="28,29,29,31" concept="1" />
+      <node id="5918211902457734426" at="29,31,30,0" concept="6" />
+      <node id="5918211902457753502" at="30,0,31,44" concept="4" />
+      <node id="5918211902457759468" at="32,9,33,162" concept="1" />
+      <node id="5918211902457764244" at="33,162,34,131" concept="1" />
+      <node id="5918211902457758124" at="34,131,35,20" concept="1" />
+      <node id="5918211902457757469" at="36,15,37,18" concept="1" />
+      <node id="8760592470373066001" at="17,0,20,0" concept="0" trace="FrameCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5918211902457748002" at="31,44,38,5" concept="8" />
+      <node id="5918211902457682775" at="21,0,40,0" concept="3" trace="paintDecorations#(Ljava/awt/Graphics;)V" />
+      <scope id="8760592470373066005" at="17,61,18,60" />
+      <scope id="5918211902457748005" at="36,15,37,18" />
+      <scope id="8760592470373066001" at="17,0,20,0">
+        <var name="editorContext" id="8760592470373066008" />
+        <var name="node" id="8760592470373066012" />
+      </scope>
+      <scope id="5918211902457748004" at="32,9,35,20" />
+      <scope id="5918211902457682785" at="22,45,38,5">
+        <var name="frame" id="5918211902457684071" />
+        <var name="g" id="5918211902457753503" />
+      </scope>
+      <scope id="5918211902457682775" at="21,0,40,0">
+        <var name="g_" id="5918211902457682779" />
+      </scope>
+      <unit id="8760592470372954446" at="15,0,42,0" name="com.mbeddr.mpsutil.framecell.runtime.FrameCell" />
+    </file>
+  </root>
+  <root nodeRef="b33d119e-196d-4497-977c-5c167b21fe33/r:8077d170-2614-4b30-988b-3ce31615d69d(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.runtime)/8796347991407845723">
+    <file name="FrameCellLayout.java">
+      <node id="8796347991407846216" at="15,58,16,46" concept="4" />
+      <node id="8796347991407846221" at="17,24,18,23" concept="1" />
+      <node id="8796347991407849394" at="18,23,19,0" concept="6" />
+      <node id="8796347991407846225" at="19,0,20,150" concept="4" />
+      <node id="8796347991407846232" at="20,150,21,148" concept="4" />
+      <node id="8796347991407846239" at="21,148,22,50" concept="4" />
+      <node id="8796347991407858682" at="22,50,23,93" concept="1" />
+      <node id="8796347991407864382" at="23,93,24,23" concept="1" />
+      <node id="8796347991407866627" at="24,23,25,66" concept="1" />
+      <node id="8796347991407870326" at="25,66,26,68" concept="1" />
+      <node id="8567574690674559684" at="29,68,30,47" concept="4" />
+      <node id="8567574690674477916" at="30,47,31,47" concept="4" />
+      <node id="8567574690674474407" at="31,47,32,63" concept="4" />
+      <node id="8567574690674526605" at="33,24,34,57" concept="1" />
+      <node id="8567574690674525570" at="35,5,36,18" concept="5" />
+      <node id="8567574690674600378" at="32,63,35,5" concept="2" />
+      <node id="8796347991407878448" at="29,0,38,0" concept="3" trace="doLayoutText#(Ljava/lang/Iterable;)Ljetbrains/mps/openapi/editor/TextBuilder;" />
+      <node id="8045119630841790271" at="16,46,27,5" concept="2" />
+      <node id="8796347991407845880" at="14,0,29,0" concept="3" trace="doLayout#(Ljetbrains/mps/openapi/editor/cells/EditorCell_Collection;)V" />
+      <scope id="8567574690674600380" at="33,24,34,57" />
+      <scope id="8796347991407878457" at="29,68,36,18">
+        <var name="child" id="8567574690674474408" />
+        <var name="children" id="8567574690674559687" />
+        <var name="result" id="8567574690674477917" />
+      </scope>
+      <scope id="8045119630841790273" at="17,24,26,68">
+        <var name="borderWidth" id="8796347991407846226" />
+        <var name="padding" id="8796347991407846233" />
+        <var name="totalFrameWidth" id="8796347991407846240" />
+      </scope>
+      <scope id="8796347991407878448" at="29,0,38,0">
+        <var name="collection" id="8796347991407878452" />
+      </scope>
+      <scope id="8796347991407845886" at="15,58,27,5">
+        <var name="child" id="8796347991407846217" />
+      </scope>
+      <scope id="8796347991407845880" at="14,0,29,0">
+        <var name="collection" id="8796347991407845884" />
+      </scope>
+      <unit id="8796347991407845723" at="13,0,39,0" name="com.mbeddr.mpsutil.framecell.runtime.FrameCellLayout" />
+    </file>
+  </root>
+</debug-info>
+

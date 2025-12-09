@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="MigrationDescriptor.java">
+      <unit at="11,0,17,0" name="com.mbeddr.doc.migration.MigrationDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:72c67d76-808a-4f76-81da-982fba0340da(com.mbeddr.doc.migration)/1760044264888553212">
+    <file name="removePathFromModelContentAsImage.java">
+      <node id="1760044264888553212" at="18,0,19,0" concept="1" trace="description" />
+      <node id="1760044264888553212" at="19,30,20,23" concept="6" />
+      <node id="1760044264888553212" at="23,33,24,17" concept="6" />
+      <node id="1760044264888553212" at="26,41,27,17" concept="0" />
+      <node id="1760044264888553212" at="27,17,28,16" concept="6" />
+      <node id="1760044264888561177" at="31,38,32,170" concept="0" />
+      <node id="1760044264888553212" at="35,50,36,135" concept="6" />
+      <node id="1760044264888553212" at="40,0,41,0" concept="7" trace="ModelContentAsImageParagraph$vS" />
+      <node id="1760044264888553212" at="44,0,45,0" concept="7" trace="path$bXsM" />
+      <node id="1760044264888553212" at="19,0,22,0" concept="4" trace="getCaption#()Ljava/lang/String;" />
+      <node id="1760044264888559024" at="30,42,33,5" concept="2" />
+      <node id="1760044264888553212" at="35,0,38,0" concept="4" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="1760044264888553212" at="22,0,26,0" concept="4" trace="isRerunnable#()Z" />
+      <node id="1760044264888553212" at="26,0,30,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1760044264888553212" at="30,0,35,0" concept="4" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="1760044264888553212" at="19,30,20,23" />
+      <scope id="1760044264888553212" at="23,33,24,17" />
+      <scope id="1760044264888559027" at="31,38,32,170" />
+      <scope id="1760044264888553212" at="35,50,36,135" />
+      <scope id="1760044264888553212" at="26,41,28,16" />
+      <scope id="1760044264888553212" at="19,0,22,0" />
+      <scope id="1760044264888553212" at="30,42,33,5" />
+      <scope id="1760044264888559024" at="30,42,33,5">
+        <var name="mdl" id="1760044264888559025" />
+      </scope>
+      <scope id="1760044264888553212" at="35,0,38,0" />
+      <scope id="1760044264888553212" at="22,0,26,0" />
+      <scope id="1760044264888553212" at="26,0,30,0">
+        <var name="m" id="1760044264888553212" />
+      </scope>
+      <scope id="1760044264888553212" at="30,0,35,0">
+        <var name="m" id="1760044264888553212" />
+      </scope>
+      <unit id="1760044264888553212" at="39,0,42,0" name="com.mbeddr.doc.migration.removePathFromModelContentAsImage$CONCEPTS" />
+      <unit id="1760044264888553212" at="43,0,46,0" name="com.mbeddr.doc.migration.removePathFromModelContentAsImage$LINKS" />
+      <unit id="1760044264888553212" at="17,0,47,0" name="com.mbeddr.doc.migration.removePathFromModelContentAsImage" />
+    </file>
+  </root>
+  <root nodeRef="r:72c67d76-808a-4f76-81da-982fba0340da(com.mbeddr.doc.migration)/3498379661305395696">
+    <file name="createDefaultImageLocation.java">
+      <node id="3498379661305395696" at="18,0,19,0" concept="1" trace="description" />
+      <node id="3498379661305395696" at="19,30,20,23" concept="6" />
+      <node id="3498379661305395696" at="23,33,24,17" concept="6" />
+      <node id="3498379661305395696" at="26,41,27,17" concept="0" />
+      <node id="3498379661305395696" at="27,17,28,16" concept="6" />
+      <node id="3498379661305422339" at="31,38,32,254" concept="0" />
+      <node id="3498379661305395696" at="35,50,36,135" concept="6" />
+      <node id="3498379661305395696" at="40,0,41,0" concept="7" trace="DocumentConfig$ci" />
+      <node id="3498379661305395696" at="44,0,45,0" concept="7" trace="defaultImagePath$4aaV" />
+      <node id="3498379661305395696" at="19,0,22,0" concept="4" trace="getCaption#()Ljava/lang/String;" />
+      <node id="3498379661305405506" at="30,42,33,5" concept="2" />
+      <node id="3498379661305395696" at="35,0,38,0" concept="4" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="3498379661305395696" at="22,0,26,0" concept="4" trace="isRerunnable#()Z" />
+      <node id="3498379661305395696" at="26,0,30,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3498379661305395696" at="30,0,35,0" concept="4" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="3498379661305395696" at="19,30,20,23" />
+      <scope id="3498379661305395696" at="23,33,24,17" />
+      <scope id="3498379661305405509" at="31,38,32,254" />
+      <scope id="3498379661305395696" at="35,50,36,135" />
+      <scope id="3498379661305395696" at="26,41,28,16" />
+      <scope id="3498379661305395696" at="19,0,22,0" />
+      <scope id="3498379661305395696" at="30,42,33,5" />
+      <scope id="3498379661305405506" at="30,42,33,5">
+        <var name="mdl" id="3498379661305405507" />
+      </scope>
+      <scope id="3498379661305395696" at="35,0,38,0" />
+      <scope id="3498379661305395696" at="22,0,26,0" />
+      <scope id="3498379661305395696" at="26,0,30,0">
+        <var name="m" id="3498379661305395696" />
+      </scope>
+      <scope id="3498379661305395696" at="30,0,35,0">
+        <var name="m" id="3498379661305395696" />
+      </scope>
+      <unit id="3498379661305395696" at="39,0,42,0" name="com.mbeddr.doc.migration.createDefaultImageLocation$CONCEPTS" />
+      <unit id="3498379661305395696" at="43,0,46,0" name="com.mbeddr.doc.migration.createDefaultImageLocation$LINKS" />
+      <unit id="3498379661305395696" at="17,0,47,0" name="com.mbeddr.doc.migration.createDefaultImageLocation" />
+    </file>
+  </root>
+  <root nodeRef="r:72c67d76-808a-4f76-81da-982fba0340da(com.mbeddr.doc.migration)/4547166349955256531">
+    <file name="removeDeprecatedDefaultImagePath.java">
+      <node id="4547166349955256531" at="22,0,23,0" concept="1" trace="description" />
+      <node id="4547166349955256531" at="23,30,24,23" concept="6" />
+      <node id="4547166349955256531" at="27,33,28,16" concept="6" />
+      <node id="4547166349955256531" at="30,41,31,17" concept="0" />
+      <node id="4547166349955256531" at="31,17,32,16" concept="6" />
+      <node id="4547166349956214391" at="36,105,37,165" concept="5" />
+      <node id="4547166349956224119" at="38,83,39,119" concept="0" />
+      <node id="4547166349955256531" at="44,50,45,135" concept="6" />
+      <node id="4547166349956214396" at="48,77,49,74" concept="5" />
+      <node id="4547166349956214396" at="49,74,50,97" concept="0" />
+      <node id="4547166349956214396" at="50,97,51,26" concept="6" />
+      <node id="4547166349956223753" at="53,55,54,43" concept="6" />
+      <node id="4547166349955256531" at="58,0,59,0" concept="7" trace="DefaultImagePath$M8" />
+      <node id="4547166349955256531" at="59,0,60,0" concept="7" trace="PathDefinition$sK" />
+      <node id="4547166349955256531" at="60,0,61,0" concept="7" trace="SolutionRelativeDirPicker$W5" />
+      <node id="4547166349955256531" at="64,0,65,0" concept="7" trace="pathPicker$QPZE" />
+      <node id="4547166349955256531" at="68,0,69,0" concept="7" trace="name$MnvL" />
+      <node id="4547166349955256531" at="23,0,26,0" concept="4" trace="getCaption#()Ljava/lang/String;" />
+      <node id="4547166349956216540" at="37,165,40,9" concept="3" />
+      <node id="4547166349955256531" at="44,0,47,0" concept="4" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="4547166349956223753" at="53,0,56,0" concept="8" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="4547166349955256531" at="26,0,30,0" concept="4" trace="isRerunnable#()Z" />
+      <node id="4547166349955256531" at="30,0,34,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4547166349956214396" at="48,0,53,0" concept="8" trace="createPathDefinition_mhjfaj_a0a0a0a0a0a0a6#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4547166349955258200" at="35,38,41,9" concept="0" />
+      <node id="4547166349955258196" at="34,42,42,5" concept="2" />
+      <node id="4547166349955256531" at="34,0,44,0" concept="4" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="4547166349955256531" at="23,30,24,23" />
+      <scope id="4547166349955256531" at="27,33,28,16" />
+      <scope id="4547166349956216542" at="38,83,39,119" />
+      <scope id="4547166349955256531" at="44,50,45,135" />
+      <scope id="4547166349956223753" at="53,55,54,43" />
+      <scope id="4547166349955256531" at="30,41,32,16" />
+      <scope id="4547166349955256531" at="23,0,26,0" />
+      <scope id="4547166349955256531" at="44,0,47,0" />
+      <scope id="4547166349956214396" at="48,77,51,26">
+        <var name="n0" id="4547166349956214396" />
+      </scope>
+      <scope id="4547166349956223753" at="53,0,56,0">
+        <var name="str" id="4547166349956223753" />
+      </scope>
+      <scope id="4547166349955256531" at="26,0,30,0" />
+      <scope id="4547166349955256531" at="30,0,34,0">
+        <var name="m" id="4547166349955256531" />
+      </scope>
+      <scope id="4547166349955258208" at="36,105,40,9">
+        <var name="replacement" id="4547166349956214392" />
+      </scope>
+      <scope id="4547166349956214396" at="48,0,53,0">
+        <var name="p0" id="4547166349956214396" />
+      </scope>
+      <scope id="4547166349955258199" at="35,38,41,9" />
+      <scope id="4547166349955256531" at="34,42,42,5" />
+      <scope id="4547166349955258196" at="34,42,42,5">
+        <var name="mdl" id="4547166349955258197" />
+      </scope>
+      <scope id="4547166349955256531" at="34,0,44,0">
+        <var name="m" id="4547166349955256531" />
+      </scope>
+      <unit id="4547166349955256531" at="63,0,66,0" name="com.mbeddr.doc.migration.removeDeprecatedDefaultImagePath$LINKS" />
+      <unit id="4547166349955256531" at="67,0,70,0" name="com.mbeddr.doc.migration.removeDeprecatedDefaultImagePath$PROPS" />
+      <unit id="4547166349955256531" at="57,0,62,0" name="com.mbeddr.doc.migration.removeDeprecatedDefaultImagePath$CONCEPTS" />
+      <unit id="4547166349955256531" at="21,0,71,0" name="com.mbeddr.doc.migration.removeDeprecatedDefaultImagePath" />
+    </file>
+  </root>
+  <root nodeRef="r:72c67d76-808a-4f76-81da-982fba0340da(com.mbeddr.doc.migration)/8480291644170539158">
+    <file name="moduleRefWord_convert_identity.java">
+      <node id="8480291644170539158" at="21,0,22,0" concept="1" trace="description" />
+      <node id="8480291644170539158" at="22,30,23,23" concept="6" />
+      <node id="8480291644170539158" at="26,33,27,16" concept="6" />
+      <node id="8480291644170539158" at="29,41,30,17" concept="0" />
+      <node id="8480291644170539158" at="30,17,31,16" concept="6" />
+      <node id="8480291644170617319" at="35,182,36,338" concept="0" />
+      <node id="8480291644170652829" at="36,338,37,91" concept="0" />
+      <node id="8480291644170539158" at="41,50,42,135" concept="6" />
+      <node id="8480291644170539158" at="46,0,47,0" concept="7" trace="ModuleRefWord$Wt" />
+      <node id="8480291644170539158" at="47,0,48,0" concept="7" trace="ModulePointer$7i" />
+      <node id="8480291644170539158" at="51,0,52,0" concept="7" trace="identity_old$6zhe" />
+      <node id="8480291644170539158" at="52,0,53,0" concept="7" trace="identity$8c65" />
+      <node id="8480291644170539158" at="22,0,25,0" concept="4" trace="getCaption#()Ljava/lang/String;" />
+      <node id="8480291644170539158" at="41,0,44,0" concept="4" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="8480291644170539158" at="25,0,29,0" concept="4" trace="isRerunnable#()Z" />
+      <node id="8480291644170539158" at="29,0,33,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8480291644170583701" at="34,38,38,9" concept="0" />
+      <node id="8480291644170578973" at="33,42,39,5" concept="2" />
+      <node id="8480291644170539158" at="33,0,41,0" concept="4" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="8480291644170539158" at="22,30,23,23" />
+      <scope id="8480291644170539158" at="26,33,27,16" />
+      <scope id="8480291644170539158" at="41,50,42,135" />
+      <scope id="8480291644170539158" at="29,41,31,16" />
+      <scope id="8480291644170616691" at="35,182,37,91" />
+      <scope id="8480291644170539158" at="22,0,25,0" />
+      <scope id="8480291644170539158" at="41,0,44,0" />
+      <scope id="8480291644170539158" at="25,0,29,0" />
+      <scope id="8480291644170539158" at="29,0,33,0">
+        <var name="m" id="8480291644170539158" />
+      </scope>
+      <scope id="8480291644170578975" at="34,38,38,9" />
+      <scope id="8480291644170539158" at="33,42,39,5" />
+      <scope id="8480291644170578973" at="33,42,39,5">
+        <var name="mdl" id="8480291644170578976" />
+      </scope>
+      <scope id="8480291644170539158" at="33,0,41,0">
+        <var name="m" id="8480291644170539158" />
+      </scope>
+      <unit id="8480291644170539158" at="45,0,49,0" name="com.mbeddr.doc.migration.moduleRefWord_convert_identity$CONCEPTS" />
+      <unit id="8480291644170539158" at="50,0,54,0" name="com.mbeddr.doc.migration.moduleRefWord_convert_identity$LINKS" />
+      <unit id="8480291644170539158" at="20,0,55,0" name="com.mbeddr.doc.migration.moduleRefWord_convert_identity" />
+    </file>
+  </root>
+  <root nodeRef="r:72c67d76-808a-4f76-81da-982fba0340da(com.mbeddr.doc.migration)/9123238432848105759">
+    <file name="MigrateToDoCommentWordToToDoWordIfPossible.java">
+      <node id="9123238432848105759" at="21,0,22,0" concept="1" trace="description" />
+      <node id="9123238432848105759" at="22,30,23,23" concept="6" />
+      <node id="9123238432848105759" at="26,33,27,16" concept="6" />
+      <node id="9123238432848105759" at="29,41,30,17" concept="0" />
+      <node id="9123238432848105759" at="30,17,31,16" concept="6" />
+      <node id="9123238432848143665" at="35,205,36,107" concept="5" />
+      <node id="9123238432848152712" at="36,107,37,56" concept="0" />
+      <node id="9123238432848105759" at="41,50,42,135" concept="6" />
+      <node id="9123238432848145654" at="45,69,46,68" concept="5" />
+      <node id="9123238432848145654" at="46,68,47,70" concept="0" />
+      <node id="9123238432848145654" at="47,70,48,26" concept="6" />
+      <node id="9123238432848105759" at="52,0,53,0" concept="7" trace="ToDoCommentWord$At" />
+      <node id="9123238432848105759" at="53,0,54,0" concept="7" trace="IDocumentLike$h$" />
+      <node id="9123238432848105759" at="54,0,55,0" concept="7" trace="ToDoWord$Iv" />
+      <node id="9123238432848105759" at="55,0,56,0" concept="7" trace="Text$bD" />
+      <node id="9123238432848105759" at="59,0,60,0" concept="7" trace="text$P6nE" />
+      <node id="9123238432848105759" at="60,0,61,0" concept="7" trace="text$qwxg" />
+      <node id="9123238432848105759" at="22,0,25,0" concept="4" trace="getCaption#()Ljava/lang/String;" />
+      <node id="9123238432848105759" at="41,0,44,0" concept="4" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="9123238432848105759" at="25,0,29,0" concept="4" trace="isRerunnable#()Z" />
+      <node id="9123238432848105759" at="29,0,33,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="9123238432848108173" at="34,38,38,9" concept="0" />
+      <node id="9123238432848145654" at="45,0,50,0" concept="8" trace="createToDoWord_vpor60_a0a0a0a0a0a6#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="9123238432848108166" at="33,42,39,5" concept="2" />
+      <node id="9123238432848105759" at="33,0,41,0" concept="4" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="9123238432848105759" at="22,30,23,23" />
+      <scope id="9123238432848105759" at="26,33,27,16" />
+      <scope id="9123238432848105759" at="41,50,42,135" />
+      <scope id="9123238432848105759" at="29,41,31,16" />
+      <scope id="9123238432848108193" at="35,205,37,56">
+        <var name="newWord" id="9123238432848143668" />
+      </scope>
+      <scope id="9123238432848105759" at="22,0,25,0" />
+      <scope id="9123238432848105759" at="41,0,44,0" />
+      <scope id="9123238432848145654" at="45,69,48,26">
+        <var name="n0" id="9123238432848145654" />
+      </scope>
+      <scope id="9123238432848105759" at="25,0,29,0" />
+      <scope id="9123238432848105759" at="29,0,33,0">
+        <var name="m" id="9123238432848105759" />
+      </scope>
+      <scope id="9123238432848108172" at="34,38,38,9" />
+      <scope id="9123238432848145654" at="45,0,50,0">
+        <var name="p0" id="9123238432848145654" />
+      </scope>
+      <scope id="9123238432848105759" at="33,42,39,5" />
+      <scope id="9123238432848108166" at="33,42,39,5">
+        <var name="mdl" id="9123238432848108167" />
+      </scope>
+      <scope id="9123238432848105759" at="33,0,41,0">
+        <var name="m" id="9123238432848105759" />
+      </scope>
+      <unit id="9123238432848105759" at="58,0,62,0" name="com.mbeddr.doc.migration.MigrateToDoCommentWordToToDoWordIfPossible$LINKS" />
+      <unit id="9123238432848105759" at="51,0,57,0" name="com.mbeddr.doc.migration.MigrateToDoCommentWordToToDoWordIfPossible$CONCEPTS" />
+      <unit id="9123238432848105759" at="20,0,63,0" name="com.mbeddr.doc.migration.MigrateToDoCommentWordToToDoWordIfPossible" />
+    </file>
+  </root>
+</debug-info>
+

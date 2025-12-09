@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:dc98378d-94e4-4824-8708-648cf2fee5dd(com.mbeddr.ext.components.gen_nomw.generator.gen_nomw_main.util)/3378779091584469583">
+    <file name="GeneratorHelper.java">
+      <node id="3378779091584355597" at="34,97,35,240" concept="4" />
+      <node id="3378779091584355695" at="35,240,36,45" concept="4" />
+      <node id="3378779091584355735" at="37,48,38,47" concept="4" />
+      <node id="3378779091584355782" at="38,47,39,125" concept="4" />
+      <node id="8428744930541743931" at="40,54,41,208" concept="4" />
+      <node id="8428744930541743926" at="41,208,42,216" concept="1" />
+      <node id="3378779091584355851" at="42,216,43,56" concept="1" />
+      <node id="3378779091584356052" at="44,7,45,50" concept="1" />
+      <node id="3378779091584469619" at="46,5,47,15" concept="5" />
+      <node id="9131699884702546165" at="49,70,50,170" concept="4" />
+      <node id="8933128519013973586" at="50,170,51,508" concept="4" />
+      <node id="9131699884702546174" at="51,508,52,0" concept="7" />
+      <node id="8404346609630760030" at="53,35,54,18" concept="5" />
+      <node id="8404346609630733358" at="55,5,56,0" concept="7" />
+      <node id="1583475910611991557" at="56,0,57,412" concept="4" />
+      <node id="1583475910615585161" at="58,49,59,208" concept="4" />
+      <node id="1583475910615549195" at="60,211,61,129" concept="6" />
+      <node id="1583475910612008538" at="61,129,62,20" concept="5" />
+      <node id="8933128519013973746" at="64,5,65,101" concept="4" />
+      <node id="8933128519013973782" at="65,101,66,123" concept="4" />
+      <node id="8933128519013973798" at="66,123,67,128" concept="4" />
+      <node id="3378779091584514756" at="67,128,68,185" concept="5" />
+      <node id="9131699884702546188" at="70,84,71,515" concept="4" />
+      <node id="8404346609630787361" at="71,515,72,0" concept="7" />
+      <node id="8404346609630789182" at="73,35,74,19" concept="5" />
+      <node id="9131699884702546207" at="75,5,76,0" concept="7" />
+      <node id="9131699884702546208" at="76,0,77,456" concept="4" />
+      <node id="9131699884702546260" at="77,456,78,27" concept="5" />
+      <node id="5105303971773280850" at="80,51,81,57" concept="5" />
+      <node id="5105303971773275636" at="83,52,84,470" concept="5" />
+      <node id="5105303971771597942" at="87,73,88,306" concept="4" />
+      <node id="5105303971771597956" at="88,306,89,137" concept="4" />
+      <node id="5105303971771632701" at="90,157,91,66" concept="5" />
+      <node id="5105303971771597980" at="92,5,93,0" concept="7" />
+      <node id="5105303971771597981" at="93,0,94,275" concept="4" />
+      <node id="5105303971771598001" at="94,275,95,83" concept="4" />
+      <node id="5105303971771598009" at="95,83,96,104" concept="1" />
+      <node id="5105303971771598022" at="96,104,97,29" concept="5" />
+      <node id="5105303971771485513" at="101,53,102,13" concept="5" />
+      <node id="5105303971771475767" at="103,5,104,0" concept="7" />
+      <node id="5105303971771485760" at="104,0,105,49" concept="1" />
+      <node id="5105303971771533291" at="106,196,107,143" concept="1" />
+      <node id="3378779091584469583" at="112,0,113,0" concept="8" trace="body$Qjc8" />
+      <node id="3378779091584469583" at="113,0,114,0" concept="8" trace="statements$euTV" />
+      <node id="3378779091584469583" at="114,0,115,0" concept="8" trace="expression$PfNq" />
+      <node id="3378779091584469583" at="115,0,116,0" concept="8" trace="arg$WIp5" />
+      <node id="3378779091584469583" at="116,0,117,0" concept="8" trace="port$IUw8" />
+      <node id="3378779091584469583" at="117,0,118,0" concept="8" trace="genStrategy$fd3B" />
+      <node id="3378779091584469583" at="118,0,119,0" concept="8" trace="instanceConfig$6K2d" />
+      <node id="3378779091584469583" at="119,0,120,0" concept="8" trace="source$ir30" />
+      <node id="3378779091584469583" at="120,0,121,0" concept="8" trace="port$HUwa" />
+      <node id="3378779091584469583" at="121,0,122,0" concept="8" trace="target$iri1" />
+      <node id="3378779091584469583" at="122,0,123,0" concept="8" trace="instance$ilE8" />
+      <node id="3378779091584469583" at="123,0,124,0" concept="8" trace="component$ikVC" />
+      <node id="3378779091584469583" at="124,0,125,0" concept="8" trace="operation$jSaZ" />
+      <node id="3378779091584469583" at="125,0,126,0" concept="8" trace="baseComponent$BwAk" />
+      <node id="3378779091584469583" at="129,0,130,0" concept="8" trace="ReturnStatement$Kx" />
+      <node id="3378779091584469583" at="130,0,131,0" concept="8" trace="ArgumentRef$iE" />
+      <node id="3378779091584469583" at="131,0,132,0" concept="8" trace="RequiredPort$Si" />
+      <node id="3378779091584469583" at="132,0,133,0" concept="8" trace="IConfigurationContainer$_T" />
+      <node id="3378779091584469583" at="133,0,134,0" concept="8" trace="ComponentsConfigItem$6o" />
+      <node id="3378779091584469583" at="134,0,135,0" concept="8" trace="NoMwComponentsGenStrategy$VR" />
+      <node id="3378779091584469583" at="135,0,136,0" concept="8" trace="ProvidedPort$RN" />
+      <node id="3378779091584469583" at="136,0,137,0" concept="8" trace="Component$va" />
+      <node id="3378779091584469583" at="137,0,138,0" concept="8" trace="AtomicComponent$ym" />
+      <node id="3378779091584469583" at="141,0,142,0" concept="8" trace="wireStatically$6J$b" />
+      <node id="3378779091584469585" at="32,0,34,0" concept="0" trace="GeneratorHelper#()V" />
+      <node id="8404346609630679685" at="52,0,55,5" concept="3" />
+      <node id="8404346609630789180" at="72,0,75,5" concept="3" />
+      <node id="2481387216194743174" at="80,0,83,0" concept="9" trace="wireStatically#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5105303971773275632" at="83,0,86,0" concept="9" trace="wireStatically#(Lorg/jetbrains/mps/openapi/model/SModel;)Z" />
+      <node id="5105303971771597963" at="89,137,92,5" concept="3" />
+      <node id="5105303971771475824" at="100,73,103,5" concept="3" />
+      <node id="5105303971771497530" at="105,49,108,5" concept="3" />
+      <node id="1583475910615590484" at="59,208,63,7" concept="3" />
+      <node id="3378779091584355809" at="39,125,44,7" concept="2" />
+      <node id="1583475910611995867" at="57,412,64,5" concept="3" />
+      <node id="3378779091584355686" at="36,45,46,5" concept="2" />
+      <node id="9131699884702546176" at="70,0,80,0" concept="9" trace="isStaticallyConnected#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5105303971771474594" at="100,0,110,0" concept="9" trace="findUsedComponents#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/util/Set;)V" />
+      <node id="5105303971771597938" at="87,0,99,0" concept="9" trace="allInstantiatedComponents#(Lorg/jetbrains/mps/openapi/model/SModel;)Ljava/lang/Iterable;" />
+      <node id="3378779091584469589" at="34,0,49,0" concept="9" trace="getInlinedStatements#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/util/List;)Ljava/lang/Iterable;" />
+      <node id="3378779091584514738" at="49,0,70,0" concept="9" trace="findStaticallyWiredRunnableForCall#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="3378779091584469588" at="32,28,32,28" />
+      <scope id="8404346609630679687" at="53,35,54,18" />
+      <scope id="8404346609630789181" at="73,35,74,19" />
+      <scope id="2481387216194743177" at="80,51,81,57" />
+      <scope id="5105303971773275635" at="83,52,84,470" />
+      <scope id="5105303971771597964" at="90,157,91,66" />
+      <scope id="5105303971771475827" at="101,53,102,13" />
+      <scope id="5105303971771497533" at="106,196,107,143" />
+      <scope id="3378779091584469585" at="32,0,34,0" />
+      <scope id="1583475910615590486" at="60,211,62,20" />
+      <scope id="3378779091584355812" at="40,54,43,56">
+        <var name="parens" id="8428744930541743932" />
+      </scope>
+      <scope id="2481387216194743174" at="80,0,83,0">
+        <var name="ctx" id="2481387216194748139" />
+      </scope>
+      <scope id="5105303971773275632" at="83,0,86,0">
+        <var name="ctx" id="5105303971773275653" />
+      </scope>
+      <scope id="3378779091584355809" at="39,125,44,7">
+        <var name="ref" id="3378779091584355810" />
+      </scope>
+      <scope id="1583475910611995869" at="58,49,63,7">
+        <var name="component" id="1583475910615585162" />
+      </scope>
+      <scope id="3378779091584355689" at="37,48,45,50">
+        <var name="arefs" id="3378779091584355783" />
+        <var name="copy" id="3378779091584355736" />
+      </scope>
+      <scope id="9131699884702546179" at="70,84,78,27">
+        <var name="instanceConfig" id="9131699884702546189" />
+        <var name="portRef" id="9131699884702546209" />
+      </scope>
+      <scope id="5105303971771474597" at="100,73,108,5" />
+      <scope id="3378779091584355686" at="36,45,46,5">
+        <var name="s" id="3378779091584355687" />
+      </scope>
+      <scope id="9131699884702546176" at="70,0,80,0">
+        <var name="callContext" id="9131699884702546264" />
+        <var name="port" id="9131699884702546262" />
+      </scope>
+      <scope id="5105303971771597941" at="87,73,97,29">
+        <var name="allUsedComponents" id="5105303971771598002" />
+        <var name="cci" id="5105303971771597943" />
+        <var name="directlyInstComp" id="5105303971771597982" />
+        <var name="strategy" id="5105303971771597957" />
+      </scope>
+      <scope id="5105303971771474594" at="100,0,110,0">
+        <var name="comp" id="5105303971771475627" />
+        <var name="result" id="5105303971771475599" />
+      </scope>
+      <scope id="5105303971771597938" at="87,0,99,0">
+        <var name="model" id="5105303971771598028" />
+      </scope>
+      <scope id="3378779091584469592" at="34,97,47,15">
+        <var name="all" id="3378779091584355598" />
+        <var name="res" id="3378779091584355696" />
+      </scope>
+      <scope id="3378779091584469589" at="34,0,49,0">
+        <var name="actuals" id="3378779091584469599" />
+        <var name="calledRunnable" id="3378779091584469593" />
+      </scope>
+      <scope id="3378779091584514741" at="49,70,68,185">
+        <var name="instanceConfig" id="8933128519013973587" />
+        <var name="port" id="9131699884702546166" />
+        <var name="portRef" id="8933128519013973747" />
+        <var name="seq" id="1583475910611991558" />
+        <var name="targetComp" id="8933128519013973799" />
+        <var name="targetPort" id="8933128519013973783" />
+      </scope>
+      <scope id="3378779091584514738" at="49,0,70,0">
+        <var name="call" id="3378779091584514750" />
+      </scope>
+      <unit id="3378779091584469583" at="140,0,143,0" name="com.mbeddr.ext.components.gen_nomw.generator.gen_nomw_main.util.GeneratorHelper$PROPS" />
+      <unit id="3378779091584469583" at="128,0,139,0" name="com.mbeddr.ext.components.gen_nomw.generator.gen_nomw_main.util.GeneratorHelper$CONCEPTS" />
+      <unit id="3378779091584469583" at="111,0,127,0" name="com.mbeddr.ext.components.gen_nomw.generator.gen_nomw_main.util.GeneratorHelper$LINKS" />
+      <unit id="3378779091584469583" at="31,0,144,0" name="com.mbeddr.ext.components.gen_nomw.generator.gen_nomw_main.util.GeneratorHelper" />
+    </file>
+  </root>
+</debug-info>
+

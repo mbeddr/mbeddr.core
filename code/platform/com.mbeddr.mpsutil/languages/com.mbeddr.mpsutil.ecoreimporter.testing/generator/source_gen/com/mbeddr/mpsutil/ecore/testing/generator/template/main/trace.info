@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="110,0,117,0" name="com.mbeddr.mpsutil.ecore.testing.generator.template.main.QueriesGenerated$LINKS" />
+      <unit at="91,0,109,0" name="com.mbeddr.mpsutil.ecore.testing.generator.template.main.QueriesGenerated$PVQ" />
+      <unit at="60,0,79,0" name="com.mbeddr.mpsutil.ecore.testing.generator.template.main.QueriesGenerated$SNQ" />
+      <unit at="25,0,118,0" name="com.mbeddr.mpsutil.ecore.testing.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:df937395-e226-4b42-9bd5-c3a1bf93b3ad(com.mbeddr.mpsutil.ecore.testing.generator.template.main@generator)/494571880817442455">
+    <file name="QueriesGenerated.java">
+      <node id="8237807170238311625" at="30,88,31,181" concept="1" />
+      <node id="494571880822850704" at="31,181,32,139" concept="2" />
+      <node id="3095277492990418722" at="34,88,35,181" concept="1" />
+      <node id="3095277492990418767" at="35,181,36,139" concept="2" />
+      <node id="7820374782904208654" at="38,92,39,87" concept="2" />
+      <node id="7820374782904193125" at="41,92,42,87" concept="2" />
+      <node id="7820374782904194630" at="44,92,45,87" concept="2" />
+      <node id="7820374782904208647" at="49,14,50,56" concept="0" />
+      <node id="7820374782904193118" at="50,56,51,56" concept="0" />
+      <node id="7820374782904194623" at="51,56,52,56" concept="0" />
+      <node id="7820374782904208647" at="68,15,69,59" concept="2" />
+      <node id="7820374782904193118" at="70,15,71,59" concept="2" />
+      <node id="7820374782904194623" at="72,15,73,59" concept="2" />
+      <node id="494571880822850068" at="81,14,82,187" concept="0" />
+      <node id="448899194813944569" at="82,187,83,187" concept="0" />
+      <node id="494571880822850068" at="100,15,101,66" concept="2" />
+      <node id="448899194813944569" at="102,15,103,66" concept="2" />
+      <node id="7820374782904208647" at="38,0,41,0" concept="3" trace="sourceNodeQuery_0_0#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodeContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7820374782904193118" at="41,0,44,0" concept="3" trace="sourceNodeQuery_0_1#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodeContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7820374782904194623" at="44,0,47,0" concept="3" trace="sourceNodeQuery_0_2#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodeContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="494571880822850069" at="30,0,34,0" concept="3" trace="propertyMacro_GetValue_0_0#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <node id="3095277492990418720" at="34,0,38,0" concept="3" trace="propertyMacro_GetValue_0_1#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <scope id="7820374782904208648" at="38,92,39,87" />
+      <scope id="7820374782904193119" at="41,92,42,87" />
+      <scope id="7820374782904194624" at="44,92,45,87" />
+      <scope id="7820374782904208647" at="68,15,69,59" />
+      <scope id="7820374782904193118" at="70,15,71,59" />
+      <scope id="7820374782904194623" at="72,15,73,59" />
+      <scope id="494571880822850068" at="100,15,101,66" />
+      <scope id="448899194813944569" at="102,15,103,66" />
+      <scope id="494571880822850070" at="30,88,32,139">
+        <var name="filePicker" id="8237807170238311626" />
+      </scope>
+      <scope id="3095277492990418721" at="34,88,36,139">
+        <var name="filePicker" id="3095277492990418723" />
+      </scope>
+      <scope id="7820374782904208647" at="38,0,41,0">
+        <var name="_context" id="7820374782904208647" />
+      </scope>
+      <scope id="7820374782904193118" at="41,0,44,0">
+        <var name="_context" id="7820374782904193118" />
+      </scope>
+      <scope id="7820374782904194623" at="44,0,47,0">
+        <var name="_context" id="7820374782904194623" />
+      </scope>
+      <scope id="494571880822850069" at="30,0,34,0">
+        <var name="_context" id="494571880822850069" />
+      </scope>
+      <scope id="3095277492990418720" at="34,0,38,0">
+        <var name="_context" id="3095277492990418720" />
+      </scope>
+    </file>
+  </root>
+</debug-info>
+

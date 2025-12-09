@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="IntentionsDescriptor.java">
+      <unit at="18,0,56,0" name="com.mbeddr.mpsutil.userstyles.buildutils.intentions.IntentionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:04adb7a5-11a8-4fab-a1f6-785d4f0ef9d3(com.mbeddr.mpsutil.userstyles.buildutils.intentions)/1315011458725670008">
+    <file name="IntentionsDescriptor.java">
+      <node id="1315011458725670008" at="37,47,38,58" concept="2" />
+      <node id="1315011458725670008" at="50,52,51,44" concept="2" />
+    </file>
+    <file name="LoadSavedScheme_Intention.java">
+      <node id="1315011458725670008" at="40,38,41,166" concept="13" />
+      <node id="1315011458725670008" at="45,35,46,29" concept="9" />
+      <node id="1315011458725670008" at="50,35,51,17" concept="9" />
+      <node id="1315011458725670008" at="54,99,55,97" concept="8" />
+      <node id="1315011458725670008" at="55,97,56,52" concept="8" />
+      <node id="1315011458725670008" at="58,36,59,83" concept="2" />
+      <node id="1315011458725670008" at="61,5,62,16" concept="9" />
+      <node id="3441511210711118164" at="64,85,65,32" concept="2" />
+      <node id="1315011458725824968" at="65,32,66,56" concept="8" />
+      <node id="3441511210711191158" at="66,56,67,40" concept="2" />
+      <node id="3441511210711141993" at="67,40,68,44" concept="2" />
+      <node id="3441511210711159135" at="69,88,70,40" concept="2" />
+      <node id="1315011458725833537" at="70,40,71,44" concept="9" />
+      <node id="1315011458725670008" at="75,0,76,0" concept="3" trace="myParameter" />
+      <node id="1315011458725670008" at="76,52,77,30" concept="2" />
+      <node id="1315011458725842940" at="81,87,82,63" concept="9" />
+      <node id="1315011458725847331" at="87,11,88,80" concept="8" />
+      <node id="1315011458725848390" at="88,80,89,68" concept="8" />
+      <node id="1315011458725851194" at="89,68,90,53" concept="8" />
+      <node id="1315011458725853998" at="90,53,91,53" concept="8" />
+      <node id="1315011458725854388" at="91,53,92,0" concept="11" />
+      <node id="1315011458725868813" at="94,47,95,201" concept="8" />
+      <node id="1315011458725869239" at="95,201,96,0" concept="11" />
+      <node id="1315011458725870396" at="96,0,97,88" concept="2" />
+      <node id="1315011458725872681" at="97,88,98,0" concept="11" />
+      <node id="1315011458725903388" at="98,0,99,25" concept="10" />
+      <node id="1315011458725908305" at="99,25,100,60" concept="8" />
+      <node id="1315011458725920568" at="102,64,103,57" concept="8" />
+      <node id="1315011458725930077" at="103,57,104,125" concept="8" />
+      <node id="1315011458725921034" at="104,125,105,111" concept="2" />
+      <node id="1315011458725944809" at="105,111,106,181" concept="2" />
+      <node id="1315011458725904922" at="108,13,109,0" concept="11" />
+      <node id="1315011458725899409" at="109,0,110,23" concept="10" />
+      <node id="1315011458725875416" at="110,23,111,60" concept="8" />
+      <node id="1315011458725880910" at="113,68,114,57" concept="8" />
+      <node id="3441511210711254822" at="115,49,116,27" concept="1" />
+      <node id="1315011458725881397" at="117,17,118,130" concept="2" />
+      <node id="1315011458725870065" at="120,13,121,0" concept="11" />
+      <node id="1315011458725896969" at="121,0,122,0" concept="11" />
+      <node id="1315011458725869396" at="122,0,123,26" concept="9" />
+      <node id="1315011458725857183" at="125,32,126,0" concept="11" />
+      <node id="1315011458725866174" at="126,0,127,72" concept="2" />
+      <node id="1315011458725962225" at="128,30,129,29" concept="2" />
+      <node id="1315011458725670008" at="134,86,135,18" concept="9" />
+      <node id="1315011458725670008" at="141,48,142,44" concept="9" />
+      <node id="1315011458725670008" at="145,34,146,25" concept="9" />
+      <node id="1315011458725670008" at="151,0,152,0" concept="12" trace="tagName$ZoHR" />
+      <node id="1315011458725670008" at="152,0,153,0" concept="12" trace="attrName$omjx" />
+      <node id="1315011458725670008" at="153,0,154,0" concept="12" trace="text$_LaO" />
+      <node id="1315011458725670008" at="157,0,158,0" concept="12" trace="attributes$ZouQ" />
+      <node id="1315011458725670008" at="158,0,159,0" concept="12" trace="value$1h4D" />
+      <node id="1315011458725670008" at="159,0,160,0" concept="12" trace="content$zkQy" />
+      <node id="1315011458725670008" at="160,0,161,0" concept="12" trace="element$vK94" />
+      <node id="1315011458725670008" at="164,0,165,0" concept="12" trace="XmlAttribute$ll" />
+      <node id="1315011458725670008" at="165,0,166,0" concept="12" trace="XmlTextValue$29" />
+      <node id="1315011458725670008" at="40,0,43,0" concept="0" trace="LoadSavedScheme_Intention#()V" />
+      <node id="1315011458725670008" at="57,28,60,7" concept="5" />
+      <node id="1315011458725670008" at="76,0,79,0" concept="0" trace="IntentionImplementation#(Ljava/io/File;)V" />
+      <node id="3441511210711253716" at="114,57,117,17" concept="6" />
+      <node id="1315011458725670008" at="145,0,148,0" concept="7" trace="getParameter#()Ljava/lang/Object;" />
+      <node id="1315011458725670008" at="44,0,48,0" concept="7" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="1315011458725670008" at="49,0,53,0" concept="7" trace="isSurroundWith#()Z" />
+      <node id="1315011458725831120" at="68,44,72,16" concept="9" />
+      <node id="1315011458725670008" at="80,0,84,0" concept="7" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="1315011458725670008" at="133,0,137,0" concept="7" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="1315011458725670008" at="140,0,144,0" concept="7" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="1315011458725670008" at="56,52,61,5" concept="6" />
+      <node id="1315011458725914193" at="101,37,107,15" concept="4" />
+      <node id="1315011458725876554" at="112,41,119,15" concept="4" />
+      <node id="3441511210711212471" at="100,60,108,13" concept="6" />
+      <node id="3441511210711221692" at="111,60,120,13" concept="6" />
+      <node id="1315011458725670008" at="54,0,64,0" concept="7" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="1315011458725670008" at="64,0,74,0" concept="7" trace="parameter#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/List;" />
+      <node id="1315011458725861840" at="94,0,125,0" concept="7" trace="xmlToSNode#(Lorg/w3c/dom/Node;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1315011458725857446" at="92,0,125,32" concept="8" />
+      <node id="1315011458725847868" at="86,78,130,7" concept="14" />
+      <node id="1315011458725670008" at="85,0,132,0" concept="7" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="1315011458725670008" at="40,38,41,166" />
+      <scope id="1315011458725670008" at="45,35,46,29" />
+      <scope id="1315011458725670008" at="50,35,51,17" />
+      <scope id="1315011458725670008" at="58,36,59,83" />
+      <scope id="1315011458725670008" at="76,52,77,30" />
+      <scope id="1315011458725670010" at="81,87,82,63" />
+      <scope id="3441511210711253718" at="115,49,116,27" />
+      <scope id="1315011458725847877" at="128,30,129,29" />
+      <scope id="1315011458725670008" at="134,86,135,18" />
+      <scope id="1315011458725670008" at="141,48,142,44" />
+      <scope id="1315011458725670008" at="145,34,146,25" />
+      <scope id="1315011458725833010" at="69,88,71,44" />
+      <scope id="1315011458725847871" at="128,7,130,7">
+        <var name="ex" id="1315011458725847873" />
+      </scope>
+      <scope id="1315011458725670008" at="40,0,43,0" />
+      <scope id="1315011458725670008" at="57,28,60,7" />
+      <scope id="1315011458725670008" at="57,28,60,7">
+        <var name="param" id="1315011458725670008" />
+      </scope>
+      <scope id="1315011458725670008" at="76,0,79,0">
+        <var name="parameter" id="1315011458725670008" />
+      </scope>
+      <scope id="1315011458725670008" at="145,0,148,0" />
+      <scope id="1315011458725670008" at="44,0,48,0" />
+      <scope id="1315011458725670008" at="49,0,53,0" />
+      <scope id="1315011458725670008" at="80,0,84,0">
+        <var name="editorContext" id="1315011458725670008" />
+        <var name="node" id="1315011458725670008" />
+      </scope>
+      <scope id="1315011458725914195" at="102,64,106,181">
+        <var name="inputAttribute" id="1315011458725920569" />
+        <var name="outputAttribute" id="1315011458725930078" />
+      </scope>
+      <scope id="1315011458725670008" at="133,0,137,0">
+        <var name="editorContext" id="1315011458725670008" />
+        <var name="node" id="1315011458725670008" />
+      </scope>
+      <scope id="1315011458725670008" at="140,0,144,0" />
+      <scope id="1315011458725876556" at="113,68,118,130">
+        <var name="childInput" id="1315011458725880911" />
+      </scope>
+      <scope id="1315011458725914193" at="101,37,107,15">
+        <var name="i" id="1315011458725914196" />
+      </scope>
+      <scope id="3441511210711212473" at="101,37,107,15" />
+      <scope id="1315011458725876554" at="112,41,119,15">
+        <var name="i" id="1315011458725876557" />
+      </scope>
+      <scope id="3441511210711221694" at="112,41,119,15" />
+      <scope id="1315011458725670008" at="54,99,62,16">
+        <var name="list" id="1315011458725670008" />
+        <var name="paramList" id="1315011458725670008" />
+      </scope>
+      <scope id="1315011458725670008" at="64,85,72,16">
+        <var name="folder" id="1315011458725824969" />
+      </scope>
+      <scope id="1315011458725670008" at="54,0,64,0">
+        <var name="context" id="1315011458725670008" />
+        <var name="node" id="1315011458725670008" />
+      </scope>
+      <scope id="1315011458725670008" at="64,0,74,0">
+        <var name="editorContext" id="1315011458725670008" />
+        <var name="node" id="1315011458725670008" />
+      </scope>
+      <scope id="1315011458725861843" at="94,47,123,26">
+        <var name="attributes" id="1315011458725908306" />
+        <var name="childInputList" id="1315011458725875417" />
+        <var name="result" id="1315011458725868816" />
+      </scope>
+      <scope id="1315011458725861840" at="94,0,125,0">
+        <var name="input" id="1315011458725862326" />
+      </scope>
+      <scope id="1315011458725847870" at="87,11,127,72">
+        <var name="dbFactory" id="1315011458725847332" />
+        <var name="doc" id="1315011458725851195" />
+        <var name="docBuilder" id="1315011458725848391" />
+        <var name="rootInput" id="1315011458725853999" />
+        <var name="rootOutput" id="1315011458725857449" />
+      </scope>
+      <scope id="1315011458725670012" at="86,78,130,7" />
+      <scope id="1315011458725670008" at="85,0,132,0">
+        <var name="editorContext" id="1315011458725670008" />
+        <var name="node" id="1315011458725670008" />
+      </scope>
+      <unit id="1315011458725670008" at="163,0,167,0" name="com.mbeddr.mpsutil.userstyles.buildutils.intentions.LoadSavedScheme_Intention$CONCEPTS" />
+      <unit id="1315011458725670008" at="150,0,155,0" name="com.mbeddr.mpsutil.userstyles.buildutils.intentions.LoadSavedScheme_Intention$PROPS" />
+      <unit id="1315011458725670008" at="156,0,162,0" name="com.mbeddr.mpsutil.userstyles.buildutils.intentions.LoadSavedScheme_Intention$LINKS" />
+      <unit id="1315011458725861750" at="93,31,125,9" name="com.mbeddr.mpsutil.userstyles.buildutils.intentions.LoadSavedScheme_Intention$IntentionImplementation$1" />
+      <unit id="1315011458725670008" at="74,0,149,0" name="com.mbeddr.mpsutil.userstyles.buildutils.intentions.LoadSavedScheme_Intention$IntentionImplementation" />
+      <unit id="1315011458725670008" at="38,0,168,0" name="com.mbeddr.mpsutil.userstyles.buildutils.intentions.LoadSavedScheme_Intention" />
+    </file>
+  </root>
+</debug-info>
+

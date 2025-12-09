@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="9,0,14,0" name="com.mbeddr.mpsutil.ccmenu.runtime.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:96a5ae0c-9491-4650-90e1-34141035590c(com.mbeddr.mpsutil.ccmenu.runtime.plugin)/3441511210711548364">
+    <file name="ProjectPlugin_ProjectPluginPart.java">
+      <node id="3441511210711548379" at="10,0,11,0" concept="2" trace="myEditorComponentCreationListener" />
+      <node id="2051848251326007207" at="11,0,12,0" concept="2" trace="ORIGINAL_CHOOSER_KEY" />
+      <node id="3441511210711548364" at="12,0,14,0" concept="0" trace="ProjectPlugin_ProjectPluginPart#()V" />
+      <node id="3441511210711548364" at="14,0,17,0" concept="3" trace="init#(Ljetbrains/mps/project/MPSProject;)V" />
+      <node id="3441511210711548364" at="17,0,20,0" concept="3" trace="dispose#(Ljetbrains/mps/project/MPSProject;)V" />
+      <scope id="3441511210711548364" at="12,44,12,44" />
+      <scope id="3441511210711548366" at="15,40,15,40" />
+      <scope id="3441511210711573023" at="18,43,18,43" />
+      <scope id="3441511210711548364" at="12,0,14,0" />
+      <scope id="3441511210711548364" at="14,0,17,0">
+        <var name="project" id="3441511210711548364" />
+      </scope>
+      <scope id="3441511210711548364" at="17,0,20,0">
+        <var name="project" id="3441511210711548364" />
+      </scope>
+      <unit id="3441511210711548364" at="9,0,21,0" name="com.mbeddr.mpsutil.ccmenu.runtime.plugin.ProjectPlugin_ProjectPluginPart" />
+    </file>
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="3441511210711548364" at="12,62,13,53" concept="1" />
+    </file>
+  </root>
+  <root nodeRef="r:96a5ae0c-9491-4650-90e1-34141035590c(com.mbeddr.mpsutil.ccmenu.runtime.plugin)/3441511210712149362">
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="3441511210712149362" at="10,0,12,0" concept="0" trace="Runtime_ProjectPlugin#()V" />
+      <node id="3441511210712149362" at="12,0,15,0" concept="3" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="3441511210712149362" at="10,34,10,34" />
+      <scope id="3441511210712149362" at="12,62,13,53" />
+      <scope id="3441511210712149362" at="10,0,12,0" />
+      <scope id="3441511210712149362" at="12,0,15,0">
+        <var name="parts" id="3441511210712149362" />
+      </scope>
+      <unit id="3441511210712149362" at="9,0,16,0" name="com.mbeddr.mpsutil.ccmenu.runtime.plugin.Runtime_ProjectPlugin" />
+    </file>
+  </root>
+</debug-info>
+

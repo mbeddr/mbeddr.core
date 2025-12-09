@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-8rdl4t27pfgk9cj5cik531oxlma486w">
+  <files names="ConstraintsAspectDescriptor.java:DoubleSumExpr_Constraints.java:DoubleSumIterator_Constraints.java:PEqWord_Constraints.java:RCaclulationCall_Constraints.java:RConstantRef_Constraints.java:RConstant_Constraints.java:RParamRefWord_Constraints.java:RParamRef_Constraints.java:SumIterator_Constraints.java" />
+</product>
+

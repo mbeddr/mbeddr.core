@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:eac84be5-5018-4dc9-be38-10c5ef2403b9(com.mbeddr.spreadsheat.generator.main.util)/2042272859110218261">
+    <file name="ColorHelper.java">
+      <node id="2042272859110301871" at="13,175,14,25" concept="1" />
+      <node id="2042272859110301892" at="16,181,17,25" concept="1" />
+      <node id="2042272859110301894" at="18,5,19,168" concept="1" />
+      <node id="2042272859111089538" at="22,175,23,25" concept="1" />
+      <node id="2042272859111089559" at="25,181,26,25" concept="1" />
+      <node id="2042272859111089561" at="27,5,28,168" concept="1" />
+      <node id="2042272859110218261" at="32,0,33,0" concept="3" trace="b$ypSY" />
+      <node id="2042272859110218261" at="33,0,34,0" concept="3" trace="r$ykvB" />
+      <node id="2042272859110218261" at="34,0,35,0" concept="3" trace="g$ykIC" />
+      <node id="2042272859110301852" at="12,48,15,5" concept="0" />
+      <node id="2042272859110301873" at="15,5,18,5" concept="0" />
+      <node id="2042272859111089519" at="21,46,24,5" concept="0" />
+      <node id="2042272859111089540" at="24,5,27,5" concept="0" />
+      <node id="2042272859110301848" at="12,0,21,0" concept="4" trace="handleFontColor#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/awt/Color;" />
+      <node id="2042272859111089515" at="21,0,30,0" concept="4" trace="handleBgColor#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/awt/Color;" />
+      <scope id="2042272859110301870" at="13,175,14,25" />
+      <scope id="2042272859110301891" at="16,181,17,25" />
+      <scope id="2042272859111089537" at="22,175,23,25" />
+      <scope id="2042272859111089558" at="25,181,26,25" />
+      <scope id="2042272859110301851" at="12,48,19,168" />
+      <scope id="2042272859111089518" at="21,46,28,168" />
+      <scope id="2042272859110301848" at="12,0,21,0">
+        <var name="c" id="2042272859110301906" />
+      </scope>
+      <scope id="2042272859111089515" at="21,0,30,0">
+        <var name="c" id="2042272859111089573" />
+      </scope>
+      <unit id="2042272859110218261" at="31,0,36,0" name="com.mbeddr.spreadsheat.generator.main.util.ColorHelper$PROPS" />
+      <unit id="2042272859110218261" at="11,0,37,0" name="com.mbeddr.spreadsheat.generator.main.util.ColorHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:eac84be5-5018-4dc9-be38-10c5ef2403b9(com.mbeddr.spreadsheat.generator.main.util)/2042272859110708039">
+    <file name="AlignmentHelper.java">
+      <node id="2042272859110709539" at="12,446,13,40" concept="1" />
+      <node id="2042272859110709605" at="15,446,16,39" concept="1" />
+      <node id="2042272859110709614" at="18,446,19,41" concept="1" />
+      <node id="2042272859110708141" at="20,5,21,36" concept="1" />
+      <node id="2042272859110708089" at="21,36,22,0" concept="2" />
+      <node id="2042272859110710493" at="11,65,14,5" concept="0" />
+      <node id="2042272859110710501" at="14,5,17,5" concept="0" />
+      <node id="2042272859110710509" at="17,5,20,5" concept="0" />
+      <node id="2042272859110708041" at="11,0,24,0" concept="4" trace="alignmentFor#(I)Lorg/apache/poi/ss/usermodel/HorizontalAlignment;" />
+      <scope id="2042272859110710494" at="12,446,13,40" />
+      <scope id="2042272859110710502" at="15,446,16,39" />
+      <scope id="2042272859110710510" at="18,446,19,41" />
+      <scope id="2042272859110708044" at="11,65,22,0" />
+      <scope id="2042272859110708041" at="11,0,24,0">
+        <var name="alignment" id="2042272859110708077" />
+      </scope>
+      <unit id="2042272859110708039" at="10,0,25,0" name="com.mbeddr.spreadsheat.generator.main.util.AlignmentHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:eac84be5-5018-4dc9-be38-10c5ef2403b9(com.mbeddr.spreadsheat.generator.main.util)/2042272859110733268">
+    <file name="BorderHelper.java">
+      <node id="2042272859110733275" at="12,439,13,30" concept="1" />
+      <node id="2042272859110733288" at="15,441,16,32" concept="1" />
+      <node id="2042272859110733301" at="18,440,19,31" concept="1" />
+      <node id="2042272859110733314" at="21,447,22,32" concept="1" />
+      <node id="2042272859110733325" at="23,5,24,28" concept="1" />
+      <node id="2042272859110733327" at="24,28,25,0" concept="2" />
+      <node id="2042272859110733273" at="11,51,14,5" concept="0" />
+      <node id="2042272859110733286" at="14,5,17,5" concept="0" />
+      <node id="2042272859110733299" at="17,5,20,5" concept="0" />
+      <node id="2042272859110733312" at="20,5,23,5" concept="0" />
+      <node id="2042272859110733269" at="11,0,27,0" concept="4" trace="borderFor#(I)Lorg/apache/poi/ss/usermodel/BorderStyle;" />
+      <scope id="2042272859110733274" at="12,439,13,30" />
+      <scope id="2042272859110733287" at="15,441,16,32" />
+      <scope id="2042272859110733300" at="18,440,19,31" />
+      <scope id="2042272859110733313" at="21,447,22,32" />
+      <scope id="2042272859110733272" at="11,51,25,0" />
+      <scope id="2042272859110733269" at="11,0,27,0">
+        <var name="border" id="2042272859110733328" />
+      </scope>
+      <unit id="2042272859110733268" at="10,0,28,0" name="com.mbeddr.spreadsheat.generator.main.util.BorderHelper" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,24,0" name="com.mbeddr.mpsutil.filepicker.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:95800802-7a7f-49da-9ac5-5c276c4a54cb(com.mbeddr.mpsutil.filepicker.typesystem)/6156524541422716143">
+    <file name="TypesystemDescriptor.java">
+      <node id="6156524541422716143" at="10,5,11,97" concept="5" />
+      <node id="6156524541422716143" at="11,97,12,55" concept="2" />
+      <node id="6156524541422716143" at="9,33,13,5" concept="0" />
+      <scope id="6156524541422716143" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="6156524541422716143" />
+      </scope>
+    </file>
+    <file name="check_AbstractPicker_NonTypesystemRule.java">
+      <node id="4695289926126184968" at="27,74,28,13" concept="6" />
+      <node id="9294901202256833" at="30,160,31,13" concept="6" />
+      <node id="6156524541434195065" at="35,9,36,68" concept="5" />
+      <node id="6156524541434195065" at="36,68,37,245" concept="5" />
+      <node id="5701343294284772141" at="40,9,41,68" concept="5" />
+      <node id="5701343294284772141" at="41,68,42,247" concept="5" />
+      <node id="474447898478873659" at="45,12,46,84" concept="7" />
+      <node id="474447898478875703" at="46,84,47,84" concept="7" />
+      <node id="474447898478876555" at="47,84,48,32" concept="7" />
+      <node id="5785646600128950379" at="52,13,53,72" concept="5" />
+      <node id="5785646600128950379" at="53,72,54,442" concept="5" />
+      <node id="6156524541430485670" at="57,13,58,91" concept="5" />
+      <node id="6156524541430485670" at="58,91,59,316" concept="5" />
+      <node id="6156524541431527109" at="63,11,64,89" concept="5" />
+      <node id="6156524541431527109" at="64,89,65,258" concept="5" />
+      <node id="5701343294284719677" at="67,16,68,89" concept="7" />
+      <node id="6156524541422733644" at="70,13,71,91" concept="5" />
+      <node id="6156524541422733644" at="71,91,72,295" concept="5" />
+      <node id="4422219267686338849" at="75,15,76,93" concept="5" />
+      <node id="4422219267686338849" at="76,93,77,297" concept="5" />
+      <node id="6156524541422716143" at="85,50,86,38" concept="6" />
+      <node id="6156524541422716143" at="88,68,89,102" concept="6" />
+      <node id="6156524541422716143" at="91,30,92,17" concept="6" />
+      <node id="9294901202252843" at="94,52,95,40" concept="6" />
+      <node id="6156524541422716143" at="99,0,100,0" concept="8" trace="path$VaYg" />
+      <node id="6156524541422716143" at="103,0,104,0" concept="8" trace="AbstractFilePicker$V5" />
+      <node id="6156524541422716143" at="104,0,105,0" concept="8" trace="AbstractFolderPicker$Ov" />
+      <node id="6156524541422716143" at="105,0,106,0" concept="8" trace="AbstractPicker$bM" />
+      <node id="6156524541422716143" at="24,0,26,0" concept="1" trace="check_AbstractPicker_NonTypesystemRule#()V" />
+      <node id="4695289926126179729" at="26,115,29,5" concept="3" />
+      <node id="9294901202245735" at="29,5,32,5" concept="3" />
+      <node id="6156524541422716143" at="85,0,88,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6156524541422716143" at="88,0,91,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6156524541422716143" at="91,0,94,0" concept="4" trace="overrides#()Z" />
+      <node id="9294901202252843" at="94,0,97,0" concept="9" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="6156524541434195065" at="34,77,38,9" concept="0" />
+      <node id="5701343294284772141" at="39,86,43,9" concept="0" />
+      <node id="5785646600128950379" at="51,94,55,13" concept="0" />
+      <node id="6156524541430485670" at="56,18,60,13" concept="0" />
+      <node id="6156524541431527109" at="62,171,66,11" concept="0" />
+      <node id="6156524541422733644" at="69,189,73,13" concept="0" />
+      <node id="4422219267686338849" at="74,110,78,15" concept="0" />
+      <node id="5785646600128961385" at="56,16,61,11" concept="0" />
+      <node id="4422219267686333721" at="73,13,79,13" concept="3" />
+      <node id="6156524541434186477" at="33,76,44,7" concept="3" />
+      <node id="5785646600128932141" at="50,177,61,11" concept="3" />
+      <node id="6156524541422721072" at="68,89,80,11" concept="3" />
+      <node id="6156524541430496307" at="67,14,81,9" concept="0" />
+      <node id="6156524541430481561" at="49,57,81,9" concept="3" />
+      <node id="474447898478866496" at="48,32,82,7" concept="3" />
+      <node id="6156524541434151322" at="45,10,83,5" concept="0" />
+      <node id="6156524541434081982" at="32,5,83,5" concept="3" />
+      <node id="6156524541422716143" at="26,0,85,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6156524541422716143" at="24,51,24,51" />
+      <scope id="4695289926126179731" at="27,74,28,13" />
+      <scope id="9294901202245738" at="30,160,31,13" />
+      <scope id="6156524541422716143" at="85,50,86,38" />
+      <scope id="6156524541422716143" at="88,68,89,102" />
+      <scope id="6156524541422716143" at="91,30,92,17" />
+      <scope id="9294901202252843" at="94,52,95,40" />
+      <scope id="6156524541422716143" at="24,0,26,0" />
+      <scope id="6156524541434195065" at="35,9,37,245">
+        <var name="_reporter_2309309498" id="6156524541434195065" />
+        <var name="errorTarget" id="6156524541434195065" />
+      </scope>
+      <scope id="5701343294284772141" at="40,9,42,247">
+        <var name="_reporter_2309309498" id="5701343294284772141" />
+        <var name="errorTarget" id="5701343294284772141" />
+      </scope>
+      <scope id="5785646600128950379" at="52,13,54,442">
+        <var name="_reporter_2309309498" id="5785646600128950379" />
+        <var name="errorTarget" id="5785646600128950379" />
+      </scope>
+      <scope id="6156524541430485670" at="57,13,59,316">
+        <var name="_reporter_2309309498" id="6156524541430485670" />
+        <var name="errorTarget" id="6156524541430485670" />
+      </scope>
+      <scope id="6156524541431527109" at="63,11,65,258">
+        <var name="_reporter_2309309498" id="6156524541431527109" />
+        <var name="errorTarget" id="6156524541431527109" />
+      </scope>
+      <scope id="6156524541422733644" at="70,13,72,295">
+        <var name="_reporter_2309309498" id="6156524541422733644" />
+        <var name="errorTarget" id="6156524541422733644" />
+      </scope>
+      <scope id="4422219267686338849" at="75,15,77,297">
+        <var name="_reporter_2309309498" id="4422219267686338849" />
+        <var name="errorTarget" id="4422219267686338849" />
+      </scope>
+      <scope id="6156524541422716143" at="85,0,88,0" />
+      <scope id="6156524541422716143" at="88,0,91,0">
+        <var name="argument" id="6156524541422716143" />
+      </scope>
+      <scope id="6156524541422716143" at="91,0,94,0" />
+      <scope id="9294901202252843" at="94,0,97,0">
+        <var name="str" id="9294901202252843" />
+      </scope>
+      <scope id="6156524541434186480" at="34,77,38,9" />
+      <scope id="5701343294284767593" at="39,86,43,9" />
+      <scope id="5785646600128932143" at="51,94,55,13" />
+      <scope id="5785646600128961386" at="56,18,60,13" />
+      <scope id="6156524541431497816" at="62,171,66,11" />
+      <scope id="4422219267686333723" at="74,110,78,15" />
+      <scope id="6156524541422721073" at="69,189,79,13" />
+      <scope id="6156524541434081985" at="33,76,44,7" />
+      <scope id="6156524541430481564" at="50,177,61,11" />
+      <scope id="6156524541430496308" at="67,16,80,11" />
+      <scope id="474447898478866498" at="49,57,81,9" />
+      <scope id="6156524541434151323" at="45,12,82,7" />
+      <scope id="6156524541422716144" at="26,115,83,5" />
+      <scope id="6156524541422716143" at="26,0,85,0">
+        <var name="ap" id="6156524541422716143" />
+        <var name="status" id="6156524541422716143" />
+        <var name="typeCheckingContext" id="6156524541422716143" />
+      </scope>
+      <unit id="6156524541422716143" at="98,0,101,0" name="com.mbeddr.mpsutil.filepicker.typesystem.check_AbstractPicker_NonTypesystemRule$PROPS" />
+      <unit id="6156524541422716143" at="102,0,107,0" name="com.mbeddr.mpsutil.filepicker.typesystem.check_AbstractPicker_NonTypesystemRule$CONCEPTS" />
+      <unit id="6156524541422716143" at="23,0,108,0" name="com.mbeddr.mpsutil.filepicker.typesystem.check_AbstractPicker_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:95800802-7a7f-49da-9ac5-5c276c4a54cb(com.mbeddr.mpsutil.filepicker.typesystem)/815354553356131404">
+    <file name="TypesystemDescriptor.java">
+      <node id="815354553356131404" at="18,5,19,100" concept="5" />
+      <node id="815354553356131404" at="19,100,20,55" concept="2" />
+      <node id="815354553356131404" at="17,5,21,5" concept="0" />
+      <scope id="815354553356131404" at="18,5,20,55">
+        <var name="nonTypesystemRule" id="815354553356131404" />
+      </scope>
+    </file>
+    <file name="check_MacroFolderPicker_NonTypesystemRule.java">
+      <node id="815354553356155523" at="25,7,26,66" concept="5" />
+      <node id="815354553356155523" at="26,66,27,326" concept="5" />
+      <node id="815354553356131404" at="31,50,32,41" concept="6" />
+      <node id="815354553356131404" at="34,68,35,102" concept="6" />
+      <node id="815354553356131404" at="37,30,38,17" concept="6" />
+      <node id="7023154606309060370" at="40,55,41,43" concept="6" />
+      <node id="815354553356131404" at="45,0,46,0" concept="8" trace="macro$Hw5T" />
+      <node id="815354553356131404" at="49,0,50,0" concept="8" trace="MacroFolderPicker$NK" />
+      <node id="815354553356131404" at="21,0,23,0" concept="1" trace="check_MacroFolderPicker_NonTypesystemRule#()V" />
+      <node id="815354553356131404" at="31,0,34,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="815354553356131404" at="34,0,37,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="815354553356131404" at="37,0,40,0" concept="4" trace="overrides#()Z" />
+      <node id="7023154606309060370" at="40,0,43,0" concept="9" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="815354553356155523" at="24,214,28,7" concept="0" />
+      <node id="815354553356131411" at="23,130,29,5" concept="3" />
+      <node id="815354553356131404" at="23,0,31,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="815354553356131404" at="21,54,21,54" />
+      <scope id="815354553356131404" at="31,50,32,41" />
+      <scope id="815354553356131404" at="34,68,35,102" />
+      <scope id="815354553356131404" at="37,30,38,17" />
+      <scope id="7023154606309060370" at="40,55,41,43" />
+      <scope id="815354553356131404" at="21,0,23,0" />
+      <scope id="815354553356155523" at="25,7,27,326">
+        <var name="_reporter_2309309498" id="815354553356155523" />
+        <var name="errorTarget" id="815354553356155523" />
+      </scope>
+      <scope id="815354553356131404" at="31,0,34,0" />
+      <scope id="815354553356131404" at="34,0,37,0">
+        <var name="argument" id="815354553356131404" />
+      </scope>
+      <scope id="815354553356131404" at="37,0,40,0" />
+      <scope id="7023154606309060370" at="40,0,43,0">
+        <var name="str" id="7023154606309060370" />
+      </scope>
+      <scope id="815354553356131413" at="24,214,28,7" />
+      <scope id="815354553356131405" at="23,130,29,5" />
+      <scope id="815354553356131404" at="23,0,31,0">
+        <var name="macroFolderPicker" id="815354553356131404" />
+        <var name="status" id="815354553356131404" />
+        <var name="typeCheckingContext" id="815354553356131404" />
+      </scope>
+      <unit id="815354553356131404" at="44,0,47,0" name="com.mbeddr.mpsutil.filepicker.typesystem.check_MacroFolderPicker_NonTypesystemRule$PROPS" />
+      <unit id="815354553356131404" at="48,0,51,0" name="com.mbeddr.mpsutil.filepicker.typesystem.check_MacroFolderPicker_NonTypesystemRule$CONCEPTS" />
+      <unit id="815354553356131404" at="20,0,52,0" name="com.mbeddr.mpsutil.filepicker.typesystem.check_MacroFolderPicker_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:95800802-7a7f-49da-9ac5-5c276c4a54cb(com.mbeddr.mpsutil.filepicker.typesystem)/815354553356158094">
+    <file name="TypesystemDescriptor.java">
+      <node id="815354553356158094" at="14,5,15,98" concept="5" />
+      <node id="815354553356158094" at="15,98,16,55" concept="2" />
+      <node id="815354553356158094" at="13,5,17,5" concept="0" />
+      <scope id="815354553356158094" at="14,5,16,55">
+        <var name="nonTypesystemRule" id="815354553356158094" />
+      </scope>
+    </file>
+    <file name="check_MacroFilePicker_NonTypesystemRule.java">
+      <node id="815354553356158103" at="25,7,26,66" concept="5" />
+      <node id="815354553356158103" at="26,66,27,322" concept="5" />
+      <node id="815354553356158094" at="31,50,32,39" concept="6" />
+      <node id="815354553356158094" at="34,68,35,102" concept="6" />
+      <node id="815354553356158094" at="37,30,38,17" concept="6" />
+      <node id="7023154606309058247" at="40,55,41,43" concept="6" />
+      <node id="815354553356158094" at="45,0,46,0" concept="8" trace="macro$RDU$" />
+      <node id="815354553356158094" at="49,0,50,0" concept="8" trace="MacroFilePicker$Cv" />
+      <node id="815354553356158094" at="21,0,23,0" concept="1" trace="check_MacroFilePicker_NonTypesystemRule#()V" />
+      <node id="815354553356158094" at="31,0,34,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="815354553356158094" at="34,0,37,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="815354553356158094" at="37,0,40,0" concept="4" trace="overrides#()Z" />
+      <node id="7023154606309058247" at="40,0,43,0" concept="9" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="815354553356158103" at="24,210,28,7" concept="0" />
+      <node id="815354553356158101" at="23,128,29,5" concept="3" />
+      <node id="815354553356158094" at="23,0,31,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="815354553356158094" at="21,52,21,52" />
+      <scope id="815354553356158094" at="31,50,32,39" />
+      <scope id="815354553356158094" at="34,68,35,102" />
+      <scope id="815354553356158094" at="37,30,38,17" />
+      <scope id="7023154606309058247" at="40,55,41,43" />
+      <scope id="815354553356158094" at="21,0,23,0" />
+      <scope id="815354553356158103" at="25,7,27,322">
+        <var name="_reporter_2309309498" id="815354553356158103" />
+        <var name="errorTarget" id="815354553356158103" />
+      </scope>
+      <scope id="815354553356158094" at="31,0,34,0" />
+      <scope id="815354553356158094" at="34,0,37,0">
+        <var name="argument" id="815354553356158094" />
+      </scope>
+      <scope id="815354553356158094" at="37,0,40,0" />
+      <scope id="7023154606309058247" at="40,0,43,0">
+        <var name="str" id="7023154606309058247" />
+      </scope>
+      <scope id="815354553356158102" at="24,210,28,7" />
+      <scope id="815354553356158095" at="23,128,29,5" />
+      <scope id="815354553356158094" at="23,0,31,0">
+        <var name="macroFilePicker" id="815354553356158094" />
+        <var name="status" id="815354553356158094" />
+        <var name="typeCheckingContext" id="815354553356158094" />
+      </scope>
+      <unit id="815354553356158094" at="44,0,47,0" name="com.mbeddr.mpsutil.filepicker.typesystem.check_MacroFilePicker_NonTypesystemRule$PROPS" />
+      <unit id="815354553356158094" at="48,0,51,0" name="com.mbeddr.mpsutil.filepicker.typesystem.check_MacroFilePicker_NonTypesystemRule$CONCEPTS" />
+      <unit id="815354553356158094" at="20,0,52,0" name="com.mbeddr.mpsutil.filepicker.typesystem.check_MacroFilePicker_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="9,0,61,0" name="com.mbeddr.core.embedded.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)/1017957699896642417">
+    <file name="TypesystemDescriptor.java">
+      <node id="1017957699896642417" at="15,5,16,89" concept="6" />
+      <node id="1017957699896642417" at="16,89,17,47" concept="2" />
+      <node id="1017957699896642417" at="14,5,18,5" concept="0" />
+      <scope id="1017957699896642417" at="15,5,17,47">
+        <var name="inferenceRule" id="1017957699896642417" />
+      </scope>
+    </file>
+    <file name="typeof_ISRCallExpression_InferenceRule.java">
+      <node id="1017957699896642419" at="20,5,21,46" concept="6" />
+      <node id="1017957699896642419" at="21,46,22,201" concept="6" />
+      <node id="1017957699896642419" at="22,201,23,418" concept="2" />
+      <node id="1017957699896642417" at="26,50,27,41" concept="7" />
+      <node id="1017957699896642417" at="29,68,30,102" concept="7" />
+      <node id="1017957699896642417" at="32,30,33,17" concept="7" />
+      <node id="1017957699896642417" at="37,0,38,0" concept="9" trace="ISRCallExpression$_n" />
+      <node id="1017957699896642417" at="17,0,19,0" concept="1" trace="typeof_ISRCallExpression_InferenceRule#()V" />
+      <node id="1017957699896642417" at="26,0,29,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1017957699896642417" at="29,0,32,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1017957699896642417" at="32,0,35,0" concept="5" trace="overrides#()Z" />
+      <node id="1017957699896642419" at="19,117,24,5" concept="0" />
+      <node id="1017957699896642417" at="19,0,26,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1017957699896642417" at="17,51,17,51" />
+      <scope id="1017957699896642417" at="26,50,27,41" />
+      <scope id="1017957699896642417" at="29,68,30,102" />
+      <scope id="1017957699896642417" at="32,30,33,17" />
+      <scope id="1017957699896642417" at="17,0,19,0" />
+      <scope id="1017957699896642419" at="20,5,23,418">
+        <var name="_info_12389875345" id="1017957699896642419" />
+        <var name="_nodeToCheck_1029348928467" id="1017957699896642419" />
+      </scope>
+      <scope id="1017957699896642417" at="26,0,29,0" />
+      <scope id="1017957699896642417" at="29,0,32,0">
+        <var name="argument" id="1017957699896642417" />
+      </scope>
+      <scope id="1017957699896642417" at="32,0,35,0" />
+      <scope id="1017957699896642418" at="19,117,24,5" />
+      <scope id="1017957699896642417" at="19,0,26,0">
+        <var name="call" id="1017957699896642417" />
+        <var name="status" id="1017957699896642417" />
+        <var name="typeCheckingContext" id="1017957699896642417" />
+      </scope>
+      <unit id="1017957699896642417" at="36,0,39,0" name="com.mbeddr.core.embedded.typesystem.typeof_ISRCallExpression_InferenceRule$CONCEPTS" />
+      <unit id="1017957699896642417" at="16,0,40,0" name="com.mbeddr.core.embedded.typesystem.typeof_ISRCallExpression_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)/5177337757802040270">
+    <file name="TypesystemDescriptor.java">
+      <node id="5177337757802040270" at="51,5,52,91" concept="6" />
+      <node id="5177337757802040270" at="52,91,53,55" concept="2" />
+      <node id="5177337757802040270" at="50,5,54,5" concept="0" />
+      <scope id="5177337757802040270" at="51,5,53,55">
+        <var name="nonTypesystemRule" id="5177337757802040270" />
+      </scope>
+    </file>
+    <file name="check_Register_NonTypesystemRule.java">
+      <node id="5177337757802040606" at="26,121,27,22" concept="6" />
+      <node id="5177337757802053215" at="28,110,29,77" concept="2" />
+      <node id="5177337757802091491" at="31,9,32,68" concept="6" />
+      <node id="5177337757802091491" at="32,68,33,282" concept="6" />
+      <node id="5177337757802195809" at="37,9,38,68" concept="6" />
+      <node id="5177337757802195809" at="38,68,39,264" concept="6" />
+      <node id="5177337757802040727" at="42,5,43,0" concept="8" />
+      <node id="5177337757802040270" at="45,50,46,32" concept="7" />
+      <node id="5177337757802040270" at="48,68,49,102" concept="7" />
+      <node id="5177337757802040270" at="51,30,52,17" concept="7" />
+      <node id="5177337757802040270" at="56,0,57,0" concept="9" trace="size$Qe5u" />
+      <node id="5177337757802040270" at="57,0,58,0" concept="9" trace="start$x41s" />
+      <node id="5177337757802040270" at="58,0,59,0" concept="9" trace="explicitAdressing$Ilj" />
+      <node id="5177337757802040270" at="62,0,63,0" concept="9" trace="elements$8WY1" />
+      <node id="5177337757802040270" at="66,0,67,0" concept="9" trace="Register$pd" />
+      <node id="5177337757802040270" at="24,0,26,0" concept="1" trace="check_Register_NonTypesystemRule#()V" />
+      <node id="5177337757802040270" at="45,0,48,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5177337757802040270" at="48,0,51,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5177337757802040270" at="51,0,54,0" concept="5" trace="overrides#()Z" />
+      <node id="5177337757802091491" at="30,102,34,9" concept="0" />
+      <node id="5177337757802195809" at="36,284,40,9" concept="0" />
+      <node id="5177337757802069038" at="29,77,35,7" concept="4" />
+      <node id="5177337757802095596" at="35,7,41,7" concept="4" />
+      <node id="5177337757802040740" at="27,22,42,5" concept="3" />
+      <node id="5177337757802040270" at="26,0,45,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5177337757802040270" at="24,45,24,45" />
+      <scope id="5177337757802040270" at="45,50,46,32" />
+      <scope id="5177337757802040270" at="48,68,49,102" />
+      <scope id="5177337757802040270" at="51,30,52,17" />
+      <scope id="5177337757802040270" at="24,0,26,0" />
+      <scope id="5177337757802091491" at="31,9,33,282">
+        <var name="_reporter_2309309498" id="5177337757802091491" />
+        <var name="errorTarget" id="5177337757802091491" />
+      </scope>
+      <scope id="5177337757802195809" at="37,9,39,264">
+        <var name="_reporter_2309309498" id="5177337757802195809" />
+        <var name="errorTarget" id="5177337757802195809" />
+      </scope>
+      <scope id="5177337757802040270" at="45,0,48,0" />
+      <scope id="5177337757802040270" at="48,0,51,0">
+        <var name="argument" id="5177337757802040270" />
+      </scope>
+      <scope id="5177337757802040270" at="51,0,54,0" />
+      <scope id="5177337757802069041" at="30,102,34,9" />
+      <scope id="5177337757802095599" at="36,284,40,9" />
+      <scope id="5177337757802040746" at="28,110,41,7" />
+      <scope id="5177337757802040740" at="27,22,42,5">
+        <var name="elemente" id="5177337757802040742" />
+      </scope>
+      <scope id="5177337757802040271" at="26,121,43,0">
+        <var name="totalsize" id="5177337757802040609" />
+      </scope>
+      <scope id="5177337757802040270" at="26,0,45,0">
+        <var name="register" id="5177337757802040270" />
+        <var name="status" id="5177337757802040270" />
+        <var name="typeCheckingContext" id="5177337757802040270" />
+      </scope>
+      <unit id="5177337757802040270" at="61,0,64,0" name="com.mbeddr.core.embedded.typesystem.check_Register_NonTypesystemRule$LINKS" />
+      <unit id="5177337757802040270" at="65,0,68,0" name="com.mbeddr.core.embedded.typesystem.check_Register_NonTypesystemRule$CONCEPTS" />
+      <unit id="5177337757802040270" at="55,0,60,0" name="com.mbeddr.core.embedded.typesystem.check_Register_NonTypesystemRule$PROPS" />
+      <unit id="5177337757802040270" at="23,0,69,0" name="com.mbeddr.core.embedded.typesystem.check_Register_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)/5571169721036899041">
+    <file name="TypesystemDescriptor.java">
+      <node id="5571169721036899041" at="55,5,56,101" concept="6" />
+      <node id="5571169721036899041" at="56,101,57,55" concept="2" />
+      <node id="5571169721036899041" at="54,5,58,5" concept="0" />
+      <scope id="5571169721036899041" at="55,5,57,55">
+        <var name="nonTypesystemRule" id="5571169721036899041" />
+      </scope>
+    </file>
+    <file name="check_StructuredRegister_NonTypesystemRule.java">
+      <node id="5571169721036918920" at="25,7,26,66" concept="6" />
+      <node id="5571169721036918920" at="26,66,27,260" concept="6" />
+      <node id="5571169721036957391" at="28,9,29,173" concept="6" />
+      <node id="5571169721036957391" at="29,173,30,71" concept="2" />
+      <node id="5571169721036899041" at="35,50,36,42" concept="7" />
+      <node id="5571169721036899041" at="38,68,39,102" concept="7" />
+      <node id="5571169721036899041" at="41,30,42,17" concept="7" />
+      <node id="5571169721036899061" at="44,55,45,43" concept="7" />
+      <node id="5571169721036899041" at="49,0,50,0" concept="9" trace="enableLowHighAccess$KdMJ" />
+      <node id="5571169721036899041" at="50,0,51,0" concept="9" trace="highSuffix$K7Gl" />
+      <node id="5571169721036899041" at="51,0,52,0" concept="9" trace="lowSuffix$K8an" />
+      <node id="5571169721036899041" at="55,0,56,0" concept="9" trace="StructuredRegister$d$" />
+      <node id="5571169721036899041" at="21,0,23,0" concept="1" trace="check_StructuredRegister_NonTypesystemRule#()V" />
+      <node id="5571169721036899041" at="35,0,38,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5571169721036899041" at="38,0,41,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5571169721036899041" at="41,0,44,0" concept="5" trace="overrides#()Z" />
+      <node id="5571169721036899061" at="44,0,47,0" concept="10" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="5571169721036957391" at="27,260,31,9" concept="0" />
+      <node id="5571169721036918920" at="24,291,32,7" concept="0" />
+      <node id="5571169721036899048" at="23,131,33,5" concept="4" />
+      <node id="5571169721036899041" at="23,0,35,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5571169721036899041" at="21,55,21,55" />
+      <scope id="5571169721036899041" at="35,50,36,42" />
+      <scope id="5571169721036899041" at="38,68,39,102" />
+      <scope id="5571169721036899041" at="41,30,42,17" />
+      <scope id="5571169721036899061" at="44,55,45,43" />
+      <scope id="5571169721036899041" at="21,0,23,0" />
+      <scope id="5571169721036957391" at="28,9,30,71">
+        <var name="intentionProvider" id="5571169721036957391" />
+      </scope>
+      <scope id="5571169721036899041" at="35,0,38,0" />
+      <scope id="5571169721036899041" at="38,0,41,0">
+        <var name="argument" id="5571169721036899041" />
+      </scope>
+      <scope id="5571169721036899041" at="41,0,44,0" />
+      <scope id="5571169721036899061" at="44,0,47,0">
+        <var name="str" id="5571169721036899061" />
+      </scope>
+      <scope id="5571169721036918920" at="25,7,31,9">
+        <var name="_reporter_2309309498" id="5571169721036918920" />
+        <var name="errorTarget" id="5571169721036918920" />
+      </scope>
+      <scope id="5571169721036899067" at="24,291,32,7" />
+      <scope id="5571169721036899042" at="23,131,33,5" />
+      <scope id="5571169721036899041" at="23,0,35,0">
+        <var name="status" id="5571169721036899041" />
+        <var name="structuredRegister" id="5571169721036899041" />
+        <var name="typeCheckingContext" id="5571169721036899041" />
+      </scope>
+      <unit id="5571169721036899041" at="54,0,57,0" name="com.mbeddr.core.embedded.typesystem.check_StructuredRegister_NonTypesystemRule$CONCEPTS" />
+      <unit id="5571169721036899041" at="48,0,53,0" name="com.mbeddr.core.embedded.typesystem.check_StructuredRegister_NonTypesystemRule$PROPS" />
+      <unit id="5571169721036899041" at="20,0,58,0" name="com.mbeddr.core.embedded.typesystem.check_StructuredRegister_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)/5571169721037078299">
+    <file name="TypesystemDescriptor.java">
+      <node id="5571169721037078299" at="23,5,24,82" concept="6" />
+      <node id="5571169721037078299" at="24,82,25,47" concept="2" />
+      <node id="5571169721037078299" at="22,5,26,5" concept="0" />
+      <scope id="5571169721037078299" at="23,5,25,47">
+        <var name="inferenceRule" id="5571169721037078299" />
+      </scope>
+    </file>
+    <file name="typeof_Register32_InferenceRule.java">
+      <node id="5571169721037078306" at="21,116,22,15" concept="6" />
+      <node id="5571169721037078311" at="23,65,24,192" concept="2" />
+      <node id="5571169721037078322" at="25,12,26,200" concept="2" />
+      <node id="5571169721037078328" at="27,5,28,64" concept="2" />
+      <node id="5571169721037078334" at="28,64,29,110" concept="2" />
+      <node id="5571169721037078342" at="30,5,31,45" concept="6" />
+      <node id="5571169721037078342" at="31,45,32,201" concept="6" />
+      <node id="5571169721037078342" at="32,201,33,246" concept="2" />
+      <node id="5571169721037078299" at="36,50,37,34" concept="7" />
+      <node id="5571169721037078299" at="39,68,40,102" concept="7" />
+      <node id="5571169721037078299" at="42,30,43,17" concept="7" />
+      <node id="5571169721037078299" at="47,0,48,0" concept="9" trace="signed$rNTM" />
+      <node id="5571169721037078299" at="48,0,49,0" concept="9" trace="volatile$hJNe" />
+      <node id="5571169721037078299" at="49,0,50,0" concept="9" trace="const$VWr7" />
+      <node id="5571169721037078299" at="50,0,51,0" concept="9" trace="const$rO8N" />
+      <node id="5571169721037078299" at="54,0,55,0" concept="9" trace="Register32$gC" />
+      <node id="5571169721037078299" at="19,0,21,0" concept="1" trace="typeof_Register32_InferenceRule#()V" />
+      <node id="5571169721037078320" at="25,10,27,5" concept="0" />
+      <node id="5571169721037078299" at="36,0,39,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5571169721037078299" at="39,0,42,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5571169721037078299" at="42,0,45,0" concept="5" trace="overrides#()Z" />
+      <node id="5571169721037078309" at="22,15,27,5" concept="4" />
+      <node id="5571169721037078342" at="29,110,34,5" concept="0" />
+      <node id="5571169721037078299" at="21,0,36,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5571169721037078299" at="19,44,19,44" />
+      <scope id="5571169721037078310" at="23,65,24,192" />
+      <scope id="5571169721037078321" at="25,12,26,200" />
+      <scope id="5571169721037078299" at="36,50,37,34" />
+      <scope id="5571169721037078299" at="39,68,40,102" />
+      <scope id="5571169721037078299" at="42,30,43,17" />
+      <scope id="5571169721037078299" at="19,0,21,0" />
+      <scope id="5571169721037078342" at="30,5,33,246">
+        <var name="_info_12389875345" id="5571169721037078342" />
+        <var name="_nodeToCheck_1029348928467" id="5571169721037078342" />
+      </scope>
+      <scope id="5571169721037078299" at="36,0,39,0" />
+      <scope id="5571169721037078299" at="39,0,42,0">
+        <var name="argument" id="5571169721037078299" />
+      </scope>
+      <scope id="5571169721037078299" at="42,0,45,0" />
+      <scope id="5571169721037078300" at="21,116,34,5">
+        <var name="type" id="5571169721037078307" />
+      </scope>
+      <scope id="5571169721037078299" at="21,0,36,0">
+        <var name="r32" id="5571169721037078299" />
+        <var name="status" id="5571169721037078299" />
+        <var name="typeCheckingContext" id="5571169721037078299" />
+      </scope>
+      <unit id="5571169721037078299" at="53,0,56,0" name="com.mbeddr.core.embedded.typesystem.typeof_Register32_InferenceRule$CONCEPTS" />
+      <unit id="5571169721037078299" at="46,0,52,0" name="com.mbeddr.core.embedded.typesystem.typeof_Register32_InferenceRule$PROPS" />
+      <unit id="5571169721037078299" at="18,0,57,0" name="com.mbeddr.core.embedded.typesystem.typeof_Register32_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)/6847490852669177953">
+    <file name="TypesystemDescriptor.java">
+      <node id="6847490852669177953" at="19,5,20,82" concept="6" />
+      <node id="6847490852669177953" at="20,82,21,47" concept="2" />
+      <node id="6847490852669177953" at="18,5,22,5" concept="0" />
+      <scope id="6847490852669177953" at="19,5,21,47">
+        <var name="inferenceRule" id="6847490852669177953" />
+      </scope>
+    </file>
+    <file name="typeof_Register16_InferenceRule.java">
+      <node id="6847490852669177955" at="21,116,22,15" concept="6" />
+      <node id="6847490852669177960" at="23,65,24,192" concept="2" />
+      <node id="6847490852669177971" at="25,12,26,200" concept="2" />
+      <node id="6847490852669177977" at="27,5,28,64" concept="2" />
+      <node id="6847490852669177983" at="28,64,29,110" concept="2" />
+      <node id="6847490852669177991" at="30,5,31,45" concept="6" />
+      <node id="6847490852669177991" at="31,45,32,201" concept="6" />
+      <node id="6847490852669177991" at="32,201,33,246" concept="2" />
+      <node id="6847490852669177953" at="36,50,37,34" concept="7" />
+      <node id="6847490852669177953" at="39,68,40,102" concept="7" />
+      <node id="6847490852669177953" at="42,30,43,17" concept="7" />
+      <node id="6847490852669177953" at="47,0,48,0" concept="9" trace="signed$rNTM" />
+      <node id="6847490852669177953" at="48,0,49,0" concept="9" trace="volatile$hJNe" />
+      <node id="6847490852669177953" at="49,0,50,0" concept="9" trace="const$VWr7" />
+      <node id="6847490852669177953" at="50,0,51,0" concept="9" trace="const$rO8N" />
+      <node id="6847490852669177953" at="54,0,55,0" concept="9" trace="Register16$nv" />
+      <node id="6847490852669177953" at="19,0,21,0" concept="1" trace="typeof_Register16_InferenceRule#()V" />
+      <node id="6847490852669177969" at="25,10,27,5" concept="0" />
+      <node id="6847490852669177953" at="36,0,39,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6847490852669177953" at="39,0,42,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6847490852669177953" at="42,0,45,0" concept="5" trace="overrides#()Z" />
+      <node id="6847490852669177958" at="22,15,27,5" concept="4" />
+      <node id="6847490852669177991" at="29,110,34,5" concept="0" />
+      <node id="6847490852669177953" at="21,0,36,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6847490852669177953" at="19,44,19,44" />
+      <scope id="6847490852669177959" at="23,65,24,192" />
+      <scope id="6847490852669177970" at="25,12,26,200" />
+      <scope id="6847490852669177953" at="36,50,37,34" />
+      <scope id="6847490852669177953" at="39,68,40,102" />
+      <scope id="6847490852669177953" at="42,30,43,17" />
+      <scope id="6847490852669177953" at="19,0,21,0" />
+      <scope id="6847490852669177991" at="30,5,33,246">
+        <var name="_info_12389875345" id="6847490852669177991" />
+        <var name="_nodeToCheck_1029348928467" id="6847490852669177991" />
+      </scope>
+      <scope id="6847490852669177953" at="36,0,39,0" />
+      <scope id="6847490852669177953" at="39,0,42,0">
+        <var name="argument" id="6847490852669177953" />
+      </scope>
+      <scope id="6847490852669177953" at="42,0,45,0" />
+      <scope id="6847490852669177954" at="21,116,34,5">
+        <var name="type" id="6847490852669177956" />
+      </scope>
+      <scope id="6847490852669177953" at="21,0,36,0">
+        <var name="r16" id="6847490852669177953" />
+        <var name="status" id="6847490852669177953" />
+        <var name="typeCheckingContext" id="6847490852669177953" />
+      </scope>
+      <unit id="6847490852669177953" at="53,0,56,0" name="com.mbeddr.core.embedded.typesystem.typeof_Register16_InferenceRule$CONCEPTS" />
+      <unit id="6847490852669177953" at="46,0,52,0" name="com.mbeddr.core.embedded.typesystem.typeof_Register16_InferenceRule$PROPS" />
+      <unit id="6847490852669177953" at="18,0,57,0" name="com.mbeddr.core.embedded.typesystem.typeof_Register16_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)/6847490852669209721">
+    <file name="TypesystemDescriptor.java">
+      <node id="6847490852669209721" at="27,5,28,81" concept="6" />
+      <node id="6847490852669209721" at="28,81,29,47" concept="2" />
+      <node id="6847490852669209721" at="26,5,30,5" concept="0" />
+      <scope id="6847490852669209721" at="27,5,29,47">
+        <var name="inferenceRule" id="6847490852669209721" />
+      </scope>
+    </file>
+    <file name="typeof_Register8_InferenceRule.java">
+      <node id="6847490852669209723" at="21,115,22,15" concept="6" />
+      <node id="6847490852669209728" at="23,64,24,191" concept="2" />
+      <node id="6847490852669209739" at="25,12,26,199" concept="2" />
+      <node id="6847490852669209745" at="27,5,28,64" concept="2" />
+      <node id="6847490852669209751" at="28,64,29,109" concept="2" />
+      <node id="6847490852669209759" at="30,5,31,44" concept="6" />
+      <node id="6847490852669209759" at="31,44,32,201" concept="6" />
+      <node id="6847490852669209759" at="32,201,33,246" concept="2" />
+      <node id="6847490852669209721" at="36,50,37,33" concept="7" />
+      <node id="6847490852669209721" at="39,68,40,102" concept="7" />
+      <node id="6847490852669209721" at="42,30,43,17" concept="7" />
+      <node id="6847490852669209721" at="47,0,48,0" concept="9" trace="signed$rNTM" />
+      <node id="6847490852669209721" at="48,0,49,0" concept="9" trace="volatile$hJNe" />
+      <node id="6847490852669209721" at="49,0,50,0" concept="9" trace="const$VWr7" />
+      <node id="6847490852669209721" at="50,0,51,0" concept="9" trace="const$rO8N" />
+      <node id="6847490852669209721" at="54,0,55,0" concept="9" trace="Register8$9f" />
+      <node id="6847490852669209721" at="19,0,21,0" concept="1" trace="typeof_Register8_InferenceRule#()V" />
+      <node id="6847490852669209737" at="25,10,27,5" concept="0" />
+      <node id="6847490852669209721" at="36,0,39,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6847490852669209721" at="39,0,42,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6847490852669209721" at="42,0,45,0" concept="5" trace="overrides#()Z" />
+      <node id="6847490852669209726" at="22,15,27,5" concept="4" />
+      <node id="6847490852669209759" at="29,109,34,5" concept="0" />
+      <node id="6847490852669209721" at="21,0,36,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6847490852669209721" at="19,43,19,43" />
+      <scope id="6847490852669209727" at="23,64,24,191" />
+      <scope id="6847490852669209738" at="25,12,26,199" />
+      <scope id="6847490852669209721" at="36,50,37,33" />
+      <scope id="6847490852669209721" at="39,68,40,102" />
+      <scope id="6847490852669209721" at="42,30,43,17" />
+      <scope id="6847490852669209721" at="19,0,21,0" />
+      <scope id="6847490852669209759" at="30,5,33,246">
+        <var name="_info_12389875345" id="6847490852669209759" />
+        <var name="_nodeToCheck_1029348928467" id="6847490852669209759" />
+      </scope>
+      <scope id="6847490852669209721" at="36,0,39,0" />
+      <scope id="6847490852669209721" at="39,0,42,0">
+        <var name="argument" id="6847490852669209721" />
+      </scope>
+      <scope id="6847490852669209721" at="42,0,45,0" />
+      <scope id="6847490852669209722" at="21,115,34,5">
+        <var name="type" id="6847490852669209724" />
+      </scope>
+      <scope id="6847490852669209721" at="21,0,36,0">
+        <var name="r8" id="6847490852669209721" />
+        <var name="status" id="6847490852669209721" />
+        <var name="typeCheckingContext" id="6847490852669209721" />
+      </scope>
+      <unit id="6847490852669209721" at="53,0,56,0" name="com.mbeddr.core.embedded.typesystem.typeof_Register8_InferenceRule$CONCEPTS" />
+      <unit id="6847490852669209721" at="46,0,52,0" name="com.mbeddr.core.embedded.typesystem.typeof_Register8_InferenceRule$PROPS" />
+      <unit id="6847490852669209721" at="18,0,57,0" name="com.mbeddr.core.embedded.typesystem.typeof_Register8_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)/6847490852669234140">
+    <file name="TypesystemDescriptor.java">
+      <node id="6847490852669234140" at="35,5,36,95" concept="6" />
+      <node id="6847490852669234140" at="36,95,37,47" concept="2" />
+      <node id="6847490852669234140" at="34,5,38,5" concept="0" />
+      <scope id="6847490852669234140" at="35,5,37,47">
+        <var name="inferenceRule" id="6847490852669234140" />
+      </scope>
+    </file>
+    <file name="typeof_RegisterValueExpression_InferenceRule.java">
+      <node id="6847490852669234142" at="20,5,21,45" concept="6" />
+      <node id="6847490852669234142" at="21,45,22,201" concept="6" />
+      <node id="6847490852669234142" at="22,201,23,450" concept="2" />
+      <node id="6847490852669234140" at="26,50,27,47" concept="7" />
+      <node id="6847490852669234140" at="29,68,30,102" concept="7" />
+      <node id="6847490852669234140" at="32,30,33,17" concept="7" />
+      <node id="6847490852669234140" at="37,0,38,0" concept="9" trace="Register$pd" />
+      <node id="6847490852669234140" at="38,0,39,0" concept="9" trace="RegisterValueExpression$47" />
+      <node id="6847490852669234140" at="17,0,19,0" concept="1" trace="typeof_RegisterValueExpression_InferenceRule#()V" />
+      <node id="6847490852669234140" at="26,0,29,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6847490852669234140" at="29,0,32,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6847490852669234140" at="32,0,35,0" concept="5" trace="overrides#()Z" />
+      <node id="6847490852669234142" at="19,116,24,5" concept="0" />
+      <node id="6847490852669234140" at="19,0,26,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6847490852669234140" at="17,57,17,57" />
+      <scope id="6847490852669234140" at="26,50,27,47" />
+      <scope id="6847490852669234140" at="29,68,30,102" />
+      <scope id="6847490852669234140" at="32,30,33,17" />
+      <scope id="6847490852669234140" at="17,0,19,0" />
+      <scope id="6847490852669234142" at="20,5,23,450">
+        <var name="_info_12389875345" id="6847490852669234142" />
+        <var name="_nodeToCheck_1029348928467" id="6847490852669234142" />
+      </scope>
+      <scope id="6847490852669234140" at="26,0,29,0" />
+      <scope id="6847490852669234140" at="29,0,32,0">
+        <var name="argument" id="6847490852669234140" />
+      </scope>
+      <scope id="6847490852669234140" at="32,0,35,0" />
+      <scope id="6847490852669234141" at="19,116,24,5" />
+      <scope id="6847490852669234140" at="19,0,26,0">
+        <var name="rve" id="6847490852669234140" />
+        <var name="status" id="6847490852669234140" />
+        <var name="typeCheckingContext" id="6847490852669234140" />
+      </scope>
+      <unit id="6847490852669234140" at="36,0,40,0" name="com.mbeddr.core.embedded.typesystem.typeof_RegisterValueExpression_InferenceRule$CONCEPTS" />
+      <unit id="6847490852669234140" at="16,0,41,0" name="com.mbeddr.core.embedded.typesystem.typeof_RegisterValueExpression_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)/6847490852669338347">
+    <file name="TypesystemDescriptor.java">
+      <node id="6847490852669338347" at="31,5,32,87" concept="6" />
+      <node id="6847490852669338347" at="32,87,33,47" concept="2" />
+      <node id="6847490852669338347" at="30,5,34,5" concept="0" />
+      <scope id="6847490852669338347" at="31,5,33,47">
+        <var name="inferenceRule" id="6847490852669338347" />
+      </scope>
+    </file>
+    <file name="typeof_RegisterRefExpr_InferenceRule.java">
+      <node id="6847490852669338349" at="21,5,22,45" concept="6" />
+      <node id="6847490852669338349" at="22,45,23,201" concept="6" />
+      <node id="6847490852669338349" at="23,201,24,429" concept="2" />
+      <node id="6847490852669338347" at="27,50,28,39" concept="7" />
+      <node id="6847490852669338347" at="30,68,31,102" concept="7" />
+      <node id="6847490852669338347" at="33,30,34,17" concept="7" />
+      <node id="6847490852669338347" at="38,0,39,0" concept="9" trace="register$2yEM" />
+      <node id="6847490852669338347" at="42,0,43,0" concept="9" trace="RegisterRefExpr$QJ" />
+      <node id="6847490852669338347" at="18,0,20,0" concept="1" trace="typeof_RegisterRefExpr_InferenceRule#()V" />
+      <node id="6847490852669338347" at="27,0,30,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6847490852669338347" at="30,0,33,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6847490852669338347" at="33,0,36,0" concept="5" trace="overrides#()Z" />
+      <node id="6847490852669338349" at="20,116,25,5" concept="0" />
+      <node id="6847490852669338347" at="20,0,27,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6847490852669338347" at="18,49,18,49" />
+      <scope id="6847490852669338347" at="27,50,28,39" />
+      <scope id="6847490852669338347" at="30,68,31,102" />
+      <scope id="6847490852669338347" at="33,30,34,17" />
+      <scope id="6847490852669338347" at="18,0,20,0" />
+      <scope id="6847490852669338349" at="21,5,24,429">
+        <var name="_info_12389875345" id="6847490852669338349" />
+        <var name="_nodeToCheck_1029348928467" id="6847490852669338349" />
+      </scope>
+      <scope id="6847490852669338347" at="27,0,30,0" />
+      <scope id="6847490852669338347" at="30,0,33,0">
+        <var name="argument" id="6847490852669338347" />
+      </scope>
+      <scope id="6847490852669338347" at="33,0,36,0" />
+      <scope id="6847490852669338348" at="20,116,25,5" />
+      <scope id="6847490852669338347" at="20,0,27,0">
+        <var name="rre" id="6847490852669338347" />
+        <var name="status" id="6847490852669338347" />
+        <var name="typeCheckingContext" id="6847490852669338347" />
+      </scope>
+      <unit id="6847490852669338347" at="37,0,40,0" name="com.mbeddr.core.embedded.typesystem.typeof_RegisterRefExpr_InferenceRule$LINKS" />
+      <unit id="6847490852669338347" at="41,0,44,0" name="com.mbeddr.core.embedded.typesystem.typeof_RegisterRefExpr_InferenceRule$CONCEPTS" />
+      <unit id="6847490852669338347" at="17,0,45,0" name="com.mbeddr.core.embedded.typesystem.typeof_RegisterRefExpr_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)/6847490852669359444">
+    <file name="TypesystemDescriptor.java">
+      <node id="6847490852669359444" at="11,5,12,83" concept="6" />
+      <node id="6847490852669359444" at="12,83,13,47" concept="2" />
+      <node id="6847490852669359444" at="10,33,14,5" concept="0" />
+      <scope id="6847490852669359444" at="11,5,13,47">
+        <var name="inferenceRule" id="6847490852669359444" />
+      </scope>
+    </file>
+    <file name="typeof_HalfRegExpr_InferenceRule.java">
+      <node id="6847490852669359446" at="23,116,24,15" concept="6" />
+      <node id="5833552991197921704" at="24,15,25,92" concept="6" />
+      <node id="6847490852669359451" at="26,70,27,172" concept="2" />
+      <node id="6847490852669359464" at="28,12,29,190" concept="2" />
+      <node id="6847490852669359470" at="30,5,31,64" concept="2" />
+      <node id="6847490852669359476" at="32,5,33,45" concept="6" />
+      <node id="6847490852669359476" at="33,45,34,201" concept="6" />
+      <node id="6847490852669359476" at="34,201,35,246" concept="2" />
+      <node id="6847490852669359444" at="38,50,39,43" concept="7" />
+      <node id="6847490852669359444" at="41,68,42,102" concept="7" />
+      <node id="6847490852669359444" at="44,30,45,17" concept="7" />
+      <node id="5833552991197944318" at="47,58,48,69" concept="6" />
+      <node id="5833552991197944318" at="48,69,49,26" concept="7" />
+      <node id="5833552991197945950" at="51,59,52,70" concept="6" />
+      <node id="5833552991197945950" at="52,70,53,26" concept="7" />
+      <node id="5833552991197951612" at="55,67,56,77" concept="6" />
+      <node id="5833552991197951612" at="56,77,57,26" concept="7" />
+      <node id="5833552991197951614" at="59,68,60,78" concept="6" />
+      <node id="5833552991197951614" at="60,78,61,26" concept="7" />
+      <node id="6847490852669359444" at="65,0,66,0" concept="9" trace="signed$rNTM" />
+      <node id="6847490852669359444" at="66,0,67,0" concept="9" trace="volatile$hJNe" />
+      <node id="6847490852669359444" at="70,0,71,0" concept="9" trace="HalfRegisterRefExpr$XI" />
+      <node id="6847490852669359444" at="71,0,72,0" concept="9" trace="Int8tType$tq" />
+      <node id="6847490852669359444" at="72,0,73,0" concept="9" trace="Int16tType$FW" />
+      <node id="6847490852669359444" at="73,0,74,0" concept="9" trace="UnsignedInt8tType$n3" />
+      <node id="6847490852669359444" at="74,0,75,0" concept="9" trace="UnsignedInt16tType$pu" />
+      <node id="6847490852669359444" at="21,0,23,0" concept="1" trace="typeof_HalfRegExpr_InferenceRule#()V" />
+      <node id="6847490852669359462" at="28,10,30,5" concept="0" />
+      <node id="6847490852669359444" at="38,0,41,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6847490852669359444" at="41,0,44,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6847490852669359444" at="44,0,47,0" concept="5" trace="overrides#()Z" />
+      <node id="5833552991197944318" at="47,0,51,0" concept="10" trace="createInt8tType_lvy6an_a0a0a2a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5833552991197945950" at="51,0,55,0" concept="10" trace="createInt16tType_lvy6an_a0a0a2a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5833552991197951612" at="55,0,59,0" concept="10" trace="createUnsignedInt8tType_lvy6an_a0a0a0c0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5833552991197951614" at="59,0,63,0" concept="10" trace="createUnsignedInt16tType_lvy6an_a0a0a0c0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6847490852669359449" at="25,92,30,5" concept="4" />
+      <node id="6847490852669359476" at="31,64,36,5" concept="0" />
+      <node id="6847490852669359444" at="23,0,38,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6847490852669359444" at="21,45,21,45" />
+      <scope id="6847490852669359450" at="26,70,27,172" />
+      <scope id="6847490852669359463" at="28,12,29,190" />
+      <scope id="6847490852669359444" at="38,50,39,43" />
+      <scope id="6847490852669359444" at="41,68,42,102" />
+      <scope id="6847490852669359444" at="44,30,45,17" />
+      <scope id="6847490852669359444" at="21,0,23,0" />
+      <scope id="5833552991197944318" at="47,58,49,26">
+        <var name="n0" id="5833552991197944318" />
+      </scope>
+      <scope id="5833552991197945950" at="51,59,53,26">
+        <var name="n0" id="5833552991197945950" />
+      </scope>
+      <scope id="5833552991197951612" at="55,67,57,26">
+        <var name="n0" id="5833552991197951612" />
+      </scope>
+      <scope id="5833552991197951614" at="59,68,61,26">
+        <var name="n0" id="5833552991197951614" />
+      </scope>
+      <scope id="6847490852669359476" at="32,5,35,246">
+        <var name="_info_12389875345" id="6847490852669359476" />
+        <var name="_nodeToCheck_1029348928467" id="6847490852669359476" />
+      </scope>
+      <scope id="6847490852669359444" at="38,0,41,0" />
+      <scope id="6847490852669359444" at="41,0,44,0">
+        <var name="argument" id="6847490852669359444" />
+      </scope>
+      <scope id="6847490852669359444" at="44,0,47,0" />
+      <scope id="5833552991197944318" at="47,0,51,0" />
+      <scope id="5833552991197945950" at="51,0,55,0" />
+      <scope id="5833552991197951612" at="55,0,59,0" />
+      <scope id="5833552991197951614" at="59,0,63,0" />
+      <scope id="6847490852669359445" at="23,116,36,5">
+        <var name="register" id="5833552991197921705" />
+        <var name="type" id="6847490852669359447" />
+      </scope>
+      <scope id="6847490852669359444" at="23,0,38,0">
+        <var name="hre" id="6847490852669359444" />
+        <var name="status" id="6847490852669359444" />
+        <var name="typeCheckingContext" id="6847490852669359444" />
+      </scope>
+      <unit id="6847490852669359444" at="64,0,68,0" name="com.mbeddr.core.embedded.typesystem.typeof_HalfRegExpr_InferenceRule$PROPS" />
+      <unit id="6847490852669359444" at="69,0,76,0" name="com.mbeddr.core.embedded.typesystem.typeof_HalfRegExpr_InferenceRule$CONCEPTS" />
+      <unit id="6847490852669359444" at="20,0,77,0" name="com.mbeddr.core.embedded.typesystem.typeof_HalfRegExpr_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)/6847490852669359483">
+    <file name="TypesystemDescriptor.java">
+      <node id="6847490852669359483" at="47,5,48,97" concept="6" />
+      <node id="6847490852669359483" at="48,97,49,55" concept="2" />
+      <node id="6847490852669359483" at="46,5,50,5" concept="0" />
+      <scope id="6847490852669359483" at="47,5,49,55">
+        <var name="nonTypesystemRule" id="6847490852669359483" />
+      </scope>
+    </file>
+    <file name="check_HalfRegRefExpr_NonTypesystemRule.java">
+      <node id="5833552991198038819" at="27,5,28,114" concept="6" />
+      <node id="6847490852669359501" at="31,11,32,70" concept="6" />
+      <node id="6847490852669359501" at="32,70,33,323" concept="6" />
+      <node id="6847490852669359483" at="39,50,40,43" concept="7" />
+      <node id="6847490852669359483" at="42,68,43,102" concept="7" />
+      <node id="6847490852669359483" at="45,30,46,17" concept="7" />
+      <node id="6847490852669359483" at="50,0,51,0" concept="9" trace="StructuredRegister$d$" />
+      <node id="6847490852669359483" at="51,0,52,0" concept="9" trace="HalfRegisterRefExpr$XI" />
+      <node id="6847490852669359483" at="55,0,56,0" concept="9" trace="expression$PfNq" />
+      <node id="6847490852669359483" at="59,0,60,0" concept="9" trace="enableLowHighAccess$KdMJ" />
+      <node id="6847490852669359483" at="24,0,26,0" concept="1" trace="check_HalfRegRefExpr_NonTypesystemRule#()V" />
+      <node id="6847490852669359483" at="39,0,42,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6847490852669359483" at="42,0,45,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6847490852669359483" at="45,0,48,0" concept="5" trace="overrides#()Z" />
+      <node id="6847490852669359501" at="30,100,34,11" concept="0" />
+      <node id="5833552991198030398" at="29,93,35,9" concept="4" />
+      <node id="5833552991198038819" at="28,114,36,7" concept="4" />
+      <node id="5833552991198038819" at="26,120,37,5" concept="0" />
+      <node id="6847490852669359483" at="26,0,39,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6847490852669359483" at="24,51,24,51" />
+      <scope id="6847490852669359483" at="39,50,40,43" />
+      <scope id="6847490852669359483" at="42,68,43,102" />
+      <scope id="6847490852669359483" at="45,30,46,17" />
+      <scope id="6847490852669359483" at="24,0,26,0" />
+      <scope id="6847490852669359501" at="31,11,33,323">
+        <var name="_reporter_2309309498" id="6847490852669359501" />
+        <var name="errorTarget" id="6847490852669359501" />
+      </scope>
+      <scope id="6847490852669359483" at="39,0,42,0" />
+      <scope id="6847490852669359483" at="42,0,45,0">
+        <var name="argument" id="6847490852669359483" />
+      </scope>
+      <scope id="6847490852669359483" at="45,0,48,0" />
+      <scope id="5833552991198030400" at="30,100,34,11" />
+      <scope id="5833552991198038823" at="29,93,35,9" />
+      <scope id="5833552991198038819" at="27,5,36,7">
+        <var name="structuredRegister" id="5833552991198038819" />
+      </scope>
+      <scope id="6847490852669359484" at="26,120,37,5" />
+      <scope id="6847490852669359483" at="26,0,39,0">
+        <var name="regExpr" id="6847490852669359483" />
+        <var name="status" id="6847490852669359483" />
+        <var name="typeCheckingContext" id="6847490852669359483" />
+      </scope>
+      <unit id="6847490852669359483" at="54,0,57,0" name="com.mbeddr.core.embedded.typesystem.check_HalfRegRefExpr_NonTypesystemRule$LINKS" />
+      <unit id="6847490852669359483" at="58,0,61,0" name="com.mbeddr.core.embedded.typesystem.check_HalfRegRefExpr_NonTypesystemRule$PROPS" />
+      <unit id="6847490852669359483" at="49,0,53,0" name="com.mbeddr.core.embedded.typesystem.check_HalfRegRefExpr_NonTypesystemRule$CONCEPTS" />
+      <unit id="6847490852669359483" at="23,0,62,0" name="com.mbeddr.core.embedded.typesystem.check_HalfRegRefExpr_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)/6847490852669368891">
+    <file name="TypesystemDescriptor.java">
+      <node id="6847490852669368891" at="43,5,44,103" concept="6" />
+      <node id="6847490852669368891" at="44,103,45,55" concept="2" />
+      <node id="6847490852669368891" at="42,5,46,5" concept="0" />
+      <scope id="6847490852669368891" at="43,5,45,55">
+        <var name="nonTypesystemRule" id="6847490852669368891" />
+      </scope>
+    </file>
+    <file name="check_DirectRegisterAccess_NonTypesystemRule.java">
+      <node id="6847490852669368893" at="22,116,23,58" concept="6" />
+      <node id="6847490852669368910" at="25,7,26,66" concept="6" />
+      <node id="6847490852669368910" at="26,66,27,269" concept="6" />
+      <node id="6847490852669368891" at="31,50,32,44" concept="7" />
+      <node id="6847490852669368891" at="34,68,35,102" concept="7" />
+      <node id="6847490852669368891" at="37,30,38,17" concept="7" />
+      <node id="6847490852669368891" at="42,0,43,0" concept="9" trace="left$SkXz" />
+      <node id="6847490852669368891" at="46,0,47,0" concept="9" trace="DirectRegisterAccess$7_" />
+      <node id="6847490852669368891" at="20,0,22,0" concept="1" trace="check_DirectRegisterAccess_NonTypesystemRule#()V" />
+      <node id="6847490852669368891" at="31,0,34,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6847490852669368891" at="34,0,37,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6847490852669368891" at="37,0,40,0" concept="5" trace="overrides#()Z" />
+      <node id="6847490852669368910" at="24,133,28,7" concept="0" />
+      <node id="6847490852669368899" at="23,58,29,5" concept="4" />
+      <node id="6847490852669368891" at="22,0,31,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6847490852669368891" at="20,57,20,57" />
+      <scope id="6847490852669368891" at="31,50,32,44" />
+      <scope id="6847490852669368891" at="34,68,35,102" />
+      <scope id="6847490852669368891" at="37,30,38,17" />
+      <scope id="6847490852669368891" at="20,0,22,0" />
+      <scope id="6847490852669368910" at="25,7,27,269">
+        <var name="_reporter_2309309498" id="6847490852669368910" />
+        <var name="errorTarget" id="6847490852669368910" />
+      </scope>
+      <scope id="6847490852669368891" at="31,0,34,0" />
+      <scope id="6847490852669368891" at="34,0,37,0">
+        <var name="argument" id="6847490852669368891" />
+      </scope>
+      <scope id="6847490852669368891" at="37,0,40,0" />
+      <scope id="6847490852669368909" at="24,133,28,7" />
+      <scope id="6847490852669368892" at="22,116,29,5">
+        <var name="registerAccess" id="6847490852669368894" />
+      </scope>
+      <scope id="6847490852669368891" at="22,0,31,0">
+        <var name="dra" id="6847490852669368891" />
+        <var name="status" id="6847490852669368891" />
+        <var name="typeCheckingContext" id="6847490852669368891" />
+      </scope>
+      <unit id="6847490852669368891" at="41,0,44,0" name="com.mbeddr.core.embedded.typesystem.check_DirectRegisterAccess_NonTypesystemRule$LINKS" />
+      <unit id="6847490852669368891" at="45,0,48,0" name="com.mbeddr.core.embedded.typesystem.check_DirectRegisterAccess_NonTypesystemRule$CONCEPTS" />
+      <unit id="6847490852669368891" at="19,0,49,0" name="com.mbeddr.core.embedded.typesystem.check_DirectRegisterAccess_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)/6847490852669369651">
+    <file name="TypesystemDescriptor.java">
+      <node id="6847490852669369651" at="39,5,40,105" concept="6" />
+      <node id="6847490852669369651" at="40,105,41,55" concept="2" />
+      <node id="6847490852669369651" at="38,5,42,5" concept="0" />
+      <scope id="6847490852669369651" at="39,5,41,55">
+        <var name="nonTypesystemRule" id="6847490852669369651" />
+      </scope>
+    </file>
+    <file name="check_AssignmentWithRegister_NonTypesystemRule.java">
+      <node id="6847490852669369668" at="29,9,30,68" concept="6" />
+      <node id="6847490852669369668" at="30,68,31,318" concept="6" />
+      <node id="6847490852669369651" at="36,50,37,38" concept="7" />
+      <node id="6847490852669369651" at="39,68,40,102" concept="7" />
+      <node id="6847490852669369651" at="42,30,43,17" concept="7" />
+      <node id="6847490852669369651" at="47,0,48,0" concept="9" trace="right$Slc$" />
+      <node id="6847490852669369651" at="48,0,49,0" concept="9" trace="left$SkXz" />
+      <node id="6847490852669369651" at="52,0,53,0" concept="9" trace="IRegisterAccess$JO" />
+      <node id="6847490852669369651" at="53,0,54,0" concept="9" trace="SuppressWarnings$uu" />
+      <node id="6847490852669369651" at="54,0,55,0" concept="9" trace="AssignmentExpr$mZ" />
+      <node id="6847490852669369651" at="24,0,26,0" concept="1" trace="check_AssignmentWithRegister_NonTypesystemRule#()V" />
+      <node id="6847490852669369651" at="36,0,39,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6847490852669369651" at="39,0,42,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6847490852669369651" at="42,0,45,0" concept="5" trace="overrides#()Z" />
+      <node id="6847490852669369668" at="28,276,32,9" concept="0" />
+      <node id="6847490852669369653" at="27,168,33,7" concept="4" />
+      <node id="7787579437367246001" at="26,127,34,5" concept="4" />
+      <node id="6847490852669369651" at="26,0,36,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6847490852669369651" at="24,59,24,59" />
+      <scope id="6847490852669369651" at="36,50,37,38" />
+      <scope id="6847490852669369651" at="39,68,40,102" />
+      <scope id="6847490852669369651" at="42,30,43,17" />
+      <scope id="6847490852669369651" at="24,0,26,0" />
+      <scope id="6847490852669369668" at="29,9,31,318">
+        <var name="_reporter_2309309498" id="6847490852669369668" />
+        <var name="errorTarget" id="6847490852669369668" />
+      </scope>
+      <scope id="6847490852669369651" at="36,0,39,0" />
+      <scope id="6847490852669369651" at="39,0,42,0">
+        <var name="argument" id="6847490852669369651" />
+      </scope>
+      <scope id="6847490852669369651" at="42,0,45,0" />
+      <scope id="6847490852669369667" at="28,276,32,9" />
+      <scope id="7787579437367246004" at="27,168,33,7" />
+      <scope id="6847490852669369652" at="26,127,34,5" />
+      <scope id="6847490852669369651" at="26,0,36,0">
+        <var name="assignmentExpr" id="6847490852669369651" />
+        <var name="status" id="6847490852669369651" />
+        <var name="typeCheckingContext" id="6847490852669369651" />
+      </scope>
+      <unit id="6847490852669369651" at="46,0,50,0" name="com.mbeddr.core.embedded.typesystem.check_AssignmentWithRegister_NonTypesystemRule$LINKS" />
+      <unit id="6847490852669369651" at="51,0,56,0" name="com.mbeddr.core.embedded.typesystem.check_AssignmentWithRegister_NonTypesystemRule$CONCEPTS" />
+      <unit id="6847490852669369651" at="23,0,57,0" name="com.mbeddr.core.embedded.typesystem.check_AssignmentWithRegister_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5e0c701a-52e5-4f8d-a7a8-9a9d532f99cc(com.mbeddr.core.embedded.typesystem)/6847490852669369674">
+    <file name="enableLowHighAccess_QuickFix.java">
+      <node id="6847490852669369674" at="13,41,14,130" concept="11" />
+      <node id="6847490852669369679" at="16,35,17,148" concept="2" />
+      <node id="6847490852669369674" at="21,0,22,0" concept="9" trace="enableLowHighAccess$KdMJ" />
+      <node id="6847490852669369674" at="13,0,16,0" concept="1" trace="enableLowHighAccess_QuickFix#()V" />
+      <node id="6847490852669369674" at="16,0,19,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6847490852669369674" at="13,41,14,130" />
+      <scope id="6847490852669369678" at="16,35,17,148" />
+      <scope id="6847490852669369674" at="13,0,16,0" />
+      <scope id="6847490852669369674" at="16,0,19,0">
+        <var name="node" id="6847490852669369674" />
+      </scope>
+      <unit id="6847490852669369674" at="20,0,23,0" name="com.mbeddr.core.embedded.typesystem.enableLowHighAccess_QuickFix$PROPS" />
+      <unit id="6847490852669369674" at="12,0,24,0" name="com.mbeddr.core.embedded.typesystem.enableLowHighAccess_QuickFix" />
+    </file>
+  </root>
+</debug-info>
+

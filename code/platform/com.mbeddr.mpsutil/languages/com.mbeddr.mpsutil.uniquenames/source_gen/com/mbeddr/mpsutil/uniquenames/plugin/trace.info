@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1177666668936:jetbrains.mps.baseLanguage.structure.DoWhileStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1178893518978:jetbrains.mps.baseLanguage.structure.ThisConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:8f9f0c80-5aee-4648-9b9d-3c8c43b40821(com.mbeddr.mpsutil.uniquenames.plugin)/135300383109541460">
+    <file name="AbstractUniqueNamesHelper.java">
+      <node id="4774137053685509405" at="23,0,24,0" concept="10" trace="FALLBACK_LIMIT" />
+      <node id="135300383109787894" at="25,0,26,0" concept="3" trace="names" />
+      <node id="3107866894608447771" at="26,0,27,0" concept="3" trace="stopwords" />
+      <node id="4774137053685282229" at="27,0,28,0" concept="3" trace="delimiter" />
+      <node id="4774137053685324020" at="29,41,30,14" concept="13" />
+      <node id="4774137053685321551" at="33,57,34,31" concept="2" />
+      <node id="135300383109701132" at="37,79,38,43" concept="2" />
+      <node id="135300383109701493" at="38,43,39,89" concept="8" />
+      <node id="135300383109882007" at="42,71,43,0" concept="9" />
+      <node id="135300383109882001" at="44,152,45,13" concept="8" />
+      <node id="135300383109883110" at="46,5,47,0" concept="9" />
+      <node id="135300383109896959" at="48,66,49,132" concept="2" />
+      <node id="135300383109908718" at="50,5,51,0" concept="9" />
+      <node id="135300383109926332" at="52,99,53,88" concept="2" />
+      <node id="135300383110172409" at="54,5,55,0" concept="9" />
+      <node id="135300383109945587" at="55,0,56,87" concept="7" />
+      <node id="8455208232410134831" at="56,87,57,0" concept="9" />
+      <node id="8455208232410179195" at="58,54,59,13" concept="8" />
+      <node id="135300383109959556" at="60,5,61,0" concept="9" />
+      <node id="135300383109972865" at="61,0,62,113" concept="7" />
+      <node id="135300383110100299" at="62,113,63,0" concept="9" />
+      <node id="135300383110156227" at="63,0,64,86" concept="7" />
+      <node id="135300383110161457" at="64,86,65,0" concept="9" />
+      <node id="135300383110990144" at="65,0,66,134" concept="7" />
+      <node id="135300383110982084" at="66,134,67,0" concept="9" />
+      <node id="8553118390182979528" at="68,53,69,69" concept="7" />
+      <node id="8553118390182990645" at="69,69,70,33" concept="7" />
+      <node id="3107866894608714854" at="71,10,72,86" concept="2" />
+      <node id="3107866894608779682" at="72,86,73,103" concept="2" />
+      <node id="135300383111012879" at="74,77,75,128" concept="2" />
+      <node id="135300383110768440" at="76,7,77,0" concept="9" />
+      <node id="135300383110811889" at="77,0,78,27" concept="7" />
+      <node id="4774137053683982627" at="78,27,79,26" concept="7" />
+      <node id="4774137053685178256" at="80,8,81,29" concept="2" />
+      <node id="135300383111103978" at="81,29,82,175" concept="7" />
+      <node id="135300383111116882" at="83,73,84,91" concept="7" />
+      <node id="135300383111121195" at="84,91,85,92" concept="7" />
+      <node id="4774137053683991495" at="86,159,87,26" concept="2" />
+      <node id="135300383110944673" at="87,26,88,32" concept="2" />
+      <node id="135300383111352190" at="89,15,90,38" concept="2" />
+      <node id="135300383111352926" at="90,38,91,35" concept="2" />
+      <node id="4774137053685668118" at="92,50,93,47" concept="14" />
+      <node id="4774137053685551365" at="95,44,96,116" concept="2" />
+      <node id="4774137053685549830" at="96,116,97,0" concept="9" />
+      <node id="4774137053683997031" at="97,0,98,19" concept="8" />
+      <node id="135300383111419391" at="102,29,103,0" concept="9" />
+      <node id="135300383111428756" at="103,0,104,234" concept="2" />
+      <node id="135300383111324483" at="107,73,108,61" concept="7" />
+      <node id="135300383111325656" at="108,61,109,109" concept="7" />
+      <node id="135300383111344777" at="109,109,110,20" concept="7" />
+      <node id="4774137053684516770" at="110,20,111,26" concept="7" />
+      <node id="4774137053684519918" at="112,8,113,22" concept="2" />
+      <node id="3107866894608583370" at="113,22,114,87" concept="2" />
+      <node id="3107866894608587929" at="114,87,115,46" concept="2" />
+      <node id="4774137053685733443" at="116,44,117,41" concept="14" />
+      <node id="135300383111290567" at="119,64,120,72" concept="2" />
+      <node id="135300383109591482" at="29,0,32,0" concept="0" trace="AbstractUniqueNamesHelper#()V" />
+      <node id="4774137053685311947" at="33,0,36,0" concept="0" trace="AbstractUniqueNamesHelper#(Ljava/lang/String;)V" />
+      <node id="135300383109842292" at="43,0,46,5" concept="5" />
+      <node id="135300383109884446" at="47,0,50,5" concept="5" />
+      <node id="135300383109911123" at="51,0,54,5" concept="5" />
+      <node id="8455208232410142429" at="57,0,60,5" concept="5" />
+      <node id="4774137053683994720" at="91,35,94,13" concept="5" />
+      <node id="4774137053684524524" at="115,46,118,7" concept="5" />
+      <node id="135300383109691949" at="37,0,41,0" concept="6" trace="getUniqueDistinguisher#(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="3107866894608712863" at="70,33,74,77" concept="1" />
+      <node id="3107866894608554850" at="111,26,119,64" concept="1" />
+      <node id="135300383110192327" at="67,0,76,7" concept="2" />
+      <node id="4774137053685625236" at="88,32,99,11" concept="15" />
+      <node id="135300383110935941" at="85,92,100,9" concept="5" />
+      <node id="135300383111256948" at="107,0,122,0" concept="6" trace="insertNextFqPart#(Ljetbrains/mps/internal/collections/runtime/IMapping;)V" />
+      <node id="135300383110875531" at="82,175,101,7" concept="4" />
+      <node id="135300383110823948" at="79,26,102,29" concept="1" />
+      <node id="135300383109696813" at="42,0,106,0" concept="6" trace="assureNameExists#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <scope id="135300383109591486" at="29,41,30,14" />
+      <scope id="4774137053685311950" at="33,57,34,31" />
+      <scope id="135300383109842293" at="44,152,45,13" />
+      <scope id="135300383109884449" at="48,66,49,132" />
+      <scope id="135300383109911126" at="52,99,53,88" />
+      <scope id="8455208232410142432" at="58,54,59,13" />
+      <scope id="4774137053683994723" at="92,50,93,47" />
+      <scope id="4774137053684524527" at="116,44,117,41" />
+      <scope id="135300383109691952" at="37,79,39,89" />
+      <scope id="3107866894608712865" at="71,10,73,103" />
+      <scope id="135300383109591482" at="29,0,32,0" />
+      <scope id="4774137053685311947" at="33,0,36,0">
+        <var name="delimiter" id="4774137053685321304" />
+      </scope>
+      <scope id="4774137053685625245" at="95,44,98,19" />
+      <scope id="135300383109691949" at="37,0,41,0">
+        <var name="fqName" id="8553118390183803142" />
+        <var name="presentation" id="8553118390183796309" />
+      </scope>
+      <scope id="4774137053685625239" at="95,11,99,11">
+        <var name="e" id="4774137053685625241" />
+      </scope>
+      <scope id="4774137053685625238" at="89,15,94,13" />
+      <scope id="3107866894608554852" at="112,8,118,7" />
+      <scope id="135300383111004819" at="68,53,75,128">
+        <var name="differenceFirstPart" id="8553118390182990646" />
+        <var name="differenceToEnd" id="8553118390182979529" />
+      </scope>
+      <scope id="135300383110935944" at="86,159,99,11" />
+      <scope id="135300383111256951" at="107,73,120,72">
+        <var name="existingEntries" id="135300383111325659" />
+        <var name="fallbackCount" id="4774137053684516773" />
+        <var name="index" id="135300383111324484" />
+        <var name="nextPart" id="135300383111344780" />
+      </scope>
+      <scope id="135300383111256948" at="107,0,122,0">
+        <var name="entry" id="135300383111282524" />
+      </scope>
+      <scope id="135300383110875535" at="83,73,100,9">
+        <var name="current" id="135300383111116883" />
+        <var name="next" id="135300383111121196" />
+      </scope>
+      <scope id="135300383110875531" at="82,175,101,7">
+        <var name="i" id="135300383110875539" />
+      </scope>
+      <scope id="135300383110823950" at="80,8,101,7">
+        <var name="list" id="135300383111103979" />
+      </scope>
+      <scope id="135300383109696816" at="42,71,104,234">
+        <var name="fallbackCount" id="4774137053683982630" />
+        <var name="foundCollision" id="135300383110811892" />
+        <var name="fqNames" id="135300383109972868" />
+        <var name="indexOfDifference" id="135300383110156228" />
+        <var name="nameParts" id="135300383110990147" />
+        <var name="samePairs" id="135300383109945588" />
+      </scope>
+      <scope id="135300383109696813" at="42,0,106,0">
+        <var name="fqName" id="8553118390183831884" />
+        <var name="presentation" id="8553118390183824563" />
+      </scope>
+      <unit id="4774137053685605534" at="19,0,22,0" name="com.mbeddr.mpsutil.uniquenames.plugin.AbstractUniqueNamesHelper$UniqueNamesException" />
+      <unit id="135300383109541460" at="18,0,123,0" name="com.mbeddr.mpsutil.uniquenames.plugin.AbstractUniqueNamesHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:8f9f0c80-5aee-4648-9b9d-3c8c43b40821(com.mbeddr.mpsutil.uniquenames.plugin)/138501708961874778">
+    <file name="UniqueStylesHelper.java">
+      <node id="138501708961889900" at="15,0,16,0" concept="10" trace="instance" />
+      <node id="138501708961889908" at="18,27,19,42" concept="2" />
+      <node id="138501708961889914" at="20,5,21,0" concept="9" />
+      <node id="138501708961889915" at="21,0,22,20" concept="8" />
+      <node id="1623745205072876530" at="25,53,26,223" concept="7" />
+      <node id="138501708961889943" at="26,223,27,115" concept="8" />
+      <node id="138501708961874778" at="31,0,32,0" concept="10" trace="name$MnvL" />
+      <node id="138501708961874778" at="35,0,36,0" concept="10" trace="StyleSheet$Sg" />
+      <node id="138501708961889906" at="17,50,20,5" concept="5" />
+      <node id="138501708961889941" at="25,0,29,0" concept="6" trace="getUniqueDistinguisher#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="138501708961889904" at="17,0,24,0" concept="11" trace="getInstance#()Lcom/mbeddr/mpsutil/uniquenames/plugin/UniqueStylesHelper;" />
+      <scope id="138501708961889907" at="18,27,19,42" />
+      <scope id="138501708961889942" at="25,53,27,115">
+        <var name="fqName" id="1623745205072876533" />
+      </scope>
+      <scope id="138501708961889941" at="25,0,29,0">
+        <var name="style" id="138501708961889953" />
+      </scope>
+      <scope id="138501708961889905" at="17,50,22,20" />
+      <scope id="138501708961889904" at="17,0,24,0" />
+      <unit id="138501708961874778" at="30,0,33,0" name="com.mbeddr.mpsutil.uniquenames.plugin.UniqueStylesHelper$PROPS" />
+      <unit id="138501708961874778" at="34,0,37,0" name="com.mbeddr.mpsutil.uniquenames.plugin.UniqueStylesHelper$CONCEPTS" />
+      <unit id="138501708961874778" at="14,0,38,0" name="com.mbeddr.mpsutil.uniquenames.plugin.UniqueStylesHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:8f9f0c80-5aee-4648-9b9d-3c8c43b40821(com.mbeddr.mpsutil.uniquenames.plugin)/3107866894608888221">
+    <file name="UniqueNodesHelper.java">
+      <node id="3107866894608890842" at="11,0,12,0" concept="10" trace="instance" />
+      <node id="3107866894608890850" at="14,27,15,41" concept="2" />
+      <node id="3107866894608890856" at="16,5,17,0" concept="9" />
+      <node id="3107866894608890857" at="17,0,18,20" concept="8" />
+      <node id="3107866894609283718" at="21,33,22,12" concept="12" />
+      <node id="3107866894609283949" at="22,12,23,59" concept="2" />
+      <node id="8143825620247886259" at="23,59,24,53" concept="2" />
+      <node id="8143825620247884972" at="24,53,25,0" concept="9" />
+      <node id="3107866894608890881" at="28,52,29,174" concept="8" />
+      <node id="3107866894608890848" at="13,49,16,5" concept="5" />
+      <node id="3107866894608890879" at="28,0,31,0" concept="6" trace="getUniqueDistinguisher#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="3107866894609282897" at="21,0,27,0" concept="0" trace="UniqueNodesHelper#()V" />
+      <node id="3107866894608890846" at="13,0,20,0" concept="11" trace="getInstance#()Lcom/mbeddr/mpsutil/uniquenames/plugin/UniqueNodesHelper;" />
+      <scope id="3107866894608890849" at="14,27,15,41" />
+      <scope id="3107866894608890880" at="28,52,29,174" />
+      <scope id="3107866894608890879" at="28,0,31,0">
+        <var name="node" id="3107866894608890891" />
+      </scope>
+      <scope id="3107866894609282901" at="21,33,25,0" />
+      <scope id="3107866894608890847" at="13,49,18,20" />
+      <scope id="3107866894609282897" at="21,0,27,0" />
+      <scope id="3107866894608890846" at="13,0,20,0" />
+      <unit id="3107866894608888221" at="10,0,33,0" name="com.mbeddr.mpsutil.uniquenames.plugin.UniqueNodesHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:8f9f0c80-5aee-4648-9b9d-3c8c43b40821(com.mbeddr.mpsutil.uniquenames.plugin)/8553118390183658669">
+    <file name="UniqueClassifiersHelper.java">
+      <node id="135300383109547857" at="10,0,11,0" concept="10" trace="instance" />
+      <node id="135300383109549228" at="13,27,14,47" concept="2" />
+      <node id="135300383109589750" at="15,5,16,0" concept="9" />
+      <node id="135300383109589990" at="16,0,17,20" concept="8" />
+      <node id="8553118390183886986" at="20,58,21,186" concept="8" />
+      <node id="135300383109548903" at="12,55,15,5" concept="5" />
+      <node id="8553118390183886096" at="20,0,23,0" concept="6" trace="getUniqueDistinguisher#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="135300383109548685" at="12,0,19,0" concept="11" trace="getInstance#()Lcom/mbeddr/mpsutil/uniquenames/plugin/UniqueClassifiersHelper;" />
+      <scope id="135300383109548904" at="13,27,14,47" />
+      <scope id="8553118390183886099" at="20,58,21,186" />
+      <scope id="8553118390183886096" at="20,0,23,0">
+        <var name="classifier" id="8553118390183886428" />
+      </scope>
+      <scope id="135300383109548688" at="12,55,17,20" />
+      <scope id="135300383109548685" at="12,0,19,0" />
+      <unit id="8553118390183658669" at="9,0,24,0" name="com.mbeddr.mpsutil.uniquenames.plugin.UniqueClassifiersHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:8f9f0c80-5aee-4648-9b9d-3c8c43b40821(com.mbeddr.mpsutil.uniquenames.plugin)/8553118390183767102">
+    <file name="UniqueConceptsHelper.java">
+      <node id="8553118390183767286" at="11,0,12,0" concept="10" trace="instance" />
+      <node id="8553118390183767294" at="14,27,15,44" concept="2" />
+      <node id="8553118390183767300" at="16,5,17,0" concept="9" />
+      <node id="8553118390183767301" at="17,0,18,20" concept="8" />
+      <node id="3107866894608525621" at="21,36,22,12" concept="12" />
+      <node id="3107866894608526059" at="22,12,23,59" concept="2" />
+      <node id="8143825620247865749" at="23,59,24,53" concept="2" />
+      <node id="8553118390183951436" at="27,54,28,180" concept="8" />
+      <node id="8553118390183767292" at="13,52,16,5" concept="5" />
+      <node id="8553118390183951434" at="27,0,30,0" concept="6" trace="getUniqueDistingusher#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="3107866894608522409" at="21,0,26,0" concept="0" trace="UniqueConceptsHelper#()V" />
+      <node id="8553118390183767290" at="13,0,20,0" concept="11" trace="getInstance#()Lcom/mbeddr/mpsutil/uniquenames/plugin/UniqueConceptsHelper;" />
+      <scope id="8553118390183767293" at="14,27,15,44" />
+      <scope id="8553118390183951435" at="27,54,28,180" />
+      <scope id="3107866894608522413" at="21,36,24,53" />
+      <scope id="8553118390183951434" at="27,0,30,0">
+        <var name="concept" id="8553118390183951446" />
+      </scope>
+      <scope id="8553118390183767291" at="13,52,18,20" />
+      <scope id="3107866894608522409" at="21,0,26,0" />
+      <scope id="8553118390183767290" at="13,0,20,0" />
+      <unit id="8553118390183767102" at="10,0,32,0" name="com.mbeddr.mpsutil.uniquenames.plugin.UniqueConceptsHelper" />
+    </file>
+  </root>
+</debug-info>
+

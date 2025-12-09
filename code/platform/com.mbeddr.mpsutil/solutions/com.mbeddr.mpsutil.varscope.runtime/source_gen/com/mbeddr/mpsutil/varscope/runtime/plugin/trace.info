@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root nodeRef="r:c523875e-dfcf-43c3-b0f9-024e08ff4722(com.mbeddr.mpsutil.varscope.runtime.plugin)/2093108837558184283">
+    <file name="Scope.java">
+      <node id="6275792049641552198" at="17,0,18,0" concept="9" trace="NO_POSITION" />
+      <node id="2093108837558341540" at="18,0,19,0" concept="2" trace="outer" />
+      <node id="2093108837558418847" at="19,0,20,0" concept="2" trace="elementMap" />
+      <node id="2093108837558418866" at="22,59,23,108" concept="1" />
+      <node id="2093108837558341550" at="27,42,28,23" concept="1" />
+      <node id="2093108837558418952" at="31,45,32,82" concept="6" />
+      <node id="6932498701155795001" at="32,82,33,0" concept="8" />
+      <node id="6932498701155918870" at="33,0,34,25" concept="6" />
+      <node id="6932498701155938369" at="37,68,38,66" concept="1" />
+      <node id="6932498701155925194" at="40,7,41,30" concept="1" />
+      <node id="6932498701155797161" at="42,5,43,0" concept="8" />
+      <node id="2093108837558418998" at="43,0,44,48" concept="7" />
+      <node id="926589859261552930" at="47,57,48,136" concept="7" />
+      <node id="2093108837558184283" at="52,0,53,0" concept="9" trace="name$MnvL" />
+      <node id="2093108837558418861" at="21,42,24,5" concept="3" />
+      <node id="2093108837558341544" at="27,0,30,0" concept="5" trace="setOuterScope#(Lcom/mbeddr/mpsutil/varscope/runtime/plugin/Scope;)V" />
+      <node id="6932498701155938360" at="36,83,39,9" concept="4" />
+      <node id="3378779091584850132" at="47,0,50,0" concept="5" trace="getScopeElementByName#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2093108837558279265" at="21,0,26,0" concept="0" trace="Scope#(Ljava/lang/Iterable;)V" />
+      <node id="6932498701155938356" at="35,29,40,7" concept="3" />
+      <node id="6932498701155920712" at="34,25,42,5" concept="10" />
+      <node id="2093108837558268888" at="31,0,46,0" concept="5" trace="getScopeElements#()Ljava/lang/Iterable;" />
+      <scope id="2093108837558418864" at="22,59,23,108" />
+      <scope id="2093108837558341547" at="27,42,28,23" />
+      <scope id="6932498701155938368" at="37,68,38,66" />
+      <scope id="3378779091584850136" at="47,57,48,136" />
+      <scope id="2093108837558279268" at="21,42,24,5" />
+      <scope id="2093108837558418861" at="21,42,24,5">
+        <var name="element" id="2093108837558418862" />
+      </scope>
+      <scope id="2093108837558341544" at="27,0,30,0">
+        <var name="outer" id="2093108837558341548" />
+      </scope>
+      <scope id="6932498701155938359" at="36,83,39,9" />
+      <scope id="3378779091584850132" at="47,0,50,0">
+        <var name="name" id="3378779091584850153" />
+      </scope>
+      <scope id="2093108837558279265" at="21,0,26,0">
+        <var name="elements" id="2093108837558279269" />
+      </scope>
+      <scope id="6932498701155938356" at="35,29,40,7">
+        <var name="var" id="6932498701155938357" />
+      </scope>
+      <scope id="6932498701155920714" at="35,29,41,30" />
+      <scope id="2093108837558268891" at="31,45,44,48">
+        <var name="current" id="6932498701155918871" />
+        <var name="result" id="2093108837558418953" />
+      </scope>
+      <scope id="2093108837558268888" at="31,0,46,0" />
+      <unit id="2093108837558184283" at="51,0,54,0" name="com.mbeddr.mpsutil.varscope.runtime.plugin.Scope$PROPS" />
+      <unit id="2093108837558184283" at="15,0,55,0" name="com.mbeddr.mpsutil.varscope.runtime.plugin.Scope" />
+    </file>
+  </root>
+  <root nodeRef="r:c523875e-dfcf-43c3-b0f9-024e08ff4722(com.mbeddr.mpsutil.varscope.runtime.plugin)/3134547887598696908">
+    <file name="ScopingUtils.java">
+      <node id="2839437208297786762" at="12,0,13,0" concept="9" trace="EMPTY_LIST" />
+      <node id="2839437208297857452" at="14,0,15,0" concept="9" trace="EMPTY_SCOPE" />
+      <unit id="3134547887598696908" at="10,0,17,0" name="com.mbeddr.mpsutil.varscope.runtime.plugin.ScopingUtils" />
+    </file>
+  </root>
+</debug-info>
+

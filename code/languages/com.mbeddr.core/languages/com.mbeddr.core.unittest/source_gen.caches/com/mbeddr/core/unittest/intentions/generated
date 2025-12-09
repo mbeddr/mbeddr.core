@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-engpjcliyc0hpvgoe2naf5ol50k3hrn">
+  <files names="IntentionsDescriptor.java:addAllVisibleTests_Intention.java:addInitializer_Intention.java:addReportAnnotation_Intention.java:addRequiredTags_Intention.java:makeExplicitEquals_Intention.java:makeTestFromFunction_Intention.java:toggleEntryPoint_Intention.java:toggleIgnore_Intention.java:toggleTestHelper_Intention.java:wrapWithAssert_Intention.java" />
+</product>
+

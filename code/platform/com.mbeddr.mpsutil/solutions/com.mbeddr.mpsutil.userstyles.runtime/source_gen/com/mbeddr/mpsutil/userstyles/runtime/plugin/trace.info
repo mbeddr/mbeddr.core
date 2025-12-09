@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:c44f10b2-7049-41f7-aa57-911d875908f6(com.mbeddr.mpsutil.userstyles.runtime.plugin)/1454515498906164047">
+    <file name="IUserStylesDescriptor.java">
+      <node id="1454515498906164360" at="8,0,9,0" concept="9" trace="CLASS_NAME" />
+      <node id="1454515498906206238" at="9,0,10,0" concept="9" trace="INSTANCE_FIELD_NAME" />
+      <node id="1454515498906172980" at="11,0,12,0" concept="4" trace="getItems#()Ljava/util/List;" />
+      <scope id="1454515498906172980" at="11,0,12,0" />
+      <unit id="1454515498906164047" at="7,0,13,0" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.IUserStylesDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:c44f10b2-7049-41f7-aa57-911d875908f6(com.mbeddr.mpsutil.userstyles.runtime.plugin)/1454515498906165575">
+    <file name="UserStyleItem.java">
+      <node id="1454515498906165904" at="7,0,8,0" concept="2" trace="myDisplayText" />
+      <node id="6130906046685544731" at="8,0,9,0" concept="2" trace="myDescription" />
+      <node id="1454515498906166578" at="9,0,10,0" concept="2" trace="myId" />
+      <node id="1454515498906168266" at="11,75,12,32" concept="1" />
+      <node id="1454515498906168276" at="12,32,13,14" concept="1" />
+      <node id="6130906046685549737" at="13,14,14,32" concept="1" />
+      <node id="1454515498906166947" at="17,34,18,25" concept="6" />
+      <node id="6130906046685546894" at="21,34,22,25" concept="6" />
+      <node id="1454515498906166963" at="25,25,26,16" concept="6" />
+      <node id="1454515498906166943" at="17,0,20,0" concept="4" trace="getDisplayText#()Ljava/lang/String;" />
+      <node id="6130906046685546890" at="21,0,24,0" concept="4" trace="getDescription#()Ljava/lang/String;" />
+      <node id="1454515498906166959" at="25,0,28,0" concept="4" trace="getId#()Ljava/lang/String;" />
+      <node id="1454515498906168258" at="11,0,16,0" concept="0" trace="UserStyleItem#(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V" />
+      <scope id="1454515498906166946" at="17,34,18,25" />
+      <scope id="6130906046685546893" at="21,34,22,25" />
+      <scope id="1454515498906166962" at="25,25,26,16" />
+      <scope id="1454515498906168262" at="11,75,14,32" />
+      <scope id="1454515498906166943" at="17,0,20,0" />
+      <scope id="6130906046685546890" at="21,0,24,0" />
+      <scope id="1454515498906166959" at="25,0,28,0" />
+      <scope id="1454515498906168258" at="11,0,16,0">
+        <var name="description" id="6130906046685545470" />
+        <var name="displayText" id="1454515498906168265" />
+        <var name="id" id="1454515498906168275" />
+      </scope>
+      <unit id="1454515498906165575" at="6,0,30,0" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.UserStyleItem" />
+    </file>
+  </root>
+  <root nodeRef="r:c44f10b2-7049-41f7-aa57-911d875908f6(com.mbeddr.mpsutil.userstyles.runtime.plugin)/1454515498906181442">
+    <file name="AbstractUserStylesDescriptor.java">
+      <unit id="1454515498906181442" at="6,0,8,0" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.AbstractUserStylesDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:c44f10b2-7049-41f7-aa57-911d875908f6(com.mbeddr.mpsutil.userstyles.runtime.plugin)/1454515498906218231">
+    <file name="UserStylesDescriptors.java">
+      <node id="1454515498906317256" at="14,66,15,109" concept="5" />
+      <node id="280881375711871483" at="15,109,16,63" concept="7" />
+      <node id="1454515498906311242" at="17,83,18,59" concept="5" />
+      <node id="1454515498906326550" at="19,31,20,61" concept="1" />
+      <node id="1454515498906322615" at="22,7,23,18" concept="6" />
+      <node id="7185891270711196570" at="26,60,27,119" concept="6" />
+      <node id="7185891270711202454" at="31,65,32,107" concept="6" />
+      <node id="1454515498906307503" at="37,27,38,18" concept="6" />
+      <node id="1454515498906256443" at="39,5,40,105" concept="5" />
+      <node id="280881375711804234" at="41,9,42,124" concept="7" />
+      <node id="280881375711808474" at="42,124,43,77" concept="7" />
+      <node id="1454515498906264313" at="43,77,44,98" concept="5" />
+      <node id="1454515498906276530" at="44,98,45,145" concept="5" />
+      <node id="1454515498906285494" at="45,145,46,24" concept="6" />
+      <node id="1454515498906288995" at="50,5,51,16" concept="6" />
+      <node id="1454515498906313670" at="18,59,21,7" concept="3" />
+      <node id="7185891270711199644" at="26,0,29,0" concept="10" trace="getAllUserStyleItems#()Ljava/util/List;" />
+      <node id="1454515498906302666" at="36,80,39,5" concept="3" />
+      <node id="7185891270711202452" at="30,0,34,0" concept="10" trace="getUserStyleItem#(Ljava/lang/String;)Lcom/mbeddr/mpsutil/userstyles/runtime/plugin/UserStyleItem;" />
+      <node id="280881375711812637" at="16,63,22,7" concept="1" />
+      <node id="1454515498906260424" at="40,105,50,5" concept="11" />
+      <node id="1454515498906331717" at="14,0,25,0" concept="10" trace="findAllDescriptors#()Ljava/util/List;" />
+      <node id="1454515498906333271" at="35,0,53,0" concept="10" trace="getDescriptor#(Ljetbrains/mps/smodel/language/LanguageRuntime;)Lcom/mbeddr/mpsutil/userstyles/runtime/plugin/IUserStylesDescriptor;" />
+      <scope id="1454515498906260433" at="47,41,47,41" />
+      <scope id="1454515498906274444" at="48,38,48,38" />
+      <scope id="1454515498906275198" at="49,40,49,40" />
+      <scope id="1454515498906313672" at="19,31,20,61" />
+      <scope id="7185891270711193850" at="26,60,27,119" />
+      <scope id="7185891270711202453" at="31,65,32,107" />
+      <scope id="1454515498906302668" at="37,27,38,18" />
+      <scope id="1454515498906260427" at="47,5,48,5">
+        <var name="ex" id="1454515498906260429" />
+      </scope>
+      <scope id="1454515498906274443" at="48,5,49,5">
+        <var name="e" id="1454515498906274445" />
+      </scope>
+      <scope id="1454515498906275197" at="49,5,50,5">
+        <var name="e" id="1454515498906275199" />
+      </scope>
+      <scope id="7185891270711199644" at="26,0,29,0" />
+      <scope id="280881375711817758" at="17,83,21,7">
+        <var name="descriptor" id="1454515498906311243" />
+      </scope>
+      <scope id="7185891270711202452" at="30,0,34,0">
+        <var name="id" id="7185891270711205914" />
+      </scope>
+      <scope id="1454515498906260426" at="41,9,46,24">
+        <var name="descriptor" id="1454515498906276531" />
+        <var name="descriptorClass" id="1454515498906264314" />
+      </scope>
+      <scope id="1454515498906219189" at="14,66,23,18">
+        <var name="result" id="1454515498906317259" />
+      </scope>
+      <scope id="1454515498906331717" at="14,0,25,0" />
+      <scope id="1454515498906252882" at="36,80,51,16">
+        <var name="descriptorClassName" id="1454515498906256444" />
+      </scope>
+      <scope id="1454515498906333271" at="35,0,53,0">
+        <var name="language" id="1454515498906255471" />
+      </scope>
+      <unit id="1454515498906218231" at="13,0,54,0" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.UserStylesDescriptors" />
+    </file>
+  </root>
+  <root nodeRef="r:c44f10b2-7049-41f7-aa57-911d875908f6(com.mbeddr.mpsutil.userstyles.runtime.plugin)/2790233529562825487">
+    <file name="UserStyleAttributesUtil.java">
+      <node id="2790233529562851443" at="14,72,15,51" concept="5" />
+      <node id="2790233529562854421" at="16,29,17,26" concept="6" />
+      <node id="2790233529562848425" at="18,5,19,55" concept="5" />
+      <node id="2790233529562865966" at="20,29,21,26" concept="6" />
+      <node id="2790233529562846633" at="22,5,23,190" concept="6" />
+      <node id="1072158555907530004" at="26,51,27,51" concept="5" />
+      <node id="1072158555907530011" at="28,29,29,19" concept="6" />
+      <node id="1072158555907530016" at="30,5,31,55" concept="5" />
+      <node id="1072158555907530024" at="32,29,33,19" concept="6" />
+      <node id="1072158555907534774" at="34,5,35,16" concept="6" />
+      <node id="2790233529562859696" at="38,71,39,51" concept="5" />
+      <node id="2790233529562859703" at="40,29,41,26" concept="6" />
+      <node id="2790233529562859708" at="42,5,43,55" concept="5" />
+      <node id="2790233529562865124" at="44,29,45,26" concept="6" />
+      <node id="2790233529562859714" at="46,5,47,46" concept="6" />
+      <node id="1072158555907526845" at="50,50,51,51" concept="5" />
+      <node id="1072158555907526852" at="52,29,53,19" concept="6" />
+      <node id="1072158555907526857" at="54,5,55,55" concept="5" />
+      <node id="1072158555907526865" at="56,29,57,19" concept="6" />
+      <node id="1072158555907529847" at="58,5,59,16" concept="6" />
+      <node id="2790233529562866357" at="62,74,63,51" concept="5" />
+      <node id="2790233529562866364" at="64,29,65,26" concept="6" />
+      <node id="2790233529562866369" at="66,5,67,50" concept="5" />
+      <node id="2790233529562866377" at="68,24,69,26" concept="6" />
+      <node id="2790233529562866382" at="70,5,71,17" concept="6" />
+      <node id="1072158555907479719" at="74,56,75,51" concept="5" />
+      <node id="1072158555907479726" at="76,29,77,19" concept="6" />
+      <node id="1072158555907479731" at="78,5,79,50" concept="5" />
+      <node id="1072158555907479739" at="80,24,81,19" concept="6" />
+      <node id="1072158555907519065" at="82,5,83,16" concept="6" />
+      <node id="2790233529562872023" at="86,74,87,51" concept="5" />
+      <node id="2790233529562872030" at="88,29,89,26" concept="6" />
+      <node id="2790233529562872035" at="90,5,91,50" concept="5" />
+      <node id="2790233529562872043" at="92,24,93,26" concept="6" />
+      <node id="2790233529562872048" at="94,5,95,17" concept="6" />
+      <node id="1072158555907520241" at="98,56,99,51" concept="5" />
+      <node id="1072158555907520248" at="100,29,101,19" concept="6" />
+      <node id="1072158555907520253" at="102,5,103,50" concept="5" />
+      <node id="1072158555907520261" at="104,24,105,19" concept="6" />
+      <node id="1072158555907523076" at="106,5,107,16" concept="6" />
+      <node id="2790233529562882999" at="110,64,111,51" concept="5" />
+      <node id="2790233529562883006" at="112,29,113,26" concept="6" />
+      <node id="2790233529562891171" at="114,5,115,36" concept="6" />
+      <node id="1072158555907523552" at="118,50,119,51" concept="5" />
+      <node id="1072158555907523559" at="120,29,121,19" concept="6" />
+      <node id="1072158555907523572" at="122,5,123,16" concept="6" />
+      <node id="2790233529562850011" at="127,54,128,127" concept="6" />
+      <node id="4040125388336079675" at="129,5,130,16" concept="6" />
+      <node id="2790233529562852409" at="15,51,18,5" concept="3" />
+      <node id="2790233529562865964" at="19,55,22,5" concept="3" />
+      <node id="1072158555907530009" at="27,51,30,5" concept="3" />
+      <node id="1072158555907530022" at="31,55,34,5" concept="3" />
+      <node id="2790233529562859701" at="39,51,42,5" concept="3" />
+      <node id="2790233529562862909" at="43,55,46,5" concept="3" />
+      <node id="1072158555907526850" at="51,51,54,5" concept="3" />
+      <node id="1072158555907526863" at="55,55,58,5" concept="3" />
+      <node id="2790233529562866362" at="63,51,66,5" concept="3" />
+      <node id="2790233529562866375" at="67,50,70,5" concept="3" />
+      <node id="1072158555907479724" at="75,51,78,5" concept="3" />
+      <node id="1072158555907479737" at="79,50,82,5" concept="3" />
+      <node id="2790233529562872028" at="87,51,90,5" concept="3" />
+      <node id="2790233529562872041" at="91,50,94,5" concept="3" />
+      <node id="1072158555907520246" at="99,51,102,5" concept="3" />
+      <node id="1072158555907520259" at="103,50,106,5" concept="3" />
+      <node id="2790233529562883004" at="111,51,114,5" concept="3" />
+      <node id="1072158555907523557" at="119,51,122,5" concept="3" />
+      <node id="4040125388335943144" at="126,61,129,5" concept="3" />
+      <node id="2790233529562850396" at="126,0,132,0" concept="10" trace="getAttributes#(Ljava/lang/String;)Lcom/intellij/openapi/editor/markup/TextAttributes;" />
+      <node id="2790233529562882997" at="110,0,117,0" concept="10" trace="getFontStyle#(Ljava/lang/String;I)I" />
+      <node id="1072158555907523550" at="118,0,125,0" concept="10" trace="hasFontStyle#(Ljava/lang/String;)Z" />
+      <node id="2790233529562881670" at="14,0,25,0" concept="10" trace="isUnderlined#(Ljava/lang/String;Z)Z" />
+      <node id="1072158555907530002" at="26,0,37,0" concept="10" trace="hasUnderlined#(Ljava/lang/String;)Z" />
+      <node id="2790233529562880558" at="38,0,49,0" concept="10" trace="isStrikeout#(Ljava/lang/String;Z)Z" />
+      <node id="1072158555907526843" at="50,0,61,0" concept="10" trace="hasStrikeout#(Ljava/lang/String;)Z" />
+      <node id="2790233529562879454" at="62,0,73,0" concept="10" trace="getForegroundColor#(Ljava/lang/String;Ljava/awt/Color;)Ljava/awt/Color;" />
+      <node id="1072158555907479717" at="74,0,85,0" concept="10" trace="hasForegroundColor#(Ljava/lang/String;)Z" />
+      <node id="2790233529562878449" at="86,0,97,0" concept="10" trace="getBackgroundColor#(Ljava/lang/String;Ljava/awt/Color;)Ljava/awt/Color;" />
+      <node id="1072158555907520239" at="98,0,109,0" concept="10" trace="hasBackgroundColor#(Ljava/lang/String;)Z" />
+      <scope id="2790233529562852411" at="16,29,17,26" />
+      <scope id="2790233529562865965" at="20,29,21,26" />
+      <scope id="1072158555907530010" at="28,29,29,19" />
+      <scope id="1072158555907530023" at="32,29,33,19" />
+      <scope id="2790233529562859702" at="40,29,41,26" />
+      <scope id="2790233529562862911" at="44,29,45,26" />
+      <scope id="1072158555907526851" at="52,29,53,19" />
+      <scope id="1072158555907526864" at="56,29,57,19" />
+      <scope id="2790233529562866363" at="64,29,65,26" />
+      <scope id="2790233529562866376" at="68,24,69,26" />
+      <scope id="1072158555907479725" at="76,29,77,19" />
+      <scope id="1072158555907479738" at="80,24,81,19" />
+      <scope id="2790233529562872029" at="88,29,89,26" />
+      <scope id="2790233529562872042" at="92,24,93,26" />
+      <scope id="1072158555907520247" at="100,29,101,19" />
+      <scope id="1072158555907520260" at="104,24,105,19" />
+      <scope id="2790233529562883005" at="112,29,113,26" />
+      <scope id="1072158555907523558" at="120,29,121,19" />
+      <scope id="4040125388335943146" at="127,54,128,127" />
+      <scope id="2790233529562849959" at="126,61,130,16" />
+      <scope id="2790233529562882998" at="110,64,115,36">
+        <var name="attributes" id="2790233529562883000" />
+      </scope>
+      <scope id="1072158555907523551" at="118,50,123,16">
+        <var name="attributes" id="1072158555907523553" />
+      </scope>
+      <scope id="2790233529562850396" at="126,0,132,0">
+        <var name="key" id="2790233529562850019" />
+      </scope>
+      <scope id="2790233529562882997" at="110,0,117,0">
+        <var name="defaultValue" id="2790233529562883028" />
+        <var name="key" id="2790233529562883026" />
+      </scope>
+      <scope id="1072158555907523550" at="118,0,125,0">
+        <var name="key" id="1072158555907523576" />
+      </scope>
+      <scope id="2790233529562845984" at="14,72,23,190">
+        <var name="attributes" id="2790233529562851444" />
+        <var name="effectType" id="2790233529562848426" />
+      </scope>
+      <scope id="1072158555907530003" at="26,51,35,16">
+        <var name="attributes" id="1072158555907530005" />
+        <var name="effectType" id="1072158555907530017" />
+      </scope>
+      <scope id="2790233529562859695" at="38,71,47,46">
+        <var name="attributes" id="2790233529562859697" />
+        <var name="effectType" id="2790233529562859709" />
+      </scope>
+      <scope id="1072158555907526844" at="50,50,59,16">
+        <var name="attributes" id="1072158555907526846" />
+        <var name="effectType" id="1072158555907526858" />
+      </scope>
+      <scope id="2790233529562866356" at="62,74,71,17">
+        <var name="attributes" id="2790233529562866358" />
+        <var name="color" id="2790233529562866370" />
+      </scope>
+      <scope id="1072158555907479718" at="74,56,83,16">
+        <var name="attributes" id="1072158555907479720" />
+        <var name="color" id="1072158555907479732" />
+      </scope>
+      <scope id="2790233529562872022" at="86,74,95,17">
+        <var name="attributes" id="2790233529562872024" />
+        <var name="color" id="2790233529562872036" />
+      </scope>
+      <scope id="1072158555907520240" at="98,56,107,16">
+        <var name="attributes" id="1072158555907520242" />
+        <var name="color" id="1072158555907520254" />
+      </scope>
+      <scope id="2790233529562881670" at="14,0,25,0">
+        <var name="defaultValue" id="2790233529562854473" />
+        <var name="key" id="2790233529562848967" />
+      </scope>
+      <scope id="1072158555907530002" at="26,0,37,0">
+        <var name="key" id="1072158555907530045" />
+      </scope>
+      <scope id="2790233529562880558" at="38,0,49,0">
+        <var name="defaultValue" id="2790233529562859732" />
+        <var name="key" id="2790233529562859730" />
+      </scope>
+      <scope id="1072158555907526843" at="50,0,61,0">
+        <var name="key" id="1072158555907526874" />
+      </scope>
+      <scope id="2790233529562879454" at="62,0,73,0">
+        <var name="defaultValue" id="2790233529562866388" />
+        <var name="key" id="2790233529562866386" />
+      </scope>
+      <scope id="1072158555907479717" at="74,0,85,0">
+        <var name="key" id="1072158555907479746" />
+      </scope>
+      <scope id="2790233529562878449" at="86,0,97,0">
+        <var name="defaultValue" id="2790233529562872052" />
+        <var name="key" id="2790233529562872050" />
+      </scope>
+      <scope id="1072158555907520239" at="98,0,109,0">
+        <var name="key" id="1072158555907520268" />
+      </scope>
+      <unit id="2790233529562825487" at="12,0,134,0" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.UserStyleAttributesUtil" />
+    </file>
+  </root>
+  <root nodeRef="r:c44f10b2-7049-41f7-aa57-911d875908f6(com.mbeddr.mpsutil.userstyles.runtime.plugin)/3260847879359200821">
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="3260847879359200821" at="12,0,13,0" concept="2" trace="myId" />
+      <node id="3260847879359200821" at="18,27,19,16" concept="6" />
+      <node id="3260847879359200821" at="14,0,16,0" concept="0" trace="Runtime_ApplicationPlugin#()V" />
+      <node id="3260847879359200821" at="17,0,21,0" concept="4" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="3260847879359200821" at="22,0,26,0" concept="4" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="3260847879359200821" at="14,38,14,38" />
+      <scope id="3260847879359200821" at="18,27,19,16" />
+      <scope id="3260847879359200821" at="23,66,24,53" />
+      <scope id="3260847879359200821" at="14,0,16,0" />
+      <scope id="3260847879359200821" at="17,0,21,0" />
+      <scope id="3260847879359200821" at="22,0,26,0">
+        <var name="parts" id="3260847879359200821" />
+      </scope>
+      <unit id="3260847879359200821" at="11,0,27,0" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.Runtime_ApplicationPlugin" />
+    </file>
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="3260847879359200821" at="10,0,12,0" concept="0" trace="Runtime_ProjectPlugin#()V" />
+      <node id="3260847879359200821" at="12,0,15,0" concept="4" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="3260847879359200821" at="10,34,10,34" />
+      <scope id="3260847879359200821" at="12,62,13,53" />
+      <scope id="3260847879359200821" at="10,0,12,0" />
+      <scope id="3260847879359200821" at="12,0,15,0">
+        <var name="parts" id="3260847879359200821" />
+      </scope>
+      <unit id="3260847879359200821" at="9,0,16,0" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.Runtime_ProjectPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:c44f10b2-7049-41f7-aa57-911d875908f6(com.mbeddr.mpsutil.userstyles.runtime.plugin)/3260847879359200822">
+    <file name="ProjectPlugin_ProjectPluginPart.java">
+      <node id="3260847879359200822" at="8,0,10,0" concept="0" trace="ProjectPlugin_ProjectPluginPart#()V" />
+      <scope id="3260847879359200822" at="8,44,8,44" />
+      <scope id="3260847879359200822" at="8,0,10,0" />
+      <unit id="3260847879359200822" at="7,0,11,0" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.ProjectPlugin_ProjectPluginPart" />
+    </file>
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="3260847879359200822" at="12,62,13,53" concept="1" />
+    </file>
+  </root>
+  <root nodeRef="r:c44f10b2-7049-41f7-aa57-911d875908f6(com.mbeddr.mpsutil.userstyles.runtime.plugin)/6143681886153418172">
+    <file name="UserColorsPageFactory.java">
+      <node id="7185891270711135185" at="17,0,18,0" concept="2" trace="myDescriptionLabel" />
+      <node id="7185891270711158364" at="24,36,25,34" concept="6" />
+      <node id="7185891270711111801" at="27,6,28,115" concept="5" />
+      <node id="7185891270711133445" at="31,56,32,85" concept="5" />
+      <node id="7185891270711214646" at="32,85,33,51" concept="5" />
+      <node id="7185891270711223262" at="33,51,34,86" concept="5" />
+      <node id="7185891270711225753" at="34,86,35,91" concept="5" />
+      <node id="7185891270711141556" at="35,91,36,48" concept="1" />
+      <node id="6143681886153418186" at="38,7,39,17" concept="6" />
+      <node id="6143681886153418209" at="44,39,45,18" concept="6" />
+      <node id="7185891270711158360" at="23,0,27,0" concept="4" trace="getPanel#()Ljavax/swing/JComponent;" />
+      <node id="6143681886153418205" at="42,0,47,0" concept="4" trace="getPanelDisplayName#()Ljava/lang/String;" />
+      <node id="7185891270711158354" at="21,81,27,6" concept="5" />
+      <node id="7185891270711129175" at="30,0,38,0" concept="4" trace="selectedOptionChanged#(Ljava/lang/Object;)V" />
+      <node id="7185891270711113766" at="28,115,38,7" concept="1" />
+      <node id="6143681886153418175" at="19,0,41,0" concept="4" trace="createPanel#(Lcom/intellij/application/options/colors/ColorAndFontOptions;)Lcom/intellij/application/options/colors/NewColorAndFontPanel;" />
+      <scope id="7185891270711158363" at="24,36,25,34" />
+      <scope id="6143681886153418208" at="44,39,45,18" />
+      <scope id="7185891270711158360" at="23,0,27,0" />
+      <scope id="7185891270711129182" at="31,56,36,48">
+        <var name="description" id="7185891270711225756" />
+        <var name="fontDescription" id="7185891270711133446" />
+        <var name="styleId" id="7185891270711214647" />
+        <var name="userStyleItem" id="7185891270711223263" />
+      </scope>
+      <scope id="6143681886153418205" at="42,0,47,0" />
+      <scope id="7185891270711129175" at="30,0,38,0">
+        <var name="object" id="7185891270711129179" />
+      </scope>
+      <scope id="6143681886153418181" at="21,81,39,17">
+        <var name="descriptionPanelCreator" id="7185891270711158355" />
+        <var name="panel" id="7185891270711111802" />
+      </scope>
+      <scope id="6143681886153418175" at="19,0,41,0">
+        <var name="options" id="6143681886153418178" />
+      </scope>
+      <unit id="7185891270711158358" at="22,53,27,5" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.UserColorsPageFactory$1" />
+      <unit id="7185891270711128994" at="29,37,38,5" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.UserColorsPageFactory$2" />
+      <unit id="6143681886153418172" at="15,0,48,0" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.UserColorsPageFactory" />
+    </file>
+  </root>
+  <root nodeRef="r:c44f10b2-7049-41f7-aa57-911d875908f6(com.mbeddr.mpsutil.userstyles.runtime.plugin)/6143681886153536386">
+    <file name="ApplicationPlugin_AppPluginPart.java">
+      <node id="6143681886153356375" at="21,0,22,0" concept="2" trace="myFactory" />
+      <node id="1454515498906421925" at="24,61,25,241" concept="6" />
+      <node id="6130906046685378288" at="28,52,29,36" concept="6" />
+      <node id="910542257429823951" at="32,36,33,20" concept="6" />
+      <node id="1454515498905961693" at="36,0,37,0" concept="2" trace="myConfigurableEP" />
+      <node id="6143681886153536971" at="40,22,41,147" concept="1" />
+      <node id="910542257429602779" at="41,147,42,155" concept="1" />
+      <node id="1454515498905927820" at="42,155,43,0" concept="8" />
+      <node id="1454515498906128820" at="46,38,47,32" concept="6" />
+      <node id="1454515498906093362" at="49,6,50,77" concept="1" />
+      <node id="1454515498906099874" at="50,77,51,76" concept="1" />
+      <node id="1454515498906102088" at="51,76,52,73" concept="1" />
+      <node id="1454515498906104206" at="52,73,53,110" concept="1" />
+      <node id="1731194357993018686" at="53,110,54,92" concept="5" />
+      <node id="1731194357993029510" at="54,92,55,142" concept="5" />
+      <node id="1731194357992777511" at="55,142,56,96" concept="1" />
+      <node id="1454515498906107932" at="56,96,57,108" concept="1" />
+      <node id="1454515498906110021" at="57,108,58,89" concept="1" />
+      <node id="1454515498906111962" at="58,89,59,96" concept="1" />
+      <node id="1454515498905927046" at="59,96,60,159" concept="1" />
+      <node id="1454515498905910858" at="60,159,61,0" concept="8" />
+      <node id="6143681886153537358" at="64,25,65,149" concept="1" />
+      <node id="910542257429620535" at="65,149,66,157" concept="1" />
+      <node id="1454515498906117201" at="66,157,67,161" concept="1" />
+      <node id="6143681886153536386" at="37,0,39,0" concept="0" trace="ApplicationPlugin_AppPluginPart#()V" />
+      <node id="910542257429738753" at="23,0,27,0" concept="4" trace="getAttributeDescriptors#()[Lcom/intellij/openapi/options/colors/AttributesDescriptor;" />
+      <node id="910542257429738761" at="27,0,31,0" concept="4" trace="getColorDescriptors#()[Lcom/intellij/openapi/options/colors/ColorDescriptor;" />
+      <node id="910542257429738769" at="31,0,35,0" concept="4" trace="getDisplayName#()Ljava/lang/String;" />
+      <node id="1454515498906126929" at="45,0,49,0" concept="4" trace="getDisplayName#()Ljava/lang/String;" />
+      <node id="1454515498906088403" at="43,0,49,6" concept="1" />
+      <node id="6143681886153536386" at="63,0,69,0" concept="4" trace="dispose#()V" />
+      <node id="910542257429621234" at="22,0,36,0" concept="2" trace="myProvider" />
+      <node id="6143681886153536386" at="39,0,63,0" concept="4" trace="init#()V" />
+      <scope id="6143681886153536386" at="37,44,37,44" />
+      <scope id="910542257429738759" at="24,61,25,241" />
+      <scope id="910542257429738767" at="28,52,29,36" />
+      <scope id="910542257429738774" at="32,36,33,20" />
+      <scope id="1454515498906126935" at="46,38,47,32" />
+      <scope id="6143681886153536386" at="37,0,39,0" />
+      <scope id="6143681886153536809" at="64,25,67,161" />
+      <scope id="910542257429738753" at="23,0,27,0" />
+      <scope id="910542257429738761" at="27,0,31,0" />
+      <scope id="910542257429738769" at="31,0,35,0" />
+      <scope id="1454515498906126929" at="45,0,49,0" />
+      <scope id="6143681886153536386" at="63,0,69,0" />
+      <scope id="6143681886153536787" at="40,22,61,0">
+        <var name="customPluginDesc" id="1731194357993029511" />
+        <var name="moduleCL" id="1731194357993018687" />
+      </scope>
+      <scope id="6143681886153536386" at="39,0,63,0" />
+      <unit id="1454515498906126797" at="44,64,49,5" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.ApplicationPlugin_AppPluginPart$2" />
+      <unit id="910542257429738751" at="22,59,35,3" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.ApplicationPlugin_AppPluginPart$1" />
+      <unit id="6143681886153536386" at="20,0,70,0" name="com.mbeddr.mpsutil.userstyles.runtime.plugin.ApplicationPlugin_AppPluginPart" />
+    </file>
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="6143681886153536386" at="23,66,24,53" concept="1" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <root nodeRef="r:9f3f2f34-2a33-43b6-85a0-4c0a87900ae0(com.mbeddr.mpsutil.ccmenu.runtime.api)/490620444044286868">
+    <file name="IMenuEntry.java">
+      <node id="1711273135351683395" at="7,0,8,0" concept="0" trace="getMatchingText#()Ljava/lang/String;" />
+      <node id="1711273135351683476" at="8,0,9,0" concept="0" trace="getDescription#()Ljava/lang/String;" />
+      <scope id="1711273135351683395" at="7,0,8,0" />
+      <scope id="1711273135351683476" at="8,0,9,0" />
+      <unit id="490620444044286868" at="6,0,10,0" name="com.mbeddr.mpsutil.ccmenu.runtime.api.IMenuEntry" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="58,0,62,0" name="com.mbeddr.mpsutil.review.generator.template.main.QueriesGenerated$CONCEPTS" />
+      <unit at="41,0,57,0" name="com.mbeddr.mpsutil.review.generator.template.main.QueriesGenerated$SCB" />
+      <unit at="20,0,63,0" name="com.mbeddr.mpsutil.review.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:8dc4c43c-6bba-4133-a20c-861c6aadfc20(com.mbeddr.mpsutil.review.generator.template.main@generator)/5106355271246189882">
+    <file name="QueriesGenerated.java">
+      <node id="5106355271246189886" at="25,85,26,144" concept="0" />
+      <node id="5106355271246199935" at="26,144,27,149" concept="0" />
+      <node id="5106355271246199869" at="27,149,28,0" concept="2" />
+      <node id="5106355271246189882" at="32,14,33,57" concept="0" />
+      <node id="5106355271246189882" at="49,15,50,58" concept="0" />
+      <node id="5106355271246189882" at="50,58,51,17" concept="1" />
+      <node id="5106355271246189883" at="25,0,30,0" concept="3" trace="mappingScript_CodeBlock_1#(Ljetbrains/mps/generator/template/MappingScriptContext;)V" />
+      <scope id="5106355271246189882" at="49,15,51,17" />
+      <scope id="5106355271246189884" at="25,85,28,0" />
+      <scope id="5106355271246189883" at="25,0,30,0">
+        <var name="_context" id="5106355271246189883" />
+      </scope>
+    </file>
+  </root>
+</debug-info>
+

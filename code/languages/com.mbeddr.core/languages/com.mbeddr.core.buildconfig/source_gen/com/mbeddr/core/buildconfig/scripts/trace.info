@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ScriptsDescriptor.java">
+      <unit at="11,0,26,0" name="com.mbeddr.core.buildconfig.scripts.ScriptsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:27b1ee56-a0bc-4e36-85b1-31d7d9fa2d5f(com.mbeddr.core.buildconfig.scripts)/2736179788492057715">
+    <file name="ScriptsDescriptor.java">
+      <node id="2736179788492057715" at="15,52,16,91" concept="1" />
+    </file>
+    <file name="addDebugOptionToAllDesktopBuildSystems_MigrationScript.java">
+      <node id="2736179788492057715" at="18,67,19,73" concept="7" />
+      <node id="2736179788492057716" at="22,31,23,24" concept="4" />
+      <node id="2736179788492057716" at="26,41,27,24" concept="4" />
+      <node id="2736179788492057716" at="30,54,31,43" concept="4" />
+      <node id="2736179788492057721" at="34,59,35,91" concept="4" />
+      <node id="2736179788492057733" at="38,52,39,72" concept="1" />
+      <node id="2736179788492057716" at="42,42,43,21" concept="4" />
+      <node id="2736179788492057715" at="50,41,51,162" concept="4" />
+      <node id="2736179788492057732" at="53,52,54,40" concept="4" />
+      <node id="2736179788492057715" at="58,0,59,0" concept="5" trace="DesktopPlatform$p7" />
+      <node id="2736179788492057715" at="62,0,63,0" concept="5" trace="debugOptions$EfxN" />
+      <node id="2736179788492057732" at="53,0,56,0" concept="6" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="2736179788492057716" at="21,0,25,0" concept="3" trace="getName#()Ljava/lang/String;" />
+      <node id="2736179788492057716" at="25,0,29,0" concept="3" trace="getAdditionalInfo#()Ljava/lang/String;" />
+      <node id="2736179788492057716" at="29,0,33,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="2736179788492057716" at="33,0,37,0" concept="3" trace="isApplicableInstanceNode#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="2736179788492057716" at="37,0,41,0" concept="3" trace="doUpdateInstanceNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2736179788492057716" at="41,0,45,0" concept="3" trace="isShowAsIntention#()Z" />
+      <node id="2736179788492057715" at="48,0,53,0" concept="3" trace="getScriptNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="2736179788492057716" at="19,73,45,7" concept="1" />
+      <node id="2736179788492057715" at="18,0,47,0" concept="0" trace="addDebugOptionToAllDesktopBuildSystems_MigrationScript#()V" />
+      <scope id="2736179788492057716" at="22,31,23,24" />
+      <scope id="2736179788492057716" at="26,41,27,24" />
+      <scope id="2736179788492057716" at="30,54,31,43" />
+      <scope id="2736179788492057720" at="34,59,35,91" />
+      <scope id="2736179788492057718" at="38,52,39,72" />
+      <scope id="2736179788492057716" at="42,42,43,21" />
+      <scope id="2736179788492057715" at="50,41,51,162" />
+      <scope id="2736179788492057732" at="53,52,54,40" />
+      <scope id="2736179788492057732" at="53,0,56,0">
+        <var name="str" id="2736179788492057732" />
+      </scope>
+      <scope id="2736179788492057716" at="21,0,25,0" />
+      <scope id="2736179788492057716" at="25,0,29,0" />
+      <scope id="2736179788492057716" at="29,0,33,0" />
+      <scope id="2736179788492057716" at="33,0,37,0">
+        <var name="node" id="2736179788492057716" />
+      </scope>
+      <scope id="2736179788492057716" at="37,0,41,0">
+        <var name="node" id="2736179788492057716" />
+      </scope>
+      <scope id="2736179788492057716" at="41,0,45,0" />
+      <scope id="2736179788492057715" at="48,0,53,0" />
+      <scope id="2736179788492057715" at="18,67,45,7" />
+      <scope id="2736179788492057715" at="18,0,47,0" />
+      <unit id="2736179788492057715" at="57,0,60,0" name="com.mbeddr.core.buildconfig.scripts.addDebugOptionToAllDesktopBuildSystems_MigrationScript$CONCEPTS" />
+      <unit id="2736179788492057715" at="61,0,64,0" name="com.mbeddr.core.buildconfig.scripts.addDebugOptionToAllDesktopBuildSystems_MigrationScript$PROPS" />
+      <unit id="2736179788492057716" at="20,28,45,5" name="com.mbeddr.core.buildconfig.scripts.addDebugOptionToAllDesktopBuildSystems_MigrationScript$1" />
+      <unit id="2736179788492057715" at="17,0,65,0" name="com.mbeddr.core.buildconfig.scripts.addDebugOptionToAllDesktopBuildSystems_MigrationScript" />
+    </file>
+  </root>
+  <root nodeRef="r:27b1ee56-a0bc-4e36-85b1-31d7d9fa2d5f(com.mbeddr.core.buildconfig.scripts)/3963667026133540954">
+    <file name="ScriptsDescriptor.java">
+      <node id="3963667026133540954" at="16,91,17,96" concept="1" />
+    </file>
+    <file name="addDefaultToolPathsToAllDesktopBuildSystems_MigrationScript.java">
+      <node id="3963667026133540954" at="18,72,19,73" concept="7" />
+      <node id="3963667026133540955" at="22,31,23,24" concept="4" />
+      <node id="3963667026133540955" at="26,41,27,24" concept="4" />
+      <node id="3963667026133540955" at="30,54,31,43" concept="4" />
+      <node id="3963667026133540966" at="34,59,35,229" concept="4" />
+      <node id="3963667026133576916" at="39,82,40,68" concept="1" />
+      <node id="3963667026133580574" at="42,81,43,66" concept="1" />
+      <node id="3963667026133580808" at="45,87,46,67" concept="1" />
+      <node id="3963667026133540955" at="50,42,51,21" concept="4" />
+      <node id="3963667026133540954" at="58,41,59,162" concept="4" />
+      <node id="3963667026133569345" at="61,52,62,40" concept="4" />
+      <node id="3963667026133540954" at="66,0,67,0" concept="5" trace="DesktopPlatform$p7" />
+      <node id="3963667026133540954" at="70,0,71,0" concept="5" trace="cCompiler$f7vk" />
+      <node id="3963667026133540954" at="71,0,72,0" concept="5" trace="make$cWZW" />
+      <node id="3963667026133540954" at="72,0,73,0" concept="5" trace="gdb$c8Uu" />
+      <node id="3963667026133570371" at="38,52,41,9" concept="2" />
+      <node id="3963667026133580572" at="41,9,44,9" concept="2" />
+      <node id="3963667026133580806" at="44,9,47,9" concept="2" />
+      <node id="3963667026133569345" at="61,0,64,0" concept="6" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="3963667026133540955" at="21,0,25,0" concept="3" trace="getName#()Ljava/lang/String;" />
+      <node id="3963667026133540955" at="25,0,29,0" concept="3" trace="getAdditionalInfo#()Ljava/lang/String;" />
+      <node id="3963667026133540955" at="29,0,33,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3963667026133540955" at="33,0,37,0" concept="3" trace="isApplicableInstanceNode#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3963667026133540955" at="49,0,53,0" concept="3" trace="isShowAsIntention#()Z" />
+      <node id="3963667026133540954" at="56,0,61,0" concept="3" trace="getScriptNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="3963667026133540955" at="37,0,49,0" concept="3" trace="doUpdateInstanceNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3963667026133540955" at="19,73,53,7" concept="1" />
+      <node id="3963667026133540954" at="18,0,55,0" concept="0" trace="addDefaultToolPathsToAllDesktopBuildSystems_MigrationScript#()V" />
+      <scope id="3963667026133540955" at="22,31,23,24" />
+      <scope id="3963667026133540955" at="26,41,27,24" />
+      <scope id="3963667026133540955" at="30,54,31,43" />
+      <scope id="3963667026133540965" at="34,59,35,229" />
+      <scope id="3963667026133570374" at="39,82,40,68" />
+      <scope id="3963667026133580573" at="42,81,43,66" />
+      <scope id="3963667026133580807" at="45,87,46,67" />
+      <scope id="3963667026133540955" at="50,42,51,21" />
+      <scope id="3963667026133540954" at="58,41,59,162" />
+      <scope id="3963667026133569345" at="61,52,62,40" />
+      <scope id="3963667026133569345" at="61,0,64,0">
+        <var name="str" id="3963667026133569345" />
+      </scope>
+      <scope id="3963667026133540955" at="21,0,25,0" />
+      <scope id="3963667026133540955" at="25,0,29,0" />
+      <scope id="3963667026133540955" at="29,0,33,0" />
+      <scope id="3963667026133540955" at="33,0,37,0">
+        <var name="node" id="3963667026133540955" />
+      </scope>
+      <scope id="3963667026133540955" at="49,0,53,0" />
+      <scope id="3963667026133540954" at="56,0,61,0" />
+      <scope id="3963667026133540957" at="38,52,47,9" />
+      <scope id="3963667026133540955" at="37,0,49,0">
+        <var name="node" id="3963667026133540955" />
+      </scope>
+      <scope id="3963667026133540954" at="18,72,53,7" />
+      <scope id="3963667026133540954" at="18,0,55,0" />
+      <unit id="3963667026133540954" at="65,0,68,0" name="com.mbeddr.core.buildconfig.scripts.addDefaultToolPathsToAllDesktopBuildSystems_MigrationScript$CONCEPTS" />
+      <unit id="3963667026133540954" at="69,0,74,0" name="com.mbeddr.core.buildconfig.scripts.addDefaultToolPathsToAllDesktopBuildSystems_MigrationScript$PROPS" />
+      <unit id="3963667026133540955" at="20,28,53,5" name="com.mbeddr.core.buildconfig.scripts.addDefaultToolPathsToAllDesktopBuildSystems_MigrationScript$1" />
+      <unit id="3963667026133540954" at="17,0,75,0" name="com.mbeddr.core.buildconfig.scripts.addDefaultToolPathsToAllDesktopBuildSystems_MigrationScript" />
+    </file>
+  </root>
+</debug-info>
+

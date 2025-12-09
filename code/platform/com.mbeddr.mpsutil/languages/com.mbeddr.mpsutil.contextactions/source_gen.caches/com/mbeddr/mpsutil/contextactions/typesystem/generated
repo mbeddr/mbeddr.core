@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-dhqm6k4wfb7uy5wuj8wtzvcdvx5fsbc">
+  <files names="TypesystemDescriptor.java:check_ActionSourceWithExtendingFolder_NonTypesystemRule.java:typeof_AbstractActionSource_InferenceRule.java:typeof_ActionSourceWithCondition_InferenceRule.java:typeof_ActionSourceWithFolder_InferenceRule.java:typeof_ConceptInstanceContextNode_InferenceRule.java:typeof_ConceptInstanceExpression_InferenceRule.java:typeof_ContextActions_InferenceRule.java:typeof_ContextExpression_InferenceRule.java:typeof_GenericActionSource_InferenceRule.java:typeof_IntentionsActionSource_Compact_InferenceRule.java:typeof_ParameterObject_InferenceRule.java:typeof_RefactoringSource_InferenceRule.java:typeof_SubstituteActionExpression_InferenceRule.java:typeof_SubstituteInfoSource_InferenceRule.java" />
+</product>
+

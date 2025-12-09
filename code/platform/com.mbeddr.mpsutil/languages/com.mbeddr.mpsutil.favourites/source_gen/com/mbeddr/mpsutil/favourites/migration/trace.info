@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="MigrationDescriptor.java">
+      <unit at="11,0,17,0" name="com.mbeddr.mpsutil.favourites.migration.MigrationDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:fbfdea15-7aa8-4202-9ac2-fa8b84655f92(com.mbeddr.mpsutil.favourites.migration)/1038494395630872089">
+    <file name="RemoveFavourites.java">
+      <node id="1038494395630872089" at="23,0,24,0" concept="1" trace="description" />
+      <node id="1038494395630872089" at="24,30,25,23" concept="5" />
+      <node id="1038494395630872089" at="28,33,29,16" concept="5" />
+      <node id="1038494395630872089" at="31,41,32,17" concept="0" />
+      <node id="1038494395630872089" at="32,17,33,16" concept="5" />
+      <node id="1038494395630931616" at="35,42,36,131" concept="4" />
+      <node id="1038494395630942704" at="36,131,37,88" concept="4" />
+      <node id="1038494395630928130" at="37,88,38,0" concept="6" />
+      <node id="1038494395630876404" at="39,64,40,28" concept="4" />
+      <node id="1038494395630920831" at="41,111,42,52" concept="4" />
+      <node id="1038494395631008175" at="42,52,43,88" concept="4" />
+      <node id="1038494395631018724" at="43,88,44,146" concept="0" />
+      <node id="1038494395630948285" at="44,146,45,53" concept="0" />
+      <node id="1038494395630954454" at="45,53,46,39" concept="0" />
+      <node id="1038494395630872089" at="50,50,51,150" concept="5" />
+      <node id="1038494395630872089" at="55,0,56,0" concept="7" trace="FavouritesAnnotation$8r" />
+      <node id="1038494395630872089" at="24,0,27,0" concept="3" trace="getCaption#()Ljava/lang/String;" />
+      <node id="1038494395630872089" at="50,0,53,0" concept="3" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="1038494395630872089" at="27,0,31,0" concept="3" trace="isRerunnable#()Z" />
+      <node id="1038494395630872089" at="31,0,35,0" concept="3" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1038494395630878396" at="40,28,47,9" concept="0" />
+      <node id="1038494395630873924" at="38,0,48,5" concept="2" />
+      <node id="1038494395630872089" at="35,0,50,0" concept="3" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="1038494395630872089" at="24,30,25,23" />
+      <scope id="1038494395630872089" at="28,33,29,16" />
+      <scope id="1038494395630872089" at="50,50,51,150" />
+      <scope id="1038494395630872089" at="31,41,33,16" />
+      <scope id="1038494395630872089" at="24,0,27,0" />
+      <scope id="1038494395630872089" at="50,0,53,0" />
+      <scope id="1038494395630872089" at="27,0,31,0" />
+      <scope id="1038494395630872089" at="31,0,35,0">
+        <var name="m" id="1038494395630872089" />
+      </scope>
+      <scope id="1038494395630900012" at="41,111,46,39">
+        <var name="internalModel" id="1038494395631008176" />
+        <var name="owner" id="1038494395630920834" />
+      </scope>
+      <scope id="1038494395630873927" at="39,64,47,9">
+        <var name="model" id="1038494395630876407" />
+      </scope>
+      <scope id="1038494395630873924" at="38,0,48,5">
+        <var name="smodel" id="1038494395630873925" />
+      </scope>
+      <scope id="1038494395630872089" at="35,42,48,5">
+        <var name="bookmarkManager" id="1038494395630942705" />
+        <var name="project" id="1038494395630931617" />
+      </scope>
+      <scope id="1038494395630872089" at="35,0,50,0">
+        <var name="m" id="1038494395630872089" />
+      </scope>
+      <unit id="1038494395630872089" at="54,0,57,0" name="com.mbeddr.mpsutil.favourites.migration.RemoveFavourites$CONCEPTS" />
+      <unit id="1038494395630872089" at="22,0,58,0" name="com.mbeddr.mpsutil.favourites.migration.RemoveFavourites" />
+    </file>
+  </root>
+</debug-info>
+

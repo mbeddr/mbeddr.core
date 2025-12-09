@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="102,0,105,0" name="com.mbeddr.cc.trace.generator.template.main.QueriesGenerated$PROPS" />
+      <unit at="106,0,109,0" name="com.mbeddr.cc.trace.generator.template.main.QueriesGenerated$CONCEPTS" />
+      <unit at="97,0,101,0" name="com.mbeddr.cc.trace.generator.template.main.QueriesGenerated$LINKS" />
+      <unit at="55,0,70,0" name="com.mbeddr.cc.trace.generator.template.main.QueriesGenerated$SNQ" />
+      <unit at="81,0,96,0" name="com.mbeddr.cc.trace.generator.template.main.QueriesGenerated$SNsQ" />
+      <unit at="31,0,110,0" name="com.mbeddr.cc.trace.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:7d3ffa21-31f6-467a-a5bf-c5294ac706db(com.mbeddr.cc.trace.generator.template.main@generator)/8626086128958778567">
+    <file name="QueriesGenerated.java">
+      <node id="2064656585763931379" at="36,92,37,186" concept="1" />
+      <node id="2064656585763936852" at="37,186,38,184" concept="0" />
+      <node id="2064656585763967070" at="38,184,39,16" concept="2" />
+      <node id="2064656585764168083" at="41,104,42,131" concept="2" />
+      <node id="2064656585764196060" at="46,14,47,56" concept="0" />
+      <node id="2064656585764196060" at="63,15,64,59" concept="2" />
+      <node id="2064656585764168076" at="72,14,73,58" concept="0" />
+      <node id="2064656585764168076" at="89,15,90,87" concept="2" />
+      <node id="2064656585764168076" at="41,0,44,0" concept="3" trace="sourceNodesQuery_0_0#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodesContext;)Ljava/lang/Iterable;" />
+      <node id="2064656585764196060" at="36,0,41,0" concept="3" trace="sourceNodeQuery_0_0#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodeContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2064656585764168077" at="41,104,42,131" />
+      <scope id="2064656585764196060" at="63,15,64,59" />
+      <scope id="2064656585764168076" at="89,15,90,87" />
+      <scope id="2064656585764196061" at="36,92,39,16">
+        <var name="word" id="2064656585763931382" />
+      </scope>
+      <scope id="2064656585764168076" at="41,0,44,0">
+        <var name="_context" id="2064656585764168076" />
+      </scope>
+      <scope id="2064656585764196060" at="36,0,41,0">
+        <var name="_context" id="2064656585764196060" />
+      </scope>
+    </file>
+  </root>
+</debug-info>
+

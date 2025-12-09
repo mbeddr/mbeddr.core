@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="12,0,27,0" name="com.mbeddr.ext.math.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

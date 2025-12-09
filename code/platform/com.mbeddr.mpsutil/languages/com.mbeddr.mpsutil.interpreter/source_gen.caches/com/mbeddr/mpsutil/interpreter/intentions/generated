@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="3vccck7mlnuruhnt8jatgkjjtrb1rot">
+  <files names="ClearValueOnInspector_Intention.java:ClearValueOnNode_Intention.java:IntentionsDescriptor.java:ToggleCaching_Intention.java:addCondition_Intention.java:convertConditionInline2Body_Intention.java:convertEvaluatorInline2Body_Intention.java:sortEvaluators_Intention.java:wrapWithStop_Intention.java" />
+</product>
+

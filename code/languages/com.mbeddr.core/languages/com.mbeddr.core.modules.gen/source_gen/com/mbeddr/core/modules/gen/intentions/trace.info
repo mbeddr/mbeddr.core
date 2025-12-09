@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="IntentionsDescriptor.java">
+      <unit at="18,0,56,0" name="com.mbeddr.core.modules.gen.intentions.IntentionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:0d0c9a2a-158f-4313-8a71-47cf6d0bdf12(com.mbeddr.core.modules.gen.intentions)/2875525180300377801">
+    <file name="IntentionsDescriptor.java">
+      <node id="2875525180300377801" at="37,47,38,57" concept="2" />
+      <node id="2875525180300377801" at="50,52,51,43" concept="2" />
+    </file>
+    <file name="addForceCopyIn_Intention.java">
+      <node id="2875525180300377801" at="21,0,22,0" concept="3" trace="myCachedExecutable" />
+      <node id="2875525180300377801" at="23,37,24,153" concept="8" />
+      <node id="2875525180300377801" at="28,35,29,28" concept="6" />
+      <node id="2875525180300377801" at="33,35,34,17" concept="6" />
+      <node id="2875525180300377801" at="38,37,39,105" concept="2" />
+      <node id="2875525180300377801" at="40,5,41,30" concept="6" />
+      <node id="2875525180300378380" at="48,87,49,33" concept="6" />
+      <node id="2875525180300391453" at="54,96,55,88" concept="2" />
+      <node id="2875525180300401511" at="56,14,57,85" concept="2" />
+      <node id="2875525180300377801" at="62,86,63,18" concept="6" />
+      <node id="2875525180300377801" at="69,48,70,43" concept="6" />
+      <node id="2875525180300377801" at="76,0,77,0" concept="7" trace="ForceCopyIn$4R" />
+      <node id="2875525180300377801" at="44,0,46,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="2875525180300401106" at="56,12,58,7" concept="0" />
+      <node id="2875525180300377801" at="23,0,26,0" concept="1" trace="addForceCopyIn_Intention#()V" />
+      <node id="2875525180300377801" at="37,99,40,5" concept="4" />
+      <node id="2875525180300377801" at="27,0,31,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="2875525180300377801" at="32,0,36,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="2875525180300377801" at="47,0,51,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="2875525180300377801" at="61,0,65,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="2875525180300377801" at="68,0,72,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="2875525180300383958" at="53,78,58,7" concept="4" />
+      <node id="2875525180300377801" at="37,0,43,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="2875525180300377801" at="52,0,60,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="2875525180300377801" at="44,38,44,38" />
+      <scope id="2875525180300377801" at="23,37,24,153" />
+      <scope id="2875525180300377801" at="28,35,29,28" />
+      <scope id="2875525180300377801" at="33,35,34,17" />
+      <scope id="2875525180300377801" at="38,37,39,105" />
+      <scope id="2875525180300377803" at="48,87,49,33" />
+      <scope id="2875525180300383960" at="54,96,55,88" />
+      <scope id="2875525180300401107" at="56,14,57,85" />
+      <scope id="2875525180300377801" at="62,86,63,18" />
+      <scope id="2875525180300377801" at="69,48,70,43" />
+      <scope id="2875525180300377801" at="44,0,46,0" />
+      <scope id="2875525180300377801" at="23,0,26,0" />
+      <scope id="2875525180300377801" at="27,0,31,0" />
+      <scope id="2875525180300377801" at="32,0,36,0" />
+      <scope id="2875525180300377801" at="37,99,41,30" />
+      <scope id="2875525180300377801" at="47,0,51,0">
+        <var name="editorContext" id="2875525180300377801" />
+        <var name="node" id="2875525180300377801" />
+      </scope>
+      <scope id="2875525180300377801" at="61,0,65,0">
+        <var name="editorContext" id="2875525180300377801" />
+        <var name="node" id="2875525180300377801" />
+      </scope>
+      <scope id="2875525180300377801" at="68,0,72,0" />
+      <scope id="2875525180300377805" at="53,78,58,7" />
+      <scope id="2875525180300377801" at="37,0,43,0">
+        <var name="context" id="2875525180300377801" />
+        <var name="node" id="2875525180300377801" />
+      </scope>
+      <scope id="2875525180300377801" at="52,0,60,0">
+        <var name="editorContext" id="2875525180300377801" />
+        <var name="node" id="2875525180300377801" />
+      </scope>
+      <unit id="2875525180300377801" at="75,0,78,0" name="com.mbeddr.core.modules.gen.intentions.addForceCopyIn_Intention$CONCEPTS" />
+      <unit id="2875525180300377801" at="43,0,74,0" name="com.mbeddr.core.modules.gen.intentions.addForceCopyIn_Intention$IntentionImplementation" />
+      <unit id="2875525180300377801" at="20,0,79,0" name="com.mbeddr.core.modules.gen.intentions.addForceCopyIn_Intention" />
+    </file>
+  </root>
+</debug-info>
+

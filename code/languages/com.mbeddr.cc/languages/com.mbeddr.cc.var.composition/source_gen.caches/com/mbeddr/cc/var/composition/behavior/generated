@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-a2hycst5ke3nyyxb9k8gnjqv6jo91s6">
+  <files names="BehaviorAspectDescriptor.java:ChildControlAdd__BehaviorDescriptor.java:ChildControlOp__BehaviorDescriptor.java:ChildControlledCompositionStrategy__BehaviorDescriptor.java:CompositionContext.java:CompositionResult.java:CompositionResultFail.java:CompositionResultSuccess.java:CompositionStrategy__BehaviorDescriptor.java:MatchAllSameConcepts__BehaviorDescriptor.java:MatchAnnotation__BehaviorDescriptor.java:MatchSameConceptByRef__BehaviorDescriptor.java:MatchStrategy__BehaviorDescriptor.java:ReplaceCompositionStrategy__BehaviorDescriptor.java" />
+</product>
+

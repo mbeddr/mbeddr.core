@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="83wf82b119vgap2jm7u7hav6i754642">
+  <files names="TypesystemDescriptor.java:check_ComponentInstanceInCompositeComponent_NonTypesystemRule.java:check_CompositeComponentInstanceConfigExported_NonTypesystemRule.java:check_CompositeComponentInstanceConfigReExport_NonTypesystemRule.java:check_CompositeComponentInstanceConfig_NonTypesystemRule.java:check_CompositeComponent_NonTypesystemRule.java:check_DelegatingConnectorForOptionalPorts_NonTypesystemRule.java:exportComponent_QuickFix.java:reexportModuleContainingInterface_QuickFix.java:typeof_ComponentRefExpr_InferenceRule.java" />
+</product>
+

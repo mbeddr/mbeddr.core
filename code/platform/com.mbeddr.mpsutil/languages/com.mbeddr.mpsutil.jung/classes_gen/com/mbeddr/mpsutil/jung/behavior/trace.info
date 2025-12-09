@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1178893518978:jetbrains.mps.baseLanguage.structure.ThisConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <root>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="14,0,32,0" name="com.mbeddr.mpsutil.jung.behavior.BehaviorAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/1049608476161874828">
+    <file name="JNGraphLayout.java">
+      <unit id="1049608476161874828" at="6,0,10,0" name="com.mbeddr.mpsutil.jung.behavior.JNGraphLayout" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/1049608476161875477">
+    <file name="JNCircleLayout.java">
+      <node id="6165203698248856575" at="10,28,11,27" concept="7" />
+      <node id="6165203698248856153" at="9,0,13,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <scope id="6165203698248856157" at="10,28,11,27" />
+      <scope id="6165203698248856153" at="9,0,13,0" />
+      <unit id="1049608476161875477" at="6,0,15,0" name="com.mbeddr.mpsutil.jung.behavior.JNCircleLayout" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/1049608476161896667">
+    <file name="JNISOMLayout.java">
+      <node id="6165203698248856888" at="9,28,10,25" concept="7" />
+      <node id="6165203698248856884" at="8,0,12,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <scope id="6165203698248856887" at="9,28,10,25" />
+      <scope id="6165203698248856884" at="8,0,12,0" />
+      <unit id="1049608476161896667" at="6,0,15,0" name="com.mbeddr.mpsutil.jung.behavior.JNISOMLayout" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/1049608476163520199">
+    <file name="JNSpringLayout.java">
+      <node id="3698136799702639561" at="9,0,10,0" concept="2" trace="edgeLength" />
+      <node id="6165203698248858101" at="15,28,16,27" concept="7" />
+      <node id="3698136799702650823" at="20,101,21,33" concept="1" />
+      <node id="3698136799702639848" at="11,0,13,0" concept="0" trace="JNSpringLayout#()V" />
+      <node id="3698136799702639865" at="20,0,23,0" concept="0" trace="JNSpringLayout#(Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_return_P1_E0;)V" />
+      <node id="6165203698248858097" at="14,0,18,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <scope id="3698136799702639851" at="11,27,11,27" />
+      <scope id="6165203698248858100" at="15,28,16,27" />
+      <scope id="3698136799702639867" at="20,101,21,33" />
+      <scope id="3698136799702639848" at="11,0,13,0" />
+      <scope id="3698136799702639865" at="20,0,23,0">
+        <var name="edgeLength" id="3698136799702650685" />
+      </scope>
+      <scope id="6165203698248858097" at="14,0,18,0" />
+      <unit id="1049608476163520199" at="7,0,25,0" name="com.mbeddr.mpsutil.jung.behavior.JNSpringLayout" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/2955125303778895751">
+    <file name="ArrowFactory.java">
+      <node id="2955125303778904356" at="12,53,13,42" concept="6" />
+      <node id="2955125303778904359" at="13,42,14,29" concept="1" />
+      <node id="2955125303778904363" at="14,29,15,41" concept="1" />
+      <node id="2955125303778904370" at="15,41,16,42" concept="1" />
+      <node id="2955125303778904378" at="16,42,17,29" concept="1" />
+      <node id="2955125303778904382" at="17,29,18,17" concept="7" />
+      <node id="562642815610877396" at="21,40,22,66" concept="7" />
+      <node id="2955125303778938619" at="25,40,26,64" concept="7" />
+      <node id="562642815610866256" at="21,0,24,0" concept="10" trace="square#(I)Ljava/awt/Shape;" />
+      <node id="2955125303778910305" at="25,0,28,0" concept="10" trace="circle#(I)Ljava/awt/Shape;" />
+      <node id="2955125303778895753" at="12,0,20,0" concept="10" trace="arrow#(II)Ljava/awt/Shape;" />
+      <scope id="562642815610866257" at="21,40,22,66" />
+      <scope id="2955125303778910306" at="25,40,26,64" />
+      <scope id="562642815610866256" at="21,0,24,0">
+        <var name="size" id="562642815610866296" />
+      </scope>
+      <scope id="2955125303778910305" at="25,0,28,0">
+        <var name="size" id="2955125303778910345" />
+      </scope>
+      <scope id="2955125303778895754" at="12,53,18,17">
+        <var name="arrow" id="2955125303778904355" />
+      </scope>
+      <scope id="2955125303778895753" at="12,0,20,0">
+        <var name="height" id="2955125303778906793" />
+        <var name="length" id="2955125303778895768" />
+      </scope>
+      <unit id="2955125303778895751" at="10,0,31,0" name="com.mbeddr.mpsutil.jung.behavior.ArrowFactory" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/3295620986914112759">
+    <file name="ShapeFactory.java">
+      <node id="3295620986914116135" at="13,56,14,67" concept="7" />
+      <node id="1213725659727866688" at="17,68,18,78" concept="7" />
+      <node id="3295620986914112970" at="21,53,22,65" concept="7" />
+      <node id="3116672392885454149" at="25,50,26,24" concept="6" />
+      <node id="3116672392885457584" at="27,28,28,25" concept="1" />
+      <node id="3116672392885455451" at="29,5,30,13" concept="7" />
+      <node id="3295620986914112855" at="13,0,16,0" concept="10" trace="rectangle#(Lcom/mbeddr/mpsutil/jung/behavior/JNNode;I)Ljava/awt/Shape;" />
+      <node id="1213725659727528397" at="17,0,20,0" concept="10" trace="polygon#(Lcom/mbeddr/mpsutil/jung/behavior/JNNode;II)Ljava/awt/Shape;" />
+      <node id="3295620986914112875" at="21,0,24,0" concept="10" trace="circle#(Lcom/mbeddr/mpsutil/jung/behavior/JNNode;I)Ljava/awt/Shape;" />
+      <node id="3116672392885457168" at="26,24,29,5" concept="3" />
+      <node id="3116672392885451766" at="25,0,32,0" concept="10" trace="composite#(null)Ljava/awt/Shape;" />
+      <scope id="3295620986914112802" at="13,56,14,67" />
+      <scope id="1213725659727528398" at="17,68,18,78" />
+      <scope id="3295620986914112876" at="21,53,22,65" />
+      <scope id="3116672392885457172" at="27,28,28,25" />
+      <scope id="3295620986914112855" at="13,0,16,0">
+        <var name="node" id="1213725659727897907" />
+        <var name="size" id="3295620986914112832" />
+      </scope>
+      <scope id="1213725659727528397" at="17,0,20,0">
+        <var name="node" id="1213725659727897413" />
+        <var name="numSides" id="1213725659727818552" />
+        <var name="size" id="1213725659727528412" />
+      </scope>
+      <scope id="3295620986914112875" at="21,0,24,0">
+        <var name="node" id="1213725659727898546" />
+        <var name="size" id="3295620986914112877" />
+      </scope>
+      <scope id="3116672392885457168" at="26,24,29,5">
+        <var name="s" id="3116672392885457170" />
+      </scope>
+      <scope id="3116672392885451767" at="25,50,30,13">
+        <var name="a" id="3116672392885454150" />
+      </scope>
+      <scope id="3116672392885451766" at="25,0,32,0">
+        <var name="shapes" id="3116672392885453883" />
+      </scope>
+      <unit id="3295620986914112759" at="11,0,36,0" name="com.mbeddr.mpsutil.jung.behavior.ShapeFactory" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/3794042489966156495">
+    <file name="JNHighlightMode.java">
+      <node id="3794042489966156867" at="8,0,9,0" concept="2" trace="outEdges" />
+      <node id="3794042489966157346" at="9,0,10,0" concept="2" trace="inEdges" />
+      <node id="3794042489966157900" at="10,0,11,0" concept="2" trace="nodesAlso" />
+      <node id="3794042489966158529" at="11,0,12,0" concept="2" trace="transitive" />
+      <node id="3794042489966156871" at="13,100,14,29" concept="1" />
+      <node id="3794042489966157350" at="14,29,15,27" concept="1" />
+      <node id="3794042489966157904" at="15,27,16,31" concept="1" />
+      <node id="3794042489966158533" at="16,31,17,33" concept="1" />
+      <node id="3794042489966156705" at="13,0,19,0" concept="0" trace="JNHighlightMode#(ZZZZ)V" />
+      <scope id="3794042489966156709" at="13,100,17,33" />
+      <scope id="3794042489966156705" at="13,0,19,0">
+        <var name="inEdges" id="3794042489966156744" />
+        <var name="nodesAlso" id="3794042489966156787" />
+        <var name="outEdges" id="3794042489966156720" />
+        <var name="transitive" id="3794042489966156838" />
+      </scope>
+      <unit id="3794042489966156495" at="6,0,20,0" name="com.mbeddr.mpsutil.jung.behavior.JNHighlightMode" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/5282423616191820256">
+    <file name="JNLayout.java">
+      <unit id="5282423616191820256" at="6,0,8,0" name="com.mbeddr.mpsutil.jung.behavior.JNLayout" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/5282423616191824364">
+    <file name="JNForestLayout.java">
+      <unit id="5282423616191824364" at="6,0,8,0" name="com.mbeddr.mpsutil.jung.behavior.JNForestLayout" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/5282423616191828063">
+    <file name="JNForest.java">
+      <node id="5282423616191842616" at="8,56,9,23" concept="1" />
+      <node id="5282423616191842622" at="9,23,10,25" concept="1" />
+      <node id="5282423616191842612" at="8,0,12,0" concept="0" trace="JNForest#(Ljava/lang/String;Lcom/mbeddr/mpsutil/jung/behavior/JNForestLayout;)V" />
+      <scope id="5282423616191842615" at="8,56,10,25" />
+      <scope id="5282423616191842612" at="8,0,12,0">
+        <var name="layout" id="5282423616191842630" />
+        <var name="title" id="5282423616191842628" />
+      </scope>
+      <unit id="5282423616191828063" at="6,0,15,0" name="com.mbeddr.mpsutil.jung.behavior.JNForest" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/5282423616192255447">
+    <file name="JNTreeLayout.java">
+      <unit id="5282423616192255447" at="6,0,8,0" name="com.mbeddr.mpsutil.jung.behavior.JNTreeLayout" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/5589661599520243011">
+    <file name="JNBase.java">
+      <node id="6388491840914061573" at="12,0,13,0" concept="2" trace="nodeptr" />
+      <node id="1273225940367409961" at="13,0,14,0" concept="2" trace="id" />
+      <node id="3474017077411727352" at="14,0,15,0" concept="2" trace="kinds" />
+      <node id="5952978983913757912" at="15,0,16,0" concept="2" trace="tooltip" />
+      <node id="1971316887028373233" at="16,0,17,0" concept="2" trace="userData" />
+      <node id="1971316887028460917" at="20,27,21,68" concept="1" />
+      <node id="1971316887028465846" at="22,5,23,50" concept="1" />
+      <node id="1971316887028526777" at="27,27,28,18" concept="7" />
+      <node id="1971316887028548735" at="29,5,30,50" concept="7" />
+      <node id="7361848693720274072" at="33,36,34,24" concept="7" />
+      <node id="5608459835155816178" at="37,25,38,19" concept="7" />
+      <node id="954921496645930330" at="43,24,44,20" concept="7" />
+      <node id="954921496645930569" at="46,5,47,17" concept="7" />
+      <node id="1462921168622278556" at="50,27,51,22" concept="7" />
+      <node id="5952978983913789255" at="54,36,55,21" concept="1" />
+      <node id="5952978983913845558" at="59,31,60,29" concept="7" />
+      <node id="5952978983913842621" at="61,5,62,24" concept="7" />
+      <node id="1971316887028458614" at="19,53,22,5" concept="4" />
+      <node id="1971316887028523364" at="26,41,29,5" concept="4" />
+      <node id="7361848693720270920" at="33,0,36,0" concept="5" trace="getNodePtr#()Ljetbrains/mps/smodel/SNodePointer;" />
+      <node id="5608459835155796814" at="37,0,40,0" concept="5" trace="getID#()Ljava/lang/String;" />
+      <node id="954921496645911435" at="42,28,45,7" concept="4" />
+      <node id="1462921168622253850" at="50,0,53,0" concept="5" trace="kinds#()[Ljava/lang/String;" />
+      <node id="5952978983913762281" at="54,0,57,0" concept="5" trace="setTooltip#(Ljava/lang/String;)V" />
+      <node id="5952978983913843357" at="58,30,61,5" concept="4" />
+      <node id="954921496645906816" at="41,35,46,5" concept="3" />
+      <node id="1971316887028403034" at="19,0,25,0" concept="5" trace="setUserData#(Ljava/lang/String;Ljava/lang/Object;)V" />
+      <node id="1971316887028482373" at="26,0,32,0" concept="5" trace="getUserData#(Ljava/lang/String;)Ljava/lang/Object;" />
+      <node id="5952978983913797349" at="58,0,64,0" concept="5" trace="getTooltip#()Ljava/lang/String;" />
+      <node id="3474017077411760098" at="41,0,49,0" concept="5" trace="kindIs#(Ljava/lang/String;)Z" />
+      <scope id="1971316887028458615" at="20,27,21,68" />
+      <scope id="1971316887028523366" at="27,27,28,18" />
+      <scope id="7361848693720270924" at="33,36,34,24" />
+      <scope id="5608459835155796818" at="37,25,38,19" />
+      <scope id="954921496645911436" at="43,24,44,20" />
+      <scope id="1462921168622253853" at="50,27,51,22" />
+      <scope id="5952978983913762285" at="54,36,55,21" />
+      <scope id="5952978983913843359" at="59,31,60,29" />
+      <scope id="7361848693720270920" at="33,0,36,0" />
+      <scope id="5608459835155796814" at="37,0,40,0" />
+      <scope id="954921496645906820" at="42,28,45,7" />
+      <scope id="1462921168622253850" at="50,0,53,0" />
+      <scope id="5952978983913762281" at="54,0,57,0">
+        <var name="s" id="5952978983913781991" />
+      </scope>
+      <scope id="1971316887028403038" at="19,53,23,50" />
+      <scope id="1971316887028482376" at="26,41,30,50" />
+      <scope id="5952978983913797353" at="58,30,62,24" />
+      <scope id="954921496645906816" at="41,35,46,5">
+        <var name="k" id="954921496645906818" />
+      </scope>
+      <scope id="1971316887028403034" at="19,0,25,0">
+        <var name="key" id="1971316887028447543" />
+        <var name="value" id="1971316887028452423" />
+      </scope>
+      <scope id="1971316887028482373" at="26,0,32,0">
+        <var name="key" id="1971316887028482395" />
+      </scope>
+      <scope id="3474017077411760101" at="41,35,47,17" />
+      <scope id="5952978983913797349" at="58,0,64,0" />
+      <scope id="3474017077411760098" at="41,0,49,0">
+        <var name="s" id="3474017077411777913" />
+      </scope>
+      <unit id="5589661599520243011" at="10,0,71,0" name="com.mbeddr.mpsutil.jung.behavior.JNBase" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/6388491840914059694">
+    <file name="JNNode.java">
+      <node id="2350090311972526612" at="16,0,17,0" concept="2" trace="graph" />
+      <node id="9182130395667400476" at="17,0,18,0" concept="2" trace="characteristicSize" />
+      <node id="5218197440477333100" at="18,0,19,0" concept="2" trace="continuousAxisOne" />
+      <node id="1375904036381518277" at="22,23,23,88" concept="13" />
+      <node id="6388491840914061577" at="24,5,25,39" concept="1" />
+      <node id="1273225940367410909" at="25,39,26,19" concept="1" />
+      <node id="2350090311972526616" at="26,19,27,23" concept="1" />
+      <node id="9182130395667410771" at="30,68,31,25" concept="12" />
+      <node id="9182130395667409045" at="31,25,32,39" concept="1" />
+      <node id="3474017077411748997" at="35,81,36,35" concept="12" />
+      <node id="3474017077411757864" at="36,35,37,36" concept="1" />
+      <node id="954921496645958354" at="40,84,41,35" concept="12" />
+      <node id="954921496645958359" at="41,35,42,23" concept="1" />
+      <node id="2601238556980501943" at="45,36,46,30" concept="6" />
+      <node id="2601238556980445091" at="46,30,47,35" concept="6" />
+      <node id="2601238556980475408" at="47,35,48,45" concept="1" />
+      <node id="2601238556980491063" at="48,45,49,13" concept="1" />
+      <node id="2601238556980507321" at="49,13,50,19" concept="1" />
+      <node id="1273225940367409325" at="54,28,55,14" concept="7" />
+      <node id="2350090311972541923" at="58,33,59,53" concept="7" />
+      <node id="1566095185276583079" at="62,38,63,88" concept="7" />
+      <node id="5928422346517298334" at="66,32,67,57" concept="7" />
+      <node id="3313738175990872345" at="70,42,71,74" concept="7" />
+      <node id="1566095185276615679" at="74,37,75,86" concept="7" />
+      <node id="1566095185276659079" at="78,44,79,114" concept="7" />
+      <node id="9182130395667434099" at="82,35,83,35" concept="7" />
+      <node id="3698136799703494791" at="86,37,87,68" concept="6" />
+      <node id="3698136799703494799" at="87,68,88,58" concept="6" />
+      <node id="1172052053651824771" at="88,58,89,63" concept="7" />
+      <node id="8530853138320252116" at="92,45,93,88" concept="6" />
+      <node id="8530853138320254753" at="93,88,94,80" concept="6" />
+      <node id="8530853138320289505" at="94,80,95,39" concept="6" />
+      <node id="1172052053651952731" at="95,39,96,42" concept="7" />
+      <node id="1620675732378065792" at="99,47,100,71" concept="6" />
+      <node id="3313738175990830179" at="100,71,101,95" concept="1" />
+      <node id="3313738175990818896" at="101,95,102,15" concept="7" />
+      <node id="1620675732378065295" at="106,53,107,13" concept="7" />
+      <node id="1620675732378068001" at="108,5,109,49" concept="1" />
+      <node id="1620675732378073806" at="109,49,110,99" concept="1" />
+      <node id="3313738175991127952" at="113,43,114,66" concept="7" />
+      <node id="5218197440477492856" at="117,46,118,33" concept="1" />
+      <node id="5218197440477549556" at="121,40,122,34" concept="7" />
+      <node id="5735884186425410563" at="124,46,125,39" concept="7" />
+      <node id="1375904036381515533" at="21,54,24,5" concept="4" />
+      <node id="2350090311972531196" at="58,0,61,0" concept="5" trace="numberOfOutEdges#()I" />
+      <node id="1566095185276583075" at="62,0,65,0" concept="5" trace="outEdges#()Ljava/lang/Iterable;" />
+      <node id="5928422346517268766" at="66,0,69,0" concept="5" trace="hasOutEdges#()Z" />
+      <node id="3313738175990835928" at="70,0,73,0" concept="5" trace="outNeighbors#()Ljava/lang/Iterable;" />
+      <node id="1566095185276615674" at="74,0,77,0" concept="5" trace="inEdges#()Ljava/lang/Iterable;" />
+      <node id="1566095185276627355" at="78,0,81,0" concept="5" trace="connectedEdges#()Ljava/lang/Iterable;" />
+      <node id="9182130395667419890" at="82,0,85,0" concept="5" trace="characteristicSize#()I" />
+      <node id="1620675732378057377" at="105,64,108,5" concept="4" />
+      <node id="3313738175991060380" at="113,0,116,0" concept="5" trace="isOutReachable#(Lcom/mbeddr/mpsutil/jung/behavior/JNNode;)Z" />
+      <node id="5218197440477381165" at="117,0,120,0" concept="5" trace="setContinuousAxisOne#(J)V" />
+      <node id="5218197440477507401" at="121,0,124,0" concept="5" trace="continuousAxisOneValue#()J" />
+      <node id="5735884186425410559" at="124,0,127,0" concept="5" trace="hasContinuousAxisOneValue#()Z" />
+      <node id="9182130395667405140" at="30,0,34,0" concept="0" trace="JNNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Lcom/mbeddr/mpsutil/jung/behavior/JNGraph;I)V" />
+      <node id="3474017077411748994" at="35,0,39,0" concept="0" trace="JNNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Lcom/mbeddr/mpsutil/jung/behavior/JNGraph;ILjava/lang/String;)V" />
+      <node id="954921496645958351" at="40,0,44,0" concept="0" trace="JNNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Lcom/mbeddr/mpsutil/jung/behavior/JNGraph;I[Ljava/lang/String;)V" />
+      <node id="1273225940367409318" at="53,0,57,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <node id="1172052053651801073" at="86,0,91,0" concept="5" trace="relativeEdgeNumber#()F" />
+      <node id="1620675732377919894" at="99,0,104,0" concept="5" trace="outReachableNodes#()Ljava/lang/Iterable;" />
+      <node id="1172052053651931598" at="92,0,98,0" concept="5" trace="relativeCharacteristicSize#()F" />
+      <node id="2601238556980421583" at="45,0,52,0" concept="5" trace="addKind#(Ljava/lang/String;)V" />
+      <node id="1620675732377978659" at="105,0,112,0" concept="5" trace="collectReachableNodes#(Ljava/util/Set;)V" />
+      <node id="6388491840914060321" at="21,0,29,0" concept="0" trace="JNNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Lcom/mbeddr/mpsutil/jung/behavior/JNGraph;)V" />
+      <scope id="1375904036381515535" at="22,23,23,88" />
+      <scope id="1273225940367409322" at="54,28,55,14" />
+      <scope id="2350090311972531200" at="58,33,59,53" />
+      <scope id="1566095185276583078" at="62,38,63,88" />
+      <scope id="5928422346517268770" at="66,32,67,57" />
+      <scope id="3313738175990835932" at="70,42,71,74" />
+      <scope id="1566095185276615678" at="74,37,75,86" />
+      <scope id="1566095185276627359" at="78,44,79,114" />
+      <scope id="9182130395667419893" at="82,35,83,35" />
+      <scope id="1620675732378057378" at="106,53,107,13" />
+      <scope id="3313738175991060384" at="113,43,114,66" />
+      <scope id="5218197440477381169" at="117,46,118,33" />
+      <scope id="5218197440477507405" at="121,40,122,34" />
+      <scope id="5735884186425410562" at="124,46,125,39" />
+      <scope id="9182130395667405142" at="30,68,32,39" />
+      <scope id="3474017077411748996" at="35,81,37,36" />
+      <scope id="954921496645958353" at="40,84,42,23" />
+      <scope id="2350090311972531196" at="58,0,61,0" />
+      <scope id="1566095185276583075" at="62,0,65,0" />
+      <scope id="5928422346517268766" at="66,0,69,0" />
+      <scope id="3313738175990835928" at="70,0,73,0" />
+      <scope id="1566095185276615674" at="74,0,77,0" />
+      <scope id="1566095185276627355" at="78,0,81,0" />
+      <scope id="9182130395667419890" at="82,0,85,0" />
+      <scope id="1172052053651801076" at="86,37,89,63">
+        <var name="outEdges" id="3698136799703494792" />
+        <var name="range" id="3698136799703494800" />
+      </scope>
+      <scope id="1620675732377919898" at="99,47,102,15">
+        <var name="res" id="1620675732378065795" />
+      </scope>
+      <scope id="3313738175991060380" at="113,0,116,0">
+        <var name="n" id="3313738175991121677" />
+      </scope>
+      <scope id="5218197440477381165" at="117,0,120,0">
+        <var name="val" id="5218197440477483550" />
+      </scope>
+      <scope id="5218197440477507401" at="121,0,124,0" />
+      <scope id="5735884186425410559" at="124,0,127,0" />
+      <scope id="9182130395667405140" at="30,0,34,0">
+        <var name="charSize" id="9182130395667408080" />
+        <var name="graph" id="9182130395667405168" />
+        <var name="n" id="9182130395667405164" />
+        <var name="name" id="9182130395667405166" />
+      </scope>
+      <scope id="3474017077411748994" at="35,0,39,0">
+        <var name="charSize" id="3474017077411749014" />
+        <var name="graph" id="3474017077411749012" />
+        <var name="kind" id="3474017077411756037" />
+        <var name="n" id="3474017077411749008" />
+        <var name="name" id="3474017077411749010" />
+      </scope>
+      <scope id="954921496645958351" at="40,0,44,0">
+        <var name="charSize" id="954921496645958375" />
+        <var name="graph" id="954921496645958373" />
+        <var name="kinds" id="954921496645958377" />
+        <var name="n" id="954921496645958369" />
+        <var name="name" id="954921496645958371" />
+      </scope>
+      <scope id="1273225940367409318" at="53,0,57,0" />
+      <scope id="1172052053651931601" at="92,45,96,42">
+        <var name="characteristicSizes" id="8530853138320252117" />
+        <var name="cs" id="8530853138320289506" />
+        <var name="range" id="8530853138320254756" />
+      </scope>
+      <scope id="2601238556980421587" at="45,36,50,19">
+        <var name="k" id="2601238556980445094" />
+        <var name="l" id="2601238556980501944" />
+      </scope>
+      <scope id="1172052053651801073" at="86,0,91,0" />
+      <scope id="1620675732377919894" at="99,0,104,0" />
+      <scope id="1620675732377978663" at="105,64,110,99" />
+      <scope id="6388491840914060324" at="21,54,27,23" />
+      <scope id="1172052053651931598" at="92,0,98,0" />
+      <scope id="2601238556980421583" at="45,0,52,0">
+        <var name="s" id="2601238556980430994" />
+      </scope>
+      <scope id="1620675732377978659" at="105,0,112,0">
+        <var name="result" id="1620675732378047724" />
+      </scope>
+      <scope id="6388491840914060321" at="21,0,29,0">
+        <var name="graph" id="2350090311972525978" />
+        <var name="n" id="6388491840914060713" />
+        <var name="name" id="1273225940367410502" />
+      </scope>
+      <unit id="6388491840914059694" at="14,0,130,0" name="com.mbeddr.mpsutil.jung.behavior.JNNode" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/6388491840914060732">
+    <file name="JNEdge.java">
+      <node id="6388491840914062922" at="12,0,13,0" concept="2" trace="from" />
+      <node id="6388491840914063201" at="13,0,14,0" concept="2" trace="to" />
+      <node id="282027796180639449" at="14,0,15,0" concept="2" trace="directed" />
+      <node id="3698136799702255052" at="15,0,16,0" concept="2" trace="weight" />
+      <node id="3698136799703344769" at="16,0,17,0" concept="2" trace="graph" />
+      <node id="1375904036381551644" at="20,21,21,92" concept="13" />
+      <node id="1375904036381559099" at="23,23,24,94" concept="13" />
+      <node id="1375904036381551550" at="25,5,26,0" concept="8" />
+      <node id="6388491840914062926" at="26,0,27,21" concept="1" />
+      <node id="6388491840914063205" at="27,21,28,17" concept="1" />
+      <node id="6388491840914062740" at="29,20,30,41" concept="1" />
+      <node id="5860646706611438062" at="31,5,32,17" concept="1" />
+      <node id="282027796180639453" at="32,17,33,29" concept="1" />
+      <node id="3698136799703344773" at="33,29,34,23" concept="1" />
+      <node id="2307897332453607648" at="34,23,35,36" concept="1" />
+      <node id="3698136799702244324" at="38,119,39,49" concept="12" />
+      <node id="3698136799702255056" at="39,49,40,25" concept="1" />
+      <node id="1375904036381982667" at="43,24,44,51" concept="6" />
+      <node id="2109565276016105983" at="45,25,46,77" concept="1" />
+      <node id="7924497931349936122" at="47,5,48,18" concept="7" />
+      <node id="1375904036381992108" at="51,22,52,49" concept="6" />
+      <node id="2109565276016121522" at="53,25,54,73" concept="1" />
+      <node id="6388491840914416558" at="55,5,56,18" concept="7" />
+      <node id="282027796180735324" at="59,31,60,25" concept="7" />
+      <node id="3698136799702276808" at="63,23,64,23" concept="7" />
+      <node id="3698136799703357910" at="67,33,68,66" concept="6" />
+      <node id="3698136799703359211" at="68,66,69,64" concept="6" />
+      <node id="3698136799703169858" at="69,64,70,31" concept="7" />
+      <node id="1375904036381551642" at="19,107,22,5" concept="4" />
+      <node id="1375904036381559097" at="22,5,25,5" concept="4" />
+      <node id="5608459835155836311" at="28,17,31,5" concept="4" />
+      <node id="3596925030336962761" at="44,51,47,5" concept="4" />
+      <node id="3596925030336967190" at="52,49,55,5" concept="4" />
+      <node id="282027796180728118" at="59,0,62,0" concept="5" trace="isDirected#()Z" />
+      <node id="3698136799702265042" at="63,0,66,0" concept="5" trace="weight#()I" />
+      <node id="3698136799702214126" at="38,0,42,0" concept="0" trace="JNEdge#(Lcom/mbeddr/mpsutil/jung/behavior/JNGraph;Ljava/lang/String;Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;ZILjava/lang/String;)V" />
+      <node id="3698136799703169854" at="67,0,72,0" concept="5" trace="relativeWeight#()F" />
+      <node id="6388491840914415215" at="43,0,50,0" concept="5" trace="from#()Lcom/mbeddr/mpsutil/jung/behavior/JNNode;" />
+      <node id="6388491840914416554" at="51,0,58,0" concept="5" trace="to#()Lcom/mbeddr/mpsutil/jung/behavior/JNNode;" />
+      <node id="6388491840914060734" at="19,0,37,0" concept="0" trace="JNEdge#(Lcom/mbeddr/mpsutil/jung/behavior/JNGraph;Ljava/lang/String;Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;ZLjava/lang/String;)V" />
+      <scope id="1375904036381551643" at="20,21,21,92" />
+      <scope id="1375904036381559098" at="23,23,24,94" />
+      <scope id="5608459835155836314" at="29,20,30,41" />
+      <scope id="3596925030336962763" at="45,25,46,77" />
+      <scope id="3596925030336967192" at="53,25,54,73" />
+      <scope id="282027796180728122" at="59,31,60,25" />
+      <scope id="3698136799702265046" at="63,23,64,23" />
+      <scope id="3698136799702214128" at="38,119,40,25" />
+      <scope id="282027796180728118" at="59,0,62,0" />
+      <scope id="3698136799702265042" at="63,0,66,0" />
+      <scope id="3698136799703169857" at="67,33,70,31">
+        <var name="edgeWeights" id="3698136799703357911" />
+        <var name="range" id="3698136799703359214" />
+      </scope>
+      <scope id="3698136799702214126" at="38,0,42,0">
+        <var name="directed" id="3698136799702214170" />
+        <var name="from" id="3698136799702214162" />
+        <var name="graph" id="3698136799703339111" />
+        <var name="id" id="3698136799702214168" />
+        <var name="kind" id="2307897332453604592" />
+        <var name="n" id="3698136799702214166" />
+        <var name="to" id="3698136799702214164" />
+        <var name="weight" id="3698136799702217750" />
+      </scope>
+      <scope id="6388491840914415219" at="43,24,48,18">
+        <var name="vertex" id="1375904036381982668" />
+      </scope>
+      <scope id="6388491840914416557" at="51,22,56,18">
+        <var name="vertex" id="1375904036381992109" />
+      </scope>
+      <scope id="3698136799703169854" at="67,0,72,0" />
+      <scope id="6388491840914415215" at="43,0,50,0" />
+      <scope id="6388491840914416554" at="51,0,58,0" />
+      <scope id="6388491840914060736" at="19,107,35,36" />
+      <scope id="6388491840914060734" at="19,0,37,0">
+        <var name="directed" id="282027796180602303" />
+        <var name="from" id="6388491840914060752" />
+        <var name="graph" id="3698136799703328697" />
+        <var name="id" id="5860646706611437846" />
+        <var name="kind" id="2307897332453605046" />
+        <var name="n" id="6388491840914060738" />
+        <var name="to" id="6388491840914061159" />
+      </scope>
+      <unit id="6388491840914060732" at="10,0,76,0" name="com.mbeddr.mpsutil.jung.behavior.JNEdge" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/6388491840914068479">
+    <file name="JNGraph.java">
+      <node id="6388491840914126302" at="22,0,23,0" concept="2" trace="edges" />
+      <node id="1725432855657545132" at="23,0,24,0" concept="2" trace="vertices" />
+      <node id="6388491840914494630" at="24,0,25,0" concept="2" trace="title" />
+      <node id="8589495661143521869" at="25,0,26,0" concept="2" trace="vertexFillColor" />
+      <node id="1971316887027960280" at="26,0,27,0" concept="2" trace="vertexDrawColor" />
+      <node id="7318704719527160527" at="27,0,28,0" concept="2" trace="vertexSize" />
+      <node id="9182130395666534140" at="28,0,29,0" concept="2" trace="vertexShape" />
+      <node id="4112182447141730092" at="29,0,30,0" concept="2" trace="edgeColor" />
+      <node id="4112182447141773639" at="30,0,31,0" concept="2" trace="edgeWidth" />
+      <node id="4112182447141778296" at="31,0,32,0" concept="2" trace="edgeDash" />
+      <node id="2955125303778602664" at="32,0,33,0" concept="2" trace="arrowShape" />
+      <node id="5735884186425109656" at="33,0,34,0" concept="2" trace="continuousAxisOneFormatter" />
+      <node id="5735884186428592751" at="34,0,35,0" concept="2" trace="continuousAxisOneCalibrationFactor" />
+      <node id="2447502193841474985" at="35,0,36,0" concept="2" trace="continuousAxisOneOvermaxFactor" />
+      <node id="1049608476161899862" at="36,0,37,0" concept="2" trace="layout" />
+      <node id="2594305496588793174" at="37,0,38,0" concept="2" trace="primarySelection" />
+      <node id="3927765438679138311" at="38,0,39,0" concept="2" trace="initialSize" />
+      <node id="569483520860994009" at="41,0,42,0" concept="2" trace="vertexKinds" />
+      <node id="569483520861003715" at="42,0,43,0" concept="2" trace="edgeKinds" />
+      <node id="1566095185276679935" at="45,0,46,0" concept="2" trace="highlightMode" />
+      <node id="1566095185276684474" at="51,102,52,23" concept="1" />
+      <node id="1566095185276684480" at="52,23,53,25" concept="1" />
+      <node id="1566095185276694682" at="53,25,54,39" concept="1" />
+      <node id="3927765438679138315" at="54,39,55,35" concept="1" />
+      <node id="1725432855657569128" at="59,58,60,53" concept="7" />
+      <node id="1725432855657610554" at="61,5,62,42" concept="6" />
+      <node id="1725432855657593315" at="62,42,63,48" concept="1" />
+      <node id="1725432855657614777" at="63,48,64,14" concept="7" />
+      <node id="3474017077411928586" at="68,58,69,53" concept="7" />
+      <node id="3474017077411928594" at="70,5,71,67" concept="6" />
+      <node id="3474017077411928603" at="71,67,72,48" concept="1" />
+      <node id="569483520861013451" at="72,48,73,54" concept="1" />
+      <node id="3474017077411928609" at="73,54,74,14" concept="7" />
+      <node id="954921496646294105" at="78,58,79,53" concept="7" />
+      <node id="954921496646294113" at="80,5,81,68" concept="6" />
+      <node id="954921496646294123" at="81,68,82,48" concept="1" />
+      <node id="954921496646294129" at="83,28,84,53" concept="1" />
+      <node id="954921496646294134" at="85,5,86,14" concept="7" />
+      <node id="3698136799703133536" at="89,84,90,54" concept="7" />
+      <node id="3698136799703155827" at="93,92,94,62" concept="7" />
+      <node id="3698136799703130772" at="97,96,98,63" concept="6" />
+      <node id="569483520861039907" at="98,63,99,52" concept="1" />
+      <node id="3698136799703130786" at="100,57,101,52" concept="7" />
+      <node id="1271933721898627598" at="102,5,103,87" concept="6" />
+      <node id="5778518903256729066" at="103,87,104,65" concept="1" />
+      <node id="3698136799703130791" at="104,65,105,49" concept="1" />
+      <node id="1271933721898643397" at="105,49,106,16" concept="7" />
+      <node id="3698136799703138332" at="110,104,111,63" concept="6" />
+      <node id="569483520861058428" at="111,63,112,52" concept="1" />
+      <node id="1271933721897451683" at="113,57,114,52" concept="7" />
+      <node id="1271933721898584449" at="115,5,116,86" concept="6" />
+      <node id="5778518903256705750" at="116,86,117,65" concept="1" />
+      <node id="3698136799703138351" at="117,65,118,49" concept="1" />
+      <node id="1271933721898618427" at="118,49,119,16" concept="7" />
+      <node id="6388491840914162394" at="122,38,123,55" concept="7" />
+      <node id="6388491840914165615" at="126,35,127,52" concept="7" />
+      <node id="7924497931349911203" at="130,42,131,54" concept="7" />
+      <node id="6388491840914510961" at="134,25,135,22" concept="7" />
+      <node id="8530853138320064596" at="139,66,140,32" concept="6" />
+      <node id="8530853138320137987" at="140,32,141,16" concept="6" />
+      <node id="8530853138320064603" at="142,56,143,38" concept="6" />
+      <node id="8530853138320064611" at="144,21,145,17" concept="1" />
+      <node id="8530853138320150474" at="147,21,148,17" concept="1" />
+      <node id="8530853138320156851" at="150,5,151,54" concept="7" />
+      <node id="3698136799703219840" at="154,57,155,32" concept="6" />
+      <node id="3698136799703219844" at="155,32,156,16" concept="6" />
+      <node id="3698136799703219851" at="157,56,158,36" concept="6" />
+      <node id="3698136799703219859" at="159,21,160,17" concept="1" />
+      <node id="3698136799703219868" at="162,21,163,17" concept="1" />
+      <node id="3698136799703219876" at="165,5,166,54" concept="7" />
+      <node id="3698136799703193887" at="169,52,170,32" concept="6" />
+      <node id="3698136799703193891" at="170,32,171,16" concept="6" />
+      <node id="3698136799703193898" at="172,53,173,26" concept="6" />
+      <node id="3698136799703193906" at="174,21,175,17" concept="1" />
+      <node id="3698136799703193915" at="177,21,178,17" concept="1" />
+      <node id="3698136799703193923" at="180,5,181,54" concept="7" />
+      <node id="5218197440477811214" at="184,58,185,30" concept="6" />
+      <node id="5218197440477811218" at="185,30,186,17" concept="6" />
+      <node id="5218197440477811225" at="187,56,188,43" concept="6" />
+      <node id="5218197440477811233" at="190,23,191,19" concept="1" />
+      <node id="5218197440477811242" at="193,23,194,19" concept="1" />
+      <node id="5218197440477811250" at="197,5,198,48" concept="7" />
+      <node id="1049608476162019003" at="201,31,202,23" concept="7" />
+      <node id="3946668014811714520" at="205,42,206,35" concept="7" />
+      <node id="2594305496588185250" at="209,45,210,36" concept="7" />
+      <node id="1566095185276727985" at="213,45,214,30" concept="7" />
+      <node id="3983656794406517276" at="217,42,218,87" concept="7" />
+      <node id="2594305496588821823" at="221,48,222,30" concept="1" />
+      <node id="1328757035041484650" at="225,42,226,33" concept="7" />
+      <node id="2594305496588823578" at="229,47,230,38" concept="7" />
+      <node id="569483520861135001" at="233,41,234,28" concept="7" />
+      <node id="569483520861136225" at="237,39,238,26" concept="7" />
+      <node id="3927765438679323917" at="241,31,242,28" concept="7" />
+      <node id="2601238556982660906" at="245,49,246,17" concept="1" />
+      <node id="2601238556982663109" at="246,17,247,56" concept="1" />
+      <node id="5282423616191857049" at="47,0,49,0" concept="0" trace="JNGraph#()V" />
+      <node id="1725432855657548806" at="58,52,61,5" concept="4" />
+      <node id="3474017077411928584" at="67,88,70,5" concept="4" />
+      <node id="954921496646294103" at="77,91,80,5" concept="4" />
+      <node id="954921496646414221" at="82,48,85,5" concept="3" />
+      <node id="6388491840914119033" at="89,0,92,0" concept="5" trace="createEdge#(Ljava/lang/String;Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Lcom/mbeddr/mpsutil/jung/behavior/JNEdge;" />
+      <node id="282027796180593747" at="93,0,96,0" concept="5" trace="createDirectedEdge#(Ljava/lang/String;Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Lcom/mbeddr/mpsutil/jung/behavior/JNEdge;" />
+      <node id="3698136799703130784" at="99,52,102,5" concept="4" />
+      <node id="3698136799703138344" at="112,52,115,5" concept="4" />
+      <node id="6388491840914147008" at="122,0,125,0" concept="5" trace="vertices#()Ljava/lang/Iterable;" />
+      <node id="6388491840914165610" at="126,0,129,0" concept="5" trace="edges#()Ljava/lang/Iterable;" />
+      <node id="7924497931349884365" at="130,0,133,0" concept="5" trace="getVertexByID#(Ljava/lang/String;)Lcom/mbeddr/mpsutil/jung/behavior/JNNode;" />
+      <node id="6388491840914503500" at="134,0,137,0" concept="5" trace="title#()Ljava/lang/String;" />
+      <node id="8530853138320064609" at="143,38,146,7" concept="4" />
+      <node id="8530853138320150472" at="146,7,149,7" concept="4" />
+      <node id="3698136799703219857" at="158,36,161,7" concept="4" />
+      <node id="3698136799703219866" at="161,7,164,7" concept="4" />
+      <node id="3698136799703193904" at="173,26,176,7" concept="4" />
+      <node id="3698136799703193913" at="176,7,179,7" concept="4" />
+      <node id="5218197440477811231" at="189,20,192,9" concept="4" />
+      <node id="5218197440477811240" at="192,9,195,9" concept="4" />
+      <node id="1049608476162006070" at="201,0,204,0" concept="5" trace="getLayout#()Lcom/mbeddr/mpsutil/jung/behavior/JNLayout;" />
+      <node id="3946668014811685119" at="205,0,208,0" concept="5" trace="getPrimarSelectionColor#()Ljava/awt/Color;" />
+      <node id="2594305496588111532" at="209,0,212,0" concept="5" trace="getSecondarySelectionColor#()Ljava/awt/Color;" />
+      <node id="1566095185276709003" at="213,0,216,0" concept="5" trace="getHighlightMode#()Lcom/mbeddr/mpsutil/jung/behavior/JNHighlightMode;" />
+      <node id="3983656794406490978" at="217,0,220,0" concept="5" trace="refresh#(Lorg/jetbrains/mps/openapi/model/SNode;)Lcom/mbeddr/mpsutil/jung/behavior/JNGraph;" />
+      <node id="2594305496588804028" at="221,0,224,0" concept="5" trace="setPrimarySelectedNode#(Ljava/lang/Object;)V" />
+      <node id="1328757035041484646" at="225,0,228,0" concept="5" trace="getPrimarySelectedNode#()Ljava/lang/Object;" />
+      <node id="2594305496588823574" at="229,0,232,0" concept="5" trace="isPrimarySelection#(Ljava/lang/Object;)Z" />
+      <node id="569483520861069637" at="233,0,236,0" concept="5" trace="vertexKinds#()Ljava/lang/Iterable;" />
+      <node id="569483520861136220" at="237,0,240,0" concept="5" trace="edgeKinds#()Ljava/lang/Iterable;" />
+      <node id="3927765438679307857" at="241,0,244,0" concept="5" trace="getInitialSize#()I" />
+      <node id="2601238556982603914" at="245,0,249,0" concept="5" trace="addKindToNode#(Lcom/mbeddr/mpsutil/jung/behavior/JNNode;Ljava/lang/String;)V" />
+      <node id="1566095185276684470" at="51,0,57,0" concept="0" trace="JNGraph#(Ljava/lang/String;Lcom/mbeddr/mpsutil/jung/behavior/JNGraphLayout;Lcom/mbeddr/mpsutil/jung/behavior/JNHighlightMode;I)V" />
+      <node id="6388491840914105147" at="58,0,66,0" concept="5" trace="createVertex#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Lcom/mbeddr/mpsutil/jung/behavior/JNNode;" />
+      <node id="5756119337435260622" at="188,43,196,7" concept="4" />
+      <node id="3474017077411928580" at="67,0,76,0" concept="5" trace="createVertex#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;ILjava/lang/String;)Lcom/mbeddr/mpsutil/jung/behavior/JNNode;" />
+      <node id="8530853138320064600" at="141,16,150,5" concept="3" />
+      <node id="3698136799703219848" at="156,16,165,5" concept="3" />
+      <node id="3698136799703193895" at="171,16,180,5" concept="3" />
+      <node id="954921496646294099" at="77,0,88,0" concept="5" trace="createVertex#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;I[Ljava/lang/String;)Lcom/mbeddr/mpsutil/jung/behavior/JNNode;" />
+      <node id="3698136799703109164" at="97,0,108,0" concept="5" trace="createEdge#(Ljava/lang/String;Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;I)Lcom/mbeddr/mpsutil/jung/behavior/JNEdge;" />
+      <node id="3698136799703138328" at="110,0,121,0" concept="5" trace="createDirectedEdge#(Ljava/lang/String;Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;I)Lcom/mbeddr/mpsutil/jung/behavior/JNEdge;" />
+      <node id="5218197440477811222" at="186,17,197,5" concept="3" />
+      <node id="8530853138320064594" at="139,0,153,0" concept="5" trace="characteristicVertexSizes#()Ljetbrains/mps/baseLanguage/tuples/runtime/Tuples/_2;" />
+      <node id="3698136799703219838" at="154,0,168,0" concept="5" trace="numberOfOutEdges#()Ljetbrains/mps/baseLanguage/tuples/runtime/Tuples/_2;" />
+      <node id="3698136799703193885" at="169,0,183,0" concept="5" trace="edgeWeights#()Ljetbrains/mps/baseLanguage/tuples/runtime/Tuples/_2;" />
+      <node id="5218197440477811212" at="184,0,200,0" concept="5" trace="continuousAxisOneValues#()Ljetbrains/mps/baseLanguage/tuples/runtime/Tuples/_2;" />
+      <scope id="5282423616191857053" at="47,23,47,23" />
+      <scope id="1725432855657548809" at="59,58,60,53" />
+      <scope id="3474017077411928585" at="68,58,69,53" />
+      <scope id="954921496646294104" at="78,58,79,53" />
+      <scope id="954921496646414231" at="83,28,84,53" />
+      <scope id="6388491840914119036" at="89,84,90,54" />
+      <scope id="282027796180593750" at="93,92,94,62" />
+      <scope id="3698136799703130785" at="100,57,101,52" />
+      <scope id="3698136799703138345" at="113,57,114,52" />
+      <scope id="6388491840914147012" at="122,38,123,55" />
+      <scope id="6388491840914165614" at="126,35,127,52" />
+      <scope id="7924497931349884369" at="130,42,131,54" />
+      <scope id="6388491840914503504" at="134,25,135,22" />
+      <scope id="8530853138320064610" at="144,21,145,17" />
+      <scope id="8530853138320150473" at="147,21,148,17" />
+      <scope id="3698136799703219858" at="159,21,160,17" />
+      <scope id="3698136799703219867" at="162,21,163,17" />
+      <scope id="3698136799703193905" at="174,21,175,17" />
+      <scope id="3698136799703193914" at="177,21,178,17" />
+      <scope id="5218197440477811232" at="190,23,191,19" />
+      <scope id="5218197440477811241" at="193,23,194,19" />
+      <scope id="1049608476162006074" at="201,31,202,23" />
+      <scope id="3946668014811685123" at="205,42,206,35" />
+      <scope id="2594305496588111535" at="209,45,210,36" />
+      <scope id="1566095185276709006" at="213,45,214,30" />
+      <scope id="3983656794406490982" at="217,42,218,87" />
+      <scope id="2594305496588804032" at="221,48,222,30" />
+      <scope id="1328757035041484649" at="225,42,226,33" />
+      <scope id="2594305496588823577" at="229,47,230,38" />
+      <scope id="569483520861069641" at="233,41,234,28" />
+      <scope id="569483520861136224" at="237,39,238,26" />
+      <scope id="3927765438679307861" at="241,31,242,28" />
+      <scope id="5282423616191857049" at="47,0,49,0" />
+      <scope id="2601238556982603918" at="245,49,247,56" />
+      <scope id="954921496646414221" at="82,48,85,5">
+        <var name="k" id="954921496646414226" />
+      </scope>
+      <scope id="6388491840914119033" at="89,0,92,0">
+        <var name="kind" id="5860646706611343831" />
+        <var name="n" id="6388491840914119044" />
+        <var name="sourceID" id="6388491840914124077" />
+        <var name="targetID" id="6388491840914125193" />
+      </scope>
+      <scope id="282027796180593747" at="93,0,96,0">
+        <var name="kind" id="282027796180593787" />
+        <var name="n" id="282027796180593785" />
+        <var name="sourceID" id="282027796180593781" />
+        <var name="targetID" id="282027796180593783" />
+      </scope>
+      <scope id="6388491840914147008" at="122,0,125,0" />
+      <scope id="6388491840914165610" at="126,0,129,0" />
+      <scope id="7924497931349884365" at="130,0,133,0">
+        <var name="id" id="7924497931349909618" />
+      </scope>
+      <scope id="6388491840914503500" at="134,0,137,0" />
+      <scope id="1049608476162006070" at="201,0,204,0" />
+      <scope id="3946668014811685119" at="205,0,208,0" />
+      <scope id="2594305496588111532" at="209,0,212,0" />
+      <scope id="1566095185276709003" at="213,0,216,0" />
+      <scope id="3983656794406490978" at="217,0,220,0">
+        <var name="provider" id="3983656794406512523" />
+      </scope>
+      <scope id="2594305496588804028" at="221,0,224,0">
+        <var name="n" id="2594305496588817473" />
+      </scope>
+      <scope id="1328757035041484646" at="225,0,228,0" />
+      <scope id="2594305496588823574" at="229,0,232,0">
+        <var name="n" id="2594305496588902344" />
+      </scope>
+      <scope id="569483520861069637" at="233,0,236,0" />
+      <scope id="569483520861136220" at="237,0,240,0" />
+      <scope id="3927765438679307857" at="241,0,244,0" />
+      <scope id="1566095185276684473" at="51,102,55,35" />
+      <scope id="2601238556982603914" at="245,0,249,0">
+        <var name="n" id="2601238556982639783" />
+        <var name="s" id="2601238556982652315" />
+      </scope>
+      <scope id="1566095185276684470" at="51,0,57,0">
+        <var name="highlightMode" id="1566095185276693842" />
+        <var name="initialSize" id="3927765438679128028" />
+        <var name="layout" id="1566095185276684488" />
+        <var name="title" id="1566095185276684486" />
+      </scope>
+      <scope id="6388491840914105151" at="58,52,64,14">
+        <var name="jn" id="1725432855657610555" />
+      </scope>
+      <scope id="5756119337435260624" at="189,20,195,9" />
+      <scope id="3474017077411928583" at="67,88,74,14">
+        <var name="jn" id="3474017077411928595" />
+      </scope>
+      <scope id="8530853138320064602" at="142,56,149,7">
+        <var name="cs" id="8530853138320064604" />
+      </scope>
+      <scope id="3698136799703219850" at="157,56,164,7">
+        <var name="cs" id="3698136799703219852" />
+      </scope>
+      <scope id="3698136799703193897" at="172,53,179,7">
+        <var name="cs" id="3698136799703193899" />
+      </scope>
+      <scope id="6388491840914105147" at="58,0,66,0">
+        <var name="n" id="6388491840914105176" />
+        <var name="name" id="1273225940367421032" />
+      </scope>
+      <scope id="3474017077411928580" at="67,0,76,0">
+        <var name="characteriticSize" id="3474017077411928615" />
+        <var name="kind" id="3474017077411937547" />
+        <var name="n" id="3474017077411928611" />
+        <var name="name" id="3474017077411928613" />
+      </scope>
+      <scope id="954921496646294102" at="77,91,86,14">
+        <var name="jn" id="954921496646294114" />
+      </scope>
+      <scope id="3698136799703109167" at="97,96,106,16">
+        <var name="edge" id="1271933721898627599" />
+        <var name="edgeID" id="3698136799703130773" />
+      </scope>
+      <scope id="3698136799703138331" at="110,104,119,16">
+        <var name="edge" id="1271933721898584450" />
+        <var name="edgeID" id="3698136799703138333" />
+      </scope>
+      <scope id="8530853138320064600" at="141,16,150,5">
+        <var name="v" id="8530853138320064601" />
+      </scope>
+      <scope id="3698136799703219848" at="156,16,165,5">
+        <var name="v" id="3698136799703219849" />
+      </scope>
+      <scope id="3698136799703193895" at="171,16,180,5">
+        <var name="e" id="3698136799703193896" />
+      </scope>
+      <scope id="5218197440477811224" at="187,56,196,7">
+        <var name="cs" id="5218197440477811226" />
+      </scope>
+      <scope id="954921496646294099" at="77,0,88,0">
+        <var name="characteriticSize" id="954921496646294140" />
+        <var name="kinds" id="954921496646294142" />
+        <var name="n" id="954921496646294136" />
+        <var name="name" id="954921496646294138" />
+      </scope>
+      <scope id="3698136799703109164" at="97,0,108,0">
+        <var name="kind" id="3698136799703109205" />
+        <var name="n" id="3698136799703109203" />
+        <var name="sourceID" id="3698136799703109199" />
+        <var name="targetID" id="3698136799703109201" />
+        <var name="weight" id="3698136799703117650" />
+      </scope>
+      <scope id="3698136799703138328" at="110,0,121,0">
+        <var name="kind" id="3698136799703138369" />
+        <var name="n" id="3698136799703138367" />
+        <var name="sourceID" id="3698136799703138363" />
+        <var name="targetID" id="3698136799703138365" />
+        <var name="weight" id="3698136799703146996" />
+      </scope>
+      <scope id="5218197440477811222" at="186,17,197,5">
+        <var name="v" id="5218197440477811223" />
+      </scope>
+      <scope id="8530853138320064595" at="139,66,151,54">
+        <var name="max" id="8530853138320137988" />
+        <var name="min" id="8530853138320064597" />
+      </scope>
+      <scope id="3698136799703219839" at="154,57,166,54">
+        <var name="max" id="3698136799703219845" />
+        <var name="min" id="3698136799703219841" />
+      </scope>
+      <scope id="3698136799703193886" at="169,52,181,54">
+        <var name="max" id="3698136799703193892" />
+        <var name="min" id="3698136799703193888" />
+      </scope>
+      <scope id="8530853138320064594" at="139,0,153,0" />
+      <scope id="3698136799703219838" at="154,0,168,0" />
+      <scope id="3698136799703193885" at="169,0,183,0" />
+      <scope id="5218197440477811213" at="184,58,198,48">
+        <var name="max" id="5218197440477811219" />
+        <var name="min" id="5218197440477811215" />
+      </scope>
+      <scope id="5218197440477811212" at="184,0,200,0" />
+      <unit id="6388491840914068479" at="20,0,251,0" name="com.mbeddr.mpsutil.jung.behavior.JNGraph" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/6388491840914068869">
+    <file name="IJGraphProvider__BehaviorDescriptor.java">
+      <node id="6388491840914068869" at="21,0,22,0" concept="9" trace="CONCEPT" />
+      <node id="6388491840914068869" at="23,0,24,0" concept="9" trace="inFactAppliesTo_id1FqEKJFrYAY" />
+      <node id="6388491840914068869" at="24,0,25,0" concept="9" trace="getGraph_id5yCuRHcaxm8" />
+      <node id="6388491840914068869" at="26,0,27,0" concept="9" trace="BH_METHODS" />
+      <node id="1935047057592020689" at="31,87,32,24" concept="7" />
+      <node id="6388491840914068869" at="39,114,40,21" concept="1" />
+      <node id="6388491840914068869" at="44,114,45,49" concept="6" />
+      <node id="6388491840914068869" at="46,26,47,56" concept="13" />
+      <node id="6388491840914068869" at="50,13,51,65" concept="7" />
+      <node id="6388491840914068869" at="52,14,53,58" concept="13" />
+      <node id="6388491840914068869" at="58,128,59,49" concept="6" />
+      <node id="6388491840914068869" at="60,26,61,56" concept="13" />
+      <node id="6388491840914068869" at="64,14,65,58" concept="13" />
+      <node id="6388491840914068869" at="71,48,72,22" concept="7" />
+      <node id="6388491840914068869" at="77,40,78,19" concept="7" />
+      <node id="6388491840914068869" at="28,0,30,0" concept="10" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6388491840914068869" at="35,0,37,0" concept="0" trace="IJGraphProvider__BehaviorDescriptor#()V" />
+      <node id="6388491840914068869" at="31,0,34,0" concept="10" trace="inFactAppliesTo_id1FqEKJFrYAY#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6388491840914068869" at="45,49,48,5" concept="4" />
+      <node id="6388491840914068869" at="59,49,62,5" concept="4" />
+      <node id="6388491840914068869" at="38,0,42,0" concept="5" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="6388491840914068869" at="62,5,66,5" concept="11" />
+      <node id="6388491840914068869" at="69,0,74,0" concept="5" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="6388491840914068869" at="75,0,80,0" concept="5" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6388491840914068869" at="48,5,54,5" concept="11" />
+      <node id="6388491840914068869" at="57,0,68,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="6388491840914068869" at="43,0,56,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="6388491840914068869" at="28,63,28,63" />
+      <scope id="6388491840914068869" at="35,53,35,53" />
+      <scope id="1935047057592019393" at="31,87,32,24" />
+      <scope id="6388491840914068869" at="39,114,40,21" />
+      <scope id="6388491840914068869" at="46,26,47,56" />
+      <scope id="6388491840914068869" at="50,13,51,65" />
+      <scope id="6388491840914068869" at="52,14,53,58" />
+      <scope id="6388491840914068869" at="60,26,61,56" />
+      <scope id="6388491840914068869" at="64,14,65,58" />
+      <scope id="6388491840914068869" at="71,48,72,22" />
+      <scope id="6388491840914068869" at="77,40,78,19" />
+      <scope id="6388491840914068869" at="28,0,30,0">
+        <var name="__thisNode__" id="6388491840914068869" />
+      </scope>
+      <scope id="6388491840914068869" at="35,0,37,0" />
+      <scope id="6388491840914068869" at="31,0,34,0">
+        <var name="__thisNode__" id="6388491840914068869" />
+      </scope>
+      <scope id="6388491840914068869" at="38,0,42,0">
+        <var name="constructor" id="6388491840914068869" />
+        <var name="node" id="6388491840914068869" />
+        <var name="parameters" id="6388491840914068869" />
+      </scope>
+      <scope id="6388491840914068869" at="69,0,74,0" />
+      <scope id="6388491840914068869" at="75,0,80,0" />
+      <scope id="6388491840914068869" at="58,128,66,5">
+        <var name="methodIndex" id="6388491840914068869" />
+      </scope>
+      <scope id="6388491840914068869" at="44,114,54,5">
+        <var name="methodIndex" id="6388491840914068869" />
+      </scope>
+      <scope id="6388491840914068869" at="57,0,68,0">
+        <var name="concept" id="6388491840914068869" />
+        <var name="method" id="6388491840914068869" />
+        <var name="parameters" id="6388491840914068869" />
+      </scope>
+      <scope id="6388491840914068869" at="43,0,56,0">
+        <var name="method" id="6388491840914068869" />
+        <var name="node" id="6388491840914068869" />
+        <var name="parameters" id="6388491840914068869" />
+      </scope>
+      <unit id="6388491840914068869" at="20,0,81,0" name="com.mbeddr.mpsutil.jung.behavior.IJGraphProvider__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/8965827584282033236">
+    <file name="JNFRLayout.java">
+      <node id="6165203698248856725" at="9,28,10,23" concept="7" />
+      <node id="6165203698248856721" at="8,0,12,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <scope id="6165203698248856724" at="9,28,10,23" />
+      <scope id="6165203698248856721" at="8,0,12,0" />
+      <unit id="8965827584282033236" at="6,0,15,0" name="com.mbeddr.mpsutil.jung.behavior.JNFRLayout" />
+    </file>
+  </root>
+  <root nodeRef="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)/8965827584282033248">
+    <file name="JNKKLayout.java">
+      <node id="6165203698248857067" at="9,28,10,23" concept="7" />
+      <node id="6165203698248857063" at="8,0,12,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <scope id="6165203698248857066" at="9,28,10,23" />
+      <scope id="6165203698248857063" at="8,0,12,0" />
+      <unit id="8965827584282033248" at="6,0,15,0" name="com.mbeddr.mpsutil.jung.behavior.JNKKLayout" />
+    </file>
+  </root>
+</debug-info>
+

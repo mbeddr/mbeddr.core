@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root nodeRef="r:4d864362-7998-4663-8334-5a30c25ec325(com.mbeddr.mpsutil.postprocessGeneratedFiles.runtime.rt)/6221197661422107753">
+    <file name="GeneratedFilesPostprocessorImpl.java">
+      <node id="6221197661422108619" at="20,113,21,33" concept="2" />
+      <node id="6221197661422108611" at="24,0,25,0" concept="3" trace="processors" />
+      <node id="6221197661421219927" at="27,69,28,35" concept="7" />
+      <node id="6221197661421526368" at="28,35,29,44" concept="7" />
+      <node id="1918969577594997493" at="30,31,31,17" concept="1" />
+      <node id="6221197661421978787" at="32,7,33,59" concept="7" />
+      <node id="6221197661421239776" at="34,77,35,47" concept="7" />
+      <node id="6221197661421250303" at="35,47,36,65" concept="7" />
+      <node id="6221197661421384506" at="38,137,39,45" concept="2" />
+      <node id="1383872399803488875" at="46,46,47,69" concept="7" />
+      <node id="1918969577594987917" at="48,33,49,18" concept="8" />
+      <node id="6221197661422128091" at="50,5,51,47" concept="8" />
+      <node id="6221197661422107811" at="20,0,23,0" concept="0" trace="GeneratedFilesPostprocessorImpl#(null)V" />
+      <node id="1918969577594990240" at="29,44,32,7" concept="5" />
+      <node id="6221197661421382278" at="37,87,40,11" concept="4" />
+      <node id="1918969577594982009" at="47,69,50,5" concept="5" />
+      <node id="6221197661421209777" at="36,65,41,11" concept="2" />
+      <node id="6221197661422128069" at="46,0,53,0" concept="6" trace="getOutputPath#(Lorg/jetbrains/mps/openapi/model/SModel;)Ljava/nio/file/Path;" />
+      <node id="6221197661421233140" at="33,59,42,7" concept="4" />
+      <node id="6221197661422116052" at="26,96,43,5" concept="4" />
+      <node id="6221197661422111591" at="26,0,45,0" concept="6" trace="process#(Lorg/jetbrains/mps/openapi/util/ProgressMonitor;Ljava/lang/Iterable;)V" />
+      <scope id="6221197661422107815" at="20,113,21,33" />
+      <scope id="1918969577594990242" at="30,31,31,17" />
+      <scope id="6221197661421382282" at="38,137,39,45" />
+      <scope id="1918969577594982011" at="48,33,49,18" />
+      <scope id="6221197661422107811" at="20,0,23,0">
+        <var name="processors" id="6221197661422107945" />
+      </scope>
+      <scope id="6221197661421209781" at="37,87,40,11" />
+      <scope id="6221197661421382278" at="37,87,40,11">
+        <var name="postprocessor" id="6221197661421382280" />
+      </scope>
+      <scope id="6221197661422128071" at="46,46,51,47">
+        <var name="outputLocation" id="1383872399803488876" />
+      </scope>
+      <scope id="6221197661421233142" at="34,77,41,11">
+        <var name="node" id="6221197661421239777" />
+        <var name="path" id="6221197661421250304" />
+      </scope>
+      <scope id="6221197661422128069" at="46,0,53,0">
+        <var name="model" id="6221197661422128097" />
+      </scope>
+      <scope id="6221197661421233140" at="33,59,42,7">
+        <var name="unit" id="6221197661421233141" />
+      </scope>
+      <scope id="6221197661422116054" at="27,69,42,7">
+        <var name="modl" id="6221197661421219928" />
+        <var name="outputPath" id="6221197661421526369" />
+        <var name="textGenResult" id="6221197661421978788" />
+      </scope>
+      <scope id="6221197661422111594" at="26,96,43,5" />
+      <scope id="6221197661422116052" at="26,96,43,5">
+        <var name="res" id="6221197661422116053" />
+      </scope>
+      <scope id="6221197661422111591" at="26,0,45,0">
+        <var name="input" id="6221197661422113985" />
+        <var name="progressMonitor" id="6221197661422286370" />
+      </scope>
+      <unit id="6221197661422107753" at="19,0,55,0" name="com.mbeddr.mpsutil.postprocessGeneratedFiles.runtime.rt.GeneratedFilesPostprocessorImpl" />
+    </file>
+  </root>
+</debug-info>
+

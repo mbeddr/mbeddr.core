@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-76clv6ghita023s1hslqqsm5ve9n4iw">
+  <files names="DeleteCodeReviewsInModule_Intention.java:IntentionsDescriptor.java:MarkAsRaw_Intention.java:MarkAsReady_Intention.java:MarkAsReviewed_Intention.java:reevaluateReviewOnReview_Intention.java:reevaluateReview_Intention.java:updateValidityInChunk_Intention.java" />
+</product>
+

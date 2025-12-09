@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="RefactoringAspectDescriptor.java">
+      <unit at="11,0,26,0" name="com.mbeddr.core.statements.refactorings.RefactoringAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:a9905b71-2008-43fe-aad2-87e6170f8cdf(com.mbeddr.core.statements.refactorings)/1582169519237927131">
+    <file name="RefactoringAspectDescriptor.java">
+      <node id="1582169519237927131" at="16,41,17,53" concept="2" />
+    </file>
+    <file name="introduceLocalVariable.java">
+      <node id="1582169519237927155" at="23,35,24,42" concept="2" />
+      <node id="1582169519237927131" at="26,52,27,47" concept="8" />
+      <node id="1582169519237927131" at="29,39,30,38" concept="8" />
+      <node id="881042019526388753" at="32,69,33,54" concept="7" />
+      <node id="881042019526388759" at="33,54,34,92" concept="7" />
+      <node id="881042019526388767" at="34,92,35,0" concept="9" />
+      <node id="881042019526388768" at="35,0,36,83" concept="7" />
+      <node id="881042019526388773" at="36,83,37,52" concept="2" />
+      <node id="881042019526388751" at="37,52,38,0" concept="9" />
+      <node id="3769661359949397501" at="38,0,39,208" concept="7" />
+      <node id="3769661359949397510" at="39,208,40,108" concept="2" />
+      <node id="412995133202434551" at="40,108,41,164" concept="7" />
+      <node id="3769661359949397522" at="41,164,42,124" concept="2" />
+      <node id="7462899605789784626" at="42,124,43,105" concept="2" />
+      <node id="7462899605789804114" at="43,105,44,108" concept="2" />
+      <node id="3769661359949397555" at="44,108,45,84" concept="2" />
+      <node id="3769661359949397579" at="45,84,46,54" concept="2" />
+      <node id="5054343604400678988" at="46,54,47,0" concept="9" />
+      <node id="881042019526388782" at="47,0,48,195" concept="7" />
+      <node id="881042019526388788" at="48,195,49,56" concept="2" />
+      <node id="881042019526388794" at="49,56,50,44" concept="2" />
+      <node id="881042019526388781" at="50,44,51,0" concept="9" />
+      <node id="5054343604400679675" at="51,0,52,0" concept="9" />
+      <node id="1582169519237927131" at="56,0,57,0" concept="10" trace="Statement$zV" />
+      <node id="1582169519237927131" at="57,0,58,0" concept="10" trace="IType$a9" />
+      <node id="1582169519237927131" at="58,0,59,0" concept="10" trace="Type$dP" />
+      <node id="1582169519237927131" at="62,0,63,0" concept="10" trace="name$MnvL" />
+      <node id="1582169519237927131" at="63,0,64,0" concept="10" trace="const$VWr7" />
+      <node id="1582169519237927131" at="64,0,65,0" concept="10" trace="volatile$hJNe" />
+      <node id="1582169519237927131" at="68,0,69,0" concept="10" trace="type$sXU3" />
+      <node id="1582169519237927131" at="69,0,70,0" concept="10" trace="init$$i$n" />
+      <node id="1582169519237927131" at="70,0,71,0" concept="10" trace="var$YUyC" />
+      <node id="1582169519237927131" at="23,0,26,0" concept="1" trace="introduceLocalVariable#()V" />
+      <node id="1582169519237927131" at="26,0,29,0" concept="6" trace="getRefactoringTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget;" />
+      <node id="1582169519237927131" at="29,0,32,0" concept="6" trace="getUserFriendlyName#()Ljava/lang/String;" />
+      <node id="1582169519237927131" at="32,0,54,0" concept="6" trace="refactor#(Ljetbrains/mps/refactoring/framework/RefactoringContext;)V" />
+      <scope id="1582169519237927131" at="23,35,24,42" />
+      <scope id="1582169519237927131" at="26,52,27,47" />
+      <scope id="1582169519237927131" at="29,39,30,38" />
+      <scope id="1582169519237927131" at="23,0,26,0" />
+      <scope id="1582169519237927131" at="26,0,29,0" />
+      <scope id="1582169519237927131" at="29,0,32,0" />
+      <scope id="1582169519237927134" at="32,69,52,0">
+        <var name="expr" id="881042019526388754" />
+        <var name="lvd" id="3769661359949397502" />
+        <var name="ref" id="881042019526388783" />
+        <var name="replacer" id="881042019526388769" />
+        <var name="stmt" id="881042019526388760" />
+        <var name="type" id="412995133202434552" />
+      </scope>
+      <scope id="1582169519237927131" at="32,0,54,0">
+        <var name="refactoringContext" id="1582169519237927131" />
+      </scope>
+      <unit id="1582169519237927131" at="55,0,60,0" name="com.mbeddr.core.statements.refactorings.introduceLocalVariable$CONCEPTS" />
+      <unit id="1582169519237927131" at="61,0,66,0" name="com.mbeddr.core.statements.refactorings.introduceLocalVariable$PROPS" />
+      <unit id="1582169519237927131" at="67,0,72,0" name="com.mbeddr.core.statements.refactorings.introduceLocalVariable$LINKS" />
+      <unit id="1582169519237927131" at="22,0,73,0" name="com.mbeddr.core.statements.refactorings.introduceLocalVariable" />
+    </file>
+    <file name="introduceLocalVariable_Target.java">
+      <node id="1582169519237927135" at="14,52,15,46" concept="8" />
+      <node id="1582169519237927135" at="17,41,18,17" concept="8" />
+      <node id="1582169519237927135" at="20,64,21,82" concept="8" />
+      <node id="1582169519237927135" at="24,51,25,19" concept="8" />
+      <node id="1582169519237927138" at="26,5,27,108" concept="8" />
+      <node id="1582169519237927135" at="31,0,32,0" concept="10" trace="Expression$bT" />
+      <node id="1582169519237927135" at="32,0,33,0" concept="10" trace="Statement$zV" />
+      <node id="1582169519237927135" at="12,0,14,0" concept="1" trace="introduceLocalVariable_Target#()V" />
+      <node id="1582169519237927135" at="14,0,17,0" concept="6" trace="getTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget/TargetType;" />
+      <node id="1582169519237927135" at="17,0,20,0" concept="6" trace="allowMultipleTargets#()Z" />
+      <node id="1582169519237927135" at="20,0,23,0" concept="6" trace="isApplicableToEntityType#(Ljava/lang/Object;)Z" />
+      <node id="1582169519237927135" at="23,52,26,5" concept="5" />
+      <node id="1582169519237927135" at="23,0,29,0" concept="6" trace="isApplicable#(Ljava/lang/Object;)Z" />
+      <scope id="1582169519237927135" at="12,42,12,42" />
+      <scope id="1582169519237927135" at="14,52,15,46" />
+      <scope id="1582169519237927135" at="17,41,18,17" />
+      <scope id="1582169519237927135" at="20,64,21,82" />
+      <scope id="1582169519237927135" at="24,51,25,19" />
+      <scope id="1582169519237927135" at="12,0,14,0" />
+      <scope id="1582169519237927135" at="14,0,17,0" />
+      <scope id="1582169519237927135" at="17,0,20,0" />
+      <scope id="1582169519237927135" at="20,0,23,0">
+        <var name="entity" id="1582169519237927135" />
+      </scope>
+      <scope id="1582169519237927135" at="23,52,27,108" />
+      <scope id="1582169519237927135" at="23,0,29,0">
+        <var name="entity" id="1582169519237927135" />
+      </scope>
+      <unit id="1582169519237927135" at="30,0,34,0" name="com.mbeddr.core.statements.refactorings.introduceLocalVariable_Target$CONCEPTS" />
+      <unit id="1582169519237927135" at="11,0,35,0" name="com.mbeddr.core.statements.refactorings.introduceLocalVariable_Target" />
+    </file>
+  </root>
+  <root nodeRef="r:a9905b71-2008-43fe-aad2-87e6170f8cdf(com.mbeddr.core.statements.refactorings)/6568414116582507559">
+    <file name="RefactoringAspectDescriptor.java">
+      <node id="6568414116582507559" at="17,53,18,50" concept="2" />
+    </file>
+    <file name="inlineLocalVariable.java">
+      <node id="6568414116582507560" at="22,32,23,42" concept="2" />
+      <node id="6568414116582507559" at="25,52,26,44" concept="8" />
+      <node id="6568414116582507559" at="28,39,29,35" concept="8" />
+      <node id="6568414116582507872" at="31,69,32,59" concept="7" />
+      <node id="6568414116582507746" at="32,59,33,99" concept="7" />
+      <node id="6568414116582507880" at="33,99,34,221" concept="7" />
+      <node id="6568414116582549868" at="34,221,35,0" concept="9" />
+      <node id="6568414116582550246" at="36,51,37,99" concept="7" />
+      <node id="6568414116582550300" at="37,99,38,55" concept="7" />
+      <node id="6568414116582550000" at="39,81,40,208" concept="7" />
+      <node id="6568414116582550009" at="40,208,41,77" concept="2" />
+      <node id="6568414116582550120" at="41,77,42,56" concept="2" />
+      <node id="6568414116582550516" at="43,551,44,208" concept="7" />
+      <node id="6568414116582550522" at="44,208,45,77" concept="2" />
+      <node id="6568414116582550528" at="45,77,46,56" concept="2" />
+      <node id="6568414116582550160" at="47,14,48,60" concept="2" />
+      <node id="6568414116582508080" at="50,5,51,36" concept="2" />
+      <node id="6568414116582507559" at="55,0,56,0" concept="10" trace="StatementList$y1" />
+      <node id="6568414116582507559" at="56,0,57,0" concept="10" trace="LocalVarRef$VQ" />
+      <node id="6568414116582507559" at="57,0,58,0" concept="10" trace="UnaryExpression$lH" />
+      <node id="6568414116582507559" at="58,0,59,0" concept="10" trace="BinaryExpression$cR" />
+      <node id="6568414116582507559" at="62,0,63,0" concept="10" trace="var$YUyC" />
+      <node id="6568414116582507559" at="63,0,64,0" concept="10" trace="init$$i$n" />
+      <node id="6568414116582507559" at="64,0,65,0" concept="10" trace="expression$PfNq" />
+      <node id="6568414116582550157" at="47,12,49,7" concept="0" />
+      <node id="6568414116582507559" at="22,0,25,0" concept="1" trace="inlineLocalVariable#()V" />
+      <node id="6568414116582507559" at="25,0,28,0" concept="6" trace="getRefactoringTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget;" />
+      <node id="6568414116582507559" at="28,0,31,0" concept="6" trace="getUserFriendlyName#()Ljava/lang/String;" />
+      <node id="6568414116582549940" at="38,55,49,7" concept="5" />
+      <node id="6568414116582549935" at="35,0,50,5" concept="4" />
+      <node id="6568414116582507559" at="31,0,53,0" concept="6" trace="refactor#(Ljetbrains/mps/refactoring/framework/RefactoringContext;)V" />
+      <scope id="6568414116582507559" at="22,32,23,42" />
+      <scope id="6568414116582507559" at="25,52,26,44" />
+      <scope id="6568414116582507559" at="28,39,29,35" />
+      <scope id="6568414116582550158" at="47,14,48,60" />
+      <scope id="6568414116582507559" at="22,0,25,0" />
+      <scope id="6568414116582507559" at="25,0,28,0" />
+      <scope id="6568414116582507559" at="28,0,31,0" />
+      <scope id="6568414116582549942" at="39,81,42,56">
+        <var name="parens" id="6568414116582550001" />
+      </scope>
+      <scope id="6568414116582550155" at="43,551,46,56">
+        <var name="parens" id="6568414116582550517" />
+      </scope>
+      <scope id="6568414116582549938" at="36,51,49,7">
+        <var name="copyOfInit" id="6568414116582550247" />
+        <var name="targetCtx" id="6568414116582550301" />
+      </scope>
+      <scope id="6568414116582549935" at="35,0,50,5">
+        <var name="ref" id="6568414116582549936" />
+      </scope>
+      <scope id="6568414116582507574" at="31,69,51,36">
+        <var name="lvd" id="6568414116582507873" />
+        <var name="owningSL" id="6568414116582507747" />
+        <var name="refs" id="6568414116582507881" />
+      </scope>
+      <scope id="6568414116582507559" at="31,0,53,0">
+        <var name="refactoringContext" id="6568414116582507559" />
+      </scope>
+      <unit id="6568414116582507559" at="61,0,66,0" name="com.mbeddr.core.statements.refactorings.inlineLocalVariable$LINKS" />
+      <unit id="6568414116582507559" at="54,0,60,0" name="com.mbeddr.core.statements.refactorings.inlineLocalVariable$CONCEPTS" />
+      <unit id="6568414116582507559" at="21,0,67,0" name="com.mbeddr.core.statements.refactorings.inlineLocalVariable" />
+    </file>
+    <file name="inlineLocalVariable_Target.java">
+      <node id="6568414116582507562" at="16,52,17,46" concept="8" />
+      <node id="6568414116582507562" at="19,41,20,17" concept="8" />
+      <node id="6568414116582507562" at="22,64,23,96" concept="8" />
+      <node id="6568414116582507562" at="26,51,27,19" concept="8" />
+      <node id="6568414116582508025" at="28,5,29,80" concept="8" />
+      <node id="6568414116582507562" at="33,0,34,0" concept="10" trace="LocalVariableDeclaration$ft" />
+      <node id="6568414116582507562" at="37,0,38,0" concept="10" trace="init$$i$n" />
+      <node id="6568414116582507562" at="14,0,16,0" concept="1" trace="inlineLocalVariable_Target#()V" />
+      <node id="6568414116582507562" at="16,0,19,0" concept="6" trace="getTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget/TargetType;" />
+      <node id="6568414116582507562" at="19,0,22,0" concept="6" trace="allowMultipleTargets#()Z" />
+      <node id="6568414116582507562" at="22,0,25,0" concept="6" trace="isApplicableToEntityType#(Ljava/lang/Object;)Z" />
+      <node id="6568414116582507562" at="25,52,28,5" concept="5" />
+      <node id="6568414116582507562" at="25,0,31,0" concept="6" trace="isApplicable#(Ljava/lang/Object;)Z" />
+      <scope id="6568414116582507562" at="14,39,14,39" />
+      <scope id="6568414116582507562" at="16,52,17,46" />
+      <scope id="6568414116582507562" at="19,41,20,17" />
+      <scope id="6568414116582507562" at="22,64,23,96" />
+      <scope id="6568414116582507562" at="26,51,27,19" />
+      <scope id="6568414116582507562" at="14,0,16,0" />
+      <scope id="6568414116582507562" at="16,0,19,0" />
+      <scope id="6568414116582507562" at="19,0,22,0" />
+      <scope id="6568414116582507562" at="22,0,25,0">
+        <var name="entity" id="6568414116582507562" />
+      </scope>
+      <scope id="6568414116582507562" at="25,52,29,80" />
+      <scope id="6568414116582507562" at="25,0,31,0">
+        <var name="entity" id="6568414116582507562" />
+      </scope>
+      <unit id="6568414116582507562" at="32,0,35,0" name="com.mbeddr.core.statements.refactorings.inlineLocalVariable_Target$CONCEPTS" />
+      <unit id="6568414116582507562" at="36,0,39,0" name="com.mbeddr.core.statements.refactorings.inlineLocalVariable_Target$LINKS" />
+      <unit id="6568414116582507562" at="13,0,40,0" name="com.mbeddr.core.statements.refactorings.inlineLocalVariable_Target" />
+    </file>
+  </root>
+  <root nodeRef="r:a9905b71-2008-43fe-aad2-87e6170f8cdf(com.mbeddr.core.statements.refactorings)/881042019526388505">
+    <file name="ExpressionReplacerInStatements.java">
+      <node id="881042019526388511" at="17,0,18,0" concept="3" trace="matchedExpressions" />
+      <node id="881042019526388528" at="20,77,21,176" concept="7" />
+      <node id="881042019526388573" at="21,176,22,63" concept="7" />
+      <node id="881042019526388557" at="26,52,27,68" concept="2" />
+      <node id="881042019526388673" at="34,63,35,85" concept="2" />
+      <node id="881042019526388505" at="40,0,41,0" concept="10" trace="Expression$bT" />
+      <node id="881042019526388507" at="18,0,20,0" concept="1" trace="ExpressionReplacerInStatements#()V" />
+      <node id="881042019526388555" at="25,143,28,11" concept="5" />
+      <node id="881042019526388657" at="33,62,36,5" concept="4" />
+      <node id="881042019526388552" at="24,57,29,9" concept="4" />
+      <node id="881042019526388651" at="33,0,38,0" concept="6" trace="replaceMatchedExpressions#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="881042019526388545" at="23,53,30,7" concept="5" />
+      <node id="881042019526388541" at="22,63,31,5" concept="4" />
+      <node id="881042019526388519" at="20,0,33,0" concept="6" trace="collectMatchingExpressions#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="881042019526388510" at="18,43,18,43" />
+      <scope id="881042019526388556" at="26,52,27,68" />
+      <scope id="881042019526388660" at="34,63,35,85" />
+      <scope id="881042019526388507" at="18,0,20,0" />
+      <scope id="881042019526388554" at="25,143,28,11" />
+      <scope id="881042019526388654" at="33,62,36,5" />
+      <scope id="881042019526388657" at="33,62,36,5">
+        <var name="e" id="881042019526388658" />
+      </scope>
+      <scope id="881042019526388551" at="24,57,29,9" />
+      <scope id="881042019526388552" at="24,57,29,9">
+        <var name="e" id="881042019526388553" />
+      </scope>
+      <scope id="881042019526388651" at="33,0,38,0">
+        <var name="newExpression" id="881042019526388655" />
+      </scope>
+      <scope id="881042019526388544" at="23,53,30,7" />
+      <scope id="881042019526388541" at="22,63,31,5">
+        <var name="s" id="881042019526388542" />
+      </scope>
+      <scope id="881042019526388522" at="20,77,31,5">
+        <var name="index" id="881042019526388574" />
+        <var name="siblings" id="881042019526388529" />
+      </scope>
+      <scope id="881042019526388519" at="20,0,33,0">
+        <var name="selExpr" id="881042019526388523" />
+        <var name="selStatement" id="881042019526388525" />
+      </scope>
+      <unit id="881042019526388505" at="39,0,42,0" name="com.mbeddr.core.statements.refactorings.ExpressionReplacerInStatements$CONCEPTS" />
+      <unit id="881042019526388505" at="16,0,43,0" name="com.mbeddr.core.statements.refactorings.ExpressionReplacerInStatements" />
+    </file>
+  </root>
+</debug-info>
+

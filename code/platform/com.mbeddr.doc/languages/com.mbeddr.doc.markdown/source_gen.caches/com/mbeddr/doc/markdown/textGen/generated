@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="e59wvdq1yfi58quc0aqny9w7no62tto">
+  <files names="BlockQuote_TextGen.java:BoldWord_TextGen.java:Code_TextGen.java:Header_TextGen.java:HorizontalRule_TextGen.java:Image_TextGen.java:ItalicWord_TextGen.java:Line_TextGen.java:Link_TextGen.java:ListItem_TextGen.java:List_TextGen.java:MarkdownDocument_TextGen.java:TextGenAspectDescriptor.java:TextWord_TextGen.java:XmlWord_TextGen.java" />
+</product>
+

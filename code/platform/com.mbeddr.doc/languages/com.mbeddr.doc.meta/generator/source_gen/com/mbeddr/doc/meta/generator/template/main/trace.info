@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="8,0,14,0" name="com.mbeddr.doc.meta.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+</debug-info>
+

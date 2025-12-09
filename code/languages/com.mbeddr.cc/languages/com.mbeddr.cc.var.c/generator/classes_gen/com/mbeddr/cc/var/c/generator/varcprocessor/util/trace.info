@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:714c3ea6-dd70-4779-930c-3ab5133a612c(com.mbeddr.cc.var.c.generator.varcprocessor.util)/7518061998923318056">
+    <file name="VarTrafoHelper.java">
+      <node id="5959167564567364659" at="24,80,25,283" concept="5" />
+      <node id="5959167564567364834" at="26,57,27,250" concept="5" />
+      <node id="5959167564567364882" at="28,40,29,207" concept="2" />
+      <node id="5959167564567382221" at="30,16,31,119" concept="2" />
+      <node id="7518061998923318056" at="38,0,39,0" concept="6" trace="BaseConcept$gP" />
+      <node id="7518061998923318056" at="39,0,40,0" concept="6" trace="IVariantAware$_8" />
+      <node id="7518061998923318056" at="43,0,44,0" concept="6" trace="conditions$6Yi8" />
+      <node id="7518061998923318233" at="21,0,23,0" concept="1" trace="VarTrafoHelper#()V" />
+      <node id="5959167564567382219" at="30,14,32,9" concept="0" />
+      <node id="5959167564567364853" at="27,250,32,9" concept="4" />
+      <node id="5959167564567364681" at="25,283,33,7" concept="3" />
+      <node id="7518061998923318061" at="23,77,34,5" concept="3" />
+      <node id="7518061998923318057" at="23,0,36,0" concept="7" trace="handleTransformation#(Lorg/jetbrains/mps/openapi/model/SModel;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="7518061998923318236" at="21,27,21,27" />
+      <scope id="5959167564567364854" at="28,40,29,207" />
+      <scope id="5959167564567382220" at="30,16,31,119" />
+      <scope id="7518061998923318233" at="21,0,23,0" />
+      <scope id="5959167564567364684" at="26,57,32,9">
+        <var name="selectedCondition" id="5959167564567364835" />
+      </scope>
+      <scope id="5959167564567364681" at="25,283,33,7">
+        <var name="c" id="5959167564567364682" />
+      </scope>
+      <scope id="7518061998923318063" at="24,80,33,7">
+        <var name="candidates" id="5959167564567364660" />
+      </scope>
+      <scope id="7518061998923318060" at="23,77,34,5" />
+      <scope id="7518061998923318061" at="23,77,34,5">
+        <var name="r" id="7518061998923318062" />
+      </scope>
+      <scope id="7518061998923318057" at="23,0,36,0">
+        <var name="config" id="7518061998923318143" />
+        <var name="model" id="7518061998923318141" />
+      </scope>
+      <unit id="7518061998923318056" at="42,0,45,0" name="com.mbeddr.cc.var.c.generator.varcprocessor.util.VarTrafoHelper$LINKS" />
+      <unit id="7518061998923318056" at="37,0,41,0" name="com.mbeddr.cc.var.c.generator.varcprocessor.util.VarTrafoHelper$CONCEPTS" />
+      <unit id="7518061998923318056" at="20,0,46,0" name="com.mbeddr.cc.var.c.generator.varcprocessor.util.VarTrafoHelper" />
+    </file>
+  </root>
+</debug-info>
+

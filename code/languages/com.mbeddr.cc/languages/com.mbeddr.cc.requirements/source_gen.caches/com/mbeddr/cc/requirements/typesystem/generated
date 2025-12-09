@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-q886g6bkwruxozsfip7qf2et6csyb">
+  <files names="TypesystemDescriptor.java:addDefaultDocConfig_QuickFix.java:check_EstimatedEffortSummary_NonTypesystemRule.java:check_EstimatedEffortTag_NonTypesystemRule.java:check_Link_NonTypesystemRule.java:check_RequirementForClass_NonTypesystemRule.java:check_Requirement_NonTypesystemRule.java:check_RequirementsModule_NonTypesystemRule.java:check_RequirementsTag_NonTypesystemRule.java:fixDataForReqKind_QuickFix.java:fix_RequirementForClass_QuickFix.java" />
+</product>
+

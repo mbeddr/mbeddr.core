@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:4fc6545d-39fa-4c9a-b98d-9868767dc0c0(com.mbeddr.doc.generator.template.utils)/411710970767482655">
+    <file name="CopyDependentDocumentsUtils.java">
+      <node id="411710970767627623" at="18,54,19,48" concept="1" />
+      <node id="411710970767564322" at="25,7,26,69" concept="4" />
+      <node id="411710970767571075" at="28,64,29,59" concept="1" />
+      <node id="411710970767613105" at="29,59,30,54" concept="1" />
+      <node id="411710970767482655" at="38,0,39,0" concept="5" trace="doc$bvgi" />
+      <node id="411710970767482655" at="39,0,40,0" concept="5" trace="dependsOn$QZv7" />
+      <node id="411710970767482655" at="43,0,44,0" concept="5" trace="Document$4G" />
+      <node id="411710970767485527" at="17,94,20,5" concept="2" />
+      <node id="411710970767519016" at="27,68,31,11" concept="3" />
+      <node id="411710970767482735" at="17,0,22,0" concept="6" trace="collectDependentDocuments#(Ljava/util/List;Ljava/util/List;)V" />
+      <node id="411710970767564322" at="26,69,32,9" concept="3" />
+      <node id="411710970767564322" at="24,104,33,7" concept="0" />
+      <node id="411710970767504497" at="23,90,34,5" concept="2" />
+      <node id="411710970767504495" at="23,0,36,0" concept="6" trace="doCollectDependentDocuments#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/util/List;)V" />
+      <scope id="411710970767485530" at="18,54,19,48" />
+      <scope id="411710970767519018" at="28,64,30,54" />
+      <scope id="411710970767482738" at="17,94,20,5" />
+      <scope id="411710970767485527" at="17,94,20,5">
+        <var name="e" id="411710970767485528" />
+      </scope>
+      <scope id="411710970767564326" at="27,68,31,11" />
+      <scope id="411710970767482735" at="17,0,22,0">
+        <var name="collected" id="411710970767482764" />
+        <var name="entryDocs" id="411710970767484045" />
+      </scope>
+      <scope id="411710970767564322" at="25,7,32,9">
+        <var name="d" id="411710970767564322" />
+      </scope>
+      <scope id="411710970767504500" at="24,104,33,7" />
+      <scope id="411710970767504496" at="23,90,34,5" />
+      <scope id="411710970767504497" at="23,90,34,5">
+        <var name="e" id="411710970767504498" />
+      </scope>
+      <scope id="411710970767504495" at="23,0,36,0">
+        <var name="collected" id="411710970767504511" />
+        <var name="entryDoc" id="411710970767504509" />
+      </scope>
+      <unit id="411710970767482655" at="42,0,45,0" name="com.mbeddr.doc.generator.template.utils.CopyDependentDocumentsUtils$CONCEPTS" />
+      <unit id="411710970767482655" at="37,0,41,0" name="com.mbeddr.doc.generator.template.utils.CopyDependentDocumentsUtils$LINKS" />
+      <unit id="411710970767482655" at="15,0,46,0" name="com.mbeddr.doc.generator.template.utils.CopyDependentDocumentsUtils" />
+    </file>
+  </root>
+</debug-info>
+

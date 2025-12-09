@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,36,0" name="com.mbeddr.mpsutil.dataflow.dataFlow.DataFlowAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:b611ae9b-a7f4-4df7-aaf0-85b465374686(com.mbeddr.mpsutil.dataflow.dataFlow)/7155423771307616520">
+    <file name="EmitMapStatement_DataFlow.java">
+      <node id="7155423771307616542" at="14,83,15,108" concept="0" />
+      <node id="7155423771307617786" at="17,82,18,107" concept="0" />
+      <node id="7155423771307619094" at="19,5,20,108" concept="0" />
+      <node id="7155423771307616520" at="24,0,25,0" concept="3" trace="source$BY7P" />
+      <node id="7155423771307616520" at="25,0,26,0" concept="3" trace="value$aJtk" />
+      <node id="7155423771307616520" at="26,0,27,0" concept="3" trace="variable$i5Ws" />
+      <node id="7155423771307630091" at="13,60,16,5" concept="1" />
+      <node id="7155423771307632343" at="16,5,19,5" concept="1" />
+      <node id="7155423771307616520" at="13,0,22,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="7155423771307630093" at="14,83,15,108" />
+      <scope id="7155423771307632345" at="17,82,18,107" />
+      <scope id="7155423771307616522" at="13,60,20,108" />
+      <scope id="7155423771307616520" at="13,0,22,0">
+        <var name="_context" id="7155423771307616520" />
+      </scope>
+      <unit id="7155423771307616520" at="23,0,28,0" name="com.mbeddr.mpsutil.dataflow.dataFlow.EmitMapStatement_DataFlow$LINKS" />
+      <unit id="7155423771307616520" at="12,0,29,0" name="com.mbeddr.mpsutil.dataflow.dataFlow.EmitMapStatement_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:b611ae9b-a7f4-4df7-aaf0-85b465374686(com.mbeddr.mpsutil.dataflow.dataFlow)/7155423771307622230">
+    <file name="EmitUnmapStatement_DataFlow.java">
+      <node id="7155423771307622243" at="13,60,14,108" concept="0" />
+      <node id="7155423771307622230" at="18,0,19,0" concept="3" trace="variable$i5Ws" />
+      <node id="7155423771307622230" at="13,0,16,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="7155423771307622232" at="13,60,14,108" />
+      <scope id="7155423771307622230" at="13,0,16,0">
+        <var name="_context" id="7155423771307622230" />
+      </scope>
+      <unit id="7155423771307622230" at="17,0,20,0" name="com.mbeddr.mpsutil.dataflow.dataFlow.EmitUnmapStatement_DataFlow$LINKS" />
+      <unit id="7155423771307622230" at="12,0,21,0" name="com.mbeddr.mpsutil.dataflow.dataFlow.EmitUnmapStatement_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:b611ae9b-a7f4-4df7-aaf0-85b465374686(com.mbeddr.mpsutil.dataflow.dataFlow)/7155423771307626183">
+    <file name="EmitInlineStatement_DataFlow.java">
+      <node id="7155423771307626196" at="13,60,14,106" concept="0" />
+      <node id="7155423771307626183" at="18,0,19,0" concept="3" trace="target$YRK2" />
+      <node id="7155423771307626183" at="13,0,16,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="7155423771307626185" at="13,60,14,106" />
+      <scope id="7155423771307626183" at="13,0,16,0">
+        <var name="_context" id="7155423771307626183" />
+      </scope>
+      <unit id="7155423771307626183" at="17,0,20,0" name="com.mbeddr.mpsutil.dataflow.dataFlow.EmitInlineStatement_DataFlow$LINKS" />
+      <unit id="7155423771307626183" at="12,0,21,0" name="com.mbeddr.mpsutil.dataflow.dataFlow.EmitInlineStatement_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:b611ae9b-a7f4-4df7-aaf0-85b465374686(com.mbeddr.mpsutil.dataflow.dataFlow)/7155423771307634868">
+    <file name="EmitEntryPointStatement_DataFlow.java">
+      <node id="7155423771307634881" at="13,60,14,105" concept="0" />
+      <node id="7155423771307634868" at="18,0,19,0" concept="3" trace="point$Kh0l" />
+      <node id="7155423771307634868" at="13,0,16,0" concept="2" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="7155423771307634870" at="13,60,14,105" />
+      <scope id="7155423771307634868" at="13,0,16,0">
+        <var name="_context" id="7155423771307634868" />
+      </scope>
+      <unit id="7155423771307634868" at="17,0,20,0" name="com.mbeddr.mpsutil.dataflow.dataFlow.EmitEntryPointStatement_DataFlow$LINKS" />
+      <unit id="7155423771307634868" at="12,0,21,0" name="com.mbeddr.mpsutil.dataflow.dataFlow.EmitEntryPointStatement_DataFlow" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="yvt4j47g48k2vjhsx3lx82imuox3im">
+  <files names="ToolRunner.java:ToolRunnerBase.java:ToolsAvailabilityChecker.java:ToolsInstallationSanityChecker.java" />
+</product>
+

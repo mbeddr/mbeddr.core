@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="bhc80v8hqnlkuvttwlj3v96gcj2vqy">
+  <files names="MultilingualJavaString_extends_java_lang_String_SubtypingRule.java:TypesystemDescriptor.java:check_MultilingualJavaRichString_NonTypesystemRule.java:check_RichStringMessageKey_NonTypesystemRule.java:typeof_MultilingualJavaString_InferenceRule.java" />
+</product>
+

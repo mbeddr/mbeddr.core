@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:a38f0e6e-eb07-4712-927b-30c9e021556c(com.mbeddr.doc.gen_xhtml.plugin)/988357225313169968">
+    <file name="GeneratorHelper.java">
+      <node id="1014457710453416094" at="27,71,28,16" concept="3" />
+      <node id="988357225336699293" at="31,62,32,206" concept="2" />
+      <node id="988357225336708013" at="32,206,33,67" concept="0" />
+      <node id="988357225336728758" at="33,67,34,377" concept="0" />
+      <node id="988357225336693484" at="34,377,35,20" concept="3" />
+      <node id="4117501563660488419" at="38,53,39,198" concept="3" />
+      <node id="6740703118908454839" at="47,94,48,234" concept="2" />
+      <node id="1167243749508685105" at="48,234,49,301" concept="2" />
+      <node id="1167243749509241045" at="49,301,50,93" concept="2" />
+      <node id="1167243749508752636" at="51,59,52,111" concept="0" />
+      <node id="1167243749509713225" at="53,5,54,0" concept="4" />
+      <node id="1167243749509713861" at="54,0,55,69" concept="3" />
+      <node id="524008468794312966" at="58,104,59,157" concept="2" />
+      <node id="524008468794312979" at="59,157,60,153" concept="2" />
+      <node id="524008468794312994" at="60,153,61,88" concept="2" />
+      <node id="524008468794313002" at="62,59,63,108" concept="0" />
+      <node id="524008468794313015" at="64,5,65,69" concept="3" />
+      <node id="1167243749509689137" at="68,84,69,228" concept="2" />
+      <node id="1167243749509745432" at="69,228,70,178" concept="2" />
+      <node id="1167243749509689150" at="70,178,71,162" concept="2" />
+      <node id="1167243749509744599" at="71,162,72,97" concept="2" />
+      <node id="1167243749509738402" at="73,59,74,66" concept="0" />
+      <node id="1167243749509737754" at="75,5,76,0" concept="4" />
+      <node id="1167243749509739494" at="76,0,77,69" concept="3" />
+      <node id="7773571022133796427" at="80,85,81,233" concept="2" />
+      <node id="7773571022133804840" at="81,233,82,157" concept="2" />
+      <node id="7773571022133856310" at="82,157,83,132" concept="2" />
+      <node id="7773571022133937949" at="84,59,85,104" concept="0" />
+      <node id="7773571022133937716" at="86,5,87,67" concept="3" />
+      <node id="1167243749507239125" at="91,54,92,100" concept="2" />
+      <node id="1167243749507253218" at="92,100,93,54" concept="3" />
+      <node id="1167243749509238095" at="94,5,95,20" concept="3" />
+      <node id="988357225313169968" at="99,0,100,0" concept="5" trace="section$ZN9A" />
+      <node id="988357225313169968" at="100,0,101,0" concept="5" trace="subEntries$ZSLY" />
+      <node id="988357225313169968" at="101,0,102,0" concept="5" trace="contents$e7kB" />
+      <node id="988357225313169968" at="102,0,103,0" concept="5" trace="config$bNXi" />
+      <node id="988357225313169968" at="103,0,104,0" concept="5" trace="configItems$hgib" />
+      <node id="988357225313169968" at="104,0,105,0" concept="5" trace="externalDocument$iOKq" />
+      <node id="988357225313169968" at="105,0,106,0" concept="5" trace="root$175E" />
+      <node id="988357225313169968" at="106,0,107,0" concept="5" trace="doc$bvgi" />
+      <node id="988357225313169968" at="107,0,108,0" concept="5" trace="resource$t9jq" />
+      <node id="988357225313169968" at="111,0,112,0" concept="5" trace="AbstractSection$8m" />
+      <node id="988357225313169968" at="112,0,113,0" concept="5" trace="HTMLRenderer$1a" />
+      <node id="988357225313169968" at="113,0,114,0" concept="5" trace="PlaceInFolder$Xz" />
+      <node id="988357225313169968" at="114,0,115,0" concept="5" trace="IDocumentLike$h$" />
+      <node id="988357225313169968" at="118,0,119,0" concept="5" trace="location$9iBH" />
+      <node id="988357225313169968" at="119,0,120,0" concept="5" trace="name$MnvL" />
+      <node id="988357225313169968" at="120,0,121,0" concept="5" trace="fileName$6fRi" />
+      <node id="988357225313173163" at="27,0,30,0" concept="6" trace="isApplicable#(Ljetbrains/mps/generator/template/TemplateQueryContext;)Z" />
+      <node id="4117501563660487583" at="38,0,41,0" concept="6" trace="getRendererFromDoc#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1167243749508740580" at="50,93,53,5" concept="1" />
+      <node id="524008468794313000" at="61,88,64,5" concept="1" />
+      <node id="1167243749509738400" at="72,97,75,5" concept="1" />
+      <node id="7773571022133937947" at="83,132,86,5" concept="1" />
+      <node id="1167243749507023386" at="90,102,94,5" concept="1" />
+      <node id="988357225336722793" at="31,0,37,0" concept="6" trace="createTocEntriesRecursive#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1167243749509709131" at="90,0,97,0" concept="6" trace="getFileRelativePath#(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="524008468794312964" at="58,0,67,0" concept="6" trace="getDocumentRefPath#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/generator/template/TemplateQueryContext;)Ljava/lang/String;" />
+      <node id="7773571022133784440" at="80,0,89,0" concept="6" trace="getImgPath#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/generator/template/TemplateQueryContext;)Ljava/lang/String;" />
+      <node id="1167243749508944373" at="46,0,57,0" concept="6" trace="getDocumentRefPath#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/generator/template/TemplateQueryContext;)Ljava/lang/String;" />
+      <node id="1167243749509687850" at="68,0,79,0" concept="6" trace="getRefWordPath#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/generator/template/TemplateQueryContext;)Ljava/lang/String;" />
+      <scope id="988357225313173166" at="27,71,28,16" />
+      <scope id="4117501563660487586" at="38,53,39,198" />
+      <scope id="1167243749508740582" at="51,59,52,111" />
+      <scope id="524008468794313001" at="62,59,63,108" />
+      <scope id="1167243749509738401" at="73,59,74,66" />
+      <scope id="7773571022133937948" at="84,59,85,104" />
+      <scope id="1167243749507023388" at="91,54,93,54">
+        <var name="relativePath" id="1167243749507239126" />
+      </scope>
+      <scope id="988357225313173163" at="27,0,30,0">
+        <var name="genContext" id="988357225313175698" />
+      </scope>
+      <scope id="4117501563660487583" at="38,0,41,0">
+        <var name="doc" id="4117501563660488154" />
+      </scope>
+      <scope id="988357225336722796" at="31,62,35,20">
+        <var name="tocEntry" id="988357225336699294" />
+      </scope>
+      <scope id="1167243749509709134" at="90,102,95,20" />
+      <scope id="988357225336722793" at="31,0,37,0">
+        <var name="input" id="988357225336723226" />
+      </scope>
+      <scope id="524008468794312965" at="58,104,65,69">
+        <var name="fromLocation" id="524008468794312967" />
+        <var name="toFileName" id="524008468794312995" />
+        <var name="toLocation" id="524008468794312980" />
+      </scope>
+      <scope id="7773571022133784443" at="80,85,87,67">
+        <var name="fileName" id="7773571022133856313" />
+        <var name="fromLocation" id="7773571022133796430" />
+        <var name="toLocation" id="7773571022133804843" />
+      </scope>
+      <scope id="1167243749509709131" at="90,0,97,0">
+        <var name="fileName" id="1167243749509710310" />
+        <var name="fromLocation" id="1167243749509709812" />
+        <var name="toLocation" id="1167243749509709854" />
+      </scope>
+      <scope id="1167243749508599645" at="47,94,55,69">
+        <var name="fromLocation" id="6740703118908454840" />
+        <var name="toFileName" id="1167243749509241046" />
+        <var name="toLocation" id="1167243749508685106" />
+      </scope>
+      <scope id="524008468794312964" at="58,0,67,0">
+        <var name="fromDoc" id="524008468794313020" />
+        <var name="genContext" id="524008468794313022" />
+        <var name="toDoc" id="524008468794331270" />
+      </scope>
+      <scope id="1167243749509687853" at="68,84,77,69">
+        <var name="fromLocation" id="1167243749509689138" />
+        <var name="targetDocument" id="1167243749509745433" />
+        <var name="toFileName" id="1167243749509744602" />
+        <var name="toLocation" id="1167243749509689151" />
+      </scope>
+      <scope id="7773571022133784440" at="80,0,89,0">
+        <var name="genContext" id="7773571022133938667" />
+        <var name="paragraph" id="7773571022133796119" />
+      </scope>
+      <scope id="1167243749508944373" at="46,0,57,0">
+        <var name="genContext" id="1167243749508695252" />
+        <var name="refSection" id="1167243749508615155" />
+      </scope>
+      <scope id="1167243749509687850" at="68,0,79,0">
+        <var name="genContext" id="1167243749509688686" />
+        <var name="word" id="1167243749509688637" />
+      </scope>
+      <unit id="988357225313169968" at="117,0,122,0" name="com.mbeddr.doc.gen_xhtml.plugin.GeneratorHelper$PROPS" />
+      <unit id="988357225313169968" at="110,0,116,0" name="com.mbeddr.doc.gen_xhtml.plugin.GeneratorHelper$CONCEPTS" />
+      <unit id="988357225313169968" at="98,0,109,0" name="com.mbeddr.doc.gen_xhtml.plugin.GeneratorHelper$LINKS" />
+      <unit id="988357225313169968" at="26,0,123,0" name="com.mbeddr.doc.gen_xhtml.plugin.GeneratorHelper" />
+    </file>
+  </root>
+</debug-info>
+

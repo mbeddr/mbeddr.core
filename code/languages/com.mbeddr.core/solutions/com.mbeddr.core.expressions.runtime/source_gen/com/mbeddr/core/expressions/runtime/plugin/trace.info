@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)/2284948373395290285">
+    <file name="IToken.java">
+      <node id="2284948373395290594" at="14,0,15,0" concept="6" trace="gen#()Ljava/util/List;" />
+      <node id="2284948373395647679" at="21,0,22,0" concept="6" trace="wrapInParens#()Lcom/mbeddr/core/expressions/runtime/plugin/IToken;" />
+      <node id="8046971101006494894" at="29,0,30,0" concept="6" trace="isEmpty#()Z" />
+      <node id="3387185471065263115" at="36,0,37,0" concept="6" trace="getKind#()Lcom/mbeddr/core/expressions/runtime/plugin/TypeKind;" />
+      <scope id="2284948373395290594" at="14,0,15,0" />
+      <scope id="2284948373395647679" at="21,0,22,0" />
+      <scope id="8046971101006494894" at="29,0,30,0" />
+      <scope id="3387185471065263115" at="36,0,37,0" />
+      <unit id="2284948373395290285" at="7,0,38,0" name="com.mbeddr.core.expressions.runtime.plugin.IToken" />
+    </file>
+  </root>
+  <root nodeRef="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)/2284948373395290511">
+    <file name="CompositeToken.java">
+      <node id="2284948373395294528" at="11,0,12,0" concept="3" trace="children" />
+      <node id="2284948373395715901" at="12,0,13,0" concept="3" trace="kind" />
+      <node id="2284948373395306292" at="14,40,15,67" concept="2" />
+      <node id="2284948373395716878" at="15,67,16,21" concept="2" />
+      <node id="3387185471065219364" at="19,43,20,59" concept="2" />
+      <node id="430229262346392760" at="20,59,21,16" concept="8" />
+      <node id="2284948373395294983" at="25,29,26,73" concept="7" />
+      <node id="2284948373395295440" at="27,58,28,84" concept="2" />
+      <node id="2284948373395298557" at="29,5,30,18" concept="8" />
+      <node id="3387185471065271816" at="34,29,35,16" concept="8" />
+      <node id="2284948373395295213" at="26,73,29,5" concept="4" />
+      <node id="2284948373395305804" at="14,0,18,0" concept="1" trace="CompositeToken#(Lcom/mbeddr/core/expressions/runtime/plugin/TypeKind;)V" />
+      <node id="2284948373395304628" at="19,0,23,0" concept="6" trace="add#(Lcom/mbeddr/core/expressions/runtime/plugin/IToken;)Lcom/mbeddr/core/expressions/runtime/plugin/CompositeToken;" />
+      <node id="3387185471065270224" at="33,0,37,0" concept="6" trace="getKind#()Lcom/mbeddr/core/expressions/runtime/plugin/TypeKind;" />
+      <node id="2284948373395294866" at="24,0,32,0" concept="6" trace="gen#()Ljava/util/List;" />
+      <scope id="2284948373395295217" at="27,58,28,84" />
+      <scope id="3387185471065270231" at="34,29,35,16" />
+      <scope id="2284948373395305808" at="14,40,16,21" />
+      <scope id="2284948373395304631" at="19,43,21,16" />
+      <scope id="2284948373395295213" at="26,73,29,5">
+        <var name="token" id="2284948373395295215" />
+      </scope>
+      <scope id="2284948373395305804" at="14,0,18,0">
+        <var name="kind" id="2284948373395713471" />
+      </scope>
+      <scope id="2284948373395304628" at="19,0,23,0">
+        <var name="token" id="2284948373395305076" />
+      </scope>
+      <scope id="3387185471065270224" at="33,0,37,0" />
+      <scope id="2284948373395294871" at="25,29,30,18">
+        <var name="result" id="2284948373395294986" />
+      </scope>
+      <scope id="2284948373395294866" at="24,0,32,0" />
+      <unit id="2284948373395290511" at="9,0,39,0" name="com.mbeddr.core.expressions.runtime.plugin.CompositeToken" />
+    </file>
+  </root>
+  <root nodeRef="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)/2284948373395294800">
+    <file name="AtomicToken.java">
+      <node id="2284948373395324043" at="10,0,11,0" concept="3" trace="value" />
+      <node id="2284948373395613473" at="11,0,12,0" concept="9" trace="EMPTY" />
+      <node id="2284948373395331853" at="13,24,14,22" concept="2" />
+      <node id="7436951027924679387" at="16,36,17,23" concept="2" />
+      <node id="2284948373395332474" at="22,24,23,39" concept="8" />
+      <node id="2284948373395337624" at="24,12,25,42" concept="8" />
+      <node id="8046971101006496848" at="30,28,31,70" concept="8" />
+      <node id="8046971101006502965" at="34,52,35,40" concept="8" />
+      <node id="2284948373395337324" at="24,10,26,5" concept="0" />
+      <node id="2284948373395323806" at="13,0,16,0" concept="1" trace="AtomicToken#()V" />
+      <node id="7436951027924679383" at="16,0,19,0" concept="1" trace="AtomicToken#(Ljava/lang/Object;)V" />
+      <node id="8046971101006502965" at="34,0,37,0" concept="10" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="8046971101006495411" at="29,0,33,0" concept="6" trace="isEmpty#()Z" />
+      <node id="2284948373395335933" at="21,29,26,5" concept="5" />
+      <node id="2284948373395322254" at="20,0,28,0" concept="6" trace="gen#()Ljava/util/List;" />
+      <scope id="2284948373395323810" at="13,24,14,22" />
+      <scope id="7436951027924679386" at="16,36,17,23" />
+      <scope id="2284948373395335935" at="22,24,23,39" />
+      <scope id="2284948373395337325" at="24,12,25,42" />
+      <scope id="8046971101006495415" at="30,28,31,70" />
+      <scope id="8046971101006502965" at="34,52,35,40" />
+      <scope id="2284948373395323806" at="13,0,16,0" />
+      <scope id="7436951027924679383" at="16,0,19,0">
+        <var name="value" id="7436951027924679393" />
+      </scope>
+      <scope id="8046971101006502965" at="34,0,37,0">
+        <var name="str" id="8046971101006502965" />
+      </scope>
+      <scope id="8046971101006495411" at="29,0,33,0" />
+      <scope id="2284948373395322260" at="21,29,26,5" />
+      <scope id="2284948373395322254" at="20,0,28,0" />
+      <unit id="2284948373395294800" at="8,0,38,0" name="com.mbeddr.core.expressions.runtime.plugin.AtomicToken" />
+    </file>
+  </root>
+  <root nodeRef="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)/2284948373395713002">
+    <file name="TypeKind.java">
+      <unit id="2284948373395713002" at="6,0,12,0" name="com.mbeddr.core.expressions.runtime.plugin.TypeKind" />
+    </file>
+  </root>
+  <root nodeRef="r:ffb23717-2675-4f36-b47c-a7d3b95c99a7(com.mbeddr.core.expressions.runtime.plugin)/8046971101006513905">
+    <file name="TokenBase.java">
+      <node id="2284948373395644824" at="9,28,10,48" concept="7" />
+      <node id="2284948373395644832" at="11,32,12,39" concept="2" />
+      <node id="2284948373395644840" at="13,5,14,30" concept="8" />
+      <node id="8046971101006529548" at="19,25,20,18" concept="8" />
+      <node id="2284948373395734195" at="21,12,22,63" concept="7" />
+      <node id="2284948373395734201" at="22,63,23,38" concept="2" />
+      <node id="2284948373395734208" at="23,38,24,22" concept="2" />
+      <node id="2284948373395734213" at="24,22,25,38" concept="2" />
+      <node id="2284948373395734220" at="25,38,26,19" concept="8" />
+      <node id="8046971101006508229" at="31,28,32,17" concept="8" />
+      <node id="3387185471065266201" at="36,29,37,25" concept="8" />
+      <node id="2284948373395644829" at="10,48,13,5" concept="4" />
+      <node id="8046971101006504904" at="30,0,34,0" concept="6" trace="isEmpty#()Z" />
+      <node id="3387185471065264233" at="35,0,39,0" concept="6" trace="getKind#()Lcom/mbeddr/core/expressions/runtime/plugin/TypeKind;" />
+      <node id="8046971101006529879" at="21,10,27,5" concept="0" />
+      <node id="2284948373395644820" at="8,0,16,0" concept="6" trace="toString#()Ljava/lang/String;" />
+      <node id="8046971101006528675" at="18,32,27,5" concept="5" />
+      <node id="2284948373395651189" at="17,0,29,0" concept="6" trace="wrapInParens#()Lcom/mbeddr/core/expressions/runtime/plugin/IToken;" />
+      <scope id="2284948373395644831" at="11,32,12,39" />
+      <scope id="8046971101006528677" at="19,25,20,18" />
+      <scope id="8046971101006504908" at="31,28,32,17" />
+      <scope id="3387185471065264241" at="36,29,37,25" />
+      <scope id="2284948373395644829" at="10,48,13,5">
+        <var name="value" id="2284948373395644830" />
+      </scope>
+      <scope id="8046971101006504904" at="30,0,34,0" />
+      <scope id="3387185471065264233" at="35,0,39,0" />
+      <scope id="2284948373395644823" at="9,28,14,30">
+        <var name="builder" id="2284948373395644825" />
+      </scope>
+      <scope id="8046971101006529880" at="21,12,26,19">
+        <var name="token" id="2284948373395734196" />
+      </scope>
+      <scope id="2284948373395644820" at="8,0,16,0" />
+      <scope id="2284948373395651193" at="18,32,27,5" />
+      <scope id="2284948373395651189" at="17,0,29,0" />
+      <unit id="8046971101006513905" at="6,0,40,0" name="com.mbeddr.core.expressions.runtime.plugin.TokenBase" />
+    </file>
+  </root>
+</debug-info>
+
