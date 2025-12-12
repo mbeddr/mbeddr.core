@@ -8,7 +8,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -386,7 +386,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -394,13 +393,10 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
@@ -2175,21 +2171,205 @@
         </node>
       </node>
       <node concept="P$JXv" id="64_1OWeAq9q" role="lGtFl">
-        <node concept="TZ5HA" id="64_1OWeAq9r" role="TZ5H$">
-          <node concept="1dT_AC" id="64_1OWeAq9s" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the configured GraphstreamViewManager using a hotfixed version of the Graphstream DefaultView (see of MPSHotfixedView)." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="64_1OWeAq9t" role="3nqlJM">
-          <property role="TUZQ4" value="               : mandatory, the abstract graph (vertices and edges)" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="64_1OWeAq9v" role="zr_5Q">
             <ref role="zr_51" node="64_1OWe$XUc" resolve="graph" />
           </node>
+          <node concept="1PaTwC" id="3VVgDkJfGaE" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfGaF" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaG" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaH" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaI" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaJ" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaK" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaL" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaM" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaN" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaO" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaP" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaQ" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaR" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaS" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaT" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaU" role="1PaTwD">
+              <property role="3oM_SC" value=":" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaV" role="1PaTwD">
+              <property role="3oM_SC" value="mandatory," />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaW" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaX" role="1PaTwD">
+              <property role="3oM_SC" value="abstract" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaY" role="1PaTwD">
+              <property role="3oM_SC" value="graph" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGaZ" role="1PaTwD">
+              <property role="3oM_SC" value="(vertices" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGb0" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGb1" role="1PaTwD">
+              <property role="3oM_SC" value="edges)" />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="64_1OWeAq9w" role="3nqlJM">
-          <property role="TUZQ4" value="              : optional, Graphstreams default layout is used if null" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="64_1OWeAq9y" role="zr_5Q">
             <ref role="zr_51" node="64_1OWe_7SN" resolve="layout" />
+          </node>
+          <node concept="1PaTwC" id="3VVgDkJfGb2" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfGb3" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGb4" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGb5" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGb6" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGb7" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGb8" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGb9" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGba" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbb" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbc" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbd" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbe" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbf" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbg" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbh" role="1PaTwD">
+              <property role="3oM_SC" value=":" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbi" role="1PaTwD">
+              <property role="3oM_SC" value="optional," />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbj" role="1PaTwD">
+              <property role="3oM_SC" value="Graphstreams" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbk" role="1PaTwD">
+              <property role="3oM_SC" value="default" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbl" role="1PaTwD">
+              <property role="3oM_SC" value="layout" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbm" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbn" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbo" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGbp" role="1PaTwD">
+              <property role="3oM_SC" value="null" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJfGaq" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGar" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGas" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGat" role="1PaTwD">
+            <property role="3oM_SC" value="configured" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGau" role="1PaTwD">
+            <property role="3oM_SC" value="GraphstreamViewManager" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGav" role="1PaTwD">
+            <property role="3oM_SC" value="using" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGaw" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGax" role="1PaTwD">
+            <property role="3oM_SC" value="hotfixed" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGay" role="1PaTwD">
+            <property role="3oM_SC" value="version" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGaz" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGa$" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGa_" role="1PaTwD">
+            <property role="3oM_SC" value="Graphstream" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGaA" role="1PaTwD">
+            <property role="3oM_SC" value="DefaultView" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGaB" role="1PaTwD">
+            <property role="3oM_SC" value="(see" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGaC" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGaD" role="1PaTwD">
+            <property role="3oM_SC" value="MPSHotfixedView)." />
           </node>
         </node>
       </node>
@@ -2832,9 +3012,72 @@
       <ref role="3uigEE" to="hyam:~MouseMotionListener" resolve="MouseMotionListener" />
     </node>
     <node concept="3UR2Jj" id="6I5RWbd3PVO" role="lGtFl">
-      <node concept="TZ5HA" id="6I5RWbd3PVP" role="TZ5H$">
-        <node concept="1dT_AC" id="6I5RWbd3PVQ" role="1dT_Ay">
-          <property role="1dT_AB" value="MPS seems to do use AWT in a strange (or even bad) way. This class combines several fixes to circumvent most problems" />
+      <node concept="1PaTwC" id="3VVgDkJfG9g" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfG9h" role="1PaTwD">
+          <property role="3oM_SC" value="MPS" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9i" role="1PaTwD">
+          <property role="3oM_SC" value="seems" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9j" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9k" role="1PaTwD">
+          <property role="3oM_SC" value="do" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9l" role="1PaTwD">
+          <property role="3oM_SC" value="use" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9m" role="1PaTwD">
+          <property role="3oM_SC" value="AWT" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9n" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9o" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9p" role="1PaTwD">
+          <property role="3oM_SC" value="strange" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9q" role="1PaTwD">
+          <property role="3oM_SC" value="(or" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9r" role="1PaTwD">
+          <property role="3oM_SC" value="even" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9s" role="1PaTwD">
+          <property role="3oM_SC" value="bad)" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9t" role="1PaTwD">
+          <property role="3oM_SC" value="way." />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9u" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9v" role="1PaTwD">
+          <property role="3oM_SC" value="class" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9w" role="1PaTwD">
+          <property role="3oM_SC" value="combines" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9x" role="1PaTwD">
+          <property role="3oM_SC" value="several" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9y" role="1PaTwD">
+          <property role="3oM_SC" value="fixes" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9z" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9$" role="1PaTwD">
+          <property role="3oM_SC" value="circumvent" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9_" role="1PaTwD">
+          <property role="3oM_SC" value="most" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9A" role="1PaTwD">
+          <property role="3oM_SC" value="problems" />
         </node>
       </node>
     </node>
@@ -3389,9 +3632,33 @@
         <ref role="3uigEE" node="50Rn4r1MriY" resolve="IGraphingInformation.ERenderingTechnology" />
       </node>
       <node concept="P$JXv" id="4G2jA20fCeZ" role="lGtFl">
-        <node concept="TZ5HA" id="4G2jA20fCf0" role="TZ5H$">
-          <node concept="1dT_AC" id="4G2jA20fCf1" role="1dT_Ay">
-            <property role="1dT_AB" value="Should always return ERenderingTechnology.Graphstream (only interactive renderer currently available)" />
+        <node concept="1PaTwC" id="3VVgDkJfGbq" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGbr" role="1PaTwD">
+            <property role="3oM_SC" value="Should" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbs" role="1PaTwD">
+            <property role="3oM_SC" value="always" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbt" role="1PaTwD">
+            <property role="3oM_SC" value="return" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbu" role="1PaTwD">
+            <property role="3oM_SC" value="ERenderingTechnology.Graphstream" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbv" role="1PaTwD">
+            <property role="3oM_SC" value="(only" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbw" role="1PaTwD">
+            <property role="3oM_SC" value="interactive" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbx" role="1PaTwD">
+            <property role="3oM_SC" value="renderer" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGby" role="1PaTwD">
+            <property role="3oM_SC" value="currently" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbz" role="1PaTwD">
+            <property role="3oM_SC" value="available)" />
           </node>
         </node>
       </node>
@@ -3408,9 +3675,39 @@
         <ref role="3uigEE" to="2yw0:~ILayout" resolve="ILayout" />
       </node>
       <node concept="P$JXv" id="4G2jA20fCkc" role="lGtFl">
-        <node concept="TZ5HA" id="4G2jA20fCkd" role="TZ5H$">
-          <node concept="1dT_AC" id="4G2jA20fCke" role="1dT_Ay">
-            <property role="1dT_AB" value="Returning &quot;HierarchicalLayoutJGraphX()&quot; is recommended. Alternatives are available. Must not be null." />
+        <node concept="1PaTwC" id="3VVgDkJfGb$" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGb_" role="1PaTwD">
+            <property role="3oM_SC" value="Returning" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbA" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;HierarchicalLayoutJGraphX()&quot;" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbB" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbC" role="1PaTwD">
+            <property role="3oM_SC" value="recommended." />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbD" role="1PaTwD">
+            <property role="3oM_SC" value="Alternatives" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbE" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbF" role="1PaTwD">
+            <property role="3oM_SC" value="available." />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbG" role="1PaTwD">
+            <property role="3oM_SC" value="Must" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbH" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbI" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbJ" role="1PaTwD">
+            <property role="3oM_SC" value="null." />
           </node>
         </node>
       </node>
@@ -3427,19 +3724,100 @@
         <ref role="3uigEE" to="5svn:~Graph" resolve="Graph" />
       </node>
       <node concept="P$JXv" id="4G2jA20fAU0" role="lGtFl">
-        <node concept="TZ5HA" id="4G2jA20fAU1" role="TZ5H$">
-          <node concept="1dT_AC" id="4G2jA20fAU2" role="1dT_Ay">
-            <property role="1dT_AB" value="Called by the framework to retrieve the graph." />
+        <node concept="1PaTwC" id="3VVgDkJfGbK" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGbL" role="1PaTwD">
+            <property role="3oM_SC" value="Called" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbM" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbN" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbO" role="1PaTwD">
+            <property role="3oM_SC" value="framework" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbP" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbQ" role="1PaTwD">
+            <property role="3oM_SC" value="retrieve" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbR" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbS" role="1PaTwD">
+            <property role="3oM_SC" value="graph." />
           </node>
         </node>
-        <node concept="TZ5HA" id="4G2jA20fB0l" role="TZ5H$">
-          <node concept="1dT_AC" id="4G2jA20fB0m" role="1dT_Ay">
-            <property role="1dT_AB" value="Initial rendering is faster when Vertexes and Edges are already inserted but" />
+        <node concept="1PaTwC" id="3VVgDkJfGbT" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGbU" role="1PaTwD">
+            <property role="3oM_SC" value="Initial" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbV" role="1PaTwD">
+            <property role="3oM_SC" value="rendering" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbW" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbX" role="1PaTwD">
+            <property role="3oM_SC" value="faster" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbY" role="1PaTwD">
+            <property role="3oM_SC" value="when" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGbZ" role="1PaTwD">
+            <property role="3oM_SC" value="Vertexes" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGc0" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGc1" role="1PaTwD">
+            <property role="3oM_SC" value="Edges" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGc2" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGc3" role="1PaTwD">
+            <property role="3oM_SC" value="already" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGc4" role="1PaTwD">
+            <property role="3oM_SC" value="inserted" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGc5" role="1PaTwD">
+            <property role="3oM_SC" value="but" />
           </node>
         </node>
-        <node concept="TZ5HA" id="4G2jA20fB3Z" role="TZ5H$">
-          <node concept="1dT_AC" id="4G2jA20fB40" role="1dT_Ay">
-            <property role="1dT_AB" value="most viewers support adding additional elements to the graph later." />
+        <node concept="1PaTwC" id="3VVgDkJfGc6" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGc7" role="1PaTwD">
+            <property role="3oM_SC" value="most" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGc8" role="1PaTwD">
+            <property role="3oM_SC" value="viewers" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGc9" role="1PaTwD">
+            <property role="3oM_SC" value="support" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGca" role="1PaTwD">
+            <property role="3oM_SC" value="adding" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcb" role="1PaTwD">
+            <property role="3oM_SC" value="additional" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcc" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcd" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGce" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcf" role="1PaTwD">
+            <property role="3oM_SC" value="graph" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcg" role="1PaTwD">
+            <property role="3oM_SC" value="later." />
           </node>
         </node>
       </node>
@@ -3458,9 +3836,60 @@
         </node>
       </node>
       <node concept="P$JXv" id="4G2jA20fBdp" role="lGtFl">
-        <node concept="TZ5HA" id="4G2jA20fBdq" role="TZ5H$">
-          <node concept="1dT_AC" id="4G2jA20fBdr" role="1dT_Ay">
-            <property role="1dT_AB" value="The interaction handlers returned by this function are registered at the viewer by the framework. May be null." />
+        <node concept="1PaTwC" id="3VVgDkJfGch" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGci" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcj" role="1PaTwD">
+            <property role="3oM_SC" value="interaction" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGck" role="1PaTwD">
+            <property role="3oM_SC" value="handlers" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcl" role="1PaTwD">
+            <property role="3oM_SC" value="returned" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcm" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcn" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGco" role="1PaTwD">
+            <property role="3oM_SC" value="function" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcp" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcq" role="1PaTwD">
+            <property role="3oM_SC" value="registered" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcr" role="1PaTwD">
+            <property role="3oM_SC" value="at" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcs" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGct" role="1PaTwD">
+            <property role="3oM_SC" value="viewer" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcu" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcv" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcw" role="1PaTwD">
+            <property role="3oM_SC" value="framework." />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcx" role="1PaTwD">
+            <property role="3oM_SC" value="May" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcy" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcz" role="1PaTwD">
+            <property role="3oM_SC" value="null." />
           </node>
         </node>
       </node>
@@ -3475,9 +3904,63 @@
         <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
       </node>
       <node concept="P$JXv" id="4G2jA20fBQ$" role="lGtFl">
-        <node concept="TZ5HA" id="4G2jA20fBQ_" role="TZ5H$">
-          <node concept="1dT_AC" id="4G2jA20fBQA" role="1dT_Ay">
-            <property role="1dT_AB" value="The component returned by this function is added below the main toolbar of the graphing tool. May be null." />
+        <node concept="1PaTwC" id="3VVgDkJfGc$" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGc_" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcA" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcB" role="1PaTwD">
+            <property role="3oM_SC" value="returned" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcC" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcD" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcE" role="1PaTwD">
+            <property role="3oM_SC" value="function" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcF" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcG" role="1PaTwD">
+            <property role="3oM_SC" value="added" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcH" role="1PaTwD">
+            <property role="3oM_SC" value="below" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcI" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcJ" role="1PaTwD">
+            <property role="3oM_SC" value="main" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcK" role="1PaTwD">
+            <property role="3oM_SC" value="toolbar" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcL" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcM" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcN" role="1PaTwD">
+            <property role="3oM_SC" value="graphing" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcO" role="1PaTwD">
+            <property role="3oM_SC" value="tool." />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcP" role="1PaTwD">
+            <property role="3oM_SC" value="May" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcQ" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcR" role="1PaTwD">
+            <property role="3oM_SC" value="null." />
           </node>
         </node>
       </node>
@@ -3490,9 +3973,39 @@
       <node concept="3Tm1VV" id="7nFmMse05VN" role="1B3o_S" />
       <node concept="3cqZAl" id="7nFmMse05Uu" role="3clF45" />
       <node concept="P$JXv" id="4G2jA20fBUV" role="lGtFl">
-        <node concept="TZ5HA" id="4G2jA20fBUW" role="TZ5H$">
-          <node concept="1dT_AC" id="4G2jA20fBUX" role="1dT_Ay">
-            <property role="1dT_AB" value="Called by the framework when the tool is created and initialized." />
+        <node concept="1PaTwC" id="3VVgDkJfGcS" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGcT" role="1PaTwD">
+            <property role="3oM_SC" value="Called" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcU" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcV" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcW" role="1PaTwD">
+            <property role="3oM_SC" value="framework" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcX" role="1PaTwD">
+            <property role="3oM_SC" value="when" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcY" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGcZ" role="1PaTwD">
+            <property role="3oM_SC" value="tool" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGd0" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGd1" role="1PaTwD">
+            <property role="3oM_SC" value="created" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGd2" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGd3" role="1PaTwD">
+            <property role="3oM_SC" value="initialized." />
           </node>
         </node>
       </node>
@@ -3505,9 +4018,30 @@
       <node concept="3Tm1VV" id="5zrVLV_TRZ0" role="1B3o_S" />
       <node concept="3cqZAl" id="5zrVLV_TRXN" role="3clF45" />
       <node concept="P$JXv" id="4G2jA20fC9N" role="lGtFl">
-        <node concept="TZ5HA" id="4G2jA20fC9O" role="TZ5H$">
-          <node concept="1dT_AC" id="4G2jA20fC9P" role="1dT_Ay">
-            <property role="1dT_AB" value="Called by the framework when users clicks &quot;refresh&quot;." />
+        <node concept="1PaTwC" id="3VVgDkJfGd4" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGd5" role="1PaTwD">
+            <property role="3oM_SC" value="Called" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGd6" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGd7" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGd8" role="1PaTwD">
+            <property role="3oM_SC" value="framework" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGd9" role="1PaTwD">
+            <property role="3oM_SC" value="when" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGda" role="1PaTwD">
+            <property role="3oM_SC" value="users" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGdb" role="1PaTwD">
+            <property role="3oM_SC" value="clicks" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGdc" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;refresh&quot;." />
           </node>
         </node>
       </node>
@@ -4624,19 +5158,154 @@
       <ref role="3uigEE" to="upej:~AbstractViewManager" resolve="AbstractViewManager" />
     </node>
     <node concept="3UR2Jj" id="6x5UxX2Y9Zg" role="lGtFl">
-      <node concept="TZ5HA" id="6x5UxX2Y9Zh" role="TZ5H$">
-        <node concept="1dT_AC" id="6x5UxX2Y9Zi" role="1dT_Ay">
-          <property role="1dT_AB" value="This class should be moved into the graphing library in the future. Because it is based on GraphViz .jar files," />
+      <node concept="1PaTwC" id="3VVgDkJfG9B" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfG9C" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9D" role="1PaTwD">
+          <property role="3oM_SC" value="class" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9E" role="1PaTwD">
+          <property role="3oM_SC" value="should" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9F" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9G" role="1PaTwD">
+          <property role="3oM_SC" value="moved" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9H" role="1PaTwD">
+          <property role="3oM_SC" value="into" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9I" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9J" role="1PaTwD">
+          <property role="3oM_SC" value="graphing" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9K" role="1PaTwD">
+          <property role="3oM_SC" value="library" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9L" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9M" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9N" role="1PaTwD">
+          <property role="3oM_SC" value="future." />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9O" role="1PaTwD">
+          <property role="3oM_SC" value="Because" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9P" role="1PaTwD">
+          <property role="3oM_SC" value="it" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9Q" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9R" role="1PaTwD">
+          <property role="3oM_SC" value="based" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9S" role="1PaTwD">
+          <property role="3oM_SC" value="on" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9T" role="1PaTwD">
+          <property role="3oM_SC" value="GraphViz" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9U" role="1PaTwD">
+          <property role="3oM_SC" value=".jar" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9V" role="1PaTwD">
+          <property role="3oM_SC" value="files," />
         </node>
       </node>
-      <node concept="TZ5HA" id="6x5UxX2Ya8F" role="TZ5H$">
-        <node concept="1dT_AC" id="6x5UxX2Ya8G" role="1dT_Ay">
-          <property role="1dT_AB" value="which are already loaded by mpsutils.plantuml, it seems safer to add plantuml as dependency in MPS instead of adding" />
+      <node concept="1PaTwC" id="3VVgDkJfG9W" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfG9X" role="1PaTwD">
+          <property role="3oM_SC" value="which" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9Y" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG9Z" role="1PaTwD">
+          <property role="3oM_SC" value="already" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGa0" role="1PaTwD">
+          <property role="3oM_SC" value="loaded" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGa1" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGa2" role="1PaTwD">
+          <property role="3oM_SC" value="mpsutils.plantuml," />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGa3" role="1PaTwD">
+          <property role="3oM_SC" value="it" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGa4" role="1PaTwD">
+          <property role="3oM_SC" value="seems" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGa5" role="1PaTwD">
+          <property role="3oM_SC" value="safer" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGa6" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGa7" role="1PaTwD">
+          <property role="3oM_SC" value="add" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGa8" role="1PaTwD">
+          <property role="3oM_SC" value="plantuml" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGa9" role="1PaTwD">
+          <property role="3oM_SC" value="as" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGaa" role="1PaTwD">
+          <property role="3oM_SC" value="dependency" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGab" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGac" role="1PaTwD">
+          <property role="3oM_SC" value="MPS" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGad" role="1PaTwD">
+          <property role="3oM_SC" value="instead" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGae" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGaf" role="1PaTwD">
+          <property role="3oM_SC" value="adding" />
         </node>
       </node>
-      <node concept="TZ5HA" id="6x5UxX2Ya8L" role="TZ5H$">
-        <node concept="1dT_AC" id="6x5UxX2Ya8M" role="1dT_Ay">
-          <property role="1dT_AB" value="respective stubs to the graphing solution at the moment." />
+      <node concept="1PaTwC" id="3VVgDkJfGag" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGah" role="1PaTwD">
+          <property role="3oM_SC" value="respective" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGai" role="1PaTwD">
+          <property role="3oM_SC" value="stubs" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGaj" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGak" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGal" role="1PaTwD">
+          <property role="3oM_SC" value="graphing" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGam" role="1PaTwD">
+          <property role="3oM_SC" value="solution" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGan" role="1PaTwD">
+          <property role="3oM_SC" value="at" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGao" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGap" role="1PaTwD">
+          <property role="3oM_SC" value="moment." />
         </node>
       </node>
     </node>

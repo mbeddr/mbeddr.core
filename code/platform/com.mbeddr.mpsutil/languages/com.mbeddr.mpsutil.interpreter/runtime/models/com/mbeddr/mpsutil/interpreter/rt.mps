@@ -9,7 +9,7 @@
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -352,22 +352,17 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="2217234381367049075" name="jetbrains.mps.baseLanguage.javadoc.structure.CodeInlineDocTag" flags="ng" index="VVOAv">
-        <child id="3106559687488741665" name="line" index="2Xj1qM" />
-      </concept>
-      <concept id="8970989240999019145" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentLinePart" flags="ng" index="1dT_AA">
-        <child id="6962838954693749192" name="tag" index="qph3F" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="6971016359099800069" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldSingleCommentLine" flags="ngI" index="2JaDLO">
+        <child id="6971016359099801474" name="commentBody" index="2JaDBN" />
       </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
+      <concept id="5085607816306582224" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentTextElement" flags="ng" index="1Vtdud">
+        <child id="5085607816306582225" name="tag" index="1Vtduc" />
+      </concept>
+      <concept id="5085607816306633585" name="jetbrains.mps.baseLanguage.javadoc.structure.CodeInlineDocTagTE" flags="ng" index="1VuTSG" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -18493,26 +18488,71 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="3FW9mgpv9sG" role="lGtFl">
-      <node concept="TZ5HA" id="3FW9mgpv9sH" role="TZ5H$">
-        <node concept="1dT_AC" id="3FW9mgpv9sI" role="1dT_Ay">
-          <property role="1dT_AB" value="Bundles together various services required for evaluation, to make it easier to pass them around." />
+      <node concept="1PaTwC" id="3VVgDkJfGiO" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGiP" role="1PaTwD">
+          <property role="3oM_SC" value="Bundles" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGiQ" role="1PaTwD">
+          <property role="3oM_SC" value="together" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGiR" role="1PaTwD">
+          <property role="3oM_SC" value="various" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGiS" role="1PaTwD">
+          <property role="3oM_SC" value="services" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGiT" role="1PaTwD">
+          <property role="3oM_SC" value="required" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGiU" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGiV" role="1PaTwD">
+          <property role="3oM_SC" value="evaluation," />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGiW" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGiX" role="1PaTwD">
+          <property role="3oM_SC" value="make" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGiY" role="1PaTwD">
+          <property role="3oM_SC" value="it" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGiZ" role="1PaTwD">
+          <property role="3oM_SC" value="easier" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGj0" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGj1" role="1PaTwD">
+          <property role="3oM_SC" value="pass" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGj2" role="1PaTwD">
+          <property role="3oM_SC" value="them" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGj3" role="1PaTwD">
+          <property role="3oM_SC" value="around." />
         </node>
       </node>
-      <node concept="TZ5HA" id="3FW9mgpvHDk" role="TZ5H$">
-        <node concept="1dT_AC" id="3FW9mgpvHDl" role="1dT_Ay">
-          <property role="1dT_AB" value="Accessible via " />
+      <node concept="1PaTwC" id="3VVgDkJfGj4" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGj5" role="1PaTwD">
+          <property role="3oM_SC" value="Accessible" />
         </node>
-        <node concept="1dT_AA" id="3FW9mgpvHDH" role="1dT_Ay">
-          <node concept="VVOAv" id="3FW9mgpvHDN" role="qph3F">
-            <node concept="TZ5HA" id="3FW9mgpvHDP" role="2Xj1qM">
-              <node concept="1dT_AC" id="3FW9mgpvHDT" role="1dT_Ay">
-                <property role="1dT_AB" value="evaluator" />
+        <node concept="3oM_SD" id="3VVgDkJfGj6" role="1PaTwD">
+          <property role="3oM_SC" value="via" />
+        </node>
+        <node concept="1Vtdud" id="3VVgDkJfGj7" role="1PaTwD">
+          <node concept="1VuTSG" id="3VVgDkJfGj8" role="1Vtduc">
+            <node concept="1PaTwC" id="3VVgDkJfGjb" role="2JaDBN">
+              <node concept="3oM_SD" id="3VVgDkJfGjc" role="1PaTwD">
+                <property role="3oM_SC" value="evaluator" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="1dT_AC" id="3FW9mgpvHDG" role="1dT_Ay">
-          <property role="1dT_AB" value=" expression." />
+        <node concept="3oM_SD" id="3VVgDkJfGjd" role="1PaTwD">
+          <property role="3oM_SC" value="expression." />
         </node>
       </node>
     </node>
