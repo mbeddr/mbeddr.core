@@ -11,7 +11,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="7wpd" ref="c7a315e6-1d93-4186-85bc-2dfafd1ccc21/r:fb1c47d7-a72e-4e01-92dc-1e9f2ba4a118(com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.util)" />
@@ -204,16 +204,10 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
@@ -4006,34 +4000,187 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="710iChROKTk" role="lGtFl">
-      <node concept="TZ5HA" id="710iChROKTl" role="TZ5H$">
-        <node concept="1dT_AC" id="710iChROKTm" role="1dT_Ay">
-          <property role="1dT_AB" value="Represent a nested base-language class member by an &quot;InstancePath&quot;." />
+      <node concept="1PaTwC" id="3VVgDkJfHdE" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfHdF" role="1PaTwD">
+          <property role="3oM_SC" value="Represent" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdG" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdH" role="1PaTwD">
+          <property role="3oM_SC" value="nested" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdI" role="1PaTwD">
+          <property role="3oM_SC" value="base-language" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdJ" role="1PaTwD">
+          <property role="3oM_SC" value="class" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdK" role="1PaTwD">
+          <property role="3oM_SC" value="member" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdL" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdM" role="1PaTwD">
+          <property role="3oM_SC" value="an" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdN" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;InstancePath&quot;." />
         </node>
       </node>
-      <node concept="TZ5HA" id="710iChROQRp" role="TZ5H$">
-        <node concept="1dT_AC" id="710iChROQRq" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="3VVgDkJfHdO" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfHdP" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="710iChROTpz" role="TZ5H$">
-        <node concept="1dT_AC" id="710iChROTp$" role="1dT_Ay">
-          <property role="1dT_AB" value="This is just an example how to use the InstancePath abstract class." />
+      <node concept="1PaTwC" id="3VVgDkJfHdQ" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfHdR" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdS" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdT" role="1PaTwD">
+          <property role="3oM_SC" value="just" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdU" role="1PaTwD">
+          <property role="3oM_SC" value="an" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdV" role="1PaTwD">
+          <property role="3oM_SC" value="example" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdW" role="1PaTwD">
+          <property role="3oM_SC" value="how" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdX" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdY" role="1PaTwD">
+          <property role="3oM_SC" value="use" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHdZ" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHe0" role="1PaTwD">
+          <property role="3oM_SC" value="InstancePath" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHe1" role="1PaTwD">
+          <property role="3oM_SC" value="abstract" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHe2" role="1PaTwD">
+          <property role="3oM_SC" value="class." />
         </node>
       </node>
-      <node concept="TZ5HA" id="710iChRP4Pz" role="TZ5H$">
-        <node concept="1dT_AC" id="710iChRP4P$" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="3VVgDkJfHe3" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfHe4" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="710iChRP757" role="TZ5H$">
-        <node concept="1dT_AC" id="710iChRP758" role="1dT_Ay">
-          <property role="1dT_AB" value="It could be helpful to implement some base-language code analyser. But as this is a theoretical option only, " />
+      <node concept="1PaTwC" id="3VVgDkJfHe5" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfHe6" role="1PaTwD">
+          <property role="3oM_SC" value="It" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHe7" role="1PaTwD">
+          <property role="3oM_SC" value="could" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHe8" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHe9" role="1PaTwD">
+          <property role="3oM_SC" value="helpful" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHea" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHeb" role="1PaTwD">
+          <property role="3oM_SC" value="implement" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHec" role="1PaTwD">
+          <property role="3oM_SC" value="some" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHed" role="1PaTwD">
+          <property role="3oM_SC" value="base-language" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHee" role="1PaTwD">
+          <property role="3oM_SC" value="code" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHef" role="1PaTwD">
+          <property role="3oM_SC" value="analyser." />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHeg" role="1PaTwD">
+          <property role="3oM_SC" value="But" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHeh" role="1PaTwD">
+          <property role="3oM_SC" value="as" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHei" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHej" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHek" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHel" role="1PaTwD">
+          <property role="3oM_SC" value="theoretical" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHem" role="1PaTwD">
+          <property role="3oM_SC" value="option" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHen" role="1PaTwD">
+          <property role="3oM_SC" value="only," />
         </node>
       </node>
-      <node concept="TZ5HA" id="710iChRP9K7" role="TZ5H$">
-        <node concept="1dT_AC" id="710iChRP9K8" role="1dT_Ay">
-          <property role="1dT_AB" value="we keep the class here in the test solution until someone actually wants to use it. " />
+      <node concept="1PaTwC" id="3VVgDkJfHeo" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfHep" role="1PaTwD">
+          <property role="3oM_SC" value="we" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHeq" role="1PaTwD">
+          <property role="3oM_SC" value="keep" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHer" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHes" role="1PaTwD">
+          <property role="3oM_SC" value="class" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHet" role="1PaTwD">
+          <property role="3oM_SC" value="here" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHeu" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHev" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHew" role="1PaTwD">
+          <property role="3oM_SC" value="test" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHex" role="1PaTwD">
+          <property role="3oM_SC" value="solution" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHey" role="1PaTwD">
+          <property role="3oM_SC" value="until" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHez" role="1PaTwD">
+          <property role="3oM_SC" value="someone" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHe$" role="1PaTwD">
+          <property role="3oM_SC" value="actually" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHe_" role="1PaTwD">
+          <property role="3oM_SC" value="wants" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHeA" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHeB" role="1PaTwD">
+          <property role="3oM_SC" value="use" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfHeC" role="1PaTwD">
+          <property role="3oM_SC" value="it." />
         </node>
       </node>
     </node>

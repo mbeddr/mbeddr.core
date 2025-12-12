@@ -175,15 +175,9 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1764,9 +1758,15 @@
         </node>
       </node>
       <node concept="P$JXv" id="1tDstbgCFxD" role="lGtFl">
-        <node concept="TZ5HA" id="1tDstbgCFxE" role="TZ5H$">
-          <node concept="1dT_AC" id="1tDstbgCFxF" role="1dT_Ay">
-            <property role="1dT_AB" value="itself or parent" />
+        <node concept="1PaTwC" id="3VVgDkJfFTl" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfFTm" role="1PaTwD">
+            <property role="3oM_SC" value="itself" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFTn" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFTo" role="1PaTwD">
+            <property role="3oM_SC" value="parent" />
           </node>
         </node>
       </node>
@@ -1823,9 +1823,15 @@
         </node>
       </node>
       <node concept="P$JXv" id="1tDstbgCGde" role="lGtFl">
-        <node concept="TZ5HA" id="1tDstbgCGdf" role="TZ5H$">
-          <node concept="1dT_AC" id="1tDstbgCGdg" role="1dT_Ay">
-            <property role="1dT_AB" value="itself or parent" />
+        <node concept="1PaTwC" id="3VVgDkJfFTp" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfFTq" role="1PaTwD">
+            <property role="3oM_SC" value="itself" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFTr" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFTs" role="1PaTwD">
+            <property role="3oM_SC" value="parent" />
           </node>
         </node>
       </node>

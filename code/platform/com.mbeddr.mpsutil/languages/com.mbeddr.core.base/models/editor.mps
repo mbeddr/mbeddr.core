@@ -10,7 +10,7 @@
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="-1" />
     <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -676,20 +676,14 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell">
       <concept id="1161622981231" name="de.slisson.mps.richtext.customcell.structure.ConceptFunctionParameter_cell" flags="nn" index="1Q80Hy" />
@@ -2244,9 +2238,15 @@
     <property role="3GE5qa" value="cells.lines" />
     <node concept="3UR2Jj" id="4U82Y3z1UTZ" role="lGtFl">
       <node concept="TZ5HI" id="4U82Y3z1UU0" role="3nqlJM">
-        <node concept="TZ5HA" id="4U82Y3z1UU1" role="3HnX3l">
-          <node concept="1dT_AC" id="4U82Y3z1Vaf" role="1dT_Ay">
-            <property role="1dT_AB" value=" Use de.itemis.mps.editor.celllayout.runtime.cells.HorizontalLineCell" />
+        <node concept="1PaTwC" id="3VVgDkJfFSg" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfFSh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFSi" role="1PaTwD">
+            <property role="3oM_SC" value="Use" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFSj" role="1PaTwD">
+            <property role="3oM_SC" value="de.itemis.mps.editor.celllayout.runtime.cells.HorizontalLineCell" />
           </node>
         </node>
       </node>
@@ -5903,9 +5903,15 @@
       </node>
       <node concept="P$JXv" id="4WjNWxKM5uy" role="lGtFl">
         <node concept="TZ5HI" id="4WjNWxKM5uz" role="3nqlJM">
-          <node concept="TZ5HA" id="4WjNWxKM5u$" role="3HnX3l">
-            <node concept="1dT_AC" id="4WjNWxKMbyA" role="1dT_Ay">
-              <property role="1dT_AB" value="override perform(Project, SNode)" />
+          <node concept="1PaTwC" id="3VVgDkJfFTg" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfFTh" role="1PaTwD">
+              <property role="3oM_SC" value="override" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfFTi" role="1PaTwD">
+              <property role="3oM_SC" value="perform(Project," />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfFTj" role="1PaTwD">
+              <property role="3oM_SC" value="SNode)" />
             </node>
           </node>
         </node>
@@ -13950,19 +13956,112 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="5IQEFjDI5V_" role="lGtFl">
-      <node concept="TZ5HA" id="5IQEFjDI5VA" role="TZ5H$">
-        <node concept="1dT_AC" id="5IQEFjDI5VB" role="1dT_Ay">
-          <property role="1dT_AB" value="This solves layout issues at some places, but introduces issues at other places." />
+      <node concept="1PaTwC" id="3VVgDkJfFSk" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfFSl" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSm" role="1PaTwD">
+          <property role="3oM_SC" value="solves" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSn" role="1PaTwD">
+          <property role="3oM_SC" value="layout" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSo" role="1PaTwD">
+          <property role="3oM_SC" value="issues" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSp" role="1PaTwD">
+          <property role="3oM_SC" value="at" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSq" role="1PaTwD">
+          <property role="3oM_SC" value="some" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSr" role="1PaTwD">
+          <property role="3oM_SC" value="places," />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSs" role="1PaTwD">
+          <property role="3oM_SC" value="but" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSt" role="1PaTwD">
+          <property role="3oM_SC" value="introduces" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSu" role="1PaTwD">
+          <property role="3oM_SC" value="issues" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSv" role="1PaTwD">
+          <property role="3oM_SC" value="at" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSw" role="1PaTwD">
+          <property role="3oM_SC" value="other" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSx" role="1PaTwD">
+          <property role="3oM_SC" value="places." />
         </node>
       </node>
-      <node concept="TZ5HA" id="5IQEFjDI6af" role="TZ5H$">
-        <node concept="1dT_AC" id="5IQEFjDI6ag" role="1dT_Ay">
-          <property role="1dT_AB" value="You have to try which one works in your case." />
+      <node concept="1PaTwC" id="3VVgDkJfFSy" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfFSz" role="1PaTwD">
+          <property role="3oM_SC" value="You" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFS$" role="1PaTwD">
+          <property role="3oM_SC" value="have" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFS_" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSA" role="1PaTwD">
+          <property role="3oM_SC" value="try" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSB" role="1PaTwD">
+          <property role="3oM_SC" value="which" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSC" role="1PaTwD">
+          <property role="3oM_SC" value="one" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSD" role="1PaTwD">
+          <property role="3oM_SC" value="works" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSE" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSF" role="1PaTwD">
+          <property role="3oM_SC" value="your" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSG" role="1PaTwD">
+          <property role="3oM_SC" value="case." />
         </node>
       </node>
-      <node concept="TZ5HA" id="5IQEFjDI6aD" role="TZ5H$">
-        <node concept="1dT_AC" id="5IQEFjDI6aE" role="1dT_Ay">
-          <property role="1dT_AB" value="A clean solution would require a different layout architecture in MPS." />
+      <node concept="1PaTwC" id="3VVgDkJfFSH" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfFSI" role="1PaTwD">
+          <property role="3oM_SC" value="A" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSJ" role="1PaTwD">
+          <property role="3oM_SC" value="clean" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSK" role="1PaTwD">
+          <property role="3oM_SC" value="solution" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSL" role="1PaTwD">
+          <property role="3oM_SC" value="would" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSM" role="1PaTwD">
+          <property role="3oM_SC" value="require" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSN" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSO" role="1PaTwD">
+          <property role="3oM_SC" value="different" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSP" role="1PaTwD">
+          <property role="3oM_SC" value="layout" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSQ" role="1PaTwD">
+          <property role="3oM_SC" value="architecture" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSR" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSS" role="1PaTwD">
+          <property role="3oM_SC" value="MPS." />
         </node>
       </node>
     </node>
@@ -14359,14 +14458,71 @@
       <ref role="3uigEE" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
     </node>
     <node concept="3UR2Jj" id="56eyDwNvRHo" role="lGtFl">
-      <node concept="TZ5HA" id="56eyDwNvRHp" role="TZ5H$">
-        <node concept="1dT_AC" id="56eyDwNvRHq" role="1dT_Ay">
-          <property role="1dT_AB" value="This provider implements yet another different strategy for vertical layouting that solves problems " />
+      <node concept="1PaTwC" id="3VVgDkJfFST" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfFSU" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSV" role="1PaTwD">
+          <property role="3oM_SC" value="provider" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSW" role="1PaTwD">
+          <property role="3oM_SC" value="implements" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSX" role="1PaTwD">
+          <property role="3oM_SC" value="yet" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSY" role="1PaTwD">
+          <property role="3oM_SC" value="another" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFSZ" role="1PaTwD">
+          <property role="3oM_SC" value="different" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFT0" role="1PaTwD">
+          <property role="3oM_SC" value="strategy" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFT1" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFT2" role="1PaTwD">
+          <property role="3oM_SC" value="vertical" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFT3" role="1PaTwD">
+          <property role="3oM_SC" value="layouting" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFT4" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFT5" role="1PaTwD">
+          <property role="3oM_SC" value="solves" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFT6" role="1PaTwD">
+          <property role="3oM_SC" value="problems" />
         </node>
       </node>
-      <node concept="TZ5HA" id="56eyDwNvSE6" role="TZ5H$">
-        <node concept="1dT_AC" id="56eyDwNvSE7" role="1dT_Ay">
-          <property role="1dT_AB" value="with correct layouting and behaviour experienced in ColoredVerticalBar/-2. " />
+      <node concept="1PaTwC" id="3VVgDkJfFT7" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfFT8" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFT9" role="1PaTwD">
+          <property role="3oM_SC" value="correct" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFTa" role="1PaTwD">
+          <property role="3oM_SC" value="layouting" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFTb" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFTc" role="1PaTwD">
+          <property role="3oM_SC" value="behaviour" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFTd" role="1PaTwD">
+          <property role="3oM_SC" value="experienced" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFTe" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFTf" role="1PaTwD">
+          <property role="3oM_SC" value="ColoredVerticalBar/-2." />
         </node>
       </node>
     </node>
