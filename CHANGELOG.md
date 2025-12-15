@@ -7,6 +7,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # December 2025
 
+## com.mbeddr.mpsutil.filepicker
+
+- No exception will be reported anymore when the solution prefix can't be determined because the source model info annotation contains an invalid model reference.
+
 ## com.mbeddr.mpsutil.hyperlink
 
 - introduced HyperlinkHandler.isApplicable
