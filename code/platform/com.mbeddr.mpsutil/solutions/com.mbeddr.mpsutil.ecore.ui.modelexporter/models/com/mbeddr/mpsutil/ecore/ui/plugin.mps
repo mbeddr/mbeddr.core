@@ -9,9 +9,9 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -241,16 +241,11 @@
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
@@ -432,9 +427,15 @@
       <node concept="3Tm1VV" id="6TiIOkR_S7t" role="1B3o_S" />
       <node concept="P$JXv" id="7izjdFIz6YB" role="lGtFl">
         <node concept="TZ5HI" id="7izjdFIz6YC" role="3nqlJM">
-          <node concept="TZ5HA" id="7izjdFIz6YD" role="3HnX3l">
-            <node concept="1dT_AC" id="7izjdFIz8AI" role="1dT_Ay">
-              <property role="1dT_AB" value=" use EcoreImporterUI.importEcoreFile()" />
+          <node concept="1PaTwC" id="3VVgDkJfGUS" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfGUT" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGUU" role="1PaTwD">
+              <property role="3oM_SC" value="use" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGUV" role="1PaTwD">
+              <property role="3oM_SC" value="EcoreImporterUI.importEcoreFile()" />
             </node>
           </node>
         </node>
@@ -447,9 +448,15 @@
     <node concept="3Tm1VV" id="6TiIOkR_S7v" role="1B3o_S" />
     <node concept="3UR2Jj" id="7izjdFIz87m" role="lGtFl">
       <node concept="TZ5HI" id="7izjdFIz87n" role="3nqlJM">
-        <node concept="TZ5HA" id="7izjdFIz87o" role="3HnX3l">
-          <node concept="1dT_AC" id="7izjdFIz8AG" role="1dT_Ay">
-            <property role="1dT_AB" value=" use EcoreImporterUI" />
+        <node concept="1PaTwC" id="3VVgDkJfGUK" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGUL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUM" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUN" role="1PaTwD">
+            <property role="3oM_SC" value="EcoreImporterUI" />
           </node>
         </node>
       </node>
@@ -688,9 +695,15 @@
       <node concept="3Tm1VV" id="1a1uQDXH4Jk" role="1B3o_S" />
       <node concept="P$JXv" id="7izjdFIz8Sn" role="lGtFl">
         <node concept="TZ5HI" id="7izjdFIz8So" role="3nqlJM">
-          <node concept="TZ5HA" id="7izjdFIz8Sp" role="3HnX3l">
-            <node concept="1dT_AC" id="7izjdFIz9s8" role="1dT_Ay">
-              <property role="1dT_AB" value=" use EcoreImporterUI.exportEcoreModel()" />
+          <node concept="1PaTwC" id="3VVgDkJfGUW" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfGUX" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGUY" role="1PaTwD">
+              <property role="3oM_SC" value="use" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGUZ" role="1PaTwD">
+              <property role="3oM_SC" value="EcoreImporterUI.exportEcoreModel()" />
             </node>
           </node>
         </node>
@@ -703,9 +716,15 @@
     <node concept="3Tm1VV" id="3zQAMCeVl7r" role="1B3o_S" />
     <node concept="3UR2Jj" id="7izjdFIz8fT" role="lGtFl">
       <node concept="TZ5HI" id="7izjdFIz8fU" role="3nqlJM">
-        <node concept="TZ5HA" id="7izjdFIz8fV" role="3HnX3l">
-          <node concept="1dT_AC" id="7izjdFIz8jP" role="1dT_Ay">
-            <property role="1dT_AB" value=" use EcoreImporterUI" />
+        <node concept="1PaTwC" id="3VVgDkJfGUO" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGUP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUQ" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUR" role="1PaTwD">
+            <property role="3oM_SC" value="EcoreImporterUI" />
           </node>
         </node>
       </node>

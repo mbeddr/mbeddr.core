@@ -4,7 +4,7 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -209,15 +209,11 @@
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -1817,21 +1813,146 @@
       </node>
       <node concept="P$JXv" id="1wGuEUwlrMN" role="lGtFl">
         <node concept="x79VA" id="1wGuEUwlrMQ" role="3nqlJM">
-          <property role="x79VB" value="the applicable conversion specifiers" />
-        </node>
-        <node concept="TZ5HA" id="1wGuEUwlrMO" role="TZ5H$">
-          <node concept="1dT_AC" id="1wGuEUwlsiX" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the applicable conversion specifiers which match the source and target unit and also the expressions type. " />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3VVgDkJgc8v" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJgc8w" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgc8x" role="1PaTwD">
+              <property role="3oM_SC" value="applicable" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgc8y" role="1PaTwD">
+              <property role="3oM_SC" value="conversion" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgc8z" role="1PaTwD">
+              <property role="3oM_SC" value="specifiers" />
+            </node>
           </node>
         </node>
-        <node concept="TZ5HA" id="1wGuEUwlsj0" role="TZ5H$">
-          <node concept="1dT_AC" id="1wGuEUwlsj1" role="1dT_Ay">
-            <property role="1dT_AB" value="THIS METHOD USES THE .type ATTRIBUTE OF THE EXPRESSION WHICH CAN CAUSE TYPE SYSTEM PROBLEMS WHEN NOT INVOKED" />
+        <node concept="1PaTwC" id="3VVgDkJgc7O" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgc7P" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc7Q" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc7R" role="1PaTwD">
+            <property role="3oM_SC" value="applicable" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc7S" role="1PaTwD">
+            <property role="3oM_SC" value="conversion" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc7T" role="1PaTwD">
+            <property role="3oM_SC" value="specifiers" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc7U" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc7V" role="1PaTwD">
+            <property role="3oM_SC" value="match" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc7W" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc7X" role="1PaTwD">
+            <property role="3oM_SC" value="source" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc7Y" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc7Z" role="1PaTwD">
+            <property role="3oM_SC" value="target" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc80" role="1PaTwD">
+            <property role="3oM_SC" value="unit" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc81" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc82" role="1PaTwD">
+            <property role="3oM_SC" value="also" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc83" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc84" role="1PaTwD">
+            <property role="3oM_SC" value="expressions" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc85" role="1PaTwD">
+            <property role="3oM_SC" value="type." />
           </node>
         </node>
-        <node concept="TZ5HA" id="1wGuEUwlsja" role="TZ5H$">
-          <node concept="1dT_AC" id="1wGuEUwlsjb" role="1dT_Ay">
-            <property role="1dT_AB" value="FROM A TYPE SYSTEM RULE. " />
+        <node concept="1PaTwC" id="3VVgDkJgc86" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgc87" role="1PaTwD">
+            <property role="3oM_SC" value="THIS" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc88" role="1PaTwD">
+            <property role="3oM_SC" value="METHOD" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc89" role="1PaTwD">
+            <property role="3oM_SC" value="USES" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8a" role="1PaTwD">
+            <property role="3oM_SC" value="THE" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8b" role="1PaTwD">
+            <property role="3oM_SC" value=".type" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8c" role="1PaTwD">
+            <property role="3oM_SC" value="ATTRIBUTE" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8d" role="1PaTwD">
+            <property role="3oM_SC" value="OF" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8e" role="1PaTwD">
+            <property role="3oM_SC" value="THE" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8f" role="1PaTwD">
+            <property role="3oM_SC" value="EXPRESSION" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8g" role="1PaTwD">
+            <property role="3oM_SC" value="WHICH" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8h" role="1PaTwD">
+            <property role="3oM_SC" value="CAN" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8i" role="1PaTwD">
+            <property role="3oM_SC" value="CAUSE" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8j" role="1PaTwD">
+            <property role="3oM_SC" value="TYPE" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8k" role="1PaTwD">
+            <property role="3oM_SC" value="SYSTEM" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8l" role="1PaTwD">
+            <property role="3oM_SC" value="PROBLEMS" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8m" role="1PaTwD">
+            <property role="3oM_SC" value="WHEN" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8n" role="1PaTwD">
+            <property role="3oM_SC" value="NOT" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8o" role="1PaTwD">
+            <property role="3oM_SC" value="INVOKED" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJgc8p" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgc8q" role="1PaTwD">
+            <property role="3oM_SC" value="FROM" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8r" role="1PaTwD">
+            <property role="3oM_SC" value="A" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8s" role="1PaTwD">
+            <property role="3oM_SC" value="TYPE" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8t" role="1PaTwD">
+            <property role="3oM_SC" value="SYSTEM" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8u" role="1PaTwD">
+            <property role="3oM_SC" value="RULE." />
           </node>
         </node>
       </node>
@@ -2115,21 +2236,146 @@
       </node>
       <node concept="P$JXv" id="67zt_p0yRSU" role="lGtFl">
         <node concept="x79VA" id="67zt_p0yRSV" role="3nqlJM">
-          <property role="x79VB" value="the applicable conversion specifiers" />
-        </node>
-        <node concept="TZ5HA" id="67zt_p0yRSW" role="TZ5H$">
-          <node concept="1dT_AC" id="67zt_p0yRSX" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the applicable conversion specifiers which match the source and target unit and also the expressions type. " />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3VVgDkJgc9f" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJgc9g" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgc9h" role="1PaTwD">
+              <property role="3oM_SC" value="applicable" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgc9i" role="1PaTwD">
+              <property role="3oM_SC" value="conversion" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgc9j" role="1PaTwD">
+              <property role="3oM_SC" value="specifiers" />
+            </node>
           </node>
         </node>
-        <node concept="TZ5HA" id="67zt_p0yRSY" role="TZ5H$">
-          <node concept="1dT_AC" id="67zt_p0yRSZ" role="1dT_Ay">
-            <property role="1dT_AB" value="THIS METHOD USES THE .type ATTRIBUTE OF THE EXPRESSION WHICH CAN CAUSE TYPE SYSTEM PROBLEMS WHEN NOT INVOKED" />
+        <node concept="1PaTwC" id="3VVgDkJgc8$" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgc8_" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8A" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8B" role="1PaTwD">
+            <property role="3oM_SC" value="applicable" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8C" role="1PaTwD">
+            <property role="3oM_SC" value="conversion" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8D" role="1PaTwD">
+            <property role="3oM_SC" value="specifiers" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8E" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8F" role="1PaTwD">
+            <property role="3oM_SC" value="match" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8G" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8H" role="1PaTwD">
+            <property role="3oM_SC" value="source" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8I" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8J" role="1PaTwD">
+            <property role="3oM_SC" value="target" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8K" role="1PaTwD">
+            <property role="3oM_SC" value="unit" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8L" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8M" role="1PaTwD">
+            <property role="3oM_SC" value="also" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8N" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8O" role="1PaTwD">
+            <property role="3oM_SC" value="expressions" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8P" role="1PaTwD">
+            <property role="3oM_SC" value="type." />
           </node>
         </node>
-        <node concept="TZ5HA" id="67zt_p0yRT0" role="TZ5H$">
-          <node concept="1dT_AC" id="67zt_p0yRT1" role="1dT_Ay">
-            <property role="1dT_AB" value="FROM A TYPE SYSTEM RULE. " />
+        <node concept="1PaTwC" id="3VVgDkJgc8Q" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgc8R" role="1PaTwD">
+            <property role="3oM_SC" value="THIS" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8S" role="1PaTwD">
+            <property role="3oM_SC" value="METHOD" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8T" role="1PaTwD">
+            <property role="3oM_SC" value="USES" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8U" role="1PaTwD">
+            <property role="3oM_SC" value="THE" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8V" role="1PaTwD">
+            <property role="3oM_SC" value=".type" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8W" role="1PaTwD">
+            <property role="3oM_SC" value="ATTRIBUTE" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8X" role="1PaTwD">
+            <property role="3oM_SC" value="OF" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8Y" role="1PaTwD">
+            <property role="3oM_SC" value="THE" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc8Z" role="1PaTwD">
+            <property role="3oM_SC" value="EXPRESSION" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc90" role="1PaTwD">
+            <property role="3oM_SC" value="WHICH" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc91" role="1PaTwD">
+            <property role="3oM_SC" value="CAN" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc92" role="1PaTwD">
+            <property role="3oM_SC" value="CAUSE" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc93" role="1PaTwD">
+            <property role="3oM_SC" value="TYPE" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc94" role="1PaTwD">
+            <property role="3oM_SC" value="SYSTEM" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc95" role="1PaTwD">
+            <property role="3oM_SC" value="PROBLEMS" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc96" role="1PaTwD">
+            <property role="3oM_SC" value="WHEN" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc97" role="1PaTwD">
+            <property role="3oM_SC" value="NOT" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc98" role="1PaTwD">
+            <property role="3oM_SC" value="INVOKED" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJgc99" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgc9a" role="1PaTwD">
+            <property role="3oM_SC" value="FROM" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc9b" role="1PaTwD">
+            <property role="3oM_SC" value="A" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc9c" role="1PaTwD">
+            <property role="3oM_SC" value="TYPE" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc9d" role="1PaTwD">
+            <property role="3oM_SC" value="SYSTEM" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgc9e" role="1PaTwD">
+            <property role="3oM_SC" value="RULE." />
           </node>
         </node>
       </node>

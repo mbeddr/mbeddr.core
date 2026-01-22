@@ -22,6 +22,7 @@
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="tpdo" ref="r:00000000-0000-4000-0000-011c895902a0(jetbrains.mps.lang.editor.generator.baseLanguage.template.util)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
+    <import index="nivk" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.descriptor(MPS.Editor/)" />
     <import index="ric" ref="r:e5a76249-cb8e-4819-94c4-41ac88316cb8(com.mbeddr.mpsutil.datepicker.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -61,7 +62,10 @@
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
-      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <property id="1075300953594" name="abstractClass" index="1sVAO0" />
+        <child id="1095933932569" name="implementedInterface" index="EKbjA" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -99,7 +103,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -225,18 +228,15 @@
     <ref role="3gUMe" to="ric:2nIaZ7iwtiu" resolve="DatePickerCell" />
     <node concept="312cEu" id="2nIaZ7ixfEy" role="13RCb5">
       <property role="TrG5h" value="_context_class_" />
-      <node concept="3clFbW" id="2nIaZ7ixfEz" role="jymVt">
-        <node concept="3clFbS" id="2nIaZ7ixfE$" role="3clF47" />
-        <node concept="3cqZAl" id="2nIaZ7ixfE_" role="3clF45" />
-        <node concept="3Tm1VV" id="2nIaZ7ixfEA" role="1B3o_S" />
-      </node>
+      <property role="1sVAO0" value="true" />
+      <node concept="2tJIrI" id="2cEFoAfPA6I" role="jymVt" />
       <node concept="3clFb_" id="2nIaZ7ixfEB" role="jymVt">
         <property role="TrG5h" value="_cell_factory_method_" />
         <node concept="3uibUv" id="2nIaZ7ixfEC" role="3clF45">
           <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
         </node>
         <node concept="raruj" id="2nIaZ7ixfED" role="lGtFl">
-          <ref role="2sdACS" to="tpc3:hG092h3" resolve="cellFactoryMethod" />
+          <ref role="2sdACS" to="tpc3:2dNBF9rpTiT" resolve="cellFactory.factoryMethod" />
         </node>
         <node concept="3clFbS" id="2nIaZ7ixfEE" role="3clF47">
           <node concept="3cpWs8" id="2nIaZ7ixfFh" role="3cqZAp">
@@ -384,11 +384,11 @@
                 <node concept="37vLTw" id="2nIaZ7ixfFd" role="37wK5m">
                   <ref role="3cqZAo" node="2nIaZ7ixfEG" resolve="config" />
                 </node>
-                <node concept="37vLTw" id="2nIaZ7ixfFe" role="37wK5m">
-                  <ref role="3cqZAo" node="2nIaZ7ixfIp" resolve="node" />
+                <node concept="1rXfSq" id="2cEFoAfPRs5" role="37wK5m">
+                  <ref role="37wK5l" to="nivk:~EditorBuilderEnvironment.getNode()" resolve="getNode" />
                 </node>
-                <node concept="37vLTw" id="2nIaZ7ixfFf" role="37wK5m">
-                  <ref role="3cqZAo" node="2nIaZ7ixfIn" resolve="editorContext" />
+                <node concept="1rXfSq" id="2cEFoAfPT0T" role="37wK5m">
+                  <ref role="37wK5l" to="nivk:~EditorBuilderEnvironment.getEditorContext()" resolve="getEditorContext" />
                 </node>
               </node>
             </node>
@@ -642,11 +642,11 @@
               <node concept="2YIFZM" id="2nIaZ7ixfH3" role="33vP2m">
                 <ref role="1Pybhc" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
                 <ref role="37wK5l" to="g51k:~EditorCell_Collection.createHorizontal(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode)" resolve="createHorizontal" />
-                <node concept="37vLTw" id="2nIaZ7ixfH4" role="37wK5m">
-                  <ref role="3cqZAo" node="2nIaZ7ixfIn" resolve="editorContext" />
+                <node concept="1rXfSq" id="2cEFoAfPW3N" role="37wK5m">
+                  <ref role="37wK5l" to="nivk:~EditorBuilderEnvironment.getEditorContext()" resolve="getEditorContext" />
                 </node>
-                <node concept="37vLTw" id="2nIaZ7ixfH5" role="37wK5m">
-                  <ref role="3cqZAo" node="2nIaZ7ixfIp" resolve="node" />
+                <node concept="1rXfSq" id="2cEFoAfPXAJ" role="37wK5m">
+                  <ref role="37wK5l" to="nivk:~EditorBuilderEnvironment.getNode()" resolve="getNode" />
                 </node>
               </node>
             </node>
@@ -666,14 +666,14 @@
               <node concept="2ShNRf" id="2nIaZ7ixfHa" role="37vLTx">
                 <node concept="1pGfFk" id="2nIaZ7ixfHb" role="2ShVmc">
                   <ref role="37wK5l" to="k0h:2nIaZ7ix0SZ" resolve="EditorCell_DatePickerEntryField" />
-                  <node concept="37vLTw" id="2nIaZ7ixfHc" role="37wK5m">
-                    <ref role="3cqZAo" node="2nIaZ7ixfIn" resolve="editorContext" />
+                  <node concept="1rXfSq" id="2cEFoAfQ3VG" role="37wK5m">
+                    <ref role="37wK5l" to="nivk:~EditorBuilderEnvironment.getEditorContext()" resolve="getEditorContext" />
                   </node>
                   <node concept="37vLTw" id="2nIaZ7ixfHd" role="37wK5m">
                     <ref role="3cqZAo" node="2nIaZ7ixfFu" resolve="datePicker" />
                   </node>
-                  <node concept="37vLTw" id="2nIaZ7ixfHe" role="37wK5m">
-                    <ref role="3cqZAo" node="2nIaZ7ixfIp" resolve="node" />
+                  <node concept="1rXfSq" id="2cEFoAfQ22R" role="37wK5m">
+                    <ref role="37wK5l" to="nivk:~EditorBuilderEnvironment.getNode()" resolve="getNode" />
                   </node>
                 </node>
               </node>
@@ -799,11 +799,11 @@
               <node concept="2ShNRf" id="2nIaZ7ixfHp" role="33vP2m">
                 <node concept="1pGfFk" id="2nIaZ7ixfHq" role="2ShVmc">
                   <ref role="37wK5l" to="k0h:2nIaZ7ix0Qt" resolve="EditorCell_DatePickerComponent" />
-                  <node concept="37vLTw" id="2nIaZ7ixfHr" role="37wK5m">
-                    <ref role="3cqZAo" node="2nIaZ7ixfIn" resolve="editorContext" />
+                  <node concept="1rXfSq" id="2cEFoAfQ4TG" role="37wK5m">
+                    <ref role="37wK5l" to="nivk:~EditorBuilderEnvironment.getEditorContext()" resolve="getEditorContext" />
                   </node>
-                  <node concept="37vLTw" id="2nIaZ7ixfHs" role="37wK5m">
-                    <ref role="3cqZAo" node="2nIaZ7ixfIp" resolve="node" />
+                  <node concept="1rXfSq" id="2cEFoAfQa3_" role="37wK5m">
+                    <ref role="37wK5l" to="nivk:~EditorBuilderEnvironment.getNode()" resolve="getNode" />
                   </node>
                   <node concept="37vLTw" id="2nIaZ7ixfHt" role="37wK5m">
                     <ref role="3cqZAo" node="2nIaZ7ixfGL" resolve="panel" />
@@ -891,11 +891,11 @@
               <node concept="2ShNRf" id="1PDQQQzzRL_" role="33vP2m">
                 <node concept="1pGfFk" id="1PDQQQzzRLA" role="2ShVmc">
                   <ref role="37wK5l" to="k0h:7YXF5OhmhpL" resolve="EditorCell_DatePickerEnd" />
-                  <node concept="37vLTw" id="1PDQQQzzRLB" role="37wK5m">
-                    <ref role="3cqZAo" node="2nIaZ7ixfIn" resolve="editorContext" />
+                  <node concept="1rXfSq" id="2cEFoAfQ6W3" role="37wK5m">
+                    <ref role="37wK5l" to="nivk:~EditorBuilderEnvironment.getEditorContext()" resolve="getEditorContext" />
                   </node>
-                  <node concept="37vLTw" id="1PDQQQzzRLC" role="37wK5m">
-                    <ref role="3cqZAo" node="2nIaZ7ixfIp" resolve="node" />
+                  <node concept="1rXfSq" id="2cEFoAfQ94X" role="37wK5m">
+                    <ref role="37wK5l" to="nivk:~EditorBuilderEnvironment.getNode()" resolve="getNode" />
                   </node>
                 </node>
               </node>
@@ -1000,11 +1000,11 @@
                   <node concept="1pGfFk" id="2nIaZ7ixfHM" role="2ShVmc">
                     <ref role="37wK5l" to="k0h:2nIaZ7ix0LF" resolve="DatePickerActionListener" />
                     <node concept="2OqwBi" id="7Xu1QHtTm9W" role="37wK5m">
-                      <node concept="37vLTw" id="7Xu1QHtTlh5" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2nIaZ7ixfIn" resolve="editorContext" />
-                      </node>
                       <node concept="liA8E" id="7Xu1QHtTmNk" role="2OqNvi">
                         <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+                      </node>
+                      <node concept="1rXfSq" id="2cEFoAfQfEt" role="2Oq$k0">
+                        <ref role="37wK5l" to="nivk:~EditorBuilderEnvironment.getEditorContext()" resolve="getEditorContext" />
                       </node>
                     </node>
                     <node concept="2ShNRf" id="2nIaZ7ixfHN" role="37wK5m">
@@ -1072,11 +1072,11 @@
                                   <node concept="37vLTw" id="7Qm_JpKT3RA" role="37wK5m">
                                     <ref role="3cqZAo" node="7Qm_JpKSS2C" resolve="calendar" />
                                   </node>
-                                  <node concept="37vLTw" id="35WzcHe1umY" role="37wK5m">
-                                    <ref role="3cqZAo" node="2nIaZ7ixfIp" resolve="node" />
+                                  <node concept="1rXfSq" id="2cEFoAfQdxZ" role="37wK5m">
+                                    <ref role="37wK5l" to="nivk:~EditorBuilderEnvironment.getNode()" resolve="getNode" />
                                   </node>
-                                  <node concept="37vLTw" id="35WzcHe1uoP" role="37wK5m">
-                                    <ref role="3cqZAo" node="2nIaZ7ixfIn" resolve="editorContext" />
+                                  <node concept="1rXfSq" id="2cEFoAfQhxY" role="37wK5m">
+                                    <ref role="37wK5l" to="nivk:~EditorBuilderEnvironment.getEditorContext()" resolve="getEditorContext" />
                                   </node>
                                 </node>
                               </node>
@@ -1187,19 +1187,6 @@
               <ref role="3cqZAo" node="2nIaZ7ixfH1" resolve="editorCell" />
             </node>
           </node>
-          <node concept="3clFbH" id="2nIaZ7ixfIm" role="3cqZAp" />
-        </node>
-        <node concept="37vLTG" id="2nIaZ7ixfIn" role="3clF46">
-          <property role="TrG5h" value="editorContext" />
-          <property role="3TUv4t" value="true" />
-          <node concept="3uibUv" id="2nIaZ7ixfIo" role="1tU5fm">
-            <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
-          </node>
-        </node>
-        <node concept="37vLTG" id="2nIaZ7ixfIp" role="3clF46">
-          <property role="TrG5h" value="node" />
-          <property role="3TUv4t" value="true" />
-          <node concept="3Tqbb2" id="2nIaZ7ixfIq" role="1tU5fm" />
         </node>
         <node concept="3Tm6S6" id="2nIaZ7ixfIr" role="1B3o_S" />
         <node concept="17Uvod" id="2nIaZ7ixfIs" role="lGtFl">
@@ -1220,23 +1207,10 @@
           </node>
         </node>
       </node>
-      <node concept="3clFb_" id="4Hw51cn4eQZ" role="jymVt">
-        <property role="TrG5h" value="newFactoryMethod" />
-        <node concept="3uibUv" id="4Hw51cn4eR0" role="3clF45">
-          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
-        </node>
-        <node concept="3clFbS" id="4Hw51cn4eR1" role="3clF47">
-          <node concept="3cpWs6" id="4Hw51cn4eR2" role="3cqZAp">
-            <node concept="10Nm6u" id="4Hw51cn4eR3" role="3cqZAk" />
-          </node>
-        </node>
-        <node concept="raruj" id="4Hw51cn4eR4" role="lGtFl" />
-        <node concept="5jKBG" id="4Hw51cn4eR5" role="lGtFl">
-          <ref role="v9R2y" to="tpc3:2dNBF9rt5kk" resolve="template_cellFactoryCompatibility" />
-        </node>
-        <node concept="3Tm6S6" id="4Hw51cn4eR6" role="1B3o_S" />
-      </node>
       <node concept="3Tm1VV" id="2nIaZ7ixfI$" role="1B3o_S" />
+      <node concept="3uibUv" id="2cEFoAfPDr8" role="EKbjA">
+        <ref role="3uigEE" to="nivk:~EditorBuilderEnvironment" resolve="EditorBuilderEnvironment" />
+      </node>
     </node>
   </node>
   <node concept="bUwia" id="2nIaZ7ixfI_">

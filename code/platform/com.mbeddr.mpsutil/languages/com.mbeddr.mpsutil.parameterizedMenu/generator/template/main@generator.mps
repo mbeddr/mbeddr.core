@@ -2,7 +2,7 @@
 <model ref="r:fe0894ec-1c24-4ff3-8d21-e37cfad7c523(main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -232,14 +232,8 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
@@ -522,17 +516,56 @@
           </node>
         </node>
         <node concept="z59LJ" id="5_UfM9yrTYz" role="lGtFl">
-          <node concept="TZ5HA" id="5_UfM9yrTY$" role="TZ5H$">
-            <node concept="1dT_AC" id="5_UfM9yrTY_" role="1dT_Ay">
-              <property role="1dT_AB" value="The &quot;myParameterObject&quot; has to be named exactly so, because otherwise," />
+          <node concept="1PaTwC" id="3VVgDkJfG6u" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfG6v" role="1PaTwD">
+              <property role="3oM_SC" value="The" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfG6w" role="1PaTwD">
+              <property role="3oM_SC" value="&quot;myParameterObject&quot;" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfG6x" role="1PaTwD">
+              <property role="3oM_SC" value="has" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfG6y" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfG6z" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfG6$" role="1PaTwD">
+              <property role="3oM_SC" value="named" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfG6_" role="1PaTwD">
+              <property role="3oM_SC" value="exactly" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfG6A" role="1PaTwD">
+              <property role="3oM_SC" value="so," />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfG6B" role="1PaTwD">
+              <property role="3oM_SC" value="because" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfG6C" role="1PaTwD">
+              <property role="3oM_SC" value="otherwise," />
             </node>
           </node>
-          <node concept="TZ5HA" id="5_UfM9yrVIv" role="TZ5H$">
-            <node concept="1dT_AC" id="5_UfM9yrVIw" role="1dT_Ay">
-              <property role="1dT_AB" value="QueryFunctionParameter_parameterObject will not find it." />
+          <node concept="1PaTwC" id="3VVgDkJfG6D" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfG6E" role="1PaTwD">
+              <property role="3oM_SC" value="QueryFunctionParameter_parameterObject" />
             </node>
-            <node concept="1dT_AC" id="5_UfM9yrWgb" role="1dT_Ay">
-              <property role="1dT_AB" value="" />
+            <node concept="3oM_SD" id="3VVgDkJfG6F" role="1PaTwD">
+              <property role="3oM_SC" value="will" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfG6G" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfG6H" role="1PaTwD">
+              <property role="3oM_SC" value="find" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfG6I" role="1PaTwD">
+              <property role="3oM_SC" value="it." />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfG6J" role="1PaTwD">
+              <property role="3oM_SC" value="" />
             </node>
           </node>
         </node>
