@@ -1,3 +1,4 @@
+import buildlogic.additionalPomInfo
 import de.itemis.mps.gradle.RunAntScript
 
 plugins {
@@ -14,3 +15,5 @@ dependencies {
 tasks.withType<RunAntScript>().configureEach {
     executable = LazyString(jbrToolchain.javaLauncher.map { it.executablePath.toString() })
 }
+
+extra["additionalPomInfo"] = Action<MavenPom>(MavenPom::additionalPomInfo)
