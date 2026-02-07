@@ -1,5 +1,5 @@
 [plugins]
-common = "de.itemis.mps.gradle.common:1.29.+"
+common = "de.itemis.mps.gradle.common:1.30.+"
 jbr-toolchain = "com.specificlanguages.jbr-toolchain:1.1.0"
 
 [libraries]
