@@ -6,7 +6,7 @@
   "enabledManagers": ["gradle", "gradle-wrapper"],
 
   // Renovate master and recent maintenance branches
-  "baseBranches": ["master", "/^maintenance/mps202[4-9][0-9]/"],
+  "baseBranchPatterns": ["master", "/^maintenance/mps202[4-9][0-9]/"],
 
   "packageRules": [
     {
@@ -20,7 +20,14 @@
     },
 
     {
-      // MPS-extensions: allow unstable versions on master (snapshots, a/b letters in commit hashes, etc.)
+      // Versioning for MPS extensions: match the typical version number: 2024.1.234.abcdef12, but do not treat commit
+      // hashes with 'a' or 'b' as pre-releases. Only a `-something` suffix is treated as a pre-release.
+      "matchPackageNames": ["de.itemis.mps:extensions"],
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\.[0-9a-f]+(?:-(?<prerelease>.*))?$",
+    },
+
+    {
+      // MPS-extensions: allow unstable versions on master (snapshots)
       "matchBaseBranches": ["master"],
       "matchPackageNames": ["de.itemis.mps:extensions"],
       "ignoreUnstable": false,
@@ -52,6 +59,11 @@
       "matchPackageNames": ["com.jetbrains.jdk:*"],
       "matchBaseBranches": ["!/^master$/"],
       "enabled": false
+    },
+
+    {
+      "matchPackageNames" : ["net.sourceforge.plantuml:plantuml"],
+      "allowedVersions": "< 2000"
     }
   ]
 }
