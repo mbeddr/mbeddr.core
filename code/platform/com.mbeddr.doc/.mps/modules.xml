@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/_spreferences/AaaaaaaPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.documentation/com.mbeddr.documentation.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_latex/com.mbeddr.doc.gen_latex.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_markdown/com.mbeddr.doc.gen_markdown.mpl" folder="lang" />
