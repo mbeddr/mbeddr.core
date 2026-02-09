@@ -10,7 +10,7 @@
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
@@ -301,18 +301,12 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -3754,12 +3748,63 @@
       </node>
       <node concept="3Tm6S6" id="10o6Xu8Yj5R" role="1B3o_S" />
       <node concept="P$JXv" id="10o6Xu8YuMf" role="lGtFl">
-        <node concept="TZ5HA" id="10o6Xu8YuMg" role="TZ5H$">
-          <node concept="1dT_AC" id="10o6Xu8YuMh" role="1dT_Ay">
-            <property role="1dT_AB" value="PLEASE USE THIS METHOD AS AN EXAMPLE. PreferenceModules class, full of static methods, is poorly designed, please refactor!" />
+        <node concept="1PaTwC" id="3VVgDkJfH1j" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfH1k" role="1PaTwD">
+            <property role="3oM_SC" value="PLEASE" />
           </node>
-          <node concept="1dT_AC" id="10o6Xu8Yw0M" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+          <node concept="3oM_SD" id="3VVgDkJfH1l" role="1PaTwD">
+            <property role="3oM_SC" value="USE" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1m" role="1PaTwD">
+            <property role="3oM_SC" value="THIS" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1n" role="1PaTwD">
+            <property role="3oM_SC" value="METHOD" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1o" role="1PaTwD">
+            <property role="3oM_SC" value="AS" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1p" role="1PaTwD">
+            <property role="3oM_SC" value="AN" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1q" role="1PaTwD">
+            <property role="3oM_SC" value="EXAMPLE." />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1r" role="1PaTwD">
+            <property role="3oM_SC" value="PreferenceModules" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1s" role="1PaTwD">
+            <property role="3oM_SC" value="class," />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1t" role="1PaTwD">
+            <property role="3oM_SC" value="full" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1u" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1v" role="1PaTwD">
+            <property role="3oM_SC" value="static" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1w" role="1PaTwD">
+            <property role="3oM_SC" value="methods," />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1x" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1y" role="1PaTwD">
+            <property role="3oM_SC" value="poorly" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1z" role="1PaTwD">
+            <property role="3oM_SC" value="designed," />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1$" role="1PaTwD">
+            <property role="3oM_SC" value="please" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1_" role="1PaTwD">
+            <property role="3oM_SC" value="refactor!" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfH1A" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
       </node>
@@ -4221,9 +4266,87 @@
       </node>
       <node concept="P$JXv" id="10o6Xu8Y6Cl" role="lGtFl">
         <node concept="TZ5HI" id="10o6Xu8Y6Cm" role="3nqlJM">
-          <node concept="TZ5HA" id="10o6Xu8Y6Cn" role="3HnX3l">
-            <node concept="1dT_AC" id="10o6Xu8Y9mG" role="1dT_Ay">
-              <property role="1dT_AB" value="this method is full of static accessors that have been deprecated for years! There's alternative method that gives an idea how to approach this with contemporary API" />
+          <node concept="1PaTwC" id="3VVgDkJfH1B" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfH1C" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1D" role="1PaTwD">
+              <property role="3oM_SC" value="method" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1E" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1F" role="1PaTwD">
+              <property role="3oM_SC" value="full" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1G" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1H" role="1PaTwD">
+              <property role="3oM_SC" value="static" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1I" role="1PaTwD">
+              <property role="3oM_SC" value="accessors" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1J" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1K" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1L" role="1PaTwD">
+              <property role="3oM_SC" value="been" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1M" role="1PaTwD">
+              <property role="3oM_SC" value="deprecated" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1N" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1O" role="1PaTwD">
+              <property role="3oM_SC" value="years!" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1P" role="1PaTwD">
+              <property role="3oM_SC" value="There's" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1Q" role="1PaTwD">
+              <property role="3oM_SC" value="alternative" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1R" role="1PaTwD">
+              <property role="3oM_SC" value="method" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1S" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1T" role="1PaTwD">
+              <property role="3oM_SC" value="gives" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1U" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1V" role="1PaTwD">
+              <property role="3oM_SC" value="idea" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1W" role="1PaTwD">
+              <property role="3oM_SC" value="how" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1X" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1Y" role="1PaTwD">
+              <property role="3oM_SC" value="approach" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH1Z" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH20" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH21" role="1PaTwD">
+              <property role="3oM_SC" value="contemporary" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH22" role="1PaTwD">
+              <property role="3oM_SC" value="API" />
             </node>
           </node>
         </node>
@@ -5837,9 +5960,18 @@
       <node concept="3Tm1VV" id="1MMv7Xp_Wc7" role="1B3o_S" />
       <node concept="P$JXv" id="7AF3xowN9tq" role="lGtFl">
         <node concept="TZ5HI" id="7AF3xowN9tr" role="3nqlJM">
-          <node concept="TZ5HA" id="7AF3xowN9ts" role="3HnX3l">
-            <node concept="1dT_AC" id="7AF3xowN9uM" role="1dT_Ay">
-              <property role="1dT_AB" value=" use addLanguage(SModelmodelSLanguagelanguage) instead" />
+          <node concept="1PaTwC" id="3VVgDkJfH23" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfH24" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH25" role="1PaTwD">
+              <property role="3oM_SC" value="use" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH26" role="1PaTwD">
+              <property role="3oM_SC" value="addLanguage(SModelmodelSLanguagelanguage)" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfH27" role="1PaTwD">
+              <property role="3oM_SC" value="instead" />
             </node>
           </node>
         </node>

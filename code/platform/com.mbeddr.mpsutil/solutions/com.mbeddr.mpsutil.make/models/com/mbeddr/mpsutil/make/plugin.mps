@@ -9,7 +9,7 @@
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
@@ -265,7 +265,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -273,15 +272,8 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="6612597108003615641" name="jetbrains.mps.baseLanguage.javadoc.structure.HTMLElement" flags="ng" index="2U$1Ah">
-        <property id="6612597108003615642" name="name" index="2U$1Ai" />
-        <child id="6612597108003615643" name="line" index="2U$1Aj" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
@@ -302,6 +294,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="1436320362825107485" name="jetbrains.mps.lang.text.structure.UniversalHtmlTag" flags="ng" index="22dLRv">
+        <property id="1436320362825107486" name="name" index="22dLRs" />
+        <child id="1436320362825109043" name="body" index="22dLJL" />
+      </concept>
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
@@ -1904,9 +1900,24 @@
       </node>
       <node concept="3Tm1VV" id="7tZeFupJF6C" role="1B3o_S" />
       <node concept="P$JXv" id="1Y18t$8Yax9" role="lGtFl">
-        <node concept="TZ5HA" id="1Y18t$8YhW_" role="TZ5H$">
-          <node concept="1dT_AC" id="1Y18t$8YhWA" role="1dT_Ay">
-            <property role="1dT_AB" value="should be called outside of command" />
+        <node concept="1PaTwC" id="3VVgDkJfGXO" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGXP" role="1PaTwD">
+            <property role="3oM_SC" value="should" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGXQ" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGXR" role="1PaTwD">
+            <property role="3oM_SC" value="called" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGXS" role="1PaTwD">
+            <property role="3oM_SC" value="outside" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGXT" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGXU" role="1PaTwD">
+            <property role="3oM_SC" value="command" />
           </node>
         </node>
       </node>
@@ -2105,30 +2116,91 @@
         <node concept="10P_77" id="7iCFfvQw3CR" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="7iCFfvQ_RNU" role="lGtFl">
-        <node concept="TZ5HA" id="7iCFfvQ_RNV" role="TZ5H$">
-          <node concept="1dT_AC" id="7iCFfvQ_RNW" role="1dT_Ay">
-            <property role="1dT_AB" value="By default, parameters are set for make, not clean build (i.e. " />
-          </node>
-          <node concept="2U$1Ah" id="7iCFfvQ_VlK" role="1dT_Ay">
-            <property role="2U$1Ai" value="code" />
-            <node concept="TZ5HA" id="7iCFfvQ_VlL" role="2U$1Aj">
-              <node concept="1dT_AC" id="7iCFfvQ_VlQ" role="1dT_Ay">
-                <property role="1dT_AB" value="cleanMake(false)" />
-              </node>
-            </node>
-          </node>
-          <node concept="1dT_AC" id="7iCFfvQ_VlJ" role="1dT_Ay">
-            <property role="1dT_AB" value="." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="7iCFfvQ_RNX" role="3nqlJM">
-          <property role="TUZQ4" value="indicates whether to perform clean build" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="7iCFfvQ_RNZ" role="zr_5Q">
             <ref role="zr_51" node="7iCFfvQw3CS" resolve="clean" />
           </node>
+          <node concept="1PaTwC" id="3VVgDkJfGYc" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfGYd" role="1PaTwD">
+              <property role="3oM_SC" value="indicates" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGYe" role="1PaTwD">
+              <property role="3oM_SC" value="whether" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGYf" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGYg" role="1PaTwD">
+              <property role="3oM_SC" value="perform" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGYh" role="1PaTwD">
+              <property role="3oM_SC" value="clean" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGYi" role="1PaTwD">
+              <property role="3oM_SC" value="build" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="7iCFfvQ_RO0" role="3nqlJM">
-          <property role="x79VB" value="this for convenience" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3VVgDkJfGYj" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfGYk" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGYl" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGYm" role="1PaTwD">
+              <property role="3oM_SC" value="convenience" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJfGXV" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGXW" role="1PaTwD">
+            <property role="3oM_SC" value="By" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGXX" role="1PaTwD">
+            <property role="3oM_SC" value="default," />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGXY" role="1PaTwD">
+            <property role="3oM_SC" value="parameters" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGXZ" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGY0" role="1PaTwD">
+            <property role="3oM_SC" value="set" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGY1" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGY2" role="1PaTwD">
+            <property role="3oM_SC" value="make," />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGY3" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGY4" role="1PaTwD">
+            <property role="3oM_SC" value="clean" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGY5" role="1PaTwD">
+            <property role="3oM_SC" value="build" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGY6" role="1PaTwD">
+            <property role="3oM_SC" value="(i.e." />
+          </node>
+          <node concept="22dLRv" id="3VVgDkJfGY7" role="1PaTwD">
+            <property role="22dLRs" value="code" />
+            <node concept="1PaTwC" id="3VVgDkJfGY9" role="22dLJL">
+              <node concept="3oM_SD" id="3VVgDkJfGYa" role="1PaTwD">
+                <property role="3oM_SC" value="cleanMake(false)" />
+              </node>
+            </node>
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGYb" role="1PaTwD">
+            <property role="3oM_SC" value="." />
+          </node>
         </node>
       </node>
     </node>
