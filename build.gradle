@@ -1,8 +1,7 @@
 import de.itemis.mps.gradle.GitBasedVersioning
 
-
 plugins {
-    id 'de.itemis.mps.gradle.common' version '1.30.+'
+    alias(libs.plugins.common) apply false // Only needed to have access to GitBasedVersioning in this build
 }
 
 repositories {
