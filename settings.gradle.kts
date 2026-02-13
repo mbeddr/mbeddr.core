@@ -9,7 +9,6 @@ pluginManagement {
 
 val subprojectPaths = listOf("com.mbeddr",
     "com.mbeddr:languages",
-    "com.mbeddr:distribution",
     "publishing")
 
 fun fqpath(path: String) = ":$path"
