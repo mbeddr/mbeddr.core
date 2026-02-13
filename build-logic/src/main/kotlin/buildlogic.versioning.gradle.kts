@@ -3,7 +3,12 @@ import de.itemis.mps.gradle.GitBasedVersioning
 
 val ciBuild by extra(project.hasProperty("forceCI") || project.hasProperty("teamcity"))
 
-val mpsMajor: String by project
+val mpsBuild: String by extra(versionCatalogs.named("libs").findLibrary("mps").get().get().version!!)
+val mpsMajor: String by extra(when {
+    mpsBuild.matches(Regex("""\d{4}\.\d.*""")) -> mpsBuild.substring(0, 6)
+    mpsBuild.matches(Regex("""\d{3}\.\d{3}.*""")) -> "9999.9"
+    else -> throw GradleException("Unrecognized MPS version: $mpsBuild.")
+})
 
 val mbeddrMajor: String by extra(mpsMajor.substring(0, 4))
 val mbeddrMinor: String by extra(mpsMajor.substring(5, 6))
@@ -40,7 +45,7 @@ val mbeddrPlatformBuildNumber by extra(project.findProperty("mbeddrPlatformVersi
 extensions.add(
     "versions",
     Versions(
-        mpsBuild = project.property("mpsBuild") as String,
+        mpsBuild = mpsBuild,
         mbeddrBuildNumber = mbeddrBuildNumber,
         mbeddrPlatformBuildNumber = mbeddrPlatformBuildNumber)
 )
