@@ -10,7 +10,7 @@ configurations {
 }
 
 dependencies {
-    mps "com.jetbrains:mps:$mpsBuild"
+    mps libs.mps
 }
 
 // path variables
