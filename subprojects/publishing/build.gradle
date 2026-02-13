@@ -42,9 +42,16 @@ githubRelease {
     dryRun = project.hasProperty("githubReleaseDryRun")
 }
 
+task package_tutorial(type: Zip) {
+    description 'Package the mbeddr tutorial.'
+    from rootProject.projectDir.absolutePath + "/code/applications/tutorial"
+    destinationDirectory = new File(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
+    archiveFileName = "com.mbeddr.tutorial.zip"
+}
+
 tasks.register('renameTutorial') {
     description 'Rename the mbeddr tutorial distribution to include the build number.'
-    dependsOn(':com.mbeddr:distribution:package_tutorial')
+    dependsOn('package_tutorial')
     doLast {
         def dir = Paths.get(artifactsRoot, 'com.mbeddr.tutorial')
         Files.copy(
