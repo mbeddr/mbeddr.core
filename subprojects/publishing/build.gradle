@@ -6,16 +6,16 @@ import de.itemis.mps.gradle.GitBasedVersioning
 
 plugins {
     id "com.github.breadmoirai.github-release" version "2.5.2"
+    id "buildlogic.versioning"
 }
 
 def artifactsRoot = rootProject.projectDir.absolutePath + "/artifacts"
 
 def buildNumber
-if (rootProject.hasProperty("build.number"))
-{
+if (rootProject.hasProperty("build.number")) {
     buildNumber = rootProject.getProperty("build.number")
 } else {
-  buildNumber = ""
+    buildNumber = ""
 }
 
 
