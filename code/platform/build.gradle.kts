@@ -10,7 +10,7 @@ plugins {
     base
     `maven-publish`
     id("buildlogic.mps-conventions")
-    id("org.cyclonedx.bom") version "2.4.1"
+    id("org.cyclonedx.bom") version "3.2.0"
 }
 
 
