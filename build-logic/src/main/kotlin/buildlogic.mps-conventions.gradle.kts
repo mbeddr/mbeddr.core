@@ -4,6 +4,7 @@ import de.itemis.mps.gradle.RunAntScript
 plugins {
     id("com.specificlanguages.jbr-toolchain")
     id("de.itemis.mps.gradle.common")
+    id("buildlogic.versioning")
 }
 
 // Use the JBR dependency from the version catalog
