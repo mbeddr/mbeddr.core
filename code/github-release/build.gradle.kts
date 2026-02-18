@@ -9,6 +9,14 @@ plugins {
     id("buildlogic.versioning")
 }
 
+val releaseArtifacts by configurations.registering {
+    isCanBeConsumed = false
+}
+
+dependencies {
+    releaseArtifacts(project(":tutorial"))
+}
+
 val artifactsRoot = layout.settingsDirectory.dir("artifacts")
 
 val buildNumber = rootProject.findProperty("build.number")?.toString() ?: ""
@@ -30,29 +38,9 @@ githubRelease {
     body = releaseNotes
     prerelease = true
     releaseAssets.from(
-        artifactsRoot.file("com.mbeddr.tutorial/" + tutorialFileName),
-        artifactsRoot.file("com.mbeddr.platform.distribution/" + platformFileName))
+        artifactsRoot.file("com.mbeddr.platform.distribution/" + platformFileName),
+        releaseArtifacts)
     dryRun = project.hasProperty("githubReleaseDryRun")
-}
-
-val packageTutorial by tasks.registering(Zip::class) {
-    description = "Package the mbeddr tutorial."
-    from(rootProject.file("code/applications/tutorial"))
-    destinationDirectory = artifactsRoot.dir("com.mbeddr.tutorial")
-    archiveFileName = "com.mbeddr.tutorial.zip"
-}
-
-val renameTutorial by tasks.registering {
-    description = "Rename the mbeddr tutorial distribution to include the build number."
-    dependsOn(packageTutorial)
-    doLast {
-        val dir = artifactsRoot.asFile.toPath().resolve("com.mbeddr.tutorial")
-        Files.copy(
-            dir.resolve("com.mbeddr.tutorial.zip"),
-            dir.resolve(tutorialFileName),
-            StandardCopyOption.REPLACE_EXISTING
-        )
-    }
 }
 
 val renamePlatform by tasks.registering {
@@ -70,5 +58,5 @@ val renamePlatform by tasks.registering {
 
 tasks.githubRelease {
     description = "Publish the artifacts to GitHub as releases"
-    dependsOn(renamePlatform, renameTutorial)
+    dependsOn(renamePlatform)
 }
