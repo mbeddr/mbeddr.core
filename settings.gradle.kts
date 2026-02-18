@@ -27,6 +27,9 @@ project(":com.mbeddr:platform").projectDir = file("code/platform")
 include(":github-release")
 project(":github-release").projectDir = file("code/github-release")
 
+include(":tutorial")
+project(":tutorial").projectDir = file("code/applications/tutorial")
+
 rootProject.name = "mbeddr.core"
 
 dependencyResolutionManagement {
