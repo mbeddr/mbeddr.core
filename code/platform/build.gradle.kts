@@ -10,7 +10,7 @@ plugins {
     base
     `maven-publish`
     id("buildlogic.mps-conventions")
-    id("org.cyclonedx.bom") version "2.4.1"
+    id("org.cyclonedx.bom") version "3.2.0"
 }
 
 
@@ -200,14 +200,13 @@ val build_platform_distribution by tasks.registering(BuildLanguages::class) {
 }
 
 val package_mbeddrPlatform by tasks.registering(Zip::class) {
-    dependsOn(build_platform, tasks.cyclonedxBom)
+    dependsOn(build_platform)
     description = "Package the mbeddr platform."
     archiveFileName = "com.mbeddr.platform.zip"
     from(artifactsDir) {
         include("com.mbeddr.platform/**")
     }
-    from(reportsDir) {
-        include("sbom.json")
+    from(tasks.cyclonedxDirectBom) {
         into("com.mbeddr.platform")
     }
 }
@@ -367,17 +366,14 @@ if (mbeddrBuild == "master") {
     }
 }
 
-tasks.cyclonedxBom {
-    // SBOM destination directory
-    destination = reportsDir
-    // The file name for the generated SBOMs (before the file format suffix)
-    outputName = "sbom"
-    // The file format generated, can be xml, json or all for generating both
-    outputFormat = "json"
+tasks.cyclonedxDirectBom {
+    jsonOutput = File(reportsDir, "sbom.json")
+    // No XML output
+    xmlOutput.unsetConvention()
     // Don"t include license texts in generated SBOMs
     includeLicenseText = false
-    // Include runtime deps only (bundled libs, language libs, mps, jbr)
 
+    // Include runtime deps only (bundled libs, language libs, mps, jbr)
     includeConfigs = buildList {
         addAll(bundledDeps.map { it.configName })
         add(mpsLibraries.name)
