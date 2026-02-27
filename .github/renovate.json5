@@ -4,7 +4,6 @@
     "config:best-practices",
     "schedule:monthly" // Updates once a month by default. Exceptions below.
   ],
-  "enabledManagers": ["gradle", "gradle-wrapper"],
 
   // Renovate master and recent maintenance branches. When updating the maintenance branch pattern, update the rule
   // disabling approvals for the earliest maintenance branch.
@@ -63,6 +62,12 @@
       "matchPackageNames": ["!com.jetbrains*", "!de.itemis.mps:extensions"], // Exclude MPS, JBR, and MPS-extensions.
       "matchUpdateTypes": ["minor", "patch"],
       "groupName": "third-party-minor",
+    },
+
+    {
+      // Group all GitHub Actions updates together
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions"
     },
 
     // Updates to the earliest supported maintenance branch do not need approval.
