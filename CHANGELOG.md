@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# Februrary 2025
+
+## com.mbeddr.mpsutil.genplandiagram
+
+- This new plugin was introduced to visualize generation plans. Import the language and create a new [Plan Visualizer](http://127.0.0.1:63320/node?ref=r%3A69e7f585-d1ea-4d0d-b392-5608c01d468b%28com.mbeddr.mpsutil.genplandiagram.structure%29%2F7940016190799018040) node and click 'Visualize`.
+
 # December 2025
 
 ## com.mbeddr.mpsutil.filepicker
