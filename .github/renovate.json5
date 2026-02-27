@@ -1,12 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:best-practices"
+    "config:best-practices",
+    "schedule:monthly" // Updates once a month by default. Exceptions below.
   ],
   "enabledManagers": ["gradle", "gradle-wrapper"],
 
-  // Renovate master and recent maintenance branches
-  "baseBranches": ["master", "/^maintenance/mps202[4-9][0-9]/"],
+  // Renovate master and recent maintenance branches. When updating the maintenance branch pattern, update the rule
+  // disabling approvals for the earliest maintenance branch.
+  "baseBranchPatterns": ["master", "/^maintenance/mps202[4-9][0-9]/"],
+  "dependencyDashboardApproval": true,
 
   "packageRules": [
     {
@@ -14,13 +17,16 @@
       "groupName": "mps-gradle-plugin",
       "allowedVersions": "< 2.0"
     },
+
     {
-      "matchPackageNames": ["org.apache.ant:*"],
-      "groupName": "ant"
+      // Versioning for itemis dependencies: match the typical version number: 2024.1.234.abcdef12, but do not treat
+      // commit hashes with 'a' or 'b' as pre-releases. Only treat a `-something` suffix as a pre-release.
+      "matchPackageNames": ["de.itemis.mps*"],
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\.[0-9a-f]+(?:-(?<prerelease>.*))?$",
     },
 
     {
-      // MPS-extensions: allow unstable versions on master (snapshots, a/b letters in commit hashes, etc.)
+      // MPS-extensions: allow unstable versions on master (snapshots)
       "matchBaseBranches": ["master"],
       "matchPackageNames": ["de.itemis.mps:extensions"],
       "ignoreUnstable": false,
@@ -40,18 +46,42 @@
     },
 
     {
-      // MPS and libraries: merge PRs on Wednesday morning
-      "matchPackageNames": ["de.itemis.mps:extensions", "com.jetbrains:mps"],
-      "automerge": true,
-      "platformAutomerge": false,
-      "automergeSchedule": "* 4-6 * * 3"
+      // Disable JBR updates on maintenance branches
+      "matchPackageNames": ["com.jetbrains.jdk:*"],
+      "matchBaseBranches": ["!master"],
+      "enabled": false
     },
 
     {
-      // Disable JBR updates on maintenance branches
-      "matchPackageNames": ["com.jetbrains.jdk:*"],
-      "matchBaseBranches": ["!/^master$/"],
-      "enabled": false
+      "matchPackageNames" : ["net.sourceforge.plantuml:plantuml"],
+      "allowedVersions": "< 2000"
+    },
+
+    {
+      // Group all minor/patch third-party dependencies together (overrides the grouping above for minor and patch updates)
+      "matchManagers": ["gradle"],
+      "matchPackageNames": ["!com.jetbrains*", "!de.itemis.mps:extensions"], // Exclude MPS, JBR, and MPS-extensions.
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "third-party-minor",
+    },
+
+    // Updates to the earliest supported maintenance branch do not need approval.
+    {
+      "matchBaseBranches": ["maintenance/mps20241"],
+      "dependencyDashboardApproval": false
+    },
+
+    {
+      // MPS and libraries:
+      // - schedule updates at any time
+      // - merge PRs on Wednesday morning
+      // - do not require dashboard approval (since versions are branch-specific)
+      "matchPackageNames": ["de.itemis.mps:extensions", "com.jetbrains:mps", "com.jetbrains.mps:mps-prerelease"],
+      "schedule": ["at any time"],
+      "automerge": true,
+      "platformAutomerge": false,
+      "automergeSchedule": "* 4-6 * * 3",
+      "dependencyDashboardApproval": false
     }
   ]
 }
