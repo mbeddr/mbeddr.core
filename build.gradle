@@ -1,8 +1,7 @@
 import de.itemis.mps.gradle.GitBasedVersioning
 
-
 plugins {
-    id 'de.itemis.mps.gradle.common' version '1.29.+'
+    alias(libs.plugins.common) apply false // Only needed to have access to GitBasedVersioning in this build
 }
 
 repositories {
@@ -14,7 +13,7 @@ ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-
 
 //MPS version
 ext.mpsMajor = "2024.1"
-ext.mpsBuild = "2024.1.5"
+ext.mpsBuild = "2024.1.6"
 
 //MPS-extensions version
 ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
@@ -32,27 +31,6 @@ def findNonEmptyProperty(property) {
         return project.getProperty(property)
     }
     return null
-}
-
-ext.additionalPomInfo = {
-    licenses {
-        // official SPDX identifier
-        // see https://spdx.org/licenses/ for list
-        license {
-            name = "EPL-2.0"
-            url = "https://www.eclipse.org/legal/epl-v20.html"
-            comments = "Eclipse Public License - v 2.0"
-            distribution = "repo"
-        }
-    }
-    organization {
-        name = "itemis AG"
-        url = "https://www.itemis.com"
-    }
-    scm {
-        tag = GitBasedVersioning.getGitCommitHash()
-        url = "https://github.com/mbeddr/mbeddr.core.git"
-    }
 }
 
 var isFirstSubproject = true

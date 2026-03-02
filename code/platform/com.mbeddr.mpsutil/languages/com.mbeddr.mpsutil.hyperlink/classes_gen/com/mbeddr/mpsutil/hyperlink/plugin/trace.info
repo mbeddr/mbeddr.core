@@ -67,7 +67,7 @@
       <node id="144279664518284287" at="150,7,151,63" concept="6" />
       <node id="6459847791818272009" at="151,63,152,76" concept="6" />
       <node id="144279664518291446" at="153,24,154,52" concept="1" />
-      <node id="6459847791818303752" at="155,44,156,54" concept="1" />
+      <node id="6459847791818303752" at="155,118,156,54" concept="1" />
       <node id="437756102019475617" at="157,41,158,84" concept="6" />
       <node id="437756102019445042" at="158,84,159,250" concept="1" />
       <node id="6459847791818298286" at="160,7,161,0" concept="9" />
@@ -100,7 +100,7 @@
       <node id="144279664518563816" at="84,40,87,5" concept="4" />
       <node id="144279664518563839" at="89,63,92,5" concept="4" />
       <node id="144279664518563856" at="93,111,96,5" concept="4" />
-      <node id="4487898060061766508" at="101,84,104,7" concept="4" />
+      <node id="4487898060061766508" at="101,158,104,7" concept="4" />
       <node id="144279664518563887" at="106,220,109,7" concept="4" />
       <node id="144279664519166966" at="116,0,119,0" concept="5" trace="isHyperlinkReference#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Z" />
       <node id="6459847791818130285" at="120,0,123,0" concept="5" trace="getHyperlinkHandler#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Lcom/mbeddr/mpsutil/hyperlink/runtime/HyperlinkHandler;" />
@@ -163,7 +163,7 @@
       <scope id="7223612304167656323" at="136,89,137,57" />
       <scope id="144279664518288018" at="148,33,149,15" />
       <scope id="144279664518289741" at="153,24,154,52" />
-      <scope id="6459847791818299176" at="155,44,156,54" />
+      <scope id="6459847791818299176" at="155,118,156,54" />
       <scope id="144279664519220299" at="165,36,166,143" />
       <scope id="144279664519220300" at="171,36,172,42" />
       <scope id="6459847791818130292" at="177,36,178,150" />
@@ -273,7 +273,7 @@
       <scope id="144279664518118617" at="55,0,66,0">
         <var name="editorComponent" id="144279664518118624" />
       </scope>
-      <scope id="144279664519148628" at="101,84,112,45">
+      <scope id="144279664519148628" at="101,158,112,45">
         <var name="snodeWRTReference" id="144279664518563867" />
       </scope>
       <scope id="144279664518253896" at="147,19,161,0">
