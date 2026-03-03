@@ -16,6 +16,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -930,25 +931,12 @@
                   </node>
                 </node>
                 <node concept="3clFbS" id="7KBw$lnWpUZ" role="2LFqv$">
-                  <node concept="3cpWs8" id="7KBw$lnWLu0" role="3cqZAp">
-                    <node concept="3cpWsn" id="7KBw$lnWLu1" role="3cpWs9">
-                      <property role="TrG5h" value="modulePointer" />
-                      <node concept="3Tqbb2" id="7KBw$lnWK5N" role="1tU5fm">
-                        <ref role="ehGHo" to="tp25:7c$ruAHVbwd" resolve="GeneratorModulePointer" />
-                      </node>
-                      <node concept="1PxgMI" id="7KBw$lnWLu2" role="33vP2m">
-                        <property role="1BlNFB" value="true" />
-                        <node concept="chp4Y" id="7KBw$lnWLu3" role="3oSUPX">
-                          <ref role="cht4Q" to="tp25:7c$ruAHVbwd" resolve="GeneratorModulePointer" />
-                        </node>
-                        <node concept="2GrUjf" id="7KBw$lnWLu4" role="1m5AlR">
-                          <ref role="2Gs0qQ" node="7KBw$lnWpUV" resolve="generator" />
-                        </node>
-                      </node>
+                  <node concept="1apkNV" id="6sUNcvouz7T" role="3cqZAp">
+                    <ref role="JncvE" to="tp25:7c$ruAHVbwd" resolve="GeneratorModulePointer" />
+                    <node concept="2GrUjf" id="6sUNcvouzC_" role="JncvC">
+                      <ref role="2Gs0qQ" node="7KBw$lnWpUV" resolve="generator" />
                     </node>
-                  </node>
-                  <node concept="3clFbJ" id="7KBw$lnWTgE" role="3cqZAp">
-                    <node concept="3clFbS" id="7KBw$lnWTgG" role="3clFbx">
+                    <node concept="3clFbS" id="6sUNcvouz7X" role="Jncv_">
                       <node concept="3clFbF" id="7KBw$lo0NXm" role="3cqZAp">
                         <node concept="BsUDl" id="7KBw$lo0NXk" role="3clFbG">
                           <ref role="37wK5l" node="7KBw$lo0leH" resolve="addStep" />
@@ -963,8 +951,8 @@
                           </node>
                           <node concept="2OqwBi" id="7KBw$lo0Qh$" role="37wK5m">
                             <node concept="2OqwBi" id="7KBw$lo0Qh_" role="2Oq$k0">
-                              <node concept="37vLTw" id="7KBw$lo0QhA" role="2Oq$k0">
-                                <ref role="3cqZAo" node="7KBw$lnWLu1" resolve="modulePointer" />
+                              <node concept="1bEZVg" id="6sUNcvouJDI" role="2Oq$k0">
+                                <ref role="1M0zk5" node="6sUNcvouz7Z" resolve="modulePointerOld" />
                               </node>
                               <node concept="3TrEf2" id="7KBw$lo0QhB" role="2OqNvi">
                                 <ref role="3Tt5mk" to="tp25:7c$ruAHVbxO" resolve="module" />
@@ -980,11 +968,48 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2OqwBi" id="7KBw$lnWUKP" role="3clFbw">
-                      <node concept="37vLTw" id="7KBw$lnWTVJ" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7KBw$lnWLu1" resolve="modulePointer" />
+                    <node concept="JncvC" id="6sUNcvouz7Z" role="JncvB">
+                      <property role="TrG5h" value="modulePointerOld" />
+                      <node concept="2jxLKc" id="6sUNcvouz80" role="1tU5fm" />
+                    </node>
+                    <node concept="1afrx_" id="6sUNcvouCtV" role="1amwjI">
+                      <ref role="JncvD" to="bjdw:21u4r8PxhAM" resolve="GeneratorModulePointer" />
+                      <node concept="3clFbS" id="6sUNcvouCtW" role="Jncv$">
+                        <node concept="3clFbF" id="6sUNcvouHpK" role="3cqZAp">
+                          <node concept="BsUDl" id="6sUNcvouHpL" role="3clFbG">
+                            <ref role="37wK5l" node="7KBw$lo0leH" resolve="addStep" />
+                            <node concept="37vLTw" id="6sUNcvouHpM" role="37wK5m">
+                              <ref role="3cqZAo" node="6SKAExjtGHR" resolve="builder" />
+                            </node>
+                            <node concept="37vLTw" id="6sUNcvouHpN" role="37wK5m">
+                              <ref role="3cqZAo" node="7KBw$lo4rU_" resolve="stepName" />
+                            </node>
+                            <node concept="37vLTw" id="6sUNcvouHpO" role="37wK5m">
+                              <ref role="3cqZAo" node="7KBw$lnUj2X" resolve="result" />
+                            </node>
+                            <node concept="2OqwBi" id="6sUNcvouHpP" role="37wK5m">
+                              <node concept="2OqwBi" id="6sUNcvouHpQ" role="2Oq$k0">
+                                <node concept="1bEZVg" id="6sUNcvouKcx" role="2Oq$k0">
+                                  <ref role="1M0zk5" node="6sUNcvouCtX" resolve="modulePointer" />
+                                </node>
+                                <node concept="3TrEf2" id="6sUNcvouHpS" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="bjdw:21u4r8PxhAO" resolve="module" />
+                                </node>
+                              </node>
+                              <node concept="3TrcHB" id="6sUNcvouHpT" role="2OqNvi">
+                                <ref role="3TsBF5" to="dvox:1Bs_61$mI_D" resolve="moduleName" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="6sUNcvouHpU" role="37wK5m">
+                              <property role="Xl_RC" value="Generator" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
-                      <node concept="3x8VRR" id="7KBw$lnWVCK" role="2OqNvi" />
+                      <node concept="JncvC" id="6sUNcvouCtX" role="JncvA">
+                        <property role="TrG5h" value="modulePointer" />
+                        <node concept="2jxLKc" id="6sUNcvouCtY" role="1tU5fm" />
+                      </node>
                     </node>
                   </node>
                 </node>
