@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
+    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="3" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="ff3d5f86-c6fa-4c63-aa95-c2de600f92ac" name="com.mbeddr.mpsutil.genplandiagram" version="0" />
@@ -96,6 +96,9 @@
       <concept id="869728027904920839" name="jetbrains.mps.lang.generator.plan.structure.CheckpointSynchronization" flags="ng" index="26qawf">
         <child id="3750601816087335480" name="checkpoint" index="3pRG92" />
       </concept>
+      <concept id="2332321114124261810" name="jetbrains.mps.lang.generator.plan.structure.GeneratorModulePointer" flags="ng" index="lQKw0">
+        <child id="2332321114124261812" name="module" index="lQKw6" />
+      </concept>
       <concept id="3705377275350227759" name="jetbrains.mps.lang.generator.plan.structure.IncludePlan" flags="ng" index="NozSJ">
         <reference id="3705377275350227762" name="plan" index="NozSM" />
       </concept>
@@ -133,6 +136,12 @@
     <language id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare">
       <concept id="756135271275943220" name="de.itemis.mps.compare.structure.AssertNodeEquals" flags="ng" index="3GXo0L" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
+        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
+        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
+      </concept>
+    </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
         <child id="8427750732757990725" name="actual" index="3tpDZA" />
@@ -141,17 +150,10 @@
       <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
-        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
-        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
-      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
-      </concept>
-      <concept id="8296877263936075789" name="jetbrains.mps.lang.smodel.structure.GeneratorModulePointer" flags="ng" index="3uMdn$">
-        <child id="8296877263936075892" name="module" index="3uMdmt" />
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -273,10 +275,10 @@
           </node>
         </node>
         <node concept="3uMcMo" id="7KBw$lnWhZ6" role="2VgMA7">
-          <node concept="3uMdn$" id="7KBw$lnWi0h" role="3uOsAP">
-            <node concept="20RdaH" id="7KBw$lnWi0i" role="3uMdmt">
-              <property role="20Rdg5" value="3a6b9f2f-4402-4ed6-a7cd-12b272b244d5" />
-              <property role="20Rdg7" value="com.mbeddr.mpsutil.blutil#4354378109086982937" />
+          <node concept="lQKw0" id="6vwc0gQc7Cc" role="3uOsAP">
+            <node concept="1dCxOk" id="6vwc0gQc7Cd" role="lQKw6">
+              <property role="1XweGW" value="3a6b9f2f-4402-4ed6-a7cd-12b272b244d5" />
+              <property role="1XxBO9" value="com.mbeddr.mpsutil.blutil#4354378109086982937" />
             </node>
           </node>
         </node>
