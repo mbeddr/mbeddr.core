@@ -58,7 +58,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     }
   }
   private static String getFileName_JsonFile(SNode node) {
-    return node.getName();
+    return SPropertyOperations.getString(node, PROPS.name$MnvL);
+
   }
   private static String getFileExtension_JsonFile(SNode node) {
     return "json";
@@ -76,6 +77,7 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   }
 
   private static final class PROPS {
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty folder$_FXv = MetaAdapterFactory.getProperty(0xb5c0bb04c5834b2aL, 0xa66e1eab92d33c68L, 0x3c445779c2b1d3e3L, 0x31241275c648240bL, "folder");
   }
 }

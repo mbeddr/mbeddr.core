@@ -1055,19 +1055,16 @@
       <node id="4499036566847223903" at="26,50,27,33" concept="8" />
       <node id="4499036566847223903" at="29,68,30,102" concept="8" />
       <node id="4499036566847223903" at="32,27,33,17" concept="8" />
-      <node id="4499036566847223903" at="35,39,36,16" concept="8" />
-      <node id="4499036566847223903" at="40,0,41,0" concept="10" trace="StateType$1U" />
+      <node id="4499036566847223903" at="37,0,38,0" concept="10" trace="StateType$1U" />
       <node id="4499036566847223903" at="19,0,21,0" concept="1" trace="superTypeOfStateType_SubtypingRule#()V" />
       <node id="4499036566847223903" at="26,0,29,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="4499036566847223903" at="29,0,32,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="4499036566847223903" at="32,0,35,0" concept="6" trace="isWeak#()Z" />
-      <node id="4499036566847223903" at="35,0,38,0" concept="6" trace="surelyKeepsConcept#()Z" />
       <node id="4499036566847223903" at="21,0,26,0" concept="6" trace="getSubOrSuperTypes#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Ljava/util/List;" />
       <scope id="4499036566847223903" at="19,47,19,47" />
       <scope id="4499036566847223903" at="26,50,27,33" />
       <scope id="4499036566847223903" at="29,68,30,102" />
       <scope id="4499036566847223903" at="32,27,33,17" />
-      <scope id="4499036566847223903" at="35,39,36,16" />
       <scope id="4499036566847223903" at="19,0,21,0" />
       <scope id="4499036566847223904" at="21,126,24,22">
         <var name="superTypes" id="4499036566847227505" />
@@ -1077,14 +1074,13 @@
         <var name="argument" id="4499036566847223903" />
       </scope>
       <scope id="4499036566847223903" at="32,0,35,0" />
-      <scope id="4499036566847223903" at="35,0,38,0" />
       <scope id="4499036566847223903" at="21,0,26,0">
         <var name="stateType" id="4499036566847223903" />
         <var name="status" id="4499036566847223903" />
         <var name="typeCheckingContext" id="4499036566847223903" />
       </scope>
-      <unit id="4499036566847223903" at="39,0,42,0" name="com.mbeddr.ext.statemachines.typesystem.superTypeOfStateType_SubtypingRule$CONCEPTS" />
-      <unit id="4499036566847223903" at="18,0,43,0" name="com.mbeddr.ext.statemachines.typesystem.superTypeOfStateType_SubtypingRule" />
+      <unit id="4499036566847223903" at="36,0,39,0" name="com.mbeddr.ext.statemachines.typesystem.superTypeOfStateType_SubtypingRule$CONCEPTS" />
+      <unit id="4499036566847223903" at="18,0,40,0" name="com.mbeddr.ext.statemachines.typesystem.superTypeOfStateType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:e2d203fd-94d7-4156-aadb-5d8dfc0eeb05(com.mbeddr.ext.statemachines.typesystem)/4499036566847303987">
@@ -1552,19 +1548,16 @@
       <node id="5259475464762654815" at="26,50,27,40" concept="8" />
       <node id="5259475464762654815" at="29,68,30,102" concept="8" />
       <node id="5259475464762654815" at="32,27,33,17" concept="8" />
-      <node id="5259475464762654815" at="35,39,36,16" concept="8" />
-      <node id="5259475464762654815" at="40,0,41,0" concept="10" trace="StatemachineType$wP" />
+      <node id="5259475464762654815" at="37,0,38,0" concept="10" trace="StatemachineType$wP" />
       <node id="5259475464762654815" at="19,0,21,0" concept="1" trace="superTypeOfStatemachineType_SubtypingRule#()V" />
       <node id="5259475464762654815" at="26,0,29,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="5259475464762654815" at="29,0,32,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="5259475464762654815" at="32,0,35,0" concept="6" trace="isWeak#()Z" />
-      <node id="5259475464762654815" at="35,0,38,0" concept="6" trace="surelyKeepsConcept#()Z" />
       <node id="5259475464762654815" at="21,0,26,0" concept="6" trace="getSubOrSuperTypes#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Ljava/util/List;" />
       <scope id="5259475464762654815" at="19,54,19,54" />
       <scope id="5259475464762654815" at="26,50,27,40" />
       <scope id="5259475464762654815" at="29,68,30,102" />
       <scope id="5259475464762654815" at="32,27,33,17" />
-      <scope id="5259475464762654815" at="35,39,36,16" />
       <scope id="5259475464762654815" at="19,0,21,0" />
       <scope id="5259475464762654816" at="21,133,24,22">
         <var name="superTypes" id="5259475464762654865" />
@@ -1574,14 +1567,13 @@
         <var name="argument" id="5259475464762654815" />
       </scope>
       <scope id="5259475464762654815" at="32,0,35,0" />
-      <scope id="5259475464762654815" at="35,0,38,0" />
       <scope id="5259475464762654815" at="21,0,26,0">
         <var name="statemachineType" id="5259475464762654815" />
         <var name="status" id="5259475464762654815" />
         <var name="typeCheckingContext" id="5259475464762654815" />
       </scope>
-      <unit id="5259475464762654815" at="39,0,42,0" name="com.mbeddr.ext.statemachines.typesystem.superTypeOfStatemachineType_SubtypingRule$CONCEPTS" />
-      <unit id="5259475464762654815" at="18,0,43,0" name="com.mbeddr.ext.statemachines.typesystem.superTypeOfStatemachineType_SubtypingRule" />
+      <unit id="5259475464762654815" at="36,0,39,0" name="com.mbeddr.ext.statemachines.typesystem.superTypeOfStatemachineType_SubtypingRule$CONCEPTS" />
+      <unit id="5259475464762654815" at="18,0,40,0" name="com.mbeddr.ext.statemachines.typesystem.superTypeOfStatemachineType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:e2d203fd-94d7-4156-aadb-5d8dfc0eeb05(com.mbeddr.ext.statemachines.typesystem)/5338908363445763677">

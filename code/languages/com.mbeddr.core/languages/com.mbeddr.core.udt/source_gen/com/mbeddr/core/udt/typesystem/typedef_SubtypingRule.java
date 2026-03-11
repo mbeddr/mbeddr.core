@@ -28,9 +28,6 @@ public class typedef_SubtypingRule extends SubtypingRule_Runtime implements ISub
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink original$$TxO = MetaAdapterFactory.getContainmentLink(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x6b0ac27ac5014717L, 0x54e261614fd09a16L, "original");

@@ -196,7 +196,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createTopDownLayoutCell_1() {
-    return createTopDownLayoutCell_0(getEditorContext(), myNode);
+    return createTopDownLayoutCell_0(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_0() {
     SingleRoleCellProvider provider = new descriptionSingleRoleHandler_xl6zkn_a1a0a0(myNode, LINKS.description$s2CA, getEditorContext());
@@ -282,7 +282,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createTopDownLayoutCell_3() {
-    return createTopDownLayoutCell_2(getEditorContext(), myNode);
+    return createTopDownLayoutCell_2(getEditorContext(), getNode());
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
@@ -322,7 +322,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     alternationCondition = nodeCondition_xl6zkn_a0a0a2a0a();
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = createMultiline_1();
+      editorCell = createMultiline_0();
     } else {
       editorCell = createConstant_2();
     }
@@ -331,16 +331,16 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
   private boolean nodeCondition_xl6zkn_a0a0a2a0a() {
     return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.resultMessage$Kz2L));
   }
-  private EditorCell createMultiline_0(EditorContext editorContext, SNode node) {
+  private EditorCell createMultiline_0() {
     getCellFactory().pushCellContext();
     try {
       SProperty property = PROPS.resultMessage$Kz2L;
-      getCellFactory().setPropertyInfo(new SPropertyInfo(node, property));
-      CellProviderWithRole provider = new MultilineCellProvider(node, property, editorContext);
+      getCellFactory().setPropertyInfo(new SPropertyInfo(getNode(), property));
+      CellProviderWithRole provider = new MultilineCellProvider(getNode(), property, getEditorContext());
       provider.setAllowsEmptyTarget(false);
       provider.setNoTargetText("<no resultMessage>");
       EditorCell editorCell;
-      editorCell = provider.createEditorCell(editorContext);
+      editorCell = provider.createEditorCell(getEditorContext());
       setCellContext(editorCell);
 
       editorCell.setCellId("property_resultMessage");
@@ -357,9 +357,6 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     } finally {
       getCellFactory().popCellContext();
     }
-  }
-  private EditorCell createMultiline_1() {
-    return createMultiline_0(getEditorContext(), myNode);
   }
   private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Task Completed.");
@@ -459,7 +456,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     alternationCondition = nodeCondition_xl6zkn_a1a0a2a0a_0();
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = createMultiline_3();
+      editorCell = createMultiline_1();
     } else {
       editorCell = createConstant_4();
     }
@@ -468,16 +465,16 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
   private boolean nodeCondition_xl6zkn_a1a0a2a0a_0() {
     return isNotEmptyString(SPropertyOperations.getString(myNode, PROPS.resultMessage$Kz2L));
   }
-  private EditorCell createMultiline_2(EditorContext editorContext, SNode node) {
+  private EditorCell createMultiline_1() {
     getCellFactory().pushCellContext();
     try {
       SProperty property = PROPS.resultMessage$Kz2L;
-      getCellFactory().setPropertyInfo(new SPropertyInfo(node, property));
-      CellProviderWithRole provider = new MultilineCellProvider(node, property, editorContext);
+      getCellFactory().setPropertyInfo(new SPropertyInfo(getNode(), property));
+      CellProviderWithRole provider = new MultilineCellProvider(getNode(), property, getEditorContext());
       provider.setAllowsEmptyTarget(false);
       provider.setNoTargetText("<no resultMessage>");
       EditorCell editorCell;
-      editorCell = provider.createEditorCell(editorContext);
+      editorCell = provider.createEditorCell(getEditorContext());
       setCellContext(editorCell);
 
       editorCell.setCellId("property_resultMessage1");
@@ -494,9 +491,6 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     } finally {
       getCellFactory().popCellContext();
     }
-  }
-  private EditorCell createMultiline_3() {
-    return createMultiline_2(getEditorContext(), myNode);
   }
   private EditorCell createConstant_4() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "none");
@@ -558,7 +552,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
         ExerciseExecutor guessLastExecutor = ExerciseExecutor.guessLastExecutor(getEditorContext(), SNodeOperations.getNodeAncestor(myNode, CONCEPTS.Exercise$zI, false, false));
 
         // if we find nothing, it was disposed after the last editor update
-        check_1q9spj_a4a0a0a0a0a0e0wb(guessLastExecutor);
+        check_1q9spj_a4a0a0a0a0a0e0ub(guessLastExecutor);
       }
     }));
     return button;
@@ -579,7 +573,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
   }
   private JComponent _QueryFunction_JComponent_xl6zkn_a2a4a0a() {
     final SNode ex = SNodeOperations.getNodeAncestor(myNode, CONCEPTS.Exercise$zI, false, false);
-    boolean completed = check_1q9spj_a0b0zb(ExerciseExecutor.getInstance(getEditorContext(), ex).checkTask(myNode), this);
+    boolean completed = check_1q9spj_a0b0xb(ExerciseExecutor.getInstance(getEditorContext(), ex).checkTask(myNode), this);
     boolean enabled = (completed || SPropertyOperations.getBoolean(ex, PROPS.allowSkip$LU_v) || SPropertyOperations.getBoolean(ex, PROPS.developmentMode$VtcV)) && ((boolean) Exercise__BehaviorDescriptor.hasNextTask_idDBaqrEY_bR.invoke(ex) || (SLinkOperations.getTarget(ex, LINKS.followingExercise$OEv4) != null));
 
     String buttonText;
@@ -684,13 +678,13 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     }
     return false;
   }
-  private static void check_1q9spj_a4a0a0a0a0a0e0wb(ExerciseExecutor checkedDotOperand) {
+  private static void check_1q9spj_a4a0a0a0a0a0e0ub(ExerciseExecutor checkedDotOperand) {
     if (null != checkedDotOperand) {
       checkedDotOperand.start(null);
     }
 
   }
-  private static boolean check_1q9spj_a0b0zb(MonitorResult checkedDotOperand, Task_InGuideExecutionMode_EditorBuilder_a checkedDotThisExpression) {
+  private static boolean check_1q9spj_a0b0xb(MonitorResult checkedDotOperand, Task_InGuideExecutionMode_EditorBuilder_a checkedDotThisExpression) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.allowNextTask();
     }

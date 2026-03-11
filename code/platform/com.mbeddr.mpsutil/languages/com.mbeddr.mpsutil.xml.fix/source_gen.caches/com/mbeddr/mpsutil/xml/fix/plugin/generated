@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="b8z14sj37ntpoz73bzs0cpwoh1vhvjm">
+<product version="3" modelHash="4vu0cohus12xl6aw2vi2iuhlv7m2c4h">
   <files names="ExtensionDescriptor.java:FacetAspectDescriptor.java:FacetManifest.java:PatchXmlCharEscape_Facet.java:XMLConfiguration.java:XmlCharEscapePatching.java" />
 </product>
 

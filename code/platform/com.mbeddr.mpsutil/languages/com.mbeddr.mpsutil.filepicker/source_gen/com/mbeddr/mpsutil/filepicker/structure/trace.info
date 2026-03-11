@@ -13,7 +13,7 @@
       <unit at="11,0,115,0" name="com.mbeddr.mpsutil.filepicker.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,50,0" name="com.mbeddr.mpsutil.filepicker.structure.LanguageConceptSwitch" />
+      <unit at="12,0,58,0" name="com.mbeddr.mpsutil.filepicker.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="15,0,199,0" name="com.mbeddr.mpsutil.filepicker.structure.StructureAspectDescriptor" />
@@ -32,8 +32,8 @@
       <scope id="1383872399803780261" at="64,57,69,45" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1383872399803780261" at="17,0,18,0" concept="6" trace="IOutputLocationProvider" />
-      <node id="1383872399803780261" at="31,59,32,62" concept="0" />
+      <node id="1383872399803780261" at="19,0,20,0" concept="6" trace="IOutputLocationProvider" />
+      <node id="1383872399803780261" at="33,59,34,62" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1383872399803780261" at="21,0,22,0" concept="1" trace="myConceptIOutputLocationProvider" />
@@ -65,8 +65,8 @@
       <scope id="1504214765033455826" at="57,54,63,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1504214765033455826" at="16,0,17,0" concept="6" trace="FileSystemFilePicker" />
-      <node id="1504214765033455826" at="30,58,31,59" concept="0" />
+      <node id="1504214765033455826" at="18,0,19,0" concept="6" trace="FileSystemFilePicker" />
+      <node id="1504214765033455826" at="32,58,33,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1504214765033455826" at="20,0,21,0" concept="1" trace="myConceptFileSystemFilePicker" />
@@ -101,8 +101,8 @@
       <scope id="2642765975824060179" at="90,59,96,47" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2642765975824060179" at="21,0,22,0" concept="6" trace="SolutionRelativeDirPicker" />
-      <node id="2642765975824060179" at="35,56,36,64" concept="0" />
+      <node id="2642765975824060179" at="23,0,24,0" concept="6" trace="SolutionRelativeDirPicker" />
+      <node id="2642765975824060179" at="37,56,38,64" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2642765975824060179" at="25,0,26,0" concept="1" trace="myConceptSolutionRelativeDirPicker" />
@@ -137,8 +137,8 @@
       <scope id="4581245940532443535" at="104,49,110,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4581245940532443535" at="23,0,24,0" concept="6" trace="SourceModelInfo" />
-      <node id="4581245940532443535" at="37,65,38,54" concept="0" />
+      <node id="4581245940532443535" at="25,0,26,0" concept="6" trace="SourceModelInfo" />
+      <node id="4581245940532443535" at="39,65,40,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4581245940532443535" at="27,0,28,0" concept="1" trace="myConceptSourceModelInfo" />
@@ -174,8 +174,8 @@
       <scope id="4881264737614560289" at="83,51,89,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4881264737614560289" at="20,0,21,0" concept="6" trace="MacroFolderPicker" />
-      <node id="4881264737614560289" at="34,54,35,56" concept="0" />
+      <node id="4881264737614560289" at="22,0,23,0" concept="6" trace="MacroFolderPicker" />
+      <node id="4881264737614560289" at="36,54,37,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4881264737614560289" at="24,0,25,0" concept="1" trace="myConceptMacroFolderPicker" />
@@ -211,8 +211,8 @@
       <scope id="4881264737620519319" at="50,53,56,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4881264737620519319" at="15,0,16,0" concept="6" trace="FileSystemDirPicker" />
-      <node id="4881264737620519319" at="29,53,30,58" concept="0" />
+      <node id="4881264737620519319" at="17,0,18,0" concept="6" trace="FileSystemDirPicker" />
+      <node id="4881264737620519319" at="31,53,32,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4881264737620519319" at="19,0,20,0" concept="1" trace="myConceptFileSystemDirPicker" />
@@ -246,8 +246,8 @@
       <scope id="5785646600127256890" at="70,55,75,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5785646600127256890" at="18,0,19,0" concept="6" trace="IPathVariableProvider" />
-      <node id="5785646600127256890" at="32,62,33,60" concept="0" />
+      <node id="5785646600127256890" at="20,0,21,0" concept="6" trace="IPathVariableProvider" />
+      <node id="5785646600127256890" at="34,62,35,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5785646600127256890" at="22,0,23,0" concept="1" trace="myConceptIPathVariableProvider" />
@@ -280,8 +280,8 @@
       <scope id="6156524541422549000" at="42,48,49,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6156524541422549000" at="14,0,15,0" concept="6" trace="AbstractPicker" />
-      <node id="6156524541422549000" at="28,59,29,53" concept="0" />
+      <node id="6156524541422549000" at="16,0,17,0" concept="6" trace="AbstractPicker" />
+      <node id="6156524541422549000" at="30,59,31,53" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6156524541422549000" at="18,0,19,0" concept="1" trace="myConceptAbstractPicker" />
@@ -316,8 +316,8 @@
       <scope id="6156524541423588207" at="97,60,103,48" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6156524541423588207" at="22,0,23,0" concept="6" trace="SolutionRelativeFilePicker" />
-      <node id="6156524541423588207" at="36,64,37,65" concept="0" />
+      <node id="6156524541423588207" at="24,0,25,0" concept="6" trace="SolutionRelativeFilePicker" />
+      <node id="6156524541423588207" at="38,64,39,65" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6156524541423588207" at="26,0,27,0" concept="1" trace="myConceptSolutionRelativeFilePicker" />
@@ -351,8 +351,8 @@
       <scope id="6852280923331593586" at="36,54,41,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6852280923331593586" at="13,0,14,0" concept="6" trace="AbstractFolderPicker" />
-      <node id="6852280923331593586" at="27,57,28,59" concept="0" />
+      <node id="6852280923331593586" at="15,0,16,0" concept="6" trace="AbstractFolderPicker" />
+      <node id="6852280923331593586" at="29,57,30,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6852280923331593586" at="17,0,18,0" concept="1" trace="myConceptAbstractFolderPicker" />
@@ -385,8 +385,8 @@
       <scope id="6852280923331594086" at="30,52,35,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6852280923331594086" at="12,0,13,0" concept="6" trace="AbstractFilePicker" />
-      <node id="6852280923331594086" at="26,116,27,57" concept="0" />
+      <node id="6852280923331594086" at="14,0,15,0" concept="6" trace="AbstractFilePicker" />
+      <node id="6852280923331594086" at="28,116,29,57" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6852280923331594086" at="16,0,17,0" concept="1" trace="myConceptAbstractFilePicker" />
@@ -420,8 +420,8 @@
       <scope id="8297282968580444334" at="76,49,82,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8297282968580444334" at="19,0,20,0" concept="6" trace="MacroFilePicker" />
-      <node id="8297282968580444334" at="33,60,34,54" concept="0" />
+      <node id="8297282968580444334" at="21,0,22,0" concept="6" trace="MacroFilePicker" />
+      <node id="8297282968580444334" at="35,60,36,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8297282968580444334" at="23,0,24,0" concept="1" trace="myConceptMacroFilePicker" />

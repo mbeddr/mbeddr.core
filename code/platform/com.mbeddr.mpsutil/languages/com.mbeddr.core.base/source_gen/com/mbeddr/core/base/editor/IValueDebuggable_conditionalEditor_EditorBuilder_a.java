@@ -47,22 +47,19 @@ import jetbrains.mps.nodeEditor.AbstractCellProvider;
   }
 
   /*package*/ EditorCell createCell() {
-    return createPriorityInfoCell_1();
+    return createPriorityInfoCell_0();
   }
 
-  private EditorCell createPriorityInfoCell_0(EditorContext editorContext, SNode node) {
+  private EditorCell createPriorityInfoCell_0() {
     EditorCell editorCell = null;
     editorCell = createAlternation_0();
     editorCell.setBig(true);
     setCellContext(editorCell);
     return editorCell;
   }
-  private EditorCell createPriorityInfoCell_1() {
-    return createPriorityInfoCell_0(getEditorContext(), myNode);
-  }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
-    alternationCondition = nodeCondition_vmrhk1_a0a();
+    alternationCondition = nodeCondition_vmrhk1_a0a_0();
     EditorCell editorCell = null;
     if (alternationCondition) {
       editorCell = createCollection_0();
@@ -71,7 +68,7 @@ import jetbrains.mps.nodeEditor.AbstractCellProvider;
     }
     return editorCell;
   }
-  private boolean nodeCondition_vmrhk1_a0a() {
+  private boolean nodeCondition_vmrhk1_a0a_0() {
     return IValueDebuggable__BehaviorDescriptor.getDebuggerValueSource_id1c0z7yfF2FB.invoke(myNode) != null && (boolean) IValueDebuggable__BehaviorDescriptor.shouldShowDebugger_id6KLCBzCT0$P.invoke(myNode);
   }
   private EditorCell createCollection_0() {
@@ -138,7 +135,7 @@ import jetbrains.mps.nodeEditor.AbstractCellProvider;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {
@@ -228,7 +225,7 @@ import jetbrains.mps.nodeEditor.AbstractCellProvider;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createReadOnlyModelAccessor_1() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {

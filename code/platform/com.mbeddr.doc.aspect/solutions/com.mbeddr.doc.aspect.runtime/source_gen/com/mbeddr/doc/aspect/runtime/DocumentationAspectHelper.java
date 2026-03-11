@@ -61,12 +61,12 @@ public class DocumentationAspectHelper {
    * This will take into account the following settings of the documentation annotations:
    * - priority: if there is more than one documentation annotation for the given node,
    *   the one with the higher priority will be returned
-   * - overrideChildren: the documentation node for the given selected node will only be 
+   * - overrideChildren: the documentation node for the given selected node will only be
    *   returned if there is no ancestor of the selected node which has a documentation node
    *   with the override-flag set. If there is such an ancestor, its documentation will be shown
    *   instead of the selected node's documentation.
    * 
-   * Note that the retrieval of documentation nodes uses caching, as searching through the 
+   * Note that the retrieval of documentation nodes uses caching, as searching through the
    * ancestors might be expensive.
    * 
    * @param repository the current repository (opened with IDE)
@@ -136,7 +136,7 @@ public class DocumentationAspectHelper {
   /**
    * Check if a given cache entry (i.e., a documentation node) is still valid.
    * 
-   * If the documentation annotation has been moved to a different location or 
+   * If the documentation annotation has been moved to a different location or
    * the documented concept has been changed, this will be detected here.
    * 
    * Note: If the cache stores the information that there is no documentation node
@@ -168,8 +168,8 @@ public class DocumentationAspectHelper {
   }
 
   /**
-   * Retrieves the documentation node for the given concept by searching first in the documentation aspect of the concept 
-   * language and subsequently in the documentation aspects of all extending languages and finally in any available 
+   * Retrieves the documentation node for the given concept by searching first in the documentation aspect of the concept
+   * language and subsequently in the documentation aspects of all extending languages and finally in any available
    * solution that depends on the concept's language.
    */
   private static SNode getDocumentationAux(@NotNull final SRepository repository, final SAbstractConcept concept, final SProperty property) {

@@ -13,7 +13,7 @@
       <unit at="11,0,38,0" name="com.mbeddr.mpsutil.suppresswarning.gen.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,30,0" name="com.mbeddr.mpsutil.suppresswarning.gen.structure.LanguageConceptSwitch" />
+      <unit at="12,0,38,0" name="com.mbeddr.mpsutil.suppresswarning.gen.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,71,0" name="com.mbeddr.mpsutil.suppresswarning.gen.structure.StructureAspectDescriptor" />
@@ -33,8 +33,8 @@
       <scope id="9116320848001099235" at="20,57,26,45" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="9116320848001099235" at="12,0,13,0" concept="6" trace="CheckCategoryAnnotation" />
-      <node id="9116320848001099235" at="16,116,17,62" concept="0" />
+      <node id="9116320848001099235" at="14,0,15,0" concept="6" trace="CheckCategoryAnnotation" />
+      <node id="9116320848001099235" at="18,116,19,62" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="9116320848001099235" at="15,0,16,0" concept="1" trace="myConceptCheckCategoryAnnotation" />
@@ -69,8 +69,8 @@
       <scope id="9116320848001426276" at="27,47,33,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="9116320848001426276" at="13,0,14,0" concept="6" trace="KindReference" />
-      <node id="9116320848001426276" at="17,62,18,52" concept="0" />
+      <node id="9116320848001426276" at="15,0,16,0" concept="6" trace="KindReference" />
+      <node id="9116320848001426276" at="19,62,20,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="9116320848001426276" at="16,0,17,0" concept="1" trace="myConceptKindReference" />

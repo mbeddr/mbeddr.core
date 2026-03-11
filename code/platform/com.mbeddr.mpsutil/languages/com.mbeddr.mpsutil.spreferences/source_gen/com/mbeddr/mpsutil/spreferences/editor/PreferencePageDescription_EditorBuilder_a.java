@@ -187,7 +187,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();
@@ -253,7 +253,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createConstant_5());
-    editorCell.addEditorCell(createBooleanText_1());
+    editorCell.addEditorCell(createBooleanText_0());
     return editorCell;
   }
   private EditorCell createConstant_5() {
@@ -262,14 +262,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createBooleanText_0(EditorContext editorContext, SNode node) {
+  private EditorCell createBooleanText_0() {
     SProperty property = PROPS.applicationScope$s1uK;
-    BooleanTextCellProvider provider = new BooleanTextCellProvider(node, property, editorContext);
+    BooleanTextCellProvider provider = new BooleanTextCellProvider(getNode(), property, getEditorContext());
     provider.setTrueText("application");
     provider.setFalseText("project");
     provider.setNoTargetText("<no applicationScope>");
     EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
+    editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_applicationScope");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -277,9 +277,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createBooleanText_1() {
-    return createBooleanText_0(getEditorContext(), myNode);
   }
   private EditorCell createCollection_7() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
@@ -302,7 +299,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     alternationCondition = nodeCondition_4i0x31_a1e2a();
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = createBooleanText_3();
+      editorCell = createBooleanText_1();
     } else {
       editorCell = createConstant_7();
     }
@@ -311,14 +308,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private boolean nodeCondition_4i0x31_a1e2a() {
     return !(SPropertyOperations.getBoolean(myNode, PROPS.applicationScope$s1uK));
   }
-  private EditorCell createBooleanText_2(EditorContext editorContext, SNode node) {
+  private EditorCell createBooleanText_1() {
     SProperty property = PROPS.usePreferencesFolder$oUeX;
-    BooleanTextCellProvider provider = new BooleanTextCellProvider(node, property, editorContext);
+    BooleanTextCellProvider provider = new BooleanTextCellProvider(getNode(), property, getEditorContext());
     provider.setTrueText("user");
     provider.setFalseText("project");
     provider.setNoTargetText("<no usePreferencesFolder>");
     EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
+    editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_usePreferencesFolder");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -326,9 +323,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createBooleanText_3() {
-    return createBooleanText_2(getEditorContext(), myNode);
   }
   private EditorCell createConstant_7() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "user");

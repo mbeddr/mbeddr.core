@@ -9,7 +9,7 @@ import java.awt.geom.Ellipse2D;
 import java.awt.geom.Area;
 
 /**
- * Dummy reference to {@link com.google.common.base.Function } to help compilation
+ * Dummy reference to {@link com.google.common.base.Function} to help compilation
  */
 public class ShapeFactory {
 

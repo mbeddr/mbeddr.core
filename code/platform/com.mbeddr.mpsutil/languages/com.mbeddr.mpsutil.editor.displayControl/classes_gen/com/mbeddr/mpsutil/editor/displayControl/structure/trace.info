@@ -12,7 +12,7 @@
       <unit at="11,0,29,0" name="com.mbeddr.mpsutil.editor.displayControl.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,28,0" name="com.mbeddr.mpsutil.editor.displayControl.structure.LanguageConceptSwitch" />
+      <unit at="12,0,36,0" name="com.mbeddr.mpsutil.editor.displayControl.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,56,0" name="com.mbeddr.mpsutil.editor.displayControl.structure.StructureAspectDescriptor" />
@@ -31,8 +31,8 @@
       <scope id="5851961020731958233" at="19,42,24,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5851961020731958233" at="12,0,13,0" concept="5" trace="ICanHide" />
-      <node id="5851961020731958233" at="15,116,16,47" concept="0" />
+      <node id="5851961020731958233" at="14,0,15,0" concept="5" trace="ICanHide" />
+      <node id="5851961020731958233" at="17,116,18,47" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5851961020731958233" at="15,0,16,0" concept="1" trace="myConceptICanHide" />

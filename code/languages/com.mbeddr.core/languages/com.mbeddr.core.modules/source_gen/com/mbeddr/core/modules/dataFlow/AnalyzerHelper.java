@@ -30,7 +30,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public class AnalyzerHelper {
 
   /**
-   * Returns the Program instance for a given AnalysisResult. 
+   * Returns the Program instance for a given AnalysisResult.
    * 
    * @param result the analysis result
    * @return the corresponding program
@@ -51,8 +51,8 @@ public class AnalyzerHelper {
   }
 
   /**
-   * Returns the first non-generated instruction in the program graph 
-   * which appears before the given generated instruction. 
+   * Returns the first non-generated instruction in the program graph
+   * which appears before the given generated instruction.
    * 
    * @param instruction the generated instruction
    * @return the non-generated instruction that appears before
@@ -68,9 +68,9 @@ public class AnalyzerHelper {
 
   /**
    * Computes the indirection level for a given expression.
-   * The computation is based on the expression's type. 
-   * 0 indirection is assigned to non-pointer types. 
-   * A number greater than 0 means the number of pointer indirections in the type. 
+   * The computation is based on the expression's type.
+   * 0 indirection is assigned to non-pointer types.
+   * A number greater than 0 means the number of pointer indirections in the type.
    * 
    * @param expression the expression
    * @return the indirection level
@@ -92,7 +92,7 @@ public class AnalyzerHelper {
   }
 
   /**
-   * Returns the root StatementList for a given node, if any. 
+   * Returns the root StatementList for a given node, if any.
    * 
    * @param node the node instance
    * @return the root statement list
@@ -170,7 +170,7 @@ public class AnalyzerHelper {
   }
 
   /**
-   * Generic map intersection between two multi-maps. 
+   * Generic map intersection between two multi-maps.
    * 
    * @param m1 the first map
    * @param m2 the second map
@@ -195,7 +195,7 @@ public class AnalyzerHelper {
   }
 
   /**
-   * Generic map union between two multi-maps. 
+   * Generic map union between two multi-maps.
    * 
    * @param m1 the first map
    * @param m2 the second map

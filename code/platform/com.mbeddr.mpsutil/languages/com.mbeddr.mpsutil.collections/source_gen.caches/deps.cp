@@ -34,9 +34,7 @@
   <uses module="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt+dp" />
   <uses module="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt+dp" />
   <uses module="e89e1550-b8fe-4f0d-a7fd-487968b42405(com.mbeddr.mpsutil.collections)" kind="dp" />
-  <uses module="3f2dbc2e-ad41-470f-b5f1-2869513d2b58(com.mbeddr.mpsutil.collections.runtime)" kind="rt" />
   <uses module="7ac49bcb-77fb-4f0f-9036-e31b86b854b2(com.mbeddr.mpsutil.grammarcells.runtime)" kind="rt+dp" />
-  <uses module="ecfb9949-7433-4db5-85de-0f84d172e4ce(de.q60.mps.collections.libs)" kind="dp" />
   <uses module="7037b32c-9607-4f8e-81bd-1f028a4c117b(de.slisson.mps.reflection.runtime)" kind="rt" />
   <uses module="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="dp" />
   <uses module="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" kind="dp" />

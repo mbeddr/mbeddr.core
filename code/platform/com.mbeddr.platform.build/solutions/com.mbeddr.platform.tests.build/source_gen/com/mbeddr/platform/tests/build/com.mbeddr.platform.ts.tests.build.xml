@@ -3119,6 +3119,64 @@
       <zipfileset file="${mbeddr.mpsutil}/solutions/test.com.mbeddr.mpsutil.logicalChild/test.com.mbeddr.mpsutil.logicalChild.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-test.com.mbeddr.mpsutil.logicalChild-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.genplandiagram.tests.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.genplandiagram.tests.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.genplandiagram.tests.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.mpsutil.genplandiagram.tests" type="solution" uuid="3448ba3d-d55b-40e1-8368-22e670e76420">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="c6420b75-4569-420d-aaf7-9bc590ad7b2a(de.itemis.mps.comparator)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="6ef0db41-d3b2-47fe-82ac-d55a42cb6b13(jetbrains.mps.baseLanguage.unitTest.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="e55e6749-03cb-4ea7-9695-2322bab791c1(jetbrains.mps.lang.test.matcher)" kind="rt" />
+          <module ref="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
+          <module ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" kind="cl" />
+          <module ref="f0aec392-47e3-40ae-a843-4519e73ec102(jetbrains.mps.lang.documentation.genplan)" kind="cl" />
+          <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:ff3d5f86-c6fa-4c63-aa95-c2de600f92ac:com.mbeddr.mpsutil.genplandiagram" />
+          <language id="l:f47b95d4-5e73-4c04-9204-18076950153b:de.itemis.mps.compare" />
+          <language id="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" />
+          <language id="l:7ab1a6fa-0a11-4b95-9e48-75f363d6cb00:jetbrains.mps.lang.generator.plan" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="com.mbeddr.mpsutil.genplandiagram.tests-src.jar" descriptor="com.mbeddr.mpsutil.genplandiagram.tests.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/com.mbeddr.mpsutil.genplandiagram.tests.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.genplandiagram.tests" />
+      <fileset dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests" includes="icons/**, resources/**" />
+      <fileset dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.genplandiagram.tests.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.genplandiagram.tests-models">
+      <fileset dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/com.mbeddr.mpsutil.genplandiagram.tests-src.jar" duplicate="preserve">
+      <fileset dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/com.mbeddr.mpsutil.genplandiagram.tests.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.genplandiagram.tests-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.layout}/resources" />
     <copy todir="${build.layout}/resources">
       <fileset dir="${mbeddr.mpsutil}/tests/test.ts.mpsutil.multilingual/resources" />
@@ -3142,7 +3200,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.test.assessments.testlang, java.compile.test.assessments, java.compile.tests.com.mbeddr.mpsutil.json, java.compile.test.com.mbeddr.mpsutil.contextactions, java.compile.test.ts.richstring, java.compile.test.ts.javainterpreter, java.compile.com.mbeddr.mpsutil.javainterpreter.test, java.compile.test.ts.mpsutil.multilingual, java.compile.test.ts.mpsutil.multilingual.concept.sandbox, java.compile.test.ts.mpsutil.multilingual.editor.sandbox, java.compile.test.ts.propertydefault, java.compile.test.ts.propertydefaulttest, java.compile.test.com.mbeddr.mpsutil.xml.fix, java.compile.test.com.mbeddr.mpsutil.xml.fix.support, java.compile.test.com.mbeddr.mpsutil.xml.fix.support#210803258685952145, java.compile.test.com.mbeddr.mpsutil.iconchar, java.compile.test.com.mbeddr.mpsutil.iconchar.test, java.compile.test.com.mbeddr.mpsutil.extensionclass.source, java.compile.test.com.mbeddr.mpsutil.extensionclass, java.compile.test.com.mbeddr.mpsutil.ecore.metaModelImport, java.compile.test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1, java.compile.test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2, java.compile.test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage3, java.compile.test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage4, java.compile.test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5, java.compile.test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6, java.compile.com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel, java.compile.test.com.mbeddr.mpsutil.ecore.modelImportExport, java.compile.test.com.mbeddr.mpsutil.common, java.compile.test.com.mbeddr.mpsutil.blutil.test.waitfor, java.compile.com.mbeddr.mpsutil.asynccell.sandbox, java.compile.test.com.mbeddr.mpsutil.asynccell, java.compile.com.mbeddr.mpsutil.parameterizedMenu.sandbox, java.compile.test.com.mbeddr.mpsutil.parameterizedMenu, java.compile.test.com.mbeddr.mpsutil.smodule, java.compile.test.com.mbeddr.mpsutil.logicalChild, java.compile.com.mbeddr.mpsutil.logicalChild.sandbox, java.compile.test.com.mbeddr.mpsutil.collections.runtime, java.compile.com.mbeddr.doc.test.documents" />
+  <target name="compileJava" depends="java.compile.test.assessments.testlang, java.compile.test.assessments, java.compile.tests.com.mbeddr.mpsutil.json, java.compile.test.com.mbeddr.mpsutil.contextactions, java.compile.test.ts.richstring, java.compile.test.ts.javainterpreter, java.compile.com.mbeddr.mpsutil.javainterpreter.test, java.compile.test.ts.mpsutil.multilingual, java.compile.test.ts.mpsutil.multilingual.concept.sandbox, java.compile.test.ts.mpsutil.multilingual.editor.sandbox, java.compile.test.ts.propertydefault, java.compile.test.ts.propertydefaulttest, java.compile.test.com.mbeddr.mpsutil.xml.fix, java.compile.test.com.mbeddr.mpsutil.xml.fix.support, java.compile.test.com.mbeddr.mpsutil.xml.fix.support#210803258685952145, java.compile.test.com.mbeddr.mpsutil.iconchar, java.compile.test.com.mbeddr.mpsutil.iconchar.test, java.compile.test.com.mbeddr.mpsutil.extensionclass.source, java.compile.test.com.mbeddr.mpsutil.extensionclass, java.compile.test.com.mbeddr.mpsutil.ecore.metaModelImport, java.compile.test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1, java.compile.test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2, java.compile.test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage3, java.compile.test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage4, java.compile.test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5, java.compile.test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6, java.compile.com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel, java.compile.test.com.mbeddr.mpsutil.ecore.modelImportExport, java.compile.test.com.mbeddr.mpsutil.common, java.compile.test.com.mbeddr.mpsutil.blutil.test.waitfor, java.compile.com.mbeddr.mpsutil.asynccell.sandbox, java.compile.test.com.mbeddr.mpsutil.asynccell, java.compile.com.mbeddr.mpsutil.parameterizedMenu.sandbox, java.compile.test.com.mbeddr.mpsutil.parameterizedMenu, java.compile.test.com.mbeddr.mpsutil.smodule, java.compile.test.com.mbeddr.mpsutil.logicalChild, java.compile.com.mbeddr.mpsutil.logicalChild.sandbox, java.compile.test.com.mbeddr.mpsutil.collections.runtime, java.compile.com.mbeddr.mpsutil.genplandiagram.tests, java.compile.com.mbeddr.doc.test.documents" />
   
   <target name="processResources" />
   
@@ -3166,6 +3224,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist" id="com.mbeddr.mpsutil.editor.querylist" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editorsupport" id="com.mbeddr.mpsutil.editorsupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" id="com.mbeddr.mpsutil.filepicker" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.genplandiagram" id="com.mbeddr.mpsutil.genplandiagram" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.genreview" id="com.mbeddr.mpsutil.genreview" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.gensupport" id="com.mbeddr.mpsutil.gensupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.incrementalcomputation" id="com.mbeddr.mpsutil.incrementalcomputation" />
@@ -3210,6 +3269,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/mpsutil.refactoring" id="com.mbeddr.mpsutil.refactoring" />
       <plugin path="${artifacts.com.mbeddr.platform}/org.mockito" id="org.mockito" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
+      <plugin path="${artifacts.mps}/plugins/java" id="com.intellij.java" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-context-actions" id="jetbrains.mps.editor.contextActions" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
@@ -3234,6 +3294,7 @@
         <module file="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/com.mbeddr.doc.test.documents.msd" />
         <module file="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.asynccell.sandbox/com.mbeddr.mpsutil.asynccell.sandbox.mpl" />
         <module file="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel/com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.mpl" />
+        <module file="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/com.mbeddr.mpsutil.genplandiagram.tests.msd" />
         <module file="${mbeddr.mpsutil}/tests/com.mbeddr.mpsutil.javainterpreter.test/com.mbeddr.mpsutil.javainterpreter.test.mpl" />
         <module file="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.logicalChild.sandbox/com.mbeddr.mpsutil.logicalChild.sandbox.mpl" />
         <module file="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.parameterizedMenu.sandbox/com.mbeddr.mpsutil.parameterizedMenu.sandbox.mpl" />
@@ -3335,7 +3396,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -3425,7 +3485,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -3530,7 +3589,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -3717,7 +3775,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -3802,7 +3859,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -3896,7 +3952,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -3981,7 +4036,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -4053,7 +4107,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -4159,7 +4212,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -4238,7 +4290,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -4303,7 +4354,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -4368,7 +4418,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -4458,7 +4507,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -4555,7 +4603,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -4623,7 +4670,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -4685,7 +4731,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -4749,7 +4794,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -4857,7 +4901,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -4952,7 +4995,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -5042,7 +5084,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -5111,7 +5152,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -5180,7 +5220,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -5249,7 +5288,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -5318,7 +5356,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -5387,7 +5424,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -5454,7 +5490,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -5519,7 +5554,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -5602,7 +5636,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -5712,7 +5745,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -5798,7 +5830,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -5870,7 +5901,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -5963,7 +5993,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -6037,7 +6066,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -6121,7 +6149,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -6210,7 +6237,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -6295,7 +6321,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -6368,7 +6393,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -6418,6 +6442,91 @@
     </copy>
   </target>
   
+  <target name="java.compile.com.mbeddr.mpsutil.genplandiagram.tests" depends="fetchDependencies">
+    <mkdir dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.genplandiagram.tests" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.genplandiagram.tests" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/source_gen" />
+        <pathelement path="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/test_gen/" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-test.jar" />
+        <fileset file="${artifacts.mps}/lib/app.jar" />
+        <fileset file="${artifacts.mps}/lib/app-client.jar" />
+        <fileset file="${artifacts.mps}/lib/lib.jar" />
+        <fileset file="${artifacts.mps}/lib/lib-client.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
+        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
+        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
+        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
+        <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.plantuml/languages/group.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.compare/languages/de.itemis.mps.compare/de.itemis.mps.comparator.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-core/languages/doctext/jetbrains.mps.lang.documentation.genplan.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-engine-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-migrationsupport-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-params-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-commons-1.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-engine-1.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-launcher-1.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-vintage-engine-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="opentest4j-1.3.0.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-reporting-1.13.4.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.genplandiagram.tests">
+      <fileset dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/source_gen" excludes="**/*.java" />
+      <fileset dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/test_gen/" excludes="**/*.java" />
+    </copy>
+  </target>
+  
   <target name="java.compile.com.mbeddr.doc.test.documents" depends="fetchDependencies">
     <mkdir dir="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.test.documents" />
@@ -6457,7 +6566,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -6675,6 +6783,7 @@
       <pathelement location="${build.layout}/test.com.mbeddr.mpsutil.logicalChild.jar" />
       <pathelement location="${build.layout}/com.mbeddr.mpsutil.logicalChild.sandbox.jar" />
       <pathelement location="${build.layout}/test.com.mbeddr.mpsutil.collections.runtime.jar" />
+      <pathelement location="${build.layout}/com.mbeddr.mpsutil.genplandiagram.tests.jar" />
       <pathelement location="${build.layout}/com.mbeddr.doc.test.documents.jar" />
     </path>
     <pathconvert property="mps.tests.path.string" refid="mps.tests.path" />
@@ -6708,6 +6817,7 @@
       <plugin id="com.mbeddr.mpsutil.editor.querylist" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist" />
       <plugin id="com.mbeddr.mpsutil.editorsupport" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editorsupport" />
       <plugin id="com.mbeddr.mpsutil.filepicker" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" />
+      <plugin id="com.mbeddr.mpsutil.genplandiagram" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.genplandiagram" />
       <plugin id="com.mbeddr.mpsutil.genreview" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.genreview" />
       <plugin id="com.mbeddr.mpsutil.gensupport" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.gensupport" />
       <plugin id="com.mbeddr.mpsutil.incrementalcomputation" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.incrementalcomputation" />
@@ -6752,6 +6862,7 @@
       <plugin id="com.mbeddr.mpsutil.refactoring" path="${artifacts.com.mbeddr.platform}/mpsutil.refactoring" />
       <plugin id="org.mockito" path="${artifacts.com.mbeddr.platform}/org.mockito" />
       <plugin id="com.intellij.modules.mps" path="${artifacts.mps}/lib/mps-workbench.jar" />
+      <plugin id="com.intellij.java" path="${artifacts.mps}/plugins/java" />
       <plugin id="jetbrains.mps.build" path="${artifacts.mps}/plugins/mps-build" />
       <plugin id="jetbrains.mps.editor.contextActions" path="${artifacts.mps}/plugins/mps-context-actions" />
       <plugin id="jetbrains.mps.core" path="${artifacts.mps}/plugins/mps-core" />
@@ -6790,6 +6901,7 @@
     <delete dir="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen" />
     <delete dir="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.asynccell.sandbox/source_gen" />
     <delete dir="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel/source_gen" />
+    <delete dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/source_gen" />
     <delete dir="${mbeddr.mpsutil}/tests/com.mbeddr.mpsutil.javainterpreter.test/source_gen" />
     <delete dir="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.logicalChild.sandbox/source_gen" />
     <delete dir="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.parameterizedMenu.sandbox/source_gen" />
@@ -6827,6 +6939,7 @@
     <delete dir="${mbeddr.mpsutil}/tests/test.ts.javainterpreter/source_gen" />
     <delete dir="${mbeddr.mpsutil}/tests/test.ts.mpsutil.multilingual/source_gen" />
     <delete dir="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/test_gen" />
+    <delete dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/test_gen" />
     <delete dir="${mbeddr.mpsutil}/tests/test.com.mbeddr.mpsutil.blutil.test.waitfor/test_gen" />
     <delete dir="${mbeddr.mpsutil}/tests/test.com.mbeddr.mpsutil.common/test_gen" />
     <delete dir="${mbeddr.mpsutil}/tests/test.com.mbeddr.mpsutil.contextactions/test_gen" />

@@ -105,7 +105,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCollection_2());
-    editorCell.addEditorCell(createTooltip_1());
+    editorCell.addEditorCell(createTooltip_0());
     return editorCell;
   }
   private EditorCell createCollection_2() {
@@ -127,16 +127,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
-  private EditorCell createTooltip_0(final EditorContext editorContext, final SNode node) {
-    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "com.mbeddr.cc.var.annotations.editor.GeneratedHints.tooltipHint_7zd1jt_b0a", true);
+  private EditorCell createTooltip_0() {
+    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "com.mbeddr.cc.var.annotations.editor.GeneratedHints.tooltipHint_7zd1jt_b0a", true);
     EditorCell visibleCell = createConstant_0();
 
-    TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+    TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
     editorCell.setCellId("Tooltip_7zd1jt_b0a");
     return editorCell;
-  }
-  private EditorCell createTooltip_1() {
-    return createTooltip_0(getEditorContext(), myNode);
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "->");
@@ -155,19 +152,16 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.SELECTABLE, false);
     style.set(StyleAttributes.BACKGROUND_COLOR, (Color) null);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createTooltip_3());
+    editorCell.addEditorCell(createTooltip_1());
     return editorCell;
   }
-  private EditorCell createTooltip_2(final EditorContext editorContext, final SNode node) {
-    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "com.mbeddr.cc.var.annotations.editor.GeneratedHints.tooltipHint_7zd1jt_a1a", true);
+  private EditorCell createTooltip_1() {
+    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "com.mbeddr.cc.var.annotations.editor.GeneratedHints.tooltipHint_7zd1jt_a1a", true);
     EditorCell visibleCell = createConstant_1();
 
-    TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+    TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
     editorCell.setCellId("Tooltip_7zd1jt_a1a");
     return editorCell;
-  }
-  private EditorCell createTooltip_3() {
-    return createTooltip_2(getEditorContext(), myNode);
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "*");
@@ -293,7 +287,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     alternationCondition = nodeCondition_7zd1jt_a0d0();
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = createQueryList_1();
+      editorCell = createQueryList_0();
     } else {
       editorCell = createConstant_2();
     }
@@ -302,21 +296,18 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private boolean nodeCondition_7zd1jt_a0d0() {
     return ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.cases$pWn4)).any((it) -> (boolean) FeatureCondition__BehaviorDescriptor.isSelectedInRenderingConfiguration_id2h6lNbWo02u.invoke(SLinkOperations.getTarget(it, LINKS.condition$xJXT)));
   }
-  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_0() {
 
-    QueryListHandler handler = new QueryListHandler_7zd1jt_a0d0(editorContext, node, true);
+    QueryListHandler handler = new QueryListHandler_7zd1jt_a0d0(getEditorContext(), getNode(), true);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
     editorCell.setTargeConcept(CONCEPTS.BaseConcept$gP);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_7zd1jt_a0d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.READ_ONLY, true);
     editorCell.getStyle().putAll(style);
     return editorCell;
 
-  }
-  private EditorCell createQueryList_1() {
-    return createQueryList_0(getEditorContext(), myNode);
   }
   private static class QueryListHandler_7zd1jt_a0d0 extends QueryListHandler {
     /**

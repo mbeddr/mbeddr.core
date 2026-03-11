@@ -13,7 +13,7 @@
       <unit at="11,0,36,0" name="com.mbeddr.mpsutil.interpreter.test.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,30,0" name="com.mbeddr.mpsutil.interpreter.test.structure.LanguageConceptSwitch" />
+      <unit at="12,0,38,0" name="com.mbeddr.mpsutil.interpreter.test.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,71,0" name="com.mbeddr.mpsutil.interpreter.test.structure.StructureAspectDescriptor" />
@@ -32,8 +32,8 @@
       <scope id="2763029999492802015" at="20,62,25,50" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2763029999492802015" at="12,0,13,0" concept="6" trace="AbstractInterpreterCondition" />
-      <node id="2763029999492802015" at="16,116,17,67" concept="0" />
+      <node id="2763029999492802015" at="14,0,15,0" concept="6" trace="AbstractInterpreterCondition" />
+      <node id="2763029999492802015" at="18,116,19,67" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2763029999492802015" at="15,0,16,0" concept="1" trace="myConceptAbstractInterpreterCondition" />
@@ -66,8 +66,8 @@
       <scope id="7019451652828573874" at="26,63,31,51" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7019451652828573874" at="13,0,14,0" concept="6" trace="AbstractInterpreterEvaluation" />
-      <node id="7019451652828573874" at="17,67,18,68" concept="0" />
+      <node id="7019451652828573874" at="15,0,16,0" concept="6" trace="AbstractInterpreterEvaluation" />
+      <node id="7019451652828573874" at="19,67,20,68" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7019451652828573874" at="16,0,17,0" concept="1" trace="myConceptAbstractInterpreterEvaluation" />

@@ -101,7 +101,7 @@ public class HyperlinkListener extends MouseAdapter {
     SNode hyperlinkNode = getHyperlinkNode(cellAtCursor);
     boolean isHyperlinkReference = isHyperlinkReference(cellAtCursor);
     HyperlinkStyle hyperlinkStyle = getHyperlinkStyle(cellAtCursor);
-    if (hyperlinkHandler != null || hyperlinkNode != null || isHyperlinkReference) {
+    if (hyperlinkNode != null || isHyperlinkReference || hyperlinkHandler != null && hyperlinkHandler.isApplicable(getEditorComponent().getEditorContext())) {
       if (Objects.equals(hyperlinkStyle, HyperlinkStyle.REFERENCE) && !(isCtrlDown)) {
         return;
       }
@@ -160,7 +160,7 @@ public class HyperlinkListener extends MouseAdapter {
       HyperlinkHandler hyperlinkHandler = getHyperlinkHandler(cellAtCursor);
       if (isHyperlink) {
         editorComponent.goByCurrentReference();
-      } else if (hyperlinkHandler != null) {
+      } else if (hyperlinkHandler != null && hyperlinkHandler.isApplicable(getEditorComponent().getEditorContext())) {
         hyperlinkHandler.open(HyperlinkUtil.INSTANCE);
       } else if (hyperlinkNode != null) {
         MPSProject mpsProject = MPSDataKeys.MPS_PROJECT.getData(DataManager.getInstance().getDataContext(editorComponent));

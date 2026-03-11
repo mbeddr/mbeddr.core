@@ -174,7 +174,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     return editorCell;
   }
   private EditorCell createMathBase_1() {
-    return createMathBase_0(getEditorContext(), myNode);
+    return createMathBase_0(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_0() {
     SingleRoleCellProvider provider = new expressionSingleRoleHandler_11vgey_a1a(myNode, LINKS.expression$7cOe, getEditorContext());

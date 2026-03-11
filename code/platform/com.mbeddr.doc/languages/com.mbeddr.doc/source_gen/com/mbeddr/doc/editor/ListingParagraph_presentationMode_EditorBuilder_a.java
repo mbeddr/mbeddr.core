@@ -59,7 +59,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
     editorCell.setCellId("Collection_b0c2el_a0");
     editorCell.addEditorCell(createCustom_0());
-    editorCell.addEditorCell(createFrameCell_1());
+    editorCell.addEditorCell(createFrameCell_0());
     editorCell.addEditorCell(createCustom_1());
     return editorCell;
   }
@@ -100,8 +100,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     String replacedLineEndings = escapeHtml3.replace("\n", "<br>");
     return new JLabel("<html><head><style type='text/css'>body{font-family:monospace}</style></head><body>" + replacedLineEndings.replace(" ", "&nbsp;") + "</body></html>") {};
   }
-  private EditorCell createFrameCell_0(final EditorContext editorContext, final SNode node) {
-    FrameCell editorCell = new FrameCell(editorContext, node);
+  private EditorCell createFrameCell_0() {
+    FrameCell editorCell = new FrameCell(getEditorContext(), getNode());
     editorCell.setCellId("FrameCell_b0c2el_b0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("com.mbeddr.mpsutil.framecell", "frame-width"), _StyleParameter_QueryFunction_b0c2el_a0b0a());
@@ -110,9 +110,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCollection_2());
     return editorCell;
-  }
-  private EditorCell createFrameCell_1() {
-    return createFrameCell_0(getEditorContext(), myNode);
   }
   private int _StyleParameter_QueryFunction_b0c2el_a0b0a() {
     return 2;

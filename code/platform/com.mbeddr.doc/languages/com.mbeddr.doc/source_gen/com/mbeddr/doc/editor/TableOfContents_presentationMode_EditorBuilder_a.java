@@ -62,7 +62,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       getCellFactory().addCellContextHints(new String[]{"com.mbeddr.doc.editor.DocHints.ToCEntry"});
       editorCell.addEditorCell(createConstant_0());
       editorCell.addEditorCell(createCustom_0());
-      editorCell.addEditorCell(createQueryList_1());
+      editorCell.addEditorCell(createQueryList_0());
       editorCell.addEditorCell(createConstant_1());
       setInnerCellsContext(editorCell);
     } finally {
@@ -82,21 +82,18 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.setCellId("Custom_vc48x3_b0");
     return editorCell;
   }
-  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_0() {
 
-    QueryListHandler handler = new QueryListHandler_vc48x3_c0(editorContext, node, true);
+    QueryListHandler handler = new QueryListHandler_vc48x3_c0(getEditorContext(), getNode(), true);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Vertical());
     editorCell.setTargeConcept(CONCEPTS.ITocEntry$Y4);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_vc48x3_c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.READ_ONLY, true);
     editorCell.getStyle().putAll(style);
     return editorCell;
 
-  }
-  private EditorCell createQueryList_1() {
-    return createQueryList_0(getEditorContext(), myNode);
   }
   private static class QueryListHandler_vc48x3_c0 extends QueryListHandler {
     /**

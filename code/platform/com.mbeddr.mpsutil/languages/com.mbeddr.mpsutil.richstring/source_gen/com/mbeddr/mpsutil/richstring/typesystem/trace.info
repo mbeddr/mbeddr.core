@@ -32,20 +32,17 @@
       <node id="3354025285337211146" at="21,50,22,38" concept="8" />
       <node id="3354025285337211146" at="24,68,25,102" concept="8" />
       <node id="3354025285337211146" at="27,27,28,17" concept="8" />
-      <node id="3354025285337211146" at="30,39,31,16" concept="8" />
-      <node id="3354025285337211146" at="35,0,36,0" concept="11" trace="RichStringType$Ea" />
+      <node id="3354025285337211146" at="32,0,33,0" concept="11" trace="RichStringType$Ea" />
       <node id="3354025285337211146" at="16,0,18,0" concept="2" trace="supertypeof_richstring_SubtypingRule#()V" />
       <node id="3354025285337211146" at="18,0,21,0" concept="6" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3354025285337211146" at="21,0,24,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="3354025285337211146" at="24,0,27,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="3354025285337211146" at="27,0,30,0" concept="6" trace="isWeak#()Z" />
-      <node id="3354025285337211146" at="30,0,33,0" concept="6" trace="surelyKeepsConcept#()Z" />
       <scope id="3354025285337211146" at="16,49,16,49" />
       <scope id="3354025285337211147" at="18,124,19,184" />
       <scope id="3354025285337211146" at="21,50,22,38" />
       <scope id="3354025285337211146" at="24,68,25,102" />
       <scope id="3354025285337211146" at="27,27,28,17" />
-      <scope id="3354025285337211146" at="30,39,31,16" />
       <scope id="3354025285337211146" at="16,0,18,0" />
       <scope id="3354025285337211146" at="18,0,21,0">
         <var name="richStringType" id="3354025285337211146" />
@@ -57,9 +54,8 @@
         <var name="argument" id="3354025285337211146" />
       </scope>
       <scope id="3354025285337211146" at="27,0,30,0" />
-      <scope id="3354025285337211146" at="30,0,33,0" />
-      <unit id="3354025285337211146" at="34,0,37,0" name="com.mbeddr.mpsutil.richstring.typesystem.supertypeof_richstring_SubtypingRule$CONCEPTS" />
-      <unit id="3354025285337211146" at="15,0,38,0" name="com.mbeddr.mpsutil.richstring.typesystem.supertypeof_richstring_SubtypingRule" />
+      <unit id="3354025285337211146" at="31,0,34,0" name="com.mbeddr.mpsutil.richstring.typesystem.supertypeof_richstring_SubtypingRule$CONCEPTS" />
+      <unit id="3354025285337211146" at="15,0,35,0" name="com.mbeddr.mpsutil.richstring.typesystem.supertypeof_richstring_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:f7af3984-a112-4e63-b8bb-3a0771bf3a31(com.mbeddr.mpsutil.richstring.typesystem)/3354025285337266272">

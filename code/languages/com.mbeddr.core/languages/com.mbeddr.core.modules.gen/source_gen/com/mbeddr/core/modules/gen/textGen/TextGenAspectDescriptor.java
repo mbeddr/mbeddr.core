@@ -63,9 +63,11 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   }
   private static String getFileName_GenModuleH(SNode node) {
     return (String) AbstractGenModule__BehaviorDescriptor.genName_id7Aba6Bzz6b$.invoke(node);
+
   }
   private static String getFileName_GenModuleC(SNode node) {
     return (String) AbstractGenModule__BehaviorDescriptor.genName_id7Aba6Bzz6b$.invoke(node);
+
   }
   private static String getFileExtension_GenModuleH(SNode node) {
     return SPropertyOperations.getString(node, PROPS.fileExtension$IoTz);

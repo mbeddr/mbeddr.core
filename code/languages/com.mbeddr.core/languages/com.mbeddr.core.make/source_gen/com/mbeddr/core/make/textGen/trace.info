@@ -13,14 +13,15 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="86,0,89,0" name="com.mbeddr.core.make.textGen.TextGenAspectDescriptor$CONCEPTS" />
-      <unit at="16,0,90,0" name="com.mbeddr.core.make.textGen.TextGenAspectDescriptor" />
+      <unit at="89,0,92,0" name="com.mbeddr.core.make.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="93,0,96,0" name="com.mbeddr.core.make.textGen.TextGenAspectDescriptor$PROPS" />
+      <unit at="18,0,97,0" name="com.mbeddr.core.make.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/208195772221076914">
     <file name="TextGenAspectDescriptor.java">
-      <node id="208195772221076914" at="60,45,61,41" concept="7" />
-      <scope id="208195772221076914" at="60,45,61,41" />
+      <node id="208195772221076914" at="62,45,63,41" concept="7" />
+      <scope id="208195772221076914" at="62,45,63,41" />
     </file>
     <file name="VariableRef_TextGen.java">
       <node id="208195772221076914" at="18,54,19,55" concept="6" />
@@ -58,8 +59,8 @@
       <unit id="208195772221076931" at="12,0,23,0" name="com.mbeddr.core.make.textGen.PlainTextFragment_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="208195772221076931" at="46,51,47,47" concept="7" />
-      <scope id="208195772221076931" at="46,51,47,47" />
+      <node id="208195772221076931" at="48,51,49,47" concept="7" />
+      <scope id="208195772221076931" at="48,51,49,47" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/208195772221076989">
@@ -84,8 +85,8 @@
       <unit id="208195772221076989" at="13,0,27,0" name="com.mbeddr.core.make.textGen.Command_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="208195772221076989" at="28,41,29,37" concept="7" />
-      <scope id="208195772221076989" at="28,41,29,37" />
+      <node id="208195772221076989" at="30,41,31,37" concept="7" />
+      <scope id="208195772221076989" at="30,41,31,37" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/300691836431963781">
@@ -107,14 +108,14 @@
       <unit id="300691836431963781" at="12,0,26,0" name="com.mbeddr.core.make.textGen.Include_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="300691836431963781" at="34,41,35,37" concept="7" />
-      <scope id="300691836431963781" at="34,41,35,37" />
+      <node id="300691836431963781" at="36,41,37,37" concept="7" />
+      <scope id="300691836431963781" at="36,41,37,37" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/3241057742986189277">
     <file name="TextGenAspectDescriptor.java">
-      <node id="3241057742986189277" at="62,47,63,43" concept="7" />
-      <scope id="3241057742986189277" at="62,47,63,43" />
+      <node id="3241057742986189277" at="64,47,65,43" concept="7" />
+      <scope id="3241057742986189277" at="64,47,65,43" />
     </file>
     <file name="VariableValue_TextGen.java">
       <node id="3241057742986189277" at="15,54,16,55" concept="6" />
@@ -138,8 +139,8 @@
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/3373914745211446891">
     <file name="TextGenAspectDescriptor.java">
-      <node id="3373914745211446891" at="58,42,59,38" concept="7" />
-      <scope id="3373914745211446891" at="58,42,59,38" />
+      <node id="3373914745211446891" at="60,42,61,38" concept="7" />
+      <scope id="3373914745211446891" at="60,42,61,38" />
     </file>
     <file name="Variable_TextGen.java">
       <node id="3373914745211446891" at="19,54,20,55" concept="6" />
@@ -211,8 +212,8 @@
       <unit id="4091979687999087352" at="16,0,37,0" name="com.mbeddr.core.make.textGen.MakefileFragment_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="4091979687999087352" at="42,50,43,46" concept="7" />
-      <scope id="4091979687999087352" at="42,50,43,46" />
+      <node id="4091979687999087352" at="44,50,45,46" concept="7" />
+      <scope id="4091979687999087352" at="44,50,45,46" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/5591170374822428062">
@@ -276,14 +277,14 @@
       <unit id="5591170374822428062" at="18,0,70,0" name="com.mbeddr.core.make.textGen.BinaryConditionalDirective_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5591170374822428062" at="26,60,27,56" concept="7" />
-      <scope id="5591170374822428062" at="26,60,27,56" />
+      <node id="5591170374822428062" at="28,60,29,56" concept="7" />
+      <scope id="5591170374822428062" at="28,60,29,56" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/5591170374822438426">
     <file name="TextGenAspectDescriptor.java">
-      <node id="5591170374822438426" at="56,59,57,55" concept="7" />
-      <scope id="5591170374822438426" at="56,59,57,55" />
+      <node id="5591170374822438426" at="58,59,59,55" concept="7" />
+      <scope id="5591170374822438426" at="58,59,59,55" />
     </file>
     <file name="UnaryConditionalDirective_TextGen.java">
       <node id="5591170374822438426" at="20,54,21,55" concept="6" />
@@ -357,8 +358,8 @@
       <unit id="5776177256282857226" at="13,0,26,0" name="com.mbeddr.core.make.textGen.ItemSequence_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5776177256282857226" at="36,46,37,42" concept="7" />
-      <scope id="5776177256282857226" at="36,46,37,42" />
+      <node id="5776177256282857226" at="38,46,39,42" concept="7" />
+      <scope id="5776177256282857226" at="38,46,39,42" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/5950410542643593546">
@@ -428,8 +429,8 @@
       <unit id="5950410542643593546" at="17,0,66,0" name="com.mbeddr.core.make.textGen.Rule_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5950410542643593546" at="50,38,51,34" concept="7" />
-      <scope id="5950410542643593546" at="50,38,51,34" />
+      <node id="5950410542643593546" at="52,38,53,34" concept="7" />
+      <scope id="5950410542643593546" at="52,38,53,34" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/5950410542643593595">
@@ -453,28 +454,29 @@
       <unit id="5950410542643593595" at="13,0,26,0" name="com.mbeddr.core.make.textGen.Makefile_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5950410542643593595" at="40,42,41,38" concept="7" />
-      <node id="5950410542643593595" at="71,59,72,50" concept="6" />
-      <node id="5950410542643593595" at="72,50,73,53" concept="6" />
-      <node id="5950410542643593595" at="73,53,74,84" concept="2" />
-      <node id="5950410542643593595" at="74,84,75,17" concept="1" />
-      <node id="5950410542643593595" at="79,58,80,26" concept="7" />
-      <node id="5950410542643593595" at="82,63,83,16" concept="7" />
-      <node id="5950410542643593595" at="79,0,82,0" concept="10" trace="getFileName_Makefile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5950410542643593595" at="82,0,85,0" concept="10" trace="getFileExtension_Makefile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5950410542643593595" at="70,58,76,7" concept="4" />
-      <scope id="5950410542643593595" at="40,42,41,38" />
-      <scope id="5950410542643593595" at="79,58,80,26" />
-      <scope id="5950410542643593595" at="82,63,83,16" />
-      <scope id="5950410542643593595" at="79,0,82,0">
+      <node id="5950410542643593595" at="42,42,43,38" concept="7" />
+      <node id="5950410542643593595" at="73,59,74,50" concept="6" />
+      <node id="5950410542643593595" at="74,50,75,53" concept="6" />
+      <node id="5950410542643593595" at="75,53,76,84" concept="2" />
+      <node id="5950410542643593595" at="76,84,77,17" concept="1" />
+      <node id="5950410542643593595" at="81,58,82,64" concept="7" />
+      <node id="5950410542643593595" at="82,64,83,0" concept="8" />
+      <node id="5950410542643593595" at="85,63,86,16" concept="7" />
+      <node id="5950410542643593595" at="85,0,88,0" concept="10" trace="getFileExtension_Makefile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5950410542643593595" at="81,0,85,0" concept="10" trace="getFileName_Makefile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5950410542643593595" at="72,58,78,7" concept="4" />
+      <scope id="5950410542643593595" at="42,42,43,38" />
+      <scope id="5950410542643593595" at="85,63,86,16" />
+      <scope id="5950410542643593595" at="81,58,83,0" />
+      <scope id="5950410542643593595" at="85,0,88,0">
         <var name="node" id="5950410542643593595" />
       </scope>
-      <scope id="5950410542643593595" at="82,0,85,0">
-        <var name="node" id="5950410542643593595" />
-      </scope>
-      <scope id="5950410542643593595" at="71,59,75,17">
+      <scope id="5950410542643593595" at="73,59,77,17">
         <var name="ext" id="5950410542643593595" />
         <var name="fname" id="5950410542643593595" />
+      </scope>
+      <scope id="5950410542643593595" at="81,0,85,0">
+        <var name="node" id="5950410542643593595" />
       </scope>
     </file>
   </root>
@@ -496,8 +498,8 @@
       <unit id="7595578942776864841" at="12,0,25,0" name="com.mbeddr.core.make.textGen.Comment_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7595578942776864841" at="30,41,31,37" concept="7" />
-      <scope id="7595578942776864841" at="30,41,31,37" />
+      <node id="7595578942776864841" at="32,41,33,37" concept="7" />
+      <scope id="7595578942776864841" at="32,41,33,37" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/7595578942776868676">
@@ -514,8 +516,8 @@
       <unit id="7595578942776868676" at="9,0,16,0" name="com.mbeddr.core.make.textGen.EmptyLine_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7595578942776868676" at="32,43,33,39" concept="7" />
-      <scope id="7595578942776868676" at="32,43,33,39" />
+      <node id="7595578942776868676" at="34,43,35,39" concept="7" />
+      <scope id="7595578942776868676" at="34,43,35,39" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/7595578942778249069">
@@ -546,8 +548,8 @@
       <unit id="7595578942778249069" at="15,0,37,0" name="com.mbeddr.core.make.textGen.MultiLineVariable_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7595578942778249069" at="44,51,45,47" concept="7" />
-      <scope id="7595578942778249069" at="44,51,45,47" />
+      <node id="7595578942778249069" at="46,51,47,47" concept="7" />
+      <scope id="7595578942778249069" at="46,51,47,47" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/8794027157967696221">
@@ -569,8 +571,8 @@
       <unit id="8794027157967696221" at="14,0,28,0" name="com.mbeddr.core.make.textGen.Macro_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8794027157967696221" at="38,39,39,35" concept="7" />
-      <scope id="8794027157967696221" at="38,39,39,35" />
+      <node id="8794027157967696221" at="40,39,41,35" concept="7" />
+      <scope id="8794027157967696221" at="40,39,41,35" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/8844796466730049422">
@@ -589,8 +591,8 @@
       <unit id="8844796466730049422" at="13,0,24,0" name="com.mbeddr.core.make.textGen.RuleRef_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8844796466730049422" at="52,41,53,37" concept="7" />
-      <scope id="8844796466730049422" at="52,41,53,37" />
+      <node id="8844796466730049422" at="54,41,55,37" concept="7" />
+      <scope id="8844796466730049422" at="54,41,55,37" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/8844796466775799742">
@@ -614,8 +616,8 @@
       <unit id="8844796466775799742" at="13,0,26,0" name="com.mbeddr.core.make.textGen.Target_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8844796466775799742" at="54,40,55,36" concept="7" />
-      <scope id="8844796466775799742" at="54,40,55,36" />
+      <node id="8844796466775799742" at="56,40,57,36" concept="7" />
+      <scope id="8844796466775799742" at="56,40,57,36" />
     </file>
   </root>
   <root nodeRef="r:0812fc75-33d7-4efd-a9f7-e0a117da51f6(com.mbeddr.core.make.textGen)/8844796466775802979">
@@ -639,8 +641,8 @@
       <unit id="8844796466775802979" at="13,0,26,0" name="com.mbeddr.core.make.textGen.Prerequisite_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8844796466775802979" at="48,46,49,42" concept="7" />
-      <scope id="8844796466775802979" at="48,46,49,42" />
+      <node id="8844796466775802979" at="50,46,51,42" concept="7" />
+      <scope id="8844796466775802979" at="50,46,51,42" />
     </file>
   </root>
 </debug-info>

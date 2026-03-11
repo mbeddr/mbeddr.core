@@ -70,7 +70,7 @@ public class ChangeEventManager implements SNodeChangeListener {
 
   /**
    * may be used by clients to invalidate one part of the cached information but have no opportunity to access affected instances (e.g. invalidation must be triggered from some external context)
-   * last resort only!
+   * last resort only! 
    */
   public void forceInvalidation(final Object valueSelector) {
     MapSequence.fromMap(_participantMap).translate((it) -> it.value()).where((it) -> it.getValueSelector().equals(valueSelector)).visitAll((it) -> it.invalidate(EChangeEffectKind.ValueAndDependencies, ListSequence.fromList(new LinkedList<ValueHolderInfo>())));

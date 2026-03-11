@@ -265,27 +265,24 @@
       <node id="1685005713372980832" at="22,50,23,32" concept="8" />
       <node id="1685005713372980832" at="25,68,26,102" concept="8" />
       <node id="1685005713372980832" at="28,27,29,17" concept="8" />
-      <node id="1685005713372980832" at="31,39,32,16" concept="8" />
-      <node id="1685005713372980944" at="34,56,35,71" concept="7" />
-      <node id="1685005713372980944" at="35,71,36,64" concept="3" />
-      <node id="1685005713372980944" at="36,64,37,26" concept="8" />
-      <node id="1685005713372980832" at="41,0,42,0" concept="11" trace="PortType$gc" />
-      <node id="1685005713372980832" at="42,0,43,0" concept="11" trace="PointerType$HX" />
-      <node id="1685005713372980832" at="43,0,44,0" concept="11" trace="VoidType$GT" />
-      <node id="1685005713372980832" at="47,0,48,0" concept="11" trace="baseType$zMGV" />
+      <node id="1685005713372980944" at="31,56,32,71" concept="7" />
+      <node id="1685005713372980944" at="32,71,33,64" concept="3" />
+      <node id="1685005713372980944" at="33,64,34,26" concept="8" />
+      <node id="1685005713372980832" at="38,0,39,0" concept="11" trace="PortType$gc" />
+      <node id="1685005713372980832" at="39,0,40,0" concept="11" trace="PointerType$HX" />
+      <node id="1685005713372980832" at="40,0,41,0" concept="11" trace="VoidType$GT" />
+      <node id="1685005713372980832" at="44,0,45,0" concept="11" trace="baseType$zMGV" />
       <node id="1685005713372980832" at="17,0,19,0" concept="2" trace="supertypeof_Porttype_SubtypingRule#()V" />
       <node id="1685005713372980832" at="19,0,22,0" concept="6" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1685005713372980832" at="22,0,25,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="1685005713372980832" at="25,0,28,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="1685005713372980832" at="28,0,31,0" concept="6" trace="isWeak#()Z" />
-      <node id="1685005713372980832" at="31,0,34,0" concept="6" trace="surelyKeepsConcept#()Z" />
-      <node id="1685005713372980944" at="34,0,39,0" concept="12" trace="createPointerType_7v0ln5_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1685005713372980944" at="31,0,36,0" concept="12" trace="createPointerType_7v0ln5_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="1685005713372980832" at="17,47,17,47" />
       <scope id="1685005713372980833" at="19,118,20,43" />
       <scope id="1685005713372980832" at="22,50,23,32" />
       <scope id="1685005713372980832" at="25,68,26,102" />
       <scope id="1685005713372980832" at="28,27,29,17" />
-      <scope id="1685005713372980832" at="31,39,32,16" />
       <scope id="1685005713372980832" at="17,0,19,0" />
       <scope id="1685005713372980832" at="19,0,22,0">
         <var name="portType" id="1685005713372980832" />
@@ -297,14 +294,13 @@
         <var name="argument" id="1685005713372980832" />
       </scope>
       <scope id="1685005713372980832" at="28,0,31,0" />
-      <scope id="1685005713372980832" at="31,0,34,0" />
-      <scope id="1685005713372980944" at="34,56,37,26">
+      <scope id="1685005713372980944" at="31,56,34,26">
         <var name="n0" id="1685005713372980944" />
       </scope>
-      <scope id="1685005713372980944" at="34,0,39,0" />
-      <unit id="1685005713372980832" at="46,0,49,0" name="com.mbeddr.ext.components.typesystem.supertypeof_Porttype_SubtypingRule$LINKS" />
-      <unit id="1685005713372980832" at="40,0,45,0" name="com.mbeddr.ext.components.typesystem.supertypeof_Porttype_SubtypingRule$CONCEPTS" />
-      <unit id="1685005713372980832" at="16,0,50,0" name="com.mbeddr.ext.components.typesystem.supertypeof_Porttype_SubtypingRule" />
+      <scope id="1685005713372980944" at="31,0,36,0" />
+      <unit id="1685005713372980832" at="43,0,46,0" name="com.mbeddr.ext.components.typesystem.supertypeof_Porttype_SubtypingRule$LINKS" />
+      <unit id="1685005713372980832" at="37,0,42,0" name="com.mbeddr.ext.components.typesystem.supertypeof_Porttype_SubtypingRule$CONCEPTS" />
+      <unit id="1685005713372980832" at="16,0,47,0" name="com.mbeddr.ext.components.typesystem.supertypeof_Porttype_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:c480d4b6-a379-41b5-b76a-c94ccc817c4e(com.mbeddr.ext.components.typesystem)/1685005713373178139">
@@ -1217,27 +1213,24 @@
       <node id="3575415451873454135" at="22,50,23,37" concept="8" />
       <node id="3575415451873454135" at="25,68,26,102" concept="8" />
       <node id="3575415451873454135" at="28,27,29,17" concept="8" />
-      <node id="3575415451873454135" at="31,39,32,16" concept="8" />
-      <node id="3575415451873454152" at="34,56,35,71" concept="7" />
-      <node id="3575415451873454152" at="35,71,36,64" concept="3" />
-      <node id="3575415451873454152" at="36,64,37,26" concept="8" />
-      <node id="3575415451873454135" at="41,0,42,0" concept="11" trace="ComponentType$8R" />
-      <node id="3575415451873454135" at="42,0,43,0" concept="11" trace="PointerType$HX" />
-      <node id="3575415451873454135" at="43,0,44,0" concept="11" trace="VoidType$GT" />
-      <node id="3575415451873454135" at="47,0,48,0" concept="11" trace="baseType$zMGV" />
+      <node id="3575415451873454152" at="31,56,32,71" concept="7" />
+      <node id="3575415451873454152" at="32,71,33,64" concept="3" />
+      <node id="3575415451873454152" at="33,64,34,26" concept="8" />
+      <node id="3575415451873454135" at="38,0,39,0" concept="11" trace="ComponentType$8R" />
+      <node id="3575415451873454135" at="39,0,40,0" concept="11" trace="PointerType$HX" />
+      <node id="3575415451873454135" at="40,0,41,0" concept="11" trace="VoidType$GT" />
+      <node id="3575415451873454135" at="44,0,45,0" concept="11" trace="baseType$zMGV" />
       <node id="3575415451873454135" at="17,0,19,0" concept="2" trace="supertypeof_ComponentType_SubtypingRule#()V" />
       <node id="3575415451873454135" at="19,0,22,0" concept="6" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3575415451873454135" at="22,0,25,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="3575415451873454135" at="25,0,28,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="3575415451873454135" at="28,0,31,0" concept="6" trace="isWeak#()Z" />
-      <node id="3575415451873454135" at="31,0,34,0" concept="6" trace="surelyKeepsConcept#()Z" />
-      <node id="3575415451873454152" at="34,0,39,0" concept="12" trace="createPointerType_9dhd24_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3575415451873454152" at="31,0,36,0" concept="12" trace="createPointerType_9dhd24_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="3575415451873454135" at="17,52,17,52" />
       <scope id="3575415451873454136" at="19,123,20,43" />
       <scope id="3575415451873454135" at="22,50,23,37" />
       <scope id="3575415451873454135" at="25,68,26,102" />
       <scope id="3575415451873454135" at="28,27,29,17" />
-      <scope id="3575415451873454135" at="31,39,32,16" />
       <scope id="3575415451873454135" at="17,0,19,0" />
       <scope id="3575415451873454135" at="19,0,22,0">
         <var name="componentType" id="3575415451873454135" />
@@ -1249,14 +1242,13 @@
         <var name="argument" id="3575415451873454135" />
       </scope>
       <scope id="3575415451873454135" at="28,0,31,0" />
-      <scope id="3575415451873454135" at="31,0,34,0" />
-      <scope id="3575415451873454152" at="34,56,37,26">
+      <scope id="3575415451873454152" at="31,56,34,26">
         <var name="n0" id="3575415451873454152" />
       </scope>
-      <scope id="3575415451873454152" at="34,0,39,0" />
-      <unit id="3575415451873454135" at="46,0,49,0" name="com.mbeddr.ext.components.typesystem.supertypeof_ComponentType_SubtypingRule$LINKS" />
-      <unit id="3575415451873454135" at="40,0,45,0" name="com.mbeddr.ext.components.typesystem.supertypeof_ComponentType_SubtypingRule$CONCEPTS" />
-      <unit id="3575415451873454135" at="16,0,50,0" name="com.mbeddr.ext.components.typesystem.supertypeof_ComponentType_SubtypingRule" />
+      <scope id="3575415451873454152" at="31,0,36,0" />
+      <unit id="3575415451873454135" at="43,0,46,0" name="com.mbeddr.ext.components.typesystem.supertypeof_ComponentType_SubtypingRule$LINKS" />
+      <unit id="3575415451873454135" at="37,0,42,0" name="com.mbeddr.ext.components.typesystem.supertypeof_ComponentType_SubtypingRule$CONCEPTS" />
+      <unit id="3575415451873454135" at="16,0,47,0" name="com.mbeddr.ext.components.typesystem.supertypeof_ComponentType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:c480d4b6-a379-41b5-b76a-c94ccc817c4e(com.mbeddr.ext.components.typesystem)/3575415451873488383">
@@ -3238,27 +3230,24 @@
       <node id="7045189082050183859" at="22,50,23,37" concept="8" />
       <node id="7045189082050183859" at="25,68,26,102" concept="8" />
       <node id="7045189082050183859" at="28,27,29,17" concept="8" />
-      <node id="7045189082050183859" at="31,39,32,16" concept="8" />
-      <node id="3052990302440170185" at="34,56,35,71" concept="7" />
-      <node id="3052990302440170185" at="35,71,36,64" concept="3" />
-      <node id="3052990302440170185" at="36,64,37,26" concept="8" />
-      <node id="7045189082050183859" at="41,0,42,0" concept="11" trace="InterfaceType$7N" />
-      <node id="7045189082050183859" at="42,0,43,0" concept="11" trace="PointerType$HX" />
-      <node id="7045189082050183859" at="43,0,44,0" concept="11" trace="VoidType$GT" />
-      <node id="7045189082050183859" at="47,0,48,0" concept="11" trace="baseType$zMGV" />
+      <node id="3052990302440170185" at="31,56,32,71" concept="7" />
+      <node id="3052990302440170185" at="32,71,33,64" concept="3" />
+      <node id="3052990302440170185" at="33,64,34,26" concept="8" />
+      <node id="7045189082050183859" at="38,0,39,0" concept="11" trace="InterfaceType$7N" />
+      <node id="7045189082050183859" at="39,0,40,0" concept="11" trace="PointerType$HX" />
+      <node id="7045189082050183859" at="40,0,41,0" concept="11" trace="VoidType$GT" />
+      <node id="7045189082050183859" at="44,0,45,0" concept="11" trace="baseType$zMGV" />
       <node id="7045189082050183859" at="17,0,19,0" concept="2" trace="supertypeof_InterfaceType_SubtypingRule#()V" />
       <node id="7045189082050183859" at="19,0,22,0" concept="6" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="7045189082050183859" at="22,0,25,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="7045189082050183859" at="25,0,28,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="7045189082050183859" at="28,0,31,0" concept="6" trace="isWeak#()Z" />
-      <node id="7045189082050183859" at="31,0,34,0" concept="6" trace="surelyKeepsConcept#()Z" />
-      <node id="3052990302440170185" at="34,0,39,0" concept="12" trace="createPointerType_u8j6yi_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3052990302440170185" at="31,0,36,0" concept="12" trace="createPointerType_u8j6yi_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="7045189082050183859" at="17,52,17,52" />
       <scope id="7045189082050183860" at="19,112,20,43" />
       <scope id="7045189082050183859" at="22,50,23,37" />
       <scope id="7045189082050183859" at="25,68,26,102" />
       <scope id="7045189082050183859" at="28,27,29,17" />
-      <scope id="7045189082050183859" at="31,39,32,16" />
       <scope id="7045189082050183859" at="17,0,19,0" />
       <scope id="7045189082050183859" at="19,0,22,0">
         <var name="it" id="7045189082050183859" />
@@ -3270,14 +3259,13 @@
         <var name="argument" id="7045189082050183859" />
       </scope>
       <scope id="7045189082050183859" at="28,0,31,0" />
-      <scope id="7045189082050183859" at="31,0,34,0" />
-      <scope id="3052990302440170185" at="34,56,37,26">
+      <scope id="3052990302440170185" at="31,56,34,26">
         <var name="n0" id="3052990302440170185" />
       </scope>
-      <scope id="3052990302440170185" at="34,0,39,0" />
-      <unit id="7045189082050183859" at="46,0,49,0" name="com.mbeddr.ext.components.typesystem.supertypeof_InterfaceType_SubtypingRule$LINKS" />
-      <unit id="7045189082050183859" at="40,0,45,0" name="com.mbeddr.ext.components.typesystem.supertypeof_InterfaceType_SubtypingRule$CONCEPTS" />
-      <unit id="7045189082050183859" at="16,0,50,0" name="com.mbeddr.ext.components.typesystem.supertypeof_InterfaceType_SubtypingRule" />
+      <scope id="3052990302440170185" at="31,0,36,0" />
+      <unit id="7045189082050183859" at="43,0,46,0" name="com.mbeddr.ext.components.typesystem.supertypeof_InterfaceType_SubtypingRule$LINKS" />
+      <unit id="7045189082050183859" at="37,0,42,0" name="com.mbeddr.ext.components.typesystem.supertypeof_InterfaceType_SubtypingRule$CONCEPTS" />
+      <unit id="7045189082050183859" at="16,0,47,0" name="com.mbeddr.ext.components.typesystem.supertypeof_InterfaceType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:c480d4b6-a379-41b5-b76a-c94ccc817c4e(com.mbeddr.ext.components.typesystem)/7085783497127070128">

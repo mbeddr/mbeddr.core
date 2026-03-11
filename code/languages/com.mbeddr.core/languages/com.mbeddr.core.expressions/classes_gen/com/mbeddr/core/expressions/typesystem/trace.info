@@ -2984,20 +2984,17 @@
       <node id="3869525881269548897" at="21,50,22,30" concept="9" />
       <node id="3869525881269548897" at="24,68,25,102" concept="9" />
       <node id="3869525881269548897" at="27,27,28,17" concept="9" />
-      <node id="3869525881269548897" at="30,39,31,16" concept="9" />
-      <node id="3869525881269548897" at="35,0,36,0" concept="12" trace="SSizeT$uP" />
+      <node id="3869525881269548897" at="32,0,33,0" concept="12" trace="SSizeT$uP" />
       <node id="3869525881269548897" at="16,0,18,0" concept="2" trace="superTypeOfSSizeT_SubtypingRule#()V" />
       <node id="3869525881269548897" at="18,0,21,0" concept="7" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3869525881269548897" at="21,0,24,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="3869525881269548897" at="24,0,27,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="3869525881269548897" at="27,0,30,0" concept="7" trace="isWeak#()Z" />
-      <node id="3869525881269548897" at="30,0,33,0" concept="7" trace="surelyKeepsConcept#()Z" />
       <scope id="3869525881269548897" at="16,44,16,44" />
       <scope id="3869525881269548898" at="18,116,19,190" />
       <scope id="3869525881269548897" at="21,50,22,30" />
       <scope id="3869525881269548897" at="24,68,25,102" />
       <scope id="3869525881269548897" at="27,27,28,17" />
-      <scope id="3869525881269548897" at="30,39,31,16" />
       <scope id="3869525881269548897" at="16,0,18,0" />
       <scope id="3869525881269548897" at="18,0,21,0">
         <var name="ssizeT" id="3869525881269548897" />
@@ -3009,9 +3006,8 @@
         <var name="argument" id="3869525881269548897" />
       </scope>
       <scope id="3869525881269548897" at="27,0,30,0" />
-      <scope id="3869525881269548897" at="30,0,33,0" />
-      <unit id="3869525881269548897" at="34,0,37,0" name="com.mbeddr.core.expressions.typesystem.superTypeOfSSizeT_SubtypingRule$CONCEPTS" />
-      <unit id="3869525881269548897" at="15,0,38,0" name="com.mbeddr.core.expressions.typesystem.superTypeOfSSizeT_SubtypingRule" />
+      <unit id="3869525881269548897" at="31,0,34,0" name="com.mbeddr.core.expressions.typesystem.superTypeOfSSizeT_SubtypingRule$CONCEPTS" />
+      <unit id="3869525881269548897" at="15,0,35,0" name="com.mbeddr.core.expressions.typesystem.superTypeOfSSizeT_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)/4006257212296698017">
@@ -3293,20 +3289,17 @@
       <node id="4566548524296806565" at="21,50,22,29" concept="9" />
       <node id="4566548524296806565" at="24,68,25,102" concept="9" />
       <node id="4566548524296806565" at="27,27,28,17" concept="9" />
-      <node id="4566548524296806565" at="30,39,31,16" concept="9" />
-      <node id="4566548524296806565" at="35,0,36,0" concept="12" trace="SizeT$IZ" />
+      <node id="4566548524296806565" at="32,0,33,0" concept="12" trace="SizeT$IZ" />
       <node id="4566548524296806565" at="16,0,18,0" concept="2" trace="superTypeOfSizeT_SubtypingRule#()V" />
       <node id="4566548524296806565" at="18,0,21,0" concept="7" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4566548524296806565" at="21,0,24,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="4566548524296806565" at="24,0,27,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="4566548524296806565" at="27,0,30,0" concept="7" trace="isWeak#()Z" />
-      <node id="4566548524296806565" at="30,0,33,0" concept="7" trace="surelyKeepsConcept#()Z" />
       <scope id="4566548524296806565" at="16,43,16,43" />
       <scope id="4566548524296806566" at="18,115,19,198" />
       <scope id="4566548524296806565" at="21,50,22,29" />
       <scope id="4566548524296806565" at="24,68,25,102" />
       <scope id="4566548524296806565" at="27,27,28,17" />
-      <scope id="4566548524296806565" at="30,39,31,16" />
       <scope id="4566548524296806565" at="16,0,18,0" />
       <scope id="4566548524296806565" at="18,0,21,0">
         <var name="sizeT" id="4566548524296806565" />
@@ -3318,9 +3311,8 @@
         <var name="argument" id="4566548524296806565" />
       </scope>
       <scope id="4566548524296806565" at="27,0,30,0" />
-      <scope id="4566548524296806565" at="30,0,33,0" />
-      <unit id="4566548524296806565" at="34,0,37,0" name="com.mbeddr.core.expressions.typesystem.superTypeOfSizeT_SubtypingRule$CONCEPTS" />
-      <unit id="4566548524296806565" at="15,0,38,0" name="com.mbeddr.core.expressions.typesystem.superTypeOfSizeT_SubtypingRule" />
+      <unit id="4566548524296806565" at="31,0,34,0" name="com.mbeddr.core.expressions.typesystem.superTypeOfSizeT_SubtypingRule$CONCEPTS" />
+      <unit id="4566548524296806565" at="15,0,35,0" name="com.mbeddr.core.expressions.typesystem.superTypeOfSizeT_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)/468045725833399408">
@@ -3998,20 +3990,17 @@
       <node id="5631670625066629031" at="21,50,22,32" concept="9" />
       <node id="5631670625066629031" at="24,68,25,102" concept="9" />
       <node id="5631670625066629031" at="27,27,28,17" concept="9" />
-      <node id="5631670625066629031" at="30,39,31,16" concept="9" />
-      <node id="5631670625066629031" at="35,0,36,0" concept="12" trace="PtrDiffT$la" />
+      <node id="5631670625066629031" at="32,0,33,0" concept="12" trace="PtrDiffT$la" />
       <node id="5631670625066629031" at="16,0,18,0" concept="2" trace="supertypeofPtrDiffT_SubtypingRule#()V" />
       <node id="5631670625066629031" at="18,0,21,0" concept="7" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="5631670625066629031" at="21,0,24,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="5631670625066629031" at="24,0,27,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="5631670625066629031" at="27,0,30,0" concept="7" trace="isWeak#()Z" />
-      <node id="5631670625066629031" at="30,0,33,0" concept="7" trace="surelyKeepsConcept#()Z" />
       <scope id="5631670625066629031" at="16,46,16,46" />
       <scope id="5631670625066629032" at="18,118,19,193" />
       <scope id="5631670625066629031" at="21,50,22,32" />
       <scope id="5631670625066629031" at="24,68,25,102" />
       <scope id="5631670625066629031" at="27,27,28,17" />
-      <scope id="5631670625066629031" at="30,39,31,16" />
       <scope id="5631670625066629031" at="16,0,18,0" />
       <scope id="5631670625066629031" at="18,0,21,0">
         <var name="ptrDiffT" id="5631670625066629031" />
@@ -4023,9 +4012,8 @@
         <var name="argument" id="5631670625066629031" />
       </scope>
       <scope id="5631670625066629031" at="27,0,30,0" />
-      <scope id="5631670625066629031" at="30,0,33,0" />
-      <unit id="5631670625066629031" at="34,0,37,0" name="com.mbeddr.core.expressions.typesystem.supertypeofPtrDiffT_SubtypingRule$CONCEPTS" />
-      <unit id="5631670625066629031" at="15,0,38,0" name="com.mbeddr.core.expressions.typesystem.supertypeofPtrDiffT_SubtypingRule" />
+      <unit id="5631670625066629031" at="31,0,34,0" name="com.mbeddr.core.expressions.typesystem.supertypeofPtrDiffT_SubtypingRule$CONCEPTS" />
+      <unit id="5631670625066629031" at="15,0,35,0" name="com.mbeddr.core.expressions.typesystem.supertypeofPtrDiffT_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)/5697836475274064542">
@@ -4327,28 +4315,25 @@
       <node id="6308459058231264332" at="23,50,24,32" concept="9" />
       <node id="6308459058231264332" at="26,68,27,102" concept="9" />
       <node id="6308459058231264332" at="29,27,30,17" concept="9" />
-      <node id="6308459058231264332" at="32,39,33,16" concept="9" />
-      <node id="6308459058231264349" at="35,77,36,70" concept="8" />
-      <node id="6308459058231264349" at="36,70,37,48" concept="3" />
-      <node id="6308459058231264349" at="37,48,38,51" concept="3" />
-      <node id="6308459058231264349" at="38,51,39,26" concept="9" />
-      <node id="6308459058231264332" at="43,0,44,0" concept="12" trace="const$VWr7" />
-      <node id="6308459058231264332" at="44,0,45,0" concept="12" trace="volatile$hJNe" />
-      <node id="6308459058231264332" at="48,0,49,0" concept="12" trace="CharType$me" />
-      <node id="6308459058231264332" at="49,0,50,0" concept="12" trace="Int16tType$FW" />
+      <node id="6308459058231264349" at="32,77,33,70" concept="8" />
+      <node id="6308459058231264349" at="33,70,34,48" concept="3" />
+      <node id="6308459058231264349" at="34,48,35,51" concept="3" />
+      <node id="6308459058231264349" at="35,51,36,26" concept="9" />
+      <node id="6308459058231264332" at="40,0,41,0" concept="12" trace="const$VWr7" />
+      <node id="6308459058231264332" at="41,0,42,0" concept="12" trace="volatile$hJNe" />
+      <node id="6308459058231264332" at="45,0,46,0" concept="12" trace="CharType$me" />
+      <node id="6308459058231264332" at="46,0,47,0" concept="12" trace="Int16tType$FW" />
       <node id="6308459058231264332" at="18,0,20,0" concept="2" trace="supertypeof_CharType_SubtypingRule#()V" />
       <node id="6308459058231264332" at="20,0,23,0" concept="7" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="6308459058231264332" at="23,0,26,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="6308459058231264332" at="26,0,29,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="6308459058231264332" at="29,0,32,0" concept="7" trace="isWeak#()Z" />
-      <node id="6308459058231264332" at="32,0,35,0" concept="7" trace="surelyKeepsConcept#()Z" />
-      <node id="6308459058231264349" at="35,0,41,0" concept="13" trace="createInt16tType_h977fv_a0a1#(ZZ)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6308459058231264349" at="32,0,38,0" concept="13" trace="createInt16tType_h977fv_a0a1#(ZZ)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="6308459058231264332" at="18,47,18,47" />
       <scope id="6308459058231264333" at="20,118,21,163" />
       <scope id="6308459058231264332" at="23,50,24,32" />
       <scope id="6308459058231264332" at="26,68,27,102" />
       <scope id="6308459058231264332" at="29,27,30,17" />
-      <scope id="6308459058231264332" at="32,39,33,16" />
       <scope id="6308459058231264332" at="18,0,20,0" />
       <scope id="6308459058231264332" at="20,0,23,0">
         <var name="charType" id="6308459058231264332" />
@@ -4360,17 +4345,16 @@
         <var name="argument" id="6308459058231264332" />
       </scope>
       <scope id="6308459058231264332" at="29,0,32,0" />
-      <scope id="6308459058231264332" at="32,0,35,0" />
-      <scope id="6308459058231264349" at="35,77,39,26">
+      <scope id="6308459058231264349" at="32,77,36,26">
         <var name="n0" id="6308459058231264349" />
       </scope>
-      <scope id="6308459058231264349" at="35,0,41,0">
+      <scope id="6308459058231264349" at="32,0,38,0">
         <var name="p0" id="6308459058231264349" />
         <var name="p1" id="6308459058231264349" />
       </scope>
-      <unit id="6308459058231264332" at="42,0,46,0" name="com.mbeddr.core.expressions.typesystem.supertypeof_CharType_SubtypingRule$PROPS" />
-      <unit id="6308459058231264332" at="47,0,51,0" name="com.mbeddr.core.expressions.typesystem.supertypeof_CharType_SubtypingRule$CONCEPTS" />
-      <unit id="6308459058231264332" at="17,0,52,0" name="com.mbeddr.core.expressions.typesystem.supertypeof_CharType_SubtypingRule" />
+      <unit id="6308459058231264332" at="39,0,43,0" name="com.mbeddr.core.expressions.typesystem.supertypeof_CharType_SubtypingRule$PROPS" />
+      <unit id="6308459058231264332" at="44,0,48,0" name="com.mbeddr.core.expressions.typesystem.supertypeof_CharType_SubtypingRule$CONCEPTS" />
+      <unit id="6308459058231264332" at="17,0,49,0" name="com.mbeddr.core.expressions.typesystem.supertypeof_CharType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)/6308459058233518543">
@@ -6245,15 +6229,13 @@
       <node id="8860528120402027614" at="43,50,44,28" concept="9" />
       <node id="8860528120402027614" at="46,68,47,102" concept="9" />
       <node id="8860528120402027614" at="49,27,50,16" concept="9" />
-      <node id="8860528120402027614" at="52,39,53,16" concept="9" />
-      <node id="8860528120402027614" at="57,0,58,0" concept="12" trace="const$VWr7" />
-      <node id="8860528120402027614" at="58,0,59,0" concept="12" trace="volatile$hJNe" />
-      <node id="8860528120402027614" at="62,0,63,0" concept="12" trace="Type$dP" />
+      <node id="8860528120402027614" at="54,0,55,0" concept="12" trace="const$VWr7" />
+      <node id="8860528120402027614" at="55,0,56,0" concept="12" trace="volatile$hJNe" />
+      <node id="8860528120402027614" at="59,0,60,0" concept="12" trace="Type$dP" />
       <node id="8860528120402027614" at="21,0,23,0" concept="2" trace="constSupertypeOfType_SubtypingRule#()V" />
       <node id="8860528120402027614" at="43,0,46,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8860528120402027614" at="46,0,49,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="8860528120402027614" at="49,0,52,0" concept="7" trace="isWeak#()Z" />
-      <node id="8860528120402027614" at="52,0,55,0" concept="7" trace="surelyKeepsConcept#()Z" />
       <node id="8860528120402027617" at="30,5,35,5" concept="6" />
       <node id="6941595764869393045" at="35,5,40,5" concept="6" />
       <node id="6941595764869393070" at="24,47,30,5" concept="6" />
@@ -6262,7 +6244,6 @@
       <scope id="8860528120402027614" at="43,50,44,28" />
       <scope id="8860528120402027614" at="46,68,47,102" />
       <scope id="8860528120402027614" at="49,27,50,16" />
-      <scope id="8860528120402027614" at="52,39,53,16" />
       <scope id="8860528120402027614" at="21,0,23,0" />
       <scope id="8860528120402027619" at="31,65,34,57">
         <var name="constCopy" id="8860528120402027681" />
@@ -6275,7 +6256,6 @@
         <var name="argument" id="8860528120402027614" />
       </scope>
       <scope id="8860528120402027614" at="49,0,52,0" />
-      <scope id="8860528120402027614" at="52,0,55,0" />
       <scope id="6941595764869393074" at="25,126,29,57">
         <var name="constCopy" id="6941595764869393076" />
       </scope>
@@ -6287,9 +6267,9 @@
         <var name="type" id="8860528120402027614" />
         <var name="typeCheckingContext" id="8860528120402027614" />
       </scope>
-      <unit id="8860528120402027614" at="61,0,64,0" name="com.mbeddr.core.expressions.typesystem.constSupertypeOfType_SubtypingRule$CONCEPTS" />
-      <unit id="8860528120402027614" at="56,0,60,0" name="com.mbeddr.core.expressions.typesystem.constSupertypeOfType_SubtypingRule$PROPS" />
-      <unit id="8860528120402027614" at="20,0,65,0" name="com.mbeddr.core.expressions.typesystem.constSupertypeOfType_SubtypingRule" />
+      <unit id="8860528120402027614" at="58,0,61,0" name="com.mbeddr.core.expressions.typesystem.constSupertypeOfType_SubtypingRule$CONCEPTS" />
+      <unit id="8860528120402027614" at="53,0,57,0" name="com.mbeddr.core.expressions.typesystem.constSupertypeOfType_SubtypingRule$PROPS" />
+      <unit id="8860528120402027614" at="20,0,62,0" name="com.mbeddr.core.expressions.typesystem.constSupertypeOfType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)/8863019357864440827">

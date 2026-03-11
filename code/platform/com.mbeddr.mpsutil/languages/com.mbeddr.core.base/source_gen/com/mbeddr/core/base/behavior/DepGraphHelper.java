@@ -27,7 +27,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public class DepGraphHelper {
 
   /**
-   * Dummy reference to {@link com.google.common.base.Function } to help compilation
+   * Dummy reference to {@link com.google.common.base.Function} to help compilation
    */
   public static JNGraph createGraph(String name) {
     final JNGraph graph = new JNGraph("dependencies: " + name, new JNFRLayout(), new JNHighlightMode(true, true, false, false), 600);

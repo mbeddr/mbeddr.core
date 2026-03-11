@@ -13,7 +13,7 @@
       <unit at="11,0,47,0" name="com.mbeddr.mpsutil.placeholderTextList.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,32,0" name="com.mbeddr.mpsutil.placeholderTextList.structure.LanguageConceptSwitch" />
+      <unit at="12,0,40,0" name="com.mbeddr.mpsutil.placeholderTextList.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="16,0,95,0" name="com.mbeddr.mpsutil.placeholderTextList.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="1739942158294184652" at="21,63,28,51" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1739942158294184652" at="12,0,13,0" concept="6" trace="CellModel_PlaceholderTextList" />
-      <node id="1739942158294184652" at="17,116,18,68" concept="0" />
+      <node id="1739942158294184652" at="14,0,15,0" concept="6" trace="CellModel_PlaceholderTextList" />
+      <node id="1739942158294184652" at="19,116,20,68" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1739942158294184652" at="17,0,18,0" concept="1" trace="myConceptCellModel_PlaceholderTextList" />
@@ -72,8 +72,8 @@
       <scope id="1739942158294184667" at="29,63,35,51" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1739942158294184667" at="13,0,14,0" concept="6" trace="QueryFunction_PlaceholderText" />
-      <node id="1739942158294184667" at="18,68,19,68" concept="0" />
+      <node id="1739942158294184667" at="15,0,16,0" concept="6" trace="QueryFunction_PlaceholderText" />
+      <node id="1739942158294184667" at="20,68,21,68" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1739942158294184667" at="18,0,19,0" concept="1" trace="myConceptQueryFunction_PlaceholderText" />
@@ -110,8 +110,8 @@
       <scope id="1739942158294203068" at="36,67,42,55" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1739942158294203068" at="14,0,15,0" concept="6" trace="StubCellModel_PlaceholderTextList" />
-      <node id="1739942158294203068" at="19,68,20,72" concept="0" />
+      <node id="1739942158294203068" at="16,0,17,0" concept="6" trace="StubCellModel_PlaceholderTextList" />
+      <node id="1739942158294203068" at="21,68,22,72" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1739942158294203068" at="19,0,20,0" concept="1" trace="myConceptStubCellModel_PlaceholderTextList" />

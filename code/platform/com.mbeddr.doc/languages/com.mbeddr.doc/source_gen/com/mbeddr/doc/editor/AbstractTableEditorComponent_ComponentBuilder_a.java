@@ -152,7 +152,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
   }
   private EditorCell createTable_1() {
-    return createTable_0(getEditorContext(), myNode);
+    return createTable_0(getEditorContext(), getNode());
   }
   public Grid createChildsVertical_br6w9u_a0b0(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();
@@ -282,7 +282,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
   }
   private EditorCell createTable_3() {
-    return createTable_2(getEditorContext(), myNode);
+    return createTable_2(getEditorContext(), getNode());
   }
   public Grid createChildsVertical_br6w9u_a0b0_0(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();

@@ -171,7 +171,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createMathBase_1() {
-    return createMathBase_0(getEditorContext(), myNode);
+    return createMathBase_0(getEditorContext(), getNode());
   }
   private boolean _StyleParameter_QueryFunction_tapd9e_a0a0a() {
     return false;

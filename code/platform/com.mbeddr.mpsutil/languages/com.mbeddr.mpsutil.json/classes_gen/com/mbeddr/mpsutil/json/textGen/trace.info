@@ -11,9 +11,9 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="74,0,77,0" name="com.mbeddr.mpsutil.json.textGen.TextGenAspectDescriptor$CONCEPTS" />
-      <unit at="78,0,81,0" name="com.mbeddr.mpsutil.json.textGen.TextGenAspectDescriptor$PROPS" />
-      <unit at="19,0,82,0" name="com.mbeddr.mpsutil.json.textGen.TextGenAspectDescriptor" />
+      <unit at="75,0,78,0" name="com.mbeddr.mpsutil.json.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="79,0,83,0" name="com.mbeddr.mpsutil.json.textGen.TextGenAspectDescriptor$PROPS" />
+      <unit at="19,0,84,0" name="com.mbeddr.mpsutil.json.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:1e09a3c7-cdde-4c14-9dd4-a2f37f88cbb0(com.mbeddr.mpsutil.json.textGen)/4342692121161101671">
@@ -35,35 +35,36 @@
       <node id="4342692121161101671" at="53,50,54,53" concept="4" />
       <node id="4342692121161101671" at="54,53,55,108" concept="1" />
       <node id="4342692121161101671" at="55,108,56,17" concept="0" />
-      <node id="4342692121161101671" at="60,58,61,26" concept="5" />
-      <node id="4342692121161101751" at="63,63,64,18" concept="5" />
-      <node id="3540975504067149445" at="66,54,67,214" concept="5" />
-      <node id="3540975504067148337" at="67,214,68,0" concept="6" />
-      <node id="3540975504067157438" at="70,52,71,40" concept="5" />
-      <node id="4342692121161101671" at="60,0,63,0" concept="8" trace="getFileName_JsonFile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="4342692121161101671" at="63,0,66,0" concept="8" trace="getFileExtension_JsonFile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="3540975504067157438" at="70,0,73,0" concept="8" trace="isEmptyString#(Ljava/lang/String;)Z" />
-      <node id="4342692121161101671" at="66,0,70,0" concept="8" trace="getPath_JsonFile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4342692121161101671" at="60,58,61,64" concept="5" />
+      <node id="4342692121161101671" at="61,64,62,0" concept="6" />
+      <node id="4342692121161101751" at="64,63,65,18" concept="5" />
+      <node id="3540975504067149445" at="67,54,68,214" concept="5" />
+      <node id="3540975504067148337" at="68,214,69,0" concept="6" />
+      <node id="3540975504067157438" at="71,52,72,40" concept="5" />
+      <node id="4342692121161101671" at="64,0,67,0" concept="8" trace="getFileExtension_JsonFile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="3540975504067157438" at="71,0,74,0" concept="8" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="4342692121161101671" at="60,0,64,0" concept="8" trace="getFileName_JsonFile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4342692121161101671" at="67,0,71,0" concept="8" trace="getPath_JsonFile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="4342692121161101671" at="51,58,57,7" concept="2" />
       <scope id="4342692121161101671" at="35,42,36,38" />
-      <scope id="4342692121161101671" at="60,58,61,26" />
-      <scope id="4342692121161101671" at="63,63,64,18" />
-      <scope id="3540975504067157438" at="70,52,71,40" />
-      <scope id="4342692121161101671" at="66,54,68,0" />
-      <scope id="4342692121161101671" at="60,0,63,0">
+      <scope id="4342692121161101671" at="64,63,65,18" />
+      <scope id="3540975504067157438" at="71,52,72,40" />
+      <scope id="4342692121161101671" at="60,58,62,0" />
+      <scope id="4342692121161101671" at="67,54,69,0" />
+      <scope id="4342692121161101671" at="64,0,67,0">
         <var name="node" id="4342692121161101671" />
       </scope>
-      <scope id="4342692121161101671" at="63,0,66,0">
-        <var name="node" id="4342692121161101671" />
-      </scope>
-      <scope id="3540975504067157438" at="70,0,73,0">
+      <scope id="3540975504067157438" at="71,0,74,0">
         <var name="str" id="3540975504067157438" />
       </scope>
       <scope id="4342692121161101671" at="52,59,56,17">
         <var name="ext" id="4342692121161101671" />
         <var name="fname" id="4342692121161101671" />
       </scope>
-      <scope id="4342692121161101671" at="66,0,70,0">
+      <scope id="4342692121161101671" at="60,0,64,0">
+        <var name="node" id="4342692121161101671" />
+      </scope>
+      <scope id="4342692121161101671" at="67,0,71,0">
         <var name="node" id="4342692121161101671" />
       </scope>
     </file>

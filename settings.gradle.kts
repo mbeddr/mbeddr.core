@@ -7,10 +7,7 @@ pluginManagement {
     includeBuild("build-logic")
 }
 
-val subprojectPaths = listOf("com.mbeddr",
-    "com.mbeddr:languages",
-    "com.mbeddr:distribution",
-    "publishing")
+val subprojectPaths = listOf("com.mbeddr", "com.mbeddr:languages")
 
 fun fqpath(path: String) = ":$path"
 fun dir(path: String) = file("subprojects/" + path.replace(':', '/'))
@@ -27,6 +24,12 @@ project(":BigProject").projectDir = file("tools/BigProject")
 include(":com.mbeddr:platform")
 project(":com.mbeddr:platform").projectDir = file("code/platform")
 
+include(":github-release")
+project(":github-release").projectDir = file("code/github-release")
+
+include(":tutorial")
+project(":tutorial").projectDir = file("code/applications/tutorial")
+
 rootProject.name = "mbeddr.core"
 
 dependencyResolutionManagement {
@@ -42,5 +45,4 @@ dependencyResolutionManagement {
             mavenLocal()
         }
     }
-
 }

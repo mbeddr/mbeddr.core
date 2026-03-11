@@ -9,7 +9,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -239,16 +239,10 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
@@ -1398,15 +1392,33 @@
               </node>
             </node>
           </node>
-          <node concept="22lmx$" id="5A_Zlt6qNA1" role="3clFbw">
-            <node concept="37vLTw" id="5A_Zlt6uzhs" role="3uHU7w">
-              <ref role="3cqZAo" node="5A_Zlt6uzhp" resolve="isHyperlinkReference" />
-            </node>
-            <node concept="22lmx$" id="ojedFZhRec" role="3uHU7B">
-              <node concept="3y3z36" id="ojedFZhRsj" role="3uHU7w">
+          <node concept="22lmx$" id="2mB0AgdnEes" role="3clFbw">
+            <node concept="22lmx$" id="5A_Zlt6qNA1" role="3uHU7B">
+              <node concept="3y3z36" id="ojedFZhRsj" role="3uHU7B">
                 <node concept="10Nm6u" id="ojedFZhRuN" role="3uHU7w" />
                 <node concept="37vLTw" id="ojedFZhRik" role="3uHU7B">
                   <ref role="3cqZAo" node="ojedFZhQK6" resolve="hyperlinkNode" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="5A_Zlt6uzhs" role="3uHU7w">
+                <ref role="3cqZAo" node="5A_Zlt6uzhp" resolve="isHyperlinkReference" />
+              </node>
+            </node>
+            <node concept="1Wc70l" id="2mB0AgdnJfx" role="3uHU7w">
+              <node concept="2OqwBi" id="2mB0AgdnLzt" role="3uHU7w">
+                <node concept="37vLTw" id="2mB0AgdnKmE" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5A_Zlt6qIfl" resolve="hyperlinkHandler" />
+                </node>
+                <node concept="liA8E" id="2mB0AgdnMK1" role="2OqNvi">
+                  <ref role="37wK5l" to="ag3p:2mB0AgdmSRf" resolve="isApplicable" />
+                  <node concept="2OqwBi" id="2mB0AgdnNQg" role="37wK5m">
+                    <node concept="1rXfSq" id="2mB0AgdnNQh" role="2Oq$k0">
+                      <ref role="37wK5l" node="7RVr8_tU_PH" resolve="getEditorComponent" />
+                    </node>
+                    <node concept="liA8E" id="2mB0AgdnNQi" role="2OqNvi">
+                      <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="3y3z36" id="5A_Zlt6qN5F" role="3uHU7B">
@@ -1846,10 +1858,28 @@
                 <ref role="3cqZAo" node="80_psBVcg0" resolve="isHyperlink" />
               </node>
               <node concept="3eNFk2" id="5A_Zlt6qXsA" role="3eNLev">
-                <node concept="3y3z36" id="5A_Zlt6qYrz" role="3eO9$A">
-                  <node concept="10Nm6u" id="5A_Zlt6qYtp" role="3uHU7w" />
-                  <node concept="37vLTw" id="5A_Zlt6qYoU" role="3uHU7B">
-                    <ref role="3cqZAo" node="5A_Zlt6qQOa" resolve="hyperlinkHandler" />
+                <node concept="1Wc70l" id="2mB0Agdnw00" role="3eO9$A">
+                  <node concept="3y3z36" id="5A_Zlt6qYrz" role="3uHU7B">
+                    <node concept="37vLTw" id="5A_Zlt6qYoU" role="3uHU7B">
+                      <ref role="3cqZAo" node="5A_Zlt6qQOa" resolve="hyperlinkHandler" />
+                    </node>
+                    <node concept="10Nm6u" id="5A_Zlt6qYtp" role="3uHU7w" />
+                  </node>
+                  <node concept="2OqwBi" id="2mB0Agdnsgp" role="3uHU7w">
+                    <node concept="37vLTw" id="2mB0Agdnsgq" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5A_Zlt6qQOa" resolve="hyperlinkHandler" />
+                    </node>
+                    <node concept="liA8E" id="2mB0Agdnsgr" role="2OqNvi">
+                      <ref role="37wK5l" to="ag3p:2mB0AgdmSRf" resolve="isApplicable" />
+                      <node concept="2OqwBi" id="2mB0Agdnsgs" role="37wK5m">
+                        <node concept="1rXfSq" id="2mB0Agdnsgt" role="2Oq$k0">
+                          <ref role="37wK5l" node="7RVr8_tU_PH" resolve="getEditorComponent" />
+                        </node>
+                        <node concept="liA8E" id="2mB0Agdnsgu" role="2OqNvi">
+                          <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="3clFbS" id="5A_Zlt6qXsC" role="3eOfB_">
@@ -2916,9 +2946,15 @@
     </node>
     <node concept="3Tm1VV" id="4eXsW4C9ZGf" role="1B3o_S" />
     <node concept="3UR2Jj" id="6BnK0PdoQMT" role="lGtFl">
-      <node concept="TZ5HA" id="6BnK0PdoQMU" role="TZ5H$">
-        <node concept="1dT_AC" id="6BnK0PdoQMV" role="1dT_Ay">
-          <property role="1dT_AB" value="copied from https://github.com/JetBrains/MPS/blob/2022.3/editor/editor-runtime/source/jetbrains/mps/nodeEditor/ReferenceUnderliner.java" />
+      <node concept="1PaTwC" id="3VVgDkJfFWh" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfFWi" role="1PaTwD">
+          <property role="3oM_SC" value="copied" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFWj" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfFWk" role="1PaTwD">
+          <property role="3oM_SC" value="https://github.com/JetBrains/MPS/blob/2022.3/editor/editor-runtime/source/jetbrains/mps/nodeEditor/ReferenceUnderliner.java" />
         </node>
       </node>
     </node>

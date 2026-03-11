@@ -456,160 +456,131 @@
   </root>
   <root nodeRef="r:35144171-bbda-419f-9015-4d1f075e1db4(com.mbeddr.core.runconfiguration.pluginSolution.plugin)/1611636138415081120">
     <file name="MbeddrExecutableConfiguration_Configuration.java">
-      <node id="8614636349694404058" at="41,0,42,0" concept="4" trace="myBinary" />
-      <node id="6062668769034855239" at="45,50,46,89" concept="15" />
-      <node id="4427556684552721172" at="47,57,48,89" concept="15" />
-      <node id="1611636138415081120" at="52,76,53,57" concept="3" />
-      <node id="8614636349694404058" at="54,5,55,51" concept="8" />
-      <node id="8614636349694404058" at="55,51,56,43" concept="3" />
-      <node id="8614636349694404058" at="56,43,57,39" concept="3" />
-      <node id="1611636138415081120" at="63,26,64,81" concept="15" />
-      <node id="1611636138415081120" at="65,5,66,73" concept="3" />
-      <node id="8614636349694404058" at="67,45,68,56" concept="3" />
-      <node id="1611636138415081120" at="74,62,75,18" concept="9" />
-      <node id="1611636138415081120" at="79,61,80,86" concept="8" />
-      <node id="1611636138415081120" at="80,86,81,99" concept="10" />
-      <node id="1611636138415081120" at="81,99,82,81" concept="10" />
-      <node id="1611636138415081120" at="82,81,83,43" concept="3" />
-      <node id="8614636349694404058" at="83,43,84,87" concept="3" />
-      <node id="1611636138415081120" at="84,87,85,25" concept="9" />
-      <node id="8614636349692458873" at="88,39,89,30" concept="9" />
-      <node id="8614636349694404058" at="91,50,92,20" concept="9" />
-      <node id="8614636349692458873" at="95,49,96,31" concept="3" />
-      <node id="8614636349694404058" at="98,60,99,21" concept="3" />
-      <node id="8614636349692458873" at="103,0,104,0" concept="4" trace="mySettings" />
-      <node id="1611636138415081120" at="108,11,109,48" concept="8" />
-      <node id="8614636349692458873" at="109,48,110,38" concept="3" />
-      <node id="1611636138415081120" at="110,38,111,21" concept="9" />
-      <node id="1611636138415081120" at="112,47,113,64" concept="15" />
-      <node id="1611636138415081120" at="118,27,119,21" concept="9" />
-      <node id="1611636138415081120" at="122,114,123,34" concept="14" />
-      <node id="1611636138415081120" at="126,132,127,104" concept="9" />
-      <node id="1611636138415081120" at="130,103,131,16" concept="9" />
-      <node id="1611636138415081120" at="133,98,134,16" concept="9" />
-      <node id="1611636138415081120" at="136,97,137,87" concept="9" />
-      <node id="1611636138415081120" at="139,76,140,71" concept="9" />
-      <node id="1611636138415081120" at="142,75,143,88" concept="9" />
-      <node id="1611636138415081120" at="146,73,147,97" concept="8" />
-      <node id="1611636138415081120" at="147,97,148,41" concept="3" />
-      <node id="1611636138415081120" at="151,48,152,94" concept="9" />
-      <node id="1611636138415081120" at="164,0,165,0" concept="12" trace="Binary$5T" />
-      <node id="1611636138415081120" at="39,0,41,0" concept="4" trace="myState" />
-      <node id="1611636138415081120" at="62,73,65,5" concept="6" />
-      <node id="8614636349694404058" at="66,73,69,5" concept="6" />
-      <node id="8614636349692458873" at="88,0,91,0" concept="7" trace="getSettings#()Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrSettings;" />
-      <node id="8614636349694404058" at="91,0,94,0" concept="7" trace="getBinary#()Ljetbrains/mps/execution/api/settings/IPersistentConfiguration;" />
-      <node id="8614636349692458873" at="95,0,98,0" concept="7" trace="setSettings#(Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrSettings;)V" />
-      <node id="8614636349694404058" at="98,0,101,0" concept="7" trace="setBinary#(Ljetbrains/mps/execution/api/settings/IPersistentConfiguration;)V" />
-      <node id="1611636138415081120" at="122,0,125,0" concept="2" trace="MbeddrExecutableConfiguration_Configuration#(Lcom/intellij/openapi/project/Project;Lcom/intellij/execution/configurations/ConfigurationFactory;Ljava/lang/String;)V" />
-      <node id="1611636138415081120" at="133,0,136,0" concept="7" trace="createRunnerSettings#(Lcom/intellij/execution/configurations/ConfigurationInfoProvider;)Lcom/intellij/execution/configurations/ConfigurationPerRunnerSettings;" />
-      <node id="1611636138415081120" at="136,0,139,0" concept="7" trace="getConfigurationEditor#()Ljetbrains/mps/execution/api/settings/SettingsEditorEx;" />
-      <node id="1611636138415081120" at="139,0,142,0" concept="7" trace="createCloneTemplate#()Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrExecutableConfiguration_Configuration;" />
-      <node id="1611636138415081120" at="142,0,145,0" concept="7" trace="getEditor#()Ljetbrains/mps/execution/api/settings/SettingsEditorEx;" />
-      <node id="1611636138415081120" at="117,0,121,0" concept="7" trace="copy#()Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrExecutableConfiguration_Configuration/MyState;" />
-      <node id="1611636138415081120" at="125,0,129,0" concept="7" trace="getState#(Lcom/intellij/execution/Executor;Lcom/intellij/execution/runners/ExecutionEnvironment;)Lcom/intellij/execution/configurations/RunProfileState;" />
-      <node id="1611636138415081120" at="129,0,133,0" concept="7" trace="getRunnerSettingsEditor#(Lcom/intellij/execution/runners/ProgramRunner;)Lcom/intellij/openapi/options/SettingsEditor;" />
-      <node id="1611636138415081120" at="150,0,154,0" concept="7" trace="canExecute#(Ljava/lang/String;)Z" />
-      <node id="4427556684552703423" at="44,117,49,5" concept="6" />
-      <node id="8614636349694404058" at="53,57,58,5" concept="0" />
-      <node id="1611636138415081120" at="72,0,77,0" concept="7" trace="clone#()Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrExecutableConfiguration_Configuration;" />
-      <node id="1611636138415081120" at="145,0,150,0" concept="7" trace="checkConfiguration#()V" />
-      <node id="1611636138415081120" at="154,0,159,0" concept="13" trace="configureBeforeTaskDefaults#(Lcom/intellij/openapi/util/Key;Lcom/intellij/execution/BeforeRunTask;)V" />
-      <node id="1611636138415081120" at="107,28,114,7" concept="16" />
-      <node id="1611636138415081120" at="43,0,51,0" concept="7" trace="checkConfiguration#(Ljetbrains/mps/execution/api/settings/PersistentConfigurationContext;)V" />
-      <node id="1611636138415081120" at="51,0,60,0" concept="7" trace="writeExternal#(Lorg/jdom/Element;)V" />
-      <node id="1611636138415081120" at="78,0,87,0" concept="7" trace="copy#()Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrExecutableConfiguration_Configuration;" />
-      <node id="1611636138415081120" at="61,0,71,0" concept="7" trace="readExternal#(Lorg/jdom/Element;)V" />
-      <node id="1611636138415081120" at="105,0,116,0" concept="7" trace="clone#()Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrExecutableConfiguration_Configuration/MyState;" />
-      <scope id="4427556684552703426" at="45,50,46,89" />
-      <scope id="4427556684552715422" at="47,57,48,89" />
-      <scope id="1611636138415081120" at="63,26,64,81" />
-      <scope id="8614636349694404058" at="67,45,68,56" />
-      <scope id="1611636138415081120" at="74,62,75,18" />
-      <scope id="8614636349692458873" at="88,39,89,30" />
-      <scope id="8614636349694404058" at="91,50,92,20" />
-      <scope id="8614636349692458873" at="95,49,96,31" />
-      <scope id="8614636349694404058" at="98,60,99,21" />
-      <scope id="1611636138415081120" at="112,47,113,64" />
-      <scope id="1611636138415081120" at="118,27,119,21" />
-      <scope id="1611636138415081120" at="122,114,123,34" />
-      <scope id="1611636138415081120" at="126,132,127,104" />
-      <scope id="1611636138415081120" at="130,103,131,16" />
-      <scope id="1611636138415081120" at="133,98,134,16" />
-      <scope id="1611636138415081120" at="136,97,137,87" />
-      <scope id="1611636138415081120" at="139,76,140,71" />
-      <scope id="1611636138415081120" at="142,75,143,88" />
-      <scope id="1611636138415081120" at="151,48,152,94" />
-      <scope id="1611636138415081120" at="112,7,114,7">
-        <var name="ex" id="1611636138415081120" />
-      </scope>
-      <scope id="1611636138415081120" at="146,73,148,41">
-        <var name="mpsProject" id="1611636138415081120" />
-      </scope>
-      <scope id="8614636349694404058" at="54,5,57,39">
+      <node id="8614636349694404058" at="36,0,37,0" concept="4" trace="myBinary" />
+      <node id="6062668769034855239" at="40,50,41,89" concept="15" />
+      <node id="4427556684552721172" at="42,57,43,89" concept="15" />
+      <node id="1611636138415081120" at="47,76,48,57" concept="3" />
+      <node id="8614636349694404058" at="49,5,50,51" concept="8" />
+      <node id="8614636349694404058" at="50,51,51,43" concept="3" />
+      <node id="8614636349694404058" at="51,43,52,39" concept="3" />
+      <node id="1611636138415081120" at="58,26,59,81" concept="15" />
+      <node id="1611636138415081120" at="60,5,61,73" concept="3" />
+      <node id="8614636349694404058" at="62,45,63,56" concept="3" />
+      <node id="1611636138415081120" at="70,61,71,86" concept="8" />
+      <node id="1611636138415081120" at="71,86,72,36" concept="3" />
+      <node id="8614636349694404058" at="72,36,73,87" concept="3" />
+      <node id="1611636138415081120" at="73,87,74,25" concept="9" />
+      <node id="8614636349692458873" at="77,39,78,30" concept="9" />
+      <node id="8614636349694404058" at="80,50,81,20" concept="9" />
+      <node id="8614636349692458873" at="84,49,85,31" concept="3" />
+      <node id="8614636349694404058" at="87,60,88,21" concept="3" />
+      <node id="8614636349692458873" at="92,0,93,0" concept="4" trace="mySettings" />
+      <node id="1611636138415081120" at="94,94,95,66" concept="3" />
+      <node id="1611636138415081120" at="95,66,96,54" concept="8" />
+      <node id="1611636138415081120" at="96,54,97,0" concept="11" />
+      <node id="8614636349692458873" at="97,0,98,36" concept="3" />
+      <node id="1611636138415081120" at="101,114,102,34" concept="14" />
+      <node id="1611636138415081120" at="105,132,106,104" concept="9" />
+      <node id="1611636138415081120" at="109,97,110,87" concept="9" />
+      <node id="1611636138415081120" at="113,62,114,18" concept="9" />
+      <node id="1611636138415081120" at="117,76,118,71" concept="9" />
+      <node id="1611636138415081120" at="121,75,122,88" concept="9" />
+      <node id="1611636138415081120" at="125,48,126,94" concept="9" />
+      <node id="1611636138415081120" at="138,0,139,0" concept="12" trace="Binary$5T" />
+      <node id="1611636138415081120" at="34,0,36,0" concept="4" trace="myState" />
+      <node id="1611636138415081120" at="57,73,60,5" concept="6" />
+      <node id="8614636349694404058" at="61,73,64,5" concept="6" />
+      <node id="8614636349692458873" at="77,0,80,0" concept="7" trace="getSettings#()Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrSettings;" />
+      <node id="8614636349694404058" at="80,0,83,0" concept="7" trace="getBinary#()Ljetbrains/mps/execution/api/settings/IPersistentConfiguration;" />
+      <node id="8614636349692458873" at="84,0,87,0" concept="7" trace="setSettings#(Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrSettings;)V" />
+      <node id="8614636349694404058" at="87,0,90,0" concept="7" trace="setBinary#(Ljetbrains/mps/execution/api/settings/IPersistentConfiguration;)V" />
+      <node id="1611636138415081120" at="101,0,104,0" concept="2" trace="MbeddrExecutableConfiguration_Configuration#(Lcom/intellij/openapi/project/Project;Lcom/intellij/execution/configurations/ConfigurationFactory;Ljava/lang/String;)V" />
+      <node id="1611636138415081120" at="104,0,108,0" concept="7" trace="getState#(Lcom/intellij/execution/Executor;Lcom/intellij/execution/runners/ExecutionEnvironment;)Lcom/intellij/execution/configurations/RunProfileState;" />
+      <node id="1611636138415081120" at="108,0,112,0" concept="7" trace="getConfigurationEditor#()Ljetbrains/mps/execution/api/settings/SettingsEditorEx;" />
+      <node id="1611636138415081120" at="112,0,116,0" concept="7" trace="clone#()Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrExecutableConfiguration_Configuration;" />
+      <node id="1611636138415081120" at="116,0,120,0" concept="7" trace="createCloneTemplate#()Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrExecutableConfiguration_Configuration;" />
+      <node id="1611636138415081120" at="120,0,124,0" concept="7" trace="getEditor#()Ljetbrains/mps/execution/api/settings/SettingsEditorEx;" />
+      <node id="1611636138415081120" at="124,0,128,0" concept="7" trace="canExecute#(Ljava/lang/String;)Z" />
+      <node id="4427556684552703423" at="39,117,44,5" concept="6" />
+      <node id="8614636349694404058" at="48,57,53,5" concept="0" />
+      <node id="1611636138415081120" at="128,0,133,0" concept="13" trace="configureBeforeTaskDefaults#(Lcom/intellij/openapi/util/Key;Lcom/intellij/execution/BeforeRunTask;)V" />
+      <node id="1611636138415081120" at="94,0,100,0" concept="7" trace="copyInto#(Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrExecutableConfiguration_Configuration;)V" />
+      <node id="1611636138415081120" at="38,0,46,0" concept="7" trace="checkConfiguration#(Ljetbrains/mps/execution/api/settings/PersistentConfigurationContext;)V" />
+      <node id="1611636138415081120" at="68,0,76,0" concept="7" trace="copy#()Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrExecutableConfiguration_Configuration;" />
+      <node id="1611636138415081120" at="46,0,55,0" concept="7" trace="writeExternal#(Lorg/jdom/Element;)V" />
+      <node id="1611636138415081120" at="56,0,66,0" concept="7" trace="readExternal#(Lorg/jdom/Element;)V" />
+      <scope id="4427556684552703426" at="40,50,41,89" />
+      <scope id="4427556684552715422" at="42,57,43,89" />
+      <scope id="1611636138415081120" at="58,26,59,81" />
+      <scope id="8614636349694404058" at="62,45,63,56" />
+      <scope id="8614636349692458873" at="77,39,78,30" />
+      <scope id="8614636349694404058" at="80,50,81,20" />
+      <scope id="8614636349692458873" at="84,49,85,31" />
+      <scope id="8614636349694404058" at="87,60,88,21" />
+      <scope id="1611636138415081120" at="101,114,102,34" />
+      <scope id="1611636138415081120" at="105,132,106,104" />
+      <scope id="1611636138415081120" at="109,97,110,87" />
+      <scope id="1611636138415081120" at="113,62,114,18" />
+      <scope id="1611636138415081120" at="117,76,118,71" />
+      <scope id="1611636138415081120" at="121,75,122,88" />
+      <scope id="1611636138415081120" at="125,48,126,94" />
+      <scope id="8614636349694404058" at="49,5,52,39">
         <var name="fieldElement" id="8614636349694404058" />
       </scope>
-      <scope id="8614636349692458873" at="88,0,91,0" />
-      <scope id="8614636349694404058" at="91,0,94,0" />
-      <scope id="8614636349692458873" at="95,0,98,0">
+      <scope id="8614636349692458873" at="77,0,80,0" />
+      <scope id="8614636349694404058" at="80,0,83,0" />
+      <scope id="8614636349692458873" at="84,0,87,0">
         <var name="value" id="8614636349692458873" />
       </scope>
-      <scope id="8614636349694404058" at="98,0,101,0">
+      <scope id="8614636349694404058" at="87,0,90,0">
         <var name="value" id="8614636349694404058" />
       </scope>
-      <scope id="1611636138415081120" at="108,11,111,21">
-        <var name="state" id="1611636138415081120" />
-      </scope>
-      <scope id="1611636138415081120" at="122,0,125,0">
+      <scope id="1611636138415081120" at="101,0,104,0">
         <var name="factory" id="1611636138415081120" />
         <var name="name" id="1611636138415081120" />
         <var name="project" id="1611636138415081120" />
       </scope>
-      <scope id="1611636138415081120" at="133,0,136,0">
-        <var name="provider" id="1611636138415081120" />
+      <scope id="1611636138415081120" at="128,111,131,5" />
+      <scope id="1611636138415081120" at="70,61,74,25">
+        <var name="cloneTemplate" id="1611636138415081120" />
       </scope>
-      <scope id="1611636138415081120" at="136,0,139,0" />
-      <scope id="1611636138415081120" at="139,0,142,0" />
-      <scope id="1611636138415081120" at="142,0,145,0" />
-      <scope id="1611636138415081120" at="154,111,157,5" />
-      <scope id="1611636138415081120" at="117,0,121,0" />
-      <scope id="1611636138415081120" at="125,0,129,0">
+      <scope id="1611636138415081120" at="94,94,98,36">
+        <var name="state" id="1611636138415081120" />
+      </scope>
+      <scope id="1611636138415081120" at="104,0,108,0">
         <var name="environment" id="1611636138415081120" />
         <var name="executor" id="1611636138415081120" />
       </scope>
-      <scope id="1611636138415081120" at="129,0,133,0">
-        <var name="runner" id="1611636138415081120" />
-      </scope>
-      <scope id="1611636138415081120" at="150,0,154,0">
+      <scope id="1611636138415081120" at="108,0,112,0" />
+      <scope id="1611636138415081120" at="112,0,116,0" />
+      <scope id="1611636138415081120" at="116,0,120,0" />
+      <scope id="1611636138415081120" at="120,0,124,0" />
+      <scope id="1611636138415081120" at="124,0,128,0">
         <var name="executorId" id="1611636138415081120" />
       </scope>
-      <scope id="1611636138415081120" at="44,117,49,5" />
-      <scope id="1611636138415081120" at="72,0,77,0" />
-      <scope id="1611636138415081120" at="145,0,150,0" />
-      <scope id="1611636138415081120" at="154,0,159,0">
+      <scope id="1611636138415081120" at="39,117,44,5" />
+      <scope id="1611636138415081120" at="128,0,133,0">
         <var name="providerID" id="1611636138415081120" />
         <var name="task" id="1611636138415081120" />
       </scope>
-      <scope id="1611636138415081120" at="52,76,58,5" />
-      <scope id="1611636138415081120" at="79,61,85,25">
-        <var name="cloneTemplate" id="1611636138415081120" />
+      <scope id="1611636138415081120" at="47,76,53,5" />
+      <scope id="1611636138415081120" at="94,0,100,0">
+        <var name="enclosingInstance" id="1611636138415081120" />
       </scope>
-      <scope id="1611636138415081120" at="62,73,69,5" />
-      <scope id="1611636138415081120" at="107,28,114,7" />
-      <scope id="1611636138415081120" at="43,0,51,0">
+      <scope id="1611636138415081120" at="57,73,64,5" />
+      <scope id="1611636138415081120" at="38,0,46,0">
         <var name="context" id="1611636138415081120" />
       </scope>
-      <scope id="1611636138415081120" at="51,0,60,0">
+      <scope id="1611636138415081120" at="68,0,76,0" />
+      <scope id="1611636138415081120" at="46,0,55,0">
         <var name="element" id="1611636138415081120" />
       </scope>
-      <scope id="1611636138415081120" at="78,0,87,0" />
-      <scope id="1611636138415081120" at="61,0,71,0">
+      <scope id="1611636138415081120" at="56,0,66,0">
         <var name="element" id="1611636138415081120" />
       </scope>
-      <scope id="1611636138415081120" at="105,0,116,0" />
-      <unit id="1611636138415081120" at="163,0,166,0" name="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MbeddrExecutableConfiguration_Configuration$CONCEPTS" />
-      <unit id="1611636138415081120" at="102,0,122,0" name="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MbeddrExecutableConfiguration_Configuration$MyState" />
-      <unit id="1611636138415081120" at="38,0,167,0" name="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MbeddrExecutableConfiguration_Configuration" />
+      <unit id="1611636138415081120" at="137,0,140,0" name="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MbeddrExecutableConfiguration_Configuration$CONCEPTS" />
+      <unit id="1611636138415081120" at="91,0,101,0" name="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MbeddrExecutableConfiguration_Configuration$MyState" />
+      <unit id="1611636138415081120" at="33,0,141,0" name="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MbeddrExecutableConfiguration_Configuration" />
     </file>
     <file name="MbeddrExecutableConfiguration_Configuration_Editor.java">
       <node id="8614636349693918261" at="17,0,18,0" concept="4" trace="mySettingsEditor" />
@@ -662,13 +633,13 @@
   </root>
   <root nodeRef="r:35144171-bbda-419f-9015-4d1f075e1db4(com.mbeddr.core.runconfiguration.pluginSolution.plugin)/1611636138415081197">
     <file name="MbeddrExecutableConfiguration_Configuration.java">
-      <node id="2095101259311772201" at="155,56,156,28" concept="3" />
-      <node id="2095101259311772201" at="159,48,160,42" concept="9" />
-      <node id="2095101259311772201" at="154,111,157,5" concept="6" />
-      <node id="2095101259311772201" at="159,0,162,0" concept="7" trace="createrebuildMainModelTask#()[Ljava/lang/Object;" />
-      <scope id="2095101259311772201" at="155,56,156,28" />
-      <scope id="2095101259311772201" at="159,48,160,42" />
-      <scope id="2095101259311772201" at="159,0,162,0" />
+      <node id="2095101259311772201" at="129,56,130,28" concept="3" />
+      <node id="2095101259311772201" at="133,48,134,42" concept="9" />
+      <node id="2095101259311772201" at="128,111,131,5" concept="6" />
+      <node id="2095101259311772201" at="133,0,136,0" concept="7" trace="createrebuildMainModelTask#()[Ljava/lang/Object;" />
+      <scope id="2095101259311772201" at="129,56,130,28" />
+      <scope id="2095101259311772201" at="133,48,134,42" />
+      <scope id="2095101259311772201" at="133,0,136,0" />
     </file>
     <file name="MbeddrExecutableConfiguration_Configuration_RunProfileState.java">
       <node id="1611636138415081197" at="36,209,37,39" concept="3" />

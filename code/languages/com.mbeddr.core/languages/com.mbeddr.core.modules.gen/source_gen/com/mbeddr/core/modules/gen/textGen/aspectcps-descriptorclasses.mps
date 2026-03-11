@@ -9,16 +9,17 @@
     <import index="niik" ref="r:82cbc1be-d9cd-4ff4-95fb-c4c1668a38f7(com.mbeddr.core.modules.gen.textGen)" />
     <import index="kpbf" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text.impl(MPS.TextGen/)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
+    <import index="ksn4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel(MPS.Core/)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="1ukv" ref="r:b37b80ef-b920-4af7-9966-3a77c955c860(com.mbeddr.core.modules.gen.behavior)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="if8w" ref="r:95397225-9080-48bc-b1aa-0ce7c4f3d2ce(jetbrains.mps.lang.traceable.behavior)" />
     <import index="yfwt" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text.rt(MPS.TextGen/)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
-    <import index="tpcf" ref="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
@@ -237,6 +238,9 @@
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -3660,13 +3664,13 @@
       <node concept="3Tm6S6" id="fF" role="1B3o_S" />
       <node concept="2eloPW" id="fG" role="1tU5fm">
         <property role="2ely0U" value="com.mbeddr.core.modules.gen.structure.LanguageConceptSwitch" />
-        <ref role="3uigEE" to="tpcf:1OW7rNmnulT" resolve="LanguageConceptSwitch" />
+        <ref role="3uigEE" to="ksn4:~ConceptIndex" resolve="ConceptIndex" />
       </node>
       <node concept="2ShNRf" id="fH" role="33vP2m">
         <node concept="xCZzO" id="fI" role="2ShVmc">
           <property role="xCZzQ" value="com.mbeddr.core.modules.gen.structure.LanguageConceptSwitch" />
           <node concept="3uibUv" id="fJ" role="xCZzL">
-            <ref role="3uigEE" to="tpcf:1OW7rNmnulT" resolve="LanguageConceptSwitch" />
+            <ref role="3uigEE" to="ksn4:~ConceptIndex" resolve="ConceptIndex" />
           </node>
         </node>
       </node>
@@ -3707,7 +3711,7 @@
               <ref role="3cqZAo" node="fu" resolve="myIndex" />
             </node>
             <node concept="liA8E" id="g6" role="2OqNvi">
-              <ref role="37wK5l" to="tpcf:1OW7rNmnuDr" resolve="index" />
+              <ref role="37wK5l" to="ksn4:~ConceptIndex.index(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="index" />
               <node concept="37vLTw" id="g7" role="37wK5m">
                 <ref role="3cqZAo" node="fP" resolve="concept" />
               </node>
@@ -4056,18 +4060,19 @@
       <node concept="3clFbS" id="i2" role="3clF47">
         <node concept="3clFbF" id="i6" role="3cqZAp">
           <uo k="s:originTrace" v="n:8758138335607370333" />
-          <node concept="2OqwBi" id="i7" role="3clFbG">
+          <node concept="2OqwBi" id="i8" role="3clFbG">
             <uo k="s:originTrace" v="n:8758138335607371763" />
-            <node concept="37vLTw" id="i8" role="2Oq$k0">
+            <node concept="37vLTw" id="i9" role="2Oq$k0">
               <ref role="3cqZAo" node="i5" resolve="node" />
               <uo k="s:originTrace" v="n:8758138335607370332" />
             </node>
-            <node concept="2qgKlT" id="i9" role="2OqNvi">
+            <node concept="2qgKlT" id="ia" role="2OqNvi">
               <ref role="37wK5l" to="1ukv:7Aba6Bzz6b$" resolve="genName" />
               <uo k="s:originTrace" v="n:8758138335607377052" />
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="i7" role="3cqZAp" />
       </node>
       <node concept="3Tm6S6" id="i3" role="1B3o_S" />
       <node concept="3uibUv" id="i4" role="3clF45">
@@ -4075,8 +4080,8 @@
       </node>
       <node concept="37vLTG" id="i5" role="3clF46">
         <property role="TrG5h" value="node" />
-        <node concept="3uibUv" id="ia" role="1tU5fm">
-          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        <node concept="3Tqbb2" id="ib" role="1tU5fm">
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
       </node>
     </node>
@@ -4085,30 +4090,31 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getFileName_GenModuleC" />
-      <node concept="3clFbS" id="ib" role="3clF47">
-        <node concept="3clFbF" id="if" role="3cqZAp">
+      <node concept="3clFbS" id="ic" role="3clF47">
+        <node concept="3clFbF" id="ig" role="3cqZAp">
           <uo k="s:originTrace" v="n:8758138335591864136" />
-          <node concept="2OqwBi" id="ig" role="3clFbG">
+          <node concept="2OqwBi" id="ii" role="3clFbG">
             <uo k="s:originTrace" v="n:8758138335591866145" />
-            <node concept="37vLTw" id="ih" role="2Oq$k0">
-              <ref role="3cqZAo" node="ie" resolve="node" />
+            <node concept="37vLTw" id="ij" role="2Oq$k0">
+              <ref role="3cqZAo" node="if" resolve="node" />
               <uo k="s:originTrace" v="n:8758138335591864135" />
             </node>
-            <node concept="2qgKlT" id="ii" role="2OqNvi">
+            <node concept="2qgKlT" id="ik" role="2OqNvi">
               <ref role="37wK5l" to="1ukv:7Aba6Bzz6b$" resolve="genName" />
               <uo k="s:originTrace" v="n:8758138335606526519" />
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="ih" role="3cqZAp" />
       </node>
-      <node concept="3Tm6S6" id="ic" role="1B3o_S" />
-      <node concept="3uibUv" id="id" role="3clF45">
+      <node concept="3Tm6S6" id="id" role="1B3o_S" />
+      <node concept="3uibUv" id="ie" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
-      <node concept="37vLTG" id="ie" role="3clF46">
+      <node concept="37vLTG" id="if" role="3clF46">
         <property role="TrG5h" value="node" />
-        <node concept="3uibUv" id="ij" role="1tU5fm">
-          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        <node concept="3Tqbb2" id="il" role="1tU5fm">
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
       </node>
     </node>
@@ -4117,29 +4123,29 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getFileExtension_GenModuleH" />
-      <node concept="3clFbS" id="ik" role="3clF47">
-        <node concept="3clFbF" id="io" role="3cqZAp">
+      <node concept="3clFbS" id="im" role="3clF47">
+        <node concept="3clFbF" id="iq" role="3cqZAp">
           <uo k="s:originTrace" v="n:7246949367815685942" />
-          <node concept="2OqwBi" id="ip" role="3clFbG">
+          <node concept="2OqwBi" id="ir" role="3clFbG">
             <uo k="s:originTrace" v="n:7246949367815686431" />
-            <node concept="37vLTw" id="iq" role="2Oq$k0">
-              <ref role="3cqZAo" node="in" resolve="node" />
+            <node concept="37vLTw" id="is" role="2Oq$k0">
+              <ref role="3cqZAo" node="ip" resolve="node" />
               <uo k="s:originTrace" v="n:7246949367815685941" />
             </node>
-            <node concept="3TrcHB" id="ir" role="2OqNvi">
+            <node concept="3TrcHB" id="it" role="2OqNvi">
               <ref role="3TsBF5" to="d0vh:6iilwRlTjqZ" resolve="fileExtension" />
               <uo k="s:originTrace" v="n:7246949367815688362" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="il" role="1B3o_S" />
-      <node concept="3uibUv" id="im" role="3clF45">
+      <node concept="3Tm6S6" id="in" role="1B3o_S" />
+      <node concept="3uibUv" id="io" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
-      <node concept="37vLTG" id="in" role="3clF46">
+      <node concept="37vLTG" id="ip" role="3clF46">
         <property role="TrG5h" value="node" />
-        <node concept="3uibUv" id="is" role="1tU5fm">
+        <node concept="3uibUv" id="iu" role="1tU5fm">
           <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
         </node>
       </node>
@@ -4149,29 +4155,29 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getFileExtension_GenModuleC" />
-      <node concept="3clFbS" id="it" role="3clF47">
-        <node concept="3clFbF" id="ix" role="3cqZAp">
+      <node concept="3clFbS" id="iv" role="3clF47">
+        <node concept="3clFbF" id="iz" role="3cqZAp">
           <uo k="s:originTrace" v="n:5048824311958609121" />
-          <node concept="2OqwBi" id="iy" role="3clFbG">
+          <node concept="2OqwBi" id="i$" role="3clFbG">
             <uo k="s:originTrace" v="n:4387763778170586849" />
-            <node concept="37vLTw" id="iz" role="2Oq$k0">
-              <ref role="3cqZAo" node="iw" resolve="node" />
+            <node concept="37vLTw" id="i_" role="2Oq$k0">
+              <ref role="3cqZAo" node="iy" resolve="node" />
               <uo k="s:originTrace" v="n:4387763778170586828" />
             </node>
-            <node concept="3TrcHB" id="i$" role="2OqNvi">
+            <node concept="3TrcHB" id="iA" role="2OqNvi">
               <ref role="3TsBF5" to="d0vh:6iilwRlTjqZ" resolve="fileExtension" />
               <uo k="s:originTrace" v="n:7246949367815684703" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="iu" role="1B3o_S" />
-      <node concept="3uibUv" id="iv" role="3clF45">
+      <node concept="3Tm6S6" id="iw" role="1B3o_S" />
+      <node concept="3uibUv" id="ix" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
-      <node concept="37vLTG" id="iw" role="3clF46">
+      <node concept="37vLTG" id="iy" role="3clF46">
         <property role="TrG5h" value="node" />
-        <node concept="3uibUv" id="i_" role="1tU5fm">
+        <node concept="3uibUv" id="iB" role="1tU5fm">
           <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
         </node>
       </node>

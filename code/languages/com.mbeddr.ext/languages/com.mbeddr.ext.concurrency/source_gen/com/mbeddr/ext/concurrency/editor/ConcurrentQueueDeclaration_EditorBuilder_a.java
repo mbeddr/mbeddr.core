@@ -65,7 +65,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createConstant_0());
-    editorCell.addEditorCell(createBooleanText_1());
+    editorCell.addEditorCell(createBooleanText_0());
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createConstant_2());
     editorCell.addEditorCell(createRefNode_0());
@@ -85,14 +85,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createBooleanText_0(EditorContext editorContext, SNode node) {
+  private EditorCell createBooleanText_0() {
     SProperty property = PROPS.blockable$LmGW;
-    BooleanTextCellProvider provider = new BooleanTextCellProvider(node, property, editorContext);
+    BooleanTextCellProvider provider = new BooleanTextCellProvider(getNode(), property, getEditorContext());
     provider.setTrueText("blockable");
     provider.setFalseText("non-blockable");
     provider.setNoTargetText("<no blockable>");
     EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
+    editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_blockable");
     Style style = new StyleImpl();
     new KWStyleClass(this).apply(style, editorCell);
@@ -103,9 +103,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createBooleanText_1() {
-    return createBooleanText_0(getEditorContext(), myNode);
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "queue");

@@ -122,6 +122,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/mpsutil.editingGuide" id="com.mbeddr.mpsutil.editingGuide" />
       <plugin path="${artifacts.com.mbeddr.platform}/mpsutil.refactoring" id="com.mbeddr.mpsutil.refactoring" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
+      <plugin path="${artifacts.mps}/plugins/java" id="com.intellij.java" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" id="jetbrains.mps.debugger.api" />
@@ -147,6 +148,7 @@
         <module file="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.actionsfilter.sandbox/com.mbeddr.mpsutil.actionsfilter.sandbox.msd" />
         <module file="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.conceptdiagram.sandbox/com.mbeddr.mpsutil.conceptdiagram.sandbox.mpl" />
         <module file="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.datepicker.sandbox/com.mbeddr.mpsutil.datepicker.sandbox.mpl" />
+        <module file="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.dependenciesdiagram.sandbox/com.mbeddr.mpsutil.dependenciesdiagram.sandbox.msd" />
         <module file="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.ecoretransofmation.sandbox/com.mbeddr.mpsutil.ecoretransofmation.sandbox.mpl" />
         <module file="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.editor.displayControl.sandbox/com.mbeddr.mpsutil.editor.displayControl.sandbox.mpl" />
         <module file="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.graphstream/com.mbeddr.mpsutil.graphstream.mpl" />
@@ -176,7 +178,7 @@
   
   <target name="makeDependents" />
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.mpsutil.editor.displayControl.sandbox, java.compile.com.mbeddr.mpsutil.datepicker.sandbox, java.compile.com.mbeddr.mpsutil.datepicker.sandbox#2733170341479301653, java.compile.com.mbeddr.mpsutil.hyperlink.sandbox, java.compile.com.mbeddr.mpsutil.incrementalcomputation.example, java.compile.com.mbeddr.mpsutil.jfreechart.sandboxlang, java.compile.com.mbeddr.mpsutil.logicalChild.sandbox, java.compile.com.mbeddr.mpsutil.userstyles.sandboxlang, java.compile.com.mbeddr.mpsutil.userstyles.sandboxlang#8170319964140879799, java.compile.com.mbeddr.mpsutil.conceptdiagram.sandbox, java.compile.com.mbeddr.mpsutil.ecoretransofmation.sandbox, java.compile.java.modules.cycle.1, java.compile.com.mbeddr.mpsutil.graphstream.runtime, java.compile.com.mbeddr.mpsutil.graphstream, java.compile.com.mbeddr.mpsutil.graphstream.example, java.compile.com.mbeddr.mpsutil.actionsfilter.sandbox, java.compile.com.mbeddr.doc.aspect.exampleLanguage, java.compile.com.mbeddr.doc.aspect.exampleLanguage.extended, java.compile.com.mbeddr.doc.aspect.exampleLanguage.extended#264158922270111601" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.mpsutil.editor.displayControl.sandbox, java.compile.com.mbeddr.mpsutil.datepicker.sandbox, java.compile.com.mbeddr.mpsutil.datepicker.sandbox#2733170341479301653, java.compile.com.mbeddr.mpsutil.hyperlink.sandbox, java.compile.com.mbeddr.mpsutil.incrementalcomputation.example, java.compile.com.mbeddr.mpsutil.jfreechart.sandboxlang, java.compile.com.mbeddr.mpsutil.logicalChild.sandbox, java.compile.com.mbeddr.mpsutil.userstyles.sandboxlang, java.compile.com.mbeddr.mpsutil.userstyles.sandboxlang#8170319964140879799, java.compile.com.mbeddr.mpsutil.conceptdiagram.sandbox, java.compile.com.mbeddr.mpsutil.dependenciesdiagram.sandbox, java.compile.com.mbeddr.mpsutil.ecoretransofmation.sandbox, java.compile.java.modules.cycle.1, java.compile.com.mbeddr.mpsutil.graphstream.runtime, java.compile.com.mbeddr.mpsutil.graphstream, java.compile.com.mbeddr.mpsutil.graphstream.example, java.compile.com.mbeddr.mpsutil.actionsfilter.sandbox, java.compile.com.mbeddr.doc.aspect.exampleLanguage, java.compile.com.mbeddr.doc.aspect.exampleLanguage.extended, java.compile.com.mbeddr.doc.aspect.exampleLanguage.extended#264158922270111601" />
   
   <target name="processResources" />
   
@@ -228,7 +230,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -298,7 +299,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -368,7 +368,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -430,7 +429,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -500,7 +498,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -569,7 +566,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -642,7 +638,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -719,7 +714,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -788,7 +782,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -850,7 +843,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -877,6 +869,21 @@
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.conceptdiagram.sandbox">
       <fileset dir="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.conceptdiagram.sandbox/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.com.mbeddr.mpsutil.dependenciesdiagram.sandbox">
+    <mkdir dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.dependenciesdiagram.sandbox/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.dependenciesdiagram.sandbox" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.dependenciesdiagram.sandbox" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.dependenciesdiagram.sandbox/source_gen" />
+      </src>
+      <classpath />
+    </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.dependenciesdiagram.sandbox">
+      <fileset dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.dependenciesdiagram.sandbox/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -924,7 +931,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -1000,7 +1006,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -1077,7 +1082,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -1152,7 +1156,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -1232,7 +1235,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -1296,7 +1298,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -1361,7 +1362,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -1459,7 +1459,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -1558,7 +1557,6 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
@@ -1608,6 +1606,7 @@
     <delete dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.actionsfilter.sandbox/source_gen" />
     <delete dir="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.conceptdiagram.sandbox/source_gen" />
     <delete dir="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.datepicker.sandbox/source_gen" />
+    <delete dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.dependenciesdiagram.sandbox/source_gen" />
     <delete dir="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.ecoretransofmation.sandbox/source_gen" />
     <delete dir="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.editor.displayControl.sandbox/source_gen" />
     <delete dir="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.graphstream/source_gen" />

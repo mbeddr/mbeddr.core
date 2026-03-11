@@ -13,7 +13,7 @@
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
@@ -689,7 +689,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -697,14 +696,9 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell">
@@ -10482,9 +10476,48 @@
       </node>
       <node concept="P$JXv" id="1aCwgFOgs_P" role="lGtFl">
         <node concept="TZ5HI" id="1aCwgFOgs_Q" role="3nqlJM">
-          <node concept="TZ5HA" id="1aCwgFOgs_R" role="3HnX3l">
-            <node concept="1dT_AC" id="1aCwgFOgsGD" role="1dT_Ay">
-              <property role="1dT_AB" value="Use the method that doesn't take a EditorConctext because it is no longer needed." />
+          <node concept="1PaTwC" id="3VVgDkJfOaf" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfOag" role="1PaTwD">
+              <property role="3oM_SC" value="Use" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOah" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOai" role="1PaTwD">
+              <property role="3oM_SC" value="method" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOaj" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOak" role="1PaTwD">
+              <property role="3oM_SC" value="doesn't" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOal" role="1PaTwD">
+              <property role="3oM_SC" value="take" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOam" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOan" role="1PaTwD">
+              <property role="3oM_SC" value="EditorConctext" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOao" role="1PaTwD">
+              <property role="3oM_SC" value="because" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOap" role="1PaTwD">
+              <property role="3oM_SC" value="it" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOaq" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOar" role="1PaTwD">
+              <property role="3oM_SC" value="no" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOas" role="1PaTwD">
+              <property role="3oM_SC" value="longer" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOat" role="1PaTwD">
+              <property role="3oM_SC" value="needed." />
             </node>
           </node>
         </node>
@@ -10623,19 +10656,122 @@
         </node>
       </node>
       <node concept="P$JXv" id="1aCwgFOnrhN" role="lGtFl">
-        <node concept="TZ5HA" id="1aCwgFOnrhO" role="TZ5H$">
-          <node concept="1dT_AC" id="1aCwgFOnrhP" role="1dT_Ay">
-            <property role="1dT_AB" value="Gets the node specific editor hints for the code paragraph and registers the required replacer for the paragraph." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="1aCwgFOnrhQ" role="3nqlJM">
-          <property role="TUZQ4" value="code paragraph that should have code replacement enabeled" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="1aCwgFOnrhS" role="zr_5Q">
             <ref role="zr_51" node="1aCwgFOgrGM" resolve="codeParagraph" />
           </node>
+          <node concept="1PaTwC" id="3VVgDkJfOaL" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfOaM" role="1PaTwD">
+              <property role="3oM_SC" value="code" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOaN" role="1PaTwD">
+              <property role="3oM_SC" value="paragraph" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOaO" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOaP" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOaQ" role="1PaTwD">
+              <property role="3oM_SC" value="have" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOaR" role="1PaTwD">
+              <property role="3oM_SC" value="code" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOaS" role="1PaTwD">
+              <property role="3oM_SC" value="replacement" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOaT" role="1PaTwD">
+              <property role="3oM_SC" value="enabeled" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="1aCwgFOnrhT" role="3nqlJM">
-          <property role="x79VB" value="the list of hints specific to this codeParagraph" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3VVgDkJfOaU" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfOaV" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOaW" role="1PaTwD">
+              <property role="3oM_SC" value="list" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOaX" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOaY" role="1PaTwD">
+              <property role="3oM_SC" value="hints" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOaZ" role="1PaTwD">
+              <property role="3oM_SC" value="specific" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOb0" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOb1" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfOb2" role="1PaTwD">
+              <property role="3oM_SC" value="codeParagraph" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJfOau" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfOav" role="1PaTwD">
+            <property role="3oM_SC" value="Gets" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOaw" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOax" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOay" role="1PaTwD">
+            <property role="3oM_SC" value="specific" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOaz" role="1PaTwD">
+            <property role="3oM_SC" value="editor" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOa$" role="1PaTwD">
+            <property role="3oM_SC" value="hints" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOa_" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOaA" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOaB" role="1PaTwD">
+            <property role="3oM_SC" value="code" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOaC" role="1PaTwD">
+            <property role="3oM_SC" value="paragraph" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOaD" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOaE" role="1PaTwD">
+            <property role="3oM_SC" value="registers" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOaF" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOaG" role="1PaTwD">
+            <property role="3oM_SC" value="required" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOaH" role="1PaTwD">
+            <property role="3oM_SC" value="replacer" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOaI" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOaJ" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfOaK" role="1PaTwD">
+            <property role="3oM_SC" value="paragraph." />
+          </node>
         </node>
       </node>
     </node>

@@ -1,6 +1,10 @@
 [plugins]
-common = "de.itemis.mps.gradle.common:1.29.+"
-jbr-toolchain = "com.specificlanguages.jbr-toolchain:1.0.2"
+common = "de.itemis.mps.gradle.common:1.30.+"
+jbr-toolchain = "com.specificlanguages.jbr-toolchain:1.1.0"
 
 [libraries]
 jbr = "com.jetbrains.jdk:jbr_jcef:21.0.6-b895.109"
+
+# For a release version of MPS, use this dependency:
+#mps = "com.jetbrains:mps:XXXX.Y"
+mps = "com.jetbrains.mps:mps-prerelease:253.28294.10500"

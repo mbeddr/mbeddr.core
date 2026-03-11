@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -238,26 +238,22 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="2546654756694997551" name="jetbrains.mps.baseLanguage.javadoc.structure.LinkInlineDocTag" flags="ng" index="92FcH">
-        <child id="2546654756694997556" name="reference" index="92FcQ" />
-        <child id="3106559687488913694" name="line" index="2XjZqd" />
-      </concept>
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      <concept id="6971016359099800069" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldSingleCommentLine" flags="ngI" index="2JaDLO">
+        <child id="6971016359099801474" name="commentBody" index="2JaDBN" />
       </concept>
       <concept id="2217234381367530212" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocReference" flags="ng" index="VXe08">
         <reference id="2217234381367530213" name="classifier" index="VXe09" />
       </concept>
-      <concept id="8970989240999019145" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentLinePart" flags="ng" index="1dT_AA">
-        <child id="6962838954693749192" name="tag" index="qph3F" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
+      <concept id="5085607816306582224" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentTextElement" flags="ng" index="1Vtdud">
+        <child id="5085607816306582225" name="tag" index="1Vtduc" />
+      </concept>
+      <concept id="5085607816306647746" name="jetbrains.mps.baseLanguage.javadoc.structure.LinkInlineDocTagTE" flags="ng" index="1VuXuv">
+        <child id="5085607816306647747" name="reference" index="1VuXuu" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -273,6 +269,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -4535,20 +4539,36 @@
     <node concept="2tJIrI" id="2QWptevlCkj" role="jymVt" />
     <node concept="3Tm1VV" id="2QWptevlCjS" role="1B3o_S" />
     <node concept="3UR2Jj" id="36MfRUKcJ9R" role="lGtFl">
-      <node concept="TZ5HA" id="36MfRUKcJ9S" role="TZ5H$">
-        <node concept="1dT_AC" id="36MfRUKcJ9T" role="1dT_Ay">
-          <property role="1dT_AB" value="Dummy reference to " />
+      <node concept="1PaTwC" id="3VVgDkJfG0r" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfG0s" role="1PaTwD">
+          <property role="3oM_SC" value="Dummy" />
         </node>
-        <node concept="1dT_AA" id="36MfRUKcJcl" role="1dT_Ay">
-          <node concept="92FcH" id="36MfRUKcJtF" role="qph3F">
-            <node concept="TZ5HA" id="36MfRUKcJtH" role="2XjZqd" />
-            <node concept="VXe08" id="36MfRUKdhOn" role="92FcQ">
+        <node concept="3oM_SD" id="3VVgDkJfG0t" role="1PaTwD">
+          <property role="3oM_SC" value="reference" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG0u" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="1Vtdud" id="3VVgDkJfG0v" role="1PaTwD">
+          <node concept="1VuXuv" id="3VVgDkJfG0w" role="1Vtduc">
+            <node concept="VXe08" id="36MfRUKdhOn" role="1VuXuu">
               <ref role="VXe09" to="gyfg:~Function" resolve="Function" />
+            </node>
+            <node concept="1PaTwC" id="3VVgDkJfG0z" role="2JaDBN">
+              <node concept="3oM_SD" id="3VVgDkJfG0$" role="1PaTwD">
+                <property role="3oM_SC" value="" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1dT_AC" id="36MfRUKcJck" role="1dT_Ay">
-          <property role="1dT_AB" value=" to help compilation" />
+        <node concept="3oM_SD" id="3VVgDkJfG0_" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG0A" role="1PaTwD">
+          <property role="3oM_SC" value="help" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG0B" role="1PaTwD">
+          <property role="3oM_SC" value="compilation" />
         </node>
       </node>
     </node>

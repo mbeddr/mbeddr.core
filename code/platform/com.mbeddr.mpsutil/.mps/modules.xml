@@ -31,6 +31,8 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.extensionclass/com.mbeddr.mpsutil.extensionclass.mpl" folder="staging.extensionclass" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.filepicker/com.mbeddr.mpsutil.filepicker.mpl" folder="stable" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.mpl" folder="rest" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.genplandiagram.sandbox/com.mbeddr.mpsutil.genplandiagram.sandbox.msd" folder="rest.genplandiagram" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.genplandiagram/com.mbeddr.mpsutil.genplandiagram.mpl" folder="rest.genplandiagram" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" folder="staging" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphstream.example/com.mbeddr.mpsutil.graphstream.example.mpl" folder="staging.graphstream.example" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.graphstream.example/sandbox/com.mbeddr.mpsutil.graphstream.example.sandbox.msd" folder="staging.graphstream.example" />
@@ -121,6 +123,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.extensionclass.annotation/com.mbeddr.mpsutil.extensionclass.annotation.msd" folder="staging.extensionclass" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.generatorfacade/com.mbeddr.mpsutil.generatorfacade.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.genericactions/com.mbeddr.mpsutil.genericactions.msd" folder="staging" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.genplandiagram.tests/com.mbeddr.mpsutil.genplandiagram.tests.msd" folder="rest.genplandiagram" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.genreview/com.mbeddr.mpsutil.genreview.msd" folder="rest.genreview" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.hyperlink.sandbox.sandbox/com.mbeddr.mpsutil.hyperlink.sandbox.sandbox.msd" folder="staging.hyperlink" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.interpreter.migration/com.mbeddr.mpsutil.interpreter.migration.msd" folder="staging.interpreter" />

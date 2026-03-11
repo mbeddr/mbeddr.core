@@ -59,25 +59,22 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     try {
       getCellFactory().pushCellContext();
       getCellFactory().removeCellContextHints(new String[]{"com.mbeddr.doc.terms.editor.GeneratedHints.tooltipHint_s74oao_a"});
-      editorCell.addEditorCell(createQueryList_1());
+      editorCell.addEditorCell(createQueryList_0());
       setInnerCellsContext(editorCell);
     } finally {
       getCellFactory().popCellContext();
     }
     return editorCell;
   }
-  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_0() {
 
-    QueryListHandler handler = new QueryListHandler_dxjkgd_a0(editorContext, node, false);
+    QueryListHandler handler = new QueryListHandler_dxjkgd_a0(getEditorContext(), getNode(), false);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
     editorCell.setTargeConcept(CONCEPTS.TermDefParagraph$_y);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_dxjkgd_a0");
     return editorCell;
 
-  }
-  private EditorCell createQueryList_1() {
-    return createQueryList_0(getEditorContext(), myNode);
   }
   private static class QueryListHandler_dxjkgd_a0 extends QueryListHandler {
     /**

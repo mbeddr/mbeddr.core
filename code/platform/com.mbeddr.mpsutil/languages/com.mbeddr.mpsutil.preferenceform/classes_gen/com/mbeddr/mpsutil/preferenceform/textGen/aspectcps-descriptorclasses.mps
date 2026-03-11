@@ -8,8 +8,8 @@
   <imports>
     <import index="9nml" ref="r:1bf1ac25-6ce6-4a6d-acbc-2bd0b7275645(com.mbeddr.mpsutil.preferenceform.textGen)" />
     <import index="kpbf" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text.impl(MPS.TextGen/)" />
+    <import index="ksn4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel(MPS.Core/)" />
     <import index="yfwt" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text.rt(MPS.TextGen/)" />
-    <import index="tpcf" ref="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <import index="3iid" ref="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
@@ -290,13 +290,13 @@
       <node concept="3Tm6S6" id="H" role="1B3o_S" />
       <node concept="2eloPW" id="I" role="1tU5fm">
         <property role="2ely0U" value="com.mbeddr.mpsutil.preferenceform.structure.LanguageConceptSwitch" />
-        <ref role="3uigEE" to="tpcf:1OW7rNmnulT" resolve="LanguageConceptSwitch" />
+        <ref role="3uigEE" to="ksn4:~ConceptIndex" resolve="ConceptIndex" />
       </node>
       <node concept="2ShNRf" id="J" role="33vP2m">
         <node concept="xCZzO" id="K" role="2ShVmc">
           <property role="xCZzQ" value="com.mbeddr.mpsutil.preferenceform.structure.LanguageConceptSwitch" />
           <node concept="3uibUv" id="L" role="xCZzL">
-            <ref role="3uigEE" to="tpcf:1OW7rNmnulT" resolve="LanguageConceptSwitch" />
+            <ref role="3uigEE" to="ksn4:~ConceptIndex" resolve="ConceptIndex" />
           </node>
         </node>
       </node>
@@ -337,7 +337,7 @@
               <ref role="3cqZAo" node="_" resolve="myIndex" />
             </node>
             <node concept="liA8E" id="12" role="2OqNvi">
-              <ref role="37wK5l" to="tpcf:1OW7rNmnuDr" resolve="index" />
+              <ref role="37wK5l" to="ksn4:~ConceptIndex.index(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="index" />
               <node concept="37vLTw" id="13" role="37wK5m">
                 <ref role="3cqZAo" node="R" resolve="concept" />
               </node>

@@ -154,7 +154,7 @@ public class TestResultUtil {
   }
 
   /**
-   * Java 6 and below does not support the Long.compareTo method. 
+   * Java 6 and below does not support the Long.compareTo method.
    */
   private static int compareTo(long a, long b) {
     if (a < b) {

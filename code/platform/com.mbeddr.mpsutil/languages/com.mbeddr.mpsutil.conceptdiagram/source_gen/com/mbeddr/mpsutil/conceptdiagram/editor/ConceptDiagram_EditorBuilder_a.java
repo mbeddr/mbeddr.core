@@ -1010,7 +1010,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell.value;
   }
   private EditorCell createDiagram_1() {
-    return createDiagram_0(getEditorContext(), myNode);
+    return createDiagram_0(getEditorContext(), getNode());
   }
   private LineStyle _StyleParameter_QueryFunction_alumpc_a0d4a() {
     return LineStyle.DASHED;
