@@ -2,6 +2,7 @@
 <dependenciesRoot>
   <uses language="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" />
   <uses language="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" />
+  <uses language="l:52733268-be24-4f5f-ab84-a73b7c0c03b0:de.slisson.mps.richtext.customcell" />
   <uses language="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
   <uses language="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
   <uses language="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
@@ -52,7 +53,7 @@
   <uses module="7124e466-fc92-4803-a656-d7a6b7eb3910(MPS.TextGen)" kind="rt+dp" />
   <uses module="39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)" kind="dp" />
   <uses module="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" kind="rt+dp" />
-  <uses module="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+  <uses module="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt+dp" />
   <uses module="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt+dp" />
   <uses module="360a4e25-e902-4667-a0a6-0e971c4f3177(com.mbeddr.mpsutil.blutil.rt)" kind="rt" />
   <uses module="7ac49bcb-77fb-4f0f-9036-e31b86b854b2(com.mbeddr.mpsutil.grammarcells.runtime)" kind="rt+dp" />

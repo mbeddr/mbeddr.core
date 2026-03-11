@@ -1398,15 +1398,33 @@
               </node>
             </node>
           </node>
-          <node concept="22lmx$" id="5A_Zlt6qNA1" role="3clFbw">
-            <node concept="37vLTw" id="5A_Zlt6uzhs" role="3uHU7w">
-              <ref role="3cqZAo" node="5A_Zlt6uzhp" resolve="isHyperlinkReference" />
-            </node>
-            <node concept="22lmx$" id="ojedFZhRec" role="3uHU7B">
-              <node concept="3y3z36" id="ojedFZhRsj" role="3uHU7w">
+          <node concept="22lmx$" id="2mB0AgdnEes" role="3clFbw">
+            <node concept="22lmx$" id="5A_Zlt6qNA1" role="3uHU7B">
+              <node concept="3y3z36" id="ojedFZhRsj" role="3uHU7B">
                 <node concept="10Nm6u" id="ojedFZhRuN" role="3uHU7w" />
                 <node concept="37vLTw" id="ojedFZhRik" role="3uHU7B">
                   <ref role="3cqZAo" node="ojedFZhQK6" resolve="hyperlinkNode" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="5A_Zlt6uzhs" role="3uHU7w">
+                <ref role="3cqZAo" node="5A_Zlt6uzhp" resolve="isHyperlinkReference" />
+              </node>
+            </node>
+            <node concept="1Wc70l" id="2mB0AgdnJfx" role="3uHU7w">
+              <node concept="2OqwBi" id="2mB0AgdnLzt" role="3uHU7w">
+                <node concept="37vLTw" id="2mB0AgdnKmE" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5A_Zlt6qIfl" resolve="hyperlinkHandler" />
+                </node>
+                <node concept="liA8E" id="2mB0AgdnMK1" role="2OqNvi">
+                  <ref role="37wK5l" to="ag3p:2mB0AgdmSRf" resolve="isApplicable" />
+                  <node concept="2OqwBi" id="2mB0AgdnNQg" role="37wK5m">
+                    <node concept="1rXfSq" id="2mB0AgdnNQh" role="2Oq$k0">
+                      <ref role="37wK5l" node="7RVr8_tU_PH" resolve="getEditorComponent" />
+                    </node>
+                    <node concept="liA8E" id="2mB0AgdnNQi" role="2OqNvi">
+                      <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="3y3z36" id="5A_Zlt6qN5F" role="3uHU7B">
@@ -1846,10 +1864,28 @@
                 <ref role="3cqZAo" node="80_psBVcg0" resolve="isHyperlink" />
               </node>
               <node concept="3eNFk2" id="5A_Zlt6qXsA" role="3eNLev">
-                <node concept="3y3z36" id="5A_Zlt6qYrz" role="3eO9$A">
-                  <node concept="10Nm6u" id="5A_Zlt6qYtp" role="3uHU7w" />
-                  <node concept="37vLTw" id="5A_Zlt6qYoU" role="3uHU7B">
-                    <ref role="3cqZAo" node="5A_Zlt6qQOa" resolve="hyperlinkHandler" />
+                <node concept="1Wc70l" id="2mB0Agdnw00" role="3eO9$A">
+                  <node concept="3y3z36" id="5A_Zlt6qYrz" role="3uHU7B">
+                    <node concept="37vLTw" id="5A_Zlt6qYoU" role="3uHU7B">
+                      <ref role="3cqZAo" node="5A_Zlt6qQOa" resolve="hyperlinkHandler" />
+                    </node>
+                    <node concept="10Nm6u" id="5A_Zlt6qYtp" role="3uHU7w" />
+                  </node>
+                  <node concept="2OqwBi" id="2mB0Agdnsgp" role="3uHU7w">
+                    <node concept="37vLTw" id="2mB0Agdnsgq" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5A_Zlt6qQOa" resolve="hyperlinkHandler" />
+                    </node>
+                    <node concept="liA8E" id="2mB0Agdnsgr" role="2OqNvi">
+                      <ref role="37wK5l" to="ag3p:2mB0AgdmSRf" resolve="isApplicable" />
+                      <node concept="2OqwBi" id="2mB0Agdnsgs" role="37wK5m">
+                        <node concept="1rXfSq" id="2mB0Agdnsgt" role="2Oq$k0">
+                          <ref role="37wK5l" node="7RVr8_tU_PH" resolve="getEditorComponent" />
+                        </node>
+                        <node concept="liA8E" id="2mB0Agdnsgu" role="2OqNvi">
+                          <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="3clFbS" id="5A_Zlt6qXsC" role="3eOfB_">

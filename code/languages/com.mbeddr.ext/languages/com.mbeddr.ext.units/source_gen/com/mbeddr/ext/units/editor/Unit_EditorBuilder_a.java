@@ -13,15 +13,15 @@ import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.modules.behavior.IModuleContent__BehaviorDescriptor;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import com.mbeddr.core.base.editor.mbeddrBaseStyles_StyleSheet.KWStyleClass;
 import com.mbeddr.mpsutil.grammarcells.runtime.IFlagModelAccess;
 import com.mbeddr.mpsutil.grammarcells.runtime.DefaultFlagModelAccess;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import com.mbeddr.mpsutil.grammarcells.runtime.CellActionWithReadAccess;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import com.mbeddr.core.base.editor.mbeddrBaseStyles_StyleSheet.KWStyleClass;
 import java.util.List;
 import jetbrains.mps.lang.editor.menus.MenuPart;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem;
@@ -103,34 +103,46 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
 
 
-    final EditorCell cell = createAlternation_0();
+    final EditorCell cell = createCustomFactory_3();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
     return createCustomFactory_0(getEditorContext(), myNode);
   }
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createAlternation_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    Style style = new StyleImpl();
+    new KWStyleClass(this).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), myNode);
+  }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
-    alternationCondition = nodeCondition_e7s6dg_a0a0a();
+    alternationCondition = nodeCondition_e7s6dg_a0a0a0();
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = createCustomFactory_3();
+      editorCell = createCustomFactory_5();
     } else {
       editorCell = createSideTransformationSectionCell_0();
     }
     return editorCell;
   }
-  private boolean nodeCondition_e7s6dg_a0a0a() {
+  private boolean nodeCondition_e7s6dg_a0a0a0() {
     IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.exported$V4am);
     if (!(access.read(myNode))) {
       return false;
     }
 
-
     return true;
   }
-  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createConstant_0();
@@ -153,8 +165,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), myNode);
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "exported");
@@ -169,13 +181,13 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     SideTransformationHolderCell editorCell = new SideTransformationHolderCell(getEditorContext(), myNode, null, "flag 'exported'") {
       @Override
       public List<MenuPart<TransformationMenuItem, TransformationMenuContext>> createMenuParts() {
-        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a0a0a());
+        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a0a0a0());
       }
     };
-    editorCell.setCellId("SideTransformationSectionCell_e7s6dg_a0a0a");
+    editorCell.setCellId("SideTransformationSectionCell_e7s6dg_a0a0a0");
     return editorCell;
   }
-  private class GenericMenuPart_a0a0a0a implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a0a0a0a0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override

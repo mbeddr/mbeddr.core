@@ -7764,123 +7764,123 @@
   </root>
   <root nodeRef="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)/8375407818529176124">
     <file name="ClosingBracketCell.java">
-      <node id="5589470366048699079" at="17,41,18,16" concept="16" />
-      <node id="5589470366048699087" at="20,50,21,19" concept="16" />
-      <node id="5589470366048712772" at="26,75,27,32" concept="4" />
-      <node id="8375407818529176168" at="27,32,28,56" concept="10" />
-      <node id="8375407818529176174" at="28,56,29,23" concept="10" />
-      <node id="8375407818529176178" at="29,23,30,30" concept="10" />
-      <node id="8375407818529176184" at="30,30,31,44" concept="10" />
-      <node id="8375407818529176192" at="31,44,32,44" concept="4" />
-      <node id="8375407818529176204" at="32,44,33,35" concept="4" />
-      <node id="8375407818529176214" at="33,35,34,48" concept="4" />
-      <node id="8375407818529176232" at="36,34,37,25" concept="4" />
-      <node id="8375407818529176238" at="37,25,38,27" concept="4" />
-      <node id="8375407818529176248" at="40,44,41,20" concept="11" />
-      <node id="330987653148438335" at="44,39,45,40" concept="11" />
-      <node id="8375407818529176254" at="47,6,48,18" concept="11" />
-      <node id="5589470366048699075" at="17,0,20,0" concept="3" trace="ClosingBracketCell#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5589470366048699083" at="20,0,23,0" concept="3" trace="ClosingBracketCell#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/awt/Color;)V" />
-      <node id="8375407818529176244" at="40,0,43,0" concept="9" trace="isLastCaretPosition#()Z" />
-      <node id="8375407818529176228" at="36,0,40,0" concept="9" trace="relayoutImpl#()V" />
-      <node id="330987653148420856" at="43,0,47,0" concept="9" trace="renderText#()Ljetbrains/mps/openapi/editor/TextBuilder;" />
-      <node id="8375407818529176155" at="26,0,36,0" concept="9" trace="paintContent#(Ljava/awt/Graphics;Ljetbrains/mps/nodeEditor/cells/ParentSettings;)V" />
-      <node id="8375407818529176148" at="24,67,47,6" concept="10" />
-      <node id="8375407818529176142" at="24,0,50,0" concept="9" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
-      <scope id="5589470366048699078" at="17,41,18,16" />
-      <scope id="5589470366048699086" at="20,50,21,19" />
-      <scope id="8375407818529176247" at="40,44,41,20" />
-      <scope id="330987653148420861" at="44,39,45,40" />
-      <scope id="8375407818529176231" at="36,34,38,27" />
-      <scope id="5589470366048699075" at="17,0,20,0">
+      <node id="5589470366048699079" at="18,41,19,16" concept="16" />
+      <node id="5589470366048699087" at="21,50,22,19" concept="16" />
+      <node id="5589470366048712772" at="27,75,28,32" concept="4" />
+      <node id="8375407818529176168" at="28,32,29,56" concept="10" />
+      <node id="8375407818529176174" at="29,56,30,23" concept="10" />
+      <node id="8375407818529176178" at="30,23,31,30" concept="10" />
+      <node id="8375407818529176184" at="31,30,32,44" concept="10" />
+      <node id="8375407818529176192" at="32,44,33,44" concept="4" />
+      <node id="8375407818529176204" at="33,44,34,35" concept="4" />
+      <node id="8375407818529176214" at="34,35,35,48" concept="4" />
+      <node id="8375407818529176232" at="37,34,38,25" concept="4" />
+      <node id="8375407818529176238" at="38,25,39,27" concept="4" />
+      <node id="8375407818529176248" at="41,44,42,20" concept="11" />
+      <node id="330987653148438335" at="45,39,46,40" concept="11" />
+      <node id="8375407818529176254" at="48,6,49,18" concept="11" />
+      <node id="5589470366048699075" at="18,0,21,0" concept="3" trace="ClosingBracketCell#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5589470366048699083" at="21,0,24,0" concept="3" trace="ClosingBracketCell#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/awt/Color;)V" />
+      <node id="8375407818529176244" at="41,0,44,0" concept="9" trace="isLastCaretPosition#()Z" />
+      <node id="8375407818529176228" at="37,0,41,0" concept="9" trace="relayoutImpl#()V" />
+      <node id="330987653148420856" at="44,0,48,0" concept="9" trace="renderText#()Ljetbrains/mps/openapi/editor/TextBuilder;" />
+      <node id="8375407818529176155" at="27,0,37,0" concept="9" trace="paintContent#(Ljava/awt/Graphics;Ljetbrains/mps/nodeEditor/cells/ParentSettings;)V" />
+      <node id="8375407818529176148" at="25,67,48,6" concept="10" />
+      <node id="8375407818529176142" at="25,0,51,0" concept="9" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+      <scope id="5589470366048699078" at="18,41,19,16" />
+      <scope id="5589470366048699086" at="21,50,22,19" />
+      <scope id="8375407818529176247" at="41,44,42,20" />
+      <scope id="330987653148420861" at="45,39,46,40" />
+      <scope id="8375407818529176231" at="37,34,39,27" />
+      <scope id="5589470366048699075" at="18,0,21,0">
         <var name="node" id="5589470366048699081" />
       </scope>
-      <scope id="5589470366048699083" at="20,0,23,0">
+      <scope id="5589470366048699083" at="21,0,24,0">
         <var name="c" id="5589470366048699092" />
         <var name="node" id="5589470366048699090" />
       </scope>
-      <scope id="8375407818529176244" at="40,0,43,0" />
-      <scope id="8375407818529176228" at="36,0,40,0" />
-      <scope id="330987653148420856" at="43,0,47,0" />
-      <scope id="8375407818529176162" at="26,75,34,48">
+      <scope id="8375407818529176244" at="41,0,44,0" />
+      <scope id="8375407818529176228" at="37,0,41,0" />
+      <scope id="330987653148420856" at="44,0,48,0" />
+      <scope id="8375407818529176162" at="27,75,35,48">
         <var name="height" id="8375407818529176185" />
         <var name="parent" id="8375407818529176169" />
         <var name="x" id="8375407818529176175" />
         <var name="y" id="8375407818529176179" />
       </scope>
-      <scope id="8375407818529176155" at="26,0,36,0">
+      <scope id="8375407818529176155" at="27,0,37,0">
         <var name="g" id="8375407818529176158" />
         <var name="parentSettings" id="8375407818529176160" />
       </scope>
-      <scope id="8375407818529176147" at="24,67,48,18">
+      <scope id="8375407818529176147" at="25,67,49,18">
         <var name="result" id="8375407818529176149" />
       </scope>
-      <scope id="8375407818529176142" at="24,0,50,0">
+      <scope id="8375407818529176142" at="25,0,51,0">
         <var name="context" id="8375407818529176145" />
       </scope>
-      <unit id="8375407818529176153" at="25,34,47,5" name="com.mbeddr.core.base.editor.ClosingBracketCell$1" />
-      <unit id="8375407818529176124" at="16,0,51,0" name="com.mbeddr.core.base.editor.ClosingBracketCell" />
+      <unit id="8375407818529176153" at="26,34,48,5" name="com.mbeddr.core.base.editor.ClosingBracketCell$1" />
+      <unit id="8375407818529176124" at="17,0,52,0" name="com.mbeddr.core.base.editor.ClosingBracketCell" />
     </file>
   </root>
   <root nodeRef="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)/8375407818529176256">
     <file name="OpeningBracketCell.java">
-      <node id="5589470366048538457" at="17,41,18,16" concept="16" />
-      <node id="5589470366048540112" at="20,50,21,19" concept="16" />
-      <node id="5589470366048680607" at="26,75,27,32" concept="4" />
-      <node id="8375407818529176300" at="27,32,28,56" concept="10" />
-      <node id="8375407818529176306" at="28,56,29,23" concept="10" />
-      <node id="8375407818529176310" at="29,23,30,30" concept="10" />
-      <node id="8375407818529176316" at="30,30,31,44" concept="10" />
-      <node id="8375407818529176324" at="31,44,32,40" concept="4" />
-      <node id="8375407818529176334" at="32,40,33,35" concept="4" />
-      <node id="8375407818529176344" at="33,35,34,48" concept="4" />
-      <node id="8375407818529176362" at="36,34,37,25" concept="4" />
-      <node id="8375407818529176368" at="37,25,38,27" concept="4" />
-      <node id="8375407818529176382" at="40,45,41,20" concept="11" />
-      <node id="330987653148495012" at="44,39,45,40" concept="11" />
-      <node id="8375407818529176384" at="47,6,48,0" concept="13" />
-      <node id="8375407818529176385" at="48,0,49,18" concept="11" />
-      <node id="8375407818529176261" at="17,0,20,0" concept="3" trace="OpeningBracketCell#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="710642085453010056" at="20,0,23,0" concept="3" trace="OpeningBracketCell#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/awt/Color;)V" />
-      <node id="8375407818529176378" at="40,0,43,0" concept="9" trace="isFirstCaretPosition#()Z" />
-      <node id="8375407818529176358" at="36,0,40,0" concept="9" trace="relayoutImpl#()V" />
-      <node id="330987653148495008" at="43,0,47,0" concept="9" trace="renderText#()Ljetbrains/mps/openapi/editor/TextBuilder;" />
-      <node id="8375407818529176287" at="26,0,36,0" concept="9" trace="paintContent#(Ljava/awt/Graphics;Ljetbrains/mps/nodeEditor/cells/ParentSettings;)V" />
-      <node id="8375407818529176280" at="24,67,47,6" concept="10" />
-      <node id="8375407818529176274" at="24,0,51,0" concept="9" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
-      <scope id="8375407818529176264" at="17,41,18,16" />
-      <scope id="710642085453010059" at="20,50,21,19" />
-      <scope id="8375407818529176381" at="40,45,41,20" />
-      <scope id="330987653148495011" at="44,39,45,40" />
-      <scope id="8375407818529176361" at="36,34,38,27" />
-      <scope id="8375407818529176261" at="17,0,20,0">
+      <node id="5589470366048538457" at="18,41,19,16" concept="16" />
+      <node id="5589470366048540112" at="21,50,22,19" concept="16" />
+      <node id="5589470366048680607" at="27,75,28,32" concept="4" />
+      <node id="8375407818529176300" at="28,32,29,56" concept="10" />
+      <node id="8375407818529176306" at="29,56,30,23" concept="10" />
+      <node id="8375407818529176310" at="30,23,31,30" concept="10" />
+      <node id="8375407818529176316" at="31,30,32,44" concept="10" />
+      <node id="8375407818529176324" at="32,44,33,40" concept="4" />
+      <node id="8375407818529176334" at="33,40,34,35" concept="4" />
+      <node id="8375407818529176344" at="34,35,35,48" concept="4" />
+      <node id="8375407818529176362" at="37,34,38,25" concept="4" />
+      <node id="8375407818529176368" at="38,25,39,27" concept="4" />
+      <node id="8375407818529176382" at="41,45,42,20" concept="11" />
+      <node id="330987653148495012" at="45,39,46,40" concept="11" />
+      <node id="8375407818529176384" at="48,6,49,0" concept="13" />
+      <node id="8375407818529176385" at="49,0,50,18" concept="11" />
+      <node id="8375407818529176261" at="18,0,21,0" concept="3" trace="OpeningBracketCell#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="710642085453010056" at="21,0,24,0" concept="3" trace="OpeningBracketCell#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/awt/Color;)V" />
+      <node id="8375407818529176378" at="41,0,44,0" concept="9" trace="isFirstCaretPosition#()Z" />
+      <node id="8375407818529176358" at="37,0,41,0" concept="9" trace="relayoutImpl#()V" />
+      <node id="330987653148495008" at="44,0,48,0" concept="9" trace="renderText#()Ljetbrains/mps/openapi/editor/TextBuilder;" />
+      <node id="8375407818529176287" at="27,0,37,0" concept="9" trace="paintContent#(Ljava/awt/Graphics;Ljetbrains/mps/nodeEditor/cells/ParentSettings;)V" />
+      <node id="8375407818529176280" at="25,67,48,6" concept="10" />
+      <node id="8375407818529176274" at="25,0,52,0" concept="9" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/nodeEditor/cells/EditorCell;" />
+      <scope id="8375407818529176264" at="18,41,19,16" />
+      <scope id="710642085453010059" at="21,50,22,19" />
+      <scope id="8375407818529176381" at="41,45,42,20" />
+      <scope id="330987653148495011" at="45,39,46,40" />
+      <scope id="8375407818529176361" at="37,34,39,27" />
+      <scope id="8375407818529176261" at="18,0,21,0">
         <var name="node" id="8375407818529176271" />
       </scope>
-      <scope id="710642085453010056" at="20,0,23,0">
+      <scope id="710642085453010056" at="21,0,24,0">
         <var name="c" id="710642085453010068" />
         <var name="node" id="710642085453010066" />
       </scope>
-      <scope id="8375407818529176378" at="40,0,43,0" />
-      <scope id="8375407818529176358" at="36,0,40,0" />
-      <scope id="330987653148495008" at="43,0,47,0" />
-      <scope id="8375407818529176294" at="26,75,34,48">
+      <scope id="8375407818529176378" at="41,0,44,0" />
+      <scope id="8375407818529176358" at="37,0,41,0" />
+      <scope id="330987653148495008" at="44,0,48,0" />
+      <scope id="8375407818529176294" at="27,75,35,48">
         <var name="height" id="8375407818529176317" />
         <var name="parent" id="8375407818529176301" />
         <var name="x" id="8375407818529176307" />
         <var name="y" id="8375407818529176311" />
       </scope>
-      <scope id="8375407818529176287" at="26,0,36,0">
+      <scope id="8375407818529176287" at="27,0,37,0">
         <var name="g" id="8375407818529176290" />
         <var name="parentSettings" id="8375407818529176292" />
       </scope>
-      <scope id="8375407818529176279" at="24,67,49,18">
+      <scope id="8375407818529176279" at="25,67,50,18">
         <var name="result" id="8375407818529176281" />
       </scope>
-      <scope id="8375407818529176274" at="24,0,51,0">
+      <scope id="8375407818529176274" at="25,0,52,0">
         <var name="context" id="8375407818529176277" />
       </scope>
-      <unit id="8375407818529176285" at="25,34,47,5" name="com.mbeddr.core.base.editor.OpeningBracketCell$1" />
-      <unit id="8375407818529176256" at="16,0,52,0" name="com.mbeddr.core.base.editor.OpeningBracketCell" />
+      <unit id="8375407818529176285" at="26,34,48,5" name="com.mbeddr.core.base.editor.OpeningBracketCell$1" />
+      <unit id="8375407818529176256" at="17,0,53,0" name="com.mbeddr.core.base.editor.OpeningBracketCell" />
     </file>
   </root>
   <root nodeRef="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)/8375407818529178018">

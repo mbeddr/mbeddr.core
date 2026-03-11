@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,29,0" name="com.mbeddr.mpsutil.genplandiagram.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:9906e4da-b20a-424c-a960-0fcc8dfd3ed6(com.mbeddr.mpsutil.genplandiagram.constraints)/7940016190799622935">
+    <file name="PlanVisualizer_Constraints.java">
+      <node id="7940016190799622935" at="20,39,21,38" concept="6" />
+      <node id="7940016190799623008" at="25,59,26,60" concept="6" />
+      <node id="7940016190799623484" at="29,40,30,130" concept="4" />
+      <node id="7940016190799622935" at="34,84,35,119" concept="3" />
+      <node id="7940016190799623008" at="35,119,36,61" concept="1" />
+      <node id="7940016190799622935" at="36,61,37,22" concept="4" />
+      <node id="7940016190799622935" at="41,0,42,0" concept="5" trace="PlanVisualizer$ez" />
+      <node id="7940016190799622935" at="45,0,46,0" concept="5" trace="name$MnvL" />
+      <node id="7940016190799622935" at="49,0,50,0" concept="5" trace="plan$9631" />
+      <node id="7940016190799622935" at="20,0,23,0" concept="0" trace="PlanVisualizer_Constraints#()V" />
+      <node id="7940016190799623008" at="25,0,28,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7940016190799623008" at="28,0,32,0" concept="2" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="7940016190799622935" at="33,0,39,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7940016190799622935" at="20,39,21,38" />
+      <scope id="7940016190799623008" at="25,59,26,60" />
+      <scope id="7940016190799623082" at="29,40,30,130" />
+      <scope id="7940016190799622935" at="20,0,23,0" />
+      <scope id="7940016190799623008" at="25,0,28,0">
+        <var name="container" id="7940016190799623008" />
+      </scope>
+      <scope id="7940016190799622935" at="34,84,37,22">
+        <var name="properties" id="7940016190799622935" />
+      </scope>
+      <scope id="7940016190799623008" at="28,0,32,0">
+        <var name="node" id="7940016190799623008" />
+      </scope>
+      <scope id="7940016190799622935" at="33,0,39,0" />
+      <unit id="7940016190799622935" at="40,0,43,0" name="com.mbeddr.mpsutil.genplandiagram.constraints.PlanVisualizer_Constraints$CONCEPTS" />
+      <unit id="7940016190799622935" at="44,0,47,0" name="com.mbeddr.mpsutil.genplandiagram.constraints.PlanVisualizer_Constraints$PROPS" />
+      <unit id="7940016190799622935" at="48,0,51,0" name="com.mbeddr.mpsutil.genplandiagram.constraints.PlanVisualizer_Constraints$LINKS" />
+      <unit id="7940016190799623008" at="24,0,33,0" name="com.mbeddr.mpsutil.genplandiagram.constraints.PlanVisualizer_Constraints$Name_Property" />
+      <unit id="7940016190799622935" at="19,0,52,0" name="com.mbeddr.mpsutil.genplandiagram.constraints.PlanVisualizer_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

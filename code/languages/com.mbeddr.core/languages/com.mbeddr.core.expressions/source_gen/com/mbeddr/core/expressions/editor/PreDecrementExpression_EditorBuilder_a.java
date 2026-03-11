@@ -63,7 +63,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createCustomFactory_1());
-    editorCell.addEditorCell(createRefNode_0());
+    editorCell.addEditorCell(createCustomFactory_5());
     return editorCell;
   }
   private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
@@ -160,15 +160,35 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.setDefaultText("");
     return editorCell;
   }
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_7();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createRefNode_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_7() {
+    return createCustomFactory_6(getEditorContext(), myNode);
+  }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new expressionSingleRoleHandler_7idbde_b0(myNode, LINKS.expression$PfNq, getEditorContext());
+    SingleRoleCellProvider provider = new expressionSingleRoleHandler_7idbde_a0b0(myNode, LINKS.expression$PfNq, getEditorContext());
     return provider.createCell();
   }
-  private static class expressionSingleRoleHandler_7idbde_b0 extends SingleRoleCellProvider {
+  private static class expressionSingleRoleHandler_7idbde_a0b0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public expressionSingleRoleHandler_7idbde_b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public expressionSingleRoleHandler_7idbde_a0b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
