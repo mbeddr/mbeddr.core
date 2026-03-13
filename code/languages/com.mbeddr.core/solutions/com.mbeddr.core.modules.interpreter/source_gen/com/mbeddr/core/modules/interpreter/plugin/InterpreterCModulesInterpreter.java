@@ -59,7 +59,7 @@ public class InterpreterCModulesInterpreter extends ConditionalInterpreterBase {
         return "GlobalConstantFunctionRef";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("GlobalConstantFunctionRef", "http://127.0.0.1:63320/node?ref=a3982392-4da9-49a6-81c1-cd376d0b87c3%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient52%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938014180");
+        return new EvaluatorInfo("GlobalConstantFunctionRef", "http://127.0.0.1:63320/node?ref=aa7f6562-93f1-41f8-9964-32cdd6b3c33a%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient57%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938014180");
       }
 
       @Override
@@ -89,7 +89,7 @@ public class InterpreterCModulesInterpreter extends ConditionalInterpreterBase {
         return "GlobalConstantDeclaration";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("GlobalConstantDeclaration", "http://127.0.0.1:63320/node?ref=a3982392-4da9-49a6-81c1-cd376d0b87c3%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient52%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938014189");
+        return new EvaluatorInfo("GlobalConstantDeclaration", "http://127.0.0.1:63320/node?ref=aa7f6562-93f1-41f8-9964-32cdd6b3c33a%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient57%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938014189");
       }
 
       @Override
@@ -127,7 +127,7 @@ public class InterpreterCModulesInterpreter extends ConditionalInterpreterBase {
         return "GlobalConstantRef";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("GlobalConstantRef", "http://127.0.0.1:63320/node?ref=a3982392-4da9-49a6-81c1-cd376d0b87c3%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient52%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938014192");
+        return new EvaluatorInfo("GlobalConstantRef", "http://127.0.0.1:63320/node?ref=aa7f6562-93f1-41f8-9964-32cdd6b3c33a%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient57%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938014192");
       }
 
       @Override
@@ -157,7 +157,7 @@ public class InterpreterCModulesInterpreter extends ConditionalInterpreterBase {
         return "GlobalVariableDeclaration";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("GlobalVariableDeclaration", "http://127.0.0.1:63320/node?ref=a3982392-4da9-49a6-81c1-cd376d0b87c3%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient52%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938014221");
+        return new EvaluatorInfo("GlobalVariableDeclaration", "http://127.0.0.1:63320/node?ref=aa7f6562-93f1-41f8-9964-32cdd6b3c33a%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient57%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938014221");
       }
 
       @Override
@@ -187,7 +187,7 @@ public class InterpreterCModulesInterpreter extends ConditionalInterpreterBase {
         return "GlobalVarRef";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("GlobalVarRef", "http://127.0.0.1:63320/node?ref=a3982392-4da9-49a6-81c1-cd376d0b87c3%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient52%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938014224");
+        return new EvaluatorInfo("GlobalVarRef", "http://127.0.0.1:63320/node?ref=aa7f6562-93f1-41f8-9964-32cdd6b3c33a%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient57%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938014224");
       }
 
       @Override
