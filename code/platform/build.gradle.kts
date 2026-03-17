@@ -65,10 +65,10 @@ val bundledDeps = listOf(
             exclude(module = "guava")
         }),
         BundledDep("jfreechart", listOf("org.jfree:jfreechart:1.5.6"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime", {}),
-        BundledDep("plantuml", listOf("net.sourceforge.plantuml:plantuml:1.2026.1"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution"),
+        BundledDep("plantuml", listOf("net.sourceforge.plantuml:plantuml:1.2026.2"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution"),
         BundledDep("opencsv", listOf("au.com.bytecode:opencsv:2.4"), "com.mbeddr.mpsutil/solutions/com.opencsv"),
-        BundledDep("mockito", listOf("org.mockito:mockito-core:5.21.0"), "com.mbeddr.mpsutil/solutions/org.mockito", {}),
-        BundledDep("ecore", listOf("org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.35.0"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecore.stubs", {
+        BundledDep("mockito", listOf("org.mockito:mockito-core:5.22.0"), "com.mbeddr.mpsutil/solutions/org.mockito", {}),
+        BundledDep("ecore", listOf("org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.36.0"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecore.stubs", {
             exclude(module = "aopalliance")
             exclude(module = "antlr-runtime")
             exclude(module = "org.eclipse.osgi")
@@ -120,8 +120,6 @@ val build_allScripts by tasks.registering(MpsGenerate::class) {
     projectLocation = file("com.mbeddr.platform.build")
     pluginRoots.from(tasks.named("resolveMpsLibraries", Sync::class.java).map { it.destinationDir })
     pluginRoots.from(mpsHome.dir("plugins"))
-
-    folderMacros.put("mbeddr.github.core.home", rootProject.layout.projectDirectory)
 }
 
 val build_actionsfilter by tasks.registering(BuildLanguages::class) {
