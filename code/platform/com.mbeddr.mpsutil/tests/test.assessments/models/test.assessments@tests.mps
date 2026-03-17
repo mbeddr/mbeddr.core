@@ -24,9 +24,6 @@
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
         <property id="3743352646565420194" name="includeSelf" index="GvXf4" />
       </concept>
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1225469856668" name="jetbrains.mps.lang.test.structure.ModelExpression" flags="nn" index="1jGwE1" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
@@ -601,9 +598,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2XOHcx" id="6v0bPePBkpS">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.mpsutil" />
   </node>
   <node concept="1lH9Xt" id="3V7vYltn9XS">
     <property role="TrG5h" value="ProjectScopeTest" />
