@@ -5,10 +5,10 @@
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.platform.sandboxes" />
   <property name="mps.home" location="" />
   <property name="artifacts.root" location="" />
-  <property name="mbeddr.github.core.home" location="${basedir}/../../" />
-  <property name="dependencies.root" location="${mbeddr.github.core.home}/build/dependencies" />
-  <property name="mbeddr.mpsutil" location="${mbeddr.github.core.home}/code/platform/com.mbeddr.mpsutil" />
-  <property name="mbeddr.doc.aspect" location="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc.aspect" />
+  <property name="project.root" location="${basedir}/../../" />
+  <property name="dependencies.root" location="${project.root}/build/dependencies" />
+  <property name="mbeddr.mpsutil" location="${project.root}/code/platform/com.mbeddr.mpsutil" />
+  <property name="mbeddr.doc.aspect" location="${project.root}/code/platform/com.mbeddr.doc.aspect" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.platform" location="${artifacts.root}/com.mbeddr.platform" />
   <property name="artifacts.de.itemis.mps.extensions" location="${dependencies.root}/de.itemis.mps.extensions" />
@@ -170,7 +170,7 @@
       </jvmargs>
       <macro name="mps.home" path="${mps.home}" />
       <macro name="artifacts.root" path="${artifacts.root}" />
-      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
+      <macro name="project.root" path="${project.root}" />
       <macro name="dependencies.root" path="${dependencies.root}" />
       <macro name="mbeddr.mpsutil" path="${mbeddr.mpsutil}" />
       <macro name="mbeddr.doc.aspect" path="${mbeddr.doc.aspect}" />

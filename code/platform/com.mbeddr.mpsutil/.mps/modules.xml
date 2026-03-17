@@ -177,6 +177,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.asynccell/test.com.mbeddr.mpsutil.asynccell.msd" folder="asynccell" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.blutil.test.waitfor/test.com.mbeddr.mpsutil.blutil.test.waitfor.msd" folder="waitfor" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.common/test.com.mbeddr.mpsutil.common.msd" folder="staging.common" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.contextactions/test.com.mbeddr.mpsutil.contextactions.msd" folder="rest.contextActions" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecore.metaModelImport/test.com.mbeddr.mpsutil.ecore.metaModelImport.msd" folder="rest.ecore.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecore.modelImportExport/test.com.mbeddr.mpsutil.ecore.modelImportExport.msd" folder="rest.ecore.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1.mpl" folder="rest.ecore.tests.testLanguages" />
