@@ -28,11 +28,6 @@
     <import index="n4y8" ref="9414e29c-0c8d-4bc7-b251-f312597fb993/java:org.mockito(org.mockito/)" />
   </imports>
   <registry>
-    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
@@ -144,9 +139,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2XOHcx" id="2u$73V9ts2J">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.mpsutil" />
-  </node>
   <node concept="3s_ewN" id="4IjegxhBa1G">
     <property role="3s_ewP" value="AsyncCellManager" />
     <node concept="1X3_iC" id="149rBwJEqce" role="lGtFl">

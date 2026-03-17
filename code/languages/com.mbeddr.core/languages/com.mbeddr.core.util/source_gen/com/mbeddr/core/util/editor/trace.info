@@ -5040,9 +5040,9 @@
       <unit id="291293396404997926" at="423,0,428,0" name="com.mbeddr.core.util.editor.StackDeclaration_EditorBuilder_a$CONCEPTS" />
       <unit id="291293396404997926" at="155,48,161,7" name="com.mbeddr.core.util.editor.StackDeclaration_EditorBuilder_a$1" />
       <unit id="291293396404997926" at="162,51,168,7" name="com.mbeddr.core.util.editor.StackDeclaration_EditorBuilder_a$2" />
-      <unit id="291293396404997926" at="201,39,211,7" name="com.mbeddr.core.util.editor.StackDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_1$1" />
-      <unit id="291293396404997926" at="213,67,233,9" name="com.mbeddr.core.util.editor.StackDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_1$2" />
-      <unit id="291293396404997926" at="195,0,239,0" name="com.mbeddr.core.util.editor.StackDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_1" />
+      <unit id="291293396404997926" at="201,39,211,7" name="com.mbeddr.core.util.editor.StackDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_2$1" />
+      <unit id="291293396404997926" at="213,67,233,9" name="com.mbeddr.core.util.editor.StackDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_2$2" />
+      <unit id="291293396404997926" at="195,0,239,0" name="com.mbeddr.core.util.editor.StackDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_2" />
       <unit id="291293396404997926" at="263,0,314,0" name="com.mbeddr.core.util.editor.StackDeclaration_EditorBuilder_a$baseTypeSingleRoleHandler_wbc4sd_d0a" />
       <unit id="291293396404997926" at="328,0,379,0" name="com.mbeddr.core.util.editor.StackDeclaration_EditorBuilder_a$sizeSingleRoleHandler_wbc4sd_f0a" />
       <unit id="291293396404997926" at="61,0,439,0" name="com.mbeddr.core.util.editor.StackDeclaration_EditorBuilder_a" />
@@ -7393,9 +7393,9 @@
       <unit id="3601652329323231088" at="420,0,425,0" name="com.mbeddr.core.util.editor.RingBufferDeclaration_EditorBuilder_a$CONCEPTS" />
       <unit id="3601652329323231088" at="153,48,159,7" name="com.mbeddr.core.util.editor.RingBufferDeclaration_EditorBuilder_a$1" />
       <unit id="3601652329323231088" at="160,51,166,7" name="com.mbeddr.core.util.editor.RingBufferDeclaration_EditorBuilder_a$2" />
-      <unit id="3601652329323231088" at="199,39,209,7" name="com.mbeddr.core.util.editor.RingBufferDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_2$1" />
-      <unit id="3601652329323231088" at="211,67,231,9" name="com.mbeddr.core.util.editor.RingBufferDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_2$2" />
-      <unit id="3601652329323231088" at="193,0,237,0" name="com.mbeddr.core.util.editor.RingBufferDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_2" />
+      <unit id="3601652329323231088" at="199,39,209,7" name="com.mbeddr.core.util.editor.RingBufferDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_0$1" />
+      <unit id="3601652329323231088" at="211,67,231,9" name="com.mbeddr.core.util.editor.RingBufferDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_0$2" />
+      <unit id="3601652329323231088" at="193,0,237,0" name="com.mbeddr.core.util.editor.RingBufferDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_0" />
       <unit id="3601652329323231088" at="261,0,312,0" name="com.mbeddr.core.util.editor.RingBufferDeclaration_EditorBuilder_a$baseTypeSingleRoleHandler_o7p0f5_d0a" />
       <unit id="3601652329323231088" at="325,0,376,0" name="com.mbeddr.core.util.editor.RingBufferDeclaration_EditorBuilder_a$sizeSingleRoleHandler_o7p0f5_f0a" />
       <unit id="3601652329323231088" at="59,0,436,0" name="com.mbeddr.core.util.editor.RingBufferDeclaration_EditorBuilder_a" />
@@ -10113,10 +10113,10 @@
       <unit id="4944376863001028684" at="740,28,747,5" name="com.mbeddr.core.util.editor.DataLoggerDeclaration_EditorBuilder_a$7" />
       <unit id="3267857377793658617" at="757,28,764,5" name="com.mbeddr.core.util.editor.DataLoggerDeclaration_EditorBuilder_a$8" />
       <unit id="2054775350250926653" at="774,28,781,5" name="com.mbeddr.core.util.editor.DataLoggerDeclaration_EditorBuilder_a$9" />
-      <unit id="4944376863000971803" at="253,39,263,7" name="com.mbeddr.core.util.editor.DataLoggerDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_0$1" />
+      <unit id="4944376863000971803" at="253,39,263,7" name="com.mbeddr.core.util.editor.DataLoggerDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_1$1" />
       <unit id="4944376863001028671" at="701,28,713,5" name="com.mbeddr.core.util.editor.DataLoggerDeclaration_EditorBuilder_a$5" />
-      <unit id="4944376863000971803" at="265,67,285,9" name="com.mbeddr.core.util.editor.DataLoggerDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_0$2" />
-      <unit id="4944376863000971803" at="247,0,291,0" name="com.mbeddr.core.util.editor.DataLoggerDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_0" />
+      <unit id="4944376863000971803" at="265,67,285,9" name="com.mbeddr.core.util.editor.DataLoggerDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_1$2" />
+      <unit id="4944376863000971803" at="247,0,291,0" name="com.mbeddr.core.util.editor.DataLoggerDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a0_1" />
       <unit id="4944376863000971803" at="482,0,533,0" name="com.mbeddr.core.util.editor.DataLoggerDeclaration_EditorBuilder_a$timeTypeSingleRoleHandler_ca97eu_k0a" />
       <unit id="4944376863000971803" at="546,0,597,0" name="com.mbeddr.core.util.editor.DataLoggerDeclaration_EditorBuilder_a$defaultTimeSingleRoleHandler_ca97eu_m0a" />
       <unit id="4944376863000971803" at="369,0,458,0" name="com.mbeddr.core.util.editor.DataLoggerDeclaration_EditorBuilder_a$tracepointsListHandler_ca97eu_h0a" />
