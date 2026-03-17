@@ -54,7 +54,7 @@ public class InterpreterVarFmCInterpreter extends ConditionalInterpreterBase {
         return "ConfigurationDependantExpression";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ConfigurationDependantExpression", "http://127.0.0.1:63320/node?ref=4e4493cd-a0d3-41bc-8d51-6d6139e2cf7e%2Fi%3A10000001%28com.mbeddr.cc.var.fm.interpreter%40transient75%2Fcom.mbeddr.cc.var.fm.interpreter.plugin%400%29%2F7796191070136679580");
+        return new EvaluatorInfo("ConfigurationDependantExpression", "http://127.0.0.1:63320/node?ref=e9d1801f-7d7f-4573-b58b-06c40f5d6608%2Fi%3A10000001%28com.mbeddr.cc.var.fm.interpreter%40transient80%2Fcom.mbeddr.cc.var.fm.interpreter.plugin%400%29%2F7796191070136679580");
       }
 
       @Override

@@ -19,7 +19,7 @@ import com.mbeddr.mpsutil.common.graph.AVLTreeNode;
 @MPSLaunch
 public class AVLTreeInsertion_Test extends BaseTransformationTest {
   @RegisterExtension
-  private static final TestParametersCacheExtension ourParametersCacheExtension = new TestParametersCacheExtension(new TestParametersCacheBuilder(AVLTreeInsertion_Test.class).projectPath("${mbeddr.github.core.home}/code/platform/com.mbeddr.mpsutil").modelRef("r:a68423c3-5b3b-473a-89a3-7910cb495020(com.mbeddr.mpsutil.common.graphTest@tests)").reopenProject(false).build());
+  private static final TestParametersCacheExtension ourParametersCacheExtension = new TestParametersCacheExtension(new TestParametersCacheBuilder(AVLTreeInsertion_Test.class).projectPath(null).modelRef("r:a68423c3-5b3b-473a-89a3-7910cb495020(com.mbeddr.mpsutil.common.graphTest@tests)").reopenProject(null).build());
 
   public AVLTreeInsertion_Test() {
     super(ourParametersCacheExtension.getParametersCache());
