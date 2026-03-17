@@ -16,7 +16,7 @@
       <concept id="4560297596904469355" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModuleGroup" flags="ng" index="22LTRF">
         <reference id="4560297596904469356" name="group" index="22LTRG" />
       </concept>
-      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="nn" index="22LTRH">
+      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="ng" index="22LTRH">
         <child id="4560297596904469360" name="modules" index="22LTRK" />
         <child id="6593674873639474544" name="options" index="24cAkG" />
       </concept>
@@ -52,7 +52,7 @@
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
-      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="nn" index="2Ry0Ak">
+      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="ng" index="2Ry0Ak">
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
@@ -166,7 +166,7 @@
         <property id="322010710375892619" name="uuid" index="3LESm3" />
         <child id="322010710375956261" name="path" index="3LF7KH" />
       </concept>
-      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="nn" index="1SiIV0">
+      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="ng" index="1SiIV0">
         <child id="7259033139236285167" name="dependency" index="1SiIV1" />
       </concept>
     </language>
@@ -196,7 +196,7 @@
       <property role="TrG5h" value="mps.home" />
     </node>
     <node concept="398rNT" id="7eF9rfAnzU3" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.github.core.home" />
+      <property role="TrG5h" value="project.root" />
       <node concept="55IIr" id="7eF9rfAnzU4" role="398pKh">
         <node concept="2Ry0Ak" id="7eF9rfAnzU5" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -209,16 +209,10 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="3T$s_3ZdQDe" role="1l3spd">
-      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
-      <node concept="398BVA" id="3T$s_3ZdQDf" role="398pKh">
-        <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
-      </node>
-    </node>
     <node concept="398rNT" id="7hVsScEQJ6E" role="1l3spd">
       <property role="TrG5h" value="mbeddr.mpsutil" />
       <node concept="398BVA" id="7hVsScEQJ6F" role="398pKh">
-        <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="7eF9rfAnzU3" resolve="project.root" />
         <node concept="2Ry0Ak" id="7hVsScEQJ6G" role="iGT6I">
           <property role="2Ry0Am" value="code" />
           <node concept="2Ry0Ak" id="7hVsScEQJ6H" role="2Ry0An">
@@ -233,7 +227,7 @@
     <node concept="398rNT" id="1OEbLwd81mk" role="1l3spd">
       <property role="TrG5h" value="dependencies.root" />
       <node concept="398BVA" id="1OEbLwd81ml" role="398pKh">
-        <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="7eF9rfAnzU3" resolve="project.root" />
         <node concept="2Ry0Ak" id="1OEbLwd81mm" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="1OEbLwd81mn" role="2Ry0An">
@@ -248,6 +242,14 @@
         <ref role="398BVh" node="5ueaxoTn61l" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="5ueaxoTpkOX" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="62hLUH71qFg" role="1l3spd">
+      <property role="TrG5h" value="test.reports.root" />
+      <node concept="55IIr" id="62hLUH71qHU" role="398pKh">
+        <node concept="2Ry0Ak" id="62hLUH71qHW" role="iGT6I">
+          <property role="2Ry0Am" value="test-reports" />
         </node>
       </node>
     </node>
@@ -2907,7 +2909,7 @@
               <property role="3qWCbO" value="icons/**, resources/**, doc_gen/**" />
             </node>
             <node concept="398BVA" id="3xFG3bj5cRj" role="3LXTmr">
-              <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
+              <ref role="398BVh" node="7eF9rfAnzU3" resolve="project.root" />
               <node concept="2Ry0Ak" id="3xFG3bj5cRk" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="3xFG3bj5cRl" role="2Ry0An">
@@ -2927,7 +2929,7 @@
           </node>
         </node>
         <node concept="398BVA" id="4pIcGABAzwQ" role="3LF7KH">
-          <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
+          <ref role="398BVh" node="7eF9rfAnzU3" resolve="project.root" />
           <node concept="2Ry0Ak" id="4pIcGABAzCJ" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="4pIcGABA$0f" role="2Ry0An">
@@ -2953,7 +2955,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="$Kq8MetF6u" role="1HemKq">
             <node concept="398BVA" id="$Kq8MetF6f" role="3LXTmr">
-              <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
+              <ref role="398BVh" node="7eF9rfAnzU3" resolve="project.root" />
               <node concept="2Ry0Ak" id="$Kq8MetF6g" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="$Kq8MetF6h" role="2Ry0An">
@@ -3026,14 +3028,14 @@
         <node concept="24YFd4" id="58lY_Vpv0Yh" role="24YFd7">
           <ref role="24YFd5" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
         </node>
+        <node concept="398BVA" id="62hLUH70SSI" role="1RZ71A">
+          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+        </node>
         <node concept="398BVA" id="62hLUH71qK_" role="3l6Mlw">
           <ref role="398BVh" node="62hLUH71qFg" resolve="test.reports.root" />
           <node concept="2Ry0Ak" id="62hLUH71qLi" role="iGT6I">
             <property role="2Ry0Am" value="mpsutil.tests" />
           </node>
-        </node>
-        <node concept="398BVA" id="62hLUH70SSI" role="1RZ71A">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
         </node>
       </node>
     </node>
@@ -3059,7 +3061,7 @@
           <ref role="24YFd5" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
         </node>
         <node concept="398BVA" id="62hLUH70SWI" role="1RZ71A">
-          <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
+          <ref role="398BVh" node="7eF9rfAnzU3" resolve="project.root" />
           <node concept="2Ry0Ak" id="62hLUH70SWJ" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="62hLUH70SWK" role="2Ry0An">
@@ -3082,14 +3084,6 @@
       <property role="2igJW4" value="true" />
       <property role="3UIfUI" value="4096" />
     </node>
-    <node concept="398rNT" id="62hLUH71qFg" role="1l3spd">
-      <property role="TrG5h" value="test.reports.root" />
-      <node concept="55IIr" id="62hLUH71qHU" role="398pKh">
-        <node concept="2Ry0Ak" id="62hLUH71qHW" role="iGT6I">
-          <property role="2Ry0Am" value="test-reports" />
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1l3spW" id="E0fxGqls4q">
     <property role="2DA0ip" value="../../../../../build/com.mbeddr.platform" />
@@ -3102,7 +3096,7 @@
       <property role="TrG5h" value="artifacts.root" />
     </node>
     <node concept="398rNT" id="E0fxGqls7d" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.github.core.home" />
+      <property role="TrG5h" value="project.root" />
       <node concept="55IIr" id="E0fxGqls7e" role="398pKh">
         <node concept="2Ry0Ak" id="E0fxGqls7f" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -3118,7 +3112,7 @@
     <node concept="398rNT" id="1OEbLwd81bU" role="1l3spd">
       <property role="TrG5h" value="dependencies.root" />
       <node concept="398BVA" id="1OEbLwd81ei" role="398pKh">
-        <ref role="398BVh" node="E0fxGqls7d" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="E0fxGqls7d" resolve="project.root" />
         <node concept="2Ry0Ak" id="1OEbLwd81i5" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="1OEbLwd81jj" role="2Ry0An">
@@ -3130,7 +3124,7 @@
     <node concept="398rNT" id="E0fxGqls7k" role="1l3spd">
       <property role="TrG5h" value="mbeddr.mpsutil" />
       <node concept="398BVA" id="E0fxGqls7l" role="398pKh">
-        <ref role="398BVh" node="E0fxGqls7d" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="E0fxGqls7d" resolve="project.root" />
         <node concept="2Ry0Ak" id="E0fxGqls7m" role="iGT6I">
           <property role="2Ry0Am" value="code" />
           <node concept="2Ry0Ak" id="E0fxGqls7n" role="2Ry0An">
@@ -4188,7 +4182,7 @@
     <node concept="398rNT" id="5FkZWZm6tJ2" role="1l3spd">
       <property role="TrG5h" value="mbeddr.doc.aspect" />
       <node concept="398BVA" id="5FkZWZm6tJ3" role="398pKh">
-        <ref role="398BVh" node="E0fxGqls7d" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="E0fxGqls7d" resolve="project.root" />
         <node concept="2Ry0Ak" id="5FkZWZm6tJ4" role="iGT6I">
           <property role="2Ry0Am" value="code" />
           <node concept="2Ry0Ak" id="5FkZWZm6tJ5" role="2Ry0An">
