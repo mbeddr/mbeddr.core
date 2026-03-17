@@ -22,7 +22,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.project.AbstractModule;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -33,10 +32,8 @@ public final class VirtualFolderScope__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<Iterable<SNode>> findElements_id20N7CGtOl8_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2320231815875482149L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""), SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
   public static final SMethod<Iterable<SNode>> findElements_id7nkDZJXluPi = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8490595898229124434L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id20N7CGtOl8_, findElements_id7nkDZJXluPi);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id20N7CGtOl8_, findElements_id7nkDZJXluPi);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> findElements_id20N7CGtOl8_(@NotNull final SNode __thisNode__, final Project mpsProject, SModel currentModel) {
     if (!(mpsProject instanceof ProjectBase)) {
@@ -47,16 +44,12 @@ public final class VirtualFolderScope__BehaviorDescriptor extends BaseBHDescript
     return Sequence.fromIterable(projectModules).where((it) -> (boolean) VirtualFolderFilter__BehaviorDescriptor.matches_id4PRpvcZD6sS.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.filter$KV$z), ((ProjectBase) mpsProject).getVirtualFolder(it))).translate((module) -> Sequence.fromIterable(((Iterable<SModel>) module.getModels())).translate((model) -> SModelOperations.nodes(model, null)));
   }
   /*package*/ static Iterable<SNode> findElements_id7nkDZJXluPi(@NotNull SNode __thisNode__, SModel currentModel) {
-    return ((Iterable<SNode>) AssessmentScope__BehaviorDescriptor.findElements_id20N7CGtOl8_.invoke(__thisNode__, ListSequence.fromList(GuessCurrentProject.getProjects(as_rrtw72_a0a0b0a0a0a01(currentModel.getModule(), AbstractModule.class))).first(), currentModel));
+    return ((Iterable<SNode>) AssessmentScope__BehaviorDescriptor.findElements_id20N7CGtOl8_.invoke(__thisNode__, ListSequence.fromList(GuessCurrentProject.getProjects(as_rrtw72_a0a0b0a0a0a9(currentModel.getModule(), AbstractModule.class))).first(), currentModel));
   }
 
   /*package*/ VirtualFolderScope__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
@@ -97,7 +90,7 @@ public final class VirtualFolderScope__BehaviorDescriptor extends BaseBHDescript
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static <T> T as_rrtw72_a0a0b0a0a0a01(Object o, Class<T> type) {
+  private static <T> T as_rrtw72_a0a0b0a0a0a9(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 

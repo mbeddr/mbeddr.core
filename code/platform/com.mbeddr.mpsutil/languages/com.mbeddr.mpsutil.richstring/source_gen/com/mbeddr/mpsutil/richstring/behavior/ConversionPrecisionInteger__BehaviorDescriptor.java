@@ -14,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -24,10 +23,8 @@ public final class ConversionPrecisionInteger__BehaviorDescriptor extends BaseBH
 
   public static final SMethod<String> getPrecision_id2UbT3C4eBk$ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrecision").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354025285337642276L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPrecision_id2UbT3C4eBk$);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPrecision_id2UbT3C4eBk$);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPrecision_id2UbT3C4eBk$(@NotNull SNode __thisNode__) {
     return "." + Integer.toString(SPropertyOperations.getInteger(__thisNode__, PROPS.precision$BB_3));
@@ -36,10 +33,6 @@ public final class ConversionPrecisionInteger__BehaviorDescriptor extends BaseBH
   /*package*/ ConversionPrecisionInteger__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

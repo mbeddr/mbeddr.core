@@ -19,7 +19,6 @@ import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -40,10 +39,8 @@ public final class Style__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> font_id1LnB5xdJes9 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("font").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089929L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
   public static final SMethod<Integer> fontSize_id7FELQjI3HCs = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("fontSize").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8857110853482109468L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findProperty_id1LnB5xdJe7T, bold_id1LnB5xdJegr, italic_id1LnB5xdJegB, bgColor_id1LnB5xdJeh1, fontColor_id1LnB5xdJehe, border_id1LnB5xdJeno, bottomBorder_id1LnB5xdJenF, alignment_id1LnB5xdJerp, font_id1LnB5xdJes9, fontSize_id7FELQjI3HCs);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findProperty_id1LnB5xdJe7T, bold_id1LnB5xdJegr, italic_id1LnB5xdJegB, bgColor_id1LnB5xdJeh1, fontColor_id1LnB5xdJehe, border_id1LnB5xdJeno, bottomBorder_id1LnB5xdJenF, alignment_id1LnB5xdJerp, font_id1LnB5xdJes9, fontSize_id7FELQjI3HCs);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode findProperty_id1LnB5xdJe7T(@NotNull SNode __thisNode__, final SNode concept) {
     SNode property = ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.properties$1p$z)).findFirst((it) -> Objects.equals(SNodeOperations.getConcept(it), SNodeOperations.asSConcept(concept)));
@@ -88,10 +85,6 @@ public final class Style__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Style__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

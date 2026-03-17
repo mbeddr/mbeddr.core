@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -33,10 +32,8 @@ public final class OperationTrigger__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<Void> synchronizeParentRunnable_id18l4N2Qxdck = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("synchronizeParentRunnable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1302968767135142676L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
   public static final SMethod<String> getCharacteristicString_id6A4xWqfTbOa = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getCharacteristicString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7603351357795646730L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSame_idLUz4xArbFJ, synchronizeParentRunnable_id18l4N2Qxdck, getCharacteristicString_id6A4xWqfTbOa);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSame_idLUz4xArbFJ, synchronizeParentRunnable_id18l4N2Qxdck, getCharacteristicString_id6A4xWqfTbOa);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isSame_idLUz4xArbFJ(@NotNull SNode __thisNode__, SNode otherTrigger) {
     if (!(SNodeOperations.isInstanceOf(otherTrigger, CONCEPTS.OperationTrigger$S8))) {
@@ -66,10 +63,6 @@ public final class OperationTrigger__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ OperationTrigger__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

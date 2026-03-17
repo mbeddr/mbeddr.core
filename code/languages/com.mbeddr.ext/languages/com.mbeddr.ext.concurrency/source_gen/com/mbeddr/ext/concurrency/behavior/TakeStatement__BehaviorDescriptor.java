@@ -17,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -34,10 +33,8 @@ public final class TakeStatement__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> queue_id4mSSgpjqg3A = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("queue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801617232102L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
   public static final SMethod<Boolean> queueCanBlock_id1zeZsIbcYTr = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("queueCanBlock").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1787645152768290395L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(providesReadLockFor_id4mSSgpjfkhV, providesWriteLockFor_id4mSSgpjfkpY, queueType_id4mSSgpjhSql, queue_id4mSSgpjqg3A, queueCanBlock_id1zeZsIbcYTr);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(providesReadLockFor_id4mSSgpjfkhV, providesWriteLockFor_id4mSSgpjfkpY, queueType_id4mSSgpjhSql, queue_id4mSSgpjqg3A, queueCanBlock_id1zeZsIbcYTr);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean providesReadLockFor_id4mSSgpjfkhV(@NotNull SNode __thisNode__, SNode n) {
     return SNodeOperations.isInstanceOf(n, CONCEPTS.GlobalVarRef$hy) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.cast(n, CONCEPTS.GlobalVarRef$hy), LINKS.var$wHP5), LINKS.type$sXU3), CONCEPTS.ConcurrentQueueType$dt);
@@ -61,10 +58,6 @@ public final class TakeStatement__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TakeStatement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

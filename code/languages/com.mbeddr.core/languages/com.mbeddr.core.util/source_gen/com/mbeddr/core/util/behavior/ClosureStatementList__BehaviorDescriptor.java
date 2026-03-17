@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,10 +21,8 @@ public final class ClosureStatementList__BehaviorDescriptor extends BaseBHDescri
 
   public static final SMethod<Boolean> queryAncestorScopeProvider_id1leqHN8kqt_ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("queryAncestorScopeProvider").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1535282019466061669L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(queryAncestorScopeProvider_id1leqHN8kqt_);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(queryAncestorScopeProvider_id1leqHN8kqt_);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean queryAncestorScopeProvider_id1leqHN8kqt_(@NotNull SNode __thisNode__) {
     return false;
@@ -34,10 +31,6 @@ public final class ClosureStatementList__BehaviorDescriptor extends BaseBHDescri
   /*package*/ ClosureStatementList__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

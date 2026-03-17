@@ -17,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.base.behavior.IRequiresConfigItem__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -33,10 +32,8 @@ public final class AbstractInstanceConfiguration__BehaviorDescriptor extends Bas
   public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(instances_id6JVEnxIhC2$, assemblyConnectors_id6JVEnxIhC2V, isExported_id6JVEnxIkpau, getConfigItem_id5HxjapwgqMb, getUniquelyNamedElements_id4qSf1u1TRfj);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(instances_id6JVEnxIhC2$, assemblyConnectors_id6JVEnxIhC2V, isExported_id6JVEnxIkpau, getConfigItem_id5HxjapwgqMb, getUniquelyNamedElements_id4qSf1u1TRfj);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> instances_id6JVEnxIhC2$(@NotNull SNode __thisNode__) {
     return SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.contents$E4B8), CONCEPTS.ComponentInstance$zN);
@@ -56,10 +53,6 @@ public final class AbstractInstanceConfiguration__BehaviorDescriptor extends Bas
   /*package*/ AbstractInstanceConfiguration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -29,10 +28,8 @@ public final class GenExtModule__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> addGenericChunkDependency_id94IdDK$n_l = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addGenericChunkDependency").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734823143765L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> isImplementationArtifact_id7Vd878ENIh6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isImplementationArtifact").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9136994893721166918L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleContentsOfType_id6clJcrJXo2_, canMangleNames_id4J$Pz4XGFls, dependencies_id6clJcrJYPM5, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, addGenericChunkDependency_id94IdDK$n_l, isImplementationArtifact_id7Vd878ENIh6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleContentsOfType_id6clJcrJXo2_, canMangleNames_id4J$Pz4XGFls, dependencies_id6clJcrJYPM5, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, addGenericChunkDependency_id94IdDK$n_l, isImplementationArtifact_id7Vd878ENIh6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> visibleContentsOfType_id6clJcrJXo2_(@NotNull SNode __thisNode__, SNode targetConcept) {
     return VisibleContentsOfTypeCacheHelper.visibleConceptsOfTypeInGenExt(__thisNode__, targetConcept);
@@ -58,10 +55,6 @@ public final class GenExtModule__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ GenExtModule__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

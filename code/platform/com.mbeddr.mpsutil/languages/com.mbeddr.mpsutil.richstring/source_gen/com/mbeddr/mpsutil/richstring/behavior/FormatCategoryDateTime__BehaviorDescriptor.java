@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -29,10 +28,8 @@ public final class FormatCategoryDateTime__BehaviorDescriptor extends BaseBHDesc
   public static final SMethod<Object> getExampleObject_id6Go9U2y2SeO = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("getExampleObject").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532366259124L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
   public static final SMethod<String> getExpressionDescription_id6Go9U2yp2P0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getExpressionDescription").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532372069696L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getApplicableTypes_id6Go9U2y2JzF, getTypicalTypes_id6Go9U2y64Le, getExampleObject_id6Go9U2y2SeO, getExpressionDescription_id6Go9U2yp2P0);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getApplicableTypes_id6Go9U2y2JzF, getTypicalTypes_id6Go9U2y64Le, getExampleObject_id6Go9U2y2SeO, getExpressionDescription_id6Go9U2yp2P0);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getApplicableTypes_id6Go9U2y2JzF(@NotNull SAbstractConcept __thisConcept__) {
     return ListSequence.fromListAndArray(new ArrayList<SNode>(), _quotation_createNode_kes4mo_a0a0a0(), _quotation_createNode_kes4mo_b0a0a0(), _quotation_createNode_kes4mo_c0a0a0(), _quotation_createNode_kes4mo_d0a0a0());
@@ -50,10 +47,6 @@ public final class FormatCategoryDateTime__BehaviorDescriptor extends BaseBHDesc
   /*package*/ FormatCategoryDateTime__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

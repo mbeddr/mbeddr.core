@@ -15,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -24,10 +23,8 @@ public final class Header__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<String> heading_idI_3mOg_ExQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("heading").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(839091667655370870L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(heading_idI_3mOg_ExQ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(heading_idI_3mOg_ExQ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String heading_idI_3mOg_ExQ(@NotNull SNode __thisNode__) {
     return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__));
@@ -36,10 +33,6 @@ public final class Header__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Header__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

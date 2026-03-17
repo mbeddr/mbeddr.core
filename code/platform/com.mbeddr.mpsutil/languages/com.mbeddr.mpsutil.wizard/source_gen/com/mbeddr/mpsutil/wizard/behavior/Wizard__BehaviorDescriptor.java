@@ -21,7 +21,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.baseLanguage.behavior.ClassConcept__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -41,10 +40,8 @@ public final class Wizard__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> getFqStepName_id44rcFjhUtTc = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFqStepName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4691399189033770572L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> getFqName_id44rcFjhYmeR = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFqName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4691399189034787767L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genClassName_idrF8Sb8V2sC, getVisibleSteps_idrF8Sb8ZYzQ, requiresInit_idrF8Sb98vil, getOutputType_idrF8Sb98y7f, genOutputInitExpression_id2rKkvx5Reom, getFqStepName_id44rcFjhUtTc, getFqName_id44rcFjhYmeR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genClassName_idrF8Sb8V2sC, getVisibleSteps_idrF8Sb8ZYzQ, requiresInit_idrF8Sb98vil, getOutputType_idrF8Sb98y7f, genOutputInitExpression_id2rKkvx5Reom, getFqStepName_id44rcFjhUtTc, getFqName_id44rcFjhYmeR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String genClassName_idrF8Sb8V2sC(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + "_Wizard";
@@ -93,10 +90,6 @@ public final class Wizard__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Wizard__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

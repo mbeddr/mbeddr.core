@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,19 +21,13 @@ public final class IPrintGenFunction__BehaviorDescriptor extends BaseBHDescripto
 
   public static final SMethod<String> genFunName_id2CzB6HCHdar = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genFunName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3036442558909960859L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genFunName_id2CzB6HCHdar);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genFunName_id2CzB6HCHdar);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IPrintGenFunction__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

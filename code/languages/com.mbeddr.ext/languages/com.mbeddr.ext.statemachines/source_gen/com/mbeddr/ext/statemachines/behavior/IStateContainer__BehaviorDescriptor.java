@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,19 +22,13 @@ public final class IStateContainer__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<SNode> getInitial_id7rX8gRKHUDJ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInitial").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8574045609340152431L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
   public static final SMethod<Iterable<SNode>> states_id3FSHg1aCVUC = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("states").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4249345261280935592L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getInitial_id7rX8gRKHUDJ, states_id3FSHg1aCVUC);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getInitial_id7rX8gRKHUDJ, states_id3FSHg1aCVUC);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IStateContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -31,10 +30,8 @@ public final class ModelContentAsImageParagraph__BehaviorDescriptor extends Base
   public static final SMethod<String> uniqueName_id627_yy34GmM = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("uniqueName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6955693250238924210L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
   public static final SMethod<SNode> getPath_id3UlEobTHU0G = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4509696981881823276L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniqueName_id627_yy34GmM, getPath_id3UlEobTHU0G);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniqueName_id627_yy34GmM, getPath_id3UlEobTHU0G);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String uniqueName_id627_yy34GmM(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.Document$4G, false, false), PROPS.name$MnvL) + "_" + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + "_" + IDocReferencable__BehaviorDescriptor.stableId_id6jiGbW_aIil.invoke(__thisNode__);
@@ -46,10 +43,6 @@ public final class ModelContentAsImageParagraph__BehaviorDescriptor extends Base
   /*package*/ ModelContentAsImageParagraph__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

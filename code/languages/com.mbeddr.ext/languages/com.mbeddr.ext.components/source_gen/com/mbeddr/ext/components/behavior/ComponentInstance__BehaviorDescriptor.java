@@ -20,7 +20,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.LinkedList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -46,10 +45,8 @@ public final class ComponentInstance__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<Iterable<SNode>> getInputPorts_id7nJums3A_gz = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getInputPorts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8498144505220453411L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
   public static final SMethod<Iterable<SNode>> getOutputPorts_id7nJums3AVys = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getOutputPorts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8498144505220544668L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genGlobalVarName_idwOd6nl4XGv, genWireFunctionName_id6JVEnxIjBuf, getConnectedInstanceAndProvidedPort_idwOd6nl53E$, getMultiConnectedInstanceAndProvidedPort_id2ZUGF54lpvh, getEffectiveRunnable_idwOd6nl5fEm, getInitializerForField_idF_QT7XsONw, getOutboundAssemblyConnectors_id3_MZZHrtKjb, isComponentAtomic_id5vJvKD7xsW0, fieldInitializers_id29JE8qNu0TX, fieldInitializerByFieldName_id2LSSMkCGHed, requiresComponentInitializer_id29JE8qNvthD, getInputPorts_id7nJums3A_gz, getOutputPorts_id7nJums3AVys);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genGlobalVarName_idwOd6nl4XGv, genWireFunctionName_id6JVEnxIjBuf, getConnectedInstanceAndProvidedPort_idwOd6nl53E$, getMultiConnectedInstanceAndProvidedPort_id2ZUGF54lpvh, getEffectiveRunnable_idwOd6nl5fEm, getInitializerForField_idF_QT7XsONw, getOutboundAssemblyConnectors_id3_MZZHrtKjb, isComponentAtomic_id5vJvKD7xsW0, fieldInitializers_id29JE8qNu0TX, fieldInitializerByFieldName_id2LSSMkCGHed, requiresComponentInitializer_id29JE8qNvthD, getInputPorts_id7nJums3A_gz, getOutputPorts_id7nJums3AVys);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String genGlobalVarName_idwOd6nl4XGv(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(SNodeOperations.cast(SNodeOperations.getParent(__thisNode__), CONCEPTS.AbstractInstanceConfiguration$QD), PROPS.name$MnvL) + "_" + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + "__instance";
@@ -109,10 +106,6 @@ public final class ComponentInstance__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ ComponentInstance__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

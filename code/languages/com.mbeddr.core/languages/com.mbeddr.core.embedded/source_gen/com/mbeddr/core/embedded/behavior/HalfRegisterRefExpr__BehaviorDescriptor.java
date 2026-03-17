@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -28,10 +27,8 @@ public final class HalfRegisterRefExpr__BehaviorDescriptor extends BaseBHDescrip
   public static final SMethod<SNode> register_id5W7baq$5NAe = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("register").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6847490852669307278L).languageId(0xbe99293a162652b5L, 0x783af01f87a7412cL).build2();
   public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isLValue_id6iIoqg1yDKH, register_id5W7baq$5NAe, getPriolevel_id5HxjapwgqKu);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isLValue_id6iIoqg1yDKH, register_id5W7baq$5NAe, getPriolevel_id5HxjapwgqKu);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isLValue_id6iIoqg1yDKH(@NotNull SNode __thisNode__) {
     return true;
@@ -46,10 +43,6 @@ public final class HalfRegisterRefExpr__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ HalfRegisterRefExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

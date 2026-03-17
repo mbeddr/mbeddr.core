@@ -16,7 +16,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.editor.runtime.impl.cellActions.CommentUtil;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -31,10 +30,8 @@ public final class ICommentedCode__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> migrateAutomatically_id243ufko$Auf = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("migrateAutomatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2378878022256322447L).languageId(0x90e312ea330e1a00L, 0x63e0e5665131447eL).build2();
   public static final SMethod<Void> performMigration_id243ufko$Aur = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("performMigration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2378878022256322459L).languageId(0x90e312ea330e1a00L, 0x63e0e5665131447eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setup_id65XyadYP4XN, replaceWithGenericComment_id57qKfjsi03z, getDeprecationMessage_id243ufko$Au9, hasMigration_id243ufko$Aul, migrateAutomatically_id243ufko$Auf, performMigration_id243ufko$Aur);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setup_id65XyadYP4XN, replaceWithGenericComment_id57qKfjsi03z, getDeprecationMessage_id243ufko$Au9, hasMigration_id243ufko$Aul, migrateAutomatically_id243ufko$Auf, performMigration_id243ufko$Aur);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void setup_id65XyadYP4XN(@NotNull SNode __thisNode__) {
   }
@@ -58,10 +55,6 @@ public final class ICommentedCode__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ICommentedCode__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

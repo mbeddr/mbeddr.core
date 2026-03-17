@@ -20,7 +20,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.core.base.behavior.IDetectCycle__BehaviorDescriptor;
 import com.mbeddr.core.expressions.behavior.Type__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -44,10 +43,8 @@ public final class UnionType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> createAssignmentRightHand_id6IWRcVON9Ja = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createAssignmentRightHand").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7763322639108316106L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> createAssignmentLeftHand_id6IWRcVON8YI = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createAssignmentLeftHand").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7763322639108313006L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(rebindToProxy_id7jSUHHvkApb, getDefaultValue_id4jc_TWT4LGD, getSUDeclaration_id3bHYGwztGSo, checkForWarnings_id5aZFu$7GSiB, getTypeCalculationNodeForElement_id7FkLcyyQK$0, getDeclaration_id59zzgFRcVlN, getUsedBytes_id61lw97FtLtJ, getElements_idIPRL99Lfbu, checkForErrors_id7FkLcyyQK$6, createAssignmentRightHand_id6IWRcVON9Ja, createAssignmentLeftHand_id6IWRcVON8YI);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(rebindToProxy_id7jSUHHvkApb, getDefaultValue_id4jc_TWT4LGD, getSUDeclaration_id3bHYGwztGSo, checkForWarnings_id5aZFu$7GSiB, getTypeCalculationNodeForElement_id7FkLcyyQK$0, getDeclaration_id59zzgFRcVlN, getUsedBytes_id61lw97FtLtJ, getElements_idIPRL99Lfbu, checkForErrors_id7FkLcyyQK$6, createAssignmentRightHand_id6IWRcVON9Ja, createAssignmentLeftHand_id6IWRcVON8YI);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void rebindToProxy_id7jSUHHvkApb(@NotNull SNode __thisNode__, SNode proxyElement) {
     SLinkOperations.setTarget(__thisNode__, LINKS.union$RA0L, SNodeOperations.cast(proxyElement, CONCEPTS.UnionDeclaration$pl));
@@ -97,10 +94,6 @@ public final class UnionType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ UnionType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

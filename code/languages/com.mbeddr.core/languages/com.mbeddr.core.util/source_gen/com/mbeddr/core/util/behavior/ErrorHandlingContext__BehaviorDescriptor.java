@@ -19,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -37,10 +36,8 @@ public final class ErrorHandlingContext__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<SNode> errorVariableType_id4jiR73uE$7C = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("errorVariableType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4959268517018485224L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
   public static final SMethod<Integer> requiredNumberOfBits_id4jiR73uGmwk = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("requiredNumberOfBits").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4959268517018953748L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(occuableErrors_id7kmhBx1KION, handlerFor_id7kmhBx2gSuu, hasHandlerFor_id7kmhBx2gXbq, addMissingHandlers_id7kmhBx3QV8C, errorVariableType_id4jiR73uE$7C, requiredNumberOfBits_id4jiR73uGmwk);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(occuableErrors_id7kmhBx1KION, handlerFor_id7kmhBx2gSuu, hasHandlerFor_id7kmhBx2gXbq, addMissingHandlers_id7kmhBx3QV8C, errorVariableType_id4jiR73uE$7C, requiredNumberOfBits_id4jiR73uGmwk);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> occuableErrors_id7kmhBx1KION(@NotNull SNode __thisNode__) {
     List<SNode> res = new ArrayList<SNode>();
@@ -88,10 +85,6 @@ public final class ErrorHandlingContext__BehaviorDescriptor extends BaseBHDescri
   /*package*/ ErrorHandlingContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

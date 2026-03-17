@@ -13,7 +13,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,19 +22,13 @@ public final class ISelfTypingInArrayAccessExpression__BehaviorDescriptor extend
   public static final SMethod<Boolean> isAllowedInExpression_id2Qo$Q2I7Rfr = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isAllowedInExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3285537971614217179L).languageId(0x97545a516023bfaaL, 0x3bf5377ae9044dedL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> getTypeOfOperation_id2Qo$Q2I7Rfy = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTypeOfOperation").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3285537971614217186L).languageId(0x97545a516023bfaaL, 0x3bf5377ae9044dedL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isAllowedInExpression_id2Qo$Q2I7Rfr, getTypeOfOperation_id2Qo$Q2I7Rfy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isAllowedInExpression_id2Qo$Q2I7Rfr, getTypeOfOperation_id2Qo$Q2I7Rfy);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ ISelfTypingInArrayAccessExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

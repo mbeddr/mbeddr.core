@@ -20,7 +20,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.nodeEditor.EditorSettings;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -56,10 +55,8 @@ public final class IValueDebuggable__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<Boolean> isDebuggerExpanded_id6KLCBzCTb8P = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDebuggerExpanded").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7796191070142116405L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Void> setDebuggerExpanded_id6KLCBzCTbNC = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setDebuggerExpanded").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7796191070142119144L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(shouldShowDebugger_id6KLCBzCT0$P, doNotShowDebugger_id$bJ0jgWtSA, hasDebugger_id6KLCBzCUvse, addDebugger_id6KLCBzCTmKX, clearDebugger_id$bJ0jh_4MI, clearAllDebuggers_id$bJ0jh_6s5, debugAll_id$bJ0jh_XWF, debugAll_id3$DH87aJHKz, updateDebugger_id6KLCBzCTpEk, updateDebuggerPresentation_id3$DH87aJJo_, getDebuggerColor_idPzX5jzXl1d, getDebuggerFontSize_id2BbcAuIkRls, hasDebuggerHorizontalLayout_idPzX5j$0sLB, setDebuggerValueSource_id1c0z7yfEqOE, removeDebuggerValueSource_id1c0z7yfEZ_n, getDebuggerValueSource_id1c0z7yfF2FB, getDebuggerValue_id1c0z7yfF6FP, getDebuggerValueAsString_id1c0z7yfFkqB, getDebuggerKeyAsString_id6KLCBzCT3Mj, setDebuggerKeyFromString_id6KLCBzCT5Dv, expandDebuggerOneLevel_id$bJ0jgQ845, expandDebuggerAllLevels_id$bJ0jgQ84O, collapseDebugger_id$bJ0jgQ83V, getDebuggerValueSourcePresentation_id3$DH87aJFMo, setDebuggerValueSourcePresentation_id3$DH87aJCql, isDebuggerExpanded_id6KLCBzCTb8P, setDebuggerExpanded_id6KLCBzCTbNC);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(shouldShowDebugger_id6KLCBzCT0$P, doNotShowDebugger_id$bJ0jgWtSA, hasDebugger_id6KLCBzCUvse, addDebugger_id6KLCBzCTmKX, clearDebugger_id$bJ0jh_4MI, clearAllDebuggers_id$bJ0jh_6s5, debugAll_id$bJ0jh_XWF, debugAll_id3$DH87aJHKz, updateDebugger_id6KLCBzCTpEk, updateDebuggerPresentation_id3$DH87aJJo_, getDebuggerColor_idPzX5jzXl1d, getDebuggerFontSize_id2BbcAuIkRls, hasDebuggerHorizontalLayout_idPzX5j$0sLB, setDebuggerValueSource_id1c0z7yfEqOE, removeDebuggerValueSource_id1c0z7yfEZ_n, getDebuggerValueSource_id1c0z7yfF2FB, getDebuggerValue_id1c0z7yfF6FP, getDebuggerValueAsString_id1c0z7yfFkqB, getDebuggerKeyAsString_id6KLCBzCT3Mj, setDebuggerKeyFromString_id6KLCBzCT5Dv, expandDebuggerOneLevel_id$bJ0jgQ845, expandDebuggerAllLevels_id$bJ0jgQ84O, collapseDebugger_id$bJ0jgQ83V, getDebuggerValueSourcePresentation_id3$DH87aJFMo, setDebuggerValueSourcePresentation_id3$DH87aJCql, isDebuggerExpanded_id6KLCBzCTb8P, setDebuggerExpanded_id6KLCBzCTbNC);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean shouldShowDebugger_id6KLCBzCT0$P(@NotNull SNode __thisNode__) {
     return !((boolean) IValueDebuggable__BehaviorDescriptor.doNotShowDebugger_id$bJ0jgWtSA.invoke(__thisNode__)) && ((boolean) IValueDebuggable__BehaviorDescriptor.isDebuggerExpanded_id6KLCBzCTb8P.invoke(__thisNode__));
@@ -188,10 +185,6 @@ public final class IValueDebuggable__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ IValueDebuggable__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

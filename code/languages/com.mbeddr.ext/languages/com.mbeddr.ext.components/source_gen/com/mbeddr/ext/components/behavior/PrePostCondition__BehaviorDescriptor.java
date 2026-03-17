@@ -25,7 +25,7 @@ public final class PrePostCondition__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<String> preLabelName_id3L_Vuqbpjyf = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("preLabelName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4352146189360380047L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> postLabelName_id2roVptdTm$4 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("postLabelName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2799248402513488132L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preLabelName_id3L_Vuqbpjyf, postLabelName_id2roVptdTm$4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preLabelName_id3L_Vuqbpjyf, postLabelName_id2roVptdTm$4);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.expr$Be$c, null);

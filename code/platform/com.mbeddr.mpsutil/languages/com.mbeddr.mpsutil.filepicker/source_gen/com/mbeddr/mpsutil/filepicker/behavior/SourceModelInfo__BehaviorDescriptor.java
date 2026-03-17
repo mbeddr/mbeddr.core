@@ -19,7 +19,6 @@ import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import org.jetbrains.mps.openapi.model.SModelId;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.model.SModelReference;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -29,10 +28,8 @@ public final class SourceModelInfo__BehaviorDescriptor extends BaseBHDescriptor 
 
   public static final SMethod<SModel> resolve_id3YjQI$iKLTv = new SMethodBuilder<SModel>(new SJavaCompoundTypeImpl(SModel.class)).name("resolve").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4581245940542938719L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter(SRepository.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(resolve_id3YjQI$iKLTv);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(resolve_id3YjQI$iKLTv);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SModel resolve_id3YjQI$iKLTv(@NotNull SNode __thisNode__, SRepository repository) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
@@ -44,10 +41,6 @@ public final class SourceModelInfo__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ SourceModelInfo__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

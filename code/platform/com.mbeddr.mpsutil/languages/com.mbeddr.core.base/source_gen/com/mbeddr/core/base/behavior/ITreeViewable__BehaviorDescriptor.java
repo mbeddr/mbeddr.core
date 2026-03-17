@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class ITreeViewable__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> actuallyHasTreeNode_id72AnQbQqfyh = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("actuallyHasTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8117280257027405969L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<AbstractTreeViewNode>(new SJavaCompoundTypeImpl(AbstractTreeViewNode.class)).name("getTreeNode").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(actuallyHasTreeNode_id72AnQbQqfyh, getTreeNode_id7NyyyjNtbn2);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(actuallyHasTreeNode_id72AnQbQqfyh, getTreeNode_id7NyyyjNtbn2);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean actuallyHasTreeNode_id72AnQbQqfyh(@NotNull SNode __thisNode__) {
     return true;
@@ -35,10 +32,6 @@ public final class ITreeViewable__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ITreeViewable__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

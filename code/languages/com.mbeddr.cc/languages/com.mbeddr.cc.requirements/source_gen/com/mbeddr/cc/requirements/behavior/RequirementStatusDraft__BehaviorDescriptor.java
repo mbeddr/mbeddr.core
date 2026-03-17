@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class RequirementStatusDraft__BehaviorDescriptor extends BaseBHDesc
 
   public static final SMethod<Color> getColor_id2U5fsQemzG5 = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3352153450713070341L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getColor_id2U5fsQemzG5);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getColor_id2U5fsQemzG5);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Color getColor_id2U5fsQemzG5(@NotNull SNode __thisNode__) {
     return Color.red;
@@ -35,10 +32,6 @@ public final class RequirementStatusDraft__BehaviorDescriptor extends BaseBHDesc
   /*package*/ RequirementStatusDraft__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

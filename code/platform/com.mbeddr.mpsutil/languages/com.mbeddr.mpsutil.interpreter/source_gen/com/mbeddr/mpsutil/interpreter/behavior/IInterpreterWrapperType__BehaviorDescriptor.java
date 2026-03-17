@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,19 +22,13 @@ public final class IInterpreterWrapperType__BehaviorDescriptor extends BaseBHDes
   public static final SMethod<SNode> wrappedType_id6bG6MAFRDvi = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("wrappedType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7128102176011753426L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
   public static final SMethod<SNode> reWrap_id6bG6MAG4Mv3 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("reWrap").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7128102176015198147L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(wrappedType_id6bG6MAFRDvi, reWrap_id6bG6MAG4Mv3);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(wrappedType_id6bG6MAFRDvi, reWrap_id6bG6MAG4Mv3);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IInterpreterWrapperType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

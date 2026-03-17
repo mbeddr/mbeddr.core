@@ -19,7 +19,6 @@ import java.math.BigInteger;
 import java.math.BigDecimal;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -34,10 +33,8 @@ public final class FractionalExponent__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<Integer> getDenumerator_id3j3yk3guABz = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getDenumerator").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3802033421899426275L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
   public static final SMethod<Void> negate_id3j3yk3gDZSH = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("negate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3802033421902413357L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, getNumerator_id3j3yk3guAC3, getDenumerator_id3j3yk3guABz, negate_id3j3yk3gDZSH);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, getNumerator_id3j3yk3guAC3, getDenumerator_id3j3yk3guABz, negate_id3j3yk3gDZSH);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     int num = ((int) Exponent__BehaviorDescriptor.getNumerator_id3j3yk3guAC3.invoke(__thisNode__));
@@ -83,10 +80,6 @@ public final class FractionalExponent__BehaviorDescriptor extends BaseBHDescript
   /*package*/ FractionalExponent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

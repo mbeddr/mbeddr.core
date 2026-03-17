@@ -17,7 +17,6 @@ import com.mbeddr.core.base.behavior.AssessmentResult__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -33,10 +32,8 @@ public final class ReqWithoutWPResult__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<String> uniqueIdentifier_idK292flwHwe = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("uniqueIdentifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(865293814733133838L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Void> updateValues_id5L$H31Kf5$y = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6657644269294868770L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(sortKey_id7yuakSiLB02, groupLabel_id26F1Swi9trp, groupNode_id26F1SwiacwF, uniqueIdentifier_idK292flwHwe, updateValues_id5L$H31Kf5$y);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(sortKey_id7yuakSiLB02, groupLabel_id26F1Swi9trp, groupNode_id26F1SwiacwF, uniqueIdentifier_idK292flwHwe, updateValues_id5L$H31Kf5$y);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String sortKey_id7yuakSiLB02(@NotNull SNode __thisNode__) {
     return AssessmentResult__BehaviorDescriptor.groupLabel_id26F1Swi9trp.invoke(__thisNode__) + "." + SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.req$HmYe), PROPS.name$MnvL);
@@ -59,10 +56,6 @@ public final class ReqWithoutWPResult__BehaviorDescriptor extends BaseBHDescript
   /*package*/ ReqWithoutWPResult__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

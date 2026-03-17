@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -24,10 +23,8 @@ public final class ConcurrentQueueDeclaration__BehaviorDescriptor extends BaseBH
 
   public static final SMethod<String> genEventName_id1zeZsIbcufQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genEventName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1787645152768156662L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genEventName_id1zeZsIbcufQ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genEventName_id1zeZsIbcufQ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String genEventName_id1zeZsIbcufQ(@NotNull SNode __thisNode__, SNode gv) {
     return SPropertyOperations.getString(gv, PROPS.name$MnvL) + "_event";
@@ -36,10 +33,6 @@ public final class ConcurrentQueueDeclaration__BehaviorDescriptor extends BaseBH
   /*package*/ ConcurrentQueueDeclaration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

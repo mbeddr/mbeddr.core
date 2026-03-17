@@ -25,7 +25,6 @@ import java.math.BigInteger;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Comparator;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -50,10 +49,8 @@ public final class EnumType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> getDeclaration_id59zzgFRcVlN = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDeclaration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5936743812040996211L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
   public static final SMethod<SNode> getDefaultValue_id4jc_TWT4LGD = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4957503999941221161L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, rebindToProxy_id7jSUHHvkApb, referencedModuleContent_id7jSUHHvkAph, canBeUsedInSwitch_id1z9MsBsVqFS, isInitializedEnumLiteral_id158WV_K2Cdt, getValue_id158WV_K2CDC, getUsedBytes_id61lw97FtLtJ, getIntType_id7x9Z_y1SmZ6, getPrintfFormatSpecifier_id4XMHJL4FDjg, maxValue_id7x9Z_y1St1v, getDeclaration_id59zzgFRcVlN, getDefaultValue_id4jc_TWT4LGD);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, rebindToProxy_id7jSUHHvkApb, referencedModuleContent_id7jSUHHvkAph, canBeUsedInSwitch_id1z9MsBsVqFS, isInitializedEnumLiteral_id158WV_K2Cdt, getValue_id158WV_K2CDC, getUsedBytes_id61lw97FtLtJ, getIntType_id7x9Z_y1SmZ6, getPrintfFormatSpecifier_id4XMHJL4FDjg, maxValue_id7x9Z_y1St1v, getDeclaration_id59zzgFRcVlN, getDefaultValue_id4jc_TWT4LGD);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.enum$UImg), PROPS.name$MnvL) + Type__BehaviorDescriptor.volatileConstPrefix_id7jSUHHviDCf.invoke(__thisNode__);
@@ -121,10 +118,6 @@ public final class EnumType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ EnumType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

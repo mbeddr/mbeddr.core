@@ -17,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -33,10 +32,8 @@ public final class Extension__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> getOutputType_idrF8Sb98y7f = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getOutputType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228381749711L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
   public static final SMethod<String> getFqStepName_id44rcFjhUtTc = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFqStepName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4691399189033770572L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getProcess_idrF8Sb9aE$w, getVisibleSteps_idrF8Sb8ZYzQ, getOutputType_idrF8Sb98y7f, getFqStepName_id44rcFjhUtTc);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getProcess_idrF8Sb9aE$w, getVisibleSteps_idrF8Sb8ZYzQ, getOutputType_idrF8Sb98y7f, getFqStepName_id44rcFjhUtTc);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getProcess_idrF8Sb9aE$w(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.WizardExtension$$o, false, false), LINKS.wizard$OSOk);
@@ -59,10 +56,6 @@ public final class Extension__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Extension__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

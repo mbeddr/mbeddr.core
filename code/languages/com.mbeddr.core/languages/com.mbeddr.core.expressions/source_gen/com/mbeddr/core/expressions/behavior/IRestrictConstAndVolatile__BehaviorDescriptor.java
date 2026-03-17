@@ -13,7 +13,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,19 +22,13 @@ public final class IRestrictConstAndVolatile__BehaviorDescriptor extends BaseBHD
   public static final SMethod<Boolean> canBeConst_id5y_zf_M4wuj = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeConst").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6387666649483446163L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> canBeVolatile_id5y_zf_M4wup = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeVolatile").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6387666649483446169L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeConst_id5y_zf_M4wuj, canBeVolatile_id5y_zf_M4wup);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeConst_id5y_zf_M4wuj, canBeVolatile_id5y_zf_M4wup);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IRestrictConstAndVolatile__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

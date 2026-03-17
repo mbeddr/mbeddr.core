@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,10 +21,8 @@ public final class IComponentInstanceAware__BehaviorDescriptor extends BaseBHDes
 
   public static final SMethod<String> componentInstanceName_id5hYHEwZAyxT = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("componentInstanceName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579989317753L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(componentInstanceName_id5hYHEwZAyxT);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(componentInstanceName_id5hYHEwZAyxT);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String componentInstanceName_id5hYHEwZAyxT(@NotNull SNode __thisNode__) {
     return "___componentInstance";
@@ -34,10 +31,6 @@ public final class IComponentInstanceAware__BehaviorDescriptor extends BaseBHDes
   /*package*/ IComponentInstanceAware__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

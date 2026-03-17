@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,10 +21,8 @@ public final class SuppressAllWarnings__BehaviorDescriptor extends BaseBHDescrip
 
   public static final SMethod<String> getName_id7U3Fobb_8Gt = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9116320848000879389L).languageId(0xa37d9ab77a2ccbd2L, 0xc1c2a88a323c4605L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getName_id7U3Fobb_8Gt);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getName_id7U3Fobb_8Gt);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getName_id7U3Fobb_8Gt(@NotNull SAbstractConcept __thisConcept__) {
     return "all";
@@ -34,10 +31,6 @@ public final class SuppressAllWarnings__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ SuppressAllWarnings__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

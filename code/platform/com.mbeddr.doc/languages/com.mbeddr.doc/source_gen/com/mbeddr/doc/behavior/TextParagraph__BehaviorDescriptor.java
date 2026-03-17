@@ -39,7 +39,7 @@ public final class TextParagraph__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<AbstractTreeViewNode>(new SJavaCompoundTypeImpl(AbstractTreeViewNode.class)).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<Boolean> actuallyShowInOutline_id3il$LAnRN_V = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("actuallyShowInOutline").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3789096399633594747L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addWord_id519ky_SnQ7F, addString_id519ky_SnQaO, containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, actuallyHasTreeNode_id72AnQbQqfyh, getTreeNode_id7NyyyjNtbn2, actuallyShowInOutline_id3il$LAnRN_V);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addWord_id519ky_SnQ7F, addString_id519ky_SnQaO, containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, actuallyHasTreeNode_id72AnQbQqfyh, getTreeNode_id7NyyyjNtbn2, actuallyShowInOutline_id3il$LAnRN_V);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.text$tl4m, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x92d2ea165a424fdfL, 0xa676c7604efe3504L, 0x237c8da86a9e4e61L, "de.slisson.mps.richtext.structure.Text")));

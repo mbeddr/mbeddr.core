@@ -17,7 +17,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import org.apache.commons.lang3.StringUtils;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.core.behavior.INamedConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -30,10 +29,8 @@ public final class ResourceBundle__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Class<MultilingualResourceBundleProvider>> getResourceBundleProviderClass_id15QjPzreRPs = new SMethodBuilder<Class<MultilingualResourceBundleProvider>>(new SJavaCompoundTypeImpl(Class.class)).name("getResourceBundleProviderClass").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1258280388950457692L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
   public static final SMethod<MultilingualResourceBundleProvider> getResourceBundleProvider_id5Q1XZgMFUWw = new SMethodBuilder<MultilingualResourceBundleProvider>(new SJavaCompoundTypeImpl(MultilingualResourceBundleProvider.class)).name("getResourceBundleProvider").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6737939145717428000L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBundleProviderClassName_id5Q1XZgMoKBK, getFQBundleProviderClassName_id5Q1XZgMFyWg, getResourceBundleProviderClass_id15QjPzreRPs, getResourceBundleProvider_id5Q1XZgMFUWw);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBundleProviderClassName_id5Q1XZgMoKBK, getFQBundleProviderClassName_id5Q1XZgMFyWg, getResourceBundleProviderClass_id15QjPzreRPs, getResourceBundleProvider_id5Q1XZgMFUWw);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getBundleProviderClassName_id5Q1XZgMoKBK(@NotNull SNode __thisNode__) {
     return StringUtils.deleteWhitespace(SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL)) + "BundleClass";
@@ -69,10 +66,6 @@ public final class ResourceBundle__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ResourceBundle__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

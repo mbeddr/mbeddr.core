@@ -16,7 +16,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.io.File;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -28,10 +27,8 @@ public final class Resource__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isValidFile_id5yxqZJwzQu4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isValidFile").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136531844L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
   public static final SMethod<String> getEditTimeFileName_id5yxqZJwzQzV = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEditTimeFileName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136532219L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isValidFile_id5yxqZJwzQu4, getEditTimeFileName_id5yxqZJwzQzV);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isValidFile_id5yxqZJwzQu4, getEditTimeFileName_id5yxqZJwzQzV);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isValidFile_id5yxqZJwzQu4(@NotNull SNode __thisNode__) {
     if (SLinkOperations.getTarget(__thisNode__, LINKS.path$6g6j) != null) {
@@ -47,10 +44,6 @@ public final class Resource__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Resource__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

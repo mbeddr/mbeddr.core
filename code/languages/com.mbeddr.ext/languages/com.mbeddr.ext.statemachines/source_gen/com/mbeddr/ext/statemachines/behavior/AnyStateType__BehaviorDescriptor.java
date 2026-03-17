@@ -15,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import com.mbeddr.core.expressions.behavior.Type__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -30,10 +29,8 @@ public final class AnyStateType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<String> getPrintfFormatSpecifier_id4XMHJL4FDjg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrintfFormatSpecifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5724839270941627600L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canBeVolatile_id2zhwXA_2SdW, canBeConst_id2zhwXA$TG$3, canBeUsedInSwitch_id1z9MsBsVqFS, getUsedBytes_id61lw97FtLtJ, getPrintfFormatSpecifier_id4XMHJL4FDjg);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canBeVolatile_id2zhwXA_2SdW, canBeConst_id2zhwXA$TG$3, canBeUsedInSwitch_id1z9MsBsVqFS, getUsedBytes_id61lw97FtLtJ, getPrintfFormatSpecifier_id4XMHJL4FDjg);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return SConceptOperations.conceptAlias(CONCEPTS.StateType$1U) + "<?>";
@@ -57,10 +54,6 @@ public final class AnyStateType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ AnyStateType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

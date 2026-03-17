@@ -21,7 +21,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import com.mbeddr.core.base.behavior.ICommentable__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -41,10 +40,8 @@ public final class StatementList__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Iterable<SNode>> nonEmptyStatements_id3uNea_OzjeN = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("nonEmptyStatements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4013613993373283251L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
   public static final SMethod<Boolean> isCommentable_id3RtPbXKOu_B = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCommentable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457953124863306087L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContributedLocalVariables_id3LB9aGm4C$b, requiresMultiLines_id1z9MsBsVy8R, containsRealStatements_id3MW0c4RnFdW, isEmpty_id6viY8n0RBRR, hasOnlyOne_id6viY8n0SlLR, hasMoreThanOne_id6viY8n0SYZg, nonEmptyStatements_id3uNea_OzjeN, isCommentable_id3RtPbXKOu_B);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContributedLocalVariables_id3LB9aGm4C$b, requiresMultiLines_id1z9MsBsVy8R, containsRealStatements_id3MW0c4RnFdW, isEmpty_id6viY8n0RBRR, hasOnlyOne_id6viY8n0SlLR, hasMoreThanOne_id6viY8n0SYZg, nonEmptyStatements_id3uNea_OzjeN, isCommentable_id3RtPbXKOu_B);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getContributedLocalVariables_id3LB9aGm4C$b(@NotNull SNode __thisNode__, final SNode node) {
     List<SNode> declarations = new ArrayList<SNode>();
@@ -88,10 +85,6 @@ public final class StatementList__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ StatementList__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class IMemberReference__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<SNode> getMember_id4t$0cw8yFNi = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getMember").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5144237533500718290L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<String> renderReadable_id2JIP8cA02hd = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3165701247831385165L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getMember_id4t$0cw8yFNi, renderReadable_id2JIP8cA02hd);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getMember_id4t$0cw8yFNi, renderReadable_id2JIP8cA02hd);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getMember_id4t$0cw8yFNi(@NotNull SNode __thisNode__) {
     return null;
@@ -35,10 +32,6 @@ public final class IMemberReference__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ IMemberReference__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

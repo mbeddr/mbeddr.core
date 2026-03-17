@@ -19,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -35,10 +34,8 @@ public final class LibraryRef__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<List<String>> getVariableNames_id6xoAPBjOH1K = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("getVariableNames").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246192L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
   public static final SMethod<String> getDefaultValue_id6xoAPBjOH2T = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246265L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(srcDir_id7fn1GcIvcZ9, includeDir_id1jv4Nu0bqCb, libDir_id1mfTBng0dAT, getVariableNames_id6xoAPBjOH1K, getDefaultValue_id6xoAPBjOH2T);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(srcDir_id7fn1GcIvcZ9, includeDir_id1jv4Nu0bqCb, libDir_id1mfTBng0dAT, getVariableNames_id6xoAPBjOH1K, getDefaultValue_id6xoAPBjOH2T);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String srcDir_id7fn1GcIvcZ9(@NotNull SNode __thisNode__) {
     SNode platform = SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.BuildConfiguration$kH, false, false), LINKS.platform$sQSW);
@@ -72,10 +69,6 @@ public final class LibraryRef__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ LibraryRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

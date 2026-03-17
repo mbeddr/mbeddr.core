@@ -16,7 +16,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -26,10 +25,8 @@ public final class CurrentModelScopeAndImported__BehaviorDescriptor extends Base
   public static final SMethod<Iterable<SNode>> findElements_id20N7CGtOl8_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2320231815875482149L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""), SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
   public static final SMethod<Iterable<SNode>> findElements_id7nkDZJXluPi = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8490595898229124434L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id20N7CGtOl8_, findElements_id7nkDZJXluPi);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id20N7CGtOl8_, findElements_id7nkDZJXluPi);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> findElements_id20N7CGtOl8_(@NotNull SNode __thisNode__, Project mpsProject, SModel currentModel) {
     return ((Iterable<SNode>) AssessmentScope__BehaviorDescriptor.findElements_id7nkDZJXluPi.invoke(__thisNode__, currentModel));
@@ -42,10 +39,6 @@ public final class CurrentModelScopeAndImported__BehaviorDescriptor extends Base
   /*package*/ CurrentModelScopeAndImported__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

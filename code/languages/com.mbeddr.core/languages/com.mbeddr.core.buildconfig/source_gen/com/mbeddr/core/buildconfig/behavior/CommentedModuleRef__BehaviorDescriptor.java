@@ -30,7 +30,7 @@ public final class CommentedModuleRef__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<Void> setup_id65XyadYP4XN = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setup").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7024921229556731763L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Void> performMigration_id243ufko$Aur = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("performMigration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2378878022256322459L).languageId(0x90e312ea330e1a00L, 0x63e0e5665131447eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setup_id65XyadYP4XN, performMigration_id243ufko$Aur);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setup_id65XyadYP4XN, performMigration_id243ufko$Aur);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
 

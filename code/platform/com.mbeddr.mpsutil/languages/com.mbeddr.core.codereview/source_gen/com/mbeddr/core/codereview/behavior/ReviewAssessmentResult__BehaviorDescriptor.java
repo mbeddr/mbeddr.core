@@ -17,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.base.behavior.AssessmentScope__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -33,10 +32,8 @@ public final class ReviewAssessmentResult__BehaviorDescriptor extends BaseBHDesc
   public static final SMethod<SNode> groupNode_id26F1SwiacwF = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("groupNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105270753323L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<String> groupLabel_id26F1Swi9trp = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("groupLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105270560473L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniqueIdentifier_idK292flwHwe, updateValues_id5L$H31Kf5$y, sortKey_id7yuakSiLB02, groupNode_id26F1SwiacwF, groupLabel_id26F1Swi9trp);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniqueIdentifier_idK292flwHwe, updateValues_id5L$H31Kf5$y, sortKey_id7yuakSiLB02, groupNode_id26F1SwiacwF, groupLabel_id26F1Swi9trp);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String uniqueIdentifier_idK292flwHwe(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.code$K9BJ).getNodeId() + "";
@@ -69,10 +66,6 @@ public final class ReviewAssessmentResult__BehaviorDescriptor extends BaseBHDesc
   /*package*/ ReviewAssessmentResult__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

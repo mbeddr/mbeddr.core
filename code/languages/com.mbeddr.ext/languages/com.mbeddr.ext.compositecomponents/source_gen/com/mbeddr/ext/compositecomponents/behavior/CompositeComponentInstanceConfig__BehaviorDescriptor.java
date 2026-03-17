@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.base.behavior.IRequiresConfigItem__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -32,10 +31,8 @@ public final class CompositeComponentInstanceConfig__BehaviorDescriptor extends 
   public static final SMethod<Iterable<SNode>> delegatingConnectors_id3_MZZHrtYLf = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("delegatingConnectors").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4139652462543367247L).languageId(0xaf92928ebf9c5966L, 0x54f2a59b97bb4c09L).build2();
   public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isExported_id6JVEnxIkpau, delegatingConnectors_id3_MZZHrtYLf, getConfigItem_id5HxjapwgqMb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isExported_id6JVEnxIkpau, delegatingConnectors_id3_MZZHrtYLf, getConfigItem_id5HxjapwgqMb);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isExported_id6JVEnxIkpau(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getBoolean(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.CompositeComponent$c8, false, false), PROPS.exported$V4am);
@@ -52,10 +49,6 @@ public final class CompositeComponentInstanceConfig__BehaviorDescriptor extends 
   /*package*/ CompositeComponentInstanceConfig__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

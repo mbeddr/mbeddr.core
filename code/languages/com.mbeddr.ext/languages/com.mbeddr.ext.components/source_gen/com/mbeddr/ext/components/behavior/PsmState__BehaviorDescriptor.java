@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,19 +21,13 @@ public final class PsmState__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Integer> stateIndex_id5oFMniD9j7Y = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("stateIndex").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014151537150L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(stateIndex_id5oFMniD9j7Y);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(stateIndex_id5oFMniD9j7Y);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ PsmState__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

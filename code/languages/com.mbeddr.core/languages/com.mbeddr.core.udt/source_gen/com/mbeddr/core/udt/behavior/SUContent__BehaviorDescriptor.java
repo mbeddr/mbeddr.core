@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -29,10 +28,8 @@ public final class SUContent__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> canBeTransparent_id6QawkaIYE8E = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeTransparent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7893263420323701290L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
   public static final SMethod<Iterable<SNode>> transparentlyVisibleContents_id6QawkaIMrYF = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("transparentlyVisibleContents").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7893263420320497579L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeTransparent_id6QawkaIYE8E, transparentlyVisibleContents_id6QawkaIMrYF);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeTransparent_id6QawkaIYE8E, transparentlyVisibleContents_id6QawkaIMrYF);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canBeTransparent_id6QawkaIYE8E(@NotNull SNode __thisNode__) {
     return SNodeOperations.isInstanceOf(__thisNode__, CONCEPTS.AnonymousStructDeclaration$i2) || (SNodeOperations.isInstanceOf(__thisNode__, CONCEPTS.Member$J1) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(__thisNode__, CONCEPTS.Member$J1), LINKS.type$sXU3), CONCEPTS.StructType$B3));
@@ -49,10 +46,6 @@ public final class SUContent__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ SUContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -25,7 +25,6 @@ import jetbrains.mps.module.ReloadableModule;
 import java.lang.reflect.Method;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.lang.reflect.InvocationTargetException;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
@@ -44,10 +43,8 @@ public final class MonitorFunction__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<String> getGeneratedFqClassName_id4TMjSvbDIXg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getGeneratedFqClassName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5652667926959288144L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
   public static final SMethod<MonitorResult> callFunction_id4TMjSvbDmOr = new SMethodBuilder<MonitorResult>(new SJavaCompoundTypeImpl(MonitorResult.class)).name("callFunction").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5652667926959189275L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getParameterConcepts_id2xELmDxyi2v, getExpectedReturnType_idhEwIGRD, getGeneratedFunctionName_id4TMjSvbDl9M, getGeneratedClassName_id4TMjSvbDmQE, getGeneratedFqClassName_id4TMjSvbDIXg, callFunction_id4TMjSvbDmOr);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getParameterConcepts_id2xELmDxyi2v, getExpectedReturnType_idhEwIGRD, getGeneratedFunctionName_id4TMjSvbDl9M, getGeneratedClassName_id4TMjSvbDmQE, getGeneratedFqClassName_id4TMjSvbDIXg, callFunction_id4TMjSvbDmOr);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SConcept> getParameterConcepts_id2xELmDxyi2v(@NotNull SNode __thisNode__) {
     return ListSequence.fromListAndArray(new ArrayList<SConcept>(), CONCEPTS.ProgramFragmentParam$Sk, CONCEPTS.EditorContextParam$Wg);
@@ -95,10 +92,6 @@ public final class MonitorFunction__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ MonitorFunction__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
