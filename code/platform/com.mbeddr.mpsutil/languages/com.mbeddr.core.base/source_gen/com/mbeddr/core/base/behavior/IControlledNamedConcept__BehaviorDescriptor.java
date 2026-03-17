@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -38,10 +37,8 @@ public final class IControlledNamedConcept__BehaviorDescriptor extends BaseBHDes
   public static final SMethod<Void> attachControlledName_id7Xe2aeU2QVC = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("attachControlledName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9173278990294281960L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> allowLocalLanguageSupport_id3x8oZgKaOZT = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowLocalLanguageSupport").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4055601364878446585L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(automaticallySyncPrescribedType_id7ii2FhSDlTM, requiresSuffix_id2tP2JaaUk87, constantsOnly_id2tP2Jab4RYq, nonConstantsOnly_idjEMQfWmgfG, hasControlledName_id36fOCWjiYoY, nameController_id36fOCWjj0uC, attachControlledName_id7Xe2aeU2QVC, allowLocalLanguageSupport_id3x8oZgKaOZT);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(automaticallySyncPrescribedType_id7ii2FhSDlTM, requiresSuffix_id2tP2JaaUk87, constantsOnly_id2tP2Jab4RYq, nonConstantsOnly_idjEMQfWmgfG, hasControlledName_id36fOCWjiYoY, nameController_id36fOCWjj0uC, attachControlledName_id7Xe2aeU2QVC, allowLocalLanguageSupport_id3x8oZgKaOZT);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean automaticallySyncPrescribedType_id7ii2FhSDlTM(@NotNull SNode __thisNode__) {
     return true;
@@ -73,10 +70,6 @@ public final class IControlledNamedConcept__BehaviorDescriptor extends BaseBHDes
   /*package*/ IControlledNamedConcept__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

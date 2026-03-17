@@ -29,7 +29,6 @@ import java.util.ArrayList;
 import com.mbeddr.mpsutil.filepicker.behavior.IPathVariableProvider__BehaviorDescriptor;
 import java.util.Objects;
 import jetbrains.mps.extapi.model.TransientSModel;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -56,10 +55,8 @@ public final class Binary__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<List<String>> getNames_id51aJIRsy1_6 = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("getNames").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785646600127256902L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
   public static final SMethod<String> getValue_id51aJIRsy2vi = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785646600127260626L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(executableFileName_idDp4TemBUyu, allReferencedModules_id3BbcpZJ16uV, referencedImplModules_id7RiewQ_lHPf, allReferencedChunks_id2B9nouIQ7SP, referencedExternalModules_id4$QybXn2c8g, referencedGeneratedHeaders_id3PUmE2lfQQW, referencedObjDescriptors_id4$QybXn2esV, getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, addReferencedModule_id7hczD5fYy0H, requiresPlatformConfig_idbwlJLAh1je, getEffectivelySupportedTargets_id4JZ_DSwgiY5, getNames_id51aJIRsy1_6, getValue_id51aJIRsy2vi);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(executableFileName_idDp4TemBUyu, allReferencedModules_id3BbcpZJ16uV, referencedImplModules_id7RiewQ_lHPf, allReferencedChunks_id2B9nouIQ7SP, referencedExternalModules_id4$QybXn2c8g, referencedGeneratedHeaders_id3PUmE2lfQQW, referencedObjDescriptors_id4$QybXn2esV, getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, addReferencedModule_id7hczD5fYy0H, requiresPlatformConfig_idbwlJLAh1je, getEffectivelySupportedTargets_id4JZ_DSwgiY5, getNames_id51aJIRsy1_6, getValue_id51aJIRsy2vi);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String executableFileName_idDp4TemBUyu(@NotNull SNode __thisNode__) {
     String command = SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
@@ -210,10 +207,6 @@ public final class Binary__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Binary__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

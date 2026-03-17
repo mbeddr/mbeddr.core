@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class AbstractBitType__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<SNode> getGenType_id2DouzknPPyL = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getGenType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3051323115995355313L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
   public static final SMethod<String> cutOffStringRepresentation_id34uiID1tHsG = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("cutOffStringRepresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3539348727140898604L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGenType_id2DouzknPPyL, cutOffStringRepresentation_id34uiID1tHsG);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGenType_id2DouzknPPyL, cutOffStringRepresentation_id34uiID1tHsG);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String cutOffStringRepresentation_id34uiID1tHsG(@NotNull SNode __thisNode__, String cValue) {
     String result = cValue;
@@ -40,10 +37,6 @@ public final class AbstractBitType__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ AbstractBitType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

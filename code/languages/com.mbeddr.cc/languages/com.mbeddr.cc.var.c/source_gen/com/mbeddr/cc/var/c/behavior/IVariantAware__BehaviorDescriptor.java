@@ -19,7 +19,6 @@ import com.mbeddr.cc.var.annotations.behavior.FeatureCondition__BehaviorDescript
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import com.mbeddr.cc.var.annotations.behavior.VarEditorModeHelper;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -35,10 +34,8 @@ public final class IVariantAware__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> getBaseCase_id5aNdPeN2by1 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getBaseCase").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5959167564566804609L).languageId(0xabe9d2ecc5fcf837L, 0x634736cfea734eb1L).build2();
   public static final SMethod<List<SNode>> getCaseNodes_id5aNdPeN2Iws = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getCaseNodes").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5959167564566947868L).languageId(0xabe9d2ecc5fcf837L, 0x634736cfea734eb1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getApplicableCase_id5aNdPeN2_xh, isApplicableCase_id5aNdPeN2daX, fmc_id5aNdPeN3XSM, showBaseCase_id5aNdPeN2d9e, getBaseCase_id5aNdPeN2by1, getCaseNodes_id5aNdPeN2Iws);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getApplicableCase_id5aNdPeN2_xh, isApplicableCase_id5aNdPeN2daX, fmc_id5aNdPeN3XSM, showBaseCase_id5aNdPeN2d9e, getBaseCase_id5aNdPeN2by1, getCaseNodes_id5aNdPeN2Iws);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int getApplicableCase_id5aNdPeN2_xh(@NotNull SNode __thisNode__) {
     SNode c = ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.conditions$6Yi8)).findFirst((it) -> (boolean) FeatureCondition__BehaviorDescriptor.isSelectedInRenderingConfiguration_id2h6lNbWo02u.invoke(it));
@@ -60,10 +57,6 @@ public final class IVariantAware__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IVariantAware__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

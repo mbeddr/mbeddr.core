@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,10 +21,8 @@ public final class StatusValueError__BehaviorDescriptor extends BaseBHDescriptor
 
   public static final SMethod<String> asString_id5_PV_QzP_MD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6446320527598836905L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asString_id5_PV_QzP_MD);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asString_id5_PV_QzP_MD);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String asString_id5_PV_QzP_MD(@NotNull SNode __thisNode__) {
     return "error";
@@ -34,10 +31,6 @@ public final class StatusValueError__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ StatusValueError__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

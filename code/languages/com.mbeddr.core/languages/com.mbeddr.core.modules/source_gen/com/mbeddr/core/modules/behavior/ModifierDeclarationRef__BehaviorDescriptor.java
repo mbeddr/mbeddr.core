@@ -17,7 +17,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -33,10 +32,8 @@ public final class ModifierDeclarationRef__BehaviorDescriptor extends BaseBHDesc
   public static final SMethod<String> afterText_id8PQYytSnuO = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("afterText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153969215412L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
   public static final SMethod<PrefixType> type_id8PQYytRYFO = new SMethodBuilder<PrefixType>(new SJavaCompoundTypeImpl(PrefixType.class)).name("type").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153969113844L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(rebindToProxy_id7jSUHHvkApb, referencedModuleContent_id7jSUHHvkAph, beforeText_id8PQYytSnuo, afterText_id8PQYytSnuO, type_id8PQYytRYFO);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(rebindToProxy_id7jSUHHvkApb, referencedModuleContent_id7jSUHHvkAph, beforeText_id8PQYytSnuo, afterText_id8PQYytSnuO, type_id8PQYytRYFO);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void rebindToProxy_id7jSUHHvkApb(@NotNull SNode __thisNode__, SNode proxyElement) {
     SLinkOperations.setTarget(__thisNode__, LINKS.decl$v8_, SNodeOperations.cast(proxyElement, CONCEPTS.ModifierModuleContent$F0));
@@ -61,10 +58,6 @@ public final class ModifierDeclarationRef__BehaviorDescriptor extends BaseBHDesc
   /*package*/ ModifierDeclarationRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

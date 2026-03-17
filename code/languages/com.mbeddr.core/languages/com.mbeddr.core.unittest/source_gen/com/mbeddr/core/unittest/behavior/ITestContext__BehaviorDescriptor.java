@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -26,10 +25,8 @@ public final class ITestContext__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> getFqName_id2SFcQFX9NxK = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFqName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3326809284349999216L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
   public static final SMethod<Boolean> isExternVisible_id7nMAuIoJecy = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isExternVisible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8499024683960427298L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createNewTestRefToThisTest_iddkANm6soSZ, getName_id2SFcQFX9N3G, getAssertionCount_id2SFcQFX9Nhz, getFqName_id2SFcQFX9NxK, isExternVisible_id7nMAuIoJecy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createNewTestRefToThisTest_iddkANm6soSZ, getName_id2SFcQFX9N3G, getAssertionCount_id2SFcQFX9Nhz, getFqName_id2SFcQFX9NxK, isExternVisible_id7nMAuIoJecy);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isExternVisible_id7nMAuIoJecy(@NotNull SNode __thisNode__) {
     return false;
@@ -38,10 +35,6 @@ public final class ITestContext__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ITestContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

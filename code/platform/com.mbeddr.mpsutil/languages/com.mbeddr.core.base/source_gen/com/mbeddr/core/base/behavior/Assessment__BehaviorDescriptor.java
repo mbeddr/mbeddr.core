@@ -20,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.project.AbstractModule;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -36,17 +35,15 @@ public final class Assessment__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Iterable<SNode>> activeResultEntries_id3jNX2XuL9gI = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("activeResultEntries").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3815661793603523630L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Boolean> allowEverythingExceptWhitespace_id8q0nkX_5K4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowEverythingExceptWhitespace").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(151435140526267396L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(update_id3jNX2XuLy_p, update_id4WjNWxKKBRM, clear_id3greo4NDQJp, activeResultEntries_id3jNX2XuL9gI, allowEverythingExceptWhitespace_id8q0nkX_5K4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(update_id3jNX2XuLy_p, update_id4WjNWxKKBRM, clear_id3greo4NDQJp, activeResultEntries_id3jNX2XuL9gI, allowEverythingExceptWhitespace_id8q0nkX_5K4);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   @Deprecated(since = "2025-11-06", forRemoval = true)
   /*package*/ static void update_id3jNX2XuLy_p(@NotNull SNode __thisNode__) {
     if (LOG.isWarningLevel()) {
       LOG.warning("update() had to guess the current project, rewrite your code to pass the project explicitly", new Throwable());
     }
-    Assessment__BehaviorDescriptor.update_id4WjNWxKKBRM.invoke(__thisNode__, ListSequence.fromList(GuessCurrentProject.getProjects(as_5bapwh_a0a0b0a1a31(SNodeOperations.getModel(__thisNode__).getModule(), AbstractModule.class))).first());
+    Assessment__BehaviorDescriptor.update_id4WjNWxKKBRM.invoke(__thisNode__, ListSequence.fromList(GuessCurrentProject.getProjects(as_5bapwh_a0a0b0a1a21(SNodeOperations.getModel(__thisNode__).getModule(), AbstractModule.class))).first());
   }
   /*package*/ static void update_id4WjNWxKKBRM(@NotNull SNode __thisNode__, Project mpsProject) {
     AssessmentQuery__BehaviorDescriptor.executeQuery_id4WjNWxKFbeJ.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.query$gGFe), mpsProject, __thisNode__);
@@ -66,10 +63,6 @@ public final class Assessment__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Assessment__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
@@ -119,7 +112,7 @@ public final class Assessment__BehaviorDescriptor extends BaseBHDescriptor {
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static <T> T as_5bapwh_a0a0b0a1a31(Object o, Class<T> type) {
+  private static <T> T as_5bapwh_a0a0b0a1a21(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 

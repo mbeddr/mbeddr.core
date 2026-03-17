@@ -19,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.mbeddr.core.base.behavior.IModuleContentRef__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -40,10 +39,8 @@ public final class TypeDef__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static final SMethod<SNode> bottomTypeCircleAware_id1u7i4LCwoqs = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("bottomTypeCircleAware").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(1695403277736314524L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, sortWeight_id6W5EUuUE5hm, allReferencedModuleContents_id1zPfrUoUUqq, exportable_id5HxjapwgqKI, bottomType_id1u7i4LCvTIV, bottomTypeCircleAware_id1u7i4LCwoqs, createType_id3o2OLGv7CoR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, sortWeight_id6W5EUuUE5hm, allReferencedModuleContents_id1zPfrUoUUqq, exportable_id5HxjapwgqKI, bottomType_id1u7i4LCvTIV, bottomTypeCircleAware_id1u7i4LCwoqs, createType_id3o2OLGv7CoR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.original$$TxO)) + " => " + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
@@ -79,10 +76,6 @@ public final class TypeDef__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TypeDef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

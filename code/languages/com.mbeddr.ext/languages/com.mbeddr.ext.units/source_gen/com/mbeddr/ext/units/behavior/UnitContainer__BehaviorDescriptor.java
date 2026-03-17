@@ -19,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import com.mbeddr.core.base.behavior.Chunk__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -40,10 +39,8 @@ public final class UnitContainer__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Iterable<SNode>> getDeclaredUnits_id3VpMwkcjX51 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getDeclaredUnits").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4528873023327949121L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
   public static final SMethod<SNode> getUnit_id5OrPku_RX0d = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getUnit").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6709190573600788493L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(dependencies_id6clJcrJYPM5, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, getIDEDisplayString_idIviauXb0g, getCategory_id1uL8CIsKxiy, getSortOrder_id1uL8CIs6rGR, addGenericChunkDependency_id94IdDK$n_l, getDeclaredUnits_id3VpMwkcjX51, getUnit_id5OrPku_RX0d);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(dependencies_id6clJcrJYPM5, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, getIDEDisplayString_idIviauXb0g, getCategory_id1uL8CIsKxiy, getSortOrder_id1uL8CIs6rGR, addGenericChunkDependency_id94IdDK$n_l, getDeclaredUnits_id3VpMwkcjX51, getUnit_id5OrPku_RX0d);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> dependencies_id6clJcrJYPM5(@NotNull SNode __thisNode__) {
     return SLinkOperations.getChildren(__thisNode__, LINKS.imports$6ajg);
@@ -76,10 +73,6 @@ public final class UnitContainer__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ UnitContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

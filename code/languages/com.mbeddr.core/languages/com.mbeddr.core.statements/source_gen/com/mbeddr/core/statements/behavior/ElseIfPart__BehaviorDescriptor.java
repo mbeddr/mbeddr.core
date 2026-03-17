@@ -28,7 +28,7 @@ public final class ElseIfPart__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<List<SAbstractConcept>> getCommentConcept_id5HxjapwgqLb = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getCommentConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574603L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCommentConcept_id5HxjapwgqLb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCommentConcept_id5HxjapwgqLb);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.body$5MZr, null);

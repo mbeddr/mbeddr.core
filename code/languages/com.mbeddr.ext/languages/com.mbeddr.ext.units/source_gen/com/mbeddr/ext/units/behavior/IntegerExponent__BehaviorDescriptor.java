@@ -14,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -27,10 +26,8 @@ public final class IntegerExponent__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<Integer> getNumerator_id3j3yk3guAC3 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getNumerator").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3802033421899426307L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
   public static final SMethod<Void> negate_id3j3yk3gDZSH = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("negate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3802033421902413357L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, getDenumerator_id3j3yk3guABz, getNumerator_id3j3yk3guAC3, negate_id3j3yk3gDZSH);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, getDenumerator_id3j3yk3guABz, getNumerator_id3j3yk3guAC3, negate_id3j3yk3gDZSH);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return (SPropertyOperations.getInteger(__thisNode__, PROPS.value$rYsn) == 1 ? "" : "" + SPropertyOperations.getInteger(__thisNode__, PROPS.value$rYsn));
@@ -48,10 +45,6 @@ public final class IntegerExponent__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ IntegerExponent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

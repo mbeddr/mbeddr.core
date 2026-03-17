@@ -17,7 +17,6 @@ import com.mbeddr.cc.var.fm.behavior.IMapping__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -32,10 +31,8 @@ public final class FeatureModelConfiguration__BehaviorDescriptor extends BaseBHD
   public static final SMethod<Void> updateMapping_id10hF$bG_$c = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateMapping").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(18092159088613644L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> hasMappingFor_id10hF$bGFFW = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasMappingFor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(18092159088638716L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isFeatureSelected_id5USXI9KzkZO, getFeatureSelection_id6hM2_xVMLfJ, updateMapping_id10hF$bG_$c, hasMappingFor_id10hF$bGFFW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isFeatureSelected_id5USXI9KzkZO, getFeatureSelection_id6hM2_xVMLfJ, updateMapping_id10hF$bG_$c, hasMappingFor_id10hF$bGFFW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isFeatureSelected_id5USXI9KzkZO(@NotNull SNode __thisNode__, SNode f) {
     return IMapping__BehaviorDescriptor.getFeatureSelection_id6hM2_xVMLfJ.invoke(__thisNode__, f) != null;
@@ -71,10 +68,6 @@ public final class FeatureModelConfiguration__BehaviorDescriptor extends BaseBHD
   /*package*/ FeatureModelConfiguration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

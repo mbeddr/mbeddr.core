@@ -21,7 +21,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
 import com.mbeddr.core.base.structure.TextHelper;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -50,10 +49,8 @@ public final class AbstractTransition__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<List<SNode>> getTargetAndFailureStates_id4sAjwkTiqeO = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getTargetAndFailureStates").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5126871010150818740L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
   public static final SMethod<List<SNode>> getActiveTargetAndFailureStates_id4sAjwkSriPC = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getActiveTargetAndFailureStates").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5126871010136370536L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(triggerAsString_id16ykm_McdaJ, allActionsForTransition_id7tm$oh3mB9h, getLabel_id5HxjapwgqK6, isEpsilon_id16ykm_MicVJ, ultimateTargetState_id3FSHg1aEzcc, getCrossedCompositeStatesOutbound_id4h2fJwlSbp2, getCrossedCompositeStatesInbound_id4h2fJwlT343, addToFrontOfAction_id4h2fJwlSSzS, addToTailOfAction_id4h2fJwlT32w, renderGuard_id2JIP8cA0DKZ, genTrackingName_id5ngFs$3SihX, readableName_id5ngFs$3SyGM, isFailureAware_id4sAjwkL1_Yb, hasActionsStatementsToSkipOnFailure_id4sAjwkONxVM, isRedirectedOnFailure_id4sAjwkRIMYf, getFailureStates_id4sAjwkRJO1L, getTargetAndFailureStates_id4sAjwkTiqeO, getActiveTargetAndFailureStates_id4sAjwkSriPC);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(triggerAsString_id16ykm_McdaJ, allActionsForTransition_id7tm$oh3mB9h, getLabel_id5HxjapwgqK6, isEpsilon_id16ykm_MicVJ, ultimateTargetState_id3FSHg1aEzcc, getCrossedCompositeStatesOutbound_id4h2fJwlSbp2, getCrossedCompositeStatesInbound_id4h2fJwlT343, addToFrontOfAction_id4h2fJwlSSzS, addToTailOfAction_id4h2fJwlT32w, renderGuard_id2JIP8cA0DKZ, genTrackingName_id5ngFs$3SihX, readableName_id5ngFs$3SyGM, isFailureAware_id4sAjwkL1_Yb, hasActionsStatementsToSkipOnFailure_id4sAjwkONxVM, isRedirectedOnFailure_id4sAjwkRIMYf, getFailureStates_id4sAjwkRJO1L, getTargetAndFailureStates_id4sAjwkTiqeO, getActiveTargetAndFailureStates_id4sAjwkSriPC);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> allActionsForTransition_id7tm$oh3mB9h(@NotNull SNode __thisNode__) {
     List<SNode> all = new ArrayList<SNode>();
@@ -169,10 +166,6 @@ public final class AbstractTransition__BehaviorDescriptor extends BaseBHDescript
   /*package*/ AbstractTransition__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

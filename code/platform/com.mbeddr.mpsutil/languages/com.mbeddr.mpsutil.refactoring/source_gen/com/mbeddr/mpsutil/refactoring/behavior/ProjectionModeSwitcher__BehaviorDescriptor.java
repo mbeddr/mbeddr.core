@@ -20,7 +20,7 @@ public final class ProjectionModeSwitcher__BehaviorDescriptor extends BaseBHDesc
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1fc20ffef35b4791L, 0xa0b7d706bad5c49aL, 0x3617aa18f556bf78L, "com.mbeddr.mpsutil.refactoring.structure.ProjectionModeSwitcher");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.addNewChild(__thisNode__, LINKS.options$7s6N, null);

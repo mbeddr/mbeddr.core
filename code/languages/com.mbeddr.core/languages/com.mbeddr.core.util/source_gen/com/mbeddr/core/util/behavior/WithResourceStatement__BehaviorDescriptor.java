@@ -16,7 +16,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -29,10 +28,8 @@ public final class WithResourceStatement__BehaviorDescriptor extends BaseBHDescr
   public static final SMethod<Boolean> hasGuard_idE67pIVM2RV = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasGuard").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(758326141966102011L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
   public static final SMethod<Boolean> handleIsBoolean_idE67pIWc31_ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("handleIsBoolean").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(758326141972918373L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isVoid_idE67pIVLpxF, hasGuard_idE67pIVM2RV, handleIsBoolean_idE67pIWc31_);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isVoid_idE67pIVLpxF, hasGuard_idE67pIVM2RV, handleIsBoolean_idE67pIWc31_);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isVoid_idE67pIVLpxF(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.acquire$sdBc) == null || (SLinkOperations.getTarget(__thisNode__, LINKS.acquire$sdBc) != null && SNodeOperations.isInstanceOf(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(__thisNode__, LINKS.acquire$sdBc)), CONCEPTS.VoidType$GT));
@@ -47,10 +44,6 @@ public final class WithResourceStatement__BehaviorDescriptor extends BaseBHDescr
   /*package*/ WithResourceStatement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

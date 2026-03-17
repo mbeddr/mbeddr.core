@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -33,10 +32,8 @@ public final class AssignmentExpr__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> setSyntacticallyLeftSideExpression_id6mzZsELnCP6 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setSyntacticallyLeftSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035543366L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> setSyntacticallyRightSideExpression_id6mzZsELnSmP = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setSyntacticallyRightSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035606965L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSideeffectFree_id6SENleF$SRD, getPriolevel_id5HxjapwgqKu, getLValue_id7QxE2Vg8Hif, getRValue_id7QxE2Vg8Hlr, canPropagateUnmatchedParenthesisUp_id6mzZsELnszz, setSyntacticallyLeftSideExpression_id6mzZsELnCP6, setSyntacticallyRightSideExpression_id6mzZsELnSmP);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSideeffectFree_id6SENleF$SRD, getPriolevel_id5HxjapwgqKu, getLValue_id7QxE2Vg8Hif, getRValue_id7QxE2Vg8Hlr, canPropagateUnmatchedParenthesisUp_id6mzZsELnszz, setSyntacticallyLeftSideExpression_id6mzZsELnCP6, setSyntacticallyRightSideExpression_id6mzZsELnSmP);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isSideeffectFree_id6SENleF$SRD(@NotNull SNode __thisNode__) {
     return false;
@@ -63,10 +60,6 @@ public final class AssignmentExpr__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ AssignmentExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

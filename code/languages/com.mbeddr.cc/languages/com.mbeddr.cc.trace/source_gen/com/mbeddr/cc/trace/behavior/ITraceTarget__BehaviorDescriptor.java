@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Collections;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -25,10 +24,8 @@ public final class ITraceTarget__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Iterable<SNode>> getTooltipInfoNodes_id2xLRh2R4bd7 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getTooltipInfoNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2914353497745961799L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2();
   public static final SMethod<String> getShortDescription_id2xLRh2R4ccl = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getShortDescription").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2914353497745965845L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTooltipInfoNodes_id2xLRh2R4bd7, getShortDescription_id2xLRh2R4ccl);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTooltipInfoNodes_id2xLRh2R4bd7, getShortDescription_id2xLRh2R4ccl);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getTooltipInfoNodes_id2xLRh2R4bd7(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(Collections.<SNode>emptyList());
@@ -37,10 +34,6 @@ public final class ITraceTarget__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ITraceTarget__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -27,7 +27,7 @@ public final class PortAdapter__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> generatedInstanceVariableName_id4GyojwyaMI6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("generatedInstanceVariableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5413996595772074886L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
   public static final SMethod<String> generatedPortOpsVariableName_id4GyojwybEe6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("generatedPortOpsVariableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5413996595772302214L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(generatedInstanceVariableName_id4GyojwyaMI6, generatedPortOpsVariableName_id4GyojwybEe6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(generatedInstanceVariableName_id4GyojwyaMI6, generatedPortOpsVariableName_id4GyojwybEe6);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.portRef$g$fy, null);

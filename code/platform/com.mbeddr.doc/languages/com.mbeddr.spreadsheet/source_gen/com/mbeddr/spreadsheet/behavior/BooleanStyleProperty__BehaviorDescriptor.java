@@ -20,7 +20,7 @@ public final class BooleanStyleProperty__BehaviorDescriptor extends BaseBHDescri
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1d891f7bdc9342f9L, 0xa4bcb016656b14e2L, 0x1c579c584dbcce9fL, "com.mbeddr.spreadsheet.structure.BooleanStyleProperty");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.value$MnQs, true);

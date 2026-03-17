@@ -20,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import java.util.Collections;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -36,10 +35,8 @@ public final class TableOfContents__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<Iterable<SNode>> getEntriesFlat_id73FPRWNpfg_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getEntriesFlat").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8136834093098005541L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
   /*package*/ static final SMethod<Iterable<SNode>> getEntriesRec_id73FPRWNpfC6 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getEntriesRec").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(8136834093098007046L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(actuallyShowInOutline_id3il$LAnRN_V, getEntriesFlat_id73FPRWNpfg_, getEntriesRec_id73FPRWNpfC6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(actuallyShowInOutline_id3il$LAnRN_V, getEntriesFlat_id73FPRWNpfg_, getEntriesRec_id73FPRWNpfC6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean actuallyShowInOutline_id3il$LAnRN_V(@NotNull SNode __thisNode__) {
     return false;
@@ -69,10 +66,6 @@ public final class TableOfContents__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ TableOfContents__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

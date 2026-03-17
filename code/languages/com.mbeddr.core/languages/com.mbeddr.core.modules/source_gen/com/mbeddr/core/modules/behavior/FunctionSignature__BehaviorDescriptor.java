@@ -22,7 +22,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.base.behavior.NodeTreeViewNode;
 import com.mbeddr.core.base.behavior.ITreeViewRoot__BehaviorDescriptor;
 import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -40,10 +39,8 @@ public final class FunctionSignature__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<List<SNode>> getParameters_id1S6A2cmQW9m = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getParameters").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2163583947472880214L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<SNode> getReturnType_id1S6A2cmQWaY = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getReturnType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2163583947472880318L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preventNameMangling_id5Oog2UbP_bT, allReferencedModuleContents_id1zPfrUoUUqq, getTreeCategories_id7NyyyjNtbmX, getTreeNode_id7NyyyjNtbn2, getParameters_id1S6A2cmQW9m, getReturnType_id1S6A2cmQWaY);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preventNameMangling_id5Oog2UbP_bT, allReferencedModuleContents_id1zPfrUoUUqq, getTreeCategories_id7NyyyjNtbmX, getTreeNode_id7NyyyjNtbn2, getParameters_id1S6A2cmQW9m, getReturnType_id1S6A2cmQWaY);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean preventNameMangling_id5Oog2UbP_bT(@NotNull SNode __thisNode__) {
     return SNodeOperations.isInstanceOf(__thisNode__, CONCEPTS.IImplementsKnownFunctionPrototype$sL) || ((boolean) IModuleContent__BehaviorDescriptor.preventNameMangling_id5Oog2UbP_bT.invoke0(__thisNode__, CONCEPTS.IExternable$7n));
@@ -92,10 +89,6 @@ public final class FunctionSignature__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ FunctionSignature__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

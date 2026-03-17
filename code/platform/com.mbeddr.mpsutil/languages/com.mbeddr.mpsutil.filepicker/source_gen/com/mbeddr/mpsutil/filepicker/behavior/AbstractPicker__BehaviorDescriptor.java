@@ -30,7 +30,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import java.awt.Desktop;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -70,10 +69,8 @@ public final class AbstractPicker__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> openWithSystemFileExplorer_id6uhyUqXhg1F = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("openWithSystemFileExplorer").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7462899605785870443L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
   public static final SMethod<SNode> getCompanionFileOrFolderPicker_id3xqp6yeWGLu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getCompanionFileOrFolderPicker").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4060668414265576542L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mustExist_id2RM$2quh1HO, mayBeEmpty_id2RM$2qudEJJ, pickDirOnly_id5lKnBeB0qXj, pickFileOnly_id48DzgHgr2tO, getPrefix_id5lKnBeAIfOh, getPrefix_id6WnTJkDceu8, findInstalledSolutionPrefix_id6WnTJkDU6W6, getErrorMessage_id5lKnBeAutg0, getEditorPrefix_id5lKnBeAulu0, isValidSelection_id5lKnBeAusVW, getOutputLocationRelativePath_id5Fmx6J52q6D, getCanonicalPath_id5lKnBeAuKov, getCanonicalPath_id35YirduUIVl, getCanonicalPath_id5lKnBeAuiS4, getCanonicalPath_id35YirduUNg0, getNonCanonicalPath_id2_BfG8PE78n, getNonCanonicalPath_id2_BfG8PE9Jr, getNonCanonicalPath_id7c_RIoAVXmk, getNonCanonicalPath_id35YirduUTni, resolvePath_id4_vItr5cCkz, resolvePath_id35YirduUVCr, exists_id5lKnBeAtTZu, isValidFile_id5lKnBeAufga, isValidDirectory_id5lKnBeAuiv7, proposals_id5lKnBeAuxBd, editWithSystemEditor_id2HwAvL$nzbX, openWithSystemEditor_id2HwAvL$nEXJ, openWithSystemFileExplorer_id6uhyUqXhg1F, getCompanionFileOrFolderPicker_id3xqp6yeWGLu);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mustExist_id2RM$2quh1HO, mayBeEmpty_id2RM$2qudEJJ, pickDirOnly_id5lKnBeB0qXj, pickFileOnly_id48DzgHgr2tO, getPrefix_id5lKnBeAIfOh, getPrefix_id6WnTJkDceu8, findInstalledSolutionPrefix_id6WnTJkDU6W6, getErrorMessage_id5lKnBeAutg0, getEditorPrefix_id5lKnBeAulu0, isValidSelection_id5lKnBeAusVW, getOutputLocationRelativePath_id5Fmx6J52q6D, getCanonicalPath_id5lKnBeAuKov, getCanonicalPath_id35YirduUIVl, getCanonicalPath_id5lKnBeAuiS4, getCanonicalPath_id35YirduUNg0, getNonCanonicalPath_id2_BfG8PE78n, getNonCanonicalPath_id2_BfG8PE9Jr, getNonCanonicalPath_id7c_RIoAVXmk, getNonCanonicalPath_id35YirduUTni, resolvePath_id4_vItr5cCkz, resolvePath_id35YirduUVCr, exists_id5lKnBeAtTZu, isValidFile_id5lKnBeAufga, isValidDirectory_id5lKnBeAuiv7, proposals_id5lKnBeAuxBd, editWithSystemEditor_id2HwAvL$nzbX, openWithSystemEditor_id2HwAvL$nEXJ, openWithSystemFileExplorer_id6uhyUqXhg1F, getCompanionFileOrFolderPicker_id3xqp6yeWGLu);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean mustExist_id2RM$2quh1HO(@NotNull SNode __thisNode__) {
     return true;
@@ -356,10 +353,6 @@ public final class AbstractPicker__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ AbstractPicker__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

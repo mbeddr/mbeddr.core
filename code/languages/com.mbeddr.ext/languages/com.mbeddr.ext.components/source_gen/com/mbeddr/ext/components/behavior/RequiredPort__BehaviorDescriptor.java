@@ -16,7 +16,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -33,10 +32,8 @@ public final class RequiredPort__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isOptionalOrLowerBoundIsZero_id4qGsbFhUKUr = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isOptionalOrLowerBoundIsZero").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5092569226337259163L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
   public static final SMethod<Boolean> isInPort_id2IZ2bWs0yDx = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3152247881084316257L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, genStructOpsMemberName_id4WLtQa9fEWO, isMultiple_id2ZUGF54jY1D, isOptionalOrLowerBoundIsZero_id4qGsbFhUKUr, isInPort_id2IZ2bWs0yDx);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, genStructOpsMemberName_id4WLtQa9fEWO, isMultiple_id2ZUGF54jY1D, isOptionalOrLowerBoundIsZero_id4qGsbFhUKUr, isInPort_id2IZ2bWs0yDx);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + ": " + SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.intf$QYND), PROPS.name$MnvL);
@@ -63,10 +60,6 @@ public final class RequiredPort__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ RequiredPort__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

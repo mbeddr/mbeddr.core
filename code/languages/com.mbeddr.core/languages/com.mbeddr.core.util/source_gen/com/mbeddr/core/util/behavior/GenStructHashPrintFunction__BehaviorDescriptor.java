@@ -15,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,10 +25,8 @@ public final class GenStructHashPrintFunction__BehaviorDescriptor extends BaseBH
 
   public static final SMethod<String> genFunName_id2CzB6HCHdar = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genFunName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3036442558909960859L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genFunName_id2CzB6HCHdar);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genFunName_id2CzB6HCHdar);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String genFunName_id2CzB6HCHdar(@NotNull SNode __thisNode__) {
     return "hash_" + SPropertyOperations.getString(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.StructDeclaration$ox, false, false), PROPS.name$MnvL);
@@ -38,10 +35,6 @@ public final class GenStructHashPrintFunction__BehaviorDescriptor extends BaseBH
   /*package*/ GenStructHashPrintFunction__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

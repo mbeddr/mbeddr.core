@@ -23,7 +23,6 @@ import java.util.ArrayList;
 import com.mbeddr.core.base.behavior.AssessmentQuery__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -37,10 +36,8 @@ public final class WorkPackagesAssQuery__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<List<SNode>> getSummaries_id_gCXGjoJQM = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getSummaries").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(671216505796623794L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSummaries_id_gCXGjoJQM, runQuery_id4WjNWxKJWaq);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSummaries_id_gCXGjoJQM, runQuery_id4WjNWxKJWaq);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> getSummaries_id_gCXGjoJQM(@NotNull SNode __thisNode__, SNode ass) {
     int estimatedEffort = 0;
@@ -93,10 +90,6 @@ public final class WorkPackagesAssQuery__BehaviorDescriptor extends BaseBHDescri
   /*package*/ WorkPackagesAssQuery__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

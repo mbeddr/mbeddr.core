@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -25,10 +24,8 @@ public final class ReadDouble__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<SNode> expectedExprType_id7op4RkOvNOW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("expectedExprType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8509854365006118204L).languageId(0xae278662d274cf3cL, 0xbb0ad88b63cd45fdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(expectedExprType_id7op4RkOvNOW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(expectedExprType_id7op4RkOvNOW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode expectedExprType_id7op4RkOvNOW(@NotNull SNode __thisNode__) {
     return createPointerType_fr7znp_a0a0();
@@ -37,10 +34,6 @@ public final class ReadDouble__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ReadDouble__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

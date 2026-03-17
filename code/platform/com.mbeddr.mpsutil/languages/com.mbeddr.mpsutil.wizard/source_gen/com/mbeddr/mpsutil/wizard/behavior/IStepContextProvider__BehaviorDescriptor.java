@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -24,19 +23,13 @@ public final class IStepContextProvider__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<SNode> getOutputType_idrF8Sb98y7f = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getOutputType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228381749711L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
   public static final SMethod<String> getFqStepName_id44rcFjhUtTc = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFqStepName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4691399189033770572L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getVisibleSteps_idrF8Sb8ZYzQ, getOutputType_idrF8Sb98y7f, getFqStepName_id44rcFjhUtTc);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getVisibleSteps_idrF8Sb8ZYzQ, getOutputType_idrF8Sb98y7f, getFqStepName_id44rcFjhUtTc);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IStepContextProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

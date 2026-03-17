@@ -12,10 +12,9 @@ import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.baseLanguage.classifiers.behavior.IMember__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
+import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -27,10 +26,8 @@ public final class IProcessVariale__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<List<SAbstractConcept>> getOperationSConcept_id6ALWH9g2mqE = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getOperationSConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7616135429960066730L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
   public static final SMethod<String> genMemberName_idrF8Sb8V4Qq = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genMemberName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228378221978L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getOperationSConcept_id6ALWH9g2mqE, genMemberName_idrF8Sb8V4Qq);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getOperationSConcept_id6ALWH9g2mqE, genMemberName_idrF8Sb8V4Qq);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SAbstractConcept> getOperationSConcept_id6ALWH9g2mqE(@NotNull SAbstractConcept __thisConcept__) {
     List<SAbstractConcept> result = IMember__BehaviorDescriptor.getOperationSConcept_id6ALWH9g2mqE.invoke0(__thisConcept__, CONCEPTS.IMember$zu);
@@ -41,10 +38,6 @@ public final class IProcessVariale__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ IProcessVariale__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

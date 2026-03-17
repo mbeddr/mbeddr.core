@@ -3,9 +3,9 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.mpsutil.actionsfilter" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.mpsutil.actionsfilter" />
-  <property name="mbeddr.github.core.home" location="${basedir}/../../" />
+  <property name="project.root" location="${basedir}/../../" />
   <property name="mps.home" location="" />
-  <property name="mpsutil" location="${mbeddr.github.core.home}/code/platform/com.mbeddr.mpsutil" />
+  <property name="mpsutil" location="${project.root}/code/platform/com.mbeddr.mpsutil" />
   <property name="major.version" value="0" />
   <property name="minor.version" value="0" />
   <property name="build" value="0000" />
@@ -457,7 +457,7 @@
         <arg value="-ea" />
         <arg value="-Xmx16384m" />
       </jvmargs>
-      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
+      <macro name="project.root" path="${project.root}" />
       <macro name="mps.home" path="${mps.home}" />
       <macro name="mpsutil" path="${mpsutil}" />
     </generate>

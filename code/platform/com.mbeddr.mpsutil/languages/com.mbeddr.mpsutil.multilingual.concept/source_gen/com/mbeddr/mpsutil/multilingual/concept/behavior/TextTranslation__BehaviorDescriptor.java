@@ -25,7 +25,7 @@ public final class TextTranslation__BehaviorDescriptor extends BaseBHDescriptor 
 
   public static final SMethod<String> asString_id2Hv7KkRkDtD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3125250773681870697L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asString_id2Hv7KkRkDtD);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asString_id2Hv7KkRkDtD);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.text$EoEe, null);

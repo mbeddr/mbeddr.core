@@ -23,7 +23,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import java.util.ArrayList;
 import org.jetbrains.annotations.Nullable;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -47,10 +46,8 @@ public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Result> createNewResult_id7KBw$loavrA = new SMethodBuilder<Result>(new SJavaCompoundTypeImpl(Result.class)).name("createNewResult").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419138279142L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> join_id7KBw$lojUBG = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("join").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419140749804L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Result.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, renderPlan_id6SKAExjtCwf, renderStep_id6SKAExjtGDb, stepName_id7KBw$lnVSxB, addState_id7KBw$lnY6ka, addStep_id7KBw$lo0leH, addConnection_id7KBw$lobW_r, addComments_id5lyXtvAvI7E, getDirection_id6SKAExjx0IO, getNoteLocation_id7KBw$lo6Sog, createNewResult_id7KBw$loavrA, join_id7KBw$lojUBG);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, renderPlan_id6SKAExjtCwf, renderStep_id6SKAExjtGDb, stepName_id7KBw$lnVSxB, addState_id7KBw$lnY6ka, addStep_id7KBw$lo0leH, addConnection_id7KBw$lobW_r, addComments_id5lyXtvAvI7E, getDirection_id6SKAExjx0IO, getNoteLocation_id7KBw$lo6Sog, createNewResult_id7KBw$loavrA, join_id7KBw$lojUBG);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String[] getCategories_id2N1CSrzPN_a(@NotNull SNode __thisNode__) {
     return new String[]{"generation plan visualization"};
@@ -244,10 +241,6 @@ public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ PlanVisualizer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

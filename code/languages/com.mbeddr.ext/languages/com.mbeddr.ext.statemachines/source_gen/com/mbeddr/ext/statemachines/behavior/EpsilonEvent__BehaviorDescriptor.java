@@ -22,7 +22,7 @@ public final class EpsilonEvent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x214e68e6fb6981a3L, "com.mbeddr.ext.statemachines.structure.EpsilonEvent");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.name$MnvL, SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)));

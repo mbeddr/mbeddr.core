@@ -20,7 +20,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRegistry;
 import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -33,10 +32,8 @@ public final class InlineInterpreterCondition__BehaviorDescriptor extends BaseBH
   public static final SMethod<IConditionalInterpreter> getInterpreter_id2pogikRx4OH = new SMethodBuilder<IConditionalInterpreter>(new SJavaCompoundTypeImpl(IConditionalInterpreter.class)).name("getInterpreter").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2763029999492812077L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
   public static final SMethod<String> getNodeRendering_id2pogikRx4OD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getNodeRendering").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2763029999492812073L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpected_id2pogikRx4O_, getInterpreter_id2pogikRx4OH, getNodeRendering_id2pogikRx4OD);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpected_id2pogikRx4O_, getInterpreter_id2pogikRx4OH, getNodeRendering_id2pogikRx4OD);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Boolean getExpected_id2pogikRx4O_(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getBoolean(__thisNode__, PROPS.expected$59nr);
@@ -51,10 +48,6 @@ public final class InlineInterpreterCondition__BehaviorDescriptor extends BaseBH
   /*package*/ InlineInterpreterCondition__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
