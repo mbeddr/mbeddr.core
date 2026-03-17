@@ -33,9 +33,6 @@
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
@@ -193,9 +190,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2XOHcx" id="6_u$4QjOEvc">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.mpsutil" />
-  </node>
   <node concept="3MtHw5" id="6cLnm66_Q7S">
     <property role="TrG5h" value="Test Resource Bundle" />
     <property role="1JSPRp" value="test.ts.mpsutil.multilingual.baseLanguage" />

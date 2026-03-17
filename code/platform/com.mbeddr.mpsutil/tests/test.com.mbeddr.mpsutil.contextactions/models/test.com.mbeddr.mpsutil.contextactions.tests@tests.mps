@@ -25,9 +25,6 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
@@ -88,9 +85,6 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -181,19 +175,6 @@
               <node concept="2WthIp" id="6qTkPAlu6Eq" role="2Oq$k0" />
               <node concept="2XshWL" id="6qTkPAlu6Er" role="2OqNvi">
                 <ref role="2WH_rO" node="6qTkPAkHgTd" resolve="getContextActionsToolCompnent" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6qTkPAlvaww" role="3cqZAp">
-          <node concept="2OqwBi" id="6qTkPAlvb1$" role="3clFbG">
-            <node concept="37vLTw" id="6qTkPAlvawu" role="2Oq$k0">
-              <ref role="3cqZAo" node="6qTkPAlu6En" resolve="component" />
-            </node>
-            <node concept="liA8E" id="6qTkPAlvbOZ" role="2OqNvi">
-              <ref role="37wK5l" to="1ne1:2qwokRYE5Uf" resolve="setRefreshOnlyWhenVisible" />
-              <node concept="3clFbT" id="6qTkPAlvbXO" role="37wK5m">
-                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>
@@ -416,9 +397,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2XOHcx" id="6qTkPAlcWvs">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.mpsutil" />
   </node>
 </model>
 
