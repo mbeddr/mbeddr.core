@@ -30,7 +30,7 @@ public final class IfStatement__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isCommentable_id3RtPbXKOu_B = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCommentable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457953124863306087L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<List<SAbstractConcept>> getCommentConcept_id5HxjapwgqLb = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getCommentConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574603L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEndLabel_id5Xsg2EBpPwD, forceMultiLines_id5oX1Q_zkX36, isCommentable_id3RtPbXKOu_B, getCommentConcept_id5HxjapwgqLb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEndLabel_id5Xsg2EBpPwD, forceMultiLines_id5oX1Q_zkX36, isCommentable_id3RtPbXKOu_B, getCommentConcept_id5HxjapwgqLb);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.thenPart$f_ts, null);

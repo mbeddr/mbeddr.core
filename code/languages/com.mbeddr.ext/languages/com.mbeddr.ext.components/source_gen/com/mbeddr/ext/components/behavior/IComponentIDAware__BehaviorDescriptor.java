@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class IComponentIDAware__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<String> genLocalCIDVarName_id5hYHEwZIiiQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genLocalCIDVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579991348406L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
   public static final SMethod<String> genLocalIDVarName_id5hYHEwZIiiW = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genLocalIDVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579991348412L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genLocalCIDVarName_id5hYHEwZIiiQ, genLocalIDVarName_id5hYHEwZIiiW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genLocalCIDVarName_id5hYHEwZIiiQ, genLocalIDVarName_id5hYHEwZIiiW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String genLocalCIDVarName_id5hYHEwZIiiQ(@NotNull SNode __thisNode__) {
     return "___cid";
@@ -38,10 +35,6 @@ public final class IComponentIDAware__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ IComponentIDAware__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

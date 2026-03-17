@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -30,10 +29,8 @@ public final class FunctionRefExpr__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<Void> rebindToProxy_id7jSUHHvkApb = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("rebindToProxy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856331L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(referencedModuleContent_id7jSUHHvkAph, rebindToProxy_id7jSUHHvkApb, renderReadable_id1VQvajLb13M);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(referencedModuleContent_id7jSUHHvkAph, rebindToProxy_id7jSUHHvkApb, renderReadable_id1VQvajLb13M);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode referencedModuleContent_id7jSUHHvkAph(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.function$ZbB6);
@@ -48,10 +45,6 @@ public final class FunctionRefExpr__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ FunctionRefExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -14,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.core.modules.behavior.IModuleContent__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class ModuleContentSUDeclaration__BehaviorDescriptor extends BaseBH
 
   public static final SMethod<String> genName_id3W2cV_pfm5c = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4540248245502042444L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genName_id3W2cV_pfm5c);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genName_id3W2cV_pfm5c);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String genName_id3W2cV_pfm5c(@NotNull SNode __thisNode__) {
     return ((String) IModuleContent__BehaviorDescriptor.getMangledName_id19a6$uAAq0e.invoke(__thisNode__));
@@ -35,10 +32,6 @@ public final class ModuleContentSUDeclaration__BehaviorDescriptor extends BaseBH
   /*package*/ ModuleContentSUDeclaration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

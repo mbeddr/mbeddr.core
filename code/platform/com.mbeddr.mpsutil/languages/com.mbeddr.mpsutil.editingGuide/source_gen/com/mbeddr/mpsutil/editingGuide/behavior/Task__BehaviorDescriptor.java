@@ -15,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,10 +25,8 @@ public final class Task__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Boolean> isEnabled_id3p1cdQ7_dAx = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEnabled").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3909459679554886049L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEnabled_id3p1cdQ7_dAx);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEnabled_id3p1cdQ7_dAx);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isEnabled_id3p1cdQ7_dAx(@NotNull SNode __thisNode__) {
     if (SNodeOperations.getIndexInParent(__thisNode__) == 0) {
@@ -41,10 +38,6 @@ public final class Task__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Task__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

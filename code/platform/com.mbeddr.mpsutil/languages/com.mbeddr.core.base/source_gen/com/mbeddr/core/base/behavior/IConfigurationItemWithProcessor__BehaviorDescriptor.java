@@ -13,7 +13,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,19 +21,13 @@ public final class IConfigurationItemWithProcessor__BehaviorDescriptor extends B
 
   public static final SMethod<Void> preprocess_id4qSf1u208SQ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("preprocess").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050032705078L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preprocess_id4qSf1u208SQ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preprocess_id4qSf1u208SQ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IConfigurationItemWithProcessor__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -31,10 +30,8 @@ public final class Step__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isTriggeredByOperation_id3NJ7rfmYe3a = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isTriggeredByOperation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4390760819952509130L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(stepID_id7Uz1bYM5TNJ, genFunctionName_id71UKpntpGiJ, isTriggeredByOperation_id3NJ7rfmYe3a, getLOCEquivalent_id6brBMefRfO0);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(stepID_id7Uz1bYM5TNJ, genFunctionName_id71UKpntpGiJ, isTriggeredByOperation_id3NJ7rfmYe3a, getLOCEquivalent_id6brBMefRfO0);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int stepID_id7Uz1bYM5TNJ(@NotNull SNode __thisNode__) {
     return SNodeOperations.getIndexInParent(__thisNode__);
@@ -58,10 +55,6 @@ public final class Step__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Step__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

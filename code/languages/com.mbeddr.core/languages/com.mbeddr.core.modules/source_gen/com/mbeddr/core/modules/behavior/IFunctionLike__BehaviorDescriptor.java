@@ -19,7 +19,6 @@ import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -34,10 +33,8 @@ public final class IFunctionLike__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> signatureInfo_id7GUSN23Vq8 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("signatureInfo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(138744678325401224L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
   public static final SMethod<String> signatureInfo_id7GUSN23Vqf = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("signatureInfo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(138744678325401231L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStatementList_id71UKpntnl7S, getUniquelyNamedElements_id4qSf1u1TRfj, presentation_id2$xXL4HsOsB, signatureInfo_id7GUSN23Vq8, signatureInfo_id7GUSN23Vqf);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStatementList_id71UKpntnl7S, getUniquelyNamedElements_id4qSf1u1TRfj, presentation_id2$xXL4HsOsB, signatureInfo_id7GUSN23Vq8, signatureInfo_id7GUSN23Vqf);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getUniquelyNamedElements_id4qSf1u1TRfj(@NotNull SNode __thisNode__) {
     return SLinkOperations.getChildren(__thisNode__, LINKS.arguments$6da0);
@@ -103,10 +100,6 @@ public final class IFunctionLike__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IFunctionLike__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

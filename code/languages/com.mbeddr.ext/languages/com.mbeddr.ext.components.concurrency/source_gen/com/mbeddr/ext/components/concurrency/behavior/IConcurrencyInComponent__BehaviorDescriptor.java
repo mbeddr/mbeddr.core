@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,19 +21,13 @@ public final class IConcurrencyInComponent__BehaviorDescriptor extends BaseBHDes
 
   public static final SMethod<SNode> unwrap_id3qlQk_ggqsk = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("unwrap").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3933288758480316180L).languageId(0xa22d91c3ce06375eL, 0x3f445ef354ad4ae5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(unwrap_id3qlQk_ggqsk);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(unwrap_id3qlQk_ggqsk);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IConcurrencyInComponent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

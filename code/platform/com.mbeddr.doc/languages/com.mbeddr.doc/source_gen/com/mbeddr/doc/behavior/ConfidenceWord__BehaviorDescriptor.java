@@ -28,7 +28,7 @@ public final class ConfidenceWord__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> toTextString_id3Q5enzfMT4t = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("toTextString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4433012599261204765L).languageId(0xa676c7604efe3504L, 0x92d2ea165a424fdfL).build2();
   public static final SMethod<String> TextInViewer_idl3$K9zS66z = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("TextInViewer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(379308432104120739L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(toTextString_id3Q5enzfMT4t, TextInViewer_idl3$K9zS66z);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(toTextString_id3Q5enzfMT4t, TextInViewer_idl3$K9zS66z);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.text$4Lxa, null);

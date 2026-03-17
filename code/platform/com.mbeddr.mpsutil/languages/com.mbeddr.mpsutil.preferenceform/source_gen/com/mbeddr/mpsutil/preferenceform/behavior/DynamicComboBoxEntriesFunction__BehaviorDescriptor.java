@@ -13,7 +13,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -24,10 +23,8 @@ public final class DynamicComboBoxEntriesFunction__BehaviorDescriptor extends Ba
   public static final SMethod<String> getName_idhGVcmek = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1216468837268L).languageId(0xa443f952ceaf5816L, 0xf3061a5392264cc5L).build2();
   public static final SMethod<SNode> getExpectedReturnType_idhEwIGRD = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getExpectedReturnType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877374441L).languageId(0xa443f952ceaf5816L, 0xf3061a5392264cc5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getName_idhGVcmek, getExpectedReturnType_idhEwIGRD);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getName_idhGVcmek, getExpectedReturnType_idhEwIGRD);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getName_idhGVcmek(@NotNull SNode __thisNode__) {
     return "getEntries";
@@ -39,10 +36,6 @@ public final class DynamicComboBoxEntriesFunction__BehaviorDescriptor extends Ba
   /*package*/ DynamicComboBoxEntriesFunction__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -14,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -30,10 +29,8 @@ public final class StringLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Integer> getUnescapedValueLength_id4FYctDz1tF0 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUnescapedValueLength").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5403811416925133504L).languageId(0x97545a516023bfaaL, 0x3bf5377ae9044dedL).build2();
   public static final SMethod<Integer> getSize_idJ0Y$7B64qW = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getSize").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(846951890902599356L).languageId(0x97545a516023bfaaL, 0x3bf5377ae9044dedL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, isStaticallyEvaluatable_id3ilck8Kr3zN, evaluateStatically_id6OxpEKG0KPv, renderReadable_id1VQvajLb13M, getUnescapedValueLength_id4FYctDz1tF0, getSize_idJ0Y$7B64qW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, isStaticallyEvaluatable_id3ilck8Kr3zN, evaluateStatically_id6OxpEKG0KPv, renderReadable_id1VQvajLb13M, getUnescapedValueLength_id4FYctDz1tF0, getSize_idJ0Y$7B64qW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean containsText_idjpyKDg1onB(@NotNull SNode __thisNode__, String text) {
     return SPropertyOperations.getString(__thisNode__, PROPS.value$a7Yf) != null && SPropertyOperations.getString(__thisNode__, PROPS.value$a7Yf).contains(text);
@@ -71,10 +68,6 @@ public final class StringLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ StringLiteral__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

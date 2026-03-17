@@ -13,7 +13,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -27,10 +26,8 @@ public final class RunnableTrigger__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<Void> synchronizeParentRunnable_id18l4N2Qxdck = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("synchronizeParentRunnable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1302968767135142676L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
   public static final SMethod<String> getCharacteristicString_id6A4xWqfTbOa = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getCharacteristicString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7603351357795646730L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSame_idLUz4xArbFJ, allowsAbstractRunnable_id5basnX2kJ0$, enforcesSignature_id2GwY86mows, enforcesName_id3MbWJkY1d$O, synchronizeParentRunnable_id18l4N2Qxdck, getCharacteristicString_id6A4xWqfTbOa);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSame_idLUz4xArbFJ, allowsAbstractRunnable_id5basnX2kJ0$, enforcesSignature_id2GwY86mows, enforcesName_id3MbWJkY1d$O, synchronizeParentRunnable_id18l4N2Qxdck, getCharacteristicString_id6A4xWqfTbOa);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isSame_idLUz4xArbFJ(@NotNull SNode __thisNode__, SNode otherTrigger) {
     return false;
@@ -51,10 +48,6 @@ public final class RunnableTrigger__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ RunnableTrigger__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

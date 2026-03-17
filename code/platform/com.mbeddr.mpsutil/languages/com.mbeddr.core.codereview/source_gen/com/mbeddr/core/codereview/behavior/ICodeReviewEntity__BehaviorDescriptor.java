@@ -19,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -38,10 +37,8 @@ public final class ICodeReviewEntity__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<Void> updateReviewDataWithNewReview_id4g52gaNOY5a = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateReviewDataWithNewReview").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4901333676674244938L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
   public static final SMethod<Boolean> mustBeReviewed_id5ZqHcKFTcBs = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustBeReviewed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6907031767528819164L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSerializedSubtree_id4g52gaNOAjw, getCurrentSubtreeHash_id4g52gaNOFw0, findReviewData_id5ZqHcKGNlnx, hasBeenReviewed_id4g52gaNP8yo, reviewIsValid_id4g52gaNQfS_, reevaluateReviewData_id4g52gaNP9r9, updateReviewDataWithNewReview_id4g52gaNOY5a, mustBeReviewed_id5ZqHcKFTcBs);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSerializedSubtree_id4g52gaNOAjw, getCurrentSubtreeHash_id4g52gaNOFw0, findReviewData_id5ZqHcKGNlnx, hasBeenReviewed_id4g52gaNP8yo, reviewIsValid_id4g52gaNQfS_, reevaluateReviewData_id4g52gaNP9r9, updateReviewDataWithNewReview_id4g52gaNOY5a, mustBeReviewed_id5ZqHcKFTcBs);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getSerializedSubtree_id4g52gaNOAjw(@NotNull SNode __thisNode__) {
     SNode r = new IAttributeDescriptor.NodeAttribute(CONCEPTS.CodeReviewData$wx).get(__thisNode__);
@@ -96,10 +93,6 @@ public final class ICodeReviewEntity__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ ICodeReviewEntity__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

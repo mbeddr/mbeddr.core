@@ -40,9 +40,6 @@
         <child id="4649457259824818099" name="equationRef" index="MJxsd" />
       </concept>
       <concept id="4649457259824807647" name="jetbrains.mps.lang.test.structure.TypesystemEquationReference" flags="ng" index="MGsTx" />
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1225469856668" name="jetbrains.mps.lang.test.structure.ModelExpression" flags="nn" index="1jGwE1" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
@@ -1438,9 +1435,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2XOHcx" id="5yvl18N8PtL">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.mpsutil" />
   </node>
   <node concept="1lH9Xt" id="13oTmDlxaxG">
     <property role="3DII0k" value="2hh8MJdVwqX/command" />

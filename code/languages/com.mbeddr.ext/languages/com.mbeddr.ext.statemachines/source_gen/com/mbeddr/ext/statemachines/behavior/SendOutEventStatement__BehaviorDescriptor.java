@@ -18,7 +18,6 @@ import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -32,10 +31,8 @@ public final class SendOutEventStatement__BehaviorDescriptor extends BaseBHDescr
   public static final SMethod<Boolean> isFailrueAware_id4sAjwkUZeYA = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isFailrueAware").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5126871010179346342L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
   public static final SMethod<Boolean> hasSubsequentStatementsToSkipOnFailure_idrICbQKEoTV = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasSubsequentStatementsToSkipOnFailure").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(499513345257868923L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLabel_id5HxjapwgqK6, canBeFailureAware_id4sAjwkTDdVd, isFailrueAware_id4sAjwkUZeYA, hasSubsequentStatementsToSkipOnFailure_idrICbQKEoTV);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLabel_id5HxjapwgqK6, canBeFailureAware_id4sAjwkTDdVd, isFailrueAware_id4sAjwkUZeYA, hasSubsequentStatementsToSkipOnFailure_idrICbQKEoTV);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getLabel_id5HxjapwgqK6(@NotNull SAbstractConcept __thisConcept__) {
     return "on failure";
@@ -69,10 +66,6 @@ public final class SendOutEventStatement__BehaviorDescriptor extends BaseBHDescr
   /*package*/ SendOutEventStatement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

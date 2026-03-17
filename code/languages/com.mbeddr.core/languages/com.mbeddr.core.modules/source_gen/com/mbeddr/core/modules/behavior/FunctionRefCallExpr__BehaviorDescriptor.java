@@ -16,7 +16,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -27,10 +26,8 @@ public final class FunctionRefCallExpr__BehaviorDescriptor extends BaseBHDescrip
   public static final SMethod<Boolean> isSideeffectFree_id6SENleF$SRD = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSideeffectFree").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7938383052438474217L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSideeffectFree_id6SENleF$SRD, renderReadable_id1VQvajLb13M);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSideeffectFree_id6SENleF$SRD, renderReadable_id1VQvajLb13M);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isSideeffectFree_id6SENleF$SRD(@NotNull SNode __thisNode__) {
     return false;
@@ -50,10 +47,6 @@ public final class FunctionRefCallExpr__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ FunctionRefCallExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

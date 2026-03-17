@@ -20,7 +20,7 @@ public final class BLDoc__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf3b3dc28fee349e1L, 0xa46e685e96389094L, 0x3d942906214b3b59L, "com.mbeddr.mpsutil.bldoc.structure.BLDoc");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.text$FLAK, null);

@@ -14,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -24,10 +23,8 @@ public final class UniquifyIncludeGuard__BehaviorDescriptor extends BaseBHDescri
 
   public static final SMethod<String> uniquifyIncludeGuard_id1lYd87JBZv6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("uniquifyIncludeGuard").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1548733054537693126L).languageId(0x8034198c24063588L, 0x62296a07bc3846d2L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniquifyIncludeGuard_id1lYd87JBZv6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniquifyIncludeGuard_id1lYd87JBZv6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String uniquifyIncludeGuard_id1lYd87JBZv6(@NotNull SNode __thisNode__, String name) {
     String guardMacro = name.toUpperCase();
@@ -46,10 +43,6 @@ public final class UniquifyIncludeGuard__BehaviorDescriptor extends BaseBHDescri
   /*package*/ UniquifyIncludeGuard__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

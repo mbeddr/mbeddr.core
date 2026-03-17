@@ -14,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -24,10 +23,8 @@ public final class RegExFilter__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Boolean> matches_id4PRpvcZD6sS = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("matches").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5582042358568216376L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matches_id4PRpvcZD6sS);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matches_id4PRpvcZD6sS);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean matches_id4PRpvcZD6sS(@NotNull SNode __thisNode__, String folder) {
     return folder.matches(SPropertyOperations.getString(__thisNode__, PROPS.regEx$VuWa));
@@ -36,10 +33,6 @@ public final class RegExFilter__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ RegExFilter__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

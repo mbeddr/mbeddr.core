@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -25,10 +24,8 @@ public final class IRequiresConfigItem__BehaviorDescriptor extends BaseBHDescrip
   public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<List<SNode>> getSubConfigItem_id4g_6LpiKVx6 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getSubConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4910360751409182790L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConfigItem_id5HxjapwgqMb, getSubConfigItem_id4g_6LpiKVx6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConfigItem_id5HxjapwgqMb, getSubConfigItem_id4g_6LpiKVx6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> getConfigItem_id5HxjapwgqMb(@NotNull SAbstractConcept __thisConcept__) {
     return ListSequence.fromList(new ArrayList<SNode>());
@@ -40,10 +37,6 @@ public final class IRequiresConfigItem__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ IRequiresConfigItem__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

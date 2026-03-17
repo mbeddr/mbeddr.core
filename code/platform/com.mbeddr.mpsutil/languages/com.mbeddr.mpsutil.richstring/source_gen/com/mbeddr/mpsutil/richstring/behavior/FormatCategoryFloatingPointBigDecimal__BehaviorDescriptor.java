@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import java.math.BigDecimal;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -30,10 +29,8 @@ public final class FormatCategoryFloatingPointBigDecimal__BehaviorDescriptor ext
   public static final SMethod<String> getExpressionDescription_id6Go9U2yp2P0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getExpressionDescription").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532372069696L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
   public static final SMethod<Boolean> hasPrecision_id6Go9U2y6eWh = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasPrecision").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532367138577L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getApplicableTypes_id6Go9U2y2JzF, getTypicalTypes_id6Go9U2y64Le, getExampleObject_id6Go9U2y2SeO, getExpressionDescription_id6Go9U2yp2P0, hasPrecision_id6Go9U2y6eWh);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getApplicableTypes_id6Go9U2y2JzF, getTypicalTypes_id6Go9U2y64Le, getExampleObject_id6Go9U2y2SeO, getExpressionDescription_id6Go9U2yp2P0, hasPrecision_id6Go9U2y6eWh);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getApplicableTypes_id6Go9U2y2JzF(@NotNull SAbstractConcept __thisConcept__) {
     return ListSequence.fromListAndArray(new ArrayList<SNode>(), _quotation_createNode_fr6uv9_a0a0a0(), _quotation_createNode_fr6uv9_b0a0a0(), _quotation_createNode_fr6uv9_c0a0a0(), _quotation_createNode_fr6uv9_d0a0a0(), _quotation_createNode_fr6uv9_e0a0a0());
@@ -54,10 +51,6 @@ public final class FormatCategoryFloatingPointBigDecimal__BehaviorDescriptor ext
   /*package*/ FormatCategoryFloatingPointBigDecimal__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

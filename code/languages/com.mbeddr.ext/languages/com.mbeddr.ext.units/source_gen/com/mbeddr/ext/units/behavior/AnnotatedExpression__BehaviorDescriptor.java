@@ -17,7 +17,6 @@ import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -32,10 +31,8 @@ public final class AnnotatedExpression__BehaviorDescriptor extends BaseBHDescrip
   public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
   public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(evaluateStatically_id6OxpEKG0KPv, isStaticallyEvaluatable_id3ilck8Kr3zN, renderReadable_id1VQvajLb13M, getPresentation_idhEwIMiw, getPriolevel_id5HxjapwgqKu);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(evaluateStatically_id6OxpEKG0KPv, isStaticallyEvaluatable_id3ilck8Kr3zN, renderReadable_id1VQvajLb13M, getPresentation_idhEwIMiw, getPriolevel_id5HxjapwgqKu);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Object evaluateStatically_id6OxpEKG0KPv(@NotNull SNode __thisNode__) {
     return Expression__BehaviorDescriptor.evaluateStatically_id6OxpEKG0KPv.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.innerExpression$bkfw));
@@ -56,10 +53,6 @@ public final class AnnotatedExpression__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ AnnotatedExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

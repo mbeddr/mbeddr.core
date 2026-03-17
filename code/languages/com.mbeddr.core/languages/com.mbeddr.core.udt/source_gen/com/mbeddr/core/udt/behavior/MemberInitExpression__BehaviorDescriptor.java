@@ -21,7 +21,6 @@ import com.mbeddr.core.statements.behavior.IInitAwareType__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -35,10 +34,8 @@ public final class MemberInitExpression__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<Void> appendAssignments_id1blaTcuBMLx = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("appendAssignments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1357038773596007521L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(appendAssignments_id1blaTcuBMLx, renderReadable_id1VQvajLb13M);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(appendAssignments_id1blaTcuBMLx, renderReadable_id1VQvajLb13M);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void appendAssignments_id1blaTcuBMLx(@NotNull SNode __thisNode__, SNode container, SNode context, SNode contextType) {
     if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(__thisNode__, LINKS.value$bKKr), CONCEPTS.IStructuredInitExpression$xm)) {
@@ -64,10 +61,6 @@ public final class MemberInitExpression__BehaviorDescriptor extends BaseBHDescri
   /*package*/ MemberInitExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

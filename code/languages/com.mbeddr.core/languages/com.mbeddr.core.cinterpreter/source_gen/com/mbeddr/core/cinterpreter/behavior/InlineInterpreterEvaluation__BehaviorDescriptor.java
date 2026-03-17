@@ -22,7 +22,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.mpsutil.interpreter.test.behavior.AbstractInterpreterEvaluation__BehaviorDescriptor;
 import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -35,10 +34,8 @@ public final class InlineInterpreterEvaluation__BehaviorDescriptor extends BaseB
   public static final SMethod<Object> getExpected_id65E6xpGSh8P = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("getExpected").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7019451652828631605L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
   public static final SMethod<String> getNodeRendering_id65E6xpGVdh9 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getNodeRendering").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7019451652829402185L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getInterpreter_id65E6xpGShbD, getExpected_id65E6xpGSh8P, getNodeRendering_id65E6xpGVdh9);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getInterpreter_id65E6xpGShbD, getExpected_id65E6xpGSh8P, getNodeRendering_id65E6xpGVdh9);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static IInterpreter getInterpreter_id65E6xpGShbD(@NotNull SNode __thisNode__) {
     return new CombinedConditionalInterpreter(Sequence.fromIterable(InterpreterRegistry.findAllInterpreterExecutablesForCategory("CInterpreter")).ofType(IConditionalInterpreter.class).toGenericArray(IConditionalInterpreter.class));
@@ -57,10 +54,6 @@ public final class InlineInterpreterEvaluation__BehaviorDescriptor extends BaseB
   /*package*/ InlineInterpreterEvaluation__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

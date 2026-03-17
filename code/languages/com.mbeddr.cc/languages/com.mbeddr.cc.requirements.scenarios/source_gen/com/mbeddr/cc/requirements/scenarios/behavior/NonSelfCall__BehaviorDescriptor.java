@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,10 +24,8 @@ public final class NonSelfCall__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<SNode> getContextParticipant_id4YQM_89uRDd = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getContextParticipant").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828452862541L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContextParticipant_id4YQM_89uRDd);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContextParticipant_id4YQM_89uRDd);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getContextParticipant_id4YQM_89uRDd(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.targetParticipant$FRTR), LINKS.participant$paZn);
@@ -37,10 +34,6 @@ public final class NonSelfCall__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ NonSelfCall__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

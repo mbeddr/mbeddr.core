@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,10 +21,8 @@ public final class ICanReferToValueStructure__BehaviorDescriptor extends BaseBHD
 
   public static final SMethod<SNode> getValueStructure_idIPRL99KNBQ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getValueStructure").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(843825774841772534L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getValueStructure_idIPRL99KNBQ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getValueStructure_idIPRL99KNBQ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getValueStructure_idIPRL99KNBQ(@NotNull SNode __thisNode__) {
     return null;
@@ -34,10 +31,6 @@ public final class ICanReferToValueStructure__BehaviorDescriptor extends BaseBHD
   /*package*/ ICanReferToValueStructure__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

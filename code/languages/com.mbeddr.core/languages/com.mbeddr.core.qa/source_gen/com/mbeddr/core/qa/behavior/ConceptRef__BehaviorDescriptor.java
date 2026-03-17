@@ -29,7 +29,7 @@ public final class ConceptRef__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> matches_id5stuwjVbNOa = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("matches").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6277307617436974346L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> resultLabel_id5stuwjVslJQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("resultLabel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6277307617441307638L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matches_id5stuwjVbNOa, resultLabel_id5stuwjVslJQ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matches_id5stuwjVbNOa, resultLabel_id5stuwjVslJQ);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.separateSubconcepts$XVjg, true);

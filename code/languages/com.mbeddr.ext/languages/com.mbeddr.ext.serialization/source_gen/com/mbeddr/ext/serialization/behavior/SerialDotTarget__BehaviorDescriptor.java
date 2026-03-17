@@ -17,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -33,10 +32,8 @@ public final class SerialDotTarget__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<SNode> handler_id6pWLWdpvIPW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("handler").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7384997130814811516L).languageId(0xae278662d274cf3cL, 0xbb0ad88b63cd45fdL).build2();
   public static final SMethod<Boolean> forceDot_id3p0OY6V_Omm = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("forceDot").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3909357443025946006L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTarget_id66uzewbZgGM, isLValue_id5jCi3tJryBA, renderReadable_id7bjxLYAscGt, handler_id6pWLWdpvIPW, forceDot_id3p0OY6V_Omm);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTarget_id66uzewbZgGM, isLValue_id5jCi3tJryBA, renderReadable_id7bjxLYAscGt, handler_id6pWLWdpvIPW, forceDot_id3p0OY6V_Omm);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getTarget_id66uzewbZgGM(@NotNull SNode __thisNode__) {
     return null;
@@ -68,10 +65,6 @@ public final class SerialDotTarget__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ SerialDotTarget__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

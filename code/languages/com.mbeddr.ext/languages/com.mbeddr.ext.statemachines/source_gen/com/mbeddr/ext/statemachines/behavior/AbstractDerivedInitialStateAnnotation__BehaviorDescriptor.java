@@ -13,7 +13,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -24,10 +23,8 @@ public final class AbstractDerivedInitialStateAnnotation__BehaviorDescriptor ext
   public static final SMethod<SNode> createInitialExpr_id3TJMuIK0DFA = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createInitialExpr").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4499036566873873126L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
   public static final SMethod<String> getImmediateInitialExecutionErrorMessage_id3TJMuILXb3L = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getImmediateInitialExecutionErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4499036566906515697L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isApplicable_id3$f8hf_bVKn, createInitialExpr_id3TJMuIK0DFA, getImmediateInitialExecutionErrorMessage_id3TJMuILXb3L);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isApplicable_id3$f8hf_bVKn, createInitialExpr_id3TJMuIK0DFA, getImmediateInitialExecutionErrorMessage_id3TJMuILXb3L);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getImmediateInitialExecutionErrorMessage_id3TJMuILXb3L(@NotNull SNode __thisNode__) {
     return "state machines with a derived initial state cannot be executed right away when being initialized from on init-triggered component runnables";
@@ -36,10 +33,6 @@ public final class AbstractDerivedInitialStateAnnotation__BehaviorDescriptor ext
   /*package*/ AbstractDerivedInitialStateAnnotation__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

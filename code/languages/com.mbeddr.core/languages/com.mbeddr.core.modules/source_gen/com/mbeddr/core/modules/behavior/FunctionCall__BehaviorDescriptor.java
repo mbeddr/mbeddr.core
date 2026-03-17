@@ -20,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.IterableUtils;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -42,10 +41,8 @@ public final class FunctionCall__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<SNode> getFunction_id74lwjTQiYY5 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getFunction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8148561206069424005L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(rebindToProxy_id7jSUHHvkApb, referencedModuleContent_id7jSUHHvkAph, isSideeffectFree_id6SENleF$SRD, getActualsLink_id2$xXL4HCFy0, getActuals_id6WGVxckB05Y, getFormals_id6WGVxckB065, getReturnType_id7$$5Stoo8Y$, hasEllipsis_id7$$5Stoo9at, renderReadable_id1VQvajLb13M, getFunction_id74lwjTQiYY5);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(rebindToProxy_id7jSUHHvkApb, referencedModuleContent_id7jSUHHvkAph, isSideeffectFree_id6SENleF$SRD, getActualsLink_id2$xXL4HCFy0, getActuals_id6WGVxckB05Y, getFormals_id6WGVxckB065, getReturnType_id7$$5Stoo8Y$, hasEllipsis_id7$$5Stoo9at, renderReadable_id1VQvajLb13M, getFunction_id74lwjTQiYY5);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void rebindToProxy_id7jSUHHvkApb(@NotNull SNode __thisNode__, SNode proxyElement) {
     SLinkOperations.setTarget(__thisNode__, LINKS.function$oBh5, SNodeOperations.cast(proxyElement, CONCEPTS.FunctionSignature$Tx));
@@ -81,10 +78,6 @@ public final class FunctionCall__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ FunctionCall__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

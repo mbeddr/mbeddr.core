@@ -25,7 +25,6 @@ import jetbrains.mps.generator.TransientModelsModule;
 import com.mbeddr.core.base.behavior.IVisibleElementAdapter__BehaviorDescriptor;
 import com.mbeddr.core.base.behavior.IVisibleElementProvider__BehaviorDescriptor;
 import com.mbeddr.core.base.behavior.IRequiresConfigItem__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -72,10 +71,8 @@ public final class Component__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
   public static final SMethod<Iterable<SNode>> runnables_id33VMAJZf8UA = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("runnables").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3529637298167385766L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEditorConceptName_id77Zd6XAvZc7, allFields_id4usdeMNV5Sr, ports_id5fn4FV$aPPc, providedPorts_id6WCyKlekwqK, requiredPorts_id6WCyKlekwqV, collectPorts_id71UKpntmYws, allPorts_id71UKpntmZJr, contentsWithoutPorts_id5Xnv3$QDZVY, allProvidedPorts_id71UKpntoZW7, allRequiredPorts_id71UKpntoZWS, allRequiredUnrestrictedPorts_id7JjETeGcPjt, allRequiredRestrictedPorts_id7JjETeGcPke, resolveEffectiveRunnableForOperation_idpTHqv6LhL9, allPortsWithProtocol_id5oFMniD9OqH, portsWithProtocol_id5basnX1$vqh, genStructName_id34x64NySiu$, singletonInstanceDataName_idRkqd51a25$, visibleContentsOfType_id6clJcrJXo2_, allReferencedModuleContents_id1zPfrUoUUqq, initFields_idF_QT7XsuCS, allInitFields_id7BIOMJxqwh7, fields_id6JVEnxIj2nQ, runnables_id78Ts1skoVf2, allRunnables_id7BIOMJxff0s, isAbstract_id3PT6Z48L3oi, getLOCEquivalent_id6brBMefRfO0, onInitRunnable_id6JVEnxIjpG_, getConfigItem_id5HxjapwgqMb, allOperationTriggers_id2mhTzLJjXF2, collectAllDescendants_id2mhTzLJkfC8, portCountVarName_id5hYHEwZn9Bl, createType_id3o2OLGv7CoR, runnables_id33VMAJZf8UA);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEditorConceptName_id77Zd6XAvZc7, allFields_id4usdeMNV5Sr, ports_id5fn4FV$aPPc, providedPorts_id6WCyKlekwqK, requiredPorts_id6WCyKlekwqV, collectPorts_id71UKpntmYws, allPorts_id71UKpntmZJr, contentsWithoutPorts_id5Xnv3$QDZVY, allProvidedPorts_id71UKpntoZW7, allRequiredPorts_id71UKpntoZWS, allRequiredUnrestrictedPorts_id7JjETeGcPjt, allRequiredRestrictedPorts_id7JjETeGcPke, resolveEffectiveRunnableForOperation_idpTHqv6LhL9, allPortsWithProtocol_id5oFMniD9OqH, portsWithProtocol_id5basnX1$vqh, genStructName_id34x64NySiu$, singletonInstanceDataName_idRkqd51a25$, visibleContentsOfType_id6clJcrJXo2_, allReferencedModuleContents_id1zPfrUoUUqq, initFields_idF_QT7XsuCS, allInitFields_id7BIOMJxqwh7, fields_id6JVEnxIj2nQ, runnables_id78Ts1skoVf2, allRunnables_id7BIOMJxff0s, isAbstract_id3PT6Z48L3oi, getLOCEquivalent_id6brBMefRfO0, onInitRunnable_id6JVEnxIjpG_, getConfigItem_id5HxjapwgqMb, allOperationTriggers_id2mhTzLJjXF2, collectAllDescendants_id2mhTzLJkfC8, portCountVarName_id5hYHEwZn9Bl, createType_id3o2OLGv7CoR, runnables_id33VMAJZf8UA);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getEditorConceptName_id77Zd6XAvZc7(@NotNull SNode __thisNode__) {
     return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__));
@@ -211,10 +208,6 @@ public final class Component__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Component__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

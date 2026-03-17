@@ -12,10 +12,9 @@ import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.core.base.behavior.ICommentable__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
+import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -26,10 +25,8 @@ public final class IStatemachineContent__BehaviorDescriptor extends BaseBHDescri
 
   public static final SMethod<List<SAbstractConcept>> getCommentConcept_id5HxjapwgqLb = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getCommentConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574603L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCommentConcept_id5HxjapwgqLb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCommentConcept_id5HxjapwgqLb);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SAbstractConcept> getCommentConcept_id5HxjapwgqLb(@NotNull SAbstractConcept __thisConcept__) {
     List<SAbstractConcept> result = ICommentable__BehaviorDescriptor.getCommentConcept_id5HxjapwgqLb.invoke0(__thisConcept__, CONCEPTS.ICommentable$DE);
@@ -40,10 +37,6 @@ public final class IStatemachineContent__BehaviorDescriptor extends BaseBHDescri
   /*package*/ IStatemachineContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

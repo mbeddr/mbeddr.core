@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,19 +22,13 @@ public final class IMakePathProvider__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<Boolean> canMake_id3s1LyzG6KRG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canMake").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3963667026124934636L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
   public static final SMethod<String> getPathToMake_id3s1LyzG7eMZ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPathToMake").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3963667026125057215L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canMake_id3s1LyzG6KRG, getPathToMake_id3s1LyzG7eMZ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canMake_id3s1LyzG6KRG, getPathToMake_id3s1LyzG7eMZ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IMakePathProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

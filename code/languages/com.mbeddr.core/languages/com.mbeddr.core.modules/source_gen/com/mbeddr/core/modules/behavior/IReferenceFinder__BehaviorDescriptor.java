@@ -17,7 +17,6 @@ import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -26,10 +25,8 @@ public final class IReferenceFinder__BehaviorDescriptor extends BaseBHDescriptor
 
   public static final SMethod<Iterable<SNode>> findDescendantsThatReference_id3hgxKzbiKKQ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findDescendantsThatReference").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3769661359949286454L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findDescendantsThatReference_id3hgxKzbiKKQ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findDescendantsThatReference_id3hgxKzbiKKQ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> findDescendantsThatReference_id3hgxKzbiKKQ(@NotNull SNode __thisNode__, final SNode target) {
     List<SNode> result = new ArrayList<SNode>();
@@ -44,10 +41,6 @@ public final class IReferenceFinder__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ IReferenceFinder__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

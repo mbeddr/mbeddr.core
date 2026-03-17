@@ -32,7 +32,7 @@ public final class SenderReceiverInterface__BehaviorDescriptor extends BaseBHDes
   public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
   public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeUsedInMultipleRP_id2ZUGF54k3cG, hasProtocol_id5oFMniD9Ori, getUniquelyNamedElements_id4qSf1u1TRfj, getElements_idIPRL99Lfbu, exportable_id5HxjapwgqKI, getLOCEquivalent_id6brBMefRfO0);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeUsedInMultipleRP_id2ZUGF54k3cG, hasProtocol_id5oFMniD9Ori, getUniquelyNamedElements_id4qSf1u1TRfj, getElements_idIPRL99Lfbu, exportable_id5HxjapwgqKI, getLOCEquivalent_id6brBMefRfO0);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.exported$V4am, true);

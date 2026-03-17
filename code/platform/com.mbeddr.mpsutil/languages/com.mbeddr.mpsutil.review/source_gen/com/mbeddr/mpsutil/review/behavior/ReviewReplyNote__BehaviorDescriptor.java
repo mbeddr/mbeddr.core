@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -25,10 +24,8 @@ public final class ReviewReplyNote__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<SNode> getPredecessor_id10nVqVftAKE = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPredecessor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929130L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
   public static final SMethod<Boolean> isConnectionAllowed_id10nVqVftAKg = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isConnectionAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929104L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPredecessor_id10nVqVftAKE, isConnectionAllowed_id10nVqVftAKg);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPredecessor_id10nVqVftAKE, isConnectionAllowed_id10nVqVftAKg);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getPredecessor_id10nVqVftAKE(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.repliedNote$u_0w);
@@ -40,10 +37,6 @@ public final class ReviewReplyNote__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ ReviewReplyNote__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

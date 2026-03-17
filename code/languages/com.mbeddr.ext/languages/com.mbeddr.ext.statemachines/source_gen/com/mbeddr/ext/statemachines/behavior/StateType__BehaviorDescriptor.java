@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.expressions.behavior.Type__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -37,10 +36,8 @@ public final class StateType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> getPrintfFormatSpecifier_id4XMHJL4FDjg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrintfFormatSpecifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5724839270941627600L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<SNode> getDefaultValue_id4jc_TWT4LGD = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4957503999941221161L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, getDeclaration_id59zzgFRcVlN, canBeVolatile_id2zhwXA_2SdW, canBeConst_id2zhwXA$TG$3, canBeUsedInSwitch_id1z9MsBsVqFS, getUsedBytes_id61lw97FtLtJ, getPrintfFormatSpecifier_id4XMHJL4FDjg, getDefaultValue_id4jc_TWT4LGD);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, getDeclaration_id59zzgFRcVlN, canBeVolatile_id2zhwXA_2SdW, canBeConst_id2zhwXA$TG$3, canBeUsedInSwitch_id1z9MsBsVqFS, getUsedBytes_id61lw97FtLtJ, getPrintfFormatSpecifier_id4XMHJL4FDjg, getDefaultValue_id4jc_TWT4LGD);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     String result = SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)) + "<" + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invokeSuper(__thisNode__, CONCEPTS.StateType$1U) + ">";
@@ -74,10 +71,6 @@ public final class StateType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ StateType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
