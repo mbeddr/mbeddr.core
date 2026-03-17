@@ -13507,7 +13507,7 @@
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
             <node concept="398BVA" id="3xFG3bj5cTU" role="3LXTmr">
-              <ref role="398BVh" node="3AVJcIMlF8p" resolve="mbeddr.github.core.home" />
+              <ref role="398BVh" node="3AVJcIMlF8p" resolve="project.root" />
               <node concept="2Ry0Ak" id="3xFG3bj5cTV" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="3xFG3bj5cTW" role="2Ry0An">
@@ -13527,7 +13527,7 @@
           </node>
         </node>
         <node concept="398BVA" id="7Pr7tifzlk$" role="3LF7KH">
-          <ref role="398BVh" node="3AVJcIMlF8p" resolve="mbeddr.github.core.home" />
+          <ref role="398BVh" node="3AVJcIMlF8p" resolve="project.root" />
           <node concept="2Ry0Ak" id="7Pr7tifzlkF" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="7Pr7tifzlkL" role="2Ry0An">
@@ -13563,7 +13563,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="4PRpvcZJNXX" role="1HemKq">
             <node concept="398BVA" id="4PRpvcZJNXP" role="3LXTmr">
-              <ref role="398BVh" node="3AVJcIMlF8p" resolve="mbeddr.github.core.home" />
+              <ref role="398BVh" node="3AVJcIMlF8p" resolve="project.root" />
               <node concept="2Ry0Ak" id="4PRpvcZJNXQ" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="4PRpvcZJNXR" role="2Ry0An">
@@ -17047,7 +17047,7 @@
     <node concept="10PD9b" id="3AVJcIMlF8n" role="10PD9s" />
     <node concept="3b7kt6" id="3AVJcIMlF8o" role="10PD9s" />
     <node concept="398rNT" id="3AVJcIMlF8p" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.github.core.home" />
+      <property role="TrG5h" value="project.root" />
       <node concept="55IIr" id="3AVJcIMlF8q" role="398pKh">
         <node concept="2Ry0Ak" id="3AVJcIMlF8r" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -17075,7 +17075,7 @@
     <node concept="398rNT" id="4MR$$QmqomQ" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
       <node concept="398BVA" id="3AjhVMbHnLi" role="398pKh">
-        <ref role="398BVh" node="3AVJcIMlF8p" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="3AVJcIMlF8p" resolve="project.root" />
         <node concept="2Ry0Ak" id="3AjhVMbHsUR" role="iGT6I">
           <property role="2Ry0Am" value="artifacts" />
         </node>
@@ -17084,7 +17084,7 @@
     <node concept="398rNT" id="1OEbLwd7XEw" role="1l3spd">
       <property role="TrG5h" value="dependencies.root" />
       <node concept="398BVA" id="1OEbLwd7YgW" role="398pKh">
-        <ref role="398BVh" node="3AVJcIMlF8p" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="3AVJcIMlF8p" resolve="project.root" />
         <node concept="2Ry0Ak" id="1OEbLwd7YJR" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="1OEbLwd7Z37" role="2Ry0An">
@@ -17105,7 +17105,7 @@
     <node concept="398rNT" id="7uZw0yZ2_Lj" role="1l3spd">
       <property role="TrG5h" value="mpsutil" />
       <node concept="398BVA" id="7uZw0yZ2_Lk" role="398pKh">
-        <ref role="398BVh" node="3AVJcIMlF8p" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="3AVJcIMlF8p" resolve="project.root" />
         <node concept="2Ry0Ak" id="7uZw0yZ2_Ll" role="iGT6I">
           <property role="2Ry0Am" value="code" />
           <node concept="2Ry0Ak" id="7uZw0yZ2_L_" role="2Ry0An">
@@ -17120,7 +17120,7 @@
     <node concept="398rNT" id="1m4fy7Kxwst" role="1l3spd">
       <property role="TrG5h" value="mbeddr.doc" />
       <node concept="398BVA" id="1m4fy7Kxwsu" role="398pKh">
-        <ref role="398BVh" node="3AVJcIMlF8p" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="3AVJcIMlF8p" resolve="project.root" />
         <node concept="2Ry0Ak" id="1m4fy7Kxwsv" role="iGT6I">
           <property role="2Ry0Am" value="code" />
           <node concept="2Ry0Ak" id="1m4fy7Kxwsw" role="2Ry0An">
@@ -17135,7 +17135,7 @@
     <node concept="398rNT" id="5NpY9mnqcr1" role="1l3spd">
       <property role="TrG5h" value="mbeddr.doc.aspect" />
       <node concept="398BVA" id="5NpY9mnqijp" role="398pKh">
-        <ref role="398BVh" node="3AVJcIMlF8p" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="3AVJcIMlF8p" resolve="project.root" />
         <node concept="2Ry0Ak" id="5NpY9mnqijq" role="iGT6I">
           <property role="2Ry0Am" value="code" />
           <node concept="2Ry0Ak" id="5NpY9mnqijr" role="2Ry0An">
@@ -18389,7 +18389,7 @@
       </node>
     </node>
     <node concept="398rNT" id="6ucYLjosfLw" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.github.core.home" />
+      <property role="TrG5h" value="project.root" />
       <node concept="55IIr" id="6ucYLjosfLx" role="398pKh">
         <node concept="2Ry0Ak" id="6ucYLjosfLy" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -18823,7 +18823,7 @@
     <node concept="10PD9b" id="4SMNYR2ZkZZ" role="10PD9s" />
     <node concept="3b7kt6" id="4SMNYR2Zl00" role="10PD9s" />
     <node concept="398rNT" id="4SMNYR2Zl01" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.github.core.home" />
+      <property role="TrG5h" value="project.root" />
       <node concept="55IIr" id="4SMNYR2Zl02" role="398pKh">
         <node concept="2Ry0Ak" id="4SMNYR2Zl03" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -18842,7 +18842,7 @@
     <node concept="398rNT" id="4SMNYR2Zl0l" role="1l3spd">
       <property role="TrG5h" value="mpsutil" />
       <node concept="398BVA" id="4SMNYR2Zl0m" role="398pKh">
-        <ref role="398BVh" node="4SMNYR2Zl01" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="4SMNYR2Zl01" resolve="project.root" />
         <node concept="2Ry0Ak" id="4SMNYR2Zl0n" role="iGT6I">
           <property role="2Ry0Am" value="code" />
           <node concept="2Ry0Ak" id="4SMNYR2Zl0o" role="2Ry0An">
