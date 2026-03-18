@@ -63,7 +63,7 @@ public class InterpreterCFunctionInterpreter extends ConditionalInterpreterBase 
         return "FunctionCall";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("FunctionCall", "http://127.0.0.1:63320/node?ref=001e7f39-4de8-4af7-ac0c-38af38441599%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient60%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938072130");
+        return new EvaluatorInfo("FunctionCall", "http://127.0.0.1:63320/node?ref=a9ba4e32-747c-431f-b8f8-212f9ebfd02b%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient54%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938072130");
       }
 
       @Override
@@ -96,7 +96,7 @@ public class InterpreterCFunctionInterpreter extends ConditionalInterpreterBase 
         return "Argument";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("Argument", "http://127.0.0.1:63320/node?ref=001e7f39-4de8-4af7-ac0c-38af38441599%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient60%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938072141");
+        return new EvaluatorInfo("Argument", "http://127.0.0.1:63320/node?ref=a9ba4e32-747c-431f-b8f8-212f9ebfd02b%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient54%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938072141");
       }
 
       @Override
@@ -129,7 +129,7 @@ public class InterpreterCFunctionInterpreter extends ConditionalInterpreterBase 
         return "ArgumentRef";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ArgumentRef", "http://127.0.0.1:63320/node?ref=001e7f39-4de8-4af7-ac0c-38af38441599%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient60%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938072148");
+        return new EvaluatorInfo("ArgumentRef", "http://127.0.0.1:63320/node?ref=a9ba4e32-747c-431f-b8f8-212f9ebfd02b%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient54%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938072148");
       }
 
       @Override
@@ -162,7 +162,7 @@ public class InterpreterCFunctionInterpreter extends ConditionalInterpreterBase 
         return "Function";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("Function", "http://127.0.0.1:63320/node?ref=001e7f39-4de8-4af7-ac0c-38af38441599%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient60%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938072153");
+        return new EvaluatorInfo("Function", "http://127.0.0.1:63320/node?ref=a9ba4e32-747c-431f-b8f8-212f9ebfd02b%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient54%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938072153");
       }
 
       @Override
@@ -192,7 +192,7 @@ public class InterpreterCFunctionInterpreter extends ConditionalInterpreterBase 
         return "ReturnStatement";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ReturnStatement", "http://127.0.0.1:63320/node?ref=001e7f39-4de8-4af7-ac0c-38af38441599%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient60%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938072158");
+        return new EvaluatorInfo("ReturnStatement", "http://127.0.0.1:63320/node?ref=a9ba4e32-747c-431f-b8f8-212f9ebfd02b%2Fi%3A10000001%28com.mbeddr.core.modules.interpreter%40transient54%2Fcom.mbeddr.core.modules.interpreter.plugin%400%29%2F4535693827938072158");
       }
 
       @Override
