@@ -7,4 +7,4 @@ jbr = "com.jetbrains.jdk:jbr_jcef:21.0.6-b895.109"
 
 # For a release version of MPS, use this dependency:
 #mps = "com.jetbrains:mps:XXXX.Y"
-mps = "com.jetbrains.mps:mps-prerelease:253.28294.10539"
+mps = "com.jetbrains.mps:mps-prerelease:253.28294.10545"
