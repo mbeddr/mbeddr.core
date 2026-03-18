@@ -7,11 +7,11 @@
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.platform.ts.tests.build" />
   <property name="artifacts.root" location="" />
   <property name="mps.home" location="" />
-  <property name="mbeddr.github.core.home" location="${basedir}/../../" />
-  <property name="mps.macro.mbeddr.github.core.home" location="${mbeddr.github.core.home}" />
-  <property name="mbeddr.mpsutil" location="${mbeddr.github.core.home}/code/platform/com.mbeddr.mpsutil" />
-  <property name="dependencies.root" location="${mbeddr.github.core.home}/build/dependencies" />
+  <property name="project.root" location="${basedir}/../../" />
+  <property name="mbeddr.mpsutil" location="${project.root}/code/platform/com.mbeddr.mpsutil" />
+  <property name="dependencies.root" location="${project.root}/build/dependencies" />
   <property name="platform.artifacts" location="${artifacts.root}/com.mbeddr.platform" />
+  <property name="test.reports.root" location="${basedir}/test-reports" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.platform" location="${platform.artifacts}" />
   <property name="artifacts.de.itemis.mps.extensions" location="${dependencies.root}/de.itemis.mps.extensions" />
@@ -1507,21 +1507,21 @@
     </echoxml>
     <jar destfile="${build.layout}/com.mbeddr.doc.test.documents.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.doc.test.documents" />
-      <fileset dir="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents" includes="icons/**, resources/**, doc_gen/**" />
-      <fileset dir="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents" includes="icons/**, resources/**, doc_gen/**" />
+      <fileset dir="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.mbeddr.doc.test.documents.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/code-platform-com.mbeddr.doc-solutions-com.mbeddr.doc.test.documents-models">
-      <fileset dir="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+      <fileset dir="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/com.mbeddr.doc.test.documents-src.jar" duplicate="preserve">
-      <fileset dir="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen">
+      <fileset dir="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/com.mbeddr.doc.test.documents.msd" prefix="module" />
+      <zipfileset file="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/com.mbeddr.doc.test.documents.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-platform-com.mbeddr.doc-solutions-com.mbeddr.doc.test.documents-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.asynccell.sandbox.jar" />
@@ -3291,7 +3291,7 @@
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       <chunk>
-        <module file="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/com.mbeddr.doc.test.documents.msd" />
+        <module file="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/com.mbeddr.doc.test.documents.msd" />
         <module file="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.asynccell.sandbox/com.mbeddr.mpsutil.asynccell.sandbox.mpl" />
         <module file="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel/com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.mpl" />
         <module file="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/com.mbeddr.mpsutil.genplandiagram.tests.msd" />
@@ -3340,11 +3340,11 @@
       </jvmargs>
       <macro name="artifacts.root" path="${artifacts.root}" />
       <macro name="mps.home" path="${mps.home}" />
-      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
-      <macro name="mps.macro.mbeddr.github.core.home" path="${mps.macro.mbeddr.github.core.home}" />
+      <macro name="project.root" path="${project.root}" />
       <macro name="mbeddr.mpsutil" path="${mbeddr.mpsutil}" />
       <macro name="dependencies.root" path="${dependencies.root}" />
       <macro name="platform.artifacts" path="${platform.artifacts}" />
+      <macro name="test.reports.root" path="${test.reports.root}" />
     </generate>
   </target>
   
@@ -3352,7 +3352,7 @@
   
   <target name="makeDependents" />
   
-  <target name="module-tests" depends="assemble, test.com.mbeddr.platform.tests" />
+  <target name="module-tests" depends="assemble, test.mpsutil.tests, test.doc.tests" />
   
   <target name="java.compile.test.assessments.testlang" depends="fetchDependencies">
     <mkdir dir="${mbeddr.mpsutil}/tests/test.assessments.testlang/source_gen" />
@@ -6528,13 +6528,13 @@
   </target>
   
   <target name="java.compile.com.mbeddr.doc.test.documents" depends="fetchDependencies">
-    <mkdir dir="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen" />
+    <mkdir dir="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.test.documents" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.test.documents" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen" />
-        <pathelement path="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/test_gen/" />
+        <path location="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen" />
+        <pathelement path="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
@@ -6738,12 +6738,12 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.doc.test.documents">
-      <fileset dir="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen" excludes="**/*.java" />
-      <fileset dir="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/test_gen/" excludes="**/*.java" />
+      <fileset dir="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen" excludes="**/*.java" />
+      <fileset dir="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/test_gen/" excludes="**/*.java" />
     </copy>
   </target>
   
-  <target name="test.com.mbeddr.platform.tests" depends="assemble">
+  <target name="test.mpsutil.tests" depends="assemble">
     <path id="mps.tests.path">
       <pathelement location="${build.layout}/test.assessments.testlang.jar" />
       <pathelement location="${build.layout}/test.assessments.jar" />
@@ -6784,11 +6784,10 @@
       <pathelement location="${build.layout}/com.mbeddr.mpsutil.logicalChild.sandbox.jar" />
       <pathelement location="${build.layout}/test.com.mbeddr.mpsutil.collections.runtime.jar" />
       <pathelement location="${build.layout}/com.mbeddr.mpsutil.genplandiagram.tests.jar" />
-      <pathelement location="${build.layout}/com.mbeddr.doc.test.documents.jar" />
     </path>
     <pathconvert property="mps.tests.path.string" refid="mps.tests.path" />
     <property name="build.jna.library.path" location="${artifacts.mps}/lib/jna" />
-    <launchtests fork="true" haltonfailure="false" mpshome="${artifacts.mps}" reports=".">      
+    <launchtests fork="true" haltonfailure="false" mpshome="${artifacts.mps}" reports="${test.reports.root}/mpsutil.tests">      
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xss2048k" />
@@ -6851,7 +6850,6 @@
       <plugin id="de.q60.mps.collections.libs" path="${artifacts.com.mbeddr.platform}/de.q60.mps.collections.libs" />
       <plugin id="de.slisson.mps.conditionalEditor" path="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor" />
       <plugin id="de.slisson.mps.hacks" path="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" />
-      <plugin id="com.mbeddr.doc" path="${artifacts.com.mbeddr.platform}/mbeddr.doc" />
       <plugin id="com.mbeddr.mpsutil" path="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil" />
       <plugin id="com.mbeddr.platform" path="${artifacts.com.mbeddr.platform}/mbeddr.platform" />
       <plugin id="org.apache.commons" path="${artifacts.com.mbeddr.platform}/mps-apache-commons" />
@@ -6882,14 +6880,97 @@
       <plugin id="jetbrains.mps.vcs" path="${artifacts.mps}/plugins/mps-vcs" />
       <plugin id="Git4Idea" path="${artifacts.mps}/plugins/vcs-git" />
       <plugin id="Subversion" path="${artifacts.mps}/plugins/vcs-svn" />
-      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
-      <project path="${basedir}" />
+      <project path="${mbeddr.mpsutil}" />
       <testmodules>        
         <path refid="mps.tests.path" />
       </testmodules>
     </launchtests>
-    <move todir=".">      
-      <fileset dir=".">
+    <move todir="${test.reports.root}/mpsutil.tests">      
+      <fileset dir="${test.reports.root}/mpsutil.tests">
+        <include name="TEST-junit-jupiter.xml" />
+        <include name="TEST-junit-vintage.xml" />
+      </fileset>
+      <globmapper from="*.xml" to="*-com.mbeddr.platform.ts.tests.build.xml" />
+    </move>
+  </target>
+  
+  <target name="test.doc.tests" depends="assemble">
+    <path location="${build.layout}/com.mbeddr.doc.test.documents.jar" id="mps.tests.path" />
+    <pathconvert property="mps.tests.path.string" refid="mps.tests.path" />
+    <property name="build.jna.library.path" location="${artifacts.mps}/lib/jna" />
+    <launchtests fork="true" haltonfailure="false" mpshome="${artifacts.mps}" reports="${test.reports.root}/doc.tests">      
+      <jvmargs>
+        <arg value="-ea" />
+        <arg value="-Xss2048k" />
+        <arg value="-Xmx1024m" />
+        <arg value="-Didea.config.path=${build.mps.config.path}" />
+        <arg value="-Didea.system.path=${build.mps.system.path}" />
+        <arg value="-Didea.split.test.logs=true" />
+        <arg value="-Djna.boot.library.path=${build.jna.library.path}" />
+      </jvmargs>
+      
+      
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
+      <library file="${artifacts.mps}/languages/workbench-stub.jar" />
+      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
+      
+      <plugin id="com.mbeddr.mpsutil.common" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common" />
+      <plugin id="com.mbeddr.mpsutil.contextactions" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.contextactions" />
+      <plugin id="com.mbeddr.mpsutil.editor.querylist" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist" />
+      <plugin id="com.mbeddr.mpsutil.editorsupport" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editorsupport" />
+      <plugin id="com.mbeddr.mpsutil.filepicker" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" />
+      <plugin id="com.mbeddr.mpsutil.infrastructure.misc" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.infrastructure.misc" />
+      <plugin id="com.mbeddr.mpsutil.jung" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.jung" />
+      <plugin id="com.mbeddr.mpsutil.margincell_review" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.margincell_review" />
+      <plugin id="com.mbeddr.mpsutil.plantuml" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.plantuml" />
+      <plugin id="com.mbeddr.mpsutil.spreferences" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.spreferences" />
+      <plugin id="com.mbeddr.mpsutil.suppresswarning" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.suppresswarning" />
+      <plugin id="com.mbeddr.mpsutil.userstyles" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.userstyles" />
+      <plugin id="de.itemis.mps.selection" path="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection" />
+      <plugin id="de.itemis.mps.blutil" path="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil" />
+      <plugin id="de.itemis.mps.celllayout" path="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout" />
+      <plugin id="de.itemis.mps.editor.diagram" path="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram" />
+      <plugin id="de.itemis.mps.editor.widgets" path="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.widgets" />
+      <plugin id="de.itemis.mps.grammarcells" path="${artifacts.com.mbeddr.platform}/de.itemis.mps.grammarcells" />
+      <plugin id="de.itemis.mps.utils" path="${artifacts.com.mbeddr.platform}/de.itemis.mps.utils" />
+      <plugin id="de.itemis.stubs.batik" path="${artifacts.com.mbeddr.platform}/de.itemis.stubs.batik" />
+      <plugin id="de.itemis.stubs.xml" path="${artifacts.com.mbeddr.platform}/de.itemis.stubs.xml" />
+      <plugin id="de.q60.mps.collections.libs" path="${artifacts.com.mbeddr.platform}/de.q60.mps.collections.libs" />
+      <plugin id="de.slisson.mps.conditionalEditor" path="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor" />
+      <plugin id="de.slisson.mps.hacks" path="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" />
+      <plugin id="com.mbeddr.doc" path="${artifacts.com.mbeddr.platform}/mbeddr.doc" />
+      <plugin id="com.mbeddr.platform" path="${artifacts.com.mbeddr.platform}/mbeddr.platform" />
+      <plugin id="org.apache.commons" path="${artifacts.com.mbeddr.platform}/mps-apache-commons" />
+      <plugin id="de.slisson.mps.editor.multiline" path="${artifacts.com.mbeddr.platform}/mps-multiline" />
+      <plugin id="de.slisson.mps.richtext" path="${artifacts.com.mbeddr.platform}/mps-richtext" />
+      <plugin id="de.slisson.mps.tables" path="${artifacts.com.mbeddr.platform}/mps-tables" />
+      <plugin id="com.mbeddr.mpsutil.refactoring" path="${artifacts.com.mbeddr.platform}/mpsutil.refactoring" />
+      <plugin id="com.intellij.modules.mps" path="${artifacts.mps}/lib/mps-workbench.jar" />
+      <plugin id="jetbrains.mps.build" path="${artifacts.mps}/plugins/mps-build" />
+      <plugin id="jetbrains.mps.core" path="${artifacts.mps}/plugins/mps-core" />
+      <plugin id="jetbrains.mps.debugger.api" path="${artifacts.mps}/plugins/mps-debugger-api" />
+      <plugin id="jetbrains.mps.debugger.java" path="${artifacts.mps}/plugins/mps-debugger-java" />
+      <plugin id="jetbrains.mps.ide.devkit" path="${artifacts.mps}/plugins/mps-devkit" />
+      <plugin id="jetbrains.mps.execution.api" path="${artifacts.mps}/plugins/mps-execution-api" />
+      <plugin id="jetbrains.mps.git4idea.stubs" path="${artifacts.mps}/plugins/mps-git4idea" />
+      <plugin id="jetbrains.mps.ide.httpsupport" path="${artifacts.mps}/plugins/mps-httpsupport" />
+      <plugin id="jetbrains.mps.ide" path="${artifacts.mps}/plugins/mps-ide" />
+      <plugin id="jetbrains.mps.junit5" path="${artifacts.mps}/plugins/mps-junit5" />
+      <plugin id="jetbrains.mps.ide.modelchecker" path="${artifacts.mps}/plugins/mps-modelchecker" />
+      <plugin id="jetbrains.mps.rcp" path="${artifacts.mps}/plugins/mps-rcp" />
+      <plugin id="jetbrains.mps.testing" path="${artifacts.mps}/plugins/mps-testing" />
+      <plugin id="jetbrains.mps.editor.tooltips" path="${artifacts.mps}/plugins/mps-tooltips" />
+      <plugin id="jetbrains.mps.vcs" path="${artifacts.mps}/plugins/mps-vcs" />
+      <plugin id="Git4Idea" path="${artifacts.mps}/plugins/vcs-git" />
+      <plugin id="Subversion" path="${artifacts.mps}/plugins/vcs-svn" />
+      <project path="${project.root}/code/platform/com.mbeddr.doc" />
+      <testmodules>        
+        <path refid="mps.tests.path" />
+      </testmodules>
+    </launchtests>
+    <move todir="${test.reports.root}/doc.tests">      
+      <fileset dir="${test.reports.root}/doc.tests">
         <include name="TEST-junit-jupiter.xml" />
         <include name="TEST-junit-vintage.xml" />
       </fileset>
@@ -6898,7 +6979,7 @@
   </target>
   
   <target name="cleanSources">
-    <delete dir="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen" />
+    <delete dir="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/source_gen" />
     <delete dir="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.asynccell.sandbox/source_gen" />
     <delete dir="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel/source_gen" />
     <delete dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/source_gen" />
@@ -6938,7 +7019,7 @@
     <delete dir="${mbeddr.mpsutil}/tests/test.com.mbeddr.mpsutil.xml.fix.support/generator/source_gen" />
     <delete dir="${mbeddr.mpsutil}/tests/test.ts.javainterpreter/source_gen" />
     <delete dir="${mbeddr.mpsutil}/tests/test.ts.mpsutil.multilingual/source_gen" />
-    <delete dir="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/test_gen" />
+    <delete dir="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/test_gen" />
     <delete dir="${mbeddr.mpsutil}/solutions/com.mbeddr.mpsutil.genplandiagram.tests/test_gen" />
     <delete dir="${mbeddr.mpsutil}/tests/test.com.mbeddr.mpsutil.blutil.test.waitfor/test_gen" />
     <delete dir="${mbeddr.mpsutil}/tests/test.com.mbeddr.mpsutil.common/test_gen" />

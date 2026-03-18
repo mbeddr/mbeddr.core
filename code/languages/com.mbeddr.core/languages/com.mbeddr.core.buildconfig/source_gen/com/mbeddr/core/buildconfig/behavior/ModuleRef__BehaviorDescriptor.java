@@ -22,7 +22,6 @@ import jetbrains.mps.internal.collections.runtime.SetSequence;
 import com.mbeddr.core.base.behavior.Chunk__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -37,10 +36,8 @@ public final class ModuleRef__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isModuleInvolvedInCylce_id94IdDJEylB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isModuleInvolvedInCylce").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734807983463L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
   public static final SMethod<Void> collectMissingDependencies_id94IdDJEITW = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("collectMissingDependencies").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734808034940L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Set<SNode>>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReferencedModule_id5KH1ziO6mZz, getCommentConcept_id5HxjapwgqLb, isModuleInvolvedInCylce_id94IdDJEylB, collectMissingDependencies_id94IdDJEITW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReferencedModule_id5KH1ziO6mZz, getCommentConcept_id5HxjapwgqLb, isModuleInvolvedInCylce_id94IdDJEylB, collectMissingDependencies_id94IdDJEITW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getReferencedModule_id5KH1ziO6mZz(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.module$6_LN);
@@ -65,10 +62,6 @@ public final class ModuleRef__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ModuleRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

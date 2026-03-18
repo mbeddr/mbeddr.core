@@ -15,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -24,10 +23,8 @@ public final class IFormatConversion__BehaviorDescriptor extends BaseBHDescripto
 
   public static final SMethod<String> getConversionSymbol_id2UbT3C4ekvK = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getConversionSymbol").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354025285337565168L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConversionSymbol_id2UbT3C4ekvK);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConversionSymbol_id2UbT3C4ekvK);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getConversionSymbol_id2UbT3C4ekvK(@NotNull SNode __thisNode__) {
     return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__));
@@ -36,10 +33,6 @@ public final class IFormatConversion__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ IFormatConversion__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -17,7 +17,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -29,10 +28,8 @@ public final class ComponentRunnableRef__BehaviorDescriptor extends BaseBHDescri
 
   public static final SMethod<String> signatureInfo_id7XQHhkHdyqA = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("signatureInfo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9184727592626169510L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(signatureInfo_id7XQHhkHdyqA);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(signatureInfo_id7XQHhkHdyqA);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String signatureInfo_id7XQHhkHdyqA(@NotNull SNode __thisNode__) {
     String res = "signature: ";
@@ -50,10 +47,6 @@ public final class ComponentRunnableRef__BehaviorDescriptor extends BaseBHDescri
   /*package*/ ComponentRunnableRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

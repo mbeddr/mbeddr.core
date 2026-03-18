@@ -26,7 +26,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -45,10 +44,8 @@ public final class ConvertExpression__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<Object> evaluateStatically_id6OxpEKG0KPv = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("evaluateStatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7863679314024402271L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getApplicableConversionSpecifiers_id3_TFq$0_vSx, getApplicableConversionSpecifiers_id67zt_p0yRR0, getPresentation_idhEwIMiw, isStaticallyEvaluatable_id3ilck8Kr3zN, evaluateStatically_id6OxpEKG0KPv, renderReadable_id1VQvajLb13M);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getApplicableConversionSpecifiers_id3_TFq$0_vSx, getApplicableConversionSpecifiers_id67zt_p0yRR0, getPresentation_idhEwIMiw, isStaticallyEvaluatable_id3ilck8Kr3zN, evaluateStatically_id6OxpEKG0KPv, renderReadable_id1VQvajLb13M);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> getApplicableConversionSpecifiers_id3_TFq$0_vSx(@NotNull SNode __thisNode__) {
     return ((List<SNode>) ConvertExpression__BehaviorDescriptor.getApplicableConversionSpecifiers_id67zt_p0yRR0.invoke(__thisNode__.getConcept(), SLinkOperations.getTarget(__thisNode__, LINKS.expression$LDUH), SLinkOperations.getTarget(__thisNode__, LINKS.targetUnit$LEoJ), SNodeOperations.ofConcept(IVisibleElementProvider__BehaviorDescriptor.visibleContentsOfType_id6clJcrJXo2_.invoke(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.IVisibleElementProvider$$O, false, false), CONCEPTS.ConversionRule$$y.getDeclarationNode()), CONCEPTS.ConversionRule$$y)));
@@ -102,10 +99,6 @@ public final class ConvertExpression__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ ConvertExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

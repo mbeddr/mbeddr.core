@@ -40,7 +40,7 @@ public final class ReviewNote__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Integer> compareTo_id10nVqVg5kqc = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("compareTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764142339724L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(EditorContext.class, ""));
   public static final SMethod<Void> callbackLayout_id10nVqVgfXA7 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("callbackLayout").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764145129863L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2(SMethodBuilder.createJavaParameter(EditorCell.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPredecessor_id10nVqVftAKE, compareTo_id10nVqVg5kqc, callbackLayout_id10nVqVgfXA7);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPredecessor_id10nVqVftAKE, compareTo_id10nVqVg5kqc, callbackLayout_id10nVqVgfXA7);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.note$HiiY, null);

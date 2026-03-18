@@ -19,7 +19,6 @@ import com.mbeddr.core.expressions.behavior.Type__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -41,10 +40,8 @@ public final class PortType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isAllowedInExpression_id2Qo$Q2I7Rfr = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isAllowedInExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3285537971614217179L).languageId(0x97545a516023bfaaL, 0x3bf5377ae9044dedL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> getTypeOfOperation_id2Qo$Q2I7Rfy = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTypeOfOperation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3285537971614217186L).languageId(0x97545a516023bfaaL, 0x3bf5377ae9044dedL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canBeVolatile_id2zhwXA_2SdW, canBeConst_id2zhwXA$TG$3, getUsedBytes_id61lw97FtLtJ, getValueStructure_idIPRL99KNBQ, getDeclaration_id59zzgFRcVlN, isMultiple_id1tylWje6zna, isAllowedInExpression_id2Qo$Q2I7Rfr, getTypeOfOperation_id2Qo$Q2I7Rfy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canBeVolatile_id2zhwXA_2SdW, canBeConst_id2zhwXA$TG$3, getUsedBytes_id61lw97FtLtJ, getValueStructure_idIPRL99KNBQ, getDeclaration_id59zzgFRcVlN, isMultiple_id1tylWje6zna, isAllowedInExpression_id2Qo$Q2I7Rfr, getTypeOfOperation_id2Qo$Q2I7Rfy);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     String result = "port<" + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invokeSuper(__thisNode__, CONCEPTS.PortType$gc) + ">";
@@ -85,10 +82,6 @@ public final class PortType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ PortType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

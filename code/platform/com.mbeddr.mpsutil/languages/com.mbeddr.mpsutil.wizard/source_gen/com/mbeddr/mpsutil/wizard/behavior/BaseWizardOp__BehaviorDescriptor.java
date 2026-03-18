@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -28,10 +27,8 @@ public final class BaseWizardOp__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<SNode> getResultType_id6JByj2CokwG = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getResultType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7775334123754833964L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getResultType_id6JByj2CokwG);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getResultType_id6JByj2CokwG);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getResultType_id6JByj2CokwG(@NotNull SNode __thisNode__) {
     return (SNode) IStepContextProvider__BehaviorDescriptor.getOutputType_idrF8Sb98y7f.invoke(SLinkOperations.getTarget(SNodeOperations.cast(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(__thisNode__), CONCEPTS.DotExpression$yW), LINKS.operand$w6IR)), CONCEPTS.WizardType$TZ), LINKS.wizard$RETj));
@@ -40,10 +37,6 @@ public final class BaseWizardOp__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ BaseWizardOp__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

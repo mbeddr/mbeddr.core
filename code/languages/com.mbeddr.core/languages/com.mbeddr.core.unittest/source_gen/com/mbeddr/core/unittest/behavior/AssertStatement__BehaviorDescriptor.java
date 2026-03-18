@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,10 +21,8 @@ public final class AssertStatement__BehaviorDescriptor extends BaseBHDescriptor 
 
   public static final SMethod<String> getFailureMessageFormat_idBqp3QZZVTR = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFailureMessageFormat").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(709990107641265783L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFailureMessageFormat_idBqp3QZZVTR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFailureMessageFormat_idBqp3QZZVTR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getFailureMessageFormat_idBqp3QZZVTR(@NotNull SNode __thisNode__) {
     return TestSpecificStatement__BehaviorDescriptor.getFailureMessagePrefixFormat_idBqp3R02YG9.invoke(__thisNode__) + "expected: [%s], but was: [%s]";
@@ -34,10 +31,6 @@ public final class AssertStatement__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ AssertStatement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

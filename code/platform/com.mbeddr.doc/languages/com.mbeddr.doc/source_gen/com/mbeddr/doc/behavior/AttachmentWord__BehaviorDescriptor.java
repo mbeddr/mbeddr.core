@@ -25,7 +25,7 @@ public final class AttachmentWord__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<SNode> getPath_id3UlEobTHU0G = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4509696981881823276L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPath_id3UlEobTHU0G);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPath_id3UlEobTHU0G);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.attachment$h8jb, null);

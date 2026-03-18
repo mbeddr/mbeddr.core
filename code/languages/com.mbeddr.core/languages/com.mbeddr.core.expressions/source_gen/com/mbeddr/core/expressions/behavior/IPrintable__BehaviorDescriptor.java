@@ -21,7 +21,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.smodel.structure.ExtensionPoint;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -37,10 +36,8 @@ public final class IPrintable__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<IPrintfFormatCustomizer> getPrintfFormatCustomizer_id1h$nB_AZ5NU = new SMethodBuilder<IPrintfFormatCustomizer>(new SJavaCompoundTypeImpl(IPrintfFormatCustomizer.class)).name("getPrintfFormatCustomizer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1469403253941492986L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
   public static final SMethod<String> getEndOfLineLiteral_id1h$nB_AZ3Jp = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEndOfLineLiteral").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1469403253941484505L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPrintfFunctionCustomizer_id4zXqh6WD4rx, getPrintfFunctionName_id4zXqh6TNW6W, getPrintfFunctionHeader_id4zXqh6WD4j8, getPrintfFunctionExtraArgs_id6xgYZv8nZro, getPrintfFunctionExtraArgDeclarations_id6xgYZv8o06l, getPrintfFormatCustomizer_id1h$nB_AZ5NU, getEndOfLineLiteral_id1h$nB_AZ3Jp);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPrintfFunctionCustomizer_id4zXqh6WD4rx, getPrintfFunctionName_id4zXqh6TNW6W, getPrintfFunctionHeader_id4zXqh6WD4j8, getPrintfFunctionExtraArgs_id6xgYZv8nZro, getPrintfFunctionExtraArgDeclarations_id6xgYZv8o06l, getPrintfFormatCustomizer_id1h$nB_AZ5NU, getEndOfLineLiteral_id1h$nB_AZ3Jp);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static IPrintfFunctionCustomizer getPrintfFunctionCustomizer_id4zXqh6WD4rx(@NotNull SNode __thisNode__, final SModel model) {
     Iterable<IPrintfFunctionCustomizer> customizers = Sequence.fromIterable(new ExtensionPoint<IPrintfFunctionCustomizer>("com.mbeddr.core.expressions.PrintfFunctionCustomizer").getObjects()).where((it) -> it.isApplicable(model));
@@ -105,10 +102,6 @@ public final class IPrintable__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IPrintable__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

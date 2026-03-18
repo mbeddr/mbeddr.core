@@ -20,7 +20,7 @@ public final class ItemList__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x4aa4d574b7bf1e71L, "com.mbeddr.doc.structure.ItemList");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SNode i = SLinkOperations.addNewChild(__thisNode__, LINKS.items$hbEH, null);

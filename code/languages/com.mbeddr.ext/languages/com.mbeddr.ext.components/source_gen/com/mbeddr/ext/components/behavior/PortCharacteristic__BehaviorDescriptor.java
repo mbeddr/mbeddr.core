@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -24,10 +23,8 @@ public final class PortCharacteristic__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<String> isCompatibleImpl_id1lsyexBNOog = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("isCompatibleImpl").modifiers(12, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(1539255704409294352L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
   public static final SMethod<String> isCompatible_id1lsyexBNOoB = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("isCompatible").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1539255704409294375L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCompatibleImpl_id1lsyexBNOog, isCompatible_id1lsyexBNOoB);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCompatibleImpl_id1lsyexBNOog, isCompatible_id1lsyexBNOoB);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String isCompatible_id1lsyexBNOoB(@NotNull SNode __thisNode__, Iterable<SNode> requiredSideChars, Iterable<SNode> providedSideChars) {
     if (Sequence.fromIterable(requiredSideChars).isEmpty() && Sequence.fromIterable(providedSideChars).isEmpty()) {
@@ -40,10 +37,6 @@ public final class PortCharacteristic__BehaviorDescriptor extends BaseBHDescript
   /*package*/ PortCharacteristic__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

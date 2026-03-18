@@ -27,7 +27,7 @@ public final class VariadicArgument__BehaviorDescriptor extends BaseBHDescriptor
 
   public static final SMethod<Boolean> participatesInScope_idUslQeyoOp4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isParticipateInScope").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1052812498335647300L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(participatesInScope_idUslQeyoOp4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(participatesInScope_idUslQeyoOp4);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.type$sXU3, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x4db0a6c2a7789ee2L, "com.mbeddr.core.expressions.structure.VaList")));

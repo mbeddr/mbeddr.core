@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -38,10 +37,8 @@ public final class BinaryExpression__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
   public static final SMethod<Integer> getFontStyle_id6P3AdoeYlwX = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getFontStyle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7873304618715404349L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isLValue_id6iIoqg1yDKH, isStaticallyEvaluatable_id3ilck8Kr3zN, renderReadable_id1VQvajLb13M, isSideeffectFree_id6SENleF$SRD, requiresParensAroundArgument_id3_qrK00j4rM, getSyntacticallyLeftSideExpression_id6mzZsELnTBJ, getSyntacticallyRightSideExpression_id6mzZsELnTMK, setSyntacticallyLeftSideExpression_id6mzZsELnCP6, setSyntacticallyRightSideExpression_id6mzZsELnSmP, getPresentation_idhEwIMiw, getFontStyle_id6P3AdoeYlwX);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isLValue_id6iIoqg1yDKH, isStaticallyEvaluatable_id3ilck8Kr3zN, renderReadable_id1VQvajLb13M, isSideeffectFree_id6SENleF$SRD, requiresParensAroundArgument_id3_qrK00j4rM, getSyntacticallyLeftSideExpression_id6mzZsELnTBJ, getSyntacticallyRightSideExpression_id6mzZsELnTMK, setSyntacticallyLeftSideExpression_id6mzZsELnCP6, setSyntacticallyRightSideExpression_id6mzZsELnSmP, getPresentation_idhEwIMiw, getFontStyle_id6P3AdoeYlwX);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isLValue_id6iIoqg1yDKH(@NotNull SNode __thisNode__) {
     return false;
@@ -80,10 +77,6 @@ public final class BinaryExpression__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ BinaryExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

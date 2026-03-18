@@ -20,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -44,10 +43,8 @@ public final class InstanceConfiguration__BehaviorDescriptor extends BaseBHDescr
   public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Iterable<SNode>> allReferencedModuleContents_id1zPfrUoUUqq = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allReferencedModuleContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1798411515023042202L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(adapters_id5fn4FV$c8kP, graphName_id$9lckyphlf, generatedMethodName_id4mLQOETvhCf, getLOCEquivalent_id6brBMefRfO0, getTraceableProperty_id4pl5GY7LKmH, isExported_id6JVEnxIkpau, findInstanceByName_id2LSSMkCIUME, getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, exportable_id5HxjapwgqKI, getUniquelyNamedElements_id4qSf1u1TRfj, allReferencedModuleContents_id1zPfrUoUUqq);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(adapters_id5fn4FV$c8kP, graphName_id$9lckyphlf, generatedMethodName_id4mLQOETvhCf, getLOCEquivalent_id6brBMefRfO0, getTraceableProperty_id4pl5GY7LKmH, isExported_id6JVEnxIkpau, findInstanceByName_id2LSSMkCIUME, getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, exportable_id5HxjapwgqKI, getUniquelyNamedElements_id4qSf1u1TRfj, allReferencedModuleContents_id1zPfrUoUUqq);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> adapters_id5fn4FV$c8kP(@NotNull SNode __thisNode__) {
     return SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.contents$E4B8), CONCEPTS.PortAdapter$M0);
@@ -91,10 +88,6 @@ public final class InstanceConfiguration__BehaviorDescriptor extends BaseBHDescr
   /*package*/ InstanceConfiguration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

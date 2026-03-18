@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -26,10 +25,8 @@ public final class IStructuredInitExpression__BehaviorDescriptor extends BaseBHD
   public static final SMethod<SNode> createAssignment_id1blaTcuBMQE = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createAssignment").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1357038773596007850L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> appendAssignments_id1blaTcuBMLx = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("appendAssignments").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1357038773596007521L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createAssignment_id1blaTcuBMQE, appendAssignments_id1blaTcuBMLx);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createAssignment_id1blaTcuBMQE, appendAssignments_id1blaTcuBMLx);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode createAssignment_id1blaTcuBMQE(@NotNull SNode __thisNode__, SNode left, SNode right) {
     return createExpressionStatement_s9ko7r_a0a0(left, right);
@@ -38,10 +35,6 @@ public final class IStructuredInitExpression__BehaviorDescriptor extends BaseBHD
   /*package*/ IStructuredInitExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -31,10 +30,8 @@ public final class AbstractBuildVariableFilePicker__BehaviorDescriptor extends B
   public static final SMethod<Boolean> pickFileOnly_id48DzgHgr2tO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("pickFileOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4767496760281802612L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
   public static final SMethod<String> getPrefix_id6WnTJkDceu8 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrefix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8005120803306792840L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mustExist_id2RM$2quh1HO, pickFileOnly_id48DzgHgr2tO, getPrefix_id6WnTJkDceu8);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mustExist_id2RM$2quh1HO, pickFileOnly_id48DzgHgr2tO, getPrefix_id6WnTJkDceu8);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean mustExist_id2RM$2quh1HO(@NotNull SNode __thisNode__) {
     return false;
@@ -51,10 +48,6 @@ public final class AbstractBuildVariableFilePicker__BehaviorDescriptor extends B
   /*package*/ AbstractBuildVariableFilePicker__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

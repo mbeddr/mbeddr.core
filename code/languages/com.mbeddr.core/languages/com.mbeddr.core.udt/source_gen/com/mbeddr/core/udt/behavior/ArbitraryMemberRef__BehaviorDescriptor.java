@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -26,10 +25,8 @@ public final class ArbitraryMemberRef__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<String> headerToImport_id7RHXOmw3XK4 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("headerToImport").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9074180702631615492L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Boolean> onlyForImplementation_id7RHXOmw7Mgm = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("onlyForImplementation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9074180702632616982L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTarget_id66uzewbZgGM, headerToImport_id7RHXOmw3XK4, onlyForImplementation_id7RHXOmw7Mgm);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTarget_id66uzewbZgGM, headerToImport_id7RHXOmw3XK4, onlyForImplementation_id7RHXOmw7Mgm);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getTarget_id66uzewbZgGM(@NotNull SNode __thisNode__) {
     return null;
@@ -44,10 +41,6 @@ public final class ArbitraryMemberRef__BehaviorDescriptor extends BaseBHDescript
   /*package*/ ArbitraryMemberRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

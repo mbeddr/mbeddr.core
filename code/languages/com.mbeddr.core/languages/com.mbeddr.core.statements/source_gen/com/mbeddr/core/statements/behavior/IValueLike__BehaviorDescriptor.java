@@ -22,7 +22,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -37,10 +36,8 @@ public final class IValueLike__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> getTypeComputationNode_id7kDeEuVjSvB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTypeComputationNode").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8442343468559206375L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
   public static final SMethod<String> getPlainCRepresentation_id3WvvaBAh40x = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPlainCRepresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4548491217822040097L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStaticallyEvaluatableNode_id3fs$L2LZpYI, getTypeComputationNode_id7kDeEuVjSvB, getPlainCRepresentation_id3WvvaBAh40x);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStaticallyEvaluatableNode_id3fs$L2LZpYI, getTypeComputationNode_id7kDeEuVjSvB, getPlainCRepresentation_id3WvvaBAh40x);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPlainCRepresentation_id3WvvaBAh40x(@NotNull SNode __thisNode__) {
     if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.as(__thisNode__, CONCEPTS.ITyped$HL), LINKS.type$sXU3), CONCEPTS.ArrayType$WW)) {
@@ -82,10 +79,6 @@ public final class IValueLike__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IValueLike__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

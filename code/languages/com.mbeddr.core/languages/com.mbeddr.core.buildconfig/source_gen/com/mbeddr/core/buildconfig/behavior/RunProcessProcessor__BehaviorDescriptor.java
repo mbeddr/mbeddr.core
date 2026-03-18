@@ -18,7 +18,6 @@ import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -31,10 +30,8 @@ public final class RunProcessProcessor__BehaviorDescriptor extends BaseBHDescrip
   public static final SMethod<List<String>> command_id2obGnlS30qc = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("command").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2741479916268422796L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<Boolean> isBlocking_id2obGnlS3zkl = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isBlocking").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2741479916268565781L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(command_id2obGnlS30qc, isBlocking_id2obGnlS3zkl);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(command_id2obGnlS30qc, isBlocking_id2obGnlS3zkl);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<String> command_id2obGnlS30qc(@NotNull SNode __thisNode__, String moduleName, String path) {
     List<String> command = ListSequence.fromList(new ArrayList<String>());
@@ -59,10 +56,6 @@ public final class RunProcessProcessor__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ RunProcessProcessor__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

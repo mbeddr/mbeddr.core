@@ -22,7 +22,6 @@ import com.mbeddr.core.expressions.runtime.plugin.TypeKind;
 import com.mbeddr.core.expressions.runtime.plugin.AtomicToken;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.expressions.behavior.ITextGenContext__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -40,10 +39,8 @@ public final class ArrayAccessExpr__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<SNode> getWriteTarget_id1uoAWUPe2Ie = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getWriteTarget").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1700280171438287758L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<IToken> getToken_id6AaN29SvfIf = new SMethodBuilder<IToken>(new SJavaCompoundTypeImpl(IToken.class)).name("getToken").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7605115369190914959L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(IToken.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSideeffectFree_id6SENleF$SRD, renderReadable_id1VQvajLb13M, getPriolevel_id5HxjapwgqKu, getSyntacticallyLeftSideExpression_id6mzZsELnTBJ, getPresentation_idhEwIMiw, getCodeForTarget_id1uoAWUPe22W, getWriteTarget_id1uoAWUPe2Ie, getToken_id6AaN29SvfIf);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSideeffectFree_id6SENleF$SRD, renderReadable_id1VQvajLb13M, getPriolevel_id5HxjapwgqKu, getSyntacticallyLeftSideExpression_id6mzZsELnTBJ, getPresentation_idhEwIMiw, getCodeForTarget_id1uoAWUPe22W, getWriteTarget_id1uoAWUPe2Ie, getToken_id6AaN29SvfIf);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isSideeffectFree_id6SENleF$SRD(@NotNull SNode __thisNode__) {
     return (boolean) Expression__BehaviorDescriptor.isSideeffectFree_id6SENleF$SRD.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.expression$PfNq)) && (boolean) Expression__BehaviorDescriptor.isSideeffectFree_id6SENleF$SRD.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.indexExpr$2oee));
@@ -87,10 +84,6 @@ public final class ArrayAccessExpr__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ ArrayAccessExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,10 +25,8 @@ public final class UseResourceAnnotation__BehaviorDescriptor extends BaseBHDescr
 
   public static final SMethod<Boolean> providesLockFor_id6u_410TQBmJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("providesLockFor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7468393218939975087L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(providesLockFor_id6u_410TQBmJ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(providesLockFor_id6u_410TQBmJ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean providesLockFor_id6u_410TQBmJ(@NotNull SNode __thisNode__, final SNode res) {
     return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.resources$uUZQ)).any((it) -> SLinkOperations.getTarget(it, LINKS.res$3ccV) == res);
@@ -38,10 +35,6 @@ public final class UseResourceAnnotation__BehaviorDescriptor extends BaseBHDescr
   /*package*/ UseResourceAnnotation__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

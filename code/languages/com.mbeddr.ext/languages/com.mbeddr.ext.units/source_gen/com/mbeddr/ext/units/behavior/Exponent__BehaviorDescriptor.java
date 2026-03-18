@@ -14,7 +14,6 @@ import com.mbeddr.ext.units.runtime.plugin.Fraction;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -33,10 +32,8 @@ public final class Exponent__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isOne_id5dSoB2M24Xr = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isOne").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6014665538516045659L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
   public static final SMethod<Boolean> isZero_id5dSoB2M24Y3 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isZero").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6014665538516045699L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(from_idbrG9xoyFRd, from_idbrG9xoyyFz, getNumerator_id3j3yk3guAC3, getDenumerator_id3j3yk3guABz, negate_id3j3yk3gDZSH, isOne_id5dSoB2M24Xr, isZero_id5dSoB2M24Y3);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(from_idbrG9xoyFRd, from_idbrG9xoyyFz, getNumerator_id3j3yk3guAC3, getDenumerator_id3j3yk3guABz, negate_id3j3yk3gDZSH, isOne_id5dSoB2M24Xr, isZero_id5dSoB2M24Y3);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode from_idbrG9xoyFRd(@NotNull SAbstractConcept __thisConcept__, Fraction fraction) {
     return Exponent__BehaviorDescriptor.from_idbrG9xoyyFz.invoke(__thisConcept__, ((int) fraction.numerator), ((int) fraction.denumerator));
@@ -59,10 +56,6 @@ public final class Exponent__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Exponent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

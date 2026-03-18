@@ -40,7 +40,7 @@ public final class WorkPackage__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isOverBudget_idvRfru3p3Gx = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isOverBudget").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(573995335905721121L).languageId(0x92f81d114f03f836L, 0xe530d4cbefad4822L).build2();
   public static final SMethod<Boolean> isDone_idvRfru3p0tK = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDone").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(573995335905707888L).languageId(0x92f81d114f03f836L, 0xe530d4cbefad4822L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(prioAsNumber_id5BlDGARhtCV, nameWithWPName_id2ka6MWOvfdw, isActive_idvRfru3p0sM, totalEffort_idvRfru3p3GA, totalEffortRounded_id2ka6MWOu_uY, percentFinsihed_id2ka6MWOtHXZ, estimatedEffortInHours_id2ka6MWOtI1i, estimatedEffortInHourRounded_id2ka6MWOu_wp, hasBadTrend_id2ka6MWOtHX_, isOverBudget_idvRfru3p3Gx, isDone_idvRfru3p0tK);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(prioAsNumber_id5BlDGARhtCV, nameWithWPName_id2ka6MWOvfdw, isActive_idvRfru3p0sM, totalEffort_idvRfru3p3GA, totalEffortRounded_id2ka6MWOu_uY, percentFinsihed_id2ka6MWOtHXZ, estimatedEffortInHours_id2ka6MWOtI1i, estimatedEffortInHourRounded_id2ka6MWOu_wp, hasBadTrend_id2ka6MWOtHX_, isOverBudget_idvRfru3p3Gx, isDone_idvRfru3p0tK);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.description$wiHs, null);

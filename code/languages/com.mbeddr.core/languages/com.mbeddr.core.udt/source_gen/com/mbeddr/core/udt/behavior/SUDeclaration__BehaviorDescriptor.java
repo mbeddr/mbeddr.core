@@ -29,7 +29,6 @@ import com.mbeddr.core.expressions.behavior.ITypeDecorator__BehaviorDescriptor;
 import jetbrains.mps.baseLanguage.logging.rt.LogContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -55,10 +54,8 @@ public final class SUDeclaration__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> pathToMembers_id6aQaNXQ4ku = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("pathToMembers").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(111139378328782110L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Map<SNode, SNode>>) ((Class) Object.class), ""));
   public static final SMethod<String> genName_id3W2cV_pfm5c = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4540248245502042444L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, getLOCEquivalent_id6brBMefRfO0, membersIncludingTransparent_id7TdHRrCpjWZ, membersDirect_id6aQaNXUb8h, prefix_id16nhtBDHnvo, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getErrorMessageForElementInCycle_id2G8yZXxNStd, collectTypes_id1c_2vnOMqdJ, isDirectMember_id6QawkaJeFLw, pathToMembers_id6aQaNXQ4ku, genName_id3W2cV_pfm5c);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, getLOCEquivalent_id6brBMefRfO0, membersIncludingTransparent_id7TdHRrCpjWZ, membersDirect_id6aQaNXUb8h, prefix_id16nhtBDHnvo, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getErrorMessageForElementInCycle_id2G8yZXxNStd, collectTypes_id1c_2vnOMqdJ, isDirectMember_id6QawkaJeFLw, pathToMembers_id6aQaNXQ4ku, genName_id3W2cV_pfm5c);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getUniquelyNamedElements_id4qSf1u1TRfj(@NotNull SNode __thisNode__) {
     return SUDeclaration__BehaviorDescriptor.membersIncludingTransparent_id7TdHRrCpjWZ.invoke(__thisNode__);
@@ -193,10 +190,6 @@ public final class SUDeclaration__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ SUDeclaration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

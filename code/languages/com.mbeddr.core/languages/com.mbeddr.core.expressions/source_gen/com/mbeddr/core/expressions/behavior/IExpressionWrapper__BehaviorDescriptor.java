@@ -20,7 +20,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.structure.behavior.AbstractConceptDeclaration__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -35,10 +34,8 @@ public final class IExpressionWrapper__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<SNode> getWrappingLink_id3bfDwHbEojk = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getWrappingLink").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3661327589519754452L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<Void> wrap_id3bfDwHbRG3E = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("wrap").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3661327589523243242L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canWrap_id3bfDwHbEns0, getWrappingLink_id3bfDwHbEojk, wrap_id3bfDwHbRG3E);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canWrap_id3bfDwHbEns0, getWrappingLink_id3bfDwHbEojk, wrap_id3bfDwHbRG3E);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canWrap_id3bfDwHbEns0(@NotNull SAbstractConcept __thisConcept__, SNode expr) {
     return true;
@@ -57,10 +54,6 @@ public final class IExpressionWrapper__BehaviorDescriptor extends BaseBHDescript
   /*package*/ IExpressionWrapper__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -15,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -25,10 +24,8 @@ public final class StepAssertion__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Integer> assertionID_id3Krj9ItiXz5 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("assertionID").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4331139697889499333L).languageId(0xbaacf87e209c9789L, 0x36a565f13fa042d6L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(assertionID_id3Krj9ItiXz5);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(assertionID_id3Krj9ItiXz5);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int assertionID_id3Krj9ItiXz5(@NotNull SNode __thisNode__) {
     return ListSequence.fromList(SNodeOperations.getNodeDescendants(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.SequenceExpectation$V_, false, false), CONCEPTS.StepAssertion$qD, false, new SAbstractConcept[]{})).indexOf(__thisNode__);
@@ -37,10 +34,6 @@ public final class StepAssertion__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ StepAssertion__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

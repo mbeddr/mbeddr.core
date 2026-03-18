@@ -20,7 +20,7 @@ public final class CvsImportAnnotation__BehaviorDescriptor extends BaseBHDescrip
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x698eb129303c4c1cL, 0xb3979e30753d40b2L, 0x7cc6bb20fa62a0bL, "com.mbeddr.cc.requirements.csv.structure.CvsImportAnnotation");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.separator$Ikc2, ";");

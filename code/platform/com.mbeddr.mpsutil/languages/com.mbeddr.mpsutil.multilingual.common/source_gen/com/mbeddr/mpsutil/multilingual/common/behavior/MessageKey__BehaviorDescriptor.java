@@ -30,7 +30,7 @@ public final class MessageKey__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isDefaultSet_idvzhXZPAXZj = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDefaultSet").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(568377005202726867L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
   public static final SMethod<String> deductDefault_idvzhXZPAXZu = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("deductDefault").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(568377005202726878L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getKey_idvzhXZPAXYT, isDefaultSet_idvzhXZPAXZj, deductDefault_idvzhXZPAXZu);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getKey_idvzhXZPAXYT, isDefaultSet_idvzhXZPAXZj, deductDefault_idvzhXZPAXZu);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.technicalKey$p8Z3, " ");

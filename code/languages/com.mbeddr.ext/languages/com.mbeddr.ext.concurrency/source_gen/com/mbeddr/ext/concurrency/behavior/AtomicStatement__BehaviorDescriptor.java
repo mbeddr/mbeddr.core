@@ -19,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -38,10 +37,8 @@ public final class AtomicStatement__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<Boolean> providesReadLockFor_id4mSSgpjfkhV = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("providesReadLockFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614365819L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> providesWriteLockFor_id4mSSgpjfkpY = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("providesWriteLockFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614366334L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(providesReadAccessTo_id66UaKxBzgJH, providesLockfor_id6u_410TQpmU, providesWriteAccessTo_id66UaKxBzgPt, sortedSpecifiersForEntry_id6ndohCVb7TB, sortedSpecifiersForExit_id6ndohCVbftK, providesReadLockFor_id4mSSgpjfkhV, providesWriteLockFor_id4mSSgpjfkpY);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(providesReadAccessTo_id66UaKxBzgJH, providesLockfor_id6u_410TQpmU, providesWriteAccessTo_id66UaKxBzgPt, sortedSpecifiersForEntry_id6ndohCVb7TB, sortedSpecifiersForExit_id6ndohCVbftK, providesReadLockFor_id4mSSgpjfkhV, providesWriteLockFor_id4mSSgpjfkpY);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean providesReadAccessTo_id66UaKxBzgJH(@NotNull SNode __thisNode__, final SNode gv) {
     SNode specifier = Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.specifiers$qbHe), CONCEPTS.GlobalVarAccessSpecifier$Uc)).findFirst((it) -> SLinkOperations.getTarget(it, LINKS.var$YRjN) == gv);
@@ -76,10 +73,6 @@ public final class AtomicStatement__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ AtomicStatement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

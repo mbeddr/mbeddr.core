@@ -32,7 +32,6 @@ import java.util.ArrayList;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.internal.collections.runtime.NotNullWhereFilter;
 import jetbrains.mps.internal.collections.runtime.IterableUtils;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -57,10 +56,8 @@ public final class Interpreter__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<List<SNode>> collectAllEvaluators_id5LSSDsNAP6a = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("collectAllEvaluators").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787728404874L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
   public static final SMethod<String> evaluatedLanguagesList_id3WUcYJ3sgIU = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("evaluatedLanguagesList").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4556011060727974842L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFqClassName_id4X7QcQ4uRS$, genClassName_id3iWeQsv_hZU, effectiveEvaluators_id2bBLuwRtGtC, collectAllRelationships_id5LSSDsNyu1z, collectRelatedInterpreters_id27SkbdyRYmk, listOrderedRelationships_id27SkbdyMwT$, setupRelationshipSorter_id27SkbdyNmGh, listSortedEvaluators_id5x677oPooet, collectRelatedTypeMappings_id5LSSDsNz8Zb, collectAllTypeMappings_id5LSSDsN_VcY, collectRelatedEvaluators_id5LSSDsN$l14, collectAllEvaluators_id5LSSDsNAP6a, evaluatedLanguagesList_id3WUcYJ3sgIU);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFqClassName_id4X7QcQ4uRS$, genClassName_id3iWeQsv_hZU, effectiveEvaluators_id2bBLuwRtGtC, collectAllRelationships_id5LSSDsNyu1z, collectRelatedInterpreters_id27SkbdyRYmk, listOrderedRelationships_id27SkbdyMwT$, setupRelationshipSorter_id27SkbdyNmGh, listSortedEvaluators_id5x677oPooet, collectRelatedTypeMappings_id5LSSDsNz8Zb, collectAllTypeMappings_id5LSSDsN_VcY, collectRelatedEvaluators_id5LSSDsN$l14, collectAllEvaluators_id5LSSDsNAP6a, evaluatedLanguagesList_id3WUcYJ3sgIU);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getFqClassName_id4X7QcQ4uRS$(@NotNull SNode __thisNode__) {
     SModel model = SNodeOperations.getModel(__thisNode__);
@@ -164,10 +161,6 @@ public final class Interpreter__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Interpreter__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

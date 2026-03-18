@@ -19,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -37,10 +36,8 @@ public final class PreferenceForm__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> createType_idhEwJimy = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877527970L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
   public static final SMethod<List<SNode>> getMembers_idhEwJioW = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877528124L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConfigurableName_idX7OD3Wy$aP, getPreferenceComponentName_id86yKXFUAXV, getPluginName_id1DjGUwRg0Or, getStateName_id41w3udzioRY, getStorageId_id41w3udzipzt, createType_idhEwJimy, getMembers_idhEwJioW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConfigurableName_idX7OD3Wy$aP, getPreferenceComponentName_id86yKXFUAXV, getPluginName_id1DjGUwRg0Or, getStateName_id41w3udzioRY, getStorageId_id41w3udzipzt, createType_idhEwJimy, getMembers_idhEwJioW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getConfigurableName_idX7OD3Wy$aP(@NotNull SNode __thisNode__) {
     return StringUtils.deleteWhitespace(SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL)) + "_Configurable";
@@ -71,10 +68,6 @@ public final class PreferenceForm__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ PreferenceForm__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

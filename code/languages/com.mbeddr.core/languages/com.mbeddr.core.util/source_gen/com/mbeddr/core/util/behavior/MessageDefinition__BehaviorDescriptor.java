@@ -27,7 +27,7 @@ public final class MessageDefinition__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<String> genCounterVarName_id5oFMniD7s1q = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genCounterVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014151049306L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
   public static final SMethod<String> genMessageFunctionName_id5usoWIJ3mG7 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genMessageFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6313030504132995847L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genCounterVarName_id5oFMniD7s1q, genMessageFunctionName_id5usoWIJ3mG7);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genCounterVarName_id5oFMniD7s1q, genMessageFunctionName_id5usoWIJ3mG7);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.active$dJ0V, true);
