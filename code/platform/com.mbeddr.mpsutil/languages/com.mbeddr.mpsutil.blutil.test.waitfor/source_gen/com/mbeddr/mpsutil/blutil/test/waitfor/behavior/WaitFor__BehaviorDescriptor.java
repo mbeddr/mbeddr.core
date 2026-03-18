@@ -20,7 +20,7 @@ public final class WaitFor__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa8e9d313443b4557L, 0xa1d005f5ab8ab6d4L, 0x3297c48244e4fe16L, "com.mbeddr.mpsutil.blutil.test.waitfor.structure.WaitFor");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.timeoutInMs$OcQm, 10000);

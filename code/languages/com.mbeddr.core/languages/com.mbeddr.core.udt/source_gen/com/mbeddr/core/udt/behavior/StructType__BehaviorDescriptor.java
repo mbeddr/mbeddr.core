@@ -23,7 +23,6 @@ import java.math.BigInteger;
 import com.mbeddr.core.base.behavior.IDetectCycle__BehaviorDescriptor;
 import com.mbeddr.core.expressions.behavior.Type__BehaviorDescriptor;
 import jetbrains.mps.baseLanguage.logging.rt.LogContext;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -46,10 +45,8 @@ public final class StructType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<SNode> getDeclaration_id59zzgFRcVlN = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDeclaration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5936743812040996211L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(rebindToProxy_id7jSUHHvkApb, checkForWarnings_id5aZFu$7GSiB, createAssignmentLeftHand_id6IWRcVON8YI, createAssignmentRightHand_id6IWRcVON9Ja, getDefaultValue_id4jc_TWT4LGD, getSUDeclaration_id3bHYGwztGSo, checkForErrors_id7FkLcyyQK$6, getTypeCalculationNodeForElement_id7FkLcyyQK$0, getElements_idIPRL99Lfbu, getUsedBytes_id61lw97FtLtJ, getDeclaration_id59zzgFRcVlN);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(rebindToProxy_id7jSUHHvkApb, checkForWarnings_id5aZFu$7GSiB, createAssignmentLeftHand_id6IWRcVON8YI, createAssignmentRightHand_id6IWRcVON9Ja, getDefaultValue_id4jc_TWT4LGD, getSUDeclaration_id3bHYGwztGSo, checkForErrors_id7FkLcyyQK$6, getTypeCalculationNodeForElement_id7FkLcyyQK$0, getElements_idIPRL99Lfbu, getUsedBytes_id61lw97FtLtJ, getDeclaration_id59zzgFRcVlN);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void rebindToProxy_id7jSUHHvkApb(@NotNull SNode __thisNode__, SNode proxyElement) {
     SLinkOperations.setTarget(__thisNode__, LINKS.struct$WCsg, SNodeOperations.cast(proxyElement, CONCEPTS.StructDeclaration$ox));
@@ -142,10 +139,6 @@ public final class StructType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ StructType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

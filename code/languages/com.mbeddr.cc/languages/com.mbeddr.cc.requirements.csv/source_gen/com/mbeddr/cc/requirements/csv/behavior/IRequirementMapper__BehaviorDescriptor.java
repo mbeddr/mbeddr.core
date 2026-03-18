@@ -13,7 +13,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -26,10 +25,8 @@ public final class IRequirementMapper__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<String> firstNCharacters_id5liZiKqPNyU = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("firstNCharacters").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6148254807184849082L).languageId(0xb3979e30753d40b2L, 0x698eb129303c4c1cL).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
   public static final SMethod<String> makeValidID_id5liZiKqPWgD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("makeValidID").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6148254807184884777L).languageId(0xb3979e30753d40b2L, 0x698eb129303c4c1cL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(extractID_id4uSWKme5rV5, map_id4uSWKme5t8$, getParentRequirement_id5liZiKqPIOk, firstNCharacters_id5liZiKqPNyU, makeValidID_id5liZiKqPWgD);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(extractID_id4uSWKme5rV5, map_id4uSWKme5t8$, getParentRequirement_id5liZiKqPIOk, firstNCharacters_id5liZiKqPNyU, makeValidID_id5liZiKqPWgD);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String extractID_id4uSWKme5rV5(@NotNull SNode __thisNode__, String[] elements, boolean dummy) {
     return elements[0];
@@ -61,10 +58,6 @@ public final class IRequirementMapper__BehaviorDescriptor extends BaseBHDescript
   /*package*/ IRequirementMapper__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

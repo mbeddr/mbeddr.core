@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -31,10 +30,8 @@ public final class IControlledName__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<List<SNode>> additionalTooltipNodes_id7WzG0mxhtEs = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("additionalTooltipNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9161359605228755612L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Void> handleDeletion_id5oJ9AK5Fggy = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("handleDeletion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6210224656560751650L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getControlledName_id2GIWVTRHLfj, prescribesType_id3VMeFNzc5hU, getPrescribedType_id3VMeFNzc6$L, isConstantLike_id4k0bDztYlgO, description_id58M63C2ArZb, additionalTooltipNodes_id7WzG0mxhtEs, handleDeletion_id5oJ9AK5Fggy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getControlledName_id2GIWVTRHLfj, prescribesType_id3VMeFNzc5hU, getPrescribedType_id3VMeFNzc6$L, isConstantLike_id4k0bDztYlgO, description_id58M63C2ArZb, additionalTooltipNodes_id7WzG0mxhtEs, handleDeletion_id5oJ9AK5Fggy);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getControlledName_id2GIWVTRHLfj(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
@@ -60,10 +57,6 @@ public final class IControlledName__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ IControlledName__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

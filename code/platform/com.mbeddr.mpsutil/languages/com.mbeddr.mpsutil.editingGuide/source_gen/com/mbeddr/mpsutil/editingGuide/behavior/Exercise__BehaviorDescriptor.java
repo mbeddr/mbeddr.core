@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -35,10 +34,8 @@ public final class Exercise__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> nextTask_id4TMjSvbGeWs = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("nextTask").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5652667926959943452L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
   public static final SMethod<Boolean> suppress_id2WmWrdnSpX7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("suppress").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3393165121846091591L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isDone_id3p1cdQ7_iQy, getCurrentTask_id4TMjSvbG95v, hasNextTask_idDBaqrEY_bR, nextTask_id4TMjSvbGeWs, suppress_id2WmWrdnSpX7);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isDone_id3p1cdQ7_iQy, getCurrentTask_id4TMjSvbG95v, hasNextTask_idDBaqrEY_bR, nextTask_id4TMjSvbGeWs, suppress_id2WmWrdnSpX7);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isDone_id3p1cdQ7_iQy(@NotNull SNode __thisNode__) {
     return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.tasks$FA4J)).all((it) -> SPropertyOperations.getBoolean(it, PROPS.isDone$D0eC));
@@ -75,10 +72,6 @@ public final class Exercise__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Exercise__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

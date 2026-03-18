@@ -24,7 +24,7 @@ public final class PageWidthSizeSpec__BehaviorDescriptor extends BaseBHDescripto
 
   public static final SMethod<String> getLatexSizeSpec_id7uLL3Mf26EQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getLatexSizeSpec").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8624890525767985846L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLatexSizeSpec_id7uLL3Mf26EQ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLatexSizeSpec_id7uLL3Mf26EQ);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.percentage$7Q3M, 100);

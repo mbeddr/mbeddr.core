@@ -31,7 +31,7 @@ public final class AbstractEvaluator__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<Integer> compareTo_id5x677oPovws = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("compareTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6360802817734735900L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> canCacheLookup_id5wdSIUg_SNS = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canCacheLookup").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6344976964290841848L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compareTo_id5x677oPovws, canCacheLookup_id5wdSIUg_SNS);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compareTo_id5x677oPovws, canCacheLookup_id5wdSIUg_SNS);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.cacheValues$N3hU, true);

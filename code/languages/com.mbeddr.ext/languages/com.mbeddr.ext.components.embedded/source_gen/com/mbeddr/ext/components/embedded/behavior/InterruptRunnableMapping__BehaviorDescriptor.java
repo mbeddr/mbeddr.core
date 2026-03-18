@@ -26,7 +26,6 @@ import jetbrains.mps.internal.collections.runtime.MapSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -43,10 +42,8 @@ public final class InterruptRunnableMapping__BehaviorDescriptor extends BaseBHDe
   public static final SMethod<List<SNode>> getVisibleCompanions_id16gyj4ArSLw = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getVisibleCompanions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1265662339482356832L).languageId(0xb470ed0f9ee5f662L, 0x28899e1bfee4db6L).build2();
   public static final SMethod<List<SNode>> getActiveCompanions_id3F9kUG9BoKj = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getActiveCompanions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4236008918584495123L).languageId(0xb470ed0f9ee5f662L, 0x28899e1bfee4db6L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConfigItem_id5HxjapwgqMb, referencedInstance_id7mgpfAOt2tP, setReferencedInstance_id7mgpfAOv757, getVisibleCompanions_id16gyj4ArSLw, getActiveCompanions_id3F9kUG9BoKj);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConfigItem_id5HxjapwgqMb, referencedInstance_id7mgpfAOt2tP, setReferencedInstance_id7mgpfAOv757, getVisibleCompanions_id16gyj4ArSLw, getActiveCompanions_id3F9kUG9BoKj);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> getConfigItem_id5HxjapwgqMb(@NotNull SAbstractConcept __thisConcept__) {
     List<SNode> configItem = IRequiresConfigItem__BehaviorDescriptor.getConfigItem_id5HxjapwgqMb.invoke0(__thisConcept__, CONCEPTS.IRequiresConfigItem$Ys);
@@ -72,10 +69,6 @@ public final class InterruptRunnableMapping__BehaviorDescriptor extends BaseBHDe
   /*package*/ InterruptRunnableMapping__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

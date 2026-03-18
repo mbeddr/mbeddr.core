@@ -17,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -33,10 +32,8 @@ public final class IModuleContentContainer__BehaviorDescriptor extends BaseBHDes
   public static final SMethod<String> getMangledContentName_id49XubMpE3TP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMangledContentName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4791118330019200629L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> getMangledContentName_idMToHDoMLag = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMangledContentName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(916872689078702736L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canMangleNames_id4J$Pz4XGFls, getMangledModuleName_id7Aba6ByEk1p, getMangledModuleName_id3mNkkAiSu$u, getMangledContentName_id49XubMpE3TP, getMangledContentName_idMToHDoMLag);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canMangleNames_id4J$Pz4XGFls, getMangledModuleName_id7Aba6ByEk1p, getMangledModuleName_id3mNkkAiSu$u, getMangledContentName_id49XubMpE3TP, getMangledContentName_idMToHDoMLag);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getMangledModuleName_id7Aba6ByEk1p(@NotNull SNode __thisNode__) {
     return ((String) IModuleContentContainer__BehaviorDescriptor.getMangledModuleName_id3mNkkAiSu$u.invoke(__thisNode__, ((boolean) false)));
@@ -83,10 +80,6 @@ public final class IModuleContentContainer__BehaviorDescriptor extends BaseBHDes
   /*package*/ IModuleContentContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

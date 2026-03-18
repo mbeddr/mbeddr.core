@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,10 +21,8 @@ public final class ICanBeStoredInRegister__BehaviorDescriptor extends BaseBHDesc
 
   public static final SMethod<Boolean> canBeStoredInRegister_id58TcxRGHbLy = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeStoredInRegister").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5924821888889306210L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeStoredInRegister_id58TcxRGHbLy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeStoredInRegister_id58TcxRGHbLy);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canBeStoredInRegister_id58TcxRGHbLy(@NotNull SNode __thisNode__) {
     return true;
@@ -34,10 +31,6 @@ public final class ICanBeStoredInRegister__BehaviorDescriptor extends BaseBHDesc
   /*package*/ ICanBeStoredInRegister__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

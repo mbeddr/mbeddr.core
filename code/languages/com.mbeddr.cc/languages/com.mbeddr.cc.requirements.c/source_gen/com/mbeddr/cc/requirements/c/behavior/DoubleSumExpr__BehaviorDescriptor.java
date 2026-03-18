@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -24,10 +23,8 @@ public final class DoubleSumExpr__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Integer> getDebuggerFontSize_id2BbcAuIkRls = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getDebuggerFontSize").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3011556196715033948L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Color> getDebuggerColor_idPzX5jzXl1d = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getDebuggerColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(964883390626353229L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDebuggerFontSize_id2BbcAuIkRls, getDebuggerColor_idPzX5jzXl1d);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDebuggerFontSize_id2BbcAuIkRls, getDebuggerColor_idPzX5jzXl1d);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int getDebuggerFontSize_id2BbcAuIkRls(@NotNull SNode __thisNode__) {
     return 23;
@@ -39,10 +36,6 @@ public final class DoubleSumExpr__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ DoubleSumExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

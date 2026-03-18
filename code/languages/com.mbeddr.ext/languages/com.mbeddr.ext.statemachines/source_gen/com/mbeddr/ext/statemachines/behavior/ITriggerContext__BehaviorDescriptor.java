@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,19 +21,13 @@ public final class ITriggerContext__BehaviorDescriptor extends BaseBHDescriptor 
 
   public static final SMethod<SNode> getTrigger_id4CnBdUFzcHv = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTrigger").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5338908363445816159L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTrigger_id4CnBdUFzcHv);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTrigger_id4CnBdUFzcHv);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ ITriggerContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

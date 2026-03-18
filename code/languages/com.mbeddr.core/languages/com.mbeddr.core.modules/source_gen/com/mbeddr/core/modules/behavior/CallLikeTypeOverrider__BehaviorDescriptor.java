@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,19 +22,13 @@ public final class CallLikeTypeOverrider__BehaviorDescriptor extends BaseBHDescr
   public static final SMethod<SNode> modifyResultType_id7UpQFhv4hwf = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("modifyResultType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9122562988439574543L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> modifyArgType_id7UpQFhvG_tO = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("modifyArgType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9122562988450142068L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(modifyResultType_id7UpQFhv4hwf, modifyArgType_id7UpQFhvG_tO);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(modifyResultType_id7UpQFhv4hwf, modifyArgType_id7UpQFhvG_tO);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ CallLikeTypeOverrider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

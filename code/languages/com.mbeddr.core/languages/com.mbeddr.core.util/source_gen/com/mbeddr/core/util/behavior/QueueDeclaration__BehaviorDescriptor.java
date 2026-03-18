@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -31,10 +30,8 @@ public final class QueueDeclaration__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<String> genEnqueueFunctionName_id1gOniHQCxMT = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genEnqueueFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1455891020802825401L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
   public static final SMethod<String> genDequeueFunctionName_id1gOniHQCyOp = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genDequeueFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1455891020802829593L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createType_id3o2OLGv7CoR, genSizeConstantName_id1gOniHQA69C, genSructName_id1gOniHQA$xP, genEnqueueFunctionName_id1gOniHQCxMT, genDequeueFunctionName_id1gOniHQCyOp);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createType_id3o2OLGv7CoR, genSizeConstantName_id1gOniHQA69C, genSructName_id1gOniHQA$xP, genEnqueueFunctionName_id1gOniHQCxMT, genDequeueFunctionName_id1gOniHQCyOp);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode createType_id3o2OLGv7CoR(@NotNull SNode __thisNode__) {
     return createQueueType_n408ic_a0a0(__thisNode__);
@@ -55,10 +52,6 @@ public final class QueueDeclaration__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ QueueDeclaration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

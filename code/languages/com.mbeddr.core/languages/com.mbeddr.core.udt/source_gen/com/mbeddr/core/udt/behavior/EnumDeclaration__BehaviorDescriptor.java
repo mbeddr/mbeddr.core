@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.base.behavior.IReference__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -38,10 +37,8 @@ public final class EnumDeclaration__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
   public static final SMethod<Iterable<SNode>> allReferencedModuleContents_id1zPfrUoUUqq = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allReferencedModuleContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1798411515023042202L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(arrangeVertical_idLUz4xAqAtU, sortWeight_id6W5EUuUE5hm, getLOCEquivalent_id6brBMefRfO0, getUniquelyNamedElements_id4qSf1u1TRfj, exportable_id5HxjapwgqKI, createType_id3o2OLGv7CoR, allReferencedModuleContents_id1zPfrUoUUqq);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(arrangeVertical_idLUz4xAqAtU, sortWeight_id6W5EUuUE5hm, getLOCEquivalent_id6brBMefRfO0, getUniquelyNamedElements_id4qSf1u1TRfj, exportable_id5HxjapwgqKI, createType_id3o2OLGv7CoR, allReferencedModuleContents_id1zPfrUoUUqq);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean arrangeVertical_idLUz4xAqAtU(@NotNull SNode __thisNode__) {
     return true;
@@ -74,10 +71,6 @@ public final class EnumDeclaration__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ EnumDeclaration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

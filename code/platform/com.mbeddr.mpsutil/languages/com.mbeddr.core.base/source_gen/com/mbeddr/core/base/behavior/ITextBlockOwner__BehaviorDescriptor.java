@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.core.base.editor.BasicColors;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -26,10 +25,8 @@ public final class ITextBlockOwner__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<Color> getTextColor_idBsHjoDQZaR = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getTextColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(710642085452837559L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Color> getBracketColor_idBsHjoDRsTa = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getBracketColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(710642085452959306L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEmpty_id7uLL3Mf3Bol, getTextColor_idBsHjoDQZaR, getBracketColor_idBsHjoDRsTa);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEmpty_id7uLL3Mf3Bol, getTextColor_idBsHjoDQZaR, getBracketColor_idBsHjoDRsTa);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Color getTextColor_idBsHjoDQZaR(@NotNull SNode __thisNode__) {
     return BasicColors.COMMENT_GREEN;
@@ -41,10 +38,6 @@ public final class ITextBlockOwner__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ ITextBlockOwner__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

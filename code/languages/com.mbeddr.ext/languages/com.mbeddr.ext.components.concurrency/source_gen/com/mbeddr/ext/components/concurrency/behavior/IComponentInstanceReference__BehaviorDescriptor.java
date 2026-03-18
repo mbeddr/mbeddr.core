@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -24,19 +23,13 @@ public final class IComponentInstanceReference__BehaviorDescriptor extends BaseB
   public static final SMethod<SNode> getInstance_id2kF1PD7dpF3 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInstance").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2678242487725038275L).languageId(0xa22d91c3ce06375eL, 0x3f445ef354ad4ae5L).build2();
   public static final SMethod<String> getFlatInstanceName_id2kF1PD7mXG0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFlatInstanceName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2678242487727545088L).languageId(0xa22d91c3ce06375eL, 0x3f445ef354ad4ae5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getComponent_id2kF1PD7dmzD, getInstance_id2kF1PD7dpF3, getFlatInstanceName_id2kF1PD7mXG0);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getComponent_id2kF1PD7dmzD, getInstance_id2kF1PD7dpF3, getFlatInstanceName_id2kF1PD7mXG0);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IComponentInstanceReference__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

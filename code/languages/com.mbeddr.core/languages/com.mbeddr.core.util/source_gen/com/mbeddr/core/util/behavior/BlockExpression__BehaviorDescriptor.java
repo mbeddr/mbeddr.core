@@ -40,7 +40,7 @@ public final class BlockExpression__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<Boolean> isSideeffectFree_id6SENleF$SRD = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSideeffectFree").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7938383052438474217L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<String> genFunctionName_id2edJ9spxTW = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(40029861253095036L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(functionNamePrefix_id4VEDcE28$HZ, outsideLVDRefs_id4VEDcE28A0w, outsideArgRefs_id4VEDcE28B8G, outsideGlobalConstFuncRefs_id7FuBBp$HY1Y, renderReadable_id1VQvajLb13M, isSideeffectFree_id6SENleF$SRD, genFunctionName_id2edJ9spxTW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(functionNamePrefix_id4VEDcE28$HZ, outsideLVDRefs_id4VEDcE28A0w, outsideArgRefs_id4VEDcE28B8G, outsideGlobalConstFuncRefs_id7FuBBp$HY1Y, renderReadable_id1VQvajLb13M, isSideeffectFree_id6SENleF$SRD, genFunctionName_id2edJ9spxTW);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.body$MH6M, null);

@@ -40,7 +40,7 @@ public final class MultilingualInlineFormat__BehaviorDescriptor extends BaseBHDe
   public static final SMethod<SNode> getExpressionType_id7Ssz$kYjeZx = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getExpressionType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9087294576175935457L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
   public static final SMethod<String> concatFormatString_id5qZNa$QMfx1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("concatFormatString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6250939834954217537L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(calculateCategory2_id38BeNG_3AFp, getExpressionType_id7Ssz$kYjeZx, concatFormatString_id5qZNa$QMfx1);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(calculateCategory2_id38BeNG_3AFp, getExpressionType_id7Ssz$kYjeZx, concatFormatString_id5qZNa$QMfx1);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.expression$i0cs, CONCEPTS.NullLiteral$QQ);

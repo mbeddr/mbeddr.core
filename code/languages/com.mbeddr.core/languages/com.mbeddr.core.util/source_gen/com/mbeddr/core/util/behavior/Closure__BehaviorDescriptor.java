@@ -34,7 +34,7 @@ public final class Closure__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> getLastStatement_id1$YD8rkRHGu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getLastStatement").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1819072198508206878L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
   public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSideeffectFree_id6SENleF$SRD, prefixOfGeneratedCFunction_idwSZHMcmT_o, getLastStatement_id1$YD8rkRHGu, renderReadable_id1VQvajLb13M);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSideeffectFree_id6SENleF$SRD, prefixOfGeneratedCFunction_idwSZHMcmT_o, getLastStatement_id1$YD8rkRHGu, renderReadable_id1VQvajLb13M);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.body$D8sk, null);

@@ -37,7 +37,7 @@ public final class ListItem__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Integer> getIndentInPixel_id6ec5ny7Vkj6 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getIndentInPixel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7173131913915090118L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
   public static final SMethod<Integer> getNumber_id1sNMMH9bYLM = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1671903273456495730L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getList_id6ec5ny863p1, getPreviousIndent_id6ec5ny7ZTWe, getNextIndent_id4UrEbl6wvUz, increaseIndent_id1sNMMH9bj2K, decreaseIndent_id1sNMMH9bj34, addNewLine_id6ec5ny7VcHG, getIndentInPixel_id6ec5ny7Vkj6, getNumber_id1sNMMH9bYLM);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getList_id6ec5ny863p1, getPreviousIndent_id6ec5ny7ZTWe, getNextIndent_id4UrEbl6wvUz, increaseIndent_id1sNMMH9bj2K, decreaseIndent_id1sNMMH9bj34, addNewLine_id6ec5ny7VcHG, getIndentInPixel_id6ec5ny7Vkj6, getNumber_id1sNMMH9bYLM);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SNodeFactoryOperations.addNewChild(__thisNode__, LINKS.content$5LDG, CONCEPTS.Line$hu);

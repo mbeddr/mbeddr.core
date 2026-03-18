@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.expressions.behavior.Type__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -41,10 +40,8 @@ public final class InterfaceType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> getTypeOfOperation_id2Qo$Q2I7Rfy = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTypeOfOperation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3285537971614217186L).languageId(0x97545a516023bfaaL, 0x3bf5377ae9044dedL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> interfaceCountVarName_id73HHpfbmH1B = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("interfaceCountVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8137359748104900711L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canBeVolatile_id2zhwXA_2SdW, canBeConst_id2zhwXA$TG$3, getUsedBytes_id61lw97FtLtJ, getValueStructure_idIPRL99KNBQ, getDeclaration_id59zzgFRcVlN, isMultiple_id6phvXa0RvzK, isAllowedInExpression_id2Qo$Q2I7Rfr, getTypeOfOperation_id2Qo$Q2I7Rfy, interfaceCountVarName_id73HHpfbmH1B);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canBeVolatile_id2zhwXA_2SdW, canBeConst_id2zhwXA$TG$3, getUsedBytes_id61lw97FtLtJ, getValueStructure_idIPRL99KNBQ, getDeclaration_id59zzgFRcVlN, isMultiple_id6phvXa0RvzK, isAllowedInExpression_id2Qo$Q2I7Rfr, getTypeOfOperation_id2Qo$Q2I7Rfy, interfaceCountVarName_id73HHpfbmH1B);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     String result = SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)) + "<" + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invokeSuper(__thisNode__, CONCEPTS.InterfaceType$7N) + ">";
@@ -88,10 +85,6 @@ public final class InterfaceType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ InterfaceType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

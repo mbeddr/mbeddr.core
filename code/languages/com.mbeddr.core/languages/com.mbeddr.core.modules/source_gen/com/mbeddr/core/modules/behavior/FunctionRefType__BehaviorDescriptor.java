@@ -27,7 +27,6 @@ import com.mbeddr.core.expressions.runtime.plugin.CompositeToken;
 import com.mbeddr.core.expressions.runtime.plugin.TypeKind;
 import com.mbeddr.core.expressions.runtime.plugin.AtomicToken;
 import com.mbeddr.core.expressions.behavior.ITextGenContext__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -47,10 +46,8 @@ public final class FunctionRefType__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<IToken> getToken_id6AaN29SvfIf = new SMethodBuilder<IToken>(new SJavaCompoundTypeImpl(IToken.class)).name("getToken").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7605115369190914959L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(IToken.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canBeConst_id2zhwXA$TG$3, canBeVolatile_id2zhwXA_2SdW, getValueForNode_id36fFjS6KAwd, extractFunctionName_id36fFjS6KAtX, pointsToFunctionWithName_id9AR4gpVgqO, isNullPointer_id35tTzla8u$l, getUsedBytes_id61lw97FtLtJ, getToken_id6AaN29SvfIf);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canBeConst_id2zhwXA$TG$3, canBeVolatile_id2zhwXA_2SdW, getValueForNode_id36fFjS6KAwd, extractFunctionName_id36fFjS6KAtX, pointsToFunctionWithName_id9AR4gpVgqO, isNullPointer_id35tTzla8u$l, getUsedBytes_id61lw97FtLtJ, getToken_id6AaN29SvfIf);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return "(" + ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.argTypes$R93A)).foldLeft("", (String s, SNode it) -> s += (((SNodeOperations.getIndexInParent(it) == 0) ? "" : ", ")) + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(it)) + ")=>" + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.returnType$R8O_));
@@ -121,10 +118,6 @@ public final class FunctionRefType__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ FunctionRefType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

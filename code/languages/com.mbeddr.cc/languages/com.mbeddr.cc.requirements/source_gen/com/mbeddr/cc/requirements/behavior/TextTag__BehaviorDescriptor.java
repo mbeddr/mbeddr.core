@@ -14,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -25,10 +24,8 @@ public final class TextTag__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> title_id6TTrAqIILXr = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("title").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7960515203651280731L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
   public static final SMethod<String> value_id6TTrAqIILXY = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("value").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7960515203651280766L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(title_id6TTrAqIILXr, value_id6TTrAqIILXY);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(title_id6TTrAqIILXr, value_id6TTrAqIILXY);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String title_id6TTrAqIILXr(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.tag$T6Ww);
@@ -40,10 +37,6 @@ public final class TextTag__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TextTag__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

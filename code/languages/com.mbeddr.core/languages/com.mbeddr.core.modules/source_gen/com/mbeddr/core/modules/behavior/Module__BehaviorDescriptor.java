@@ -26,7 +26,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -60,10 +59,8 @@ public final class Module__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isSameNameAdmissible_idbnKRyxQ2fZ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameNameAdmissible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(204847230947435519L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> containsCCode_id4UbnhBE7a2t = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsCCode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5659719722604470429L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getAllImportedModules_id35JkqCBlGGT, getAllImportedChunks_id4a$W5l2cFJF, collectImportedModules_id7ASSO0PSFsp, collectImportedChunks_id4a$W5l2eai0, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, createProxy_id35NyAcQ9ZV, createCompleteCopy_id5JmNU9PAsP0, proxifyContents_id35NyAcQa0G, moduleInfo_id4vuSA6yL6Zp, flattenedContents_id5DwX9xlFNJe, dependencies_id6clJcrJYPM5, isImplementationArtifact_id7Vd878ENIh6, addGenericChunkDependency_id94IdDK$n_l, hasSourceFileContent_id6TPUpoC$ak6, hasHeaderFileContent_id1pUJNHTblHu, getSourceFileName_id7Aba6BzsPRm, getSourceFileExtension_id3N$tYyGbO1v, getHeaderFileName_id7Aba6BzsCXL, getHeaderFileExtension_id1zF3M6MR330, isSameNameAdmissible_idbnKRyxQ2fZ, containsCCode_id4UbnhBE7a2t);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getAllImportedModules_id35JkqCBlGGT, getAllImportedChunks_id4a$W5l2cFJF, collectImportedModules_id7ASSO0PSFsp, collectImportedChunks_id4a$W5l2eai0, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, createProxy_id35NyAcQ9ZV, createCompleteCopy_id5JmNU9PAsP0, proxifyContents_id35NyAcQa0G, moduleInfo_id4vuSA6yL6Zp, flattenedContents_id5DwX9xlFNJe, dependencies_id6clJcrJYPM5, isImplementationArtifact_id7Vd878ENIh6, addGenericChunkDependency_id94IdDK$n_l, hasSourceFileContent_id6TPUpoC$ak6, hasHeaderFileContent_id1pUJNHTblHu, getSourceFileName_id7Aba6BzsPRm, getSourceFileExtension_id3N$tYyGbO1v, getHeaderFileName_id7Aba6BzsCXL, getHeaderFileExtension_id1zF3M6MR330, isSameNameAdmissible_idbnKRyxQ2fZ, containsCCode_id4UbnhBE7a2t);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Set<SNode> getAllImportedModules_id35JkqCBlGGT(@NotNull SNode __thisNode__) {
     Set<SNode> allImports = SetSequence.fromSet(new HashSet<SNode>());
@@ -161,10 +158,6 @@ public final class Module__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Module__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

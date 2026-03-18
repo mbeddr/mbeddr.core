@@ -31,7 +31,7 @@ public final class IDocumentable__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> getDocNodeOrNull_id11K_5nNeRli = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDocNodeOrNull").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1184609798872331602L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(EditorCell.class, ""));
   public static final SMethod<Boolean> isDocumentationAllowed_id3ni3WiduMNJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDocumentationAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3878179565981084911L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDocTextOrEmpty_id3m8H$lmFM62, getDocNodeOrNull_idYJrcxt6$v6, getDocNodeOrNull_id11K_5nNeRli, isDocumentationAllowed_id3ni3WiduMNJ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDocTextOrEmpty_id3m8H$lmFM62, getDocNodeOrNull_idYJrcxt6$v6, getDocNodeOrNull_id11K_5nNeRli, isDocumentationAllowed_id3ni3WiduMNJ);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
 

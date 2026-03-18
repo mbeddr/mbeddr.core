@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class ITocEntry__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> tocText_id3DLpMp_rLlJ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("tocText").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4211260541176321391L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
   public static final SMethod<Boolean> addToTOC_id3DLpMp_rLmy = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("addToTOC").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4211260541176321442L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tocText_id3DLpMp_rLlJ, addToTOC_id3DLpMp_rLmy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tocText_id3DLpMp_rLlJ, addToTOC_id3DLpMp_rLmy);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean addToTOC_id3DLpMp_rLmy(@NotNull SNode __thisNode__) {
     return true;
@@ -35,10 +32,6 @@ public final class ITocEntry__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ITocEntry__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

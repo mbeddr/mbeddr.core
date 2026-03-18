@@ -24,7 +24,7 @@ public final class CheckCategoryAnnotation__BehaviorDescriptor extends BaseBHDes
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x9a64cf6bcacc4231L, 0xbf69dddc8eb0f265L, 0x7e83ad82cb97e5e3L, "com.mbeddr.mpsutil.suppresswarning.gen.structure.CheckCategoryAnnotation");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.kind$oBYs, createKindReference_wr4uz2_a0a0a(SNodeOperations.getNode("r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)", "9116320848000879251")));

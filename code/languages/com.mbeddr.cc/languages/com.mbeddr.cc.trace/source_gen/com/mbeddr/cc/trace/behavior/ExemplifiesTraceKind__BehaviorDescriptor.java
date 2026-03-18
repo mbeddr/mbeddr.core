@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class ExemplifiesTraceKind__BehaviorDescriptor extends BaseBHDescri
 
   public static final SMethod<Color> getTraceColor_id4cyIky40iAb = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getTraceColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4837632670852786571L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTraceColor_id4cyIky40iAb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTraceColor_id4cyIky40iAb);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Color getTraceColor_id4cyIky40iAb(@NotNull SNode __thisNode__) {
     return Color.lightGray;
@@ -35,10 +32,6 @@ public final class ExemplifiesTraceKind__BehaviorDescriptor extends BaseBHDescri
   /*package*/ ExemplifiesTraceKind__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -23,7 +23,6 @@ import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
 import com.mbeddr.core.base.behavior.ICommentable__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import java.math.BigInteger;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -59,10 +58,8 @@ public final class AbstractState__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> asExpr_id3TJMuIKbO5C = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("asExpr").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4499036566876799336L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
   public static final SMethod<Boolean> isActive_id4sAjwkSM8eC = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isActive").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5126871010142356392L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(entryActionStatements_id47Sr75PnwHQ, entryAction_id4oSz90jlvmt, exitActionStatements_id47Sr75PnwLk, exitAction_id4oSz90jmcaK, duringActionStatements_id7iNM$5cFWBg, duringAction_id4oSz90jmgnE, transitions_id47Sr75PnwFP, triggeredTransitions_id16ykm_Mc81y, genCEnumLiteralName_id1oIA7Ec_GUC, qualifiedStateName_id3FSHg1aC13T, reachableTargetStates_id3FSHg1aCVVq, ultimateInitialState_id3FSHg1aEzgk, containingCompositeStates_id4h2fJwlSpMV, nameInGraph_id3yz4ElauWkt, visualizeTransition_id5YZjOkvuwU1, getCommentConcept_id5HxjapwgqLb, getLOCEquivalent_id6brBMefRfO0, findLastSimpleStatement_id6FqI49F_e$d, removeEmptyLineBefore_id25eqerYmQSA, integerStaticValue_id2etktb3RPbd, asExpr_id3TJMuIKbO5C, isActive_id4sAjwkSM8eC);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(entryActionStatements_id47Sr75PnwHQ, entryAction_id4oSz90jlvmt, exitActionStatements_id47Sr75PnwLk, exitAction_id4oSz90jmcaK, duringActionStatements_id7iNM$5cFWBg, duringAction_id4oSz90jmgnE, transitions_id47Sr75PnwFP, triggeredTransitions_id16ykm_Mc81y, genCEnumLiteralName_id1oIA7Ec_GUC, qualifiedStateName_id3FSHg1aC13T, reachableTargetStates_id3FSHg1aCVVq, ultimateInitialState_id3FSHg1aEzgk, containingCompositeStates_id4h2fJwlSpMV, nameInGraph_id3yz4ElauWkt, visualizeTransition_id5YZjOkvuwU1, getCommentConcept_id5HxjapwgqLb, getLOCEquivalent_id6brBMefRfO0, findLastSimpleStatement_id6FqI49F_e$d, removeEmptyLineBefore_id25eqerYmQSA, integerStaticValue_id2etktb3RPbd, asExpr_id3TJMuIKbO5C, isActive_id4sAjwkSM8eC);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode entryActionStatements_id47Sr75PnwHQ(@NotNull SNode __thisNode__) {
     SNode ea = ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.contents$78mW)).findFirst((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.EntryAction$nF));
@@ -179,10 +176,6 @@ public final class AbstractState__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ AbstractState__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,10 +21,8 @@ public final class IUnitContainerContent__BehaviorDescriptor extends BaseBHDescr
 
   public static final SMethod<Boolean> isExported_id2Jcs$lvbshN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isExported").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3156023081155019891L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isExported_id2Jcs$lvbshN);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isExported_id2Jcs$lvbshN);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isExported_id2Jcs$lvbshN(@NotNull SNode __thisNode__) {
     return false;
@@ -34,10 +31,6 @@ public final class IUnitContainerContent__BehaviorDescriptor extends BaseBHDescr
   /*package*/ IUnitContainerContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

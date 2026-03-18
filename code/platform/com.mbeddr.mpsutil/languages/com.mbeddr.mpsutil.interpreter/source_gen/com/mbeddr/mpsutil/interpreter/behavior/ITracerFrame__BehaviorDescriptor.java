@@ -21,7 +21,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -35,10 +34,8 @@ public final class ITracerFrame__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<ITraceRecord> constructCustomFrame_id2kg0xI3thT2 = new SMethodBuilder<ITraceRecord>(new SJavaCompoundTypeImpl(ITraceRecord.class)).name("constructCustomFrame").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2670636896223567426L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(ITraceRecord.class, ""), SMethodBuilder.createJavaParameter(ITraceRecord.class, ""));
   public static final SMethod<Boolean> isMajor_id5U8d23PSzWx = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isMajor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6811751752566718241L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isFrame_id7obiejCehQ6, referencedNodes_id7lHetQxJqtN, renderTraceSyntax_id5Beavy0LkEa, additionallyShownNodes_id5Beavy19lGt, constructCustomFrame_id2kg0xI3thT2, isMajor_id5U8d23PSzWx);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isFrame_id7obiejCehQ6, referencedNodes_id7lHetQxJqtN, renderTraceSyntax_id5Beavy0LkEa, additionallyShownNodes_id5Beavy19lGt, constructCustomFrame_id2kg0xI3thT2, isMajor_id5U8d23PSzWx);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isFrame_id7obiejCehQ6(@NotNull SNode __thisNode__) {
     return true;
@@ -67,10 +64,6 @@ public final class ITracerFrame__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ITracerFrame__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

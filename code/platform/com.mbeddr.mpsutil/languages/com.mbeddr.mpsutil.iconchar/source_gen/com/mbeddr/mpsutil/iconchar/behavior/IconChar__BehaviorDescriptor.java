@@ -32,7 +32,6 @@ import java.awt.RenderingHints;
 import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.geom.Rectangle2D;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -59,10 +58,8 @@ public final class IconChar__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isPixelUsed_id608oBgqljgu = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isPixelUsed").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6919889078252287006L).languageId(0xb3b4eca3f222d4daL, 0xe840b8ae64d94b5bL).build2(SMethodBuilder.createJavaParameter(BufferedImage.class, ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
   public static final SMethod<Color> getTransparentColor_id5L7BF$C6GwK = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getTransparentColor").modifiers(1, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(6649457892914808880L).languageId(0xb3b4eca3f222d4daL, 0xe840b8ae64d94b5bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(init_id3TQBmq3qB5f, setDefaultValues_id3TQBmq3qBde, setIconPath_id3TQBmq3p9ZJ, getConceptDeclaration_id3TQBmq3qpDT, concatIconFileName_id3TQBmq3qtXH, getIconFile_id3TQBmq3qdeX, getIconFile_id3TQBmq3rnNb, createIconImage_id5L7BF$C77MJ, writeIconImage_id5L7BF$C8g1T, setGraphicsHints_id608oBgqv2dI, createCharImage_id5L7BF$C6Jgf, findCharMinX_id5L7BF$C6PQd, findCharMaxX_id5L7BF$C6W0S, findCharMinY_id5L7BF$C6TaA, findCharMaxY_id5L7BF$C6X6A, isPixelUsed_id608oBgqljgu, getTransparentColor_id5L7BF$C6GwK);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(init_id3TQBmq3qB5f, setDefaultValues_id3TQBmq3qBde, setIconPath_id3TQBmq3p9ZJ, getConceptDeclaration_id3TQBmq3qpDT, concatIconFileName_id3TQBmq3qtXH, getIconFile_id3TQBmq3qdeX, getIconFile_id3TQBmq3rnNb, createIconImage_id5L7BF$C77MJ, writeIconImage_id5L7BF$C8g1T, setGraphicsHints_id608oBgqv2dI, createCharImage_id5L7BF$C6Jgf, findCharMinX_id5L7BF$C6PQd, findCharMaxX_id5L7BF$C6W0S, findCharMinY_id5L7BF$C6TaA, findCharMaxY_id5L7BF$C6X6A, isPixelUsed_id608oBgqljgu, getTransparentColor_id5L7BF$C6GwK);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void init_id3TQBmq3qB5f(@NotNull SNode __thisNode__) {
     IconChar__BehaviorDescriptor.setDefaultValues_id3TQBmq3qBde.invoke(__thisNode__);
@@ -294,10 +291,6 @@ outerLoop:
   /*package*/ IconChar__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

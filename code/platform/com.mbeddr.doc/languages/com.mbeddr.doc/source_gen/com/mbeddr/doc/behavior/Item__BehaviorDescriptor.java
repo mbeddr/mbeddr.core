@@ -20,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.references.BLOperations;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.nodeEditor.EditorSettings;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -42,10 +41,8 @@ public final class Item__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> addNewLine_id6ec5ny7VcHG = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addNewLine").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7173131913915059052L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
   public static final SMethod<Integer> getIndentInPixel_id6ec5ny7Vkj6 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getIndentInPixel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7173131913915090118L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, getItemList_id6ec5ny863p1, getIndex_idQRmqzKImpy, getNumber_id1sNMMH9bYLM, getPreviousIndent_id6ec5ny7ZTWe, getNextIndent_id4UrEbl6wvUz, increaseIndent_id6ec5ny7VcHj, decreaseIndent_id6ec5ny7VcHs, addNewLine_id6ec5ny7VcHG, getIndentInPixel_id6ec5ny7Vkj6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, getItemList_id6ec5ny863p1, getIndex_idQRmqzKImpy, getNumber_id1sNMMH9bYLM, getPreviousIndent_id6ec5ny7ZTWe, getNextIndent_id4UrEbl6wvUz, increaseIndent_id6ec5ny7VcHj, decreaseIndent_id6ec5ny7VcHs, addNewLine_id6ec5ny7VcHG, getIndentInPixel_id6ec5ny7Vkj6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean containsText_idjpyKDg1onB(@NotNull SNode __thisNode__, String text) {
     return (boolean) TextBlock__BehaviorDescriptor.containsText_idjpyKDg1A7A.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.text$IRyM), text);
@@ -104,10 +101,6 @@ public final class Item__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Item__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -27,7 +27,7 @@ public final class NullType__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Boolean> canBeConst_id2zhwXA$TG$3 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeConst").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002447374595L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeConst_id2zhwXA$TG$3);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeConst_id2zhwXA$TG$3);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.baseType$zMGV, createVoidType_nu9xh4_a0a0a());

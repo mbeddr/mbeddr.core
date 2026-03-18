@@ -27,7 +27,7 @@ public final class InitializingState__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<SNode> ultimateInitialState_id3FSHg1aEzgk = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("ultimateInitialState").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4249345261281358868L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
   public static final SMethod<Integer> getValue_id3TJMuIKgpSW = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getValue").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4499036566878002748L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(ultimateInitialState_id3FSHg1aEzgk, getValue_id3TJMuIKgpSW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(ultimateInitialState_id3FSHg1aEzgk, getValue_id3TJMuIKgpSW);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.name$MnvL, SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)));

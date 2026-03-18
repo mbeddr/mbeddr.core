@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,10 +25,8 @@ public final class WhenPortConnectedStatement__BehaviorDescriptor extends BaseBH
 
   public static final SMethod<Iterable<SNode>> checkedPorts_id4paRqaMe4qL = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("checkedPorts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5065104421776017073L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(checkedPorts_id4paRqaMe4qL);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(checkedPorts_id4paRqaMe4qL);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> checkedPorts_id4paRqaMe4qL(@NotNull SNode __thisNode__) {
     return Sequence.<SNode>singleton(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.portExpr$qDHC), LINKS.port$IUw8));
@@ -38,10 +35,6 @@ public final class WhenPortConnectedStatement__BehaviorDescriptor extends BaseBH
   /*package*/ WhenPortConnectedStatement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

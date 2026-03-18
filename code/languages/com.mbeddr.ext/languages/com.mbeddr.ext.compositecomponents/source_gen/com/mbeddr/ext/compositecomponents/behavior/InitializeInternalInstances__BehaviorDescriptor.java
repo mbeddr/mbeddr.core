@@ -20,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import com.mbeddr.core.modules.behavior.ICallLike__BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -37,10 +36,8 @@ public final class InitializeInternalInstances__BehaviorDescriptor extends BaseB
   public static final SMethod<Void> presentation_id2$xXL4HsOsB = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("presentation").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2963921682935531303L).languageId(0xaf92928ebf9c5966L, 0x54f2a59b97bb4c09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(StyledTextPrinter.class, ""));
   public static final SMethod<SNode> getFunction_id74lwjTQiYY5 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getFunction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8148561206069424005L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getActuals_id6WGVxckB05Y, getFormals_id6WGVxckB065, getReturnType_id7$$5Stoo8Y$, getActualsLink_id2$xXL4HCFy0, presentation_id2$xXL4HsOsB, getFunction_id74lwjTQiYY5);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getActuals_id6WGVxckB05Y, getFormals_id6WGVxckB065, getReturnType_id7$$5Stoo8Y$, getActualsLink_id2$xXL4HCFy0, presentation_id2$xXL4HsOsB, getFunction_id74lwjTQiYY5);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> getActuals_id6WGVxckB05Y(@NotNull SNode __thisNode__) {
     return SLinkOperations.getChildren(__thisNode__, LINKS.params$_2Vk);
@@ -85,10 +82,6 @@ public final class InitializeInternalInstances__BehaviorDescriptor extends BaseB
   /*package*/ InitializeInternalInstances__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
