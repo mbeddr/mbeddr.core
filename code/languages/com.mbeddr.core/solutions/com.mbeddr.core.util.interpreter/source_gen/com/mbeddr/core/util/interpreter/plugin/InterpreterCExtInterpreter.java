@@ -70,7 +70,7 @@ public class InterpreterCExtInterpreter extends ConditionalInterpreterBase {
         return "DecTab";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("DecTab", "http://127.0.0.1:63320/node?ref=cb5c0156-8eaa-465e-9036-83c83b852a64%2Fi%3A10000001%28com.mbeddr.core.util.interpreter%40transient40%2Fcom.mbeddr.core.util.interpreter.plugin%400%29%2F4535693827938077180");
+        return new EvaluatorInfo("DecTab", "http://127.0.0.1:63320/node?ref=6b9cb73b-8a3d-42a7-81d4-44144477d2c2%2Fi%3A10000001%28com.mbeddr.core.util.interpreter%40transient41%2Fcom.mbeddr.core.util.interpreter.plugin%400%29%2F4535693827938077180");
       }
 
       @Override
@@ -104,7 +104,7 @@ public class InterpreterCExtInterpreter extends ConditionalInterpreterBase {
         return "GSwitchExpression";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("GSwitchExpression", "http://127.0.0.1:63320/node?ref=cb5c0156-8eaa-465e-9036-83c83b852a64%2Fi%3A10000001%28com.mbeddr.core.util.interpreter%40transient40%2Fcom.mbeddr.core.util.interpreter.plugin%400%29%2F4535693827938077288");
+        return new EvaluatorInfo("GSwitchExpression", "http://127.0.0.1:63320/node?ref=6b9cb73b-8a3d-42a7-81d4-44144477d2c2%2Fi%3A10000001%28com.mbeddr.core.util.interpreter%40transient41%2Fcom.mbeddr.core.util.interpreter.plugin%400%29%2F4535693827938077288");
       }
 
       @Override

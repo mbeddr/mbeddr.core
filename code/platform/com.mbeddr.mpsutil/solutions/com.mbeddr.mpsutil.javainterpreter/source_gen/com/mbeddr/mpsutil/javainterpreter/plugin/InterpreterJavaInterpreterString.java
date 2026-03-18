@@ -55,7 +55,7 @@ public class InterpreterJavaInterpreterString extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("StringLiteral", "http://127.0.0.1:63320/node?ref=d7fde995-1730-400f-bd40-39307ea8446c%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient130%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F902624672044062200");
+        return new EvaluatorInfo("StringLiteral", "http://127.0.0.1:63320/node?ref=7ca2df7c-caa6-496e-bf7e-77ccfe40eaaf%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient130%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F902624672044062200");
       }
 
       @Override
@@ -84,7 +84,7 @@ public class InterpreterJavaInterpreterString extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("PlusExpression", "http://127.0.0.1:63320/node?ref=d7fde995-1730-400f-bd40-39307ea8446c%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient130%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F902624672044063504");
+        return new EvaluatorInfo("PlusExpression", "http://127.0.0.1:63320/node?ref=7ca2df7c-caa6-496e-bf7e-77ccfe40eaaf%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient130%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F902624672044063504");
       }
 
       @Override

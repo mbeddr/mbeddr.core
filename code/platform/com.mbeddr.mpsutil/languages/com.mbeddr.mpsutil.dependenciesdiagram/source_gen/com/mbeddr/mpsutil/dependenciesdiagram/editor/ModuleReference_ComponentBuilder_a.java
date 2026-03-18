@@ -336,7 +336,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
                     public void run() {
                       final ContextVariables _variablesContext = ContextVariables.getCurrent();
                       final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-                      editorCell.setCellId("transformedGraphElement_b1a" + "." + DependenciesDiagramHelper.getIdModelDependency(((Tuples._2<SModel, SModelReference>) _variablesContext.getValue("parameterObject"))));
+                      editorCell.setCellId("transformedGraphElement_b1a_0" + "." + DependenciesDiagramHelper.getIdModelDependency(((Tuples._2<SModel, SModelReference>) _variablesContext.getValue("parameterObject"))));
 
                       final EditorCell labelCell = DiagramUtil.getCellIfNotEmpty(new Inline_Builder_38by1b_a1b0(editorContext, node).createCell());
                       if (labelCell != null) {
