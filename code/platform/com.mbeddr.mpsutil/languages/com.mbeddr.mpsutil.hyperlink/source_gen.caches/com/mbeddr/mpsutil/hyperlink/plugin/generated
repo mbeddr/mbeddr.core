@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-exe6kc1zek1n5di7p0rxjn1fslebb8k">
-  <files names="HyperlinkListener.java:HyperlinkPlugin_ProjectPluginPart.java:Hyperlink_ProjectPlugin.java:ReferenceUnderliner.java" />
+<product version="3" modelHash="4nwcj3v291ejnw29dt89xl8depv8p5w">
+  <files names="HyperlinkEditorExtension.java:HyperlinkListener.java:HyperlinkPlugin_AppPluginPart.java:Hyperlink_ApplicationPlugin.java:ReferenceUnderliner.java" />
 </product>
 
