@@ -10,6 +10,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ## Fixed
 
 - `com.mbeddr.mpsutil.filepicker`: Solution-relative pickers now work correctly during generation.
+- `com.mbeddr.mpsutil.interpreter`: generated node URLs were pointing to nodes in transient models
 
 # February 2026
 

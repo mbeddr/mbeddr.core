@@ -4153,8 +4153,13 @@
                                                 <node concept="liA8E" id="1_yOWEXe$ul" role="2OqNvi">
                                                   <ref role="37wK5l" to="dush:~PersistenceFacade.asString(org.jetbrains.mps.openapi.model.SNodeReference)" resolve="asString" />
                                                   <node concept="2OqwBi" id="4Dpunc8YAX$" role="37wK5m">
-                                                    <node concept="30H73N" id="4Dpunc8Y_Sw" role="2Oq$k0" />
                                                     <node concept="iZEcu" id="4Dpunc8YCcX" role="2OqNvi" />
+                                                    <node concept="2OqwBi" id="20OaWkqOXsB" role="2Oq$k0">
+                                                      <node concept="1iwH7S" id="20OaWkqOXsC" role="2Oq$k0" />
+                                                      <node concept="12$id9" id="20OaWkqOXsD" role="2OqNvi">
+                                                        <node concept="30H73N" id="20OaWkqOXsE" role="12$y8L" />
+                                                      </node>
+                                                    </node>
                                                   </node>
                                                 </node>
                                               </node>
@@ -5061,8 +5066,13 @@
                                                 <node concept="liA8E" id="4Dpunc8ZIIN" role="2OqNvi">
                                                   <ref role="37wK5l" to="dush:~PersistenceFacade.asString(org.jetbrains.mps.openapi.model.SNodeReference)" resolve="asString" />
                                                   <node concept="2OqwBi" id="4Dpunc8ZIIO" role="37wK5m">
-                                                    <node concept="30H73N" id="4Dpunc8ZIIP" role="2Oq$k0" />
                                                     <node concept="iZEcu" id="4Dpunc8ZIIQ" role="2OqNvi" />
+                                                    <node concept="2OqwBi" id="20OaWkqPKgX" role="2Oq$k0">
+                                                      <node concept="1iwH7S" id="20OaWkqPKgY" role="2Oq$k0" />
+                                                      <node concept="12$id9" id="20OaWkqPKgZ" role="2OqNvi">
+                                                        <node concept="30H73N" id="20OaWkqPKh0" role="12$y8L" />
+                                                      </node>
+                                                    </node>
                                                   </node>
                                                 </node>
                                               </node>
