@@ -74,7 +74,7 @@ public class InterpreterCStatementInterpreter extends ConditionalInterpreterBase
         return "StatementList";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("StatementList", "http://127.0.0.1:63320/node?ref=4496105d-8026-4c4c-95c1-094eabc58c7c%2Fi%3A10000001%28com.mbeddr.core.statements.interpreter%40transient48%2Fcom.mbeddr.core.statements.interpreter.plugin%400%29%2F4535693827938064347");
+        return new EvaluatorInfo("StatementList", "http://127.0.0.1:63320/node?ref=r%3Aac210026-ad43-4bdd-8d39-e09ff89cd7f1%28com.mbeddr.core.statements.interpreter.plugin%29%2F4535693827938064347");
       }
 
       @Override
@@ -104,7 +104,7 @@ public class InterpreterCStatementInterpreter extends ConditionalInterpreterBase
         return "ExpressionStatement";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ExpressionStatement", "http://127.0.0.1:63320/node?ref=4496105d-8026-4c4c-95c1-094eabc58c7c%2Fi%3A10000001%28com.mbeddr.core.statements.interpreter%40transient48%2Fcom.mbeddr.core.statements.interpreter.plugin%400%29%2F4535693827938064381");
+        return new EvaluatorInfo("ExpressionStatement", "http://127.0.0.1:63320/node?ref=r%3Aac210026-ad43-4bdd-8d39-e09ff89cd7f1%28com.mbeddr.core.statements.interpreter.plugin%29%2F4535693827938064381");
       }
 
       @Override
@@ -137,7 +137,7 @@ public class InterpreterCStatementInterpreter extends ConditionalInterpreterBase
         return "IVariableReference";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("IVariableReference", "http://127.0.0.1:63320/node?ref=4496105d-8026-4c4c-95c1-094eabc58c7c%2Fi%3A10000001%28com.mbeddr.core.statements.interpreter%40transient48%2Fcom.mbeddr.core.statements.interpreter.plugin%400%29%2F4535693827938064384");
+        return new EvaluatorInfo("IVariableReference", "http://127.0.0.1:63320/node?ref=r%3Aac210026-ad43-4bdd-8d39-e09ff89cd7f1%28com.mbeddr.core.statements.interpreter.plugin%29%2F4535693827938064384");
       }
 
       @Override
@@ -167,7 +167,7 @@ public class InterpreterCStatementInterpreter extends ConditionalInterpreterBase
         return "LocalVariableDeclaration";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("LocalVariableDeclaration", "http://127.0.0.1:63320/node?ref=4496105d-8026-4c4c-95c1-094eabc58c7c%2Fi%3A10000001%28com.mbeddr.core.statements.interpreter%40transient48%2Fcom.mbeddr.core.statements.interpreter.plugin%400%29%2F4535693827938064406");
+        return new EvaluatorInfo("LocalVariableDeclaration", "http://127.0.0.1:63320/node?ref=r%3Aac210026-ad43-4bdd-8d39-e09ff89cd7f1%28com.mbeddr.core.statements.interpreter.plugin%29%2F4535693827938064406");
       }
 
       @Override
@@ -211,7 +211,7 @@ public class InterpreterCStatementInterpreter extends ConditionalInterpreterBase
         return "IfStatement";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("IfStatement", "http://127.0.0.1:63320/node?ref=4496105d-8026-4c4c-95c1-094eabc58c7c%2Fi%3A10000001%28com.mbeddr.core.statements.interpreter%40transient48%2Fcom.mbeddr.core.statements.interpreter.plugin%400%29%2F2557538009457368576");
+        return new EvaluatorInfo("IfStatement", "http://127.0.0.1:63320/node?ref=r%3Aac210026-ad43-4bdd-8d39-e09ff89cd7f1%28com.mbeddr.core.statements.interpreter.plugin%29%2F2557538009457368576");
       }
 
       @Override
@@ -241,7 +241,7 @@ public class InterpreterCStatementInterpreter extends ConditionalInterpreterBase
         return "Statement";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("Statement", "http://127.0.0.1:63320/node?ref=4496105d-8026-4c4c-95c1-094eabc58c7c%2Fi%3A10000001%28com.mbeddr.core.statements.interpreter%40transient48%2Fcom.mbeddr.core.statements.interpreter.plugin%400%29%2F2212011887036721563");
+        return new EvaluatorInfo("Statement", "http://127.0.0.1:63320/node?ref=r%3Aac210026-ad43-4bdd-8d39-e09ff89cd7f1%28com.mbeddr.core.statements.interpreter.plugin%29%2F2212011887036721563");
       }
 
       @Override

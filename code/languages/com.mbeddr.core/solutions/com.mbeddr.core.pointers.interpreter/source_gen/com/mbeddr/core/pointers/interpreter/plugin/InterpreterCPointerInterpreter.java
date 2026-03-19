@@ -60,7 +60,7 @@ public class InterpreterCPointerInterpreter extends ConditionalInterpreterBase {
         return "NullExpression";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("NullExpression", "http://127.0.0.1:63320/node?ref=c973f588-8364-4a85-b3c6-27cecf77a5ab%2Fi%3A10000001%28com.mbeddr.core.pointers.interpreter%40transient46%2Fcom.mbeddr.core.pointers.interpreter.plugin%400%29%2F4535693827938071129");
+        return new EvaluatorInfo("NullExpression", "http://127.0.0.1:63320/node?ref=r%3A421036da-ea3a-4be6-8149-b3c8b9348af1%28com.mbeddr.core.pointers.interpreter.plugin%29%2F4535693827938071129");
       }
 
       @Override
@@ -90,7 +90,7 @@ public class InterpreterCPointerInterpreter extends ConditionalInterpreterBase {
         return "SizeOfExpr";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("SizeOfExpr", "http://127.0.0.1:63320/node?ref=c973f588-8364-4a85-b3c6-27cecf77a5ab%2Fi%3A10000001%28com.mbeddr.core.pointers.interpreter%40transient46%2Fcom.mbeddr.core.pointers.interpreter.plugin%400%29%2F4535693827938071132");
+        return new EvaluatorInfo("SizeOfExpr", "http://127.0.0.1:63320/node?ref=r%3A421036da-ea3a-4be6-8149-b3c8b9348af1%28com.mbeddr.core.pointers.interpreter.plugin%29%2F4535693827938071132");
       }
 
       @Override
@@ -123,7 +123,7 @@ public class InterpreterCPointerInterpreter extends ConditionalInterpreterBase {
         return "StringLiteral";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("StringLiteral", "http://127.0.0.1:63320/node?ref=c973f588-8364-4a85-b3c6-27cecf77a5ab%2Fi%3A10000001%28com.mbeddr.core.pointers.interpreter%40transient46%2Fcom.mbeddr.core.pointers.interpreter.plugin%400%29%2F4535693827938071141");
+        return new EvaluatorInfo("StringLiteral", "http://127.0.0.1:63320/node?ref=r%3A421036da-ea3a-4be6-8149-b3c8b9348af1%28com.mbeddr.core.pointers.interpreter.plugin%29%2F4535693827938071141");
       }
 
       @Override
