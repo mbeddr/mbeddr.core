@@ -11,6 +11,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - `com.mbeddr.mpsutil.filepicker`: Solution-relative pickers now work correctly during generation.
 - `com.mbeddr.mpsutil.interpreter`: Throw a more detailed exception when TypedChildConstraint cannot determine the type of a node.
+- `com.mbeddr.mpsutil.interpreter`: Generated node URLs now correctly point to the input model instead of the transient model.
 
 # February 2026
 

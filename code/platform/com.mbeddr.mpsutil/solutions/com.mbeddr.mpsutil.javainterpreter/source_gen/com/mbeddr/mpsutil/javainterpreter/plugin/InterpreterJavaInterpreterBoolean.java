@@ -55,7 +55,7 @@ public class InterpreterJavaInterpreterBoolean extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("BooleanConstant", "http://127.0.0.1:63320/node?ref=0ff9d43f-aa8d-4805-8718-90577db5e4ff%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient130%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F902624672043012197");
+        return new EvaluatorInfo("BooleanConstant", "http://127.0.0.1:63320/node?ref=r%3A6de0fec9-28ce-4092-a00d-c37c6ae81d03%28com.mbeddr.mpsutil.javainterpreter.plugin%29%2F902624672043012197");
       }
 
       @Override
@@ -84,7 +84,7 @@ public class InterpreterJavaInterpreterBoolean extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("NotExpression", "http://127.0.0.1:63320/node?ref=0ff9d43f-aa8d-4805-8718-90577db5e4ff%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient130%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F902624672042468865");
+        return new EvaluatorInfo("NotExpression", "http://127.0.0.1:63320/node?ref=r%3A6de0fec9-28ce-4092-a00d-c37c6ae81d03%28com.mbeddr.mpsutil.javainterpreter.plugin%29%2F902624672042468865");
       }
 
       @Override
@@ -113,7 +113,7 @@ public class InterpreterJavaInterpreterBoolean extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("AndExpression", "http://127.0.0.1:63320/node?ref=0ff9d43f-aa8d-4805-8718-90577db5e4ff%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient130%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F902624672042577546");
+        return new EvaluatorInfo("AndExpression", "http://127.0.0.1:63320/node?ref=r%3A6de0fec9-28ce-4092-a00d-c37c6ae81d03%28com.mbeddr.mpsutil.javainterpreter.plugin%29%2F902624672042577546");
       }
 
       @Override
@@ -142,7 +142,7 @@ public class InterpreterJavaInterpreterBoolean extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("OrExpression", "http://127.0.0.1:63320/node?ref=0ff9d43f-aa8d-4805-8718-90577db5e4ff%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient130%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F902624672042836956");
+        return new EvaluatorInfo("OrExpression", "http://127.0.0.1:63320/node?ref=r%3A6de0fec9-28ce-4092-a00d-c37c6ae81d03%28com.mbeddr.mpsutil.javainterpreter.plugin%29%2F902624672042836956");
       }
 
       @Override
