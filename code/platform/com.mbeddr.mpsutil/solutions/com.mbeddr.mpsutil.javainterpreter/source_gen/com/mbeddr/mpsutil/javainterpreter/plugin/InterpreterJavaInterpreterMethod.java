@@ -54,7 +54,7 @@ public class InterpreterJavaInterpreterMethod extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("InstanceMethodDeclaration", "http://127.0.0.1:63320/node?ref=d4ca41c4-07aa-4d73-8d22-cfa8c93c1446%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient128%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F6267356447275326219");
+        return new EvaluatorInfo("InstanceMethodDeclaration", "http://127.0.0.1:63320/node?ref=0ff9d43f-aa8d-4805-8718-90577db5e4ff%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient130%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F6267356447275326219");
       }
 
       @Override
@@ -83,7 +83,7 @@ public class InterpreterJavaInterpreterMethod extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("LocalMethodCall", "http://127.0.0.1:63320/node?ref=d4ca41c4-07aa-4d73-8d22-cfa8c93c1446%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient128%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F1997494000075271372");
+        return new EvaluatorInfo("LocalMethodCall", "http://127.0.0.1:63320/node?ref=0ff9d43f-aa8d-4805-8718-90577db5e4ff%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient130%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F1997494000075271372");
       }
 
       @Override
@@ -112,7 +112,7 @@ public class InterpreterJavaInterpreterMethod extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ParameterDeclaration", "http://127.0.0.1:63320/node?ref=d4ca41c4-07aa-4d73-8d22-cfa8c93c1446%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient128%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F4641960180065896186");
+        return new EvaluatorInfo("ParameterDeclaration", "http://127.0.0.1:63320/node?ref=0ff9d43f-aa8d-4805-8718-90577db5e4ff%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient130%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F4641960180065896186");
       }
 
       @Override
@@ -141,7 +141,7 @@ public class InterpreterJavaInterpreterMethod extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ReturnStatement", "http://127.0.0.1:63320/node?ref=d4ca41c4-07aa-4d73-8d22-cfa8c93c1446%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient128%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F4641960180070676562");
+        return new EvaluatorInfo("ReturnStatement", "http://127.0.0.1:63320/node?ref=0ff9d43f-aa8d-4805-8718-90577db5e4ff%2Fi%3A10000001%28com.mbeddr.mpsutil.javainterpreter%40transient130%2Fcom.mbeddr.mpsutil.javainterpreter.plugin%400%29%2F4641960180070676562");
       }
 
       @Override
