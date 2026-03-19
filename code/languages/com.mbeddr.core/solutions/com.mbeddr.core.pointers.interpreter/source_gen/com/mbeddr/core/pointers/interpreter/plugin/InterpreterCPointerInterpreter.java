@@ -60,7 +60,7 @@ public class InterpreterCPointerInterpreter extends ConditionalInterpreterBase {
         return "NullExpression";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("NullExpression", "http://127.0.0.1:63320/node?ref=1eba00da-a1b1-4fe2-b4c2-8616545d1abc%2Fi%3A10000001%28com.mbeddr.core.pointers.interpreter%40transient50%2Fcom.mbeddr.core.pointers.interpreter.plugin%400%29%2F4535693827938071129");
+        return new EvaluatorInfo("NullExpression", "http://127.0.0.1:63320/node?ref=d59cf7ed-0d52-49fe-ab6b-ae5f7787bd5d%2Fi%3A10000001%28com.mbeddr.core.pointers.interpreter%40transient50%2Fcom.mbeddr.core.pointers.interpreter.plugin%400%29%2F4535693827938071129");
       }
 
       @Override
@@ -90,7 +90,7 @@ public class InterpreterCPointerInterpreter extends ConditionalInterpreterBase {
         return "SizeOfExpr";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("SizeOfExpr", "http://127.0.0.1:63320/node?ref=1eba00da-a1b1-4fe2-b4c2-8616545d1abc%2Fi%3A10000001%28com.mbeddr.core.pointers.interpreter%40transient50%2Fcom.mbeddr.core.pointers.interpreter.plugin%400%29%2F4535693827938071132");
+        return new EvaluatorInfo("SizeOfExpr", "http://127.0.0.1:63320/node?ref=d59cf7ed-0d52-49fe-ab6b-ae5f7787bd5d%2Fi%3A10000001%28com.mbeddr.core.pointers.interpreter%40transient50%2Fcom.mbeddr.core.pointers.interpreter.plugin%400%29%2F4535693827938071132");
       }
 
       @Override
@@ -123,7 +123,7 @@ public class InterpreterCPointerInterpreter extends ConditionalInterpreterBase {
         return "StringLiteral";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("StringLiteral", "http://127.0.0.1:63320/node?ref=1eba00da-a1b1-4fe2-b4c2-8616545d1abc%2Fi%3A10000001%28com.mbeddr.core.pointers.interpreter%40transient50%2Fcom.mbeddr.core.pointers.interpreter.plugin%400%29%2F4535693827938071141");
+        return new EvaluatorInfo("StringLiteral", "http://127.0.0.1:63320/node?ref=d59cf7ed-0d52-49fe-ab6b-ae5f7787bd5d%2Fi%3A10000001%28com.mbeddr.core.pointers.interpreter%40transient50%2Fcom.mbeddr.core.pointers.interpreter.plugin%400%29%2F4535693827938071141");
       }
 
       @Override
