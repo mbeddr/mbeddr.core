@@ -10,6 +10,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ## Fixed
 
 - `com.mbeddr.mpsutil.filepicker`: Solution-relative pickers now work correctly during generation.
+- `com.mbeddr.mpsutil.interpreter`: Throw a more detailed exception when TypedChildConstraint cannot determine the type of a node.
 
 # February 2026
 

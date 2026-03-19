@@ -5145,10 +5145,10 @@
               <node concept="3clFbF" id="6ENu_m7xrfU" role="3cqZAp">
                 <node concept="2ShNRf" id="6ENu_m7xrfS" role="3clFbG">
                   <node concept="1pGfFk" id="6ENu_m7xyCa" role="2ShVmc">
-                    <ref role="37wK5l" to="2ahs:6ENu_m7svp8" resolve="TypedChildConstraintImpl" />
+                    <ref role="37wK5l" to="2ahs:2Fugwv5G7vj" resolve="TypedChildConstraintImpl" />
                     <node concept="359W_D" id="2Fugwv5GdzF" role="37wK5m">
-                      <ref role="359W_E" to="3673:7ueT7DHU5Sr" resolve="TypedChildConstraint" />
-                      <ref role="359W_F" to="3673:7ueT7DHU5Su" resolve="child" />
+                      <ref role="359W_E" to="tpck:gw2VY9q" resolve="BaseConcept" />
+                      <ref role="359W_F" to="tpck:4uZwTti3__2" resolve="smodelAttribute" />
                       <node concept="1ZhdrF" id="2Fugwv5GeLH" role="lGtFl">
                         <property role="2qtEX8" value="linkDeclaration" />
                         <property role="P3scX" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1/2644386474301421077/2644386474301421079" />
