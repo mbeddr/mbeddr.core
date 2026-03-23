@@ -104,7 +104,7 @@ public class QueriesGenerated extends QueryProviderBase {
     }
 
     QueryStringEncoder encoder = new QueryStringEncoder("http://127.0.0.1:" + port + "/node");
-    encoder.addParam("ref", PersistenceFacade.getInstance().asString(SNodeOperations.getPointer(_context.getNode())));
+    encoder.addParam("ref", PersistenceFacade.getInstance().asString(SNodeOperations.getPointer(_context.getOriginalCopiedInputNode(_context.getNode()))));
     return encoder.toString();
   }
   public static Object propertyMacro_GetValue_3_3(final PropertyMacroContext _context) {
@@ -143,7 +143,7 @@ public class QueriesGenerated extends QueryProviderBase {
     }
 
     QueryStringEncoder encoder = new QueryStringEncoder("http://127.0.0.1:" + port + "/node");
-    encoder.addParam("ref", PersistenceFacade.getInstance().asString(SNodeOperations.getPointer(_context.getNode())));
+    encoder.addParam("ref", PersistenceFacade.getInstance().asString(SNodeOperations.getPointer(_context.getOriginalCopiedInputNode(_context.getNode()))));
     return encoder.toString();
   }
   public static Object propertyMacro_GetValue_6_0(final PropertyMacroContext _context) {
@@ -890,8 +890,8 @@ public class QueriesGenerated extends QueryProviderBase {
     rtqMethods.put("3614280823755387239", new RTQ(46, "ConceptEvaluator"));
     rtqMethods.put("8511326569651683741", new RTQ(47, "node"));
     rtqMethods.put("3614280823755378797", new RTQ(48, "ConceptEvaluator"));
-    rtqMethods.put("3088978995571649645", new RTQ(49, "child"));
-    rtqMethods.put("3088978995571651264", new RTQ(50, "TypedChildConstraint"));
+    rtqMethods.put("3088978995571649645", new RTQ(49, "smodelAttribute"));
+    rtqMethods.put("3088978995571651264", new RTQ(50, "BaseConcept"));
     rtqMethods.put("8128582796163064357", new RTQ(51, "map_Interpreter"));
     rtqMethods.put("3907718856317809034", new RTQ(52, "l0"));
     rtqMethods.put("3907718856318121555", new RTQ(53, "l1"));

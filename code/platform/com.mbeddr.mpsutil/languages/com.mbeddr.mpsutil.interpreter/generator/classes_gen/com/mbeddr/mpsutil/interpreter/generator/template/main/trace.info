@@ -212,8 +212,8 @@
       <node id="5357446766712897967" at="102,54,103,90" concept="1" />
       <node id="5357446766712761619" at="104,5,105,0" concept="7" />
       <node id="4622937352055428006" at="105,0,106,94" concept="4" />
-      <node id="1829257266377394686" at="106,94,107,118" concept="1" />
-      <node id="1829257266377411204" at="107,118,108,30" concept="5" />
+      <node id="1829257266377394686" at="106,94,107,155" concept="1" />
+      <node id="1829257266377411204" at="107,155,108,30" concept="5" />
       <node id="6104849436782826075" at="110,88,111,125" concept="5" />
       <node id="6344976964290939926" at="113,88,114,115" concept="5" />
       <node id="4048497906957508331" at="116,88,117,70" concept="4" />
@@ -229,8 +229,8 @@
       <node id="5357446766713039766" at="141,54,142,90" concept="1" />
       <node id="5357446766713039777" at="143,5,144,0" concept="7" />
       <node id="5357446766713039778" at="144,0,145,94" concept="4" />
-      <node id="5357446766713039788" at="145,94,146,118" concept="1" />
-      <node id="5357446766713039799" at="146,118,147,30" concept="5" />
+      <node id="5357446766713039788" at="145,94,146,155" concept="1" />
+      <node id="5357446766713039799" at="146,155,147,30" concept="5" />
       <node id="7688623496615967536" at="325,93,326,18" concept="5" />
       <node id="3614280823755387249" at="328,93,329,77" concept="5" />
       <node id="8511326569651683744" at="331,93,332,18" concept="5" />
@@ -504,8 +504,8 @@
       <node id="8929233992824863038" at="421,92,422,74" concept="5" />
       <node id="8929233992824863031" at="565,56,566,56" concept="1" />
       <node id="8929233992824863031" at="615,16,616,59" concept="5" />
-      <node id="3088978995571649645" at="892,75,893,64" concept="1" />
-      <node id="3088978995571651264" at="893,64,894,79" concept="1" />
+      <node id="3088978995571649645" at="892,75,893,74" concept="1" />
+      <node id="3088978995571651264" at="893,74,894,70" concept="1" />
       <node id="3088978995571649645" at="1013,16,1014,70" concept="5" />
       <node id="3088978995571651264" at="1015,16,1016,70" concept="5" />
       <node id="3088978995571649646" at="337,0,340,0" concept="8" trace="referenceMacro_GetReferent_4_0#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />
@@ -565,7 +565,7 @@
       <node id="8128582796163064360" at="343,93,344,194" concept="5" />
       <node id="4100230646003377107" at="719,200,720,209" concept="1" />
       <node id="4100230646003377107" at="791,16,792,66" concept="5" />
-      <node id="8128582796163064357" at="894,79,895,74" concept="1" />
+      <node id="8128582796163064357" at="894,70,895,74" concept="1" />
       <node id="8128582796163064357" at="1017,16,1018,70" concept="5" />
       <node id="4100230646003377108" at="167,0,170,0" concept="8" trace="propertyMacro_GetValue_8_0#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
       <node id="8128582796163064358" at="343,0,346,0" concept="8" trace="referenceMacro_GetReferent_8_0#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />
