@@ -200,7 +200,7 @@
     <node concept="1qefOq" id="308cpCq5Hqb" role="1SKRRt">
       <node concept="2VgMpV" id="308cpCq4Pb2" role="1qenE9">
         <property role="3GE5qa" value="plans" />
-        <property role="TrG5h" value="SimplePlan" />
+        <property role="TrG5h" value="Simple.Plan" />
         <node concept="2VgMA2" id="308cpCq4Pcc" role="2VgMA7">
           <property role="1s431M" value="true" />
           <node concept="2Qf6Nf" id="308cpCq4Pcd" role="2Qf7GQ">
@@ -215,7 +215,7 @@
     <node concept="1qefOq" id="308cpCq5HNv" role="1SKRRt">
       <node concept="2VgMpV" id="308cpCpXjqH" role="1qenE9">
         <property role="3GE5qa" value="plans" />
-        <property role="TrG5h" value="MyPlan" />
+        <property role="TrG5h" value="My.Plan" />
         <node concept="2VgMA2" id="308cpCpXjt2" role="2VgMA7">
           <property role="1s431M" value="true" />
           <node concept="2Qf6Nf" id="308cpCpXjt4" role="2Qf7GQ">
@@ -226,7 +226,7 @@
           </node>
         </node>
         <node concept="10T23i" id="308cpCpXjrR" role="2VgMA7">
-          <ref role="10T23l" node="308cpCq4Pb2" resolve="SimplePlan" />
+          <ref role="10T23l" node="308cpCq4Pb2" resolve="Simple.Plan" />
         </node>
         <node concept="1ONwER" id="308cpCq5FSX" role="2VgMA7">
           <node concept="16rNan" id="308cpCq5FU8" role="1ONSkY">
@@ -240,7 +240,7 @@
     </node>
     <node concept="1qefOq" id="308cpCq5If2" role="1SKRRt">
       <node concept="2VgMpV" id="5lyXtvArK0c" role="1qenE9">
-        <property role="TrG5h" value="DemoPlan" />
+        <property role="TrG5h" value="Demo.Plan" />
         <property role="3GE5qa" value="plans" />
         <node concept="1ONwER" id="5lyXtvArKmp" role="2VgMA7">
           <node concept="16rNan" id="5lyXtvArKn$" role="1ONSkY">
@@ -296,7 +296,7 @@
           </node>
         </node>
         <node concept="NozSJ" id="7KBw$lo5o6S" role="2VgMA7">
-          <ref role="NozSM" node="308cpCpXjqH" resolve="MyPlan" />
+          <ref role="NozSM" node="308cpCpXjqH" resolve="My.Plan" />
         </node>
         <node concept="1ONwER" id="308cpCq5FIb" role="2VgMA7">
           <node concept="16rNan" id="308cpCq5FIe" role="1ONSkY">
@@ -304,14 +304,15 @@
           </node>
         </node>
         <node concept="10T23i" id="7KBw$lo7CGb" role="2VgMA7">
-          <ref role="10T23l" node="308cpCpXjqH" resolve="MyPlan" />
+          <ref role="10T23l" node="308cpCpXjqH" resolve="My.Plan" />
         </node>
       </node>
     </node>
     <node concept="1qefOq" id="308cpCq5IuP" role="1SKRRt">
       <node concept="Xn6ag" id="5lyXtvArK8L" role="1qenE9">
         <property role="3GE5qa" value="visualizers" />
-        <ref role="Xn6dx" node="5lyXtvArK0c" resolve="DemoPlan" />
+        <property role="TrG5h" value="PlanVisualizer_Demo.Plan" />
+        <ref role="Xn6dx" node="5lyXtvArK0c" resolve="Demo.Plan" />
         <node concept="3xLA65" id="308cpCq5Iwz" role="lGtFl">
           <property role="TrG5h" value="visualizerTopToBottom" />
         </node>
@@ -335,7 +336,7 @@
             <property role="3oM_SC" value="of" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tcc" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step1:" />
+            <property role="3oM_SC" value="Demo_Plan_step1:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tcd" role="1PaTwD">
             <property role="3oM_SC" value="My" />
@@ -355,7 +356,7 @@
             <property role="3oM_SC" value="of" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tcj" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step1:" />
+            <property role="3oM_SC" value="Demo_Plan_step1:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tck" role="1PaTwD">
             <property role="3oM_SC" value="My" />
@@ -378,12 +379,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tcr" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step1" />
+            <property role="3oM_SC" value="Demo_Plan_step1" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tcs" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tct" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step1:" />
+            <property role="3oM_SC" value="Demo_Plan_step1:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tcu" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.mpsutil.blutil" />
@@ -403,12 +404,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tc$" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step2" />
+            <property role="3oM_SC" value="Demo_Plan_step2" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tc_" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tcA" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step2:" />
+            <property role="3oM_SC" value="Demo_Plan_step2:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tcB" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.mpsutil.blutil.genutil" />
@@ -428,12 +429,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tcH" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step3" />
+            <property role="3oM_SC" value="Demo_Plan_step3" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tcI" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tcJ" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step3:" />
+            <property role="3oM_SC" value="Demo_Plan_step3:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tcK" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.mpsutil.blutil#4354378109086982937" />
@@ -459,12 +460,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tcS" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step4" />
+            <property role="3oM_SC" value="Demo_Plan_step4" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tcT" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tcU" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step4:" />
+            <property role="3oM_SC" value="Demo_Plan_step4:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tcV" role="1PaTwD">
             <property role="3oM_SC" value="checkpoint" />
@@ -484,12 +485,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6td1" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step5" />
+            <property role="3oM_SC" value="Demo_Plan_step5" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6td2" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6td3" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step5:" />
+            <property role="3oM_SC" value="Demo_Plan_step5:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6td4" role="1PaTwD">
             <property role="3oM_SC" value="checkpoint" />
@@ -512,12 +513,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdb" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step6" />
+            <property role="3oM_SC" value="Demo_Plan_step6" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tdc" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tdd" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step6:" />
+            <property role="3oM_SC" value="Demo_Plan_step6:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tde" role="1PaTwD">
             <property role="3oM_SC" value="checkpoint" />
@@ -534,7 +535,7 @@
             <property role="3oM_SC" value="of" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdj" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step7:" />
+            <property role="3oM_SC" value="Demo_Plan_step7:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdk" role="1PaTwD">
             <property role="3oM_SC" value="include" />
@@ -551,13 +552,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdp" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**MyPlan**&quot;" />
+            <property role="3oM_SC" value="&quot;**My_Plan**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdq" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdr" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step7" />
+            <property role="3oM_SC" value="Demo_Plan_step7" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tds" role="1PaTwD">
             <property role="3oM_SC" value="{" />
@@ -574,12 +575,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdx" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step8" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step8" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tdy" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tdz" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step8:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step8:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6td$" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.core.base" />
@@ -593,13 +594,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdC" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**DemoPlan_MyPlan8946262419136938424_step9**&quot;" />
+            <property role="3oM_SC" value="&quot;**Demo_Plan_My_Plan8946262419136938424_step9**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdD" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdE" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step9" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step9" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdF" role="1PaTwD">
             <property role="3oM_SC" value="&lt;&lt;fork&gt;&gt;" />
@@ -610,13 +611,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdI" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**SimplePlan**&quot;" />
+            <property role="3oM_SC" value="&quot;**Simple_Plan**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdJ" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdK" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step10" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step10" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdL" role="1PaTwD">
             <property role="3oM_SC" value="{" />
@@ -633,12 +634,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdQ" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_SimplePlan3461070851564451575_step11" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_Simple_Plan3461070851564451575_step11" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tdR" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tdS" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_SimplePlan3461070851564451575_step11:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_Simple_Plan3461070851564451575_step11:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tdT" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.mpsutil.collections" />
@@ -663,7 +664,7 @@
             <property role="3oM_SC" value="of" />
           </node>
           <node concept="3oM_SD" id="308cpCq6te1" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step12:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step12:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6te2" role="1PaTwD">
             <property role="3oM_SC" value="comment" />
@@ -698,7 +699,7 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6ted" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step12" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step12" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tee" role="1PaTwD">
             <property role="3oM_SC" value="{" />
@@ -715,12 +716,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tej" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_DocumentationPlan3461070851564451576_step13" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_DocumentationPlan3461070851564451576_step13" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tek" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tel" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_DocumentationPlan3461070851564451576_step13:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_DocumentationPlan3461070851564451576_step13:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tem" role="1PaTwD">
             <property role="3oM_SC" value="jetbrains.mps.lang.core.doc" />
@@ -731,7 +732,7 @@
         </node>
         <node concept="1PaTwC" id="308cpCq6teo" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tep" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_DocumentationPlan3461070851564451576_step13:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_DocumentationPlan3461070851564451576_step13:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6teq" role="1PaTwD">
             <property role="3oM_SC" value="jetbrains.mps.lang.doctext" />
@@ -750,13 +751,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tew" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**join_DemoPlan_MyPlan8946262419136938424_step14**&quot;" />
+            <property role="3oM_SC" value="&quot;**join_Demo_Plan_My_Plan8946262419136938424_step14**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tex" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tey" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_MyPlan8946262419136938424_step14" />
+            <property role="3oM_SC" value="join_Demo_Plan_My_Plan8946262419136938424_step14" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tez" role="1PaTwD">
             <property role="3oM_SC" value="&lt;&lt;join&gt;&gt;" />
@@ -764,57 +765,57 @@
         </node>
         <node concept="1PaTwC" id="308cpCq6te$" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6te_" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step9" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step9" />
           </node>
           <node concept="3oM_SD" id="308cpCq6teA" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6teB" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step10" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step10" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6teC" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6teD" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step10" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step10" />
           </node>
           <node concept="3oM_SD" id="308cpCq6teE" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6teF" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_MyPlan8946262419136938424_step14" />
+            <property role="3oM_SC" value="join_Demo_Plan_My_Plan8946262419136938424_step14" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6teG" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6teH" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step9" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step9" />
           </node>
           <node concept="3oM_SD" id="308cpCq6teI" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6teJ" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step12" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step12" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6teK" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6teL" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step12" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step12" />
           </node>
           <node concept="3oM_SD" id="308cpCq6teM" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6teN" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_MyPlan8946262419136938424_step14" />
+            <property role="3oM_SC" value="join_Demo_Plan_My_Plan8946262419136938424_step14" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6teO" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6teP" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step8" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step8" />
           </node>
           <node concept="3oM_SD" id="308cpCq6teQ" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6teR" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step9" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step9" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6teS" role="1PaQFQ">
@@ -833,7 +834,7 @@
             <property role="3oM_SC" value="of" />
           </node>
           <node concept="3oM_SD" id="308cpCq6teY" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step8:" />
+            <property role="3oM_SC" value="Demo_Plan_step8:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6teZ" role="1PaTwD">
             <property role="3oM_SC" value="fork" />
@@ -847,13 +848,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tf3" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**DemoPlan_step8**&quot;" />
+            <property role="3oM_SC" value="&quot;**Demo_Plan_step8**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tf4" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tf5" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step8" />
+            <property role="3oM_SC" value="Demo_Plan_step8" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tf6" role="1PaTwD">
             <property role="3oM_SC" value="&lt;&lt;fork&gt;&gt;" />
@@ -864,13 +865,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tf9" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**MyPlan**&quot;" />
+            <property role="3oM_SC" value="&quot;**My_Plan**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfa" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfb" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step9" />
+            <property role="3oM_SC" value="Demo_Plan_step9" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfc" role="1PaTwD">
             <property role="3oM_SC" value="{" />
@@ -887,12 +888,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfh" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step10" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step10" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tfi" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tfj" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step10:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step10:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfk" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.core.base" />
@@ -906,13 +907,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfo" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**DemoPlan_MyPlan8946262419137530635_step11**&quot;" />
+            <property role="3oM_SC" value="&quot;**Demo_Plan_My_Plan8946262419137530635_step11**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfp" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfq" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step11" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step11" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfr" role="1PaTwD">
             <property role="3oM_SC" value="&lt;&lt;fork&gt;&gt;" />
@@ -923,13 +924,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfu" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**SimplePlan**&quot;" />
+            <property role="3oM_SC" value="&quot;**Simple_Plan**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfv" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfw" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step12" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step12" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfx" role="1PaTwD">
             <property role="3oM_SC" value="{" />
@@ -946,12 +947,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfA" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_SimplePlan3461070851564451575_step13" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_Simple_Plan3461070851564451575_step13" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tfB" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tfC" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_SimplePlan3461070851564451575_step13:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_Simple_Plan3461070851564451575_step13:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfD" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.mpsutil.collections" />
@@ -976,7 +977,7 @@
             <property role="3oM_SC" value="of" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfL" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step14:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step14:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfM" role="1PaTwD">
             <property role="3oM_SC" value="comment" />
@@ -1011,7 +1012,7 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfX" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step14" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step14" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tfY" role="1PaTwD">
             <property role="3oM_SC" value="{" />
@@ -1028,12 +1029,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tg3" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_DocumentationPlan3461070851564451576_step15" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_DocumentationPlan3461070851564451576_step15" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tg4" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tg5" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_DocumentationPlan3461070851564451576_step15:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_DocumentationPlan3461070851564451576_step15:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tg6" role="1PaTwD">
             <property role="3oM_SC" value="jetbrains.mps.lang.core.doc" />
@@ -1044,7 +1045,7 @@
         </node>
         <node concept="1PaTwC" id="308cpCq6tg8" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tg9" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_DocumentationPlan3461070851564451576_step15:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_DocumentationPlan3461070851564451576_step15:" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tga" role="1PaTwD">
             <property role="3oM_SC" value="jetbrains.mps.lang.doctext" />
@@ -1063,13 +1064,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgg" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**join_DemoPlan_MyPlan8946262419137530635_step16**&quot;" />
+            <property role="3oM_SC" value="&quot;**join_Demo_Plan_My_Plan8946262419137530635_step16**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgh" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgi" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_MyPlan8946262419137530635_step16" />
+            <property role="3oM_SC" value="join_Demo_Plan_My_Plan8946262419137530635_step16" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgj" role="1PaTwD">
             <property role="3oM_SC" value="&lt;&lt;join&gt;&gt;" />
@@ -1077,57 +1078,57 @@
         </node>
         <node concept="1PaTwC" id="308cpCq6tgk" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tgl" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step11" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step11" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgm" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgn" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step12" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step12" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tgo" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tgp" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step12" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step12" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgq" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgr" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_MyPlan8946262419137530635_step16" />
+            <property role="3oM_SC" value="join_Demo_Plan_My_Plan8946262419137530635_step16" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tgs" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tgt" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step11" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step11" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgu" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgv" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step14" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step14" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tgw" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tgx" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step14" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step14" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgy" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgz" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_MyPlan8946262419137530635_step16" />
+            <property role="3oM_SC" value="join_Demo_Plan_My_Plan8946262419137530635_step16" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tg$" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tg_" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step10" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step10" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgA" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgB" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step11" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step11" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tgC" role="1PaQFQ">
@@ -1140,13 +1141,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgG" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**join_DemoPlan_step17**&quot;" />
+            <property role="3oM_SC" value="&quot;**join_Demo_Plan_step17**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgH" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgI" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_step17" />
+            <property role="3oM_SC" value="join_Demo_Plan_step17" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgJ" role="1PaTwD">
             <property role="3oM_SC" value="&lt;&lt;join&gt;&gt;" />
@@ -1154,101 +1155,101 @@
         </node>
         <node concept="1PaTwC" id="308cpCq6tgK" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tgL" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step8" />
+            <property role="3oM_SC" value="Demo_Plan_step8" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgM" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgN" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step9" />
+            <property role="3oM_SC" value="Demo_Plan_step9" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tgO" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tgP" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step9" />
+            <property role="3oM_SC" value="Demo_Plan_step9" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgQ" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgR" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_step17" />
+            <property role="3oM_SC" value="join_Demo_Plan_step17" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tgS" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tgT" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step1" />
+            <property role="3oM_SC" value="Demo_Plan_step1" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgU" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgV" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step2" />
+            <property role="3oM_SC" value="Demo_Plan_step2" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6tgW" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6tgX" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step2" />
+            <property role="3oM_SC" value="Demo_Plan_step2" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgY" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tgZ" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step3" />
+            <property role="3oM_SC" value="Demo_Plan_step3" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6th0" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6th1" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step3" />
+            <property role="3oM_SC" value="Demo_Plan_step3" />
           </node>
           <node concept="3oM_SD" id="308cpCq6th2" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6th3" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step4" />
+            <property role="3oM_SC" value="Demo_Plan_step4" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6th4" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6th5" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step4" />
+            <property role="3oM_SC" value="Demo_Plan_step4" />
           </node>
           <node concept="3oM_SD" id="308cpCq6th6" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6th7" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step5" />
+            <property role="3oM_SC" value="Demo_Plan_step5" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6th8" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6th9" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step5" />
+            <property role="3oM_SC" value="Demo_Plan_step5" />
           </node>
           <node concept="3oM_SD" id="308cpCq6tha" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6thb" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step6" />
+            <property role="3oM_SC" value="Demo_Plan_step6" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6thc" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6thd" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step6" />
+            <property role="3oM_SC" value="Demo_Plan_step6" />
           </node>
           <node concept="3oM_SD" id="308cpCq6the" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6thf" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step7" />
+            <property role="3oM_SC" value="Demo_Plan_step7" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6thg" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq6thh" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step7" />
+            <property role="3oM_SC" value="Demo_Plan_step7" />
           </node>
           <node concept="3oM_SD" id="308cpCq6thi" role="1PaTwD">
             <property role="3oM_SC" value="-down-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq6thj" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step8" />
+            <property role="3oM_SC" value="Demo_Plan_step8" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq6thk" role="1PaQFQ">
@@ -1599,7 +1600,8 @@
       <node concept="Xn6ag" id="308cpCq7vQQ" role="1qenE9">
         <property role="3GE5qa" value="visualizers" />
         <property role="XniyU" value="6SKAExjrqUa/LEFT_TO_RIGHT" />
-        <ref role="Xn6dx" node="5lyXtvArK0c" resolve="DemoPlan" />
+        <property role="TrG5h" value="PlanVisualizer_Demo.Plan" />
+        <ref role="Xn6dx" node="5lyXtvArK0c" resolve="Demo.Plan" />
         <node concept="3xLA65" id="308cpCq7vQR" role="lGtFl">
           <property role="TrG5h" value="visualizerLeftToRight" />
         </node>
@@ -1623,7 +1625,7 @@
             <property role="3oM_SC" value="of" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w4K" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step1:" />
+            <property role="3oM_SC" value="Demo_Plan_step1:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w4L" role="1PaTwD">
             <property role="3oM_SC" value="My" />
@@ -1643,7 +1645,7 @@
             <property role="3oM_SC" value="of" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w4R" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step1:" />
+            <property role="3oM_SC" value="Demo_Plan_step1:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w4S" role="1PaTwD">
             <property role="3oM_SC" value="My" />
@@ -1666,12 +1668,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w4Z" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step1" />
+            <property role="3oM_SC" value="Demo_Plan_step1" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w50" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w51" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step1:" />
+            <property role="3oM_SC" value="Demo_Plan_step1:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w52" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.mpsutil.blutil" />
@@ -1691,12 +1693,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w58" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step2" />
+            <property role="3oM_SC" value="Demo_Plan_step2" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w59" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w5a" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step2:" />
+            <property role="3oM_SC" value="Demo_Plan_step2:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5b" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.mpsutil.blutil.genutil" />
@@ -1716,12 +1718,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5h" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step3" />
+            <property role="3oM_SC" value="Demo_Plan_step3" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w5i" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w5j" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step3:" />
+            <property role="3oM_SC" value="Demo_Plan_step3:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5k" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.mpsutil.blutil#4354378109086982937" />
@@ -1747,12 +1749,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5s" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step4" />
+            <property role="3oM_SC" value="Demo_Plan_step4" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w5t" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w5u" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step4:" />
+            <property role="3oM_SC" value="Demo_Plan_step4:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5v" role="1PaTwD">
             <property role="3oM_SC" value="checkpoint" />
@@ -1772,12 +1774,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5_" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step5" />
+            <property role="3oM_SC" value="Demo_Plan_step5" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w5A" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w5B" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step5:" />
+            <property role="3oM_SC" value="Demo_Plan_step5:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5C" role="1PaTwD">
             <property role="3oM_SC" value="checkpoint" />
@@ -1800,12 +1802,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5J" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step6" />
+            <property role="3oM_SC" value="Demo_Plan_step6" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w5K" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w5L" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step6:" />
+            <property role="3oM_SC" value="Demo_Plan_step6:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5M" role="1PaTwD">
             <property role="3oM_SC" value="checkpoint" />
@@ -1822,7 +1824,7 @@
             <property role="3oM_SC" value="of" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5R" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step7:" />
+            <property role="3oM_SC" value="Demo_Plan_step7:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5S" role="1PaTwD">
             <property role="3oM_SC" value="include" />
@@ -1839,13 +1841,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5X" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**MyPlan**&quot;" />
+            <property role="3oM_SC" value="&quot;**My_Plan**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5Y" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w5Z" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step7" />
+            <property role="3oM_SC" value="Demo_Plan_step7" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w60" role="1PaTwD">
             <property role="3oM_SC" value="{" />
@@ -1862,12 +1864,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w65" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step8" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step8" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w66" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w67" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step8:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step8:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w68" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.core.base" />
@@ -1881,13 +1883,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6c" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**DemoPlan_MyPlan8946262419136938424_step9**&quot;" />
+            <property role="3oM_SC" value="&quot;**Demo_Plan_My_Plan8946262419136938424_step9**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6d" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6e" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step9" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step9" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6f" role="1PaTwD">
             <property role="3oM_SC" value="&lt;&lt;fork&gt;&gt;" />
@@ -1898,13 +1900,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6i" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**SimplePlan**&quot;" />
+            <property role="3oM_SC" value="&quot;**Simple_Plan**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6j" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6k" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step10" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step10" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6l" role="1PaTwD">
             <property role="3oM_SC" value="{" />
@@ -1921,12 +1923,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6q" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_SimplePlan3461070851564451575_step11" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_Simple_Plan3461070851564451575_step11" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w6r" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w6s" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_SimplePlan3461070851564451575_step11:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_Simple_Plan3461070851564451575_step11:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6t" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.mpsutil.collections" />
@@ -1951,7 +1953,7 @@
             <property role="3oM_SC" value="of" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6_" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step12:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step12:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6A" role="1PaTwD">
             <property role="3oM_SC" value="comment" />
@@ -1986,7 +1988,7 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6L" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step12" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step12" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6M" role="1PaTwD">
             <property role="3oM_SC" value="{" />
@@ -2003,12 +2005,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6R" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_DocumentationPlan3461070851564451576_step13" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_DocumentationPlan3461070851564451576_step13" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w6S" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w6T" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_DocumentationPlan3461070851564451576_step13:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_DocumentationPlan3461070851564451576_step13:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6U" role="1PaTwD">
             <property role="3oM_SC" value="jetbrains.mps.lang.core.doc" />
@@ -2019,7 +2021,7 @@
         </node>
         <node concept="1PaTwC" id="308cpCq7w6W" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w6X" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_DocumentationPlan3461070851564451576_step13:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_DocumentationPlan3461070851564451576_step13:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w6Y" role="1PaTwD">
             <property role="3oM_SC" value="jetbrains.mps.lang.doctext" />
@@ -2038,13 +2040,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w74" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**join_DemoPlan_MyPlan8946262419136938424_step14**&quot;" />
+            <property role="3oM_SC" value="&quot;**join_Demo_Plan_My_Plan8946262419136938424_step14**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w75" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w76" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_MyPlan8946262419136938424_step14" />
+            <property role="3oM_SC" value="join_Demo_Plan_My_Plan8946262419136938424_step14" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w77" role="1PaTwD">
             <property role="3oM_SC" value="&lt;&lt;join&gt;&gt;" />
@@ -2052,57 +2054,57 @@
         </node>
         <node concept="1PaTwC" id="308cpCq7w78" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w79" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step9" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step9" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7a" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7b" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step10" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step10" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w7c" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w7d" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step10" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step10" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7e" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7f" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_MyPlan8946262419136938424_step14" />
+            <property role="3oM_SC" value="join_Demo_Plan_My_Plan8946262419136938424_step14" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w7g" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w7h" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step9" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step9" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7i" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7j" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step12" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step12" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w7k" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w7l" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step12" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step12" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7m" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7n" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_MyPlan8946262419136938424_step14" />
+            <property role="3oM_SC" value="join_Demo_Plan_My_Plan8946262419136938424_step14" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w7o" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w7p" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step8" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step8" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7q" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7r" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419136938424_step9" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419136938424_step9" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w7s" role="1PaQFQ">
@@ -2121,7 +2123,7 @@
             <property role="3oM_SC" value="of" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7y" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step8:" />
+            <property role="3oM_SC" value="Demo_Plan_step8:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7z" role="1PaTwD">
             <property role="3oM_SC" value="fork" />
@@ -2135,13 +2137,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7B" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**DemoPlan_step8**&quot;" />
+            <property role="3oM_SC" value="&quot;**Demo_Plan_step8**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7C" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7D" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step8" />
+            <property role="3oM_SC" value="Demo_Plan_step8" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7E" role="1PaTwD">
             <property role="3oM_SC" value="&lt;&lt;fork&gt;&gt;" />
@@ -2152,13 +2154,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7H" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**MyPlan**&quot;" />
+            <property role="3oM_SC" value="&quot;**My_Plan**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7I" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7J" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step9" />
+            <property role="3oM_SC" value="Demo_Plan_step9" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7K" role="1PaTwD">
             <property role="3oM_SC" value="{" />
@@ -2175,12 +2177,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7P" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step10" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step10" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w7Q" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w7R" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step10:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step10:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7S" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.core.base" />
@@ -2194,13 +2196,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7W" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**DemoPlan_MyPlan8946262419137530635_step11**&quot;" />
+            <property role="3oM_SC" value="&quot;**Demo_Plan_My_Plan8946262419137530635_step11**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7X" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7Y" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step11" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step11" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w7Z" role="1PaTwD">
             <property role="3oM_SC" value="&lt;&lt;fork&gt;&gt;" />
@@ -2211,13 +2213,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w82" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**SimplePlan**&quot;" />
+            <property role="3oM_SC" value="&quot;**Simple_Plan**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w83" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w84" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step12" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step12" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w85" role="1PaTwD">
             <property role="3oM_SC" value="{" />
@@ -2234,12 +2236,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8a" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_SimplePlan3461070851564451575_step13" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_Simple_Plan3461070851564451575_step13" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w8b" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w8c" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_SimplePlan3461070851564451575_step13:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_Simple_Plan3461070851564451575_step13:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8d" role="1PaTwD">
             <property role="3oM_SC" value="com.mbeddr.mpsutil.collections" />
@@ -2264,7 +2266,7 @@
             <property role="3oM_SC" value="of" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8l" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step14:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step14:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8m" role="1PaTwD">
             <property role="3oM_SC" value="comment" />
@@ -2299,7 +2301,7 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8x" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step14" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step14" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8y" role="1PaTwD">
             <property role="3oM_SC" value="{" />
@@ -2316,12 +2318,12 @@
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8B" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_DocumentationPlan3461070851564451576_step15" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_DocumentationPlan3461070851564451576_step15" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w8C" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w8D" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_DocumentationPlan3461070851564451576_step15:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_DocumentationPlan3461070851564451576_step15:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8E" role="1PaTwD">
             <property role="3oM_SC" value="jetbrains.mps.lang.core.doc" />
@@ -2332,7 +2334,7 @@
         </node>
         <node concept="1PaTwC" id="308cpCq7w8G" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w8H" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_DocumentationPlan3461070851564451576_step15:" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_DocumentationPlan3461070851564451576_step15:" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8I" role="1PaTwD">
             <property role="3oM_SC" value="jetbrains.mps.lang.doctext" />
@@ -2351,13 +2353,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8O" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**join_DemoPlan_MyPlan8946262419137530635_step16**&quot;" />
+            <property role="3oM_SC" value="&quot;**join_Demo_Plan_My_Plan8946262419137530635_step16**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8P" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8Q" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_MyPlan8946262419137530635_step16" />
+            <property role="3oM_SC" value="join_Demo_Plan_My_Plan8946262419137530635_step16" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8R" role="1PaTwD">
             <property role="3oM_SC" value="&lt;&lt;join&gt;&gt;" />
@@ -2365,57 +2367,57 @@
         </node>
         <node concept="1PaTwC" id="308cpCq7w8S" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w8T" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step11" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step11" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8U" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8V" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step12" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step12" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w8W" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w8X" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step12" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step12" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8Y" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w8Z" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_MyPlan8946262419137530635_step16" />
+            <property role="3oM_SC" value="join_Demo_Plan_My_Plan8946262419137530635_step16" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w90" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w91" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step11" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step11" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w92" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w93" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step14" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step14" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w94" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w95" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step14" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step14" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w96" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w97" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_MyPlan8946262419137530635_step16" />
+            <property role="3oM_SC" value="join_Demo_Plan_My_Plan8946262419137530635_step16" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w98" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w99" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step10" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step10" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9a" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9b" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_MyPlan8946262419137530635_step11" />
+            <property role="3oM_SC" value="Demo_Plan_My_Plan8946262419137530635_step11" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w9c" role="1PaQFQ">
@@ -2428,13 +2430,13 @@
             <property role="3oM_SC" value="state" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9g" role="1PaTwD">
-            <property role="3oM_SC" value="&quot;**join_DemoPlan_step17**&quot;" />
+            <property role="3oM_SC" value="&quot;**join_Demo_Plan_step17**&quot;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9h" role="1PaTwD">
             <property role="3oM_SC" value="as" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9i" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_step17" />
+            <property role="3oM_SC" value="join_Demo_Plan_step17" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9j" role="1PaTwD">
             <property role="3oM_SC" value="&lt;&lt;join&gt;&gt;" />
@@ -2442,101 +2444,101 @@
         </node>
         <node concept="1PaTwC" id="308cpCq7w9k" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w9l" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step8" />
+            <property role="3oM_SC" value="Demo_Plan_step8" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9m" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9n" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step9" />
+            <property role="3oM_SC" value="Demo_Plan_step9" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w9o" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w9p" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step9" />
+            <property role="3oM_SC" value="Demo_Plan_step9" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9q" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9r" role="1PaTwD">
-            <property role="3oM_SC" value="join_DemoPlan_step17" />
+            <property role="3oM_SC" value="join_Demo_Plan_step17" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w9s" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w9t" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step1" />
+            <property role="3oM_SC" value="Demo_Plan_step1" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9u" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9v" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step2" />
+            <property role="3oM_SC" value="Demo_Plan_step2" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w9w" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w9x" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step2" />
+            <property role="3oM_SC" value="Demo_Plan_step2" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9y" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9z" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step3" />
+            <property role="3oM_SC" value="Demo_Plan_step3" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w9$" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w9_" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step3" />
+            <property role="3oM_SC" value="Demo_Plan_step3" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9A" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9B" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step4" />
+            <property role="3oM_SC" value="Demo_Plan_step4" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w9C" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w9D" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step4" />
+            <property role="3oM_SC" value="Demo_Plan_step4" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9E" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9F" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step5" />
+            <property role="3oM_SC" value="Demo_Plan_step5" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w9G" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w9H" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step5" />
+            <property role="3oM_SC" value="Demo_Plan_step5" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9I" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9J" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step6" />
+            <property role="3oM_SC" value="Demo_Plan_step6" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w9K" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w9L" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step6" />
+            <property role="3oM_SC" value="Demo_Plan_step6" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9M" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9N" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step7" />
+            <property role="3oM_SC" value="Demo_Plan_step7" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w9O" role="1PaQFQ">
           <node concept="3oM_SD" id="308cpCq7w9P" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step7" />
+            <property role="3oM_SC" value="Demo_Plan_step7" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9Q" role="1PaTwD">
             <property role="3oM_SC" value="-right-&gt;" />
           </node>
           <node concept="3oM_SD" id="308cpCq7w9R" role="1PaTwD">
-            <property role="3oM_SC" value="DemoPlan_step8" />
+            <property role="3oM_SC" value="Demo_Plan_step8" />
           </node>
         </node>
         <node concept="1PaTwC" id="308cpCq7w9S" role="1PaQFQ">
@@ -2562,6 +2564,7 @@
     <node concept="1qefOq" id="308cpCq7$3t" role="1SKRRt">
       <node concept="Xn6ag" id="308cpCq7$5t" role="1qenE9">
         <property role="3GE5qa" value="visualizers" />
+        <property role="TrG5h" value="PlanVisualizer_EmptyPlan" />
         <ref role="Xn6dx" node="308cpCq7$PY" resolve="EmptyPlan" />
         <node concept="3xLA65" id="308cpCq7$5u" role="lGtFl">
           <property role="TrG5h" value="visualizerEmpty" />
@@ -2588,6 +2591,7 @@
     </node>
     <node concept="1qefOq" id="308cpCqjtED" role="1SKRRt">
       <node concept="Xn6ag" id="308cpCqjtHt" role="1qenE9">
+        <property role="TrG5h" value="PlanVisualizer_AIncludingB" />
         <ref role="Xn6dx" node="308cpCqgDCu" resolve="AIncludingB" />
         <node concept="3xLA65" id="308cpCqjtHu" role="lGtFl">
           <property role="TrG5h" value="visualizerCyclic" />

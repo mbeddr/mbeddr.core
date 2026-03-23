@@ -46,8 +46,9 @@ public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> getNoteLocation_id7KBw$lo6Sog = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getNoteLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419137332752L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2();
   public static final SMethod<Result> createNewResult_id7KBw$loavrA = new SMethodBuilder<Result>(new SJavaCompoundTypeImpl(Result.class)).name("createNewResult").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419138279142L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> join_id7KBw$lojUBG = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("join").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419140749804L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Result.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> sanitizeName_id18bJoJwm3Ej = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("sanitizeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1300341325888502419L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, renderPlan_id6SKAExjtCwf, renderStep_id6SKAExjtGDb, stepName_id7KBw$lnVSxB, addState_id7KBw$lnY6ka, addStep_id7KBw$lo0leH, addConnection_id7KBw$lobW_r, addComments_id5lyXtvAvI7E, getDirection_id6SKAExjx0IO, getNoteLocation_id7KBw$lo6Sog, createNewResult_id7KBw$loavrA, join_id7KBw$lojUBG);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, renderPlan_id6SKAExjtCwf, renderStep_id6SKAExjtGDb, stepName_id7KBw$lnVSxB, addState_id7KBw$lnY6ka, addStep_id7KBw$lo0leH, addConnection_id7KBw$lobW_r, addComments_id5lyXtvAvI7E, getDirection_id6SKAExjx0IO, getNoteLocation_id7KBw$lo6Sog, createNewResult_id7KBw$loavrA, join_id7KBw$lojUBG, sanitizeName_id18bJoJwm3Ej);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -72,7 +73,7 @@ public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static Result renderPlan_id6SKAExjtCwf(@NotNull SNode __thisNode__, StringBuilder builder, SNode stepContainingPlan, SNode originalPlan, SNode plan, Result start) {
     Result result = PlanVisualizer__BehaviorDescriptor.createNewResult_id7KBw$loavrA.invoke(__thisNode__, plan);
     result.prefix(start.prefixOrEmpty());
-    result.prefix(result.prefix() + SPropertyOperations.getString(plan, PROPS.name$MnvL) + (((stepContainingPlan != null) ? stepContainingPlan.getNodeId().toString() : "")));
+    result.prefix(result.prefix() + PlanVisualizer__BehaviorDescriptor.sanitizeName_id18bJoJwm3Ej.invoke(__thisNode__, SPropertyOperations.getString(plan, PROPS.name$MnvL)) + (((stepContainingPlan != null) ? stepContainingPlan.getNodeId().toString() : "")));
 
     result.stepCount((int) start.stepCount());
     for (SNode step : ListSequence.fromList(SLinkOperations.getChildren(plan, LINKS.steps$Xwbb))) {
@@ -143,7 +144,7 @@ public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
 
         PlanVisualizer__BehaviorDescriptor.addComments_id5lyXtvAvI7E.invoke(__thisNode__, builder, result, stepName);
         stepName = PlanVisualizer__BehaviorDescriptor.stepName_id7KBw$lnVSxB.invoke(__thisNode__, result);
-        PlanVisualizer__BehaviorDescriptor.addState_id7KBw$lnY6ka.invoke(__thisNode__, builder, result, SPropertyOperations.getString(SLinkOperations.getTarget(includePlan, LINKS.plan$8HNy), PROPS.name$MnvL), null, stepName, ((boolean) true));
+        PlanVisualizer__BehaviorDescriptor.addState_id7KBw$lnY6ka.invoke(__thisNode__, builder, result, PlanVisualizer__BehaviorDescriptor.sanitizeName_id18bJoJwm3Ej.invoke(__thisNode__, SPropertyOperations.getString(SLinkOperations.getTarget(includePlan, LINKS.plan$8HNy), PROPS.name$MnvL)), null, stepName, ((boolean) true));
         result.stepCount((int) result.stepCount() + 1);
         PlanVisualizer__BehaviorDescriptor.renderPlan_id6SKAExjtCwf.invoke(__thisNode__, builder, step, originalPlan, SLinkOperations.getTarget(includePlan, LINKS.plan$8HNy), result);
         builder.append("}\n");
@@ -164,7 +165,7 @@ public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
         stepName = PlanVisualizer__BehaviorDescriptor.stepName_id7KBw$lnVSxB.invoke(__thisNode__, result);
         ListSequence.fromList(result.forks()).addElement(stepName);
 
-        PlanVisualizer__BehaviorDescriptor.addState_id7KBw$lnY6ka.invoke(__thisNode__, builder, result, SPropertyOperations.getString(SLinkOperations.getTarget(fork, LINKS.plan$IYKb), PROPS.name$MnvL), null, stepName, ((boolean) true));
+        PlanVisualizer__BehaviorDescriptor.addState_id7KBw$lnY6ka.invoke(__thisNode__, builder, result, PlanVisualizer__BehaviorDescriptor.sanitizeName_id18bJoJwm3Ej.invoke(__thisNode__, SPropertyOperations.getString(SLinkOperations.getTarget(fork, LINKS.plan$IYKb), PROPS.name$MnvL)), null, stepName, ((boolean) true));
         result.stepCount((int) result.stepCount() + 1);
 
         Result cleanResult = new Result(ListSequence.fromList(new ArrayList<String>()), (int) result.stepCount(), result.comments(), ListSequence.fromList(new ArrayList<String>()), ListSequence.fromList(new ArrayList<String>()), null, result.prefix());
@@ -234,6 +235,9 @@ public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
     result.startForkStep(null);
     result.stepCount((int) result.stepCount() + 1);
   }
+  /*package*/ static String sanitizeName_id18bJoJwm3Ej(@NotNull SNode __thisNode__, String name) {
+    return name.replaceAll("\\.", "_");
+  }
 
   /*package*/ PlanVisualizer__BehaviorDescriptor() {
   }
@@ -282,6 +286,8 @@ public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
       case 12:
         join_id7KBw$lojUBG(node, (StringBuilder) parameters[0], (SNode) parameters[1], (Result) parameters[2], (SNode) parameters[3]);
         return null;
+      case 13:
+        return (T) ((String) sanitizeName_id18bJoJwm3Ej(node, (String) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

@@ -14,6 +14,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - `com.mbeddr.mpsutil.interpreter`: Throw a more detailed exception when TypedChildConstraint cannot determine the type of a node.
 - `com.mbeddr.mpsutil.interpreter`: Generated node URLs now correctly point to the input model instead of the transient model.
 
+## com.mbeddr.mpsutil.genplandiagram
+
+### Fixed
+
+- Dot characters in gen plan names are not escaped. Otherwise PlantUML would treat dots as hierarchical elements.
+
 # February 2026
 
 ## com.mbeddr.mpsutil.genplandiagram
