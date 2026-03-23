@@ -416,40 +416,42 @@
     <file name="HyperlinkPlugin_AppPluginPart.java">
       <node id="5198502169430505097" at="9,0,10,0" concept="2" trace="extension" />
       <node id="8782562286076610553" at="13,22,14,86" concept="5" />
-      <node id="5198502169430715442" at="14,86,15,93" concept="1" />
+      <node id="5198502169430715442" at="14,86,15,99" concept="1" />
       <node id="8782562286076610750" at="18,25,19,86" concept="5" />
-      <node id="5198502169430723124" at="19,86,20,95" concept="1" />
+      <node id="5198502169430723124" at="19,86,20,99" concept="1" />
       <node id="5198502169430721555" at="23,36,24,53" concept="1" />
       <node id="5198502169430721555" at="25,5,26,0" concept="8" />
       <node id="5198502169430723125" at="29,36,30,55" concept="1" />
       <node id="5198502169430723125" at="31,5,32,0" concept="8" />
       <node id="8782562286075570254" at="10,0,12,0" concept="0" trace="HyperlinkPlugin_AppPluginPart#()V" />
-      <node id="5198502169430721555" at="22,120,25,5" concept="3" />
-      <node id="5198502169430723125" at="28,122,31,5" concept="3" />
+      <node id="5198502169430721555" at="22,176,25,5" concept="3" />
+      <node id="5198502169430723125" at="28,176,31,5" concept="3" />
       <node id="8782562286075570254" at="12,0,17,0" concept="4" trace="init#()V" />
       <node id="8782562286075570254" at="17,0,22,0" concept="4" trace="dispose#()V" />
-      <node id="5198502169430721555" at="22,0,28,0" concept="10" trace="check_vp7zbg_a1a0#(Ljetbrains/mps/openapi/editor/extensions/EditorExtensionRegistry;Lcom/mbeddr/mpsutil/hyperlink/plugin/HyperlinkEditorExtension;)V" />
-      <node id="5198502169430723125" at="28,0,34,0" concept="10" trace="check_vp7zbg_a1a0_0#(Ljetbrains/mps/openapi/editor/extensions/EditorExtensionRegistry;Lcom/mbeddr/mpsutil/hyperlink/plugin/HyperlinkEditorExtension;)V" />
+      <node id="5198502169430721555" at="22,0,28,0" concept="10" trace="check_qx5qtc_a1a2#(Ljetbrains/mps/openapi/editor/extensions/EditorExtensionRegistry;Lcom/mbeddr/mpsutil/hyperlink/plugin/HyperlinkEditorExtension;Lcom/mbeddr/mpsutil/hyperlink/plugin/HyperlinkPlugin_AppPluginPart;)V" />
+      <node id="5198502169430723125" at="28,0,34,0" concept="10" trace="check_qx5qtc_a1a3#(Ljetbrains/mps/openapi/editor/extensions/EditorExtensionRegistry;Lcom/mbeddr/mpsutil/hyperlink/plugin/HyperlinkEditorExtension;Lcom/mbeddr/mpsutil/hyperlink/plugin/HyperlinkPlugin_AppPluginPart;)V" />
       <scope id="8782562286075570254" at="10,42,10,42" />
       <scope id="5198502169430721555" at="23,36,24,53" />
       <scope id="5198502169430723125" at="29,36,30,55" />
       <scope id="8782562286075570254" at="10,0,12,0" />
-      <scope id="8782562286075602787" at="13,22,15,93">
+      <scope id="8782562286075602787" at="13,22,15,99">
         <var name="extension" id="8782562286076610554" />
       </scope>
-      <scope id="8782562286075606417" at="18,25,20,95">
+      <scope id="8782562286075606417" at="18,25,20,99">
         <var name="extension" id="8782562286076610751" />
       </scope>
-      <scope id="5198502169430721555" at="22,120,26,0" />
-      <scope id="5198502169430723125" at="28,122,32,0" />
+      <scope id="5198502169430721555" at="22,176,26,0" />
+      <scope id="5198502169430723125" at="28,176,32,0" />
       <scope id="8782562286075570254" at="12,0,17,0" />
       <scope id="8782562286075570254" at="17,0,22,0" />
       <scope id="5198502169430721555" at="22,0,28,0">
         <var name="checkedDotOperand" id="5198502169430721555" />
+        <var name="checkedDotThisExpression" id="5198502169430721555" />
         <var name="extension" id="8782562286076610558" />
       </scope>
       <scope id="5198502169430723125" at="28,0,34,0">
         <var name="checkedDotOperand" id="5198502169430723125" />
+        <var name="checkedDotThisExpression" id="5198502169430723125" />
         <var name="extension" id="8782562286076610755" />
       </scope>
       <unit id="8782562286075570254" at="8,0,35,0" name="com.mbeddr.mpsutil.hyperlink.plugin.HyperlinkPlugin_AppPluginPart" />

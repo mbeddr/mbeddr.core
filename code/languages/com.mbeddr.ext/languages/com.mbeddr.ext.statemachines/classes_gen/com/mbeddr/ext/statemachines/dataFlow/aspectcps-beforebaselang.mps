@@ -3479,7 +3479,7 @@
                   <node concept="liA8E" id="dR" role="2OqNvi">
                     <ref role="37wK5l" to="1ka:~TypecheckingFacade.getTypeOf(org.jetbrains.mps.openapi.model.SNode)" resolve="getTypeOf" />
                     <node concept="2OqwBi" id="dS" role="37wK5m">
-                      <uo k="s:originTrace" v="n:770" />
+                      <uo k="s:originTrace" v="n:767" />
                       <node concept="liA8E" id="dT" role="2OqNvi">
                         <ref role="37wK5l" to="9r19:~SMethod.invoke(org.jetbrains.mps.openapi.language.SAbstractConcept,java.lang.Object...)" resolve="invoke" />
                         <uo k="s:originTrace" v="n:769" />
@@ -3680,7 +3680,7 @@
                   <uo k="s:originTrace" v="n:791" />
                 </node>
                 <node concept="2OqwBi" id="eG" role="33vP2m">
-                  <uo k="s:originTrace" v="n:794" />
+                  <uo k="s:originTrace" v="n:792" />
                   <node concept="liA8E" id="eH" role="2OqNvi">
                     <ref role="37wK5l" to="9r19:~SMethod.invoke(org.jetbrains.mps.openapi.language.SAbstractConcept,java.lang.Object...)" resolve="invoke" />
                     <uo k="s:originTrace" v="n:793" />
@@ -5920,7 +5920,7 @@
                       <uo k="s:originTrace" v="n:1336" />
                     </node>
                     <node concept="2OqwBi" id="oz" role="10QFUP">
-                      <uo k="s:originTrace" v="n:1339" />
+                      <uo k="s:originTrace" v="n:1337" />
                       <node concept="liA8E" id="o$" role="2OqNvi">
                         <ref role="37wK5l" to="9r19:~SMethod.invoke(org.jetbrains.mps.openapi.language.SAbstractConcept,java.lang.Object...)" resolve="invoke" />
                         <uo k="s:originTrace" v="n:1338" />
@@ -6025,7 +6025,7 @@
                 <uo k="s:originTrace" v="n:1360" />
               </node>
               <node concept="2OqwBi" id="oY" role="2ZW6bz">
-                <uo k="s:originTrace" v="n:1363" />
+                <uo k="s:originTrace" v="n:1361" />
                 <node concept="liA8E" id="oZ" role="2OqNvi">
                   <ref role="37wK5l" to="9r19:~SMethod.invoke(org.jetbrains.mps.openapi.language.SAbstractConcept,java.lang.Object...)" resolve="invoke" />
                   <uo k="s:originTrace" v="n:1362" />
@@ -6050,7 +6050,7 @@
               </node>
             </node>
             <node concept="10QFUN" id="oW" role="3uHU7B">
-              <uo k="s:originTrace" v="n:1365" />
+              <uo k="s:originTrace" v="n:1359" />
               <node concept="10P_77" id="p4" role="10QFUM">
                 <uo k="s:originTrace" v="n:1364" />
               </node>
@@ -6162,7 +6162,7 @@
               <ref role="1Pybhc" to="i8bi:5IkW5anFcpd" resolve="SLinkOperations" />
               <uo k="s:originTrace" v="n:1386" />
               <node concept="2OqwBi" id="pv" role="37wK5m">
-                <uo k="s:originTrace" v="n:1388" />
+                <uo k="s:originTrace" v="n:1385" />
                 <node concept="liA8E" id="px" role="2OqNvi">
                   <ref role="37wK5l" to="9r19:~SMethod.invoke(org.jetbrains.mps.openapi.language.SAbstractConcept,java.lang.Object...)" resolve="invoke" />
                   <uo k="s:originTrace" v="n:1387" />
@@ -6700,7 +6700,7 @@
                 <node concept="2OqwBi" id="rE" role="33vP2m">
                   <uo k="s:originTrace" v="n:1478" />
                   <node concept="2OqwBi" id="rG" role="2Oq$k0">
-                    <uo k="s:originTrace" v="n:1483" />
+                    <uo k="s:originTrace" v="n:1480" />
                     <node concept="liA8E" id="rI" role="2OqNvi">
                       <ref role="37wK5l" to="9r19:~SMethod.invoke(org.jetbrains.mps.openapi.language.SAbstractConcept,java.lang.Object...)" resolve="invoke" />
                       <uo k="s:originTrace" v="n:1482" />
