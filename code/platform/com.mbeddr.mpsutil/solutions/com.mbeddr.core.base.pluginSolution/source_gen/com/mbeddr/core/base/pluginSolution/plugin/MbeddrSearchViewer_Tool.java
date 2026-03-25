@@ -17,7 +17,7 @@ import org.jetbrains.mps.openapi.module.SModule;
 import javax.swing.JComponent;
 
 public class MbeddrSearchViewer_Tool extends GeneratedTool {
-  private static final Icon ICON = AllIcons.Actions.Search;
+  private static final Icon ICON = AllIcons.Actions.FindForward;
   private SearchViewer myComponent;
   public MbeddrSearchViewer_Tool(Project project) {
     super(project, "Search", BaseTool.shortcutsFromNumber(7), ICON, ToolWindowAnchor.BOTTOM, false);

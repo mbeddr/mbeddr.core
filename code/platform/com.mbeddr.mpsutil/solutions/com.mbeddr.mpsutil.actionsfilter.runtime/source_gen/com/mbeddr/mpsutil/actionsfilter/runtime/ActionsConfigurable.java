@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.NonNls;
 import com.intellij.openapi.options.ConfigurationException;
-import com.mbeddr.mpsutil.actionsfilter.ideaplugin.ActionsService;
+import com.mbeddr.mpsutil.actionsfilter.runtime.plugin.ActionsService;
 
 public class ActionsConfigurable extends ConfigurableEP<Configurable> implements Configurable {
 
@@ -75,6 +75,7 @@ public class ActionsConfigurable extends ConfigurableEP<Configurable> implements
   @Override
   public void apply() throws ConfigurationException {
     ActionsService.getInstance().loadState(getJComponent().myModel);
+    ActionsService.getInstance().save();
   }
 
   @Override

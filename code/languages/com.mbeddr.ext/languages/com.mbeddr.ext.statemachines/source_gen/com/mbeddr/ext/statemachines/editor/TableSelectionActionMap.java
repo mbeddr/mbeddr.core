@@ -26,8 +26,13 @@ public class TableSelectionActionMap {
         this.execute_internal(editorContext, node);
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
-        CopyPasteSupport support = CopyPasteSupport.forNode(node, editorContext);
+        CopyPasteSupport support = CopyPasteSupport.forNodeIfExists(node, editorContext);
         TableRangeSelection selection = as_rxvfzo_a0a1a1a0a0a1(editorContext.getSelectionManager().getSelection(), TableRangeSelection.class);
+
+        if (support == null || selection == null) {
+          // Some code does not consistently call 'can execute' before execute so we have to re-check
+          return;
+        }
         support.delete(selection, editorContext);
       }
       @Override
@@ -47,9 +52,14 @@ public class TableSelectionActionMap {
         this.execute_internal(editorContext, node);
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
-        CopyPasteSupport support = CopyPasteSupport.forNode(node, editorContext);
-        support.setTableNode(node);
-        TableRangeSelection selection = as_rxvfzo_a0a2a1a0a0a2(editorContext.getSelectionManager().getSelection(), TableRangeSelection.class);
+        CopyPasteSupport support = CopyPasteSupport.forNodeIfExists(node, editorContext);
+        TableRangeSelection selection = as_rxvfzo_a0a1a1a0a0a2(editorContext.getSelectionManager().getSelection(), TableRangeSelection.class);
+
+        if (support == null || selection == null) {
+          // Some code does not consistently call 'can execute' before execute so we have to re-check
+          return;
+        }
+
         TableData<SNode> data = support.cut(selection, editorContext);
         TableCopyStorage.getInstance().put(data);
         TableData<String> dataAsString = TableTransformationManager.nodeDataToStringData(selection, data, editorContext);
@@ -72,8 +82,14 @@ public class TableSelectionActionMap {
         this.execute_internal(editorContext, node);
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
-        CopyPasteSupport support = CopyPasteSupport.forNode(node, editorContext);
+        CopyPasteSupport support = CopyPasteSupport.forNodeIfExists(node, editorContext);
         TableRangeSelection selection = as_rxvfzo_a0a1a1a0a0a3(editorContext.getSelectionManager().getSelection(), TableRangeSelection.class);
+
+        if (support == null || selection == null) {
+          // Some code does not consistently call 'can execute' before execute so we have to re-check
+          return;
+        }
+
         TableData<SNode> data = support.copy(selection, editorContext);
         TableCopyStorage.getInstance().put(data);
 
@@ -97,8 +113,14 @@ public class TableSelectionActionMap {
         this.execute_internal(editorContext, node);
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
-        CopyPasteSupport support = CopyPasteSupport.forNode(node, editorContext);
+        CopyPasteSupport support = CopyPasteSupport.forNodeIfExists(node, editorContext);
         TableRangeSelection selection = as_rxvfzo_a0a1a1a0a0a4(editorContext.getSelectionManager().getSelection(), TableRangeSelection.class);
+
+        if (support == null || selection == null) {
+          // Some code does not consistently call 'can execute' before execute so we have to re-check
+          return;
+        }
+
         TableData<SNode> data = TableCopyStorage.getInstance().get();
         support.paste(selection, data, editorContext);
       }
@@ -172,7 +194,7 @@ public class TableSelectionActionMap {
   private static <T> T as_rxvfzo_a0a0a3a0a0a1(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
-  private static <T> T as_rxvfzo_a0a2a1a0a0a2(Object o, Class<T> type) {
+  private static <T> T as_rxvfzo_a0a1a1a0a0a2(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
   private static <T> T as_rxvfzo_a0a0a3a0a0a2(Object o, Class<T> type) {

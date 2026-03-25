@@ -43,9 +43,9 @@ import com.intellij.icons.AllIcons;
 import org.jetbrains.mps.openapi.model.SNodeReference;
 import com.intellij.openapi.actionSystem.ToggleAction;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
-import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
+import jetbrains.mps.openapi.navigation.EditorNavigator;
 import java.util.Set;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
 import jetbrains.mps.internal.collections.runtime.Sequence;
@@ -57,7 +57,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.project.Project;
-import jetbrains.mps.openapi.editor.Editor;
 import jetbrains.mps.openapi.editor.EditorComponent;
 
 public class TraceTab extends SimpleToolWindowPanel {
@@ -435,12 +434,7 @@ public class TraceTab extends SimpleToolWindowPanel {
         final ITraceRecord record = ListSequence.fromList(records).first();
         final SNodeReference reference = (record.computationSourceURL() != null ? PersistenceFacade.getInstance().createNodeReference(record.computationSourceURL()) : null);
         if (reference != null) {
-          project.getRepository().getModelAccess().executeCommand(() -> {
-            SNode node = reference.resolve(project.getRepository());
-            if (node != null) {
-              NavigationSupport.getInstance().openNode(project, node, true, true);
-            }
-          });
+          new EditorNavigator(project).shallFocus(true).shallSelect(true).open(reference);
         }
       }
     }
@@ -761,15 +755,10 @@ public class TraceTab extends SimpleToolWindowPanel {
     renderValueInternal(value);
   }
 
-  protected void selectFirstLeafCell(final Project project, final SNodeReference target) {
-    project.getRepository().getModelAccess().executeCommand(() -> {
-      SNode node = target.resolve(project.getRepository());
-      if (node == null) {
-        return;
-      }
-      Editor editor = NavigationSupport.getInstance().openNode(project, node, true, true);
+  protected void selectFirstLeafCell(Project project, SNodeReference target) {
+    new EditorNavigator(project).shallSelect(true).shallFocus(true).onceEditorReady((node, editor) -> {
       EditorComponent editorComponent = editor.getCurrentEditorComponent();
       editorComponent.getEditorContext().selectWRTFocusPolicy(node, true);
-    });
+    }).open(target);
   }
 }

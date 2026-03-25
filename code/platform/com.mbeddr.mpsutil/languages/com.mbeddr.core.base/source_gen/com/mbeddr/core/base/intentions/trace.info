@@ -17,13 +17,13 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root>
     <file name="IntentionsDescriptor.java">
-      <unit at="18,0,154,0" name="com.mbeddr.core.base.intentions.IntentionsDescriptor" />
+      <unit at="18,0,144,0" name="com.mbeddr.core.base.intentions.IntentionsDescriptor" />
     </file>
   </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/2843190776579084499">
     <file name="IntentionsDescriptor.java">
-      <node id="2843190776579084499" at="67,47,68,52" concept="2" />
-      <node id="2843190776579084499" at="137,47,138,38" concept="2" />
+      <node id="2843190776579084499" at="59,47,60,52" concept="2" />
+      <node id="2843190776579084499" at="127,47,128,38" concept="2" />
     </file>
     <file name="addSuffix_Intention.java">
       <node id="2843190776579084499" at="21,0,22,0" concept="3" trace="myCachedExecutable" />
@@ -95,8 +95,8 @@
   </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/2843190776580535028">
     <file name="IntentionsDescriptor.java">
-      <node id="2843190776580535028" at="89,61,90,62" concept="2" />
-      <node id="2843190776580535028" at="138,38,139,48" concept="2" />
+      <node id="2843190776580535028" at="81,61,82,62" concept="2" />
+      <node id="2843190776580535028" at="128,38,129,48" concept="2" />
     </file>
     <file name="addControlledPrefix_Intention.java">
       <node id="2843190776580535028" at="32,0,33,0" concept="3" trace="myCachedExecutable" />
@@ -182,8 +182,8 @@
   </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/2992054467173885628">
     <file name="IntentionsDescriptor.java">
-      <node id="2992054467173885628" at="74,47,75,57" concept="2" />
-      <node id="2992054467173885628" at="139,48,140,43" concept="2" />
+      <node id="2992054467173885628" at="66,47,67,57" concept="2" />
+      <node id="2992054467173885628" at="129,48,130,43" concept="2" />
     </file>
     <file name="toggleReexport_Intention.java">
       <node id="2992054467173885628" at="21,0,22,0" concept="3" trace="myCachedExecutable" />
@@ -245,8 +245,8 @@
   </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/3111692391937483507">
     <file name="IntentionsDescriptor.java">
-      <node id="3111692391937483507" at="88,47,89,61" concept="2" />
-      <node id="3111692391937483507" at="136,45,137,47" concept="2" />
+      <node id="3111692391937483507" at="80,47,81,61" concept="2" />
+      <node id="3111692391937483507" at="126,43,127,47" concept="2" />
     </file>
     <file name="makeNameControlled_Intention.java">
       <node id="3111692391937483507" at="32,0,33,0" concept="3" trace="myCachedExecutable" />
@@ -336,71 +336,10 @@
       <unit id="3111692391937483507" at="31,0,110,0" name="com.mbeddr.core.base.intentions.makeNameControlled_Intention" />
     </file>
   </root>
-  <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/3815661793603627165">
-    <file name="IntentionsDescriptor.java">
-      <node id="3815661793603627165" at="45,47,46,59" concept="2" />
-      <node id="3815661793603627165" at="135,40,136,45" concept="2" />
-    </file>
-    <file name="updateAllQueries_Intention.java">
-      <node id="3815661793603627165" at="19,0,20,0" concept="3" trace="myCachedExecutable" />
-      <node id="3815661793603627165" at="21,39,22,146" concept="13" />
-      <node id="3815661793603627165" at="26,35,27,30" concept="8" />
-      <node id="3815661793603627165" at="31,35,32,17" concept="8" />
-      <node id="3815661793603627165" at="36,37,37,105" concept="2" />
-      <node id="3815661793603627165" at="38,5,39,30" concept="8" />
-      <node id="3815661793603627167" at="46,87,47,54" concept="8" />
-      <node id="5539680726967215131" at="51,78,52,102" concept="2" />
-      <node id="3815661793603627165" at="56,86,57,18" concept="8" />
-      <node id="3815661793603627165" at="63,48,64,45" concept="8" />
-      <node id="3815661793603627165" at="42,0,44,0" concept="1" trace="IntentionImplementation#()V" />
-      <node id="3815661793603627165" at="21,0,24,0" concept="1" trace="updateAllQueries_Intention#()V" />
-      <node id="3815661793603627165" at="35,99,38,5" concept="5" />
-      <node id="3815661793603627165" at="25,0,29,0" concept="6" trace="getPresentation#()Ljava/lang/String;" />
-      <node id="3815661793603627165" at="30,0,34,0" concept="6" trace="isSurroundWith#()Z" />
-      <node id="3815661793603627165" at="45,0,49,0" concept="6" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
-      <node id="3815661793603627165" at="50,0,54,0" concept="6" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
-      <node id="3815661793603627165" at="55,0,59,0" concept="6" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
-      <node id="3815661793603627165" at="62,0,66,0" concept="6" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
-      <node id="3815661793603627165" at="35,0,41,0" concept="6" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
-      <scope id="3815661793603627165" at="42,38,42,38" />
-      <scope id="3815661793603627165" at="21,39,22,146" />
-      <scope id="3815661793603627165" at="26,35,27,30" />
-      <scope id="3815661793603627165" at="31,35,32,17" />
-      <scope id="3815661793603627165" at="36,37,37,105" />
-      <scope id="3815661793603627167" at="46,87,47,54" />
-      <scope id="3815661793603627169" at="51,78,52,102" />
-      <scope id="3815661793603627165" at="56,86,57,18" />
-      <scope id="3815661793603627165" at="63,48,64,45" />
-      <scope id="3815661793603627165" at="42,0,44,0" />
-      <scope id="3815661793603627165" at="21,0,24,0" />
-      <scope id="3815661793603627165" at="25,0,29,0" />
-      <scope id="3815661793603627165" at="30,0,34,0" />
-      <scope id="3815661793603627165" at="35,99,39,30" />
-      <scope id="3815661793603627165" at="45,0,49,0">
-        <var name="editorContext" id="3815661793603627165" />
-        <var name="node" id="3815661793603627165" />
-      </scope>
-      <scope id="3815661793603627165" at="50,0,54,0">
-        <var name="editorContext" id="3815661793603627165" />
-        <var name="node" id="3815661793603627165" />
-      </scope>
-      <scope id="3815661793603627165" at="55,0,59,0">
-        <var name="editorContext" id="3815661793603627165" />
-        <var name="node" id="3815661793603627165" />
-      </scope>
-      <scope id="3815661793603627165" at="62,0,66,0" />
-      <scope id="3815661793603627165" at="35,0,41,0">
-        <var name="context" id="3815661793603627165" />
-        <var name="node" id="3815661793603627165" />
-      </scope>
-      <unit id="3815661793603627165" at="41,0,68,0" name="com.mbeddr.core.base.intentions.updateAllQueries_Intention$IntentionImplementation" />
-      <unit id="3815661793603627165" at="18,0,69,0" name="com.mbeddr.core.base.intentions.updateAllQueries_Intention" />
-    </file>
-  </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/3857533489766146477">
     <file name="IntentionsDescriptor.java">
-      <node id="3857533489766146477" at="96,47,97,59" concept="2" />
-      <node id="3857533489766146477" at="132,53,133,45" concept="2" />
+      <node id="3857533489766146477" at="88,47,89,59" concept="2" />
+      <node id="3857533489766146477" at="124,53,125,45" concept="2" />
     </file>
     <file name="addDocumentation_Intention.java">
       <node id="3857533489766146477" at="31,0,32,0" concept="3" trace="myCachedExecutable" />
@@ -496,8 +435,8 @@
   </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/4137027550727976235">
     <file name="IntentionsDescriptor.java">
-      <node id="4137027550727976235" at="38,54,39,55" concept="2" />
-      <node id="4137027550727976235" at="148,45,149,42" concept="2" />
+      <node id="4137027550727976235" at="37,47,38,55" concept="2" />
+      <node id="4137027550727976235" at="138,45,139,42" concept="2" />
     </file>
     <file name="clearResults_Intention.java">
       <node id="4137027550727976235" at="22,0,23,0" concept="3" trace="myCachedExecutable" />
@@ -569,8 +508,8 @@
   </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/4453399216978898838">
     <file name="IntentionsDescriptor.java">
-      <node id="4453399216978898838" at="53,62,54,70" concept="2" />
-      <node id="4453399216978898838" at="146,49,147,57" concept="2" />
+      <node id="4453399216978898838" at="45,62,46,70" concept="2" />
+      <node id="4453399216978898838" at="136,49,137,57" concept="2" />
     </file>
     <file name="ToggleKeepAliveInGeneration_Intention.java">
       <node id="4453399216978898838" at="24,0,25,0" concept="3" trace="myCachedExecutable" />
@@ -647,8 +586,8 @@
   </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/5779127112631501121">
     <file name="IntentionsDescriptor.java">
-      <node id="5779127112631501121" at="119,47,120,57" concept="2" />
-      <node id="5779127112631501121" at="133,45,134,43" concept="2" />
+      <node id="5779127112631501121" at="111,47,112,57" concept="2" />
+      <node id="5779127112631501121" at="125,45,126,43" concept="2" />
     </file>
     <file name="clearTextBlock_Intention.java">
       <node id="5779127112631501121" at="24,0,25,0" concept="3" trace="myCachedExecutable" />
@@ -713,8 +652,8 @@
   </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/5898238819895650983">
     <file name="IntentionsDescriptor.java">
-      <node id="5898238819895650983" at="81,47,82,58" concept="2" />
-      <node id="5898238819895650983" at="147,57,148,45" concept="2" />
+      <node id="5898238819895650983" at="73,47,74,58" concept="2" />
+      <node id="5898238819895650983" at="137,57,138,45" concept="2" />
     </file>
     <file name="migrateManually_Intention.java">
       <node id="5898238819895650983" at="19,0,20,0" concept="3" trace="myCachedExecutable" />
@@ -774,8 +713,8 @@
   </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/651821299967354121">
     <file name="IntentionsDescriptor.java">
-      <node id="651821299967354121" at="110,47,111,52" concept="2" />
-      <node id="651821299967354121" at="140,43,141,38" concept="2" />
+      <node id="651821299967354121" at="102,47,103,52" concept="2" />
+      <node id="651821299967354121" at="130,43,131,38" concept="2" />
     </file>
     <file name="expandOne_Intention.java">
       <node id="651821299967354121" at="19,0,20,0" concept="3" trace="myCachedExecutable" />
@@ -845,8 +784,8 @@
   </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/651821299967354139">
     <file name="IntentionsDescriptor.java">
-      <node id="651821299967354139" at="111,52,112,52" concept="2" />
-      <node id="651821299967354139" at="141,38,142,38" concept="2" />
+      <node id="651821299967354139" at="103,52,104,52" concept="2" />
+      <node id="651821299967354139" at="131,38,132,38" concept="2" />
     </file>
     <file name="expandAll_Intention.java">
       <node id="651821299967354139" at="19,0,20,0" concept="3" trace="myCachedExecutable" />
@@ -916,8 +855,8 @@
   </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/651821299967354150">
     <file name="IntentionsDescriptor.java">
-      <node id="651821299967354150" at="112,52,113,51" concept="2" />
-      <node id="651821299967354150" at="142,38,143,38" concept="2" />
+      <node id="651821299967354150" at="104,52,105,51" concept="2" />
+      <node id="651821299967354150" at="132,38,133,37" concept="2" />
     </file>
     <file name="collapse_Intention.java">
       <node id="651821299967354150" at="19,0,20,0" concept="3" trace="myCachedExecutable" />
@@ -985,72 +924,10 @@
       <unit id="651821299967354150" at="18,0,75,0" name="com.mbeddr.core.base.intentions.collapse_Intention" />
     </file>
   </root>
-  <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/6619757161337543629">
-    <file name="IntentionsDescriptor.java">
-      <node id="6619757161337543629" at="37,47,38,54" concept="2" />
-      <node id="6619757161337543629" at="134,43,135,40" concept="2" />
-    </file>
-    <file name="updateQuery_Intention.java">
-      <node id="6619757161337543629" at="19,0,20,0" concept="3" trace="myCachedExecutable" />
-      <node id="6619757161337543629" at="21,34,22,145" concept="13" />
-      <node id="6619757161337543629" at="26,35,27,25" concept="8" />
-      <node id="6619757161337543629" at="31,35,32,17" concept="8" />
-      <node id="6619757161337543629" at="36,37,37,105" concept="2" />
-      <node id="6619757161337543629" at="38,5,39,30" concept="8" />
-      <node id="6619757161337543631" at="46,87,47,53" concept="8" />
-      <node id="8073436423746014946" at="51,78,52,158" concept="2" />
-      <node id="8073436423746014912" at="52,158,53,0" concept="10" />
-      <node id="6619757161337543629" at="57,86,58,18" concept="8" />
-      <node id="6619757161337543629" at="64,48,65,40" concept="8" />
-      <node id="6619757161337543629" at="42,0,44,0" concept="1" trace="IntentionImplementation#()V" />
-      <node id="6619757161337543629" at="21,0,24,0" concept="1" trace="updateQuery_Intention#()V" />
-      <node id="6619757161337543629" at="35,99,38,5" concept="5" />
-      <node id="6619757161337543629" at="25,0,29,0" concept="6" trace="getPresentation#()Ljava/lang/String;" />
-      <node id="6619757161337543629" at="30,0,34,0" concept="6" trace="isSurroundWith#()Z" />
-      <node id="6619757161337543629" at="45,0,49,0" concept="6" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
-      <node id="6619757161337543629" at="56,0,60,0" concept="6" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
-      <node id="6619757161337543629" at="63,0,67,0" concept="6" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
-      <node id="6619757161337543629" at="50,0,55,0" concept="6" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
-      <node id="6619757161337543629" at="35,0,41,0" concept="6" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
-      <scope id="6619757161337543629" at="42,38,42,38" />
-      <scope id="6619757161337543629" at="21,34,22,145" />
-      <scope id="6619757161337543629" at="26,35,27,25" />
-      <scope id="6619757161337543629" at="31,35,32,17" />
-      <scope id="6619757161337543629" at="36,37,37,105" />
-      <scope id="6619757161337543631" at="46,87,47,53" />
-      <scope id="6619757161337543629" at="57,86,58,18" />
-      <scope id="6619757161337543629" at="64,48,65,40" />
-      <scope id="6619757161337543629" at="42,0,44,0" />
-      <scope id="6619757161337543633" at="51,78,53,0" />
-      <scope id="6619757161337543629" at="21,0,24,0" />
-      <scope id="6619757161337543629" at="25,0,29,0" />
-      <scope id="6619757161337543629" at="30,0,34,0" />
-      <scope id="6619757161337543629" at="35,99,39,30" />
-      <scope id="6619757161337543629" at="45,0,49,0">
-        <var name="editorContext" id="6619757161337543629" />
-        <var name="node" id="6619757161337543629" />
-      </scope>
-      <scope id="6619757161337543629" at="56,0,60,0">
-        <var name="editorContext" id="6619757161337543629" />
-        <var name="node" id="6619757161337543629" />
-      </scope>
-      <scope id="6619757161337543629" at="63,0,67,0" />
-      <scope id="6619757161337543629" at="50,0,55,0">
-        <var name="editorContext" id="6619757161337543629" />
-        <var name="node" id="6619757161337543629" />
-      </scope>
-      <scope id="6619757161337543629" at="35,0,41,0">
-        <var name="context" id="6619757161337543629" />
-        <var name="node" id="6619757161337543629" />
-      </scope>
-      <unit id="6619757161337543629" at="41,0,69,0" name="com.mbeddr.core.base.intentions.updateQuery_Intention$IntentionImplementation" />
-      <unit id="6619757161337543629" at="18,0,70,0" name="com.mbeddr.core.base.intentions.updateQuery_Intention" />
-    </file>
-  </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/7787579437362017008">
     <file name="IntentionsDescriptor.java">
-      <node id="7787579437362017008" at="52,47,53,62" concept="2" />
-      <node id="7787579437362017008" at="145,50,146,49" concept="2" />
+      <node id="7787579437362017008" at="44,47,45,62" concept="2" />
+      <node id="7787579437362017008" at="135,50,136,49" concept="2" />
     </file>
     <file name="addSuppressWarnings_Intention.java">
       <node id="7787579437362017008" at="27,0,28,0" concept="3" trace="myCachedExecutable" />
@@ -1143,8 +1020,8 @@
   </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/806361095890626677">
     <file name="IntentionsDescriptor.java">
-      <node id="806361095890626677" at="60,47,61,72" concept="2" />
-      <node id="806361095890626677" at="143,38,144,59" concept="2" />
+      <node id="806361095890626677" at="52,47,53,72" concept="2" />
+      <node id="806361095890626677" at="133,37,134,58" concept="2" />
     </file>
     <file name="updateHashForAssessmentResult_Intention.java">
       <node id="806361095890626677" at="23,0,24,0" concept="3" trace="myCachedExecutable" />
@@ -1207,8 +1084,8 @@
   </root>
   <root nodeRef="r:a2de504f-6afe-437f-a38e-a77813a7d666(com.mbeddr.core.base.intentions)/806361095890633388">
     <file name="IntentionsDescriptor.java">
-      <node id="806361095890633388" at="103,47,104,63" concept="2" />
-      <node id="806361095890633388" at="144,59,145,50" concept="2" />
+      <node id="806361095890633388" at="95,47,96,63" concept="2" />
+      <node id="806361095890633388" at="134,58,135,50" concept="2" />
     </file>
     <file name="updateHashForIExtRef_Intention.java">
       <node id="806361095890633388" at="19,0,20,0" concept="3" trace="myCachedExecutable" />

@@ -10,19 +10,18 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import jetbrains.mps.project.Project;
 import org.jetbrains.mps.openapi.model.SModel;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.project.Project;
-import jetbrains.mps.project.ProjectManager;
+import jetbrains.mps.project.ProjectBase;
 import org.jetbrains.mps.openapi.module.SModule;
-import jetbrains.mps.project.MPSProject;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.project.AbstractModule;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -31,35 +30,24 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class VirtualFolderScope__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x4d7765f33fa060edL, "com.mbeddr.core.base.structure.VirtualFolderScope");
 
+  public static final SMethod<Iterable<SNode>> findElements_id20N7CGtOl8_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2320231815875482149L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""), SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
   public static final SMethod<Iterable<SNode>> findElements_id7nkDZJXluPi = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8490595898229124434L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id7nkDZJXluPi);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id20N7CGtOl8_, findElements_id7nkDZJXluPi);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static Iterable<SNode> findElements_id7nkDZJXluPi(@NotNull final SNode __thisNode__, SModel currentModel) {
-    List<Project> openedProjects = ProjectManager.getInstance().getOpenedProjects();
-    final SModule module = currentModel.getModule();
-
-    // we fail hard here because there is no way to recover. Not sure in which cases a project wouldn't 
-    // be a StandaloneMPSProject there are no other MPSProject implementations in the code base.
-    // 
-    // If a module is part of the two projects, we will only be able to find the first one. Being part  of a 
-    // project in this case means being part of the modules of the project, not being part of the modules pool.
-    // If a module file is added to two projects and are open at the same time this logic will fail to give the 
-    // correct project.
-    // 
-    final MPSProject project = (MPSProject) ListSequence.fromList(openedProjects).findFirst((it) -> it.isProjectModule(module));
-
-    Iterable<SModule> projectModules = project.getScope().getModules();
-    return Sequence.fromIterable(projectModules).where((it) -> (boolean) VirtualFolderFilter__BehaviorDescriptor.matches_id4PRpvcZD6sS.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.filter$KV$z), project.getVirtualFolder(it))).translate((it) -> {
-      return Sequence.fromIterable(((Iterable<SModel>) it.getModels())).translate(new _FunctionTypes._return_P1_E0<Iterable<SNode>, SModel>() {
-        public Iterable<SNode> invoke(SModel it) {
-          return SModelOperations.nodes(it, null);
-        }
-      });
-    });
+  /*package*/ static Iterable<SNode> findElements_id20N7CGtOl8_(@NotNull final SNode __thisNode__, final Project mpsProject, SModel currentModel) {
+    if (!(mpsProject instanceof ProjectBase)) {
+      // All currently known Project implementations extend ProjectBase
+      throw new IllegalArgumentException("Cannot determine virtual folder scope for a Project that does not extend ProjectBase");
+    }
+    Iterable<SModule> projectModules = mpsProject.getScope().getModules();
+    return Sequence.fromIterable(projectModules).where((it) -> (boolean) VirtualFolderFilter__BehaviorDescriptor.matches_id4PRpvcZD6sS.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.filter$KV$z), ((ProjectBase) mpsProject).getVirtualFolder(it))).translate((module) -> Sequence.fromIterable(((Iterable<SModel>) module.getModels())).translate((model) -> SModelOperations.nodes(model, null)));
+  }
+  /*package*/ static Iterable<SNode> findElements_id7nkDZJXluPi(@NotNull SNode __thisNode__, SModel currentModel) {
+    return ((Iterable<SNode>) AssessmentScope__BehaviorDescriptor.findElements_id20N7CGtOl8_.invoke(__thisNode__, ListSequence.fromList(GuessCurrentProject.getProjects(as_rrtw72_a0a0b0a0a0a01(currentModel.getModule(), AbstractModule.class))).first(), currentModel));
   }
 
   /*package*/ VirtualFolderScope__BehaviorDescriptor() {
@@ -78,6 +66,8 @@ public final class VirtualFolderScope__BehaviorDescriptor extends BaseBHDescript
     }
     switch (methodIndex) {
       case 0:
+        return (T) ((Iterable<SNode>) findElements_id20N7CGtOl8_(node, (Project) parameters[0], (SModel) parameters[1]));
+      case 1:
         return (T) ((Iterable<SNode>) findElements_id7nkDZJXluPi(node, (SModel) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
@@ -106,6 +96,9 @@ public final class VirtualFolderScope__BehaviorDescriptor extends BaseBHDescript
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
+  }
+  private static <T> T as_rrtw72_a0a0b0a0a0a01(Object o, Class<T> type) {
+    return (type.isInstance(o) ? (T) o : null);
   }
 
   private static final class LINKS {

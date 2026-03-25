@@ -103,7 +103,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an enum declaration");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a7b0ib);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_EnumDeclaration = cpb.create();
         }
         return props_EnumDeclaration;
@@ -238,7 +238,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a struct declaration");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a62b0ib);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_StructDeclaration = cpb.create();
         }
         return props_StructDeclaration;
@@ -255,7 +255,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("define new types from existing ones");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a82b0ib);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_TypeDef = cpb.create();
         }
         return props_TypeDef;
@@ -272,7 +272,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a union declaration");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a03b0ib);
+          cpb.icon(IconContainer.RESOURCE_3);
           props_UnionDeclaration = cpb.create();
         }
         return props_UnionDeclaration;

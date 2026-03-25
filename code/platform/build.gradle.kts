@@ -28,11 +28,6 @@ val reportsDir = rootProject.layout.buildDirectory.dir("reports").get().asFile
 // Project group
 group = "com.mbeddr"
 
-repositories {
-    // required for com.michaelbaranov:microba library
-    maven("https://maven.atlassian.com/content/repositories/atlassian-public/")
-}
-
 val mpsLibraries by configurations.registering {
     isCanBeConsumed = false
 }
@@ -125,8 +120,6 @@ val build_allScripts by tasks.registering(MpsGenerate::class) {
     projectLocation = file("com.mbeddr.platform.build")
     pluginRoots.from(tasks.named("resolveMpsLibraries", Sync::class.java).map { it.destinationDir })
     pluginRoots.from(mpsHome.dir("plugins"))
-
-    folderMacros.put("mbeddr.github.core.home", rootProject.layout.projectDirectory)
 }
 
 val build_actionsfilter by tasks.registering(BuildLanguages::class) {
@@ -147,16 +140,6 @@ val build_platform by tasks.registering(BuildLanguages::class) {
     outputs.dir(File(artifactsDir, "com.mbeddr.platform/"))
     outputs.upToDateWhen { false }
 }
-
-val install_actionsfilter by tasks.registering(Copy::class) {
-    dependsOn(build_actionsfilter)
-    description = "Copy the actions filter IntelliJ plugin to the MPS plugin\"s directory"
-    from("$rootDir/artifacts/com.mbeddr.mpsutil.actionsfilter/")
-    include("com.mbeddr.mpsutil.actionsfilter/")
-    into("$mpsPluginsDir")
-}
-
-tasks.getByPath(":com.mbeddr:install").dependsOn(install_actionsfilter)
 
 val generate_mbeddr_platform_tests by tasks.registering(RunAntScript::class) {
     dependsOn(build_platform)

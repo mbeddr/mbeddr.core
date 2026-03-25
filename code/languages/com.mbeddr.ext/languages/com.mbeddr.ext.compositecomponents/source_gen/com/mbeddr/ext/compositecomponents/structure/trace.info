@@ -13,7 +13,7 @@
       <unit at="11,0,112,0" name="com.mbeddr.ext.compositecomponents.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="IconContainer.java">
-      <unit at="7,0,10,0" name="com.mbeddr.ext.compositecomponents.structure.IconContainer" />
+      <unit at="8,0,12,0" name="com.mbeddr.ext.compositecomponents.structure.IconContainer" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <unit at="10,0,48,0" name="com.mbeddr.ext.compositecomponents.structure.LanguageConceptSwitch" />
@@ -210,8 +210,8 @@
       <node id="7780999115923829680" at="13,0,14,0" concept="1" trace="props_CompositeComponent" />
       <node id="7780999115923829680" at="37,47,38,76" concept="3" />
       <node id="7780999115923829680" at="38,76,39,35" concept="0" />
-      <node id="7780999115923829680" at="39,35,40,55" concept="0" />
-      <node id="7780999115923829680" at="40,55,41,50" concept="0" />
+      <node id="7780999115923829680" at="39,35,40,45" concept="0" />
+      <node id="7780999115923829680" at="40,45,41,50" concept="0" />
       <node id="7780999115923829680" at="42,9,43,40" concept="4" />
       <node id="7780999115923829680" at="36,52,42,9" concept="2" />
       <scope id="7780999115923829680" at="37,47,41,50">

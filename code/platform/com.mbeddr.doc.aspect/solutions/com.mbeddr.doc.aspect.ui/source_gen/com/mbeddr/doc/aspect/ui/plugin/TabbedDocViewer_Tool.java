@@ -183,7 +183,7 @@ public class TabbedDocViewer_Tool extends BaseTabbedProjectTool {
     content = contentManager.getContent(TabbedDocViewer_Tool.this.nodeDocPanel);
     if (content != null) {
       content.setDisplayName(TabbedDocViewer_Tool.this.NODE_DOC_TITLE);
-      content.setIcon(IconContainer.ICON_a0a1a9a32);
+      content.setIcon(IconContainer.ICON0);
       content.setCloseable(false);
     }
   }

@@ -17,7 +17,7 @@ import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.smodel.SNodeUtil;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import java.util.List;
 import java.util.ArrayList;
@@ -36,6 +36,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public class ExtensionClassMethodCall_Constraints extends BaseConstraintsDescriptor {
   public ExtensionClassMethodCall_Constraints() {
@@ -66,7 +67,7 @@ public class ExtensionClassMethodCall_Constraints extends BaseConstraintsDescrip
               }
               @Nullable
               public String getReferenceText(SNode contextNode, @NotNull SNode node) {
-                String resolveInfo = SNodeUtil.getResolveInfo(SNodeOperations.cast(node, CONCEPTS.IResolveInfo$$k));
+                String resolveInfo = SPropertyOperations.getString(SNodeOperations.cast(node, CONCEPTS.IResolveInfo$$k), PROPS.resolveInfo$lW9a);
                 if ((resolveInfo != null && resolveInfo.length() > 0)) {
                   return resolveInfo;
                 }
@@ -114,5 +115,9 @@ public class ExtensionClassMethodCall_Constraints extends BaseConstraintsDescrip
     /*package*/ static final SContainmentLink parameter$5xBj = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, 0xf8cc56b1feL, "parameter");
     /*package*/ static final SContainmentLink type$a1UY = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x450368d90ce15bc3L, 0x4ed4d318133c80ceL, "type");
     /*package*/ static final SReferenceLink class$kmno = MetaAdapterFactory.getReferenceLink(0xf39336d3128847eeL, 0xbbfead2ea7e4504eL, 0x4f4781239a213505L, 0x4f4781239a213506L, "class");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty resolveInfo$lW9a = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x116b17c6e46L, 0x116b17cd415L, "resolveInfo");
   }
 }

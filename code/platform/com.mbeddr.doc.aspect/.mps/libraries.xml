@@ -7,7 +7,7 @@
           <value>
             <Library>
               <option name="name" value="doc" />
-              <option name="path" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc" />
+              <option name="path" value="$PROJECT_DIR$/../com.mbeddr.doc" />
             </Library>
           </value>
         </entry>
@@ -15,7 +15,7 @@
           <value>
             <Library>
               <option name="name" value="mpsutil" />
-              <option name="path" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.mpsutil" />
+              <option name="path" value="$PROJECT_DIR$/../com.mbeddr.mpsutil" />
             </Library>
           </value>
         </entry>
@@ -23,7 +23,7 @@
           <value>
             <Library>
               <option name="name" value="mps.extensions" />
-              <option name="path" value="${mbeddr.github.core.home}/build/dependencies/de.itemis.mps.extensions" />
+              <option name="path" value="$PROJECT_DIR$/../../../build/dependencies/de.itemis.mps.extensions" />
             </Library>
           </value>
         </entry>

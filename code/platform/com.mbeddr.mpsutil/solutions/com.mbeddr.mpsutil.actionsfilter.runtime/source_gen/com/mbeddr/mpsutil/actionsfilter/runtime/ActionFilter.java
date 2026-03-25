@@ -15,9 +15,9 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.HashSet;
 import com.intellij.openapi.actionSystem.AnAction;
-import com.intellij.openapi.actionSystem.ActionGroup;
 import com.intellij.openapi.actionSystem.ActionManager;
 import com.intellij.openapi.actionSystem.DefaultActionGroup;
+import com.intellij.openapi.actionSystem.ActionGroup;
 import java.util.ArrayList;
 import com.intellij.openapi.actionSystem.Constraints;
 import com.intellij.openapi.actionSystem.Anchor;
@@ -83,21 +83,24 @@ public class ActionFilter {
   }
 
   public void setFilters(Model model) {
-    setFilters(check_anzoaf_a0a0bb(check_anzoaf_a0a0a72(model.getActiveProfileOrFirst())));
+    setFilters(check_anzoaf_a0a0bb(check_anzoaf_a0a0a72(model.getActiveProfile())));
   }
 
   protected void applyFilters(Iterable<String> idsToRemove) {
     cleanUpRememberedActions();
     List<AnAction> actionsToRemove = getActions(idsToRemove);
 
-    Iterable<ActionGroup> allGroups = Sequence.fromIterable(Sequence.fromArray(ActionManager.getInstance().getActionIds(""))).select((it) -> as_anzoaf_a0a0a0a0a3a92(ActionManager.getInstance().getAction(it), ActionGroup.class)).where((it) -> it != null);
-    for (ActionGroup group : Sequence.fromIterable(allGroups)) {
+    List<String> actionIdList = ActionManager.getInstance().getActionIdList("");
+    Iterable<DefaultActionGroup> allGroups = ListSequence.fromList(actionIdList).select((it) -> ActionManager.getInstance().getAction(it)).ofType(DefaultActionGroup.class);
+    for (DefaultActionGroup group : Sequence.fromIterable(allGroups)) {
       removeActionsFromGroup(group, actionsToRemove);
     }
   }
 
   public void applyFilters(ActionGroup group) {
-    removeActionsFromGroup(group, getActions(myFilteredIds));
+    if (group instanceof DefaultActionGroup) {
+      removeActionsFromGroup((DefaultActionGroup) group, getActions(myFilteredIds));
+    }
   }
 
   protected List<AnAction> getActions(Iterable<String> actionIds) {
@@ -118,35 +121,33 @@ public class ActionFilter {
     }
     List<AnAction> actionsToRemove = getActions(myFilteredIds);
 
-    Iterable<ActionGroup> allGroups = Sequence.fromIterable(Sequence.fromArray(ActionManager.getInstance().getActionIds(""))).select((it) -> as_anzoaf_a0a0a0a0a3a73(ActionManager.getInstance().getAction(it), ActionGroup.class)).where((it) -> it != null);
-    for (ActionGroup group : Sequence.fromIterable(allGroups)) {
+    List<String> actionIdList = ActionManager.getInstance().getActionIdList("");
+    Iterable<DefaultActionGroup> allDefaultGroups = ListSequence.fromList(actionIdList).select((it) -> ActionManager.getInstance().getAction(it)).ofType(DefaultActionGroup.class);
+    for (DefaultActionGroup group : Sequence.fromIterable(allDefaultGroups)) {
       removeActionsFromGroup(group, actionsToRemove);
     }
   }
 
-  protected void removeActionsFromGroup(ActionGroup group, Iterable<AnAction> actions) {
-    AnAction[] children = group.getChildren(null);
+  protected void removeActionsFromGroup(DefaultActionGroup group, Iterable<AnAction> actions) {
+    AnAction[] children = group.getChildActionsOrStubs();
     for (AnAction child : children) {
-      if (child instanceof ActionGroup) {
-        removeActionsFromGroup((ActionGroup) child, actions);
+      if (child instanceof DefaultActionGroup) {
+        removeActionsFromGroup((DefaultActionGroup) child, actions);
       }
     }
 
-    if (group instanceof DefaultActionGroup) {
-      DefaultActionGroup defaultGroup = (DefaultActionGroup) group;
-      Set<AnAction> existingChildren = SetSequence.fromSetAndArray(new HashSet<AnAction>(), group.getChildren(null));
-      for (AnAction action : actions) {
-        if (SetSequence.fromSet(existingChildren).contains(action)) {
-          rememberRemovedAction(action, defaultGroup);
-          defaultGroup.remove(action);
-        }
+    Set<AnAction> existingChildren = SetSequence.fromSetAndArray(new HashSet<AnAction>(), children);
+    for (AnAction action : actions) {
+      if (SetSequence.fromSet(existingChildren).contains(action)) {
+        rememberRemovedAction(action, group);
+        group.remove(action);
       }
     }
   }
 
   protected void rememberRemovedAction(AnAction action, DefaultActionGroup parentGroup) {
     String id = ActionManager.getInstance().getId(action);
-    List<AnAction> children = Sequence.fromIterable(Sequence.fromArray(parentGroup.getChildren(null))).toList();
+    List<AnAction> children = Sequence.fromIterable(Sequence.fromArray(parentGroup.getChildActionsOrStubs())).toList();
     int position = ListSequence.fromList(children).indexOf(action);
     List<RememberedAction> removedActions = getRememberedActionList(id);
     ListSequence.fromList(removedActions).addElement(new RememberedAction(id, action, parentGroup, safeSublist(children, 0, position), safeSublist(children, position + 1, ListSequence.fromList(children).count() - 1)));
@@ -166,8 +167,9 @@ public class ActionFilter {
     if (!(removed.isValid())) {
       return;
     }
-    int bestPosition = findBestPosition(Sequence.fromIterable(Sequence.fromArray(removed.getParent().getChildren(null))).toList(), removed.getAction(), removed.getActionsBefore(), removed.getActionsAfter());
-    addAction(removed.getParent(), removed.getAction(), bestPosition);
+    DefaultActionGroup group = removed.getParent();
+    int bestPosition = findBestPosition(Sequence.fromIterable(Sequence.fromArray(group.getChildActionsOrStubs())).toList(), removed.getAction(), removed.getActionsBefore(), removed.getActionsAfter());
+    addAction(group, removed.getAction(), bestPosition);
   }
 
   protected int findBestPosition(List<AnAction> elements, AnAction element, List<AnAction> wasBefore_, List<AnAction> wasAfter_) {
@@ -190,7 +192,7 @@ public class ActionFilter {
 
   protected void addAction(DefaultActionGroup group, AnAction action, int position) {
     Constraints constraints = Constraints.LAST;
-    AnAction[] children = group.getChildren(null);
+    AnAction[] children = group.getChildActionsOrStubs();
     if (position < children.length) {
       String id = ActionManager.getInstance().getId(children[position]);
       if (id != null) {
@@ -202,8 +204,8 @@ public class ActionFilter {
 
   public List<AnAction> getUnfilteredChildActions(AnAction parent) {
     List<AnAction> result = ListSequence.fromList(new ArrayList<AnAction>());
-    if (parent instanceof ActionGroup) {
-      ListSequence.fromList(result).addSequence(Sequence.fromIterable(Sequence.fromArray(((ActionGroup) parent).getChildren(null))));
+    if (parent instanceof DefaultActionGroup) {
+      ListSequence.fromList(result).addSequence(Sequence.fromIterable(Sequence.fromArray(((DefaultActionGroup) parent).getChildActionsOrStubs())));
 
       for (RememberedAction remembered : ListSequence.fromList(Sequence.fromIterable(getRememberedActionsByParent(parent)).toList()).reversedList()) {
         int bestPosition = findBestPosition(result, remembered.getAction(), remembered.getActionsBefore(), remembered.getActionsAfter());
@@ -289,11 +291,5 @@ public class ActionFilter {
       return checkedDotOperand.getFilterSettings();
     }
     return null;
-  }
-  private static <T> T as_anzoaf_a0a0a0a0a3a92(Object o, Class<T> type) {
-    return (type.isInstance(o) ? (T) o : null);
-  }
-  private static <T> T as_anzoaf_a0a0a0a0a3a73(Object o, Class<T> type) {
-    return (type.isInstance(o) ? (T) o : null);
   }
 }

@@ -504,8 +504,8 @@
       <node id="8929233992824863038" at="421,92,422,74" concept="5" />
       <node id="8929233992824863031" at="565,56,566,56" concept="1" />
       <node id="8929233992824863031" at="615,16,616,59" concept="5" />
-      <node id="3088978995571649645" at="892,75,893,64" concept="1" />
-      <node id="3088978995571651264" at="893,64,894,79" concept="1" />
+      <node id="3088978995571649645" at="892,75,893,74" concept="1" />
+      <node id="3088978995571651264" at="893,74,894,70" concept="1" />
       <node id="3088978995571649645" at="1013,16,1014,70" concept="5" />
       <node id="3088978995571651264" at="1015,16,1016,70" concept="5" />
       <node id="3088978995571649646" at="337,0,340,0" concept="8" trace="referenceMacro_GetReferent_4_0#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />
@@ -565,7 +565,7 @@
       <node id="8128582796163064360" at="343,93,344,194" concept="5" />
       <node id="4100230646003377107" at="719,200,720,209" concept="1" />
       <node id="4100230646003377107" at="791,16,792,66" concept="5" />
-      <node id="8128582796163064357" at="894,79,895,74" concept="1" />
+      <node id="8128582796163064357" at="894,70,895,74" concept="1" />
       <node id="8128582796163064357" at="1017,16,1018,70" concept="5" />
       <node id="4100230646003377108" at="167,0,170,0" concept="8" trace="propertyMacro_GetValue_8_0#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
       <node id="8128582796163064358" at="343,0,346,0" concept="8" trace="referenceMacro_GetReferent_8_0#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />

@@ -24,7 +24,7 @@
   </root>
   <root nodeRef="r:08379c44-00e6-4e72-bdd5-59b9f1f8468b(com.mbeddr.doc.aspect.ui.plugin)/2029206272623487683">
     <file name="IconContainer.java">
-      <node id="8559207506948639327" at="8,0,9,0" concept="11" trace="ICON_a0a1a9a32" />
+      <node id="8559207506948639327" at="8,0,9,0" concept="11" trace="ICON0" />
     </file>
     <file name="TabbedDocViewer_Tool.java">
       <node id="2029206272623487683" at="50,0,51,0" concept="11" trace="LOG" />
@@ -110,8 +110,8 @@
       <node id="8559207506948641551" at="181,5,182,0" concept="10" />
       <node id="8559207506948640601" at="182,0,183,80" concept="2" />
       <node id="8559207506948639329" at="184,26,185,71" concept="2" />
-      <node id="8559207506948639323" at="185,71,186,52" concept="2" />
-      <node id="1309135030611657384" at="186,52,187,34" concept="2" />
+      <node id="8559207506948639323" at="185,71,186,43" concept="2" />
+      <node id="1309135030611657384" at="186,43,187,34" concept="2" />
       <node id="3211827053533956400" at="191,29,192,19" concept="8" />
       <node id="1309135030610228935" at="193,12,194,109" concept="7" />
       <node id="1309135030610234693" at="195,36,196,21" concept="8" />
