@@ -5,7 +5,7 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
@@ -219,18 +219,11 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="2546654756694997551" name="jetbrains.mps.baseLanguage.javadoc.structure.LinkInlineDocTag" flags="ng" index="92FcH">
-        <child id="2546654756694997556" name="reference" index="92FcQ" />
-        <child id="3106559687488913694" name="line" index="2XjZqd" />
-      </concept>
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      <concept id="6971016359099800069" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldSingleCommentLine" flags="ngI" index="2JaDLO">
+        <child id="6971016359099801474" name="commentBody" index="2JaDBN" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
       <concept id="2217234381367188008" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocReference" flags="ng" index="VUqz4" />
       <concept id="2217234381367530212" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocReference" flags="ng" index="VXe08">
         <reference id="2217234381367530213" name="classifier" index="VXe09" />
@@ -241,13 +234,16 @@
       <concept id="5562345046718956738" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseVariableDocReference" flags="ng" index="YTMYr">
         <reference id="5562345046718956740" name="declaration" index="YTMYt" />
       </concept>
-      <concept id="8970989240999019145" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentLinePart" flags="ng" index="1dT_AA">
-        <child id="6962838954693749192" name="tag" index="qph3F" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
+      <concept id="5085607816306582224" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentTextElement" flags="ng" index="1Vtdud">
+        <child id="5085607816306582225" name="tag" index="1Vtduc" />
+      </concept>
+      <concept id="5085607816306647746" name="jetbrains.mps.baseLanguage.javadoc.structure.LinkInlineDocTagTE" flags="ng" index="1VuXuv">
+        <child id="5085607816306647747" name="reference" index="1VuXuu" />
+      </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
@@ -343,9 +339,33 @@
         </node>
       </node>
       <node concept="z59LJ" id="4IjegxhDEtx" role="lGtFl">
-        <node concept="TZ5HA" id="4IjegxhDEty" role="TZ5H$">
-          <node concept="1dT_AC" id="4IjegxhDEtz" role="1dT_Ay">
-            <property role="1dT_AB" value="Cells for which the calculation has not finished yet" />
+        <node concept="1PaTwC" id="3VVgDkJfGot" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGou" role="1PaTwD">
+            <property role="3oM_SC" value="Cells" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGov" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGow" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGox" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoy" role="1PaTwD">
+            <property role="3oM_SC" value="calculation" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoz" role="1PaTwD">
+            <property role="3oM_SC" value="has" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGo$" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGo_" role="1PaTwD">
+            <property role="3oM_SC" value="finished" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoA" role="1PaTwD">
+            <property role="3oM_SC" value="yet" />
           </node>
         </node>
       </node>
@@ -364,25 +384,86 @@
         </node>
       </node>
       <node concept="z59LJ" id="4IjegxhDF9H" role="lGtFl">
-        <node concept="TZ5HA" id="4IjegxhDF9I" role="TZ5H$">
-          <node concept="1dT_AC" id="4IjegxhDF9J" role="1dT_Ay">
-            <property role="1dT_AB" value="Rechecks regularly if the cell value did arrive and schedules updating its value to EDT and removes that cell from " />
+        <node concept="1PaTwC" id="3VVgDkJfGoB" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGoC" role="1PaTwD">
+            <property role="3oM_SC" value="Rechecks" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoD" role="1PaTwD">
+            <property role="3oM_SC" value="regularly" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoE" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoF" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoG" role="1PaTwD">
+            <property role="3oM_SC" value="cell" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoH" role="1PaTwD">
+            <property role="3oM_SC" value="value" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoI" role="1PaTwD">
+            <property role="3oM_SC" value="did" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoJ" role="1PaTwD">
+            <property role="3oM_SC" value="arrive" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoK" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoL" role="1PaTwD">
+            <property role="3oM_SC" value="schedules" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoM" role="1PaTwD">
+            <property role="3oM_SC" value="updating" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoN" role="1PaTwD">
+            <property role="3oM_SC" value="its" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoO" role="1PaTwD">
+            <property role="3oM_SC" value="value" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoP" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoQ" role="1PaTwD">
+            <property role="3oM_SC" value="EDT" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoR" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoS" role="1PaTwD">
+            <property role="3oM_SC" value="removes" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoT" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoU" role="1PaTwD">
+            <property role="3oM_SC" value="cell" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGoV" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
           </node>
         </node>
-        <node concept="TZ5HA" id="4IjegxhDH84" role="TZ5H$">
-          <node concept="1dT_AC" id="4IjegxhDH85" role="1dT_Ay">
-            <property role="1dT_AB" value="my " />
+        <node concept="1PaTwC" id="3VVgDkJfGoW" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGoX" role="1PaTwD">
+            <property role="3oM_SC" value="my" />
           </node>
-          <node concept="1dT_AA" id="4IjegxhDICl" role="1dT_Ay">
-            <node concept="92FcH" id="4IjegxhDICr" role="qph3F">
-              <node concept="TZ5HA" id="4IjegxhDICt" role="2XjZqd" />
-              <node concept="VUqz4" id="4IjegxhDLVp" role="92FcQ">
+          <node concept="1Vtdud" id="3VVgDkJfGoY" role="1PaTwD">
+            <node concept="1VuXuv" id="3VVgDkJfGoZ" role="1Vtduc">
+              <node concept="VUqz4" id="4IjegxhDLVp" role="1VuXuu">
                 <ref role="YTMYt" node="3aYIkMXFtlp" resolve="_pendingCells" />
+              </node>
+              <node concept="1PaTwC" id="3VVgDkJfGp2" role="2JaDBN">
+                <node concept="3oM_SD" id="3VVgDkJfGp3" role="1PaTwD">
+                  <property role="3oM_SC" value="" />
+                </node>
               </node>
             </node>
           </node>
-          <node concept="1dT_AC" id="4IjegxhDICk" role="1dT_Ay">
-            <property role="1dT_AB" value=" list." />
+          <node concept="3oM_SD" id="3VVgDkJfGp4" role="1PaTwD">
+            <property role="3oM_SC" value="list." />
           </node>
         </node>
       </node>
@@ -452,20 +533,51 @@
         </node>
       </node>
       <node concept="z59LJ" id="4IjegxhDMoh" role="lGtFl">
-        <node concept="TZ5HA" id="4IjegxhDMoi" role="TZ5H$">
-          <node concept="1dT_AC" id="4IjegxhDMoj" role="1dT_Ay">
-            <property role="1dT_AB" value="Updates all " />
+        <node concept="1PaTwC" id="3VVgDkJfGp5" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGp6" role="1PaTwD">
+            <property role="3oM_SC" value="Updates" />
           </node>
-          <node concept="1dT_AA" id="4IjegxhDMLa" role="1dT_Ay">
-            <node concept="92FcH" id="4IjegxhDMLg" role="qph3F">
-              <node concept="TZ5HA" id="4IjegxhDMLi" role="2XjZqd" />
-              <node concept="VUqz4" id="4IjegxhDTn3" role="92FcQ">
+          <node concept="3oM_SD" id="3VVgDkJfGp7" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="1Vtdud" id="3VVgDkJfGp8" role="1PaTwD">
+            <node concept="1VuXuv" id="3VVgDkJfGp9" role="1Vtduc">
+              <node concept="VUqz4" id="4IjegxhDTn3" role="1VuXuu">
                 <ref role="YTMYt" node="3aYIkMXFtlp" resolve="_pendingCells" />
+              </node>
+              <node concept="1PaTwC" id="3VVgDkJfGpc" role="2JaDBN">
+                <node concept="3oM_SD" id="3VVgDkJfGpd" role="1PaTwD">
+                  <property role="3oM_SC" value="" />
+                </node>
               </node>
             </node>
           </node>
-          <node concept="1dT_AC" id="4IjegxhDML9" role="1dT_Ay">
-            <property role="1dT_AB" value=" to show the next rotation state of the spinner." />
+          <node concept="3oM_SD" id="3VVgDkJfGpe" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpf" role="1PaTwD">
+            <property role="3oM_SC" value="show" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpg" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGph" role="1PaTwD">
+            <property role="3oM_SC" value="next" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpi" role="1PaTwD">
+            <property role="3oM_SC" value="rotation" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpj" role="1PaTwD">
+            <property role="3oM_SC" value="state" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpk" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpl" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpm" role="1PaTwD">
+            <property role="3oM_SC" value="spinner." />
           </node>
         </node>
       </node>
@@ -585,9 +697,21 @@
         </node>
       </node>
       <node concept="P$JXv" id="4IjegxhBD8n" role="lGtFl">
-        <node concept="TZ5HA" id="4IjegxhBD8o" role="TZ5H$">
-          <node concept="1dT_AC" id="4IjegxhBD8p" role="1dT_Ay">
-            <property role="1dT_AB" value="Only call this for testing" />
+        <node concept="1PaTwC" id="3VVgDkJfGpn" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGpo" role="1PaTwD">
+            <property role="3oM_SC" value="Only" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpp" role="1PaTwD">
+            <property role="3oM_SC" value="call" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpq" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpr" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGps" role="1PaTwD">
+            <property role="3oM_SC" value="testing" />
           </node>
         </node>
       </node>
@@ -878,42 +1002,114 @@
     <node concept="2tJIrI" id="3aYIkMXESn3" role="jymVt" />
     <node concept="3Tm1VV" id="3aYIkMXENo2" role="1B3o_S" />
     <node concept="3UR2Jj" id="5mXHm8qZsDT" role="lGtFl">
-      <node concept="TZ5HA" id="5mXHm8qZsDU" role="TZ5H$">
-        <node concept="1dT_AC" id="5mXHm8qZsDV" role="1dT_Ay">
-          <property role="1dT_AB" value="I keep track of the async cells that don't have values yet " />
+      <node concept="1PaTwC" id="3VVgDkJfGlX" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGlY" role="1PaTwD">
+          <property role="3oM_SC" value="I" />
         </node>
-        <node concept="1dT_AA" id="4IjegxhDTNV" role="1dT_Ay">
-          <node concept="92FcH" id="4IjegxhDTO1" role="qph3F">
-            <node concept="TZ5HA" id="4IjegxhDTO3" role="2XjZqd" />
-            <node concept="VUqz4" id="4IjegxhDX6Z" role="92FcQ">
+        <node concept="3oM_SD" id="3VVgDkJfGlZ" role="1PaTwD">
+          <property role="3oM_SC" value="keep" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGm0" role="1PaTwD">
+          <property role="3oM_SC" value="track" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGm1" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGm2" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGm3" role="1PaTwD">
+          <property role="3oM_SC" value="async" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGm4" role="1PaTwD">
+          <property role="3oM_SC" value="cells" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGm5" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGm6" role="1PaTwD">
+          <property role="3oM_SC" value="don't" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGm7" role="1PaTwD">
+          <property role="3oM_SC" value="have" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGm8" role="1PaTwD">
+          <property role="3oM_SC" value="values" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGm9" role="1PaTwD">
+          <property role="3oM_SC" value="yet" />
+        </node>
+        <node concept="1Vtdud" id="3VVgDkJfGma" role="1PaTwD">
+          <node concept="1VuXuv" id="3VVgDkJfGmb" role="1Vtduc">
+            <node concept="VUqz4" id="4IjegxhDX6Z" role="1VuXuu">
               <ref role="YTMYt" node="3aYIkMXFtlp" resolve="_pendingCells" />
             </node>
+            <node concept="1PaTwC" id="3VVgDkJfGme" role="2JaDBN">
+              <node concept="3oM_SD" id="3VVgDkJfGmf" role="1PaTwD">
+                <property role="3oM_SC" value="" />
+              </node>
+            </node>
           </node>
         </node>
-        <node concept="1dT_AC" id="4IjegxhDTNU" role="1dT_Ay">
-          <property role="1dT_AB" value=", and own the threads that work on such (" />
+        <node concept="3oM_SD" id="3VVgDkJfGmg" role="1PaTwD">
+          <property role="3oM_SC" value="," />
         </node>
-        <node concept="1dT_AA" id="4IjegxhDXzR" role="1dT_Ay">
-          <node concept="92FcH" id="4IjegxhDX$2" role="qph3F">
-            <node concept="TZ5HA" id="4IjegxhDX$4" role="2XjZqd" />
-            <node concept="VUqz4" id="4IjegxhE49P" role="92FcQ">
+        <node concept="3oM_SD" id="3VVgDkJfGmh" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmi" role="1PaTwD">
+          <property role="3oM_SC" value="own" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmj" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmk" role="1PaTwD">
+          <property role="3oM_SC" value="threads" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGml" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmm" role="1PaTwD">
+          <property role="3oM_SC" value="work" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmn" role="1PaTwD">
+          <property role="3oM_SC" value="on" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmo" role="1PaTwD">
+          <property role="3oM_SC" value="such" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmp" role="1PaTwD">
+          <property role="3oM_SC" value="(" />
+        </node>
+        <node concept="1Vtdud" id="3VVgDkJfGmq" role="1PaTwD">
+          <node concept="1VuXuv" id="3VVgDkJfGmr" role="1Vtduc">
+            <node concept="VUqz4" id="4IjegxhE49P" role="1VuXuu">
               <ref role="YTMYt" node="2u$73V9ubZb" resolve="_updater" />
             </node>
-          </node>
-        </node>
-        <node concept="1dT_AC" id="4IjegxhDXzQ" role="1dT_Ay">
-          <property role="1dT_AB" value=" and " />
-        </node>
-        <node concept="1dT_AA" id="4IjegxhE4AI" role="1dT_Ay">
-          <node concept="92FcH" id="4IjegxhE4AY" role="qph3F">
-            <node concept="TZ5HA" id="4IjegxhE4B0" role="2XjZqd" />
-            <node concept="VUqz4" id="4IjegxhE7TW" role="92FcQ">
-              <ref role="YTMYt" node="3anL894KOrF" resolve="_spinningTimer" />
+            <node concept="1PaTwC" id="3VVgDkJfGmu" role="2JaDBN">
+              <node concept="3oM_SD" id="3VVgDkJfGmv" role="1PaTwD">
+                <property role="3oM_SC" value="" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1dT_AC" id="4IjegxhE4AH" role="1dT_Ay">
-          <property role="1dT_AB" value=")." />
+        <node concept="3oM_SD" id="3VVgDkJfGmw" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="1Vtdud" id="3VVgDkJfGmx" role="1PaTwD">
+          <node concept="1VuXuv" id="3VVgDkJfGmy" role="1Vtduc">
+            <node concept="VUqz4" id="4IjegxhE7TW" role="1VuXuu">
+              <ref role="YTMYt" node="3anL894KOrF" resolve="_spinningTimer" />
+            </node>
+            <node concept="1PaTwC" id="3VVgDkJfGm_" role="2JaDBN">
+              <node concept="3oM_SD" id="3VVgDkJfGmA" role="1PaTwD">
+                <property role="3oM_SC" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmB" role="1PaTwD">
+          <property role="3oM_SC" value=")." />
         </node>
       </node>
     </node>
@@ -1035,19 +1231,103 @@
       <ref role="3uigEE" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
     </node>
     <node concept="3UR2Jj" id="5mXHm8r0nu4" role="lGtFl">
-      <node concept="TZ5HA" id="5mXHm8r0nu5" role="TZ5H$">
-        <node concept="1dT_AC" id="5mXHm8r0nu6" role="1dT_Ay">
-          <property role="1dT_AB" value="I allow you to create a custom cell with a callable." />
+      <node concept="1PaTwC" id="3VVgDkJfGmC" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGmD" role="1PaTwD">
+          <property role="3oM_SC" value="I" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmE" role="1PaTwD">
+          <property role="3oM_SC" value="allow" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmF" role="1PaTwD">
+          <property role="3oM_SC" value="you" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmG" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmH" role="1PaTwD">
+          <property role="3oM_SC" value="create" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmI" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmJ" role="1PaTwD">
+          <property role="3oM_SC" value="custom" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmK" role="1PaTwD">
+          <property role="3oM_SC" value="cell" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmL" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmM" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmN" role="1PaTwD">
+          <property role="3oM_SC" value="callable." />
         </node>
       </node>
-      <node concept="TZ5HA" id="5mXHm8r0nBh" role="TZ5H$">
-        <node concept="1dT_AC" id="5mXHm8r0nBi" role="1dT_Ay">
-          <property role="1dT_AB" value="That callable is called multiple times until it returns a nonnull value." />
+      <node concept="1PaTwC" id="3VVgDkJfGmO" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGmP" role="1PaTwD">
+          <property role="3oM_SC" value="That" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmQ" role="1PaTwD">
+          <property role="3oM_SC" value="callable" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmR" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmS" role="1PaTwD">
+          <property role="3oM_SC" value="called" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmT" role="1PaTwD">
+          <property role="3oM_SC" value="multiple" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmU" role="1PaTwD">
+          <property role="3oM_SC" value="times" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmV" role="1PaTwD">
+          <property role="3oM_SC" value="until" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmW" role="1PaTwD">
+          <property role="3oM_SC" value="it" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmX" role="1PaTwD">
+          <property role="3oM_SC" value="returns" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmY" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGmZ" role="1PaTwD">
+          <property role="3oM_SC" value="nonnull" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGn0" role="1PaTwD">
+          <property role="3oM_SC" value="value." />
         </node>
       </node>
-      <node concept="TZ5HA" id="5mXHm8r0nBQ" role="TZ5H$">
-        <node concept="1dT_AC" id="5mXHm8r0nBR" role="1dT_Ay">
-          <property role="1dT_AB" value="The cell will show a spinner until then." />
+      <node concept="1PaTwC" id="3VVgDkJfGn1" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGn2" role="1PaTwD">
+          <property role="3oM_SC" value="The" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGn3" role="1PaTwD">
+          <property role="3oM_SC" value="cell" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGn4" role="1PaTwD">
+          <property role="3oM_SC" value="will" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGn5" role="1PaTwD">
+          <property role="3oM_SC" value="show" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGn6" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGn7" role="1PaTwD">
+          <property role="3oM_SC" value="spinner" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGn8" role="1PaTwD">
+          <property role="3oM_SC" value="until" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGn9" role="1PaTwD">
+          <property role="3oM_SC" value="then." />
         </node>
       </node>
     </node>
@@ -1403,9 +1683,18 @@
       <node concept="3Tm1VV" id="5HPe_JwYeXw" role="1B3o_S" />
       <node concept="3cqZAl" id="5HPe_Jx5q2j" role="3clF45" />
       <node concept="P$JXv" id="5mXHm8r0k1h" role="lGtFl">
-        <node concept="TZ5HA" id="5mXHm8r0k1i" role="TZ5H$">
-          <node concept="1dT_AC" id="5mXHm8r0k1j" role="1dT_Ay">
-            <property role="1dT_AB" value="Turn the spinning wheel." />
+        <node concept="1PaTwC" id="3VVgDkJfGpt" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGpu" role="1PaTwD">
+            <property role="3oM_SC" value="Turn" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpv" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpw" role="1PaTwD">
+            <property role="3oM_SC" value="spinning" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpx" role="1PaTwD">
+            <property role="3oM_SC" value="wheel." />
           </node>
         </node>
       </node>
@@ -1604,30 +1893,115 @@
     <node concept="2tJIrI" id="5HPe_JxcprR" role="jymVt" />
     <node concept="3Tm1VV" id="5HPe_Jxcprj" role="1B3o_S" />
     <node concept="3UR2Jj" id="4IjegxhERPd" role="lGtFl">
-      <node concept="TZ5HA" id="4IjegxhERPe" role="TZ5H$">
-        <node concept="1dT_AC" id="4IjegxhERPf" role="1dT_Ay">
-          <property role="1dT_AB" value="An instance of me represents the value of a async cell for which the calculation is complete." />
+      <node concept="1PaTwC" id="3VVgDkJfGna" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGnb" role="1PaTwD">
+          <property role="3oM_SC" value="An" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnc" role="1PaTwD">
+          <property role="3oM_SC" value="instance" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnd" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGne" role="1PaTwD">
+          <property role="3oM_SC" value="me" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnf" role="1PaTwD">
+          <property role="3oM_SC" value="represents" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGng" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnh" role="1PaTwD">
+          <property role="3oM_SC" value="value" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGni" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnj" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnk" role="1PaTwD">
+          <property role="3oM_SC" value="async" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnl" role="1PaTwD">
+          <property role="3oM_SC" value="cell" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnm" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnn" role="1PaTwD">
+          <property role="3oM_SC" value="which" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGno" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnp" role="1PaTwD">
+          <property role="3oM_SC" value="calculation" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnq" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnr" role="1PaTwD">
+          <property role="3oM_SC" value="complete." />
         </node>
       </node>
-      <node concept="TZ5HA" id="4IjegxhERS0" role="TZ5H$">
-        <node concept="1dT_AC" id="4IjegxhERS1" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="3VVgDkJfGns" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGnt" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4IjegxhERS6" role="TZ5H$">
-        <node concept="1dT_AC" id="4IjegxhERS7" role="1dT_Ay">
-          <property role="1dT_AB" value="If the computation is not complete yet, " />
+      <node concept="1PaTwC" id="3VVgDkJfGnu" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGnv" role="1PaTwD">
+          <property role="3oM_SC" value="If" />
         </node>
-        <node concept="1dT_AA" id="4IjegxhERSf" role="1dT_Ay">
-          <node concept="92FcH" id="4IjegxhERSl" role="qph3F">
-            <node concept="TZ5HA" id="4IjegxhERSn" role="2XjZqd" />
-            <node concept="VXe0Z" id="4IjegxhEVbk" role="92FcQ">
+        <node concept="3oM_SD" id="3VVgDkJfGnw" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnx" role="1PaTwD">
+          <property role="3oM_SC" value="computation" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGny" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnz" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGn$" role="1PaTwD">
+          <property role="3oM_SC" value="complete" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGn_" role="1PaTwD">
+          <property role="3oM_SC" value="yet," />
+        </node>
+        <node concept="1Vtdud" id="3VVgDkJfGnA" role="1PaTwD">
+          <node concept="1VuXuv" id="3VVgDkJfGnB" role="1Vtduc">
+            <node concept="VXe0Z" id="4IjegxhEVbk" role="1VuXuu">
               <ref role="VXe0S" node="3aYIkMXFmWJ" resolve="getAsyncValueCallable" />
+            </node>
+            <node concept="1PaTwC" id="3VVgDkJfGnE" role="2JaDBN">
+              <node concept="3oM_SD" id="3VVgDkJfGnF" role="1PaTwD">
+                <property role="3oM_SC" value="" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1dT_AC" id="4IjegxhERSe" role="1dT_Ay">
-          <property role="1dT_AB" value=" should return null instead of this." />
+        <node concept="3oM_SD" id="3VVgDkJfGnG" role="1PaTwD">
+          <property role="3oM_SC" value="should" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnH" role="1PaTwD">
+          <property role="3oM_SC" value="return" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnI" role="1PaTwD">
+          <property role="3oM_SC" value="null" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnJ" role="1PaTwD">
+          <property role="3oM_SC" value="instead" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnK" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnL" role="1PaTwD">
+          <property role="3oM_SC" value="this." />
         </node>
       </node>
     </node>
@@ -1723,20 +2097,45 @@
       <node concept="3Tm1VV" id="3anL894M_hp" role="1B3o_S" />
       <node concept="3cqZAl" id="3anL894M_$i" role="3clF45" />
       <node concept="P$JXv" id="4IjegxhEGwD" role="lGtFl">
-        <node concept="TZ5HA" id="4IjegxhEGwE" role="TZ5H$">
-          <node concept="1dT_AC" id="4IjegxhEGwF" role="1dT_Ay">
-            <property role="1dT_AB" value="Start checking if the cells' computation finished every " />
+        <node concept="1PaTwC" id="3VVgDkJfGpy" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGpz" role="1PaTwD">
+            <property role="3oM_SC" value="Start" />
           </node>
-          <node concept="1dT_AA" id="4IjegxhEJC9" role="1dT_Ay">
-            <node concept="92FcH" id="4IjegxhEJCn" role="qph3F">
-              <node concept="TZ5HA" id="4IjegxhEJCp" role="2XjZqd" />
-              <node concept="VUqz4" id="4IjegxhEMVu" role="92FcQ">
+          <node concept="3oM_SD" id="3VVgDkJfGp$" role="1PaTwD">
+            <property role="3oM_SC" value="checking" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGp_" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpA" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpB" role="1PaTwD">
+            <property role="3oM_SC" value="cells'" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpC" role="1PaTwD">
+            <property role="3oM_SC" value="computation" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpD" role="1PaTwD">
+            <property role="3oM_SC" value="finished" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpE" role="1PaTwD">
+            <property role="3oM_SC" value="every" />
+          </node>
+          <node concept="1Vtdud" id="3VVgDkJfGpF" role="1PaTwD">
+            <node concept="1VuXuv" id="3VVgDkJfGpG" role="1Vtduc">
+              <node concept="VUqz4" id="4IjegxhEMVu" role="1VuXuu">
                 <ref role="YTMYt" node="4IjegxhEHS_" resolve="CHECK_INTERVAL" />
+              </node>
+              <node concept="1PaTwC" id="3VVgDkJfGpJ" role="2JaDBN">
+                <node concept="3oM_SD" id="3VVgDkJfGpK" role="1PaTwD">
+                  <property role="3oM_SC" value="" />
+                </node>
               </node>
             </node>
           </node>
-          <node concept="1dT_AC" id="4IjegxhEJC8" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+          <node concept="3oM_SD" id="3VVgDkJfGpL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
       </node>
@@ -1798,20 +2197,30 @@
       <node concept="3Tm1VV" id="3anL894MBll" role="1B3o_S" />
       <node concept="3cqZAl" id="3anL894MBDr" role="3clF45" />
       <node concept="P$JXv" id="4IjegxhENok" role="lGtFl">
-        <node concept="TZ5HA" id="4IjegxhENol" role="TZ5H$">
-          <node concept="1dT_AC" id="4IjegxhENom" role="1dT_Ay">
-            <property role="1dT_AB" value="Stop checking every " />
+        <node concept="1PaTwC" id="3VVgDkJfGpM" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGpN" role="1PaTwD">
+            <property role="3oM_SC" value="Stop" />
           </node>
-          <node concept="1dT_AA" id="4IjegxhENSz" role="1dT_Ay">
-            <node concept="92FcH" id="4IjegxhENSL" role="qph3F">
-              <node concept="TZ5HA" id="4IjegxhENSN" role="2XjZqd" />
-              <node concept="VUqz4" id="4IjegxhERbS" role="92FcQ">
+          <node concept="3oM_SD" id="3VVgDkJfGpO" role="1PaTwD">
+            <property role="3oM_SC" value="checking" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpP" role="1PaTwD">
+            <property role="3oM_SC" value="every" />
+          </node>
+          <node concept="1Vtdud" id="3VVgDkJfGpQ" role="1PaTwD">
+            <node concept="1VuXuv" id="3VVgDkJfGpR" role="1Vtduc">
+              <node concept="VUqz4" id="4IjegxhERbS" role="1VuXuu">
                 <ref role="YTMYt" node="4IjegxhEHS_" resolve="CHECK_INTERVAL" />
+              </node>
+              <node concept="1PaTwC" id="3VVgDkJfGpU" role="2JaDBN">
+                <node concept="3oM_SD" id="3VVgDkJfGpV" role="1PaTwD">
+                  <property role="3oM_SC" value="" />
+                </node>
               </node>
             </node>
           </node>
-          <node concept="1dT_AC" id="4IjegxhENSy" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+          <node concept="3oM_SD" id="3VVgDkJfGpW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
       </node>
@@ -1862,9 +2271,51 @@
         <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
       </node>
       <node concept="P$JXv" id="3anL894OqXN" role="lGtFl">
-        <node concept="TZ5HA" id="3anL894OqXO" role="TZ5H$">
-          <node concept="1dT_AC" id="3anL894OqXP" role="1dT_Ay">
-            <property role="1dT_AB" value="Suspend the current threat until the background worker finished posting the update to the EDT" />
+        <node concept="1PaTwC" id="3VVgDkJfGpX" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGpY" role="1PaTwD">
+            <property role="3oM_SC" value="Suspend" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGpZ" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGq0" role="1PaTwD">
+            <property role="3oM_SC" value="current" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGq1" role="1PaTwD">
+            <property role="3oM_SC" value="threat" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGq2" role="1PaTwD">
+            <property role="3oM_SC" value="until" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGq3" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGq4" role="1PaTwD">
+            <property role="3oM_SC" value="background" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGq5" role="1PaTwD">
+            <property role="3oM_SC" value="worker" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGq6" role="1PaTwD">
+            <property role="3oM_SC" value="finished" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGq7" role="1PaTwD">
+            <property role="3oM_SC" value="posting" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGq8" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGq9" role="1PaTwD">
+            <property role="3oM_SC" value="update" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGqa" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGqb" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGqc" role="1PaTwD">
+            <property role="3oM_SC" value="EDT" />
           </node>
         </node>
       </node>
@@ -2002,9 +2453,21 @@
         </node>
       </node>
       <node concept="P$JXv" id="3anL894N9BV" role="lGtFl">
-        <node concept="TZ5HA" id="3anL894N9BW" role="TZ5H$">
-          <node concept="1dT_AC" id="3anL894N9BX" role="1dT_Ay">
-            <property role="1dT_AB" value="Called whenever the timer ticks." />
+        <node concept="1PaTwC" id="3VVgDkJfGqd" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGqe" role="1PaTwD">
+            <property role="3oM_SC" value="Called" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGqf" role="1PaTwD">
+            <property role="3oM_SC" value="whenever" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGqg" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGqh" role="1PaTwD">
+            <property role="3oM_SC" value="timer" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGqi" role="1PaTwD">
+            <property role="3oM_SC" value="ticks." />
           </node>
         </node>
       </node>
@@ -2378,42 +2841,119 @@
     </node>
     <node concept="3Tm1VV" id="5HPe_JwXG0c" role="1B3o_S" />
     <node concept="3UR2Jj" id="5mXHm8qZb4c" role="lGtFl">
-      <node concept="TZ5HA" id="5mXHm8qZb4d" role="TZ5H$">
-        <node concept="1dT_AC" id="5mXHm8qZb4e" role="1dT_Ay">
-          <property role="1dT_AB" value="I regularly reevaluate the callable" />
+      <node concept="1PaTwC" id="3VVgDkJfGnM" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGnN" role="1PaTwD">
+          <property role="3oM_SC" value="I" />
         </node>
-        <node concept="1dT_AC" id="4IjegxhE94S" role="1dT_Ay">
-          <property role="1dT_AB" value=" that was provided to this cell (" />
+        <node concept="3oM_SD" id="3VVgDkJfGnO" role="1PaTwD">
+          <property role="3oM_SC" value="regularly" />
         </node>
-        <node concept="1dT_AC" id="4IjegxhEvwn" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+        <node concept="3oM_SD" id="3VVgDkJfGnP" role="1PaTwD">
+          <property role="3oM_SC" value="reevaluate" />
         </node>
-        <node concept="1dT_AA" id="4IjegxhEvwz" role="1dT_Ay">
-          <node concept="92FcH" id="4IjegxhEvwF" role="qph3F">
-            <node concept="TZ5HA" id="4IjegxhEvwH" role="2XjZqd" />
-            <node concept="VXe0Z" id="4IjegxhEyND" role="92FcQ">
+        <node concept="3oM_SD" id="3VVgDkJfGnQ" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnR" role="1PaTwD">
+          <property role="3oM_SC" value="callable" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnS" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnT" role="1PaTwD">
+          <property role="3oM_SC" value="was" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnU" role="1PaTwD">
+          <property role="3oM_SC" value="provided" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnV" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnW" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnX" role="1PaTwD">
+          <property role="3oM_SC" value="cell" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnY" role="1PaTwD">
+          <property role="3oM_SC" value="(" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGnZ" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="1Vtdud" id="3VVgDkJfGo0" role="1PaTwD">
+          <node concept="1VuXuv" id="3VVgDkJfGo1" role="1Vtduc">
+            <node concept="VXe0Z" id="4IjegxhEyND" role="1VuXuu">
               <ref role="VXe0S" node="3aYIkMXFmWJ" resolve="getAsyncValueCallable" />
             </node>
-          </node>
-        </node>
-        <node concept="1dT_AC" id="4IjegxhEvwy" role="1dT_Ay">
-          <property role="1dT_AB" value="." />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="5mXHm8qZbpz" role="TZ5H$">
-        <node concept="1dT_AC" id="5mXHm8qZbp$" role="1dT_Ay">
-          <property role="1dT_AB" value="If it returns a non-null value, I update the cell and remove it from " />
-        </node>
-        <node concept="1dT_AA" id="5mXHm8qZbpI" role="1dT_Ay">
-          <node concept="92FcH" id="5mXHm8qZbpW" role="qph3F">
-            <node concept="TZ5HA" id="5mXHm8qZbpY" role="2XjZqd" />
-            <node concept="VXe08" id="5mXHm8qZq4K" role="92FcQ">
-              <ref role="VXe09" node="3aYIkMXENo1" resolve="AsyncCellManager" />
+            <node concept="1PaTwC" id="3VVgDkJfGo4" role="2JaDBN">
+              <node concept="3oM_SD" id="3VVgDkJfGo5" role="1PaTwD">
+                <property role="3oM_SC" value="" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="1dT_AC" id="5mXHm8qZbpH" role="1dT_Ay">
-          <property role="1dT_AB" value="." />
+        <node concept="3oM_SD" id="3VVgDkJfGo6" role="1PaTwD">
+          <property role="3oM_SC" value="." />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="3VVgDkJfGo7" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGo8" role="1PaTwD">
+          <property role="3oM_SC" value="If" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGo9" role="1PaTwD">
+          <property role="3oM_SC" value="it" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGoa" role="1PaTwD">
+          <property role="3oM_SC" value="returns" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGob" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGoc" role="1PaTwD">
+          <property role="3oM_SC" value="non-null" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGod" role="1PaTwD">
+          <property role="3oM_SC" value="value," />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGoe" role="1PaTwD">
+          <property role="3oM_SC" value="I" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGof" role="1PaTwD">
+          <property role="3oM_SC" value="update" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGog" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGoh" role="1PaTwD">
+          <property role="3oM_SC" value="cell" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGoi" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGoj" role="1PaTwD">
+          <property role="3oM_SC" value="remove" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGok" role="1PaTwD">
+          <property role="3oM_SC" value="it" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGol" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="1Vtdud" id="3VVgDkJfGom" role="1PaTwD">
+          <node concept="1VuXuv" id="3VVgDkJfGon" role="1Vtduc">
+            <node concept="VXe08" id="5mXHm8qZq4K" role="1VuXuu">
+              <ref role="VXe09" node="3aYIkMXENo1" resolve="AsyncCellManager" />
+            </node>
+            <node concept="1PaTwC" id="3VVgDkJfGoq" role="2JaDBN">
+              <node concept="3oM_SD" id="3VVgDkJfGor" role="1PaTwD">
+                <property role="3oM_SC" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGos" role="1PaTwD">
+          <property role="3oM_SC" value="." />
         </node>
       </node>
     </node>

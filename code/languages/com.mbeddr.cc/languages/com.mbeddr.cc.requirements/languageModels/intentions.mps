@@ -202,15 +202,11 @@
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="05f762a9-99f5-4971-a9ed-5a6481dc2be4" name="de.itemis.mps.selection.intentions">
@@ -303,6 +299,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1715,7 +1719,30 @@
                       </node>
                       <node concept="P$JXv" id="64BVCtIK4r6" role="lGtFl">
                         <node concept="x79VA" id="64BVCtIK4r7" role="3nqlJM">
-                          <property role="x79VB" value="The error message or null if valid" />
+                          <property role="x79VB" value="" />
+                          <node concept="1PaTwC" id="3VVgDkJgcA2" role="1Vez_I">
+                            <node concept="3oM_SD" id="3VVgDkJgcA3" role="1PaTwD">
+                              <property role="3oM_SC" value="The" />
+                            </node>
+                            <node concept="3oM_SD" id="3VVgDkJgcA4" role="1PaTwD">
+                              <property role="3oM_SC" value="error" />
+                            </node>
+                            <node concept="3oM_SD" id="3VVgDkJgcA5" role="1PaTwD">
+                              <property role="3oM_SC" value="message" />
+                            </node>
+                            <node concept="3oM_SD" id="3VVgDkJgcA6" role="1PaTwD">
+                              <property role="3oM_SC" value="or" />
+                            </node>
+                            <node concept="3oM_SD" id="3VVgDkJgcA7" role="1PaTwD">
+                              <property role="3oM_SC" value="null" />
+                            </node>
+                            <node concept="3oM_SD" id="3VVgDkJgcA8" role="1PaTwD">
+                              <property role="3oM_SC" value="if" />
+                            </node>
+                            <node concept="3oM_SD" id="3VVgDkJgcA9" role="1PaTwD">
+                              <property role="3oM_SC" value="valid" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                       <node concept="3clFbS" id="64BVCtIK4r8" role="3clF47">
@@ -1803,9 +1830,63 @@
                       <node concept="10P_77" id="64BVCtIK4rR" role="3clF45" />
                       <node concept="3Tm1VV" id="64BVCtIK4rS" role="1B3o_S" />
                       <node concept="P$JXv" id="64BVCtIK4rT" role="lGtFl">
-                        <node concept="TZ5HA" id="64BVCtIK4rU" role="TZ5H$">
-                          <node concept="1dT_AC" id="64BVCtIK4rV" role="1dT_Ay">
-                            <property role="1dT_AB" value="To show a node you also have to return true for the root node, but not for all ancestors." />
+                        <node concept="1PaTwC" id="3VVgDkJgcAa" role="1Vez_I">
+                          <node concept="3oM_SD" id="3VVgDkJgcAb" role="1PaTwD">
+                            <property role="3oM_SC" value="To" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAc" role="1PaTwD">
+                            <property role="3oM_SC" value="show" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAd" role="1PaTwD">
+                            <property role="3oM_SC" value="a" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAe" role="1PaTwD">
+                            <property role="3oM_SC" value="node" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAf" role="1PaTwD">
+                            <property role="3oM_SC" value="you" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAg" role="1PaTwD">
+                            <property role="3oM_SC" value="also" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAh" role="1PaTwD">
+                            <property role="3oM_SC" value="have" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAi" role="1PaTwD">
+                            <property role="3oM_SC" value="to" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAj" role="1PaTwD">
+                            <property role="3oM_SC" value="return" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAk" role="1PaTwD">
+                            <property role="3oM_SC" value="true" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAl" role="1PaTwD">
+                            <property role="3oM_SC" value="for" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAm" role="1PaTwD">
+                            <property role="3oM_SC" value="the" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAn" role="1PaTwD">
+                            <property role="3oM_SC" value="root" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAo" role="1PaTwD">
+                            <property role="3oM_SC" value="node," />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAp" role="1PaTwD">
+                            <property role="3oM_SC" value="but" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAq" role="1PaTwD">
+                            <property role="3oM_SC" value="not" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAr" role="1PaTwD">
+                            <property role="3oM_SC" value="for" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAs" role="1PaTwD">
+                            <property role="3oM_SC" value="all" />
+                          </node>
+                          <node concept="3oM_SD" id="3VVgDkJgcAt" role="1PaTwD">
+                            <property role="3oM_SC" value="ancestors." />
                           </node>
                         </node>
                       </node>

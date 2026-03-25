@@ -7,7 +7,7 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="c9d137c4-3259-44f8-80ff-33ab2b506ee4" name="jetbrains.mps.lang.util.order" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -29,6 +29,7 @@
       </concept>
       <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="8984883884167239995" name="newuiLayers" index="2rmM5M" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
       <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
@@ -434,6 +435,12 @@
       <node concept="1irPie" id="4GPmO5oiErF" role="1irR9h">
         <property role="1irPi9" value="E" />
         <node concept="3PKj8D" id="4GPmO5oiErK" role="3PKjny">
+          <property role="3PKj8l" value="123445" />
+        </node>
+      </node>
+      <node concept="1irPie" id="3IaBXrbB5X$" role="2rmM5M">
+        <property role="1irPi9" value="E" />
+        <node concept="3PKj8D" id="3IaBXrbB5X_" role="3PKjny">
           <property role="3PKj8l" value="123445" />
         </node>
       </node>
