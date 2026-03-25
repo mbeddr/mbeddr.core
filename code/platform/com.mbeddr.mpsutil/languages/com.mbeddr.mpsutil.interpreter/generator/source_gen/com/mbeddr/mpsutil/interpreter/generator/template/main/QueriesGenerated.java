@@ -104,7 +104,7 @@ public class QueriesGenerated extends QueryProviderBase {
     }
 
     QueryStringEncoder encoder = new QueryStringEncoder("http://127.0.0.1:" + port + "/node");
-    encoder.addParam("ref", PersistenceFacade.getInstance().asString(SNodeOperations.getPointer(_context.getNode())));
+    encoder.addParam("ref", PersistenceFacade.getInstance().asString(SNodeOperations.getPointer(_context.getOriginalCopiedInputNode(_context.getNode()))));
     return encoder.toString();
   }
   public static Object propertyMacro_GetValue_3_3(final PropertyMacroContext _context) {
@@ -143,7 +143,7 @@ public class QueriesGenerated extends QueryProviderBase {
     }
 
     QueryStringEncoder encoder = new QueryStringEncoder("http://127.0.0.1:" + port + "/node");
-    encoder.addParam("ref", PersistenceFacade.getInstance().asString(SNodeOperations.getPointer(_context.getNode())));
+    encoder.addParam("ref", PersistenceFacade.getInstance().asString(SNodeOperations.getPointer(_context.getOriginalCopiedInputNode(_context.getNode()))));
     return encoder.toString();
   }
   public static Object propertyMacro_GetValue_6_0(final PropertyMacroContext _context) {
