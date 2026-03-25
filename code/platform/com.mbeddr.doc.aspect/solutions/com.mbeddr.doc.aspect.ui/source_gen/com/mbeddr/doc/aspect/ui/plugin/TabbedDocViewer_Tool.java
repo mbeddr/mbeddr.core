@@ -281,7 +281,7 @@ public class TabbedDocViewer_Tool extends BaseTabbedProjectTool {
         // or if the language of the selected node's concept has doc aspec
         SRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
         final Wrappers._boolean showConceptContent = new Wrappers._boolean(false);
-        repository.getModelAccess().runReadAction(() -> showConceptContent.value = selectedNode == null || TabbedDocViewer_Tool.this.hasDoc(selectedNode, check_y802y7_b0a0a0a0f0a0a0a0a0q(selectedNode.getModel())));
+        repository.getModelAccess().runReadAction(() -> showConceptContent.value = selectedNode == null || TabbedDocViewer_Tool.this.hasDoc(selectedNode, check_6vnzcs_b0a0a0a0f0a0a0a0a0eb(selectedNode.getModel())));
 
         if (showConceptContent.value && contentManager != null) {
           final Content conceptContent = contentManager.getContent(TabbedDocViewer_Tool.this.conceptDocPanel);
@@ -308,7 +308,7 @@ public class TabbedDocViewer_Tool extends BaseTabbedProjectTool {
       }
     });
   }
-  private static SRepository check_y802y7_b0a0a0a0f0a0a0a0a0q(SModel checkedDotOperand) {
+  private static SRepository check_6vnzcs_b0a0a0a0f0a0a0a0a0eb(SModel checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getRepository();
     }

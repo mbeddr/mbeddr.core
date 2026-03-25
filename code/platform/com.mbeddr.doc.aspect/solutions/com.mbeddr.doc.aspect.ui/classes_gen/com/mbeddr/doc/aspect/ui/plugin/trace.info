@@ -162,8 +162,8 @@
       <node id="748087427690284063" at="280,62,281,74" concept="9" />
       <node id="332007096185531387" at="281,74,282,120" concept="7" />
       <node id="748087427690284077" at="282,120,283,82" concept="7" />
-      <node id="332007096185475759" at="283,82,284,214" concept="2" />
-      <node id="748087427690284096" at="284,214,285,0" concept="10" />
+      <node id="332007096185475759" at="283,82,284,215" concept="2" />
+      <node id="748087427690284096" at="284,215,285,0" concept="10" />
       <node id="748087427690284099" at="286,65,287,110" concept="7" />
       <node id="748087427690284110" at="288,39,289,121" concept="9" />
       <node id="748087427690284133" at="289,121,290,208" concept="2" />
@@ -190,7 +190,7 @@
       <node id="9004279853426214010" at="252,155,255,7" concept="5" />
       <node id="9004279853426223962" at="255,7,258,7" concept="5" />
       <node id="748087427690284243" at="303,0,306,11" concept="5" />
-      <node id="748087427690284090" at="311,89,314,5" concept="5" />
+      <node id="748087427690284090" at="311,90,314,5" concept="5" />
       <node id="2029206272623487683" at="80,0,84,0" concept="6" trace="isInitiallyAvailable#()Z" />
       <node id="8738922113175057189" at="84,0,88,0" concept="6" trace="addOnShowListener#(Ljavax/swing/event/AncestorListener;)V" />
       <node id="2392054957690061566" at="88,0,92,0" concept="6" trace="removeOnShowListener#(Ljavax/swing/event/AncestorListener;)V" />
@@ -207,7 +207,7 @@
       <node id="1309135030610401724" at="183,80,188,5" concept="5" />
       <node id="292884672354347786" at="213,0,218,0" concept="6" trace="showDocumentation#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
       <node id="8559207506948486407" at="103,62,109,6" concept="7" />
-      <node id="748087427690284090" at="311,0,317,0" concept="12" trace="check_y802y7_b0a0a0a0f0a0a0a0a0q#(Lorg/jetbrains/mps/openapi/model/SModel;)Lorg/jetbrains/mps/openapi/module/SRepository;" />
+      <node id="748087427690284090" at="311,0,317,0" concept="12" trace="check_6vnzcs_b0a0a0a0f0a0a0a0a0eb#(Lorg/jetbrains/mps/openapi/model/SModel;)Lorg/jetbrains/mps/openapi/module/SRepository;" />
       <node id="2029206272623495936" at="125,0,132,0" concept="6" trace="enableNecessaryEditorHints#(Ljetbrains/mps/openapi/editor/EditorComponent;)V" />
       <node id="474630103889161215" at="153,10,160,5" concept="0" />
       <node id="4278620861695250162" at="198,53,205,9" concept="15" />
@@ -308,7 +308,7 @@
         <var name="node" id="1998005257859178075" />
         <var name="property" id="1587141976995122201" />
       </scope>
-      <scope id="748087427690284090" at="311,89,315,16" />
+      <scope id="748087427690284090" at="311,90,315,16" />
       <scope id="2029206272623495937" at="125,105,130,5">
         <var name="initialHints" id="2029206272623495939" />
         <var name="rebuildRequired" id="2029206272623495948" />
