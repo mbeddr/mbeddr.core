@@ -10,6 +10,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ## Fixed
 
 - `com.mbeddr.mpsutil.hyperlink`: random exceptions should no longer occur after module reload.
+- `com.mbeddr.mpsutil.interpreter`: Generated node URLs now correctly point to the input model instead of the transient model.
 
 # December 2025
 
