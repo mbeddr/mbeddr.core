@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -28,10 +27,8 @@ public final class BaseLanguageTypeMapping__BehaviorDescriptor extends BaseBHDes
   public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
   public static final SMethod<String> getTypedPresentation_id7JF0K7yNgd7 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTypedPresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8929233992827077447L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(equals_id27Skbdz6ukE, getPresentation_idhEwIMiw, getTypedPresentation_id7JF0K7yNgd7);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(equals_id27Skbdz6ukE, getPresentation_idhEwIMiw, getTypedPresentation_id7JF0K7yNgd7);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean equals_id27Skbdz6ukE(@NotNull SNode __thisNode__, SNode other) {
     SNode thisFromType = TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(__thisNode__, LINKS.fromType$NQgo));
@@ -51,10 +48,6 @@ public final class BaseLanguageTypeMapping__BehaviorDescriptor extends BaseBHDes
   /*package*/ BaseLanguageTypeMapping__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

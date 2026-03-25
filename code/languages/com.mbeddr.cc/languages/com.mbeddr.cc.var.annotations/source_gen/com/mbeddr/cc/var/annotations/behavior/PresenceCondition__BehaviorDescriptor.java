@@ -32,7 +32,7 @@ public final class PresenceCondition__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<SNode> findValidParent_idopE5jFfTyN = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("findValidParent").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(439567521322866867L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCurrentlyVisible_id5aNdPeN2Pp4, couldBeRemoved_idopE5jFfRRr, findValidParent_idopE5jFfTyN, getConfigItem_id5HxjapwgqMb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCurrentlyVisible_id5aNdPeN2Pp4, couldBeRemoved_idopE5jFfRRr, findValidParent_idopE5jFfTyN, getConfigItem_id5HxjapwgqMb);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.condition$Jt8t, null);

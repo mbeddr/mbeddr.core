@@ -23,7 +23,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 /**
- * This class can be used by algorithms to speed the finding of 'LocgicalChildren' of 'ILogicalCHildOwners' using 
+ * This class can be used by algorithms to speed the finding of 'LocgicalChildren' of 'ILogicalCHildOwners' using
  * a caching mechanism
  */
 public class LogicalChildOwnerUtil {
@@ -43,7 +43,7 @@ public class LogicalChildOwnerUtil {
    * Wrap a code block with an environment where any call to the method 'findLogicalChildren' of 'ILogicalChildOwner' is cached.
    * 
    * @param codeToBeRun code block
-   * @param <T> type of result 
+   * @param <T> type of result
    * @throws Exception  
    * @return result
    */
@@ -56,7 +56,7 @@ public class LogicalChildOwnerUtil {
     }
   }
   /**
-   * Indicates that caching should be used 
+   * Indicates that caching should be used
    */
   private static void useCacheNow() {
     lock.lock();
@@ -75,7 +75,7 @@ public class LogicalChildOwnerUtil {
   }
 
   /**
-   * For every 'ILogicalChildOwner' this method delivers its 'ILogicalChildren'. It will use the cache for 
+   * For every 'ILogicalChildOwner' this method delivers its 'ILogicalChildren'. It will use the cache for
    * subsequent calls.
    * 
    * @param owner owns the children but does not know them

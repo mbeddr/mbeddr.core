@@ -21,7 +21,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.math.BigInteger;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -36,10 +35,8 @@ public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> getTraceableProperty_id4pl5GY7LKmH = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTraceableProperty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067982036267369901L).languageId(0xbfd948636cfe8bc3L, 0x9ded098bad6a4657L).build2();
   public static final SMethod<Object> integerStaticValue_id2etktb3RPbd = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("integerStaticValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2566297328342225613L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preventNameMangling_id5Oog2UbP_bT, getMangledName_id19a6$uAAq0e, getTraceableProperty_id4pl5GY7LKmH, integerStaticValue_id2etktb3RPbd);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preventNameMangling_id5Oog2UbP_bT, getMangledName_id19a6$uAAq0e, getTraceableProperty_id4pl5GY7LKmH, integerStaticValue_id2etktb3RPbd);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean preventNameMangling_id5Oog2UbP_bT(@NotNull SNode __thisNode__) {
     return (boolean) IModuleContent__BehaviorDescriptor.preventNameMangling_id5Oog2UbP_bT.invoke(SNodeOperations.cast(SNodeOperations.getParent(__thisNode__), CONCEPTS.EnumDeclaration$PP)) || ((boolean) IModuleContent__BehaviorDescriptor.preventNameMangling_id5Oog2UbP_bT.invoke0(__thisNode__, CONCEPTS.ICanMangleNames$yI));
@@ -67,10 +64,6 @@ public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ EnumLiteral__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

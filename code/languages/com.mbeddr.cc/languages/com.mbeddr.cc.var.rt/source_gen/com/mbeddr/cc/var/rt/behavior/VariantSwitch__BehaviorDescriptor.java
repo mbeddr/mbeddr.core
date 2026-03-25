@@ -30,7 +30,7 @@ public final class VariantSwitch__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Iterable<SNode>> getOtherCases_id3el1Vh3VD1_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getOtherCases").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3716885538279428197L).languageId(0xae7f0c6768b8d4fcL, 0xb8eeb935038d48d8L).build2();
   public static final SMethod<SNode> getDefault_id3el1Vh3VD4T = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDefault").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3716885538279428409L).languageId(0xae7f0c6768b8d4fcL, 0xb8eeb935038d48d8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFirstCase_id3el1Vh3VCZR, getOtherCases_id3el1Vh3VD1_, getDefault_id3el1Vh3VD4T);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFirstCase_id3el1Vh3VCZR, getOtherCases_id3el1Vh3VD1_, getDefault_id3el1Vh3VD4T);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.addNewChild(__thisNode__, LINKS.options$J28n, CONCEPTS.VariantCase$J3);

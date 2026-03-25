@@ -13,7 +13,7 @@
       <unit at="11,0,40,0" name="com.mbeddr.mpsutil.collections.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,30,0" name="com.mbeddr.mpsutil.collections.structure.LanguageConceptSwitch" />
+      <unit at="12,0,38,0" name="com.mbeddr.mpsutil.collections.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="16,0,81,0" name="com.mbeddr.mpsutil.collections.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="5464682487435020413" at="20,49,27,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5464682487435020413" at="12,0,13,0" concept="6" trace="SNodeSetCreator" />
-      <node id="5464682487435020413" at="16,116,17,54" concept="0" />
+      <node id="5464682487435020413" at="14,0,15,0" concept="6" trace="SNodeSetCreator" />
+      <node id="5464682487435020413" at="18,116,19,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5464682487435020413" at="17,0,18,0" concept="1" trace="myConceptSNodeSetCreator" />
@@ -73,8 +73,8 @@
       <scope id="6355510489488665234" at="28,46,35,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6355510489488665234" at="13,0,14,0" concept="6" trace="SNodeSetType" />
-      <node id="6355510489488665234" at="17,54,18,51" concept="0" />
+      <node id="6355510489488665234" at="15,0,16,0" concept="6" trace="SNodeSetType" />
+      <node id="6355510489488665234" at="19,54,20,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6355510489488665234" at="18,0,19,0" concept="1" trace="myConceptSNodeSetType" />

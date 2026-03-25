@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.base.behavior.IVisibleElementProvider__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -28,10 +27,8 @@ public final class IPointsToReqData__BehaviorDescriptor extends BaseBHDescriptor
 
   public static final SMethod<Iterable<SNode>> visibleFromRequirements_id7Vd878mYdkU = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleFromRequirements").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9136994893388371258L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleFromRequirements_id7Vd878mYdkU);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleFromRequirements_id7Vd878mYdkU);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> visibleFromRequirements_id7Vd878mYdkU(@NotNull SAbstractConcept __thisConcept__, SNode context, SNode concept) {
     Iterable<SNode> reqs = SNodeOperations.ofConcept(IVisibleElementProvider__BehaviorDescriptor.visibleContentsOfType_id6clJcrJXo2_.invoke(SNodeOperations.getNodeAncestor(context, CONCEPTS.IVisibleElementProvider$$O, false, false), CONCEPTS.Requirement$sS.getDeclarationNode()), CONCEPTS.Requirement$sS);
@@ -42,10 +39,6 @@ public final class IPointsToReqData__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ IPointsToReqData__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

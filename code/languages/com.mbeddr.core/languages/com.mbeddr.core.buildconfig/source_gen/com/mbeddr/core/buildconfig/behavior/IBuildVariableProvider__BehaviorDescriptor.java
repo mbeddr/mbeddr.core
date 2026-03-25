@@ -22,7 +22,6 @@ import jetbrains.mps.project.PathMacros;
 import com.mbeddr.core.buildconfig.plugin.BuildVariableResolver;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.smodel.structure.ExtensionPoint;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -33,10 +32,8 @@ public final class IBuildVariableProvider__BehaviorDescriptor extends BaseBHDesc
   public static final SMethod<List<String>> getVariableNames_id6xoAPBjOH1K = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("getVariableNames").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246192L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
   public static final SMethod<String> getDefaultValue_id6xoAPBjOH2T = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246265L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(relativizeDefaultValue_id3JWussfjtXe, getVariableNames_id6xoAPBjOH1K, getDefaultValue_id6xoAPBjOH2T);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(relativizeDefaultValue_id3JWussfjtXe, getVariableNames_id6xoAPBjOH1K, getDefaultValue_id6xoAPBjOH2T);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String relativizeDefaultValue_id3JWussfjtXe(@NotNull SAbstractConcept __thisConcept__, SNode platform, String defaultValue, Map<String, String> otherVariables) {
     final Wrappers._T<String> _defaultValue = new Wrappers._T<String>(defaultValue);
@@ -79,10 +76,6 @@ public final class IBuildVariableProvider__BehaviorDescriptor extends BaseBHDesc
   /*package*/ IBuildVariableProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

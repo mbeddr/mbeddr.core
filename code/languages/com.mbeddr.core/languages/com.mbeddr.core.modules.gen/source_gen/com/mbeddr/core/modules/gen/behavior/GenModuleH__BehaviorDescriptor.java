@@ -17,7 +17,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.mbeddr.core.modules.behavior.IModuleContentContainer__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -35,10 +34,8 @@ public final class GenModuleH__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> addGenericChunkDependency_id94IdDK$n_l = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addGenericDependecy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734823143765L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> isImplementationArtifact_id7Vd878ENIh6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isImplementationArtifact").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9136994893721166918L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleContentsOfType_id6clJcrJXo2_, exportedContentsOfType_id5aaBiRoycuf, genName_id7Aba6Bzz6b$, dependencies_id6clJcrJYPM5, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, addGenericChunkDependency_id94IdDK$n_l, isImplementationArtifact_id7Vd878ENIh6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleContentsOfType_id6clJcrJXo2_, exportedContentsOfType_id5aaBiRoycuf, genName_id7Aba6Bzz6b$, dependencies_id6clJcrJYPM5, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, addGenericChunkDependency_id94IdDK$n_l, isImplementationArtifact_id7Vd878ENIh6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> visibleContentsOfType_id6clJcrJXo2_(@NotNull SNode __thisNode__, SNode targetConcept) {
     return ListSequence.fromList(VisibleContentsOfTypeCacheHelper.visibleConceptsOfTypeInModHNew(__thisNode__, targetConcept)).distinct();
@@ -68,10 +65,6 @@ public final class GenModuleH__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ GenModuleH__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

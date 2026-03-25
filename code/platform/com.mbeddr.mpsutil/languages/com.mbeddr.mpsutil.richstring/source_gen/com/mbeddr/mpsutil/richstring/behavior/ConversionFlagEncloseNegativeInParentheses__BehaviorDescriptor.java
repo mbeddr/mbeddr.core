@@ -17,7 +17,6 @@ import jetbrains.mps.internal.collections.runtime.SetSequence;
 import jetbrains.mps.typesystem.inference.TypeChecker;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -28,10 +27,8 @@ public final class ConversionFlagEncloseNegativeInParentheses__BehaviorDescripto
 
   public static final SMethod<Boolean> isApplicable_id6Go9U2yx_gX = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isApplicable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532374307901L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isApplicable_id6Go9U2yx_gX);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isApplicable_id6Go9U2yx_gX);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isApplicable_id6Go9U2yx_gX(@NotNull SNode __thisNode__, SNode conversion, SNode category, SNode expressionType) {
     if (SetSequence.fromSet(ConversionFlagBehaviorHelper.listIntegralCategories()).contains(category)) {
@@ -56,10 +53,6 @@ public final class ConversionFlagEncloseNegativeInParentheses__BehaviorDescripto
   /*package*/ ConversionFlagEncloseNegativeInParentheses__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -34,7 +34,7 @@ public final class GreyBoxParagraph__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("resultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addWord_idOI5Xv77lDa, addString_idOI5Xv77lDv, containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addWord_idOI5Xv77lDa, addString_idOI5Xv77lDv, containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.text$MeQj, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x92d2ea165a424fdfL, 0xa676c7604efe3504L, 0x237c8da86a9e4e61L, "de.slisson.mps.richtext.structure.Text")));

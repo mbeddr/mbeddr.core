@@ -31,7 +31,7 @@ public final class AssessmentResultEntry__BehaviorDescriptor extends BaseBHDescr
   public static final SMethod<Boolean> beginsGroup_id26F1Swi9tri = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("beginsGroup").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105270560466L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Boolean> hasError_id2PGidvqimWe = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasError").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3273071121108922126L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(sortKey_id3greo4NDQMb, beginsGroup_id26F1Swi9tri, hasError_id2PGidvqimWe);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(sortKey_id3greo4NDQMb, beginsGroup_id26F1Swi9tri, hasError_id2PGidvqimWe);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.comment$inW0, null);

@@ -39,7 +39,7 @@ public final class Visualization__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> getPath_id3UlEobTHU0G = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4509696981881823276L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
   public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<AbstractTreeViewNode>(new SJavaCompoundTypeImpl(AbstractTreeViewNode.class)).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCategories_id2N1CSrzPN_a, filenameWithoutExtension_id2fGuOSYbw1y, getVisualizableElement_id5MdJlxzHH5Y, getVisualization_id2N1CSrzPN_f, getPath_id3UlEobTHU0G, getTreeNode_id7NyyyjNtbn2);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCategories_id2N1CSrzPN_a, filenameWithoutExtension_id2fGuOSYbw1y, getVisualizableElement_id5MdJlxzHH5Y, getVisualization_id2N1CSrzPN_f, getPath_id3UlEobTHU0G, getTreeNode_id7NyyyjNtbn2);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.codeptr$mQDw, null);

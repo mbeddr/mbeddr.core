@@ -32,7 +32,6 @@ import com.mbeddr.core.modules.behavior.ImplementationModule__BehaviorDescriptor
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.HashMap;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -59,10 +58,8 @@ public final class BuildConfiguration__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<Boolean> isOnlyImportedByHeaderGeneratingExternalModulesIncludedInReferencedLibs_id6xgYZvdb5s9 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isOnlyImportedByHeaderGeneratingExternalModulesIncludedInReferencedLibs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7516784819799086857L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Map<String, String>> findDistinctBuildVariables_id3JWussfgDX_ = new SMethodBuilder<Map<String, String>>(new SJavaCompoundTypeImpl((Class<Map<String, String>>) ((Class) Object.class))).name("findDistinctBuildVariables").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4322463638230310757L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Boolean.TYPE, ""), SMethodBuilder.createJavaParameter((Class<List<String>>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getModulesReferencedViaLibs_id4oh1JoZDG_s, getLOCEquivalent_id6brBMefRfO0, getIDEDisplayString_idIviauXb0g, getSortOrder_id1uL8CIs6rGR, getCategory_id1uL8CIsKxiy, getMakePathProvider_id3s1LyzGfrML, getIconMarks_id6TtJ6IUkhQJ, getNames_id51aJIRsy1_6, getValue_id51aJIRsy2vi, getReadableDescription_idhoMN8EUxzt, getIncludingBinaries_id6xgYZvdazL9, getIncludingReferencedLibs_id6xgYZvdaDS2, isOnlyIncludedInReferencedLibs_id6xgYZvdaOkh, isOnlyImportedByHeaderGeneratingExternalModulesIncludedInReferencedLibs_id6xgYZvdb5s9, findDistinctBuildVariables_id3JWussfgDX_);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getModulesReferencedViaLibs_id4oh1JoZDG_s, getLOCEquivalent_id6brBMefRfO0, getIDEDisplayString_idIviauXb0g, getSortOrder_id1uL8CIs6rGR, getCategory_id1uL8CIsKxiy, getMakePathProvider_id3s1LyzGfrML, getIconMarks_id6TtJ6IUkhQJ, getNames_id51aJIRsy1_6, getValue_id51aJIRsy2vi, getReadableDescription_idhoMN8EUxzt, getIncludingBinaries_id6xgYZvdazL9, getIncludingReferencedLibs_id6xgYZvdaDS2, isOnlyIncludedInReferencedLibs_id6xgYZvdaOkh, isOnlyImportedByHeaderGeneratingExternalModulesIncludedInReferencedLibs_id6xgYZvdb5s9, findDistinctBuildVariables_id3JWussfgDX_);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getModulesReferencedViaLibs_id4oh1JoZDG_s(@NotNull SNode __thisNode__) {
     List<SNode> candidates = new ArrayList<SNode>();
@@ -167,10 +164,6 @@ public final class BuildConfiguration__BehaviorDescriptor extends BaseBHDescript
   /*package*/ BuildConfiguration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

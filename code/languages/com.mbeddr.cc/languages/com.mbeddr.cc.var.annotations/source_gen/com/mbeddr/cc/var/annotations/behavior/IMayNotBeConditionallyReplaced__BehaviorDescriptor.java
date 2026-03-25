@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,10 +21,8 @@ public final class IMayNotBeConditionallyReplaced__BehaviorDescriptor extends Ba
 
   public static final SMethod<Boolean> canBeConditionallyReplaced_id6OO5J4wC_AZ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeConditionallyReplaced").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7868939673813539263L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeConditionallyReplaced_id6OO5J4wC_AZ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeConditionallyReplaced_id6OO5J4wC_AZ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canBeConditionallyReplaced_id6OO5J4wC_AZ(@NotNull SNode __thisNode__) {
     return true;
@@ -34,10 +31,6 @@ public final class IMayNotBeConditionallyReplaced__BehaviorDescriptor extends Ba
   /*package*/ IMayNotBeConditionallyReplaced__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

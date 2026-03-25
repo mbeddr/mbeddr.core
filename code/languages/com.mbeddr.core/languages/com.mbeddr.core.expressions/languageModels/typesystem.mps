@@ -2,7 +2,7 @@
 <model ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
@@ -210,18 +210,12 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -7431,14 +7425,95 @@
         </node>
       </node>
       <node concept="P$JXv" id="53FcewPwgid" role="lGtFl">
-        <node concept="TZ5HA" id="53FcewPwgie" role="TZ5H$">
-          <node concept="1dT_AC" id="53FcewPwgif" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns true if sub is a subtype of sup. In case of a meet type, both types will be considered to check if the " />
+        <node concept="1PaTwC" id="3VVgDkJgbjJ" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbjK" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjL" role="1PaTwD">
+            <property role="3oM_SC" value="true" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjM" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjN" role="1PaTwD">
+            <property role="3oM_SC" value="sub" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjO" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjP" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjQ" role="1PaTwD">
+            <property role="3oM_SC" value="subtype" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjR" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjS" role="1PaTwD">
+            <property role="3oM_SC" value="sup." />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjT" role="1PaTwD">
+            <property role="3oM_SC" value="In" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjU" role="1PaTwD">
+            <property role="3oM_SC" value="case" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjV" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjW" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjX" role="1PaTwD">
+            <property role="3oM_SC" value="meet" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjY" role="1PaTwD">
+            <property role="3oM_SC" value="type," />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbjZ" role="1PaTwD">
+            <property role="3oM_SC" value="both" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbk0" role="1PaTwD">
+            <property role="3oM_SC" value="types" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbk1" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbk2" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbk3" role="1PaTwD">
+            <property role="3oM_SC" value="considered" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbk4" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbk5" role="1PaTwD">
+            <property role="3oM_SC" value="check" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbk6" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbk7" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
           </node>
         </node>
-        <node concept="TZ5HA" id="53FcewPwkt2" role="TZ5H$">
-          <node concept="1dT_AC" id="53FcewPwkt3" role="1dT_Ay">
-            <property role="1dT_AB" value="subtyping relationship can be satisfied. " />
+        <node concept="1PaTwC" id="3VVgDkJgbk8" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbk9" role="1PaTwD">
+            <property role="3oM_SC" value="subtyping" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbka" role="1PaTwD">
+            <property role="3oM_SC" value="relationship" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbkb" role="1PaTwD">
+            <property role="3oM_SC" value="can" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbkc" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbkd" role="1PaTwD">
+            <property role="3oM_SC" value="satisfied." />
           </node>
         </node>
       </node>
@@ -7553,15 +7628,39 @@
       </node>
       <node concept="P$JXv" id="4yCyDr3i_vT" role="lGtFl">
         <node concept="TZ5HI" id="4yCyDr3i_vU" role="3nqlJM">
-          <node concept="TZ5HA" id="4yCyDr3i_vV" role="3HnX3l">
-            <node concept="1dT_AC" id="4yCyDr3iANA" role="1dT_Ay">
-              <property role="1dT_AB" value="" />
+          <node concept="1PaTwC" id="3VVgDkJgbko" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJgbkp" role="1PaTwD">
+              <property role="3oM_SC" value="" />
             </node>
           </node>
         </node>
-        <node concept="TZ5HA" id="4yCyDr3iAND" role="TZ5H$">
-          <node concept="1dT_AC" id="4yCyDr3iANE" role="1dT_Ay">
-            <property role="1dT_AB" value="Use new overload that takes concept and not conceptNode" />
+        <node concept="1PaTwC" id="3VVgDkJgbke" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbkf" role="1PaTwD">
+            <property role="3oM_SC" value="Use" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbkg" role="1PaTwD">
+            <property role="3oM_SC" value="new" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbkh" role="1PaTwD">
+            <property role="3oM_SC" value="overload" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbki" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbkj" role="1PaTwD">
+            <property role="3oM_SC" value="takes" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbkk" role="1PaTwD">
+            <property role="3oM_SC" value="concept" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbkl" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbkm" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbkn" role="1PaTwD">
+            <property role="3oM_SC" value="conceptNode" />
           </node>
         </node>
       </node>

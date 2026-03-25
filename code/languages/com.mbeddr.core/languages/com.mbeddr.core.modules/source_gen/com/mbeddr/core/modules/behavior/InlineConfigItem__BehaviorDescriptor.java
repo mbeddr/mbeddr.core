@@ -26,7 +26,7 @@ public final class InlineConfigItem__BehaviorDescriptor extends BaseBHDescriptor
 
   public static final SMethod<Void> preprocess_id4qSf1u208SQ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("preprocess").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050032705078L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preprocess_id4qSf1u208SQ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preprocess_id4qSf1u208SQ);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.inlinetext$wTx9, "inline");

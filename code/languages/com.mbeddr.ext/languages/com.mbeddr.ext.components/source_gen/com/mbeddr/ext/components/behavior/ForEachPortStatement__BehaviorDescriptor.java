@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class ForEachPortStatement__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<String> counterVarName_id5hYHEwZ7USZ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("counterVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579981291071L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
   public static final SMethod<String> iteratorVarName_id5hYHEwZ8fYO = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("iteratorVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579981377460L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(counterVarName_id5hYHEwZ7USZ, iteratorVarName_id5hYHEwZ8fYO);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(counterVarName_id5hYHEwZ7USZ, iteratorVarName_id5hYHEwZ8fYO);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String counterVarName_id5hYHEwZ7USZ(@NotNull SNode __thisNode__) {
     return "__c";
@@ -38,10 +35,6 @@ public final class ForEachPortStatement__BehaviorDescriptor extends BaseBHDescri
   /*package*/ ForEachPortStatement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

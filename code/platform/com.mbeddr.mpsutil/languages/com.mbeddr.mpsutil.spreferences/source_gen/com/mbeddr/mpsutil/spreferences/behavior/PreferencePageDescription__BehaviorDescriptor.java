@@ -15,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.util.NameUtil;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -25,10 +24,8 @@ public final class PreferencePageDescription__BehaviorDescriptor extends BaseBHD
 
   public static final SMethod<String> getId_id3dlzMguGJhR = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3699020054251369591L).languageId(0xb5a2ff4e7a8d7cf1L, 0xc3bfea767bba4f0eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getId_id3dlzMguGJhR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getId_id3dlzMguGJhR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getId_id3dlzMguGJhR(@NotNull SNode __thisNode__) {
     return (isEmptyString(SPropertyOperations.getString(__thisNode__, PROPS.id$Mo74)) ? NameUtil.toValidCamelIdentifier((SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) == null ? "" : SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL))) : SPropertyOperations.getString(__thisNode__, PROPS.id$Mo74));
@@ -37,10 +34,6 @@ public final class PreferencePageDescription__BehaviorDescriptor extends BaseBHD
   /*package*/ PreferencePageDescription__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

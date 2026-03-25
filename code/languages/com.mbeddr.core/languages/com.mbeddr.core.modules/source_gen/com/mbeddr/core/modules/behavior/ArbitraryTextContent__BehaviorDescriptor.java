@@ -25,7 +25,7 @@ public final class ArbitraryTextContent__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<String> headerToImport_id7RHXOmw3XK4 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("headerToImport").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9074180702631615492L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Boolean> onlyForImplementation_id7RHXOmw7Mgm = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("onlyForImplementation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9074180702632616982L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(headerToImport_id7RHXOmw3XK4, onlyForImplementation_id7RHXOmw7Mgm);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(headerToImport_id7RHXOmw3XK4, onlyForImplementation_id7RHXOmw7Mgm);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.name$MnvL, "ArbitraryTextContent_id_" + __thisNode__.getNodeId());

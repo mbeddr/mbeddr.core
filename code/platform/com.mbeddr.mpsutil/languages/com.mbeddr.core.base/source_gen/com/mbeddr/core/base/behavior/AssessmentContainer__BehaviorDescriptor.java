@@ -20,7 +20,6 @@ import com.mbeddr.core.base.intentions.CommandWithMessage;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -41,10 +40,8 @@ public final class AssessmentContainer__BehaviorDescriptor extends BaseBHDescrip
   public static final SMethod<Void> runAllQueries_id4WjNWxKLL0I = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("runAllQueries").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413346312238L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
   public static final SMethod<Boolean> allowEverythingExceptWhitespace_id8q0nkX_5K4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowEverythingExceptWhitespace").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(151435140526267396L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allReferenceableContentsInChunk_id6clJcrKmVSn, dependencies_id6clJcrJYPM5, externallyReferenceableContentsInChunk_id6clJcrKmX4x, getIDEDisplayString_idIviauXb0g, getCategory_id1uL8CIsKxiy, addGenericChunkDependency_id94IdDK$n_l, getSortOrder_id1uL8CIs6rGR, isImplementationArtifact_id7Vd878ENIh6, runAllQueries_id4NwT$lbXi1r, runAllQueries_id4WjNWxKLL0I, allowEverythingExceptWhitespace_id8q0nkX_5K4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allReferenceableContentsInChunk_id6clJcrKmVSn, dependencies_id6clJcrJYPM5, externallyReferenceableContentsInChunk_id6clJcrKmX4x, getIDEDisplayString_idIviauXb0g, getCategory_id1uL8CIsKxiy, addGenericChunkDependency_id94IdDK$n_l, getSortOrder_id1uL8CIs6rGR, isImplementationArtifact_id7Vd878ENIh6, runAllQueries_id4NwT$lbXi1r, runAllQueries_id4WjNWxKLL0I, allowEverythingExceptWhitespace_id8q0nkX_5K4);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> allReferenceableContentsInChunk_id6clJcrKmVSn(@NotNull SNode __thisNode__) {
     return new ArrayList<SNode>();
@@ -83,10 +80,6 @@ public final class AssessmentContainer__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ AssessmentContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

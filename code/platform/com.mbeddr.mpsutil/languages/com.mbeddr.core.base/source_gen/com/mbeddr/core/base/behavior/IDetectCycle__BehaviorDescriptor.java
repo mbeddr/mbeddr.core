@@ -23,7 +23,6 @@ import java.util.LinkedList;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.jetbrains.annotations.Nullable;
 import com.mbeddr.mpsutil.common.graph.GraphUtil;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IDetectCycle__BehaviorDescriptor extends BaseBHDescriptor {
@@ -36,10 +35,8 @@ public final class IDetectCycle__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Graph<SNode>> getDependencyGraph_id17fjvcLC_kB = new SMethodBuilder<Graph<SNode>>(new SJavaCompoundTypeImpl(Graph.class)).name("getDependencyGraph").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(1283330125728994599L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Set<SNode>> getCyclicDependencyElements_id17fjvcLFUH5 = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("getCyclicDependencyElements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1283330125729868613L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getErrorMessageForElementInCycle_id2G8yZXxNStd, isInvolvedInCycle_id59HbAIOYtvQ, getDependencyGraph_id17fjvcLC_kB, getCyclicDependencyElements_id17fjvcLFUH5);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getErrorMessageForElementInCycle_id2G8yZXxNStd, isInvolvedInCycle_id59HbAIOYtvQ, getDependencyGraph_id17fjvcLC_kB, getCyclicDependencyElements_id17fjvcLFUH5);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Set<SNode> traceBackElementInCycle_id17fjvcLF7UR(@NotNull SNode __thisNode__, SNode dependency) {
     return null;
@@ -92,10 +89,6 @@ public final class IDetectCycle__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IDetectCycle__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

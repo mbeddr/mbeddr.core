@@ -26,7 +26,7 @@ public final class DoAction__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<String> genFunctionName_id4oSz90j9p3S = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genFunctionName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5059948731775160568L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genFunctionName_id4oSz90j9p3S);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genFunctionName_id4oSz90j9p3S);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.body$WZUn, null);

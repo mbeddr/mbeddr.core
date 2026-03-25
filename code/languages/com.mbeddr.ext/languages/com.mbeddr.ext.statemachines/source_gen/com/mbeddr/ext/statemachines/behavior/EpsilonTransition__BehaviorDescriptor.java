@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class EpsilonTransition__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<String> triggerAsString_id16ykm_McdaJ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("triggerAsString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1270667558201119407L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
   public static final SMethod<Boolean> isEpsilon_id16ykm_MicVJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEpsilon").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1270667558202691311L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(triggerAsString_id16ykm_McdaJ, isEpsilon_id16ykm_MicVJ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(triggerAsString_id16ykm_McdaJ, isEpsilon_id16ykm_MicVJ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String triggerAsString_id16ykm_McdaJ(@NotNull SNode __thisNode__) {
     return "epsilon";
@@ -38,10 +35,6 @@ public final class EpsilonTransition__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ EpsilonTransition__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -22,7 +22,6 @@ import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
 import java.util.Objects;
 import java.math.BigInteger;
 import java.math.BigDecimal;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -36,10 +35,8 @@ public final class InitExpression__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> requiresParenthesisInCast_id4o$BgAQrCHG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requiresParenthesisInCast").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5054337346857503596L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<Boolean> isEmptyInitializer_id1ou7645jjtT = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEmptyInitializer").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1593742521162086265L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(appendAssignments_id1blaTcuBMLx, renderReadable_id1VQvajLb13M, requiresParenthesisInCast_id4o$BgAQrCHG, isEmptyInitializer_id1ou7645jjtT);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(appendAssignments_id1blaTcuBMLx, renderReadable_id1VQvajLb13M, requiresParenthesisInCast_id4o$BgAQrCHG, isEmptyInitializer_id1ou7645jjtT);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void appendAssignments_id1blaTcuBMLx(@NotNull SNode __thisNode__, SNode container, SNode context, SNode contextType) {
     for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.elements$QhaV))) {
@@ -70,10 +67,6 @@ public final class InitExpression__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ InitExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

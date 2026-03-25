@@ -20,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import org.jetbrains.mps.openapi.model.SReference;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -32,10 +31,8 @@ public final class CompositionStrategy__BehaviorDescriptor extends BaseBHDescrip
   public static final SMethod<Void> removeCompositionStuff_id3YyHFqO8Kht = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("removeCompositionStuff").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266439083101L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> replaceReferences_id3YyHFqO98RF = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("replaceReferences").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266439183851L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compose_id3YyHFqO7EVE, removeCompositionStuff_id3YyHFqO8Kht, replaceReferences_id3YyHFqO98RF);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compose_id3YyHFqO7EVE, removeCompositionStuff_id3YyHFqO8Kht, replaceReferences_id3YyHFqO98RF);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void removeCompositionStuff_id3YyHFqO8Kht(@NotNull SNode __thisNode__, SNode n) {
     ListSequence.fromList(SNodeOperations.getNodeDescendants(n, CONCEPTS.ICompositionControl$3A, false, new SAbstractConcept[]{})).visitAll((it) -> SNodeOperations.deleteNode(it));
@@ -55,10 +52,6 @@ public final class CompositionStrategy__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ CompositionStrategy__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -26,7 +26,7 @@ public final class CheckBoxPreferenceFormProperty__BehaviorDescriptor extends Ba
 
   public static final SMethod<SNode> getComponentType_id5C8n8D5Vy2T = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getComponentType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6487537012175675577L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getComponentType_id5C8n8D5Vy2T);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getComponentType_id5C8n8D5Vy2T);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.type$a1UY, _quotation_createNode_5tefl9_a0a0a());

@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -37,10 +36,8 @@ public final class Field__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> genGlobalVarName_id67hg1wLVaZk = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genGlobalVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7048485364472524756L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
   public static final SMethod<Boolean> isCommentable_id3RtPbXKOu_B = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCommentable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457953124863306087L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genMemberName_id34x64NyTVte, getStaticallyEvaluatableNode_id3fs$L2LZpYI, getTypeComputationNode_id7kDeEuVjSvB, getInitExpression_id5O5ERJtHyWT, getType_id67hg1wL_GfW, isIncompleteTypeAllowed_id3_EX3WibiOp, requiresInitializer_id29JE8qNvtiF, genGlobalVarName_id67hg1wLVaZk, isCommentable_id3RtPbXKOu_B);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genMemberName_id34x64NyTVte, getStaticallyEvaluatableNode_id3fs$L2LZpYI, getTypeComputationNode_id7kDeEuVjSvB, getInitExpression_id5O5ERJtHyWT, getType_id67hg1wL_GfW, isIncompleteTypeAllowed_id3_EX3WibiOp, requiresInitializer_id29JE8qNvtiF, genGlobalVarName_id67hg1wLVaZk, isCommentable_id3RtPbXKOu_B);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String genMemberName_id34x64NyTVte(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + "__field";
@@ -78,10 +75,6 @@ public final class Field__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Field__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

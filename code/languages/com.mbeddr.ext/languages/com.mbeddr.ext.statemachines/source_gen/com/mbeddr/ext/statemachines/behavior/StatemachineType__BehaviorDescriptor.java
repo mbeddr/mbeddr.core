@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -32,10 +31,8 @@ public final class StatemachineType__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<Void> rebindToProxy_id7jSUHHvkApb = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("rebindToProxy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856331L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> referencedModuleContent_id7jSUHHvkAph = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("referencedModuleContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856337L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeUsedAsPointer_id7qvNMV90Ws8, getUsedBytes_id61lw97FtLtJ, canBeConst_id2zhwXA$TG$3, canBeVolatile_id2zhwXA_2SdW, getDeclaration_id59zzgFRcVlN, rebindToProxy_id7jSUHHvkApb, referencedModuleContent_id7jSUHHvkAph);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeUsedAsPointer_id7qvNMV90Ws8, getUsedBytes_id61lw97FtLtJ, canBeConst_id2zhwXA$TG$3, canBeVolatile_id2zhwXA_2SdW, getDeclaration_id59zzgFRcVlN, rebindToProxy_id7jSUHHvkApb, referencedModuleContent_id7jSUHHvkAph);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canBeUsedAsPointer_id7qvNMV90Ws8(@NotNull SNode __thisNode__) {
     return false;
@@ -62,10 +59,6 @@ public final class StatemachineType__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ StatemachineType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

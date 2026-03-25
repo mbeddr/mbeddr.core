@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,10 +25,8 @@ public final class KindFilter__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Boolean> matches_id5liZiKqQ1Zb = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("matches").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6148254807184908235L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matches_id5liZiKqQ1Zb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matches_id5liZiKqQ1Zb);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean matches_id5liZiKqQ1Zb(@NotNull SNode __thisNode__, SNode r) {
     return Objects.equals(SNodeOperations.getConcept(SLinkOperations.getTarget(r, LINKS.kind$XKhf)), SNodeOperations.getConcept(SLinkOperations.getTarget(__thisNode__, LINKS.kind$SCOZ)));
@@ -38,10 +35,6 @@ public final class KindFilter__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ KindFilter__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

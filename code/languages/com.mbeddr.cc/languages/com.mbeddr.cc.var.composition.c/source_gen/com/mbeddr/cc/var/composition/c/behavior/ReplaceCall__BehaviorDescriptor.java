@@ -21,7 +21,6 @@ import com.mbeddr.core.base.behavior.Chunk__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.cc.var.composition.behavior.CompositionResultSuccess;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -34,10 +33,8 @@ public final class ReplaceCall__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<CompositionResult> compose_id3YyHFqO7EVE = new SMethodBuilder<CompositionResult>(new SJavaCompoundTypeImpl(CompositionResult.class)).name("compose").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438799082L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(CompositionContext.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compose_id3YyHFqO7EVE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compose_id3YyHFqO7EVE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static CompositionResult compose_id3YyHFqO7EVE(@NotNull SNode __thisNode__, SNode target, SNode matchNode, CompositionContext ctx) {
     SNode chunkContainingNewFunction = SNodeOperations.getNodeAncestor(matchNode, CONCEPTS.Chunk$sT, true, false);
@@ -56,10 +53,6 @@ public final class ReplaceCall__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ReplaceCall__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

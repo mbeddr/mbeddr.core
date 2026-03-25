@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.IterableUtils;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -37,10 +36,8 @@ public final class InternalRunnableCall__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<SNode> getFunction_id74lwjTQiYY5 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getFunction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8148561206069424005L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
   public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(target_id70kXLV4LLzy, isSideeffectFree_id6SENleF$SRD, getActuals_id6WGVxckB05Y, getFormals_id6WGVxckB065, getReturnType_id7$$5Stoo8Y$, getActualsLink_id2$xXL4HCFy0, getFunction_id74lwjTQiYY5, renderReadable_id1VQvajLb13M);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(target_id70kXLV4LLzy, isSideeffectFree_id6SENleF$SRD, getActuals_id6WGVxckB05Y, getFormals_id6WGVxckB065, getReturnType_id7$$5Stoo8Y$, getActualsLink_id2$xXL4HCFy0, getFunction_id74lwjTQiYY5, renderReadable_id1VQvajLb13M);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode target_id70kXLV4LLzy(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.runnable$RlaC);
@@ -70,10 +67,6 @@ public final class InternalRunnableCall__BehaviorDescriptor extends BaseBHDescri
   /*package*/ InternalRunnableCall__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

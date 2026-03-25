@@ -22,7 +22,6 @@ import java.util.concurrent.Executors;
 import com.mbeddr.core.make.plugin.LogWriter;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -33,10 +32,8 @@ public final class AbstractProcessRunner__BehaviorDescriptor extends BaseBHDescr
   public static final SMethod<Boolean> isBlocking_id2obGnlS3zkl = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isBlocking").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2741479916268565781L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
   public static final SMethod<Tuples._2<List<IMessage>, String>> execute_id2obGnlQSrPD = new SMethodBuilder<Tuples._2<List<IMessage>, String>>(new SJavaCompoundTypeImpl((Class<Tuples._2<List<IMessage>, String>>) ((Class) Object.class))).name("execute").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2741479916248874345L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(command_id2obGnlS30qc, isBlocking_id2obGnlS3zkl, execute_id2obGnlQSrPD);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(command_id2obGnlS30qc, isBlocking_id2obGnlS3zkl, execute_id2obGnlQSrPD);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Tuples._2<List<IMessage>, String> execute_id2obGnlQSrPD(@NotNull SNode __thisNode__, String moduleName, String path) {
     List<String> command = AbstractProcessRunner__BehaviorDescriptor.command_id2obGnlS30qc.invoke(__thisNode__, moduleName, path);
@@ -79,10 +76,6 @@ public final class AbstractProcessRunner__BehaviorDescriptor extends BaseBHDescr
   /*package*/ AbstractProcessRunner__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

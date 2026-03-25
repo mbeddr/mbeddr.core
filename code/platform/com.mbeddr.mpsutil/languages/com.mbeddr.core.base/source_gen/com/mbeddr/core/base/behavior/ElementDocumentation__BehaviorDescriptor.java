@@ -38,7 +38,7 @@ public final class ElementDocumentation__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<Color> getTextColor_idBsHjoDQZaR = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getTextColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(710642085452837559L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Color> getBracketColor_idBsHjoDRsTa = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getBracketColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(710642085452959306L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEmpty_id7uLL3Mf3Bol, containsText_idjpyKDg1onB, getResultNode_id4ueXZrqtaGB, getTextualRepresentation_idfB3l80ylIb, resultName_idjpyKDg1pW5, getTextColor_idBsHjoDQZaR, getBracketColor_idBsHjoDRsTa);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEmpty_id7uLL3Mf3Bol, containsText_idjpyKDg1onB, getResultNode_id4ueXZrqtaGB, getTextualRepresentation_idfB3l80ylIb, resultName_idjpyKDg1pW5, getTextColor_idBsHjoDQZaR, getBracketColor_idBsHjoDRsTa);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.text$RYxn, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x743b6d0940760196L, "com.mbeddr.core.base.structure.TextBlock")));

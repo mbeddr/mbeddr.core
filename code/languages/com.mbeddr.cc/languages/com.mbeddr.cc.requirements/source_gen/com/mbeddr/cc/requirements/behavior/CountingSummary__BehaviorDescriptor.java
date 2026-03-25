@@ -14,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class CountingSummary__BehaviorDescriptor extends BaseBHDescriptor 
 
   public static final SMethod<String> getSummaryText_id2S0oKITSaF9 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSummaryText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3314758227758983881L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSummaryText_id2S0oKITSaF9);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSummaryText_id2S0oKITSaF9);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getSummaryText_id2S0oKITSaF9(@NotNull SNode __thisNode__) {
     return "" + Sequence.fromIterable(RequirementsSummary__BehaviorDescriptor.applicableRequirements_id2S0oKITSf9N.invoke(__thisNode__)).count();
@@ -35,10 +32,6 @@ public final class CountingSummary__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ CountingSummary__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

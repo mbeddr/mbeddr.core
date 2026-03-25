@@ -111,7 +111,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
   }
 
   /*package*/ EditorCell createCell() {
-    return createDiagramNode_1();
+    return _cell_factory_method_();
   }
 
   private EditorCell createDiagramNode_0(final EditorContext editorContext, final SNode node) {
@@ -180,8 +180,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 
     return editorCell.value;
   }
-  private EditorCell createDiagramNode_1() {
-    return createDiagramNode_0(getEditorContext(), myNode);
+  private EditorCell _cell_factory_method_() {
+    return createDiagramNode_0(getEditorContext(), getNode());
   }
   private Color _StyleParameter_QueryFunction_bmpxvb_a0c1d2a0() {
     return DiagramColors.STATE_EDGES;
@@ -285,7 +285,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCustom_1());
-    editorCell.addEditorCell(createCompartment_1());
+    editorCell.addEditorCell(createCompartment_0());
     editorCell.addEditorCell(createCustom_2());
     editorCell.addEditorCell(createCollection_6());
     return editorCell;
@@ -296,8 +296,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     editorCell.setCellId("Custom_bmpxvb_a2a0");
     return editorCell;
   }
-  private EditorCell createCompartment_0(EditorContext editorContext, SNode node) {
-    CompartmentCell editorCell = new CompartmentCell(editorContext, node);
+  private EditorCell createCompartment_0() {
+    CompartmentCell editorCell = new CompartmentCell(getEditorContext(), getNode());
     editorCell.setCellId("Compartment_bmpxvb_b2a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-color"), getStyleRegistry().getSimpleColor(_StyleParameter_QueryFunction_bmpxvb_a0b2a0()));
@@ -305,9 +305,6 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     style.set(StyleAttributes.getInstance().<LineStyle>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-style"), _StyleParameter_QueryFunction_bmpxvb_a2b2a0());
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createCompartment_1() {
-    return createCompartment_0(getEditorContext(), myNode);
   }
   private Color _StyleParameter_QueryFunction_bmpxvb_a0b2a0() {
     return DiagramColors.STATE_BORDER;
@@ -760,7 +757,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     return editorCell.value;
   }
   private EditorCell createDiagram_1() {
-    return createDiagram_0(getEditorContext(), myNode);
+    return createDiagram_0(getEditorContext(), getNode());
   }
   private Color _StyleParameter_QueryFunction_bmpxvb_a0c1d2a0_0() {
     return DiagramColors.STATE_EDGES;

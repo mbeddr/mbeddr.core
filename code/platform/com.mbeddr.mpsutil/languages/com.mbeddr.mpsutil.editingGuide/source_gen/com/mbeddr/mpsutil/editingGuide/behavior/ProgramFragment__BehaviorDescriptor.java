@@ -21,7 +21,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.scope.ListScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -34,10 +33,8 @@ public final class ProgramFragment__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<Scope> getImportedNodes_idPYICs0Yrc9 = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getImportedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(972419658558321417L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
   public static final SMethod<Scope> getVisibleNodeExporters_id44LrdWQlKmC = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getVisibleNodeExporters").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4697655592269317544L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFragmentRoot_id3p1cdQ7_MOb, getImportedNodes_idPYICs0Yrc9, getVisibleNodeExporters_id44LrdWQlKmC);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFragmentRoot_id3p1cdQ7_MOb, getImportedNodes_idPYICs0Yrc9, getVisibleNodeExporters_id44LrdWQlKmC);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Scope getImportedNodes_idPYICs0Yrc9(@NotNull SNode __thisNode__, final SAbstractConcept targetConcept) {
     Iterable<Scope> scopes = ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.scopeProviders$uJx)).select((it) -> (Scope) ProgramFragment_ScopeProvider__BehaviorDescriptor.getProvidedNodes_id22irgSmHAOg.invoke(it, targetConcept));
@@ -55,10 +52,6 @@ public final class ProgramFragment__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ ProgramFragment__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

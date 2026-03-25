@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="9hbzp60pyvlyzus39aindr6blqq1vhp">
+<product version="3" modelHash="3gkc8890kklrvq8ft8pyyv1ltw75c0g">
   <files names="BehaviorAspectDescriptor.java:CodeReviewConfig__BehaviorDescriptor.java:CodeReviewData__BehaviorDescriptor.java:ICodeReviewEntity__BehaviorDescriptor.java:ReviewAssessmentQuery__BehaviorDescriptor.java:ReviewAssessmentResult__BehaviorDescriptor.java:ReviewHelper.java" />
 </product>
 

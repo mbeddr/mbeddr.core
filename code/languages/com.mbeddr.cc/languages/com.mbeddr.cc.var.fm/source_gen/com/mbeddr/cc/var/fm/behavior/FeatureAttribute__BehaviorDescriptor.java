@@ -15,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,10 +25,8 @@ public final class FeatureAttribute__BehaviorDescriptor extends BaseBHDescriptor
 
   public static final SMethod<String> qualifiedNameForC_id6W8yq39obAS = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("qualifiedNameForC").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8000796061690018232L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(qualifiedNameForC_id6W8yq39obAS);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(qualifiedNameForC_id6W8yq39obAS);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String qualifiedNameForC_id6W8yq39obAS(@NotNull SNode __thisNode__) {
     return "__fa_" + AbstractFeature__BehaviorDescriptor.qualifiedNameForC_id7H6_Qip5IKx.invoke(SNodeOperations.cast(SNodeOperations.getParent(__thisNode__), CONCEPTS.Feature$U_)) + "__" + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
@@ -38,10 +35,6 @@ public final class FeatureAttribute__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ FeatureAttribute__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

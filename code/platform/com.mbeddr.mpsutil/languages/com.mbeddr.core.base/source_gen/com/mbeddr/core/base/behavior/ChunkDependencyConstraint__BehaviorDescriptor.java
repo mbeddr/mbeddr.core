@@ -13,7 +13,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -24,10 +23,8 @@ public final class ChunkDependencyConstraint__BehaviorDescriptor extends BaseBHD
   public static final SMethod<String> canBeImported_id7XSydqUVyQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("canBeImported").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(143519404622854326L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> canHaveMultiple_id7XSydr9rQb = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canHaveMultiple").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(143519404626656651L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canImport_id7XSydqUVwz, canBeImported_id7XSydqUVyQ, canHaveMultiple_id7XSydr9rQb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canImport_id7XSydqUVwz, canBeImported_id7XSydqUVyQ, canHaveMultiple_id7XSydr9rQb);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canHaveMultiple_id7XSydr9rQb(@NotNull SNode __thisNode__) {
     return false;
@@ -36,10 +33,6 @@ public final class ChunkDependencyConstraint__BehaviorDescriptor extends BaseBHD
   /*package*/ ChunkDependencyConstraint__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -26,7 +26,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.project.AbstractModule;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -48,10 +47,8 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<SNode> createDefaultSummary_id7sHl0myfjm0 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createDefaultSummary").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8587612447638893952L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> useHorizontalSeparatorForResults_id1mECeeSGmO6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("useHorizontalSeparatorForResults").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1561237120753954054L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(updateAutomatically_idKxraUPpeM7, mustAlwaysBeOk_id6ibju500V9k, errorMessage_id3jNX2XuL9ku, prepareUpdate_id1gw9pCYwGF4, executeQuery_id4WjNWxKFbeJ, executeQuery_idK292flwJAp, runQuery_id7hIyKqbFNeu, runQuery_id4WjNWxKJWaq, getSummaries_id_gCXGjoJQM, createDefaultSummary_id7sHl0myfjm0, useHorizontalSeparatorForResults_id1mECeeSGmO6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(updateAutomatically_idKxraUPpeM7, mustAlwaysBeOk_id6ibju500V9k, errorMessage_id3jNX2XuL9ku, prepareUpdate_id1gw9pCYwGF4, executeQuery_id4WjNWxKFbeJ, executeQuery_idK292flwJAp, runQuery_id7hIyKqbFNeu, runQuery_id4WjNWxKJWaq, getSummaries_id_gCXGjoJQM, createDefaultSummary_id7sHl0myfjm0, useHorizontalSeparatorForResults_id1mECeeSGmO6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean updateAutomatically_idKxraUPpeM7(@NotNull SNode __thisNode__) {
     return false;
@@ -115,7 +112,7 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
     if (LOG.isWarningLevel()) {
       LOG.warning("executeQuery() had to guess the current project, rewrite your code to pass the project explicitly", new Throwable());
     }
-    AssessmentQuery__BehaviorDescriptor.executeQuery_id4WjNWxKFbeJ.invoke(__thisNode__, ListSequence.fromList(GuessCurrentProject.getProjects(as_22owc3_a0a0b0a1a42(SNodeOperations.getModel(__thisNode__).getModule(), AbstractModule.class))).first(), assessment);
+    AssessmentQuery__BehaviorDescriptor.executeQuery_id4WjNWxKFbeJ.invoke(__thisNode__, ListSequence.fromList(GuessCurrentProject.getProjects(as_22owc3_a0a0b0a1a32(SNodeOperations.getModel(__thisNode__).getModule(), AbstractModule.class))).first(), assessment);
   }
   @Deprecated(since = "2025-11-06")
   /*package*/ static List<SNode> runQuery_id7hIyKqbFNeu(@NotNull SNode __thisNode__) {
@@ -144,10 +141,6 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ AssessmentQuery__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
@@ -209,7 +202,7 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static <T> T as_22owc3_a0a0b0a1a42(Object o, Class<T> type) {
+  private static <T> T as_22owc3_a0a0b0a1a32(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 

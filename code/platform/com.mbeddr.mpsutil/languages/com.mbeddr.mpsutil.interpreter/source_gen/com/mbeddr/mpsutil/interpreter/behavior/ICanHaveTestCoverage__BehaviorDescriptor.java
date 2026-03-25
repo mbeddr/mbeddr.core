@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -24,10 +23,8 @@ public final class ICanHaveTestCoverage__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
   public static final SMethod<Boolean> isToplevelCoverageContent_id2hXd3rsZYy8 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isToplevelCoverageContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629315167694874760L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getChildrenForCoverage_id5IKJrJHNCE8, isToplevelCoverageContent_id2hXd3rsZYy8);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getChildrenForCoverage_id5IKJrJHNCE8, isToplevelCoverageContent_id2hXd3rsZYy8);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getChildrenForCoverage_id5IKJrJHNCE8(@NotNull SNode __thisNode__) {
     return SNodeOperations.getChildren(__thisNode__);
@@ -39,10 +36,6 @@ public final class ICanHaveTestCoverage__BehaviorDescriptor extends BaseBHDescri
   /*package*/ ICanHaveTestCoverage__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

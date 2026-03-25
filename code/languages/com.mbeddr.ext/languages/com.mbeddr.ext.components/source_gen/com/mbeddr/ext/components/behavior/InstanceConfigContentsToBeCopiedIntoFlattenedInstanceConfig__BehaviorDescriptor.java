@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,19 +22,13 @@ public final class InstanceConfigContentsToBeCopiedIntoFlattenedInstanceConfig__
   public static final SMethod<SNode> referencedInstance_id7mgpfAOt2tP = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("referencedInstance").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8471381922721048437L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
   public static final SMethod<Void> setReferencedInstance_id7mgpfAOv757 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setReferencedInstance").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8471381922721591623L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(referencedInstance_id7mgpfAOt2tP, setReferencedInstance_id7mgpfAOv757);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(referencedInstance_id7mgpfAOt2tP, setReferencedInstance_id7mgpfAOv757);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ InstanceConfigContentsToBeCopiedIntoFlattenedInstanceConfig__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

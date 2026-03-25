@@ -16,7 +16,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.behavior.ModuleIdentity__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -27,10 +26,8 @@ public final class ModuleRefWord__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<String> getModuleName_id7mK357yqbs1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getModuleName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8480291644169041665L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getModuleName_id7mK357yqbs1);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getModuleName_id7mK357yqbs1);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getModuleName_id7mK357yqbs1(@NotNull SNode __thisNode__) {
     return ((SLinkOperations.getTarget(__thisNode__, LINKS.identity_old$6zhe) != null) ? ModuleIdentity__BehaviorDescriptor.getModuleReference_idnJmxU5cSSU.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.identity_old$6zhe)).getModuleName() : SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.identity$8c65), PROPS.moduleName$RP9b));
@@ -39,10 +36,6 @@ public final class ModuleRefWord__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ModuleRefWord__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

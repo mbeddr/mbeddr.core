@@ -30,7 +30,7 @@ public final class TernaryExpression__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<Void> setSyntacticallyRightSideExpression_id6mzZsELnSmP = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setSyntacticallyRightSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035606965L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSideeffectFree_id6SENleF$SRD, getPriolevel_id5HxjapwgqKu, getSyntacticallyLeftSideExpression_id6mzZsELnTBJ, getSyntacticallyRightSideExpression_id6mzZsELnTMK, setSyntacticallyLeftSideExpression_id6mzZsELnCP6, setSyntacticallyRightSideExpression_id6mzZsELnSmP, renderReadable_id1VQvajLb13M);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSideeffectFree_id6SENleF$SRD, getPriolevel_id5HxjapwgqKu, getSyntacticallyLeftSideExpression_id6mzZsELnTBJ, getSyntacticallyRightSideExpression_id6mzZsELnTMK, setSyntacticallyLeftSideExpression_id6mzZsELnCP6, setSyntacticallyRightSideExpression_id6mzZsELnSmP, renderReadable_id1VQvajLb13M);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.thenExpr$eG44, null);

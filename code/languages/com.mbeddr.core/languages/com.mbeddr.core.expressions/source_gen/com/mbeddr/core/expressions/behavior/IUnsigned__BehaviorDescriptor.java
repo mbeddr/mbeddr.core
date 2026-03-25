@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,19 +22,13 @@ public final class IUnsigned__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> createSignedCompanion_id5Xnv3$QEJss = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createSignedCompanion").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6870096341749135132L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<SNode> createNextBiggerSignedCompanion_id6cGRlFg47bM = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createNextBiggerSignedCompanion").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7146330090837668594L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createSignedCompanion_id5Xnv3$QEJss, createNextBiggerSignedCompanion_id6cGRlFg47bM);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createSignedCompanion_id5Xnv3$QEJss, createNextBiggerSignedCompanion_id6cGRlFg47bM);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IUnsigned__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

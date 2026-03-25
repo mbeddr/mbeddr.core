@@ -18,7 +18,6 @@ import com.mbeddr.core.make.behavior.IGeneratesToMakefile__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.make.behavior.IMakePathProvider__BehaviorDescriptor;
 import org.jetbrains.annotations.Nullable;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -35,10 +34,8 @@ public final class PlatformReference__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<String> getPathToMake_id3s1LyzG7eMZ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPathToMake").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3963667026125057215L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
   public static final SMethod<List<SConcept>> getSupportedTargets_id4JZ_DSuX5Ql = new SMethodBuilder<List<SConcept>>(new SJavaCompoundTypeImpl((Class<List<SConcept>>) ((Class) Object.class))).name("getSupportedTargets").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5476261277774142869L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeParallelized_id3dZgFhDSzmf, parallelProcesses_id71C71cTwEiX, getRootsToCopy_id5COQNTyxnSp, getBinaryKind_id5HxjapwgqKP, canMake_id3s1LyzG6KRG, getDebuggerConfig_id7c6uq_ObEPo, getPathToMake_id3s1LyzG7eMZ, getSupportedTargets_id4JZ_DSuX5Ql);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeParallelized_id3dZgFhDSzmf, parallelProcesses_id71C71cTwEiX, getRootsToCopy_id5COQNTyxnSp, getBinaryKind_id5HxjapwgqKP, canMake_id3s1LyzG6KRG, getDebuggerConfig_id7c6uq_ObEPo, getPathToMake_id3s1LyzG7eMZ, getSupportedTargets_id4JZ_DSuX5Ql);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canBeParallelized_id3dZgFhDSzmf(@NotNull SNode __thisNode__) {
     return (boolean) IGeneratesToMakefile__BehaviorDescriptor.canBeParallelized_id3dZgFhDSzmf.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.template$Zbys), LINKS.template$CzrK));
@@ -70,10 +67,6 @@ public final class PlatformReference__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ PlatformReference__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

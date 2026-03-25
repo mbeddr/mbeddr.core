@@ -21,7 +21,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.apache.commons.io.FilenameUtils;
 import com.mbeddr.core.base.behavior.Chunk__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -42,10 +41,8 @@ public final class ExternalModule__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Integer> getSortOrder_id1uL8CIs6rGR = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getSortOrder").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1707183716764859191L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<String> getCategory_id1uL8CIsKxiy = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getParentPopup").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1707183716775892130L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(conceptLabel_id4JF77iuWC$q, headerDescriptors_id7RiewQ_lfWB, createProxy_id35NyAcQ9ZV, canMangleNames_id4J$Pz4XGFls, getHeaderFileName_id7Aba6BzsCXL, getLOCEquivalent_id6brBMefRfO0, externallyReferenceableContentsInChunk_id6clJcrKmX4x, getIDEDisplayString_idIviauXb0g, getSortOrder_id1uL8CIs6rGR, getCategory_id1uL8CIsKxiy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(conceptLabel_id4JF77iuWC$q, headerDescriptors_id7RiewQ_lfWB, createProxy_id35NyAcQ9ZV, canMangleNames_id4J$Pz4XGFls, getHeaderFileName_id7Aba6BzsCXL, getLOCEquivalent_id6brBMefRfO0, externallyReferenceableContentsInChunk_id6clJcrKmX4x, getIDEDisplayString_idIviauXb0g, getSortOrder_id1uL8CIs6rGR, getCategory_id1uL8CIsKxiy);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String conceptLabel_id4JF77iuWC$q(@NotNull SNode __thisNode__) {
     String prefix = "";
@@ -97,10 +94,6 @@ public final class ExternalModule__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ExternalModule__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

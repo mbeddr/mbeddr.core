@@ -15,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,10 +25,8 @@ public final class SharedAccessAnnotation__BehaviorDescriptor extends BaseBHDesc
 
   public static final SMethod<String> genLocksVarName_id6ndohCVb1xw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genLocksVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7335626133346195552L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genLocksVarName_id6ndohCVb1xw);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genLocksVarName_id6ndohCVb1xw);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String genLocksVarName_id6ndohCVb1xw(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(SNodeOperations.cast(SNodeOperations.getParent(__thisNode__), CONCEPTS.GlobalVariableDeclaration$TW), PROPS.name$MnvL) + "_locks";
@@ -38,10 +35,6 @@ public final class SharedAccessAnnotation__BehaviorDescriptor extends BaseBHDesc
   /*package*/ SharedAccessAnnotation__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

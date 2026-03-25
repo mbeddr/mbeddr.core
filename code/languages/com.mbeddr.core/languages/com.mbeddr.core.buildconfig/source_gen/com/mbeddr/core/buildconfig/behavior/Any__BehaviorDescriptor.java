@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,10 +21,8 @@ public final class Any__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<String> getEffectiveName_id35YirduNbNY = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEffectiveName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3566368989662461182L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEffectiveName_id35YirduNbNY);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEffectiveName_id35YirduNbNY);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getEffectiveName_id35YirduNbNY(@NotNull SNode __thisNode__) {
     return SystemHelper.getOsFamilyName();
@@ -34,10 +31,6 @@ public final class Any__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Any__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

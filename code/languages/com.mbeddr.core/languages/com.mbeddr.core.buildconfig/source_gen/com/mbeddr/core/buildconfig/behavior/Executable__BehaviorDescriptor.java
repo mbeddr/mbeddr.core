@@ -32,7 +32,7 @@ public final class Executable__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Iterable<SNode>> referencedObjDescriptors_id4$QybXn2esV = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("referencedObjDescriptors").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5275554368891447099L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLOCEquivalent_id6brBMefRfO0, referencedObjDescriptors_id4$QybXn2esV);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLOCEquivalent_id6brBMefRfO0, referencedObjDescriptors_id4$QybXn2esV);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.isTest$SJtW, false);

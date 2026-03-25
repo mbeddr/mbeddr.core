@@ -24,7 +24,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.HashMap;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -36,10 +35,8 @@ public final class InstanceCounterAssessment__BehaviorDescriptor extends BaseBHD
   public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
   /*package*/ static final SMethod<Void> addOne_id5stuwjVxDeX = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addOne").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(6277307617442698173L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter((Class<Map<String, Integer>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id4WjNWxKJWaq, addOne_id5stuwjVxDeX);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id4WjNWxKJWaq, addOne_id5stuwjVxDeX);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> runQuery_id4WjNWxKJWaq(@NotNull final SNode __thisNode__, Project mpsProject) {
     Iterable<SNode> all = AssessmentScope__BehaviorDescriptor.findElements_id20N7CGtOl8_.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.scope$IgS_), mpsProject, SNodeOperations.getModel(__thisNode__));
@@ -76,10 +73,6 @@ public final class InstanceCounterAssessment__BehaviorDescriptor extends BaseBHD
   /*package*/ InstanceCounterAssessment__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

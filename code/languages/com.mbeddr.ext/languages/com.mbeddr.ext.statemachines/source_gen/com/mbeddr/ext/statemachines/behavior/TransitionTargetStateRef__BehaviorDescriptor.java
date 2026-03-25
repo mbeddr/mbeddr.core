@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,10 +25,8 @@ public final class TransitionTargetStateRef__BehaviorDescriptor extends BaseBHDe
 
   public static final SMethod<SNode> getState_id4c3N3BPrpoi = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getState").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4828927774774105618L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getState_id4c3N3BPrpoi);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getState_id4c3N3BPrpoi);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getState_id4c3N3BPrpoi(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.AbstractTransition$Oa, false, false), LINKS.targetState$DvvA);
@@ -38,10 +35,6 @@ public final class TransitionTargetStateRef__BehaviorDescriptor extends BaseBHDe
   /*package*/ TransitionTargetStateRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

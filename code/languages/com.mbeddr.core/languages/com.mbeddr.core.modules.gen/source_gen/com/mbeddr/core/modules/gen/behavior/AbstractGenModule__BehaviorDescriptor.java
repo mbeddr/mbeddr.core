@@ -23,7 +23,6 @@ import java.util.Calendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -37,10 +36,8 @@ public final class AbstractGenModule__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<String> readCopyrightNotice_id6TPUpoFAGOQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("readCopyrightNotice").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7959524747633151286L).languageId(0x8034198c24063588L, 0x62296a07bc3846d2L).build2();
   public static final SMethod<String> updateLastCopyrightYear_id6TPUpoGqTDH = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("updateLastCopyrightYear").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7959524747646835309L).languageId(0x8034198c24063588L, 0x62296a07bc3846d2L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canMangleNames_id4J$Pz4XGFls, genName_id7Aba6Bzz6b$, readCopyrightNotice_id6TPUpoFAGOQ, updateLastCopyrightYear_id6TPUpoGqTDH);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canMangleNames_id4J$Pz4XGFls, genName_id7Aba6Bzz6b$, readCopyrightNotice_id6TPUpoFAGOQ, updateLastCopyrightYear_id6TPUpoGqTDH);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canMangleNames_id4J$Pz4XGFls(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getBoolean(__thisNode__, PROPS.canMangleNames$zaJA);
@@ -88,10 +85,6 @@ public final class AbstractGenModule__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ AbstractGenModule__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

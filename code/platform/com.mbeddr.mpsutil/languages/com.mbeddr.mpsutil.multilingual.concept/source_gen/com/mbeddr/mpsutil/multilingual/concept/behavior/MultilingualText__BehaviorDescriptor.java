@@ -37,7 +37,7 @@ public final class MultilingualText__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<String> getDetailedPresentation_id22G2W3WJ92t = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDetailedPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2354269628709769373L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
   public static final SMethod<Void> addString_id2bng37sXCJ_ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061221L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getText_id2bng37sXCI3, getText_id2bng37sXCIc, populateDefaultText_id2bng37sXCI_, getDetailedPresentation_id22G2W3WJ92t, addString_id2bng37sXCJ_);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getText_id2bng37sXCI3, getText_id2bng37sXCIc, populateDefaultText_id2bng37sXCI_, getDetailedPresentation_id22G2W3WJ92t, addString_id2bng37sXCJ_);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.addNewChild(__thisNode__, LINKS.values$H$ha, null);

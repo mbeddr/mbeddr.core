@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class IJGraphProvider__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<SNode> inFactAppliesTo_id1FqEKJFrYAY = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("inFactAppliesTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1935047057592019390L).languageId(0xa5a420b4b2f86a62L, 0xd09a16fb1d684a92L).build2();
   public static final SMethod<JNGraph> getGraph_id5yCuRHcaxm8 = new SMethodBuilder<JNGraph>(new SJavaCompoundTypeImpl(JNGraph.class)).name("getGraph").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6388491840914068872L).languageId(0xa5a420b4b2f86a62L, 0xd09a16fb1d684a92L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(inFactAppliesTo_id1FqEKJFrYAY, getGraph_id5yCuRHcaxm8);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(inFactAppliesTo_id1FqEKJFrYAY, getGraph_id5yCuRHcaxm8);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode inFactAppliesTo_id1FqEKJFrYAY(@NotNull SNode __thisNode__) {
     return __thisNode__;
@@ -35,10 +32,6 @@ public final class IJGraphProvider__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ IJGraphProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

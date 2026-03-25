@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class AdditionalVarTarget__BehaviorDescriptor extends BaseBHDescrip
   public static final SMethod<Boolean> forceDot_id3p0OY6V_Omm = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("forceDot").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3909357443025946006L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<Boolean> isLValue_id5jCi3tJryBA = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6118219496712710630L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(forceDot_id3p0OY6V_Omm, isLValue_id5jCi3tJryBA);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(forceDot_id3p0OY6V_Omm, isLValue_id5jCi3tJryBA);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean forceDot_id3p0OY6V_Omm(@NotNull SNode __thisNode__) {
     return false;
@@ -38,10 +35,6 @@ public final class AdditionalVarTarget__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ AdditionalVarTarget__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -17,7 +17,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -31,10 +30,8 @@ public final class ChunkScope__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static final SMethod<Iterable<SNode>> findElements_id69$E9O8syOu = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7089977105793035550L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Boolean> requiresGrouping_id3DYDRw0SXyk = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requiresGrouping").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4214990435118209172L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id20N7CGtOl8_, findElements_id7nkDZJXluPi, findElements_id69$E9O8syOu, requiresGrouping_id3DYDRw0SXyk);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id20N7CGtOl8_, findElements_id7nkDZJXluPi, findElements_id69$E9O8syOu, requiresGrouping_id3DYDRw0SXyk);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> findElements_id20N7CGtOl8_(@NotNull SNode __thisNode__, Project mpsProject, SModel currentModel) {
     return ((Iterable<SNode>) ChunkScope__BehaviorDescriptor.findElements_id69$E9O8syOu.invokeSpecial(__thisNode__));
@@ -53,10 +50,6 @@ public final class ChunkScope__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ChunkScope__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

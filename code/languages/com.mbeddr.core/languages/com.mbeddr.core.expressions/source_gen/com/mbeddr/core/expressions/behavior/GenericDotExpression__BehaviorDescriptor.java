@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -34,10 +33,8 @@ public final class GenericDotExpression__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<Void> setSyntacticallyLeftSideExpression_id6mzZsELnCP6 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setSyntacticallyLeftSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035543366L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> getCodeForTarget_id1uoAWUPe22W = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getCodeForTarget").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1700280171438284988L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getRepresentation_id66uzewbvZAY, getPresentation_idhEwIMiw, renderReadable_id1VQvajLb13M, isLValue_id6iIoqg1yDKH, getPriolevel_id5HxjapwgqKu, getSyntacticallyLeftSideExpression_id6mzZsELnTBJ, setSyntacticallyLeftSideExpression_id6mzZsELnCP6, getCodeForTarget_id1uoAWUPe22W);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getRepresentation_id66uzewbvZAY, getPresentation_idhEwIMiw, renderReadable_id1VQvajLb13M, isLValue_id6iIoqg1yDKH, getPriolevel_id5HxjapwgqKu, getSyntacticallyLeftSideExpression_id6mzZsELnTBJ, setSyntacticallyLeftSideExpression_id6mzZsELnCP6, getCodeForTarget_id1uoAWUPe22W);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getRepresentation_id66uzewbvZAY(@NotNull SNode __thisNode__) {
     if ((SLinkOperations.getTarget(__thisNode__, LINKS.target$CEPF) != null) && (boolean) IGenericDotTarget__BehaviorDescriptor.forceDot_id3p0OY6V_Omm.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.target$CEPF))) {
@@ -76,10 +73,6 @@ public final class GenericDotExpression__BehaviorDescriptor extends BaseBHDescri
   /*package*/ GenericDotExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

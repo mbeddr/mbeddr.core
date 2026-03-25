@@ -14,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -25,10 +24,8 @@ public final class ITextOverride__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> getNonOverriddenTextualRepresentation_id45LXldK0tgc = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getNonOverriddenTextualRepresentation").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4715820023543878668L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
   public static final SMethod<String> getTextualRepresentation_id1T7O9iWPN9q = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTextualRepresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2181941881726251610L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNonOverriddenTextualRepresentation_id45LXldK0tgc, getTextualRepresentation_id1T7O9iWPN9q);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNonOverriddenTextualRepresentation_id45LXldK0tgc, getTextualRepresentation_id1T7O9iWPN9q);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getTextualRepresentation_id1T7O9iWPN9q(@NotNull SNode __thisNode__) {
     if (isEmptyString(SPropertyOperations.getString(__thisNode__, PROPS.textOverride$5WXi))) {
@@ -41,10 +38,6 @@ public final class ITextOverride__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ITextOverride__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

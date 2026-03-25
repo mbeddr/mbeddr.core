@@ -14,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -24,10 +23,8 @@ public final class WPActualWork__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Float> amount_idvRfru3oQQk = new SMethodBuilder<Float>(new SJavaCompoundTypeImpl(Float.TYPE)).name("amount").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(573995335905668500L).languageId(0x92f81d114f03f836L, 0xe530d4cbefad4822L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(amount_idvRfru3oQQk);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(amount_idvRfru3oQQk);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static float amount_idvRfru3oQQk(@NotNull SNode __thisNode__) {
     try {
@@ -40,10 +37,6 @@ public final class WPActualWork__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ WPActualWork__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,10 +25,8 @@ public final class Variable__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<String> getReferencePresentation_id7EZ1Spo0Yz_ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getReferencePresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8844796466762606821L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReferencePresentation_id7EZ1Spo0Yz_);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReferencePresentation_id7EZ1Spo0Yz_);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getReferencePresentation_id7EZ1Spo0Yz_(@NotNull SNode __thisNode__, SNode referenceParent) {
     if (SNodeOperations.isInstanceOf(referenceParent, CONCEPTS.UnaryConditionalDirective$WU)) {
@@ -41,10 +38,6 @@ public final class Variable__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Variable__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

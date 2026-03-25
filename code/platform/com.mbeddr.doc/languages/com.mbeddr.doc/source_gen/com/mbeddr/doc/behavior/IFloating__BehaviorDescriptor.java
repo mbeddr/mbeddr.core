@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -28,10 +27,8 @@ public final class IFloating__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Iterable<SNode>> visibleImagesInDocument_id5yxqZJwzrdj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleImagesInDocument").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136420179L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> figureNumber_id4E5hYf7zQ9Q = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("figureNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5369777174340395638L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getImageNumber_id5yxqZJwzv66, visibleImagesInDocument_id5yxqZJwzrdj, figureNumber_id4E5hYf7zQ9Q);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getImageNumber_id5yxqZJwzv66, visibleImagesInDocument_id5yxqZJwzrdj, figureNumber_id4E5hYf7zQ9Q);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getImageNumber_id5yxqZJwzv66(@NotNull SNode __thisNode__) {
     return SNodeOperations.getIndexInParent(__thisNode__) + "";
@@ -57,10 +54,6 @@ public final class IFloating__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IFloating__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

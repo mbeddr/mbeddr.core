@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,10 +22,8 @@ public final class DirectBitwiseLeftShiftAssignmentExpression__BehaviorDescripto
 
   public static final SMethod<SNode> correspondingNonDirectExpression_id7FQUQ5yTHlG = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("correspondingNonDirectExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8860528120401679724L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(correspondingNonDirectExpression_id7FQUQ5yTHlG);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(correspondingNonDirectExpression_id7FQUQ5yTHlG);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode correspondingNonDirectExpression_id7FQUQ5yTHlG(@NotNull SNode __thisNode__) {
     return SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x7d15ed3ba56cbdbfL, "com.mbeddr.core.expressions.structure.BitwiseLeftShiftExpression"));
@@ -35,10 +32,6 @@ public final class DirectBitwiseLeftShiftAssignmentExpression__BehaviorDescripto
   /*package*/ DirectBitwiseLeftShiftAssignmentExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

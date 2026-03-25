@@ -25,7 +25,7 @@ public final class SwitchCase__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Boolean> forceMultiLines_id5oX1Q_zkX36 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("forceMultiLines").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6214131210060550342L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(forceMultiLines_id5oX1Q_zkX36);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(forceMultiLines_id5oX1Q_zkX36);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.body$R2hM, null);

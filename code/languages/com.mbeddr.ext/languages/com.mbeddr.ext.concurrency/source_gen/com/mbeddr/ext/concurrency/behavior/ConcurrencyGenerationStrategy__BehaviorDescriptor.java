@@ -13,7 +13,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,19 +21,13 @@ public final class ConcurrencyGenerationStrategy__BehaviorDescriptor extends Bas
 
   public static final SMethod<Void> validateSchedules_id6bs538muOve = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("validateSchedules").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123590915951380430L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(validateSchedules_id6bs538muOve);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(validateSchedules_id6bs538muOve);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ ConcurrencyGenerationStrategy__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

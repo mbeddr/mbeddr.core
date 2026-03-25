@@ -30,7 +30,7 @@ public final class FootnoteWord__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Integer> getIndex_idQRmqzHYEZI = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getIndex").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(988357225313120238L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
   public static final SMethod<String> getUniqueIndex_idQRmqzIajtS = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getUniqueIndex").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(988357225316169592L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setText_id3DH$8h4HwoS, getIndex_idQRmqzHYEZI, getUniqueIndex_idQRmqzIajtS);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setText_id3DH$8h4HwoS, getIndex_idQRmqzHYEZI, getUniqueIndex_idQRmqzIajtS);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.text$mVIN, null);

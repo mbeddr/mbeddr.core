@@ -31,7 +31,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.HashMap;
 import com.mbeddr.mpsutil.jung.behavior.JNNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -67,10 +66,8 @@ public final class Chunk__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Set<SNode>> traceBackElementInCycle_id17fjvcLF7UR = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("traceBackElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1283330125729660599L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<JNGraph> getGraph_id5yCuRHcaxm8 = new SMethodBuilder<JNGraph>(new SJavaCompoundTypeImpl(JNGraph.class)).name("getGraph").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6388491840914068872L).languageId(0xa5a420b4b2f86a62L, 0xd09a16fb1d684a92L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleContentsOfType_id6clJcrJXo2_, contentFromImportedChunks_id6clJcrKt7Nt, allImportedChunks_id1KUGD$rV2Pp, collectImportedChunks_idGGvIiBXDet, filterContent_id4Y70f4E$bRi, dependencies_id6clJcrJYPM5, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, addGenericDependecyTo_id94IdDKwP70, addGenericChunkDependency_id94IdDK$n_l, isImplementationArtifact_id7Vd878ENIh6, importedByDefGenChunkDep_id7aNtjNmcVtH, allReferencedChunks_idM5_ycCRbK2, collectAllReferencedChunks_idM5_ycCRvLy, getLOCEquivalent_id6brBMefRfO0, hasConstraintOfType_id7XSydr1hoz, hasImportFor_id4ryX3g5gfbn, ensureDefaultImportFor_id4ryX3g5gs5R, getTreeCategories_id7NyyyjNtbmX, getTreeNode_id7NyyyjNtbn2, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getGraph_id5yCuRHcaxm8);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleContentsOfType_id6clJcrJXo2_, contentFromImportedChunks_id6clJcrKt7Nt, allImportedChunks_id1KUGD$rV2Pp, collectImportedChunks_idGGvIiBXDet, filterContent_id4Y70f4E$bRi, dependencies_id6clJcrJYPM5, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, addGenericDependecyTo_id94IdDKwP70, addGenericChunkDependency_id94IdDK$n_l, isImplementationArtifact_id7Vd878ENIh6, importedByDefGenChunkDep_id7aNtjNmcVtH, allReferencedChunks_idM5_ycCRbK2, collectAllReferencedChunks_idM5_ycCRvLy, getLOCEquivalent_id6brBMefRfO0, hasConstraintOfType_id7XSydr1hoz, hasImportFor_id4ryX3g5gfbn, ensureDefaultImportFor_id4ryX3g5gs5R, getTreeCategories_id7NyyyjNtbmX, getTreeNode_id7NyyyjNtbn2, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getGraph_id5yCuRHcaxm8);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> visibleContentsOfType_id6clJcrJXo2_(@NotNull SNode __thisNode__, SNode targetConcept) {
     List<SNode> result = ListSequence.fromList(new ArrayList<SNode>());
@@ -243,10 +240,6 @@ public final class Chunk__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Chunk__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

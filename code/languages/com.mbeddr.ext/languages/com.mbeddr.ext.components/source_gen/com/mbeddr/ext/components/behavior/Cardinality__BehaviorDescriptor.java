@@ -30,7 +30,7 @@ public final class Cardinality__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Integer> upperBound_id2ofiXe_sAfm = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("upperBound").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2742494070477841366L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
   public static final SMethod<Integer> lowerBound_id2rnvR93av0K = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("lowerBound").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2798845822163873840L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(upperBound_id2ofiXe_sAfm, lowerBound_id2rnvR93av0K);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(upperBound_id2ofiXe_sAfm, lowerBound_id2rnvR93av0K);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SNode lowerBound = SLinkOperations.setNewChild(__thisNode__, LINKS.lowerBound$oTVs, CONCEPTS.NumberLiteral$jK);

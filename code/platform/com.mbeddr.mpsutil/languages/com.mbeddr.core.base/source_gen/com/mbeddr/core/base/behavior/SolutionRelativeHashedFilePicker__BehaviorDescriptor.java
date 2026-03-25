@@ -17,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.mpsutil.filepicker.behavior.AbstractPicker__BehaviorDescriptor;
 import java.io.FileReader;
 import java.io.BufferedReader;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -33,10 +32,8 @@ public final class SolutionRelativeHashedFilePicker__BehaviorDescriptor extends 
   public static final SMethod<Boolean> isValidID_idGKLijS$FK9 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isValidID").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095879179273L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Void> updateStoredDescription_idGKLijSVdMs = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateStoredDescription").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095885085852L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExternalDescription_idGKLijS$FKh, getKind_idGKLijS$FKl, getFullExternalResourceName_id1JcbkuyZZUz, getRelevantExternalContentForHashing_idGKLijS$FKd, getStoredDescription_idGKLijSNXOH, isValidID_idGKLijS$FK9, updateStoredDescription_idGKLijSVdMs);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExternalDescription_idGKLijS$FKh, getKind_idGKLijS$FKl, getFullExternalResourceName_id1JcbkuyZZUz, getRelevantExternalContentForHashing_idGKLijS$FKd, getStoredDescription_idGKLijSNXOH, isValidID_idGKLijS$FK9, updateStoredDescription_idGKLijSVdMs);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getExternalDescription_idGKLijS$FKh(@NotNull SNode __thisNode__, String extID) {
     String s = IExtRef__BehaviorDescriptor.getRelevantExternalContentForHashing_idGKLijS$FKd.invoke(__thisNode__, extID);
@@ -85,10 +82,6 @@ public final class SolutionRelativeHashedFilePicker__BehaviorDescriptor extends 
   /*package*/ SolutionRelativeHashedFilePicker__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

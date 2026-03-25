@@ -16,7 +16,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -32,10 +31,8 @@ public final class IHierarchicalStructureBase__BehaviorDescriptor extends BaseBH
   public static final SMethod<Boolean> actuallyHasTreeNode_id72AnQbQqfyh = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("actuallyHasTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8117280257027405969L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<AbstractTreeViewNode>(new SJavaCompoundTypeImpl(AbstractTreeViewNode.class)).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getHierarchicalStructureName_id6SQk4GjV1MZ, getHierarchicalStructureIcon_id6SQk4GjV1Yp, showInHierchicalStructure_id1pmorAatV7O, collectHierarchicalChildren_id6SQk4GjKG_$, listAllCategories_id6SQk4GjKWdl, actuallyHasTreeNode_id72AnQbQqfyh, getTreeNode_id7NyyyjNtbn2);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getHierarchicalStructureName_id6SQk4GjV1MZ, getHierarchicalStructureIcon_id6SQk4GjV1Yp, showInHierchicalStructure_id1pmorAatV7O, collectHierarchicalChildren_id6SQk4GjKG_$, listAllCategories_id6SQk4GjKWdl, actuallyHasTreeNode_id72AnQbQqfyh, getTreeNode_id7NyyyjNtbn2);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getHierarchicalStructureName_id6SQk4GjV1MZ(@NotNull SNode __thisNode__) {
     return ((String) BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(__thisNode__));
@@ -62,10 +59,6 @@ public final class IHierarchicalStructureBase__BehaviorDescriptor extends BaseBH
   /*package*/ IHierarchicalStructureBase__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

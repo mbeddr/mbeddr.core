@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -29,10 +28,8 @@ public final class ErrorAnnotation__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<Integer> requiredNumberOfBits_id4jiR73uG8hv = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("requiredNumberOfBits").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4959268517018895455L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
   public static final SMethod<SNode> errorArgumentType_id4jiR73uGoej = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("errorArgumentType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4959268517018960787L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(requiredNumberOfBits_id4jiR73uG8hv, errorArgumentType_id4jiR73uGoej);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(requiredNumberOfBits_id4jiR73uG8hv, errorArgumentType_id4jiR73uGoej);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int requiredNumberOfBits_id4jiR73uG8hv(@NotNull SNode __thisNode__) {
     int max = 0;
@@ -58,10 +55,6 @@ public final class ErrorAnnotation__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ ErrorAnnotation__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

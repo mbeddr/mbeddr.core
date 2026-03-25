@@ -20,7 +20,7 @@ public final class VariantDefault__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb8eeb935038d48d8L, 0xae7f0c6768b8d4fcL, 0x7b4697649917a094L, "com.mbeddr.cc.var.rt.structure.VariantDefault");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.body$JoTQ, null);

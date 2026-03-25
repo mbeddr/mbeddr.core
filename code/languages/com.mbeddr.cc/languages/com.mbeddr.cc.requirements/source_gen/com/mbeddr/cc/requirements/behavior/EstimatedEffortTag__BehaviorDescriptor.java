@@ -17,7 +17,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -32,10 +31,8 @@ public final class EstimatedEffortTag__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<String> title_id6TTrAqIILXr = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("title").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7960515203651280731L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
   public static final SMethod<String> value_id6TTrAqIILXY = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("value").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7960515203651280766L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasChildRequirements_idKXQGmKIKkk, getTotalEffort_idKXQGmKIKkx, title_id6TTrAqIILXr, value_id6TTrAqIILXY);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasChildRequirements_idKXQGmKIKkk, getTotalEffort_idKXQGmKIKkx, title_id6TTrAqIILXr, value_id6TTrAqIILXY);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean hasChildRequirements_idKXQGmKIKkk(@NotNull SNode __thisNode__) {
     return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.Requirement$sS, false, false), LINKS.details$fIea)).isNotEmpty();
@@ -63,10 +60,6 @@ public final class EstimatedEffortTag__BehaviorDescriptor extends BaseBHDescript
   /*package*/ EstimatedEffortTag__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

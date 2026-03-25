@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -26,19 +25,13 @@ public final class IInitAwareType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> createAssignmentLeftHand_id6IWRcVON8YI = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createAssignmentLeftHand").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7763322639108313006L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> createAssignmentRightHand_id6IWRcVON9Ja = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createAssignmentRightHand").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7763322639108316106L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTypeCalculationNodeForElement_id7FkLcyyQK$0, checkForErrors_id7FkLcyyQK$6, checkForWarnings_id5aZFu$7GSiB, createAssignmentLeftHand_id6IWRcVON8YI, createAssignmentRightHand_id6IWRcVON9Ja);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTypeCalculationNodeForElement_id7FkLcyyQK$0, checkForErrors_id7FkLcyyQK$6, checkForWarnings_id5aZFu$7GSiB, createAssignmentLeftHand_id6IWRcVON8YI, createAssignmentRightHand_id6IWRcVON9Ja);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IInitAwareType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

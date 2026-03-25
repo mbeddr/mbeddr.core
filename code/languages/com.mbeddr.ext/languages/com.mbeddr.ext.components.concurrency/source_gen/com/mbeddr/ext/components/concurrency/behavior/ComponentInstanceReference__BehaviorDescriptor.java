@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -29,10 +28,8 @@ public final class ComponentInstanceReference__BehaviorDescriptor extends BaseBH
   public static final SMethod<SNode> getInstance_id2kF1PD7dpF3 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInstance").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2678242487725038275L).languageId(0xa22d91c3ce06375eL, 0x3f445ef354ad4ae5L).build2();
   public static final SMethod<String> getFlatInstanceName_id2kF1PD7mXG0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFlatInstanceName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2678242487727545088L).languageId(0xa22d91c3ce06375eL, 0x3f445ef354ad4ae5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getComponent_id2kF1PD7dmzD, getInstance_id2kF1PD7dpF3, getFlatInstanceName_id2kF1PD7mXG0);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getComponent_id2kF1PD7dmzD, getInstance_id2kF1PD7dpF3, getFlatInstanceName_id2kF1PD7mXG0);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getComponent_id2kF1PD7dmzD(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.instance$HIdW), LINKS.component$ikVC);
@@ -47,10 +44,6 @@ public final class ComponentInstanceReference__BehaviorDescriptor extends BaseBH
   /*package*/ ComponentInstanceReference__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

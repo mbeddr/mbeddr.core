@@ -14,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -27,10 +26,8 @@ public final class IMultiPlatformConstruct__BehaviorDescriptor extends BaseBHDes
   public static final SMethod<String> preprocessorCondition_id3LB9aGl8_PP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("preprocessorCondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4352487882089454965L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<String> alternativeHeaderToImport_id1m$ejqCnFa4 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("alternativeHeaderToImport").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1559434277892829828L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(headerToImport_id7RHXOmw3XK4, onlyForImplementation_id7RHXOmw7Mgm, preprocessorCondition_id3LB9aGl8_PP, alternativeHeaderToImport_id1m$ejqCnFa4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(headerToImport_id7RHXOmw3XK4, onlyForImplementation_id7RHXOmw7Mgm, preprocessorCondition_id3LB9aGl8_PP, alternativeHeaderToImport_id1m$ejqCnFa4);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String headerToImport_id7RHXOmw3XK4(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.win32Header$UbOz);
@@ -48,10 +45,6 @@ public final class IMultiPlatformConstruct__BehaviorDescriptor extends BaseBHDes
   /*package*/ IMultiPlatformConstruct__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

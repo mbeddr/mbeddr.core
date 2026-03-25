@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -28,10 +27,8 @@ public final class LongDoubleType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> createNextBiggerSignedCompanion_id4O$fzoYZDgS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createNextBiggerSignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5558636242788062264L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<String> getPrintfFormatSpecifier_id4XMHJL4FDjg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrintfFormatSpecifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5724839270941627600L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createdUnsignedCompanion_id5Xnv3$QELwg, getSize_id5HxjapwgqJC, getUsedBytes_id61lw97FtLtJ, createNextBiggerSignedCompanion_id4O$fzoYZDgS, getPrintfFormatSpecifier_id4XMHJL4FDjg);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createdUnsignedCompanion_id5Xnv3$QELwg, getSize_id5HxjapwgqJC, getUsedBytes_id61lw97FtLtJ, createNextBiggerSignedCompanion_id4O$fzoYZDgS, getPrintfFormatSpecifier_id4XMHJL4FDjg);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode createdUnsignedCompanion_id5Xnv3$QELwg(@NotNull SNode __thisNode__) {
     return SNodeOperations.copyNode(__thisNode__);
@@ -52,10 +49,6 @@ public final class LongDoubleType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ LongDoubleType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

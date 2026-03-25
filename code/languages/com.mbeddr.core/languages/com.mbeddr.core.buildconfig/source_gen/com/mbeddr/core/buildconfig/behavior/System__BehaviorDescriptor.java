@@ -26,7 +26,7 @@ public final class System__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<String> getArchitecture_id4JZ_DSvFz7s = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getArchitecture").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5476261277786321372L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getArchitecture_id4JZ_DSvFz7s);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getArchitecture_id4JZ_DSvFz7s);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.name$MnvL, SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)));

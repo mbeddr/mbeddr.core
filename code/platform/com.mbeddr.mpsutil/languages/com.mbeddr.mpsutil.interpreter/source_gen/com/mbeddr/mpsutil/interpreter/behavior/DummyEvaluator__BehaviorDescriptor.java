@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,10 +25,8 @@ public final class DummyEvaluator__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Integer> compareTo_id5x677oPovws = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("compareTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6360802817734735900L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compareTo_id5x677oPovws);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compareTo_id5x677oPovws);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int compareTo_id5x677oPovws(@NotNull SNode __thisNode__, SNode other) {
     if (SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(__thisNode__)), CONCEPTS.DummyEvaluator$Kz) || SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(other)), CONCEPTS.DummyEvaluator$Kz)) {
@@ -42,10 +39,6 @@ public final class DummyEvaluator__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ DummyEvaluator__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

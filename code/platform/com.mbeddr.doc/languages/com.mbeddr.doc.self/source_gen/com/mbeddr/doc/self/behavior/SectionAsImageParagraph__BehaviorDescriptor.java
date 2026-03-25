@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,10 +21,8 @@ public final class SectionAsImageParagraph__BehaviorDescriptor extends BaseBHDes
 
   public static final SMethod<String> uniqueName_id7$DvC4gQTVR = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("uniqueName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8730648445433126647L).languageId(0x95a571f220e623f9L, 0xd7145000936a47e8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniqueName_id7$DvC4gQTVR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniqueName_id7$DvC4gQTVR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String uniqueName_id7$DvC4gQTVR(@NotNull SNode __thisNode__) {
     return "section" + __thisNode__.getNodeId().toString();
@@ -34,10 +31,6 @@ public final class SectionAsImageParagraph__BehaviorDescriptor extends BaseBHDes
   /*package*/ SectionAsImageParagraph__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -31,7 +31,7 @@ public final class DataItem__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> genDataItemTraceTypeName_id1M41OHsclTU = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genDataItemTraceTypeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2054775350238469754L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
   public static final SMethod<String> genDataItemTimeTypeName_id1jbG5O9Lbw2 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genDataItemTimeTypeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1498485214673156098L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genDataItemBufferVarName_id1M41OHscgpo, genDataItemTraceVarName_id1M41OHsbKOM, genDataItemTimeVarName_id1jbG5O9L9EL, genDataItemBufferTypeName_id1M41OHsbtHK, genDataItemTraceTypeName_id1M41OHsclTU, genDataItemTimeTypeName_id1jbG5O9Lbw2);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genDataItemBufferVarName_id1M41OHscgpo, genDataItemTraceVarName_id1M41OHsbKOM, genDataItemTimeVarName_id1jbG5O9L9EL, genDataItemBufferTypeName_id1M41OHsbtHK, genDataItemTraceTypeName_id1M41OHsclTU, genDataItemTimeTypeName_id1jbG5O9Lbw2);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.active$F8DW, true);

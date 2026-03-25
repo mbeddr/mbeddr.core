@@ -17,7 +17,6 @@ import com.mbeddr.core.base.behavior.IRequiresConfigItem__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -33,10 +32,8 @@ public final class ScheduleSpecification__BehaviorDescriptor extends BaseBHDescr
   public static final SMethod<Iterable<SNode>> taskDeclarations_id4hMIGYxhy4M = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("taskDeclarations").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4932209942850838834L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
   public static final SMethod<Iterable<SNode>> cyclicConstraints_id6sFonkC3hVg = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("cyclicConstraints").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7434142765716152016L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConfigItem_id5HxjapwgqMb, genStartFunctionName_id2dxXn_m$rjH, declaredTasks_id2ajpxDX4Kqd, taskDeclarations_id4hMIGYxhy4M, cyclicConstraints_id6sFonkC3hVg);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConfigItem_id5HxjapwgqMb, genStartFunctionName_id2dxXn_m$rjH, declaredTasks_id2ajpxDX4Kqd, taskDeclarations_id4hMIGYxhy4M, cyclicConstraints_id6sFonkC3hVg);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> getConfigItem_id5HxjapwgqMb(@NotNull SAbstractConcept __thisConcept__) {
     List<SNode> res = IRequiresConfigItem__BehaviorDescriptor.getConfigItem_id5HxjapwgqMb.invoke0(__thisConcept__, CONCEPTS.IRequiresConfigItem$Ys);
@@ -59,10 +56,6 @@ public final class ScheduleSpecification__BehaviorDescriptor extends BaseBHDescr
   /*package*/ ScheduleSpecification__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

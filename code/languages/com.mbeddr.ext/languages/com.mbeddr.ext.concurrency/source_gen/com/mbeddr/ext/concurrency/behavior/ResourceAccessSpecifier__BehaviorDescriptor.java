@@ -15,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -26,10 +25,8 @@ public final class ResourceAccessSpecifier__BehaviorDescriptor extends BaseBHDes
 
   public static final SMethod<String> sortName_id6u_410TBOiy = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("sortName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7468393218936095906L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(sortName_id6u_410TBOiy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(sortName_id6u_410TBOiy);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String sortName_id6u_410TBOiy(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.res$3ccV), PROPS.name$MnvL);
@@ -38,10 +35,6 @@ public final class ResourceAccessSpecifier__BehaviorDescriptor extends BaseBHDes
   /*package*/ ResourceAccessSpecifier__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

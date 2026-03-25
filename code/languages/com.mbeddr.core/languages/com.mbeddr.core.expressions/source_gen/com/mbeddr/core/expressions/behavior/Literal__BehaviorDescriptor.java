@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -25,10 +24,8 @@ public final class Literal__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isDotCapable_id66WTx3vdu2E = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDotCapable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7042756877439328426L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<Boolean> requiresParenthesisInCast_id4o$BgAQrCHG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requiresParenthesisInCast").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5054337346857503596L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(doNotShowDebugger_id$bJ0jgWtSA, isLValue_id6iIoqg1yDKH, isDotCapable_id66WTx3vdu2E, requiresParenthesisInCast_id4o$BgAQrCHG);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(doNotShowDebugger_id$bJ0jgWtSA, isLValue_id6iIoqg1yDKH, isDotCapable_id66WTx3vdu2E, requiresParenthesisInCast_id4o$BgAQrCHG);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean doNotShowDebugger_id$bJ0jgWtSA(@NotNull SNode __thisNode__) {
     return true;
@@ -46,10 +43,6 @@ public final class Literal__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Literal__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

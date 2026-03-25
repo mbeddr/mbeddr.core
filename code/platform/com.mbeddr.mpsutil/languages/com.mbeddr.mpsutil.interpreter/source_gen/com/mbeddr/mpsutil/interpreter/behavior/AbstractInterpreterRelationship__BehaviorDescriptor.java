@@ -15,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -25,10 +24,8 @@ public final class AbstractInterpreterRelationship__BehaviorDescriptor extends B
 
   public static final SMethod<String> getThisPresentation_id5LSSDsNq55q = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getThisPresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787725062490L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getThisPresentation_id5LSSDsNq55q);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getThisPresentation_id5LSSDsNq55q);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getThisPresentation_id5LSSDsNq55q(@NotNull SNode __thisNode__) {
     return "this (" + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.Interpreter$pR, true, false)) + ")";
@@ -37,10 +34,6 @@ public final class AbstractInterpreterRelationship__BehaviorDescriptor extends B
   /*package*/ AbstractInterpreterRelationship__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

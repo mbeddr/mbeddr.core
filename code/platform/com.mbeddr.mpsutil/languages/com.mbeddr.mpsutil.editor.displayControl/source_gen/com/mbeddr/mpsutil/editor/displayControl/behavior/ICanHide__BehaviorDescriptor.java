@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -24,13 +23,11 @@ public final class ICanHide__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> hide_id5I8v_DCofzu = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("hide").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6595660581047433438L).languageId(0x80359a2928b716d3L, 0x5fef253e34b0443dL).build2();
   public static final SMethod<Void> show_id5I8v_DCoggH = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("show").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6595660581047436333L).languageId(0x80359a2928b716d3L, 0x5fef253e34b0443dL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isVisible_id5I8v_DCodq4, hide_id5I8v_DCofzu, show_id5I8v_DCoggH);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isVisible_id5I8v_DCodq4, hide_id5I8v_DCofzu, show_id5I8v_DCoggH);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isVisible_id5I8v_DCodq4(@NotNull SNode __thisNode__) {
-    Boolean visible = as_bqrxl1_a0a0a01(__thisNode__.getUserObject("ICanHide"), Boolean.class);
+    Boolean visible = as_bqrxl1_a0a0a9(__thisNode__.getUserObject("ICanHide"), Boolean.class);
     return (visible == null ? true : visible);
   }
   /*package*/ static void hide_id5I8v_DCofzu(@NotNull SNode __thisNode__) {
@@ -43,10 +40,6 @@ public final class ICanHide__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ICanHide__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
@@ -91,7 +84,7 @@ public final class ICanHide__BehaviorDescriptor extends BaseBHDescriptor {
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static <T> T as_bqrxl1_a0a0a01(Object o, Class<T> type) {
+  private static <T> T as_bqrxl1_a0a0a9(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 }

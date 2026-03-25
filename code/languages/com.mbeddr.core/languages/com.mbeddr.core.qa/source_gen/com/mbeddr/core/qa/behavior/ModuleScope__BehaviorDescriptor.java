@@ -24,7 +24,6 @@ import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.progress.EmptyProgressMonitor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -34,10 +33,8 @@ public final class ModuleScope__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Iterable<SNode>> findInstances_idjipk886TYE = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findInstances").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(347451455539224490L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findInstances_idjipk886TYE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findInstances_idjipk886TYE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> findInstances_idjipk886TYE(@NotNull SNode __thisNode__, SNode concept) {
     FindUsagesManager usageManager = FindUsagesManager.getInstance();
@@ -52,10 +49,6 @@ public final class ModuleScope__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ModuleScope__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

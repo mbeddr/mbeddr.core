@@ -20,7 +20,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.base.behavior.IVisualizationParticipant__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -37,10 +36,8 @@ public final class Call__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Iterable<SNode>> receivedItems_id4YQM_89vKC6 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("receivedItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828453095942L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> returnedValue_id7Wto0sQ9vKw = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("returnedValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9159582801230953504L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(callString_id4YQM_89vpFW, visualize_id6xkj9mMr7e, receivedItems_id4YQM_89vKC6, returnedValue_id7Wto0sQ9vKw);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(callString_id4YQM_89vpFW, visualize_id6xkj9mMr7e, receivedItems_id4YQM_89vKC6, returnedValue_id7Wto0sQ9vKw);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String callString_id4YQM_89vpFW(@NotNull SNode __thisNode__) {
     StringBuilder sb = new StringBuilder();
@@ -91,10 +88,6 @@ public final class Call__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Call__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

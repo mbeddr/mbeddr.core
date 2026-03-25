@@ -19,7 +19,7 @@ public class EnumerationDescriptor_ResultKind extends EnumerationDescriptorBase 
   private final EnumerationDescriptor.MemberDescriptor myMember_outdatedHash_0 = new EnumerationDescriptor.MemberDescriptor("outdatedHash", "outdatedHash", 0xb30c524f8819faeL, "r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)/1214029888595741645");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xb30c524f8819facL, 0xb30c524f8819fadL, 0xb30c524f8819faeL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_invalidID_0, myMember_outdatedHash_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_invalidID_0, myMember_outdatedHash_0);
 
   @Nullable
   @Override

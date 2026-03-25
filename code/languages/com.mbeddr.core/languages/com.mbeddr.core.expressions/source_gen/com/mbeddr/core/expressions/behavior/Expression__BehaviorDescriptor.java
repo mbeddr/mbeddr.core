@@ -20,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.math.BigInteger;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -47,10 +46,8 @@ public final class Expression__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isDotCapable_id66WTx3vdu2E = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDotCapable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7042756877439328426L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<Boolean> requiresParenthesisInCast_id4o$BgAQrCHG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requiresParenthesisInCast").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5054337346857503596L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCodeForTarget_id1uoAWUPe22W, getWriteTarget_id1uoAWUPe2Ie, isLValue_id6iIoqg1yDKH, isStaticallyEvaluatable_id3ilck8Kr3zN, evaluateStatically_id6OxpEKG0KPv, renderReadable_id1VQvajLb13M, asList_id2JIP8c_ZWpI, asList_id2JIP8c_ZWqJ, isSideeffectFree_id6SENleF$SRD, requiresItsOwnLineInSomeContext_id5AweqC3NO9h, mayBePointerType_id3FUljR4fqsG, cleanup_id7rX8gRKIEsj, getPriolevel_id5HxjapwgqKu, isDotCapable_id66WTx3vdu2E, requiresParenthesisInCast_id4o$BgAQrCHG);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCodeForTarget_id1uoAWUPe22W, getWriteTarget_id1uoAWUPe2Ie, isLValue_id6iIoqg1yDKH, isStaticallyEvaluatable_id3ilck8Kr3zN, evaluateStatically_id6OxpEKG0KPv, renderReadable_id1VQvajLb13M, asList_id2JIP8c_ZWpI, asList_id2JIP8c_ZWqJ, isSideeffectFree_id6SENleF$SRD, requiresItsOwnLineInSomeContext_id5AweqC3NO9h, mayBePointerType_id3FUljR4fqsG, cleanup_id7rX8gRKIEsj, getPriolevel_id5HxjapwgqKu, isDotCapable_id66WTx3vdu2E, requiresParenthesisInCast_id4o$BgAQrCHG);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getCodeForTarget_id1uoAWUPe22W(@NotNull SNode __thisNode__) {
     return null;
@@ -129,10 +126,6 @@ public final class Expression__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Expression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

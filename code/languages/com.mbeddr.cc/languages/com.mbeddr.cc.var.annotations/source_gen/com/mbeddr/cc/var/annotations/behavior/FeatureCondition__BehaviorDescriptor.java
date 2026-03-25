@@ -18,7 +18,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -37,10 +36,8 @@ public final class FeatureCondition__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<Boolean> e_id2h6lNbWo02B = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("e").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2613872510229282983L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Long> n_id2h6lNbWo046 = new SMethodBuilder<Long>(new SJavaCompoundTypeImpl(Long.TYPE)).name("n").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2613872510229283078L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCharacteristicNumber_id2h6lNbWo02l, isSelectedInRenderingConfiguration_id2h6lNbWo02u, isSelectedInConfiguration_id7cHde$FkSjp, isSelectedInTransformationConfiguration_id5JmNU9PAaKn, renderingConfiguration_id6tR2451fqEz, e_id2h6lNbWo02B, n_id2h6lNbWo046);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCharacteristicNumber_id2h6lNbWo02l, isSelectedInRenderingConfiguration_id2h6lNbWo02u, isSelectedInConfiguration_id7cHde$FkSjp, isSelectedInTransformationConfiguration_id5JmNU9PAaKn, renderingConfiguration_id6tR2451fqEz, e_id2h6lNbWo02B, n_id2h6lNbWo046);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static long getCharacteristicNumber_id2h6lNbWo02l(@NotNull SNode __thisNode__) {
     return ((long) FeatureCondition__BehaviorDescriptor.n_id2h6lNbWo046.invoke(__thisNode__, SLinkOperations.getTarget(__thisNode__, LINKS.expr$Myds)));
@@ -87,10 +84,6 @@ public final class FeatureCondition__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ FeatureCondition__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

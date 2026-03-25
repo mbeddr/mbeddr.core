@@ -20,7 +20,7 @@ public class EnumerationDescriptor_CodeState extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember_reviewed_0 = new EnumerationDescriptor.MemberDescriptor("reviewed", "reviewed", 0x176971d2d0c15a1fL, "r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)/1214029888595741650");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x176971d2d0c15a18L, 0x176971d2d0c15a19L, 0x176971d2d0c15a1aL, 0x176971d2d0c15a1fL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_raw_0, myMember_ready_0, myMember_reviewed_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_raw_0, myMember_ready_0, myMember_reviewed_0);
 
   @Nullable
   @Override

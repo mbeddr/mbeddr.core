@@ -27,7 +27,7 @@ public final class ModelContentAsTextParagraph__BehaviorDescriptor extends BaseB
 
   public static final SMethod<Void> updateText_id41AlOFglSb0 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4640492444886467264L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(updateText_id41AlOFglSb0);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(updateText_id41AlOFglSb0);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.language$c4tN, "mbeddr");

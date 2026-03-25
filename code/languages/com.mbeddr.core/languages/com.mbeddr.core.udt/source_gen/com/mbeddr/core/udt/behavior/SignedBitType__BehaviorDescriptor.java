@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import com.mbeddr.core.expressions.behavior.ISigned__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.expressions.behavior.DerivedPrimitiveType__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -32,10 +31,8 @@ public final class SignedBitType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> createNextBiggerSignedCompanion_id4O$fzoYZDgS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createNextBiggerSignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5558636242788062264L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<SNode> getGenType_id2DouzknPPyL = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getGenType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3051323115995355313L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBaseType_id3dCMHw1DZZS, createdUnsignedCompanion_id5Xnv3$QELwg, createNextBiggerSignedCompanion_id4O$fzoYZDgS, getGenType_id2DouzknPPyL);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBaseType_id3dCMHw1DZZS, createdUnsignedCompanion_id5Xnv3$QELwg, createNextBiggerSignedCompanion_id4O$fzoYZDgS, getGenType_id2DouzknPPyL);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getBaseType_id3dCMHw1DZZS(@NotNull SNode __thisNode__) {
     if (SPropertyOperations.getInteger(__thisNode__, PROPS.width$x5CM) <= 8) {
@@ -64,10 +61,6 @@ public final class SignedBitType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ SignedBitType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -27,7 +27,7 @@ public final class IIncompleteParenthesis__BehaviorDescriptor extends BaseBHDesc
   public static final SMethod<Void> decreaseCount_id4NFs2i9z2Sx = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("decreaseCount").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5542647068638326305L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<Boolean> isSingle_id4NFs2i9z3Ou = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSingle").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5542647068638330142L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(increaseCount_id4NFs2i9z1KA, decreaseCount_id4NFs2i9z2Sx, isSingle_id4NFs2i9z3Ou);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(increaseCount_id4NFs2i9z1KA, decreaseCount_id4NFs2i9z2Sx, isSingle_id4NFs2i9z3Ou);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.count$vRjz, 1);

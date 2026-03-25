@@ -13,7 +13,7 @@
       <unit at="11,0,38,0" name="com.mbeddr.mpsutil.review.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,30,0" name="com.mbeddr.mpsutil.review.structure.LanguageConceptSwitch" />
+      <unit at="12,0,38,0" name="com.mbeddr.mpsutil.review.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="15,0,78,0" name="com.mbeddr.mpsutil.review.structure.StructureAspectDescriptor" />
@@ -33,8 +33,8 @@
       <scope id="1159656764133526267" at="20,44,26,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1159656764133526267" at="12,0,13,0" concept="6" trace="ReviewNote" />
-      <node id="1159656764133526267" at="16,116,17,49" concept="0" />
+      <node id="1159656764133526267" at="14,0,15,0" concept="6" trace="ReviewNote" />
+      <node id="1159656764133526267" at="18,116,19,49" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1159656764133526267" at="16,0,17,0" concept="1" trace="myConceptReviewNote" />
@@ -71,8 +71,8 @@
       <scope id="1159656764133538905" at="27,49,33,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1159656764133538905" at="13,0,14,0" concept="6" trace="ReviewReplyNote" />
-      <node id="1159656764133538905" at="17,49,18,54" concept="0" />
+      <node id="1159656764133538905" at="15,0,16,0" concept="6" trace="ReviewReplyNote" />
+      <node id="1159656764133538905" at="19,49,20,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1159656764133538905" at="17,0,18,0" concept="1" trace="myConceptReviewReplyNote" />

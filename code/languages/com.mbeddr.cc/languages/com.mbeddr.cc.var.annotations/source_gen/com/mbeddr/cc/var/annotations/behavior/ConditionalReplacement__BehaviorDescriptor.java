@@ -20,7 +20,7 @@ public final class ConditionalReplacement__BehaviorDescriptor extends BaseBHDesc
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x17fba0eaf154a23L, 0xb0a802b5c1141e75L, 0x24465732fc5fa6ddL, "com.mbeddr.cc.var.annotations.structure.ConditionalReplacement");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.condition$m66Z, null);

@@ -56,7 +56,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   /*package*/ EditorCell createCell() {
-    return createMarginCell_1();
+    return createMarginCell_0();
   }
 
   private EditorCell createCollection_0() {
@@ -153,15 +153,15 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createMarginCell_0(EditorContext editorContext, SNode node) {
+  private EditorCell createMarginCell_0() {
 
     MarginCellStyle style = new MarginCellStyle();
 
-    EditorCell_Collection editorCell = new MarginEditorCell(editorContext, node, style);
+    EditorCell_Collection editorCell = new MarginEditorCell(getEditorContext(), getNode(), style);
     editorCell.addEditorCell(createCollection_0());
 
-    for (SNode child : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.notes$Cawq))) {
-      editorCell.addEditorCell(editorContext.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(child));
+    for (SNode child : ListSequence.fromList(SLinkOperations.getChildren(getNode(), LINKS.notes$Cawq))) {
+      editorCell.addEditorCell(getEditorContext().getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(child));
     }
 
 
@@ -170,9 +170,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
     setCellContext(editorCell);
 
     return editorCell;
-  }
-  private EditorCell createMarginCell_1() {
-    return createMarginCell_0(getEditorContext(), myNode);
   }
 
   private static final class LINKS {

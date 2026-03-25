@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.base.behavior.TextBlock__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.core.base.behavior.LeafNodeTreeViewNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -37,10 +36,8 @@ public final class ImageParagraph__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> renderImage_id2x0XdshuE$U = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("renderImage").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2900587364574996794L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
   public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<AbstractTreeViewNode>(new SJavaCompoundTypeImpl(AbstractTreeViewNode.class)).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasPathSpecified_id5yxqZJwzdPp, hasValidPath_id5yxqZJwzdQl, imageStatusMessage_id5yxqZJwzdQv, getPath_id3UlEobTHU0G, containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, renderImage_id2x0XdshuE$U, getTreeNode_id7NyyyjNtbn2);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasPathSpecified_id5yxqZJwzdPp, hasValidPath_id5yxqZJwzdQl, imageStatusMessage_id5yxqZJwzdQv, getPath_id3UlEobTHU0G, containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, renderImage_id2x0XdshuE$U, getTreeNode_id7NyyyjNtbn2);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean hasPathSpecified_id5yxqZJwzdPp(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.resource$t9jq) != null;
@@ -79,10 +76,6 @@ public final class ImageParagraph__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ImageParagraph__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

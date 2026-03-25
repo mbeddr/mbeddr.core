@@ -35,7 +35,7 @@ public final class Register__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
   public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(registerAddress_id5W7baq$5gIm, getBitCount_id30ICD1Hyq_w, emulatedVariableName_id5W7baq$5gIw, emulatedRegisterGroupStructName_id5W7baq$5gIE, emulatedRegisterGroupVarName_id5W7baq$5gIS, exportable_id5HxjapwgqKI, getConfigItem_id5HxjapwgqMb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(registerAddress_id5W7baq$5gIm, getBitCount_id30ICD1Hyq_w, emulatedVariableName_id5W7baq$5gIw, emulatedRegisterGroupStructName_id5W7baq$5gIE, emulatedRegisterGroupVarName_id5W7baq$5gIS, exportable_id5HxjapwgqKI, getConfigItem_id5HxjapwgqMb);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.exported$V4am, true);

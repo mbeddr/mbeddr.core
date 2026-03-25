@@ -4,7 +4,7 @@ package com.mbeddr.mpsutil.common.graph;
 
 
 /**
- * A self-balancing binary search tree implementation. 
+ * A self-balancing binary search tree implementation.
  * 
  * @param <ValueType> the type of the values stored in the tree nodes
  */

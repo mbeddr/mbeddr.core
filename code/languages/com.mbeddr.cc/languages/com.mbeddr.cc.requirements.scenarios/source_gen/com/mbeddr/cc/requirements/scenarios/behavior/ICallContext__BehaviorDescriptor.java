@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -32,10 +31,8 @@ public final class ICallContext__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> getContextParticipant_id4YQM_89uRDd = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getContextParticipant").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828452862541L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
   public static final SMethod<Iterable<SNode>> transitiveContents_id5_PV_QzPdVg = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("transitiveContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6446320527598739152L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(receivedItems_id4YQM_89vKC6, getContextParticipant_id4YQM_89uRDd, transitiveContents_id5_PV_QzPdVg);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(receivedItems_id4YQM_89vKC6, getContextParticipant_id4YQM_89uRDd, transitiveContents_id5_PV_QzPdVg);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> receivedItems_id4YQM_89vKC6(@NotNull SNode __thisNode__, SNode currentCall) {
     Iterable<SNode> transitiveContents = ICallContext__BehaviorDescriptor.transitiveContents_id5_PV_QzPdVg.invoke(__thisNode__);
@@ -59,10 +56,6 @@ public final class ICallContext__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ICallContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

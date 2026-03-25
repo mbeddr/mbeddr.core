@@ -19,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.mpsutil.editingGuide.runtime.rt.Helper;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.tempmodel.TemporaryModels;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -33,10 +32,8 @@ public final class ImageWord__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isModuleIdRequired_idJJxXu1sw3o = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isModuleIdRequired").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(860055413510504664L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
   public static final SMethod<Boolean> isModuleIdValid_id7r9XsdeqP8E = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isModuleIdValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8559642785977422378L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getModule_id7r9XsdeqO$Z, getImageModuleByModuleId_id7r9Xsder9tx, isEditingGuideActive_idJJxXu1sAqb, isModuleIdRequired_idJJxXu1sw3o, isModuleIdValid_id7r9XsdeqP8E);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getModule_id7r9XsdeqO$Z, getImageModuleByModuleId_id7r9Xsder9tx, isEditingGuideActive_idJJxXu1sAqb, isModuleIdRequired_idJJxXu1sw3o, isModuleIdValid_id7r9XsdeqP8E);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SModule getModule_id7r9XsdeqO$Z(@NotNull SNode __thisNode__) {
     return ((SModel) SNodeOperations.getModel(__thisNode__)).getModule();
@@ -57,10 +54,6 @@ public final class ImageWord__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ImageWord__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

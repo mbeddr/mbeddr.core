@@ -19,7 +19,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -34,10 +33,8 @@ public final class IScopeProvider__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static final SMethod<Scope> getScope_id1OcdQnySJNX = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getScope").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(2093108837558189309L).languageId(0xb77934f3a458c09bL, 0x3819ba3698f449acL).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
   /*package*/ static final SMethod<Integer> getIndex_id2tBHhziHd8h = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getIndex").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(2839437208299295249L).languageId(0xb77934f3a458c09bL, 0x3819ba3698f449acL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContributedScopeElements_id1OcdQnyTC1X, isInclusionIndexDependent_id2tBHhziHcNe, enforceUniqueNamesAmongContributedScopeElements_id1jrHnBBjdKu, getScope_id2tBHhziI8iF, getScope_id1OcdQnySJNX, getIndex_id2tBHhziHd8h);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContributedScopeElements_id1OcdQnyTC1X, isInclusionIndexDependent_id2tBHhziHcNe, enforceUniqueNamesAmongContributedScopeElements_id1jrHnBBjdKu, getScope_id2tBHhziI8iF, getScope_id1OcdQnySJNX, getIndex_id2tBHhziHd8h);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getContributedScopeElements_id1OcdQnyTC1X(@NotNull SNode __thisNode__) {
     return ScopingUtils.EMPTY_LIST;
@@ -100,10 +97,6 @@ public final class IScopeProvider__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IScopeProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

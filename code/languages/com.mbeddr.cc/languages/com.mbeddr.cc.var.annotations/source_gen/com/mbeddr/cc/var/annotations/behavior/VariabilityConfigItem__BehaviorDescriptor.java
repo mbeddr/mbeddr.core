@@ -22,7 +22,6 @@ import com.mbeddr.core.buildconfig.behavior.Binary__BehaviorDescriptor;
 import com.mbeddr.core.base.behavior.IIdentifierNamedConcept__BehaviorDescriptor;
 import java.util.ArrayList;
 import com.mbeddr.cc.var.fm.behavior.IMapping__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -41,10 +40,8 @@ public final class VariabilityConfigItem__BehaviorDescriptor extends BaseBHDescr
   public static final SMethod<Boolean> isFeatureSelected_id5USXI9KzkZO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isFeatureSelected").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6825476687691337716L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> getFeatureSelection_id6hM2_xVMLfJ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getFeatureSelection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7237858926288114671L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleVarSupport_id2B9nouIR1rq, visibleFeatureModels_id3yKJMlzsams, actuallyUsedFeatureModels_id1qn9LsHOJHx, visibleConfigurationModels_id3yKJMlzssh9, missingMappings_id4omMoHU$nz_, getNodesToImportNodes_id7P$_wJpwTgl, isFeatureSelected_id5USXI9KzkZO, getFeatureSelection_id6hM2_xVMLfJ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleVarSupport_id2B9nouIR1rq, visibleFeatureModels_id3yKJMlzsams, actuallyUsedFeatureModels_id1qn9LsHOJHx, visibleConfigurationModels_id3yKJMlzssh9, missingMappings_id4omMoHU$nz_, getNodesToImportNodes_id7P$_wJpwTgl, isFeatureSelected_id5USXI9KzkZO, getFeatureSelection_id6hM2_xVMLfJ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> visibleVarSupport_id2B9nouIR1rq(@NotNull SNode __thisNode__) {
     List<SNode> rootsIncludingImported = SModelOperations.rootsIncludingImported(SNodeOperations.getModel(__thisNode__), CONCEPTS.VariabilitySupport$Wc);
@@ -98,10 +95,6 @@ public final class VariabilityConfigItem__BehaviorDescriptor extends BaseBHDescr
   /*package*/ VariabilityConfigItem__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

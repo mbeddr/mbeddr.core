@@ -18,7 +18,6 @@ import java.util.Collections;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -34,10 +33,8 @@ public final class ILocalVarScopeProvider__BehaviorDescriptor extends BaseBHDesc
   public static final SMethod<LocalVarScope> getLocalVarScope_id1OcdQnySJNX = new SMethodBuilder<LocalVarScope>(new SJavaCompoundTypeImpl(LocalVarScope.class)).name("getLocalVarScope").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2093108837558189309L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
   public static final SMethod<Integer> getIndex_id2tBHhziHd8h = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getIndex").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2839437208299295249L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(queryAncestorScopeProvider_id1leqHN8kqt_, getContributedLocalVariables_id1OcdQnyTC1X, getContributedLocalVariables_id3LB9aGm4C$b, isInclusionIndexDependent_id2tBHhziHcNe, getLocalVarScope_id2tBHhziI8iF, getLocalVarScope_id1OcdQnySJNX, getIndex_id2tBHhziHd8h);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(queryAncestorScopeProvider_id1leqHN8kqt_, getContributedLocalVariables_id1OcdQnyTC1X, getContributedLocalVariables_id3LB9aGm4C$b, isInclusionIndexDependent_id2tBHhziHcNe, getLocalVarScope_id2tBHhziI8iF, getLocalVarScope_id1OcdQnySJNX, getIndex_id2tBHhziHd8h);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean queryAncestorScopeProvider_id1leqHN8kqt_(@NotNull SNode __thisNode__) {
     return true;
@@ -106,10 +103,6 @@ public final class ILocalVarScopeProvider__BehaviorDescriptor extends BaseBHDesc
   /*package*/ ILocalVarScopeProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -151,7 +151,7 @@
       </concept>
     </language>
     <language id="e89e1550-b8fe-4f0d-a7fd-487968b42405" name="com.mbeddr.mpsutil.collections">
-      <concept id="6355510489488665234" name="com.mbeddr.mpsutil.collections.structure.SNodeSetType" flags="ig" index="1s3Imc">
+      <concept id="6355510489488665234" name="com.mbeddr.mpsutil.collections.structure.SNodeSetType" flags="ng" index="1s3Imc">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
     </language>

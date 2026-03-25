@@ -17,7 +17,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.project.PathMacros;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -29,10 +28,8 @@ public final class MacroFilePicker__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<String> getErrorMessage_id5lKnBeAutg0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541422720000L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
   public static final SMethod<SNode> getCompanionFileOrFolderPicker_id3xqp6yeWGLu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getCompanionFileOrFolderPicker").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4060668414265576542L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPrefix_id6WnTJkDceu8, getErrorMessage_id5lKnBeAutg0, getCompanionFileOrFolderPicker_id3xqp6yeWGLu);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPrefix_id6WnTJkDceu8, getErrorMessage_id5lKnBeAutg0, getCompanionFileOrFolderPicker_id3xqp6yeWGLu);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPrefix_id6WnTJkDceu8(@NotNull SNode __thisNode__, SModel originalModel) {
     // First: Try to resolve specified MPS path macro 
@@ -60,10 +57,6 @@ public final class MacroFilePicker__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ MacroFilePicker__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

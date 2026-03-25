@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,10 +21,8 @@ public final class EMap__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<String> emfTypeName_id2AgFaoOYBRA = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("emfTypeName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2995083582054759910L).languageId(0xb392d01403e4086fL, 0x77948de36ef9452dL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(emfTypeName_id2AgFaoOYBRA);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(emfTypeName_id2AgFaoOYBRA);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String emfTypeName_id2AgFaoOYBRA(@NotNull SNode __thisNode__) {
     return "EMap";
@@ -34,10 +31,6 @@ public final class EMap__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ EMap__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

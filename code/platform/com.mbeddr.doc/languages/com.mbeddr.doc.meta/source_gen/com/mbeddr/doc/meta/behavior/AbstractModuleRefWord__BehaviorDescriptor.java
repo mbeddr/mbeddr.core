@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -29,10 +28,8 @@ public final class AbstractModuleRefWord__BehaviorDescriptor extends BaseBHDescr
   public static final SMethod<String> getNonOverriddenTextualRepresentation_id45LXldK0tgc = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getNonOverriddenTextualRepresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4715820023543878668L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
   public static final SMethod<SNode> getTargetNode_id3mn43GPgUJU = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTargetNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3861573051976231930L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReferenceTarget_id3OU98G0_Sax, getModuleType_id1R2r3DPJX9r, getNonOverriddenTextualRepresentation_id45LXldK0tgc, getTargetNode_id3mn43GPgUJU);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReferenceTarget_id3OU98G0_Sax, getModuleType_id1R2r3DPJX9r, getNonOverriddenTextualRepresentation_id45LXldK0tgc, getTargetNode_id3mn43GPgUJU);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   @Deprecated
   /*package*/ static SAbstractConcept getReferenceTarget_id3OU98G0_Sax(@NotNull SNode __thisNode__) {
@@ -48,10 +45,6 @@ public final class AbstractModuleRefWord__BehaviorDescriptor extends BaseBHDescr
   /*package*/ AbstractModuleRefWord__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

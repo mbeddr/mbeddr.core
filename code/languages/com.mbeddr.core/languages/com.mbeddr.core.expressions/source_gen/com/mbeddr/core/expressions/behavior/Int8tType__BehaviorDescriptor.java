@@ -30,7 +30,7 @@ public final class Int8tType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> createNextBiggerSignedCompanion_id4O$fzoYZDgS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createNextBiggerSignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5558636242788062264L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<String> getPrintfFormatSpecifier_id4XMHJL4FDjg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrintfFormatSpecifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5724839270941627600L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createdUnsignedCompanion_id5Xnv3$QELwg, containsCharRepresentation_idwlA5s7hwIc, tryToExtractIntegerValue_idwlA5s7hwID, getMappedRepresentation_idwlA5s7hwJa, getUsedBytes_id61lw97FtLtJ, getSize_id5HxjapwgqKe, createNextBiggerSignedCompanion_id4O$fzoYZDgS, getPrintfFormatSpecifier_id4XMHJL4FDjg);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createdUnsignedCompanion_id5Xnv3$QELwg, containsCharRepresentation_idwlA5s7hwIc, tryToExtractIntegerValue_idwlA5s7hwID, getMappedRepresentation_idwlA5s7hwJa, getUsedBytes_id61lw97FtLtJ, getSize_id5HxjapwgqKe, createNextBiggerSignedCompanion_id4O$fzoYZDgS, getPrintfFormatSpecifier_id4XMHJL4FDjg);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     // TODO: Prevent MPS vfrom removing the dependency to IVlaue while organizing imports

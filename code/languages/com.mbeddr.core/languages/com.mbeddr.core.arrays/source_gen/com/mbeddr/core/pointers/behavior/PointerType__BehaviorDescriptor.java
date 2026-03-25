@@ -41,7 +41,7 @@ public final class PointerType__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
   public static final SMethod<IToken> getToken_id6AaN29SvfIf = new SMethodBuilder<IToken>(new SJavaCompoundTypeImpl(IToken.class)).name("getToken").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7605115369190914959L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(IToken.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDefaultValue_id4jc_TWT4LGD, getPresentation_idhEwIMiw, getPrintfFormatSpecifier_id4XMHJL4FDjg, getSymbolForGenericDotOperation_id6o2p2Z0BE84, getUsedBytes_id61lw97FtLtJ, getToken_id6AaN29SvfIf);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDefaultValue_id4jc_TWT4LGD, getPresentation_idhEwIMiw, getPrintfFormatSpecifier_id4XMHJL4FDjg, getSymbolForGenericDotOperation_id6o2p2Z0BE84, getUsedBytes_id61lw97FtLtJ, getToken_id6AaN29SvfIf);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     Type__BehaviorDescriptor.initProperties_id7xjZ2JfxotC.invoke(__thisNode__);

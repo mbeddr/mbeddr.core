@@ -15,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.security.MessageDigest;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -34,10 +33,8 @@ public final class IExtRef__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static final SMethod<String> createHash_idGKLijS$FKJ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("createHash").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(806361095879179311L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<Void> update_idGKLijS$FKV = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("update").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095879179323L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFullExternalResourceName_id1JcbkuyZZUz, isValidID_idGKLijS$FK9, getKind_idGKLijS$FKl, getRelevantExternalContentForHashing_idGKLijS$FKd, getExternalDescription_idGKLijS$FKh, getStoredDescription_idGKLijSNXOH, updateStoredDescription_idGKLijSVdMs, isStillCurrent_idGKLijS$FKp, createHash_idGKLijS$FKJ, update_idGKLijS$FKV);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFullExternalResourceName_id1JcbkuyZZUz, isValidID_idGKLijS$FK9, getKind_idGKLijS$FKl, getRelevantExternalContentForHashing_idGKLijS$FKd, getExternalDescription_idGKLijS$FKh, getStoredDescription_idGKLijSNXOH, updateStoredDescription_idGKLijSVdMs, isStillCurrent_idGKLijS$FKp, createHash_idGKLijS$FKJ, update_idGKLijS$FKV);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getFullExternalResourceName_id1JcbkuyZZUz(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.extID$6taS);
@@ -69,10 +66,6 @@ public final class IExtRef__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IExtRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

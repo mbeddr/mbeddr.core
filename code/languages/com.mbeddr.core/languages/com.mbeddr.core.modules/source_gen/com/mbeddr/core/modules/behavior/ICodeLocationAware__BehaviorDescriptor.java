@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -31,10 +30,8 @@ public final class ICodeLocationAware__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<String> nativeCodeLocation_id4rTlJCHVgHp = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("nativeCodeLocation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5114214484368231257L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
   public static final SMethod<Void> initNodeID_id4rTlJCHVgHO = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("initNodeID").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5114214484368231284L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(codeIndex_id2lgwE2U46vt, effectiveCodeLocation_id2lgwE2U46vI, effectiveCodeLocationIDOnly_idIrwlmWzGkj, nativeCodeLocation_id4rTlJCHVgHp, initNodeID_id4rTlJCHVgHO);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(codeIndex_id2lgwE2U46vt, effectiveCodeLocation_id2lgwE2U46vI, effectiveCodeLocationIDOnly_idIrwlmWzGkj, nativeCodeLocation_id4rTlJCHVgHp, initNodeID_id4rTlJCHVgHO);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int codeIndex_id2lgwE2U46vt(@NotNull SNode __thisNode__) {
     return SNodeOperations.getNodeDescendants(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.ICodeLocationContext$aO, false, false), CONCEPTS.ICodeLocationAware$Qs, false, new SAbstractConcept[]{}).indexOf(__thisNode__);
@@ -71,10 +68,6 @@ public final class ICodeLocationAware__BehaviorDescriptor extends BaseBHDescript
   /*package*/ ICodeLocationAware__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

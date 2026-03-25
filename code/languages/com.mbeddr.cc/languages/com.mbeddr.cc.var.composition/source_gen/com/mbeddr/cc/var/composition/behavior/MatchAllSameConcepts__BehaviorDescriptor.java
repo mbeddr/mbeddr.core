@@ -17,7 +17,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -26,10 +25,8 @@ public final class MatchAllSameConcepts__BehaviorDescriptor extends BaseBHDescri
 
   public static final SMethod<Iterable<SNode>> matchedTargets_id3YyHFqO6HoC = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("matchedTargets").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438546984L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matchedTargets_id3YyHFqO6HoC);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matchedTargets_id3YyHFqO6HoC);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> matchedTargets_id3YyHFqO6HoC(@NotNull SNode __thisNode__, SModel m) {
     final SAbstractConcept concept = SNodeOperations.getConcept(MatchStrategy__BehaviorDescriptor.matchNode_id3YyHFqO62F_.invoke(__thisNode__));
@@ -39,10 +36,6 @@ public final class MatchAllSameConcepts__BehaviorDescriptor extends BaseBHDescri
   /*package*/ MatchAllSameConcepts__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

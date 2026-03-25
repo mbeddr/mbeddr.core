@@ -31,7 +31,7 @@ public final class FormattedText__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> setText_id2en8HnCGqDy = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2564556814938122850L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<String> toTextString_id3Q5enzfMT4t = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("toTextString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4433012599261204765L).languageId(0xa676c7604efe3504L, 0x92d2ea165a424fdfL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asTextString_id6byLOcR3jNg, setText_id2en8HnCGqDy, toTextString_id3Q5enzfMT4t);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asTextString_id6byLOcR3jNg, setText_id2en8HnCGqDy, toTextString_id3Q5enzfMT4t);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.text$eJIi, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x92d2ea165a424fdfL, 0xa676c7604efe3504L, 0x237c8da86a9e4e61L, "de.slisson.mps.richtext.structure.Text")));

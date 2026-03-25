@@ -15,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,10 +24,8 @@ public final class IMultilingualNamedConcept__BehaviorDescriptor extends BaseBHD
 
   public static final SMethod<String> getPresentationMultilingual_id2bng37sXCGQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentationMultilingual").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061046L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentationMultilingual_id2bng37sXCGQ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentationMultilingual_id2bng37sXCGQ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentationMultilingual_id2bng37sXCGQ(@NotNull SNode __thisNode__) {
     return (String) BaseConcept__BehaviorDescriptor.getDetailedPresentation_id22G2W3WJ92t.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.multiName$EpRI));
@@ -37,10 +34,6 @@ public final class IMultilingualNamedConcept__BehaviorDescriptor extends BaseBHD
   /*package*/ IMultilingualNamedConcept__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

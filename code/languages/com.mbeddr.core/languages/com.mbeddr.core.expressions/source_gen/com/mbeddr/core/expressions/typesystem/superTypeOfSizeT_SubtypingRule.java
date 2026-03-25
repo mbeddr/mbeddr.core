@@ -27,9 +27,6 @@ public class superTypeOfSizeT_SubtypingRule extends SubtypingRule_Runtime implem
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept SizeT$IZ = MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x7affc525ceeaf5d4L, "com.mbeddr.core.expressions.structure.SizeT");

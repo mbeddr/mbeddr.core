@@ -19,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.mbeddr.core.modules.behavior.ModuleContentDepHelper;
 import com.mbeddr.core.base.behavior.IRequiresConfigItem__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -40,10 +39,8 @@ public final class Interface__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genStructName_id4WLtQa9fEO8, allReferencedModuleContents_id1zPfrUoUUqq, canBeUsedInMultipleRP_id2ZUGF54k3cG, hasProtocol_id5oFMniD9Ori, getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, getConfigItem_id5HxjapwgqMb, createType_id3o2OLGv7CoR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genStructName_id4WLtQa9fEO8, allReferencedModuleContents_id1zPfrUoUUqq, canBeUsedInMultipleRP_id2ZUGF54k3cG, hasProtocol_id5oFMniD9Ori, getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, getConfigItem_id5HxjapwgqMb, createType_id3o2OLGv7CoR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String genStructName_id4WLtQa9fEO8(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + "__idata";
@@ -70,10 +67,6 @@ public final class Interface__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Interface__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

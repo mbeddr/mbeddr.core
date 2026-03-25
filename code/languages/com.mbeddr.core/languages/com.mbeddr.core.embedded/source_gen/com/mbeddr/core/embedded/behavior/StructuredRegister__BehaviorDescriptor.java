@@ -28,7 +28,7 @@ public final class StructuredRegister__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<String> unionName_id4PgLlwdOe_U = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("unionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5571169721036892538L).languageId(0xbe99293a162652b5L, 0x783af01f87a7412cL).build2();
   public static final SMethod<String> structName_id4PgLlwdOeA6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("structName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5571169721036892550L).languageId(0xbe99293a162652b5L, 0x783af01f87a7412cL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(unionName_id4PgLlwdOe_U, structName_id4PgLlwdOeA6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(unionName_id4PgLlwdOe_U, structName_id4PgLlwdOeA6);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.setExpression$rP4R, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x783af01f87a7412cL, 0xbe99293a162652b5L, 0x5f072ca6a4161bd9L, "com.mbeddr.core.embedded.structure.RegisterValueExpression")));

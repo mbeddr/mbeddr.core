@@ -4,25 +4,24 @@ package com.mbeddr.doc.constraints;
 
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 import jetbrains.mps.logging.Logger;
+import jetbrains.mps.smodel.runtime.ConstraintsDescriptorInitContext;
 import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import java.util.Map;
-import org.jetbrains.mps.openapi.language.SProperty;
-import jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor;
-import java.util.HashMap;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public class TableOfContents_Constraints extends BaseConstraintsDescriptor {
   private static final Logger LOG = Logger.getLogger(TableOfContents_Constraints.class);
-  public TableOfContents_Constraints() {
-    super(CONCEPTS.TableOfContents$G2);
+  /*package*/ TableOfContents_Constraints(ConstraintsDescriptorInitContext initContext) {
+    super(CONCEPTS.TableOfContents$G2, initContext);
+    record(new Name_PD(this));
   }
 
-  public static class Name_Property extends BasePropertyConstraintsDescriptor {
-    public Name_Property(ConstraintsDescriptor container) {
+  /*package*/ static final class Name_PD extends BasePropertyConstraintsDescriptor {
+    public Name_PD(ConstraintsDescriptor container) {
       super(PROPS.name$MnvL, container, true, true, false);
     }
     @Override
@@ -45,12 +44,6 @@ public class TableOfContents_Constraints extends BaseConstraintsDescriptor {
     private static void staticSetPropertyValue(SNode node, String propertyValue) {
       node.setProperty("name", (((Object) propertyValue) != null ? ((Object) propertyValue).toString() : null));
     }
-  }
-  @Override
-  protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
-    Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(PROPS.name$MnvL, new Name_Property(this));
-    return properties;
   }
 
   private static final class CONCEPTS {

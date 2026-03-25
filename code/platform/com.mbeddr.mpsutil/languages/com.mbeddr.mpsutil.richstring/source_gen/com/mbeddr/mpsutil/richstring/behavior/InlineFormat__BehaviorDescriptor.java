@@ -24,7 +24,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.ArrayList;
 import com.mbeddr.mpsutil.richstring.plugin.IRichstringEvaluator;
 import jetbrains.mps.smodel.structure.ExtensionPoint;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -42,10 +41,8 @@ public final class InlineFormat__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Object> getExampleValue_idM6L5HumnCS = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("getExampleValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(902624672038353464L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
   public static final SMethod<SNode> getExpressionType_id7Ssz$kYjeZx = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getExpressionType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9087294576175935457L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderExampleString_id2UbT3C4dfVQ, toTextString_id3Q5enzfMT4t, concatFormatString_id5qZNa$QMfx1, calculateCategory_id6Go9U2z7T3y, calculateCategory2_id38BeNG_3AFp, listAvailableCategories_id6Go9U2y2H03, getExampleValue_idM6L5HumnCS, getExpressionType_id7Ssz$kYjeZx);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderExampleString_id2UbT3C4dfVQ, toTextString_id3Q5enzfMT4t, concatFormatString_id5qZNa$QMfx1, calculateCategory_id6Go9U2z7T3y, calculateCategory2_id38BeNG_3AFp, listAvailableCategories_id6Go9U2y2H03, getExampleValue_idM6L5HumnCS, getExpressionType_id7Ssz$kYjeZx);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderExampleString_id2UbT3C4dfVQ(@NotNull SNode __thisNode__) {
     Object exampleObject = IInlineFormat__BehaviorDescriptor.getExampleValue_idM6L5HumnCS.invoke(__thisNode__);
@@ -107,10 +104,6 @@ public final class InlineFormat__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ InlineFormat__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

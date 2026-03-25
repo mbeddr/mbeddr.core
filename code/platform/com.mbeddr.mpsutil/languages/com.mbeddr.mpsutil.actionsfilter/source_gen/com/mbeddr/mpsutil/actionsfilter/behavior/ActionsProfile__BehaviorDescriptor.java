@@ -20,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.mbeddr.mpsutil.actionsfilter.runtime.ActionRootGroup;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -34,10 +33,8 @@ public final class ActionsProfile__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isRemoveMode_id1TS1BLORxU1 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isRemoveMode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2195511949949542017L).languageId(0x9ebf2a764e824bb5L, 0xc38abce14c0944cbL).build2();
   public static final SMethod<Boolean> isAllowMode_id1TS1BLORzSI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isAllowMode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2195511949949550126L).languageId(0x9ebf2a764e824bb5L, 0xc38abce14c0944cbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(removeActions_id5ARcp1bs_dG, isRemoveMode_id1TS1BLORxU1, isAllowMode_id1TS1BLORzSI);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(removeActions_id5ARcp1bs_dG, isRemoveMode_id1TS1BLORxU1, isAllowMode_id1TS1BLORzSI);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> removeActions_id5ARcp1bs_dG(@NotNull SNode __thisNode__) {
     if (((boolean) ActionsProfile__BehaviorDescriptor.isRemoveMode_id1TS1BLORxU1.invoke(__thisNode__))) {
@@ -62,10 +59,6 @@ public final class ActionsProfile__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ActionsProfile__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

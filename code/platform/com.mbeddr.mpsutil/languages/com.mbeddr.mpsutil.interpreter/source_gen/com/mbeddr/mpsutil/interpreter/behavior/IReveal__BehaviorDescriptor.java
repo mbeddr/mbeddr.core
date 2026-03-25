@@ -13,7 +13,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,19 +22,13 @@ public final class IReveal__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> mustBeRevealed_id4hW8Ne0aLJi = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustBeRevealed").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4934857995791834066L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(Object.class, ""));
   public static final SMethod<SNode> getTheNodeToEvalute_id4hW8Ne0mTH4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTheNodeToEvalute").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4934857995795012420L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mustBeRevealed_id4hW8Ne0aLJi, getTheNodeToEvalute_id4hW8Ne0mTH4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mustBeRevealed_id4hW8Ne0aLJi, getTheNodeToEvalute_id4hW8Ne0mTH4);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IReveal__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,10 +25,8 @@ public final class IConfigurationContainer__BehaviorDescriptor extends BaseBHDes
 
   public static final SMethod<SNode> findItemOfType_id3R$6B6bL1DB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("findItemOfType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4459718605982145127L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findItemOfType_id3R$6B6bL1DB);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findItemOfType_id3R$6B6bL1DB);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode findItemOfType_id3R$6B6bL1DB(@NotNull SNode __thisNode__, final SNode concept) {
     return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.configurationItems$HPvE)).findFirst((it) -> SNodeOperations.isInstanceOf(it, SNodeOperations.asSConcept(SNodeOperations.asSConcept(concept))));
@@ -38,10 +35,6 @@ public final class IConfigurationContainer__BehaviorDescriptor extends BaseBHDes
   /*package*/ IConfigurationContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

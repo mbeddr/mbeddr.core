@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.core.base.behavior.ICommentable__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -45,10 +44,8 @@ public final class IModuleContent__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> isSourceFileContent_id6rD2$2sc6_0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSourceFileContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7415469534056835392L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
   public static final SMethod<Boolean> isHeaderFileContent_id6rD2$2sc8kI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isHeaderFileContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7415469534056842542L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(owningModule_id19a6$uAAaU1, needsReferenceQualifier_id19a6$uAAaUR, referenceQualifier_id19a6$uAAaUi, preventNameMangling_id5Oog2UbP_bT, getMangledName_id19a6$uAAq0e, getMangledName_idMToHDoMW9f, sortWeight_id6W5EUuUE5hm, allReferencedModuleContents_id1zPfrUoUUqq, kindString_id5KH1ziO54kR, createImportedProxy_id35NyAcQ9Xn, exportable_id5HxjapwgqKI, getCommentConcept_id5HxjapwgqLb, isCommentable_id3RtPbXKOu_B, isSourceFileContent_id6rD2$2sc6_0, isHeaderFileContent_id6rD2$2sc8kI);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(owningModule_id19a6$uAAaU1, needsReferenceQualifier_id19a6$uAAaUR, referenceQualifier_id19a6$uAAaUi, preventNameMangling_id5Oog2UbP_bT, getMangledName_id19a6$uAAq0e, getMangledName_idMToHDoMW9f, sortWeight_id6W5EUuUE5hm, allReferencedModuleContents_id1zPfrUoUUqq, kindString_id5KH1ziO54kR, createImportedProxy_id35NyAcQ9Xn, exportable_id5HxjapwgqKI, getCommentConcept_id5HxjapwgqLb, isCommentable_id3RtPbXKOu_B, isSourceFileContent_id6rD2$2sc6_0, isHeaderFileContent_id6rD2$2sc8kI);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode owningModule_id19a6$uAAaU1(@NotNull SNode __thisNode__) {
     return SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.Module$fX, false, false);
@@ -113,10 +110,6 @@ public final class IModuleContent__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IModuleContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

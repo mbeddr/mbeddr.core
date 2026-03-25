@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,10 +25,8 @@ public final class ITypeContainingType__BehaviorDescriptor extends BaseBHDescrip
 
   public static final SMethod<SNode> bottomType_id52l0VUuMCMa = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("bottomType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5806551411806866570L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(bottomType_id52l0VUuMCMa);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(bottomType_id52l0VUuMCMa);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode bottomType_id52l0VUuMCMa(@NotNull SNode __thisNode__) {
     if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(__thisNode__, LINKS.baseType$zMGV), CONCEPTS.ITypeContainingType$9B)) {
@@ -42,10 +39,6 @@ public final class ITypeContainingType__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ ITypeContainingType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

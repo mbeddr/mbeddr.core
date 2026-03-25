@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.base.behavior.ICommentable__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -30,10 +29,8 @@ public final class IComponentContent__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<SNode> owningComponent_id19a6$uAAaU1 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("owningComponent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317894735999315585L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
   public static final SMethod<Iterable<SNode>> allReferencedModuleContents_id1zPfrUoUUqq = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allReferencedModuleContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1798411515023042202L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(kindString_id5KH1ziO54kR, getCommentConcept_id5HxjapwgqLb, owningComponent_id19a6$uAAaU1, allReferencedModuleContents_id1zPfrUoUUqq);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(kindString_id5KH1ziO54kR, getCommentConcept_id5HxjapwgqLb, owningComponent_id19a6$uAAaU1, allReferencedModuleContents_id1zPfrUoUUqq);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String kindString_id5KH1ziO54kR(@NotNull SNode __thisNode__) {
     return SNodeOperations.getConcept(__thisNode__).getName();
@@ -53,10 +50,6 @@ public final class IComponentContent__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ IComponentContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

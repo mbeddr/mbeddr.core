@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -31,10 +30,8 @@ public final class ConditionalConceptEvaluator__BehaviorDescriptor extends BaseB
 
   public static final SMethod<Void> addCondition_id7oujAIePZ3i = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addCondition").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8511326569641799890L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addCondition_id7oujAIePZ3i);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addCondition_id7oujAIePZ3i);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void addCondition_id7oujAIePZ3i(@NotNull SNode __thisNode__) {
     List<SNode> ownLinkDeclarations = AbstractConceptDeclaration__BehaviorDescriptor.getLinkDeclarations_idhEwILKK.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.concept$r$Lj));
@@ -66,10 +63,6 @@ public final class ConditionalConceptEvaluator__BehaviorDescriptor extends BaseB
   /*package*/ ConditionalConceptEvaluator__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

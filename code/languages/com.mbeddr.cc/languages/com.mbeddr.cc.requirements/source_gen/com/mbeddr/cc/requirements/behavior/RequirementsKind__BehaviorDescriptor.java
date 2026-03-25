@@ -18,7 +18,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -32,10 +31,8 @@ public final class RequirementsKind__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<Color> getCharacteriticColor_id1FPlGg16G3O = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getCharacteriticColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1942554214112346356L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
   public static final SMethod<List<SAbstractConcept>> getRequiredDataKind_id2AZbPfMcvYE = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getRequiredDataKind").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3008175113698934698L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getMissingDataConcepts_id2WRRjDdovig, getVisualizationIconLetter_id5MZGKPTcRdC, doNotShowDescription_id4Ixybz48Omr, getCharacteriticColor_id1FPlGg16G3O, getRequiredDataKind_id2AZbPfMcvYE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getMissingDataConcepts_id2WRRjDdovig, getVisualizationIconLetter_id5MZGKPTcRdC, doNotShowDescription_id4Ixybz48Omr, getCharacteriticColor_id1FPlGg16G3O, getRequiredDataKind_id2AZbPfMcvYE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SAbstractConcept> getMissingDataConcepts_id2WRRjDdovig(@NotNull SNode __thisNode__, SNode req) {
     List<SAbstractConcept> res = ListSequence.fromList(new ArrayList<SAbstractConcept>());
@@ -62,10 +59,6 @@ public final class RequirementsKind__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ RequirementsKind__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

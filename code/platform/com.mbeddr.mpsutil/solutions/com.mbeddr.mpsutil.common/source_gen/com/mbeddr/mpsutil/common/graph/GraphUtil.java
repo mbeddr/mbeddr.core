@@ -33,8 +33,8 @@ public class GraphUtil {
   }
 
   /**
-   * Determines whether the given directed graph corresponds to a connected graph, 
-   * i.e. all graph nodes are reachable from the initial node, using a BFS. 
+   * Determines whether the given directed graph corresponds to a connected graph,
+   * i.e. all graph nodes are reachable from the initial node, using a BFS.
    * 
    * @param graph the directed graph containing nodes of type T
    * @param initial the node of type T the algorithm starts from
@@ -71,7 +71,7 @@ public class GraphUtil {
   }
 
   /**
-   * Returns the set of nodes in the strongly connected component that the sought node is in. 
+   * Returns the set of nodes in the strongly connected component that the sought node is in.
    * 
    * @param sought the sought node
    * @param graph the graph
@@ -196,8 +196,8 @@ public class GraphUtil {
 
   /**
    * Returns the topological sorting of the nodes of the given graph.
-   * If silent is true, a possible cycle is swallowed and simply an empty list is returned, 
-   * otherwise an Exception is thrown to indicate the cyclic input graph. 
+   * If silent is true, a possible cycle is swallowed and simply an empty list is returned,
+   * otherwise an Exception is thrown to indicate the cyclic input graph.
    * 
    * @param _graph the input graph
    * @param <T> the type parameter of the nodes in the graph

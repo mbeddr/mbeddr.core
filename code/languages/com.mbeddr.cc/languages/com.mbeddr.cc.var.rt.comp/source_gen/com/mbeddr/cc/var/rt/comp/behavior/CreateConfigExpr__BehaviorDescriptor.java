@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -27,10 +26,8 @@ public final class CreateConfigExpr__BehaviorDescriptor extends BaseBHDescriptor
 
   public static final SMethod<SNode> applicableRtFeatureModel_id6W8yq39oS5q = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("applicableRtFeatureModel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8000796061690200410L).languageId(0x9b6366e0f087cb60L, 0x3fa5cffbe29d4e5dL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(applicableRtFeatureModel_id6W8yq39oS5q);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(applicableRtFeatureModel_id6W8yq39oS5q);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode applicableRtFeatureModel_id6W8yq39oS5q(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(__thisNode__), CONCEPTS.InitFieldInitializer$SB), LINKS.field$SvlC), LINKS.type$sXU3), CONCEPTS.RtFeatureModelType$Gh), LINKS.featureModel$Cr7u);
@@ -39,10 +36,6 @@ public final class CreateConfigExpr__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ CreateConfigExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

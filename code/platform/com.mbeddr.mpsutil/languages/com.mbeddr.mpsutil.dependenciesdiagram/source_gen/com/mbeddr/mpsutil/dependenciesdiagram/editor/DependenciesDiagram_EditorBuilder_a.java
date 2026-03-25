@@ -273,7 +273,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
                     public void run() {
                       final ContextVariables _variablesContext = ContextVariables.getCurrent();
                       final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-                      editorCell.setCellId("transformedGraphElement_b1a_0" + "." + DependenciesDiagramHelper.getIdModuleDependency(((Tuples._2<SModule, SDependency>) _variablesContext.getValue("parameterObject"))));
+                      editorCell.setCellId("transformedGraphElement_b1a" + "." + DependenciesDiagramHelper.getIdModuleDependency(((Tuples._2<SModule, SDependency>) _variablesContext.getValue("parameterObject"))));
 
                       final EditorCell labelCell = DiagramUtil.getCellIfNotEmpty(new Inline_Builder_27agb5_a1b0(editorContext, node).createCell());
                       if (labelCell != null) {
@@ -846,7 +846,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     return editorCell.value;
   }
   private EditorCell createDiagram_1() {
-    return createDiagram_0(getEditorContext(), myNode);
+    return createDiagram_0(getEditorContext(), getNode());
   }
   /*package*/ static class Inline_Builder_27agb5_a0b0 extends AbstractEditorBuilder {
     @NotNull

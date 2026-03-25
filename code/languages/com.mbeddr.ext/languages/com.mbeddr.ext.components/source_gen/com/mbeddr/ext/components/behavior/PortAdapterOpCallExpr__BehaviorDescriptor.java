@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -28,10 +27,8 @@ public final class PortAdapterOpCallExpr__BehaviorDescriptor extends BaseBHDescr
   public static final SMethod<SNode> effectiveTargetRunnable_idpTHqv6LfEZ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("effectiveTargetRunnable").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(466603768608520895L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
   public static final SMethod<Boolean> canSideTransform_id4GzlXVK__1_ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canSideTransform").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5414267792060207205L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(effectiveTargetRunnable_idpTHqv6LfEZ, canSideTransform_id4GzlXVK__1_);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(effectiveTargetRunnable_idpTHqv6LfEZ, canSideTransform_id4GzlXVK__1_);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode effectiveTargetRunnable_idpTHqv6LfEZ(@NotNull SNode __thisNode__) {
     SNode comp = SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.expression$PfNq), LINKS.portAdater$$CH8), LINKS.portRef$g$fy), LINKS.instance$87uC), LINKS.component$ikVC);
@@ -44,10 +41,6 @@ public final class PortAdapterOpCallExpr__BehaviorDescriptor extends BaseBHDescr
   /*package*/ PortAdapterOpCallExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

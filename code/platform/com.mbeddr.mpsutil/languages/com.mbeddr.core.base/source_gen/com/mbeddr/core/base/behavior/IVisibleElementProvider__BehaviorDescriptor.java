@@ -22,7 +22,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Collections;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -39,10 +38,8 @@ public final class IVisibleElementProvider__BehaviorDescriptor extends BaseBHDes
   public static final SMethod<SNode> findByName_idjS_CvxKV3X = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("findByName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(358201680728404221L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<Iterable<SNode>> visibleContentsOfTypeAsSequence_id3g6LnlWuSo8 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleContentsOfTypeAsSequence").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3748900848222832136L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleContentsOfType_id6clJcrJXo2_, visibleContentsOfType_id79$zShlSHxZ, hasVisibleContentsOfType_id7Vd878lThb_, hasVisibleContentsOfType_idjS_CvxKV1a, findByName_id6clJcrJXo2G, findByName_idjS_CvxKV3X, visibleContentsOfTypeAsSequence_id3g6LnlWuSo8);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleContentsOfType_id6clJcrJXo2_, visibleContentsOfType_id79$zShlSHxZ, hasVisibleContentsOfType_id7Vd878lThb_, hasVisibleContentsOfType_idjS_CvxKV1a, findByName_id6clJcrJXo2G, findByName_idjS_CvxKV3X, visibleContentsOfTypeAsSequence_id3g6LnlWuSo8);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Scope visibleContentsOfType_id79$zShlSHxZ(@NotNull SNode __thisNode__, SAbstractConcept targetConcept) {
     Iterable<SNode> visibleContentsOfType = IVisibleElementProvider__BehaviorDescriptor.visibleContentsOfType_id6clJcrJXo2_.invoke(__thisNode__, SNodeOperations.asNode(targetConcept));
@@ -85,10 +82,6 @@ public final class IVisibleElementProvider__BehaviorDescriptor extends BaseBHDes
   /*package*/ IVisibleElementProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -30,10 +29,8 @@ public final class Operation__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> presentation_id2$xXL4HsOsB = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("presentation").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2963921682935531303L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(StyledTextPrinter.class, ""));
   public static final SMethod<SNode> getStatementList_id71UKpntnl7S = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getStatementList").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8105003328814797304L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(presentation_id2$xXL4HsOsB, getStatementList_id71UKpntnl7S);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(presentation_id2$xXL4HsOsB, getStatementList_id71UKpntnl7S);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void presentation_id2$xXL4HsOsB(@NotNull SAbstractConcept __thisConcept__, SNode paramObj, SNode selectedArg, StyledTextPrinter styledText) {
 
@@ -77,10 +74,6 @@ public final class Operation__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Operation__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

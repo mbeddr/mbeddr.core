@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -23,10 +22,8 @@ public final class SideTransformSource__BehaviorDescriptor extends BaseBHDescrip
 
   public static final SMethod<SNode> getEntryType_id6W_V$ebpjfe = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getEntryType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8009069486217180110L).languageId(0x9885abb75d472fd1L, 0x677f00fb4488405eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEntryType_id6W_V$ebpjfe);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEntryType_id6W_V$ebpjfe);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getEntryType_id6W_V$ebpjfe(@NotNull SNode __thisNode__) {
     return _quotation_createNode_luz2s0_a0a0();
@@ -35,10 +32,6 @@ public final class SideTransformSource__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ SideTransformSource__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

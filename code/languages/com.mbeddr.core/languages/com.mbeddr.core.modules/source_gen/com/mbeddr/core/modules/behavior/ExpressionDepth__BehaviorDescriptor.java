@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.mbeddr.core.base.behavior.Metric__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,10 +25,8 @@ public final class ExpressionDepth__BehaviorDescriptor extends BaseBHDescriptor 
 
   public static final SMethod<Void> update_id4$VRXeHdE9I = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("update").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5277057488631800430L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(update_id4$VRXeHdE9I);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(update_id4$VRXeHdE9I);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void update_id4$VRXeHdE9I(@NotNull SNode __thisNode__, SNode n) {
     if (SNodeOperations.isInstanceOf(n, CONCEPTS.Expression$bT) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(n), CONCEPTS.Expression$bT))) {
@@ -41,10 +38,6 @@ public final class ExpressionDepth__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ ExpressionDepth__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

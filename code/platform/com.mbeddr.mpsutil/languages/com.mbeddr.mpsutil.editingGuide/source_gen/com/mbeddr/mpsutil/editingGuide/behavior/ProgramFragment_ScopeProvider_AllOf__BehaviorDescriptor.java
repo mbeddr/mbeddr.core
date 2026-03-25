@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -25,10 +24,8 @@ public final class ProgramFragment_ScopeProvider_AllOf__BehaviorDescriptor exten
 
   public static final SMethod<Scope> getProvidedNodes_id22irgSmHAOg = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getProvidedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2347058263091473680L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getProvidedNodes_id22irgSmHAOg);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getProvidedNodes_id22irgSmHAOg);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Scope getProvidedNodes_id22irgSmHAOg(@NotNull SNode __thisNode__, SAbstractConcept targetConcept) {
     return (Scope) INodeExporter__BehaviorDescriptor.getExportedNodes_id79$zShlSHxZ.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.target$nM5E), targetConcept);
@@ -37,10 +34,6 @@ public final class ProgramFragment_ScopeProvider_AllOf__BehaviorDescriptor exten
   /*package*/ ProgramFragment_ScopeProvider_AllOf__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

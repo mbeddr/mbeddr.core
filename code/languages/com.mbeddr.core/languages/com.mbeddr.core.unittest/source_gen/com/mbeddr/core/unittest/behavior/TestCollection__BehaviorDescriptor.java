@@ -41,7 +41,7 @@ public final class TestCollection__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> getFqName_id2SFcQFX9NxK = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFqName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3326809284349999216L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
   public static final SMethod<Boolean> isExternVisible_id7nMAuIoJecy = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isExternVisible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8499024683960427298L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(actsAsMainFunction_id2MbfxrZIa1M, exportable_id5HxjapwgqKI, getFlattenedTestCollections_id7nMAuIoMp7p, createNewTestRefToThisTest_iddkANm6soSZ, getName_id2SFcQFX9N3G, getAssertionCount_id2SFcQFX9Nhz, getFqName_id2SFcQFX9NxK, isExternVisible_id7nMAuIoJecy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(actsAsMainFunction_id2MbfxrZIa1M, exportable_id5HxjapwgqKI, getFlattenedTestCollections_id7nMAuIoMp7p, createNewTestRefToThisTest_iddkANm6soSZ, getName_id2SFcQFX9N3G, getAssertionCount_id2SFcQFX9Nhz, getFqName_id2SFcQFX9NxK, isExternVisible_id7nMAuIoJecy);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.entrypoint$RdMb, true);

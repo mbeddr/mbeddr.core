@@ -13,7 +13,6 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -22,19 +21,13 @@ public final class PrimitiveReadWriteTarget__BehaviorDescriptor extends BaseBHDe
 
   public static final SMethod<SNode> expectedExprType_id7op4RkOvNOW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("expectedExprType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8509854365006118204L).languageId(0xae278662d274cf3cL, 0xbb0ad88b63cd45fdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(expectedExprType_id7op4RkOvNOW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(expectedExprType_id7op4RkOvNOW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ PrimitiveReadWriteTarget__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

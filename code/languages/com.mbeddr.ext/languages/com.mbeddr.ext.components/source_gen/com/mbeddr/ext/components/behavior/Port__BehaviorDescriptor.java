@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -35,10 +34,8 @@ public final class Port__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> getMemberName_idctKDnnao9U = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMemberName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(224549505254130298L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
   public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isInPort_id2IZ2bWs0yDx, protocolStateVarName_id5oFMniD9Osh, characteristicString_id58NNGt3bEdV, genStructMemberName_id28AiFOmViAS, createNameFromInterface_id4YmSJdK70C, getConceptToBeCounted_id6brBMefSzRs, getMemberName_idctKDnnao9U, createType_id3o2OLGv7CoR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isInPort_id2IZ2bWs0yDx, protocolStateVarName_id5oFMniD9Osh, characteristicString_id58NNGt3bEdV, genStructMemberName_id28AiFOmViAS, createNameFromInterface_id4YmSJdK70C, getConceptToBeCounted_id6brBMefSzRs, getMemberName_idctKDnnao9U, createType_id3o2OLGv7CoR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String protocolStateVarName_id5oFMniD9Osh(@NotNull SNode __thisNode__) {
     return "___" + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + "__protocolState";
@@ -68,10 +65,6 @@ public final class Port__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Port__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -30,7 +30,7 @@ public final class PathDefinition__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> getSubsitutedPath_id3RseghIca7J = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSubsitutedPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457500422381281775L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
   public static final SMethod<Boolean> needsMapping_id2i$odZBB7La = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("needsMapping").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2640341796325719114L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isValid_id5yxqZJwzC5j, createFilename_id47ZkZt5XSUO, ensurePathExists_id3$JYbdolVFS, getSubsitutedPath_id3RseghIca7J, needsMapping_id2i$odZBB7La);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isValid_id5yxqZJwzC5j, createFilename_id47ZkZt5XSUO, ensurePathExists_id3$JYbdolVFS, getSubsitutedPath_id3RseghIca7J, needsMapping_id2i$odZBB7La);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.pathPicker$QPZE, null);

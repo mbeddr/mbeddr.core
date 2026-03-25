@@ -16,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -29,10 +28,8 @@ public final class Trigger__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> readableString_id3t79XWtEc3h = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("readableString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3983196234661282001L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
   public static final SMethod<SNode> getEvent_id1_07M0PJvWu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getEvent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1819488472658738974L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(readableString_id3t79XWtEc3h, getEvent_id1_07M0PJvWu);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(readableString_id3t79XWtEc3h, getEvent_id1_07M0PJvWu);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String readableString_id3t79XWtEc3h(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.event$ThCP), PROPS.name$MnvL);
@@ -44,10 +41,6 @@ public final class Trigger__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Trigger__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

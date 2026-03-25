@@ -17,7 +17,6 @@ import com.mbeddr.mpsutil.incrementalcomputation.runtime.ValueHolderInfo;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -34,10 +33,8 @@ public final class IncrementallyComputedValueHolder__BehaviorDescriptor extends 
   public static final SMethod<Iterable<Tuples._2<Object, Iterable<SNode>>>> getAllCycles_id5YITc37Rtfk = new SMethodBuilder<Iterable<Tuples._2<Object, Iterable<SNode>>>>(new SJavaCompoundTypeImpl((Class<Iterable<Tuples._2<Object, Iterable<SNode>>>>) ((Class) Object.class))).name("getAllCycles").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6894699596188865492L).languageId(0x9cd4f00968145931L, 0xfca4b68711d4461fL).build2();
   public static final SMethod<ValueHolderInfo> getValueHolderInfo_id2S2eLhiM$ey = new SMethodBuilder<ValueHolderInfo>(new SJavaCompoundTypeImpl(ValueHolderInfo.class)).name("getValueHolderInfo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3315277234172478370L).languageId(0x9cd4f00968145931L, 0xfca4b68711d4461fL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDependencies_id2S2eLhiMzhL, calculateValue_idRObVTFnZ_0, getChangeEffect_idKudFejX3SG, isActive_id5nAcTtn9HEK, isEditorUpdateEnabled_id5nAcTtnb1YA, getValue_id2S2eLhiM$8m, hasCycle_idQuEk0ZLOai, getAllCycles_id5YITc37Rtfk, getValueHolderInfo_id2S2eLhiM$ey);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDependencies_id2S2eLhiMzhL, calculateValue_idRObVTFnZ_0, getChangeEffect_idKudFejX3SG, isActive_id5nAcTtn9HEK, isEditorUpdateEnabled_id5nAcTtnb1YA, getValue_id2S2eLhiM$8m, hasCycle_idQuEk0ZLOai, getAllCycles_id5YITc37Rtfk, getValueHolderInfo_id2S2eLhiM$ey);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isActive_id5nAcTtn9HEK(@NotNull SNode __thisNode__, Object valueSelector) {
     return true;
@@ -55,7 +52,7 @@ public final class IncrementallyComputedValueHolder__BehaviorDescriptor extends 
     return IncrementallyComputedValueHolder__BehaviorDescriptor.getValueHolderInfo_id2S2eLhiM$ey.invoke(__thisNode__).getAllCycles();
   }
   /*package*/ static ValueHolderInfo getValueHolderInfo_id2S2eLhiM$ey(@NotNull SNode __thisNode__) {
-    ValueHolderInfo pi = as_p2pa79_a0a0a12(__thisNode__.getUserObject(ValueHolderInfo.USER_OBJECT_ID), ValueHolderInfo.class);
+    ValueHolderInfo pi = as_p2pa79_a0a0a02(__thisNode__.getUserObject(ValueHolderInfo.USER_OBJECT_ID), ValueHolderInfo.class);
     if (pi == null) {
       pi = new ValueHolderInfo(__thisNode__);
       __thisNode__.putUserObject(ValueHolderInfo.USER_OBJECT_ID, pi);
@@ -67,10 +64,6 @@ public final class IncrementallyComputedValueHolder__BehaviorDescriptor extends 
   /*package*/ IncrementallyComputedValueHolder__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
@@ -119,7 +112,7 @@ public final class IncrementallyComputedValueHolder__BehaviorDescriptor extends 
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static <T> T as_p2pa79_a0a0a12(Object o, Class<T> type) {
+  private static <T> T as_p2pa79_a0a0a02(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 }

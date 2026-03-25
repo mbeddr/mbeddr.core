@@ -17,7 +17,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.base.behavior.TextBlock__BehaviorDescriptor;
 import com.mbeddr.core.base.editor.BasicColors;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -32,10 +31,8 @@ public final class CommentStatement__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<String> getTextualRepresentation_idfB3l80ylIb = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTextualRepresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(281208147581426571L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
   public static final SMethod<Color> getBracketColor_idBsHjoDRsTa = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getBracketColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(710642085452959306L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEmpty_id7uLL3Mf3Bol, containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, getTextColor_idBsHjoDQZaR, getTextualRepresentation_idfB3l80ylIb, getBracketColor_idBsHjoDRsTa);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEmpty_id7uLL3Mf3Bol, containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, getTextColor_idBsHjoDQZaR, getTextualRepresentation_idfB3l80ylIb, getBracketColor_idBsHjoDRsTa);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isEmpty_id7uLL3Mf3Bol(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.textblock$x$xF) == null;
@@ -59,10 +56,6 @@ public final class CommentStatement__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ CommentStatement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

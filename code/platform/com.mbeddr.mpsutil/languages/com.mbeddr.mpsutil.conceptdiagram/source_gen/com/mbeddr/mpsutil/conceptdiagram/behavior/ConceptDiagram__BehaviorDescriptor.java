@@ -28,7 +28,6 @@ import jetbrains.mps.smodel.Language;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.behavior.LanguageIdentity__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -47,10 +46,8 @@ public final class ConceptDiagram__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<List<SNode>> getContents_id1FnP670tLPB = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getContents").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1934248081284865383L).languageId(0x91c8ff32e8afc27dL, 0x9d1cb9f82ae04895L).build2();
   public static final SMethod<Void> clear_id1FnP66Z89fw = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("clear").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1934248081262416864L).languageId(0x91c8ff32e8afc27dL, 0x9d1cb9f82ae04895L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(populate_id1FnP66YTJdb, getImplicitlyGeneratedDiagram_id1FnP670rBlZ, getDiagram_id1FnP670UhSa, getContents_id1FnP670tLPB, clear_id1FnP66Z89fw);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(populate_id1FnP66YTJdb, getImplicitlyGeneratedDiagram_id1FnP670rBlZ, getDiagram_id1FnP670UhSa, getContents_id1FnP670tLPB, clear_id1FnP66Z89fw);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void populate_id1FnP66YTJdb(@NotNull final SNode __thisNode__, final boolean ignoreDeprecatedConcepts, SRepository repository) {
     for (SLanguage language : ListSequence.fromList(new ConceptDiagramSubstituteInfo(__thisNode__, repository).getLanguages())) {
@@ -91,10 +88,6 @@ public final class ConceptDiagram__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ConceptDiagram__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

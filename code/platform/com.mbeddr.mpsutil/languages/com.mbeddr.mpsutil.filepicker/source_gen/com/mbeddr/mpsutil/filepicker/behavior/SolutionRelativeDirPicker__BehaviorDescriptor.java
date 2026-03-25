@@ -16,7 +16,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -30,10 +29,8 @@ public final class SolutionRelativeDirPicker__BehaviorDescriptor extends BaseBHD
   public static final SMethod<Boolean> pickDirOnly_id5lKnBeB0qXj = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("pickDirOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541431623507L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
   public static final SMethod<SNode> getCompanionFileOrFolderPicker_id3xqp6yeWGLu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getCompanionFileOrFolderPicker").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4060668414265576542L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getErrorMessage_id5lKnBeAutg0, getEditorPrefix_id5lKnBeAulu0, getPrefix_id6WnTJkDceu8, pickDirOnly_id5lKnBeB0qXj, getCompanionFileOrFolderPicker_id3xqp6yeWGLu);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getErrorMessage_id5lKnBeAutg0, getEditorPrefix_id5lKnBeAulu0, getPrefix_id6WnTJkDceu8, pickDirOnly_id5lKnBeB0qXj, getCompanionFileOrFolderPicker_id3xqp6yeWGLu);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getErrorMessage_id5lKnBeAutg0(@NotNull SNode __thisNode__) {
     return "not a valid directory path relative to solution root " + AbstractPicker__BehaviorDescriptor.getPrefix_id5lKnBeAIfOh.invoke(__thisNode__);
@@ -56,10 +53,6 @@ public final class SolutionRelativeDirPicker__BehaviorDescriptor extends BaseBHD
   /*package*/ SolutionRelativeDirPicker__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

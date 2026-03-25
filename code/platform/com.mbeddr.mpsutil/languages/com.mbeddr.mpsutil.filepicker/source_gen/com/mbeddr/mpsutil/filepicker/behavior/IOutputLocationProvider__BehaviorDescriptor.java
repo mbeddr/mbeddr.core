@@ -21,7 +21,6 @@ import org.apache.commons.io.FilenameUtils;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -34,10 +33,8 @@ public final class IOutputLocationProvider__BehaviorDescriptor extends BaseBHDes
   public static final SMethod<String> getInstalledOutputLocation_id7fn1GcIsE24 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getInstalledOutputLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8347147869722157188L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<String> getInstalledOutputLocationInfix_id1cOw9QkNoJG = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getInstalledOutputLocationInfix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1383872399804304364L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getOutputLocation_id7fn1GcKTDcC, getOutputLocation_id7fn1GcIr3Ns, getInstalledOutputLocation_id7fn1GcIsE24, getInstalledOutputLocationInfix_id1cOw9QkNoJG);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getOutputLocation_id7fn1GcKTDcC, getOutputLocation_id7fn1GcIr3Ns, getInstalledOutputLocation_id7fn1GcIsE24, getInstalledOutputLocationInfix_id1cOw9QkNoJG);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getOutputLocation_id7fn1GcKTDcC(@NotNull SNode __thisNode__) {
     return ((String) IOutputLocationProvider__BehaviorDescriptor.getOutputLocation_id7fn1GcIr3Ns.invoke(__thisNode__, SNodeOperations.getModel(__thisNode__)));
@@ -74,10 +71,6 @@ public final class IOutputLocationProvider__BehaviorDescriptor extends BaseBHDes
   /*package*/ IOutputLocationProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

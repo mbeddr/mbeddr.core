@@ -17,7 +17,6 @@ import com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualLanguag
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -31,10 +30,8 @@ public final class IMultilingualContent__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<String> getDetailedPresentation_id2bng37sXCHU = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDetailedPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061114L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
   public static final SMethod<String> getPresentation_id2GRHOLIMN1h = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3114159206254194769L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getValue_id2bng37sXCHo, getValue_id2bng37sXCHx, getDetailedPresentation_id2bng37sXCHU, getPresentation_id2GRHOLIMN1h);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getValue_id2bng37sXCHo, getValue_id2bng37sXCHx, getDetailedPresentation_id2bng37sXCHU, getPresentation_id2GRHOLIMN1h);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getValue_id2bng37sXCHo(@NotNull SNode __thisNode__) {
     String result = IMultilingualContent__BehaviorDescriptor.getValue_id2bng37sXCHx.invoke(__thisNode__, MultilingualLanguageProvider.getInstance().getCurrentLanguage());
@@ -62,10 +59,6 @@ public final class IMultilingualContent__BehaviorDescriptor extends BaseBHDescri
   /*package*/ IMultilingualContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

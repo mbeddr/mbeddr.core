@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -23,19 +22,13 @@ public final class ValueInspector__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> addValue_id2ufoZQIGI7Z = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addValue").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2850607030357647871L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(Object.class, ""));
   public static final SMethod<Void> clearValues_id2ufoZQIGI9k = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("clearValues").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2850607030357647956L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addValue_id2ufoZQIGI7Z, clearValues_id2ufoZQIGI9k);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addValue_id2ufoZQIGI7Z, clearValues_id2ufoZQIGI9k);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ ValueInspector__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
