@@ -13,15 +13,17 @@
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
+      <concept id="4560297596904469355" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModuleGroup" flags="ng" index="22LTRF">
+        <reference id="4560297596904469356" name="group" index="22LTRG" />
+      </concept>
       <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="nn" index="22LTRH">
         <child id="4560297596904469360" name="modules" index="22LTRK" />
         <child id="6593674873639474544" name="options" index="24cAkG" />
       </concept>
-      <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModule" flags="nn" index="22LTRM">
-        <reference id="4560297596904469363" name="module" index="22LTRN" />
-      </concept>
       <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
         <child id="6593674873635848987" name="requiredPlugins" index="24YFd7" />
+        <child id="8658160622849806934" name="reportsDir" index="3l6Mlw" />
+        <child id="7978162869575635130" name="projectPath" index="1RZ71A" />
       </concept>
       <concept id="6593674873635848984" name="jetbrains.mps.build.mps.tests.structure.RequiredPlugin" flags="ng" index="24YFd4">
         <reference id="6593674873635848985" name="plugin" index="24YFd5" />
@@ -194,7 +196,7 @@
       <property role="TrG5h" value="mps.home" />
     </node>
     <node concept="398rNT" id="7eF9rfAnzU3" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.github.core.home" />
+      <property role="TrG5h" value="project.root" />
       <node concept="55IIr" id="7eF9rfAnzU4" role="398pKh">
         <node concept="2Ry0Ak" id="7eF9rfAnzU5" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -207,16 +209,10 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="3T$s_3ZdQDe" role="1l3spd">
-      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
-      <node concept="398BVA" id="3T$s_3ZdQDf" role="398pKh">
-        <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
-      </node>
-    </node>
     <node concept="398rNT" id="7hVsScEQJ6E" role="1l3spd">
       <property role="TrG5h" value="mbeddr.mpsutil" />
       <node concept="398BVA" id="7hVsScEQJ6F" role="398pKh">
-        <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="7eF9rfAnzU3" resolve="project.root" />
         <node concept="2Ry0Ak" id="7hVsScEQJ6G" role="iGT6I">
           <property role="2Ry0Am" value="code" />
           <node concept="2Ry0Ak" id="7hVsScEQJ6H" role="2Ry0An">
@@ -231,7 +227,7 @@
     <node concept="398rNT" id="1OEbLwd81mk" role="1l3spd">
       <property role="TrG5h" value="dependencies.root" />
       <node concept="398BVA" id="1OEbLwd81ml" role="398pKh">
-        <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="7eF9rfAnzU3" resolve="project.root" />
         <node concept="2Ry0Ak" id="1OEbLwd81mm" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="1OEbLwd81mn" role="2Ry0An">
@@ -246,6 +242,14 @@
         <ref role="398BVh" node="5ueaxoTn61l" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="5ueaxoTpkOX" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="62hLUH71qFg" role="1l3spd">
+      <property role="TrG5h" value="test.reports.root" />
+      <node concept="55IIr" id="62hLUH71qHU" role="398pKh">
+        <node concept="2Ry0Ak" id="62hLUH71qHW" role="iGT6I">
+          <property role="2Ry0Am" value="test-reports" />
         </node>
       </node>
     </node>
@@ -274,6 +278,15 @@
       </node>
     </node>
     <node concept="1l3spV" id="7eF9rfAnzV1" role="1l3spN">
+      <node concept="L2wRC" id="20N7CGtRWhJ" role="39821P">
+        <ref role="L2wRA" node="5Z2CJwRoptC" resolve="test.assessments" />
+      </node>
+      <node concept="L2wRC" id="20N7CGtRWfI" role="39821P">
+        <ref role="L2wRA" node="5Z2CJwRopt8" resolve="test.assessments.testlang" />
+      </node>
+      <node concept="L2wRC" id="20N7CGtRWjK" role="39821P">
+        <ref role="L2wRA" node="4JmsWjEwl1e" resolve="test.com.mbeddr.mpsutil.collections.runtime" />
+      </node>
       <node concept="L2wRC" id="7hVsScEQK2H" role="39821P">
         <ref role="L2wRA" node="7hVsScEQJs4" resolve="test.ts.richstring" />
       </node>
@@ -379,6 +392,9 @@
       <node concept="L2wRC" id="6n0otOpmcXq" role="39821P">
         <ref role="L2wRA" node="6n0otOpkQ9s" resolve="test.com.mbeddr.mpsutil.logicalChild" />
       </node>
+      <node concept="L2wRC" id="308cpCqb83K" role="39821P">
+        <ref role="L2wRA" node="308cpCqb0Ew" resolve="com.mbeddr.mpsutil.genplandiagram.tests" />
+      </node>
       <node concept="398223" id="2GRHOLIUBUT" role="39821P">
         <node concept="3_J27D" id="2GRHOLIUBUV" role="Nbhlr">
           <node concept="3Mxwew" id="2GRHOLIUC5d" role="3MwsjC">
@@ -437,7 +453,133 @@
       </node>
     </node>
     <node concept="2G$12M" id="7eF9rfAnzVd" role="3989C9">
-      <property role="TrG5h" value="com.mbeddr.platform.tests" />
+      <property role="TrG5h" value="mpsutil.tests" />
+      <node concept="1E1JtD" id="5Z2CJwRopt8" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.assessments.testlang" />
+        <property role="3LESm3" value="2ae9b0c0-0e87-4510-aa2a-9949fa0436bf" />
+        <node concept="398BVA" id="5Z2CJwRoptU" role="3LF7KH">
+          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+          <node concept="2Ry0Ak" id="5Z2CJwRopu0" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="5Z2CJwRoptS" role="2Ry0An">
+              <property role="2Ry0Am" value="test.assessments.testlang" />
+              <node concept="2Ry0Ak" id="5Z2CJwRoptK" role="2Ry0An">
+                <property role="2Ry0Am" value="test.assessments.testlang.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="5Z2CJwRopte" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="5Z2CJwRopt4" role="1HemKq">
+            <node concept="398BVA" id="5Z2CJwRoptu" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="5Z2CJwRoptq" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="5Z2CJwRopts" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.assessments.testlang" />
+                  <node concept="2Ry0Ak" id="5Z2CJwRoptg" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="5Z2CJwRopt6" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5Z2CJwRopt0" role="3bR37C">
+          <node concept="1Busua" id="5Z2CJwRopt2" role="1SiIV1">
+            <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="5Z2CJwRoptW" role="3bR31x">
+          <node concept="3LXTmp" id="5Z2CJwRopu4" role="3rtmxm">
+            <node concept="398BVA" id="5Z2CJwRopu6" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="5Z2CJwRoptY" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="5Z2CJwRopu2" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.assessments.testlang" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="5Z2CJwRoptQ" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="5Z2CJwRoptC" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.assessments" />
+        <property role="3LESm3" value="c540669f-7495-4f0f-b5fc-81eb94934084" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <node concept="398BVA" id="5Z2CJwRoptM" role="3LF7KH">
+          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+          <node concept="2Ry0Ak" id="5Z2CJwRoptI" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="5Z2CJwRoptO" role="2Ry0An">
+              <property role="2Ry0Am" value="test.assessments" />
+              <node concept="2Ry0Ak" id="5Z2CJwRopty" role="2Ry0An">
+                <property role="2Ry0Am" value="test.assessments.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5Z2CJwRoptw" role="3bR37C">
+          <node concept="3bR9La" id="5Z2CJwRoptE" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="5Z2CJwRopti" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="5Z2CJwRopta" role="1HemKq">
+            <node concept="398BVA" id="5Z2CJwRoptG" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="5Z2CJwRopt$" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="5Z2CJwRoptA" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.assessments" />
+                  <node concept="2Ry0Ak" id="5Z2CJwRoptk" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="5Z2CJwRoptc" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5Z2CJwRoptm" role="3bR37C">
+          <node concept="3bR9La" id="5Z2CJwRopto" role="1SiIV1">
+            <ref role="3bR37D" node="5Z2CJwRopt8" resolve="test.assessments.testlang" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="3xUpIvHHZkn" role="3bR31x">
+          <node concept="3LXTmp" id="3xUpIvHHZko" role="3rtmxm">
+            <node concept="3qWCbU" id="3xUpIvHHZkp" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="3xUpIvHHZkq" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="3xUpIvHHZkr" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="3xUpIvHHZks" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.assessments" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="75qFqB43e5u" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="tests.com.mbeddr.mpsutil.json" />
@@ -1636,12 +1778,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2SeJqc6Ohp2" role="3bR37C">
-          <node concept="3bR9La" id="2SeJqc6Ohp3" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
-          </node>
-        </node>
         <node concept="398BVA" id="bHMJKhDAXY" role="3LF7KH">
           <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
           <node concept="2Ry0Ak" id="bHMJKhDAYF" role="iGT6I">
@@ -1690,6 +1826,12 @@
             <node concept="3qWCbU" id="5Ap$XSqW8TG" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2SeJqc6Ohp2" role="3bR37C">
+          <node concept="3bR9La" id="2SeJqc6Ohp3" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
       </node>
@@ -2800,6 +2942,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.com.mbeddr.mpsutil.collections.runtime" />
         <property role="3LESm3" value="f88d18b6-41df-491c-ad99-c292037bf751" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="4JmsWjEwl1W" role="3LF7KH">
           <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
           <node concept="2Ry0Ak" id="4JmsWjEwl3k" role="iGT6I">
@@ -2891,6 +3034,77 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="308cpCqb0Ew" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.genplandiagram.tests" />
+        <property role="3LESm3" value="3448ba3d-d55b-40e1-8368-22e670e76420" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <node concept="398BVA" id="308cpCqb0Fe" role="3LF7KH">
+          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+          <node concept="2Ry0Ak" id="308cpCqb0GA" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="308cpCqb0HX" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.genplandiagram.tests" />
+              <node concept="2Ry0Ak" id="308cpCqb0Jk" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.genplandiagram.tests.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="308cpCqb0VE" role="3bR37C">
+          <node concept="3bR9La" id="308cpCqb0VF" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:6_DCGR5trr0" resolve="jetbrains.mps.lang.documentation.genplan" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="308cpCqb0VG" role="3bR37C">
+          <node concept="3bR9La" id="308cpCqb0VH" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:2N1CSrzSKpi" resolve="com.mbeddr.mpsutil.plantuml.node" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="308cpCqb0VI" role="3bR37C">
+          <node concept="3bR9La" id="308cpCqb0VJ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="308cpCqb0W2" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="308cpCqb0W3" role="1HemKq">
+            <node concept="398BVA" id="308cpCqb0VK" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="308cpCqb0VL" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="308cpCqb0VM" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.genplandiagram.tests" />
+                  <node concept="2Ry0Ak" id="308cpCqb0VN" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="308cpCqb0W4" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="1bN1z3k_0VP" role="3bR31x">
+          <node concept="3LXTmp" id="1bN1z3k_0VQ" role="3rtmxm">
+            <node concept="3qWCbU" id="1bN1z3k_0VR" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="1bN1z3k_0VS" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="1bN1z3k_0VT" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1bN1z3k_0VU" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.genplandiagram.tests" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="4pIcGABAyzC" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.doc.tests" />
@@ -2905,7 +3119,7 @@
               <property role="3qWCbO" value="icons/**, resources/**, doc_gen/**" />
             </node>
             <node concept="398BVA" id="3xFG3bj5cRj" role="3LXTmr">
-              <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
+              <ref role="398BVh" node="7eF9rfAnzU3" resolve="project.root" />
               <node concept="2Ry0Ak" id="3xFG3bj5cRk" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="3xFG3bj5cRl" role="2Ry0An">
@@ -2925,7 +3139,7 @@
           </node>
         </node>
         <node concept="398BVA" id="4pIcGABAzwQ" role="3LF7KH">
-          <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
+          <ref role="398BVh" node="7eF9rfAnzU3" resolve="project.root" />
           <node concept="2Ry0Ak" id="4pIcGABAzCJ" role="iGT6I">
             <property role="2Ry0Am" value="code" />
             <node concept="2Ry0Ak" id="4pIcGABA$0f" role="2Ry0An">
@@ -2951,7 +3165,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="$Kq8MetF6u" role="1HemKq">
             <node concept="398BVA" id="$Kq8MetF6f" role="3LXTmr">
-              <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
+              <ref role="398BVh" node="7eF9rfAnzU3" resolve="project.root" />
               <node concept="2Ry0Ak" id="$Kq8MetF6g" role="iGT6I">
                 <property role="2Ry0Am" value="code" />
                 <node concept="2Ry0Ak" id="$Kq8MetF6h" role="2Ry0An">
@@ -3004,45 +3218,9 @@
       </node>
     </node>
     <node concept="22LTRH" id="7eF9rfAnzVt" role="1hWBAP">
-      <property role="TrG5h" value="com.mbeddr.platform.tests" />
-      <node concept="22LTRM" id="4gGXGcM0dl3" role="22LTRK">
-        <ref role="22LTRN" node="7hVsScEQJs4" resolve="test.ts.richstring" />
-      </node>
-      <node concept="22LTRM" id="4gGXGcM0e1C" role="22LTRK">
-        <ref role="22LTRN" node="4gGXGcLVuHu" resolve="test.ts.mpsutil.multilingual" />
-      </node>
-      <node concept="22LTRM" id="1m4fy7KPdb8" role="22LTRK">
-        <ref role="22LTRN" node="15E$Thf_2Y1" resolve="test.ts.javainterpreter" />
-      </node>
-      <node concept="22LTRM" id="1m4fy7KPdjL" role="22LTRK">
-        <ref role="22LTRN" node="1m4fy7KPaRX" resolve="test.ts.propertydefaulttest" />
-      </node>
-      <node concept="22LTRM" id="1hnjAvpIoDB" role="22LTRK">
-        <ref role="22LTRN" node="1hnjAvpIniF" resolve="test.com.mbeddr.mpsutil.xml.fix" />
-      </node>
-      <node concept="22LTRM" id="3J7tYMos0OO" role="22LTRK">
-        <ref role="22LTRN" node="3J7tYMorZ$O" resolve="test.com.mbeddr.mpsutil.iconchar.test" />
-      </node>
-      <node concept="22LTRM" id="4X7wieqKkYa" role="22LTRK">
-        <ref role="22LTRN" node="4X7wieqKka$" resolve="test.com.mbeddr.mpsutil.extensionclass" />
-      </node>
-      <node concept="22LTRM" id="9jWrhFpXuU" role="22LTRK">
-        <ref role="22LTRN" node="9jWrhFpWZO" resolve="test.com.mbeddr.mpsutil.common" />
-      </node>
-      <node concept="22LTRM" id="6qTkPAkGcwr" role="22LTRK">
-        <ref role="22LTRN" node="4BxzwLdy2a8" resolve="test.com.mbeddr.mpsutil.contextactions" />
-      </node>
-      <node concept="22LTRM" id="2yMzZpB1wD8" role="22LTRK">
-        <ref role="22LTRN" node="2yMzZpANPjJ" resolve="test.com.mbeddr.mpsutil.parameterizedMenu" />
-      </node>
-      <node concept="22LTRM" id="75qFqB43eVL" role="22LTRK">
-        <ref role="22LTRN" node="75qFqB43e5u" resolve="tests.com.mbeddr.mpsutil.json" />
-      </node>
-      <node concept="22LTRM" id="2yMzZpB1wV6" role="22LTRK">
-        <ref role="22LTRN" node="2yMzZpANLwn" resolve="test.com.mbeddr.mpsutil.blutil.test.waitfor" />
-      </node>
-      <node concept="22LTRM" id="6xaPNaK939C" role="22LTRK">
-        <ref role="22LTRN" node="6xaPNaK8sYs" resolve="test.com.mbeddr.mpsutil.asynccell" />
+      <property role="TrG5h" value="mpsutil.tests" />
+      <node concept="22LTRF" id="20N7CGtRWcm" role="22LTRK">
+        <ref role="22LTRG" node="7eF9rfAnzVd" resolve="mpsutil.tests" />
       </node>
       <node concept="24cAiW" id="76N1O$Kj6vJ" role="24cAkG">
         <node concept="24YFd4" id="58lY_Vpv0Uh" role="24YFd7">
@@ -3060,21 +3238,56 @@
         <node concept="24YFd4" id="58lY_Vpv0Yh" role="24YFd7">
           <ref role="24YFd5" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
         </node>
+        <node concept="398BVA" id="62hLUH70SSI" role="1RZ71A">
+          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+        </node>
+        <node concept="398BVA" id="62hLUH71qK_" role="3l6Mlw">
+          <ref role="398BVh" node="62hLUH71qFg" resolve="test.reports.root" />
+          <node concept="2Ry0Ak" id="62hLUH71qLi" role="iGT6I">
+            <property role="2Ry0Am" value="mpsutil.tests" />
+          </node>
+        </node>
       </node>
-      <node concept="22LTRM" id="$Kq8MetFlP" role="22LTRK">
-        <ref role="22LTRN" node="$Kq8MetB_8" resolve="test.com.mbeddr.mpsutil.smodule" />
+    </node>
+    <node concept="22LTRH" id="62hLUH70SOD" role="1hWBAP">
+      <property role="TrG5h" value="doc.tests" />
+      <node concept="22LTRF" id="62hLUH70SOF" role="22LTRK">
+        <ref role="22LTRG" node="4pIcGABAyzC" resolve="com.mbeddr.doc.tests" />
       </node>
-      <node concept="22LTRM" id="bHMJKhDDlh" role="22LTRK">
-        <ref role="22LTRN" node="bHMJKhDAXg" resolve="test.com.mbeddr.mpsutil.ecore.metaModelImport" />
-      </node>
-      <node concept="22LTRM" id="4JHJliM0gmY" role="22LTRK">
-        <ref role="22LTRN" node="4JHJliM0g2K" resolve="test.com.mbeddr.mpsutil.ecore.modelImportExport" />
-      </node>
-      <node concept="22LTRM" id="6n0otOpmfAs" role="22LTRK">
-        <ref role="22LTRN" node="6n0otOpkQ9s" resolve="test.com.mbeddr.mpsutil.logicalChild" />
-      </node>
-      <node concept="22LTRM" id="4yqSQKZiTcM" role="22LTRK">
-        <ref role="22LTRN" node="4pIcGABAzoW" resolve="com.mbeddr.doc.test.documents" />
+      <node concept="24cAiW" id="62hLUH70SOG" role="24cAkG">
+        <node concept="24YFd4" id="62hLUH70SOH" role="24YFd7">
+          <ref role="24YFd5" to="90a9:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
+        </node>
+        <node concept="24YFd4" id="62hLUH70SOI" role="24YFd7">
+          <ref role="24YFd5" to="ffeo:5CFKsRWR_9G" resolve="jetbrains.mps.debugger.java" />
+        </node>
+        <node concept="24YFd4" id="62hLUH70SOJ" role="24YFd7">
+          <ref role="24YFd5" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
+        </node>
+        <node concept="24YFd4" id="62hLUH70SOK" role="24YFd7">
+          <ref role="24YFd5" to="ffeo:4O0hKJpjIV3" resolve="jetbrains.mps.ide.devkit" />
+        </node>
+        <node concept="24YFd4" id="62hLUH70SOL" role="24YFd7">
+          <ref role="24YFd5" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
+        </node>
+        <node concept="398BVA" id="62hLUH70SWI" role="1RZ71A">
+          <ref role="398BVh" node="7eF9rfAnzU3" resolve="project.root" />
+          <node concept="2Ry0Ak" id="62hLUH70SWJ" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="62hLUH70SWK" role="2Ry0An">
+              <property role="2Ry0Am" value="platform" />
+              <node concept="2Ry0Ak" id="62hLUH70SXs" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.doc" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="398BVA" id="62hLUH71qMB" role="3l6Mlw">
+          <ref role="398BVh" node="62hLUH71qFg" resolve="test.reports.root" />
+          <node concept="2Ry0Ak" id="62hLUH71qMD" role="iGT6I">
+            <property role="2Ry0Am" value="doc.tests" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2igEWh" id="3HpWboH_Z$G" role="1hWBAP">
@@ -3093,7 +3306,7 @@
       <property role="TrG5h" value="artifacts.root" />
     </node>
     <node concept="398rNT" id="E0fxGqls7d" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.github.core.home" />
+      <property role="TrG5h" value="project.root" />
       <node concept="55IIr" id="E0fxGqls7e" role="398pKh">
         <node concept="2Ry0Ak" id="E0fxGqls7f" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -3109,7 +3322,7 @@
     <node concept="398rNT" id="1OEbLwd81bU" role="1l3spd">
       <property role="TrG5h" value="dependencies.root" />
       <node concept="398BVA" id="1OEbLwd81ei" role="398pKh">
-        <ref role="398BVh" node="E0fxGqls7d" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="E0fxGqls7d" resolve="project.root" />
         <node concept="2Ry0Ak" id="1OEbLwd81i5" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="1OEbLwd81jj" role="2Ry0An">
@@ -3121,7 +3334,7 @@
     <node concept="398rNT" id="E0fxGqls7k" role="1l3spd">
       <property role="TrG5h" value="mbeddr.mpsutil" />
       <node concept="398BVA" id="E0fxGqls7l" role="398pKh">
-        <ref role="398BVh" node="E0fxGqls7d" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="E0fxGqls7d" resolve="project.root" />
         <node concept="2Ry0Ak" id="E0fxGqls7m" role="iGT6I">
           <property role="2Ry0Am" value="code" />
           <node concept="2Ry0Ak" id="E0fxGqls7n" role="2Ry0An">
@@ -3316,11 +3529,6 @@
           <node concept="3qWCbU" id="E0fxGqluKg" role="3LXTna">
             <property role="3qWCbO" value="icons/**, resources/**" />
           </node>
-        </node>
-      </node>
-      <node concept="1SiIV0" id="2hC83VUYsa" role="3bR37C">
-        <node concept="3bR9La" id="2hC83VUYsb" role="1SiIV1">
-          <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
         </node>
       </node>
     </node>
@@ -3783,6 +3991,61 @@
         </node>
       </node>
     </node>
+    <node concept="1E1JtA" id="308cpCqb0l_" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="com.mbeddr.mpsutil.dependenciesdiagram.sandbox" />
+      <property role="3LESm3" value="59f08a74-912d-4ab0-b1cc-24111469d2e3" />
+      <node concept="398BVA" id="308cpCqb0ql" role="3LF7KH">
+        <ref role="398BVh" node="E0fxGqls7k" resolve="mbeddr.mpsutil" />
+        <node concept="2Ry0Ak" id="308cpCqb0sJ" role="iGT6I">
+          <property role="2Ry0Am" value="solutions" />
+          <node concept="2Ry0Ak" id="308cpCqb0v8" role="2Ry0An">
+            <property role="2Ry0Am" value="com.mbeddr.mpsutil.dependenciesdiagram.sandbox" />
+            <node concept="2Ry0Ak" id="308cpCqb0xx" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.dependenciesdiagram.sandbox.msd" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1BupzO" id="308cpCqb0$E" role="3bR31x">
+        <property role="3ZfqAx" value="models" />
+        <property role="1Hdu6h" value="true" />
+        <property role="1HemKv" value="true" />
+        <node concept="3LXTmp" id="308cpCqb0$F" role="1HemKq">
+          <node concept="398BVA" id="308cpCqb0$v" role="3LXTmr">
+            <ref role="398BVh" node="E0fxGqls7k" resolve="mbeddr.mpsutil" />
+            <node concept="2Ry0Ak" id="308cpCqb0$w" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="308cpCqb0$x" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.dependenciesdiagram.sandbox" />
+                <node concept="2Ry0Ak" id="308cpCqb0$y" role="2Ry0An">
+                  <property role="2Ry0Am" value="models" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="308cpCqb0$G" role="3LXTna">
+            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+      <node concept="3rtmxn" id="1bN1z3k_0VW" role="3bR31x">
+        <node concept="3LXTmp" id="1bN1z3k_0VX" role="3rtmxm">
+          <node concept="3qWCbU" id="1bN1z3k_0VY" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="1bN1z3k_0VZ" role="3LXTmr">
+            <ref role="398BVh" node="E0fxGqls7k" resolve="mbeddr.mpsutil" />
+            <node concept="2Ry0Ak" id="1bN1z3k_0W0" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="1bN1z3k_0W1" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.dependenciesdiagram.sandbox" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1E1JtD" id="1KdUzjFvE49" role="3989C9">
       <property role="BnDLt" value="true" />
       <property role="TrG5h" value="com.mbeddr.mpsutil.ecoretransofmation.sandbox" />
@@ -4179,7 +4442,7 @@
     <node concept="398rNT" id="5FkZWZm6tJ2" role="1l3spd">
       <property role="TrG5h" value="mbeddr.doc.aspect" />
       <node concept="398BVA" id="5FkZWZm6tJ3" role="398pKh">
-        <ref role="398BVh" node="E0fxGqls7d" resolve="mbeddr.github.core.home" />
+        <ref role="398BVh" node="E0fxGqls7d" resolve="project.root" />
         <node concept="2Ry0Ak" id="5FkZWZm6tJ4" role="iGT6I">
           <property role="2Ry0Am" value="code" />
           <node concept="2Ry0Ak" id="5FkZWZm6tJ5" role="2Ry0An">

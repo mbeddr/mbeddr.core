@@ -9,10 +9,28 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## Fixed
 
+- `com.mbeddr.mpsutil.filepicker`: Solution-relative pickers now work correctly during generation.
 - `com.mbeddr.mpsutil.hyperlink`: random exceptions should no longer occur after module reload.
+- `com.mbeddr.mpsutil.interpreter`: Throw a more detailed exception when TypedChildConstraint cannot determine the type of a node.
 - `com.mbeddr.mpsutil.interpreter`: Generated node URLs now correctly point to the input model instead of the transient model.
 
+## com.mbeddr.mpsutil.genplandiagram
+
+### Fixed
+
+- Dot characters in gen plan names are not escaped. Otherwise PlantUML would treat dots as hierarchical elements.
+
+# February 2026
+
+## com.mbeddr.mpsutil.genplandiagram
+
+- This new plugin was introduced to visualize generation plans. Import the language and create a new [Plan Visualizer](http://127.0.0.1:63320/node?ref=r%3A69e7f585-d1ea-4d0d-b392-5608c01d468b%28com.mbeddr.mpsutil.genplandiagram.structure%29%2F7940016190799018040) node and click 'Visualize`.
+
 # December 2025
+
+## com.mbeddr.mpsutil.filepicker
+
+- No exception will be reported anymore when the solution prefix can't be determined because the source model info annotation contains an invalid model reference.
 
 ## com.mbeddr.mpsutil.hyperlink
 
@@ -34,16 +52,77 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.spreadsheet
 
-## Fixed
+### Fixed
 
 - Removed empty model root causing warning on library load
 
-# October 2025
+## com.mbeddr.core.base
 
+### Added
+
+- MPS project is now passed to Assessment.runQuery() and AssessmentScope.findElements(). The overloads without the project parameter are deprecated.
+- Assessment now has an `alwaysShowCheckboxes` property to show checkboxes for each result even if `mustBeOk` is set to false.
+  The checkboxes can be used to mark some findings as 'accepted' without triggering a model checking error for those not marked.
+
+### Fixes
+
+- The bracket cells are not flickering anymore when the cursor is redrawn next to them.
+
+### Changed
+
+- The search tool now uses a different icon, so that it doesn't use the same one as the "usages" tool.
+
+## com.mbeddr.mpsutil.actionsfilter
+
+### Fixes
+
+- The language was refactored to not need the IntelliJ plugin.
+- Breaking: Custom profiles are now correctly set on MPS startup. Because the format of the saved profiles changed, previous custom profiles must be recreated.
+- Breaking: p´Predefined action profiles also have to be regenerated and recompiled due to changed runtime API.
+
+# October 2025
 
 ## com.mbeddr.core.base
 
+### Fixed
+
 - Performance improvement of AssesmentQuery.executeQuery
+
+## Multiple languages
+
+### Fixed
+
+- `jetbrains.mps.openapi.navigation.NavigationSupport - Replace with #getInstance(project) call` message is no longer
+  being logged (#3175).
+
+## com.mbeddr.doc
+
+- Null checks for accessing the documentation generation folder were added so that the documentation won't be generated for places where it is not possible (e.g. the console model).
+
+## com.mbeddr.core.base.pluginSolution
+
+### Fixed
+
+- "New Roots" action on a virtual package now again places the newly created nodes in this package.
+
+## com.mbeddr.mpsutil.genericactions
+
+### Fixed
+
+- "File Manager in Output Folder" action will now remain visible but disabled if the output folder does not exist.
+
+## com.mbeddr.mpsutil.hyperlink
+
+### Fixed
+
+- MPS no longer freezes when clicking on a link that opens another root node (#3180).
+
+## com.mbeddr.mpsutil.actionsfilter
+
+### Fixed
+
+- Exceptions are no longer thrown on startup.
+- Fixed a NPE coming from `CustomActionsSchema#removeIconCustomization()`.
 
 ## com.mbeddr.mpsutil.jung
 
@@ -60,6 +139,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 # September 2025
 
 - The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope, including the bundled dependencies of MPS-extensions.
+- replaced plugin dependency `com.mbeddr.mpsutil.httpsupport` with `jetbrains.mps.ide.httpsupport`.
+- Removed plugin dependency `com.mbeddr.mpsutil.httpsupport` from `mpsutil.interpreter`
+
+## com.mbeddr.mpsutil.actionsfilter
+
+- Fix the "Do not call getChildren(null)" message being logged many times on startup (#3071, #3125).
 
 # August 2025
 
@@ -98,6 +183,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - The previous fix from May 2025 (merged from 2023.2) introduced a different problem due to changed threading rules in
   2024.1: "PluginException: Access from Event Dispatch Thread (EDT) is not allowed;
   see https://jb.gg/ij-platform-threading for details". This is now fixed.
+
+## com.mbeddr.core.base
+
+### Fixed
+
+- prevent exception in MbeddrSearchViewer actions initialization due to null value of the project event parameter
 
 ## com.mbeddr.platform publication
 
