@@ -19,7 +19,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class PThreadsStrategy__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8c1a7e14952042a4L, 0xa3a7b15e523af156L, 0x2361f579568d2997L, "com.mbeddr.ext.concurrency.pthreads.structure.PThreadsStrategy");
 
-  public static final SMethod<Void> validateSchedules_id6bs538muOve = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("validateSchedules").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123590915951380430L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<Void> validateSchedules_id6bs538muOve = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("validateSchedules").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123590915951380430L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(validateSchedules_id6bs538muOve);
 

@@ -30,7 +30,7 @@ public final class ReviewAssessmentQuery__BehaviorDescriptor extends BaseBHDescr
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7d323e6183584656L, 0xa071a2bb68438615L, 0x44050902b3da1614L, "com.mbeddr.core.codereview.structure.ReviewAssessmentQuery");
 
   public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
-  /*package*/ static final SMethod<Void> addResult_id4g52gaO8vxA = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addResult").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(4901333676679362662L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""));
+  /*package*/ static final SMethod<Void> addResult_id4g52gaO8vxA = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("addResult").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(4901333676679362662L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id4WjNWxKJWaq, addResult_id4g52gaO8vxA);
 

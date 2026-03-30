@@ -24,7 +24,7 @@ public final class ITypeDecorator__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0xa526fcd7806eb53L, "com.mbeddr.core.expressions.structure.ITypeDecorator");
 
   public static final SMethod<SNode> realValueType_id6cGRlFg4oMy = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("realValueType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7146330090837740706L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Void> setRealValueType_id6cGRlFg4$3O = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setRealValueType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7146330090837786868L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> setRealValueType_id6cGRlFg4$3O = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("setRealValueType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7146330090837786868L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(realValueType_id6cGRlFg4oMy, setRealValueType_id6cGRlFg4$3O);
 

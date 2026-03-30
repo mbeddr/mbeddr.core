@@ -21,8 +21,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Metric__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x493bdfd3ad36285bL, "com.mbeddr.core.base.structure.Metric");
 
-  public static final SMethod<Void> registerValue_id4$VRXeGZFjS = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("registerValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5277057488628135160L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<Void> update_id4$VRXeHdE9I = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("update").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5277057488631800430L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> registerValue_id4$VRXeGZFjS = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("registerValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5277057488628135160L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
+  public static final SMethod<Void> update_id4$VRXeHdE9I = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("update").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5277057488631800430L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(registerValue_id4$VRXeGZFjS, update_id4$VRXeHdE9I);
 

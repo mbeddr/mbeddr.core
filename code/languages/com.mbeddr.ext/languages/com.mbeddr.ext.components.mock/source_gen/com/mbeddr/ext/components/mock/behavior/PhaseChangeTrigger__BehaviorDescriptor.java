@@ -20,7 +20,7 @@ public final class PhaseChangeTrigger__BehaviorDescriptor extends BaseBHDescript
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x36a565f13fa042d6L, 0xbaacf87e209c9789L, 0x57d5544ecd7f4b04L, "com.mbeddr.ext.components.mock.structure.PhaseChangeTrigger");
 
   public static final SMethod<Boolean> enforcesName_id3MbWJkY1d$O = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("enforcesName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4362847799159871796L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Void> synchronizeParentRunnable_id18l4N2Qxdck = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("synchronizeParentRunnable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1302968767135142676L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Void> synchronizeParentRunnable_id18l4N2Qxdck = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("synchronizeParentRunnable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1302968767135142676L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(enforcesName_id3MbWJkY1d$O, synchronizeParentRunnable_id18l4N2Qxdck);
 

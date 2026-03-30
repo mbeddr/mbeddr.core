@@ -24,7 +24,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class FunctionStatementMetric__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x493bdfd3acfdd1f0L, "com.mbeddr.core.modules.structure.FunctionStatementMetric");
 
-  public static final SMethod<Void> update_id4$VRXeHdE9I = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("update").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5277057488631800430L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> update_id4$VRXeHdE9I = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("update").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5277057488631800430L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(update_id4$VRXeHdE9I);
 

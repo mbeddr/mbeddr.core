@@ -20,7 +20,7 @@ public final class InstanceConfigContentsToBeCopiedIntoFlattenedInstanceConfig__
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x759064f9b474047fL, "com.mbeddr.ext.components.structure.InstanceConfigContentsToBeCopiedIntoFlattenedInstanceConfig");
 
   public static final SMethod<SNode> referencedInstance_id7mgpfAOt2tP = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("referencedInstance").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8471381922721048437L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Void> setReferencedInstance_id7mgpfAOv757 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setReferencedInstance").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8471381922721591623L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> setReferencedInstance_id7mgpfAOv757 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("setReferencedInstance").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8471381922721591623L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(referencedInstance_id7mgpfAOt2tP, setReferencedInstance_id7mgpfAOv757);
 

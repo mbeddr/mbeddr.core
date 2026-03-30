@@ -19,7 +19,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IConfigurationItemWithProcessor__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x46b83c1782008e2eL, "com.mbeddr.core.base.structure.IConfigurationItemWithProcessor");
 
-  public static final SMethod<Void> preprocess_id4qSf1u208SQ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("preprocess").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050032705078L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> preprocess_id4qSf1u208SQ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("preprocess").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050032705078L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preprocess_id4qSf1u208SQ);
 

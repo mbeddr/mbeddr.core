@@ -20,7 +20,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IVisualizationParticipant__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x1a1513256c9b1c9L, "com.mbeddr.core.base.structure.IVisualizationParticipant");
 
-  public static final SMethod<Void> visualize_id6xkj9mMr7e = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("visualize").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(117464341934617038L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(VisGraph.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Void> visualize_id6xkj9mMr7e = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("visualize").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(117464341934617038L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(VisGraph.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visualize_id6xkj9mMr7e);
 

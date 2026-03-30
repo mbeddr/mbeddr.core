@@ -22,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Pause__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd6714220402d48cbL, 0xa4a288223c6257f6L, 0x7ab9f33179d146fL, "com.mbeddr.cc.requirements.scenarios.structure.Pause");
 
-  public static final SMethod<Void> visualize_id6xkj9mMr7e = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("visualize").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(117464341934617038L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(VisGraph.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Void> visualize_id6xkj9mMr7e = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("visualize").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(117464341934617038L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(VisGraph.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visualize_id6xkj9mMr7e);
 

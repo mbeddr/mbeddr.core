@@ -31,7 +31,7 @@ public final class ModelContentPointer__BehaviorDescriptor extends BaseBHDescrip
 
   public static final SMethod<SNode> targetNode_id2mOlJ4sbLi5 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("targetNode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2716892068771206277L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
   public static final SMethod<String> targetNodeName_id5MdJlxzLFA_ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("targetNodeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6669194810534312357L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Void> setTarget_id627_yy3iusw = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setTarget").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6955693250242537248L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> setTarget_id627_yy3iusw = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("setTarget").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6955693250242537248L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(targetNode_id2mOlJ4sbLi5, targetNodeName_id5MdJlxzLFA_, setTarget_id627_yy3iusw);
 

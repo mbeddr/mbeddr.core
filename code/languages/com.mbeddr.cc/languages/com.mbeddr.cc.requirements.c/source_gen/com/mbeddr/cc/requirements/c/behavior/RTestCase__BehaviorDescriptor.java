@@ -22,7 +22,7 @@ public final class RTestCase__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Boolean> isOk_id35Kh8LWs1iv = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isOk").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3562422675423892639L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
   public static final SMethod<DebuggedTest> getDebuggedTest_iddfV14BWZ$n = new SMethodBuilder<DebuggedTest>(new SJavaCompoundTypeImpl(DebuggedTest.class)).name("getDebuggedTest").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(238668863702825239L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
-  public static final SMethod<Void> setDebuggedTest_iddfV14BYish = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setDebuggedTest").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(238668863703164689L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2(SMethodBuilder.createJavaParameter(DebuggedTest.class, ""));
+  public static final SMethod<Void> setDebuggedTest_iddfV14BYish = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("setDebuggedTest").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(238668863703164689L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2(SMethodBuilder.createJavaParameter(DebuggedTest.class, ""));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isOk_id35Kh8LWs1iv, getDebuggedTest_iddfV14BWZ$n, setDebuggedTest_iddfV14BYish);
 

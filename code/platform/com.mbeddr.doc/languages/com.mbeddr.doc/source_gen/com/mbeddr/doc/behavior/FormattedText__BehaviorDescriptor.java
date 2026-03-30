@@ -28,7 +28,7 @@ public final class FormattedText__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x558f97d9712a5ce4L, "com.mbeddr.doc.structure.FormattedText");
 
   public static final SMethod<String> asTextString_id6byLOcR3jNg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asTextString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7125476651953896656L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Void> setText_id2en8HnCGqDy = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2564556814938122850L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Void> setText_id2en8HnCGqDy = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.TYPE)).name("setText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2564556814938122850L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<String> toTextString_id3Q5enzfMT4t = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("toTextString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4433012599261204765L).languageId(0xa676c7604efe3504L, 0x92d2ea165a424fdfL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asTextString_id6byLOcR3jNg, setText_id2en8HnCGqDy, toTextString_id3Q5enzfMT4t);
