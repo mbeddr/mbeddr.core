@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,8 +23,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Resource__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x58a16bfbe08f3ebfL, "com.mbeddr.doc.structure.Resource");
 
-  public static final SMethod<Boolean> isValidFile_id5yxqZJwzQu4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isValidFile").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136531844L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> getEditTimeFileName_id5yxqZJwzQzV = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEditTimeFileName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136532219L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Boolean> isValidFile_id5yxqZJwzQu4 = new SMethodBuilder<>(Boolean.TYPE).name("isValidFile").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136531844L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> getEditTimeFileName_id5yxqZJwzQzV = new SMethodBuilder<>(String.class).name("getEditTimeFileName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136532219L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isValidFile_id5yxqZJwzQu4, getEditTimeFileName_id5yxqZJwzQzV);
 

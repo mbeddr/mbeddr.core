@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,11 +23,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class PathDefinition__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x58a16bfbe08e80dbL, "com.mbeddr.doc.structure.PathDefinition");
 
-  public static final SMethod<Boolean> isValid_id5yxqZJwzC5j = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136472915L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> createFilename_id47ZkZt5XSUO = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("createFilename").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4755612053022412468L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Void> ensurePathExists_id3$JYbdolVFS = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ensurePathExists").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4120785633232272120L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> getSubsitutedPath_id3RseghIca7J = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSubsitutedPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457500422381281775L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Boolean> needsMapping_id2i$odZBB7La = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("needsMapping").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2640341796325719114L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Boolean> isValid_id5yxqZJwzC5j = new SMethodBuilder<>(Boolean.TYPE).name("isValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136472915L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> createFilename_id47ZkZt5XSUO = new SMethodBuilder<>(String.class).name("createFilename").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4755612053022412468L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, "fn"));
+  public static final SMethod<Void> ensurePathExists_id3$JYbdolVFS = new SMethodBuilder<>(Void.TYPE).name("ensurePathExists").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4120785633232272120L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> getSubsitutedPath_id3RseghIca7J = new SMethodBuilder<>(String.class).name("getSubsitutedPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457500422381281775L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Boolean> needsMapping_id2i$odZBB7La = new SMethodBuilder<>(Boolean.TYPE).name("needsMapping").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2640341796325719114L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isValid_id5yxqZJwzC5j, createFilename_id47ZkZt5XSUO, ensurePathExists_id3$JYbdolVFS, getSubsitutedPath_id3RseghIca7J, needsMapping_id2i$odZBB7La);
 

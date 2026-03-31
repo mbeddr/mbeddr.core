@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.List;
@@ -25,7 +24,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ModelContentAsTextParagraph__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x608796288312c052L, "com.mbeddr.doc.structure.ModelContentAsTextParagraph");
 
-  public static final SMethod<Void> updateText_id41AlOFglSb0 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4640492444886467264L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""));
+  public static final SMethod<Void> updateText_id41AlOFglSb0 = new SMethodBuilder<>(Void.TYPE).name("updateText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4640492444886467264L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, "editorContext"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(updateText_id41AlOFglSb0);
 

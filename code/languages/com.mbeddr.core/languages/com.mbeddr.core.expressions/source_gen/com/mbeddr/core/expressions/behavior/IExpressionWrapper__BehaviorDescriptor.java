@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -30,9 +29,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IExpressionWrapper__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x32cfa60b4ba95397L, "com.mbeddr.core.expressions.structure.IExpressionWrapper");
 
-  public static final SMethod<Boolean> canWrap_id3bfDwHbEns0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canWrap").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3661327589519750912L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getWrappingLink_id3bfDwHbEojk = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getWrappingLink").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3661327589519754452L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Void> wrap_id3bfDwHbRG3E = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("wrap").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3661327589523243242L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> canWrap_id3bfDwHbEns0 = new SMethodBuilder<>(Boolean.TYPE).name("canWrap").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3661327589519750912L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expr"));
+  public static final SMethod<SNode> getWrappingLink_id3bfDwHbEojk = new SMethodBuilder<>(SNode.class).name("getWrappingLink").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3661327589519754452L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Void> wrap_id3bfDwHbRG3E = new SMethodBuilder<>(Void.TYPE).name("wrap").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3661327589523243242L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expr"), SMethodBuilder.createJavaParameter(SNode.class, "replaceTarget"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canWrap_id3bfDwHbEns0, getWrappingLink_id3bfDwHbEojk, wrap_id3bfDwHbRG3E);
 

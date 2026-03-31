@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.model.SModel;
@@ -27,9 +26,9 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class CompositionStrategy__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x21ac77a41b6644c5L, 0xaaec94e43bb86519L, 0x3fa2b6b6b41954e7L, "com.mbeddr.cc.var.composition.structure.CompositionStrategy");
 
-  public static final SMethod<CompositionResult> compose_id3YyHFqO7EVE = new SMethodBuilder<CompositionResult>(new SJavaCompoundTypeImpl(CompositionResult.class)).name("compose").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438799082L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(CompositionContext.class, ""));
-  public static final SMethod<Void> removeCompositionStuff_id3YyHFqO8Kht = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("removeCompositionStuff").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266439083101L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> replaceReferences_id3YyHFqO98RF = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("replaceReferences").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266439183851L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
+  public static final SMethod<CompositionResult> compose_id3YyHFqO7EVE = new SMethodBuilder<>(CompositionResult.class).name("compose").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438799082L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter(SNode.class, "target"), SMethodBuilder.createJavaParameter(SNode.class, "matchNode"), SMethodBuilder.createJavaParameter(CompositionContext.class, "ctx"));
+  public static final SMethod<Void> removeCompositionStuff_id3YyHFqO8Kht = new SMethodBuilder<>(Void.TYPE).name("removeCompositionStuff").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266439083101L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Void> replaceReferences_id3YyHFqO98RF = new SMethodBuilder<>(Void.TYPE).name("replaceReferences").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266439183851L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter(SNode.class, "originalTarget"), SMethodBuilder.createJavaParameter(SNode.class, "newTarget"), SMethodBuilder.createJavaParameter(SModel.class, "m"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compose_id3YyHFqO7EVE, removeCompositionStuff_id3YyHFqO8Kht, replaceReferences_id3YyHFqO98RF);
 

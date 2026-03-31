@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ResourceAccessSpecifier__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x67a51010397d36a7L, "com.mbeddr.ext.concurrency.structure.ResourceAccessSpecifier");
 
-  public static final SMethod<String> sortName_id6u_410TBOiy = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("sortName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7468393218936095906L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<String> sortName_id6u_410TBOiy = new SMethodBuilder<>(String.class).name("sortName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7468393218936095906L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(sortName_id6u_410TBOiy);
 

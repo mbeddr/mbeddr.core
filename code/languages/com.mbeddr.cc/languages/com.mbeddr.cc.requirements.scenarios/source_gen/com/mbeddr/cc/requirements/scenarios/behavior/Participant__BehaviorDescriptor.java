@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.plantuml.node.behavior.VisGraph;
@@ -26,10 +25,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class Participant__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd6714220402d48cbL, 0xa4a288223c6257f6L, 0x4fb6ca5209783a14L, "com.mbeddr.cc.requirements.scenarios.structure.Participant");
 
-  public static final SMethod<Boolean> collaboratesWith_id4YQM_89vjS3 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("collaboratesWith").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828452978179L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> availableDataItems_id5_PV_QzOjx0 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("availableDataItems").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6446320527598499904L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
-  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<String[]>(new SJavaCompoundTypeImpl(String[].class)).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
-  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(VisGraph.class, ""));
+  public static final SMethod<Boolean> collaboratesWith_id4YQM_89vjS3 = new SMethodBuilder<>(Boolean.TYPE).name("collaboratesWith").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828452978179L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2(SMethodBuilder.createJavaParameter(SNode.class, "p"));
+  public static final SMethod<Iterable<SNode>> availableDataItems_id5_PV_QzOjx0 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("availableDataItems").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6446320527598499904L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
+  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<>(String[].class).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
+  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<>(Void.TYPE).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, "category"), SMethodBuilder.createJavaParameter(VisGraph.class, "graph"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(collaboratesWith_id4YQM_89vjS3, availableDataItems_id5_PV_QzOjx0, getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f);
 

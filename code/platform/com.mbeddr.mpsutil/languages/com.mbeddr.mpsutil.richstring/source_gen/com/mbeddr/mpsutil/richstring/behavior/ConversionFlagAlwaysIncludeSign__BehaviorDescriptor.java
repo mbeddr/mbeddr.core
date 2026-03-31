@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -25,7 +24,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ConversionFlagAlwaysIncludeSign__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x442d3b7dfe4a4293L, 0xa7c16744d440ecaaL, 0x2e8be43a04393572L, "com.mbeddr.mpsutil.richstring.structure.ConversionFlagAlwaysIncludeSign");
 
-  public static final SMethod<Boolean> isApplicable_id6Go9U2yx_gX = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isApplicable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532374307901L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> isApplicable_id6Go9U2yx_gX = new SMethodBuilder<>(Boolean.TYPE).name("isApplicable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532374307901L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2(SMethodBuilder.createJavaParameter(SNode.class, "conversion"), SMethodBuilder.createJavaParameter(SNode.class, "category"), SMethodBuilder.createJavaParameter(SNode.class, "expressionType"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isApplicable_id6Go9U2yx_gX);
 

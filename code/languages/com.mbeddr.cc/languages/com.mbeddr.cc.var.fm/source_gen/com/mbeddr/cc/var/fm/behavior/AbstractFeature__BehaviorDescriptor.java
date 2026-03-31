@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -23,9 +22,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class AbstractFeature__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe401b44780194ccdL, 0xa72cbfb0230f5782L, 0x3e91d0f23ceefb02L, "com.mbeddr.cc.var.fm.structure.AbstractFeature");
 
-  public static final SMethod<String> qualifiedName_id7k8WEKUE9BF = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("qualifiedName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8433257123783678443L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
-  public static final SMethod<String> qualifiedNameForC_id7H6_Qip5IKx = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("qualifiedNameForC").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8882953773355822113L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
-  public static final SMethod<Iterable<SNode>> attributes_id6Ce4x7LmZjI = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("attributes").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7642065485967389934L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
+  public static final SMethod<String> qualifiedName_id7k8WEKUE9BF = new SMethodBuilder<>(String.class).name("qualifiedName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8433257123783678443L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
+  public static final SMethod<String> qualifiedNameForC_id7H6_Qip5IKx = new SMethodBuilder<>(String.class).name("qualifiedNameForC").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8882953773355822113L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
+  public static final SMethod<Iterable<SNode>> attributes_id6Ce4x7LmZjI = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("attributes").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7642065485967389934L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(qualifiedName_id7k8WEKUE9BF, qualifiedNameForC_id7H6_Qip5IKx, attributes_id6Ce4x7LmZjI);
 

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SModel;
 import java.util.List;
@@ -28,10 +27,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IOutputLocationProvider__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd3a0fd26445a466cL, 0x900e10444ddfed52L, 0x1334809d94c58ca5L, "com.mbeddr.mpsutil.filepicker.structure.IOutputLocationProvider");
 
-  public static final SMethod<String> getOutputLocation_id7fn1GcKTDcC = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getOutputLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8347147869763310376L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
-  public static final SMethod<String> getOutputLocation_id7fn1GcIr3Ns = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getOutputLocation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8347147869721738460L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
-  public static final SMethod<String> getInstalledOutputLocation_id7fn1GcIsE24 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getInstalledOutputLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8347147869722157188L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> getInstalledOutputLocationInfix_id1cOw9QkNoJG = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getInstalledOutputLocationInfix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1383872399804304364L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<String> getOutputLocation_id7fn1GcKTDcC = new SMethodBuilder<>(String.class).name("getOutputLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8347147869763310376L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<String> getOutputLocation_id7fn1GcIr3Ns = new SMethodBuilder<>(String.class).name("getOutputLocation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8347147869721738460L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter(SModel.class, "model"));
+  public static final SMethod<String> getInstalledOutputLocation_id7fn1GcIsE24 = new SMethodBuilder<>(String.class).name("getInstalledOutputLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8347147869722157188L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter(SModel.class, "model"), SMethodBuilder.createJavaParameter(String.class, "outputLocationInArchive"));
+  public static final SMethod<String> getInstalledOutputLocationInfix_id1cOw9QkNoJG = new SMethodBuilder<>(String.class).name("getInstalledOutputLocationInfix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1383872399804304364L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getOutputLocation_id7fn1GcKTDcC, getOutputLocation_id7fn1GcIr3Ns, getInstalledOutputLocation_id7fn1GcIsE24, getInstalledOutputLocationInfix_id1cOw9QkNoJG);
 

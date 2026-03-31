@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.mpsutil.plantuml.node.behavior.VisGraph;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -23,10 +22,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class VisualizationResult__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x34f3f42f5ec66977L, "com.mbeddr.core.base.structure.VisualizationResult");
 
-  public static final SMethod<String> uniqueIdentifier_idK292flwHwe = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("uniqueIdentifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(865293814733133838L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<String[]>(new SJavaCompoundTypeImpl(String[].class)).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
-  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(VisGraph.class, ""));
-  public static final SMethod<Void> updateValues_id5L$H31Kf5$y = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6657644269294868770L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> uniqueIdentifier_idK292flwHwe = new SMethodBuilder<>(String.class).name("uniqueIdentifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(865293814733133838L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<>(String[].class).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
+  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<>(Void.TYPE).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, "category"), SMethodBuilder.createJavaParameter(VisGraph.class, "g"));
+  public static final SMethod<Void> updateValues_id5L$H31Kf5$y = new SMethodBuilder<>(Void.TYPE).name("updateValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6657644269294868770L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "updatedResult"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniqueIdentifier_idK292flwHwe, getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, updateValues_id5L$H31Kf5$y);
 

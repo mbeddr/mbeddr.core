@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -30,9 +29,9 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class NoEffortAssQuery__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0xc022423d582cf5aL, "com.mbeddr.cc.requirements.structure.NoEffortAssQuery");
 
-  public static final SMethod<String> errorMessage_id3jNX2XuL9ku = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("errorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3815661793603523870L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> updateAutomatically_idKxraUPpeM7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("updateAutomatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(874099300309986439L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
+  public static final SMethod<String> errorMessage_id3jNX2XuL9ku = new SMethodBuilder<>(String.class).name("errorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3815661793603523870L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "ass"));
+  public static final SMethod<Boolean> updateAutomatically_idKxraUPpeM7 = new SMethodBuilder<>(Boolean.TYPE).name("updateAutomatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(874099300309986439L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, "mpsProject"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(errorMessage_id3jNX2XuL9ku, updateAutomatically_idKxraUPpeM7, runQuery_id4WjNWxKJWaq);
 

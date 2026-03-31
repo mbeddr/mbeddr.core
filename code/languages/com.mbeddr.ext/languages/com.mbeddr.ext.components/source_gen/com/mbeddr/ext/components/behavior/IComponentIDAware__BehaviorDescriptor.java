@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IComponentIDAware__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x547eb6a83fb92482L, "com.mbeddr.ext.components.structure.IComponentIDAware");
 
-  public static final SMethod<String> genLocalCIDVarName_id5hYHEwZIiiQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genLocalCIDVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579991348406L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<String> genLocalIDVarName_id5hYHEwZIiiW = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genLocalIDVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579991348412L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> genLocalCIDVarName_id5hYHEwZIiiQ = new SMethodBuilder<>(String.class).name("genLocalCIDVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579991348406L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> genLocalIDVarName_id5hYHEwZIiiW = new SMethodBuilder<>(String.class).name("genLocalIDVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579991348412L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genLocalCIDVarName_id5hYHEwZIiiQ, genLocalIDVarName_id5hYHEwZIiiW);
 

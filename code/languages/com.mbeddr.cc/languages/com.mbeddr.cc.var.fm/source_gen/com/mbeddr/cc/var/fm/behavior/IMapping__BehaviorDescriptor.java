@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IMapping__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xe401b44780194ccdL, 0xa72cbfb0230f5782L, 0x5eb8f6e2708d4feeL, "com.mbeddr.cc.var.fm.structure.IMapping");
 
-  public static final SMethod<SNode> getFeatureSelection_id6hM2_xVMLfJ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getFeatureSelection").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7237858926288114671L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isFeatureSelected_id5USXI9KzkZO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isFeatureSelected").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6825476687691337716L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> getFeatureSelection_id6hM2_xVMLfJ = new SMethodBuilder<>(SNode.class).name("getFeatureSelection").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7237858926288114671L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter(SNode.class, "f"));
+  public static final SMethod<Boolean> isFeatureSelected_id5USXI9KzkZO = new SMethodBuilder<>(Boolean.TYPE).name("isFeatureSelected").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6825476687691337716L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter(SNode.class, "f"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFeatureSelection_id6hM2_xVMLfJ, isFeatureSelected_id5USXI9KzkZO);
 

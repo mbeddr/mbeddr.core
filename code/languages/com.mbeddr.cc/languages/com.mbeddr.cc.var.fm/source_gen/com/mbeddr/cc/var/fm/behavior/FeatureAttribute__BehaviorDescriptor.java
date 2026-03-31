@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class FeatureAttribute__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe401b44780194ccdL, 0xa72cbfb0230f5782L, 0x5eb8f6e2708cb297L, "com.mbeddr.cc.var.fm.structure.FeatureAttribute");
 
-  public static final SMethod<String> qualifiedNameForC_id6W8yq39obAS = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("qualifiedNameForC").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8000796061690018232L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
+  public static final SMethod<String> qualifiedNameForC_id6W8yq39obAS = new SMethodBuilder<>(String.class).name("qualifiedNameForC").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8000796061690018232L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(qualifiedNameForC_id6W8yq39obAS);
 

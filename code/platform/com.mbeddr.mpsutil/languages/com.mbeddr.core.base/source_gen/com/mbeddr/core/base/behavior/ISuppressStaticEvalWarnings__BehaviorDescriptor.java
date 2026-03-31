@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ISuppressStaticEvalWarnings__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x678ced5492b1e8dcL, "com.mbeddr.core.base.structure.ISuppressStaticEvalWarnings");
 
-  public static final SMethod<Boolean> isSuppressionAllowed_id6ucVliiGyWC = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSuppressionAllowed").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7461599630140256040L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isSuppressionAllowed_id6ucVliiGyWC = new SMethodBuilder<>(Boolean.TYPE).name("isSuppressionAllowed").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7461599630140256040L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSuppressionAllowed_id6ucVliiGyWC);
 

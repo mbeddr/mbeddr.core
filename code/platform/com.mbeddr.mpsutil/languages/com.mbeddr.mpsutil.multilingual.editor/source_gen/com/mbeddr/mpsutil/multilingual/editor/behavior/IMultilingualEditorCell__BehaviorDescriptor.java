@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SModel;
 import java.util.List;
@@ -21,7 +20,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IMultilingualEditorCell__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x13a9e5673b9e4ccfL, 0xb94c9155f5e78586L, 0x22d74031dd0849f4L, "com.mbeddr.mpsutil.multilingual.editor.structure.IMultilingualEditorCell");
 
-  public static final SMethod<SNode> getResourceBundle_id2bng37t24DJ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getResourceBundle").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900188224111L).languageId(0xb94c9155f5e78586L, 0x13a9e5673b9e4ccfL).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> getResourceBundle_id2bng37t24DJ = new SMethodBuilder<>(SNode.class).name("getResourceBundle").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900188224111L).languageId(0xb94c9155f5e78586L, 0x13a9e5673b9e4ccfL).build2(SMethodBuilder.createJavaParameter(SModel.class, "model"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getResourceBundle_id2bng37t24DJ);
 

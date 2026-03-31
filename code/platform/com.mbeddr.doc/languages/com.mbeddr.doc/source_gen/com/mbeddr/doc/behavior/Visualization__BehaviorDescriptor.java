@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.plantuml.node.behavior.VisGraph;
@@ -32,12 +31,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Visualization__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x23ec7b4e3e2dffbaL, "com.mbeddr.doc.structure.Visualization");
 
-  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<String[]>(new SJavaCompoundTypeImpl(String[].class)).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
-  public static final SMethod<String> filenameWithoutExtension_id2fGuOSYbw1y = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("filenameWithoutExtension").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2588579461812060258L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<SNode> getVisualizableElement_id5MdJlxzHH5Y = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getVisualizableElement").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6669194810533269886L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(VisGraph.class, ""));
-  public static final SMethod<SNode> getPath_id3UlEobTHU0G = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4509696981881823276L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<AbstractTreeViewNode>(new SJavaCompoundTypeImpl(AbstractTreeViewNode.class)).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<>(String[].class).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
+  public static final SMethod<String> filenameWithoutExtension_id2fGuOSYbw1y = new SMethodBuilder<>(String.class).name("filenameWithoutExtension").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2588579461812060258L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<SNode> getVisualizableElement_id5MdJlxzHH5Y = new SMethodBuilder<>(SNode.class).name("getVisualizableElement").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6669194810533269886L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<>(Void.TYPE).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, "category"), SMethodBuilder.createJavaParameter(VisGraph.class, "g"));
+  public static final SMethod<SNode> getPath_id3UlEobTHU0G = new SMethodBuilder<>(SNode.class).name("getPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4509696981881823276L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<>(AbstractTreeViewNode.class).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "category"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCategories_id2N1CSrzPN_a, filenameWithoutExtension_id2fGuOSYbw1y, getVisualizableElement_id5MdJlxzHH5Y, getVisualization_id2N1CSrzPN_f, getPath_id3UlEobTHU0G, getTreeNode_id7NyyyjNtbn2);
 

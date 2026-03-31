@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -25,8 +24,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class Trigger__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x18c9c9c9dcece24bL, "com.mbeddr.ext.statemachines.structure.Trigger");
 
-  public static final SMethod<String> readableString_id3t79XWtEc3h = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("readableString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3983196234661282001L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
-  public static final SMethod<SNode> getEvent_id1_07M0PJvWu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getEvent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1819488472658738974L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<String> readableString_id3t79XWtEc3h = new SMethodBuilder<>(String.class).name("readableString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3983196234661282001L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<SNode> getEvent_id1_07M0PJvWu = new SMethodBuilder<>(SNode.class).name("getEvent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1819488472658738974L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(readableString_id3t79XWtEc3h, getEvent_id1_07M0PJvWu);
 

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ForEachStatement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x57bb86957a320c46L, "com.mbeddr.core.util.structure.ForEachStatement");
 
-  public static final SMethod<String> counterVarName_id5hYHEwZ7USZ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("counterVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579981291071L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<String> iteratorVarName_id5hYHEwZ8fYO = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("iteratorVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579981377460L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> counterVarName_id5hYHEwZ7USZ = new SMethodBuilder<>(String.class).name("counterVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579981291071L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> iteratorVarName_id5hYHEwZ8fYO = new SMethodBuilder<>(String.class).name("iteratorVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579981377460L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(counterVarName_id5hYHEwZ7USZ, iteratorVarName_id5hYHEwZ8fYO);
 

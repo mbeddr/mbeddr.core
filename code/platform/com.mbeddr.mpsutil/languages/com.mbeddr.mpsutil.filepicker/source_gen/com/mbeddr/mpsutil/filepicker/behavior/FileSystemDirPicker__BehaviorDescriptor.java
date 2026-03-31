@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -23,10 +22,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class FileSystemDirPicker__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd3a0fd26445a466cL, 0x900e10444ddfed52L, 0x43bdbc6ab482e997L, "com.mbeddr.mpsutil.filepicker.structure.FileSystemDirPicker");
 
-  public static final SMethod<Boolean> mustExist_id2RM$2quh1HO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustExist").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3310867171609156468L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
-  public static final SMethod<Boolean> pickDirOnly_id5lKnBeB0qXj = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("pickDirOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541431623507L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
-  public static final SMethod<String> getErrorMessage_id5lKnBeAutg0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541422720000L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
-  public static final SMethod<SNode> getCompanionFileOrFolderPicker_id3xqp6yeWGLu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getCompanionFileOrFolderPicker").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4060668414265576542L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<Boolean> mustExist_id2RM$2quh1HO = new SMethodBuilder<>(Boolean.TYPE).name("mustExist").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3310867171609156468L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<Boolean> pickDirOnly_id5lKnBeB0qXj = new SMethodBuilder<>(Boolean.TYPE).name("pickDirOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541431623507L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<String> getErrorMessage_id5lKnBeAutg0 = new SMethodBuilder<>(String.class).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541422720000L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<SNode> getCompanionFileOrFolderPicker_id3xqp6yeWGLu = new SMethodBuilder<>(SNode.class).name("getCompanionFileOrFolderPicker").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4060668414265576542L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mustExist_id2RM$2quh1HO, pickDirOnly_id5lKnBeB0qXj, getErrorMessage_id5lKnBeAutg0, getCompanionFileOrFolderPicker_id3xqp6yeWGLu);
 

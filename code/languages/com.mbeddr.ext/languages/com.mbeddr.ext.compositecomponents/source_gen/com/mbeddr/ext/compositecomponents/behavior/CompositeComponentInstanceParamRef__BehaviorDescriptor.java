@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -28,8 +27,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class CompositeComponentInstanceParamRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x54f2a59b97bb4c09L, 0xaf92928ebf9c5966L, 0x6bfba9786e4caa22L, "com.mbeddr.ext.compositecomponents.structure.CompositeComponentInstanceParamRef");
 
-  public static final SMethod<SNode> value_id2LSSMkCHjBX = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("value").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3204560883610368509L).languageId(0xaf92928ebf9c5966L, 0x54f2a59b97bb4c09L).build2();
-  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> value_id2LSSMkCHjBX = new SMethodBuilder<>(SNode.class).name("value").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3204560883610368509L).languageId(0xaf92928ebf9c5966L, 0x54f2a59b97bb4c09L).build2();
+  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(value_id2LSSMkCHjBX, renderReadable_id1VQvajLb13M);
 

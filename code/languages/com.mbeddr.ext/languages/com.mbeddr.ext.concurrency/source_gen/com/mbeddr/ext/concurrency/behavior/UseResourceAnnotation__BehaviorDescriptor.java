@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -23,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class UseResourceAnnotation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x67a5101039c57fcfL, "com.mbeddr.ext.concurrency.structure.UseResourceAnnotation");
 
-  public static final SMethod<Boolean> providesLockFor_id6u_410TQBmJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("providesLockFor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7468393218939975087L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> providesLockFor_id6u_410TQBmJ = new SMethodBuilder<>(Boolean.TYPE).name("providesLockFor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7468393218939975087L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter(SNode.class, "res"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(providesLockFor_id6u_410TQBmJ);
 

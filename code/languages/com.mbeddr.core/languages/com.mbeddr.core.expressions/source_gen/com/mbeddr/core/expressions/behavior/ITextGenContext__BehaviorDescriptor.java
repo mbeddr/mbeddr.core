@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import com.mbeddr.core.expressions.runtime.plugin.IToken;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -20,7 +19,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ITextGenContext__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x698acc22787cfb8bL, "com.mbeddr.core.expressions.structure.ITextGenContext");
 
-  public static final SMethod<IToken> getToken_id6AaN29SvfIf = new SMethodBuilder<IToken>(new SJavaCompoundTypeImpl(IToken.class)).name("getToken").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7605115369190914959L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(IToken.class, ""));
+  public static final SMethod<IToken> getToken_id6AaN29SvfIf = new SMethodBuilder<>(IToken.class).name("getToken").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7605115369190914959L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(IToken.class, "child"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getToken_id6AaN29SvfIf);
 

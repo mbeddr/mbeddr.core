@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SModel;
 import org.jetbrains.mps.openapi.module.SModule;
@@ -31,11 +30,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class ILogicalChildOwner__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x85a9bace37a140afL, 0x956a7bb1b081a77cL, 0x4d47311ce8608adL, "com.mbeddr.mpsutil.logicalChild.structure.ILogicalChildOwner");
 
-  public static final SMethod<Iterable<SNode>> findLogicalChildren_id7c93VeVMIYV = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findLogicalChildren").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8289173853776310203L).languageId(0x956a7bb1b081a77cL, 0x85a9bace37a140afL).build2();
-  public static final SMethod<Iterable<SModel>> getModelsWithLogicalChildren_id5zdrv$9yRI_ = new SMethodBuilder<Iterable<SModel>>(new SJavaCompoundTypeImpl((Class<Iterable<SModel>>) ((Class) Object.class))).name("getModelsWithLogicalChildren").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(6398891561937763237L).languageId(0x956a7bb1b081a77cL, 0x85a9bace37a140afL).build2();
-  public static final SMethod<Iterable<SModule>> modulesWithLogicalChildren_id6aYyEt1EuYC = new SMethodBuilder<Iterable<SModule>>(new SJavaCompoundTypeImpl((Class<Iterable<SModule>>) ((Class) Object.class))).name("modulesWithLogicalChildren").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7115276912257789864L).languageId(0x956a7bb1b081a77cL, 0x85a9bace37a140afL).build2();
-  /*package*/ static final SMethod<Iterable<SNode>> findLogicalChildrenIn_id5zdrv$9zA2z = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findLogicalChildrenIn").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(6398891561937952931L).languageId(0x956a7bb1b081a77cL, 0x85a9bace37a140afL).build2(SMethodBuilder.createJavaParameter(SModel.class, ""));
-  /*package*/ static final SMethod<Collection<SNode>> directSearch_id7LqGxA8BBYW = new SMethodBuilder<Collection<SNode>>(new SJavaCompoundTypeImpl((Class<Collection<SNode>>) ((Class) Object.class))).name("directSearch").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(8960670231343038396L).languageId(0x956a7bb1b081a77cL, 0x85a9bace37a140afL).build2();
+  public static final SMethod<Iterable<SNode>> findLogicalChildren_id7c93VeVMIYV = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("findLogicalChildren").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8289173853776310203L).languageId(0x956a7bb1b081a77cL, 0x85a9bace37a140afL).build2();
+  public static final SMethod<Iterable<SModel>> getModelsWithLogicalChildren_id5zdrv$9yRI_ = new SMethodBuilder<>((Class<Iterable<SModel>>) ((Class) Object.class)).name("getModelsWithLogicalChildren").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(6398891561937763237L).languageId(0x956a7bb1b081a77cL, 0x85a9bace37a140afL).build2();
+  public static final SMethod<Iterable<SModule>> modulesWithLogicalChildren_id6aYyEt1EuYC = new SMethodBuilder<>((Class<Iterable<SModule>>) ((Class) Object.class)).name("modulesWithLogicalChildren").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7115276912257789864L).languageId(0x956a7bb1b081a77cL, 0x85a9bace37a140afL).build2();
+  /*package*/ static final SMethod<Iterable<SNode>> findLogicalChildrenIn_id5zdrv$9zA2z = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("findLogicalChildrenIn").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(6398891561937952931L).languageId(0x956a7bb1b081a77cL, 0x85a9bace37a140afL).build2(SMethodBuilder.createJavaParameter(SModel.class, "currentModel"));
+  /*package*/ static final SMethod<Collection<SNode>> directSearch_id7LqGxA8BBYW = new SMethodBuilder<>((Class<Collection<SNode>>) ((Class) Object.class)).name("directSearch").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(8960670231343038396L).languageId(0x956a7bb1b081a77cL, 0x85a9bace37a140afL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findLogicalChildren_id7c93VeVMIYV, getModelsWithLogicalChildren_id5zdrv$9yRI_, modulesWithLogicalChildren_id6aYyEt1EuYC, findLogicalChildrenIn_id5zdrv$9zA2z, directSearch_id7LqGxA8BBYW);
 

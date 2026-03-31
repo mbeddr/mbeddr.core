@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -25,7 +24,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class BaseWizardOp__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x306d745629e24ea3L, 0x9c46e7b830b08481L, 0x6be78930a861374cL, "com.mbeddr.mpsutil.wizard.structure.BaseWizardOp");
 
-  public static final SMethod<SNode> getResultType_id6JByj2CokwG = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getResultType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7775334123754833964L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
+  public static final SMethod<SNode> getResultType_id6JByj2CokwG = new SMethodBuilder<>(SNode.class).name("getResultType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7775334123754833964L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getResultType_id6JByj2CokwG);
 

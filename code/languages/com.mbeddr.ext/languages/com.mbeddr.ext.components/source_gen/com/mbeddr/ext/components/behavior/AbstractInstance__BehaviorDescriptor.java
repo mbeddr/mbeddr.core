@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,9 +20,9 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class AbstractInstance__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x43b4eab5cc522996L, "com.mbeddr.ext.components.structure.AbstractInstance");
 
-  public static final SMethod<Iterable<SNode>> getInputPorts_id7nJums3A_gz = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getInputPorts").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8498144505220453411L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Iterable<SNode>> getOutputPorts_id7nJums3AVys = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getOutputPorts").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8498144505220544668L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Iterable<SNode>> getPorts_id7nJums3AVzC = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getPorts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8498144505220544744L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Iterable<SNode>> getInputPorts_id7nJums3A_gz = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getInputPorts").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8498144505220453411L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Iterable<SNode>> getOutputPorts_id7nJums3AVys = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getOutputPorts").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8498144505220544668L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Iterable<SNode>> getPorts_id7nJums3AVzC = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getPorts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8498144505220544744L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getInputPorts_id7nJums3A_gz, getOutputPorts_id7nJums3AVys, getPorts_id7nJums3AVzC);
 

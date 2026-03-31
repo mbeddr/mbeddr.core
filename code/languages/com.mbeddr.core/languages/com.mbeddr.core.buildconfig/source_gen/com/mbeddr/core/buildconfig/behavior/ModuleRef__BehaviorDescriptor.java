@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Set;
@@ -31,10 +30,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ModuleRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x6b1af9f9f43c2f4bL, "com.mbeddr.core.buildconfig.structure.ModuleRef");
 
-  public static final SMethod<SNode> getReferencedModule_id5KH1ziO6mZz = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getReferencedModule").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6641971848870981603L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<List<SAbstractConcept>> getCommentConcept_id5HxjapwgqLb = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getCommentConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574603L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> isModuleInvolvedInCylce_id94IdDJEylB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isModuleInvolvedInCylce").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734807983463L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
-  public static final SMethod<Void> collectMissingDependencies_id94IdDJEITW = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("collectMissingDependencies").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734808034940L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Set<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> getReferencedModule_id5KH1ziO6mZz = new SMethodBuilder<>(SNode.class).name("getReferencedModule").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6641971848870981603L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<List<SAbstractConcept>> getCommentConcept_id5HxjapwgqLb = new SMethodBuilder<>((Class<List<SAbstractConcept>>) ((Class) Object.class)).name("getCommentConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574603L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isModuleInvolvedInCylce_id94IdDJEylB = new SMethodBuilder<>(Boolean.TYPE).name("isModuleInvolvedInCylce").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734807983463L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<Void> collectMissingDependencies_id94IdDJEITW = new SMethodBuilder<>(Void.TYPE).name("collectMissingDependencies").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734808034940L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "allInBinary"), SMethodBuilder.createJavaParameter((Class<Set<SNode>>) ((Class) Object.class), "missing"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReferencedModule_id5KH1ziO6mZz, getCommentConcept_id5HxjapwgqLb, isModuleInvolvedInCylce_id94IdDJEylB, collectMissingDependencies_id94IdDJEITW);
 

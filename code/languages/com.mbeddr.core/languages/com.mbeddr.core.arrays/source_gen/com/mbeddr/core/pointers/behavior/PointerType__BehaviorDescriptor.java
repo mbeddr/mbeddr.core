@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.core.expressions.runtime.plugin.IToken;
 import java.util.List;
@@ -34,12 +33,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class PointerType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3bf5377ae9044dedL, 0x97545a516023bfaaL, 0x3e0cae5e366d630L, "com.mbeddr.core.pointers.structure.PointerType");
 
-  public static final SMethod<SNode> getDefaultValue_id4jc_TWT4LGD = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4957503999941221161L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<String> getPrintfFormatSpecifier_id4XMHJL4FDjg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrintfFormatSpecifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5724839270941627600L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<String> getSymbolForGenericDotOperation_id6o2p2Z0BE84 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSymbolForGenericDotOperation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7350547698079932932L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<IToken> getToken_id6AaN29SvfIf = new SMethodBuilder<IToken>(new SJavaCompoundTypeImpl(IToken.class)).name("getToken").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7605115369190914959L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(IToken.class, ""));
+  public static final SMethod<SNode> getDefaultValue_id4jc_TWT4LGD = new SMethodBuilder<>(SNode.class).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4957503999941221161L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<String> getPrintfFormatSpecifier_id4XMHJL4FDjg = new SMethodBuilder<>(String.class).name("getPrintfFormatSpecifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5724839270941627600L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> getSymbolForGenericDotOperation_id6o2p2Z0BE84 = new SMethodBuilder<>(String.class).name("getSymbolForGenericDotOperation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7350547698079932932L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<>(Integer.TYPE).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<IToken> getToken_id6AaN29SvfIf = new SMethodBuilder<>(IToken.class).name("getToken").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7605115369190914959L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(IToken.class, "child"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDefaultValue_id4jc_TWT4LGD, getPresentation_idhEwIMiw, getPrintfFormatSpecifier_id4XMHJL4FDjg, getSymbolForGenericDotOperation_id6o2p2Z0BE84, getUsedBytes_id61lw97FtLtJ, getToken_id6AaN29SvfIf);
 

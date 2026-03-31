@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.awt.Color;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -20,7 +19,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ImplementsTraceKind__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x53bab999e9c3428aL, 0x80befef5bed08f55L, 0x619a854eb408b6bL, "com.mbeddr.cc.trace.structure.ImplementsTraceKind");
 
-  public static final SMethod<Color> getTraceColor_id4cyIky40iAb = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getTraceColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4837632670852786571L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2();
+  public static final SMethod<Color> getTraceColor_id4cyIky40iAb = new SMethodBuilder<>(Color.class).name("getTraceColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4837632670852786571L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTraceColor_id4cyIky40iAb);
 

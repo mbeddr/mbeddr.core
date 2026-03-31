@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class CallExpectation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x36a565f13fa042d6L, 0xbaacf87e209c9789L, 0x4cb98149010f64ebL, "com.mbeddr.ext.components.mock.structure.CallExpectation");
 
-  public static final SMethod<Boolean> validNumberOfCalls_id4MTwk$13QjK = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("validNumberOfCalls").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5528592168124376304L).languageId(0xbaacf87e209c9789L, 0x36a565f13fa042d6L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
+  public static final SMethod<Boolean> validNumberOfCalls_id4MTwk$13QjK = new SMethodBuilder<>(Boolean.TYPE).name("validNumberOfCalls").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5528592168124376304L).languageId(0xbaacf87e209c9789L, 0x36a565f13fa042d6L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "totalNumberOfCalls"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(validNumberOfCalls_id4MTwk$13QjK);
 
