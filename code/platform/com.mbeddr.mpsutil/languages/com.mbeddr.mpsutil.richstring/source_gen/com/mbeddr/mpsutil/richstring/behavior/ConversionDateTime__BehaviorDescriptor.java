@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ConversionDateTime__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x442d3b7dfe4a4293L, 0xa7c16744d440ecaaL, 0x2e8be43a043945b8L, "com.mbeddr.mpsutil.richstring.structure.ConversionDateTime");
 
-  public static final SMethod<String> getConversionSymbol_id2UbT3C4ekvK = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getConversionSymbol").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354025285337565168L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<String> getConversionSymbol_id2UbT3C4ekvK = new SMethodBuilder<>(String.class).name("getConversionSymbol").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354025285337565168L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConversionSymbol_id2UbT3C4ekvK);
 

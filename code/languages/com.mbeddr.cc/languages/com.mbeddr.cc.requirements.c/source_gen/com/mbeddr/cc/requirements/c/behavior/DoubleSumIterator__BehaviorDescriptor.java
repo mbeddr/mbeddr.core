@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.awt.Color;
 import java.util.List;
@@ -26,12 +25,12 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class DoubleSumIterator__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf3ed62ca349040d0L, 0x890b9b3133cc2eadL, 0x6991df7f2cc7a288L, "com.mbeddr.cc.requirements.c.structure.DoubleSumIterator");
 
-  public static final SMethod<SNode> getDoubleSumExpr_id6AhRRWGS71T = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDoubleSumExpr").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7607106982912225401L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
-  public static final SMethod<SNode> getLower_id50TV$aG2yG3 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getLower").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5780913566828342019L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
-  public static final SMethod<SNode> getUpper_id50TV$aG2yH7 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getUpper").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5780913566828342087L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
-  public static final SMethod<Boolean> isI_id50TV$aG2yIf = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isI").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5780913566828342159L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
-  public static final SMethod<Color> getDebuggerColor_idPzX5jzXl1d = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getDebuggerColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(964883390626353229L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Integer> getDebuggerFontSize_id2BbcAuIkRls = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getDebuggerFontSize").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3011556196715033948L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> getDoubleSumExpr_id6AhRRWGS71T = new SMethodBuilder<>(SNode.class).name("getDoubleSumExpr").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7607106982912225401L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
+  public static final SMethod<SNode> getLower_id50TV$aG2yG3 = new SMethodBuilder<>(SNode.class).name("getLower").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5780913566828342019L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
+  public static final SMethod<SNode> getUpper_id50TV$aG2yH7 = new SMethodBuilder<>(SNode.class).name("getUpper").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5780913566828342087L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
+  public static final SMethod<Boolean> isI_id50TV$aG2yIf = new SMethodBuilder<>(Boolean.TYPE).name("isI").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5780913566828342159L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
+  public static final SMethod<Color> getDebuggerColor_idPzX5jzXl1d = new SMethodBuilder<>(Color.class).name("getDebuggerColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(964883390626353229L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Integer> getDebuggerFontSize_id2BbcAuIkRls = new SMethodBuilder<>(Integer.TYPE).name("getDebuggerFontSize").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3011556196715033948L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDoubleSumExpr_id6AhRRWGS71T, getLower_id50TV$aG2yG3, getUpper_id50TV$aG2yH7, isI_id50TV$aG2yIf, getDebuggerColor_idPzX5jzXl1d, getDebuggerFontSize_id2BbcAuIkRls);
 

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.mpsutil.plantuml.node.behavior.VisGraph;
 import java.util.List;
@@ -23,8 +22,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class State__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x50315072219db28fL, "com.mbeddr.ext.statemachines.structure.State");
 
-  public static final SMethod<SNode> ultimateInitialState_id3FSHg1aEzgk = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("ultimateInitialState").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4249345261281358868L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
-  public static final SMethod<Void> visualize_id6xkj9mMr7e = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("visualize").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(117464341934617038L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(VisGraph.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<SNode> ultimateInitialState_id3FSHg1aEzgk = new SMethodBuilder<>(SNode.class).name("ultimateInitialState").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4249345261281358868L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<Void> visualize_id6xkj9mMr7e = new SMethodBuilder<>(Void.TYPE).name("visualize").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(117464341934617038L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(VisGraph.class, "g"), SMethodBuilder.createJavaParameter(String.class, "category"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(ultimateInitialState_id3FSHg1aEzgk, visualize_id6xkj9mMr7e);
 

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -29,9 +28,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class UserStyle__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x62a3babb5d404920L, 0x897fd4144dc99c9dL, 0x7162ceb81be6536dL, "com.mbeddr.mpsutil.userstyles.structure.UserStyle");
 
-  public static final SMethod<String> getKey_id5l2JxZPaA8Y = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getKey").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6143681886153237054L).languageId(0x897fd4144dc99c9dL, 0x62a3babb5d404920L).build2();
-  public static final SMethod<SNode> getFor_id1gJuyfgBEVW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getFor").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1454515498906463996L).languageId(0x897fd4144dc99c9dL, 0x62a3babb5d404920L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getForClass_idVx4CqFL0da = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getForClass").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1072158555907556170L).languageId(0x897fd4144dc99c9dL, 0x62a3babb5d404920L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> getKey_id5l2JxZPaA8Y = new SMethodBuilder<>(String.class).name("getKey").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6143681886153237054L).languageId(0x897fd4144dc99c9dL, 0x62a3babb5d404920L).build2();
+  public static final SMethod<SNode> getFor_id1gJuyfgBEVW = new SMethodBuilder<>(SNode.class).name("getFor").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1454515498906463996L).languageId(0x897fd4144dc99c9dL, 0x62a3babb5d404920L).build2(SMethodBuilder.createJavaParameter(SNode.class, "styleItem"));
+  public static final SMethod<SNode> getForClass_idVx4CqFL0da = new SMethodBuilder<>(SNode.class).name("getForClass").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1072158555907556170L).languageId(0x897fd4144dc99c9dL, 0x62a3babb5d404920L).build2(SMethodBuilder.createJavaParameter(SNode.class, "styleClass"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getKey_id5l2JxZPaA8Y, getFor_id1gJuyfgBEVW, getForClass_idVx4CqFL0da);
 

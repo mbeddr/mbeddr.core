@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
@@ -36,9 +35,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ReviewNote__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc788b04620194656L, 0x8b608bb9bbb177b5L, 0x1017edaecf8ecafbL, "com.mbeddr.mpsutil.review.structure.ReviewNote");
 
-  public static final SMethod<SNode> getPredecessor_id10nVqVftAKE = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPredecessor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929130L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
-  public static final SMethod<Integer> compareTo_id10nVqVg5kqc = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("compareTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764142339724L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(EditorContext.class, ""));
-  public static final SMethod<Void> callbackLayout_id10nVqVgfXA7 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("callbackLayout").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764145129863L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2(SMethodBuilder.createJavaParameter(EditorCell.class, ""));
+  public static final SMethod<SNode> getPredecessor_id10nVqVftAKE = new SMethodBuilder<>(SNode.class).name("getPredecessor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929130L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
+  public static final SMethod<Integer> compareTo_id10nVqVg5kqc = new SMethodBuilder<>(Integer.TYPE).name("compareTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764142339724L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"), SMethodBuilder.createJavaParameter(EditorContext.class, "context"));
+  public static final SMethod<Void> callbackLayout_id10nVqVgfXA7 = new SMethodBuilder<>(Void.TYPE).name("callbackLayout").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764145129863L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2(SMethodBuilder.createJavaParameter(EditorCell.class, "contentCell"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPredecessor_id10nVqVftAKE, compareTo_id10nVqVg5kqc, callbackLayout_id10nVqVgfXA7);
 

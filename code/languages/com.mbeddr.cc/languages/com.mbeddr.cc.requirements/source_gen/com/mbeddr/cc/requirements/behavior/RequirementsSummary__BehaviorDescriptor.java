@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -27,9 +26,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class RequirementsSummary__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0x2e00630bb9e0aac4L, "com.mbeddr.cc.requirements.structure.RequirementsSummary");
 
-  public static final SMethod<Iterable<SNode>> applicableRequirements_id2S0oKITSf9N = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("applicableRequirements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3314758227759002227L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
-  public static final SMethod<String> getSummaryText_id2S0oKITSaF9 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSummaryText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3314758227758983881L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
-  public static final SMethod<String> getDescriptionText_id42xPQqC8C6f = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDescriptionText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4657240325585273231L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<Iterable<SNode>> applicableRequirements_id2S0oKITSf9N = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("applicableRequirements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3314758227759002227L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<String> getSummaryText_id2S0oKITSaF9 = new SMethodBuilder<>(String.class).name("getSummaryText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3314758227758983881L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<String> getDescriptionText_id42xPQqC8C6f = new SMethodBuilder<>(String.class).name("getDescriptionText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4657240325585273231L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(applicableRequirements_id2S0oKITSf9N, getSummaryText_id2S0oKITSaF9, getDescriptionText_id42xPQqC8C6f);
 

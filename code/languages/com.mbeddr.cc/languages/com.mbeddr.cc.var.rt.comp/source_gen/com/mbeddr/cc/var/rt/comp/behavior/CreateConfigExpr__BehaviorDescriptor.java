@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,7 +23,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class CreateConfigExpr__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3fa5cffbe29d4e5dL, 0x9b6366e0f087cb60L, 0x6f0889a0c962ac29L, "com.mbeddr.cc.var.rt.comp.structure.CreateConfigExpr");
 
-  public static final SMethod<SNode> applicableRtFeatureModel_id6W8yq39oS5q = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("applicableRtFeatureModel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8000796061690200410L).languageId(0x9b6366e0f087cb60L, 0x3fa5cffbe29d4e5dL).build2();
+  public static final SMethod<SNode> applicableRtFeatureModel_id6W8yq39oS5q = new SMethodBuilder<>(SNode.class).name("applicableRtFeatureModel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8000796061690200410L).languageId(0x9b6366e0f087cb60L, 0x3fa5cffbe29d4e5dL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(applicableRtFeatureModel_id6W8yq39oS5q);
 

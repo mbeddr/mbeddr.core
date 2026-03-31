@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -20,8 +19,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class PortCharacteristic__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x155c88e867cf460bL, "com.mbeddr.ext.components.structure.PortCharacteristic");
 
-  public static final SMethod<String> isCompatibleImpl_id1lsyexBNOog = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("isCompatibleImpl").modifiers(12, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(1539255704409294352L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<String> isCompatible_id1lsyexBNOoB = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("isCompatible").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1539255704409294375L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<String> isCompatibleImpl_id1lsyexBNOog = new SMethodBuilder<>(String.class).name("isCompatibleImpl").modifiers(12, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(1539255704409294352L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "requiredSideChars"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "providedSideChars"));
+  public static final SMethod<String> isCompatible_id1lsyexBNOoB = new SMethodBuilder<>(String.class).name("isCompatible").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1539255704409294375L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "requiredSideChars"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "providedSideChars"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCompatibleImpl_id1lsyexBNOog, isCompatible_id1lsyexBNOoB);
 

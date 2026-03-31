@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -25,8 +24,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class MathFormattedText__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x558f97d97129b861L, "com.mbeddr.doc.structure.MathFormattedText");
 
-  public static final SMethod<String> escape_id519ky_SnGeC = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("escape").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400725928L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> createFromString_id519ky_SnIs6 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createFromString").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400734982L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> escape_id519ky_SnGeC = new SMethodBuilder<>(String.class).name("escape").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400725928L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, "s"));
+  public static final SMethod<SNode> createFromString_id519ky_SnIs6 = new SMethodBuilder<>(SNode.class).name("createFromString").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400734982L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, "s"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(escape_id519ky_SnGeC, createFromString_id519ky_SnIs6);
 

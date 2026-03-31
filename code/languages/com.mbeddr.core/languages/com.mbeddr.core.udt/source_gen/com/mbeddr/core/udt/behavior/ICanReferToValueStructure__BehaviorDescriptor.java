@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ICanReferToValueStructure__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xefda956e491e4f00L, 0xba1436af2f213ecfL, 0xbb5df1249c339edL, "com.mbeddr.core.udt.structure.ICanReferToValueStructure");
 
-  public static final SMethod<SNode> getValueStructure_idIPRL99KNBQ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getValueStructure").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(843825774841772534L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
+  public static final SMethod<SNode> getValueStructure_idIPRL99KNBQ = new SMethodBuilder<>(SNode.class).name("getValueStructure").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(843825774841772534L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getValueStructure_idIPRL99KNBQ);
 

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IConfigurationItemWithImport__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x7d64960bd98383ccL, "com.mbeddr.core.base.structure.IConfigurationItemWithImport");
 
-  public static final SMethod<Iterable<SNode>> getNodesToImportNodes_id7P$_wJpwTgl = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getNodesToImportNodes").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9035511730050143253L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> getNodesToImportNodes_id7P$_wJpwTgl = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getNodesToImportNodes").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9035511730050143253L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "configContainer"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNodesToImportNodes_id7P$_wJpwTgl);
 

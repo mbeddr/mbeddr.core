@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,8 +20,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class LegalReferencesConfiguration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x62296a07bc3846d2L, 0x8034198c24063588L, 0x6e75e9962b97a1bdL, "com.mbeddr.core.modules.gen.structure.LegalReferencesConfiguration");
 
-  public static final SMethod<String> getDefaultLicenseFileName_id6TPUpoI1T6r = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDefaultLicenseFileName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7959524747673833883L).languageId(0x8034198c24063588L, 0x62296a07bc3846d2L).build2();
-  public static final SMethod<String> getEffectiveLicenseFileName_id6TPUpoI1R0S = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEffectiveLicenseFileName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7959524747673825336L).languageId(0x8034198c24063588L, 0x62296a07bc3846d2L).build2();
+  public static final SMethod<String> getDefaultLicenseFileName_id6TPUpoI1T6r = new SMethodBuilder<>(String.class).name("getDefaultLicenseFileName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7959524747673833883L).languageId(0x8034198c24063588L, 0x62296a07bc3846d2L).build2();
+  public static final SMethod<String> getEffectiveLicenseFileName_id6TPUpoI1R0S = new SMethodBuilder<>(String.class).name("getEffectiveLicenseFileName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7959524747673825336L).languageId(0x8034198c24063588L, 0x62296a07bc3846d2L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDefaultLicenseFileName_id6TPUpoI1T6r, getEffectiveLicenseFileName_id6TPUpoI1R0S);
 

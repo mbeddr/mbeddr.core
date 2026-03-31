@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class Register16__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x783af01f87a7412cL, 0xbe99293a162652b5L, 0x5f072ca6a415402eL, "com.mbeddr.core.embedded.structure.Register16");
 
-  public static final SMethod<Integer> getBitCount_id30ICD1Hyq_w = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getBitCount").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3471891103945959776L).languageId(0xbe99293a162652b5L, 0x783af01f87a7412cL).build2();
+  public static final SMethod<Integer> getBitCount_id30ICD1Hyq_w = new SMethodBuilder<>(Integer.TYPE).name("getBitCount").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3471891103945959776L).languageId(0xbe99293a162652b5L, 0x783af01f87a7412cL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBitCount_id30ICD1Hyq_w);
 

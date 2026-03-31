@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -23,9 +22,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ComponentPortRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x3e5659cd94a4de79L, "com.mbeddr.ext.components.structure.ComponentPortRef");
 
-  public static final SMethod<Boolean> refersToSame_id3PT6Z48HJos = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("refersToSame").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4429602430542870044L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getPortName_id5D_ZQXvPzGB = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPortName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6513893289875618599L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<SNode> getInstance_id5D_ZQXvVX8f = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInstance").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6513893289877295631L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> refersToSame_id3PT6Z48HJos = new SMethodBuilder<>(Boolean.TYPE).name("refersToSame").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4429602430542870044L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<String> getPortName_id5D_ZQXvPzGB = new SMethodBuilder<>(String.class).name("getPortName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6513893289875618599L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<SNode> getInstance_id5D_ZQXvVX8f = new SMethodBuilder<>(SNode.class).name("getInstance").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6513893289877295631L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(refersToSame_id3PT6Z48HJos, getPortName_id5D_ZQXvPzGB, getInstance_id5D_ZQXvVX8f);
 

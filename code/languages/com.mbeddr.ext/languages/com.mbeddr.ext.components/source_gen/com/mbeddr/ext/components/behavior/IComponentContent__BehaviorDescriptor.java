@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -24,10 +23,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class IComponentContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x707ac195dd5860c0L, "com.mbeddr.ext.components.structure.IComponentContent");
 
-  public static final SMethod<String> kindString_id5KH1ziO54kR = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("kindString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6641971848870642999L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<List<SAbstractConcept>> getCommentConcept_id5HxjapwgqLb = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getCommentConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574603L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<SNode> owningComponent_id19a6$uAAaU1 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("owningComponent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317894735999315585L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Iterable<SNode>> allReferencedModuleContents_id1zPfrUoUUqq = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allReferencedModuleContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1798411515023042202L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> kindString_id5KH1ziO54kR = new SMethodBuilder<>(String.class).name("kindString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6641971848870642999L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<List<SAbstractConcept>> getCommentConcept_id5HxjapwgqLb = new SMethodBuilder<>((Class<List<SAbstractConcept>>) ((Class) Object.class)).name("getCommentConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574603L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> owningComponent_id19a6$uAAaU1 = new SMethodBuilder<>(SNode.class).name("owningComponent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317894735999315585L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Iterable<SNode>> allReferencedModuleContents_id1zPfrUoUUqq = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allReferencedModuleContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1798411515023042202L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(kindString_id5KH1ziO54kR, getCommentConcept_id5HxjapwgqLb, owningComponent_id19a6$uAAaU1, allReferencedModuleContents_id1zPfrUoUUqq);
 

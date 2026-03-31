@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -21,12 +20,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class DirectAssignmentExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x350656a10cd18bcaL, "com.mbeddr.core.expressions.structure.DirectAssignmentExpression");
 
-  public static final SMethod<Boolean> isSideeffectFree_id6SENleF$SRD = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSideeffectFree").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7938383052438474217L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> correspondingNonDirectExpression_id7FQUQ5yTHlG = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("correspondingNonDirectExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8860528120401679724L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> isStaticallyEvaluatable_id3ilck8Kr3zN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isStaticallyEvaluatable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3788988821852141811L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getLValue_id7QxE2Vg8Hif = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9052701645005313167L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getRValue_id7QxE2Vg8Hlr = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getRValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9052701645005313371L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isSideeffectFree_id6SENleF$SRD = new SMethodBuilder<>(Boolean.TYPE).name("isSideeffectFree").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7938383052438474217L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> correspondingNonDirectExpression_id7FQUQ5yTHlG = new SMethodBuilder<>(SNode.class).name("correspondingNonDirectExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8860528120401679724L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<>(Integer.TYPE).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isStaticallyEvaluatable_id3ilck8Kr3zN = new SMethodBuilder<>(Boolean.TYPE).name("isStaticallyEvaluatable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3788988821852141811L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getLValue_id7QxE2Vg8Hif = new SMethodBuilder<>(SNode.class).name("getLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9052701645005313167L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getRValue_id7QxE2Vg8Hlr = new SMethodBuilder<>(SNode.class).name("getRValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9052701645005313371L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSideeffectFree_id6SENleF$SRD, correspondingNonDirectExpression_id7FQUQ5yTHlG, getPriolevel_id5HxjapwgqKu, isStaticallyEvaluatable_id3ilck8Kr3zN, getLValue_id7QxE2Vg8Hif, getRValue_id7QxE2Vg8Hlr);
 

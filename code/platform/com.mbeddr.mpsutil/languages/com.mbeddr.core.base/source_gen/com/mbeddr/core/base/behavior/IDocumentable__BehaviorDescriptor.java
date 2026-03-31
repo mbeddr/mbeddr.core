@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
@@ -26,10 +25,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IDocumentable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x3588b64556af2180L, "com.mbeddr.core.base.structure.IDocumentable");
 
-  public static final SMethod<String> getDocTextOrEmpty_id3m8H$lmFM62 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDocTextOrEmpty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3857533489766146434L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<SNode> getDocNodeOrNull_idYJrcxt6$v6 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDocNodeOrNull").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1130241639304546246L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<SNode> getDocNodeOrNull_id11K_5nNeRli = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDocNodeOrNull").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1184609798872331602L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(EditorCell.class, ""));
-  public static final SMethod<Boolean> isDocumentationAllowed_id3ni3WiduMNJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDocumentationAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3878179565981084911L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getDocTextOrEmpty_id3m8H$lmFM62 = new SMethodBuilder<>(String.class).name("getDocTextOrEmpty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3857533489766146434L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> getDocNodeOrNull_idYJrcxt6$v6 = new SMethodBuilder<>(SNode.class).name("getDocNodeOrNull").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1130241639304546246L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> getDocNodeOrNull_id11K_5nNeRli = new SMethodBuilder<>(SNode.class).name("getDocNodeOrNull").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1184609798872331602L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(EditorCell.class, "editorCell"));
+  public static final SMethod<Boolean> isDocumentationAllowed_id3ni3WiduMNJ = new SMethodBuilder<>(Boolean.TYPE).name("isDocumentationAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3878179565981084911L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDocTextOrEmpty_id3m8H$lmFM62, getDocNodeOrNull_idYJrcxt6$v6, getDocNodeOrNull_id11K_5nNeRli, isDocumentationAllowed_id3ni3WiduMNJ);
 

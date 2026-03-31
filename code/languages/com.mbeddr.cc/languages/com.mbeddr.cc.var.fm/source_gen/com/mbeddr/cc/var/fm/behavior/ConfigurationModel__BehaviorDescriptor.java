@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -25,10 +24,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ConfigurationModel__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe401b44780194ccdL, 0xa72cbfb0230f5782L, 0x5eb8f6e2708cb288L, "com.mbeddr.cc.var.fm.structure.ConfigurationModel");
 
-  public static final SMethod<Boolean> isSelected_id7H6_Qip5NDO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSelected").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8882953773355842164L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getValueNodeForAttribute_id6W8yq39ois4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getValueNodeForAttribute").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8000796061690046212L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> selectedFeatures_id5MNZoCA0_vu = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("selectedFeatures").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6679961442105579486L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
-  public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isSelected_id7H6_Qip5NDO = new SMethodBuilder<>(Boolean.TYPE).name("isSelected").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8882953773355842164L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter(SNode.class, "f"));
+  public static final SMethod<SNode> getValueNodeForAttribute_id6W8yq39ois4 = new SMethodBuilder<>(SNode.class).name("getValueNodeForAttribute").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8000796061690046212L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter(SNode.class, "a"));
+  public static final SMethod<Iterable<SNode>> selectedFeatures_id5MNZoCA0_vu = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("selectedFeatures").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6679961442105579486L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
+  public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<>(Integer.TYPE).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSelected_id7H6_Qip5NDO, getValueNodeForAttribute_id6W8yq39ois4, selectedFeatures_id5MNZoCA0_vu, getLOCEquivalent_id6brBMefRfO0);
 

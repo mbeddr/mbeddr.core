@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class ITranslation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd0fe2e609f9c4d3cL, 0x94aade9257b67a6dL, 0x2b5f1f0537520024L, "com.mbeddr.mpsutil.multilingual.concept.structure.ITranslation");
 
-  public static final SMethod<String> asString_id2Hv7KkRkDtD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asString").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3125250773681870697L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
+  public static final SMethod<String> asString_id2Hv7KkRkDtD = new SMethodBuilder<>(String.class).name("asString").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3125250773681870697L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asString_id2Hv7KkRkDtD);
 

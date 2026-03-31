@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class EJavaObject__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x77948de36ef9452dL, 0xb392d01403e4086fL, 0x2990aca634fd1862L, "com.mbeddr.mpsutil.ecore.structure.EJavaObject");
 
-  public static final SMethod<String> emfTypeName_id2AgFaoOYBRA = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("emfTypeName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2995083582054759910L).languageId(0xb392d01403e4086fL, 0x77948de36ef9452dL).build2();
+  public static final SMethod<String> emfTypeName_id2AgFaoOYBRA = new SMethodBuilder<>(String.class).name("emfTypeName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2995083582054759910L).languageId(0xb392d01403e4086fL, 0x77948de36ef9452dL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(emfTypeName_id2AgFaoOYBRA);
 

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -27,8 +26,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ModelContentAsImageParagraph__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x608796288312c04bL, "com.mbeddr.doc.structure.ModelContentAsImageParagraph");
 
-  public static final SMethod<String> uniqueName_id627_yy34GmM = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("uniqueName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6955693250238924210L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<SNode> getPath_id3UlEobTHU0G = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4509696981881823276L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> uniqueName_id627_yy34GmM = new SMethodBuilder<>(String.class).name("uniqueName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6955693250238924210L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<SNode> getPath_id3UlEobTHU0G = new SMethodBuilder<>(SNode.class).name("getPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4509696981881823276L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniqueName_id627_yy34GmM, getPath_id3UlEobTHU0G);
 

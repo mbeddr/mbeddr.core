@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -28,11 +27,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class AbstractStructuredBinOpAssertStatement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d68b77b6994918L, 0x83b8857e63787800L, 0x6b2656586121bd7cL, "com.mbeddr.core.unittest.structure.AbstractStructuredBinOpAssertStatement");
 
-  public static final SMethod<SAbstractConcept> getBinop_id5HxjapwgqL$ = new SMethodBuilder<SAbstractConcept>(new SJavaCompoundTypeImpl((Class<SAbstractConcept>) ((Class) Object.class))).name("getBinop").modifiers(13, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574628L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
-  public static final SMethod<String> getFailureMessageFormat_id4Ru$s7zwmbI = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFailureMessageFormat").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5611082447681839854L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
-  public static final SMethod<SNode> getValueType_id5hcw$WGCNaA = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getValueType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6074373273978876582L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getTypePresentation_id5hcw$WGCRGy = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTypePresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6074373273978895138L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getPrintfFormatSpecifier_id5hcw$WGCS5d = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrintfFormatSpecifier").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6074373273978896717L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SAbstractConcept> getBinop_id5HxjapwgqL$ = new SMethodBuilder<>(SAbstractConcept.class).name("getBinop").modifiers(13, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574628L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<String> getFailureMessageFormat_id4Ru$s7zwmbI = new SMethodBuilder<>(String.class).name("getFailureMessageFormat").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5611082447681839854L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<SNode> getValueType_id5hcw$WGCNaA = new SMethodBuilder<>(SNode.class).name("getValueType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6074373273978876582L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2(SMethodBuilder.createJavaParameter(SNode.class, "type"));
+  public static final SMethod<String> getTypePresentation_id5hcw$WGCRGy = new SMethodBuilder<>(String.class).name("getTypePresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6074373273978895138L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expr"));
+  public static final SMethod<String> getPrintfFormatSpecifier_id5hcw$WGCS5d = new SMethodBuilder<>(String.class).name("getPrintfFormatSpecifier").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6074373273978896717L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expr"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBinop_id5HxjapwgqL$, getFailureMessageFormat_id4Ru$s7zwmbI, getValueType_id5hcw$WGCNaA, getTypePresentation_id5hcw$WGCRGy, getPrintfFormatSpecifier_id5hcw$WGCS5d);
 

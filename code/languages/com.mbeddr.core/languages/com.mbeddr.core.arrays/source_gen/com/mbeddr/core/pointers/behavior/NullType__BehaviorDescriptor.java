@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -25,7 +24,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class NullType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3bf5377ae9044dedL, 0x97545a516023bfaaL, 0x916b4ab18804478L, "com.mbeddr.core.pointers.structure.NullType");
 
-  public static final SMethod<Boolean> canBeConst_id2zhwXA$TG$3 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeConst").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002447374595L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> canBeConst_id2zhwXA$TG$3 = new SMethodBuilder<>(Boolean.TYPE).name("canBeConst").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002447374595L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeConst_id2zhwXA$TG$3);
 

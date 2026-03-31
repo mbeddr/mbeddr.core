@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,11 +23,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class QueueDeclaration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x45b8e10653871ca6L, "com.mbeddr.core.util.structure.QueueDeclaration");
 
-  public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> genSizeConstantName_id1gOniHQA69C = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genSizeConstantName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1455891020802187880L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<String> genSructName_id1gOniHQA$xP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genSructName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1455891020802312309L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<String> genEnqueueFunctionName_id1gOniHQCxMT = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genEnqueueFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1455891020802825401L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<String> genDequeueFunctionName_id1gOniHQCyOp = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genDequeueFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1455891020802829593L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<>(SNode.class).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> genSizeConstantName_id1gOniHQA69C = new SMethodBuilder<>(String.class).name("genSizeConstantName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1455891020802187880L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genSructName_id1gOniHQA$xP = new SMethodBuilder<>(String.class).name("genSructName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1455891020802312309L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genEnqueueFunctionName_id1gOniHQCxMT = new SMethodBuilder<>(String.class).name("genEnqueueFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1455891020802825401L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genDequeueFunctionName_id1gOniHQCyOp = new SMethodBuilder<>(String.class).name("genDequeueFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1455891020802829593L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createType_id3o2OLGv7CoR, genSizeConstantName_id1gOniHQA69C, genSructName_id1gOniHQA$xP, genEnqueueFunctionName_id1gOniHQCxMT, genDequeueFunctionName_id1gOniHQCyOp);
 

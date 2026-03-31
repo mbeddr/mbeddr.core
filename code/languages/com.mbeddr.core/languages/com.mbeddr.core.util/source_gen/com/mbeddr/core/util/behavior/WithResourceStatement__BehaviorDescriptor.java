@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,9 +23,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class WithResourceStatement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0xa861d9bbb6908ffL, "com.mbeddr.core.util.structure.WithResourceStatement");
 
-  public static final SMethod<Boolean> isVoid_idE67pIVLpxF = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isVoid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(758326141965932651L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<Boolean> hasGuard_idE67pIVM2RV = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasGuard").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(758326141966102011L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<Boolean> handleIsBoolean_idE67pIWc31_ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("handleIsBoolean").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(758326141972918373L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<Boolean> isVoid_idE67pIVLpxF = new SMethodBuilder<>(Boolean.TYPE).name("isVoid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(758326141965932651L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<Boolean> hasGuard_idE67pIVM2RV = new SMethodBuilder<>(Boolean.TYPE).name("hasGuard").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(758326141966102011L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<Boolean> handleIsBoolean_idE67pIWc31_ = new SMethodBuilder<>(Boolean.TYPE).name("handleIsBoolean").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(758326141972918373L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isVoid_idE67pIVLpxF, hasGuard_idE67pIVM2RV, handleIsBoolean_idE67pIWc31_);
 

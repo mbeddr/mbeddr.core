@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,9 +23,9 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IConfigurationItem__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x3de41a718bc20028L, "com.mbeddr.core.base.structure.IConfigurationItem");
 
-  public static final SMethod<SNode> findConfigContainer_id3R$6B6bKw0I = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("findConfigContainer").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4459718605982007342L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> isCompatible_idybcgwyxJcI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCompatible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(615639685074973486L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> canHandleCrossModelGeneration_idybcgwyBbFy = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canHandleCrossModelGeneration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(615639685076400866L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> findConfigContainer_id3R$6B6bKw0I = new SMethodBuilder<>(SNode.class).name("findConfigContainer").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4459718605982007342L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isCompatible_idybcgwyxJcI = new SMethodBuilder<>(Boolean.TYPE).name("isCompatible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(615639685074973486L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<Boolean> canHandleCrossModelGeneration_idybcgwyBbFy = new SMethodBuilder<>(Boolean.TYPE).name("canHandleCrossModelGeneration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(615639685076400866L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findConfigContainer_id3R$6B6bKw0I, isCompatible_idybcgwyxJcI, canHandleCrossModelGeneration_idybcgwyBbFy);
 
