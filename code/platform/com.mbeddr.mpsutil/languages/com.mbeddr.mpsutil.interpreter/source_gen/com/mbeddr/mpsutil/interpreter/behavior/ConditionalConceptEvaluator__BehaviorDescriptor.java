@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -28,7 +27,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ConditionalConceptEvaluator__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x47f075a6558e4640L, 0xa6067ce0236c8023L, 0x761e4e6b8ed3d1e2L, "com.mbeddr.mpsutil.interpreter.structure.ConditionalConceptEvaluator");
 
-  public static final SMethod<Void> addCondition_id7oujAIePZ3i = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addCondition").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8511326569641799890L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Void> addCondition_id7oujAIePZ3i = new SMethodBuilder<>(Void.TYPE).name("addCondition").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8511326569641799890L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addCondition_id7oujAIePZ3i);
 

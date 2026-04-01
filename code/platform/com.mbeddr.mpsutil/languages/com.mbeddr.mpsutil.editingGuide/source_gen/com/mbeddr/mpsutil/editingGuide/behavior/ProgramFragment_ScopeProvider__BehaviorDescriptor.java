@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -24,8 +23,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class ProgramFragment_ScopeProvider__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x67506b1e43ad47feL, 0xa8e6bc7837e9e11fL, 0xd7eba8700faca3eL, "com.mbeddr.mpsutil.editingGuide.structure.ProgramFragment_ScopeProvider");
 
-  public static final SMethod<Scope> getVisibleDirectNodeExporters_id4fWdCdAZmTB = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getVisibleDirectNodeExporters").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4898850432668757607L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Scope> getProvidedNodes_id22irgSmHAOg = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getProvidedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2347058263091473680L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
+  public static final SMethod<Scope> getVisibleDirectNodeExporters_id4fWdCdAZmTB = new SMethodBuilder<>(Scope.class).name("getVisibleDirectNodeExporters").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4898850432668757607L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter(SNode.class, "contextNode"));
+  public static final SMethod<Scope> getProvidedNodes_id22irgSmHAOg = new SMethodBuilder<>(Scope.class).name("getProvidedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2347058263091473680L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "targetConcept"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getVisibleDirectNodeExporters_id4fWdCdAZmTB, getProvidedNodes_id22irgSmHAOg);
 

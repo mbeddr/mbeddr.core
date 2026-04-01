@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -26,10 +25,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class FeatureModelConfiguration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x17fba0eaf154a23L, 0xb0a802b5c1141e75L, 0x92cd87784518100L, "com.mbeddr.cc.var.annotations.structure.FeatureModelConfiguration");
 
-  public static final SMethod<Boolean> isFeatureSelected_id5USXI9KzkZO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isFeatureSelected").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6825476687691337716L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getFeatureSelection_id6hM2_xVMLfJ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getFeatureSelection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7237858926288114671L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> updateMapping_id10hF$bG_$c = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateMapping").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(18092159088613644L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> hasMappingFor_id10hF$bGFFW = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasMappingFor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(18092159088638716L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> isFeatureSelected_id5USXI9KzkZO = new SMethodBuilder<>(Boolean.TYPE).name("isFeatureSelected").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6825476687691337716L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter(SNode.class, "f"));
+  public static final SMethod<SNode> getFeatureSelection_id6hM2_xVMLfJ = new SMethodBuilder<>(SNode.class).name("getFeatureSelection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7237858926288114671L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter(SNode.class, "f"));
+  public static final SMethod<Void> updateMapping_id10hF$bG_$c = new SMethodBuilder<>(Void.TYPE).name("updateMapping").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(18092159088613644L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2(SMethodBuilder.createJavaParameter(SNode.class, "fm"), SMethodBuilder.createJavaParameter(SNode.class, "cm"));
+  public static final SMethod<Boolean> hasMappingFor_id10hF$bGFFW = new SMethodBuilder<>(Boolean.TYPE).name("hasMappingFor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(18092159088638716L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2(SMethodBuilder.createJavaParameter(SNode.class, "fm"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isFeatureSelected_id5USXI9KzkZO, getFeatureSelection_id6hM2_xVMLfJ, updateMapping_id10hF$bG_$c, hasMappingFor_id10hF$bGFFW);
 

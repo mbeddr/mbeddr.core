@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -23,8 +22,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ComponentsConfigItem__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x1d31b29ecf3bf048L, "com.mbeddr.ext.components.structure.ComponentsConfigItem");
 
-  public static final SMethod<Boolean> isCompatible_idybcgwyxJcI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCompatible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(615639685074973486L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> canHandleCrossModelGeneration_idybcgwyBbFy = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("crossModelGenerationEnabled").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(615639685076400866L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isCompatible_idybcgwyxJcI = new SMethodBuilder<>(Boolean.TYPE).name("isCompatible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(615639685074973486L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<Boolean> canHandleCrossModelGeneration_idybcgwyBbFy = new SMethodBuilder<>(Boolean.TYPE).name("crossModelGenerationEnabled").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(615639685076400866L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCompatible_idybcgwyxJcI, canHandleCrossModelGeneration_idybcgwyBbFy);
 

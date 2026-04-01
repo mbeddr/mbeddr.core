@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.awt.Color;
 import java.util.List;
@@ -20,8 +19,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class DoubleSumExpr__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf3ed62ca349040d0L, 0x890b9b3133cc2eadL, 0x6991df7f2cc5bcfbL, "com.mbeddr.cc.requirements.c.structure.DoubleSumExpr");
 
-  public static final SMethod<Integer> getDebuggerFontSize_id2BbcAuIkRls = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getDebuggerFontSize").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3011556196715033948L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Color> getDebuggerColor_idPzX5jzXl1d = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getDebuggerColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(964883390626353229L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Integer> getDebuggerFontSize_id2BbcAuIkRls = new SMethodBuilder<>(Integer.TYPE).name("getDebuggerFontSize").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3011556196715033948L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Color> getDebuggerColor_idPzX5jzXl1d = new SMethodBuilder<>(Color.class).name("getDebuggerColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(964883390626353229L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDebuggerFontSize_id2BbcAuIkRls, getDebuggerColor_idPzX5jzXl1d);
 

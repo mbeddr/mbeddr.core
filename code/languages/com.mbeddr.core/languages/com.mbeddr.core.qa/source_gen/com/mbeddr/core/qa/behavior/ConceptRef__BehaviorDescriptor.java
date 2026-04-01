@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -26,8 +25,8 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class ConceptRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc8e0d19c3cf4b31L, 0xaf77531227edbce8L, 0x571d7a04fb2de2afL, "com.mbeddr.core.qa.structure.ConceptRef");
 
-  public static final SMethod<Boolean> matches_id5stuwjVbNOa = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("matches").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6277307617436974346L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> resultLabel_id5stuwjVslJQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("resultLabel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6277307617441307638L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> matches_id5stuwjVbNOa = new SMethodBuilder<>(Boolean.TYPE).name("matches").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6277307617436974346L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<String> resultLabel_id5stuwjVslJQ = new SMethodBuilder<>(String.class).name("resultLabel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6277307617441307638L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matches_id5stuwjVbNOa, resultLabel_id5stuwjVslJQ);
 

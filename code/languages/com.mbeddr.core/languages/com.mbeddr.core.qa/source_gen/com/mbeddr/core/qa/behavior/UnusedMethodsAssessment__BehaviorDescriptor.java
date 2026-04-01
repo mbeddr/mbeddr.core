@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.project.Project;
 import java.util.Arrays;
@@ -43,7 +42,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class UnusedMethodsAssessment__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc8e0d19c3cf4b31L, 0xaf77531227edbce8L, 0x5d1699da0888bd17L, "com.mbeddr.core.qa.structure.UnusedMethodsAssessment");
 
-  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
+  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, "mpsProject"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id4WjNWxKJWaq);
 

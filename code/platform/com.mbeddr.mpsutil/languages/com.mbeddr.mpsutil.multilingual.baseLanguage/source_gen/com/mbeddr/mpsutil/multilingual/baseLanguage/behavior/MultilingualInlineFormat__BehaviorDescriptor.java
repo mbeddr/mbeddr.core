@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -36,9 +35,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class MultilingualInlineFormat__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd2a1d97643a2462fL, 0xac3a9b258ced839dL, 0x7e1c8e453e3ae0bbL, "com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualInlineFormat");
 
-  public static final SMethod<SAbstractConcept> calculateCategory2_id38BeNG_3AFp = new SMethodBuilder<SAbstractConcept>(new SJavaCompoundTypeImpl((Class<SAbstractConcept>) ((Class) Object.class))).name("calculateCategory2").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3613922351198923481L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
-  public static final SMethod<SNode> getExpressionType_id7Ssz$kYjeZx = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getExpressionType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9087294576175935457L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
-  public static final SMethod<String> concatFormatString_id5qZNa$QMfx1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("concatFormatString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6250939834954217537L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<SAbstractConcept> calculateCategory2_id38BeNG_3AFp = new SMethodBuilder<>(SAbstractConcept.class).name("calculateCategory2").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3613922351198923481L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<SNode> getExpressionType_id7Ssz$kYjeZx = new SMethodBuilder<>(SNode.class).name("getExpressionType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9087294576175935457L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<String> concatFormatString_id5qZNa$QMfx1 = new SMethodBuilder<>(String.class).name("concatFormatString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6250939834954217537L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(calculateCategory2_id38BeNG_3AFp, getExpressionType_id7Ssz$kYjeZx, concatFormatString_id5qZNa$QMfx1);
 

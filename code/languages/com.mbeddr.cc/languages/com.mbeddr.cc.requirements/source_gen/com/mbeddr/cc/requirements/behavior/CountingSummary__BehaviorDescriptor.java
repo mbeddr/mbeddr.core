@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -20,7 +19,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class CountingSummary__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0x2e00630bb9e107a1L, "com.mbeddr.cc.requirements.structure.CountingSummary");
 
-  public static final SMethod<String> getSummaryText_id2S0oKITSaF9 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSummaryText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3314758227758983881L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<String> getSummaryText_id2S0oKITSaF9 = new SMethodBuilder<>(String.class).name("getSummaryText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3314758227758983881L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSummaryText_id2S0oKITSaF9);
 

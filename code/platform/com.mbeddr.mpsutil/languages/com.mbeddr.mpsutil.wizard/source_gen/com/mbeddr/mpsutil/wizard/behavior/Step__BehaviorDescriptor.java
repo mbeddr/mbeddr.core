@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -30,11 +29,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class Step__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x306d745629e24ea3L, 0x9c46e7b830b08481L, 0x418fa9827b31e1d6L, "com.mbeddr.mpsutil.wizard.structure.Step");
 
-  public static final SMethod<String> genClassName_id43jzEnWa6sq = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genClassName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4671234082064590618L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
-  public static final SMethod<List<SNode>> getMembers_idhEwJioW = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877528124L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
-  public static final SMethod<SNode> createType_idhEwJimy = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877527970L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
-  public static final SMethod<Iterable<SNode>> getClassContent_idrF8Sb8_jhT = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getClassContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228372513913L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
-  public static final SMethod<String> getFqName_id44rcFjhUAIb = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFqName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4691399189033806731L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
+  public static final SMethod<String> genClassName_id43jzEnWa6sq = new SMethodBuilder<>(String.class).name("genClassName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4671234082064590618L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
+  public static final SMethod<List<SNode>> getMembers_idhEwJioW = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877528124L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
+  public static final SMethod<SNode> createType_idhEwJimy = new SMethodBuilder<>(SNode.class).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877527970L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
+  public static final SMethod<Iterable<SNode>> getClassContent_idrF8Sb8_jhT = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getClassContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228372513913L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
+  public static final SMethod<String> getFqName_id44rcFjhUAIb = new SMethodBuilder<>(String.class).name("getFqName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4691399189033806731L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genClassName_id43jzEnWa6sq, getMembers_idhEwJioW, createType_idhEwJimy, getClassContent_idrF8Sb8_jhT, getFqName_id44rcFjhUAIb);
 

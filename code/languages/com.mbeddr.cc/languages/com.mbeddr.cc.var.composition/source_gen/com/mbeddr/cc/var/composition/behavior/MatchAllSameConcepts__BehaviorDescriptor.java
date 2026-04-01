@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SModel;
 import java.util.List;
@@ -23,7 +22,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class MatchAllSameConcepts__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x21ac77a41b6644c5L, 0xaaec94e43bb86519L, 0x52ce094113f0bcf1L, "com.mbeddr.cc.var.composition.structure.MatchAllSameConcepts");
 
-  public static final SMethod<Iterable<SNode>> matchedTargets_id3YyHFqO6HoC = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("matchedTargets").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438546984L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> matchedTargets_id3YyHFqO6HoC = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("matchedTargets").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438546984L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter(SModel.class, "m"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matchedTargets_id3YyHFqO6HoC);
 

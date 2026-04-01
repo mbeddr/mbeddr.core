@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,8 +20,8 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class ReviewReplyNote__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc788b04620194656L, 0x8b608bb9bbb177b5L, 0x1017edaecf8efc59L, "com.mbeddr.mpsutil.review.structure.ReviewReplyNote");
 
-  public static final SMethod<SNode> getPredecessor_id10nVqVftAKE = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPredecessor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929130L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
-  public static final SMethod<Boolean> isConnectionAllowed_id10nVqVftAKg = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isConnectionAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929104L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
+  public static final SMethod<SNode> getPredecessor_id10nVqVftAKE = new SMethodBuilder<>(SNode.class).name("getPredecessor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929130L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
+  public static final SMethod<Boolean> isConnectionAllowed_id10nVqVftAKg = new SMethodBuilder<>(Boolean.TYPE).name("isConnectionAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929104L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPredecessor_id10nVqVftAKE, isConnectionAllowed_id10nVqVftAKg);
 

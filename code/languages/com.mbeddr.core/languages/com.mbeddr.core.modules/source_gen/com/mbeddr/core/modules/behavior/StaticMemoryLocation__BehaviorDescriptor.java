@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -28,9 +27,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class StaticMemoryLocation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x2edcb73a870a3eddL, "com.mbeddr.core.modules.structure.StaticMemoryLocation");
 
-  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Iterable<SNode>> allReferencedModuleContents_id1zPfrUoUUqq = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allReferencedModuleContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1798411515023042202L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Boolean> resultIsLValue_id4b64BCc0upM = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("resultIsLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4811553567288714866L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<>(Boolean.TYPE).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Iterable<SNode>> allReferencedModuleContents_id1zPfrUoUUqq = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allReferencedModuleContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1798411515023042202L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> resultIsLValue_id4b64BCc0upM = new SMethodBuilder<>(Boolean.TYPE).name("resultIsLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4811553567288714866L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(exportable_id5HxjapwgqKI, allReferencedModuleContents_id1zPfrUoUUqq, resultIsLValue_id4b64BCc0upM);
 

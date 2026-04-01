@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -26,10 +25,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class EstimatedEffortTag__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0xc3ddac5b0bb0500L, "com.mbeddr.cc.requirements.structure.EstimatedEffortTag");
 
-  public static final SMethod<Boolean> hasChildRequirements_idKXQGmKIKkk = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasChildRequirements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(882101644642944276L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
-  public static final SMethod<Integer> getTotalEffort_idKXQGmKIKkx = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getTotalEffort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(882101644642944289L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
-  public static final SMethod<String> title_id6TTrAqIILXr = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("title").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7960515203651280731L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
-  public static final SMethod<String> value_id6TTrAqIILXY = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("value").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7960515203651280766L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<Boolean> hasChildRequirements_idKXQGmKIKkk = new SMethodBuilder<>(Boolean.TYPE).name("hasChildRequirements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(882101644642944276L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<Integer> getTotalEffort_idKXQGmKIKkx = new SMethodBuilder<>(Integer.TYPE).name("getTotalEffort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(882101644642944289L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<String> title_id6TTrAqIILXr = new SMethodBuilder<>(String.class).name("title").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7960515203651280731L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<String> value_id6TTrAqIILXY = new SMethodBuilder<>(String.class).name("value").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7960515203651280766L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasChildRequirements_idKXQGmKIKkk, getTotalEffort_idKXQGmKIKkx, title_id6TTrAqIILXr, value_id6TTrAqIILXY);
 

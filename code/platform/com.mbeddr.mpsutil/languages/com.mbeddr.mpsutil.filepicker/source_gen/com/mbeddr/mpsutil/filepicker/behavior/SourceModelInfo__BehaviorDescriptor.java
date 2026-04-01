@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.module.SRepository;
 import java.util.List;
@@ -26,7 +25,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class SourceModelInfo__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd3a0fd26445a466cL, 0x900e10444ddfed52L, 0x3f93dae91222f98fL, "com.mbeddr.mpsutil.filepicker.structure.SourceModelInfo");
 
-  public static final SMethod<SModel> resolve_id3YjQI$iKLTv = new SMethodBuilder<SModel>(new SJavaCompoundTypeImpl(SModel.class)).name("resolve").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4581245940542938719L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter(SRepository.class, ""));
+  public static final SMethod<SModel> resolve_id3YjQI$iKLTv = new SMethodBuilder<>(SModel.class).name("resolve").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4581245940542938719L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter(SRepository.class, "repository"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(resolve_id3YjQI$iKLTv);
 

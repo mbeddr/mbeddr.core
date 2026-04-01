@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class InterpretConstraintExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x47f075a6558e4640L, 0xa6067ce0236c8023L, 0x4976653a521d1330L, "com.mbeddr.mpsutil.interpreter.structure.InterpretConstraintExpression");
 
-  public static final SMethod<Boolean> isLegalAsStatement_idi26MfYG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isLegalAsStatement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1239211900844L).languageId(0xa443f952ceaf5816L, 0xf3061a5392264cc5L).build2();
+  public static final SMethod<Boolean> isLegalAsStatement_idi26MfYG = new SMethodBuilder<>(Boolean.TYPE).name("isLegalAsStatement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1239211900844L).languageId(0xa443f952ceaf5816L, 0xf3061a5392264cc5L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isLegalAsStatement_idi26MfYG);
 

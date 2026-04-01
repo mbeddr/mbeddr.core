@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class Any__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x4bff969e1ef9dc99L, "com.mbeddr.core.buildconfig.structure.Any");
 
-  public static final SMethod<String> getEffectiveName_id35YirduNbNY = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEffectiveName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3566368989662461182L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<String> getEffectiveName_id35YirduNbNY = new SMethodBuilder<>(String.class).name("getEffectiveName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3566368989662461182L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEffectiveName_id35YirduNbNY);
 

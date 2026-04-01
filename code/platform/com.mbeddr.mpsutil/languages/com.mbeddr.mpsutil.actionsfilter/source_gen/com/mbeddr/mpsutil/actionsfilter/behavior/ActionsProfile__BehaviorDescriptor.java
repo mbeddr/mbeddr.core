@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -29,9 +28,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ActionsProfile__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc38abce14c0944cbL, 0x9ebf2a764e824bb5L, 0x5aef4be6d5b99969L, "com.mbeddr.mpsutil.actionsfilter.structure.ActionsProfile");
 
-  public static final SMethod<Iterable<SNode>> removeActions_id5ARcp1bs_dG = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("removeActions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6464690285924471660L).languageId(0x9ebf2a764e824bb5L, 0xc38abce14c0944cbL).build2();
-  public static final SMethod<Boolean> isRemoveMode_id1TS1BLORxU1 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isRemoveMode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2195511949949542017L).languageId(0x9ebf2a764e824bb5L, 0xc38abce14c0944cbL).build2();
-  public static final SMethod<Boolean> isAllowMode_id1TS1BLORzSI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isAllowMode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2195511949949550126L).languageId(0x9ebf2a764e824bb5L, 0xc38abce14c0944cbL).build2();
+  public static final SMethod<Iterable<SNode>> removeActions_id5ARcp1bs_dG = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("removeActions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6464690285924471660L).languageId(0x9ebf2a764e824bb5L, 0xc38abce14c0944cbL).build2();
+  public static final SMethod<Boolean> isRemoveMode_id1TS1BLORxU1 = new SMethodBuilder<>(Boolean.TYPE).name("isRemoveMode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2195511949949542017L).languageId(0x9ebf2a764e824bb5L, 0xc38abce14c0944cbL).build2();
+  public static final SMethod<Boolean> isAllowMode_id1TS1BLORzSI = new SMethodBuilder<>(Boolean.TYPE).name("isAllowMode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2195511949949550126L).languageId(0x9ebf2a764e824bb5L, 0xc38abce14c0944cbL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(removeActions_id5ARcp1bs_dG, isRemoveMode_id1TS1BLORxU1, isAllowMode_id1TS1BLORzSI);
 

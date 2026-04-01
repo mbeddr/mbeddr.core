@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Arrays;
@@ -24,9 +23,9 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class OnFinshFunction__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x306d745629e24ea3L, 0x9c46e7b830b08481L, 0x6eb2382c92298c4L, "com.mbeddr.mpsutil.wizard.structure.OnFinshFunction");
 
-  public static final SMethod<List<SConcept>> getParameterConcepts_id2xELmDxyi2v = new SMethodBuilder<List<SConcept>>(new SJavaCompoundTypeImpl((Class<List<SConcept>>) ((Class) Object.class))).name("getParameterConcepts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2912357169742028959L).languageId(0xa443f952ceaf5816L, 0xf3061a5392264cc5L).build2();
-  public static final SMethod<Boolean> showName_id1653mnvAgry = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("showName").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1262430001741498082L).languageId(0xa443f952ceaf5816L, 0xf3061a5392264cc5L).build2();
-  public static final SMethod<SNode> getExpectedReturnType_idhEwIGRD = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getExpectedReturnType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877374441L).languageId(0xa443f952ceaf5816L, 0xf3061a5392264cc5L).build2();
+  public static final SMethod<List<SConcept>> getParameterConcepts_id2xELmDxyi2v = new SMethodBuilder<>((Class<List<SConcept>>) ((Class) Object.class)).name("getParameterConcepts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2912357169742028959L).languageId(0xa443f952ceaf5816L, 0xf3061a5392264cc5L).build2();
+  public static final SMethod<Boolean> showName_id1653mnvAgry = new SMethodBuilder<>(Boolean.TYPE).name("showName").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1262430001741498082L).languageId(0xa443f952ceaf5816L, 0xf3061a5392264cc5L).build2();
+  public static final SMethod<SNode> getExpectedReturnType_idhEwIGRD = new SMethodBuilder<>(SNode.class).name("getExpectedReturnType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877374441L).languageId(0xa443f952ceaf5816L, 0xf3061a5392264cc5L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getParameterConcepts_id2xELmDxyi2v, showName_id1653mnvAgry, getExpectedReturnType_idhEwIGRD);
 

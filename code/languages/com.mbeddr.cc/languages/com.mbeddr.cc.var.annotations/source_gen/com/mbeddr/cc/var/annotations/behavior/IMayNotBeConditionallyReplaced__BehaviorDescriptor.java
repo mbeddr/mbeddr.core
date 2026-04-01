@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IMayNotBeConditionallyReplaced__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x17fba0eaf154a23L, 0xb0a802b5c1141e75L, 0x6d3416f120615ea6L, "com.mbeddr.cc.var.annotations.structure.IMayNotBeConditionallyReplaced");
 
-  public static final SMethod<Boolean> canBeConditionallyReplaced_id6OO5J4wC_AZ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeConditionallyReplaced").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7868939673813539263L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2();
+  public static final SMethod<Boolean> canBeConditionallyReplaced_id6OO5J4wC_AZ = new SMethodBuilder<>(Boolean.TYPE).name("canBeConditionallyReplaced").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7868939673813539263L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeConditionallyReplaced_id6OO5J4wC_AZ);
 

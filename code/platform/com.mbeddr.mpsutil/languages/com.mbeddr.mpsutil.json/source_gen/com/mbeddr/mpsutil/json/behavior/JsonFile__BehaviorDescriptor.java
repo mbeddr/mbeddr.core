@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,7 +21,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class JsonFile__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb5c0bb04c5834b2aL, 0xa66e1eab92d33c68L, 0x3c445779c2b1d3e3L, "com.mbeddr.mpsutil.json.structure.JsonFile");
 
-  public static final SMethod<String> defaultLocation_id4egfvirUw0c = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("defaultLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4868459317984624652L).languageId(0xa66e1eab92d33c68L, 0xb5c0bb04c5834b2aL).build2();
+  public static final SMethod<String> defaultLocation_id4egfvirUw0c = new SMethodBuilder<>(String.class).name("defaultLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4868459317984624652L).languageId(0xa66e1eab92d33c68L, 0xb5c0bb04c5834b2aL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(defaultLocation_id4egfvirUw0c);
 

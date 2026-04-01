@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class ITypeContainingType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x6bbcdccef5e46755L, "com.mbeddr.core.statements.structure.ITypeContainingType");
 
-  public static final SMethod<SNode> bottomType_id52l0VUuMCMa = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("bottomType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5806551411806866570L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<SNode> bottomType_id52l0VUuMCMa = new SMethodBuilder<>(SNode.class).name("bottomType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5806551411806866570L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(bottomType_id52l0VUuMCMa);
 

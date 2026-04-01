@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,7 +20,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class INodeExporter__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x67506b1e43ad47feL, 0xa8e6bc7837e9e11fL, 0x41316cdf360cea1dL, "com.mbeddr.mpsutil.editingGuide.structure.INodeExporter");
 
-  public static final SMethod<Scope> getExportedNodes_id79$zShlSHxZ = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getExportedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8242871016534235263L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
+  public static final SMethod<Scope> getExportedNodes_id79$zShlSHxZ = new SMethodBuilder<>(Scope.class).name("getExportedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8242871016534235263L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "targetConcept"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExportedNodes_id79$zShlSHxZ);
 

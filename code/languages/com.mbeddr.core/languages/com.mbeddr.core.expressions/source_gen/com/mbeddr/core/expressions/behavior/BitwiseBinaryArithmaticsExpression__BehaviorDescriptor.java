@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,7 +21,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class BitwiseBinaryArithmaticsExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x152bc626296cd95cL, "com.mbeddr.core.expressions.structure.BitwiseBinaryArithmaticsExpression");
 
-  public static final SMethod<Boolean> isStaticallyEvaluatable_id3ilck8Kr3zN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isStaticallyEvaluatable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3788988821852141811L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isStaticallyEvaluatable_id3ilck8Kr3zN = new SMethodBuilder<>(Boolean.TYPE).name("isStaticallyEvaluatable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3788988821852141811L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isStaticallyEvaluatable_id3ilck8Kr3zN);
 

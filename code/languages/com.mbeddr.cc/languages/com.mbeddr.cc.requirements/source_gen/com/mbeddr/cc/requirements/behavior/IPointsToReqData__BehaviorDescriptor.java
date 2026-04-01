@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -25,7 +24,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IPointsToReqData__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0x4fb6ca520978ed1aL, "com.mbeddr.cc.requirements.structure.IPointsToReqData");
 
-  public static final SMethod<Iterable<SNode>> visibleFromRequirements_id7Vd878mYdkU = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleFromRequirements").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9136994893388371258L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> visibleFromRequirements_id7Vd878mYdkU = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("visibleFromRequirements").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9136994893388371258L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter(SNode.class, "context"), SMethodBuilder.createJavaParameter(SNode.class, "concept"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleFromRequirements_id7Vd878mYdkU);
 

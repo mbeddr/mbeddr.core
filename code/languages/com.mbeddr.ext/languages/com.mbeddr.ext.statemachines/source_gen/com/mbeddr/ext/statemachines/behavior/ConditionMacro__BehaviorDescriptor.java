@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,7 +20,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ConditionMacro__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x4a179cdeab8bfe40L, "com.mbeddr.ext.statemachines.structure.ConditionMacro");
 
-  public static final SMethod<SNode> getTrigger_id4CnBdUFzcHv = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTrigger").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5338908363445816159L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<SNode> getTrigger_id4CnBdUFzcHv = new SMethodBuilder<>(SNode.class).name("getTrigger").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5338908363445816159L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTrigger_id4CnBdUFzcHv);
 

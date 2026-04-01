@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class CommentModuleContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0xe468e66a9d049b6L, "com.mbeddr.core.modules.structure.CommentModuleContent");
 
-  public static final SMethod<Boolean> isSourceFileContent_id6rD2$2sc6_0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSourceFileContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7415469534056835392L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Boolean> isHeaderFileContent_id6rD2$2sc8kI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isHeaderFileContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7415469534056842542L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> isSourceFileContent_id6rD2$2sc6_0 = new SMethodBuilder<>(Boolean.TYPE).name("isSourceFileContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7415469534056835392L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> isHeaderFileContent_id6rD2$2sc8kI = new SMethodBuilder<>(Boolean.TYPE).name("isHeaderFileContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7415469534056842542L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSourceFileContent_id6rD2$2sc6_0, isHeaderFileContent_id6rD2$2sc8kI);
 

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,8 +23,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class MathLoopExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb574d547b77e4fedL, 0x9f60c349c4410765L, 0x46c15b39e53f4649L, "com.mbeddr.ext.math.structure.MathLoopExpression");
 
-  public static final SMethod<SNode> getWrappingLink_id3bfDwHbEojk = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getWrappingLink").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3661327589519754452L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getWrappingLink_id3bfDwHbEojk = new SMethodBuilder<>(SNode.class).name("getWrappingLink").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3661327589519754452L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getWrappingLink_id3bfDwHbEojk, renderReadable_id1VQvajLb13M);
 

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SModel;
 import java.util.List;
@@ -32,8 +31,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ModelScope__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc8e0d19c3cf4b31L, 0xaf77531227edbce8L, 0x4d26542081b9ea9L, "com.mbeddr.core.qa.structure.ModelScope");
 
-  public static final SMethod<Iterable<SNode>> findInstances_idjipk886TYE = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findInstances").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(347451455539224490L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  /*package*/ static final SMethod<SModel> resolveModelByName_id2WJ8cS_vWVE = new SMethodBuilder<SModel>(new SJavaCompoundTypeImpl(SModel.class)).name("resolveModelByName").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(3399972313452498666L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Iterable<SNode>> findInstances_idjipk886TYE = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("findInstances").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(347451455539224490L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter(SNode.class, "concept"));
+  /*package*/ static final SMethod<SModel> resolveModelByName_id2WJ8cS_vWVE = new SMethodBuilder<>(SModel.class).name("resolveModelByName").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(3399972313452498666L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter(String.class, "modelName"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findInstances_idjipk886TYE, resolveModelByName_id2WJ8cS_vWVE);
 

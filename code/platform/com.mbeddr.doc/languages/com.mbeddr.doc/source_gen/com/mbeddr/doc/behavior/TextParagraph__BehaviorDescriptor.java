@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.core.base.behavior.AbstractTreeViewNode;
@@ -31,13 +30,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class TextParagraph__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x2e7fd03a4b7ccef2L, "com.mbeddr.doc.structure.TextParagraph");
 
-  public static final SMethod<Void> addWord_id519ky_SnQ7F = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addWord").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400766443L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> addString_id519ky_SnQaO = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400766644L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("resultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> actuallyHasTreeNode_id72AnQbQqfyh = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("actuallyHasTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8117280257027405969L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<AbstractTreeViewNode>(new SJavaCompoundTypeImpl(AbstractTreeViewNode.class)).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Boolean> actuallyShowInOutline_id3il$LAnRN_V = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("actuallyShowInOutline").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3789096399633594747L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> addWord_id519ky_SnQ7F = new SMethodBuilder<>(Void.TYPE).name("addWord").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400766443L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(SNode.class, "w"));
+  public static final SMethod<Void> addString_id519ky_SnQaO = new SMethodBuilder<>(Void.TYPE).name("addString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400766644L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, "w"));
+  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<>(Boolean.TYPE).name("containsText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "text"));
+  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<>(String.class).name("resultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> actuallyHasTreeNode_id72AnQbQqfyh = new SMethodBuilder<>(Boolean.TYPE).name("actuallyHasTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8117280257027405969L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<>(AbstractTreeViewNode.class).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "category"));
+  public static final SMethod<Boolean> actuallyShowInOutline_id3il$LAnRN_V = new SMethodBuilder<>(Boolean.TYPE).name("actuallyShowInOutline").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3789096399633594747L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addWord_id519ky_SnQ7F, addString_id519ky_SnQaO, containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, actuallyHasTreeNode_id72AnQbQqfyh, getTreeNode_id7NyyyjNtbn2, actuallyShowInOutline_id3il$LAnRN_V);
 

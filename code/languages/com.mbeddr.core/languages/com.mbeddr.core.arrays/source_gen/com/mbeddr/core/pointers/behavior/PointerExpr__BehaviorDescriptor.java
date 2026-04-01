@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,8 +21,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class PointerExpr__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3bf5377ae9044dedL, 0x97545a516023bfaaL, 0x16258e86289cf6beL, "com.mbeddr.core.pointers.structure.PointerExpr");
 
-  public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<>(Integer.TYPE).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPriolevel_id5HxjapwgqKu, getPresentation_idhEwIMiw);
 

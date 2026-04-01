@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,7 +23,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class OptionalStep__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x306d745629e24ea3L, 0x9c46e7b830b08481L, 0x418fa9827b31e6bfL, "com.mbeddr.mpsutil.wizard.structure.OptionalStep");
 
-  public static final SMethod<Iterable<SNode>> getClassContent_idrF8Sb8_jhT = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getClassContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228372513913L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
+  public static final SMethod<Iterable<SNode>> getClassContent_idrF8Sb8_jhT = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getClassContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228372513913L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getClassContent_idrF8Sb8_jhT);
 

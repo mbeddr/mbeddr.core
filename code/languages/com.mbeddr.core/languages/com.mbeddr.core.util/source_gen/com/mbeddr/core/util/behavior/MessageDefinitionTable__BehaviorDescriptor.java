@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -26,10 +25,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class MessageDefinitionTable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x255082a0ba0bd96dL, "com.mbeddr.core.util.structure.MessageDefinitionTable");
 
-  public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Iterable<SNode>> nonEmptyMessages_id69lKCLH$y32 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("nonEmptyMessages").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7085783497126846658L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> genSectionName_id5usoWIJj$0h = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genSectionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6313030504137244689L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<>(Integer.TYPE).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> nonEmptyMessages_id69lKCLH$y32 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("nonEmptyMessages").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7085783497126846658L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<>(Boolean.TYPE).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> genSectionName_id5usoWIJj$0h = new SMethodBuilder<>(String.class).name("genSectionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6313030504137244689L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLOCEquivalent_id6brBMefRfO0, nonEmptyMessages_id69lKCLH$y32, exportable_id5HxjapwgqKI, genSectionName_id5usoWIJj$0h);
 

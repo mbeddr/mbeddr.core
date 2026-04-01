@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -28,7 +27,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class CircleCustomizable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa4007360b8a64b5bL, 0xa6481c43f0a1cf5dL, 0x6fe3cf890a09fb1cL, "com.mbeddr.mpsutil.resources.structure.CircleCustomizable");
 
-  public static final SMethod<byte[]> getImageForGeneration_id2p1v3tObywX = new SMethodBuilder<byte[]>(new SJavaCompoundTypeImpl(byte[].class)).name("getImageForGeneration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2756621024541681725L).languageId(0x996311712ea622e5L, 0x982eb8df2c964bd7L).build2();
+  public static final SMethod<byte[]> getImageForGeneration_id2p1v3tObywX = new SMethodBuilder<>(byte[].class).name("getImageForGeneration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2756621024541681725L).languageId(0x996311712ea622e5L, 0x982eb8df2c964bd7L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getImageForGeneration_id2p1v3tObywX);
 

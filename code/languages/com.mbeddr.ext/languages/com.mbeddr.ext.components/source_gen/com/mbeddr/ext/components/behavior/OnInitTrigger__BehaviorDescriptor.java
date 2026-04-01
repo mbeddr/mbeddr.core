@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -25,9 +24,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class OnInitTrigger__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x4070c9f3cc58752aL, "com.mbeddr.ext.components.structure.OnInitTrigger");
 
-  public static final SMethod<Boolean> allowsAbstractRunnable_id5basnX2kJ0$ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowsAbstractRunnable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5965705447793160228L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Boolean> enforcesName_id3MbWJkY1d$O = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("enforcesName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4362847799159871796L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Void> synchronizeParentRunnable_id18l4N2Qxdck = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("synchronizeParentRunnable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1302968767135142676L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> allowsAbstractRunnable_id5basnX2kJ0$ = new SMethodBuilder<>(Boolean.TYPE).name("allowsAbstractRunnable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5965705447793160228L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> enforcesName_id3MbWJkY1d$O = new SMethodBuilder<>(Boolean.TYPE).name("enforcesName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4362847799159871796L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Void> synchronizeParentRunnable_id18l4N2Qxdck = new SMethodBuilder<>(Void.TYPE).name("synchronizeParentRunnable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1302968767135142676L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowsAbstractRunnable_id5basnX2kJ0$, enforcesName_id3MbWJkY1d$O, synchronizeParentRunnable_id18l4N2Qxdck);
 

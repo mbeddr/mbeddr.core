@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IOperationTriggerLike__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x3ea55efd4126ca5eL, "com.mbeddr.ext.components.structure.IOperationTriggerLike");
 
-  public static final SMethod<String> expectedRunnableName_id3U_nJP1vUw0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("expectedRunnableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4514118643327412224L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> expectedRunnableName_id3U_nJP1vUw0 = new SMethodBuilder<>(String.class).name("expectedRunnableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4514118643327412224L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(expectedRunnableName_id3U_nJP1vUw0);
 

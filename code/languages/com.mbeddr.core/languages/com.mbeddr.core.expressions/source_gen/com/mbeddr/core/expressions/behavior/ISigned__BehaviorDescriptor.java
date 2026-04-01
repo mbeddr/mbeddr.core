@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ISigned__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x2115ca54c398ac06L, "com.mbeddr.core.expressions.structure.ISigned");
 
-  public static final SMethod<SNode> createdUnsignedCompanion_id5Xnv3$QELwg = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createdUnsignedCompanion").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6870096341749143568L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> createNextBiggerSignedCompanion_id4O$fzoYZDgS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createNextBiggerSignedCompanion").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5558636242788062264L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> createdUnsignedCompanion_id5Xnv3$QELwg = new SMethodBuilder<>(SNode.class).name("createdUnsignedCompanion").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6870096341749143568L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> createNextBiggerSignedCompanion_id4O$fzoYZDgS = new SMethodBuilder<>(SNode.class).name("createNextBiggerSignedCompanion").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5558636242788062264L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createdUnsignedCompanion_id5Xnv3$QELwg, createNextBiggerSignedCompanion_id4O$fzoYZDgS);
 

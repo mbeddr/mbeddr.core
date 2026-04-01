@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IStateContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x3af8b5004a9dfc8aL, "com.mbeddr.ext.statemachines.structure.IStateContainer");
 
-  public static final SMethod<SNode> getInitial_id7rX8gRKHUDJ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInitial").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8574045609340152431L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
-  public static final SMethod<Iterable<SNode>> states_id3FSHg1aCVUC = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("states").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4249345261280935592L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<SNode> getInitial_id7rX8gRKHUDJ = new SMethodBuilder<>(SNode.class).name("getInitial").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8574045609340152431L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<Iterable<SNode>> states_id3FSHg1aCVUC = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("states").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4249345261280935592L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getInitial_id7rX8gRKHUDJ, states_id3FSHg1aCVUC);
 

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -22,8 +21,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class AbstractPreferenceFormProperty__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1e7c1f95336c4cecL, 0xb00e8cc6e0c2b265L, 0x2068b0f6bb74c2bL, "com.mbeddr.mpsutil.preferenceform.structure.AbstractPreferenceFormProperty");
 
-  public static final SMethod<String> getPersistentPropertyName_id5CNjqUc0kEN = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPersistentPropertyName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6499624099294300851L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
-  public static final SMethod<SNode> getPropertyType_idm3C9PXFLoW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPropertyType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(397337790417671740L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
+  public static final SMethod<String> getPersistentPropertyName_id5CNjqUc0kEN = new SMethodBuilder<>(String.class).name("getPersistentPropertyName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6499624099294300851L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
+  public static final SMethod<SNode> getPropertyType_idm3C9PXFLoW = new SMethodBuilder<>(SNode.class).name("getPropertyType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(397337790417671740L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPersistentPropertyName_id5CNjqUc0kEN, getPropertyType_idm3C9PXFLoW);
 

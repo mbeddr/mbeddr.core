@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -27,7 +26,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class TimeWithUnit__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x68cc2c476e2382d4L, "com.mbeddr.ext.concurrency.structure.TimeWithUnit");
 
-  public static final SMethod<SNode> valueInMicroseconds_id6zcb4tI8Xn4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("valueInMicroseconds").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7551459360495621572L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<SNode> valueInMicroseconds_id6zcb4tI8Xn4 = new SMethodBuilder<>(SNode.class).name("valueInMicroseconds").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7551459360495621572L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(valueInMicroseconds_id6zcb4tI8Xn4);
 
