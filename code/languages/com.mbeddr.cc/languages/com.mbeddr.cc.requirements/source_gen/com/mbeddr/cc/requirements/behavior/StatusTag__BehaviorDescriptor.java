@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,8 +21,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class StatusTag__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0xc3ddac5b0becd3fL, "com.mbeddr.cc.requirements.structure.StatusTag");
 
-  public static final SMethod<String> title_id6TTrAqIILXr = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("title").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7960515203651280731L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
-  public static final SMethod<String> value_id6TTrAqIILXY = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("value").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7960515203651280766L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<String> title_id6TTrAqIILXr = new SMethodBuilder<>(String.class).name("title").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7960515203651280731L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<String> value_id6TTrAqIILXY = new SMethodBuilder<>(String.class).name("value").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7960515203651280766L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(title_id6TTrAqIILXr, value_id6TTrAqIILXY);
 

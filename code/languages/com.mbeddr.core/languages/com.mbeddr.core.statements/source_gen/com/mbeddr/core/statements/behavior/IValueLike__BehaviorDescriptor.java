@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -32,9 +31,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IValueLike__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x4ba188b8c52b0074L, "com.mbeddr.core.statements.structure.IValueLike");
 
-  public static final SMethod<SNode> getStaticallyEvaluatableNode_id3fs$L2LZpYI = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getStaticallyEvaluatableNode").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3737023490725617582L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<SNode> getTypeComputationNode_id7kDeEuVjSvB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTypeComputationNode").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8442343468559206375L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<String> getPlainCRepresentation_id3WvvaBAh40x = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPlainCRepresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4548491217822040097L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<SNode> getStaticallyEvaluatableNode_id3fs$L2LZpYI = new SMethodBuilder<>(SNode.class).name("getStaticallyEvaluatableNode").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3737023490725617582L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<SNode> getTypeComputationNode_id7kDeEuVjSvB = new SMethodBuilder<>(SNode.class).name("getTypeComputationNode").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8442343468559206375L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<String> getPlainCRepresentation_id3WvvaBAh40x = new SMethodBuilder<>(String.class).name("getPlainCRepresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4548491217822040097L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStaticallyEvaluatableNode_id3fs$L2LZpYI, getTypeComputationNode_id7kDeEuVjSvB, getPlainCRepresentation_id3WvvaBAh40x);
 

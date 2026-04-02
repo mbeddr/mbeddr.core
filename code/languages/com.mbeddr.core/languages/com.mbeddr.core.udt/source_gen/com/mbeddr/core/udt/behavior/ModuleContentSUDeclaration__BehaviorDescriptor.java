@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -20,7 +19,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ModuleContentSUDeclaration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xefda956e491e4f00L, 0xba1436af2f213ecfL, 0x2a2a48910e34f40dL, "com.mbeddr.core.udt.structure.ModuleContentSUDeclaration");
 
-  public static final SMethod<String> genName_id3W2cV_pfm5c = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4540248245502042444L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
+  public static final SMethod<String> genName_id3W2cV_pfm5c = new SMethodBuilder<>(String.class).name("genName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4540248245502042444L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genName_id3W2cV_pfm5c);
 

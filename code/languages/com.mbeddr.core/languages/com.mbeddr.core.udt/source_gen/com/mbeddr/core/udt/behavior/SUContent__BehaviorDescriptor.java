@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -25,8 +24,8 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class SUContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xefda956e491e4f00L, 0xba1436af2f213ecfL, 0x7e4db776e87d75d1L, "com.mbeddr.core.udt.structure.SUContent");
 
-  public static final SMethod<Boolean> canBeTransparent_id6QawkaIYE8E = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeTransparent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7893263420323701290L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
-  public static final SMethod<Iterable<SNode>> transparentlyVisibleContents_id6QawkaIMrYF = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("transparentlyVisibleContents").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7893263420320497579L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
+  public static final SMethod<Boolean> canBeTransparent_id6QawkaIYE8E = new SMethodBuilder<>(Boolean.TYPE).name("canBeTransparent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7893263420323701290L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
+  public static final SMethod<Iterable<SNode>> transparentlyVisibleContents_id6QawkaIMrYF = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("transparentlyVisibleContents").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7893263420320497579L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeTransparent_id6QawkaIYE8E, transparentlyVisibleContents_id6QawkaIMrYF);
 

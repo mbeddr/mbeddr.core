@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.awt.Color;
@@ -30,13 +29,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ElementDocumentation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x3588b64556af217cL, "com.mbeddr.core.base.structure.ElementDocumentation");
 
-  public static final SMethod<Boolean> isEmpty_id7uLL3Mf3Bol = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEmpty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8624890525768381973L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> getResultNode_id4ueXZrqtaGB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getResultNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5156331262984891175L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> getTextualRepresentation_idfB3l80ylIb = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTextualRepresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(281208147581426571L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("resultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Color> getTextColor_idBsHjoDQZaR = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getTextColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(710642085452837559L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Color> getBracketColor_idBsHjoDRsTa = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getBracketColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(710642085452959306L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isEmpty_id7uLL3Mf3Bol = new SMethodBuilder<>(Boolean.TYPE).name("isEmpty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8624890525768381973L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<>(Boolean.TYPE).name("containsText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "text"));
+  public static final SMethod<SNode> getResultNode_id4ueXZrqtaGB = new SMethodBuilder<>(SNode.class).name("getResultNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5156331262984891175L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getTextualRepresentation_idfB3l80ylIb = new SMethodBuilder<>(String.class).name("getTextualRepresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(281208147581426571L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<>(String.class).name("resultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Color> getTextColor_idBsHjoDQZaR = new SMethodBuilder<>(Color.class).name("getTextColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(710642085452837559L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Color> getBracketColor_idBsHjoDRsTa = new SMethodBuilder<>(Color.class).name("getBracketColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(710642085452959306L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEmpty_id7uLL3Mf3Bol, containsText_idjpyKDg1onB, getResultNode_id4ueXZrqtaGB, getTextualRepresentation_idfB3l80ylIb, resultName_idjpyKDg1pW5, getTextColor_idBsHjoDQZaR, getBracketColor_idBsHjoDRsTa);
 

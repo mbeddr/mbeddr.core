@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.awt.Color;
 import java.util.List;
@@ -21,9 +20,9 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ITextBlockOwner__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x77b1c43c8f0de37fL, "com.mbeddr.core.base.structure.ITextBlockOwner");
 
-  public static final SMethod<Boolean> isEmpty_id7uLL3Mf3Bol = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEmpty").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8624890525768381973L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Color> getTextColor_idBsHjoDQZaR = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getTextColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(710642085452837559L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Color> getBracketColor_idBsHjoDRsTa = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getBracketColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(710642085452959306L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isEmpty_id7uLL3Mf3Bol = new SMethodBuilder<>(Boolean.TYPE).name("isEmpty").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8624890525768381973L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Color> getTextColor_idBsHjoDQZaR = new SMethodBuilder<>(Color.class).name("getTextColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(710642085452837559L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Color> getBracketColor_idBsHjoDRsTa = new SMethodBuilder<>(Color.class).name("getBracketColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(710642085452959306L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEmpty_id7uLL3Mf3Bol, getTextColor_idBsHjoDQZaR, getBracketColor_idBsHjoDRsTa);
 

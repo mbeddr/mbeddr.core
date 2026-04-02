@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ICanBeStoredInRegister__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x509503be9ecc5d25L, "com.mbeddr.core.statements.structure.ICanBeStoredInRegister");
 
-  public static final SMethod<Boolean> canBeStoredInRegister_id58TcxRGHbLy = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeStoredInRegister").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5924821888889306210L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Boolean> canBeStoredInRegister_id58TcxRGHbLy = new SMethodBuilder<>(Boolean.TYPE).name("canBeStoredInRegister").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5924821888889306210L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeStoredInRegister_id58TcxRGHbLy);
 

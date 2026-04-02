@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ITrivialNode__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x47f075a6558e4640L, 0xa6067ce0236c8023L, 0x3e4402fed00d643fL, "com.mbeddr.mpsutil.interpreter.structure.ITrivialNode");
 
-  public static final SMethod<Boolean> isTrivial_id3T40JVg3mh$ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isTrivial").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4486714422203343972L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Boolean> isTrivial_id3T40JVg3mh$ = new SMethodBuilder<>(Boolean.TYPE).name("isTrivial").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4486714422203343972L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isTrivial_id3T40JVg3mh$);
 

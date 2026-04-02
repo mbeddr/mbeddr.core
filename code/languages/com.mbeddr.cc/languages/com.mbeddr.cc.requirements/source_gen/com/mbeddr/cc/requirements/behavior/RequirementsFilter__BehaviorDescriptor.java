@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class RequirementsFilter__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0x5552fd2c1ad81f71L, "com.mbeddr.cc.requirements.structure.RequirementsFilter");
 
-  public static final SMethod<Boolean> matches_id5liZiKqQ1Zb = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("matches").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6148254807184908235L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> matches_id5liZiKqQ1Zb = new SMethodBuilder<>(Boolean.TYPE).name("matches").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6148254807184908235L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter(SNode.class, "r"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matches_id5liZiKqQ1Zb);
 

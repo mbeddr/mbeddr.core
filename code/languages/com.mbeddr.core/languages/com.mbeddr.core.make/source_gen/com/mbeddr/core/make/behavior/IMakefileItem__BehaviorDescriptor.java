@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IMakefileItem__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xf93d1dbebfd142ddL, 0x932af375fa6f5373L, 0x4d97d3d526ace831L, "com.mbeddr.core.make.structure.IMakefileItem");
 
-  public static final SMethod<String> getEscapePrefix_id7EZ1Spo3k6R = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEscapePrefix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8844796466763219383L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
+  public static final SMethod<String> getEscapePrefix_id7EZ1Spo3k6R = new SMethodBuilder<>(String.class).name("getEscapePrefix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8844796466763219383L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEscapePrefix_id7EZ1Spo3k6R);
 

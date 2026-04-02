@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,8 +23,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class FloatingTableParagraph__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x47f6e109266f0becL, "com.mbeddr.doc.structure.FloatingTableParagraph");
 
-  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("resultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<>(Boolean.TYPE).name("containsText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "text"));
+  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<>(String.class).name("resultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5);
 

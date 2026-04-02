@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ITriggeredByOperation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x3cef1db3d6f8e0bcL, "com.mbeddr.ext.components.structure.ITriggeredByOperation");
 
-  public static final SMethod<Boolean> isTriggeredByOperation_id3NJ7rfmYe3a = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isTriggeredByOperation").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4390760819952509130L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> isTriggeredByOperation_id3NJ7rfmYe3a = new SMethodBuilder<>(Boolean.TYPE).name("isTriggeredByOperation").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4390760819952509130L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "operation"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isTriggeredByOperation_id3NJ7rfmYe3a);
 

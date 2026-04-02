@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,10 +20,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IMultiPlatformConstruct__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x62296a07bc3846d2L, 0x8034198c24063588L, 0x544c824f2c31d3efL, "com.mbeddr.core.modules.gen.structure.IMultiPlatformConstruct");
 
-  public static final SMethod<String> headerToImport_id7RHXOmw3XK4 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("headerToImport").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9074180702631615492L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> onlyForImplementation_id7RHXOmw7Mgm = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("onlyForImplementation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9074180702632616982L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> preprocessorCondition_id3LB9aGl8_PP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("preprocessorCondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4352487882089454965L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> alternativeHeaderToImport_id1m$ejqCnFa4 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("alternativeHeaderToImport").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1559434277892829828L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> headerToImport_id7RHXOmw3XK4 = new SMethodBuilder<>(String.class).name("headerToImport").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9074180702631615492L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> onlyForImplementation_id7RHXOmw7Mgm = new SMethodBuilder<>(Boolean.TYPE).name("onlyForImplementation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9074180702632616982L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> preprocessorCondition_id3LB9aGl8_PP = new SMethodBuilder<>(String.class).name("preprocessorCondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4352487882089454965L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> alternativeHeaderToImport_id1m$ejqCnFa4 = new SMethodBuilder<>(String.class).name("alternativeHeaderToImport").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1559434277892829828L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(headerToImport_id7RHXOmw3XK4, onlyForImplementation_id7RHXOmw7Mgm, preprocessorCondition_id3LB9aGl8_PP, alternativeHeaderToImport_id1m$ejqCnFa4);
 

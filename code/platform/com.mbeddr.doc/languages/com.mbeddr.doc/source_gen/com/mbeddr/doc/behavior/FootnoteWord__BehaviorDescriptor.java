@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -26,9 +25,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class FootnoteWord__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x25dd607b2f81d38aL, "com.mbeddr.doc.structure.FootnoteWord");
 
-  public static final SMethod<Void> setText_id3DH$8h4HwoS = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4210180124424144440L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Integer> getIndex_idQRmqzHYEZI = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getIndex").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(988357225313120238L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> getUniqueIndex_idQRmqzIajtS = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getUniqueIndex").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(988357225316169592L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Void> setText_id3DH$8h4HwoS = new SMethodBuilder<>(Void.TYPE).name("setText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4210180124424144440L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, "s"));
+  public static final SMethod<Integer> getIndex_idQRmqzHYEZI = new SMethodBuilder<>(Integer.TYPE).name("getIndex").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(988357225313120238L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> getUniqueIndex_idQRmqzIajtS = new SMethodBuilder<>(String.class).name("getUniqueIndex").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(988357225316169592L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setText_id3DH$8h4HwoS, getIndex_idQRmqzHYEZI, getUniqueIndex_idQRmqzIajtS);
 

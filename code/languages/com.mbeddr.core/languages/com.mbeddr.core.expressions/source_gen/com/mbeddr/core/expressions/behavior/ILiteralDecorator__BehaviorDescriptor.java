@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ILiteralDecorator__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0xa526fcd7806eb5cL, "com.mbeddr.core.expressions.structure.ILiteralDecorator");
 
-  public static final SMethod<SNode> getDecoratedLiteral_idDirWPS1IHw = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDecoratedLiteral").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(743779816742251360L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getDecoratedLiteral_idDirWPS1IHw = new SMethodBuilder<>(SNode.class).name("getDecoratedLiteral").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(743779816742251360L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDecoratedLiteral_idDirWPS1IHw);
 

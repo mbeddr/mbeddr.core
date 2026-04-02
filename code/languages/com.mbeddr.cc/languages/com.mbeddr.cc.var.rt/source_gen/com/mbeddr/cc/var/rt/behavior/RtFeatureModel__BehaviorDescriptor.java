@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -25,9 +24,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class RtFeatureModel__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb8eeb935038d48d8L, 0xae7f0c6768b8d4fcL, 0x7b469764991324d3L, "com.mbeddr.cc.var.rt.structure.RtFeatureModel");
 
-  public static final SMethod<String> generatedStructName_id7H6_Qip5M$_ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("generatedStructName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8882953773355837733L).languageId(0xae7f0c6768b8d4fcL, 0xb8eeb935038d48d8L).build2();
-  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> generatedStructName_id7H6_Qip5M$_ = new SMethodBuilder<>(String.class).name("generatedStructName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8882953773355837733L).languageId(0xae7f0c6768b8d4fcL, 0xb8eeb935038d48d8L).build2();
+  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<>(Boolean.TYPE).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<>(SNode.class).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(generatedStructName_id7H6_Qip5M$_, exportable_id5HxjapwgqKI, createType_id3o2OLGv7CoR);
 

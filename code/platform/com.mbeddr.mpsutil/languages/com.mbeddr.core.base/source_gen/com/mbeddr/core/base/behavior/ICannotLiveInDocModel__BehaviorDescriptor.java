@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ICannotLiveInDocModel__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x458cb322ae11155L, "com.mbeddr.core.base.structure.ICannotLiveInDocModel");
 
-  public static final SMethod<String> getReadableDescription_idhoMN8EUxzt = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getReadableDescription").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(313223590431037661L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getReadableDescription_idhoMN8EUxzt = new SMethodBuilder<>(String.class).name("getReadableDescription").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(313223590431037661L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReadableDescription_idhoMN8EUxzt);
 

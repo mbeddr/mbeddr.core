@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -22,10 +21,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class FlagOp__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x2ffab2b1444d969dL, "com.mbeddr.core.util.structure.FlagOp");
 
-  public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> isSideeffectFree_id6SENleF$SRD = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSideeffectFree").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7938383052438474217L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> requiresParensAroundArgument_id3_qrK00j4rM = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requiresParensAroundArgument").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4132737653861533426L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Integer> getFontStyle_id6P3AdoeYlwX = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getFontStyle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7873304618715404349L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<>(Integer.TYPE).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isSideeffectFree_id6SENleF$SRD = new SMethodBuilder<>(Boolean.TYPE).name("isSideeffectFree").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7938383052438474217L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> requiresParensAroundArgument_id3_qrK00j4rM = new SMethodBuilder<>(Boolean.TYPE).name("requiresParensAroundArgument").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4132737653861533426L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(SNode.class, "argument"));
+  public static final SMethod<Integer> getFontStyle_id6P3AdoeYlwX = new SMethodBuilder<>(Integer.TYPE).name("getFontStyle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7873304618715404349L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPriolevel_id5HxjapwgqKu, isSideeffectFree_id6SENleF$SRD, requiresParensAroundArgument_id3_qrK00j4rM, getFontStyle_id6P3AdoeYlwX);
 

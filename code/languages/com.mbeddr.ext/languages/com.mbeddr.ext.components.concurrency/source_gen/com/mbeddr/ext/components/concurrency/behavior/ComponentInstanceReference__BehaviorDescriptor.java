@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,9 +23,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ComponentInstanceReference__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3f445ef354ad4ae5L, 0xa22d91c3ce06375eL, 0x252b075a4731b778L, "com.mbeddr.ext.components.concurrency.structure.ComponentInstanceReference");
 
-  public static final SMethod<SNode> getComponent_id2kF1PD7dmzD = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getComponent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2678242487725025513L).languageId(0xa22d91c3ce06375eL, 0x3f445ef354ad4ae5L).build2();
-  public static final SMethod<SNode> getInstance_id2kF1PD7dpF3 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInstance").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2678242487725038275L).languageId(0xa22d91c3ce06375eL, 0x3f445ef354ad4ae5L).build2();
-  public static final SMethod<String> getFlatInstanceName_id2kF1PD7mXG0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFlatInstanceName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2678242487727545088L).languageId(0xa22d91c3ce06375eL, 0x3f445ef354ad4ae5L).build2();
+  public static final SMethod<SNode> getComponent_id2kF1PD7dmzD = new SMethodBuilder<>(SNode.class).name("getComponent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2678242487725025513L).languageId(0xa22d91c3ce06375eL, 0x3f445ef354ad4ae5L).build2();
+  public static final SMethod<SNode> getInstance_id2kF1PD7dpF3 = new SMethodBuilder<>(SNode.class).name("getInstance").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2678242487725038275L).languageId(0xa22d91c3ce06375eL, 0x3f445ef354ad4ae5L).build2();
+  public static final SMethod<String> getFlatInstanceName_id2kF1PD7mXG0 = new SMethodBuilder<>(String.class).name("getFlatInstanceName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2678242487727545088L).languageId(0xa22d91c3ce06375eL, 0x3f445ef354ad4ae5L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getComponent_id2kF1PD7dmzD, getInstance_id2kF1PD7dpF3, getFlatInstanceName_id2kF1PD7mXG0);
 

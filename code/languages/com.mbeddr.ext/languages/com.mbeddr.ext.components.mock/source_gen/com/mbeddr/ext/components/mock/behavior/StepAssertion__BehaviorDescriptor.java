@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,7 +21,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class StepAssertion__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x36a565f13fa042d6L, 0xbaacf87e209c9789L, 0x44cc979f39168f58L, "com.mbeddr.ext.components.mock.structure.StepAssertion");
 
-  public static final SMethod<Integer> assertionID_id3Krj9ItiXz5 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("assertionID").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4331139697889499333L).languageId(0xbaacf87e209c9789L, 0x36a565f13fa042d6L).build2();
+  public static final SMethod<Integer> assertionID_id3Krj9ItiXz5 = new SMethodBuilder<>(Integer.TYPE).name("assertionID").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4331139697889499333L).languageId(0xbaacf87e209c9789L, 0x36a565f13fa042d6L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(assertionID_id3Krj9ItiXz5);
 

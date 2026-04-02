@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -27,8 +26,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class RunProcessProcessor__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x260bb175779dac50L, "com.mbeddr.core.buildconfig.structure.RunProcessProcessor");
 
-  public static final SMethod<List<String>> command_id2obGnlS30qc = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("command").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2741479916268422796L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Boolean> isBlocking_id2obGnlS3zkl = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isBlocking").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2741479916268565781L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<List<String>> command_id2obGnlS30qc = new SMethodBuilder<>((Class<List<String>>) ((Class) Object.class)).name("command").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2741479916268422796L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter(String.class, "moduleName"), SMethodBuilder.createJavaParameter(String.class, "path"));
+  public static final SMethod<Boolean> isBlocking_id2obGnlS3zkl = new SMethodBuilder<>(Boolean.TYPE).name("isBlocking").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2741479916268565781L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(command_id2obGnlS30qc, isBlocking_id2obGnlS3zkl);
 

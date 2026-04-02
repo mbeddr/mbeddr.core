@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IActsAsAtomic__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x45b8e10653326f87L, "com.mbeddr.ext.concurrency.structure.IActsAsAtomic");
 
-  public static final SMethod<Boolean> providesReadLockFor_id4mSSgpjfkhV = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("providesReadLockFor").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614365819L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> providesWriteLockFor_id4mSSgpjfkpY = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("providesWriteLockFor").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614366334L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> providesReadLockFor_id4mSSgpjfkhV = new SMethodBuilder<>(Boolean.TYPE).name("providesReadLockFor").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614365819L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Boolean> providesWriteLockFor_id4mSSgpjfkpY = new SMethodBuilder<>(Boolean.TYPE).name("providesWriteLockFor").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614366334L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(providesReadLockFor_id4mSSgpjfkhV, providesWriteLockFor_id4mSSgpjfkpY);
 

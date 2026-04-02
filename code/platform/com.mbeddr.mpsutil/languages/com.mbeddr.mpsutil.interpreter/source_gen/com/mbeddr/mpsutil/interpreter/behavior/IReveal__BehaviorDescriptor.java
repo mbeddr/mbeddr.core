@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IReveal__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x47f075a6558e4640L, 0xa6067ce0236c8023L, 0x447c2333802b1b10L, "com.mbeddr.mpsutil.interpreter.structure.IReveal");
 
-  public static final SMethod<Boolean> mustBeRevealed_id4hW8Ne0aLJi = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustBeRevealed").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4934857995791834066L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(Object.class, ""));
-  public static final SMethod<SNode> getTheNodeToEvalute_id4hW8Ne0mTH4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTheNodeToEvalute").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4934857995795012420L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Boolean> mustBeRevealed_id4hW8Ne0aLJi = new SMethodBuilder<>(Boolean.TYPE).name("mustBeRevealed").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4934857995791834066L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(Object.class, "conditionValue"));
+  public static final SMethod<SNode> getTheNodeToEvalute_id4hW8Ne0mTH4 = new SMethodBuilder<>(SNode.class).name("getTheNodeToEvalute").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4934857995795012420L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mustBeRevealed_id4hW8Ne0aLJi, getTheNodeToEvalute_id4hW8Ne0mTH4);
 

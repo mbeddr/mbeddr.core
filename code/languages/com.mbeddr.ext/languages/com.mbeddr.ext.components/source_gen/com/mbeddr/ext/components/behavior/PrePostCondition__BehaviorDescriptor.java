@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -22,8 +21,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class PrePostCondition__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x5b797aeeb5954073L, "com.mbeddr.ext.components.structure.PrePostCondition");
 
-  public static final SMethod<String> preLabelName_id3L_Vuqbpjyf = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("preLabelName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4352146189360380047L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> postLabelName_id2roVptdTm$4 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("postLabelName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2799248402513488132L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> preLabelName_id3L_Vuqbpjyf = new SMethodBuilder<>(String.class).name("preLabelName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4352146189360380047L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "runnable"));
+  public static final SMethod<String> postLabelName_id2roVptdTm$4 = new SMethodBuilder<>(String.class).name("postLabelName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2799248402513488132L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "retSm"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preLabelName_id3L_Vuqbpjyf, postLabelName_id2roVptdTm$4);
 

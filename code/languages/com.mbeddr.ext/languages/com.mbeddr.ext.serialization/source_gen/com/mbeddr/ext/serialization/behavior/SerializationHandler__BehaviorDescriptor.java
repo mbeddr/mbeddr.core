@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,8 +20,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class SerializationHandler__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xbb0ad88b63cd45fdL, 0xae278662d274cf3cL, 0x7619137534438911L, "com.mbeddr.ext.serialization.structure.SerializationHandler");
 
-  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> structName_id6pWLWdpXAg3 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("structName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7384997130822640643L).languageId(0xae278662d274cf3cL, 0xbb0ad88b63cd45fdL).build2();
+  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<>(Boolean.TYPE).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> structName_id6pWLWdpXAg3 = new SMethodBuilder<>(String.class).name("structName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7384997130822640643L).languageId(0xae278662d274cf3cL, 0xbb0ad88b63cd45fdL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(exportable_id5HxjapwgqKI, structName_id6pWLWdpXAg3);
 

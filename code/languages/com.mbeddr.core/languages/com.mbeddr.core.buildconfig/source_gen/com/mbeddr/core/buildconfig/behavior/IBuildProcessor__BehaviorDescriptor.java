@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import java.util.List;
@@ -22,8 +21,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IBuildProcessor__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x260bb17576e1b500L, "com.mbeddr.core.buildconfig.structure.IBuildProcessor");
 
-  public static final SMethod<String> getDescription_id2obGnlRzRct = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDescription").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2741479916260258589L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
-  public static final SMethod<Tuples._2<List<IMessage>, String>> execute_id2obGnlQSrPD = new SMethodBuilder<Tuples._2<List<IMessage>, String>>(new SJavaCompoundTypeImpl((Class<Tuples._2<List<IMessage>, String>>) ((Class) Object.class))).name("execute").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2741479916248874345L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> getDescription_id2obGnlRzRct = new SMethodBuilder<>(String.class).name("getDescription").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2741479916260258589L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<Tuples._2<List<IMessage>, String>> execute_id2obGnlQSrPD = new SMethodBuilder<>((Class<Tuples._2<List<IMessage>, String>>) ((Class) Object.class)).name("execute").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2741479916248874345L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter(String.class, "moduleName"), SMethodBuilder.createJavaParameter(String.class, "path"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDescription_id2obGnlRzRct, execute_id2obGnlQSrPD);
 

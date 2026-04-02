@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.awt.Color;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,8 +22,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ScenarioRequirementKind__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd6714220402d48cbL, 0xa4a288223c6257f6L, 0x4fb6ca52097b10e0L, "com.mbeddr.cc.requirements.scenarios.structure.ScenarioRequirementKind");
 
-  public static final SMethod<Color> getCharacteriticColor_id1FPlGg16G3O = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getCharacteriticColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1942554214112346356L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
-  public static final SMethod<List<SAbstractConcept>> getRequiredDataKind_id2AZbPfMcvYE = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getRequiredDataKind").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3008175113698934698L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<Color> getCharacteriticColor_id1FPlGg16G3O = new SMethodBuilder<>(Color.class).name("getCharacteriticColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1942554214112346356L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<List<SAbstractConcept>> getRequiredDataKind_id2AZbPfMcvYE = new SMethodBuilder<>((Class<List<SAbstractConcept>>) ((Class) Object.class)).name("getRequiredDataKind").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3008175113698934698L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCharacteriticColor_id1FPlGg16G3O, getRequiredDataKind_id2AZbPfMcvYE);
 

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -26,11 +25,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class RequiredPort__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x3e5659cd94a48fa9L, "com.mbeddr.ext.components.structure.RequiredPort");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<String> genStructOpsMemberName_id4WLtQa9fEWO = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genStructOpsMemberName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5706473467948216116L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Boolean> isMultiple_id2ZUGF54jY1D = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isMultiple").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3457272138385317993L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Boolean> isOptionalOrLowerBoundIsZero_id4qGsbFhUKUr = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isOptionalOrLowerBoundIsZero").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5092569226337259163L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Boolean> isInPort_id2IZ2bWs0yDx = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3152247881084316257L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<String> genStructOpsMemberName_id4WLtQa9fEWO = new SMethodBuilder<>(String.class).name("genStructOpsMemberName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5706473467948216116L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> isMultiple_id2ZUGF54jY1D = new SMethodBuilder<>(Boolean.TYPE).name("isMultiple").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3457272138385317993L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> isOptionalOrLowerBoundIsZero_id4qGsbFhUKUr = new SMethodBuilder<>(Boolean.TYPE).name("isOptionalOrLowerBoundIsZero").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5092569226337259163L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> isInPort_id2IZ2bWs0yDx = new SMethodBuilder<>(Boolean.TYPE).name("isInPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3152247881084316257L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, genStructOpsMemberName_id4WLtQa9fEWO, isMultiple_id2ZUGF54jY1D, isOptionalOrLowerBoundIsZero_id4qGsbFhUKUr, isInPort_id2IZ2bWs0yDx);
 

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -23,9 +22,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class BaseLanguageTypeMapping__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x47f075a6558e4640L, 0xa6067ce0236c8023L, 0x4976653a520b278aL, "com.mbeddr.mpsutil.interpreter.structure.BaseLanguageTypeMapping");
 
-  public static final SMethod<Boolean> equals_id27Skbdz6ukE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("equals").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2447795128867874090L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<String> getTypedPresentation_id7JF0K7yNgd7 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTypedPresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8929233992827077447L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> equals_id27Skbdz6ukE = new SMethodBuilder<>(Boolean.TYPE).name("equals").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2447795128867874090L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<String> getTypedPresentation_id7JF0K7yNgd7 = new SMethodBuilder<>(String.class).name("getTypedPresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8929233992827077447L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(SNode.class, "fromType"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(equals_id27Skbdz6ukE, getPresentation_idhEwIMiw, getTypedPresentation_id7JF0K7yNgd7);
 

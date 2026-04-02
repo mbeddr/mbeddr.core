@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -26,9 +25,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ErrorDeclaration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0xa076706864f9a42L, "com.mbeddr.core.util.structure.ErrorDeclaration");
 
-  public static final SMethod<String> genConstantName_id7kmhBx32Cmf = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genConstantName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8437008434259985807L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<String> genLabelName_id7kmhBx2Q4RH = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genLabelName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8437008434256694765L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<Integer> requiredBitWidth_id4jiR73uG$_V = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("requiredBitWidth").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4959268517019011451L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genConstantName_id7kmhBx32Cmf = new SMethodBuilder<>(String.class).name("genConstantName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8437008434259985807L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genLabelName_id7kmhBx2Q4RH = new SMethodBuilder<>(String.class).name("genLabelName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8437008434256694765L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<Integer> requiredBitWidth_id4jiR73uG$_V = new SMethodBuilder<>(Integer.TYPE).name("requiredBitWidth").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4959268517019011451L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genConstantName_id7kmhBx32Cmf, genLabelName_id7kmhBx2Q4RH, requiredBitWidth_id4jiR73uG$_V);
 

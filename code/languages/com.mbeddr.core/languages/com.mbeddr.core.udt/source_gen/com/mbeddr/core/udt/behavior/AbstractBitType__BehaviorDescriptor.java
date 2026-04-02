@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class AbstractBitType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xefda956e491e4f00L, 0xba1436af2f213ecfL, 0x2b43f9b68d2d75e1L, "com.mbeddr.core.udt.structure.AbstractBitType");
 
-  public static final SMethod<SNode> getGenType_id2DouzknPPyL = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getGenType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3051323115995355313L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
-  public static final SMethod<String> cutOffStringRepresentation_id34uiID1tHsG = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("cutOffStringRepresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3539348727140898604L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<SNode> getGenType_id2DouzknPPyL = new SMethodBuilder<>(SNode.class).name("getGenType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3051323115995355313L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
+  public static final SMethod<String> cutOffStringRepresentation_id34uiID1tHsG = new SMethodBuilder<>(String.class).name("cutOffStringRepresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3539348727140898604L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2(SMethodBuilder.createJavaParameter(String.class, "cValue"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGenType_id2DouzknPPyL, cutOffStringRepresentation_id34uiID1tHsG);
 

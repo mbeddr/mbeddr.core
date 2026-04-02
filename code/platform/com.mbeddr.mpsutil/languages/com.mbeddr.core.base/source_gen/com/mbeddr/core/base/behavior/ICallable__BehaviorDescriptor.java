@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ICallable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x1e06982316dbb772L, "com.mbeddr.core.base.structure.ICallable");
 
-  public static final SMethod<List<SNode>> getParameters_id1S6A2cmQW9m = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getParameters").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2163583947472880214L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<SNode> getReturnType_id1S6A2cmQWaY = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getReturnType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2163583947472880318L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<SNode>> getParameters_id1S6A2cmQW9m = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getParameters").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2163583947472880214L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> getReturnType_id1S6A2cmQWaY = new SMethodBuilder<>(SNode.class).name("getReturnType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2163583947472880318L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getParameters_id1S6A2cmQW9m, getReturnType_id1S6A2cmQWaY);
 

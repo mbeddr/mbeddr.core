@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SModel;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -24,9 +23,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class MacroFilePicker__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd3a0fd26445a466cL, 0x900e10444ddfed52L, 0x7325dee62722d0aeL, "com.mbeddr.mpsutil.filepicker.structure.MacroFilePicker");
 
-  public static final SMethod<String> getPrefix_id6WnTJkDceu8 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrefix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8005120803306792840L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
-  public static final SMethod<String> getErrorMessage_id5lKnBeAutg0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541422720000L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
-  public static final SMethod<SNode> getCompanionFileOrFolderPicker_id3xqp6yeWGLu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getCompanionFileOrFolderPicker").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4060668414265576542L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<String> getPrefix_id6WnTJkDceu8 = new SMethodBuilder<>(String.class).name("getPrefix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8005120803306792840L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter(SModel.class, "originalModel"));
+  public static final SMethod<String> getErrorMessage_id5lKnBeAutg0 = new SMethodBuilder<>(String.class).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541422720000L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<SNode> getCompanionFileOrFolderPicker_id3xqp6yeWGLu = new SMethodBuilder<>(SNode.class).name("getCompanionFileOrFolderPicker").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4060668414265576542L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPrefix_id6WnTJkDceu8, getErrorMessage_id5lKnBeAutg0, getCompanionFileOrFolderPicker_id3xqp6yeWGLu);
 

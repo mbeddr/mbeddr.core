@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -26,7 +25,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class AbstractTableParagraph__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x50495229785296eaL, "com.mbeddr.doc.structure.AbstractTableParagraph");
 
-  public static final SMethod<Boolean> isEmpty_id519ky_So70O = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEmpty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400835636L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Boolean> isEmpty_id519ky_So70O = new SMethodBuilder<>(Boolean.TYPE).name("isEmpty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400835636L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEmpty_id519ky_So70O);
 

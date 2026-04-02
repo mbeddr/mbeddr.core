@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class GenericUnitProvider__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x427eb39fcde2ecb3L, "com.mbeddr.core.base.structure.GenericUnitProvider");
 
-  public static final SMethod<SNode> getProxy_id7okx9D2T19V = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getProxy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8508571394091782779L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> getProxy_id7okx9D2T19V = new SMethodBuilder<>(SNode.class).name("getProxy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8508571394091782779L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getProxy_id7okx9D2T19V);
 

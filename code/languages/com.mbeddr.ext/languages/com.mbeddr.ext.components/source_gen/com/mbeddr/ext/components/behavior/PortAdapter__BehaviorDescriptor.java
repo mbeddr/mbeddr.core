@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,8 +23,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class PortAdapter__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x47c7455cc68418c2L, "com.mbeddr.ext.components.structure.PortAdapter");
 
-  public static final SMethod<String> generatedInstanceVariableName_id4GyojwyaMI6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("generatedInstanceVariableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5413996595772074886L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<String> generatedPortOpsVariableName_id4GyojwybEe6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("generatedPortOpsVariableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5413996595772302214L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> generatedInstanceVariableName_id4GyojwyaMI6 = new SMethodBuilder<>(String.class).name("generatedInstanceVariableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5413996595772074886L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> generatedPortOpsVariableName_id4GyojwybEe6 = new SMethodBuilder<>(String.class).name("generatedPortOpsVariableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5413996595772302214L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(generatedInstanceVariableName_id4GyojwyaMI6, generatedPortOpsVariableName_id4GyojwybEe6);
 

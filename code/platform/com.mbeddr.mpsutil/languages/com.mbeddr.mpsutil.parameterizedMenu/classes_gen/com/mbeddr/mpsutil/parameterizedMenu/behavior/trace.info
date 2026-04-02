@@ -96,66 +96,66 @@
   </root>
   <root nodeRef="r:8cd940a6-b853-4614-b7bb-d7166afd7116(com.mbeddr.mpsutil.parameterizedMenu.behavior)/6447535233477339037">
     <file name="QueryFunction_TransformationMenu_ParameterizableParameter__BehaviorDescriptor.java">
-      <node id="6447535233477339037" at="23,0,24,0" concept="7" trace="CONCEPT" />
-      <node id="6447535233477339037" at="25,0,26,0" concept="7" trace="isParameterized_id1quYWAD0TOG" />
-      <node id="6447535233477339037" at="27,0,28,0" concept="2" trace="BH_METHODS" />
-      <node id="1630016958697282864" at="30,89,31,126" concept="5" />
-      <node id="1630016958697282872" at="31,126,32,149" concept="6" />
-      <node id="6447535233477339037" at="40,114,41,49" concept="5" />
-      <node id="6447535233477339037" at="42,26,43,56" concept="10" />
-      <node id="6447535233477339037" at="46,13,47,67" concept="6" />
-      <node id="6447535233477339037" at="48,14,49,58" concept="10" />
-      <node id="6447535233477339037" at="54,128,55,49" concept="5" />
-      <node id="6447535233477339037" at="56,26,57,56" concept="10" />
-      <node id="6447535233477339037" at="60,14,61,58" concept="10" />
-      <node id="6447535233477339037" at="67,48,68,22" concept="6" />
-      <node id="6447535233477339037" at="73,40,74,19" concept="6" />
-      <node id="6447535233477339037" at="78,0,79,0" concept="7" trace="IParameterizableMenuPart$ql" />
-      <node id="6447535233477339037" at="35,0,37,0" concept="0" trace="QueryFunction_TransformationMenu_ParameterizableParameter__BehaviorDescriptor#()V" />
-      <node id="6447535233477339037" at="41,49,44,5" concept="3" />
-      <node id="6447535233477339037" at="55,49,58,5" concept="3" />
-      <node id="6447535233477339037" at="30,0,34,0" concept="8" trace="isParameterized_id1quYWAD0TOG#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="6447535233477339037" at="58,5,62,5" concept="9" />
-      <node id="6447535233477339037" at="65,0,70,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
-      <node id="6447535233477339037" at="71,0,76,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="6447535233477339037" at="44,5,50,5" concept="9" />
-      <node id="6447535233477339037" at="53,0,64,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="6447535233477339037" at="39,0,52,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <scope id="6447535233477339037" at="35,95,35,95" />
-      <scope id="6447535233477339037" at="42,26,43,56" />
-      <scope id="6447535233477339037" at="46,13,47,67" />
-      <scope id="6447535233477339037" at="48,14,49,58" />
-      <scope id="6447535233477339037" at="56,26,57,56" />
-      <scope id="6447535233477339037" at="60,14,61,58" />
-      <scope id="6447535233477339037" at="67,48,68,22" />
-      <scope id="6447535233477339037" at="73,40,74,19" />
-      <scope id="6447535233477393950" at="30,89,32,149">
+      <node id="6447535233477339037" at="22,0,23,0" concept="7" trace="CONCEPT" />
+      <node id="6447535233477339037" at="24,0,25,0" concept="7" trace="isParameterized_id1quYWAD0TOG" />
+      <node id="6447535233477339037" at="26,0,27,0" concept="2" trace="BH_METHODS" />
+      <node id="1630016958697282864" at="29,89,30,126" concept="5" />
+      <node id="1630016958697282872" at="30,126,31,149" concept="6" />
+      <node id="6447535233477339037" at="39,114,40,49" concept="5" />
+      <node id="6447535233477339037" at="41,26,42,56" concept="10" />
+      <node id="6447535233477339037" at="45,13,46,67" concept="6" />
+      <node id="6447535233477339037" at="47,14,48,58" concept="10" />
+      <node id="6447535233477339037" at="53,128,54,49" concept="5" />
+      <node id="6447535233477339037" at="55,26,56,56" concept="10" />
+      <node id="6447535233477339037" at="59,14,60,58" concept="10" />
+      <node id="6447535233477339037" at="66,48,67,22" concept="6" />
+      <node id="6447535233477339037" at="72,40,73,19" concept="6" />
+      <node id="6447535233477339037" at="77,0,78,0" concept="7" trace="IParameterizableMenuPart$ql" />
+      <node id="6447535233477339037" at="34,0,36,0" concept="0" trace="QueryFunction_TransformationMenu_ParameterizableParameter__BehaviorDescriptor#()V" />
+      <node id="6447535233477339037" at="40,49,43,5" concept="3" />
+      <node id="6447535233477339037" at="54,49,57,5" concept="3" />
+      <node id="6447535233477339037" at="29,0,33,0" concept="8" trace="isParameterized_id1quYWAD0TOG#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="6447535233477339037" at="57,5,61,5" concept="9" />
+      <node id="6447535233477339037" at="64,0,69,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="6447535233477339037" at="70,0,75,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6447535233477339037" at="43,5,49,5" concept="9" />
+      <node id="6447535233477339037" at="52,0,63,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="6447535233477339037" at="38,0,51,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="6447535233477339037" at="34,95,34,95" />
+      <scope id="6447535233477339037" at="41,26,42,56" />
+      <scope id="6447535233477339037" at="45,13,46,67" />
+      <scope id="6447535233477339037" at="47,14,48,58" />
+      <scope id="6447535233477339037" at="55,26,56,56" />
+      <scope id="6447535233477339037" at="59,14,60,58" />
+      <scope id="6447535233477339037" at="66,48,67,22" />
+      <scope id="6447535233477339037" at="72,40,73,19" />
+      <scope id="6447535233477393950" at="29,89,31,149">
         <var name="parameterizable" id="1630016958697282865" />
       </scope>
-      <scope id="6447535233477339037" at="35,0,37,0" />
-      <scope id="6447535233477339037" at="30,0,34,0">
+      <scope id="6447535233477339037" at="34,0,36,0" />
+      <scope id="6447535233477339037" at="29,0,33,0">
         <var name="__thisNode__" id="6447535233477339037" />
       </scope>
-      <scope id="6447535233477339037" at="65,0,70,0" />
-      <scope id="6447535233477339037" at="71,0,76,0" />
-      <scope id="6447535233477339037" at="54,128,62,5">
+      <scope id="6447535233477339037" at="64,0,69,0" />
+      <scope id="6447535233477339037" at="70,0,75,0" />
+      <scope id="6447535233477339037" at="53,128,61,5">
         <var name="methodIndex" id="6447535233477339037" />
       </scope>
-      <scope id="6447535233477339037" at="40,114,50,5">
+      <scope id="6447535233477339037" at="39,114,49,5">
         <var name="methodIndex" id="6447535233477339037" />
       </scope>
-      <scope id="6447535233477339037" at="53,0,64,0">
+      <scope id="6447535233477339037" at="52,0,63,0">
         <var name="concept" id="6447535233477339037" />
         <var name="method" id="6447535233477339037" />
         <var name="parameters" id="6447535233477339037" />
       </scope>
-      <scope id="6447535233477339037" at="39,0,52,0">
+      <scope id="6447535233477339037" at="38,0,51,0">
         <var name="method" id="6447535233477339037" />
         <var name="node" id="6447535233477339037" />
         <var name="parameters" id="6447535233477339037" />
       </scope>
-      <unit id="6447535233477339037" at="77,0,80,0" name="com.mbeddr.mpsutil.parameterizedMenu.behavior.QueryFunction_TransformationMenu_ParameterizableParameter__BehaviorDescriptor$CONCEPTS" />
-      <unit id="6447535233477339037" at="22,0,81,0" name="com.mbeddr.mpsutil.parameterizedMenu.behavior.QueryFunction_TransformationMenu_ParameterizableParameter__BehaviorDescriptor" />
+      <unit id="6447535233477339037" at="76,0,79,0" name="com.mbeddr.mpsutil.parameterizedMenu.behavior.QueryFunction_TransformationMenu_ParameterizableParameter__BehaviorDescriptor$CONCEPTS" />
+      <unit id="6447535233477339037" at="21,0,80,0" name="com.mbeddr.mpsutil.parameterizedMenu.behavior.QueryFunction_TransformationMenu_ParameterizableParameter__BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

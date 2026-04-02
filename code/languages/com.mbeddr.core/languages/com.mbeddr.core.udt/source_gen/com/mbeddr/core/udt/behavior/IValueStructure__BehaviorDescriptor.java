@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IValueStructure__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xefda956e491e4f00L, 0xba1436af2f213ecfL, 0xbb5df1249c339efL, "com.mbeddr.core.udt.structure.IValueStructure");
 
-  public static final SMethod<List<SNode>> getElements_idIPRL99Lfbu = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getElements").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(843825774841885406L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
+  public static final SMethod<List<SNode>> getElements_idIPRL99Lfbu = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getElements").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(843825774841885406L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getElements_idIPRL99Lfbu);
 
