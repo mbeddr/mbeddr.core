@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IRestrictConstAndVolatile__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x58a58cf972119fe9L, "com.mbeddr.core.expressions.structure.IRestrictConstAndVolatile");
 
-  public static final SMethod<Boolean> canBeConst_id5y_zf_M4wuj = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeConst").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6387666649483446163L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> canBeVolatile_id5y_zf_M4wup = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeVolatile").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6387666649483446169L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> canBeConst_id5y_zf_M4wuj = new SMethodBuilder<>(Boolean.TYPE).name("canBeConst").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6387666649483446163L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(SNode.class, "type"));
+  public static final SMethod<Boolean> canBeVolatile_id5y_zf_M4wup = new SMethodBuilder<>(Boolean.TYPE).name("canBeVolatile").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6387666649483446169L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(SNode.class, "type"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeConst_id5y_zf_M4wuj, canBeVolatile_id5y_zf_M4wup);
 

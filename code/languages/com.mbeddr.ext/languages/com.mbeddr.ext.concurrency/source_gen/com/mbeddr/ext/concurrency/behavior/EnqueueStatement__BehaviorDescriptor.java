@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -24,9 +23,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class EnqueueStatement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x2e75fcc7693512b8L, "com.mbeddr.ext.concurrency.structure.EnqueueStatement");
 
-  public static final SMethod<Boolean> providesReadLockFor_id4mSSgpjfkhV = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("providesReadLockFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614365819L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> providesWriteLockFor_id4mSSgpjfkpY = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("providesWriteLockFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614366334L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> queue_id4mSSgpjqg3A = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("queue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801617232102L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<Boolean> providesReadLockFor_id4mSSgpjfkhV = new SMethodBuilder<>(Boolean.TYPE).name("providesReadLockFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614365819L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Boolean> providesWriteLockFor_id4mSSgpjfkpY = new SMethodBuilder<>(Boolean.TYPE).name("providesWriteLockFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614366334L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<SNode> queue_id4mSSgpjqg3A = new SMethodBuilder<>(SNode.class).name("queue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801617232102L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(providesReadLockFor_id4mSSgpjfkhV, providesWriteLockFor_id4mSSgpjfkpY, queue_id4mSSgpjqg3A);
 

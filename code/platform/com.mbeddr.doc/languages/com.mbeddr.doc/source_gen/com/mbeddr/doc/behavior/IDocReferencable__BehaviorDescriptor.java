@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IDocReferencable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x64d2b0bf25be7b65L, "com.mbeddr.doc.structure.IDocReferencable");
 
-  public static final SMethod<String> stableId_id6jiGbW_aIil = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("stableId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7265063483910841493L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> stableId_id6jiGbW_aIil = new SMethodBuilder<>(String.class).name("stableId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7265063483910841493L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(stableId_id6jiGbW_aIil);
 

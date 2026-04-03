@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -25,8 +24,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class TaskSection__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd6943f8183404661L, 0x9d578fc1e2d23b36L, 0x543e5c084834f7d8L, "com.mbeddr.ext.concurrency.plainC.structure.TaskSection");
 
-  public static final SMethod<String> getId_id5gYn0x8dstK = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6070390538382985072L).languageId(0x9d578fc1e2d23b36L, 0xd6943f8183404661L).build2();
-  public static final SMethod<String> generateNewId_id1TgsdXP43P0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("generateNewId").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2184369924318707008L).languageId(0x9d578fc1e2d23b36L, 0xd6943f8183404661L).build2();
+  public static final SMethod<String> getId_id5gYn0x8dstK = new SMethodBuilder<>(String.class).name("getId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6070390538382985072L).languageId(0x9d578fc1e2d23b36L, 0xd6943f8183404661L).build2();
+  public static final SMethod<String> generateNewId_id1TgsdXP43P0 = new SMethodBuilder<>(String.class).name("generateNewId").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2184369924318707008L).languageId(0x9d578fc1e2d23b36L, 0xd6943f8183404661L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getId_id5gYn0x8dstK, generateNewId_id1TgsdXP43P0);
 

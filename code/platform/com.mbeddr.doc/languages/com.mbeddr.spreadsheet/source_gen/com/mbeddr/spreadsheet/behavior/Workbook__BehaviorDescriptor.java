@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -21,7 +20,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class Workbook__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1d891f7bdc9342f9L, 0xa4bcb016656b14e2L, 0x1c579c584d7b9a32L, "com.mbeddr.spreadsheet.structure.Workbook");
 
-  public static final SMethod<List<SNode>> allStyles_id1LnB5xdKrHB = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("allStyles").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111406439L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
+  public static final SMethod<List<SNode>> allStyles_id1LnB5xdKrHB = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("allStyles").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111406439L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allStyles_id1LnB5xdKrHB);
 

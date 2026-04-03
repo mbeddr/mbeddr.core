@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -22,7 +21,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class ConceptModelContentRemoval__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x1e3efe21b647076aL, "com.mbeddr.doc.structure.ConceptModelContentRemoval");
 
-  public static final SMethod<Boolean> shouldBeRemoved_id6TjoDcE5T6D = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("shouldBeRemoved").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7949806151444959657L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> shouldBeRemoved_id6TjoDcE5T6D = new SMethodBuilder<>(Boolean.TYPE).name("shouldBeRemoved").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7949806151444959657L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(SNode.class, "candidate"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(shouldBeRemoved_id6TjoDcE5T6D);
 

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,7 +23,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class PassWordFieldPreferenceFormProperty__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1e7c1f95336c4cecL, 0xb00e8cc6e0c2b265L, 0xfad21b53484c6L, "com.mbeddr.mpsutil.preferenceform.structure.PassWordFieldPreferenceFormProperty");
 
-  public static final SMethod<SNode> getComponentType_id5C8n8D5Vy2T = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getComponentType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6487537012175675577L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
+  public static final SMethod<SNode> getComponentType_id5C8n8D5Vy2T = new SMethodBuilder<>(SNode.class).name("getComponentType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6487537012175675577L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getComponentType_id5C8n8D5Vy2T);
 

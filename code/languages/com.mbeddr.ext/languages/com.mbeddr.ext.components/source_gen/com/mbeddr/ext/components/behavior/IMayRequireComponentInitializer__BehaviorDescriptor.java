@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IMayRequireComponentInitializer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x226fa886b37dd465L, "com.mbeddr.ext.components.structure.IMayRequireComponentInitializer");
 
-  public static final SMethod<Boolean> requiresInitializer_id29JE8qNvtiF = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requiresInitializer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2481387216194884779L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> requiresInitializer_id29JE8qNvtiF = new SMethodBuilder<>(Boolean.TYPE).name("requiresInitializer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2481387216194884779L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(requiresInitializer_id29JE8qNvtiF);
 

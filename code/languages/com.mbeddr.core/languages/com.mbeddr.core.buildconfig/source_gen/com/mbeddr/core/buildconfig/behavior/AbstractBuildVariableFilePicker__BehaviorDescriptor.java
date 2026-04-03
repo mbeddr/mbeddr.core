@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SModel;
 import java.util.List;
@@ -26,9 +25,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class AbstractBuildVariableFilePicker__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x6e75e99627680fb3L, "com.mbeddr.core.buildconfig.structure.AbstractBuildVariableFilePicker");
 
-  public static final SMethod<Boolean> mustExist_id2RM$2quh1HO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustExist").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3310867171609156468L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
-  public static final SMethod<Boolean> pickFileOnly_id48DzgHgr2tO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("pickFileOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4767496760281802612L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
-  public static final SMethod<String> getPrefix_id6WnTJkDceu8 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrefix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8005120803306792840L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> mustExist_id2RM$2quh1HO = new SMethodBuilder<>(Boolean.TYPE).name("mustExist").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3310867171609156468L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<Boolean> pickFileOnly_id48DzgHgr2tO = new SMethodBuilder<>(Boolean.TYPE).name("pickFileOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4767496760281802612L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<String> getPrefix_id6WnTJkDceu8 = new SMethodBuilder<>(String.class).name("getPrefix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8005120803306792840L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter(SModel.class, "originalModel"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mustExist_id2RM$2quh1HO, pickFileOnly_id48DzgHgr2tO, getPrefix_id6WnTJkDceu8);
 

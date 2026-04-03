@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,8 +20,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class SimpleAttributePrefix__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x7853fc2bcf81183dL, "com.mbeddr.core.statements.structure.SimpleAttributePrefix");
 
-  public static final SMethod<String> beforeText_id8PQYytSnuo = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("beforeText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153969215384L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<PrefixType> type_id8PQYytRYFO = new SMethodBuilder<PrefixType>(new SJavaCompoundTypeImpl(PrefixType.class)).name("type").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153969113844L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<String> beforeText_id8PQYytSnuo = new SMethodBuilder<>(String.class).name("beforeText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153969215384L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<PrefixType> type_id8PQYytRYFO = new SMethodBuilder<>(PrefixType.class).name("type").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153969113844L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(beforeText_id8PQYytSnuo, type_id8PQYytRYFO);
 

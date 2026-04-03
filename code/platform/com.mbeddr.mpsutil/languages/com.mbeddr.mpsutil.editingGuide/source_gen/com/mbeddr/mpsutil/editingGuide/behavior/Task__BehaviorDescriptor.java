@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Task__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x67506b1e43ad47feL, 0xa8e6bc7837e9e11fL, 0x364130dd8794d93cL, "com.mbeddr.mpsutil.editingGuide.structure.Task");
 
-  public static final SMethod<Boolean> isEnabled_id3p1cdQ7_dAx = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEnabled").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3909459679554886049L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
+  public static final SMethod<Boolean> isEnabled_id3p1cdQ7_dAx = new SMethodBuilder<>(Boolean.TYPE).name("isEnabled").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3909459679554886049L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEnabled_id3p1cdQ7_dAx);
 

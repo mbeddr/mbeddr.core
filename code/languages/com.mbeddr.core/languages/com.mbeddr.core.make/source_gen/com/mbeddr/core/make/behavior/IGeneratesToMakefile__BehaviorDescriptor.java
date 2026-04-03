@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,9 +18,9 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IGeneratesToMakefile__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xf93d1dbebfd142ddL, 0x932af375fa6f5373L, 0x337f42b469e2013bL, "com.mbeddr.core.make.structure.IGeneratesToMakefile");
 
-  public static final SMethod<Boolean> canBeParallelized_id3dZgFhDSzmf = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeParallelized").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3710757960614557071L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
-  public static final SMethod<Integer> parallelProcesses_id71C71cTwEiX = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("parallelProcesses").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8099754798720656573L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
-  public static final SMethod<Integer> defaultParallelProcesses_id71C71cTwEkc = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("defaultParallelProcesses").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8099754798720656652L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
+  public static final SMethod<Boolean> canBeParallelized_id3dZgFhDSzmf = new SMethodBuilder<>(Boolean.TYPE).name("canBeParallelized").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3710757960614557071L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
+  public static final SMethod<Integer> parallelProcesses_id71C71cTwEiX = new SMethodBuilder<>(Integer.TYPE).name("parallelProcesses").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8099754798720656573L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
+  public static final SMethod<Integer> defaultParallelProcesses_id71C71cTwEkc = new SMethodBuilder<>(Integer.TYPE).name("defaultParallelProcesses").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8099754798720656652L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeParallelized_id3dZgFhDSzmf, parallelProcesses_id71C71cTwEiX, defaultParallelProcesses_id71C71cTwEkc);
 

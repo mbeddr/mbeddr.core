@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -23,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Variable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf93d1dbebfd142ddL, 0x932af375fa6f5373L, 0x2ed28d95c2c6a756L, "com.mbeddr.core.make.structure.Variable");
 
-  public static final SMethod<String> getReferencePresentation_id7EZ1Spo0Yz_ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getReferencePresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8844796466762606821L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> getReferencePresentation_id7EZ1Spo0Yz_ = new SMethodBuilder<>(String.class).name("getReferencePresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8844796466762606821L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2(SMethodBuilder.createJavaParameter(SNode.class, "referenceParent"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReferencePresentation_id7EZ1Spo0Yz_);
 

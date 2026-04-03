@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.Locale;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Language__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x23f985f2965f4af1L, 0xaee8a32677429514L, 0x7e347dff5959facL, "com.mbeddr.mpsutil.multilingual.common.structure.Language");
 
-  public static final SMethod<Locale> toLocale_id5Q1XZgMGEow = new SMethodBuilder<Locale>(new SJavaCompoundTypeImpl(Locale.class)).name("toLocale").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6737939145717622304L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
+  public static final SMethod<Locale> toLocale_id5Q1XZgMGEow = new SMethodBuilder<>(Locale.class).name("toLocale").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6737939145717622304L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(toLocale_id5Q1XZgMGEow);
 

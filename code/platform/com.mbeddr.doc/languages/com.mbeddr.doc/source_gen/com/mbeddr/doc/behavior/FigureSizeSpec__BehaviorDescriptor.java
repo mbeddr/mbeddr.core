@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class FigureSizeSpec__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x77b1c43c8f01d960L, "com.mbeddr.doc.structure.FigureSizeSpec");
 
-  public static final SMethod<String> getLatexSizeSpec_id7uLL3Mf26EQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getLatexSizeSpec").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8624890525767985846L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> getLatexSizeSpec_id7uLL3Mf26EQ = new SMethodBuilder<>(String.class).name("getLatexSizeSpec").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8624890525767985846L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLatexSizeSpec_id7uLL3Mf26EQ);
 

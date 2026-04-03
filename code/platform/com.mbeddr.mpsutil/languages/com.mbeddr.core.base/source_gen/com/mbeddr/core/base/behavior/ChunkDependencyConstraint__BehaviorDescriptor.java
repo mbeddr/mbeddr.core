@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,9 +18,9 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ChunkDependencyConstraint__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x1fde2235aeb5589L, "com.mbeddr.core.base.structure.ChunkDependencyConstraint");
 
-  public static final SMethod<String> canImport_id7XSydqUVwz = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("canImport").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(143519404622854179L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> canBeImported_id7XSydqUVyQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("canBeImported").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(143519404622854326L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> canHaveMultiple_id7XSydr9rQb = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canHaveMultiple").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(143519404626656651L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> canImport_id7XSydqUVwz = new SMethodBuilder<>(String.class).name("canImport").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(143519404622854179L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "currentWithConstraint"), SMethodBuilder.createJavaParameter(SNode.class, "imported"));
+  public static final SMethod<String> canBeImported_id7XSydqUVyQ = new SMethodBuilder<>(String.class).name("canBeImported").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(143519404622854326L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "anotherChunk"), SMethodBuilder.createJavaParameter(SNode.class, "importedWithConstraint"));
+  public static final SMethod<Boolean> canHaveMultiple_id7XSydr9rQb = new SMethodBuilder<>(Boolean.TYPE).name("canHaveMultiple").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(143519404626656651L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canImport_id7XSydqUVwz, canBeImported_id7XSydqUVyQ, canHaveMultiple_id7XSydr9rQb);
 

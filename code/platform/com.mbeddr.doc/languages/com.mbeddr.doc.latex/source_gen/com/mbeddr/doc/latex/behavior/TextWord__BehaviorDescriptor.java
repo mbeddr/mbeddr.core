@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,7 +20,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class TextWord__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf8f68d92c6d244b3L, 0x8d63c00ade75ec86L, 0x3ddc39046e31e53cL, "com.mbeddr.doc.latex.structure.TextWord");
 
-  public static final SMethod<Boolean> isEmpty_id2bUgBpZU0mI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEmpty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2520400018186700206L).languageId(0x8d63c00ade75ec86L, 0xf8f68d92c6d244b3L).build2();
+  public static final SMethod<Boolean> isEmpty_id2bUgBpZU0mI = new SMethodBuilder<>(Boolean.TYPE).name("isEmpty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2520400018186700206L).languageId(0x8d63c00ade75ec86L, 0xf8f68d92c6d244b3L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEmpty_id2bUgBpZU0mI);
 

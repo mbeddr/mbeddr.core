@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -21,8 +20,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IFormatConversionFlag__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x442d3b7dfe4a4293L, 0xa7c16744d440ecaaL, 0x2e8be43a04393451L, "com.mbeddr.mpsutil.richstring.structure.IFormatConversionFlag");
 
-  public static final SMethod<String> getConversionFlagSymbol_id2UbT3C4ekKT = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getConversionFlagSymbol").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354025285337566265L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
-  public static final SMethod<Boolean> isApplicable_id6Go9U2yx_gX = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isApplicable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532374307901L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> getConversionFlagSymbol_id2UbT3C4ekKT = new SMethodBuilder<>(String.class).name("getConversionFlagSymbol").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354025285337566265L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<Boolean> isApplicable_id6Go9U2yx_gX = new SMethodBuilder<>(Boolean.TYPE).name("isApplicable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532374307901L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2(SMethodBuilder.createJavaParameter(SNode.class, "conversion"), SMethodBuilder.createJavaParameter(SNode.class, "category"), SMethodBuilder.createJavaParameter(SNode.class, "expressionType"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConversionFlagSymbol_id2UbT3C4ekKT, isApplicable_id6Go9U2yx_gX);
 

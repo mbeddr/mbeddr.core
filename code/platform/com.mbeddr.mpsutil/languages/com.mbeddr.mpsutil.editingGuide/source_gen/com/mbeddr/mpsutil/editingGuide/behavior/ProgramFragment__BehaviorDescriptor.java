@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.scope.Scope;
 import java.util.List;
@@ -29,9 +28,9 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class ProgramFragment__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x67506b1e43ad47feL, 0xa8e6bc7837e9e11fL, 0x364130dd8794d97aL, "com.mbeddr.mpsutil.editingGuide.structure.ProgramFragment");
 
-  public static final SMethod<SNode> getFragmentRoot_id3p1cdQ7_MOb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getFragmentRoot").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3909459679555038475L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
-  public static final SMethod<Scope> getImportedNodes_idPYICs0Yrc9 = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getImportedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(972419658558321417L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
-  public static final SMethod<Scope> getVisibleNodeExporters_id44LrdWQlKmC = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getVisibleNodeExporters").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4697655592269317544L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> getFragmentRoot_id3p1cdQ7_MOb = new SMethodBuilder<>(SNode.class).name("getFragmentRoot").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3909459679555038475L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
+  public static final SMethod<Scope> getImportedNodes_idPYICs0Yrc9 = new SMethodBuilder<>(Scope.class).name("getImportedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(972419658558321417L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "targetConcept"));
+  public static final SMethod<Scope> getVisibleNodeExporters_id44LrdWQlKmC = new SMethodBuilder<>(Scope.class).name("getVisibleNodeExporters").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4697655592269317544L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter(SNode.class, "contextNode"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFragmentRoot_id3p1cdQ7_MOb, getImportedNodes_idPYICs0Yrc9, getVisibleNodeExporters_id44LrdWQlKmC);
 

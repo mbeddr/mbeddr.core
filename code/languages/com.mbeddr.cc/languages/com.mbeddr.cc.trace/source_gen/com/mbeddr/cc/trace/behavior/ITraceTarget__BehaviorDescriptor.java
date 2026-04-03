@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,8 +20,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ITraceTarget__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x53bab999e9c3428aL, 0x80befef5bed08f55L, 0x619a854eb408d51L, "com.mbeddr.cc.trace.structure.ITraceTarget");
 
-  public static final SMethod<Iterable<SNode>> getTooltipInfoNodes_id2xLRh2R4bd7 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getTooltipInfoNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2914353497745961799L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2();
-  public static final SMethod<String> getShortDescription_id2xLRh2R4ccl = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getShortDescription").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2914353497745965845L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2();
+  public static final SMethod<Iterable<SNode>> getTooltipInfoNodes_id2xLRh2R4bd7 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getTooltipInfoNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2914353497745961799L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2();
+  public static final SMethod<String> getShortDescription_id2xLRh2R4ccl = new SMethodBuilder<>(String.class).name("getShortDescription").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2914353497745965845L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTooltipInfoNodes_id2xLRh2R4bd7, getShortDescription_id2xLRh2R4ccl);
 

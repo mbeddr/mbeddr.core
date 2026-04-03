@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IMemberReference__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x4ffba68fe82cbc25L, "com.mbeddr.core.expressions.structure.IMemberReference");
 
-  public static final SMethod<SNode> getMember_id4t$0cw8yFNi = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getMember").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5144237533500718290L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<String> renderReadable_id2JIP8cA02hd = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3165701247831385165L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getMember_id4t$0cw8yFNi = new SMethodBuilder<>(SNode.class).name("getMember").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5144237533500718290L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> renderReadable_id2JIP8cA02hd = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3165701247831385165L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getMember_id4t$0cw8yFNi, renderReadable_id2JIP8cA02hd);
 

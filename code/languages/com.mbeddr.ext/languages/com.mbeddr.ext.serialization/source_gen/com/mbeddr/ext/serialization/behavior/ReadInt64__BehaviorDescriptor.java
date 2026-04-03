@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,7 +21,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ReadInt64__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xbb0ad88b63cd45fdL, 0xae278662d274cf3cL, 0x297dbd78f162455fL, "com.mbeddr.ext.serialization.structure.ReadInt64");
 
-  public static final SMethod<SNode> expectedExprType_id7op4RkOvNOW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("expectedExprType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8509854365006118204L).languageId(0xae278662d274cf3cL, 0xbb0ad88b63cd45fdL).build2();
+  public static final SMethod<SNode> expectedExprType_id7op4RkOvNOW = new SMethodBuilder<>(SNode.class).name("expectedExprType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8509854365006118204L).languageId(0xae278662d274cf3cL, 0xbb0ad88b63cd45fdL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(expectedExprType_id7op4RkOvNOW);
 

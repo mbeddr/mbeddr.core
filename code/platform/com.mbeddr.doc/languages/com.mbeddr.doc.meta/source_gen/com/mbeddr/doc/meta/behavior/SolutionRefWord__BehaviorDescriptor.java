@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -20,7 +19,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class SolutionRefWord__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe06345c7da824f8bL, 0xbd441425fe158640L, 0x3d3a248b0098584eL, "com.mbeddr.doc.meta.structure.SolutionRefWord");
 
-  public static final SMethod<Class> getModuleType_id1R2r3DPJX9r = new SMethodBuilder<Class>(new SJavaCompoundTypeImpl(Class.class)).name("getModuleType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2144395370921185883L).languageId(0xbd441425fe158640L, 0xe06345c7da824f8bL).build2();
+  public static final SMethod<Class> getModuleType_id1R2r3DPJX9r = new SMethodBuilder<>(Class.class).name("getModuleType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2144395370921185883L).languageId(0xbd441425fe158640L, 0xe06345c7da824f8bL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getModuleType_id1R2r3DPJX9r);
 

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class SuppressDataFlowWarning__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x5e0e8c0879acb8c7L, "com.mbeddr.core.modules.structure.SuppressDataFlowWarning");
 
-  public static final SMethod<String> getName_id7U3Fobb_8Gt = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9116320848000879389L).languageId(0xa37d9ab77a2ccbd2L, 0xc1c2a88a323c4605L).build2();
+  public static final SMethod<String> getName_id7U3Fobb_8Gt = new SMethodBuilder<>(String.class).name("getName").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9116320848000879389L).languageId(0xa37d9ab77a2ccbd2L, 0xc1c2a88a323c4605L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getName_id7U3Fobb_8Gt);
 

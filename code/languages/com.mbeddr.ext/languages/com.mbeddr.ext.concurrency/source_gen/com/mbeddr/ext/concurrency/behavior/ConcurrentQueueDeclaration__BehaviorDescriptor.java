@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -21,7 +20,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ConcurrentQueueDeclaration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x18cefdcb8b9c9f45L, "com.mbeddr.ext.concurrency.structure.ConcurrentQueueDeclaration");
 
-  public static final SMethod<String> genEventName_id1zeZsIbcufQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genEventName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1787645152768156662L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> genEventName_id1zeZsIbcufQ = new SMethodBuilder<>(String.class).name("genEventName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1787645152768156662L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter(SNode.class, "gv"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genEventName_id1zeZsIbcufQ);
 

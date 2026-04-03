@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,9 +18,9 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ICanHide__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x5fef253e34b0443dL, 0x80359a2928b716d3L, 0x5136578b182923d9L, "com.mbeddr.mpsutil.editor.displayControl.structure.ICanHide");
 
-  public static final SMethod<Boolean> isVisible_id5I8v_DCodq4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isVisible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6595660581047424644L).languageId(0x80359a2928b716d3L, 0x5fef253e34b0443dL).build2();
-  public static final SMethod<Void> hide_id5I8v_DCofzu = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("hide").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6595660581047433438L).languageId(0x80359a2928b716d3L, 0x5fef253e34b0443dL).build2();
-  public static final SMethod<Void> show_id5I8v_DCoggH = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("show").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6595660581047436333L).languageId(0x80359a2928b716d3L, 0x5fef253e34b0443dL).build2();
+  public static final SMethod<Boolean> isVisible_id5I8v_DCodq4 = new SMethodBuilder<>(Boolean.TYPE).name("isVisible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6595660581047424644L).languageId(0x80359a2928b716d3L, 0x5fef253e34b0443dL).build2();
+  public static final SMethod<Void> hide_id5I8v_DCofzu = new SMethodBuilder<>(Void.TYPE).name("hide").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6595660581047433438L).languageId(0x80359a2928b716d3L, 0x5fef253e34b0443dL).build2();
+  public static final SMethod<Void> show_id5I8v_DCoggH = new SMethodBuilder<>(Void.TYPE).name("show").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6595660581047436333L).languageId(0x80359a2928b716d3L, 0x5fef253e34b0443dL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isVisible_id5I8v_DCodq4, hide_id5I8v_DCofzu, show_id5I8v_DCoggH);
 
