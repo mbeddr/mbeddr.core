@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -30,8 +29,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class GenericUnitInitializer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe3420481604b464eL, 0xbc1b06ecfc1f9dfcL, 0x6cd771c4ddf6ff00L, "com.mbeddr.ext.components.units.structure.GenericUnitInitializer");
 
-  public static final SMethod<Iterable<SNode>> getGenericUnits_id5W7baqyUyho = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getGenericUnits").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6847490852649575512L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
-  public static final SMethod<Iterable<SNode>> getGenericUnits_idqWsmfOQfLa = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getGenericUnits").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(485387533972733002L).languageId(0xbc1b06ecfc1f9dfcL, 0xe3420481604b464eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> getGenericUnits_id5W7baqyUyho = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getGenericUnits").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6847490852649575512L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
+  public static final SMethod<Iterable<SNode>> getGenericUnits_idqWsmfOQfLa = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getGenericUnits").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(485387533972733002L).languageId(0xbc1b06ecfc1f9dfcL, 0xe3420481604b464eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "component"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGenericUnits_id5W7baqyUyho, getGenericUnits_idqWsmfOQfLa);
 

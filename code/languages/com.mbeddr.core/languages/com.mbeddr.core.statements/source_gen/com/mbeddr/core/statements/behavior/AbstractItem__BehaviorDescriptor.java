@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class AbstractItem__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0xa59139396a1f537L, "com.mbeddr.core.statements.structure.AbstractItem");
 
-  public static final SMethod<String> renderReadable_id7RHXOmy7DC1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9074180702666136065L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<String> renderReadable_id7RHXOmy7DC1 = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9074180702666136065L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id7RHXOmy7DC1);
 

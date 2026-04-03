@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IFormatConversionPrecision__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x442d3b7dfe4a4293L, 0xa7c16744d440ecaaL, 0x2e8be43a04395d1cL, "com.mbeddr.mpsutil.richstring.structure.IFormatConversionPrecision");
 
-  public static final SMethod<String> getPrecision_id2UbT3C4eBk$ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrecision").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354025285337642276L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<String> getPrecision_id2UbT3C4eBk$ = new SMethodBuilder<>(String.class).name("getPrecision").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354025285337642276L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPrecision_id2UbT3C4eBk$);
 

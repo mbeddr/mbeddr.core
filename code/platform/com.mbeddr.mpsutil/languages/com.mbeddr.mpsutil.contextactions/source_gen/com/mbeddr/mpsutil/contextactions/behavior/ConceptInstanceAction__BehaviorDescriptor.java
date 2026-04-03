@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -28,8 +27,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ConceptInstanceAction__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x677f00fb4488405eL, 0x9885abb75d472fd1L, 0x77ab0a0049e52a0cL, "com.mbeddr.mpsutil.contextactions.structure.ConceptInstanceAction");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<String> getLabel_id3y7CaIpxapX = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getLabel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4073401046855362173L).languageId(0x9885abb75d472fd1L, 0x677f00fb4488405eL).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<String> getLabel_id3y7CaIpxapX = new SMethodBuilder<>(String.class).name("getLabel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4073401046855362173L).languageId(0x9885abb75d472fd1L, 0x677f00fb4488405eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, getLabel_id3y7CaIpxapX);
 

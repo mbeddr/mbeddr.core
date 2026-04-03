@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IConcurrentQueueUser__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x45b8e106536900cbL, "com.mbeddr.ext.concurrency.structure.IConcurrentQueueUser");
 
-  public static final SMethod<SNode> queue_id4mSSgpjqg3A = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("queue").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801617232102L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<SNode> queue_id4mSSgpjqg3A = new SMethodBuilder<>(SNode.class).name("queue").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801617232102L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(queue_id4mSSgpjqg3A);
 

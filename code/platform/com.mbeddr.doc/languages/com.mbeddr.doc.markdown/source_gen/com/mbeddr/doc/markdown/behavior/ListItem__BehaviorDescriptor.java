@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -28,14 +27,14 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ListItem__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x22a8c356ae1a4079L, 0x96b0d5e7c21ae7c4L, 0xba50d6d109b78d5L, "com.mbeddr.doc.markdown.structure.ListItem");
 
-  public static final SMethod<SNode> getList_id6ec5ny863p1 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getList").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7173131913917904449L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
-  public static final SMethod<Integer> getPreviousIndent_id6ec5ny7ZTWe = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPreviousIndent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7173131913916292878L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
-  public static final SMethod<Integer> getNextIndent_id4UrEbl6wvUz = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getNextIndent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5664306452874002083L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
-  public static final SMethod<Void> increaseIndent_id1sNMMH9bj2K = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("increaseIndent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1671903273456316592L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
-  public static final SMethod<Void> decreaseIndent_id1sNMMH9bj34 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("decreaseIndent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1671903273456316612L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
-  public static final SMethod<Void> addNewLine_id6ec5ny7VcHG = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addNewLine").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7173131913915059052L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
-  public static final SMethod<Integer> getIndentInPixel_id6ec5ny7Vkj6 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getIndentInPixel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7173131913915090118L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
-  public static final SMethod<Integer> getNumber_id1sNMMH9bYLM = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1671903273456495730L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
+  public static final SMethod<SNode> getList_id6ec5ny863p1 = new SMethodBuilder<>(SNode.class).name("getList").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7173131913917904449L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
+  public static final SMethod<Integer> getPreviousIndent_id6ec5ny7ZTWe = new SMethodBuilder<>(Integer.TYPE).name("getPreviousIndent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7173131913916292878L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
+  public static final SMethod<Integer> getNextIndent_id4UrEbl6wvUz = new SMethodBuilder<>(Integer.TYPE).name("getNextIndent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5664306452874002083L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
+  public static final SMethod<Void> increaseIndent_id1sNMMH9bj2K = new SMethodBuilder<>(Void.TYPE).name("increaseIndent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1671903273456316592L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
+  public static final SMethod<Void> decreaseIndent_id1sNMMH9bj34 = new SMethodBuilder<>(Void.TYPE).name("decreaseIndent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1671903273456316612L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
+  public static final SMethod<Void> addNewLine_id6ec5ny7VcHG = new SMethodBuilder<>(Void.TYPE).name("addNewLine").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7173131913915059052L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
+  public static final SMethod<Integer> getIndentInPixel_id6ec5ny7Vkj6 = new SMethodBuilder<>(Integer.TYPE).name("getIndentInPixel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7173131913915090118L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
+  public static final SMethod<Integer> getNumber_id1sNMMH9bYLM = new SMethodBuilder<>(Integer.TYPE).name("getNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1671903273456495730L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getList_id6ec5ny863p1, getPreviousIndent_id6ec5ny7ZTWe, getNextIndent_id4UrEbl6wvUz, increaseIndent_id1sNMMH9bj2K, decreaseIndent_id1sNMMH9bj34, addNewLine_id6ec5ny7VcHG, getIndentInPixel_id6ec5ny7Vkj6, getNumber_id1sNMMH9bYLM);
 

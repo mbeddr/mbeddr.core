@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ILogicalChild__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x85a9bace37a140afL, 0x956a7bb1b081a77cL, 0x4d47311ce85ef55L, "com.mbeddr.mpsutil.logicalChild.structure.ILogicalChild");
 
-  public static final SMethod<SNode> getOwner_id7c93VeVMBwo = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getOwner").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8289173853776279576L).languageId(0x956a7bb1b081a77cL, 0x85a9bace37a140afL).build2();
+  public static final SMethod<SNode> getOwner_id7c93VeVMBwo = new SMethodBuilder<>(SNode.class).name("getOwner").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8289173853776279576L).languageId(0x956a7bb1b081a77cL, 0x85a9bace37a140afL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getOwner_id7c93VeVMBwo);
 

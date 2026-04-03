@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,8 +21,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class AssertNull__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d68b77b6994918L, 0x83b8857e63787800L, 0x6b2656585ffd4d50L, "com.mbeddr.core.unittest.structure.AssertNull");
 
-  public static final SMethod<SAbstractConcept> getBinop_id5HxjapwgqL$ = new SMethodBuilder<SAbstractConcept>(new SJavaCompoundTypeImpl((Class<SAbstractConcept>) ((Class) Object.class))).name("getBinop").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574628L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
-  public static final SMethod<String> getFailureMessageFormat_id4Ru$s7zwmbI = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFailureMessageFormat").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5611082447681839854L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<SAbstractConcept> getBinop_id5HxjapwgqL$ = new SMethodBuilder<>(SAbstractConcept.class).name("getBinop").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574628L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<String> getFailureMessageFormat_id4Ru$s7zwmbI = new SMethodBuilder<>(String.class).name("getFailureMessageFormat").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5611082447681839854L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBinop_id5HxjapwgqL$, getFailureMessageFormat_id4Ru$s7zwmbI);
 

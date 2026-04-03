@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,7 +20,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class WPActualWork__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe530d4cbefad4822L, 0x92f81d114f03f836L, 0x7f73db7836353f4L, "com.mbeddr.cc.requirements.wp.structure.WPActualWork");
 
-  public static final SMethod<Float> amount_idvRfru3oQQk = new SMethodBuilder<Float>(new SJavaCompoundTypeImpl(Float.TYPE)).name("amount").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(573995335905668500L).languageId(0x92f81d114f03f836L, 0xe530d4cbefad4822L).build2();
+  public static final SMethod<Float> amount_idvRfru3oQQk = new SMethodBuilder<>(Float.TYPE).name("amount").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(573995335905668500L).languageId(0x92f81d114f03f836L, 0xe530d4cbefad4822L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(amount_idvRfru3oQQk);
 

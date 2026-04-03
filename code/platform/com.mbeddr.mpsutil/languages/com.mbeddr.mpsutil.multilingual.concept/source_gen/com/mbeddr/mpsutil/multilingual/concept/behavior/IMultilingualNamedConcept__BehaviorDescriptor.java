@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,7 +21,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IMultilingualNamedConcept__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd0fe2e609f9c4d3cL, 0x94aade9257b67a6dL, 0x22d74031dcf68a1dL, "com.mbeddr.mpsutil.multilingual.concept.structure.IMultilingualNamedConcept");
 
-  public static final SMethod<String> getPresentationMultilingual_id2bng37sXCGQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentationMultilingual").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061046L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
+  public static final SMethod<String> getPresentationMultilingual_id2bng37sXCGQ = new SMethodBuilder<>(String.class).name("getPresentationMultilingual").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061046L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentationMultilingual_id2bng37sXCGQ);
 

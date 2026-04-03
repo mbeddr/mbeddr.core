@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ClosureStatementList__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x746e83583bda91e8L, "com.mbeddr.core.util.structure.ClosureStatementList");
 
-  public static final SMethod<Boolean> queryAncestorScopeProvider_id1leqHN8kqt_ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("queryAncestorScopeProvider").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1535282019466061669L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Boolean> queryAncestorScopeProvider_id1leqHN8kqt_ = new SMethodBuilder<>(Boolean.TYPE).name("queryAncestorScopeProvider").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1535282019466061669L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(queryAncestorScopeProvider_id1leqHN8kqt_);
 

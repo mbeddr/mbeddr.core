@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -20,7 +19,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class DirectModuloAssignmentExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x63d2f6d2334415d3L, "com.mbeddr.core.expressions.structure.DirectModuloAssignmentExpression");
 
-  public static final SMethod<SNode> correspondingNonDirectExpression_id7FQUQ5yTHlG = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("correspondingNonDirectExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8860528120401679724L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> correspondingNonDirectExpression_id7FQUQ5yTHlG = new SMethodBuilder<>(SNode.class).name("correspondingNonDirectExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8860528120401679724L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(correspondingNonDirectExpression_id7FQUQ5yTHlG);
 

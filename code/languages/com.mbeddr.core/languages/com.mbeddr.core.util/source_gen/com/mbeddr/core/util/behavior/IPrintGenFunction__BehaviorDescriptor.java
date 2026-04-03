@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IPrintGenFunction__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x2a239c6b68b4d297L, "com.mbeddr.core.util.structure.IPrintGenFunction");
 
-  public static final SMethod<String> genFunName_id2CzB6HCHdar = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genFunName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3036442558909960859L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genFunName_id2CzB6HCHdar = new SMethodBuilder<>(String.class).name("genFunName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3036442558909960859L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genFunName_id2CzB6HCHdar);
 

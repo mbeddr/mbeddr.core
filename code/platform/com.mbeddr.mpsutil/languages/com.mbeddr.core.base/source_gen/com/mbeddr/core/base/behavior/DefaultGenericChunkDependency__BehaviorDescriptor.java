@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,9 +22,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class DefaultGenericChunkDependency__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xa5e2d2ae6f5954dL, "com.mbeddr.core.base.structure.DefaultGenericChunkDependency");
 
-  public static final SMethod<SNode> chunk_id6clJcrJZN1z = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("chunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881814627L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> isReexported_id6clJcrKt_a0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isReexported").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346889622144L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> setReexportedIfPossible_id36a7yl97ppK = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setReexportedIfPossible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3569698800133838448L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
+  public static final SMethod<SNode> chunk_id6clJcrJZN1z = new SMethodBuilder<>(SNode.class).name("chunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881814627L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isReexported_id6clJcrKt_a0 = new SMethodBuilder<>(Boolean.TYPE).name("isReexported").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346889622144L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> setReexportedIfPossible_id36a7yl97ppK = new SMethodBuilder<>(Void.TYPE).name("setReexportedIfPossible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3569698800133838448L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, "reexport"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(chunk_id6clJcrJZN1z, isReexported_id6clJcrKt_a0, setReexportedIfPossible_id36a7yl97ppK);
 

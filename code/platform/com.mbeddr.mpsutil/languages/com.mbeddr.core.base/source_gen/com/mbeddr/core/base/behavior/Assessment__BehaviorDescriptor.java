@@ -8,7 +8,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.project.Project;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -29,11 +28,11 @@ public final class Assessment__BehaviorDescriptor extends BaseBHDescriptor {
   private static final Logger LOG = Logger.getLogger(Assessment__BehaviorDescriptor.class);
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xc022423d5828abcL, "com.mbeddr.core.base.structure.Assessment");
 
-  public static final SMethod<Void> update_id3jNX2XuLy_p = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("update").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3815661793603627353L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> update_id4WjNWxKKBRM = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("update").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413346012658L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
-  public static final SMethod<Void> clear_id3greo4NDQJp = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("clear").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3754657941423614937L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Iterable<SNode>> activeResultEntries_id3jNX2XuL9gI = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("activeResultEntries").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3815661793603523630L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> allowEverythingExceptWhitespace_id8q0nkX_5K4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowEverythingExceptWhitespace").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(151435140526267396L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> update_id3jNX2XuLy_p = new SMethodBuilder<>(Void.TYPE).name("update").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3815661793603627353L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> update_id4WjNWxKKBRM = new SMethodBuilder<>(Void.TYPE).name("update").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413346012658L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, "mpsProject"));
+  public static final SMethod<Void> clear_id3greo4NDQJp = new SMethodBuilder<>(Void.TYPE).name("clear").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3754657941423614937L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> activeResultEntries_id3jNX2XuL9gI = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("activeResultEntries").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3815661793603523630L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> allowEverythingExceptWhitespace_id8q0nkX_5K4 = new SMethodBuilder<>(Boolean.TYPE).name("allowEverythingExceptWhitespace").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(151435140526267396L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(update_id3jNX2XuLy_p, update_id4WjNWxKKBRM, clear_id3greo4NDQJp, activeResultEntries_id3jNX2XuL9gI, allowEverythingExceptWhitespace_id8q0nkX_5K4);
 

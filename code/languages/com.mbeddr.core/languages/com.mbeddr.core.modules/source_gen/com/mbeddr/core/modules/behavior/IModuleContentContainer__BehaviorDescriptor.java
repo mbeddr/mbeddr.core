@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -26,11 +25,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class IModuleContentContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x124a1a47a699a517L, "com.mbeddr.core.modules.structure.IModuleContentContainer");
 
-  public static final SMethod<Boolean> canMangleNames_id4J$Pz4XGFls = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canMangleNames").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5468731354511488348L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> getMangledModuleName_id7Aba6ByEk1p = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMangledModuleName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8758138335591481433L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> getMangledModuleName_id3mNkkAiSu$u = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMangledModuleName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3869525881280129310L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
-  public static final SMethod<String> getMangledContentName_id49XubMpE3TP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMangledContentName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4791118330019200629L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getMangledContentName_idMToHDoMLag = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMangledContentName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(916872689078702736L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Boolean> canMangleNames_id4J$Pz4XGFls = new SMethodBuilder<>(Boolean.TYPE).name("canMangleNames").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5468731354511488348L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> getMangledModuleName_id7Aba6ByEk1p = new SMethodBuilder<>(String.class).name("getMangledModuleName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8758138335591481433L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> getMangledModuleName_id3mNkkAiSu$u = new SMethodBuilder<>(String.class).name("getMangledModuleName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3869525881280129310L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, "skipPrefix"));
+  public static final SMethod<String> getMangledContentName_id49XubMpE3TP = new SMethodBuilder<>(String.class).name("getMangledContentName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4791118330019200629L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(SNode.class, "content"));
+  public static final SMethod<String> getMangledContentName_idMToHDoMLag = new SMethodBuilder<>(String.class).name("getMangledContentName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(916872689078702736L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(SNode.class, "content"), SMethodBuilder.createJavaParameter(String.class, "preMangledName"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canMangleNames_id4J$Pz4XGFls, getMangledModuleName_id7Aba6ByEk1p, getMangledModuleName_id3mNkkAiSu$u, getMangledContentName_id49XubMpE3TP, getMangledContentName_idMToHDoMLag);
 

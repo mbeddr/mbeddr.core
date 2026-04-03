@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ComponentContentRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x7f76b5152d361602L, "com.mbeddr.ext.components.structure.ComponentContentRef");
 
-  public static final SMethod<String> signatureInfo_id7XQHhkHdyqA = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("signatureInfo").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9184727592626169510L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Boolean> isLValue_id7XQHhkHeJZE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9184727592626487274L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> signatureInfo_id7XQHhkHdyqA = new SMethodBuilder<>(String.class).name("signatureInfo").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9184727592626169510L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> isLValue_id7XQHhkHeJZE = new SMethodBuilder<>(Boolean.TYPE).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9184727592626487274L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(signatureInfo_id7XQHhkHdyqA, isLValue_id7XQHhkHeJZE);
 

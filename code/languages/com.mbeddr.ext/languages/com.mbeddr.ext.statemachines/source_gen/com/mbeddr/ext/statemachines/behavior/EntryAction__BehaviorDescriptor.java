@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -27,8 +26,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class EntryAction__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x41f86c71755a9980L, "com.mbeddr.ext.statemachines.structure.EntryAction");
 
-  public static final SMethod<Boolean> hasOnlyTriggerStatement_id4WcLiIfY7mZ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasOnlyTriggerStatement").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5696144419606525375L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
-  public static final SMethod<SNode> getTriggerStatement_id3TCD4YMmmdp = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTriggerStatement").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4497024890131014489L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<Boolean> hasOnlyTriggerStatement_id4WcLiIfY7mZ = new SMethodBuilder<>(Boolean.TYPE).name("hasOnlyTriggerStatement").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5696144419606525375L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<SNode> getTriggerStatement_id3TCD4YMmmdp = new SMethodBuilder<>(SNode.class).name("getTriggerStatement").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4497024890131014489L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasOnlyTriggerStatement_id4WcLiIfY7mZ, getTriggerStatement_id3TCD4YMmmdp);
 

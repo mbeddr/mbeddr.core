@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class AssertStatement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d68b77b6994918L, 0x83b8857e63787800L, 0x5718179e5b1b8257L, "com.mbeddr.core.unittest.structure.AssertStatement");
 
-  public static final SMethod<String> getFailureMessageFormat_idBqp3QZZVTR = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFailureMessageFormat").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(709990107641265783L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<String> getFailureMessageFormat_idBqp3QZZVTR = new SMethodBuilder<>(String.class).name("getFailureMessageFormat").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(709990107641265783L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFailureMessageFormat_idBqp3QZZVTR);
 

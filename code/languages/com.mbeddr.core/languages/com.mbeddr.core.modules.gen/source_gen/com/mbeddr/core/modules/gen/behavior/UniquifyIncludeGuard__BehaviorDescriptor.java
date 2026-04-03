@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,7 +20,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class UniquifyIncludeGuard__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x62296a07bc3846d2L, 0x8034198c24063588L, 0x157e3481ef9ff7beL, "com.mbeddr.core.modules.gen.structure.UniquifyIncludeGuard");
 
-  public static final SMethod<String> uniquifyIncludeGuard_id1lYd87JBZv6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("uniquifyIncludeGuard").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1548733054537693126L).languageId(0x8034198c24063588L, 0x62296a07bc3846d2L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> uniquifyIncludeGuard_id1lYd87JBZv6 = new SMethodBuilder<>(String.class).name("uniquifyIncludeGuard").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1548733054537693126L).languageId(0x8034198c24063588L, 0x62296a07bc3846d2L).build2(SMethodBuilder.createJavaParameter(String.class, "name"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniquifyIncludeGuard_id1lYd87JBZv6);
 

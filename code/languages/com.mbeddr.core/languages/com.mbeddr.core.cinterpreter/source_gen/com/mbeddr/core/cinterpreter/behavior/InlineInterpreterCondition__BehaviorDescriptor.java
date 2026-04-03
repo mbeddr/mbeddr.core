@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.mpsutil.interpreter.rt.IConditionalInterpreter;
 import java.util.List;
@@ -28,9 +27,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class InlineInterpreterCondition__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x390de4af0c8d4716L, 0x8dec3d05ca751b28L, 0x265841253785f44bL, "com.mbeddr.core.cinterpreter.structure.InlineInterpreterCondition");
 
-  public static final SMethod<Boolean> getExpected_id2pogikRx4O_ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.class)).name("getExpected").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2763029999492812069L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
-  public static final SMethod<IConditionalInterpreter> getInterpreter_id2pogikRx4OH = new SMethodBuilder<IConditionalInterpreter>(new SJavaCompoundTypeImpl(IConditionalInterpreter.class)).name("getInterpreter").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2763029999492812077L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
-  public static final SMethod<String> getNodeRendering_id2pogikRx4OD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getNodeRendering").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2763029999492812073L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
+  public static final SMethod<Boolean> getExpected_id2pogikRx4O_ = new SMethodBuilder<>(Boolean.class).name("getExpected").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2763029999492812069L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
+  public static final SMethod<IConditionalInterpreter> getInterpreter_id2pogikRx4OH = new SMethodBuilder<>(IConditionalInterpreter.class).name("getInterpreter").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2763029999492812077L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
+  public static final SMethod<String> getNodeRendering_id2pogikRx4OD = new SMethodBuilder<>(String.class).name("getNodeRendering").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2763029999492812073L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpected_id2pogikRx4O_, getInterpreter_id2pogikRx4OH, getNodeRendering_id2pogikRx4OD);
 
