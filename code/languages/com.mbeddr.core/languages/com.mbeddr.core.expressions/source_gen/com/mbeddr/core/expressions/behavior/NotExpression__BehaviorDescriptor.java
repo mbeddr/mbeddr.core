@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -21,11 +20,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class NotExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x352a4cc97cbac907L, "com.mbeddr.core.expressions.structure.NotExpression");
 
-  public static final SMethod<Boolean> isStaticallyEvaluatable_id3ilck8Kr3zN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isStaticallyEvaluatable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3788988821852141811L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Object> evaluateStatically_id6OxpEKG0KPv = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("evaluateStatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7863679314024402271L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getSyntacticallyRightSideExpression_id6mzZsELnTMK = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getSyntacticallyRightSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035612848L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Void> setSyntacticallyRightSideExpression_id6mzZsELnSmP = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setSyntacticallyRightSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035606965L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isStaticallyEvaluatable_id3ilck8Kr3zN = new SMethodBuilder<>(Boolean.TYPE).name("isStaticallyEvaluatable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3788988821852141811L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Object> evaluateStatically_id6OxpEKG0KPv = new SMethodBuilder<>(Object.class).name("evaluateStatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7863679314024402271L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getSyntacticallyRightSideExpression_id6mzZsELnTMK = new SMethodBuilder<>(SNode.class).name("getSyntacticallyRightSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035612848L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Void> setSyntacticallyRightSideExpression_id6mzZsELnSmP = new SMethodBuilder<>(Void.TYPE).name("setSyntacticallyRightSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035606965L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expression"));
+  public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<>(Integer.TYPE).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isStaticallyEvaluatable_id3ilck8Kr3zN, evaluateStatically_id6OxpEKG0KPv, getSyntacticallyRightSideExpression_id6mzZsELnTMK, setSyntacticallyRightSideExpression_id6mzZsELnSmP, getPriolevel_id5HxjapwgqKu);
 

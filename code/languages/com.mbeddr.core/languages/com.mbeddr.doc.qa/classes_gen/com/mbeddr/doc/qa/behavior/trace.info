@@ -19,247 +19,247 @@
   </root>
   <root nodeRef="r:6d98dd29-662a-4975-b0ac-2c0fcb27a380(com.mbeddr.doc.qa.behavior)/97836352114792197">
     <file name="ConceptsDocumentationAssessment__BehaviorDescriptor.java">
-      <node id="97836352114792197" at="33,0,34,0" concept="8" trace="CONCEPT" />
-      <node id="97836352114792197" at="35,0,36,0" concept="8" trace="runQuery_id4WjNWxKJWaq" />
-      <node id="97836352114792197" at="37,0,38,0" concept="2" trace="BH_METHODS" />
-      <node id="97836352114776525" at="40,106,41,139" concept="5" />
-      <node id="97836352114776533" at="41,139,42,73" concept="5" />
-      <node id="97836352114776853" at="42,73,43,0" concept="7" />
-      <node id="97836352114782735" at="43,0,44,292" concept="5" />
-      <node id="97836352114835794" at="44,292,45,225" concept="5" />
-      <node id="97836352114849575" at="45,225,46,140" concept="5" />
-      <node id="97836352114867707" at="46,140,47,0" concept="7" />
-      <node id="97836352114880463" at="48,67,49,207" concept="5" />
-      <node id="97836352114884912" at="49,207,50,61" concept="1" />
-      <node id="97836352114898369" at="50,61,51,17" concept="6" />
-      <node id="97836352114792197" at="60,114,61,49" concept="5" />
-      <node id="97836352114792197" at="62,26,63,56" concept="11" />
-      <node id="97836352114792197" at="66,13,67,89" concept="6" />
-      <node id="97836352114792197" at="68,14,69,58" concept="11" />
-      <node id="97836352114792197" at="74,128,75,49" concept="5" />
-      <node id="97836352114792197" at="76,26,77,56" concept="11" />
-      <node id="97836352114792197" at="80,14,81,58" concept="11" />
-      <node id="97836352114792197" at="87,48,88,22" concept="6" />
-      <node id="97836352114792197" at="93,40,94,19" concept="6" />
-      <node id="97836352114792197" at="98,0,99,0" concept="8" trace="langs$Muxo" />
-      <node id="97836352114792197" at="99,0,100,0" concept="8" trace="scope$MuKp" />
-      <node id="97836352114792197" at="100,0,101,0" concept="8" trace="codeptr$bVZj" />
-      <node id="97836352114792197" at="101,0,102,0" concept="8" trace="concept$Q2W7" />
-      <node id="97836352114792197" at="105,0,106,0" concept="8" trace="ModelContentAsTextParagraph$Hs" />
-      <node id="97836352114792197" at="55,0,57,0" concept="0" trace="ConceptsDocumentationAssessment__BehaviorDescriptor#()V" />
-      <node id="97836352114792197" at="61,49,64,5" concept="3" />
-      <node id="97836352114792197" at="75,49,78,5" concept="3" />
-      <node id="97836352114792197" at="78,5,82,5" concept="10" />
-      <node id="97836352114871560" at="47,0,52,16" concept="6" />
-      <node id="97836352114792197" at="85,0,90,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
-      <node id="97836352114792197" at="91,0,96,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="97836352114792197" at="64,5,70,5" concept="10" />
-      <node id="97836352114792197" at="73,0,84,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="97836352114792197" at="59,0,72,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="97836352114792197" at="40,0,54,0" concept="9" trace="runQuery_id4WjNWxKJWaq#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/project/Project;)Ljava/util/List;" />
-      <scope id="97836352114792197" at="55,69,55,69" />
-      <scope id="97836352114792197" at="62,26,63,56" />
-      <scope id="97836352114792197" at="66,13,67,89" />
-      <scope id="97836352114792197" at="68,14,69,58" />
-      <scope id="97836352114792197" at="76,26,77,56" />
-      <scope id="97836352114792197" at="80,14,81,58" />
-      <scope id="97836352114792197" at="87,48,88,22" />
-      <scope id="97836352114792197" at="93,40,94,19" />
-      <scope id="97836352114792197" at="55,0,57,0" />
-      <scope id="97836352114878604" at="48,67,51,17">
+      <node id="97836352114792197" at="32,0,33,0" concept="8" trace="CONCEPT" />
+      <node id="97836352114792197" at="34,0,35,0" concept="8" trace="runQuery_id4WjNWxKJWaq" />
+      <node id="97836352114792197" at="36,0,37,0" concept="2" trace="BH_METHODS" />
+      <node id="97836352114776525" at="39,106,40,139" concept="5" />
+      <node id="97836352114776533" at="40,139,41,73" concept="5" />
+      <node id="97836352114776853" at="41,73,42,0" concept="7" />
+      <node id="97836352114782735" at="42,0,43,292" concept="5" />
+      <node id="97836352114835794" at="43,292,44,225" concept="5" />
+      <node id="97836352114849575" at="44,225,45,140" concept="5" />
+      <node id="97836352114867707" at="45,140,46,0" concept="7" />
+      <node id="97836352114880463" at="47,67,48,207" concept="5" />
+      <node id="97836352114884912" at="48,207,49,61" concept="1" />
+      <node id="97836352114898369" at="49,61,50,17" concept="6" />
+      <node id="97836352114792197" at="59,114,60,49" concept="5" />
+      <node id="97836352114792197" at="61,26,62,56" concept="11" />
+      <node id="97836352114792197" at="65,13,66,89" concept="6" />
+      <node id="97836352114792197" at="67,14,68,58" concept="11" />
+      <node id="97836352114792197" at="73,128,74,49" concept="5" />
+      <node id="97836352114792197" at="75,26,76,56" concept="11" />
+      <node id="97836352114792197" at="79,14,80,58" concept="11" />
+      <node id="97836352114792197" at="86,48,87,22" concept="6" />
+      <node id="97836352114792197" at="92,40,93,19" concept="6" />
+      <node id="97836352114792197" at="97,0,98,0" concept="8" trace="langs$Muxo" />
+      <node id="97836352114792197" at="98,0,99,0" concept="8" trace="scope$MuKp" />
+      <node id="97836352114792197" at="99,0,100,0" concept="8" trace="codeptr$bVZj" />
+      <node id="97836352114792197" at="100,0,101,0" concept="8" trace="concept$Q2W7" />
+      <node id="97836352114792197" at="104,0,105,0" concept="8" trace="ModelContentAsTextParagraph$Hs" />
+      <node id="97836352114792197" at="54,0,56,0" concept="0" trace="ConceptsDocumentationAssessment__BehaviorDescriptor#()V" />
+      <node id="97836352114792197" at="60,49,63,5" concept="3" />
+      <node id="97836352114792197" at="74,49,77,5" concept="3" />
+      <node id="97836352114792197" at="77,5,81,5" concept="10" />
+      <node id="97836352114871560" at="46,0,51,16" concept="6" />
+      <node id="97836352114792197" at="84,0,89,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="97836352114792197" at="90,0,95,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="97836352114792197" at="63,5,69,5" concept="10" />
+      <node id="97836352114792197" at="72,0,83,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="97836352114792197" at="58,0,71,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="97836352114792197" at="39,0,53,0" concept="9" trace="runQuery_id4WjNWxKJWaq#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/project/Project;)Ljava/util/List;" />
+      <scope id="97836352114792197" at="54,69,54,69" />
+      <scope id="97836352114792197" at="61,26,62,56" />
+      <scope id="97836352114792197" at="65,13,66,89" />
+      <scope id="97836352114792197" at="67,14,68,58" />
+      <scope id="97836352114792197" at="75,26,76,56" />
+      <scope id="97836352114792197" at="79,14,80,58" />
+      <scope id="97836352114792197" at="86,48,87,22" />
+      <scope id="97836352114792197" at="92,40,93,19" />
+      <scope id="97836352114792197" at="54,0,56,0" />
+      <scope id="97836352114878604" at="47,67,50,17">
         <var name="res" id="97836352114880466" />
       </scope>
-      <scope id="97836352114792197" at="85,0,90,0" />
-      <scope id="97836352114792197" at="91,0,96,0" />
-      <scope id="97836352114792197" at="74,128,82,5">
+      <scope id="97836352114792197" at="84,0,89,0" />
+      <scope id="97836352114792197" at="90,0,95,0" />
+      <scope id="97836352114792197" at="73,128,81,5">
         <var name="methodIndex" id="97836352114792197" />
       </scope>
-      <scope id="97836352114792197" at="60,114,70,5">
+      <scope id="97836352114792197" at="59,114,69,5">
         <var name="methodIndex" id="97836352114792197" />
       </scope>
-      <scope id="97836352114792197" at="73,0,84,0">
+      <scope id="97836352114792197" at="72,0,83,0">
         <var name="concept" id="97836352114792197" />
         <var name="method" id="97836352114792197" />
         <var name="parameters" id="97836352114792197" />
       </scope>
-      <scope id="97836352114792255" at="40,106,52,16">
+      <scope id="97836352114792255" at="39,106,51,16">
         <var name="allConcepts" id="97836352114776534" />
         <var name="allLangs" id="97836352114776526" />
         <var name="notReferencedCon" id="97836352114849576" />
         <var name="pointedCode" id="97836352114835795" />
         <var name="referencedCode" id="97836352114782736" />
       </scope>
-      <scope id="97836352114792197" at="59,0,72,0">
+      <scope id="97836352114792197" at="58,0,71,0">
         <var name="method" id="97836352114792197" />
         <var name="node" id="97836352114792197" />
         <var name="parameters" id="97836352114792197" />
       </scope>
-      <scope id="97836352114792197" at="40,0,54,0">
+      <scope id="97836352114792197" at="39,0,53,0">
         <var name="__thisNode__" id="97836352114792197" />
         <var name="mpsProject" id="2320231815876227919" />
       </scope>
-      <unit id="97836352114792197" at="104,0,107,0" name="com.mbeddr.doc.qa.behavior.ConceptsDocumentationAssessment__BehaviorDescriptor$CONCEPTS" />
-      <unit id="97836352114792197" at="97,0,103,0" name="com.mbeddr.doc.qa.behavior.ConceptsDocumentationAssessment__BehaviorDescriptor$LINKS" />
-      <unit id="97836352114792197" at="32,0,108,0" name="com.mbeddr.doc.qa.behavior.ConceptsDocumentationAssessment__BehaviorDescriptor" />
+      <unit id="97836352114792197" at="103,0,106,0" name="com.mbeddr.doc.qa.behavior.ConceptsDocumentationAssessment__BehaviorDescriptor$CONCEPTS" />
+      <unit id="97836352114792197" at="96,0,102,0" name="com.mbeddr.doc.qa.behavior.ConceptsDocumentationAssessment__BehaviorDescriptor$LINKS" />
+      <unit id="97836352114792197" at="31,0,107,0" name="com.mbeddr.doc.qa.behavior.ConceptsDocumentationAssessment__BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:6d98dd29-662a-4975-b0ac-2c0fcb27a380(com.mbeddr.doc.qa.behavior)/97836352114960544">
     <file name="SpecificationAssessmentResult__BehaviorDescriptor.java">
-      <node id="97836352114960544" at="24,0,25,0" concept="8" trace="CONCEPT" />
-      <node id="97836352114960544" at="26,0,27,0" concept="8" trace="uniqueIdentifier_idK292flwHwe" />
-      <node id="97836352114960544" at="27,0,28,0" concept="8" trace="updateValues_id5L$H31Kf5$y" />
-      <node id="97836352114960544" at="29,0,30,0" concept="2" trace="BH_METHODS" />
-      <node id="97836352114960659" at="32,88,33,116" concept="6" />
-      <node id="97836352114960544" at="43,114,44,49" concept="5" />
-      <node id="97836352114960544" at="45,26,46,56" concept="11" />
-      <node id="97836352114960544" at="49,13,50,66" concept="6" />
-      <node id="97836352114960544" at="51,13,52,64" concept="1" />
-      <node id="97836352114960544" at="52,64,53,20" concept="6" />
-      <node id="97836352114960544" at="54,14,55,58" concept="11" />
-      <node id="97836352114960544" at="60,128,61,49" concept="5" />
-      <node id="97836352114960544" at="62,26,63,56" concept="11" />
-      <node id="97836352114960544" at="66,14,67,58" concept="11" />
-      <node id="97836352114960544" at="73,48,74,22" concept="6" />
-      <node id="97836352114960544" at="79,40,80,19" concept="6" />
-      <node id="97836352114960544" at="84,0,85,0" concept="8" trace="elem$PVik" />
-      <node id="97836352114960544" at="88,0,89,0" concept="8" trace="name$MnvL" />
-      <node id="97836352114960544" at="35,0,37,0" concept="9" trace="updateValues_id5L$H31Kf5$y#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="97836352114960544" at="38,0,40,0" concept="0" trace="SpecificationAssessmentResult__BehaviorDescriptor#()V" />
-      <node id="97836352114960544" at="32,0,35,0" concept="9" trace="uniqueIdentifier_idK292flwHwe#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="97836352114960544" at="44,49,47,5" concept="3" />
-      <node id="97836352114960544" at="61,49,64,5" concept="3" />
-      <node id="97836352114960544" at="64,5,68,5" concept="10" />
-      <node id="97836352114960544" at="71,0,76,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
-      <node id="97836352114960544" at="77,0,82,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="97836352114960544" at="47,5,56,5" concept="10" />
-      <node id="97836352114960544" at="59,0,70,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="97836352114960544" at="42,0,58,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <scope id="97836352114960610" at="35,104,35,104" />
-      <scope id="97836352114960544" at="38,67,38,67" />
-      <scope id="97836352114960602" at="32,88,33,116" />
-      <scope id="97836352114960544" at="45,26,46,56" />
-      <scope id="97836352114960544" at="49,13,50,66" />
-      <scope id="97836352114960544" at="54,14,55,58" />
-      <scope id="97836352114960544" at="62,26,63,56" />
-      <scope id="97836352114960544" at="66,14,67,58" />
-      <scope id="97836352114960544" at="73,48,74,22" />
-      <scope id="97836352114960544" at="79,40,80,19" />
-      <scope id="97836352114960544" at="35,0,37,0">
+      <node id="97836352114960544" at="23,0,24,0" concept="8" trace="CONCEPT" />
+      <node id="97836352114960544" at="25,0,26,0" concept="8" trace="uniqueIdentifier_idK292flwHwe" />
+      <node id="97836352114960544" at="26,0,27,0" concept="8" trace="updateValues_id5L$H31Kf5$y" />
+      <node id="97836352114960544" at="28,0,29,0" concept="2" trace="BH_METHODS" />
+      <node id="97836352114960659" at="31,88,32,116" concept="6" />
+      <node id="97836352114960544" at="42,114,43,49" concept="5" />
+      <node id="97836352114960544" at="44,26,45,56" concept="11" />
+      <node id="97836352114960544" at="48,13,49,66" concept="6" />
+      <node id="97836352114960544" at="50,13,51,64" concept="1" />
+      <node id="97836352114960544" at="51,64,52,20" concept="6" />
+      <node id="97836352114960544" at="53,14,54,58" concept="11" />
+      <node id="97836352114960544" at="59,128,60,49" concept="5" />
+      <node id="97836352114960544" at="61,26,62,56" concept="11" />
+      <node id="97836352114960544" at="65,14,66,58" concept="11" />
+      <node id="97836352114960544" at="72,48,73,22" concept="6" />
+      <node id="97836352114960544" at="78,40,79,19" concept="6" />
+      <node id="97836352114960544" at="83,0,84,0" concept="8" trace="elem$PVik" />
+      <node id="97836352114960544" at="87,0,88,0" concept="8" trace="name$MnvL" />
+      <node id="97836352114960544" at="34,0,36,0" concept="9" trace="updateValues_id5L$H31Kf5$y#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="97836352114960544" at="37,0,39,0" concept="0" trace="SpecificationAssessmentResult__BehaviorDescriptor#()V" />
+      <node id="97836352114960544" at="31,0,34,0" concept="9" trace="uniqueIdentifier_idK292flwHwe#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="97836352114960544" at="43,49,46,5" concept="3" />
+      <node id="97836352114960544" at="60,49,63,5" concept="3" />
+      <node id="97836352114960544" at="63,5,67,5" concept="10" />
+      <node id="97836352114960544" at="70,0,75,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="97836352114960544" at="76,0,81,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="97836352114960544" at="46,5,55,5" concept="10" />
+      <node id="97836352114960544" at="58,0,69,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="97836352114960544" at="41,0,57,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="97836352114960610" at="34,104,34,104" />
+      <scope id="97836352114960544" at="37,67,37,67" />
+      <scope id="97836352114960602" at="31,88,32,116" />
+      <scope id="97836352114960544" at="44,26,45,56" />
+      <scope id="97836352114960544" at="48,13,49,66" />
+      <scope id="97836352114960544" at="53,14,54,58" />
+      <scope id="97836352114960544" at="61,26,62,56" />
+      <scope id="97836352114960544" at="65,14,66,58" />
+      <scope id="97836352114960544" at="72,48,73,22" />
+      <scope id="97836352114960544" at="78,40,79,19" />
+      <scope id="97836352114960544" at="34,0,36,0">
         <var name="__thisNode__" id="97836352114960544" />
         <var name="updatedResult" id="97836352114960611" />
       </scope>
-      <scope id="97836352114960544" at="38,0,40,0" />
-      <scope id="97836352114960544" at="51,13,53,20" />
-      <scope id="97836352114960544" at="32,0,35,0">
+      <scope id="97836352114960544" at="37,0,39,0" />
+      <scope id="97836352114960544" at="50,13,52,20" />
+      <scope id="97836352114960544" at="31,0,34,0">
         <var name="__thisNode__" id="97836352114960544" />
       </scope>
-      <scope id="97836352114960544" at="71,0,76,0" />
-      <scope id="97836352114960544" at="77,0,82,0" />
-      <scope id="97836352114960544" at="60,128,68,5">
+      <scope id="97836352114960544" at="70,0,75,0" />
+      <scope id="97836352114960544" at="76,0,81,0" />
+      <scope id="97836352114960544" at="59,128,67,5">
         <var name="methodIndex" id="97836352114960544" />
       </scope>
-      <scope id="97836352114960544" at="59,0,70,0">
+      <scope id="97836352114960544" at="58,0,69,0">
         <var name="concept" id="97836352114960544" />
         <var name="method" id="97836352114960544" />
         <var name="parameters" id="97836352114960544" />
       </scope>
-      <scope id="97836352114960544" at="43,114,56,5">
+      <scope id="97836352114960544" at="42,114,55,5">
         <var name="methodIndex" id="97836352114960544" />
       </scope>
-      <scope id="97836352114960544" at="42,0,58,0">
+      <scope id="97836352114960544" at="41,0,57,0">
         <var name="method" id="97836352114960544" />
         <var name="node" id="97836352114960544" />
         <var name="parameters" id="97836352114960544" />
       </scope>
-      <unit id="97836352114960544" at="83,0,86,0" name="com.mbeddr.doc.qa.behavior.SpecificationAssessmentResult__BehaviorDescriptor$LINKS" />
-      <unit id="97836352114960544" at="87,0,90,0" name="com.mbeddr.doc.qa.behavior.SpecificationAssessmentResult__BehaviorDescriptor$PROPS" />
-      <unit id="97836352114960544" at="23,0,91,0" name="com.mbeddr.doc.qa.behavior.SpecificationAssessmentResult__BehaviorDescriptor" />
+      <unit id="97836352114960544" at="82,0,85,0" name="com.mbeddr.doc.qa.behavior.SpecificationAssessmentResult__BehaviorDescriptor$LINKS" />
+      <unit id="97836352114960544" at="86,0,89,0" name="com.mbeddr.doc.qa.behavior.SpecificationAssessmentResult__BehaviorDescriptor$PROPS" />
+      <unit id="97836352114960544" at="22,0,90,0" name="com.mbeddr.doc.qa.behavior.SpecificationAssessmentResult__BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:6d98dd29-662a-4975-b0ac-2c0fcb27a380(com.mbeddr.doc.qa.behavior)/97836352114994262">
     <file name="RulesDocumentationAssessment__BehaviorDescriptor.java">
-      <node id="97836352114994262" at="33,0,34,0" concept="8" trace="CONCEPT" />
-      <node id="97836352114994262" at="35,0,36,0" concept="8" trace="runQuery_id4WjNWxKJWaq" />
-      <node id="97836352114994262" at="37,0,38,0" concept="2" trace="BH_METHODS" />
-      <node id="97836352114996244" at="40,106,41,139" concept="5" />
-      <node id="97836352114996252" at="41,139,42,59" concept="5" />
-      <node id="97836352114996257" at="42,59,43,0" concept="7" />
-      <node id="97836352114996258" at="43,0,44,292" concept="5" />
-      <node id="97836352114996271" at="44,292,45,225" concept="5" />
-      <node id="97836352114996288" at="45,225,46,139" concept="5" />
-      <node id="97836352114996305" at="46,139,47,0" concept="7" />
-      <node id="97836352114996313" at="48,69,49,205" concept="5" />
-      <node id="97836352114996319" at="49,205,50,58" concept="1" />
-      <node id="97836352114996325" at="50,58,51,17" concept="6" />
-      <node id="97836352114994262" at="60,114,61,49" concept="5" />
-      <node id="97836352114994262" at="62,26,63,56" concept="11" />
-      <node id="97836352114994262" at="66,13,67,89" concept="6" />
-      <node id="97836352114994262" at="68,14,69,58" concept="11" />
-      <node id="97836352114994262" at="74,128,75,49" concept="5" />
-      <node id="97836352114994262" at="76,26,77,56" concept="11" />
-      <node id="97836352114994262" at="80,14,81,58" concept="11" />
-      <node id="97836352114994262" at="87,48,88,22" concept="6" />
-      <node id="97836352114994262" at="93,40,94,19" concept="6" />
-      <node id="97836352114994262" at="98,0,99,0" concept="8" trace="langs$Muxo" />
-      <node id="97836352114994262" at="99,0,100,0" concept="8" trace="scope$MuKp" />
-      <node id="97836352114994262" at="100,0,101,0" concept="8" trace="codeptr$bVZj" />
-      <node id="97836352114994262" at="101,0,102,0" concept="8" trace="elem$PVik" />
-      <node id="97836352114994262" at="105,0,106,0" concept="8" trace="ModelContentAsTextParagraph$Hs" />
-      <node id="97836352114994262" at="55,0,57,0" concept="0" trace="RulesDocumentationAssessment__BehaviorDescriptor#()V" />
-      <node id="97836352114994262" at="61,49,64,5" concept="3" />
-      <node id="97836352114994262" at="75,49,78,5" concept="3" />
-      <node id="97836352114994262" at="78,5,82,5" concept="10" />
-      <node id="97836352114996306" at="47,0,52,16" concept="6" />
-      <node id="97836352114994262" at="85,0,90,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
-      <node id="97836352114994262" at="91,0,96,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="97836352114994262" at="64,5,70,5" concept="10" />
-      <node id="97836352114994262" at="73,0,84,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="97836352114994262" at="59,0,72,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="97836352114994262" at="40,0,54,0" concept="9" trace="runQuery_id4WjNWxKJWaq#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/project/Project;)Ljava/util/List;" />
-      <scope id="97836352114994262" at="55,66,55,66" />
-      <scope id="97836352114994262" at="62,26,63,56" />
-      <scope id="97836352114994262" at="66,13,67,89" />
-      <scope id="97836352114994262" at="68,14,69,58" />
-      <scope id="97836352114994262" at="76,26,77,56" />
-      <scope id="97836352114994262" at="80,14,81,58" />
-      <scope id="97836352114994262" at="87,48,88,22" />
-      <scope id="97836352114994262" at="93,40,94,19" />
-      <scope id="97836352114994262" at="55,0,57,0" />
-      <scope id="97836352114996312" at="48,69,51,17">
+      <node id="97836352114994262" at="32,0,33,0" concept="8" trace="CONCEPT" />
+      <node id="97836352114994262" at="34,0,35,0" concept="8" trace="runQuery_id4WjNWxKJWaq" />
+      <node id="97836352114994262" at="36,0,37,0" concept="2" trace="BH_METHODS" />
+      <node id="97836352114996244" at="39,106,40,139" concept="5" />
+      <node id="97836352114996252" at="40,139,41,59" concept="5" />
+      <node id="97836352114996257" at="41,59,42,0" concept="7" />
+      <node id="97836352114996258" at="42,0,43,292" concept="5" />
+      <node id="97836352114996271" at="43,292,44,225" concept="5" />
+      <node id="97836352114996288" at="44,225,45,139" concept="5" />
+      <node id="97836352114996305" at="45,139,46,0" concept="7" />
+      <node id="97836352114996313" at="47,69,48,205" concept="5" />
+      <node id="97836352114996319" at="48,205,49,58" concept="1" />
+      <node id="97836352114996325" at="49,58,50,17" concept="6" />
+      <node id="97836352114994262" at="59,114,60,49" concept="5" />
+      <node id="97836352114994262" at="61,26,62,56" concept="11" />
+      <node id="97836352114994262" at="65,13,66,89" concept="6" />
+      <node id="97836352114994262" at="67,14,68,58" concept="11" />
+      <node id="97836352114994262" at="73,128,74,49" concept="5" />
+      <node id="97836352114994262" at="75,26,76,56" concept="11" />
+      <node id="97836352114994262" at="79,14,80,58" concept="11" />
+      <node id="97836352114994262" at="86,48,87,22" concept="6" />
+      <node id="97836352114994262" at="92,40,93,19" concept="6" />
+      <node id="97836352114994262" at="97,0,98,0" concept="8" trace="langs$Muxo" />
+      <node id="97836352114994262" at="98,0,99,0" concept="8" trace="scope$MuKp" />
+      <node id="97836352114994262" at="99,0,100,0" concept="8" trace="codeptr$bVZj" />
+      <node id="97836352114994262" at="100,0,101,0" concept="8" trace="elem$PVik" />
+      <node id="97836352114994262" at="104,0,105,0" concept="8" trace="ModelContentAsTextParagraph$Hs" />
+      <node id="97836352114994262" at="54,0,56,0" concept="0" trace="RulesDocumentationAssessment__BehaviorDescriptor#()V" />
+      <node id="97836352114994262" at="60,49,63,5" concept="3" />
+      <node id="97836352114994262" at="74,49,77,5" concept="3" />
+      <node id="97836352114994262" at="77,5,81,5" concept="10" />
+      <node id="97836352114996306" at="46,0,51,16" concept="6" />
+      <node id="97836352114994262" at="84,0,89,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="97836352114994262" at="90,0,95,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="97836352114994262" at="63,5,69,5" concept="10" />
+      <node id="97836352114994262" at="72,0,83,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="97836352114994262" at="58,0,71,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="97836352114994262" at="39,0,53,0" concept="9" trace="runQuery_id4WjNWxKJWaq#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/project/Project;)Ljava/util/List;" />
+      <scope id="97836352114994262" at="54,66,54,66" />
+      <scope id="97836352114994262" at="61,26,62,56" />
+      <scope id="97836352114994262" at="65,13,66,89" />
+      <scope id="97836352114994262" at="67,14,68,58" />
+      <scope id="97836352114994262" at="75,26,76,56" />
+      <scope id="97836352114994262" at="79,14,80,58" />
+      <scope id="97836352114994262" at="86,48,87,22" />
+      <scope id="97836352114994262" at="92,40,93,19" />
+      <scope id="97836352114994262" at="54,0,56,0" />
+      <scope id="97836352114996312" at="47,69,50,17">
         <var name="res" id="97836352114996314" />
       </scope>
-      <scope id="97836352114994262" at="85,0,90,0" />
-      <scope id="97836352114994262" at="91,0,96,0" />
-      <scope id="97836352114994262" at="74,128,82,5">
+      <scope id="97836352114994262" at="84,0,89,0" />
+      <scope id="97836352114994262" at="90,0,95,0" />
+      <scope id="97836352114994262" at="73,128,81,5">
         <var name="methodIndex" id="97836352114994262" />
       </scope>
-      <scope id="97836352114994262" at="60,114,70,5">
+      <scope id="97836352114994262" at="59,114,69,5">
         <var name="methodIndex" id="97836352114994262" />
       </scope>
-      <scope id="97836352114994262" at="73,0,84,0">
+      <scope id="97836352114994262" at="72,0,83,0">
         <var name="concept" id="97836352114994262" />
         <var name="method" id="97836352114994262" />
         <var name="parameters" id="97836352114994262" />
       </scope>
-      <scope id="97836352114996243" at="40,106,52,16">
+      <scope id="97836352114996243" at="39,106,51,16">
         <var name="allLangs" id="97836352114996245" />
         <var name="allRules" id="97836352114996253" />
         <var name="notReferencedRules" id="97836352114996289" />
         <var name="pointedCode" id="97836352114996272" />
         <var name="referencedCode" id="97836352114996259" />
       </scope>
-      <scope id="97836352114994262" at="59,0,72,0">
+      <scope id="97836352114994262" at="58,0,71,0">
         <var name="method" id="97836352114994262" />
         <var name="node" id="97836352114994262" />
         <var name="parameters" id="97836352114994262" />
       </scope>
-      <scope id="97836352114994262" at="40,0,54,0">
+      <scope id="97836352114994262" at="39,0,53,0">
         <var name="__thisNode__" id="97836352114994262" />
         <var name="mpsProject" id="2320231815876231548" />
       </scope>
-      <unit id="97836352114994262" at="104,0,107,0" name="com.mbeddr.doc.qa.behavior.RulesDocumentationAssessment__BehaviorDescriptor$CONCEPTS" />
-      <unit id="97836352114994262" at="97,0,103,0" name="com.mbeddr.doc.qa.behavior.RulesDocumentationAssessment__BehaviorDescriptor$LINKS" />
-      <unit id="97836352114994262" at="32,0,108,0" name="com.mbeddr.doc.qa.behavior.RulesDocumentationAssessment__BehaviorDescriptor" />
+      <unit id="97836352114994262" at="103,0,106,0" name="com.mbeddr.doc.qa.behavior.RulesDocumentationAssessment__BehaviorDescriptor$CONCEPTS" />
+      <unit id="97836352114994262" at="96,0,102,0" name="com.mbeddr.doc.qa.behavior.RulesDocumentationAssessment__BehaviorDescriptor$LINKS" />
+      <unit id="97836352114994262" at="31,0,107,0" name="com.mbeddr.doc.qa.behavior.RulesDocumentationAssessment__BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

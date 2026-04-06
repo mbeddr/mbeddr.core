@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,8 +21,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IStructuredInitExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x391df9e40e14d64cL, "com.mbeddr.core.statements.structure.IStructuredInitExpression");
 
-  public static final SMethod<SNode> createAssignment_id1blaTcuBMQE = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createAssignment").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1357038773596007850L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> appendAssignments_id1blaTcuBMLx = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("appendAssignments").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1357038773596007521L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> createAssignment_id1blaTcuBMQE = new SMethodBuilder<>(SNode.class).name("createAssignment").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1357038773596007850L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "left"), SMethodBuilder.createJavaParameter(SNode.class, "right"));
+  public static final SMethod<Void> appendAssignments_id1blaTcuBMLx = new SMethodBuilder<>(Void.TYPE).name("appendAssignments").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1357038773596007521L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "container"), SMethodBuilder.createJavaParameter(SNode.class, "context"), SMethodBuilder.createJavaParameter(SNode.class, "contextType"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createAssignment_id1blaTcuBMQE, appendAssignments_id1blaTcuBMLx);
 

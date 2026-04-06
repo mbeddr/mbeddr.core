@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -23,9 +22,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class TestCaseRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d68b77b6994918L, 0x83b8857e63787800L, 0x4eeaa4ca8222cf79L, "com.mbeddr.core.unittest.structure.TestCaseRef");
 
-  public static final SMethod<Void> rebindToProxy_id7jSUHHvkApb = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("rebindToProxy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856331L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> referencedModuleContent_id7jSUHHvkAph = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("referencedModuleContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856337L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<SNode> referencedTest_iddkANm6s0zG = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("referencedTest").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(239987334348540140L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<Void> rebindToProxy_id7jSUHHvkApb = new SMethodBuilder<>(Void.TYPE).name("rebindToProxy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856331L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "proxyElement"));
+  public static final SMethod<SNode> referencedModuleContent_id7jSUHHvkAph = new SMethodBuilder<>(SNode.class).name("referencedModuleContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856337L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> referencedTest_iddkANm6s0zG = new SMethodBuilder<>(SNode.class).name("referencedTest").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(239987334348540140L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(rebindToProxy_id7jSUHHvkApb, referencedModuleContent_id7jSUHHvkAph, referencedTest_iddkANm6s0zG);
 

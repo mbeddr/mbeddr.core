@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,7 +20,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class VarWord__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf3ed62ca349040d0L, 0x890b9b3133cc2eadL, 0x2985e9af71220fd6L, "com.mbeddr.cc.requirements.c.structure.VarWord");
 
-  public static final SMethod<String> toTextString_id3Q5enzfMT4t = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("toTextString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4433012599261204765L).languageId(0xa676c7604efe3504L, 0x92d2ea165a424fdfL).build2();
+  public static final SMethod<String> toTextString_id3Q5enzfMT4t = new SMethodBuilder<>(String.class).name("toTextString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4433012599261204765L).languageId(0xa676c7604efe3504L, 0x92d2ea165a424fdfL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(toTextString_id3Q5enzfMT4t);
 

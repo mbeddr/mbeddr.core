@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,7 +21,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class PreferencePageDescription__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc3bfea767bba4f0eL, 0xb5a2ff4e7a8d7cf1L, 0x5ade7aff9a502a12L, "com.mbeddr.mpsutil.spreferences.structure.PreferencePageDescription");
 
-  public static final SMethod<String> getId_id3dlzMguGJhR = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3699020054251369591L).languageId(0xb5a2ff4e7a8d7cf1L, 0xc3bfea767bba4f0eL).build2();
+  public static final SMethod<String> getId_id3dlzMguGJhR = new SMethodBuilder<>(String.class).name("getId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3699020054251369591L).languageId(0xb5a2ff4e7a8d7cf1L, 0xc3bfea767bba4f0eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getId_id3dlzMguGJhR);
 

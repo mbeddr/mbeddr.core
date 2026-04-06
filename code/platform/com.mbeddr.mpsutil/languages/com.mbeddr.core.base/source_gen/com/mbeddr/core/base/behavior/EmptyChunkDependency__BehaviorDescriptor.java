@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class EmptyChunkDependency__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x5f4e93e337a4d395L, "com.mbeddr.core.base.structure.EmptyChunkDependency");
 
-  public static final SMethod<SNode> chunk_id6clJcrJZN1z = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("chunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881814627L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> isReexported_id6clJcrKt_a0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isReexported").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346889622144L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> chunk_id6clJcrJZN1z = new SMethodBuilder<>(SNode.class).name("chunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881814627L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isReexported_id6clJcrKt_a0 = new SMethodBuilder<>(Boolean.TYPE).name("isReexported").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346889622144L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(chunk_id6clJcrJZN1z, isReexported_id6clJcrKt_a0);
 

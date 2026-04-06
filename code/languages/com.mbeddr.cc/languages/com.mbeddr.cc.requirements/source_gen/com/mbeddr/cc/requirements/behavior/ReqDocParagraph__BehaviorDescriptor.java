@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -25,7 +24,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class ReqDocParagraph__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0x5c64b430703e72e4L, "com.mbeddr.cc.requirements.structure.ReqDocParagraph");
 
-  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj);
 

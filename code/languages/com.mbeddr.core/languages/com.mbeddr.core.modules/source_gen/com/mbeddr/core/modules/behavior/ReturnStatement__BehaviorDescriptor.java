@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -25,9 +24,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ReturnStatement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x7c747300dbd94ea5L, "com.mbeddr.core.modules.structure.ReturnStatement");
 
-  public static final SMethod<Boolean> needsReturnValue_id5ak6HMA0oem = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("needsReturnValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5950410542643512214L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Boolean> isInClosure_id7ztw3UYMrFG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInClosure").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8709258261381626604L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Boolean> isInFunction_id7ztw3UYMrFT = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInFunction").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8709258261381626617L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> needsReturnValue_id5ak6HMA0oem = new SMethodBuilder<>(Boolean.TYPE).name("needsReturnValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5950410542643512214L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> isInClosure_id7ztw3UYMrFG = new SMethodBuilder<>(Boolean.TYPE).name("isInClosure").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8709258261381626604L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> isInFunction_id7ztw3UYMrFT = new SMethodBuilder<>(Boolean.TYPE).name("isInFunction").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8709258261381626617L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(needsReturnValue_id5ak6HMA0oem, isInClosure_id7ztw3UYMrFG, isInFunction_id7ztw3UYMrFT);
 

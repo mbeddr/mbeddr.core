@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -24,11 +23,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ICodeLocationAware__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x255082a0ba125ac1L, "com.mbeddr.core.modules.structure.ICodeLocationAware");
 
-  public static final SMethod<Integer> codeIndex_id2lgwE2U46vt = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("codeIndex").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2688792604368201693L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> effectiveCodeLocation_id2lgwE2U46vI = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("effectiveCodeLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2688792604368201710L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> effectiveCodeLocationIDOnly_idIrwlmWzGkj = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("effectiveCodeLocationIDOnly").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(836404361043035411L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> nativeCodeLocation_id4rTlJCHVgHp = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("nativeCodeLocation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5114214484368231257L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Void> initNodeID_id4rTlJCHVgHO = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("initNodeID").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5114214484368231284L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Integer> codeIndex_id2lgwE2U46vt = new SMethodBuilder<>(Integer.TYPE).name("codeIndex").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2688792604368201693L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> effectiveCodeLocation_id2lgwE2U46vI = new SMethodBuilder<>(String.class).name("effectiveCodeLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2688792604368201710L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> effectiveCodeLocationIDOnly_idIrwlmWzGkj = new SMethodBuilder<>(String.class).name("effectiveCodeLocationIDOnly").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(836404361043035411L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> nativeCodeLocation_id4rTlJCHVgHp = new SMethodBuilder<>(String.class).name("nativeCodeLocation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5114214484368231257L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Void> initNodeID_id4rTlJCHVgHO = new SMethodBuilder<>(Void.TYPE).name("initNodeID").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5114214484368231284L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(SNode.class, "originalNode"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(codeIndex_id2lgwE2U46vt, effectiveCodeLocation_id2lgwE2U46vI, effectiveCodeLocationIDOnly_idIrwlmWzGkj, nativeCodeLocation_id4rTlJCHVgHp, initNodeID_id4rTlJCHVgHO);
 

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.scope.Scope;
 import java.util.List;
@@ -27,11 +26,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class LiteralProgramFragment__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x67506b1e43ad47feL, 0xa8e6bc7837e9e11fL, 0x364130dd8794d97bL, "com.mbeddr.mpsutil.editingGuide.structure.LiteralProgramFragment");
 
-  public static final SMethod<SNode> getFragmentRoot_id3p1cdQ7_MOb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getFragmentRoot").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3909459679555038475L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<String> getPresentationForPrefix_idPYICs0TAVo = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentationForPrefix").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(972419658557058776L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Scope> getExportedNodes_id79$zShlSHxZ = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getExportedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8242871016534235263L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
-  public static final SMethod<Scope> getScope_id52_Geb4QDV$ = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getScope").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5811245382203252452L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> getFragmentRoot_id3p1cdQ7_MOb = new SMethodBuilder<>(SNode.class).name("getFragmentRoot").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3909459679555038475L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<String> getPresentationForPrefix_idPYICs0TAVo = new SMethodBuilder<>(String.class).name("getPresentationForPrefix").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(972419658557058776L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter(String.class, "prefix"));
+  public static final SMethod<Scope> getExportedNodes_id79$zShlSHxZ = new SMethodBuilder<>(Scope.class).name("getExportedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8242871016534235263L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "targetConcept"));
+  public static final SMethod<Scope> getScope_id52_Geb4QDV$ = new SMethodBuilder<>(Scope.class).name("getScope").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5811245382203252452L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "kind"), SMethodBuilder.createJavaParameter(SNode.class, "child"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFragmentRoot_id3p1cdQ7_MOb, getPresentation_idhEwIMiw, getPresentationForPrefix_idPYICs0TAVo, getExportedNodes_id79$zShlSHxZ, getScope_id52_Geb4QDV$);
 

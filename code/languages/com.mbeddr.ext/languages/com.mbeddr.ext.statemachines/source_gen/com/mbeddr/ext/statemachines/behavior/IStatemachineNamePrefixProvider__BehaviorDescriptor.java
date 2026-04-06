@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IStatemachineNamePrefixProvider__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x555e5f8b525b4502L, "com.mbeddr.ext.statemachines.structure.IStatemachineNamePrefixProvider");
 
-  public static final SMethod<String> getPrefix_id5lunSHimOk6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrefix").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6151459193021482246L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<String> getPrefix_id5lunSHimOk6 = new SMethodBuilder<>(String.class).name("getPrefix").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6151459193021482246L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPrefix_id5lunSHimOk6);
 

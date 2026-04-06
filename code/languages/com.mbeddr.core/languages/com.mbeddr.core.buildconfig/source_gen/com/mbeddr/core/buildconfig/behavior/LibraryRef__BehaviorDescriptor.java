@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SModel;
@@ -28,11 +27,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class LibraryRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x25147963acda747eL, "com.mbeddr.core.buildconfig.structure.LibraryRef");
 
-  public static final SMethod<String> srcDir_id7fn1GcIvcZ9 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("srcDir").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8347147869722824649L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
-  public static final SMethod<String> includeDir_id1jv4Nu0bqCb = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("includeDir").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1503941929659640331L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
-  public static final SMethod<String> libDir_id1mfTBng0dAT = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("libDir").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1553713790141389241L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
-  public static final SMethod<List<String>> getVariableNames_id6xoAPBjOH1K = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("getVariableNames").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246192L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
-  public static final SMethod<String> getDefaultValue_id6xoAPBjOH2T = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246265L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> srcDir_id7fn1GcIvcZ9 = new SMethodBuilder<>(String.class).name("srcDir").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8347147869722824649L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<String> includeDir_id1jv4Nu0bqCb = new SMethodBuilder<>(String.class).name("includeDir").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1503941929659640331L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<String> libDir_id1mfTBng0dAT = new SMethodBuilder<>(String.class).name("libDir").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1553713790141389241L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<List<String>> getVariableNames_id6xoAPBjOH1K = new SMethodBuilder<>((Class<List<String>>) ((Class) Object.class)).name("getVariableNames").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246192L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<String> getDefaultValue_id6xoAPBjOH2T = new SMethodBuilder<>(String.class).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246265L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter(SModel.class, "model"), SMethodBuilder.createJavaParameter(String.class, "variableName"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(srcDir_id7fn1GcIvcZ9, includeDir_id1jv4Nu0bqCb, libDir_id1mfTBng0dAT, getVariableNames_id6xoAPBjOH1K, getDefaultValue_id6xoAPBjOH2T);
 

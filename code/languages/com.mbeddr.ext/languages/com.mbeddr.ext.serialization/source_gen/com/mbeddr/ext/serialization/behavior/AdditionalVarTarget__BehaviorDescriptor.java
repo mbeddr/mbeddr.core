@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class AdditionalVarTarget__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xbb0ad88b63cd45fdL, 0xae278662d274cf3cL, 0x7d59a5ed86d7a163L, "com.mbeddr.ext.serialization.structure.AdditionalVarTarget");
 
-  public static final SMethod<Boolean> forceDot_id3p0OY6V_Omm = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("forceDot").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3909357443025946006L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> isLValue_id5jCi3tJryBA = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6118219496712710630L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> forceDot_id3p0OY6V_Omm = new SMethodBuilder<>(Boolean.TYPE).name("forceDot").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3909357443025946006L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isLValue_id5jCi3tJryBA = new SMethodBuilder<>(Boolean.TYPE).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6118219496712710630L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(forceDot_id3p0OY6V_Omm, isLValue_id5jCi3tJryBA);
 

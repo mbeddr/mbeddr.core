@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,7 +20,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class TaskReference__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x3695d949508b8ea9L, "com.mbeddr.ext.concurrency.structure.TaskReference");
 
-  public static final SMethod<SNode> getTask_id3qlQk_gySU3 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3933288758485159555L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<SNode> getTask_id3qlQk_gySU3 = new SMethodBuilder<>(SNode.class).name("getTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3933288758485159555L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTask_id3qlQk_gySU3);
 

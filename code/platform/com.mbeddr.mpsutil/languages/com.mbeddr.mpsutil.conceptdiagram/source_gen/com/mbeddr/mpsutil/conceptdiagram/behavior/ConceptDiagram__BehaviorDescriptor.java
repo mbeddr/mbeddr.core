@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.module.SRepository;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -40,11 +39,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ConceptDiagram__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x9d1cb9f82ae04895L, 0x91c8ff32e8afc27dL, 0x2490cbe4d990691aL, "com.mbeddr.mpsutil.conceptdiagram.structure.ConceptDiagram");
 
-  public static final SMethod<Void> populate_id1FnP66YTJdb = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("populate").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1934248081258640203L).languageId(0x91c8ff32e8afc27dL, 0x9d1cb9f82ae04895L).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, ""), SMethodBuilder.createJavaParameter(SRepository.class, ""));
-  public static final SMethod<SNode> getImplicitlyGeneratedDiagram_id1FnP670rBlZ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getImplicitlyGeneratedDiagram").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1934248081284298111L).languageId(0x91c8ff32e8afc27dL, 0x9d1cb9f82ae04895L).build2();
-  public static final SMethod<SNode> getDiagram_id1FnP670UhSa = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDiagram").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1934248081292336650L).languageId(0x91c8ff32e8afc27dL, 0x9d1cb9f82ae04895L).build2();
-  public static final SMethod<List<SNode>> getContents_id1FnP670tLPB = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getContents").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1934248081284865383L).languageId(0x91c8ff32e8afc27dL, 0x9d1cb9f82ae04895L).build2();
-  public static final SMethod<Void> clear_id1FnP66Z89fw = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("clear").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1934248081262416864L).languageId(0x91c8ff32e8afc27dL, 0x9d1cb9f82ae04895L).build2();
+  public static final SMethod<Void> populate_id1FnP66YTJdb = new SMethodBuilder<>(Void.TYPE).name("populate").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1934248081258640203L).languageId(0x91c8ff32e8afc27dL, 0x9d1cb9f82ae04895L).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, "ignoreDeprecatedConcepts"), SMethodBuilder.createJavaParameter(SRepository.class, "repository"));
+  public static final SMethod<SNode> getImplicitlyGeneratedDiagram_id1FnP670rBlZ = new SMethodBuilder<>(SNode.class).name("getImplicitlyGeneratedDiagram").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1934248081284298111L).languageId(0x91c8ff32e8afc27dL, 0x9d1cb9f82ae04895L).build2();
+  public static final SMethod<SNode> getDiagram_id1FnP670UhSa = new SMethodBuilder<>(SNode.class).name("getDiagram").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1934248081292336650L).languageId(0x91c8ff32e8afc27dL, 0x9d1cb9f82ae04895L).build2();
+  public static final SMethod<List<SNode>> getContents_id1FnP670tLPB = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getContents").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1934248081284865383L).languageId(0x91c8ff32e8afc27dL, 0x9d1cb9f82ae04895L).build2();
+  public static final SMethod<Void> clear_id1FnP66Z89fw = new SMethodBuilder<>(Void.TYPE).name("clear").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1934248081262416864L).languageId(0x91c8ff32e8afc27dL, 0x9d1cb9f82ae04895L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(populate_id1FnP66YTJdb, getImplicitlyGeneratedDiagram_id1FnP670rBlZ, getDiagram_id1FnP670UhSa, getContents_id1FnP670tLPB, clear_id1FnP66Z89fw);
 

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class AbstractAnnotatedType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd04a6cc773e4069L, 0xb9b011884b2ff1c8L, 0x73b48a125b28a061L, "com.mbeddr.ext.units.structure.AbstractAnnotatedType");
 
-  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<>(Integer.TYPE).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUsedBytes_id61lw97FtLtJ);
 

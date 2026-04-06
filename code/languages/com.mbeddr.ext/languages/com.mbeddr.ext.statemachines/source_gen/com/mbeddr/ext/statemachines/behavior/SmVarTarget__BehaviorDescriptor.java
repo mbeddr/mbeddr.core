@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -27,9 +26,9 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class SmVarTarget__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x54e848376f19f2d5L, "com.mbeddr.ext.statemachines.structure.SmVarTarget");
 
-  public static final SMethod<SNode> getTarget_id66uzewbZgGM = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTarget").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7034214596260727602L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> isLValue_id5jCi3tJryBA = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6118219496712710630L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> isInTest_id4ZnMRYVio3$ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInTest").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5753290798452539620L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<SNode> getTarget_id66uzewbZgGM = new SMethodBuilder<>(SNode.class).name("getTarget").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7034214596260727602L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isLValue_id5jCi3tJryBA = new SMethodBuilder<>(Boolean.TYPE).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6118219496712710630L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isInTest_id4ZnMRYVio3$ = new SMethodBuilder<>(Boolean.TYPE).name("isInTest").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5753290798452539620L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTarget_id66uzewbZgGM, isLValue_id5jCi3tJryBA, isInTest_id4ZnMRYVio3$);
 

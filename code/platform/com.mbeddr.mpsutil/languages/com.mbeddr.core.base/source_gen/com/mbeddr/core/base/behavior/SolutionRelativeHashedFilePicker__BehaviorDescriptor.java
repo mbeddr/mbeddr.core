@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,13 +23,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class SolutionRelativeHashedFilePicker__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x1bcc2d47a2accd32L, "com.mbeddr.core.base.structure.SolutionRelativeHashedFilePicker");
 
-  public static final SMethod<String> getExternalDescription_idGKLijS$FKh = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getExternalDescription").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095879179281L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> getKind_idGKLijS$FKl = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getKind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095879179285L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> getFullExternalResourceName_id1JcbkuyZZUz = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFullExternalResourceName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2003025719973641891L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> getRelevantExternalContentForHashing_idGKLijS$FKd = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getRelevantExternalContentForHashing").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095879179277L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> getStoredDescription_idGKLijSNXOH = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getStoredDescription").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095883185453L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> isValidID_idGKLijS$FK9 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isValidID").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095879179273L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> updateStoredDescription_idGKLijSVdMs = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateStoredDescription").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095885085852L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> getExternalDescription_idGKLijS$FKh = new SMethodBuilder<>(String.class).name("getExternalDescription").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095879179281L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "extID"));
+  public static final SMethod<String> getKind_idGKLijS$FKl = new SMethodBuilder<>(String.class).name("getKind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095879179285L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getFullExternalResourceName_id1JcbkuyZZUz = new SMethodBuilder<>(String.class).name("getFullExternalResourceName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2003025719973641891L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getRelevantExternalContentForHashing_idGKLijS$FKd = new SMethodBuilder<>(String.class).name("getRelevantExternalContentForHashing").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095879179277L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "extID"));
+  public static final SMethod<String> getStoredDescription_idGKLijSNXOH = new SMethodBuilder<>(String.class).name("getStoredDescription").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095883185453L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isValidID_idGKLijS$FK9 = new SMethodBuilder<>(Boolean.TYPE).name("isValidID").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095879179273L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> updateStoredDescription_idGKLijSVdMs = new SMethodBuilder<>(Void.TYPE).name("updateStoredDescription").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(806361095885085852L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "s"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExternalDescription_idGKLijS$FKh, getKind_idGKLijS$FKl, getFullExternalResourceName_id1JcbkuyZZUz, getRelevantExternalContentForHashing_idGKLijS$FKd, getStoredDescription_idGKLijSNXOH, isValidID_idGKLijS$FK9, updateStoredDescription_idGKLijSVdMs);
 

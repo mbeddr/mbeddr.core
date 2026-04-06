@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.module.SModule;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -26,7 +25,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class DevKitRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3eada22033104fd3L, 0xb794ff924add7d8aL, 0x33400706ab1b6268L, "com.mbeddr.mpsutil.smodule.structure.DevKitRef");
 
-  public static final SMethod<List<SModule>> getVisibleModules_id3wj3sjzSgF$ = new SMethodBuilder<List<SModule>>(new SJavaCompoundTypeImpl((Class<List<SModule>>) ((Class) Object.class))).name("getVisibleModules").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4040588429969394404L).languageId(0x81bc4d213d9375e1L, 0x7866978ea0f04cc7L).build2();
+  public static final SMethod<List<SModule>> getVisibleModules_id3wj3sjzSgF$ = new SMethodBuilder<>((Class<List<SModule>>) ((Class) Object.class)).name("getVisibleModules").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4040588429969394404L).languageId(0x81bc4d213d9375e1L, 0x7866978ea0f04cc7L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getVisibleModules_id3wj3sjzSgF$);
 

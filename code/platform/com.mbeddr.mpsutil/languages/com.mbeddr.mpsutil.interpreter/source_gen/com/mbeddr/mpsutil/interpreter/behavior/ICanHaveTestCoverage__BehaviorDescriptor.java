@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -20,8 +19,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ICanHaveTestCoverage__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x47f075a6558e4640L, 0xa6067ce0236c8023L, 0x5bb0bdbbedce7ccbL, "com.mbeddr.mpsutil.interpreter.structure.ICanHaveTestCoverage");
 
-  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<Boolean> isToplevelCoverageContent_id2hXd3rsZYy8 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isToplevelCoverageContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629315167694874760L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Boolean> isToplevelCoverageContent_id2hXd3rsZYy8 = new SMethodBuilder<>(Boolean.TYPE).name("isToplevelCoverageContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629315167694874760L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getChildrenForCoverage_id5IKJrJHNCE8, isToplevelCoverageContent_id2hXd3rsZYy8);
 

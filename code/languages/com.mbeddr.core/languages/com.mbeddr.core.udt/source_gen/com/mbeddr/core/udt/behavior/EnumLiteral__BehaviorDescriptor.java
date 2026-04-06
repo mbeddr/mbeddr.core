@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -30,10 +29,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xefda956e491e4f00L, 0xba1436af2f213ecfL, 0x7a4924c71c1b401dL, "com.mbeddr.core.udt.structure.EnumLiteral");
 
-  public static final SMethod<Boolean> preventNameMangling_id5Oog2UbP_bT = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("preventNameMangling").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6708182213627106041L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> getMangledName_id19a6$uAAq0e = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMangledName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317894735999377422L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> getTraceableProperty_id4pl5GY7LKmH = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTraceableProperty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067982036267369901L).languageId(0xbfd948636cfe8bc3L, 0x9ded098bad6a4657L).build2();
-  public static final SMethod<Object> integerStaticValue_id2etktb3RPbd = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("integerStaticValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2566297328342225613L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
+  public static final SMethod<Boolean> preventNameMangling_id5Oog2UbP_bT = new SMethodBuilder<>(Boolean.TYPE).name("preventNameMangling").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6708182213627106041L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> getMangledName_id19a6$uAAq0e = new SMethodBuilder<>(String.class).name("getMangledName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317894735999377422L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> getTraceableProperty_id4pl5GY7LKmH = new SMethodBuilder<>(String.class).name("getTraceableProperty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067982036267369901L).languageId(0xbfd948636cfe8bc3L, 0x9ded098bad6a4657L).build2();
+  public static final SMethod<Object> integerStaticValue_id2etktb3RPbd = new SMethodBuilder<>(Object.class).name("integerStaticValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2566297328342225613L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(preventNameMangling_id5Oog2UbP_bT, getMangledName_id19a6$uAAq0e, getTraceableProperty_id4pl5GY7LKmH, integerStaticValue_id2etktb3RPbd);
 

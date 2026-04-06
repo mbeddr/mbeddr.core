@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.project.Project;
 import java.util.Map;
@@ -32,8 +31,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class InstanceCounterAssessment__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc8e0d19c3cf4b31L, 0xaf77531227edbce8L, 0x571d7a04fb1507c7L, "com.mbeddr.core.qa.structure.InstanceCounterAssessment");
 
-  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
-  /*package*/ static final SMethod<Void> addOne_id5stuwjVxDeX = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addOne").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(6277307617442698173L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter((Class<Map<String, Integer>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, "mpsProject"));
+  /*package*/ static final SMethod<Void> addOne_id5stuwjVxDeX = new SMethodBuilder<>(Void.TYPE).name("addOne").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(6277307617442698173L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter((Class<Map<String, Integer>>) ((Class) Object.class), "counts"), SMethodBuilder.createJavaParameter(String.class, "key"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id4WjNWxKJWaq, addOne_id5stuwjVxDeX);
 

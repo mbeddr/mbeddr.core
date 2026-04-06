@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,8 +23,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class DocumentInclude__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x558f97d9712da4e0L, "com.mbeddr.doc.structure.DocumentInclude");
 
-  public static final SMethod<String> tocText_id3DLpMp_rLlJ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("tocText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4211260541176321391L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Boolean> addToTOC_id3DLpMp_rLmy = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("addToTOC").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4211260541176321442L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> tocText_id3DLpMp_rLlJ = new SMethodBuilder<>(String.class).name("tocText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4211260541176321391L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Boolean> addToTOC_id3DLpMp_rLmy = new SMethodBuilder<>(Boolean.TYPE).name("addToTOC").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4211260541176321442L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tocText_id3DLpMp_rLlJ, addToTOC_id3DLpMp_rLmy);
 

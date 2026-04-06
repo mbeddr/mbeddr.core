@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualResourceBundleProvider;
 import java.util.List;
@@ -24,10 +23,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ResourceBundle__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x23f985f2965f4af1L, 0xaee8a32677429514L, 0x7e347dff5959fdaL, "com.mbeddr.mpsutil.multilingual.common.structure.ResourceBundle");
 
-  public static final SMethod<String> getBundleProviderClassName_id5Q1XZgMoKBK = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getBundleProviderClassName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6737939145712404976L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
-  public static final SMethod<String> getFQBundleProviderClassName_id5Q1XZgMFyWg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFQBundleProviderClassName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6737939145717329680L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
-  public static final SMethod<Class<MultilingualResourceBundleProvider>> getResourceBundleProviderClass_id15QjPzreRPs = new SMethodBuilder<Class<MultilingualResourceBundleProvider>>(new SJavaCompoundTypeImpl(Class.class)).name("getResourceBundleProviderClass").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1258280388950457692L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
-  public static final SMethod<MultilingualResourceBundleProvider> getResourceBundleProvider_id5Q1XZgMFUWw = new SMethodBuilder<MultilingualResourceBundleProvider>(new SJavaCompoundTypeImpl(MultilingualResourceBundleProvider.class)).name("getResourceBundleProvider").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6737939145717428000L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
+  public static final SMethod<String> getBundleProviderClassName_id5Q1XZgMoKBK = new SMethodBuilder<>(String.class).name("getBundleProviderClassName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6737939145712404976L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
+  public static final SMethod<String> getFQBundleProviderClassName_id5Q1XZgMFyWg = new SMethodBuilder<>(String.class).name("getFQBundleProviderClassName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6737939145717329680L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
+  public static final SMethod<Class<MultilingualResourceBundleProvider>> getResourceBundleProviderClass_id15QjPzreRPs = new SMethodBuilder<>((Class<Class<MultilingualResourceBundleProvider>>) ((Class) Object.class)).name("getResourceBundleProviderClass").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1258280388950457692L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
+  public static final SMethod<MultilingualResourceBundleProvider> getResourceBundleProvider_id5Q1XZgMFUWw = new SMethodBuilder<>(MultilingualResourceBundleProvider.class).name("getResourceBundleProvider").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6737939145717428000L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBundleProviderClassName_id5Q1XZgMoKBK, getFQBundleProviderClassName_id5Q1XZgMFyWg, getResourceBundleProviderClass_id15QjPzreRPs, getResourceBundleProvider_id5Q1XZgMFUWw);
 

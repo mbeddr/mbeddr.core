@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,8 +20,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class HandlerVariable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xbb0ad88b63cd45fdL, 0xae278662d274cf3cL, 0x7d59a5ed86aabdfcL, "com.mbeddr.ext.serialization.structure.HandlerVariable");
 
-  public static final SMethod<SNode> getDeclaredType_id1LDGRqyYkTX = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDeclaredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361469L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getInitExpression_id1LDGRqyYkU1 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInitExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361473L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getDeclaredType_id1LDGRqyYkTX = new SMethodBuilder<>(SNode.class).name("getDeclaredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361469L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getInitExpression_id1LDGRqyYkU1 = new SMethodBuilder<>(SNode.class).name("getInitExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361473L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDeclaredType_id1LDGRqyYkTX, getInitExpression_id1LDGRqyYkU1);
 

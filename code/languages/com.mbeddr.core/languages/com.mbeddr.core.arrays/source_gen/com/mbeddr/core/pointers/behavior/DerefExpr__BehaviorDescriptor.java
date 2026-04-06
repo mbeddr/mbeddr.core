@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -22,10 +21,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class DerefExpr__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3bf5377ae9044dedL, 0x97545a516023bfaaL, 0x3e0cae5e366e2a7L, "com.mbeddr.core.pointers.structure.DerefExpr");
 
-  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> isLValue_id6iIoqg1yDKH = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7254843406768839725L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getCodeForTarget_id1uoAWUPe22W = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getCodeForTarget").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1700280171438284988L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getWriteTarget_id1uoAWUPe2Ie = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getWriteTarget").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1700280171438287758L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isLValue_id6iIoqg1yDKH = new SMethodBuilder<>(Boolean.TYPE).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7254843406768839725L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getCodeForTarget_id1uoAWUPe22W = new SMethodBuilder<>(SNode.class).name("getCodeForTarget").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1700280171438284988L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getWriteTarget_id1uoAWUPe2Ie = new SMethodBuilder<>(SNode.class).name("getWriteTarget").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1700280171438287758L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id1VQvajLb13M, isLValue_id6iIoqg1yDKH, getCodeForTarget_id1uoAWUPe22W, getWriteTarget_id1uoAWUPe2Ie);
 

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ConcurrencyGenerationStrategy__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x10a5c0ee63f6fec3L, "com.mbeddr.ext.concurrency.structure.ConcurrencyGenerationStrategy");
 
-  public static final SMethod<Void> validateSchedules_id6bs538muOve = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("validateSchedules").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123590915951380430L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<Void> validateSchedules_id6bs538muOve = new SMethodBuilder<>(Void.TYPE).name("validateSchedules").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123590915951380430L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "specs"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(validateSchedules_id6bs538muOve);
 

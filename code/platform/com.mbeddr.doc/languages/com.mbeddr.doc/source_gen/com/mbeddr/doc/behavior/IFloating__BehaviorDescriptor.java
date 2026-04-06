@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -23,9 +22,9 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IFloating__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x41ff53f745fa3cc8L, "com.mbeddr.doc.structure.IFloating");
 
-  public static final SMethod<String> getImageNumber_id5yxqZJwzv66 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getImageNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136436102L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Iterable<SNode>> visibleImagesInDocument_id5yxqZJwzrdj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleImagesInDocument").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136420179L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> figureNumber_id4E5hYf7zQ9Q = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("figureNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5369777174340395638L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> getImageNumber_id5yxqZJwzv66 = new SMethodBuilder<>(String.class).name("getImageNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136436102L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Iterable<SNode>> visibleImagesInDocument_id5yxqZJwzrdj = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("visibleImagesInDocument").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136420179L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(SNode.class, "d"));
+  public static final SMethod<String> figureNumber_id4E5hYf7zQ9Q = new SMethodBuilder<>(String.class).name("figureNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5369777174340395638L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getImageNumber_id5yxqZJwzv66, visibleImagesInDocument_id5yxqZJwzrdj, figureNumber_id4E5hYf7zQ9Q);
 

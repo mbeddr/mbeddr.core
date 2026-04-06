@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,12 +22,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ICommentedCode__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x617d88a37ecb2fabL, "com.mbeddr.core.base.structure.ICommentedCode");
 
-  public static final SMethod<Void> setup_id65XyadYP4XN = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setup").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7024921229556731763L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> replaceWithGenericComment_id57qKfjsi03z = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("replaceWithGenericComment").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5898238819895345379L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> getDeprecationMessage_id243ufko$Au9 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDeprecationMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2378878022256322441L).languageId(0x90e312ea330e1a00L, 0x63e0e5665131447eL).build2();
-  public static final SMethod<Boolean> hasMigration_id243ufko$Aul = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasMigration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2378878022256322453L).languageId(0x90e312ea330e1a00L, 0x63e0e5665131447eL).build2();
-  public static final SMethod<Boolean> migrateAutomatically_id243ufko$Auf = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("migrateAutomatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2378878022256322447L).languageId(0x90e312ea330e1a00L, 0x63e0e5665131447eL).build2();
-  public static final SMethod<Void> performMigration_id243ufko$Aur = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("performMigration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2378878022256322459L).languageId(0x90e312ea330e1a00L, 0x63e0e5665131447eL).build2();
+  public static final SMethod<Void> setup_id65XyadYP4XN = new SMethodBuilder<>(Void.TYPE).name("setup").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7024921229556731763L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> replaceWithGenericComment_id57qKfjsi03z = new SMethodBuilder<>(Void.TYPE).name("replaceWithGenericComment").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5898238819895345379L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getDeprecationMessage_id243ufko$Au9 = new SMethodBuilder<>(String.class).name("getDeprecationMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2378878022256322441L).languageId(0x90e312ea330e1a00L, 0x63e0e5665131447eL).build2();
+  public static final SMethod<Boolean> hasMigration_id243ufko$Aul = new SMethodBuilder<>(Boolean.TYPE).name("hasMigration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2378878022256322453L).languageId(0x90e312ea330e1a00L, 0x63e0e5665131447eL).build2();
+  public static final SMethod<Boolean> migrateAutomatically_id243ufko$Auf = new SMethodBuilder<>(Boolean.TYPE).name("migrateAutomatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2378878022256322447L).languageId(0x90e312ea330e1a00L, 0x63e0e5665131447eL).build2();
+  public static final SMethod<Void> performMigration_id243ufko$Aur = new SMethodBuilder<>(Void.TYPE).name("performMigration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2378878022256322459L).languageId(0x90e312ea330e1a00L, 0x63e0e5665131447eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setup_id65XyadYP4XN, replaceWithGenericComment_id57qKfjsi03z, getDeprecationMessage_id243ufko$Au9, hasMigration_id243ufko$Aul, migrateAutomatically_id243ufko$Auf, performMigration_id243ufko$Aur);
 

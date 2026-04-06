@@ -27,21 +27,17 @@
   <uses module="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt+dp" />
   <uses module="5454dbfd-2075-4de0-b85e-fa645eb6957e(de.itemis.mps.utils.serializer.xml)" kind="dp" />
   <uses module="6c563085-e123-4aaf-be88-fb88e02f8282(io.netty)" kind="dp" />
-  <uses module="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="dp" />
   <uses module="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
   <uses module="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
-  <uses module="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" kind="dp" />
   <uses module="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" kind="dp" />
   <uses module="23865718-e2ed-41b5-a132-0da1d04e266d(jetbrains.mps.ide.httpsupport.manager)" kind="rt+dp" />
   <uses module="339c3a3d-4c7f-4727-bc4f-f1abb19286a3(jetbrains.mps.ide.httpsupport.nodeaccess)" kind="dp" />
   <uses module="ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)" kind="rt+dp" />
-  <uses module="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="rt+dp" />
+  <uses module="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="rt" />
   <uses module="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt+dp" />
   <uses module="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
   <uses module="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="dp" />
-  <uses module="c0080a47-7e37-4558-bee9-9ae18e690549(jetbrains.mps.lang.extension)" kind="dp" />
   <uses module="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
-  <uses module="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" kind="dp" />
   <uses module="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt+dp" />
 </dependenciesRoot>
 

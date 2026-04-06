@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IFailuresAware__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x6d68b77b6994918L, 0x83b8857e63787800L, 0x547eb6a83e368bc2L, "com.mbeddr.core.unittest.structure.IFailuresAware");
 
-  public static final SMethod<String> pointerOnNumOfFailsVarName_id5hYHEwYdCRV = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("pointerOnNumOfFailsVarName").modifiers(10, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579966012923L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
-  public static final SMethod<String> numOfFailsVarName_id5hYHEwYhXfo = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("numOfFailsVarName").modifiers(10, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579967144920L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<String> pointerOnNumOfFailsVarName_id5hYHEwYdCRV = new SMethodBuilder<>(String.class).name("pointerOnNumOfFailsVarName").modifiers(10, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579966012923L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<String> numOfFailsVarName_id5hYHEwYhXfo = new SMethodBuilder<>(String.class).name("numOfFailsVarName").modifiers(10, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6088504579967144920L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(pointerOnNumOfFailsVarName_id5hYHEwYdCRV, numOfFailsVarName_id5hYHEwYhXfo);
 

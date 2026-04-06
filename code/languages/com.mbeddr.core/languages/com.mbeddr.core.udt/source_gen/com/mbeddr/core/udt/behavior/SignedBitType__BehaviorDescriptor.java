@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -26,10 +25,10 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class SignedBitType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xefda956e491e4f00L, 0xba1436af2f213ecfL, 0x311e4aea4174d125L, "com.mbeddr.core.udt.structure.SignedBitType");
 
-  public static final SMethod<SNode> getBaseType_id3dCMHw1DZZS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getBaseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3704433722601766904L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> createdUnsignedCompanion_id5Xnv3$QELwg = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createdUnsignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6870096341749143568L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> createNextBiggerSignedCompanion_id4O$fzoYZDgS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createNextBiggerSignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5558636242788062264L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getGenType_id2DouzknPPyL = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getGenType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3051323115995355313L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
+  public static final SMethod<SNode> getBaseType_id3dCMHw1DZZS = new SMethodBuilder<>(SNode.class).name("getBaseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3704433722601766904L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> createdUnsignedCompanion_id5Xnv3$QELwg = new SMethodBuilder<>(SNode.class).name("createdUnsignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6870096341749143568L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> createNextBiggerSignedCompanion_id4O$fzoYZDgS = new SMethodBuilder<>(SNode.class).name("createNextBiggerSignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5558636242788062264L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getGenType_id2DouzknPPyL = new SMethodBuilder<>(SNode.class).name("getGenType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3051323115995355313L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBaseType_id3dCMHw1DZZS, createdUnsignedCompanion_id5Xnv3$QELwg, createNextBiggerSignedCompanion_id4O$fzoYZDgS, getGenType_id2DouzknPPyL);
 

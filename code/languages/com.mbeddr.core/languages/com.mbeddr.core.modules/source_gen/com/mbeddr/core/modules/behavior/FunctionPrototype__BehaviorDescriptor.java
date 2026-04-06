@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -20,9 +19,9 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class FunctionPrototype__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x595522006a5b97e0L, "com.mbeddr.core.modules.structure.FunctionPrototype");
 
-  public static final SMethod<SNode> getStatementList_id71UKpntnl7S = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getStatementList").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8105003328814797304L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> getTraceableProperty_id4pl5GY7LKmH = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTraceableProperty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067982036267369901L).languageId(0xbfd948636cfe8bc3L, 0x9ded098bad6a4657L).build2();
-  public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> getStatementList_id71UKpntnl7S = new SMethodBuilder<>(SNode.class).name("getStatementList").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8105003328814797304L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> getTraceableProperty_id4pl5GY7LKmH = new SMethodBuilder<>(String.class).name("getTraceableProperty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067982036267369901L).languageId(0xbfd948636cfe8bc3L, 0x9ded098bad6a4657L).build2();
+  public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<>(Integer.TYPE).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStatementList_id71UKpntnl7S, getTraceableProperty_id4pl5GY7LKmH, getLOCEquivalent_id6brBMefRfO0);
 

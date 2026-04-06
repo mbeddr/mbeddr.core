@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,7 +21,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class QueryFunction_TransformationMenu_ParameterizableParameter__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3a48930f345144fdL, 0x9b094e7ef448f2bbL, 0x597a3f22643b671dL, "com.mbeddr.mpsutil.parameterizedMenu.structure.QueryFunction_TransformationMenu_ParameterizableParameter");
 
-  public static final SMethod<Boolean> isParameterized_id1quYWAD0TOG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isParameterized").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1630016958697282860L).languageId(0xa83a7ff23bde13baL, 0x18bc659203a64e29L).build2();
+  public static final SMethod<Boolean> isParameterized_id1quYWAD0TOG = new SMethodBuilder<>(Boolean.TYPE).name("isParameterized").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1630016958697282860L).languageId(0xa83a7ff23bde13baL, 0x18bc659203a64e29L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isParameterized_id1quYWAD0TOG);
 

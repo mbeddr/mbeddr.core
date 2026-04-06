@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.awt.Color;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -20,9 +19,9 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class TraceKind__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x53bab999e9c3428aL, 0x80befef5bed08f55L, 0x619a854eb408b67L, "com.mbeddr.cc.trace.structure.TraceKind");
 
-  public static final SMethod<Color> getTraceColor_id4cyIky40iAb = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getTraceColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4837632670852786571L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2();
-  public static final SMethod<String> cannotBeUsedHereErrorMessage_id6pDXxhBbHL_ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("cannotBeUsedHereErrorMessage").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7379700031914171493L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> cannotTraceToTargetErrorMessage_id6pDXxhBbHPs = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("cannotTraceToTargetErrorMessage").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7379700031914171740L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Color> getTraceColor_id4cyIky40iAb = new SMethodBuilder<>(Color.class).name("getTraceColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4837632670852786571L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2();
+  public static final SMethod<String> cannotBeUsedHereErrorMessage_id6pDXxhBbHL_ = new SMethodBuilder<>(String.class).name("cannotBeUsedHereErrorMessage").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7379700031914171493L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2(SMethodBuilder.createJavaParameter(SNode.class, "tracedProgramNode"));
+  public static final SMethod<String> cannotTraceToTargetErrorMessage_id6pDXxhBbHPs = new SMethodBuilder<>(String.class).name("cannotTraceToTargetErrorMessage").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7379700031914171740L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2(SMethodBuilder.createJavaParameter(SNode.class, "target"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTraceColor_id4cyIky40iAb, cannotBeUsedHereErrorMessage_id6pDXxhBbHL_, cannotTraceToTargetErrorMessage_id6pDXxhBbHPs);
 

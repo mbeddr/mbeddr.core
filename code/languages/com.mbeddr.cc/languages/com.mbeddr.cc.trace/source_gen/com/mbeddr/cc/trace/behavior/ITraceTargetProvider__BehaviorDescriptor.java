@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ITraceTargetProvider__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x53bab999e9c3428aL, 0x80befef5bed08f55L, 0x619a854eb40f5a4L, "com.mbeddr.cc.trace.structure.ITraceTargetProvider");
 
-  public static final SMethod<Iterable<SNode>> allTraceTargets_idopE5jFgfmF = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allTraceTargets").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(439567521322956203L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2();
+  public static final SMethod<Iterable<SNode>> allTraceTargets_idopE5jFgfmF = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allTraceTargets").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(439567521322956203L).languageId(0x80befef5bed08f55L, 0x53bab999e9c3428aL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allTraceTargets_idopE5jFgfmF);
 

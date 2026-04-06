@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -27,9 +26,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ICallContext__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd6714220402d48cbL, 0xa4a288223c6257f6L, 0x4fb6ca52097b7a48L, "com.mbeddr.cc.requirements.scenarios.structure.ICallContext");
 
-  public static final SMethod<Iterable<SNode>> receivedItems_id4YQM_89vKC6 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("receivedItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828453095942L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getContextParticipant_id4YQM_89uRDd = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getContextParticipant").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828452862541L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
-  public static final SMethod<Iterable<SNode>> transitiveContents_id5_PV_QzPdVg = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("transitiveContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6446320527598739152L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
+  public static final SMethod<Iterable<SNode>> receivedItems_id4YQM_89vKC6 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("receivedItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828453095942L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2(SMethodBuilder.createJavaParameter(SNode.class, "currentCall"));
+  public static final SMethod<SNode> getContextParticipant_id4YQM_89uRDd = new SMethodBuilder<>(SNode.class).name("getContextParticipant").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828452862541L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
+  public static final SMethod<Iterable<SNode>> transitiveContents_id5_PV_QzPdVg = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("transitiveContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6446320527598739152L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(receivedItems_id4YQM_89vKC6, getContextParticipant_id4YQM_89uRDd, transitiveContents_id5_PV_QzPdVg);
 

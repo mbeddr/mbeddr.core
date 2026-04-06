@@ -40,7 +40,6 @@
   <uses module="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" kind="dp" />
   <uses module="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" kind="dp" />
   <uses module="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)" kind="dp" />
-  <uses module="58e731a3-6aaa-444a-bf40-801b91c15878(com.mbeddr.mpsutil.lang.plugin.extensions)" kind="dp" />
   <uses module="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" kind="dp" />
   <uses module="d7931714-a11c-4108-aa0e-246d86070dad(com.mbeddr.mpsutil.smodule.runtime)" kind="rt+dp" />
   <uses module="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2(com.mbeddr.mpsutil.suppresswarning)" kind="dp" />
@@ -64,7 +63,6 @@
   <uses module="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
   <uses module="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="dp" />
   <uses module="446c26eb-2b7b-4bf0-9b35-f83fa582753e(jetbrains.mps.lang.modelapi)" kind="dp" />
-  <uses module="28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)" kind="dp" />
   <uses module="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt+dp" />
   <uses module="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" kind="dp" />
   <uses module="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" kind="dp" />

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class ITaskContextTarget__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x10a5c0ee63ff5df3L, "com.mbeddr.ext.concurrency.structure.ITaskContextTarget");
 
-  public static final SMethod<SNode> getTarget_id66uzewbZgGM = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTarget").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7034214596260727602L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> isLValue_id5jCi3tJryBA = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6118219496712710630L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getTarget_id66uzewbZgGM = new SMethodBuilder<>(SNode.class).name("getTarget").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7034214596260727602L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isLValue_id5jCi3tJryBA = new SMethodBuilder<>(Boolean.TYPE).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6118219496712710630L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTarget_id66uzewbZgGM, isLValue_id5jCi3tJryBA);
 

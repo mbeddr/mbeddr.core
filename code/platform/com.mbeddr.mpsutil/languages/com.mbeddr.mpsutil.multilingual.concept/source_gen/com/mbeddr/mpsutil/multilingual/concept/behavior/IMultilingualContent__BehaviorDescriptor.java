@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -25,10 +24,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class IMultilingualContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd0fe2e609f9c4d3cL, 0x94aade9257b67a6dL, 0x2b5f1f0537525085L, "com.mbeddr.mpsutil.multilingual.concept.structure.IMultilingualContent");
 
-  public static final SMethod<String> getValue_id2bng37sXCHo = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061080L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
-  public static final SMethod<String> getValue_id2bng37sXCHx = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061089L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getDetailedPresentation_id2bng37sXCHU = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDetailedPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061114L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
-  public static final SMethod<String> getPresentation_id2GRHOLIMN1h = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3114159206254194769L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
+  public static final SMethod<String> getValue_id2bng37sXCHo = new SMethodBuilder<>(String.class).name("getValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061080L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
+  public static final SMethod<String> getValue_id2bng37sXCHx = new SMethodBuilder<>(String.class).name("getValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061089L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2(SMethodBuilder.createJavaParameter(SNode.class, "language"));
+  public static final SMethod<String> getDetailedPresentation_id2bng37sXCHU = new SMethodBuilder<>(String.class).name("getDetailedPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061114L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
+  public static final SMethod<String> getPresentation_id2GRHOLIMN1h = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3114159206254194769L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getValue_id2bng37sXCHo, getValue_id2bng37sXCHx, getDetailedPresentation_id2bng37sXCHU, getPresentation_id2GRHOLIMN1h);
 

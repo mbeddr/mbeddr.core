@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class TextSlideContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x94daa6ebe6a44b9fL, 0x90b64b23682ca120L, 0x4bb77d568832ed9aL, "com.mbeddr.slides.structure.TextSlideContent");
 
-  public static final SMethod<String> getHTMLTag_id4IRvlq8d5Qd = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getHTMLTag").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5455967284188437901L).languageId(0x90b64b23682ca120L, 0x94daa6ebe6a44b9fL).build2();
+  public static final SMethod<String> getHTMLTag_id4IRvlq8d5Qd = new SMethodBuilder<>(String.class).name("getHTMLTag").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5455967284188437901L).languageId(0x90b64b23682ca120L, 0x94daa6ebe6a44b9fL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getHTMLTag_id4IRvlq8d5Qd);
 
