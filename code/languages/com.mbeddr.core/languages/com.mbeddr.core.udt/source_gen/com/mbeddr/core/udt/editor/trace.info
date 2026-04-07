@@ -4166,7 +4166,7 @@
       <node id="6116558314501347874" at="376,52,377,40" concept="2" />
       <node id="6116558314501347874" at="377,40,378,34" concept="2" />
       <node id="6116558314501347874" at="378,34,379,22" concept="8" />
-      <node id="6116558314501347874" at="384,98,385,154" concept="8" />
+      <node id="6116558314501347874" at="384,98,385,156" concept="8" />
       <node id="6116558314501347874" at="387,6,388,71" concept="2" />
       <node id="6116558314501347874" at="388,71,389,22" concept="8" />
       <node id="6116558314501347874" at="395,90,396,107" concept="7" />
@@ -4294,7 +4294,7 @@
       <scope id="6116558314501347874" at="332,12,333,59" />
       <scope id="6116558314501347874" at="339,33,340,19" />
       <scope id="6116558314501347874" at="369,46,370,61" />
-      <scope id="6116558314501347874" at="384,98,385,154" />
+      <scope id="6116558314501347874" at="384,98,385,156" />
       <scope id="6116558314501347874" at="411,57,412,27" />
       <scope id="6116558314501347874" at="416,56,417,34" />
       <scope id="6116558314501347874" at="426,54,427,43" />
@@ -4535,13 +4535,13 @@
       <unit id="6116558314501347874" at="351,48,357,7" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$5" />
       <unit id="6116558314501347874" at="358,51,364,7" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$6" />
       <unit id="6116558314501347874" at="278,39,288,7" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$GenericMenuPart_a0a0b0a_1$1" />
-      <unit id="6116558314501347874" at="397,39,407,7" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$GenericMenuPart_a0a0c0a$1" />
+      <unit id="6116558314501347874" at="397,39,407,7" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$GenericMenuPart_a0a0c0a_0$1" />
       <unit id="2248433185307532244" at="183,0,197,0" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$TypeDefType_typeDef_cellMenu_7ee16b_a0a0a" />
       <unit id="6116558314501347874" at="100,42,115,5" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$1" />
       <unit id="6116558314501347874" at="290,67,310,9" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$GenericMenuPart_a0a0b0a_1$2" />
-      <unit id="6116558314501347874" at="409,67,429,9" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$GenericMenuPart_a0a0c0a$2" />
+      <unit id="6116558314501347874" at="409,67,429,9" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$GenericMenuPart_a0a0c0a_0$2" />
       <unit id="6116558314501347874" at="272,0,316,0" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$GenericMenuPart_a0a0b0a_1" />
-      <unit id="6116558314501347874" at="391,0,435,0" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$GenericMenuPart_a0a0c0a" />
+      <unit id="6116558314501347874" at="391,0,435,0" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$GenericMenuPart_a0a0c0a_0" />
       <unit id="6116558314501347876" at="136,0,183,0" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a$Inline_Builder0" />
       <unit id="6116558314501347874" at="62,0,452,0" name="com.mbeddr.core.udt.editor.TypeDefType_EditorBuilder_a" />
     </file>
@@ -5338,7 +5338,7 @@
       <node id="6394819151180597850" at="376,52,377,40" concept="2" />
       <node id="6394819151180597850" at="377,40,378,34" concept="2" />
       <node id="6394819151180597850" at="378,34,379,22" concept="8" />
-      <node id="6394819151180597850" at="384,98,385,156" concept="8" />
+      <node id="6394819151180597850" at="384,98,385,154" concept="8" />
       <node id="6394819151180597850" at="387,6,388,71" concept="2" />
       <node id="6394819151180597850" at="388,71,389,22" concept="8" />
       <node id="6394819151180597850" at="395,90,396,107" concept="7" />
@@ -5467,7 +5467,7 @@
       <scope id="6394819151180597850" at="332,12,333,59" />
       <scope id="6394819151180597850" at="339,33,340,19" />
       <scope id="6394819151180597850" at="369,46,370,61" />
-      <scope id="6394819151180597850" at="384,98,385,156" />
+      <scope id="6394819151180597850" at="384,98,385,154" />
       <scope id="6394819151180597850" at="411,57,412,27" />
       <scope id="6394819151180597850" at="416,56,417,34" />
       <scope id="6394819151180597850" at="426,54,427,42" />
@@ -5711,13 +5711,13 @@
       <unit id="6394819151180597850" at="358,51,364,7" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$6" />
       <unit id="6394819151180597850" at="440,0,446,0" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$CONCEPTS" />
       <unit id="6394819151180597850" at="278,39,288,7" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$GenericMenuPart_a0a0b0a_0$1" />
-      <unit id="6394819151180597850" at="397,39,407,7" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$GenericMenuPart_a0a0c0a_0$1" />
+      <unit id="6394819151180597850" at="397,39,407,7" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$GenericMenuPart_a0a0c0a$1" />
       <unit id="4694304187129827563" at="186,0,197,0" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$ReplaceWith_Type_cellMenu_lr7ptq_a0a0a" />
       <unit id="6394819151180597850" at="106,42,121,5" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$1" />
       <unit id="6394819151180597850" at="290,67,310,9" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$GenericMenuPart_a0a0b0a_0$2" />
-      <unit id="6394819151180597850" at="409,67,429,9" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$GenericMenuPart_a0a0c0a_0$2" />
+      <unit id="6394819151180597850" at="409,67,429,9" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$GenericMenuPart_a0a0c0a$2" />
       <unit id="6394819151180597850" at="272,0,316,0" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$GenericMenuPart_a0a0b0a_0" />
-      <unit id="6394819151180597850" at="391,0,435,0" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$GenericMenuPart_a0a0c0a_0" />
+      <unit id="6394819151180597850" at="391,0,435,0" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$GenericMenuPart_a0a0c0a" />
       <unit id="6394819151180597852" at="139,0,186,0" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a$Inline_Builder0" />
       <unit id="6394819151180597850" at="65,0,453,0" name="com.mbeddr.core.udt.editor.StructType_EditorBuilder_a" />
     </file>
@@ -6718,11 +6718,11 @@
       <unit id="7099329415460224581" at="276,48,282,7" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$4" />
       <unit id="7099329415460224581" at="283,51,289,7" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$5" />
       <unit id="7099329415460224581" at="630,0,637,0" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$CONCEPTS" />
-      <unit id="7099329415460224581" at="200,39,210,7" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a_1$1" />
+      <unit id="7099329415460224581" at="200,39,210,7" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a_2$1" />
       <unit id="7099329415460224581" at="322,39,332,7" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$GenericMenuPart_a0a0b0a_4$1" />
-      <unit id="7099329415460224581" at="212,67,232,9" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a_1$2" />
+      <unit id="7099329415460224581" at="212,67,232,9" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a_2$2" />
       <unit id="7099329415460224581" at="334,67,354,9" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$GenericMenuPart_a0a0b0a_4$2" />
-      <unit id="7099329415460224581" at="194,0,238,0" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a_1" />
+      <unit id="7099329415460224581" at="194,0,238,0" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$GenericMenuPart_a0a0a0a_2" />
       <unit id="7099329415460224581" at="316,0,360,0" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$GenericMenuPart_a0a0b0a_4" />
       <unit id="7099329415460224581" at="418,0,485,0" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$prefixesListHandler_czjnxc_a0d0a" />
       <unit id="7099329415460224581" at="533,0,609,0" name="com.mbeddr.core.udt.editor.ModuleContentSUDeclaration_EditorBuilder_a$membersListHandler_czjnxc_g0a" />
@@ -7340,9 +7340,9 @@
       <unit id="841971064023557" at="244,0,249,0" name="com.mbeddr.core.udt.editor.OpaqueTypeDecl_EditorBuilder_a$CONCEPTS" />
       <unit id="841971064023557" at="126,48,132,7" name="com.mbeddr.core.udt.editor.OpaqueTypeDecl_EditorBuilder_a$1" />
       <unit id="841971064023557" at="133,51,139,7" name="com.mbeddr.core.udt.editor.OpaqueTypeDecl_EditorBuilder_a$2" />
-      <unit id="841971064023557" at="172,39,182,7" name="com.mbeddr.core.udt.editor.OpaqueTypeDecl_EditorBuilder_a$GenericMenuPart_a0a0a0a_2$1" />
-      <unit id="841971064023557" at="184,67,204,9" name="com.mbeddr.core.udt.editor.OpaqueTypeDecl_EditorBuilder_a$GenericMenuPart_a0a0a0a_2$2" />
-      <unit id="841971064023557" at="166,0,210,0" name="com.mbeddr.core.udt.editor.OpaqueTypeDecl_EditorBuilder_a$GenericMenuPart_a0a0a0a_2" />
+      <unit id="841971064023557" at="172,39,182,7" name="com.mbeddr.core.udt.editor.OpaqueTypeDecl_EditorBuilder_a$GenericMenuPart_a0a0a0a_1$1" />
+      <unit id="841971064023557" at="184,67,204,9" name="com.mbeddr.core.udt.editor.OpaqueTypeDecl_EditorBuilder_a$GenericMenuPart_a0a0a0a_1$2" />
+      <unit id="841971064023557" at="166,0,210,0" name="com.mbeddr.core.udt.editor.OpaqueTypeDecl_EditorBuilder_a$GenericMenuPart_a0a0a0a_1" />
       <unit id="841971064023557" at="50,0,255,0" name="com.mbeddr.core.udt.editor.OpaqueTypeDecl_EditorBuilder_a" />
     </file>
   </root>

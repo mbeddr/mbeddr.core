@@ -752,9 +752,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new GenericMenuPart_a0a6a0(), new TMP_Action_ujw05e_b0a6a0());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new GenericMenuPart_a0a6a0_0(), new TMP_Action_ujw05e_b0a6a0());
     }
-    private class GenericMenuPart_a0a6a0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class GenericMenuPart_a0a6a0_0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
       @NotNull
       @Override
