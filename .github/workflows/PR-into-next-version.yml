@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create PR
-        uses: specificlanguages/cascading-merge@v2
+        uses: specificlanguages/cascading-merge@955b260ccdd4d526dc8b0f4919871832f53c2202 # v2
         with:
           exclude_branch_prefix: maintenance/mps3
           automerge_new_prs: 'true'
