@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,7 +20,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ToolBarAction__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc38abce14c0944cbL, 0x9ebf2a764e824bb5L, 0x65db77a6be39587bL, "com.mbeddr.mpsutil.actionsfilter.structure.ToolBarAction");
 
-  public static final SMethod<Boolean> refersToActionId_id5ReuVUpdzR3 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("refersToActionId").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6759476149274164675L).languageId(0x9ebf2a764e824bb5L, 0xc38abce14c0944cbL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Boolean> refersToActionId_id5ReuVUpdzR3 = new SMethodBuilder<>(Boolean.TYPE).name("refersToActionId").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6759476149274164675L).languageId(0x9ebf2a764e824bb5L, 0xc38abce14c0944cbL).build2(SMethodBuilder.createJavaParameter(String.class, "id"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(refersToActionId_id5ReuVUpdzR3);
 

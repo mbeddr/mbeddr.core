@@ -36,7 +36,6 @@
   <uses module="3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)" kind="dp" />
   <uses module="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" kind="dp" />
   <uses module="efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)" kind="dp" />
-  <uses module="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" kind="dp" />
   <uses module="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" kind="dp" />
   <uses module="c7a315e6-1d93-4186-85bc-2dfafd1ccc21(com.mbeddr.mpsutil.common)" kind="dp" />
   <uses module="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" kind="dp" />

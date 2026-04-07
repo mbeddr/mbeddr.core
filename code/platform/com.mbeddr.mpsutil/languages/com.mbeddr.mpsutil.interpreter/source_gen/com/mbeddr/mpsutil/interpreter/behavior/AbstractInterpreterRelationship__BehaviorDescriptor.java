@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,7 +21,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class AbstractInterpreterRelationship__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x47f075a6558e4640L, 0xa6067ce0236c8023L, 0x5c78e2973360a2c1L, "com.mbeddr.mpsutil.interpreter.structure.AbstractInterpreterRelationship");
 
-  public static final SMethod<String> getThisPresentation_id5LSSDsNq55q = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getThisPresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787725062490L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<String> getThisPresentation_id5LSSDsNq55q = new SMethodBuilder<>(String.class).name("getThisPresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787725062490L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getThisPresentation_id5LSSDsNq55q);
 

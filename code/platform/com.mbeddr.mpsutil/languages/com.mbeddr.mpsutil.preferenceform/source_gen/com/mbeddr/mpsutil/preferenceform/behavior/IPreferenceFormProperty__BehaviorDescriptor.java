@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -25,13 +24,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class IPreferenceFormProperty__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x1e7c1f95336c4cecL, 0xb00e8cc6e0c2b265L, 0x2068b0f6bafbd79L, "com.mbeddr.mpsutil.preferenceform.structure.IPreferenceFormProperty");
 
-  public static final SMethod<String> getClientPropertyKey_id86yKXFJQOR = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getClientPropertyKey").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(145956936284597559L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
-  public static final SMethod<String> getClientPropertyValue_id86yKXFJVOT = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getClientPropertyValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(145956936284618041L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
-  public static final SMethod<String> getUniqueName_id5YZamx7BkxH = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getUniqueName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6899278682009716845L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
-  public static final SMethod<SNode> getVisiblity_idhEwIBC5 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getVisiblity").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877352965L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
-  public static final SMethod<SNode> getComponentType_id5C8n8D5Vy2T = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getComponentType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6487537012175675577L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
-  public static final SMethod<SNode> getPropertyType_idm3C9PXFLoW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPropertyType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(397337790417671740L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
-  public static final SMethod<List<SAbstractConcept>> getOperationSConcept_id6ALWH9g2mqE = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getOperationSConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7616135429960066730L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
+  public static final SMethod<String> getClientPropertyKey_id86yKXFJQOR = new SMethodBuilder<>(String.class).name("getClientPropertyKey").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(145956936284597559L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
+  public static final SMethod<String> getClientPropertyValue_id86yKXFJVOT = new SMethodBuilder<>(String.class).name("getClientPropertyValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(145956936284618041L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
+  public static final SMethod<String> getUniqueName_id5YZamx7BkxH = new SMethodBuilder<>(String.class).name("getUniqueName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6899278682009716845L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
+  public static final SMethod<SNode> getVisiblity_idhEwIBC5 = new SMethodBuilder<>(SNode.class).name("getVisiblity").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877352965L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
+  public static final SMethod<SNode> getComponentType_id5C8n8D5Vy2T = new SMethodBuilder<>(SNode.class).name("getComponentType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6487537012175675577L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
+  public static final SMethod<SNode> getPropertyType_idm3C9PXFLoW = new SMethodBuilder<>(SNode.class).name("getPropertyType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(397337790417671740L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
+  public static final SMethod<List<SAbstractConcept>> getOperationSConcept_id6ALWH9g2mqE = new SMethodBuilder<>((Class<List<SAbstractConcept>>) ((Class) Object.class)).name("getOperationSConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7616135429960066730L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getClientPropertyKey_id86yKXFJQOR, getClientPropertyValue_id86yKXFJVOT, getUniqueName_id5YZamx7BkxH, getVisiblity_idhEwIBC5, getComponentType_id5C8n8D5Vy2T, getPropertyType_idm3C9PXFLoW, getOperationSConcept_id6ALWH9g2mqE);
 

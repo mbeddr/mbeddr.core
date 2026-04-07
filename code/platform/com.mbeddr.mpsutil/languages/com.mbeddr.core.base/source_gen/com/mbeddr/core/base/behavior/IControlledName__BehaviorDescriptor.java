@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -22,13 +21,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IControlledName__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x2b2ef3be77b50fd6L, "com.mbeddr.core.base.structure.IControlledName");
 
-  public static final SMethod<String> getControlledName_id2GIWVTRHLfj = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getControlledName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3111692391937414099L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> prescribesType_id3VMeFNzc5hU = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("prescribesType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4535752357655368826L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<SNode> getPrescribedType_id3VMeFNzc6$L = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPrescribedType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4535752357655374129L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> isConstantLike_id4k0bDztYlgO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isConstantLike").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4972025222711039028L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> description_id58M63C2ArZb = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("description").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5922823097376423883L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<List<SNode>> additionalTooltipNodes_id7WzG0mxhtEs = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("additionalTooltipNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9161359605228755612L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> handleDeletion_id5oJ9AK5Fggy = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("handleDeletion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6210224656560751650L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> getControlledName_id2GIWVTRHLfj = new SMethodBuilder<>(String.class).name("getControlledName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3111692391937414099L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> prescribesType_id3VMeFNzc5hU = new SMethodBuilder<>(Boolean.TYPE).name("prescribesType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4535752357655368826L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> getPrescribedType_id3VMeFNzc6$L = new SMethodBuilder<>(SNode.class).name("getPrescribedType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4535752357655374129L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isConstantLike_id4k0bDztYlgO = new SMethodBuilder<>(Boolean.TYPE).name("isConstantLike").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4972025222711039028L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> description_id58M63C2ArZb = new SMethodBuilder<>(String.class).name("description").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5922823097376423883L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<SNode>> additionalTooltipNodes_id7WzG0mxhtEs = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("additionalTooltipNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9161359605228755612L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> handleDeletion_id5oJ9AK5Fggy = new SMethodBuilder<>(Void.TYPE).name("handleDeletion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6210224656560751650L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "node"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getControlledName_id2GIWVTRHLfj, prescribesType_id3VMeFNzc5hU, getPrescribedType_id3VMeFNzc6$L, isConstantLike_id4k0bDztYlgO, description_id58M63C2ArZb, additionalTooltipNodes_id7WzG0mxhtEs, handleDeletion_id5oJ9AK5Fggy);
 

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class IConcurrencyInComponent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x3f445ef354ad4ae5L, 0xa22d91c3ce06375eL, 0x3695d9495041a6c3L, "com.mbeddr.ext.components.concurrency.structure.IConcurrencyInComponent");
 
-  public static final SMethod<SNode> unwrap_id3qlQk_ggqsk = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("unwrap").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3933288758480316180L).languageId(0xa22d91c3ce06375eL, 0x3f445ef354ad4ae5L).build2();
+  public static final SMethod<SNode> unwrap_id3qlQk_ggqsk = new SMethodBuilder<>(SNode.class).name("unwrap").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3933288758480316180L).languageId(0xa22d91c3ce06375eL, 0x3f445ef354ad4ae5L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(unwrap_id3qlQk_ggqsk);
 

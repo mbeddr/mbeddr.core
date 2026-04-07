@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,9 +18,9 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class TestSpecificStatement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d68b77b6994918L, 0x83b8857e63787800L, 0x1ddb142e3d8fe986L, "com.mbeddr.core.unittest.structure.TestSpecificStatement");
 
-  public static final SMethod<String> genActualVarName_id3IOp39i06Jo = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genActualVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4302173711332568024L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
-  public static final SMethod<String> genExpectedVarName_id3IOp39i0eHN = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genExpectedVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4302173711332600691L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
-  public static final SMethod<String> getFailureMessagePrefixFormat_idBqp3R02YG9 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFailureMessagePrefixFormat").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(709990107642063625L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<String> genActualVarName_id3IOp39i06Jo = new SMethodBuilder<>(String.class).name("genActualVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4302173711332568024L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<String> genExpectedVarName_id3IOp39i0eHN = new SMethodBuilder<>(String.class).name("genExpectedVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4302173711332600691L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<String> getFailureMessagePrefixFormat_idBqp3R02YG9 = new SMethodBuilder<>(String.class).name("getFailureMessagePrefixFormat").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(709990107642063625L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genActualVarName_id3IOp39i06Jo, genExpectedVarName_id3IOp39i0eHN, getFailureMessagePrefixFormat_idBqp3R02YG9);
 

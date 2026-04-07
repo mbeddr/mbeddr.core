@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,9 +18,9 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class AbstractDerivedInitialStateAnnotation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x3e6fc9ebb0029ac6L, "com.mbeddr.ext.statemachines.structure.AbstractDerivedInitialStateAnnotation");
 
-  public static final SMethod<Boolean> isApplicable_id3$f8hf_bVKn = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isApplicable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4111541354145758231L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
-  public static final SMethod<SNode> createInitialExpr_id3TJMuIK0DFA = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createInitialExpr").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4499036566873873126L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
-  public static final SMethod<String> getImmediateInitialExecutionErrorMessage_id3TJMuILXb3L = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getImmediateInitialExecutionErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4499036566906515697L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<Boolean> isApplicable_id3$f8hf_bVKn = new SMethodBuilder<>(Boolean.TYPE).name("isApplicable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4111541354145758231L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<SNode> createInitialExpr_id3TJMuIK0DFA = new SMethodBuilder<>(SNode.class).name("createInitialExpr").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4499036566873873126L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<String> getImmediateInitialExecutionErrorMessage_id3TJMuILXb3L = new SMethodBuilder<>(String.class).name("getImmediateInitialExecutionErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4499036566906515697L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isApplicable_id3$f8hf_bVKn, createInitialExpr_id3TJMuIK0DFA, getImmediateInitialExecutionErrorMessage_id3TJMuILXb3L);
 

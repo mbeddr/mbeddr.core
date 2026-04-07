@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class RequirementsLink__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0x795de87bb6773163L, "com.mbeddr.cc.requirements.structure.RequirementsLink");
 
-  public static final SMethod<Boolean> canBeUsedUnderRequirement_idveUazBMRZ6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeUsedUnderRequirement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(562642815608913862L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> canTargetRequirement_idveUazBMZRY = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canTargetRequirement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(562642815608946174L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> canBeUsedUnderRequirement_idveUazBMRZ6 = new SMethodBuilder<>(Boolean.TYPE).name("canBeUsedUnderRequirement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(562642815608913862L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter(SNode.class, "req"));
+  public static final SMethod<Boolean> canTargetRequirement_idveUazBMZRY = new SMethodBuilder<>(Boolean.TYPE).name("canTargetRequirement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(562642815608946174L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter(SNode.class, "target"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeUsedUnderRequirement_idveUazBMRZ6, canTargetRequirement_idveUazBMZRY);
 

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,9 +21,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class VariantAwareType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x634736cfea734eb1L, 0xabe9d2ecc5fcf837L, 0x52b33753b307df4cL, "com.mbeddr.cc.var.c.structure.VariantAwareType");
 
-  public static final SMethod<SNode> getBaseCase_id5aNdPeN2by1 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getBaseCase").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5959167564566804609L).languageId(0xabe9d2ecc5fcf837L, 0x634736cfea734eb1L).build2();
-  public static final SMethod<List<SNode>> getCaseNodes_id5aNdPeN2Iws = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getCaseNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5959167564566947868L).languageId(0xabe9d2ecc5fcf837L, 0x634736cfea734eb1L).build2();
-  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getBaseCase_id5aNdPeN2by1 = new SMethodBuilder<>(SNode.class).name("getBaseCase").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5959167564566804609L).languageId(0xabe9d2ecc5fcf837L, 0x634736cfea734eb1L).build2();
+  public static final SMethod<List<SNode>> getCaseNodes_id5aNdPeN2Iws = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getCaseNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5959167564566947868L).languageId(0xabe9d2ecc5fcf837L, 0x634736cfea734eb1L).build2();
+  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<>(Integer.TYPE).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBaseCase_id5aNdPeN2by1, getCaseNodes_id5aNdPeN2Iws, getUsedBytes_id61lw97FtLtJ);
 

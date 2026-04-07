@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -24,7 +23,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class TagPortCharacteristic__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x155c88e867d00d26L, "com.mbeddr.ext.components.structure.TagPortCharacteristic");
 
-  public static final SMethod<String> isCompatibleImpl_id1lsyexBNOog = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("isCompatibleImpl").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(1539255704409294352L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<String> isCompatibleImpl_id1lsyexBNOog = new SMethodBuilder<>(String.class).name("isCompatibleImpl").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(1539255704409294352L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "requiredSideChars"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "providedSideChars"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCompatibleImpl_id1lsyexBNOog);
 

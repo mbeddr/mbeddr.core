@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -31,13 +30,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class TypeDef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xefda956e491e4f00L, 0xba1436af2f213ecfL, 0x54e261614fd09a11L, "com.mbeddr.core.udt.structure.TypeDef");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Integer> sortWeight_id6W5EUuUE5hm = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("sortWeight").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7999989049973036118L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Iterable<SNode>> allReferencedModuleContents_id1zPfrUoUUqq = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allReferencedModuleContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1798411515023042202L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<SNode> bottomType_id1u7i4LCvTIV = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("bottomType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1695403277736188859L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
-  /*package*/ static final SMethod<SNode> bottomTypeCircleAware_id1u7i4LCwoqs = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("bottomTypeCircleAware").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(1695403277736314524L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Integer> sortWeight_id6W5EUuUE5hm = new SMethodBuilder<>(Integer.TYPE).name("sortWeight").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7999989049973036118L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Iterable<SNode>> allReferencedModuleContents_id1zPfrUoUUqq = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allReferencedModuleContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1798411515023042202L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<>(Boolean.TYPE).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<SNode> bottomType_id1u7i4LCvTIV = new SMethodBuilder<>(SNode.class).name("bottomType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1695403277736188859L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
+  /*package*/ static final SMethod<SNode> bottomTypeCircleAware_id1u7i4LCwoqs = new SMethodBuilder<>(SNode.class).name("bottomTypeCircleAware").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(1695403277736314524L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2(SMethodBuilder.createJavaParameter(SNode.class, "original"));
+  public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<>(SNode.class).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, sortWeight_id6W5EUuUE5hm, allReferencedModuleContents_id1zPfrUoUUqq, exportable_id5HxjapwgqKI, bottomType_id1u7i4LCvTIV, bottomTypeCircleAware_id1u7i4LCwoqs, createType_id3o2OLGv7CoR);
 

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.language.SEnumerationLiteral;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class TextCell__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1d891f7bdc9342f9L, 0xa4bcb016656b14e2L, 0x1c579c584d7b9a60L, "com.mbeddr.spreadsheet.structure.TextCell");
 
-  public static final SMethod<SEnumerationLiteral> getCellType_id1LnB5xdvClY = new SMethodBuilder<SEnumerationLiteral>(new SJavaCompoundTypeImpl((Class<SEnumerationLiteral>) ((Class) Object.class))).name("getCellType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859107001726L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
+  public static final SMethod<SEnumerationLiteral> getCellType_id1LnB5xdvClY = new SMethodBuilder<>(SEnumerationLiteral.class).name("getCellType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859107001726L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCellType_id1LnB5xdvClY);
 

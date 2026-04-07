@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -25,10 +24,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class Step__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x36a565f13fa042d6L, 0xbaacf87e209c9789L, 0x44cc979f390c71c5L, "com.mbeddr.ext.components.mock.structure.Step");
 
-  public static final SMethod<Integer> stepID_id7Uz1bYM5TNJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("stepID").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9125142491355913455L).languageId(0xbaacf87e209c9789L, 0x36a565f13fa042d6L).build2();
-  public static final SMethod<String> genFunctionName_id71UKpntpGiJ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8105003328815416495L).languageId(0xbaacf87e209c9789L, 0x36a565f13fa042d6L).build2();
-  public static final SMethod<Boolean> isTriggeredByOperation_id3NJ7rfmYe3a = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isTriggeredByOperation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4390760819952509130L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Integer> stepID_id7Uz1bYM5TNJ = new SMethodBuilder<>(Integer.TYPE).name("stepID").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9125142491355913455L).languageId(0xbaacf87e209c9789L, 0x36a565f13fa042d6L).build2();
+  public static final SMethod<String> genFunctionName_id71UKpntpGiJ = new SMethodBuilder<>(String.class).name("genFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8105003328815416495L).languageId(0xbaacf87e209c9789L, 0x36a565f13fa042d6L).build2();
+  public static final SMethod<Boolean> isTriggeredByOperation_id3NJ7rfmYe3a = new SMethodBuilder<>(Boolean.TYPE).name("isTriggeredByOperation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4390760819952509130L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "operation"));
+  public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<>(Integer.TYPE).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(stepID_id7Uz1bYM5TNJ, genFunctionName_id71UKpntpGiJ, isTriggeredByOperation_id3NJ7rfmYe3a, getLOCEquivalent_id6brBMefRfO0);
 

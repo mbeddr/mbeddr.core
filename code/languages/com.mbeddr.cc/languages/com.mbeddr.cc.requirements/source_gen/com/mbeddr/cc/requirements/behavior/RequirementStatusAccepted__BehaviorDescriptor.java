@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.awt.Color;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -20,7 +19,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class RequirementStatusAccepted__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0xc3ddac5b0c02259L, "com.mbeddr.cc.requirements.structure.RequirementStatusAccepted");
 
-  public static final SMethod<Color> getColor_id2U5fsQemzG5 = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3352153450713070341L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<Color> getColor_id2U5fsQemzG5 = new SMethodBuilder<>(Color.class).name("getColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3352153450713070341L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getColor_id2U5fsQemzG5);
 

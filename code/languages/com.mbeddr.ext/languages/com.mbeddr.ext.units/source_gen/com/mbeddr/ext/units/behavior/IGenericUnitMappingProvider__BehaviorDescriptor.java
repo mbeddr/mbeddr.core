@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -29,9 +28,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class IGenericUnitMappingProvider__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd04a6cc773e4069L, 0xb9b011884b2ff1c8L, 0x5f072ca6a2ea1f42L, "com.mbeddr.ext.units.structure.IGenericUnitMappingProvider");
 
-  public static final SMethod<Iterable<SNode>> getGenericUnits_id5W7baqyUyho = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getGenericUnits").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6847490852649575512L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
-  public static final SMethod<Iterable<SNode>> getGenericUnitMappings_id5PsWxcFtosb = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getGenericUnitMappings").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6727518107532101387L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
-  public static final SMethod<SNode> resolveGenericUnit_id6VYXZgFJaKW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("resolveGenericUnit").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7998102616334445628L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> getGenericUnits_id5W7baqyUyho = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getGenericUnits").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6847490852649575512L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
+  public static final SMethod<Iterable<SNode>> getGenericUnitMappings_id5PsWxcFtosb = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getGenericUnitMappings").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6727518107532101387L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
+  public static final SMethod<SNode> resolveGenericUnit_id6VYXZgFJaKW = new SMethodBuilder<>(SNode.class).name("resolveGenericUnit").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7998102616334445628L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2(SMethodBuilder.createJavaParameter(SNode.class, "type"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "mappings"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGenericUnits_id5W7baqyUyho, getGenericUnitMappings_id5PsWxcFtosb, resolveGenericUnit_id6VYXZgFJaKW);
 

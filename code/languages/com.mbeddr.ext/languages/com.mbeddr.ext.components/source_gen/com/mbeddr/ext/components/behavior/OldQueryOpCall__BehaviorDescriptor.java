@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class OldQueryOpCall__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x562bc974a91acf3dL, "com.mbeddr.ext.components.structure.OldQueryOpCall");
 
-  public static final SMethod<String> tempVariableName_id5oFMniD72JE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("tempVariableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014150945770L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> tempVariableName_id5oFMniD72JE = new SMethodBuilder<>(String.class).name("tempVariableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014150945770L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tempVariableName_id5oFMniD72JE);
 

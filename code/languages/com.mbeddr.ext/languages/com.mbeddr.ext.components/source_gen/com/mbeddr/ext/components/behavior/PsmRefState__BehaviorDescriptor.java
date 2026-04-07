@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,7 +20,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class PsmRefState__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x562bc974a923dd7cL, "com.mbeddr.ext.components.structure.PsmRefState");
 
-  public static final SMethod<Integer> stateIndex_id5oFMniD9j7Y = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("stateIndex").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014151537150L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Integer> stateIndex_id5oFMniD9j7Y = new SMethodBuilder<>(Integer.TYPE).name("stateIndex").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014151537150L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(stateIndex_id5oFMniD9j7Y);
 

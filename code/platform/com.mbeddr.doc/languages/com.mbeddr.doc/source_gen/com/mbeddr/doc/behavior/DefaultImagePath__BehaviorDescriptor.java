@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,8 +18,8 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class DefaultImagePath__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x5bd5cb5a7dc904f7L, "com.mbeddr.doc.structure.DefaultImagePath");
 
-  public static final SMethod<String> getSubsitutedPath_id3RseghIca7J = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSubsitutedPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457500422381281775L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Boolean> needsMapping_id2i$odZBB7La = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("needsMapping").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2640341796325719114L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> getSubsitutedPath_id3RseghIca7J = new SMethodBuilder<>(String.class).name("getSubsitutedPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457500422381281775L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Boolean> needsMapping_id2i$odZBB7La = new SMethodBuilder<>(Boolean.TYPE).name("needsMapping").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2640341796325719114L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSubsitutedPath_id3RseghIca7J, needsMapping_id2i$odZBB7La);
 

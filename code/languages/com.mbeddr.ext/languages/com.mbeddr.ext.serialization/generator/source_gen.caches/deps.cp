@@ -32,7 +32,6 @@
   <uses module="a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)" kind="dp" />
   <uses module="2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)" kind="dp" />
   <uses module="efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)" kind="dp" />
-  <uses module="06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)" kind="dp" />
   <uses module="bb0ad88b-63cd-45fd-ae27-8662d274cf3c(com.mbeddr.ext.serialization)" kind="dp" />
   <uses module="c77268b2-51cb-4106-b2ae-9e74c287b569(com.mbeddr.ext.serialization#2122011389042206319)" kind="dp" />
   <uses module="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" kind="dp" />

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -23,11 +22,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class AbstractAction__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x74b3ca414cae6935L, "com.mbeddr.ext.statemachines.structure.AbstractAction");
 
-  public static final SMethod<Boolean> forceMultiLines_id5oX1Q_zkX36 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("forceMultiLines").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6214131210060550342L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<String> getEndLabel_id5Xsg2EBpPwD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEndLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6871437683401906217L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> genFunctionName_id4oSz90j9p3S = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genFunctionName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5059948731775160568L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
-  public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<SAbstractConcept> getConceptToBeCounted_id6brBMefSzRs = new SMethodBuilder<SAbstractConcept>(new SJavaCompoundTypeImpl((Class<SAbstractConcept>) ((Class) Object.class))).name("getConceptToBeCounted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210703211996L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> forceMultiLines_id5oX1Q_zkX36 = new SMethodBuilder<>(Boolean.TYPE).name("forceMultiLines").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6214131210060550342L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<String> getEndLabel_id5Xsg2EBpPwD = new SMethodBuilder<>(String.class).name("getEndLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6871437683401906217L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "statementList"));
+  public static final SMethod<String> genFunctionName_id4oSz90j9p3S = new SMethodBuilder<>(String.class).name("genFunctionName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5059948731775160568L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<>(Integer.TYPE).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SAbstractConcept> getConceptToBeCounted_id6brBMefSzRs = new SMethodBuilder<>(SAbstractConcept.class).name("getConceptToBeCounted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210703211996L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(forceMultiLines_id5oX1Q_zkX36, getEndLabel_id5Xsg2EBpPwD, genFunctionName_id4oSz90j9p3S, getLOCEquivalent_id6brBMefRfO0, getConceptToBeCounted_id6brBMefSzRs);
 

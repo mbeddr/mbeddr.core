@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -32,13 +31,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class BlockExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x4eeaa4ca8221c604L, "com.mbeddr.core.util.structure.BlockExpression");
 
-  public static final SMethod<String> functionNamePrefix_id4VEDcE28$HZ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("functionNamePrefix").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5686538669182307199L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<Iterable<SNode>> outsideLVDRefs_id4VEDcE28A0w = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("outsideLVDRefs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5686538669182312480L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<Iterable<SNode>> outsideArgRefs_id4VEDcE28B8G = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("outsideArgRefs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5686538669182317100L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<Iterable<SNode>> outsideGlobalConstFuncRefs_id7FuBBp$HY1Y = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("outsideGlobalConstFuncRefs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8853688148790075518L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> isSideeffectFree_id6SENleF$SRD = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSideeffectFree").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7938383052438474217L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<String> genFunctionName_id2edJ9spxTW = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(40029861253095036L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> functionNamePrefix_id4VEDcE28$HZ = new SMethodBuilder<>(String.class).name("functionNamePrefix").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5686538669182307199L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<Iterable<SNode>> outsideLVDRefs_id4VEDcE28A0w = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("outsideLVDRefs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5686538669182312480L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<Iterable<SNode>> outsideArgRefs_id4VEDcE28B8G = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("outsideArgRefs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5686538669182317100L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<Iterable<SNode>> outsideGlobalConstFuncRefs_id7FuBBp$HY1Y = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("outsideGlobalConstFuncRefs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8853688148790075518L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isSideeffectFree_id6SENleF$SRD = new SMethodBuilder<>(Boolean.TYPE).name("isSideeffectFree").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7938383052438474217L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> genFunctionName_id2edJ9spxTW = new SMethodBuilder<>(String.class).name("genFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(40029861253095036L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(functionNamePrefix_id4VEDcE28$HZ, outsideLVDRefs_id4VEDcE28A0w, outsideArgRefs_id4VEDcE28B8G, outsideGlobalConstFuncRefs_id7FuBBp$HY1Y, renderReadable_id1VQvajLb13M, isSideeffectFree_id6SENleF$SRD, genFunctionName_id2edJ9spxTW);
 

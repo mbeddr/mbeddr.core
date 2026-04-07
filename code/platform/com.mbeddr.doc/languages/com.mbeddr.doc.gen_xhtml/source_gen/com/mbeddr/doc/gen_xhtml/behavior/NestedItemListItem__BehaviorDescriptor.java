@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -26,7 +25,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class NestedItemListItem__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2dec08523a214c4eL, 0xa68cb05236cc37f2L, 0x638c1578883a04a3L, "com.mbeddr.doc.gen_xhtml.structure.NestedItemListItem");
 
-  public static final SMethod<Void> initializeFromNestedItem_id6ec5ny8ewId = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("initializeFromNestedItem").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7173131913920121741L).languageId(0xa68cb05236cc37f2L, 0x2dec08523a214c4eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> initializeFromNestedItem_id6ec5ny8ewId = new SMethodBuilder<>(Void.TYPE).name("initializeFromNestedItem").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7173131913920121741L).languageId(0xa68cb05236cc37f2L, 0x2dec08523a214c4eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "item"));
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(initializeFromNestedItem_id6ec5ny8ewId);
 

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,7 +20,7 @@ import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 public final class Header__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x22a8c356ae1a4079L, 0x96b0d5e7c21ae7c4L, 0x23dd0ad42b5a3b29L, "com.mbeddr.doc.markdown.structure.Header");
 
-  public static final SMethod<String> heading_idI_3mOg_ExQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("heading").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(839091667655370870L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
+  public static final SMethod<String> heading_idI_3mOg_ExQ = new SMethodBuilder<>(String.class).name("heading").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(839091667655370870L).languageId(0x96b0d5e7c21ae7c4L, 0x22a8c356ae1a4079L).build2();
 
   private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(heading_idI_3mOg_ExQ);
 
