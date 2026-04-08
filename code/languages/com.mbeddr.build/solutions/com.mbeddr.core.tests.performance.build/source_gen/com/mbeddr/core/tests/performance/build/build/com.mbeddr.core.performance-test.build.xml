@@ -233,11 +233,6 @@
       <plugin path="${artifacts.mps}/plugins/mps-vcs" id="jetbrains.mps.vcs" />
       <plugin path="${artifacts.mps}/plugins/vcs-git" id="Git4Idea" />
       <plugin path="${artifacts.mps}/plugins/vcs-svn" id="Subversion" />
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
-      <library file="${artifacts.mps}/languages/workbench-stub.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       <chunk>
         <module file="${mbeddr.core}/tests/test.ts.core.performance/test.ts.core.performance.msd" />
       </chunk>
@@ -398,11 +393,6 @@
       </jvmargs>
       
       
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
-      <library file="${artifacts.mps}/languages/workbench-stub.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       
       <plugin id="MPS.Kotlin" path="${artifacts.com.mbeddr.platform}/MPS.Kotlin" />
       <plugin id="com.mbeddr.mpsutil.common" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common" />

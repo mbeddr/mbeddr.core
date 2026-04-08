@@ -323,11 +323,6 @@
       <plugin path="${artifacts.mps}/plugins/vcs-svn" id="Subversion" />
       <library file="${artifacts.com.mbeddr.core.aLibrary.build}/aLibrary.jar" />
       <library file="${artifacts.com.mbeddr.core.aLibrary.build}/com.mbeddr.core.__spreferences.PlatformTemplates.jar" />
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
-      <library file="${artifacts.mps}/languages/workbench-stub.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       <chunk>
         <module file="${mbeddr.core}/tests/test.ex.core/core.msd" />
         <module file="${mbeddr.core}/tests/test.ex.errorreporting/errorreporting.msd" />
