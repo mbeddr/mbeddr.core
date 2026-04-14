@@ -103,17 +103,6 @@ ext.scriptsBasePath = rootProject.file("build").absolutePath
 subprojects {
     // repository urls
     configureRepositories(it)
-
-    // configs
-    configurations {
-        ant_lib
-    }
-
-    dependencies {
-        ant_lib "org.apache.ant:ant-junit:1.10.15"
-    }
-
-    ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = configurations.ant_lib
 }
 
 
