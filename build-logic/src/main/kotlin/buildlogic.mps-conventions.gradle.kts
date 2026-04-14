@@ -1,5 +1,6 @@
 import buildlogic.Versions
 import buildlogic.additionalPomInfo
+import com.specificlanguages.mpsplatformcache.MpsPlatformCache
 import de.itemis.mps.gradle.RunAntScript
 
 plugins {
@@ -12,6 +13,21 @@ plugins {
 dependencies {
     jbr(versionCatalogs.named("libs").findLibrary("jbr").get())
 }
+
+// MPS resolution via mps-platform-cache
+val mps by configurations.creating {
+    isCanBeConsumed = false
+}
+
+val mpsPlatformCache = extensions.getByType(MpsPlatformCache::class.java)
+
+val mpsHome: Provider<Directory> = if (findProperty("mpsHomeDir") != null) {
+    layout.dir(provider { rootProject.file(findProperty("mpsHomeDir")!!) })
+} else {
+    layout.dir(mpsPlatformCache.getMpsRoot(provider { configurations.getByName("mps") }))
+}
+
+extensions.add<Provider<Directory>>("mpsHome", mpsHome)
 
 // Ant classpath configuration for BuildLanguages and TestLanguages tasks
 @Suppress("LocalVariableName")
