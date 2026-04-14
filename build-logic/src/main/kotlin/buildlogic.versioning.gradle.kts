@@ -46,6 +46,11 @@ extensions.add(
     "versions",
     Versions(
         mpsBuild = mpsBuild,
+        mpsMajor = mpsMajor,
+        mbeddrBuild = mbeddrBuild,
+        mbeddrMajor = mbeddrMajor,
+        mbeddrMinor = mbeddrMinor,
         mbeddrBuildNumber = mbeddrBuildNumber,
-        mbeddrPlatformBuildNumber = mbeddrPlatformBuildNumber)
+        mbeddrPlatformBuildNumber = mbeddrPlatformBuildNumber,
+        ciBuild = ciBuild)
 )
