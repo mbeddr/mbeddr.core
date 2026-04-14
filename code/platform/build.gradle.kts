@@ -36,8 +36,7 @@ dependencies {
     if (project.hasProperty("mpsExtensionsZip")) {
         mpsLibraries(files(project.property("mpsExtensionsZip")))
     } else {
-        val mpsExtensionsVersion: CharSequence by project
-        mpsLibraries("de.itemis.mps:extensions:$mpsExtensionsVersion")
+        mpsLibraries(libs.mps.extensions)
     }
 }
 

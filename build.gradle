@@ -5,9 +5,6 @@ plugins {
     id("buildlogic.versioning")
 }
 
-//MPS-extensions version
-ext.mpsExtensionsVersion = "2024.1.3599.c271043"
-
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
 if (ciBuild) {
