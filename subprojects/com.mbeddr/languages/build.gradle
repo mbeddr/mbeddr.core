@@ -7,6 +7,23 @@ plugins {
     id 'buildlogic.mps-conventions'
 }
 
+// Local definitions (previously inherited from parent project)
+def scriptsBasePath = rootProject.file("build").absolutePath
+def artifactsDir = rootProject.file("artifacts")
+def mpsHomeDirFile = rootProject.file(project.findProperty('mpsHomeDir') ?: "build/mps")
+
+Map<String, Object> antSystemProperties = [
+    'mps.home': mpsHomeDirFile,
+    'build.dir': rootProject.layout.projectDirectory,
+    'artifacts.root': rootProject.file('artifacts'),
+    'mbeddr.github.core.home': rootProject.layout.projectDirectory,
+    'build': mbeddrBuildNumber,
+    'major.version': mbeddrMajor,
+    'minor.version': mbeddrMinor,
+    'build.jna.library.path': new File(mpsHomeDirFile, "lib/jna/${System.getProperty('os.arch')}")
+]
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = antSystemProperties.collect { "-D${it.key}=${it.value}".toString() }
+
 // :com.mbeddr.build
 def script_build_mbeddr = new File(scriptsBasePath + "/com.mbeddr.build/" + "build.xml")
 
@@ -18,11 +35,15 @@ ant.taskdef(name: "makeTests",
 configurations {
     junitAnt
     mbeddrPlatform
+    mpsLibraries { canBeConsumed = false }
 }
 
 def usePrebuiltPlatform = ciBuild && !project.hasProperty('forceBuildPlatform')
 
 dependencies {
+    mps libs.mps
+    mpsLibraries libs.mps.extensions
+
     junitAnt 'junit:junit:4.13.2'
     junitAnt('org.apache.ant:ant-junit:1.10.15') {
         transitive = false
@@ -56,18 +77,20 @@ task resolve_mbeddr_platform() {
     }
 }
 
+def resolveMpsLibraries = tasks.register('resolveMpsLibraries', Sync) {
+    from(configurations.mpsLibraries.elements.map { it.collect(project.&zipTree) })
+    into(layout.buildDirectory.dir("dependencies"))
+}
+
 tasks.register('build_allScripts', MpsGenerate) {
     description 'Generates the build script that contains all other build scripts.'
     javaLauncher = jbrToolchain.javaLauncher
     environmentKind = EnvironmentKind.MPS
-    mpsHome = mpsHomeProvider
+    mpsHome = project.extensions.getByName("mpsHome")
 
     projectLocation = rootProject.file('code/languages/com.mbeddr.build')
 
-    pluginRoots.from(
-            evaluationDependsOn(':com.mbeddr:platform')
-                    .tasks.named('resolveMpsLibraries', Sync)
-                    .map { it.destinationDir })
+    pluginRoots.from(resolveMpsLibraries.map { it.destinationDir })
     pluginRoots.from(mpsHome.dir('plugins'))
 
     folderMacros.put('mbeddr.github.core.home', rootProject.layout.projectDirectory)
@@ -81,7 +104,7 @@ tasks.register('build_allScripts', MpsGenerate) {
 task copy_logConfig(type: Copy, dependsOn: 'build_allScripts') {
     description 'Copy the logging configuration to the MPS installation.'
     from "$rootDir/debug"
-    into "$mpsHomeDir/bin"
+    into "$mpsHomeDirFile/bin"
 }
 
 ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
