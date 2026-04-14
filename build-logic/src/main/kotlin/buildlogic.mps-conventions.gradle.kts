@@ -1,3 +1,4 @@
+import buildlogic.Versions
 import buildlogic.additionalPomInfo
 import de.itemis.mps.gradle.RunAntScript
 
@@ -30,3 +31,39 @@ tasks.withType<RunAntScript>().configureEach {
 }
 
 extra["additionalPomInfo"] = Action<MavenPom>(MavenPom::additionalPomInfo)
+
+// Publishing repository configuration: applied whenever the maven-publish plugin is present
+pluginManager.withPlugin("maven-publish") {
+    val versions = the<Versions>()
+    extensions.configure<PublishingExtension>("publishing") {
+        repositories {
+            maven {
+                url = uri(
+                    if (versions.mbeddrBuildNumber.endsWith("-SNAPSHOT"))
+                        "https://artifacts.itemis.cloud/repository/maven-mps-snapshots/"
+                    else
+                        "https://artifacts.itemis.cloud/repository/maven-mps-releases/"
+                )
+                if (findProperty("artifacts.itemis.cloud.user") != null && findProperty("artifacts.itemis.cloud.pw") != null) {
+                    credentials {
+                        username = findProperty("artifacts.itemis.cloud.user") as String?
+                        password = findProperty("artifacts.itemis.cloud.pw") as String?
+                    }
+                }
+            }
+
+            if (versions.mbeddrBuild == "master") {
+                maven {
+                    name = "GitHubPackages"
+                    url = uri("https://maven.pkg.github.com/mbeddr/mbeddr.core")
+                    if (findProperty("gpr.token") != null) {
+                        credentials {
+                            username = findProperty("gpr.user") as String?
+                            password = findProperty("gpr.token") as String?
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
