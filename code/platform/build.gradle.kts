@@ -16,7 +16,6 @@ plugins {
 
 val scriptsBasePath: String by project
 val artifactsDir: File by project
-val mpsPluginsDir: String by project
 
 fun scriptFile(relativePath: String): File = File("$scriptsBasePath/$relativePath")
 
