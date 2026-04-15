@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/com.mbeddr.platform.distribution" />
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.platform.distribution" />
   <property name="artifacts.root" location="${basedir}/../../artifacts" />
-  <property name="mbeddr.github.core.home" location="${basedir}/../../" />
+  <property name="project.root" location="${basedir}/../../" />
   <property name="platform.sl-all" location="${artifacts.root}/mps-sl-all" />
   <property name="platform.artifacts" location="${artifacts.root}/com.mbeddr.platform" />
   <property name="artifacts.com.mbeddr.platform" location="${platform.artifacts}" />
