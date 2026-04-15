@@ -16,7 +16,7 @@ plugins {
 
 val scriptsBasePath: String by project
 val artifactsDir: File by project
-val mpsPluginsDir: String by project
+val mpsPluginsDir: Provider<String> by project
 
 fun scriptFile(relativePath: String): File = File("$scriptsBasePath/$relativePath")
 
@@ -27,11 +27,6 @@ val reportsDir = rootProject.layout.buildDirectory.dir("reports").get().asFile
 
 // Project group
 group = "com.mbeddr"
-
-repositories {
-    // required for com.michaelbaranov:microba library
-    maven("https://maven.atlassian.com/content/repositories/atlassian-public/")
-}
 
 val mpsLibraries by configurations.registering {
     isCanBeConsumed = false
@@ -153,7 +148,7 @@ val install_actionsfilter by tasks.registering(Copy::class) {
     description = "Copy the actions filter IntelliJ plugin to the MPS plugin\"s directory"
     from("$rootDir/artifacts/com.mbeddr.mpsutil.actionsfilter/")
     include("com.mbeddr.mpsutil.actionsfilter/")
-    into("$mpsPluginsDir")
+    into(mpsPluginsDir)
 }
 
 tasks.getByPath(":com.mbeddr:install").dependsOn(install_actionsfilter)
