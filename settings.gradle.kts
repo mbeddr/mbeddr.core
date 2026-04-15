@@ -7,10 +7,7 @@ pluginManagement {
     includeBuild("build-logic")
 }
 
-val subprojectPaths = listOf("com.mbeddr",
-    "com.mbeddr:languages",
-    "com.mbeddr:distribution",
-    "publishing")
+val subprojectPaths = listOf("com.mbeddr", "com.mbeddr:languages")
 
 fun fqpath(path: String) = ":$path"
 fun dir(path: String) = file("subprojects/" + path.replace(':', '/'))
@@ -27,4 +24,25 @@ project(":BigProject").projectDir = file("tools/BigProject")
 include(":com.mbeddr:platform")
 project(":com.mbeddr:platform").projectDir = file("code/platform")
 
+include(":github-release")
+project(":github-release").projectDir = file("code/github-release")
+
+include(":tutorial")
+project(":tutorial").projectDir = file("code/applications/tutorial")
+
 rootProject.name = "mbeddr.core"
+
+dependencyResolutionManagement {
+    repositoriesMode = RepositoriesMode.FAIL_ON_PROJECT_REPOS
+    repositories {
+        maven("https://artifacts.itemis.cloud/repository/maven-mps")
+        mavenCentral()
+
+        val disableMavenLocal = ext.has("disableMavenLocal") && "true".equals(ext.get("disableMavenLocal"))
+        if (!disableMavenLocal) {
+            // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
+            // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
+            mavenLocal()
+        }
+    }
+}
