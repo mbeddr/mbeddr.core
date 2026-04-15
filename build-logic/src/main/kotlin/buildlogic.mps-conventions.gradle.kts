@@ -43,22 +43,25 @@ extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = ant_lib
 
 // Default Ant script arguments for BuildLanguages and TestLanguages tasks
 val versions = the<Versions>()
-val mpsHomeDirFile = rootProject.file(findProperty("mpsHomeDir") ?: "build/mps")
 
 extra["itemis.mps.gradle.ant.defaultScriptArgs"] = mapOf(
-    "mps.home" to mpsHomeDirFile,
     "build.dir" to rootProject.layout.projectDirectory,
     "artifacts.root" to rootProject.file("artifacts"),
     "mbeddr.github.core.home" to rootProject.layout.projectDirectory,
     "build" to versions.mbeddrBuildNumber,
     "major.version" to versions.mbeddrMajor,
     "minor.version" to versions.mbeddrMinor,
-    "build.jna.library.path" to File(mpsHomeDirFile, "lib/jna/${System.getProperty("os.arch")}")
 ).map { "-D${it.key}=${it.value}" }
 
-// Use the specified JBR for all RunAntScript tasks
+// Use the specified JBR for all RunAntScript tasks, and add MPS-home-dependent args lazily
+// (mpsHome is only evaluated when a task is actually needed, not during ./gradlew tasks)
 tasks.withType<RunAntScript>().configureEach {
     executable = LazyString(jbrToolchain.javaLauncher.map { it.executablePath.toString() })
+    val mpsDir = mpsHome.get().asFile
+    scriptArgs = scriptArgs + listOf(
+        "-Dmps.home=$mpsDir",
+        "-Dbuild.jna.library.path=${File(mpsDir, "lib/jna/${System.getProperty("os.arch")}")}"
+    )
 }
 
 extra["additionalPomInfo"] = Action<MavenPom>(MavenPom::additionalPomInfo)
