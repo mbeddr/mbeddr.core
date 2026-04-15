@@ -4,3 +4,4 @@ jbr-toolchain = "com.specificlanguages.jbr-toolchain:1.1.0"
 
 [libraries]
 jbr = "com.jetbrains.jdk:jbr_jcef:17.0.11-b1207.30"
+mps = "com.jetbrains:mps:2024.1.6"
