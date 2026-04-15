@@ -17,7 +17,6 @@ val versions = the<Versions>()
 // Local definitions (previously inherited from parent project)
 val scriptsBasePath = rootProject.file("build").absolutePath
 val artifactsDir = rootProject.file("artifacts")
-val mpsHomeDirFile = rootProject.file(project.findProperty("mpsHomeDir") ?: "build/mps")
 
 // :com.mbeddr.build
 val script_build_mbeddr = File("$scriptsBasePath/com.mbeddr.build/build.xml")
@@ -98,12 +97,6 @@ val build_allScripts by tasks.registering(MpsGenerate::class) {
     // implementing just yet.
 }
 
-val copy_logConfig by tasks.registering(Copy::class) {
-    dependsOn(build_allScripts)
-    description = "Copy the logging configuration to the MPS installation."
-    from("$rootDir/debug")
-    into("$mpsHomeDirFile/bin")
-}
 
 ant.withGroovyBuilder {
     "taskdef"(
@@ -178,7 +171,7 @@ val test_mbeddr_performance by tasks.registering(TestLanguages::class) {
 }
 
 val build_mbeddr_core_ex by tasks.registering(BuildLanguages::class) {
-    dependsOn(build_mbeddr, copy_logConfig)
+    dependsOn(build_mbeddr)
     script = script_test_mbeddrCoreEx
     description = "Run the mbeddr core execution tests."
 }
