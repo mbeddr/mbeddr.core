@@ -1914,10 +1914,10 @@
               </node>
               <node concept="Vyspw" id="4JmsWjE0V9n" role="2OqNvi">
                 <node concept="2OqwBi" id="4JmsWjE0V9o" role="Vysub">
-                  <node concept="1jxXqW" id="20N7CGtXuCU" role="2Oq$k0" />
                   <node concept="liA8E" id="4JmsWjE0V9q" role="2OqNvi">
                     <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                   </node>
+                  <node concept="1jxXqW" id="20N7CGtXuCU" role="2Oq$k0" />
                 </node>
               </node>
             </node>
