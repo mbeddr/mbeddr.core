@@ -1,6 +1,6 @@
 plugins {
     base
-    id("buildlogic.mps-conventions")
+    id("buildlogic.versioning")
 }
 
 version = versions.mbeddrBuildNumber
