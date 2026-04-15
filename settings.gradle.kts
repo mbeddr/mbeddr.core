@@ -7,22 +7,14 @@ pluginManagement {
     includeBuild("build-logic")
 }
 
-val subprojectPaths = listOf("com.mbeddr", "com.mbeddr:languages")
+include(":com.mbeddr")
+project(":com.mbeddr").projectDir = file("code")
 
-fun fqpath(path: String) = ":$path"
-fun dir(path: String) = file("subprojects/" + path.replace(':', '/'))
-
-include(*subprojectPaths.map(::fqpath).toTypedArray())
-
-for (path in subprojectPaths) {
-    project(fqpath(path)).projectDir = dir(path)
-}
+include(":com.mbeddr:languages")
+include(":com.mbeddr:platform")
 
 include(":BigProject")
 project(":BigProject").projectDir = file("tools/BigProject")
-
-include(":com.mbeddr:platform")
-project(":com.mbeddr:platform").projectDir = file("code/platform")
 
 include(":github-release")
 project(":github-release").projectDir = file("code/github-release")
