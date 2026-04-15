@@ -16,13 +16,12 @@
       <concept id="4560297596904469355" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModuleGroup" flags="ng" index="22LTRF">
         <reference id="4560297596904469356" name="group" index="22LTRG" />
       </concept>
-      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="ng" index="22LTRH">
+      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="nn" index="22LTRH">
         <child id="4560297596904469360" name="modules" index="22LTRK" />
         <child id="6593674873639474544" name="options" index="24cAkG" />
       </concept>
       <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
         <child id="6593674873635848987" name="requiredPlugins" index="24YFd7" />
-        <child id="8658160622849806934" name="reportsDir" index="3l6Mlw" />
         <child id="7978162869575635130" name="projectPath" index="1RZ71A" />
       </concept>
       <concept id="6593674873635848984" name="jetbrains.mps.build.mps.tests.structure.RequiredPlugin" flags="ng" index="24YFd4">
@@ -52,7 +51,7 @@
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
-      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="ng" index="2Ry0Ak">
+      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="nn" index="2Ry0Ak">
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
@@ -166,7 +165,7 @@
         <property id="322010710375892619" name="uuid" index="3LESm3" />
         <child id="322010710375956261" name="path" index="3LF7KH" />
       </concept>
-      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="ng" index="1SiIV0">
+      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="nn" index="1SiIV0">
         <child id="7259033139236285167" name="dependency" index="1SiIV1" />
       </concept>
     </language>
@@ -242,14 +241,6 @@
         <ref role="398BVh" node="5ueaxoTn61l" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="5ueaxoTpkOX" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="62hLUH71qFg" role="1l3spd">
-      <property role="TrG5h" value="test.reports.root" />
-      <node concept="55IIr" id="62hLUH71qHU" role="398pKh">
-        <node concept="2Ry0Ak" id="62hLUH71qHW" role="iGT6I">
-          <property role="2Ry0Am" value="test-reports" />
         </node>
       </node>
     </node>
@@ -382,6 +373,9 @@
       </node>
       <node concept="L2wRC" id="6n0otOpmcXq" role="39821P">
         <ref role="L2wRA" node="6n0otOpkQ9s" resolve="test.com.mbeddr.mpsutil.logicalChild" />
+      </node>
+      <node concept="L2wRC" id="7ipt1JDQBV_" role="39821P">
+        <ref role="L2wRA" node="4JmsWjEwl1e" resolve="test.com.mbeddr.mpsutil.collections.runtime" />
       </node>
       <node concept="398223" id="2GRHOLIUBUT" role="39821P">
         <node concept="3_J27D" id="2GRHOLIUBUV" role="Nbhlr">
@@ -2804,6 +2798,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.com.mbeddr.mpsutil.collections.runtime" />
         <property role="3LESm3" value="f88d18b6-41df-491c-ad99-c292037bf751" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="4JmsWjEwl1W" role="3LF7KH">
           <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
           <node concept="2Ry0Ak" id="4JmsWjEwl3k" role="iGT6I">
@@ -3031,12 +3026,6 @@
         <node concept="398BVA" id="62hLUH70SSI" role="1RZ71A">
           <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
         </node>
-        <node concept="398BVA" id="62hLUH71qK_" role="3l6Mlw">
-          <ref role="398BVh" node="62hLUH71qFg" resolve="test.reports.root" />
-          <node concept="2Ry0Ak" id="62hLUH71qLi" role="iGT6I">
-            <property role="2Ry0Am" value="mpsutil.tests" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="22LTRH" id="62hLUH70SOD" role="1hWBAP">
@@ -3070,12 +3059,6 @@
                 <property role="2Ry0Am" value="com.mbeddr.doc" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="398BVA" id="62hLUH71qMB" role="3l6Mlw">
-          <ref role="398BVh" node="62hLUH71qFg" resolve="test.reports.root" />
-          <node concept="2Ry0Ak" id="62hLUH71qMD" role="iGT6I">
-            <property role="2Ry0Am" value="doc.tests" />
           </node>
         </node>
       </node>
