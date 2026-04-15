@@ -41,6 +41,21 @@ dependencies {
 
 extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = ant_lib
 
+// Default Ant script arguments for BuildLanguages and TestLanguages tasks
+val versions = the<Versions>()
+val mpsHomeDirFile = rootProject.file(findProperty("mpsHomeDir") ?: "build/mps")
+
+extra["itemis.mps.gradle.ant.defaultScriptArgs"] = mapOf(
+    "mps.home" to mpsHomeDirFile,
+    "build.dir" to rootProject.layout.projectDirectory,
+    "artifacts.root" to rootProject.file("artifacts"),
+    "mbeddr.github.core.home" to rootProject.layout.projectDirectory,
+    "build" to versions.mbeddrBuildNumber,
+    "major.version" to versions.mbeddrMajor,
+    "minor.version" to versions.mbeddrMinor,
+    "build.jna.library.path" to File(mpsHomeDirFile, "lib/jna/${System.getProperty("os.arch")}")
+).map { "-D${it.key}=${it.value}" }
+
 // Use the specified JBR for all RunAntScript tasks
 tasks.withType<RunAntScript>().configureEach {
     executable = LazyString(jbrToolchain.javaLauncher.map { it.executablePath.toString() })
@@ -50,7 +65,6 @@ extra["additionalPomInfo"] = Action<MavenPom>(MavenPom::additionalPomInfo)
 
 // Publishing repository configuration: applied whenever the maven-publish plugin is present
 pluginManager.withPlugin("maven-publish") {
-    val versions = the<Versions>()
     extensions.configure<PublishingExtension>("publishing") {
         repositories {
             maven {

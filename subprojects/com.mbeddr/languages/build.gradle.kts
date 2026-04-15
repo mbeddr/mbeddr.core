@@ -19,18 +19,6 @@ val scriptsBasePath = rootProject.file("build").absolutePath
 val artifactsDir = rootProject.file("artifacts")
 val mpsHomeDirFile = rootProject.file(project.findProperty("mpsHomeDir") ?: "build/mps")
 
-val antSystemProperties = mapOf(
-    "mps.home" to mpsHomeDirFile,
-    "build.dir" to rootProject.layout.projectDirectory,
-    "artifacts.root" to rootProject.file("artifacts"),
-    "mbeddr.github.core.home" to rootProject.layout.projectDirectory,
-    "build" to versions.mbeddrBuildNumber,
-    "major.version" to versions.mbeddrMajor,
-    "minor.version" to versions.mbeddrMinor,
-    "build.jna.library.path" to File(mpsHomeDirFile, "lib/jna/${System.getProperty("os.arch")}")
-)
-extra["itemis.mps.gradle.ant.defaultScriptArgs"] = antSystemProperties.map { "-D${it.key}=${it.value}" }
-
 // :com.mbeddr.build
 val script_build_mbeddr = File("$scriptsBasePath/com.mbeddr.build/build.xml")
 

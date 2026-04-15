@@ -12,8 +12,6 @@ dependencies {
     mps(libs.mps)
 }
 
-val mpsHomeDirFile = rootProject.file(project.findProperty("mpsHomeDir") ?: "build/mps")
-
 extra["mpsPluginsDir"] = provider {
     val userHome = System.getProperty("user.home")
 
@@ -55,21 +53,6 @@ tasks.register("install") {
         }
     }
 }
-
-val artifactsDir = rootProject.file("artifacts")
-
-val antSystemProperties = mapOf(
-    "mps.home" to mpsHomeDirFile,
-    "build.dir" to rootProject.layout.projectDirectory,
-    "artifacts.root" to rootProject.file("artifacts"),
-    "mbeddr.github.core.home" to rootProject.layout.projectDirectory,
-    "build" to versions.mbeddrBuildNumber,
-    "major.version" to versions.mbeddrMajor,
-    "minor.version" to versions.mbeddrMinor,
-    "build.jna.library.path" to File(mpsHomeDirFile, "lib/jna/${System.getProperty("os.arch")}")
-)
-
-extra["itemis.mps.gradle.ant.defaultScriptArgs"] = antSystemProperties.map { "-D${it.key}=${it.value}" }
 
 
 tasks.register("printVersions") {
