@@ -3286,12 +3286,6 @@
       <plugin path="${artifacts.mps}/plugins/mps-vcs" id="jetbrains.mps.vcs" />
       <plugin path="${artifacts.mps}/plugins/vcs-git" id="Git4Idea" />
       <plugin path="${artifacts.mps}/plugins/vcs-svn" id="Subversion" />
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
-      <library file="${artifacts.mps}/languages/util/jetbrains.mps.lang.extension.jar" />
-      <library file="${artifacts.mps}/languages/workbench-stub.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       <chunk>
         <module file="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/com.mbeddr.doc.test.documents.msd" />
         <module file="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.asynccell.sandbox/com.mbeddr.mpsutil.asynccell.sandbox.mpl" />
@@ -6801,12 +6795,6 @@
       </jvmargs>
       
       
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
-      <library file="${artifacts.mps}/languages/util/jetbrains.mps.lang.extension.jar" />
-      <library file="${artifacts.mps}/languages/workbench-stub.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       
       <plugin id="MPS.Kotlin" path="${artifacts.com.mbeddr.platform}/MPS.Kotlin" />
       <plugin id="com.mbeddr.mpsutil.asynccell" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.asynccell" />
@@ -6912,10 +6900,6 @@
       </jvmargs>
       
       
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
-      <library file="${artifacts.mps}/languages/workbench-stub.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       
       <plugin id="com.mbeddr.mpsutil.common" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common" />
       <plugin id="com.mbeddr.mpsutil.contextactions" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.contextactions" />
