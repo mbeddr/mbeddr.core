@@ -3,9 +3,6 @@ plugins {
     id("buildlogic.versioning")
 }
 
-// MPS-extensions version
-extra["mpsExtensionsVersion"] = "2024.1.3599.c271043"
-
 extra["artifactsDir"] = File(rootDir, "artifacts")
 
 val ciBuild: Boolean by extra
