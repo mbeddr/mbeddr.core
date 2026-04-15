@@ -6,7 +6,7 @@ val ciBuild by extra(project.hasProperty("forceCI") || project.hasProperty("team
 val mpsBuild: String by extra(versionCatalogs.named("libs").findLibrary("mps").get().get().version!!)
 val mpsMajor: String by extra(when {
     mpsBuild.matches(Regex("""\d{4}\.\d.*""")) -> mpsBuild.substring(0, 6)
-    mpsBuild.matches(Regex("""\d{3}\.\d{3}.*""")) -> "9999.9"
+    mpsBuild.matches(Regex("""\d{3}\..*""")) -> "9999.9"
     else -> throw GradleException("Unrecognized MPS version: $mpsBuild.")
 })
 
