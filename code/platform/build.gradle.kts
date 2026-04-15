@@ -1,3 +1,4 @@
+import buildlogic.Versions
 import buildlogic.additionalPomInfo
 import de.itemis.mps.gradle.BuildLanguages
 import de.itemis.mps.gradle.EnvironmentKind
@@ -14,16 +15,17 @@ plugins {
 }
 
 
-val scriptsBasePath: String by project
-val artifactsDir: File by project
+val scriptsBasePath = rootProject.file("build").absolutePath
+val artifactsDir = rootProject.file("artifacts")
 val mpsPluginsDir: Provider<String> by project
+val mpsHomeDir = mpsHome
 
 fun scriptFile(relativePath: String): File = File("$scriptsBasePath/$relativePath")
 
 val script_test_mbeddrPlatform = File(scriptsBasePath, "com.mbeddr.platform/build-ts-tests.xml")
 val script_mbeddrPlatform_sandboxes = File(scriptsBasePath, "com.mbeddr.platform/build-sandboxes.xml")
 
-val reportsDir = rootProject.layout.buildDirectory.dir("reports").get().asFile
+val reportsDir = layout.buildDirectory.dir("reports").get().asFile
 
 // Project group
 group = "com.mbeddr"
@@ -33,6 +35,7 @@ val mpsLibraries by configurations.registering {
 }
 
 dependencies {
+    mps(libs.mps)
     if (project.hasProperty("mpsExtensionsZip")) {
         mpsLibraries(files(project.property("mpsExtensionsZip")))
     } else {
@@ -105,7 +108,7 @@ val resolveMpsLibraries by tasks.registering(Sync::class) {
     description = "Download the MPS libraries that are used in this project."
     dependsOn(mpsLibraries)
     from(mpsLibraries.map { it.files.map(project::zipTree) })
-    into(rootProject.layout.buildDirectory.dir("dependencies"))
+    into(layout.buildDirectory.dir("dependencies"))
 }
 
 val build_allScripts by tasks.registering(MpsGenerate::class) {
@@ -113,8 +116,7 @@ val build_allScripts by tasks.registering(MpsGenerate::class) {
     javaLauncher = jbrToolchain.javaLauncher
     environmentKind = EnvironmentKind.MPS
 
-    val mpsHomeProvider: Provider<Directory> by project
-    mpsHome = mpsHomeProvider
+    mpsHome = mpsHomeDir
 
     projectLocation = file("com.mbeddr.platform.build")
     pluginRoots.from(tasks.named("resolveMpsLibraries", Sync::class.java).map { it.destinationDir })
@@ -285,7 +287,7 @@ publishing {
         create<MavenPublication>("mbeddrPlatform") {
             groupId = "com.mbeddr"
             artifactId = "platform"
-            version = project.property("mbeddrPlatformBuildNumber").toString()
+            version = versions.mbeddrPlatformBuildNumber
             artifact(package_mbeddrPlatform)
             pom.withXml {
                 val dependenciesNode = asNode().appendNode("dependencies")
@@ -293,8 +295,8 @@ publishing {
                 val configurationsWithProvidedDependencies = buildList {
                     add(mpsLibraries.get())
                     addAll(bundledDeps.map { configurations.get(it.configName) })
-                    if (!project.hasProperty("skipresolve_mps")) {
-                        add(project(":com.mbeddr").configurations["mps"])
+                    if (findProperty("mpsHomeDir") == null) {
+                        add(configurations.getByName("mps"))
                     }
                 }
 
@@ -344,9 +346,7 @@ publishing {
     }
 }
 
-val mbeddrBuild: String by project
-
-if (mbeddrBuild == "master") {
+if (versions.mbeddrBuild == "master") {
     /* this is pretty much a workaround so we don"t need to change anything in Teamcity. Teamcity calls the  publishMbeddrPlatformPublicationToMavenRepository
        tasks but since we have a new publishing target we would need to change the teamcity config to also include publishMbeddrPlatformPublicationToGitHubPackagesRepository
        If we change the Teamcity configuration this would break older maintenance and feature branches and we would loose the ablilty to
@@ -370,7 +370,6 @@ tasks.cyclonedxDirectBom {
         addAll(bundledDeps.map { it.configName })
         add(mpsLibraries.name)
         add("jbr")
-        // TODO: mps config cannot be handled by cyclonedxBom, since it"s located in com.mbeddr project
-        //runtimeConfigs << project(":com.mbeddr").configurations.mps.name
+        add("mps")
     }
 }
