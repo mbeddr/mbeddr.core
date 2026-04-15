@@ -1,16 +1,16 @@
-import de.itemis.mps.gradle.GitBasedVersioning
+import buildlogic.Versions
 
 plugins {
     alias(libs.plugins.common) apply false // Only needed to have access to GitBasedVersioning in this build
     id("buildlogic.versioning")
 }
 
-ext.artifactsDir = new File(rootDir, 'artifacts')
+val versions = the<Versions>()
 
-if (ciBuild) {
+if (versions.ciBuild) {
     // Coerce TeamCity build number to mbeddrBuildNumber by default
     // (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
-    println "##teamcity[buildNumber '${mbeddrBuildNumber}']"
+    println("##teamcity[buildNumber '${versions.mbeddrBuildNumber}']")
 } else {
-    println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
+    println("Local build detected. mbeddr version ${versions.mbeddrBuildNumber}, mbeddr platform version ${versions.mbeddrPlatformBuildNumber}")
 }
