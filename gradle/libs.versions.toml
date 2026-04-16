@@ -5,3 +5,7 @@ jbr-toolchain = "com.specificlanguages.jbr-toolchain:1.1.0"
 [libraries]
 jbr = "com.jetbrains.jdk:jbr_jcef:21.0.6-b895.109"
 mps = "com.jetbrains:mps:2025.1.2"
+
+mpsExtensions241 = "de.itemis.mps:extensions:2024.1.3599.c271043"
+
+mpsExtensions251 = "de.itemis.mps:extensions:2025.1.3602.e4a301d"
