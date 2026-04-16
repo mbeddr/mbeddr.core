@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
@@ -12,7 +11,7 @@
     <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="-1" />
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="-1" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
@@ -13791,12 +13790,8 @@
                 <node concept="1pGfFk" id="5G6qJwL_nN0" role="2ShVmc">
                   <ref role="37wK5l" to="1i7y:~NodePaster.&lt;init&gt;(java.util.List)" resolve="NodePaster" />
                   <node concept="2YIFZM" id="5G6qJwL_nN1" role="37wK5m">
-                    <ref role="37wK5l" to="dp1x:5tGs5KqKiK3" resolve="getNodesFromClipboard" />
+                    <ref role="37wK5l" to="dp1x:oR0qGlMF5V" resolve="getNodesFromClipboard" />
                     <ref role="1Pybhc" to="dp1x:5tGs5KqKfGH" resolve="CopyPasteUtil" />
-                    <node concept="2OqwBi" id="5G6qJwL_nN2" role="37wK5m">
-                      <node concept="0IXxy" id="5G6qJwL_nN3" role="2Oq$k0" />
-                      <node concept="I4A8Y" id="5G6qJwL_nN4" role="2OqNvi" />
-                    </node>
                   </node>
                 </node>
               </node>
@@ -14015,12 +14010,8 @@
                 <node concept="1pGfFk" id="1yYEjDYETK5" role="2ShVmc">
                   <ref role="37wK5l" to="1i7y:~NodePaster.&lt;init&gt;(java.util.List)" resolve="NodePaster" />
                   <node concept="2YIFZM" id="1yYEjDYETK6" role="37wK5m">
-                    <ref role="37wK5l" to="dp1x:5tGs5KqKiK3" resolve="getNodesFromClipboard" />
+                    <ref role="37wK5l" to="dp1x:oR0qGlMF5V" resolve="getNodesFromClipboard" />
                     <ref role="1Pybhc" to="dp1x:5tGs5KqKfGH" resolve="CopyPasteUtil" />
-                    <node concept="2OqwBi" id="1yYEjDYETK7" role="37wK5m">
-                      <node concept="0IXxy" id="1yYEjDYETK8" role="2Oq$k0" />
-                      <node concept="I4A8Y" id="1yYEjDYETK9" role="2OqNvi" />
-                    </node>
                   </node>
                 </node>
               </node>

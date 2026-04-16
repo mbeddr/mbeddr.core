@@ -36,7 +36,7 @@ dependencies {
     if (project.hasProperty("mpsExtensionsZip")) {
         mpsLibraries(files(project.property("mpsExtensionsZip")))
     } else {
-        mpsLibraries(libs.mpsExtensions241)
+        mpsLibraries(libs.mpsExtensions251)
     }
 }
 
@@ -139,16 +139,6 @@ val build_platform by tasks.registering(BuildLanguages::class) {
     outputs.dir(File(artifactsDir, "com.mbeddr.platform/"))
     outputs.upToDateWhen { false }
 }
-
-val install_actionsfilter by tasks.registering(Copy::class) {
-    dependsOn(build_actionsfilter)
-    description = "Copy the actions filter IntelliJ plugin to the MPS plugin\"s directory"
-    from("$rootDir/artifacts/com.mbeddr.mpsutil.actionsfilter/")
-    include("com.mbeddr.mpsutil.actionsfilter/")
-    into(mpsPluginsDir)
-}
-
-tasks.getByPath(":com.mbeddr:install").dependsOn(install_actionsfilter)
 
 val generate_mbeddr_platform_tests by tasks.registering(RunAntScript::class) {
     dependsOn(build_platform)

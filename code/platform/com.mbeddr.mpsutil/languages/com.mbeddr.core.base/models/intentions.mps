@@ -6,7 +6,7 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -563,87 +563,6 @@
               </node>
             </node>
             <node concept="2Kehj3" id="50N_nP$eGlY" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="5Ju6x2ORPJd">
-    <property role="3GE5qa" value="assessment" />
-    <property role="TrG5h" value="updateQuery" />
-    <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="vs0r:K292flwCEW" resolve="Assessment" />
-    <node concept="1SWQZ3" id="3TftwIKHQIM" role="lGtFl">
-      <property role="1SWRpm" value="ASSESSMENTS" />
-    </node>
-    <node concept="2S6ZIM" id="5Ju6x2ORPJe" role="2ZfVej">
-      <node concept="3clFbS" id="5Ju6x2ORPJf" role="2VODD2">
-        <node concept="3clFbF" id="5Ju6x2ORQc4" role="3cqZAp">
-          <node concept="Xl_RD" id="5Ju6x2ORQc5" role="3clFbG">
-            <property role="Xl_RC" value="Update Assessment" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="5Ju6x2ORPJg" role="2ZfgGD">
-      <node concept="3clFbS" id="5Ju6x2ORPJh" role="2VODD2">
-        <node concept="3clFbF" id="70aAUsa5cVy" role="3cqZAp">
-          <node concept="2YIFZM" id="70aAUsa5cVz" role="3clFbG">
-            <ref role="1Pybhc" node="70aAUsa54Vr" resolve="CommandWithMessage" />
-            <ref role="37wK5l" node="70aAUsa54ZB" resolve="execute" />
-            <node concept="Xl_RD" id="70aAUsa5cV$" role="37wK5m">
-              <property role="Xl_RC" value="Updating Query ..." />
-            </node>
-            <node concept="2OqwBi" id="70aAUsa5cV_" role="37wK5m">
-              <node concept="1XNTG" id="70aAUsa5cVA" role="2Oq$k0" />
-              <node concept="liA8E" id="70aAUsa5cVB" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-              </node>
-            </node>
-            <node concept="1bVj0M" id="70aAUsa5cVC" role="37wK5m">
-              <property role="3yWfEV" value="true" />
-              <node concept="3clFbS" id="70aAUsa5cVD" role="1bW5cS">
-                <node concept="3clFbF" id="5Ju6x2ORQc9" role="3cqZAp">
-                  <node concept="2OqwBi" id="3jNX2XuLyBL" role="3clFbG">
-                    <node concept="2Sf5sV" id="3jNX2XuLyBs" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="3jNX2XuLyBQ" role="2OqNvi">
-                      <ref role="37wK5l" to="hwgx:3jNX2XuLy_p" resolve="update" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="70aAUsa5cV0" role="3cqZAp" />
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="3jNX2XuLyyt">
-    <property role="3GE5qa" value="assessment" />
-    <property role="TrG5h" value="updateAllQueries" />
-    <ref role="2ZfgGC" to="vs0r:K292flwCEV" resolve="AssessmentContainer" />
-    <node concept="1SWQZ3" id="3TftwIKHQnw" role="lGtFl">
-      <property role="1SWRpm" value="ASSESSMENTS" />
-    </node>
-    <node concept="2S6ZIM" id="3jNX2XuLyyu" role="2ZfVej">
-      <node concept="3clFbS" id="3jNX2XuLyyv" role="2VODD2">
-        <node concept="3clFbF" id="3jNX2XuLyyy" role="3cqZAp">
-          <node concept="Xl_RD" id="3jNX2XuLyyz" role="3clFbG">
-            <property role="Xl_RC" value="Update All Queries" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="3jNX2XuLyyw" role="2ZfgGD">
-      <node concept="3clFbS" id="3jNX2XuLyyx" role="2VODD2">
-        <node concept="3clFbF" id="4NwT$lbXmgr" role="3cqZAp">
-          <node concept="2OqwBi" id="4NwT$lbXmy9" role="3clFbG">
-            <node concept="2Sf5sV" id="4NwT$lbXmgp" role="2Oq$k0" />
-            <node concept="2qgKlT" id="4NwT$lbXn3U" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:4NwT$lbXi1r" resolve="runAllQueries" />
-              <node concept="1XNTG" id="4NwT$lbXnhL" role="37wK5m" />
-            </node>
           </node>
         </node>
       </node>
