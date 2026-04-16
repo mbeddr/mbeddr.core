@@ -26,7 +26,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_DatePickerCell == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("DatePickerCell");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a0b0i);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_DatePickerCell = cpb.create();
         }
         return props_DatePickerCell;

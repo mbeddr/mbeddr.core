@@ -6,10 +6,10 @@ import jetbrains.mps.workbench.action.BaseAction;
 import javax.swing.Icon;
 import com.intellij.icons.AllIcons;
 import jetbrains.mps.workbench.action.ActionAccess;
+import org.jetbrains.annotations.NotNull;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import java.util.Map;
 import java.io.File;
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import java.awt.Desktop;
@@ -22,6 +22,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import com.mbeddr.mpsutil.filepicker.behavior.IOutputLocationProvider__BehaviorDescriptor;
+import jetbrains.mps.project.facets.GenerationTargetFacet;
 import jetbrains.mps.vfs.IFile;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -40,13 +41,10 @@ public class openGeneratorDirInFileManager_Action extends BaseAction {
     return true;
   }
   @Override
-  public boolean isApplicable(AnActionEvent event, final Map<String, Object> _params) {
-    File file = openGeneratorDirInFileManager_Action.this.getOutputPath(event);
-    return file != null && file.exists();
-  }
-  @Override
   public void doUpdate(@NotNull AnActionEvent event, final Map<String, Object> _params) {
-    this.setEnabledState(event.getPresentation(), this.isApplicable(event, _params));
+    File file = openGeneratorDirInFileManager_Action.this.getOutputPath(event);
+    event.getPresentation().setVisible(file != null);
+    event.getPresentation().setEnabled(file != null && file.exists());
   }
   @Override
   protected boolean collectActionData(AnActionEvent event, final Map<String, Object> _params) {
@@ -80,11 +78,17 @@ public class openGeneratorDirInFileManager_Action extends BaseAction {
       return new File(outputLocation);
     }
 
-    IFile outputLocation = jetbrains.mps.smodel.SModelOperations.getOutputLocation(event.getData(MPSCommonDataKeys.CONTEXT_MODEL));
-    if (outputLocation == null) {
-      return null;
+    GenerationTargetFacet facet = GenerationTargetFacet.find(event.getData(MPSCommonDataKeys.CONTEXT_MODEL));
+    if (facet != null) {
+      IFile outputLocation = facet.getOutputLocation(event.getData(MPSCommonDataKeys.CONTEXT_MODEL));
+      if (outputLocation == null) {
+        return null;
+      }
+
+      return new File(outputLocation.getPath());
     }
-    return new File(outputLocation.getPath());
+
+    return null;
   }
 
   private static final class CONCEPTS {

@@ -34,7 +34,7 @@ public class pasteToEmptySection {
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
         EditorCell selectedCell = editorContext.getSelectedCell();
-        NodePaster paster = new NodePaster(CopyPasteUtil.getNodesFromClipboard(SNodeOperations.getModel(node)));
+        NodePaster paster = new NodePaster(CopyPasteUtil.getNodesFromClipboard());
         if (selectedCell != null && paster.canPaste(selectedCell)) {
           paster.paste(selectedCell);
           SNodeOperations.deleteNode(node);

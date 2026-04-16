@@ -119,108 +119,110 @@
   </root>
   <root nodeRef="r:8bb683ff-ef97-4a17-b922-a6edd1d8518d(com.mbeddr.mpsutil.extensionclass.constraints)/5712676642252629193">
     <file name="ExtensionClassMethodCall_Constraints.java">
-      <node id="5712676642252629193" at="41,49,42,48" concept="10" />
-      <node id="7997068947889524883" at="53,63,54,148" concept="6" />
-      <node id="2691011170768283829" at="57,80,58,167" concept="5" />
-      <node id="1242183206199738546" at="60,90,61,34" concept="6" />
-      <node id="1242183206199273920" at="64,80,65,28" concept="6" />
-      <node id="1242183206199274161" at="68,86,69,116" concept="5" />
-      <node id="1242183206199274176" at="70,72,71,37" concept="6" />
-      <node id="1242183206199274178" at="72,17,73,94" concept="6" />
-      <node id="2691011170768291295" at="76,46,77,60" concept="5" />
-      <node id="2691011170768291301" at="77,60,78,142" concept="5" />
-      <node id="2691011170768291320" at="80,187,81,95" concept="5" />
-      <node id="2691011170768291326" at="81,95,82,274" concept="5" />
-      <node id="2691011170768291343" at="83,147,84,71" concept="1" />
-      <node id="2691011170768291360" at="87,17,88,87" concept="6" />
-      <node id="2691011170768283769" at="91,14,92,0" concept="7" />
-      <node id="2691011170768283770" at="92,0,93,0" concept="7" />
-      <node id="2691011170768283771" at="93,0,94,0" concept="7" />
-      <node id="5712676642252629193" at="98,6,99,131" concept="5" />
-      <node id="7997068947889524883" at="99,131,100,42" concept="1" />
-      <node id="5712676642252629193" at="100,42,101,22" concept="6" />
-      <node id="5712676642252629193" at="105,0,106,0" concept="8" trace="ExtensionClassMethodCall$2B" />
-      <node id="5712676642252629193" at="106,0,107,0" concept="8" trace="IResolveInfo$$k" />
-      <node id="5712676642252629193" at="107,0,108,0" concept="8" trace="DotExpression$yW" />
-      <node id="5712676642252629193" at="108,0,109,0" concept="8" trace="ExtensionClass$K" />
-      <node id="5712676642252629193" at="112,0,113,0" concept="8" trace="baseMethodDeclaration$pyYw" />
-      <node id="5712676642252629193" at="113,0,114,0" concept="8" trace="operand$w6IR" />
-      <node id="5712676642252629193" at="114,0,115,0" concept="8" trace="parameter$5xBj" />
-      <node id="5712676642252629193" at="115,0,116,0" concept="8" trace="type$a1UY" />
-      <node id="5712676642252629193" at="116,0,117,0" concept="8" trace="class$kmno" />
-      <node id="5712676642252629193" at="41,0,44,0" concept="0" trace="ExtensionClassMethodCall_Constraints#()V" />
-      <node id="1242183206199202600" at="60,0,63,0" concept="4" trace="getAvailableElements#(Ljava/lang/String;)Ljava/lang/Iterable;" />
-      <node id="1242183206199274165" at="69,116,72,17" concept="3" />
-      <node id="2691011170768291341" at="82,274,85,21" concept="3" />
-      <node id="7997068947889524883" at="52,0,56,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
-      <node id="1242183206199202616" at="63,0,67,0" concept="4" trace="resolve#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="2691011170768291312" at="79,184,86,19" concept="2" />
-      <node id="1242183206199202640" at="67,0,75,0" concept="4" trace="getReferenceText#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="2691011170768291309" at="78,142,87,17" concept="2" />
-      <node id="2691011170768291286" at="75,0,90,0" concept="4" trace="getNodes#()Ljava/util/List;" />
-      <node id="1242183206199185916" at="58,167,91,14" concept="6" />
-      <node id="7997068947889524883" at="56,0,96,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
-      <node id="7997068947889524883" at="50,56,96,10" concept="6" />
-      <node id="7997068947889524883" at="48,0,98,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-      <node id="7997068947889524883" at="46,90,98,6" concept="5" />
-      <node id="5712676642252629193" at="45,0,103,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
-      <scope id="5712676642252629193" at="41,49,42,48" />
-      <scope id="7997068947889524883" at="53,63,54,148" />
-      <scope id="1242183206199202614" at="60,90,61,34" />
-      <scope id="1242183206199202638" at="64,80,65,28" />
-      <scope id="1242183206199274175" at="70,72,71,37" />
-      <scope id="2691011170768291342" at="83,147,84,71" />
-      <scope id="5712676642252629193" at="41,0,44,0" />
-      <scope id="1242183206199202600" at="60,0,63,0">
+      <node id="5712676642252629193" at="42,49,43,48" concept="10" />
+      <node id="7997068947889524883" at="54,63,55,148" concept="6" />
+      <node id="2691011170768283829" at="58,80,59,167" concept="5" />
+      <node id="1242183206199738546" at="61,90,62,34" concept="6" />
+      <node id="1242183206199273920" at="65,80,66,28" concept="6" />
+      <node id="1242183206199274161" at="69,86,70,145" concept="5" />
+      <node id="1242183206199274176" at="71,72,72,37" concept="6" />
+      <node id="1242183206199274178" at="73,17,74,94" concept="6" />
+      <node id="2691011170768291295" at="77,46,78,60" concept="5" />
+      <node id="2691011170768291301" at="78,60,79,142" concept="5" />
+      <node id="2691011170768291320" at="81,187,82,95" concept="5" />
+      <node id="2691011170768291326" at="82,95,83,274" concept="5" />
+      <node id="2691011170768291343" at="84,147,85,71" concept="1" />
+      <node id="2691011170768291360" at="88,17,89,87" concept="6" />
+      <node id="2691011170768283769" at="92,14,93,0" concept="7" />
+      <node id="2691011170768283770" at="93,0,94,0" concept="7" />
+      <node id="2691011170768283771" at="94,0,95,0" concept="7" />
+      <node id="5712676642252629193" at="99,6,100,131" concept="5" />
+      <node id="7997068947889524883" at="100,131,101,42" concept="1" />
+      <node id="5712676642252629193" at="101,42,102,22" concept="6" />
+      <node id="5712676642252629193" at="106,0,107,0" concept="8" trace="ExtensionClassMethodCall$2B" />
+      <node id="5712676642252629193" at="107,0,108,0" concept="8" trace="IResolveInfo$$k" />
+      <node id="5712676642252629193" at="108,0,109,0" concept="8" trace="DotExpression$yW" />
+      <node id="5712676642252629193" at="109,0,110,0" concept="8" trace="ExtensionClass$K" />
+      <node id="5712676642252629193" at="113,0,114,0" concept="8" trace="baseMethodDeclaration$pyYw" />
+      <node id="5712676642252629193" at="114,0,115,0" concept="8" trace="operand$w6IR" />
+      <node id="5712676642252629193" at="115,0,116,0" concept="8" trace="parameter$5xBj" />
+      <node id="5712676642252629193" at="116,0,117,0" concept="8" trace="type$a1UY" />
+      <node id="5712676642252629193" at="117,0,118,0" concept="8" trace="class$kmno" />
+      <node id="5712676642252629193" at="121,0,122,0" concept="8" trace="resolveInfo$lW9a" />
+      <node id="5712676642252629193" at="42,0,45,0" concept="0" trace="ExtensionClassMethodCall_Constraints#()V" />
+      <node id="1242183206199202600" at="61,0,64,0" concept="4" trace="getAvailableElements#(Ljava/lang/String;)Ljava/lang/Iterable;" />
+      <node id="1242183206199274165" at="70,145,73,17" concept="3" />
+      <node id="2691011170768291341" at="83,274,86,21" concept="3" />
+      <node id="7997068947889524883" at="53,0,57,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="1242183206199202616" at="64,0,68,0" concept="4" trace="resolve#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2691011170768291312" at="80,184,87,19" concept="2" />
+      <node id="1242183206199202640" at="68,0,76,0" concept="4" trace="getReferenceText#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="2691011170768291309" at="79,142,88,17" concept="2" />
+      <node id="2691011170768291286" at="76,0,91,0" concept="4" trace="getNodes#()Ljava/util/List;" />
+      <node id="1242183206199185916" at="59,167,92,14" concept="6" />
+      <node id="7997068947889524883" at="57,0,97,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="7997068947889524883" at="51,56,97,10" concept="6" />
+      <node id="7997068947889524883" at="49,0,99,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7997068947889524883" at="47,90,99,6" concept="5" />
+      <node id="5712676642252629193" at="46,0,104,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="5712676642252629193" at="42,49,43,48" />
+      <scope id="7997068947889524883" at="54,63,55,148" />
+      <scope id="1242183206199202614" at="61,90,62,34" />
+      <scope id="1242183206199202638" at="65,80,66,28" />
+      <scope id="1242183206199274175" at="71,72,72,37" />
+      <scope id="2691011170768291342" at="84,147,85,71" />
+      <scope id="5712676642252629193" at="42,0,45,0" />
+      <scope id="1242183206199202600" at="61,0,64,0">
         <var name="prefix" id="1242183206199202605" />
       </scope>
-      <scope id="7997068947889524883" at="52,0,56,0" />
-      <scope id="1242183206199202616" at="63,0,67,0">
+      <scope id="7997068947889524883" at="53,0,57,0" />
+      <scope id="1242183206199202616" at="64,0,68,0">
         <var name="contextNode" id="1242183206199202620" />
         <var name="refText" id="1242183206199202622" />
       </scope>
-      <scope id="1242183206199202664" at="68,86,73,94">
+      <scope id="1242183206199202664" at="69,86,74,94">
         <var name="resolveInfo" id="1242183206199274160" />
       </scope>
-      <scope id="2691011170768291319" at="80,187,85,21">
+      <scope id="2691011170768291319" at="81,187,86,21">
         <var name="looseType" id="2691011170768291327" />
         <var name="operandType" id="2691011170768291321" />
       </scope>
-      <scope id="2691011170768291311" at="79,184,86,19" />
-      <scope id="2691011170768291312" at="79,184,86,19">
+      <scope id="2691011170768291311" at="80,184,87,19" />
+      <scope id="2691011170768291312" at="80,184,87,19">
         <var name="method" id="2691011170768291313" />
       </scope>
-      <scope id="1242183206199202640" at="67,0,75,0">
+      <scope id="1242183206199202640" at="68,0,76,0">
         <var name="contextNode" id="1242183206199202644" />
         <var name="node" id="1242183206199202646" />
       </scope>
-      <scope id="2691011170768291309" at="78,142,87,17">
+      <scope id="2691011170768291309" at="79,142,88,17">
         <var name="extension" id="2691011170768291310" />
       </scope>
-      <scope id="2691011170768291294" at="76,46,88,87">
+      <scope id="2691011170768291294" at="77,46,89,87">
         <var name="operand" id="2691011170768291302" />
         <var name="result" id="2691011170768291296" />
       </scope>
-      <scope id="2691011170768291286" at="75,0,90,0" />
-      <scope id="7997068947889524883" at="57,80,94,0">
+      <scope id="2691011170768291286" at="76,0,91,0" />
+      <scope id="7997068947889524883" at="58,80,95,0">
         <var name="enclosingNode" id="2691011170768283830" />
       </scope>
-      <scope id="7997068947889524883" at="56,0,96,0">
+      <scope id="7997068947889524883" at="57,0,97,0">
         <var name="_context" id="7997068947889524883" />
       </scope>
-      <scope id="7997068947889524883" at="50,56,96,10" />
-      <scope id="7997068947889524883" at="48,0,98,0" />
-      <scope id="5712676642252629193" at="46,90,101,22">
+      <scope id="7997068947889524883" at="51,56,97,10" />
+      <scope id="7997068947889524883" at="49,0,99,0" />
+      <scope id="5712676642252629193" at="47,90,102,22">
         <var name="d0" id="7997068947889524883" />
         <var name="references" id="5712676642252629193" />
       </scope>
-      <scope id="5712676642252629193" at="45,0,103,0" />
-      <unit id="5712676642252629193" at="104,0,110,0" name="com.mbeddr.mpsutil.extensionclass.constraints.ExtensionClassMethodCall_Constraints$CONCEPTS" />
-      <unit id="5712676642252629193" at="111,0,118,0" name="com.mbeddr.mpsutil.extensionclass.constraints.ExtensionClassMethodCall_Constraints$LINKS" />
-      <unit id="1242183206199202597" at="59,23,91,13" name="com.mbeddr.mpsutil.extensionclass.constraints.ExtensionClassMethodCall_Constraints$1$1$1" />
-      <unit id="7997068947889524883" at="51,19,96,9" name="com.mbeddr.mpsutil.extensionclass.constraints.ExtensionClassMethodCall_Constraints$1$1" />
-      <unit id="7997068947889524883" at="47,48,98,5" name="com.mbeddr.mpsutil.extensionclass.constraints.ExtensionClassMethodCall_Constraints$1" />
-      <unit id="5712676642252629193" at="40,0,119,0" name="com.mbeddr.mpsutil.extensionclass.constraints.ExtensionClassMethodCall_Constraints" />
+      <scope id="5712676642252629193" at="46,0,104,0" />
+      <unit id="5712676642252629193" at="120,0,123,0" name="com.mbeddr.mpsutil.extensionclass.constraints.ExtensionClassMethodCall_Constraints$PROPS" />
+      <unit id="5712676642252629193" at="105,0,111,0" name="com.mbeddr.mpsutil.extensionclass.constraints.ExtensionClassMethodCall_Constraints$CONCEPTS" />
+      <unit id="5712676642252629193" at="112,0,119,0" name="com.mbeddr.mpsutil.extensionclass.constraints.ExtensionClassMethodCall_Constraints$LINKS" />
+      <unit id="1242183206199202597" at="60,23,92,13" name="com.mbeddr.mpsutil.extensionclass.constraints.ExtensionClassMethodCall_Constraints$1$1$1" />
+      <unit id="7997068947889524883" at="52,19,97,9" name="com.mbeddr.mpsutil.extensionclass.constraints.ExtensionClassMethodCall_Constraints$1$1" />
+      <unit id="7997068947889524883" at="48,48,99,5" name="com.mbeddr.mpsutil.extensionclass.constraints.ExtensionClassMethodCall_Constraints$1" />
+      <unit id="5712676642252629193" at="41,0,124,0" name="com.mbeddr.mpsutil.extensionclass.constraints.ExtensionClassMethodCall_Constraints" />
     </file>
   </root>
   <root nodeRef="r:8bb683ff-ef97-4a17-b922-a6edd1d8518d(com.mbeddr.mpsutil.extensionclass.constraints)/5712676642257699777">

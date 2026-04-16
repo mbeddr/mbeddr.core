@@ -46,6 +46,8 @@ public class PluginSolution_ApplicationPlugin extends BaseApplicationPlugin {
     addAction(new ShowOutline_Action());
     addAction(new TurnButtonsInEditorOff_Action());
     addAction(new TurnButtonsInEditorOn_Action());
+    addAction(new UpdateAllQueries_Action());
+    addAction(new UpdateAssessment_Action());
     addAction(new UpdateAssessments_Action());
     addAction(new openSolutionTree2_Action());
     addAction(new openTerminalForModelOutput_Action());
@@ -53,6 +55,7 @@ public class PluginSolution_ApplicationPlugin extends BaseApplicationPlugin {
     addAction(new screenshotNode_Action());
     // groups
     addGroup(new AssessmentGroup_ActionGroup(this));
+    addGroup(new AssessmentIntentionsGroup_ActionGroup(this));
     addGroup(new CodeMenuExtensions_ActionGroup(this));
     addGroup(new CreateMbeddrRootsCreateMbeddrRootsUpdateGroup_ActionGroup(this));
     addGroup(new CreateMbeddrRoots_ActionGroup(this));
@@ -96,6 +99,7 @@ public class PluginSolution_ApplicationPlugin extends BaseApplicationPlugin {
     insertGroupIntoAnother(EditorButtonGroup_ActionGroup.ID, mbeddrPlatformProjectionModeGroup_ActionGroup.ID, mbeddrPlatformProjectionModeGroup_ActionGroup.LABEL_ID_mbeddrPlatformProjectionModes);
     insertGroupIntoAnother(MbeddrSearchGlobalGroup_ActionGroup.ID, mbeddrPlatformProjectGroup_ActionGroup.ID, null);
     insertGroupIntoAnother(MbeddrSearchGlobalGroup_ActionGroup.ID, Search_ActionGroup.ID, null);
+    insertGroupIntoAnother(AssessmentIntentionsGroup_ActionGroup.ID, "jetbrains.mps.ide.editor.actions.ActionsAsIntentions_ActionGroup", null);
     insertGroupIntoAnother(mbeddrPlatformEditorPopupGroup_ActionGroup.ID, "jetbrains.mps.ide.editor.actions.EditorPopup_ActionGroup", null);
     insertGroupIntoAnother(mbeddrPlatformLanguageGroup_ActionGroup.ID, LanguageActions_ActionGroup.ID, LanguageActions_ActionGroup.LABEL_ID_find_usages);
     insertGroupIntoAnother(MbeddrSearchModuleGroup_ActionGroup.ID, mbeddrPlatformLanguageGroup_ActionGroup.ID, mbeddrPlatformLanguageGroup_ActionGroup.LABEL_ID_mbeddrPlatformLanguageExtensions);
@@ -112,6 +116,7 @@ public class PluginSolution_ApplicationPlugin extends BaseApplicationPlugin {
   }
   public List<BaseKeymapChanges> initKeymaps() {
     List<BaseKeymapChanges> res = ListSequence.fromList(new ArrayList<BaseKeymapChanges>());
+    ListSequence.fromList(res).addElement(new AssessmentKeymap_KeymapChanges());
     ListSequence.fromList(res).addElement(new Default_KeymapChanges());
     ListSequence.fromList(res).addElement(new addDocumentationKeymap_KeymapChanges());
     ListSequence.fromList(res).addElement(new openSearch_KeymapChanges());

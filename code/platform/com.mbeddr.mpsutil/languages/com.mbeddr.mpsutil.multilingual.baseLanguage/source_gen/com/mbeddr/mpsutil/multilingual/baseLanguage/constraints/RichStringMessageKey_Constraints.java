@@ -43,7 +43,7 @@ public class RichStringMessageKey_Constraints extends BaseConstraintsDescriptor 
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -82,7 +82,7 @@ public class RichStringMessageKey_Constraints extends BaseConstraintsDescriptor 
   private static boolean staticCanBeAnAncestor(SNode node, SNode childNode, SAbstractConcept childConcept, SNode parentNode, SContainmentLink link) {
     return !(SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), CONCEPTS.IInlineExpression$QB)) && !(Objects.equals(childConcept, CONCEPTS.InlineFormat$AE));
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("d2a1d976-43a2-462f-ac3a-9b258ced839d/r:86da6bb0-4855-45c3-9852-1c2632372bee(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.constraints)", "6768392667014107233");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("d2a1d976-43a2-462f-ac3a-9b258ced839d/r:86da6bb0-4855-45c3-9852-1c2632372bee(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.constraints)", "6768392667014107233");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept RichStringMessageKey$ac = MetaAdapterFactory.getConcept(0xd2a1d97643a2462fL, 0xac3a9b258ced839dL, 0x7e1c8e453e27ae8aL, "com.mbeddr.mpsutil.multilingual.baseLanguage.structure.RichStringMessageKey");

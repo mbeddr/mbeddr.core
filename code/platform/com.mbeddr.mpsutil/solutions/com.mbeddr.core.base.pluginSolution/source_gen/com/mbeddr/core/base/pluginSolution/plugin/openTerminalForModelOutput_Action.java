@@ -22,7 +22,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class openTerminalForModelOutput_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0_0;
+  private static final Icon ICON = IconContainer.ICON1;
 
   public openTerminalForModelOutput_Action() {
     super("Terminal in Output Folder", "", ICON);

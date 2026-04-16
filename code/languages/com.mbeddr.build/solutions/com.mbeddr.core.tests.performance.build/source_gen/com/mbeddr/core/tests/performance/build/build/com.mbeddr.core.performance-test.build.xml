@@ -175,7 +175,6 @@
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" id="com.mbeddr.mpsutil.filepicker" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.genreview" id="com.mbeddr.mpsutil.genreview" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.gensupport" id="com.mbeddr.mpsutil.gensupport" />
-      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.httpsupport" id="com.mbeddr.mpsutil.httpsupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.incrementalcomputation" id="com.mbeddr.mpsutil.incrementalcomputation" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.infrastructure.misc" id="com.mbeddr.mpsutil.infrastructure.misc" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter" id="com.mbeddr.mpsutil.interpreter" />
@@ -229,12 +228,16 @@
       <plugin path="${artifacts.mps}/plugins/mps-ide" id="jetbrains.mps.ide" />
       <plugin path="${artifacts.mps}/plugins/mps-junit5" id="jetbrains.mps.junit5" />
       <plugin path="${artifacts.mps}/plugins/mps-make" id="jetbrains.mps.ide.make" />
+      <plugin path="${artifacts.mps}/plugins/mps-modelchecker" id="jetbrains.mps.ide.modelchecker" />
       <plugin path="${artifacts.mps}/plugins/mps-rcp" id="jetbrains.mps.rcp" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" id="jetbrains.mps.testing" />
       <plugin path="${artifacts.mps}/plugins/mps-tooltips" id="jetbrains.mps.editor.tooltips" />
       <plugin path="${artifacts.mps}/plugins/mps-vcs" id="jetbrains.mps.vcs" />
       <plugin path="${artifacts.mps}/plugins/vcs-git" id="Git4Idea" />
       <plugin path="${artifacts.mps}/plugins/vcs-svn" id="Subversion" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       <chunk>
@@ -382,7 +385,7 @@
     <path location="${build.layout}/test.ts.core.performance.jar" id="mps.tests.path" />
     <pathconvert property="mps.tests.path.string" refid="mps.tests.path" />
     <property name="build.jna.library.path" location="${artifacts.mps}/lib/jna" />
-    <launchtests fork="true" haltonfailure="false" mpshome="${artifacts.mps}" reports="${build.tmp}">      
+    <launchtests fork="true" haltonfailure="false" mpshome="${artifacts.mps}" reports=".">      
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xss2048k" />
@@ -395,6 +398,9 @@
       </jvmargs>
       
       
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       
@@ -408,7 +414,6 @@
       <plugin id="com.mbeddr.mpsutil.filepicker" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" />
       <plugin id="com.mbeddr.mpsutil.genreview" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.genreview" />
       <plugin id="com.mbeddr.mpsutil.gensupport" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.gensupport" />
-      <plugin id="com.mbeddr.mpsutil.httpsupport" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.httpsupport" />
       <plugin id="com.mbeddr.mpsutil.incrementalcomputation" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.incrementalcomputation" />
       <plugin id="com.mbeddr.mpsutil.infrastructure.misc" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.infrastructure.misc" />
       <plugin id="com.mbeddr.mpsutil.interpreter" path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter" />
@@ -462,6 +467,7 @@
       <plugin id="jetbrains.mps.ide" path="${artifacts.mps}/plugins/mps-ide" />
       <plugin id="jetbrains.mps.junit5" path="${artifacts.mps}/plugins/mps-junit5" />
       <plugin id="jetbrains.mps.ide.make" path="${artifacts.mps}/plugins/mps-make" />
+      <plugin id="jetbrains.mps.ide.modelchecker" path="${artifacts.mps}/plugins/mps-modelchecker" />
       <plugin id="jetbrains.mps.rcp" path="${artifacts.mps}/plugins/mps-rcp" />
       <plugin id="jetbrains.mps.testing" path="${artifacts.mps}/plugins/mps-testing" />
       <plugin id="jetbrains.mps.editor.tooltips" path="${artifacts.mps}/plugins/mps-tooltips" />
@@ -474,15 +480,13 @@
         <path refid="mps.tests.path" />
       </testmodules>
     </launchtests>
-    <copy todir=".">      
-      <fileset dir="${build.tmp}">
-        <include name="TEST*.xml" />
-        <include name="junit-platform-events*.xml" />
+    <move todir=".">      
+      <fileset dir=".">
+        <include name="TEST-junit-jupiter.xml" />
+        <include name="TEST-junit-vintage.xml" />
       </fileset>
-      
       <globmapper from="*.xml" to="*-com.mbeddr.core.performance-test.build.xml" />
-      
-    </copy>
+    </move>
   </target>
   
   <target name="cleanSources">

@@ -20,8 +20,6 @@ import jetbrains.mps.openapi.editor.selection.Selection;
 import javax.swing.SwingUtilities;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.mpsutil.editingGuide.behavior.Exercise__BehaviorDescriptor;
-import jetbrains.mps.openapi.editor.Editor;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.smodel.tempmodel.TemporaryModels;
 import jetbrains.mps.smodel.tempmodel.TempModuleOptions;
@@ -37,6 +35,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.module.SModule;
 import org.jetbrains.mps.openapi.module.SDependency;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.openapi.navigation.EditorNavigator;
 import java.util.Set;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
@@ -154,17 +153,6 @@ public class ExerciseExecutor {
     myMpsProject = mpsProject;
   }
 
-  protected EditorComponent getEditorComponent() {
-    if (myEditorComponent == null) {
-      Editor editor = NavigationSupport.getInstance().openNode(myMpsProject, getSandboxExercise(), true, false);
-      myEditorComponent = (EditorComponent) editor.getCurrentEditorComponent();
-      myEditorComponent.addDisposeListener(myEditorDisposeListener);
-      myEditorComponent.getSelectionManager().addSelectionListener(mySelectionListener);
-      initHints();
-    }
-    return myEditorComponent;
-  }
-
   public SNode getSandboxExercise() {
     if (mySandboxExercise == null) {
       SModel tempModel = TemporaryModels.getInstance().create(false, true, TempModuleOptions.forDefaultModule());
@@ -236,9 +224,16 @@ public class ExerciseExecutor {
       ListSequence.fromList(SLinkOperations.getChildren(sandboxExercise, LINKS.tasks$FA4J)).where((it) -> SNodeOperations.getIndexInParent(it) < SNodeOperations.getIndexInParent(fromTask)).visitAll((it) -> SPropertyOperations.assign(it, PROPS.isDone$D0eC, true));
     }
 
-    getEditorComponent().editNode(sandboxExercise);
-    NavigationSupport.getInstance().openNode(myMpsProject, sandboxExercise, true, false);
-    getEditorComponent().getEditorContext().getRepository();
+    if (myEditorComponent != null) {
+      myEditorComponent.editNode(sandboxExercise);
+    }
+
+    new EditorNavigator(myMpsProject).shallFocus(true).onceEditorReady((node, editor) -> {
+      myEditorComponent = (EditorComponent) editor.getCurrentEditorComponent();
+      myEditorComponent.addDisposeListener(myEditorDisposeListener);
+      myEditorComponent.getSelectionManager().addSelectionListener(mySelectionListener);
+      initHints();
+    }).open(SNodeOperations.getPointer(sandboxExercise));
   }
 
   public void restart(SNode fromTask) {
@@ -269,11 +264,11 @@ public class ExerciseExecutor {
 
   public MonitorResult checkTask(final SNode task) {
     MonitorResult result = MonitorFunction__BehaviorDescriptor.callFunction_id4TMjSvbDmOr.invoke(SLinkOperations.getTarget(SNodeOperations.cast(MapSequence.fromMap(mySandbox2OriginalMap).get(task), CONCEPTS.Task$i3), LINKS.monitor$sj3G), myEditorComponent.getEditorContext(), task);
-    final String resultMessage = check_fnh4l_a0b0ub(result);
+    final String resultMessage = check_fnh4l_a0b0sb(result);
     SwingUtilities.invokeLater(() -> myMpsProject.getRepository().getModelAccess().executeCommand(() -> SPropertyOperations.assign(task, PROPS.resultMessage$Kz2L, resultMessage)));
     return result;
   }
-  private static String check_fnh4l_a0b0ub(MonitorResult checkedDotOperand) {
+  private static String check_fnh4l_a0b0sb(MonitorResult checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getMessage();
     }

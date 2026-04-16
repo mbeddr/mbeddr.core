@@ -30,7 +30,7 @@ public class PEqWord_Constraints extends BaseConstraintsDescriptor {
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -43,7 +43,7 @@ public class PEqWord_Constraints extends BaseConstraintsDescriptor {
     }
     return true;
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:dc211899-5a7e-4113-9704-1153a3c28cd9(com.mbeddr.cc.requirements.c.constraints)", "8237807170236515554");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:dc211899-5a7e-4113-9704-1153a3c28cd9(com.mbeddr.cc.requirements.c.constraints)", "8237807170236515554");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept PEqWord$Lr = MetaAdapterFactory.getConcept(0xf3ed62ca349040d0L, 0x890b9b3133cc2eadL, 0x2985e9af712b50a6L, "com.mbeddr.cc.requirements.c.structure.PEqWord");

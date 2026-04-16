@@ -31,7 +31,7 @@ public class IFeatureConditionsOnly_Constraints extends BaseConstraintsDescripto
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -66,7 +66,7 @@ public class IFeatureConditionsOnly_Constraints extends BaseConstraintsDescripto
     }
     return true;
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:6931d509-c614-495e-afa5-7bb50f15b429(com.mbeddr.cc.var.fm.constraints)", "8237807170236525595");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:6931d509-c614-495e-afa5-7bb50f15b429(com.mbeddr.cc.var.fm.constraints)", "8237807170236525595");
 
   private static final class CONCEPTS {
     /*package*/ static final SInterfaceConcept IFeatureConditionsOnly$n8 = MetaAdapterFactory.getInterfaceConcept(0xe401b44780194ccdL, 0xa72cbfb0230f5782L, 0x6a0e1211f136a3f3L, "com.mbeddr.cc.var.fm.structure.IFeatureConditionsOnly");
