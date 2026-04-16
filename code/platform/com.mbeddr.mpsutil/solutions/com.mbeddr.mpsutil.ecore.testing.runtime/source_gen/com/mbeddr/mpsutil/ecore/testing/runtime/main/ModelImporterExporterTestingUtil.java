@@ -33,7 +33,7 @@ import java.io.FileReader;
 public class ModelImporterExporterTestingUtil {
 
   public void calculateDifferences(String pathToEMFMetaModel, SModel mpsMetaModel, SModel mpsModelInstance) {
-    Assert.assertEquals("Test model is required to have exactly one root node", 1, ListSequence.fromList(SModelOperations.roots(mpsModelInstance, null)).count());
+    Assert.assertEquals("Test model is required to have exactly one root node", Integer.valueOf(1), Integer.valueOf(ListSequence.fromList(SModelOperations.roots(mpsModelInstance, null)).count()));
 
     SLanguage language = findLanguageByModel(mpsMetaModel);
     URI XCoreURI = URI.createFileURI(pathToEMFMetaModel);
@@ -60,7 +60,7 @@ public class ModelImporterExporterTestingUtil {
     tempFile.delete();
 
     // the imported model should again have exactly one root node
-    Assert.assertEquals("Imported model must have exactly one root node", 1, ListSequence.fromList(SModelOperations.roots(importedModel, null)).count());
+    Assert.assertEquals("Imported model must have exactly one root node", Integer.valueOf(1), Integer.valueOf(ListSequence.fromList(SModelOperations.roots(importedModel, null)).count()));
 
     // do a detailed check on the single root nodes of input model and imported model
     MPSNodeComparisonResult result = MPSNodeComparator.compare(ListSequence.fromList(SModelOperations.roots(mpsModelInstance, null)).first(), ListSequence.fromList(SModelOperations.roots(importedModel, null)).first(), Sequence.fromIterable(propertiesToIgnore()).toList(), true, false);

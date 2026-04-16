@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -28,22 +26,20 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class InterfaceOperationCallExpr__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x707ac195dd618205L, "com.mbeddr.ext.components.structure.InterfaceOperationCallExpr");
 
-  public static final SMethod<String> signatureInfo_id9z$8oL3Yt1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("signatureInfo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(172140116793354049L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<SNode> target_id70kXLV4LLzy = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("target").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8076351743304603874L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<List<SNode>> getActuals_id6WGVxckB05Y = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getActuals").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8011039602902827390L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<List<SNode>> getFormals_id6WGVxckB065 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getFormals").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8011039602902827397L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<SNode> getReturnType_id7$$5Stoo8Y$ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getNodeForTypeCalc").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8729127847821610916L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<SNode> getActualsLink_id2$xXL4HCFy0 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getActualsLink").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2963921682938640512L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<SNode> getFunction_id74lwjTQiYY5 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getFunction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8148561206069424005L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Boolean> canSideTransform_id4GzlXVK__1_ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canSideTransform").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5414267792060207205L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> signatureInfo_id9z$8oL3Yt1 = new SMethodBuilder<>(String.class).name("signatureInfo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(172140116793354049L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<SNode> target_id70kXLV4LLzy = new SMethodBuilder<>(SNode.class).name("target").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8076351743304603874L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<SNode>> getActuals_id6WGVxckB05Y = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getActuals").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8011039602902827390L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<List<SNode>> getFormals_id6WGVxckB065 = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getFormals").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8011039602902827397L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<SNode> getReturnType_id7$$5Stoo8Y$ = new SMethodBuilder<>(SNode.class).name("getNodeForTypeCalc").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8729127847821610916L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<SNode> getActualsLink_id2$xXL4HCFy0 = new SMethodBuilder<>(SNode.class).name("getActualsLink").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2963921682938640512L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<SNode> getFunction_id74lwjTQiYY5 = new SMethodBuilder<>(SNode.class).name("getFunction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8148561206069424005L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<>(Integer.TYPE).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Boolean> canSideTransform_id4GzlXVK__1_ = new SMethodBuilder<>(Boolean.TYPE).name("canSideTransform").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5414267792060207205L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "expr"));
+  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(signatureInfo_id9z$8oL3Yt1, target_id70kXLV4LLzy, getActuals_id6WGVxckB05Y, getFormals_id6WGVxckB065, getReturnType_id7$$5Stoo8Y$, getActualsLink_id2$xXL4HCFy0, getFunction_id74lwjTQiYY5, getPriolevel_id5HxjapwgqKu, getPresentation_idhEwIMiw, canSideTransform_id4GzlXVK__1_, renderReadable_id1VQvajLb13M);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(signatureInfo_id9z$8oL3Yt1, target_id70kXLV4LLzy, getActuals_id6WGVxckB05Y, getFormals_id6WGVxckB065, getReturnType_id7$$5Stoo8Y$, getActualsLink_id2$xXL4HCFy0, getFunction_id74lwjTQiYY5, getPriolevel_id5HxjapwgqKu, getPresentation_idhEwIMiw, canSideTransform_id4GzlXVK__1_, renderReadable_id1VQvajLb13M);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String signatureInfo_id9z$8oL3Yt1(@NotNull SNode __thisNode__) {
     String res = "signature: ";
@@ -99,10 +95,6 @@ public final class InterfaceOperationCallExpr__BehaviorDescriptor extends BaseBH
   /*package*/ InterfaceOperationCallExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

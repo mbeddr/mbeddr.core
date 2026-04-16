@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,9 +22,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class SwitchCase__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x2b8026b23bc2da00L, "com.mbeddr.core.statements.structure.SwitchCase");
 
-  public static final SMethod<Boolean> forceMultiLines_id5oX1Q_zkX36 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("forceMultiLines").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6214131210060550342L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Boolean> forceMultiLines_id5oX1Q_zkX36 = new SMethodBuilder<>(Boolean.TYPE).name("forceMultiLines").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6214131210060550342L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(forceMultiLines_id5oX1Q_zkX36);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(forceMultiLines_id5oX1Q_zkX36);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.body$R2hM, null);

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -25,11 +24,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class DecTab__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x562cea45589fd7ddL, "com.mbeddr.core.util.structure.DecTab");
 
-  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Integer> dataIdx_id6VI$CV8Bv$4 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("dataIdx").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7993487530578016516L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<Void> insertContentCell_id6VI$CV8NViC = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("insertContentCell").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7993487530581275816L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
+  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Integer> dataIdx_id6VI$CV8Bv$4 = new SMethodBuilder<>(Integer.TYPE).name("dataIdx").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7993487530578016516L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "row"), SMethodBuilder.createJavaParameter(Integer.TYPE, "col"));
+  public static final SMethod<Void> insertContentCell_id6VI$CV8NViC = new SMethodBuilder<>(Void.TYPE).name("insertContentCell").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7993487530581275816L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "idx"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id1VQvajLb13M, dataIdx_id6VI$CV8Bv$4, insertContentCell_id6VI$CV8NViC);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id1VQvajLb13M, dataIdx_id6VI$CV8Bv$4, insertContentCell_id6VI$CV8NViC);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.addNewChild(__thisNode__, LINKS.xExpr$c$rM, null);

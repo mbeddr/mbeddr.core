@@ -49,9 +49,6 @@ public class constSupertypeOfType_SubtypingRule extends SubtypingRule_Runtime im
   public boolean isWeak() {
     return true;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class PROPS {
     /*package*/ static final SProperty const$VWr7 = MetaAdapterFactory.getProperty(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x7af69e2e83a1ba36L, 0x28d183d9a4cc7da8L, "const");

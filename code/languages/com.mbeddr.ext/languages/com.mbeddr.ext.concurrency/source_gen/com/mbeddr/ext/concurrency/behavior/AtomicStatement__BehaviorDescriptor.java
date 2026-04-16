@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -30,18 +28,16 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class AtomicStatement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x7d015a9e836f80cL, "com.mbeddr.ext.concurrency.structure.AtomicStatement");
 
-  public static final SMethod<Boolean> providesReadAccessTo_id66UaKxBzgJH = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("providesReadAccessTo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7041988282444221421L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> providesLockfor_id6u_410TQpmU = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("providesLockfor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7468393218939917754L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> providesWriteAccessTo_id66UaKxBzgPt = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("providesWriteAccessTo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7041988282444221789L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> sortedSpecifiersForEntry_id6ndohCVb7TB = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("sortedSpecifiersForEntry").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7335626133346221671L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
-  public static final SMethod<Iterable<SNode>> sortedSpecifiersForExit_id6ndohCVbftK = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("sortedSpecifiersForExit").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7335626133346252656L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
-  public static final SMethod<Boolean> providesReadLockFor_id4mSSgpjfkhV = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("providesReadLockFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614365819L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> providesWriteLockFor_id4mSSgpjfkpY = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("providesWriteLockFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614366334L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> providesReadAccessTo_id66UaKxBzgJH = new SMethodBuilder<>(Boolean.TYPE).name("providesReadAccessTo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7041988282444221421L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter(SNode.class, "gv"));
+  public static final SMethod<Boolean> providesLockfor_id6u_410TQpmU = new SMethodBuilder<>(Boolean.TYPE).name("providesLockfor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7468393218939917754L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter(SNode.class, "lock"));
+  public static final SMethod<Boolean> providesWriteAccessTo_id66UaKxBzgPt = new SMethodBuilder<>(Boolean.TYPE).name("providesWriteAccessTo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7041988282444221789L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter(SNode.class, "gv"));
+  public static final SMethod<Iterable<SNode>> sortedSpecifiersForEntry_id6ndohCVb7TB = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("sortedSpecifiersForEntry").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7335626133346221671L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<Iterable<SNode>> sortedSpecifiersForExit_id6ndohCVbftK = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("sortedSpecifiersForExit").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7335626133346252656L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<Boolean> providesReadLockFor_id4mSSgpjfkhV = new SMethodBuilder<>(Boolean.TYPE).name("providesReadLockFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614365819L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Boolean> providesWriteLockFor_id4mSSgpjfkpY = new SMethodBuilder<>(Boolean.TYPE).name("providesWriteLockFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5024012801614366334L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(providesReadAccessTo_id66UaKxBzgJH, providesLockfor_id6u_410TQpmU, providesWriteAccessTo_id66UaKxBzgPt, sortedSpecifiersForEntry_id6ndohCVb7TB, sortedSpecifiersForExit_id6ndohCVbftK, providesReadLockFor_id4mSSgpjfkhV, providesWriteLockFor_id4mSSgpjfkpY);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(providesReadAccessTo_id66UaKxBzgJH, providesLockfor_id6u_410TQpmU, providesWriteAccessTo_id66UaKxBzgPt, sortedSpecifiersForEntry_id6ndohCVb7TB, sortedSpecifiersForExit_id6ndohCVbftK, providesReadLockFor_id4mSSgpjfkhV, providesWriteLockFor_id4mSSgpjfkpY);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean providesReadAccessTo_id66UaKxBzgJH(@NotNull SNode __thisNode__, final SNode gv) {
     SNode specifier = Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.specifiers$qbHe), CONCEPTS.GlobalVarAccessSpecifier$Uc)).findFirst((it) -> SLinkOperations.getTarget(it, LINKS.var$YRjN) == gv);
@@ -76,10 +72,6 @@ public final class AtomicStatement__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ AtomicStatement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

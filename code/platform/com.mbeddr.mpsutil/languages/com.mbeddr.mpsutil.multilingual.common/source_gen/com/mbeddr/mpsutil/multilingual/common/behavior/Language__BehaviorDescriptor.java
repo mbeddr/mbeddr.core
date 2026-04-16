@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.Locale;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualCommonUtil;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -24,12 +22,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Language__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x23f985f2965f4af1L, 0xaee8a32677429514L, 0x7e347dff5959facL, "com.mbeddr.mpsutil.multilingual.common.structure.Language");
 
-  public static final SMethod<Locale> toLocale_id5Q1XZgMGEow = new SMethodBuilder<Locale>(new SJavaCompoundTypeImpl(Locale.class)).name("toLocale").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6737939145717622304L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
+  public static final SMethod<Locale> toLocale_id5Q1XZgMGEow = new SMethodBuilder<>(Locale.class).name("toLocale").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6737939145717622304L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(toLocale_id5Q1XZgMGEow);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(toLocale_id5Q1XZgMGEow);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Locale toLocale_id5Q1XZgMGEow(@NotNull SNode __thisNode__) {
     return MultilingualCommonUtil.findLocale(SPropertyOperations.getString(__thisNode__, PROPS.languageCode$o_oz), SPropertyOperations.getString(__thisNode__, PROPS.countryCode$oEyT));
@@ -38,10 +34,6 @@ public final class Language__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Language__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -27,15 +26,15 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class TextBlock__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x743b6d0940760196L, "com.mbeddr.core.base.structure.TextBlock");
 
-  public static final SMethod<Void> addWord_id519ky_SnQ7F = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addWord").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400766443L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> addString_id519ky_SnQaO = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400766644L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Boolean> containsText_idjpyKDg1A7A = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506453478L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> asTextString_id6byLOcR3jNg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asTextString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7125476651953896656L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> isEmpty_id3JD5OqKT3Vw = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEmpty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4317007310194228960L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> hasMoreThan_id3JD5OqKT3Wu = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasMoreThan").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4317007310194229022L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<String> asLimitedTextString_id26F1Swi4Bkj = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asLimitedTextString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105269290259L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
+  public static final SMethod<Void> addWord_id519ky_SnQ7F = new SMethodBuilder<>(Void.TYPE).name("addWord").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400766443L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "w"));
+  public static final SMethod<Void> addString_id519ky_SnQaO = new SMethodBuilder<>(Void.TYPE).name("addString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400766644L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "w"));
+  public static final SMethod<Boolean> containsText_idjpyKDg1A7A = new SMethodBuilder<>(Boolean.TYPE).name("containsText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506453478L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "text"));
+  public static final SMethod<String> asTextString_id6byLOcR3jNg = new SMethodBuilder<>(String.class).name("asTextString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7125476651953896656L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isEmpty_id3JD5OqKT3Vw = new SMethodBuilder<>(Boolean.TYPE).name("isEmpty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4317007310194228960L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> hasMoreThan_id3JD5OqKT3Wu = new SMethodBuilder<>(Boolean.TYPE).name("hasMoreThan").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4317007310194229022L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "limit"));
+  public static final SMethod<String> asLimitedTextString_id26F1Swi4Bkj = new SMethodBuilder<>(String.class).name("asLimitedTextString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105269290259L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "lengthLimit"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addWord_id519ky_SnQ7F, addString_id519ky_SnQaO, containsText_idjpyKDg1A7A, asTextString_id6byLOcR3jNg, isEmpty_id3JD5OqKT3Vw, hasMoreThan_id3JD5OqKT3Wu, asLimitedTextString_id26F1Swi4Bkj);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addWord_id519ky_SnQ7F, addString_id519ky_SnQaO, containsText_idjpyKDg1A7A, asTextString_id6byLOcR3jNg, isEmpty_id3JD5OqKT3Vw, hasMoreThan_id3JD5OqKT3Wu, asLimitedTextString_id26F1Swi4Bkj);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.text$ls7a, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x92d2ea165a424fdfL, 0xa676c7604efe3504L, 0x237c8da86a9e4e61L, "de.slisson.mps.richtext.structure.Text")));

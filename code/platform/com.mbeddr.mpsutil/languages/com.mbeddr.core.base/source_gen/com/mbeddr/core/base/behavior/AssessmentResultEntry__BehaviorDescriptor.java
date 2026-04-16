@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -27,11 +26,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class AssessmentResultEntry__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xc022423d5829cdeL, "com.mbeddr.core.base.structure.AssessmentResultEntry");
 
-  public static final SMethod<String> sortKey_id3greo4NDQMb = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("sortKey").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3754657941423615115L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> beginsGroup_id26F1Swi9tri = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("beginsGroup").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105270560466L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> hasError_id2PGidvqimWe = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasError").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3273071121108922126L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> sortKey_id3greo4NDQMb = new SMethodBuilder<>(String.class).name("sortKey").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3754657941423615115L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> beginsGroup_id26F1Swi9tri = new SMethodBuilder<>(Boolean.TYPE).name("beginsGroup").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105270560466L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> hasError_id2PGidvqimWe = new SMethodBuilder<>(Boolean.TYPE).name("hasError").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3273071121108922126L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(sortKey_id3greo4NDQMb, beginsGroup_id26F1Swi9tri, hasError_id2PGidvqimWe);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(sortKey_id3greo4NDQMb, beginsGroup_id26F1Swi9tri, hasError_id2PGidvqimWe);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.comment$inW0, null);

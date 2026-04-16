@@ -17,7 +17,7 @@
       <unit at="11,0,208,0" name="com.mbeddr.core.modules.gen.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,72,0" name="com.mbeddr.core.modules.gen.structure.LanguageConceptSwitch" />
+      <unit at="12,0,80,0" name="com.mbeddr.core.modules.gen.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="18,0,370,0" name="com.mbeddr.core.modules.gen.structure.StructureAspectDescriptor" />
@@ -37,8 +37,8 @@
       <scope id="1317894735999388454" at="91,53,97,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1317894735999388454" at="19,0,20,0" concept="8" trace="GenImplModuleImport" />
-      <node id="1317894735999388454" at="44,64,45,58" concept="1" />
+      <node id="1317894735999388454" at="21,0,22,0" concept="8" trace="GenImplModuleImport" />
+      <node id="1317894735999388454" at="46,64,47,58" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1317894735999388454" at="26,0,27,0" concept="2" trace="myConceptGenImplModuleImport" />
@@ -74,8 +74,8 @@
       <scope id="1548352758719910525" at="54,45,60,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1548352758719910525" at="14,0,15,0" concept="8" trace="ForceCopyIn" />
-      <node id="1548352758719910525" at="39,64,40,50" concept="1" />
+      <node id="1548352758719910525" at="16,0,17,0" concept="8" trace="ForceCopyIn" />
+      <node id="1548352758719910525" at="41,64,42,50" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1548352758719910525" at="21,0,22,0" concept="2" trace="myConceptForceCopyIn" />
@@ -109,8 +109,8 @@
       <scope id="1548733054537693118" at="197,54,203,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1548733054537693118" at="34,0,35,0" concept="8" trace="UniquifyIncludeGuard" />
-      <node id="1548733054537693118" at="59,59,60,59" concept="1" />
+      <node id="1548733054537693118" at="36,0,37,0" concept="8" trace="UniquifyIncludeGuard" />
+      <node id="1548733054537693118" at="61,59,62,59" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1548733054537693118" at="41,0,42,0" concept="2" trace="myConceptUniquifyIncludeGuard" />
@@ -147,8 +147,8 @@
       <scope id="1758019824472688219" at="98,44,105,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1758019824472688219" at="20,0,21,0" concept="8" trace="GenModuleC" />
-      <node id="1758019824472688219" at="45,58,46,49" concept="1" />
+      <node id="1758019824472688219" at="22,0,23,0" concept="8" trace="GenModuleC" />
+      <node id="1758019824472688219" at="47,58,48,49" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1758019824472688219" at="27,0,28,0" concept="2" trace="myConceptGenModuleC" />
@@ -187,8 +187,8 @@
       <scope id="1758019824472688222" at="106,44,113,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1758019824472688222" at="21,0,22,0" concept="8" trace="GenModuleH" />
-      <node id="1758019824472688222" at="46,49,47,49" concept="1" />
+      <node id="1758019824472688222" at="23,0,24,0" concept="8" trace="GenModuleH" />
+      <node id="1758019824472688222" at="48,49,49,49" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1758019824472688222" at="28,0,29,0" concept="2" trace="myConceptGenModuleH" />
@@ -224,8 +224,8 @@
       <scope id="2080708908160110638" at="84,59,90,47" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2080708908160110638" at="18,0,19,0" concept="8" trace="GenForeignExtModuleImport" />
-      <node id="2080708908160110638" at="43,57,44,64" concept="1" />
+      <node id="2080708908160110638" at="20,0,21,0" concept="8" trace="GenForeignExtModuleImport" />
+      <node id="2080708908160110638" at="45,57,46,64" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2080708908160110638" at="25,0,26,0" concept="2" trace="myConceptGenForeignExtModuleImport" />
@@ -262,8 +262,8 @@
       <scope id="2391520863997668666" at="168,59,175,47" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2391520863997668666" at="30,0,31,0" concept="8" trace="NameManglingConfiguration" />
-      <node id="2391520863997668666" at="55,61,56,64" concept="1" />
+      <node id="2391520863997668666" at="32,0,33,0" concept="8" trace="NameManglingConfiguration" />
+      <node id="2391520863997668666" at="57,61,58,64" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2391520863997668666" at="37,0,38,0" concept="2" trace="myConceptNameManglingConfiguration" />
@@ -301,8 +301,8 @@
       <scope id="3540137500593307422" at="114,49,120,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3540137500593307422" at="22,0,23,0" concept="8" trace="GenModuleImport" />
-      <node id="3540137500593307422" at="47,49,48,54" concept="1" />
+      <node id="3540137500593307422" at="24,0,25,0" concept="8" trace="GenModuleImport" />
+      <node id="3540137500593307422" at="49,49,50,54" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3540137500593307422" at="29,0,30,0" concept="2" trace="myConceptGenModuleImport" />
@@ -334,8 +334,8 @@
       <scope id="3548218508215224831" at="183,63,189,51" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3548218508215224831" at="32,0,33,0" concept="8" trace="SkipContentSortingInGenModule" />
-      <node id="3548218508215224831" at="57,53,58,68" concept="1" />
+      <node id="3548218508215224831" at="34,0,35,0" concept="8" trace="SkipContentSortingInGenModule" />
+      <node id="3548218508215224831" at="59,53,60,68" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3548218508215224831" at="39,0,40,0" concept="2" trace="myConceptSkipContentSortingInGenModule" />
@@ -369,8 +369,8 @@
       <scope id="3830958861296806570" at="121,52,127,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3830958861296806570" at="23,0,24,0" concept="8" trace="GenStdHeaderImport" />
-      <node id="3830958861296806570" at="48,54,49,57" concept="1" />
+      <node id="3830958861296806570" at="25,0,26,0" concept="8" trace="GenStdHeaderImport" />
+      <node id="3830958861296806570" at="50,54,51,57" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3830958861296806570" at="30,0,31,0" concept="2" trace="myConceptGenStdHeaderImport" />
@@ -407,8 +407,8 @@
       <scope id="3865719712437633212" at="47,59,53,47" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3865719712437633212" at="13,0,14,0" concept="8" trace="DummyMangledNameFinalizer" />
-      <node id="3865719712437633212" at="38,56,39,64" concept="1" />
+      <node id="3865719712437633212" at="15,0,16,0" concept="8" trace="DummyMangledNameFinalizer" />
+      <node id="3865719712437633212" at="40,56,41,64" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3865719712437633212" at="20,0,21,0" concept="2" trace="myConceptDummyMangledNameFinalizer" />
@@ -442,8 +442,8 @@
       <scope id="4352487882080109564" at="161,56,167,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4352487882080109564" at="29,0,30,0" concept="8" trace="MultiPlatformStatement" />
-      <node id="4352487882080109564" at="54,64,55,61" concept="1" />
+      <node id="4352487882080109564" at="31,0,32,0" concept="8" trace="MultiPlatformStatement" />
+      <node id="4352487882080109564" at="56,64,57,61" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4352487882080109564" at="36,0,37,0" concept="2" trace="myConceptMultiPlatformStatement" />
@@ -480,8 +480,8 @@
       <scope id="5659719722625118615" at="190,54,196,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5659719722625118615" at="33,0,34,0" concept="8" trace="SuppressExternCBlock" />
-      <node id="5659719722625118615" at="58,68,59,59" concept="1" />
+      <node id="5659719722625118615" at="35,0,36,0" concept="8" trace="SuppressExternCBlock" />
+      <node id="5659719722625118615" at="60,68,61,59" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5659719722625118615" at="40,0,41,0" concept="2" trace="myConceptSuppressExternCBlock" />
@@ -516,8 +516,8 @@
       <scope id="5943183680458525568" at="61,63,68,51" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5943183680458525568" at="15,0,16,0" concept="8" trace="ForceImportReferencedElements" />
-      <node id="5943183680458525568" at="40,50,41,68" concept="1" />
+      <node id="5943183680458525568" at="17,0,18,0" concept="8" trace="ForceImportReferencedElements" />
+      <node id="5943183680458525568" at="42,50,43,68" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5943183680458525568" at="22,0,23,0" concept="2" trace="myConceptForceImportReferencedElements" />
@@ -549,8 +549,8 @@
       <scope id="6074373273971446767" at="134,57,139,45" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6074373273971446767" at="25,0,26,0" concept="8" trace="IMultiPlatformConstruct" />
-      <node id="6074373273971446767" at="50,64,51,62" concept="1" />
+      <node id="6074373273971446767" at="27,0,28,0" concept="8" trace="IMultiPlatformConstruct" />
+      <node id="6074373273971446767" at="52,64,53,62" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6074373273971446767" at="32,0,33,0" concept="2" trace="myConceptIMultiPlatformConstruct" />
@@ -587,8 +587,8 @@
       <scope id="6074373273971874807" at="154,59,160,47" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6074373273971874807" at="28,0,29,0" concept="8" trace="MultiPlatformFunctionCall" />
-      <node id="6074373273971874807" at="53,67,54,64" concept="1" />
+      <node id="6074373273971874807" at="30,0,31,0" concept="8" trace="MultiPlatformFunctionCall" />
+      <node id="6074373273971874807" at="55,67,56,64" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6074373273971874807" at="35,0,36,0" concept="2" trace="myConceptMultiPlatformFunctionCall" />
@@ -623,8 +623,8 @@
       <scope id="6290199614790847071" at="140,46,146,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6290199614790847071" at="26,0,27,0" concept="8" trace="IWantToBeC90" />
-      <node id="6290199614790847071" at="51,62,52,51" concept="1" />
+      <node id="6290199614790847071" at="28,0,29,0" concept="8" trace="IWantToBeC90" />
+      <node id="6290199614790847071" at="53,62,54,51" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6290199614790847071" at="33,0,34,0" concept="2" trace="myConceptIWantToBeC90" />
@@ -707,8 +707,8 @@
       <scope id="7246949367815681726" at="41,51,46,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7246949367815681726" at="12,0,13,0" concept="8" trace="AbstractGenModule" />
-      <node id="7246949367815681726" at="37,116,38,56" concept="1" />
+      <node id="7246949367815681726" at="14,0,15,0" concept="8" trace="AbstractGenModule" />
+      <node id="7246949367815681726" at="39,116,40,56" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7246949367815681726" at="19,0,20,0" concept="2" trace="myConceptAbstractGenModule" />
@@ -746,8 +746,8 @@
       <scope id="7959524747632943549" at="147,62,153,50" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7959524747632943549" at="27,0,28,0" concept="8" trace="LegalReferencesConfiguration" />
-      <node id="7959524747632943549" at="52,51,53,67" concept="1" />
+      <node id="7959524747632943549" at="29,0,30,0" concept="8" trace="LegalReferencesConfiguration" />
+      <node id="7959524747632943549" at="54,51,55,67" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7959524747632943549" at="34,0,35,0" concept="2" trace="myConceptLegalReferencesConfiguration" />
@@ -784,8 +784,8 @@
       <scope id="8308995279406662085" at="176,48,182,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8308995279406662085" at="31,0,32,0" concept="8" trace="ShortNamesRoot" />
-      <node id="8308995279406662085" at="56,64,57,53" concept="1" />
+      <node id="8308995279406662085" at="33,0,34,0" concept="8" trace="ShortNamesRoot" />
+      <node id="8308995279406662085" at="58,64,59,53" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8308995279406662085" at="38,0,39,0" concept="2" trace="myConceptShortNamesRoot" />
@@ -816,8 +816,8 @@
       <scope id="8456210691460336054" at="128,59,133,47" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8456210691460336054" at="24,0,25,0" concept="8" trace="ICareAboutImportingMyself" />
-      <node id="8456210691460336054" at="49,57,50,64" concept="1" />
+      <node id="8456210691460336054" at="26,0,27,0" concept="8" trace="ICareAboutImportingMyself" />
+      <node id="8456210691460336054" at="51,57,52,64" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8456210691460336054" at="31,0,32,0" concept="2" trace="myConceptICareAboutImportingMyself" />
@@ -850,8 +850,8 @@
       <scope id="9066372830132908402" at="69,46,76,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="9066372830132908402" at="16,0,17,0" concept="8" trace="GenExtModule" />
-      <node id="9066372830132908402" at="41,68,42,51" concept="1" />
+      <node id="9066372830132908402" at="18,0,19,0" concept="8" trace="GenExtModule" />
+      <node id="9066372830132908402" at="43,68,44,51" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="9066372830132908402" at="23,0,24,0" concept="2" trace="myConceptGenExtModule" />
@@ -888,8 +888,8 @@
       <scope id="9066372830133005541" at="77,52,83,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="9066372830133005541" at="17,0,18,0" concept="8" trace="GenExtModuleImport" />
-      <node id="9066372830133005541" at="42,51,43,57" concept="1" />
+      <node id="9066372830133005541" at="19,0,20,0" concept="8" trace="GenExtModuleImport" />
+      <node id="9066372830133005541" at="44,51,45,57" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="9066372830133005541" at="24,0,25,0" concept="2" trace="myConceptGenExtModuleImport" />

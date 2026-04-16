@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -30,14 +28,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ModelContentPointer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x1fbaae83ac1956b7L, "com.mbeddr.doc.structure.ModelContentPointer");
 
-  public static final SMethod<SNode> targetNode_id2mOlJ4sbLi5 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("targetNode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2716892068771206277L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> targetNodeName_id5MdJlxzLFA_ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("targetNodeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6669194810534312357L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Void> setTarget_id627_yy3iusw = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setTarget").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6955693250242537248L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> targetNode_id2mOlJ4sbLi5 = new SMethodBuilder<>(SNode.class).name("targetNode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2716892068771206277L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> targetNodeName_id5MdJlxzLFA_ = new SMethodBuilder<>(String.class).name("targetNodeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6669194810534312357L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Void> setTarget_id627_yy3iusw = new SMethodBuilder<>(Void.TYPE).name("setTarget").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6955693250242537248L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(targetNode_id2mOlJ4sbLi5, targetNodeName_id5MdJlxzLFA_, setTarget_id627_yy3iusw);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(targetNode_id2mOlJ4sbLi5, targetNodeName_id5MdJlxzLFA_, setTarget_id627_yy3iusw);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode targetNode_id2mOlJ4sbLi5(@NotNull SNode __thisNode__) {
     return (SNode) AbstractModelContentPointerElement__BehaviorDescriptor.referencedNode_id7IDbqDzNq4.invoke(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.elements$kFdY)).last());
@@ -59,10 +55,6 @@ public final class ModelContentPointer__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ ModelContentPointer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

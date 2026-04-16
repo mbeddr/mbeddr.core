@@ -19,7 +19,7 @@ public class EnumerationDescriptor_TRACING_GRANULARITY extends EnumerationDescri
   private final EnumerationDescriptor.MemberDescriptor myMember_one_of_subnodes_0 = new EnumerationDescriptor.MemberDescriptor("one_of_subnodes", "one of subnodes", 0x7b568cd51affa815L, "r:eeee5816-3edc-4e8b-b086-d57d300597a3(com.mbeddr.mpsutil.nodes_tracing.test.structure)/1286599818956595586");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x85e94e869fcb43a2L, 0x908364c40006219eL, 0x7b568cd51affa813L, 0x7b568cd51affa814L, 0x7b568cd51affa815L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_exact_node_0, myMember_one_of_subnodes_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_exact_node_0, myMember_one_of_subnodes_0);
 
   @Nullable
   @Override

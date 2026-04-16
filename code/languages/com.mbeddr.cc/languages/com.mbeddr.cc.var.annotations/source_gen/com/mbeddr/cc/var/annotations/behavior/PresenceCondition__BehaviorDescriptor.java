@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -27,12 +26,12 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class PresenceCondition__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x17fba0eaf154a23L, 0xb0a802b5c1141e75L, 0x92cd87784510973L, "com.mbeddr.cc.var.annotations.structure.PresenceCondition");
 
-  public static final SMethod<Boolean> isCurrentlyVisible_id5aNdPeN2Pp4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCurrentlyVisible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5959167564566976068L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> couldBeRemoved_idopE5jFfRRr = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("couldBeRemoved").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(439567521322859995L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> findValidParent_idopE5jFfTyN = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("findValidParent").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(439567521322866867L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isCurrentlyVisible_id5aNdPeN2Pp4 = new SMethodBuilder<>(Boolean.TYPE).name("isCurrentlyVisible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5959167564566976068L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> couldBeRemoved_idopE5jFfRRr = new SMethodBuilder<>(Boolean.TYPE).name("couldBeRemoved").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(439567521322859995L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<SNode> findValidParent_idopE5jFfTyN = new SMethodBuilder<>(SNode.class).name("findValidParent").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(439567521322866867L).languageId(0xb0a802b5c1141e75L, 0x17fba0eaf154a23L).build2(SMethodBuilder.createJavaParameter(SNode.class, "current"));
+  public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCurrentlyVisible_id5aNdPeN2Pp4, couldBeRemoved_idopE5jFfRRr, findValidParent_idopE5jFfTyN, getConfigItem_id5HxjapwgqMb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCurrentlyVisible_id5aNdPeN2Pp4, couldBeRemoved_idopE5jFfRRr, findValidParent_idopE5jFfTyN, getConfigItem_id5HxjapwgqMb);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.condition$Jt8t, null);

@@ -2,7 +2,7 @@
 <debug-info version="2">
   <root>
     <file name="Generator.java">
-      <unit at="20,0,57,0" name="com.mbeddr.mpsutil.margincell.editor.Generator" />
+      <unit at="20,0,56,0" name="com.mbeddr.mpsutil.margincell.editor.Generator" />
     </file>
   </root>
 </debug-info>

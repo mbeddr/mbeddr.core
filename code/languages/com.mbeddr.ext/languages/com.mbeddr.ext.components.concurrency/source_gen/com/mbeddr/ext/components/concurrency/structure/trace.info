@@ -13,7 +13,7 @@
       <unit at="11,0,125,0" name="com.mbeddr.ext.components.concurrency.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,52,0" name="com.mbeddr.ext.components.concurrency.structure.LanguageConceptSwitch" />
+      <unit at="12,0,60,0" name="com.mbeddr.ext.components.concurrency.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,230,0" name="com.mbeddr.ext.components.concurrency.structure.StructureAspectDescriptor" />
@@ -33,8 +33,8 @@
       <scope id="2678242487724783480" at="39,60,45,48" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2678242487724783480" at="13,0,14,0" concept="6" trace="ComponentInstanceReference" />
-      <node id="2678242487724783480" at="28,64,29,65" concept="0" />
+      <node id="2678242487724783480" at="15,0,16,0" concept="6" trace="ComponentInstanceReference" />
+      <node id="2678242487724783480" at="30,64,31,65" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2678242487724783480" at="16,0,17,0" concept="1" trace="myConceptComponentInstanceReference" />
@@ -66,8 +66,8 @@
       <scope id="2678242487724783524" at="61,61,66,49" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2678242487724783524" at="16,0,17,0" concept="6" trace="IComponentInstanceReference" />
-      <node id="2678242487724783524" at="31,70,32,66" concept="0" />
+      <node id="2678242487724783524" at="18,0,19,0" concept="6" trace="IComponentInstanceReference" />
+      <node id="2678242487724783524" at="33,70,34,66" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2678242487724783524" at="19,0,20,0" concept="1" trace="myConceptIComponentInstanceReference" />
@@ -101,8 +101,8 @@
       <scope id="2678242487724783538" at="79,68,85,56" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2678242487724783538" at="19,0,20,0" concept="6" trace="InternalComponentInstanceReference" />
-      <node id="2678242487724783538" at="34,60,35,73" concept="0" />
+      <node id="2678242487724783538" at="21,0,22,0" concept="6" trace="InternalComponentInstanceReference" />
+      <node id="2678242487724783538" at="36,60,37,73" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2678242487724783538" at="22,0,23,0" concept="1" trace="myConceptInternalComponentInstanceReference" />
@@ -135,8 +135,8 @@
       <scope id="3326016707027484074" at="73,55,78,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3326016707027484074" at="18,0,19,0" concept="6" trace="IGeneratorOnlyConcept" />
-      <node id="3326016707027484074" at="33,62,34,60" concept="0" />
+      <node id="3326016707027484074" at="20,0,21,0" concept="6" trace="IGeneratorOnlyConcept" />
+      <node id="3326016707027484074" at="35,62,36,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3326016707027484074" at="21,0,22,0" concept="1" trace="myConceptIGeneratorOnlyConcept" />
@@ -173,8 +173,8 @@
       <scope id="3933288758479891242" at="93,66,99,54" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3933288758479891242" at="21,0,22,0" concept="6" trace="ScheduleSpecificationInComponent" />
-      <node id="3933288758479891242" at="36,70,37,71" concept="0" />
+      <node id="3933288758479891242" at="23,0,24,0" concept="6" trace="ScheduleSpecificationInComponent" />
+      <node id="3933288758479891242" at="38,70,39,71" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3933288758479891242" at="24,0,25,0" concept="1" trace="myConceptScheduleSpecificationInComponent" />
@@ -210,8 +210,8 @@
       <scope id="3933288758480316099" at="67,57,72,45" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3933288758480316099" at="17,0,18,0" concept="6" trace="IConcurrencyInComponent" />
-      <node id="3933288758480316099" at="32,66,33,62" concept="0" />
+      <node id="3933288758480316099" at="19,0,20,0" concept="6" trace="IConcurrencyInComponent" />
+      <node id="3933288758480316099" at="34,66,35,62" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3933288758480316099" at="20,0,21,0" concept="1" trace="myConceptIConcurrencyInComponent" />
@@ -245,8 +245,8 @@
       <scope id="4565572669164910596" at="100,52,106,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4565572669164910596" at="22,0,23,0" concept="6" trace="SectionInComponent" />
-      <node id="4565572669164910596" at="37,71,38,57" concept="0" />
+      <node id="4565572669164910596" at="24,0,25,0" concept="6" trace="SectionInComponent" />
+      <node id="4565572669164910596" at="39,71,40,57" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4565572669164910596" at="25,0,26,0" concept="1" trace="myConceptSectionInComponent" />
@@ -282,8 +282,8 @@
       <scope id="4565572669165359943" at="107,49,113,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4565572669165359943" at="23,0,24,0" concept="6" trace="TaskInComponent" />
-      <node id="4565572669165359943" at="38,57,39,54" concept="0" />
+      <node id="4565572669165359943" at="25,0,26,0" concept="6" trace="TaskInComponent" />
+      <node id="4565572669165359943" at="40,57,41,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4565572669165359943" at="26,0,27,0" concept="1" trace="myConceptTaskInComponent" />
@@ -320,8 +320,8 @@
       <scope id="6699454864315498598" at="54,65,60,53" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6699454864315498598" at="15,0,16,0" concept="6" trace="ComponentsConcurrencyConfigItem" />
-      <node id="6699454864315498598" at="30,68,31,70" concept="0" />
+      <node id="6699454864315498598" at="17,0,18,0" concept="6" trace="ComponentsConcurrencyConfigItem" />
+      <node id="6699454864315498598" at="32,68,33,70" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6699454864315498598" at="18,0,19,0" concept="1" trace="myConceptComponentsConcurrencyConfigItem" />
@@ -355,8 +355,8 @@
       <scope id="6699454864317024530" at="86,65,92,53" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6699454864317024530" at="20,0,21,0" concept="6" trace="NameOfComponentInstanceFunction" />
-      <node id="6699454864317024530" at="35,73,36,70" concept="0" />
+      <node id="6699454864317024530" at="22,0,23,0" concept="6" trace="NameOfComponentInstanceFunction" />
+      <node id="6699454864317024530" at="37,73,38,70" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6699454864317024530" at="23,0,24,0" concept="1" trace="myConceptNameOfComponentInstanceFunction" />
@@ -392,8 +392,8 @@
       <scope id="8610007178375348296" at="114,58,120,46" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8610007178375348296" at="24,0,25,0" concept="6" trace="TaskInComponentReference" />
-      <node id="8610007178375348296" at="39,54,40,63" concept="0" />
+      <node id="8610007178375348296" at="26,0,27,0" concept="6" trace="TaskInComponentReference" />
+      <node id="8610007178375348296" at="41,54,42,63" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8610007178375348296" at="27,0,28,0" concept="1" trace="myConceptTaskInComponentReference" />
@@ -429,8 +429,8 @@
       <scope id="8610007178378343016" at="31,59,38,47" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8610007178378343016" at="12,0,13,0" concept="6" trace="ComponentInstanceFieldRef" />
-      <node id="8610007178378343016" at="27,116,28,64" concept="0" />
+      <node id="8610007178378343016" at="14,0,15,0" concept="6" trace="ComponentInstanceFieldRef" />
+      <node id="8610007178378343016" at="29,116,30,64" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8610007178378343016" at="15,0,16,0" concept="1" trace="myConceptComponentInstanceFieldRef" />
@@ -468,8 +468,8 @@
       <scope id="8610007178378343451" at="46,63,53,51" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8610007178378343451" at="14,0,15,0" concept="6" trace="ComponentInstanceRunnableCall" />
-      <node id="8610007178378343451" at="29,65,30,68" concept="0" />
+      <node id="8610007178378343451" at="16,0,17,0" concept="6" trace="ComponentInstanceRunnableCall" />
+      <node id="8610007178378343451" at="31,65,32,68" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8610007178378343451" at="17,0,18,0" concept="1" trace="myConceptComponentInstanceRunnableCall" />

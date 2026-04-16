@@ -13,7 +13,7 @@
       <unit at="11,0,69,0" name="com.mbeddr.core.legacy.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,38,0" name="com.mbeddr.core.legacy.structure.LanguageConceptSwitch" />
+      <unit at="12,0,46,0" name="com.mbeddr.core.legacy.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="15,0,131,0" name="com.mbeddr.core.legacy.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="161793846860238632" at="57,49,64,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="161793846860238632" at="17,0,18,0" concept="6" trace="UncheckedSymbol" />
-      <node id="161793846860238632" at="25,60,26,53" concept="0" />
+      <node id="161793846860238632" at="19,0,20,0" concept="6" trace="UncheckedSymbol" />
+      <node id="161793846860238632" at="27,60,28,53" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="161793846860238632" at="21,0,22,0" concept="1" trace="myConceptUncheckedSymbol" />
@@ -72,8 +72,8 @@
       <scope id="4811430974075028458" at="50,55,56,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4811430974075028458" at="16,0,17,0" concept="6" trace="UncheckedFunctionCall" />
-      <node id="4811430974075028458" at="24,57,25,60" concept="0" />
+      <node id="4811430974075028458" at="18,0,19,0" concept="6" trace="UncheckedFunctionCall" />
+      <node id="4811430974075028458" at="26,57,27,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4811430974075028458" at="20,0,21,0" concept="1" trace="myConceptUncheckedFunctionCall" />
@@ -109,8 +109,8 @@
       <scope id="5443628787102777314" at="24,56,29,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5443628787102777314" at="12,0,13,0" concept="6" trace="IOpaqueContentWithType" />
-      <node id="5443628787102777314" at="20,116,21,61" concept="0" />
+      <node id="5443628787102777314" at="14,0,15,0" concept="6" trace="IOpaqueContentWithType" />
+      <node id="5443628787102777314" at="22,116,23,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5443628787102777314" at="16,0,17,0" concept="1" trace="myConceptIOpaqueContentWithType" />
@@ -143,8 +143,8 @@
       <scope id="5443628787102868552" at="30,55,35,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5443628787102868552" at="13,0,14,0" concept="6" trace="OpaqueContentWithType" />
-      <node id="5443628787102868552" at="21,61,22,60" concept="0" />
+      <node id="5443628787102868552" at="15,0,16,0" concept="6" trace="OpaqueContentWithType" />
+      <node id="5443628787102868552" at="23,61,24,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5443628787102868552" at="17,0,18,0" concept="1" trace="myConceptOpaqueContentWithType" />
@@ -178,8 +178,8 @@
       <scope id="6514339890562579642" at="36,52,42,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6514339890562579642" at="14,0,15,0" concept="6" trace="OpaqueExprWithType" />
-      <node id="6514339890562579642" at="22,60,23,57" concept="0" />
+      <node id="6514339890562579642" at="16,0,17,0" concept="6" trace="OpaqueExprWithType" />
+      <node id="6514339890562579642" at="24,60,25,57" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6514339890562579642" at="18,0,19,0" concept="1" trace="myConceptOpaqueExprWithType" />
@@ -214,8 +214,8 @@
       <scope id="8720844099624588923" at="43,52,49,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8720844099624588923" at="15,0,16,0" concept="6" trace="OpaqueTextWithType" />
-      <node id="8720844099624588923" at="23,57,24,57" concept="0" />
+      <node id="8720844099624588923" at="17,0,18,0" concept="6" trace="OpaqueTextWithType" />
+      <node id="8720844099624588923" at="25,57,26,57" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8720844099624588923" at="19,0,20,0" concept="1" trace="myConceptOpaqueTextWithType" />

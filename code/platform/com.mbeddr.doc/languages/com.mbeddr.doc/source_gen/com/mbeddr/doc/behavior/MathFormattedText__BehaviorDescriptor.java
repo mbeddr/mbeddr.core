@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -17,7 +16,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import de.slisson.mps.richtext.behavior.RichTextUtil;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,13 +24,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class MathFormattedText__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x558f97d97129b861L, "com.mbeddr.doc.structure.MathFormattedText");
 
-  public static final SMethod<String> escape_id519ky_SnGeC = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("escape").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400725928L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> createFromString_id519ky_SnIs6 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createFromString").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400734982L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> escape_id519ky_SnGeC = new SMethodBuilder<>(String.class).name("escape").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400725928L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, "s"));
+  public static final SMethod<SNode> createFromString_id519ky_SnIs6 = new SMethodBuilder<>(SNode.class).name("createFromString").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785245534400734982L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(String.class, "s"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(escape_id519ky_SnGeC, createFromString_id519ky_SnIs6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(escape_id519ky_SnGeC, createFromString_id519ky_SnIs6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String escape_id519ky_SnGeC(@NotNull SAbstractConcept __thisConcept__, String s) {
     return s.replaceAll("_", "\\_");
@@ -46,10 +42,6 @@ public final class MathFormattedText__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ MathFormattedText__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

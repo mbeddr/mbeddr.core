@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -18,7 +17,6 @@ import java.util.Collections;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -26,18 +24,16 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class ILocalVarScopeProvider__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x1d0c3765e2e2fcf8L, "com.mbeddr.core.statements.structure.ILocalVarScopeProvider");
 
-  public static final SMethod<Boolean> queryAncestorScopeProvider_id1leqHN8kqt_ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("queryAncestorScopeProvider").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1535282019466061669L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<Iterable<SNode>> getContributedLocalVariables_id1OcdQnyTC1X = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getContributedLocalVariables").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2093108837558419581L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<Iterable<SNode>> getContributedLocalVariables_id3LB9aGm4C$b = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getContributedLocalVariables").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4352487882105194763L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isInclusionIndexDependent_id2tBHhziHcNe = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInclusionIndexDependent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2839437208299293902L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<LocalVarScope> getLocalVarScope_id2tBHhziI8iF = new SMethodBuilder<LocalVarScope>(new SJavaCompoundTypeImpl(LocalVarScope.class)).name("getLocalVarScope").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2839437208299537579L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<LocalVarScope> getLocalVarScope_id1OcdQnySJNX = new SMethodBuilder<LocalVarScope>(new SJavaCompoundTypeImpl(LocalVarScope.class)).name("getLocalVarScope").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2093108837558189309L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<Integer> getIndex_id2tBHhziHd8h = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getIndex").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2839437208299295249L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> queryAncestorScopeProvider_id1leqHN8kqt_ = new SMethodBuilder<>(Boolean.TYPE).name("queryAncestorScopeProvider").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1535282019466061669L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Iterable<SNode>> getContributedLocalVariables_id1OcdQnyTC1X = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getContributedLocalVariables").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2093108837558419581L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Iterable<SNode>> getContributedLocalVariables_id3LB9aGm4C$b = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getContributedLocalVariables").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4352487882105194763L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "node"));
+  public static final SMethod<Boolean> isInclusionIndexDependent_id2tBHhziHcNe = new SMethodBuilder<>(Boolean.TYPE).name("isInclusionIndexDependent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2839437208299293902L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<LocalVarScope> getLocalVarScope_id2tBHhziI8iF = new SMethodBuilder<>(LocalVarScope.class).name("getLocalVarScope").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2839437208299537579L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "node"), SMethodBuilder.createJavaParameter(Integer.TYPE, "fallBackIndex"));
+  public static final SMethod<LocalVarScope> getLocalVarScope_id1OcdQnySJNX = new SMethodBuilder<>(LocalVarScope.class).name("getLocalVarScope").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2093108837558189309L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "node"), SMethodBuilder.createJavaParameter(Integer.TYPE, "index"));
+  public static final SMethod<Integer> getIndex_id2tBHhziHd8h = new SMethodBuilder<>(Integer.TYPE).name("getIndex").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(2839437208299295249L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "container"), SMethodBuilder.createJavaParameter(SNode.class, "contained"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(queryAncestorScopeProvider_id1leqHN8kqt_, getContributedLocalVariables_id1OcdQnyTC1X, getContributedLocalVariables_id3LB9aGm4C$b, isInclusionIndexDependent_id2tBHhziHcNe, getLocalVarScope_id2tBHhziI8iF, getLocalVarScope_id1OcdQnySJNX, getIndex_id2tBHhziHd8h);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(queryAncestorScopeProvider_id1leqHN8kqt_, getContributedLocalVariables_id1OcdQnyTC1X, getContributedLocalVariables_id3LB9aGm4C$b, isInclusionIndexDependent_id2tBHhziHcNe, getLocalVarScope_id2tBHhziI8iF, getLocalVarScope_id1OcdQnySJNX, getIndex_id2tBHhziHd8h);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean queryAncestorScopeProvider_id1leqHN8kqt_(@NotNull SNode __thisNode__) {
     return true;
@@ -106,10 +102,6 @@ public final class ILocalVarScopeProvider__BehaviorDescriptor extends BaseBHDesc
   /*package*/ ILocalVarScopeProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

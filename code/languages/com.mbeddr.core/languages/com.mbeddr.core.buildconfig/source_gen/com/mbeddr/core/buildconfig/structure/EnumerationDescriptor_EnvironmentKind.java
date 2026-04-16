@@ -18,7 +18,7 @@ public class EnumerationDescriptor_EnvironmentKind extends EnumerationDescriptor
   private final EnumerationDescriptor.MemberDescriptor myMember_desktop_0 = new EnumerationDescriptor.MemberDescriptor("desktop", "desktop", 0xaa6c35690cf6f9cL, "r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)/1214029888595741750");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0xaa6c35690cf6f9bL, 0xaa6c35690cf6f9cL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_desktop_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_desktop_0);
 
   @Nullable
   @Override

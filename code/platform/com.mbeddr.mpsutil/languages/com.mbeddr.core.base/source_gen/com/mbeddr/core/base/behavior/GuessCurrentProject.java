@@ -22,7 +22,7 @@ import jetbrains.mps.internal.collections.runtime.SetSequence;
 
 public class GuessCurrentProject {
   /**
-   * Returns a list of all projects containing {@code module}. If module is null or no project contains it, returns
+   * Returns a list of all projects containing {@code module} . If module is null or no project contains it, returns
    * a list of all open projects.
    */
   @NotNull

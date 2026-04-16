@@ -21,7 +21,7 @@ public final class VariableDefinition__BehaviorDescriptor extends BaseBHDescript
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1c5b7d510ef34332L, 0xaf36874466950878L, 0x4aa4d574b7c306fcL, "com.mbeddr.doc.expressions.structure.VariableDefinition");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.type$sXU3, CONCEPTS.UnsignedInt32tType$7z);

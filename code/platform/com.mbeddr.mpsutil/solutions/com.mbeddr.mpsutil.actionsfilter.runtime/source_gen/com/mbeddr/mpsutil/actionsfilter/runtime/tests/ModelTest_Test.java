@@ -107,7 +107,7 @@ public class ModelTest_Test extends BaseTransformationTest {
         Model other = model.clone();
         other.setProfiles(model.getAllProfiles());
         Assert.assertEquals(model, other);
-        Assert.assertEquals(model.hashCode(), other.hashCode());
+        Assert.assertEquals(Integer.valueOf(model.hashCode()), Integer.valueOf(other.hashCode()));
       });
     }
     public void test_setActiveProfile() throws Exception {

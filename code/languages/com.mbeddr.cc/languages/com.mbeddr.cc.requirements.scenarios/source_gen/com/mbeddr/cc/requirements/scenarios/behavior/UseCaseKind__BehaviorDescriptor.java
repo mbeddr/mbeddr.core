@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.awt.Color;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.cc.requirements.behavior.RequirementsKind__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -24,13 +22,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class UseCaseKind__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd6714220402d48cbL, 0xa4a288223c6257f6L, 0x5a6841df5eb457e6L, "com.mbeddr.cc.requirements.scenarios.structure.UseCaseKind");
 
-  public static final SMethod<Color> getCharacteriticColor_id1FPlGg16G3O = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getCharacteriticColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1942554214112346356L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
-  public static final SMethod<List<SAbstractConcept>> getRequiredDataKind_id2AZbPfMcvYE = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getRequiredDataKind").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3008175113698934698L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<Color> getCharacteriticColor_id1FPlGg16G3O = new SMethodBuilder<>(Color.class).name("getCharacteriticColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1942554214112346356L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<List<SAbstractConcept>> getRequiredDataKind_id2AZbPfMcvYE = new SMethodBuilder<>((Class<List<SAbstractConcept>>) ((Class) Object.class)).name("getRequiredDataKind").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3008175113698934698L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCharacteriticColor_id1FPlGg16G3O, getRequiredDataKind_id2AZbPfMcvYE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCharacteriticColor_id1FPlGg16G3O, getRequiredDataKind_id2AZbPfMcvYE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Color getCharacteriticColor_id1FPlGg16G3O(@NotNull SNode __thisNode__) {
     return new Color(213, 213, 247);
@@ -44,10 +40,6 @@ public final class UseCaseKind__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ UseCaseKind__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

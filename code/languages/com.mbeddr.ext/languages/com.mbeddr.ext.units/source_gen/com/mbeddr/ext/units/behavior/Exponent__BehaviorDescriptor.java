@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.ext.units.runtime.plugin.Fraction;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -25,18 +23,16 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class Exponent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd04a6cc773e4069L, 0xb9b011884b2ff1c8L, 0x34c38940d07a6995L, "com.mbeddr.ext.units.structure.Exponent");
 
-  public static final SMethod<SNode> from_idbrG9xoyFRd = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("from").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(205952376342494669L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2(SMethodBuilder.createJavaParameter(Fraction.class, ""));
-  public static final SMethod<SNode> from_idbrG9xoyyFz = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("from").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(205952376342457059L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<Integer> getNumerator_id3j3yk3guAC3 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getNumerator").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3802033421899426307L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
-  public static final SMethod<Integer> getDenumerator_id3j3yk3guABz = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getDenumerator").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3802033421899426275L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
-  public static final SMethod<Void> negate_id3j3yk3gDZSH = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("negate").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3802033421902413357L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
-  public static final SMethod<Boolean> isOne_id5dSoB2M24Xr = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isOne").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6014665538516045659L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
-  public static final SMethod<Boolean> isZero_id5dSoB2M24Y3 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isZero").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6014665538516045699L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
+  public static final SMethod<SNode> from_idbrG9xoyFRd = new SMethodBuilder<>(SNode.class).name("from").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(205952376342494669L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2(SMethodBuilder.createJavaParameter(Fraction.class, "fraction"));
+  public static final SMethod<SNode> from_idbrG9xoyyFz = new SMethodBuilder<>(SNode.class).name("from").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(205952376342457059L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "numerator"), SMethodBuilder.createJavaParameter(Integer.TYPE, "denumerator"));
+  public static final SMethod<Integer> getNumerator_id3j3yk3guAC3 = new SMethodBuilder<>(Integer.TYPE).name("getNumerator").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3802033421899426307L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
+  public static final SMethod<Integer> getDenumerator_id3j3yk3guABz = new SMethodBuilder<>(Integer.TYPE).name("getDenumerator").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3802033421899426275L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
+  public static final SMethod<Void> negate_id3j3yk3gDZSH = new SMethodBuilder<>(Void.TYPE).name("negate").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3802033421902413357L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
+  public static final SMethod<Boolean> isOne_id5dSoB2M24Xr = new SMethodBuilder<>(Boolean.TYPE).name("isOne").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6014665538516045659L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
+  public static final SMethod<Boolean> isZero_id5dSoB2M24Y3 = new SMethodBuilder<>(Boolean.TYPE).name("isZero").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6014665538516045699L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(from_idbrG9xoyFRd, from_idbrG9xoyyFz, getNumerator_id3j3yk3guAC3, getDenumerator_id3j3yk3guABz, negate_id3j3yk3gDZSH, isOne_id5dSoB2M24Xr, isZero_id5dSoB2M24Y3);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(from_idbrG9xoyFRd, from_idbrG9xoyyFz, getNumerator_id3j3yk3guAC3, getDenumerator_id3j3yk3guABz, negate_id3j3yk3gDZSH, isOne_id5dSoB2M24Xr, isZero_id5dSoB2M24Y3);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode from_idbrG9xoyFRd(@NotNull SAbstractConcept __thisConcept__, Fraction fraction) {
     return Exponent__BehaviorDescriptor.from_idbrG9xoyyFz.invoke(__thisConcept__, ((int) fraction.numerator), ((int) fraction.denumerator));
@@ -59,10 +55,6 @@ public final class Exponent__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Exponent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

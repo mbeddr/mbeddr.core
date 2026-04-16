@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-crrr8o09ujgnpnfpbv31no01qnb9e53">
+<product version="3" modelHash="6cqeyzkfgqpm52u068a5skuh2phcnoz">
   <files names="ChangeEffect.java:ChangeEventManager.java:ContentChangedEvent.java:CycleDetectedException.java:EChangeEffectKind.java:EChildChangedKind.java:StringHelper.java:ValueCache.java:ValueHolderInfo.java" />
 </product>
 

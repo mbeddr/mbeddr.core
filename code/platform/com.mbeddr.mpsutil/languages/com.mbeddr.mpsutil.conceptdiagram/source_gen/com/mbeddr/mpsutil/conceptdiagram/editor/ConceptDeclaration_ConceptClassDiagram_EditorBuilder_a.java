@@ -670,7 +670,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell.value;
   }
   private EditorCell createDiagram_1() {
-    return createDiagram_0(getEditorContext(), myNode);
+    return createDiagram_0(getEditorContext(), getNode());
   }
   private LineStyle _StyleParameter_QueryFunction_guq73v_a0d0a() {
     return LineStyle.DASHED;

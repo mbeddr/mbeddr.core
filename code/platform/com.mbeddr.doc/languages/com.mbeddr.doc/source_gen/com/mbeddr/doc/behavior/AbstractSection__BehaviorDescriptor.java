@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -24,7 +23,6 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.cells.EditorCell_Collection;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.base.behavior.NodeTreeViewNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -34,28 +32,26 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class AbstractSection__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x2e7fd03a4b7c6bdeL, "com.mbeddr.doc.structure.AbstractSection");
 
-  public static final SMethod<Integer> nestingLevel_id4vQSg$AqJMN = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("nestingLevel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5185579450379205811L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Boolean> isInChapter_id3DAECxGcNHt = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInChapter").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4208238404731878237L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> qualifiedName_id2TZO3DbvVw0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("qualifiedName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3350625596580280320L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> referenceString_id4vQSg$Aqmae = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("referenceString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5185579450379100814L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> namespace_id4vQSg$AqbUT = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("namespace").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5185579450379058873L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> tocText_id3DLpMp_rLlJ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("tocText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4211260541176321391L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Boolean> isInIndex_idQRmqzHsFzm = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInIndex").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(988357225304209622L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> nestingIndex_id4vQSg$Aq5vD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("nestingIndex").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5185579450379032553L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> getRefString_id5yxqZJwyEUp = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getRefString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136222361L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> getRefPrefix_id5yxqZJwyGX2 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getRefPrefix").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136230722L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Void> foldCloseChildren_id3RseghIds7l = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("foldCloseChildren").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457500422381617621L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""), SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
-  public static final SMethod<Void> unfoldCloseChildren_id3RseghId_8J = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("unfoldCloseChildren").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457500422381654575L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""), SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
-  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("resultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<AbstractTreeViewNode>(new SJavaCompoundTypeImpl(AbstractTreeViewNode.class)).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> getIndexedText_id5wmuVxvF0fD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getIndexedText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6347396756634600425L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Integer> nestingLevel_id4vQSg$AqJMN = new SMethodBuilder<>(Integer.TYPE).name("nestingLevel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5185579450379205811L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Boolean> isInChapter_id3DAECxGcNHt = new SMethodBuilder<>(Boolean.TYPE).name("isInChapter").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4208238404731878237L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> qualifiedName_id2TZO3DbvVw0 = new SMethodBuilder<>(String.class).name("qualifiedName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3350625596580280320L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> referenceString_id4vQSg$Aqmae = new SMethodBuilder<>(String.class).name("referenceString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5185579450379100814L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> namespace_id4vQSg$AqbUT = new SMethodBuilder<>(String.class).name("namespace").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5185579450379058873L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> tocText_id3DLpMp_rLlJ = new SMethodBuilder<>(String.class).name("tocText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4211260541176321391L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Boolean> isInIndex_idQRmqzHsFzm = new SMethodBuilder<>(Boolean.TYPE).name("isInIndex").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(988357225304209622L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> nestingIndex_id4vQSg$Aq5vD = new SMethodBuilder<>(String.class).name("nestingIndex").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5185579450379032553L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> getRefString_id5yxqZJwyEUp = new SMethodBuilder<>(String.class).name("getRefString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136222361L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> getRefPrefix_id5yxqZJwyGX2 = new SMethodBuilder<>(String.class).name("getRefPrefix").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136230722L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Void> foldCloseChildren_id3RseghIds7l = new SMethodBuilder<>(Void.TYPE).name("foldCloseChildren").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457500422381617621L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, "ctx"), SMethodBuilder.createJavaParameter(Boolean.TYPE, "recursive"));
+  public static final SMethod<Void> unfoldCloseChildren_id3RseghId_8J = new SMethodBuilder<>(Void.TYPE).name("unfoldCloseChildren").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457500422381654575L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, "ctx"), SMethodBuilder.createJavaParameter(Boolean.TYPE, "recursive"));
+  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<>(Boolean.TYPE).name("containsText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "text"));
+  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<>(String.class).name("resultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<>(AbstractTreeViewNode.class).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "category"));
+  public static final SMethod<String> getIndexedText_id5wmuVxvF0fD = new SMethodBuilder<>(String.class).name("getIndexedText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6347396756634600425L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nestingLevel_id4vQSg$AqJMN, isInChapter_id3DAECxGcNHt, qualifiedName_id2TZO3DbvVw0, referenceString_id4vQSg$Aqmae, namespace_id4vQSg$AqbUT, tocText_id3DLpMp_rLlJ, isInIndex_idQRmqzHsFzm, nestingIndex_id4vQSg$Aq5vD, getRefString_id5yxqZJwyEUp, getRefPrefix_id5yxqZJwyGX2, foldCloseChildren_id3RseghIds7l, unfoldCloseChildren_id3RseghId_8J, getUniquelyNamedElements_id4qSf1u1TRfj, containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, getTreeNode_id7NyyyjNtbn2, getIndexedText_id5wmuVxvF0fD);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nestingLevel_id4vQSg$AqJMN, isInChapter_id3DAECxGcNHt, qualifiedName_id2TZO3DbvVw0, referenceString_id4vQSg$Aqmae, namespace_id4vQSg$AqbUT, tocText_id3DLpMp_rLlJ, isInIndex_idQRmqzHsFzm, nestingIndex_id4vQSg$Aq5vD, getRefString_id5yxqZJwyEUp, getRefPrefix_id5yxqZJwyGX2, foldCloseChildren_id3RseghIds7l, unfoldCloseChildren_id3RseghId_8J, getUniquelyNamedElements_id4qSf1u1TRfj, containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, getTreeNode_id7NyyyjNtbn2, getIndexedText_id5wmuVxvF0fD);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int nestingLevel_id4vQSg$AqJMN(@NotNull SNode __thisNode__) {
     return ListSequence.fromList(SNodeOperations.getNodeAncestors(__thisNode__, CONCEPTS.AbstractSection$8m, false)).count();
@@ -157,10 +153,6 @@ public final class AbstractSection__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ AbstractSection__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

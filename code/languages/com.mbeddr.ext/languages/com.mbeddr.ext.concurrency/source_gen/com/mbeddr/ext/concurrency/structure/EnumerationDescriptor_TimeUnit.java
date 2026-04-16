@@ -20,7 +20,7 @@ public class EnumerationDescriptor_TimeUnit extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember_s_0 = new EnumerationDescriptor.MemberDescriptor("s", "s", 0x68cc2c476e2382c8L, "r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)/7781501729866152595");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x68cc2c476e238268L, 0x68cc2c476e238269L, 0x68cc2c476e2382c5L, 0x68cc2c476e2382c8L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_us_0, myMember_ms_0, myMember_s_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_us_0, myMember_ms_0, myMember_s_0);
 
   @Nullable
   @Override

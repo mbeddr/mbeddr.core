@@ -2,7 +2,7 @@
 <model ref="r:58a558d9-50ed-4b86-91cf-66ce18b52794(com.mbeddr.core.expressions.actions)">
   <persistence version="9" />
   <languages>
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -154,7 +154,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -162,11 +161,8 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
@@ -492,19 +488,103 @@
       </node>
       <node concept="P$JXv" id="PyYoN5p$9z" role="lGtFl">
         <node concept="TUZQ0" id="PyYoN5p$9B" role="3nqlJM">
-          <property role="TUZQ4" value="the node where the roatation should be performed" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="PyYoN5p$9C" role="zr_5Q">
             <ref role="zr_51" node="PyYoN5p$9x" resolve="node" />
           </node>
+          <node concept="1PaTwC" id="3VVgDkJgbbA" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJgbbB" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbC" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbD" role="1PaTwD">
+              <property role="3oM_SC" value="where" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbE" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbF" role="1PaTwD">
+              <property role="3oM_SC" value="roatation" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbG" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbH" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbI" role="1PaTwD">
+              <property role="3oM_SC" value="performed" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="PyYoN5p$9D" role="3nqlJM">
-          <property role="x79VB" value="true if the rotation was successful, false otherwise" />
-        </node>
-        <node concept="TZ5HA" id="PyYoN5p$9$" role="TZ5H$">
-          <node concept="1dT_AC" id="PyYoN5p$9_" role="1dT_Ay">
-            <property role="1dT_AB" value="Performs a left rotation on the expression tree at the given node. " />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3VVgDkJgbbJ" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJgbbK" role="1PaTwD">
+              <property role="3oM_SC" value="true" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbL" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbM" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbN" role="1PaTwD">
+              <property role="3oM_SC" value="rotation" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbO" role="1PaTwD">
+              <property role="3oM_SC" value="was" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbP" role="1PaTwD">
+              <property role="3oM_SC" value="successful," />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbQ" role="1PaTwD">
+              <property role="3oM_SC" value="false" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbbR" role="1PaTwD">
+              <property role="3oM_SC" value="otherwise" />
+            </node>
           </node>
-          <node concept="1dT_AC" id="PyYoN5p$9A" role="1dT_Ay" />
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJgbbp" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbbq" role="1PaTwD">
+            <property role="3oM_SC" value="Performs" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbr" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbs" role="1PaTwD">
+            <property role="3oM_SC" value="left" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbt" role="1PaTwD">
+            <property role="3oM_SC" value="rotation" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbu" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbv" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbw" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbx" role="1PaTwD">
+            <property role="3oM_SC" value="tree" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbby" role="1PaTwD">
+            <property role="3oM_SC" value="at" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbz" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbb$" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbb_" role="1PaTwD">
+            <property role="3oM_SC" value="node." />
+          </node>
         </node>
       </node>
     </node>
@@ -660,19 +740,106 @@
       </node>
       <node concept="P$JXv" id="PyYoN5pMN8" role="lGtFl">
         <node concept="TUZQ0" id="PyYoN5pMNc" role="3nqlJM">
-          <property role="TUZQ4" value="the node where the rotation should be performed" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="PyYoN5pMNd" role="zr_5Q">
             <ref role="zr_51" node="PyYoN5pMN6" resolve="node" />
           </node>
+          <node concept="1PaTwC" id="3VVgDkJgbc5" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJgbc6" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbc7" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbc8" role="1PaTwD">
+              <property role="3oM_SC" value="where" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbc9" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbca" role="1PaTwD">
+              <property role="3oM_SC" value="rotation" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbcb" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbcc" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbcd" role="1PaTwD">
+              <property role="3oM_SC" value="performed" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="PyYoN5pMNe" role="3nqlJM">
-          <property role="x79VB" value="return true if the rotation was successful, false otherwise" />
-        </node>
-        <node concept="TZ5HA" id="PyYoN5pMN9" role="TZ5H$">
-          <node concept="1dT_AC" id="PyYoN5pMNa" role="1dT_Ay">
-            <property role="1dT_AB" value="Performs a right rotation on the expression tree at the given node. " />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3VVgDkJgbce" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJgbcf" role="1PaTwD">
+              <property role="3oM_SC" value="return" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbcg" role="1PaTwD">
+              <property role="3oM_SC" value="true" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbch" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbci" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbcj" role="1PaTwD">
+              <property role="3oM_SC" value="rotation" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbck" role="1PaTwD">
+              <property role="3oM_SC" value="was" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbcl" role="1PaTwD">
+              <property role="3oM_SC" value="successful," />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbcm" role="1PaTwD">
+              <property role="3oM_SC" value="false" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbcn" role="1PaTwD">
+              <property role="3oM_SC" value="otherwise" />
+            </node>
           </node>
-          <node concept="1dT_AC" id="PyYoN5pMNb" role="1dT_Ay" />
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJgbbS" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbbT" role="1PaTwD">
+            <property role="3oM_SC" value="Performs" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbU" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbV" role="1PaTwD">
+            <property role="3oM_SC" value="right" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbW" role="1PaTwD">
+            <property role="3oM_SC" value="rotation" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbX" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbY" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbbZ" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbc0" role="1PaTwD">
+            <property role="3oM_SC" value="tree" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbc1" role="1PaTwD">
+            <property role="3oM_SC" value="at" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbc2" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbc3" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbc4" role="1PaTwD">
+            <property role="3oM_SC" value="node." />
+          </node>
         </node>
       </node>
     </node>
@@ -762,29 +929,227 @@
         </node>
       </node>
       <node concept="P$JXv" id="6eo1HzJBhjT" role="lGtFl">
-        <node concept="TZ5HA" id="6eo1HzJBhjU" role="TZ5H$">
-          <node concept="1dT_AC" id="6eo1HzJBhjV" role="1dT_Ay">
-            <property role="1dT_AB" value="Checks whether the priority is correct in the expression tree within the given child-parent node. " />
+        <node concept="1PaTwC" id="3VVgDkJgbco" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbcp" role="1PaTwD">
+            <property role="3oM_SC" value="Checks" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcq" role="1PaTwD">
+            <property role="3oM_SC" value="whether" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcr" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcs" role="1PaTwD">
+            <property role="3oM_SC" value="priority" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbct" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcu" role="1PaTwD">
+            <property role="3oM_SC" value="correct" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcv" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcw" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcx" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcy" role="1PaTwD">
+            <property role="3oM_SC" value="tree" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcz" role="1PaTwD">
+            <property role="3oM_SC" value="within" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbc$" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbc_" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcA" role="1PaTwD">
+            <property role="3oM_SC" value="child-parent" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcB" role="1PaTwD">
+            <property role="3oM_SC" value="node." />
           </node>
         </node>
-        <node concept="TZ5HA" id="6eo1HzJBhsa" role="TZ5H$">
-          <node concept="1dT_AC" id="6eo1HzJBhsb" role="1dT_Ay">
-            <property role="1dT_AB" value="isRight indicates if child is the right child of parent. " />
+        <node concept="1PaTwC" id="3VVgDkJgbcC" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbcD" role="1PaTwD">
+            <property role="3oM_SC" value="isRight" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcE" role="1PaTwD">
+            <property role="3oM_SC" value="indicates" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcF" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcG" role="1PaTwD">
+            <property role="3oM_SC" value="child" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcH" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcI" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcJ" role="1PaTwD">
+            <property role="3oM_SC" value="right" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcK" role="1PaTwD">
+            <property role="3oM_SC" value="child" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcL" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcM" role="1PaTwD">
+            <property role="3oM_SC" value="parent." />
           </node>
         </node>
-        <node concept="TZ5HA" id="6eo1HzJBhsu" role="TZ5H$">
-          <node concept="1dT_AC" id="6eo1HzJBhsv" role="1dT_Ay">
-            <property role="1dT_AB" value="The expression tree needs to be rotated, if either one of the two conditions hold" />
+        <node concept="1PaTwC" id="3VVgDkJgbcN" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbcO" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcP" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcQ" role="1PaTwD">
+            <property role="3oM_SC" value="tree" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcR" role="1PaTwD">
+            <property role="3oM_SC" value="needs" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcS" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcT" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcU" role="1PaTwD">
+            <property role="3oM_SC" value="rotated," />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcV" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcW" role="1PaTwD">
+            <property role="3oM_SC" value="either" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcX" role="1PaTwD">
+            <property role="3oM_SC" value="one" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcY" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbcZ" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbd0" role="1PaTwD">
+            <property role="3oM_SC" value="two" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbd1" role="1PaTwD">
+            <property role="3oM_SC" value="conditions" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbd2" role="1PaTwD">
+            <property role="3oM_SC" value="hold" />
           </node>
         </node>
-        <node concept="TZ5HA" id="6eo1HzJBhsO" role="TZ5H$">
-          <node concept="1dT_AC" id="6eo1HzJBhsP" role="1dT_Ay">
-            <property role="1dT_AB" value="(1) the child node's priority is smaller than of the parent's " />
+        <node concept="1PaTwC" id="3VVgDkJgbd3" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbd4" role="1PaTwD">
+            <property role="3oM_SC" value="(1)" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbd5" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbd6" role="1PaTwD">
+            <property role="3oM_SC" value="child" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbd7" role="1PaTwD">
+            <property role="3oM_SC" value="node's" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbd8" role="1PaTwD">
+            <property role="3oM_SC" value="priority" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbd9" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbda" role="1PaTwD">
+            <property role="3oM_SC" value="smaller" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdb" role="1PaTwD">
+            <property role="3oM_SC" value="than" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdc" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdd" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbde" role="1PaTwD">
+            <property role="3oM_SC" value="parent's" />
           </node>
         </node>
-        <node concept="TZ5HA" id="6eo1HzJBhtc" role="TZ5H$">
-          <node concept="1dT_AC" id="6eo1HzJBhtd" role="1dT_Ay">
-            <property role="1dT_AB" value="(2) they have the same priorities but the child is a right child (and we want to have left derivation)" />
+        <node concept="1PaTwC" id="3VVgDkJgbdf" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbdg" role="1PaTwD">
+            <property role="3oM_SC" value="(2)" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdh" role="1PaTwD">
+            <property role="3oM_SC" value="they" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdi" role="1PaTwD">
+            <property role="3oM_SC" value="have" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdj" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdk" role="1PaTwD">
+            <property role="3oM_SC" value="same" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdl" role="1PaTwD">
+            <property role="3oM_SC" value="priorities" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdm" role="1PaTwD">
+            <property role="3oM_SC" value="but" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdn" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdo" role="1PaTwD">
+            <property role="3oM_SC" value="child" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdp" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdq" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdr" role="1PaTwD">
+            <property role="3oM_SC" value="right" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbds" role="1PaTwD">
+            <property role="3oM_SC" value="child" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdt" role="1PaTwD">
+            <property role="3oM_SC" value="(and" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdu" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdv" role="1PaTwD">
+            <property role="3oM_SC" value="want" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdw" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdx" role="1PaTwD">
+            <property role="3oM_SC" value="have" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdy" role="1PaTwD">
+            <property role="3oM_SC" value="left" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdz" role="1PaTwD">
+            <property role="3oM_SC" value="derivation)" />
           </node>
         </node>
       </node>
@@ -907,19 +1272,87 @@
       </node>
       <node concept="P$JXv" id="4aY3oGIjKup" role="lGtFl">
         <node concept="TUZQ0" id="4aY3oGIjKus" role="3nqlJM">
-          <property role="TUZQ4" value="the expression which will be the root of the rebalancing" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="4aY3oGIjKuu" role="zr_5Q">
             <ref role="zr_51" node="3M4aPu$Qxih" resolve="expression" />
           </node>
-        </node>
-        <node concept="TZ5HA" id="4aY3oGIjKuq" role="TZ5H$">
-          <node concept="1dT_AC" id="4aY3oGIjKur" role="1dT_Ay">
-            <property role="1dT_AB" value="Rebalances the subtree of the given expression. " />
+          <node concept="1PaTwC" id="3VVgDkJgbdO" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJgbdP" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbdQ" role="1PaTwD">
+              <property role="3oM_SC" value="expression" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbdR" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbdS" role="1PaTwD">
+              <property role="3oM_SC" value="will" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbdT" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbdU" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbdV" role="1PaTwD">
+              <property role="3oM_SC" value="root" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbdW" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbdX" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbdY" role="1PaTwD">
+              <property role="3oM_SC" value="rebalancing" />
+            </node>
           </node>
         </node>
-        <node concept="TZ5HA" id="4aY3oGIkeC_" role="TZ5H$">
-          <node concept="1dT_AC" id="4aY3oGIkeCA" role="1dT_Ay">
-            <property role="1dT_AB" value="Only binary expressions are considered for rebalancing. " />
+        <node concept="1PaTwC" id="3VVgDkJgbd$" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbd_" role="1PaTwD">
+            <property role="3oM_SC" value="Rebalances" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdA" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdB" role="1PaTwD">
+            <property role="3oM_SC" value="subtree" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdC" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdD" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdE" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdF" role="1PaTwD">
+            <property role="3oM_SC" value="expression." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJgbdG" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbdH" role="1PaTwD">
+            <property role="3oM_SC" value="Only" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdI" role="1PaTwD">
+            <property role="3oM_SC" value="binary" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdJ" role="1PaTwD">
+            <property role="3oM_SC" value="expressions" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdK" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdL" role="1PaTwD">
+            <property role="3oM_SC" value="considered" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdM" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbdN" role="1PaTwD">
+            <property role="3oM_SC" value="rebalancing." />
           </node>
         </node>
       </node>
@@ -1110,29 +1543,145 @@
       </node>
       <node concept="P$JXv" id="4aY3oGIjJp_" role="lGtFl">
         <node concept="TUZQ0" id="4aY3oGIjJpC" role="3nqlJM">
-          <property role="TUZQ4" value="the expression in the tree" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="4aY3oGIjJpE" role="zr_5Q">
             <ref role="zr_51" node="3M4aPu$Mu1q" resolve="expression" />
           </node>
-        </node>
-        <node concept="TZ5HA" id="4aY3oGIjJpA" role="TZ5H$">
-          <node concept="1dT_AC" id="4aY3oGIjKqs" role="1dT_Ay">
-            <property role="1dT_AB" value="Rebalances the whole expression tree of the given expression." />
+          <node concept="1PaTwC" id="3VVgDkJgbeC" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJgbeD" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbeE" role="1PaTwD">
+              <property role="3oM_SC" value="expression" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbeF" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbeG" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbeH" role="1PaTwD">
+              <property role="3oM_SC" value="tree" />
+            </node>
           </node>
         </node>
-        <node concept="TZ5HA" id="4aY3oGIjKrL" role="TZ5H$">
-          <node concept="1dT_AC" id="4aY3oGIjKrM" role="1dT_Ay">
-            <property role="1dT_AB" value="This means that the rebalancing will take place on the subtree " />
+        <node concept="1PaTwC" id="3VVgDkJgbdZ" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbe0" role="1PaTwD">
+            <property role="3oM_SC" value="Rebalances" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbe1" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbe2" role="1PaTwD">
+            <property role="3oM_SC" value="whole" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbe3" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbe4" role="1PaTwD">
+            <property role="3oM_SC" value="tree" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbe5" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbe6" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbe7" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbe8" role="1PaTwD">
+            <property role="3oM_SC" value="expression." />
           </node>
         </node>
-        <node concept="TZ5HA" id="4aY3oGIjKsK" role="TZ5H$">
-          <node concept="1dT_AC" id="4aY3oGIjKsL" role="1dT_Ay">
-            <property role="1dT_AB" value="of the root of the tree where expression is present. " />
+        <node concept="1PaTwC" id="3VVgDkJgbe9" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbea" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeb" role="1PaTwD">
+            <property role="3oM_SC" value="means" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbec" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbed" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbee" role="1PaTwD">
+            <property role="3oM_SC" value="rebalancing" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbef" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeg" role="1PaTwD">
+            <property role="3oM_SC" value="take" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeh" role="1PaTwD">
+            <property role="3oM_SC" value="place" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbei" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbej" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbek" role="1PaTwD">
+            <property role="3oM_SC" value="subtree" />
           </node>
         </node>
-        <node concept="TZ5HA" id="4aY3oGIkeBI" role="TZ5H$">
-          <node concept="1dT_AC" id="4aY3oGIkeBJ" role="1dT_Ay">
-            <property role="1dT_AB" value="Only binary expressions are considered for rebalancing. " />
+        <node concept="1PaTwC" id="3VVgDkJgbel" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbem" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgben" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeo" role="1PaTwD">
+            <property role="3oM_SC" value="root" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbep" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeq" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgber" role="1PaTwD">
+            <property role="3oM_SC" value="tree" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbes" role="1PaTwD">
+            <property role="3oM_SC" value="where" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbet" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeu" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbev" role="1PaTwD">
+            <property role="3oM_SC" value="present." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJgbew" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbex" role="1PaTwD">
+            <property role="3oM_SC" value="Only" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbey" role="1PaTwD">
+            <property role="3oM_SC" value="binary" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbez" role="1PaTwD">
+            <property role="3oM_SC" value="expressions" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbe$" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbe_" role="1PaTwD">
+            <property role="3oM_SC" value="considered" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeA" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeB" role="1PaTwD">
+            <property role="3oM_SC" value="rebalancing." />
           </node>
         </node>
       </node>
@@ -2062,23 +2611,149 @@
       </node>
       <node concept="P$JXv" id="3M4aPu$LGQJ" role="lGtFl">
         <node concept="TUZQ0" id="3M4aPu$LGQM" role="3nqlJM">
-          <property role="TUZQ4" value="the descendant expression" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="3M4aPu$LGQO" role="zr_5Q">
             <ref role="zr_51" node="3M4aPu$LGPS" resolve="expression" />
           </node>
+          <node concept="1PaTwC" id="3VVgDkJgbeX" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJgbeY" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbeZ" role="1PaTwD">
+              <property role="3oM_SC" value="descendant" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbf0" role="1PaTwD">
+              <property role="3oM_SC" value="expression" />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="3M4aPu$LGQP" role="3nqlJM">
-          <property role="TUZQ4" value="true - if the expression should be on the right, false - if the expression should be on the left" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="3M4aPu$LGQR" role="zr_5Q">
             <ref role="zr_51" node="3M4aPu$LGQg" resolve="isRight" />
           </node>
+          <node concept="1PaTwC" id="3VVgDkJgbf1" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJgbf2" role="1PaTwD">
+              <property role="3oM_SC" value="true" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbf3" role="1PaTwD">
+              <property role="3oM_SC" value="-" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbf4" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbf5" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbf6" role="1PaTwD">
+              <property role="3oM_SC" value="expression" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbf7" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbf8" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbf9" role="1PaTwD">
+              <property role="3oM_SC" value="on" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfa" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfb" role="1PaTwD">
+              <property role="3oM_SC" value="right," />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfc" role="1PaTwD">
+              <property role="3oM_SC" value="false" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfd" role="1PaTwD">
+              <property role="3oM_SC" value="-" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfe" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbff" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfg" role="1PaTwD">
+              <property role="3oM_SC" value="expression" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfh" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfi" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfj" role="1PaTwD">
+              <property role="3oM_SC" value="on" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfk" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfl" role="1PaTwD">
+              <property role="3oM_SC" value="left" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="3M4aPu$LGQS" role="3nqlJM">
-          <property role="x79VB" value="the found binary expression" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3VVgDkJgbfm" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJgbfn" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfo" role="1PaTwD">
+              <property role="3oM_SC" value="found" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfp" role="1PaTwD">
+              <property role="3oM_SC" value="binary" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJgbfq" role="1PaTwD">
+              <property role="3oM_SC" value="expression" />
+            </node>
+          </node>
         </node>
-        <node concept="TZ5HA" id="3M4aPu$LGQK" role="TZ5H$">
-          <node concept="1dT_AC" id="3M4aPu$LGQL" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the first binary expression where the given expression is on the given side. " />
+        <node concept="1PaTwC" id="3VVgDkJgbeI" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJgbeJ" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeK" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeL" role="1PaTwD">
+            <property role="3oM_SC" value="first" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeM" role="1PaTwD">
+            <property role="3oM_SC" value="binary" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeN" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeO" role="1PaTwD">
+            <property role="3oM_SC" value="where" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeP" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeQ" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeR" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeS" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeT" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeU" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeV" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJgbeW" role="1PaTwD">
+            <property role="3oM_SC" value="side." />
           </node>
         </node>
       </node>

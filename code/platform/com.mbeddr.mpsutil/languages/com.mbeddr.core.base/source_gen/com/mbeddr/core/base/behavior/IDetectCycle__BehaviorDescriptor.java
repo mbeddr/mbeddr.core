@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Set;
 import com.mbeddr.mpsutil.common.graph.Graph;
@@ -23,23 +22,20 @@ import java.util.LinkedList;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.jetbrains.annotations.Nullable;
 import com.mbeddr.mpsutil.common.graph.GraphUtil;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IDetectCycle__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x526d2e6bb4f94a97L, "com.mbeddr.core.base.structure.IDetectCycle");
 
-  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getDependenciesRelevantForCycleDetection").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Set<SNode>> traceBackElementInCycle_id17fjvcLF7UR = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("traceBackElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1283330125729660599L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getErrorMessageForElementInCycle_id2G8yZXxNStd = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getErrorMessageForElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3100882272418498381L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> isInvolvedInCycle_id59HbAIOYtvQ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInvolvedInCycle").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704203254L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Graph<SNode>> getDependencyGraph_id17fjvcLC_kB = new SMethodBuilder<Graph<SNode>>(new SJavaCompoundTypeImpl(Graph.class)).name("getDependencyGraph").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(1283330125728994599L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Set<SNode>> getCyclicDependencyElements_id17fjvcLFUH5 = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("getCyclicDependencyElements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1283330125729868613L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getDependenciesRelevantForCycleDetection").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Set<SNode>> traceBackElementInCycle_id17fjvcLF7UR = new SMethodBuilder<>((Class<Set<SNode>>) ((Class) Object.class)).name("traceBackElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1283330125729660599L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "dependency"));
+  public static final SMethod<String> getErrorMessageForElementInCycle_id2G8yZXxNStd = new SMethodBuilder<>(String.class).name("getErrorMessageForElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3100882272418498381L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isInvolvedInCycle_id59HbAIOYtvQ = new SMethodBuilder<>(Boolean.TYPE).name("isInvolvedInCycle").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704203254L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Graph<SNode>> getDependencyGraph_id17fjvcLC_kB = new SMethodBuilder<>((Class<Graph<SNode>>) ((Class) Object.class)).name("getDependencyGraph").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(1283330125728994599L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Set<SNode>> getCyclicDependencyElements_id17fjvcLFUH5 = new SMethodBuilder<>((Class<Set<SNode>>) ((Class) Object.class)).name("getCyclicDependencyElements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1283330125729868613L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getErrorMessageForElementInCycle_id2G8yZXxNStd, isInvolvedInCycle_id59HbAIOYtvQ, getDependencyGraph_id17fjvcLC_kB, getCyclicDependencyElements_id17fjvcLFUH5);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getErrorMessageForElementInCycle_id2G8yZXxNStd, isInvolvedInCycle_id59HbAIOYtvQ, getDependencyGraph_id17fjvcLC_kB, getCyclicDependencyElements_id17fjvcLFUH5);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Set<SNode> traceBackElementInCycle_id17fjvcLF7UR(@NotNull SNode __thisNode__, SNode dependency) {
     return null;
@@ -92,10 +88,6 @@ public final class IDetectCycle__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IDetectCycle__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -22,12 +20,10 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class ContinueStatement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x70db34ef88f3c10bL, "com.mbeddr.core.statements.structure.ContinueStatement");
 
-  public static final SMethod<SNode> getLoop_id2aAUbzI4tOA = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getLoop").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2496938924389293350L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<SNode> getLoop_id2aAUbzI4tOA = new SMethodBuilder<>(SNode.class).name("getLoop").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2496938924389293350L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLoop_id2aAUbzI4tOA);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLoop_id2aAUbzI4tOA);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getLoop_id2aAUbzI4tOA(@NotNull SNode __thisNode__) {
     for (SNode loop : SNodeOperations.getNodeAncestors(__thisNode__, CONCEPTS.ILoopStatement$c4, false)) {
@@ -39,10 +35,6 @@ public final class ContinueStatement__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ ContinueStatement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
