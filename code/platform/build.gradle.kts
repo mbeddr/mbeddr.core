@@ -36,7 +36,7 @@ dependencies {
     if (project.hasProperty("mpsExtensionsZip")) {
         mpsLibraries(files(project.property("mpsExtensionsZip")))
     } else {
-        mpsLibraries(libs.mpsExtensions251)
+        mpsLibraries(libs.mpsExtensions)
     }
 }
 
