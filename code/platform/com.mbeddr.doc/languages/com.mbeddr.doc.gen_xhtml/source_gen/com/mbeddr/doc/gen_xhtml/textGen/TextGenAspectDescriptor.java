@@ -67,9 +67,11 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     } else {
       return SPropertyOperations.getString(node, PROPS.name$MnvL);
     }
+
   }
   private static String getFileName_CSSSpecification(SNode node) {
-    return node.getName();
+    return SPropertyOperations.getString(node, PROPS.name$MnvL);
+
   }
   private static String getFileExtension_XHTMLFile(SNode node) {
     return "html";

@@ -21,7 +21,7 @@ public class EnumerationDescriptor_Alignment extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember__3_0 = new EnumerationDescriptor.MemberDescriptor("_3", "justify", 0x1c579c584db71efcL, "r:f6651a85-73de-42f1-9bd6-d372b5b47f05(com.mbeddr.spreadsheet.structure)/7781501729853392594");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x1d891f7bdc9342f9L, 0xa4bcb016656b14e2L, 0x1c579c584db71ef7L, 0x1c579c584db71ef9L, 0x1c579c584db71efaL, 0x1c579c584db71efbL, 0x1c579c584db71efcL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember__0_0, myMember__1_0, myMember__2_0, myMember__3_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember__0_0, myMember__1_0, myMember__2_0, myMember__3_0);
 
   @Nullable
   @Override

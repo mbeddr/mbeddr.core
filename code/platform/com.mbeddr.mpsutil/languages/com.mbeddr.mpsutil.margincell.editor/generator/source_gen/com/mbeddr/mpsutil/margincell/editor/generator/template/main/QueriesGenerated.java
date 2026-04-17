@@ -8,7 +8,7 @@ import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.editor.behavior.EditorCellModel__BehaviorDescriptor;
 import jetbrains.mps.generator.template.ReferenceMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import java.util.Map;
@@ -36,23 +36,23 @@ public class QueriesGenerated extends QueryProviderBase {
   public static Object referenceMacro_GetReferent_1_0(final ReferenceMacroContext _context) {
     if ((SLinkOperations.getTarget(_context.getNode(), LINKS.styleClass$oCP2) != null)) {
       return SLinkOperations.getTarget(_context.getNode(), LINKS.styleClass$oCP2);
-    } else {
-      return SNodeOperations.getNode("9ea6119e-d73d-42a8-8d7b-e60e0d7b845d/r:732be188-20bb-49ee-8e19-08268650a3e5(com.mbeddr.mpsutil.margincell.runtime/com.mbeddr.mpsutil.margincell.runtime)", "1159656764132537457");
     }
-  }
-  public static Object referenceMacro_GetReferent_1_1(final ReferenceMacroContext _context) {
-    return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.content$oCn0), "cellFactory.factoryMethod");
+    return new SNodePointer("9ea6119e-d73d-42a8-8d7b-e60e0d7b845d/r:732be188-20bb-49ee-8e19-08268650a3e5(com.mbeddr.mpsutil.margincell.runtime/com.mbeddr.mpsutil.margincell.runtime)", "1159656764132537457");
   }
   public static SNode sourceNodeQuery_0_0(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.content$oCn0);
   }
   public static SNode sourceNodeQuery_1_0(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), LINKS.content$oCn0);
+  }
+  public static SNode sourceNodeQuery_1_1(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.marginContents$oCA1);
   }
   private final Map<String, SourceNodeQuery> snqMethods = new HashMap<String, SourceNodeQuery>();
   {
     int i = 0;
     snqMethods.put("4772059062238773357", new SNQ(i++));
+    snqMethods.put("8760592470373564573", new SNQ(i++));
     snqMethods.put("3632181533473641285", new SNQ(i++));
   }
   @NotNull
@@ -73,6 +73,8 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.sourceNodeQuery_0_0(ctx);
         case 1:
           return QueriesGenerated.sourceNodeQuery_1_0(ctx);
+        case 2:
+          return QueriesGenerated.sourceNodeQuery_1_1(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -108,7 +110,6 @@ public class QueriesGenerated extends QueryProviderBase {
   private final Map<String, ReferenceTargetQuery> rtqMethods = new HashMap<String, ReferenceTargetQuery>();
   {
     rtqMethods.put("1159656764144633093", new RTQ(0, "MarginCellStyle"));
-    rtqMethods.put("8455208232403185276", new RTQ(1, "createContentCell"));
   }
   @NotNull
   @Override
@@ -127,8 +128,6 @@ public class QueriesGenerated extends QueryProviderBase {
       switch (methodKey) {
         case 0:
           return QueriesGenerated.referenceMacro_GetReferent_1_0(ctx);
-        case 1:
-          return QueriesGenerated.referenceMacro_GetReferent_1_1(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }

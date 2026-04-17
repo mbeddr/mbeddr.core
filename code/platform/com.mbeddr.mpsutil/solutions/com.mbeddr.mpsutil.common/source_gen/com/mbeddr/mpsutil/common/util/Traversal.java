@@ -165,7 +165,7 @@ public abstract class Traversal<T> {
   /**
    * This method will visit all traversed nodes in turn. It can be used to prematurely end the traversal.
    * 
-   * The default implementation returns false, meaning that the traversal should be continued until 
+   * The default implementation returns false, meaning that the traversal should be continued until
    * every reachable node has been visited.
    * 
    * The logic of the return value has the following use case in mind: Traverse a structure recursively

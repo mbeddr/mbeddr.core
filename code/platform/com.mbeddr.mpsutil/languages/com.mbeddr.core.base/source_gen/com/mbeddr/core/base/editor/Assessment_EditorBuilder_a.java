@@ -105,12 +105,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
       editorCell.addEditorCell(createCollection_2());
     }
     editorCell.addEditorCell(createCollection_3());
-    editorCell.addEditorCell(createHorizontalLineCell_1());
+    editorCell.addEditorCell(createHorizontalLineCell_0());
     editorCell.addEditorCell(createCollection_7());
-    editorCell.addEditorCell(createHorizontalLineCell_3());
+    editorCell.addEditorCell(createHorizontalLineCell_1());
     editorCell.addEditorCell(createCollection_8());
     if (nodeCondition_jpgjb9_a7a()) {
-      editorCell.addEditorCell(createHorizontalLineCell_5());
+      editorCell.addEditorCell(createHorizontalLineCell_2());
     }
     if (nodeCondition_jpgjb9_a8a()) {
       editorCell.addEditorCell(createCollection_9());
@@ -304,24 +304,24 @@ import org.jetbrains.mps.openapi.language.SConcept;
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createCheckbox_1());
+    editorCell.addEditorCell(createCheckbox_0());
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createIndentCell_0());
     editorCell.addEditorCell(createIndentCell_1());
-    editorCell.addEditorCell(createCheckbox_3());
+    editorCell.addEditorCell(createCheckbox_1());
     editorCell.addEditorCell(createConstant_2());
     editorCell.addEditorCell(createIndentCell_2());
     editorCell.addEditorCell(createIndentCell_3());
-    editorCell.addEditorCell(createCheckbox_5());
+    editorCell.addEditorCell(createCheckbox_2());
     editorCell.addEditorCell(createConstant_3());
     return editorCell;
   }
-  private EditorCell createCheckbox_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCheckbox_0() {
     SProperty property = PROPS.alwaysShowCheckboxes$CaKI;
-    CellProviderWithRole provider = new CheckboxCellProvider(node, property, editorContext);
+    CellProviderWithRole provider = new CheckboxCellProvider(getNode(), property, getEditorContext());
     provider.setNoTargetText("<no alwaysShowCheckboxes>");
     EditorCell_Checkbox editorCell;
-    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(editorContext));
+    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(getEditorContext()));
     editorCell.setCellId("property_alwaysShowCheckboxes");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -329,9 +329,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createCheckbox_1() {
-    return createCheckbox_0(getEditorContext(), myNode);
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "always show checkboxes");
@@ -347,12 +344,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
     EditorCell_Indent editorCell = new EditorCell_Indent(getEditorContext(), myNode);
     return editorCell;
   }
-  private EditorCell createCheckbox_2(EditorContext editorContext, SNode node) {
+  private EditorCell createCheckbox_1() {
     SProperty property = PROPS.mustBeOk$nDd5;
-    CellProviderWithRole provider = new CheckboxCellProvider(node, property, editorContext);
+    CellProviderWithRole provider = new CheckboxCellProvider(getNode(), property, getEditorContext());
     provider.setNoTargetText("<no mustBeOk>");
     EditorCell_Checkbox editorCell;
-    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(editorContext));
+    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(getEditorContext()));
     editorCell.setCellId("property_mustBeOk");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -360,9 +357,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createCheckbox_3() {
-    return createCheckbox_2(getEditorContext(), myNode);
   }
   private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "must be ok");
@@ -378,12 +372,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
     EditorCell_Indent editorCell = new EditorCell_Indent(getEditorContext(), myNode);
     return editorCell;
   }
-  private EditorCell createCheckbox_4(EditorContext editorContext, SNode node) {
+  private EditorCell createCheckbox_2() {
     SProperty property = PROPS.hideOkOnes$z8B0;
-    CellProviderWithRole provider = new CheckboxCellProvider(node, property, editorContext);
+    CellProviderWithRole provider = new CheckboxCellProvider(getNode(), property, getEditorContext());
     provider.setNoTargetText("<no hideOkOnes>");
     EditorCell_Checkbox editorCell;
-    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(editorContext));
+    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(getEditorContext()));
     editorCell.setCellId("property_hideOkOnes");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -391,9 +385,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createCheckbox_5() {
-    return createCheckbox_4(getEditorContext(), myNode);
   }
   private EditorCell createConstant_3() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "hide ok ones");
@@ -407,17 +398,17 @@ import org.jetbrains.mps.openapi.language.SConcept;
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createCheckbox_7());
+    editorCell.addEditorCell(createCheckbox_3());
     editorCell.addEditorCell(createConstant_4());
     editorCell.addEditorCell(createConstant_5());
     return editorCell;
   }
-  private EditorCell createCheckbox_6(EditorContext editorContext, SNode node) {
+  private EditorCell createCheckbox_3() {
     SProperty property = PROPS.sorted$64Eg;
-    CellProviderWithRole provider = new CheckboxCellProvider(node, property, editorContext);
+    CellProviderWithRole provider = new CheckboxCellProvider(getNode(), property, getEditorContext());
     provider.setNoTargetText("<no sorted>");
     EditorCell_Checkbox editorCell;
-    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(editorContext));
+    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(getEditorContext()));
     editorCell.setCellId("property_sorted");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -425,9 +416,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createCheckbox_7() {
-    return createCheckbox_6(getEditorContext(), myNode);
   }
   private EditorCell createConstant_4() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "sorted");
@@ -475,8 +463,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
-  private EditorCell createHorizontalLineCell_0(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_0() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_jpgjb9_d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(MPSColors.lightGray));
@@ -484,9 +472,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.itemis.mps.editor.celllayout.styles", "_margin-bottom"), 10);
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_1() {
-    return createHorizontalLineCell_0(getEditorContext(), myNode);
   }
   private EditorCell createCollection_7() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
@@ -621,8 +606,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("<results hidden>");
     return editorCell;
   }
-  private EditorCell createHorizontalLineCell_2(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_1() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_jpgjb9_f0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(MPSColors.lightGray));
@@ -630,9 +615,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.itemis.mps.editor.celllayout.styles", "_margin-bottom"), 10);
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_3() {
-    return createHorizontalLineCell_2(getEditorContext(), myNode);
   }
   private EditorCell createCollection_8() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
@@ -726,8 +708,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return editorCell;
     }
   }
-  private EditorCell createHorizontalLineCell_4(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_2() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_jpgjb9_h0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(MPSColors.lightGray));
@@ -735,9 +717,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.itemis.mps.editor.celllayout.styles", "_margin-bottom"), 10);
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_5() {
-    return createHorizontalLineCell_4(getEditorContext(), myNode);
   }
   private EditorCell createCollection_9() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());

@@ -180,7 +180,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
   }
   private EditorCell createTable_1() {
-    return createTable_0(getEditorContext(), myNode);
+    return createTable_0(getEditorContext(), getNode());
   }
   public HeaderGrid createStaticHeader_eo5uyw_a0d0(final EditorContext editorContext, final SNode snode) {
     final Style style = new ITableStyleFactory() {
@@ -376,7 +376,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
   }
   private EditorCell createTable_3() {
-    return createTable_2(getEditorContext(), myNode);
+    return createTable_2(getEditorContext(), getNode());
   }
   public HeaderGrid createStaticHeader_eo5uyw_a4d0(final EditorContext editorContext, final SNode snode) {
     final Style style = new ITableStyleFactory() {

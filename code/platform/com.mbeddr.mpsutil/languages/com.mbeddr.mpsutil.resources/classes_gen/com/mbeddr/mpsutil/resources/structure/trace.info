@@ -17,7 +17,7 @@
       <unit at="11,0,38,0" name="com.mbeddr.mpsutil.resources.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,30,0" name="com.mbeddr.mpsutil.resources.structure.LanguageConceptSwitch" />
+      <unit at="12,0,38,0" name="com.mbeddr.mpsutil.resources.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="18,0,87,0" name="com.mbeddr.mpsutil.resources.structure.StructureAspectDescriptor" />
@@ -149,8 +149,8 @@
       <scope id="4984484659274609509" at="27,50,33,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4984484659274609509" at="13,0,14,0" concept="8" trace="TextCustomizable" />
-      <node id="4984484659274609509" at="17,57,18,55" concept="1" />
+      <node id="4984484659274609509" at="15,0,16,0" concept="8" trace="TextCustomizable" />
+      <node id="4984484659274609509" at="19,57,20,55" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4984484659274609509" at="20,0,21,0" concept="2" trace="myConceptTextCustomizable" />
@@ -189,8 +189,8 @@
       <scope id="8062515945409215260" at="20,52,26,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8062515945409215260" at="12,0,13,0" concept="8" trace="CircleCustomizable" />
-      <node id="8062515945409215260" at="16,116,17,57" concept="1" />
+      <node id="8062515945409215260" at="14,0,15,0" concept="8" trace="CircleCustomizable" />
+      <node id="8062515945409215260" at="18,116,19,57" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8062515945409215260" at="19,0,20,0" concept="2" trace="myConceptCircleCustomizable" />

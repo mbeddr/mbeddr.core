@@ -8,24 +8,20 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class BlockingConstraint__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x4472bacfa15bd93dL, "com.mbeddr.ext.concurrency.structure.BlockingConstraint");
 
-  public static final SMethod<SNode> task_id2ajpxDX4K0q = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("task").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2491447282819596314L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<SNode> task_id2ajpxDX4K0q = new SMethodBuilder<>(SNode.class).name("task").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2491447282819596314L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(task_id2ajpxDX4K0q);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(task_id2ajpxDX4K0q);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode task_id2ajpxDX4K0q(@NotNull SNode __thisNode__) {
     return ((SNode) SingleTaskSchedulingConstraint__BehaviorDescriptor.getTask_id3qlQk_gz7DW.invoke(__thisNode__));
@@ -34,10 +30,6 @@ public final class BlockingConstraint__BehaviorDescriptor extends BaseBHDescript
   /*package*/ BlockingConstraint__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

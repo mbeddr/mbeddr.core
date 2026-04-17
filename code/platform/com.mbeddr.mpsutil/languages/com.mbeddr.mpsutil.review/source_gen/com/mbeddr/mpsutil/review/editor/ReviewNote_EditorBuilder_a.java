@@ -289,15 +289,15 @@ import org.jetbrains.mps.openapi.language.SConcept;
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createCheckbox_1());
+    editorCell.addEditorCell(createCheckbox_0());
     return editorCell;
   }
-  private EditorCell createCheckbox_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCheckbox_0() {
     SProperty property = PROPS.collapsed$sxLp;
-    CellProviderWithRole provider = new CheckboxCellProvider(node, property, editorContext);
+    CellProviderWithRole provider = new CheckboxCellProvider(getNode(), property, getEditorContext());
     provider.setNoTargetText("<no collapsed>");
     EditorCell_Checkbox editorCell;
-    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(editorContext));
+    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(getEditorContext()));
     editorCell.setImageTrue("${module}/icons/collapsed.png", 0.5);
     editorCell.setImageFalse("${module}/icons/expanded.png", 0.5);
     editorCell.setCellId("property_collapsed");
@@ -307,9 +307,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createCheckbox_1() {
-    return createCheckbox_0(getEditorContext(), myNode);
   }
   private EditorCell createCollection_4() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());

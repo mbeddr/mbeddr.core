@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -24,12 +22,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ConversionDateTime__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x442d3b7dfe4a4293L, 0xa7c16744d440ecaaL, 0x2e8be43a043945b8L, "com.mbeddr.mpsutil.richstring.structure.ConversionDateTime");
 
-  public static final SMethod<String> getConversionSymbol_id2UbT3C4ekvK = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getConversionSymbol").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354025285337565168L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<String> getConversionSymbol_id2UbT3C4ekvK = new SMethodBuilder<>(String.class).name("getConversionSymbol").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354025285337565168L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConversionSymbol_id2UbT3C4ekvK);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConversionSymbol_id2UbT3C4ekvK);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getConversionSymbol_id2UbT3C4ekvK(@NotNull SNode __thisNode__) {
     return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)) + IDateTimeSpecificConversion__BehaviorDescriptor.getDateTimeConversionSymbol_id6Go9U2yue4U.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.specificConversion$e8Aa));
@@ -38,10 +34,6 @@ public final class ConversionDateTime__BehaviorDescriptor extends BaseBHDescript
   /*package*/ ConversionDateTime__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

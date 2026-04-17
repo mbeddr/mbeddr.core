@@ -51,9 +51,7 @@
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
-    <fileset dir="${artifacts.mps}/lib">
-      <include name="util-8.jar" />
-    </fileset>
+    <pathelement location="${artifacts.mps}/lib/util-8.jar" />
   </path>
   
   <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
@@ -250,7 +248,6 @@
     <generate fork="true" targetJavaVersion="1.8" logLevel="${mps.ant.log}">      
       <settings refid="m2m-0" />
       <plugin path="${artifacts.com.mbeddr.platform}/MPS.Kotlin" id="MPS.Kotlin" />
-      <plugin path="${artifacts.com.mbeddr.platform}/MPS.ThirdParty" id="MPS.ThirdParty" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common" id="com.mbeddr.mpsutil.common" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.contextactions" id="com.mbeddr.mpsutil.contextactions" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.dataflow" id="com.mbeddr.mpsutil.dataflow" />
@@ -303,6 +300,7 @@
       <plugin path="${artifacts.mbeddr}/mbeddr.math" id="com.mbeddr.ext.math" />
       <plugin path="${artifacts.mbeddr}/mbeddr.units" id="com.mbeddr.ext.units" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
+      <plugin path="${artifacts.mps}/plugins/java" id="com.intellij.java" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-context-actions" id="jetbrains.mps.editor.contextActions" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
@@ -325,11 +323,6 @@
       <plugin path="${artifacts.mps}/plugins/vcs-svn" id="Subversion" />
       <library file="${artifacts.com.mbeddr.core.aLibrary.build}/aLibrary.jar" />
       <library file="${artifacts.com.mbeddr.core.aLibrary.build}/com.mbeddr.core.__spreferences.PlatformTemplates.jar" />
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
-      <library file="${artifacts.mps}/languages/workbench-stub.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       <chunk>
         <module file="${mbeddr.core}/tests/test.ex.core/core.msd" />
         <module file="${mbeddr.core}/tests/test.ex.errorreporting/errorreporting.msd" />
@@ -337,7 +330,6 @@
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xmx512m" />
-        <arg value="--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" />
       </jvmargs>
       <macro name="artifacts.root" path="${artifacts.root}" />
       <macro name="mps.home" path="${mps.home}" />
@@ -391,7 +383,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -401,13 +392,17 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.com.mbeddr.core.aLibrary.build}/aLibrary.jar" />
         <fileset file="${artifacts.com.mbeddr.core.aLibrary.build}/com.mbeddr.core.__spreferences.PlatformTemplates.jar" />
         <fileset file="${artifacts.mbeddr}/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.runtime.jar" />
@@ -423,18 +418,19 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-engine-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-migrationsupport-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-params-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-commons-1.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-engine-1.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-launcher-1.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-vintage-engine-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="opentest4j-1.2.0.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-reporting-1.9.3.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-engine-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-migrationsupport-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-params-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-commons-1.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-engine-1.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-launcher-1.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-vintage-engine-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="opentest4j-1.3.0.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-reporting-1.13.4.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/test.ex.core">
@@ -478,7 +474,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -488,13 +483,17 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.com.mbeddr.core.aLibrary.build}/com.mbeddr.core.__spreferences.PlatformTemplates.jar" />
         <fileset file="${artifacts.mbeddr}/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
@@ -507,18 +506,19 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-engine-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-migrationsupport-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-params-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-commons-1.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-engine-1.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-launcher-1.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-vintage-engine-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="opentest4j-1.2.0.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-reporting-1.9.3.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-engine-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-migrationsupport-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-params-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-commons-1.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-engine-1.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-launcher-1.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-vintage-engine-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="opentest4j-1.3.0.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-reporting-1.13.4.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/test.ex.errorreporting">

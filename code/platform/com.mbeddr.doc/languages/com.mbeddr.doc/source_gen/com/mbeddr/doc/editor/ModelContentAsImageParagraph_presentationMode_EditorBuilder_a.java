@@ -39,7 +39,6 @@ import javax.swing.JComponent;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.nodeEditor.inspector.InspectorEditorComponent;
 import jetbrains.mps.editor.runtime.TextBuilderImpl;
-import jetbrains.mps.nodeEditor.EditorManager;
 import com.mbeddr.mpsutil.framecell.runtime.FrameCell;
 import java.awt.Color;
 import jetbrains.mps.nodeEditor.AbstractCellProvider;
@@ -93,7 +92,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
     editorCell.setCellId("Collection_xgpesy_a0");
     editorCell.addEditorCell(createConstant_0());
-    editorCell.addEditorCell(createFrameCell_1());
+    editorCell.addEditorCell(createFrameCell_0());
     editorCell.addEditorCell(createCustom_0());
     editorCell.addEditorCell(createCollection_3());
     editorCell.addEditorCell(createConstant_3());
@@ -118,7 +117,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     try {
       getCellFactory().pushCellContext();
       getCellFactory().addCellContextHints(Sequence.fromIterable(getEditorHints0()).toGenericArray(String.class));
-      editorCell.addEditorCell(createQueryList_1());
+      editorCell.addEditorCell(createQueryList_0());
       setInnerCellsContext(editorCell);
     } finally {
       getCellFactory().popCellContext();
@@ -128,18 +127,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
   private Iterable<String> getEditorHints0() {
     return Sequence.fromIterable(CodeParagraphHelper.getCodeParagraphHints(myNode)).concat(ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.hints$eSBG)).select((it) -> (String) ConceptEditorHintDeclaration__BehaviorDescriptor.getQualifiedName_id59ZEGVRaGvv.invoke(SLinkOperations.getTarget(it, LINKS.hint$Facj))));
   }
-  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_0() {
 
-    QueryListHandler handler = new QueryListHandler_xgpesy_a0b0a(editorContext, node, false);
+    QueryListHandler handler = new QueryListHandler_xgpesy_a0b0a(getEditorContext(), getNode(), false);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
     editorCell.setTargeConcept(CONCEPTS.BaseConcept$gP);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_xgpesy_a0b0a");
     return editorCell;
 
-  }
-  private EditorCell createQueryList_1() {
-    return createQueryList_0(getEditorContext(), myNode);
   }
   private static class QueryListHandler_xgpesy_a0b0a extends QueryListHandler {
     /**
@@ -263,7 +259,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
       if (alternationCondition) {
         editorCell = createCustomJComponent_0();
       } else {
-        editorCell = createDefaultEditor_1();
+        editorCell = createDefaultEditor_0();
       }
       return editorCell;
     }
@@ -274,7 +270,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
       EditorContext editorContext = getEditorContext();
       EditorCell_IntelliJComponent editorCell = new EditorCell_IntelliJComponent(getEditorContext(), myNode, _QueryFunction_JComponent_xgpesy_a0a0a0b0a(), FontHelper.regular(), (JComponent component) -> {
         SNode node = myNode;
-        String text = ((_FunctionTypes._return_P0_E0<String>) () -> as_l6z3e4_a0a0a0a0a0a0b0e0a0b0l61(component, InspectorEditorComponent.class).getRootCell().renderText().toString()).invoke();
+        String text = ((_FunctionTypes._return_P0_E0<String>) () -> as_l6z3e4_a0a0a0a0a0a0b0e0a0b0l51(component, InspectorEditorComponent.class).getRootCell().renderText().toString()).invoke();
         return new TextBuilderImpl(text);
       });
       editorCell.setCellId("CustomJComponent_xgpesy_a0a0a1a0");
@@ -285,24 +281,20 @@ import org.jetbrains.mps.openapi.language.SProperty;
       inspector.editNode(myNode);
       return inspector;
     }
-    private EditorCell createDefaultEditor_0(EditorContext editorContext, SNode node) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      jetbrains.mps.openapi.editor.cells.EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-      EditorCell defaultCell = getCellFactory().createEditorCell(node, editorContext.isInspector());
-      editorContext.getEditorComponent().getUpdater().getCurrentUpdateSession().registerAsBigCell(defaultCell);
+    private EditorCell createDefaultEditor_0() {
+      jetbrains.mps.openapi.editor.cells.EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(getEditorContext(), getNode());
+      EditorCell defaultCell = getCellFactory().createEditorCell(getNode(), getEditorContext().isInspector());
+      getEditorContext().getEditorComponent().getUpdater().getCurrentUpdateSession().registerAsBigCell(defaultCell);
       editorCell.addEditorCell(defaultCell);
       editorCell.setCellId("DefaultEditor_xgpesy_a0a0a1a0");
       return editorCell;
     }
-    private EditorCell createDefaultEditor_1() {
-      return createDefaultEditor_0(getEditorContext(), myNode);
-    }
-    private static <T> T as_l6z3e4_a0a0a0a0a0a0b0e0a0b0l61(Object o, Class<T> type) {
+    private static <T> T as_l6z3e4_a0a0a0a0a0a0b0e0a0b0l51(Object o, Class<T> type) {
       return (type.isInstance(o) ? (T) o : null);
     }
   }
-  private EditorCell createFrameCell_0(final EditorContext editorContext, final SNode node) {
-    FrameCell editorCell = new FrameCell(editorContext, node);
+  private EditorCell createFrameCell_0() {
+    FrameCell editorCell = new FrameCell(getEditorContext(), getNode());
     editorCell.setCellId("FrameCell_xgpesy_b0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("com.mbeddr.mpsutil.framecell", "frame-width"), _StyleParameter_QueryFunction_xgpesy_a0b0a());
@@ -311,9 +303,6 @@ import org.jetbrains.mps.openapi.language.SProperty;
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCollection_2());
     return editorCell;
-  }
-  private EditorCell createFrameCell_1() {
-    return createFrameCell_0(getEditorContext(), myNode);
   }
   private int _StyleParameter_QueryFunction_xgpesy_a0b0a() {
     return 2;

@@ -19,7 +19,7 @@ public class EnumerationDescriptor_TestResultLayout extends EnumerationDescripto
   private final EnumerationDescriptor.MemberDescriptor myMember_flat_0 = new EnumerationDescriptor.MemberDescriptor("flat", "flat", 0x4d97d3d525b29719L, "r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)/1172442816835259005");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x6d68b77b6994918L, 0x83b8857e63787800L, 0x4d97d3d525b29717L, 0x4d97d3d525b29718L, 0x4d97d3d525b29719L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_junitLike_0, myMember_flat_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_junitLike_0, myMember_flat_0);
 
   @Nullable
   @Override

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SModel;
 import org.jetbrains.mps.openapi.module.SRepository;
@@ -22,7 +21,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.jetbrains.mps.openapi.model.SNodeUtil;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -31,14 +29,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ModuleScope__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x4d7765f33f9e802bL, "com.mbeddr.core.base.structure.ModuleScope");
 
-  public static final SMethod<Iterable<SNode>> findElements_id7nkDZJXluPi = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8490595898229124434L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
-  /*package*/ static final SMethod<Iterable<SNode>> findElements_id69$E9O8rLrv = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7089977105792833247L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SRepository.class, ""));
-  public static final SMethod<Iterable<SNode>> findElements_id20N7CGtOl8_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2320231815875482149L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""), SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> findElements_id7nkDZJXluPi = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8490595898229124434L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SModel.class, "currentModel"));
+  /*package*/ static final SMethod<Iterable<SNode>> findElements_id69$E9O8rLrv = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("findElements").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7089977105792833247L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SRepository.class, "repository"));
+  public static final SMethod<Iterable<SNode>> findElements_id20N7CGtOl8_ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2320231815875482149L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, "mpsProject"), SMethodBuilder.createJavaParameter(SModel.class, "currentModel"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id7nkDZJXluPi, findElements_id69$E9O8rLrv, findElements_id20N7CGtOl8_);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id7nkDZJXluPi, findElements_id69$E9O8rLrv, findElements_id20N7CGtOl8_);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> findElements_id7nkDZJXluPi(@NotNull SNode __thisNode__, SModel currentModel) {
     return ((Iterable<SNode>) ModuleScope__BehaviorDescriptor.findElements_id69$E9O8rLrv.invokeSpecial(__thisNode__, currentModel.getRepository()));
@@ -55,10 +51,6 @@ public final class ModuleScope__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ModuleScope__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

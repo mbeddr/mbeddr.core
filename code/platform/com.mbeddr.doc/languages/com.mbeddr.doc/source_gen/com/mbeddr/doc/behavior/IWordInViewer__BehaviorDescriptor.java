@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,21 +15,18 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import de.slisson.mps.richtext.behavior.IWord__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IWordInViewer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x543930263d398c5L, "com.mbeddr.doc.structure.IWordInViewer");
 
-  public static final SMethod<String> TagInViewer_idl3$K9zS58p = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("TagInViewer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(379308432104116761L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> TextInViewer_idl3$K9zS66z = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("TextInViewer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(379308432104120739L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> modelInViewer_idl3$K9zS6GX = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("modelInViewer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(379308432104123197L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> TagInViewer_idl3$K9zS58p = new SMethodBuilder<>(String.class).name("TagInViewer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(379308432104116761L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> TextInViewer_idl3$K9zS66z = new SMethodBuilder<>(String.class).name("TextInViewer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(379308432104120739L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> modelInViewer_idl3$K9zS6GX = new SMethodBuilder<>(String.class).name("modelInViewer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(379308432104123197L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(TagInViewer_idl3$K9zS58p, TextInViewer_idl3$K9zS66z, modelInViewer_idl3$K9zS6GX);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(TagInViewer_idl3$K9zS58p, TextInViewer_idl3$K9zS66z, modelInViewer_idl3$K9zS6GX);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String TagInViewer_idl3$K9zS58p(@NotNull SNode __thisNode__) {
     return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__));
@@ -45,10 +41,6 @@ public final class IWordInViewer__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IWordInViewer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

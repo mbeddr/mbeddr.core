@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -23,16 +21,14 @@ import jetbrains.mps.smodel.builder.SNodeBuilder;
 public final class FormatCategoryGeneralObject__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x442d3b7dfe4a4293L, 0xa7c16744d440ecaaL, 0x6b1827a0a20aadbcL, "com.mbeddr.mpsutil.richstring.structure.FormatCategoryGeneralObject");
 
-  public static final SMethod<Iterable<SNode>> getApplicableTypes_id6Go9U2y2JzF = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getApplicableTypes").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532366223595L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
-  public static final SMethod<Iterable<SNode>> getTypicalTypes_id6Go9U2y64Le = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getTypicalTypes").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532367096910L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
-  public static final SMethod<Object> getExampleObject_id6Go9U2y2SeO = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("getExampleObject").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532366259124L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
-  public static final SMethod<String> getExpressionDescription_id6Go9U2yp2P0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getExpressionDescription").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532372069696L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
-  public static final SMethod<Boolean> hasPrecision_id6Go9U2y6eWh = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasPrecision").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532367138577L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<Iterable<SNode>> getApplicableTypes_id6Go9U2y2JzF = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getApplicableTypes").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532366223595L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<Iterable<SNode>> getTypicalTypes_id6Go9U2y64Le = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getTypicalTypes").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532367096910L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<Object> getExampleObject_id6Go9U2y2SeO = new SMethodBuilder<>(Object.class).name("getExampleObject").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532366259124L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<String> getExpressionDescription_id6Go9U2yp2P0 = new SMethodBuilder<>(String.class).name("getExpressionDescription").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532372069696L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<Boolean> hasPrecision_id6Go9U2y6eWh = new SMethodBuilder<>(Boolean.TYPE).name("hasPrecision").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532367138577L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getApplicableTypes_id6Go9U2y2JzF, getTypicalTypes_id6Go9U2y64Le, getExampleObject_id6Go9U2y2SeO, getExpressionDescription_id6Go9U2yp2P0, hasPrecision_id6Go9U2y6eWh);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getApplicableTypes_id6Go9U2y2JzF, getTypicalTypes_id6Go9U2y64Le, getExampleObject_id6Go9U2y2SeO, getExpressionDescription_id6Go9U2yp2P0, hasPrecision_id6Go9U2y6eWh);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getApplicableTypes_id6Go9U2y2JzF(@NotNull SAbstractConcept __thisConcept__) {
     return ListSequence.fromListAndArray(new ArrayList<SNode>(), _quotation_createNode_12ps73_a0a0a0(), _quotation_createNode_12ps73_b0a0a0(), _quotation_createNode_12ps73_c0a0a0(), _quotation_createNode_12ps73_d0a0a0(), _quotation_createNode_12ps73_e0a0a0(), _quotation_createNode_12ps73_f0a0a0(), _quotation_createNode_12ps73_g0a0a0(), _quotation_createNode_12ps73_h0a0a0(), _quotation_createNode_12ps73_i0a0a0(), _quotation_createNode_12ps73_j0a0a0());
@@ -53,10 +49,6 @@ public final class FormatCategoryGeneralObject__BehaviorDescriptor extends BaseB
   /*package*/ FormatCategoryGeneralObject__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -10,7 +10,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
@@ -18,19 +17,13 @@ public final class RefactoringAction__BehaviorDescriptor extends BaseBHDescripto
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1fc20ffef35b4791L, 0xa0b7d706bad5c49aL, 0x6855858e3d33e791L, "com.mbeddr.mpsutil.refactoring.structure.RefactoringAction");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ RefactoringAction__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

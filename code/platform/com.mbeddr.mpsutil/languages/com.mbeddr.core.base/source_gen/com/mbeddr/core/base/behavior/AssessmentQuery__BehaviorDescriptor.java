@@ -8,7 +8,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.project.Project;
@@ -26,7 +25,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.project.AbstractModule;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -36,22 +34,20 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
   private static final Logger LOG = Logger.getLogger(AssessmentQuery__BehaviorDescriptor.class);
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xc022423d582911bL, "com.mbeddr.core.base.structure.AssessmentQuery");
 
-  public static final SMethod<Boolean> updateAutomatically_idKxraUPpeM7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("updateAutomatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(874099300309986439L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> mustAlwaysBeOk_id6ibju500V9k = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustAlwaysBeOk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7244970055392539220L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> errorMessage_id3jNX2XuL9ku = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("errorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3815661793603523870L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> prepareUpdate_id1gw9pCYwGF4 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("prepareUpdate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1450200424417249988L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> executeQuery_id4WjNWxKFbeJ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("executeQuery").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413344584623L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> executeQuery_idK292flwJAp = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("executeQuery").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(865293814733142425L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
-  public static final SMethod<List<SNode>> getSummaries_id_gCXGjoJQM = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getSummaries").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(671216505796623794L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> createDefaultSummary_id7sHl0myfjm0 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createDefaultSummary").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8587612447638893952L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> useHorizontalSeparatorForResults_id1mECeeSGmO6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("useHorizontalSeparatorForResults").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1561237120753954054L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> updateAutomatically_idKxraUPpeM7 = new SMethodBuilder<>(Boolean.TYPE).name("updateAutomatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(874099300309986439L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> mustAlwaysBeOk_id6ibju500V9k = new SMethodBuilder<>(Boolean.TYPE).name("mustAlwaysBeOk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7244970055392539220L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> errorMessage_id3jNX2XuL9ku = new SMethodBuilder<>(String.class).name("errorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3815661793603523870L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "ass"));
+  public static final SMethod<Void> prepareUpdate_id1gw9pCYwGF4 = new SMethodBuilder<>(Void.TYPE).name("prepareUpdate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1450200424417249988L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "assessment"));
+  public static final SMethod<Void> executeQuery_id4WjNWxKFbeJ = new SMethodBuilder<>(Void.TYPE).name("executeQuery").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413344584623L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, "mpsProject"), SMethodBuilder.createJavaParameter(SNode.class, "assessment"));
+  public static final SMethod<Void> executeQuery_idK292flwJAp = new SMethodBuilder<>(Void.TYPE).name("executeQuery").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(865293814733142425L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "assessment"));
+  public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, "mpsProject"));
+  public static final SMethod<List<SNode>> getSummaries_id_gCXGjoJQM = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getSummaries").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(671216505796623794L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "ass"));
+  public static final SMethod<SNode> createDefaultSummary_id7sHl0myfjm0 = new SMethodBuilder<>(SNode.class).name("createDefaultSummary").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8587612447638893952L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "ass"));
+  public static final SMethod<Boolean> useHorizontalSeparatorForResults_id1mECeeSGmO6 = new SMethodBuilder<>(Boolean.TYPE).name("useHorizontalSeparatorForResults").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1561237120753954054L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(updateAutomatically_idKxraUPpeM7, mustAlwaysBeOk_id6ibju500V9k, errorMessage_id3jNX2XuL9ku, prepareUpdate_id1gw9pCYwGF4, executeQuery_id4WjNWxKFbeJ, executeQuery_idK292flwJAp, runQuery_id7hIyKqbFNeu, runQuery_id4WjNWxKJWaq, getSummaries_id_gCXGjoJQM, createDefaultSummary_id7sHl0myfjm0, useHorizontalSeparatorForResults_id1mECeeSGmO6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(updateAutomatically_idKxraUPpeM7, mustAlwaysBeOk_id6ibju500V9k, errorMessage_id3jNX2XuL9ku, prepareUpdate_id1gw9pCYwGF4, executeQuery_id4WjNWxKFbeJ, executeQuery_idK292flwJAp, runQuery_id7hIyKqbFNeu, runQuery_id4WjNWxKJWaq, getSummaries_id_gCXGjoJQM, createDefaultSummary_id7sHl0myfjm0, useHorizontalSeparatorForResults_id1mECeeSGmO6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean updateAutomatically_idKxraUPpeM7(@NotNull SNode __thisNode__) {
     return false;
@@ -115,7 +111,7 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
     if (LOG.isWarningLevel()) {
       LOG.warning("executeQuery() had to guess the current project, rewrite your code to pass the project explicitly", new Throwable());
     }
-    AssessmentQuery__BehaviorDescriptor.executeQuery_id4WjNWxKFbeJ.invoke(__thisNode__, ListSequence.fromList(GuessCurrentProject.getProjects(as_22owc3_a0a0b0a1a42(SNodeOperations.getModel(__thisNode__).getModule(), AbstractModule.class))).first(), assessment);
+    AssessmentQuery__BehaviorDescriptor.executeQuery_id4WjNWxKFbeJ.invoke(__thisNode__, ListSequence.fromList(GuessCurrentProject.getProjects(as_22owc3_a0a0b0a1a32(SNodeOperations.getModel(__thisNode__).getModule(), AbstractModule.class))).first(), assessment);
   }
   @Deprecated(since = "2025-11-06")
   /*package*/ static List<SNode> runQuery_id7hIyKqbFNeu(@NotNull SNode __thisNode__) {
@@ -144,10 +140,6 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ AssessmentQuery__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
@@ -209,7 +201,7 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static <T> T as_22owc3_a0a0b0a1a42(Object o, Class<T> type) {
+  private static <T> T as_22owc3_a0a0b0a1a32(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 

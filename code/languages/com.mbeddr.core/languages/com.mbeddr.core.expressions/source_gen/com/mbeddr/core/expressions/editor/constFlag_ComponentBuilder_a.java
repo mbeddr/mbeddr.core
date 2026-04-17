@@ -63,7 +63,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
@@ -108,7 +108,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "const");

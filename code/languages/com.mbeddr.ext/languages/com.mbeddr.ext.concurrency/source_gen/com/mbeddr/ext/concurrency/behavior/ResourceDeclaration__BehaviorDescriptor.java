@@ -7,14 +7,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -22,12 +20,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ResourceDeclaration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x67a51010397b66deL, "com.mbeddr.ext.concurrency.structure.ResourceDeclaration");
 
-  public static final SMethod<String> genLocksVarName_id6u_410T$VA6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genLocksVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7468393218935339398L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<String> genLocksVarName_id6u_410T$VA6 = new SMethodBuilder<>(String.class).name("genLocksVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7468393218935339398L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genLocksVarName_id6u_410T$VA6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genLocksVarName_id6u_410T$VA6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String genLocksVarName_id6u_410T$VA6(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + "_locks";
@@ -36,10 +32,6 @@ public final class ResourceDeclaration__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ ResourceDeclaration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -13,7 +13,7 @@
       <unit at="11,0,54,0" name="com.mbeddr.mpsutil.postprocessGeneratedFiles.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,34,0" name="com.mbeddr.mpsutil.postprocessGeneratedFiles.structure.LanguageConceptSwitch" />
+      <unit at="12,0,42,0" name="com.mbeddr.mpsutil.postprocessGeneratedFiles.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="16,0,104,0" name="com.mbeddr.mpsutil.postprocessGeneratedFiles.structure.StructureAspectDescriptor" />
@@ -33,8 +33,8 @@
       <scope id="6221197661421031369" at="43,61,49,49" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6221197661421031369" at="15,0,16,0" concept="6" trace="GeneratedFilesPostprocessor" />
-      <node id="6221197661421031369" at="21,70,22,66" concept="0" />
+      <node id="6221197661421031369" at="17,0,18,0" concept="6" trace="GeneratedFilesPostprocessor" />
+      <node id="6221197661421031369" at="23,70,24,66" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6221197661421031369" at="20,0,21,0" concept="1" trace="myConceptGeneratedFilesPostprocessor" />
@@ -70,8 +70,8 @@
       <scope id="6221197661421033826" at="22,51,28,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6221197661421033826" at="12,0,13,0" concept="6" trace="FilePostprocessor" />
-      <node id="6221197661421033826" at="18,116,19,56" concept="0" />
+      <node id="6221197661421033826" at="14,0,15,0" concept="6" trace="FilePostprocessor" />
+      <node id="6221197661421033826" at="20,116,21,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6221197661421033826" at="17,0,18,0" concept="1" trace="myConceptFilePostprocessor" />
@@ -107,8 +107,8 @@
       <scope id="6221197661421047682" at="29,65,35,53" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6221197661421047682" at="13,0,14,0" concept="6" trace="FilePostprocessorParameter_node" />
-      <node id="6221197661421047682" at="19,56,20,70" concept="0" />
+      <node id="6221197661421047682" at="15,0,16,0" concept="6" trace="FilePostprocessorParameter_node" />
+      <node id="6221197661421047682" at="21,56,22,70" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6221197661421047682" at="18,0,19,0" concept="1" trace="myConceptFilePostprocessorParameter_node" />
@@ -143,8 +143,8 @@
       <scope id="6221197661421048177" at="36,65,42,53" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6221197661421048177" at="14,0,15,0" concept="6" trace="FilePostprocessorParameter_path" />
-      <node id="6221197661421048177" at="20,70,21,70" concept="0" />
+      <node id="6221197661421048177" at="16,0,17,0" concept="6" trace="FilePostprocessorParameter_path" />
+      <node id="6221197661421048177" at="22,70,23,70" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6221197661421048177" at="19,0,20,0" concept="1" trace="myConceptFilePostprocessorParameter_path" />

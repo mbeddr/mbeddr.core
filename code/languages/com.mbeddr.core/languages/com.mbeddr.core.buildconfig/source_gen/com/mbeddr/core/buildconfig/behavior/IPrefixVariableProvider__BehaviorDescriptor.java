@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SModel;
 import java.util.Arrays;
@@ -22,7 +21,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -32,13 +30,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IPrefixVariableProvider__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x6e75e99627689c59L, "com.mbeddr.core.buildconfig.structure.IPrefixVariableProvider");
 
-  public static final SMethod<List<String>> getVariableNames_id6xoAPBjOH1K = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("getVariableNames").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246192L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
-  public static final SMethod<String> getDefaultValue_id6xoAPBjOH2T = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246265L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<List<String>> getVariableNames_id6xoAPBjOH1K = new SMethodBuilder<>((Class<List<String>>) ((Class) Object.class)).name("getVariableNames").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246192L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<String> getDefaultValue_id6xoAPBjOH2T = new SMethodBuilder<>(String.class).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246265L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter(SModel.class, "model"), SMethodBuilder.createJavaParameter(String.class, "variableName"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getVariableNames_id6xoAPBjOH1K, getDefaultValue_id6xoAPBjOH2T);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getVariableNames_id6xoAPBjOH1K, getDefaultValue_id6xoAPBjOH2T);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<String> getVariableNames_id6xoAPBjOH1K(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(Sequence.<String>singleton("PREFIX")).toList();
@@ -66,10 +62,6 @@ public final class IPrefixVariableProvider__BehaviorDescriptor extends BaseBHDes
   /*package*/ IPrefixVariableProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

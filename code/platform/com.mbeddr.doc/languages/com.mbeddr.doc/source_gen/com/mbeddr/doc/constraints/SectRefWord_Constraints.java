@@ -4,6 +4,7 @@ package com.mbeddr.doc.constraints;
 
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 import jetbrains.mps.logging.Logger;
+import jetbrains.mps.smodel.runtime.ConstraintsDescriptorInitContext;
 import jetbrains.mps.smodel.runtime.ConstraintFunction;
 import jetbrains.mps.smodel.runtime.ConstraintContext_CanBeChild;
 import org.jetbrains.annotations.NotNull;
@@ -13,12 +14,6 @@ import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import java.util.Map;
-import org.jetbrains.mps.openapi.language.SProperty;
-import jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor;
-import java.util.HashMap;
-import org.jetbrains.mps.openapi.language.SReferenceLink;
-import jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
 import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
@@ -34,16 +29,17 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
+import org.jetbrains.mps.openapi.language.SProperty;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public class SectRefWord_Constraints extends BaseConstraintsDescriptor {
   private static final Logger LOG = Logger.getLogger(SectRefWord_Constraints.class);
-  public SectRefWord_Constraints() {
-    super(CONCEPTS.SectRefWord$rj);
-  }
-
-  @Override
-  protected ConstraintFunction<ConstraintContext_CanBeChild, Boolean> calculateCanBeChildConstraint() {
-    return new ConstraintFunction<ConstraintContext_CanBeChild, Boolean>() {
+  /*package*/ SectRefWord_Constraints(ConstraintsDescriptorInitContext initContext) {
+    super(CONCEPTS.SectRefWord$rj, initContext);
+    record(new Prefixed_PD(this));
+    record(new Indexed_PD(this));
+    record(new RD1(this));
+    setCanBeChildConstraint(new ConstraintFunction<ConstraintContext_CanBeChild, Boolean>() {
       @NotNull
       public Boolean invoke(@NotNull ConstraintContext_CanBeChild context, @Nullable CheckingNodeContext checkingNodeContext) {
         boolean result = staticCanBeAChild(context.getNode(), context.getParentNode(), context.getConcept(), context.getLink());
@@ -54,10 +50,11 @@ public class SectRefWord_Constraints extends BaseConstraintsDescriptor {
 
         return result;
       }
-    };
+    });
   }
-  public static class Prefixed_Property extends BasePropertyConstraintsDescriptor {
-    public Prefixed_Property(ConstraintsDescriptor container) {
+
+  /*package*/ static final class Prefixed_PD extends BasePropertyConstraintsDescriptor {
+    public Prefixed_PD(ConstraintsDescriptor container) {
       super(PROPS.prefixed$RRaM, container, true, true, false);
     }
     @Override
@@ -81,8 +78,8 @@ public class SectRefWord_Constraints extends BaseConstraintsDescriptor {
       node.setProperty("prefixed", (((Object) propertyValue) != null ? ((Object) propertyValue).toString() : null));
     }
   }
-  public static class Indexed_Property extends BasePropertyConstraintsDescriptor {
-    public Indexed_Property(ConstraintsDescriptor container) {
+  /*package*/ static final class Indexed_PD extends BasePropertyConstraintsDescriptor {
+    public Indexed_PD(ConstraintsDescriptor container) {
       super(PROPS.indexed$rewg, container, true, true, false);
     }
     @Override
@@ -106,34 +103,24 @@ public class SectRefWord_Constraints extends BaseConstraintsDescriptor {
       node.setProperty("indexed", (((Object) propertyValue) != null ? ((Object) propertyValue).toString() : null));
     }
   }
-  @Override
-  protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
-    Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(PROPS.prefixed$RRaM, new Prefixed_Property(this));
-    properties.put(PROPS.indexed$rewg, new Indexed_Property(this));
-    return properties;
-  }
-  @Override
-  protected Map<SReferenceLink, ReferenceConstraintsDescriptor> getSpecifiedReferences() {
-    BaseReferenceConstraintsDescriptor d0 = new BaseReferenceConstraintsDescriptor(LINKS.target$G2cK, this, true, false) {
-      @Nullable
-      @Override
-      public ReferenceScopeProvider getScopeProvider() {
-        return new BaseScopeProvider() {
-          @Override
-          public SNodeReference getSearchScopeValidatorNode() {
-            return new SNodePointer("r:a5b5b4fe-a87a-44d6-a204-cb07050793ac(com.mbeddr.doc.constraints)", "3350625596580242084");
-          }
-          @Override
-          public Scope createScope(final ReferenceConstraintsContext _context) {
-            return ListScope.forResolvableElements(IDocumentLike__BehaviorDescriptor.visibleReferencableElements_id2TZO3DbvKCd.invoke(SNodeOperations.getNodeAncestor(_context.getContextNode(), CONCEPTS.IDocumentLike$h$, false, false)));
-          }
-        };
-      }
-    };
-    Map<SReferenceLink, ReferenceConstraintsDescriptor> references = new HashMap<SReferenceLink, ReferenceConstraintsDescriptor>();
-    references.put(d0.getReference(), d0);
-    return references;
+  /*package*/ static final class RD1 extends BaseReferenceConstraintsDescriptor {
+    /*package*/ RD1(ConstraintsDescriptor container) {
+      super(LINKS.target$G2cK, container, true, false);
+    }
+    @Nullable
+    @Override
+    public ReferenceScopeProvider getScopeProvider() {
+      return new BaseScopeProvider() {
+        @Override
+        public SNodeReference getSearchScopeValidatorNode() {
+          return new SNodePointer("r:a5b5b4fe-a87a-44d6-a204-cb07050793ac(com.mbeddr.doc.constraints)", "3350625596580242084");
+        }
+        @Override
+        public Scope createScope(final ReferenceConstraintsContext _context) {
+          return ListScope.forResolvableElements(IDocumentLike__BehaviorDescriptor.visibleReferencableElements_id2TZO3DbvKCd.invoke(SNodeOperations.getNodeAncestor(_context.getContextNode(), CONCEPTS.IDocumentLike$h$, false, false)));
+        }
+      };
+    }
   }
   private static boolean staticCanBeAChild(SNode node, SNode parentNode, SAbstractConcept childConcept, SContainmentLink link) {
     return (SNodeOperations.getNodeAncestor(parentNode, CONCEPTS.Document$4G, true, false) != null);

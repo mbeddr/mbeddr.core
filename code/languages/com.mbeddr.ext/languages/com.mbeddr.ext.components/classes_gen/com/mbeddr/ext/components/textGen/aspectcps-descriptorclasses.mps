@@ -8,12 +8,13 @@
   <imports>
     <import index="409q" ref="r:34c22766-f23d-4187-999d-c7c74593a678(com.mbeddr.ext.components.textGen)" />
     <import index="kpbf" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text.impl(MPS.TextGen/)" />
+    <import index="ksn4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel(MPS.Core/)" />
     <import index="yfwt" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text.rt(MPS.TextGen/)" />
     <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" />
-    <import index="tpcf" ref="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <import index="ao3" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text(MPS.TextGen/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
@@ -186,6 +187,9 @@
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -949,13 +953,13 @@
       <node concept="3Tm6S6" id="3t" role="1B3o_S" />
       <node concept="2eloPW" id="3u" role="1tU5fm">
         <property role="2ely0U" value="com.mbeddr.ext.components.structure.LanguageConceptSwitch" />
-        <ref role="3uigEE" to="tpcf:1OW7rNmnulT" resolve="LanguageConceptSwitch" />
+        <ref role="3uigEE" to="ksn4:~ConceptIndex" resolve="ConceptIndex" />
       </node>
       <node concept="2ShNRf" id="3v" role="33vP2m">
         <node concept="xCZzO" id="3w" role="2ShVmc">
           <property role="xCZzQ" value="com.mbeddr.ext.components.structure.LanguageConceptSwitch" />
           <node concept="3uibUv" id="3x" role="xCZzL">
-            <ref role="3uigEE" to="tpcf:1OW7rNmnulT" resolve="LanguageConceptSwitch" />
+            <ref role="3uigEE" to="ksn4:~ConceptIndex" resolve="ConceptIndex" />
           </node>
         </node>
       </node>
@@ -996,7 +1000,7 @@
               <ref role="3cqZAo" node="3i" resolve="myIndex" />
             </node>
             <node concept="liA8E" id="3N" role="2OqNvi">
-              <ref role="37wK5l" to="tpcf:1OW7rNmnuDr" resolve="index" />
+              <ref role="37wK5l" to="ksn4:~ConceptIndex.index(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="index" />
               <node concept="37vLTw" id="3O" role="37wK5m">
                 <ref role="3cqZAo" node="3B" resolve="concept" />
               </node>
@@ -1181,15 +1185,16 @@
       <property role="TrG5h" value="getFileName_ComponentMappingDebugHelper" />
       <node concept="3clFbS" id="4N" role="3clF47">
         <node concept="3cpWs6" id="4R" role="3cqZAp">
-          <node concept="2OqwBi" id="4S" role="3cqZAk">
-            <node concept="37vLTw" id="4T" role="2Oq$k0">
+          <node concept="2OqwBi" id="4T" role="3cqZAk">
+            <node concept="37vLTw" id="4U" role="2Oq$k0">
               <ref role="3cqZAo" node="4Q" resolve="node" />
             </node>
-            <node concept="liA8E" id="4U" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SNode.getName()" resolve="getName" />
+            <node concept="3TrcHB" id="4V" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4S" role="3cqZAp" />
       </node>
       <node concept="3Tm6S6" id="4O" role="1B3o_S" />
       <node concept="3uibUv" id="4P" role="3clF45">
@@ -1197,8 +1202,8 @@
       </node>
       <node concept="37vLTG" id="4Q" role="3clF46">
         <property role="TrG5h" value="node" />
-        <node concept="3uibUv" id="4V" role="1tU5fm">
-          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        <node concept="3Tqbb2" id="4W" role="1tU5fm">
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
       </node>
     </node>
@@ -1207,22 +1212,22 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getFileExtension_ComponentMappingDebugHelper" />
-      <node concept="3clFbS" id="4W" role="3clF47">
-        <node concept="3clFbF" id="50" role="3cqZAp">
+      <node concept="3clFbS" id="4X" role="3clF47">
+        <node concept="3clFbF" id="51" role="3cqZAp">
           <uo k="s:originTrace" v="n:7798021607625280410" />
-          <node concept="Xl_RD" id="51" role="3clFbG">
+          <node concept="Xl_RD" id="52" role="3clFbG">
             <property role="Xl_RC" value="debug" />
             <uo k="s:originTrace" v="n:7798021607625280411" />
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="4X" role="1B3o_S" />
-      <node concept="3uibUv" id="4Y" role="3clF45">
+      <node concept="3Tm6S6" id="4Y" role="1B3o_S" />
+      <node concept="3uibUv" id="4Z" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
-      <node concept="37vLTG" id="4Z" role="3clF46">
+      <node concept="37vLTG" id="50" role="3clF46">
         <property role="TrG5h" value="node" />
-        <node concept="3uibUv" id="52" role="1tU5fm">
+        <node concept="3uibUv" id="53" role="1tU5fm">
           <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
         </node>
       </node>

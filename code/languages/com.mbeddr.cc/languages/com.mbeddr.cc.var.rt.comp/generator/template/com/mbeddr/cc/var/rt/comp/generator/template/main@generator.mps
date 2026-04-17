@@ -62,7 +62,7 @@
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
       </concept>
-      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
+      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="lg" index="1ZhdrF">
         <child id="1167770376702" name="referentFunction" index="3$ytzL" />
       </concept>
     </language>

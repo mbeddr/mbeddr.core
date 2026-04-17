@@ -68,21 +68,18 @@ import org.jetbrains.mps.openapi.language.SProperty;
     editorCell.setCellId("Collection_lsvctn_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
-    editorCell.addEditorCell(createTooltip_1());
+    editorCell.addEditorCell(createTooltip_0());
     editorCell.addEditorCell(createReadOnlyModelAccessor_1());
     editorCell.addEditorCell(createReadOnlyModelAccessor_2());
     return editorCell;
   }
-  private EditorCell createTooltip_0(final EditorContext editorContext, final SNode node) {
-    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "com.mbeddr.core.base.editor.GeneratedHints.tooltipHint_lsvctn_a0", true);
+  private EditorCell createTooltip_0() {
+    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "com.mbeddr.core.base.editor.GeneratedHints.tooltipHint_lsvctn_a0", true);
     EditorCell visibleCell = createRefCell_0();
 
-    TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+    TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
     editorCell.setCellId("Tooltip_lsvctn_a0");
     return editorCell;
-  }
-  private EditorCell createTooltip_1() {
-    return createTooltip_0(getEditorContext(), myNode);
   }
   private EditorCell createRefCell_0() {
     final SReferenceLink referenceLink = LINKS.exref$B2WJ;

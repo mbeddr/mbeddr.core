@@ -27,9 +27,6 @@ public class supertypeof_richstring_SubtypingRule extends SubtypingRule_Runtime 
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept RichStringType$Ea = MetaAdapterFactory.getConcept(0x442d3b7dfe4a4293L, 0xa7c16744d440ecaaL, 0x2e8be43a0433e0d9L, "com.mbeddr.mpsutil.richstring.structure.RichStringType");

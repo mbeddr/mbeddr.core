@@ -54,18 +54,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
   }
 
   /*package*/ EditorCell createCell() {
-    return createPriorityInfoCell_1();
+    return createPriorityInfoCell_0();
   }
 
-  private EditorCell createPriorityInfoCell_0(EditorContext editorContext, SNode node) {
+  private EditorCell createPriorityInfoCell_0() {
     EditorCell editorCell = null;
     editorCell = createAlternation_0();
     editorCell.setBig(true);
     setCellContext(editorCell);
     return editorCell;
-  }
-  private EditorCell createPriorityInfoCell_1() {
-    return createPriorityInfoCell_0(getEditorContext(), myNode);
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;

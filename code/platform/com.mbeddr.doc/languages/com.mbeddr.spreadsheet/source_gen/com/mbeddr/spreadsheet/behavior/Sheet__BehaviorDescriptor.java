@@ -21,7 +21,7 @@ public final class Sheet__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1d891f7bdc9342f9L, 0xa4bcb016656b14e2L, 0x1c579c584d7b9a34L, "com.mbeddr.spreadsheet.structure.Sheet");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.addNewChild(__thisNode__, LINKS.rows$zoQ3, CONCEPTS.Row$Xo);

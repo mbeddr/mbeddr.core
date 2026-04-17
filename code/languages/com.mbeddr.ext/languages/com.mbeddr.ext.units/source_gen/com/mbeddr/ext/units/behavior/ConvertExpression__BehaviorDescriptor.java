@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -26,7 +25,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.mbeddr.core.expressions.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -38,17 +36,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ConvertExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd04a6cc773e4069L, 0xb9b011884b2ff1c8L, 0x3930d8ab4c0e6285L, "com.mbeddr.ext.units.structure.ConvertExpression");
 
-  public static final SMethod<List<SNode>> getApplicableConversionSpecifiers_id3_TFq$0_vSx = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getApplicableConversionSpecifiers").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4141532273714789921L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
-  public static final SMethod<List<SNode>> getApplicableConversionSpecifiers_id67zt_p0yRR0 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getApplicableConversionSpecifiers").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7053611554214477248L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Boolean> isStaticallyEvaluatable_id3ilck8Kr3zN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isStaticallyEvaluatable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3788988821852141811L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Object> evaluateStatically_id6OxpEKG0KPv = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("evaluateStatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7863679314024402271L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<List<SNode>> getApplicableConversionSpecifiers_id3_TFq$0_vSx = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getApplicableConversionSpecifiers").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4141532273714789921L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
+  public static final SMethod<List<SNode>> getApplicableConversionSpecifiers_id67zt_p0yRR0 = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getApplicableConversionSpecifiers").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7053611554214477248L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expression"), SMethodBuilder.createJavaParameter(SNode.class, "targetUnit"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "rules"));
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Boolean> isStaticallyEvaluatable_id3ilck8Kr3zN = new SMethodBuilder<>(Boolean.TYPE).name("isStaticallyEvaluatable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3788988821852141811L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Object> evaluateStatically_id6OxpEKG0KPv = new SMethodBuilder<>(Object.class).name("evaluateStatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7863679314024402271L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getApplicableConversionSpecifiers_id3_TFq$0_vSx, getApplicableConversionSpecifiers_id67zt_p0yRR0, getPresentation_idhEwIMiw, isStaticallyEvaluatable_id3ilck8Kr3zN, evaluateStatically_id6OxpEKG0KPv, renderReadable_id1VQvajLb13M);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getApplicableConversionSpecifiers_id3_TFq$0_vSx, getApplicableConversionSpecifiers_id67zt_p0yRR0, getPresentation_idhEwIMiw, isStaticallyEvaluatable_id3ilck8Kr3zN, evaluateStatically_id6OxpEKG0KPv, renderReadable_id1VQvajLb13M);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> getApplicableConversionSpecifiers_id3_TFq$0_vSx(@NotNull SNode __thisNode__) {
     return ((List<SNode>) ConvertExpression__BehaviorDescriptor.getApplicableConversionSpecifiers_id67zt_p0yRR0.invoke(__thisNode__.getConcept(), SLinkOperations.getTarget(__thisNode__, LINKS.expression$LDUH), SLinkOperations.getTarget(__thisNode__, LINKS.targetUnit$LEoJ), SNodeOperations.ofConcept(IVisibleElementProvider__BehaviorDescriptor.visibleContentsOfType_id6clJcrJXo2_.invoke(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.IVisibleElementProvider$$O, false, false), CONCEPTS.ConversionRule$$y.getDeclarationNode()), CONCEPTS.ConversionRule$$y)));
@@ -102,10 +98,6 @@ public final class ConvertExpression__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ ConvertExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -285,7 +285,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 
   }
   private EditorCell createTable_1() {
-    return createTable_0(getEditorContext(), myNode);
+    return createTable_0(getEditorContext(), getNode());
   }
   public Grid createChildsVertical_9q39ym_a7a(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -24,14 +22,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class DelegatingConnector__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x54f2a59b97bb4c09L, 0xaf92928ebf9c5966L, 0x6bfba9786e4aa19eL, "com.mbeddr.ext.compositecomponents.structure.DelegatingConnector");
 
-  public static final SMethod<Boolean> satisfiesPort_id6JVEnxIiSod = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("satisfiesPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7780999115924276749L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> delegatesProvidedPort_id3_MZZHrurPk = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("delegatesProvidedPort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4139652462543486292L).languageId(0xaf92928ebf9c5966L, 0x54f2a59b97bb4c09L).build2();
-  public static final SMethod<Boolean> delegatesRequiredPort_id3_MZZHrurQk = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("delegatesRequiredPort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4139652462543486356L).languageId(0xaf92928ebf9c5966L, 0x54f2a59b97bb4c09L).build2();
+  public static final SMethod<Boolean> satisfiesPort_id6JVEnxIiSod = new SMethodBuilder<>(Boolean.TYPE).name("satisfiesPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7780999115924276749L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "instance"), SMethodBuilder.createJavaParameter(SNode.class, "port"));
+  public static final SMethod<Boolean> delegatesProvidedPort_id3_MZZHrurPk = new SMethodBuilder<>(Boolean.TYPE).name("delegatesProvidedPort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4139652462543486292L).languageId(0xaf92928ebf9c5966L, 0x54f2a59b97bb4c09L).build2();
+  public static final SMethod<Boolean> delegatesRequiredPort_id3_MZZHrurQk = new SMethodBuilder<>(Boolean.TYPE).name("delegatesRequiredPort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4139652462543486356L).languageId(0xaf92928ebf9c5966L, 0x54f2a59b97bb4c09L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(satisfiesPort_id6JVEnxIiSod, delegatesProvidedPort_id3_MZZHrurPk, delegatesRequiredPort_id3_MZZHrurQk);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(satisfiesPort_id6JVEnxIiSod, delegatesProvidedPort_id3_MZZHrurPk, delegatesRequiredPort_id3_MZZHrurQk);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean satisfiesPort_id6JVEnxIiSod(@NotNull SNode __thisNode__, SNode instance, SNode port) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.internalInstance$2LQn) == instance && SLinkOperations.getTarget(__thisNode__, LINKS.internalPort$2M5o) == port;
@@ -46,10 +42,6 @@ public final class DelegatingConnector__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ DelegatingConnector__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

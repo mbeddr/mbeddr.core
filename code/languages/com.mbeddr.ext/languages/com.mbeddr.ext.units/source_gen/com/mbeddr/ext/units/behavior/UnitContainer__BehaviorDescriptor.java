@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import com.mbeddr.core.base.behavior.Chunk__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -30,20 +28,18 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class UnitContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd04a6cc773e4069L, 0xb9b011884b2ff1c8L, 0x73b48a125b0d373cL, "com.mbeddr.ext.units.structure.UnitContainer");
 
-  public static final SMethod<Iterable<SNode>> dependencies_id6clJcrJYPM5 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("importedChunks").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881563781L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Iterable<SNode>> allReferenceableContentsInChunk_id6clJcrKmVSn = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allReferenceableContentsInChunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887880215L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Iterable<SNode>> externallyReferenceableContentsInChunk_id6clJcrKmX4x = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("externallyReferenceableContentsInChunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887885089L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> getIDEDisplayString_idIviauXb0g = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getIDEDisplayString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(13085436577886224L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> getCategory_id1uL8CIsKxiy = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getParentPopup").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1707183716775892130L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Integer> getSortOrder_id1uL8CIs6rGR = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getSortOrder").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1707183716764859191L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> addGenericChunkDependency_id94IdDK$n_l = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addGenericChunkDependency").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734823143765L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> getDeclaredUnits_id3VpMwkcjX51 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getDeclaredUnits").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4528873023327949121L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
-  public static final SMethod<SNode> getUnit_id5OrPku_RX0d = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getUnit").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6709190573600788493L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Iterable<SNode>> dependencies_id6clJcrJYPM5 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("importedChunks").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881563781L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> allReferenceableContentsInChunk_id6clJcrKmVSn = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allReferenceableContentsInChunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887880215L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> externallyReferenceableContentsInChunk_id6clJcrKmX4x = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("externallyReferenceableContentsInChunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887885089L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getIDEDisplayString_idIviauXb0g = new SMethodBuilder<>(String.class).name("getIDEDisplayString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(13085436577886224L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getCategory_id1uL8CIsKxiy = new SMethodBuilder<>(String.class).name("getParentPopup").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1707183716775892130L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Integer> getSortOrder_id1uL8CIs6rGR = new SMethodBuilder<>(Integer.TYPE).name("getSortOrder").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1707183716764859191L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> addGenericChunkDependency_id94IdDK$n_l = new SMethodBuilder<>(Void.TYPE).name("addGenericChunkDependency").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734823143765L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "dep"));
+  public static final SMethod<Iterable<SNode>> getDeclaredUnits_id3VpMwkcjX51 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getDeclaredUnits").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4528873023327949121L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
+  public static final SMethod<SNode> getUnit_id5OrPku_RX0d = new SMethodBuilder<>(SNode.class).name("getUnit").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6709190573600788493L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2(SMethodBuilder.createJavaParameter(String.class, "name"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(dependencies_id6clJcrJYPM5, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, getIDEDisplayString_idIviauXb0g, getCategory_id1uL8CIsKxiy, getSortOrder_id1uL8CIs6rGR, addGenericChunkDependency_id94IdDK$n_l, getDeclaredUnits_id3VpMwkcjX51, getUnit_id5OrPku_RX0d);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(dependencies_id6clJcrJYPM5, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, getIDEDisplayString_idIviauXb0g, getCategory_id1uL8CIsKxiy, getSortOrder_id1uL8CIs6rGR, addGenericChunkDependency_id94IdDK$n_l, getDeclaredUnits_id3VpMwkcjX51, getUnit_id5OrPku_RX0d);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> dependencies_id6clJcrJYPM5(@NotNull SNode __thisNode__) {
     return SLinkOperations.getChildren(__thisNode__, LINKS.imports$6ajg);
@@ -76,10 +72,6 @@ public final class UnitContainer__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ UnitContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

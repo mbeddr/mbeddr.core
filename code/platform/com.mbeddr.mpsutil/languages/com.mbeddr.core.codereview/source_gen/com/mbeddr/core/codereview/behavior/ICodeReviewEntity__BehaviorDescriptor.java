@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -29,19 +27,17 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ICodeReviewEntity__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x7d323e6183584656L, 0xa071a2bb68438615L, 0x44050902b3ce4270L, "com.mbeddr.core.codereview.structure.ICodeReviewEntity");
 
-  public static final SMethod<String> getSerializedSubtree_id4g52gaNOAjw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSerializedSubtree").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4901333676674147552L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
-  public static final SMethod<Integer> getCurrentSubtreeHash_id4g52gaNOFw0 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getCurrentSubtreeHash").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4901333676674168832L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
-  public static final SMethod<SNode> findReviewData_id5ZqHcKGNlnx = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("findReviewData").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(6907031767544059361L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
-  public static final SMethod<Boolean> hasBeenReviewed_id4g52gaNP8yo = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasBeenReviewed").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4901333676674287768L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
-  public static final SMethod<Boolean> reviewIsValid_id4g52gaNQfS_ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("reviewIsValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4901333676674580005L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
-  public static final SMethod<Void> reevaluateReviewData_id4g52gaNP9r9 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("reevaluateReviewData").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4901333676674291401L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
-  public static final SMethod<Void> updateReviewDataWithNewReview_id4g52gaNOY5a = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateReviewDataWithNewReview").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4901333676674244938L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
-  public static final SMethod<Boolean> mustBeReviewed_id5ZqHcKFTcBs = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustBeReviewed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6907031767528819164L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
+  public static final SMethod<String> getSerializedSubtree_id4g52gaNOAjw = new SMethodBuilder<>(String.class).name("getSerializedSubtree").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4901333676674147552L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
+  public static final SMethod<Integer> getCurrentSubtreeHash_id4g52gaNOFw0 = new SMethodBuilder<>(Integer.TYPE).name("getCurrentSubtreeHash").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4901333676674168832L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
+  public static final SMethod<SNode> findReviewData_id5ZqHcKGNlnx = new SMethodBuilder<>(SNode.class).name("findReviewData").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(6907031767544059361L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
+  public static final SMethod<Boolean> hasBeenReviewed_id4g52gaNP8yo = new SMethodBuilder<>(Boolean.TYPE).name("hasBeenReviewed").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4901333676674287768L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
+  public static final SMethod<Boolean> reviewIsValid_id4g52gaNQfS_ = new SMethodBuilder<>(Boolean.TYPE).name("reviewIsValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4901333676674580005L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
+  public static final SMethod<Void> reevaluateReviewData_id4g52gaNP9r9 = new SMethodBuilder<>(Void.TYPE).name("reevaluateReviewData").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4901333676674291401L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
+  public static final SMethod<Void> updateReviewDataWithNewReview_id4g52gaNOY5a = new SMethodBuilder<>(Void.TYPE).name("updateReviewDataWithNewReview").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4901333676674244938L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
+  public static final SMethod<Boolean> mustBeReviewed_id5ZqHcKFTcBs = new SMethodBuilder<>(Boolean.TYPE).name("mustBeReviewed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6907031767528819164L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSerializedSubtree_id4g52gaNOAjw, getCurrentSubtreeHash_id4g52gaNOFw0, findReviewData_id5ZqHcKGNlnx, hasBeenReviewed_id4g52gaNP8yo, reviewIsValid_id4g52gaNQfS_, reevaluateReviewData_id4g52gaNP9r9, updateReviewDataWithNewReview_id4g52gaNOY5a, mustBeReviewed_id5ZqHcKFTcBs);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSerializedSubtree_id4g52gaNOAjw, getCurrentSubtreeHash_id4g52gaNOFw0, findReviewData_id5ZqHcKGNlnx, hasBeenReviewed_id4g52gaNP8yo, reviewIsValid_id4g52gaNQfS_, reevaluateReviewData_id4g52gaNP9r9, updateReviewDataWithNewReview_id4g52gaNOY5a, mustBeReviewed_id5ZqHcKFTcBs);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getSerializedSubtree_id4g52gaNOAjw(@NotNull SNode __thisNode__) {
     SNode r = new IAttributeDescriptor.NodeAttribute(CONCEPTS.CodeReviewData$wx).get(__thisNode__);
@@ -96,10 +92,6 @@ public final class ICodeReviewEntity__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ ICodeReviewEntity__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

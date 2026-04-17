@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class Introduction__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0xdb759a8ed728b08L, "com.mbeddr.doc.structure.Introduction");
 
-  public static final SMethod<Boolean> isInIndex_idQRmqzHsFzm = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInIndex").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(988357225304209622L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Boolean> isInIndex_idQRmqzHsFzm = new SMethodBuilder<>(Boolean.TYPE).name("isInIndex").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(988357225304209622L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isInIndex_idQRmqzHsFzm);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isInIndex_idQRmqzHsFzm);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isInIndex_idQRmqzHsFzm(@NotNull SNode __thisNode__) {
     return false;
@@ -34,10 +30,6 @@ public final class Introduction__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Introduction__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

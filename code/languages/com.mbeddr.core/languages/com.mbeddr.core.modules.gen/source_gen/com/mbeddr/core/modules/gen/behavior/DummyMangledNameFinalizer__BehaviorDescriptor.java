@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class DummyMangledNameFinalizer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x62296a07bc3846d2L, 0x8034198c24063588L, 0x35a5cb98d51200bcL, "com.mbeddr.core.modules.gen.structure.DummyMangledNameFinalizer");
 
-  public static final SMethod<String> finalizeMangledName_id7oF65pen2ny = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("finalizeMangledName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8514926279434970594L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> finalizeMangledName_id7oF65pen2ny = new SMethodBuilder<>(String.class).name("finalizeMangledName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8514926279434970594L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "concept"), SMethodBuilder.createJavaParameter(String.class, "mangledName"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(finalizeMangledName_id7oF65pen2ny);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(finalizeMangledName_id7oF65pen2ny);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String finalizeMangledName_id7oF65pen2ny(@NotNull SNode __thisNode__, SAbstractConcept concept, String mangledName) {
     return mangledName;
@@ -34,10 +30,6 @@ public final class DummyMangledNameFinalizer__BehaviorDescriptor extends BaseBHD
   /*package*/ DummyMangledNameFinalizer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

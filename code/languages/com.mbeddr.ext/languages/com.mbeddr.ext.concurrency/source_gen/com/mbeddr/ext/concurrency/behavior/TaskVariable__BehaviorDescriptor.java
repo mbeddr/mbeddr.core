@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -22,15 +20,13 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class TaskVariable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x68cc2c476eb0124cL, "com.mbeddr.ext.concurrency.structure.TaskVariable");
 
-  public static final SMethod<SNode> getDeclaredType_id1LDGRqyYkTX = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDeclaredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361469L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getInitExpression_id1LDGRqyYkU1 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInitExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361473L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getInitExpression_id5O5ERJtHyWT = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInitExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6702952168899882809L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getType_id67hg1wL_GfW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7048485364466893820L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getDeclaredType_id1LDGRqyYkTX = new SMethodBuilder<>(SNode.class).name("getDeclaredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361469L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getInitExpression_id1LDGRqyYkU1 = new SMethodBuilder<>(SNode.class).name("getInitExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361473L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getInitExpression_id5O5ERJtHyWT = new SMethodBuilder<>(SNode.class).name("getInitExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6702952168899882809L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getType_id67hg1wL_GfW = new SMethodBuilder<>(SNode.class).name("getType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7048485364466893820L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDeclaredType_id1LDGRqyYkTX, getInitExpression_id1LDGRqyYkU1, getInitExpression_id5O5ERJtHyWT, getType_id67hg1wL_GfW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDeclaredType_id1LDGRqyYkTX, getInitExpression_id1LDGRqyYkU1, getInitExpression_id5O5ERJtHyWT, getType_id67hg1wL_GfW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getDeclaredType_id1LDGRqyYkTX(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.type$sXU3);
@@ -48,10 +44,6 @@ public final class TaskVariable__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TaskVariable__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

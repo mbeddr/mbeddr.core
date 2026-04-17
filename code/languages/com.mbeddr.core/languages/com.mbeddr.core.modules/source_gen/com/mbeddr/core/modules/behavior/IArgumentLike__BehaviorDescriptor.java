@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -22,16 +20,14 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IArgumentLike__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x75302b1261129ff9L, "com.mbeddr.core.modules.structure.IArgumentLike");
 
-  public static final SMethod<SNode> getTypeComputationNode_id7kDeEuVjSvB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTypeComputationNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8442343468559206375L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<SNode> getStaticallyEvaluatableNode_id3fs$L2LZpYI = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getStaticallyEvaluatableNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3737023490725617582L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<SNode> getDeclaredType_id1LDGRqyYkTX = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDeclaredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361469L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getInitExpression_id1LDGRqyYkU1 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInitExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361473L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> participatesInScope_idUslQeyoOp4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("participatesInScope").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1052812498335647300L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<SNode> getTypeComputationNode_id7kDeEuVjSvB = new SMethodBuilder<>(SNode.class).name("getTypeComputationNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8442343468559206375L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<SNode> getStaticallyEvaluatableNode_id3fs$L2LZpYI = new SMethodBuilder<>(SNode.class).name("getStaticallyEvaluatableNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3737023490725617582L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<SNode> getDeclaredType_id1LDGRqyYkTX = new SMethodBuilder<>(SNode.class).name("getDeclaredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361469L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getInitExpression_id1LDGRqyYkU1 = new SMethodBuilder<>(SNode.class).name("getInitExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361473L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> participatesInScope_idUslQeyoOp4 = new SMethodBuilder<>(Boolean.TYPE).name("participatesInScope").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1052812498335647300L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTypeComputationNode_id7kDeEuVjSvB, getStaticallyEvaluatableNode_id3fs$L2LZpYI, getDeclaredType_id1LDGRqyYkTX, getInitExpression_id1LDGRqyYkU1, participatesInScope_idUslQeyoOp4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTypeComputationNode_id7kDeEuVjSvB, getStaticallyEvaluatableNode_id3fs$L2LZpYI, getDeclaredType_id1LDGRqyYkTX, getInitExpression_id1LDGRqyYkU1, participatesInScope_idUslQeyoOp4);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getTypeComputationNode_id7kDeEuVjSvB(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.type$sXU3);
@@ -52,10 +48,6 @@ public final class IArgumentLike__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IArgumentLike__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

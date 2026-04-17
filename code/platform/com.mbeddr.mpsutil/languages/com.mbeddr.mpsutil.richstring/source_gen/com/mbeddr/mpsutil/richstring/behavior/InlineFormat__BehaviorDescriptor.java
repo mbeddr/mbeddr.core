@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -24,7 +23,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.ArrayList;
 import com.mbeddr.mpsutil.richstring.plugin.IRichstringEvaluator;
 import jetbrains.mps.smodel.structure.ExtensionPoint;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -33,19 +31,17 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class InlineFormat__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x442d3b7dfe4a4293L, 0xa7c16744d440ecaaL, 0x2e8be43a04395836L, "com.mbeddr.mpsutil.richstring.structure.InlineFormat");
 
-  public static final SMethod<String> renderExampleString_id2UbT3C4dfVQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderExampleString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354025285337284342L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
-  public static final SMethod<String> toTextString_id3Q5enzfMT4t = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("toTextString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4433012599261204765L).languageId(0xa676c7604efe3504L, 0x92d2ea165a424fdfL).build2();
-  public static final SMethod<String> concatFormatString_id5qZNa$QMfx1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("concatFormatString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6250939834954217537L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
-  public static final SMethod<SNode> calculateCategory_id6Go9U2z7T3y = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("calculateCategory").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532384350434L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
-  public static final SMethod<SAbstractConcept> calculateCategory2_id38BeNG_3AFp = new SMethodBuilder<SAbstractConcept>(new SJavaCompoundTypeImpl((Class<SAbstractConcept>) ((Class) Object.class))).name("calculateCategory2").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3613922351198923481L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
-  public static final SMethod<List<SAbstractConcept>> listAvailableCategories_id6Go9U2y2H03 = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("listAvailableCategories").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532366213123L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
-  public static final SMethod<Object> getExampleValue_idM6L5HumnCS = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("getExampleValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(902624672038353464L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
-  public static final SMethod<SNode> getExpressionType_id7Ssz$kYjeZx = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getExpressionType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9087294576175935457L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<String> renderExampleString_id2UbT3C4dfVQ = new SMethodBuilder<>(String.class).name("renderExampleString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354025285337284342L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<String> toTextString_id3Q5enzfMT4t = new SMethodBuilder<>(String.class).name("toTextString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4433012599261204765L).languageId(0xa676c7604efe3504L, 0x92d2ea165a424fdfL).build2();
+  public static final SMethod<String> concatFormatString_id5qZNa$QMfx1 = new SMethodBuilder<>(String.class).name("concatFormatString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6250939834954217537L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<SNode> calculateCategory_id6Go9U2z7T3y = new SMethodBuilder<>(SNode.class).name("calculateCategory").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532384350434L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<SAbstractConcept> calculateCategory2_id38BeNG_3AFp = new SMethodBuilder<>(SAbstractConcept.class).name("calculateCategory2").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3613922351198923481L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<List<SAbstractConcept>> listAvailableCategories_id6Go9U2y2H03 = new SMethodBuilder<>((Class<List<SAbstractConcept>>) ((Class) Object.class)).name("listAvailableCategories").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532366213123L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<Object> getExampleValue_idM6L5HumnCS = new SMethodBuilder<>(Object.class).name("getExampleValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(902624672038353464L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
+  public static final SMethod<SNode> getExpressionType_id7Ssz$kYjeZx = new SMethodBuilder<>(SNode.class).name("getExpressionType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9087294576175935457L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderExampleString_id2UbT3C4dfVQ, toTextString_id3Q5enzfMT4t, concatFormatString_id5qZNa$QMfx1, calculateCategory_id6Go9U2z7T3y, calculateCategory2_id38BeNG_3AFp, listAvailableCategories_id6Go9U2y2H03, getExampleValue_idM6L5HumnCS, getExpressionType_id7Ssz$kYjeZx);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderExampleString_id2UbT3C4dfVQ, toTextString_id3Q5enzfMT4t, concatFormatString_id5qZNa$QMfx1, calculateCategory_id6Go9U2z7T3y, calculateCategory2_id38BeNG_3AFp, listAvailableCategories_id6Go9U2y2H03, getExampleValue_idM6L5HumnCS, getExpressionType_id7Ssz$kYjeZx);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderExampleString_id2UbT3C4dfVQ(@NotNull SNode __thisNode__) {
     Object exampleObject = IInlineFormat__BehaviorDescriptor.getExampleValue_idM6L5HumnCS.invoke(__thisNode__);
@@ -107,10 +103,6 @@ public final class InlineFormat__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ InlineFormat__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

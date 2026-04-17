@@ -12,7 +12,7 @@
       <unit at="11,0,29,0" name="com.mbeddr.mpsutil.plantuml.node.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,28,0" name="com.mbeddr.mpsutil.plantuml.node.structure.LanguageConceptSwitch" />
+      <unit at="12,0,36,0" name="com.mbeddr.mpsutil.plantuml.node.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,56,0" name="com.mbeddr.mpsutil.plantuml.node.structure.StructureAspectDescriptor" />
@@ -31,8 +31,8 @@
       <scope id="3225038607917463880" at="19,47,24,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3225038607917463880" at="12,0,13,0" concept="5" trace="IVisualizable" />
-      <node id="3225038607917463880" at="15,116,16,52" concept="0" />
+      <node id="3225038607917463880" at="14,0,15,0" concept="5" trace="IVisualizable" />
+      <node id="3225038607917463880" at="17,116,18,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3225038607917463880" at="15,0,16,0" concept="1" trace="myConceptIVisualizable" />

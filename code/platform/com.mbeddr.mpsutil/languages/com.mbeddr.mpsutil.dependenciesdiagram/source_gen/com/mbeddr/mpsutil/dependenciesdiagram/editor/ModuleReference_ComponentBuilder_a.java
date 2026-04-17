@@ -590,7 +590,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell.value;
   }
   private EditorCell createDiagram_1() {
-    return createDiagram_0(getEditorContext(), myNode);
+    return createDiagram_0(getEditorContext(), getNode());
   }
   /*package*/ static class Inline_Builder_38by1b_a0b0 extends AbstractEditorBuilder {
     @NotNull

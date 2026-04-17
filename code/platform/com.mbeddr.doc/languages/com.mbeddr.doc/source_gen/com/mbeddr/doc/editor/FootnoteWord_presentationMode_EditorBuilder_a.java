@@ -28,21 +28,18 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
   }
 
   /*package*/ EditorCell createCell() {
-    return createTooltip_1();
+    return createTooltip_0();
   }
 
-  private EditorCell createTooltip_0(final EditorContext editorContext, final SNode node) {
-    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "com.mbeddr.doc.editor.GeneratedHints.tooltipHint_khmlzh_a", true);
+  private EditorCell createTooltip_0() {
+    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "com.mbeddr.doc.editor.GeneratedHints.tooltipHint_khmlzh_a", true);
     EditorCell visibleCell = createConstant_0();
 
-    TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+    TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
     editorCell.setCellId("Tooltip_khmlzh_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     return editorCell;
-  }
-  private EditorCell createTooltip_1() {
-    return createTooltip_0(getEditorContext(), myNode);
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "[Footnote]");

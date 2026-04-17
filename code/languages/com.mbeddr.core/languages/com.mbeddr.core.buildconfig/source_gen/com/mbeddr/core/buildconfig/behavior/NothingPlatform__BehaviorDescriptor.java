@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -17,21 +16,18 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import org.jetbrains.annotations.Nullable;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class NothingPlatform__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x61df0c72694e9daL, "com.mbeddr.core.buildconfig.structure.NothingPlatform");
 
-  public static final SMethod<List<SConcept>> getSupportedTargets_id4JZ_DSuX5Ql = new SMethodBuilder<List<SConcept>>(new SJavaCompoundTypeImpl((Class<List<SConcept>>) ((Class) Object.class))).name("getSupportedTargets").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5476261277774142869L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
-  public static final SMethod<Boolean> canMake_id3s1LyzG6KRG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canMake").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3963667026124934636L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
-  public static final SMethod<String> getPathToMake_id3s1LyzG7eMZ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPathToMake").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3963667026125057215L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
-  public static final SMethod<Boolean> canHandlePostprocessors_id3D9$r$Xa4L = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canHandlePostprocessors").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(65625755504386353L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<List<SConcept>> getSupportedTargets_id4JZ_DSuX5Ql = new SMethodBuilder<>((Class<List<SConcept>>) ((Class) Object.class)).name("getSupportedTargets").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5476261277774142869L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<Boolean> canMake_id3s1LyzG6KRG = new SMethodBuilder<>(Boolean.TYPE).name("canMake").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3963667026124934636L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
+  public static final SMethod<String> getPathToMake_id3s1LyzG7eMZ = new SMethodBuilder<>(String.class).name("getPathToMake").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3963667026125057215L).languageId(0x932af375fa6f5373L, 0xf93d1dbebfd142ddL).build2();
+  public static final SMethod<Boolean> canHandlePostprocessors_id3D9$r$Xa4L = new SMethodBuilder<>(Boolean.TYPE).name("canHandlePostprocessors").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(65625755504386353L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSupportedTargets_id4JZ_DSuX5Ql, canMake_id3s1LyzG6KRG, getPathToMake_id3s1LyzG7eMZ, canHandlePostprocessors_id3D9$r$Xa4L);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSupportedTargets_id4JZ_DSuX5Ql, canMake_id3s1LyzG6KRG, getPathToMake_id3s1LyzG7eMZ, canHandlePostprocessors_id3D9$r$Xa4L);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SConcept> getSupportedTargets_id4JZ_DSuX5Ql(@NotNull SNode __thisNode__) {
     return ListSequence.fromListAndArray(new ArrayList<SConcept>(), CONCEPTS.None$aw);
@@ -50,10 +46,6 @@ public final class NothingPlatform__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ NothingPlatform__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
