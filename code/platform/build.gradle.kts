@@ -67,7 +67,21 @@ val bundledDeps = listOf(
         BundledDep("plantuml", listOf("net.sourceforge.plantuml:plantuml:1.2026.2"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution"),
         BundledDep("opencsv", listOf("au.com.bytecode:opencsv:2.4"), "com.mbeddr.mpsutil/solutions/com.opencsv"),
         BundledDep("mockito", listOf("org.mockito:mockito-core:5.22.0"), "com.mbeddr.mpsutil/solutions/org.mockito", {}),
-        BundledDep("ecore", listOf("org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.36.0"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecore.stubs", {
+        BundledDep("ecore", listOf(
+                "org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.36.0",
+                // xcore 1.36.0's POM requests these xtext modules with open-ended ranges like
+                // [2.13.0,3.0.0). Pin them so we don't accidentally pull an xtext milestone that
+                // targets a Java version newer than the MPS-bundled JBR 17.
+                "org.eclipse.xtext:org.eclipse.xtext:2.42.0",
+                "org.eclipse.xtext:org.eclipse.xtext.util:2.42.0",
+                "org.eclipse.xtext:org.eclipse.xtext.xbase:2.42.0",
+                "org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.42.0",
+                "org.eclipse.xtext:org.eclipse.xtext.common.types:2.42.0",
+                "org.eclipse.xtext:org.eclipse.xtext.ecore:2.42.0",
+                // Same open-range problem as xtext: xtext modules declare
+                // mwe2.runtime:[2.9.0,3.0.0), and 2.26.0.M1 targets Java 21.
+                "org.eclipse.emf:org.eclipse.emf.mwe2.runtime:2.25.0",
+        ), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecore.stubs", {
             exclude(module = "aopalliance")
             exclude(module = "antlr-runtime")
             exclude(module = "org.eclipse.osgi")
