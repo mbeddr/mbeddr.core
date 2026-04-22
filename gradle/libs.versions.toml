@@ -7,7 +7,7 @@ mpsExtensions241 = "2024.1.3599.c271043"
 # Versions for the 2025.1 branch
 jbr251 = "21.0.6-b895.109"
 mps251 = "2025.1.2"
-mpsExtensions251 = "2025.1.3596.ac24af7"
+mpsExtensions251 = "2025.1.3602.e4a301d"
 
 # Versions for the master branch
 jbrMaster = "21.0.6-b895.109"
