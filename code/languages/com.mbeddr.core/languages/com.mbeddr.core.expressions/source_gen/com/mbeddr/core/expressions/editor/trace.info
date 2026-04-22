@@ -797,8 +797,8 @@
       <unit at="21,0,48,0" name="com.mbeddr.core.expressions.editor.GrammarCellsSubstituteMenu_VoidType" />
     </file>
     <file name="IncludeBeforeAfterTransformations.java">
-      <unit at="35,0,43,0" name="com.mbeddr.core.expressions.editor.IncludeBeforeAfterTransformations$GenericMenuPart_a0_0" />
-      <unit at="43,0,51,0" name="com.mbeddr.core.expressions.editor.IncludeBeforeAfterTransformations$GenericMenuPart_a1_0" />
+      <unit at="35,0,43,0" name="com.mbeddr.core.expressions.editor.IncludeBeforeAfterTransformations$GenericMenuPart_a0" />
+      <unit at="43,0,51,0" name="com.mbeddr.core.expressions.editor.IncludeBeforeAfterTransformations$GenericMenuPart_a1" />
       <unit at="17,0,52,0" name="com.mbeddr.core.expressions.editor.IncludeBeforeAfterTransformations" />
     </file>
     <file name="TableSelectionActionMap.java">
@@ -10882,8 +10882,8 @@
     <file name="BracketsCell_SideTransformations_ParensExpression_a0.java">
       <node id="2862331529394113450" at="21,65,22,325" concept="14" />
       <node id="2862331529394113450" at="27,124,28,156" concept="8" />
-      <node id="2862331529394113450" at="29,136,30,43" concept="2" />
-      <node id="2862331529394113450" at="32,135,33,43" concept="2" />
+      <node id="2862331529394113450" at="29,136,30,45" concept="2" />
+      <node id="2862331529394113450" at="32,135,33,45" concept="2" />
       <node id="2862331529394113450" at="34,5,35,18" concept="9" />
       <node id="2862331529394113450" at="42,90,43,47" concept="2" />
       <node id="2862331529394113450" at="44,11,45,236" concept="2" />
@@ -10904,8 +10904,8 @@
       <node id="2862331529394113450" at="25,0,37,0" concept="7" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Ljava/util/List;" />
       <node id="2862331529394113450" at="54,0,66,0" concept="7" trace="createItems#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Ljava/util/List;" />
       <scope id="2862331529394113450" at="21,65,22,325" />
-      <scope id="2862331529394113450" at="29,136,30,43" />
-      <scope id="2862331529394113450" at="32,135,33,43" />
+      <scope id="2862331529394113450" at="29,136,30,45" />
+      <scope id="2862331529394113450" at="32,135,33,45" />
       <scope id="2862331529394113450" at="47,17,48,48" />
       <scope id="2862331529394113450" at="61,17,62,48" />
       <scope id="2862331529394113450" at="44,11,46,169" />
@@ -10926,8 +10926,8 @@
         <var name="ctx" id="2862331529394113450" />
       </scope>
       <unit id="2862331529394113450" at="68,0,71,0" name="com.mbeddr.core.expressions.editor.BracketsCell_SideTransformations_ParensExpression_a0$CONCEPTS" />
-      <unit id="2862331529394113450" at="38,0,52,0" name="com.mbeddr.core.expressions.editor.BracketsCell_SideTransformations_ParensExpression_a0$GenericMenuPart_a0" />
-      <unit id="2862331529394113450" at="52,0,67,0" name="com.mbeddr.core.expressions.editor.BracketsCell_SideTransformations_ParensExpression_a0$GenericMenuPart_a1" />
+      <unit id="2862331529394113450" at="38,0,52,0" name="com.mbeddr.core.expressions.editor.BracketsCell_SideTransformations_ParensExpression_a0$GenericMenuPart_a0_0" />
+      <unit id="2862331529394113450" at="52,0,67,0" name="com.mbeddr.core.expressions.editor.BracketsCell_SideTransformations_ParensExpression_a0$GenericMenuPart_a1_0" />
       <unit id="2862331529394113450" at="20,0,72,0" name="com.mbeddr.core.expressions.editor.BracketsCell_SideTransformations_ParensExpression_a0" />
     </file>
     <file name="GrammarActionsDescriptor.java">
