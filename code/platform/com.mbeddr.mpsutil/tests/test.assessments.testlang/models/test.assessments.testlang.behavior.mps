@@ -9,6 +9,7 @@
   <imports>
     <import index="hikj" ref="r:08e46f36-ad08-4837-aae6-df5fffab661d(test.assessments.testlang.structure)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
@@ -31,6 +32,12 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -167,7 +174,7 @@
     </node>
     <node concept="13i0hz" id="6v0bPePAe8A" role="13h7CS">
       <property role="TrG5h" value="getSummaries" />
-      <ref role="13i0hy" to="hwgx:_gCXGjoJQM" resolve="getSummaries" />
+      <ref role="13i0hy" to="hwgx:10O5aZlk4QE" resolve="getSummaries" />
       <node concept="3Tm1VV" id="6v0bPePAe8B" role="1B3o_S" />
       <node concept="3clFbS" id="6v0bPePAe8Y" role="3clF47">
         <node concept="3cpWs6" id="6v0bPePAels" role="3cqZAp">
@@ -202,13 +209,22 @@
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="6v0bPePAe8Z" role="3clF46">
+      <node concept="37vLTG" id="10O5aZlnbLa" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <node concept="3uibUv" id="10O5aZlnbLb" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+        <node concept="2AHcQZ" id="10O5aZlnbLc" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="10O5aZlnbLd" role="3clF46">
         <property role="TrG5h" value="ass" />
-        <node concept="3Tqbb2" id="6v0bPePAe90" role="1tU5fm">
+        <node concept="3Tqbb2" id="10O5aZlnbLe" role="1tU5fm">
           <ref role="ehGHo" to="vs0r:K292flwCEW" resolve="Assessment" />
         </node>
       </node>
-      <node concept="2I9FWS" id="6v0bPePAe91" role="3clF45">
+      <node concept="2I9FWS" id="10O5aZlnbLf" role="3clF45">
         <ref role="2I9WkF" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
       </node>
     </node>

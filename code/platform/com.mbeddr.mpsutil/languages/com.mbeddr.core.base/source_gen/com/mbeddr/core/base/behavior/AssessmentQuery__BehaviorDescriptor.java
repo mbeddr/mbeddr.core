@@ -45,10 +45,11 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
   public static final SMethod<List<SNode>> getSummaries_id_gCXGjoJQM = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getSummaries").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(671216505796623794L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<List<SNode>> getSummaries_id10O5aZlk4QE = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getSummaries").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1167580948826443178L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> createDefaultSummary_id7sHl0myfjm0 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createDefaultSummary").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8587612447638893952L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> useHorizontalSeparatorForResults_id1mECeeSGmO6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("useHorizontalSeparatorForResults").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1561237120753954054L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(updateAutomatically_idKxraUPpeM7, mustAlwaysBeOk_id6ibju500V9k, errorMessage_id3jNX2XuL9ku, prepareUpdate_id1gw9pCYwGF4, executeQuery_id4WjNWxKFbeJ, executeQuery_idK292flwJAp, runQuery_id7hIyKqbFNeu, runQuery_id4WjNWxKJWaq, getSummaries_id_gCXGjoJQM, createDefaultSummary_id7sHl0myfjm0, useHorizontalSeparatorForResults_id1mECeeSGmO6);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(updateAutomatically_idKxraUPpeM7, mustAlwaysBeOk_id6ibju500V9k, errorMessage_id3jNX2XuL9ku, prepareUpdate_id1gw9pCYwGF4, executeQuery_id4WjNWxKFbeJ, executeQuery_idK292flwJAp, runQuery_id7hIyKqbFNeu, runQuery_id4WjNWxKJWaq, getSummaries_id_gCXGjoJQM, getSummaries_id10O5aZlk4QE, createDefaultSummary_id7sHl0myfjm0, useHorizontalSeparatorForResults_id1mECeeSGmO6);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -107,7 +108,7 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
     }
 
     ListSequence.fromList(SLinkOperations.getChildren(assessment, LINKS.summaries$lFRN)).clear();
-    List<SNode> summaries = AssessmentQuery__BehaviorDescriptor.getSummaries_id_gCXGjoJQM.invoke(__thisNode__, assessment);
+    List<SNode> summaries = AssessmentQuery__BehaviorDescriptor.getSummaries_id10O5aZlk4QE.invoke(__thisNode__, mpsProject, assessment);
     ListSequence.fromList(SLinkOperations.getChildren(assessment, LINKS.summaries$lFRN)).addSequence(ListSequence.fromList(summaries));
   }
   @Deprecated(since = "2025-11-06", forRemoval = true)
@@ -115,7 +116,7 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
     if (LOG.isWarningLevel()) {
       LOG.warning("executeQuery() had to guess the current project, rewrite your code to pass the project explicitly", new Throwable());
     }
-    AssessmentQuery__BehaviorDescriptor.executeQuery_id4WjNWxKFbeJ.invoke(__thisNode__, ListSequence.fromList(GuessCurrentProject.getProjects(as_22owc3_a0a0b0a1a42(SNodeOperations.getModel(__thisNode__).getModule(), AbstractModule.class))).first(), assessment);
+    AssessmentQuery__BehaviorDescriptor.executeQuery_id4WjNWxKFbeJ.invoke(__thisNode__, ListSequence.fromList(GuessCurrentProject.getProjects(as_22owc3_a0a0b0a1a52(SNodeOperations.getModel(__thisNode__).getModule(), AbstractModule.class))).first(), assessment);
   }
   @Deprecated(since = "2025-11-06")
   /*package*/ static List<SNode> runQuery_id7hIyKqbFNeu(@NotNull SNode __thisNode__) {
@@ -124,11 +125,15 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ static List<SNode> runQuery_id4WjNWxKJWaq(@NotNull SNode __thisNode__, Project mpsProject) {
     return ((List<SNode>) AssessmentQuery__BehaviorDescriptor.runQuery_id7hIyKqbFNeu.invoke(__thisNode__));
   }
+  @Deprecated(since = "2026-04-27")
   /*package*/ static List<SNode> getSummaries_id_gCXGjoJQM(@NotNull SNode __thisNode__, SNode ass) {
     SNode s = AssessmentQuery__BehaviorDescriptor.createDefaultSummary_id7sHl0myfjm0.invoke(__thisNode__, ass);
     List<SNode> summaries = new ArrayList<SNode>();
     ListSequence.fromList(summaries).addElement(s);
     return summaries;
+  }
+  /*package*/ static List<SNode> getSummaries_id10O5aZlk4QE(@NotNull SNode __thisNode__, @NotNull Project mpsProject, SNode ass) {
+    return ((List<SNode>) AssessmentQuery__BehaviorDescriptor.getSummaries_id_gCXGjoJQM.invoke(__thisNode__, ass));
   }
   /*package*/ static SNode createDefaultSummary_id7sHl0myfjm0(@NotNull SNode __thisNode__, SNode ass) {
     SNode s = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x950a3db1362fdbaL, "com.mbeddr.core.base.structure.DefaultAssessmentSummary"));
@@ -178,8 +183,10 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
       case 8:
         return (T) ((List<SNode>) getSummaries_id_gCXGjoJQM(node, (SNode) parameters[0]));
       case 9:
-        return (T) ((SNode) createDefaultSummary_id7sHl0myfjm0(node, (SNode) parameters[0]));
+        return (T) ((List<SNode>) getSummaries_id10O5aZlk4QE(node, (Project) parameters[0], (SNode) parameters[1]));
       case 10:
+        return (T) ((SNode) createDefaultSummary_id7sHl0myfjm0(node, (SNode) parameters[0]));
+      case 11:
         return (T) ((Boolean) useHorizontalSeparatorForResults_id1mECeeSGmO6(node));
       default:
         throw new BHMethodNotFoundException(this, method);
@@ -209,7 +216,7 @@ public final class AssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor 
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static <T> T as_22owc3_a0a0b0a1a42(Object o, Class<T> type) {
+  private static <T> T as_22owc3_a0a0b0a1a52(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 
