@@ -2,7 +2,7 @@
 # Versions for the 2024.1 branch
 jbr241 = "17.0.11-b1207.30"
 mps241 = "2024.1.6"
-mpsExtensions241 = "2024.1.3599.c271043"
+mpsExtensions241 = "2024.1.3606.0dee2f5"
 
 # Versions for the 2025.1 branch
 jbr251 = "21.0.6-b895.109"
