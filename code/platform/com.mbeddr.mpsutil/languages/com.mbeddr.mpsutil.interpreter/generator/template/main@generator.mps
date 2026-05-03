@@ -26,9 +26,9 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="9xw8" ref="6c563085-e123-4aaf-be88-fb88e02f8282/java:io.netty.handler.codec.http(io.netty/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="rfhd" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util.registry(MPS.IDEA/)" />
+    <import index="9xw8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:io.netty.handler.codec.http(MPS.IDEA/)" />
     <import index="v54s" ref="r:2a0fe383-d602-4f5b-813c-e41afdbbb97e(jetbrains.mps.lang.extension.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
@@ -6408,7 +6408,7 @@
                     <node concept="3clFbJ" id="3oV0py8UDWy" role="3cqZAp">
                       <node concept="3clFbS" id="3oV0py8UDW$" role="3clFbx">
                         <node concept="3YmQ6b" id="3oV0py8UGfx" role="3cqZAp">
-                          <ref role="1nYgiw" node="3oV0py8UGsZ" resolve="l0" />
+                          <ref role="1nYgiw" node="3oV0py8UGsZ" />
                           <node concept="1ZhdrF" id="3oV0py8UN6a" role="lGtFl">
                             <property role="P3scX" value="47f075a6-558e-4640-a606-7ce0236c8023/7933481472093192918/1307222191617420040" />
                             <property role="2qtEX8" value="branch" />
@@ -6451,7 +6451,7 @@
                         </node>
                         <node concept="3clFbS" id="3oV0py8UGtt" role="3eOfB_">
                           <node concept="3YmQ6b" id="3oV0py8UM7y" role="3cqZAp">
-                            <ref role="1nYgiw" node="3oV0py8UGt2" resolve="l1" />
+                            <ref role="1nYgiw" node="3oV0py8UGt2" />
                             <node concept="1ZhdrF" id="3oV0py8VZpj" role="lGtFl">
                               <property role="P3scX" value="47f075a6-558e-4640-a606-7ce0236c8023/7933481472093192918/1307222191617420040" />
                               <property role="2qtEX8" value="branch" />
@@ -6487,7 +6487,7 @@
                         </node>
                         <node concept="3clFbS" id="3oV0py8UM7E" role="3eOfB_">
                           <node concept="3YmQ6b" id="3oV0py8UMQk" role="3cqZAp">
-                            <ref role="1nYgiw" node="3oV0py8UGth" resolve="ln" />
+                            <ref role="1nYgiw" node="3oV0py8UGth" />
                             <node concept="1ZhdrF" id="3oV0py8W2FQ" role="lGtFl">
                               <property role="P3scX" value="47f075a6-558e-4640-a606-7ce0236c8023/7933481472093192918/1307222191617420040" />
                               <property role="2qtEX8" value="branch" />
