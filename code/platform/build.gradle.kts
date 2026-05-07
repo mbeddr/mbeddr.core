@@ -388,3 +388,9 @@ tasks.cyclonedxDirectBom {
         //runtimeConfigs << project(":com.mbeddr").configurations.mps.name
     }
 }
+
+afterEvaluate {
+    // Workaround for CycloneDX plugin 3.2.4 modifying configurations when the task gets realized.
+    // We need to realize the task eagerly to avoid 'cannot mutate configuration' error if it is realized too late.
+    tasks.cyclonedxDirectBom.get()
+}
