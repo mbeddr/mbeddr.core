@@ -10,7 +10,7 @@ plugins {
     base
     `maven-publish`
     id("buildlogic.mps-conventions")
-    id("org.cyclonedx.bom") version "3.2.0"
+    id("org.cyclonedx.bom") version "3.2.4"
 }
 
 
@@ -51,7 +51,7 @@ data class BundledDep(
 }
 
 val bundledDeps = listOf(
-        BundledDep("commonmark", listOf("org.commonmark:commonmark:0.27.1"), "com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown"),
+        BundledDep("commonmark", listOf("org.commonmark:commonmark:0.28.0"), "com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown"),
         BundledDep("poi-ooxml", listOf("org.apache.poi:poi-ooxml:5.5.1"), "com.mbeddr.doc/solutions/com.mbeddr.spreadsheet.libs", {
             exclude(module = "commons-compress")
             exclude(module = "commons-math3")
@@ -66,7 +66,7 @@ val bundledDeps = listOf(
         BundledDep("jfreechart", listOf("org.jfree:jfreechart:1.5.6"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime", {}),
         BundledDep("plantuml", listOf("net.sourceforge.plantuml:plantuml:1.2026.2"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution"),
         BundledDep("opencsv", listOf("au.com.bytecode:opencsv:2.4"), "com.mbeddr.mpsutil/solutions/com.opencsv"),
-        BundledDep("mockito", listOf("org.mockito:mockito-core:5.22.0"), "com.mbeddr.mpsutil/solutions/org.mockito", {}),
+        BundledDep("mockito", listOf("org.mockito:mockito-core:5.23.0"), "com.mbeddr.mpsutil/solutions/org.mockito", {}),
         BundledDep("ecore", listOf(
                 "org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.36.0",
                 // xcore 1.36.0's POM requests these xtext modules with open-ended ranges like
@@ -377,4 +377,10 @@ tasks.cyclonedxDirectBom {
         // TODO: mps config cannot be handled by cyclonedxBom, since it"s located in com.mbeddr project
         //runtimeConfigs << project(":com.mbeddr").configurations.mps.name
     }
+}
+
+afterEvaluate {
+    // Workaround for CycloneDX plugin 3.2.4 modifying configurations when the task gets realized.
+    // We need to realize the task eagerly to avoid 'cannot mutate configuration' error if it is realized too late.
+    tasks.cyclonedxDirectBom.get()
 }
