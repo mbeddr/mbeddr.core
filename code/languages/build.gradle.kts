@@ -35,10 +35,10 @@ val usePrebuiltPlatform = ciBuild && !project.hasProperty("forceBuildPlatform")
 
 dependencies {
     junitAnt("junit:junit:4.13.2")
-    junitAnt("org.apache.ant:ant-junit:1.10.15") {
+    junitAnt("org.apache.ant:ant-junit:1.10.17") {
         isTransitive = false
     }
-    junitAnt("org.apache.ant:ant-junit4:1.10.15") {
+    junitAnt("org.apache.ant:ant-junit4:1.10.17") {
         isTransitive = false
     }
 
