@@ -3085,7 +3085,10 @@
               <ref role="2I9WkF" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
             </node>
             <node concept="BsUDl" id="5L$H31KeLVF" role="33vP2m">
-              <ref role="37wK5l" node="_gCXGjoJQM" resolve="getSummaries" />
+              <ref role="37wK5l" node="10O5aZlk4QE" resolve="getSummaries" />
+              <node concept="37vLTw" id="10O5aZllkN_" role="37wK5m">
+                <ref role="3cqZAo" node="4WjNWxKFdYY" resolve="mpsProject" />
+              </node>
               <node concept="37vLTw" id="5L$H31KeLVH" role="37wK5m">
                 <ref role="3cqZAo" node="4WjNWxKFdZQ" resolve="assessment" />
               </node>
@@ -3325,6 +3328,61 @@
       <node concept="37vLTG" id="_gCXGjoJQQ" role="3clF46">
         <property role="TrG5h" value="ass" />
         <node concept="3Tqbb2" id="_gCXGjoJQR" role="1tU5fm">
+          <ref role="ehGHo" to="vs0r:K292flwCEW" resolve="Assessment" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="10O5aZllY6b" role="lGtFl">
+        <node concept="TZ5HI" id="10O5aZllY6c" role="3nqlJM">
+          <node concept="TZ5HA" id="10O5aZllY6d" role="3HnX3l">
+            <node concept="1dT_AC" id="10O5aZllYHh" role="1dT_Ay">
+              <property role="1dT_AB" value="Use getSummaries with the Project parameter" />
+            </node>
+            <node concept="1dT_AC" id="10O5aZllYHi" role="1dT_Ay">
+              <property role="1dT_AB" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="10O5aZllY6e" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+        <node concept="2B6LJw" id="10O5aZllYEm" role="2B76xF">
+          <ref role="2B6OnR" to="wyt6:~Deprecated.since()" resolve="since" />
+          <node concept="Xl_RD" id="10O5aZllYFg" role="2B70Vg">
+            <property role="Xl_RC" value="2026-04-27" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="10O5aZlk4QE" role="13h7CS">
+      <property role="TrG5h" value="getSummaries" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="false" />
+      <node concept="3Tm1VV" id="10O5aZlk4QF" role="1B3o_S" />
+      <node concept="2I9FWS" id="10O5aZlk4QG" role="3clF45">
+        <ref role="2I9WkF" to="vs0r:_gCXGjnZUS" resolve="AssessmentSummary" />
+      </node>
+      <node concept="3clFbS" id="10O5aZlk4QH" role="3clF47">
+        <node concept="3clFbF" id="10O5aZlkqsw" role="3cqZAp">
+          <node concept="BsUDl" id="10O5aZlkqsu" role="3clFbG">
+            <ref role="37wK5l" node="_gCXGjoJQM" resolve="getSummaries" />
+            <node concept="37vLTw" id="10O5aZlkqsy" role="37wK5m">
+              <ref role="3cqZAo" node="10O5aZlk4R0" resolve="ass" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="10O5aZlkgnS" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <node concept="3uibUv" id="10O5aZlkgnT" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+        <node concept="2AHcQZ" id="10O5aZlkgnU" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="10O5aZlk4R0" role="3clF46">
+        <property role="TrG5h" value="ass" />
+        <node concept="3Tqbb2" id="10O5aZlk4R1" role="1tU5fm">
           <ref role="ehGHo" to="vs0r:K292flwCEW" resolve="Assessment" />
         </node>
       </node>
