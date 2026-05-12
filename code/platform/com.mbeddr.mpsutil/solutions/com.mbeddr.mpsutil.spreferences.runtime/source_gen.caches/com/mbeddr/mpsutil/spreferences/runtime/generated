@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-ctvsm3cxh5wqafz9s79ag4oajnwnasr">
+<product version="3" modelHash="dauq9il9g13hz61ahy8fk40dl6bo07v">
   <files names="PreferenceModules.java:SPreferencesEditorComponent.java:SPreferencesModelFactory.java:SPreferencesPanel.java:SPreferencesProjectPlugin.java:SPreferencesUtil.java:SPrefererencesComponent.java" />
 </product>
 

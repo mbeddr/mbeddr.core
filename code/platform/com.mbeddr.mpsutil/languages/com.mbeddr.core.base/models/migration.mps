@@ -28,6 +28,9 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -180,7 +183,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -378,7 +380,7 @@
                           <node concept="37vLTw" id="6v4$knuv4ag" role="2Oq$k0">
                             <ref role="3cqZAo" node="2SR9xrsN1Ad" resolve="it" />
                           </node>
-                          <node concept="2qgKlT" id="6v4$knuv4nY" role="2OqNvi">
+                          <node concept="3zqWPK" id="4qMlRGRnhU4" role="2OqNvi">
                             <ref role="37wK5l" to="p15z:243ufko$Aur" resolve="performMigration" />
                           </node>
                         </node>
@@ -36329,7 +36331,7 @@
                                           <node concept="37vLTw" id="KHbkGQ3DJD" role="2Oq$k0">
                                             <ref role="3cqZAo" node="2SR9xrsN1Al" resolve="mre" />
                                           </node>
-                                          <node concept="2qgKlT" id="KHbkGQ3DJE" role="2OqNvi">
+                                          <node concept="3zqWPK" id="4qMlRGRnhU6" role="2OqNvi">
                                             <ref role="37wK5l" to="tpeu:7K4mn_BeEzv" resolve="getFQName" />
                                           </node>
                                         </node>
@@ -36354,12 +36356,12 @@
                                             <node concept="35c_gC" id="7KCw61wnB9_" role="2Oq$k0">
                                               <ref role="35c_gD" to="dvox:k2ZBl8Cedw" resolve="ModelPointer" />
                                             </node>
-                                            <node concept="2qgKlT" id="7KCw61wnB9A" role="2OqNvi">
+                                            <node concept="3zqWPK" id="4qMlRGRnhU8" role="2OqNvi">
                                               <ref role="37wK5l" to="xlb7:_GDk1qZ2JP" resolve="create" />
-                                              <node concept="37vLTw" id="7KCw61wnB9B" role="37wK5m">
+                                              <node concept="37vLTw" id="4qMlRGRnhUa" role="37wK5m">
                                                 <ref role="3cqZAo" node="7KCw61wnKTq" resolve="mdl" />
                                               </node>
-                                              <node concept="37vLTw" id="KHbkGQ3DJF" role="37wK5m">
+                                              <node concept="37vLTw" id="4qMlRGRnhUb" role="37wK5m">
                                                 <ref role="3cqZAo" node="KHbkGQ3DJ$" resolve="modelFromExpr" />
                                               </node>
                                             </node>

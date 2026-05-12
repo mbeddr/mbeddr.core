@@ -34,6 +34,9 @@
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
       <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
@@ -243,7 +246,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -327,10 +329,10 @@
                       <node concept="35c_gC" id="7mK357yusBe" role="2Oq$k0">
                         <ref role="35c_gD" to="dvox:k2ZBl8Cedx" resolve="ModulePointer" />
                       </node>
-                      <node concept="2qgKlT" id="7mK357yutrm" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRqcG4" role="2OqNvi">
                         <ref role="37wK5l" to="xlb7:1Bs_61$mIAC" resolve="create" />
-                        <node concept="1Q6Npb" id="7mK357yutxi" role="37wK5m" />
-                        <node concept="3GLrbK" id="7mK357yutDS" role="37wK5m" />
+                        <node concept="1Q6Npb" id="4qMlRGRqcG6" role="37wK5m" />
+                        <node concept="3GLrbK" id="4qMlRGRqcG7" role="37wK5m" />
                       </node>
                     </node>
                   </node>
@@ -394,7 +396,7 @@
                           <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                           <node concept="2OqwBi" id="1R2r3DPK6xV" role="37wK5m">
                             <node concept="3GMtW1" id="1R2r3DPK6g2" role="2Oq$k0" />
-                            <node concept="2qgKlT" id="1R2r3DPK70D" role="2OqNvi">
+                            <node concept="3zqWPK" id="4qMlRGRqcG8" role="2OqNvi">
                               <ref role="37wK5l" to="xmkr:1R2r3DPJX9r" resolve="getModuleType" />
                             </node>
                           </node>
@@ -567,7 +569,7 @@
                                         <ref role="3Tt5mk" to="soy0:7mK357ypJVJ" resolve="identity" />
                                       </node>
                                     </node>
-                                    <node concept="2qgKlT" id="7AZhlVTk4Yq" role="2OqNvi">
+                                    <node concept="3zqWPK" id="4qMlRGRqcGa" role="2OqNvi">
                                       <ref role="37wK5l" to="xlb7:1Bs_61$mqDd" resolve="toModuleReference" />
                                     </node>
                                   </node>
@@ -649,7 +651,7 @@
             <node concept="3clFbF" id="4ulp8VfZNJM" role="3cqZAp">
               <node concept="2OqwBi" id="4ulp8VfZNP2" role="3clFbG">
                 <node concept="pncrf" id="4ulp8VfZNJL" role="2Oq$k0" />
-                <node concept="2qgKlT" id="3mn43GPgDuO" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqcGc" role="2OqNvi">
                   <ref role="37wK5l" to="4gky:1T7O9iWPN9q" resolve="getTextualRepresentation" />
                 </node>
               </node>
