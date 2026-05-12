@@ -24,6 +24,7 @@
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -110,7 +111,6 @@
       <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -206,7 +206,7 @@
                 </node>
                 <node concept="2OqwBi" id="10nVqVfwX2g" role="33vP2m">
                   <node concept="13iPFW" id="10nVqVg5ren" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="10nVqVfwYe5" role="2OqNvi">
+                  <node concept="3zqWPK" id="4qMlRGRnhW$" role="2OqNvi">
                     <ref role="37wK5l" node="10nVqVftAKE" resolve="getPredecessor" />
                   </node>
                 </node>
@@ -235,12 +235,12 @@
                       <node concept="37vLTw" id="10nVqVg5rOf" role="2Oq$k0">
                         <ref role="3cqZAo" node="1ZvNVeOflaa" resolve="predecessor" />
                       </node>
-                      <node concept="2qgKlT" id="10nVqVg5se3" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRnhWA" role="2OqNvi">
                         <ref role="37wK5l" node="10nVqVg5kqc" resolve="compareTo" />
-                        <node concept="37vLTw" id="10nVqVg5shE" role="37wK5m">
+                        <node concept="37vLTw" id="4qMlRGRnhWC" role="37wK5m">
                           <ref role="3cqZAo" node="10nVqVg5kqK" resolve="other" />
                         </node>
-                        <node concept="37vLTw" id="10nVqVg5sld" role="37wK5m">
+                        <node concept="37vLTw" id="4qMlRGRnhWD" role="37wK5m">
                           <ref role="3cqZAo" node="1ZvNVeOflcG" resolve="context" />
                         </node>
                       </node>
@@ -252,7 +252,7 @@
           </node>
           <node concept="2OqwBi" id="1ZvNVeOflat" role="3clFbw">
             <node concept="13iPFW" id="10nVqVg5rcG" role="2Oq$k0" />
-            <node concept="2qgKlT" id="10nVqVfwO16" role="2OqNvi">
+            <node concept="3zqWPK" id="4qMlRGRnhWE" role="2OqNvi">
               <ref role="37wK5l" node="10nVqVftAKg" resolve="isConnectionAllowed" />
             </node>
           </node>
@@ -264,10 +264,10 @@
                     <node concept="37vLTw" id="10nVqVg5tB9" role="2Oq$k0">
                       <ref role="3cqZAo" node="10nVqVg5kqK" resolve="other" />
                     </node>
-                    <node concept="2qgKlT" id="10nVqVg5tJB" role="2OqNvi">
+                    <node concept="3zqWPK" id="4qMlRGRnhWG" role="2OqNvi">
                       <ref role="37wK5l" node="10nVqVg5kqc" resolve="compareTo" />
-                      <node concept="13iPFW" id="10nVqVg5tOJ" role="37wK5m" />
-                      <node concept="37vLTw" id="10nVqVg5tZF" role="37wK5m">
+                      <node concept="13iPFW" id="4qMlRGRnhWI" role="37wK5m" />
+                      <node concept="37vLTw" id="4qMlRGRnhWJ" role="37wK5m">
                         <ref role="3cqZAo" node="1ZvNVeOflcG" resolve="context" />
                       </node>
                     </node>
@@ -279,7 +279,7 @@
               <node concept="37vLTw" id="1ZvNVeOflaE" role="2Oq$k0">
                 <ref role="3cqZAo" node="10nVqVg5kqK" resolve="other" />
               </node>
-              <node concept="2qgKlT" id="10nVqVfwZvh" role="2OqNvi">
+              <node concept="3zqWPK" id="4qMlRGRnhWK" role="2OqNvi">
                 <ref role="37wK5l" node="10nVqVftAKg" resolve="isConnectionAllowed" />
               </node>
             </node>

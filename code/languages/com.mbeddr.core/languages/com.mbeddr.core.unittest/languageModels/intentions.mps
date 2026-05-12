@@ -24,6 +24,9 @@
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
       <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="3547227755871693971" name="jetbrains.mps.lang.editor.structure.PredefinedSelector" flags="ng" index="2B6iha" />
       <concept id="3647146066980922272" name="jetbrains.mps.lang.editor.structure.SelectInEditorOperation" flags="nn" index="1OKiuA">
@@ -164,7 +167,6 @@
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -575,9 +577,9 @@
                     <node concept="1xIGOp" id="6GXPbpLjwh_" role="1xVPHs" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="6GXPbpLjwhA" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqzP3" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                  <node concept="3TUQnm" id="6GXPbpLjwhB" role="37wK5m">
+                  <node concept="3TUQnm" id="4qMlRGRqzP5" role="37wK5m">
                     <ref role="3TV0OU" to="yz9a:6189YbXx_nM" resolve="ITestContext" />
                   </node>
                 </node>
@@ -625,7 +627,7 @@
                       <node concept="2GrUjf" id="dkANm6sjQM" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="6GXPbpLjwhN" resolve="tc" />
                       </node>
-                      <node concept="2qgKlT" id="dkANm6sq02" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRqzP6" role="2OqNvi">
                         <ref role="37wK5l" to="rmg4:dkANm6soSZ" resolve="createNewTestRefToThisTest" />
                       </node>
                     </node>
@@ -674,7 +676,7 @@
                               <node concept="37vLTw" id="6GXPbpLjwiP" role="2Oq$k0">
                                 <ref role="3cqZAo" node="2SR9xrsN1Sa" resolve="it" />
                               </node>
-                              <node concept="2qgKlT" id="dkANm6sj5s" role="2OqNvi">
+                              <node concept="3zqWPK" id="4qMlRGRqzP8" role="2OqNvi">
                                 <ref role="37wK5l" to="rmg4:dkANm6s0zG" resolve="referencedTest" />
                               </node>
                             </node>

@@ -57,6 +57,9 @@
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
@@ -237,7 +240,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -995,7 +997,7 @@
                   <node concept="2GrUjf" id="3x_7aSIGM$x" role="2Oq$k0">
                     <ref role="2Gs0qQ" node="3x_7aSIGHs_" resolve="langId" />
                   </node>
-                  <node concept="2qgKlT" id="3x_7aSIGNlJ" role="2OqNvi">
+                  <node concept="3zqWPK" id="4qMlRGRnhv8" role="2OqNvi">
                     <ref role="37wK5l" to="tpeu:34EJa6aIcyj" resolve="getLanguage" />
                   </node>
                 </node>
@@ -1031,7 +1033,7 @@
                     <node concept="2GrUjf" id="3x_7aSIH1Dw" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="3x_7aSIGP6a" resolve="modulePointer" />
                     </node>
-                    <node concept="2qgKlT" id="2Tk0XLkyKcS" role="2OqNvi">
+                    <node concept="3zqWPK" id="4qMlRGRnhva" role="2OqNvi">
                       <ref role="37wK5l" to="xlb7:1Bs_61$mqDd" resolve="toModuleReference" />
                     </node>
                   </node>

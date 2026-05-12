@@ -16,6 +16,9 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
@@ -192,7 +195,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7835263205327057228" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenAndChildAttributesOperation" flags="ng" index="Bykcj" />
       <concept id="5168775467716640652" name="jetbrains.mps.lang.smodel.structure.OperationParm_LinkQualifier" flags="ng" index="1aIX9F">
         <child id="5168775467716640653" name="linkQualifier" index="1aIX9E" />
@@ -270,7 +272,7 @@
                       <ref role="37wK5l" to="g51k:~EditorCell_Label.setDefaultText(java.lang.String)" resolve="setDefaultText" />
                       <node concept="2OqwBi" id="1m7X3OEAa$s" role="37wK5m">
                         <node concept="pncrf" id="1m7X3OEAawE" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="1m7X3OEAaVu" role="2OqNvi">
+                        <node concept="3zqWPK" id="4qMlRGRnhZY" role="2OqNvi">
                           <ref role="37wK5l" to="60h8:3dlzMguGJhR" resolve="getId" />
                         </node>
                       </node>
@@ -303,7 +305,7 @@
                       <node concept="3cpWs3" id="4zqPC3aotvU" role="33vP2m">
                         <node concept="2OqwBi" id="4zqPC3aotvV" role="3uHU7w">
                           <node concept="pncrf" id="4zqPC3aotvW" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="4zqPC3aotvX" role="2OqNvi">
+                          <node concept="3zqWPK" id="4qMlRGRni00" role="2OqNvi">
                             <ref role="37wK5l" to="60h8:3dlzMguGJhR" resolve="getId" />
                           </node>
                         </node>
@@ -440,7 +442,7 @@
                             </node>
                             <node concept="2OqwBi" id="2bnm$tmhMPY" role="3uHU7w">
                               <node concept="pncrf" id="2bnm$tmhMIi" role="2Oq$k0" />
-                              <node concept="2qgKlT" id="2bnm$tmhNl2" role="2OqNvi">
+                              <node concept="3zqWPK" id="4qMlRGRni02" role="2OqNvi">
                                 <ref role="37wK5l" to="60h8:3dlzMguGJhR" resolve="getId" />
                               </node>
                             </node>
@@ -475,7 +477,7 @@
                                   </node>
                                   <node concept="2OqwBi" id="2bnm$tmjZBF" role="3uHU7w">
                                     <node concept="pncrf" id="2bnm$tmjZBG" role="2Oq$k0" />
-                                    <node concept="2qgKlT" id="2bnm$tmjZBH" role="2OqNvi">
+                                    <node concept="3zqWPK" id="4qMlRGRni04" role="2OqNvi">
                                       <ref role="37wK5l" to="60h8:3dlzMguGJhR" resolve="getId" />
                                     </node>
                                   </node>
@@ -502,7 +504,7 @@
                                     </node>
                                     <node concept="2OqwBi" id="2bnm$tmhxdd" role="3uHU7w">
                                       <node concept="pncrf" id="2bnm$tmhwTR" role="2Oq$k0" />
-                                      <node concept="2qgKlT" id="2bnm$tmhxyJ" role="2OqNvi">
+                                      <node concept="3zqWPK" id="4qMlRGRni06" role="2OqNvi">
                                         <ref role="37wK5l" to="60h8:3dlzMguGJhR" resolve="getId" />
                                       </node>
                                     </node>

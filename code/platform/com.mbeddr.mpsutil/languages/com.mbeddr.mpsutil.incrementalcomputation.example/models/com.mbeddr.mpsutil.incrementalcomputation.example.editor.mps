@@ -11,6 +11,9 @@
     <import index="hmni" ref="r:4fcd6ede-9e8a-4196-a4aa-19eff9dad149(com.mbeddr.mpsutil.incrementalcomputation.example.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
@@ -94,7 +97,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -186,7 +188,7 @@
                   <node concept="2OqwBi" id="5YITc37Mbnn" role="3uHU7w">
                     <node concept="2OqwBi" id="50uWDT$MDpq" role="2Oq$k0">
                       <node concept="pncrf" id="50uWDT$MD8_" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="50uWDT$MDSj" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRnhWQ" role="2OqNvi">
                         <ref role="37wK5l" to="hmni:50uWDT$Mpno" resolve="getValueA" />
                       </node>
                     </node>
@@ -228,7 +230,7 @@
                     </node>
                     <node concept="2OqwBi" id="50uWDT$MEaN" role="2Oq$k0">
                       <node concept="pncrf" id="50uWDT$MEaO" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="50uWDT$MEPb" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRnhWS" role="2OqNvi">
                         <ref role="37wK5l" to="hmni:50uWDT$MxIP" resolve="getValueB" />
                       </node>
                     </node>
