@@ -62,6 +62,9 @@
         <child id="1238857834412" name="index" index="1LF_Uc" />
       </concept>
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
@@ -396,7 +399,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -681,7 +683,7 @@
                                   </node>
                                   <node concept="1uHKPH" id="6KI2Y3YZT5Z" role="2OqNvi" />
                                 </node>
-                                <node concept="2qgKlT" id="6KI2Y3YZT60" role="2OqNvi">
+                                <node concept="3zqWPK" id="4qMlRGRq$ky" role="2OqNvi">
                                   <ref role="37wK5l" to="vog7:3s1LyzGfrML" resolve="getMakePathProvider" />
                                 </node>
                               </node>
@@ -976,7 +978,7 @@
                                   <ref role="2Gs0qQ" node="5zgShfbCz4u" resolve="pathTuple" />
                                 </node>
                               </node>
-                              <node concept="2qgKlT" id="3s1LyzGmUGF" role="2OqNvi">
+                              <node concept="3zqWPK" id="4qMlRGRq$k$" role="2OqNvi">
                                 <ref role="37wK5l" to="vog7:3s1LyzG6KRG" resolve="canMake" />
                               </node>
                             </node>
@@ -1144,7 +1146,7 @@
                                     <ref role="2Gs0qQ" node="5zgShfbCz4u" resolve="pathTuple" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="3s1LyzGrnVL" role="2OqNvi">
+                                <node concept="3zqWPK" id="4qMlRGRq$kA" role="2OqNvi">
                                   <ref role="37wK5l" to="vog7:3s1LyzG7eMZ" resolve="getPathToMake" />
                                 </node>
                               </node>
@@ -1274,7 +1276,7 @@
                                           <node concept="37vLTw" id="7GmkyIHGdWO" role="2Oq$k0">
                                             <ref role="3cqZAo" node="42NvuOOGDBs" resolve="platform" />
                                           </node>
-                                          <node concept="2qgKlT" id="7GmkyIHGdWP" role="2OqNvi">
+                                          <node concept="3zqWPK" id="4qMlRGRq$kC" role="2OqNvi">
                                             <ref role="37wK5l" to="vog7:71C71cTwEiX" resolve="parallelProcesses" />
                                           </node>
                                         </node>
@@ -1288,7 +1290,7 @@
                               <node concept="37vLTw" id="7GmkyIHGcKA" role="2Oq$k0">
                                 <ref role="3cqZAo" node="42NvuOOGDBs" resolve="platform" />
                               </node>
-                              <node concept="2qgKlT" id="7GmkyIHGcKB" role="2OqNvi">
+                              <node concept="3zqWPK" id="4qMlRGRq$kE" role="2OqNvi">
                                 <ref role="37wK5l" to="vog7:3dZgFhDSzmf" resolve="canBeParallelized" />
                               </node>
                             </node>

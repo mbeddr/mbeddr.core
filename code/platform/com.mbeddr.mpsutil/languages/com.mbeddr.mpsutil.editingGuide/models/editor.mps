@@ -31,6 +31,9 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
@@ -263,7 +266,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
@@ -1154,9 +1156,9 @@
                     <node concept="3clFbF" id="PYICs0TD_4" role="3cqZAp">
                       <node concept="2OqwBi" id="PYICs0TDNH" role="3clFbG">
                         <node concept="pncrf" id="PYICs0TD_3" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="PYICs0TF3W" role="2OqNvi">
+                        <node concept="3zqWPK" id="4qMlRGRnhA7" role="2OqNvi">
                           <ref role="37wK5l" to="l4gp:PYICs0TAVo" resolve="getPresentationForPrefix" />
-                          <node concept="Xl_RD" id="PYICs0TFHU" role="37wK5m">
+                          <node concept="Xl_RD" id="4qMlRGRnhA9" role="37wK5m">
                             <property role="Xl_RC" value="" />
                           </node>
                         </node>
@@ -1418,7 +1420,7 @@
                   <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(org.jetbrains.mps.openapi.module.SModule)" resolve="forModule" />
                   <node concept="2OqwBi" id="JJxXu1sFmg" role="37wK5m">
                     <node concept="pncrf" id="JJxXu1sFmh" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="JJxXu1sFmi" role="2OqNvi">
+                    <node concept="3zqWPK" id="4qMlRGRnhAa" role="2OqNvi">
                       <ref role="37wK5l" to="l4gp:7r9Xsder9tx" resolve="getImageModuleByModuleId" />
                     </node>
                   </node>
@@ -1550,9 +1552,9 @@
                     <node concept="2OqwBi" id="44LrdWQ46AF" role="2Oq$k0">
                       <node concept="2OqwBi" id="PYICs12eGq" role="2Oq$k0">
                         <node concept="pncrf" id="PYICs12erp" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="PYICs12fa5" role="2OqNvi">
+                        <node concept="3zqWPK" id="4qMlRGRnhAc" role="2OqNvi">
                           <ref role="37wK5l" to="l4gp:22irgSmHAOg" resolve="getProvidedNodes" />
-                          <node concept="35c_gC" id="PYICs12hn4" role="37wK5m">
+                          <node concept="35c_gC" id="4qMlRGRnhAe" role="37wK5m">
                             <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
                           </node>
                         </node>

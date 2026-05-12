@@ -21,6 +21,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
@@ -150,7 +153,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7835263205327057228" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenAndChildAttributesOperation" flags="ng" index="Bykcj" />
       <concept id="5168775467716640652" name="jetbrains.mps.lang.smodel.structure.OperationParm_LinkQualifier" flags="ng" index="1aIX9F">
         <child id="5168775467716640653" name="linkQualifier" index="1aIX9E" />
@@ -195,7 +197,7 @@
                 <node concept="2OqwBi" id="44fCN1fQs6D" role="3fr31v">
                   <node concept="2OqwBi" id="44fCN1fQs6E" role="2Oq$k0">
                     <node concept="pncrf" id="44fCN1fQs6F" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="44fCN1fQs6G" role="2OqNvi">
+                    <node concept="3zqWPK" id="4qMlRGRq_XP" role="2OqNvi">
                       <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
                     </node>
                   </node>
@@ -373,7 +375,7 @@
                   </node>
                   <node concept="2OqwBi" id="7Uz1bYM5TP2" role="3uHU7B">
                     <node concept="pncrf" id="7Uz1bYM5TOH" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="7Uz1bYM5TP8" role="2OqNvi">
+                    <node concept="3zqWPK" id="4qMlRGRq_XR" role="2OqNvi">
                       <ref role="37wK5l" to="3s60:7Uz1bYM5TNJ" resolve="stepID" />
                     </node>
                   </node>
@@ -593,7 +595,7 @@
                   </node>
                   <node concept="2OqwBi" id="3Krj9ItiXzc" role="3uHU7B">
                     <node concept="pncrf" id="3Krj9ItiXzb" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="3Krj9ItiXzg" role="2OqNvi">
+                    <node concept="3zqWPK" id="4qMlRGRq_XT" role="2OqNvi">
                       <ref role="37wK5l" to="3s60:3Krj9ItiXz5" resolve="assertionID" />
                     </node>
                   </node>
@@ -668,7 +670,7 @@
                 <node concept="2OqwBi" id="44fCN1fStiF" role="3fr31v">
                   <node concept="2OqwBi" id="44fCN1fStiG" role="2Oq$k0">
                     <node concept="pncrf" id="44fCN1fStiH" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="44fCN1fStiI" role="2OqNvi">
+                    <node concept="3zqWPK" id="4qMlRGRq_XV" role="2OqNvi">
                       <ref role="37wK5l" to="qd6m:19a6$uAAaU1" resolve="owningModule" />
                     </node>
                   </node>

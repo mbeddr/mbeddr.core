@@ -15,6 +15,9 @@
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -104,7 +107,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
@@ -401,7 +403,7 @@
                         <node concept="WxPPo" id="27yO7ubJBkS" role="28ntcv">
                           <node concept="2OqwBi" id="4MVAbAXtoPN" role="WxPPp">
                             <node concept="30H73N" id="4MVAbAXtoM6" role="2Oq$k0" />
-                            <node concept="2qgKlT" id="4MVAbAXtp2N" role="2OqNvi">
+                            <node concept="3zqWPK" id="4qMlRGRqAs5" role="2OqNvi">
                               <ref role="37wK5l" to="tbr6:3Q5enzfMT4t" resolve="toTextString" />
                             </node>
                           </node>
@@ -433,7 +435,7 @@
                         <node concept="WxPPo" id="27yO7ubJBkT" role="28ntcv">
                           <node concept="2OqwBi" id="4MVAbAXtp5o" role="WxPPp">
                             <node concept="30H73N" id="4MVAbAXtp5p" role="2Oq$k0" />
-                            <node concept="2qgKlT" id="4MVAbAXtp5q" role="2OqNvi">
+                            <node concept="3zqWPK" id="4qMlRGRqAs7" role="2OqNvi">
                               <ref role="37wK5l" to="tbr6:3Q5enzfMT4t" resolve="toTextString" />
                             </node>
                           </node>
