@@ -19,6 +19,9 @@
     <import index="79pl" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.smodel.runtime.base(jetbrains.mps.lang.constraints.rules.runtime/)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -161,7 +164,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
@@ -805,9 +807,9 @@
                     <ref role="3cqZAo" node="2N" resolve="node" />
                     <uo k="s:originTrace" v="n:568377005202722048" />
                   </node>
-                  <node concept="2qgKlT" id="2Y" role="2OqNvi">
+                  <node concept="3zqWPK" id="2Y" role="2OqNvi">
                     <ref role="37wK5l" to="tp5r:vzhXZPAXZu" resolve="deductDefault" />
-                    <uo k="s:originTrace" v="n:568377005202722049" />
+                    <uo k="s:originTrace" v="n:5094230315230895102" />
                   </node>
                 </node>
               </node>

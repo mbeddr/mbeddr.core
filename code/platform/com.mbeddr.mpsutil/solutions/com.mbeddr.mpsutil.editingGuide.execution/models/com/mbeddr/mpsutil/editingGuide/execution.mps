@@ -32,6 +32,9 @@
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="4820515453818318288" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReferenceExpression" flags="ng" index="2pYGij">
         <reference id="4820515453818318891" name="hint" index="2pYH_C" />
@@ -221,7 +224,6 @@
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="8758390115028452779" name="jetbrains.mps.lang.smodel.structure.Node_GetReferencesOperation" flags="nn" index="2z74zc" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -1168,7 +1170,7 @@
                                         <node concept="37vLTw" id="3TMofxP6Cwx" role="2Oq$k0">
                                           <ref role="3cqZAo" node="692bXAb5$YE" resolve="mySandboxExercise" />
                                         </node>
-                                        <node concept="2qgKlT" id="3TMofxP6H2N" role="2OqNvi">
+                                        <node concept="3zqWPK" id="4qMlRGRnhCX" role="2OqNvi">
                                           <ref role="37wK5l" to="l4gp:4TMjSvbG95v" resolve="getCurrentTask" />
                                         </node>
                                       </node>
@@ -2762,17 +2764,17 @@
                   <ref role="3Tt5mk" to="k8go:3p1cdQ7_d_r" resolve="monitor" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="62Mww1ZYQs$" role="2OqNvi">
+              <node concept="3zqWPK" id="4qMlRGRnhCZ" role="2OqNvi">
                 <ref role="37wK5l" to="l4gp:4TMjSvbDmOr" resolve="callFunction" />
-                <node concept="2OqwBi" id="62Mww1ZYQs_" role="37wK5m">
-                  <node concept="37vLTw" id="62Mww1ZYQsA" role="2Oq$k0">
+                <node concept="2OqwBi" id="4qMlRGRnhD1" role="37wK5m">
+                  <node concept="37vLTw" id="4qMlRGRnhD2" role="2Oq$k0">
                     <ref role="3cqZAo" node="5h2rxDjX7Cz" resolve="myEditorComponent" />
                   </node>
-                  <node concept="liA8E" id="62Mww1ZYQsB" role="2OqNvi">
+                  <node concept="liA8E" id="4qMlRGRnhD3" role="2OqNvi">
                     <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="62Mww1ZYQsC" role="37wK5m">
+                <node concept="37vLTw" id="4qMlRGRnhD4" role="37wK5m">
                   <ref role="3cqZAo" node="4TMjSvbGgN2" resolve="task" />
                 </node>
               </node>

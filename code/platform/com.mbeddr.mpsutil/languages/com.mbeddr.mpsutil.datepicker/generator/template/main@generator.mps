@@ -27,6 +27,9 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -191,7 +194,6 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -458,12 +460,12 @@
                           <node concept="3fqX7Q" id="2nIaZ7ixfFR" role="3clFbG">
                             <node concept="2OqwBi" id="2nIaZ7ixfFS" role="3fr31v">
                               <node concept="30H73N" id="2nIaZ7ixfFT" role="2Oq$k0" />
-                              <node concept="2qgKlT" id="2nIaZ7ixfFU" role="2OqNvi">
+                              <node concept="3zqWPK" id="4qMlRGRnhDw" role="2OqNvi">
                                 <ref role="37wK5l" to="tpcb:i0pNf1r" resolve="getBooleanStyleValue" />
-                                <node concept="35c_gC" id="1SbcsM_Qdcn" role="37wK5m">
+                                <node concept="35c_gC" id="4qMlRGRnhDy" role="37wK5m">
                                   <ref role="35c_gD" to="tpc2:G99PKEU3Jd" resolve="ReadOnlyStyleClassItem" />
                                 </node>
-                                <node concept="3clFbT" id="2nIaZ7ixfFW" role="37wK5m" />
+                                <node concept="3clFbT" id="4qMlRGRnhDz" role="37wK5m" />
                               </node>
                             </node>
                           </node>
@@ -716,9 +718,9 @@
                             <node concept="2piZGk" id="4glh_Dcko6_" role="2OqNvi">
                               <node concept="2OqwBi" id="1PDQQQzwDgW" role="2piZGb">
                                 <node concept="30H73N" id="1PDQQQzwDgX" role="2Oq$k0" />
-                                <node concept="2qgKlT" id="1PDQQQzwDgY" role="2OqNvi">
+                                <node concept="3zqWPK" id="4qMlRGRnhD$" role="2OqNvi">
                                   <ref role="37wK5l" to="tpcb:hHbewHT" resolve="getCellId" />
-                                  <node concept="1iwH7S" id="1PDQQQzwDgZ" role="37wK5m" />
+                                  <node concept="1iwH7S" id="4qMlRGRnhDA" role="37wK5m" />
                                 </node>
                               </node>
                               <node concept="2OqwBi" id="4glh_Dckpdr" role="2pr8EU">
@@ -747,7 +749,7 @@
                       </node>
                       <node concept="3fqX7Q" id="4v1iCryNEKC" role="3uHU7w">
                         <node concept="2OqwBi" id="1PDQQQzx9RN" role="3fr31v">
-                          <node concept="2qgKlT" id="4v1iCryNEKF" role="2OqNvi">
+                          <node concept="3zqWPK" id="4qMlRGRnhDB" role="2OqNvi">
                             <ref role="37wK5l" to="tpcb:hTuDsSD" resolve="isCellIdInitialized" />
                           </node>
                           <node concept="30H73N" id="1PDQQQzx9RO" role="2Oq$k0" />
@@ -832,9 +834,9 @@
                             <node concept="2piZGk" id="4glh_Dckqc5" role="2OqNvi">
                               <node concept="2OqwBi" id="4glh_Dckqc6" role="2piZGb">
                                 <node concept="30H73N" id="4glh_Dckqc7" role="2Oq$k0" />
-                                <node concept="2qgKlT" id="4glh_Dckqc8" role="2OqNvi">
+                                <node concept="3zqWPK" id="4qMlRGRnhDD" role="2OqNvi">
                                   <ref role="37wK5l" to="tpcb:hHbewHT" resolve="getCellId" />
-                                  <node concept="1iwH7S" id="4glh_Dckqc9" role="37wK5m" />
+                                  <node concept="1iwH7S" id="4qMlRGRnhDF" role="37wK5m" />
                                 </node>
                               </node>
                               <node concept="2OqwBi" id="4glh_Dckqca" role="2pr8EU">
@@ -856,7 +858,7 @@
                   <node concept="3clFbF" id="4v1iCryNEKB" role="3cqZAp">
                     <node concept="3fqX7Q" id="1PDQQQzxaKT" role="3clFbG">
                       <node concept="2OqwBi" id="4v1iCryNEKD" role="3fr31v">
-                        <node concept="2qgKlT" id="1PDQQQzxaKU" role="2OqNvi">
+                        <node concept="3zqWPK" id="4qMlRGRnhDG" role="2OqNvi">
                           <ref role="37wK5l" to="tpcb:hTuDsSD" resolve="isCellIdInitialized" />
                         </node>
                         <node concept="30H73N" id="4v1iCryNEKE" role="2Oq$k0" />
@@ -921,9 +923,9 @@
                             <node concept="2piZGk" id="4glh_DckqZ5" role="2OqNvi">
                               <node concept="2OqwBi" id="4glh_DckqZ6" role="2piZGb">
                                 <node concept="30H73N" id="4glh_DckqZ7" role="2Oq$k0" />
-                                <node concept="2qgKlT" id="4glh_DckqZ8" role="2OqNvi">
+                                <node concept="3zqWPK" id="4qMlRGRnhDI" role="2OqNvi">
                                   <ref role="37wK5l" to="tpcb:hHbewHT" resolve="getCellId" />
-                                  <node concept="1iwH7S" id="4glh_DckqZ9" role="37wK5m" />
+                                  <node concept="1iwH7S" id="4qMlRGRnhDK" role="37wK5m" />
                                 </node>
                               </node>
                               <node concept="2OqwBi" id="4glh_DckqZa" role="2pr8EU">
@@ -945,7 +947,7 @@
                   <node concept="3clFbF" id="1PDQQQzzTzH" role="3cqZAp">
                     <node concept="3fqX7Q" id="1PDQQQzzTzI" role="3clFbG">
                       <node concept="2OqwBi" id="1PDQQQzzTzJ" role="3fr31v">
-                        <node concept="2qgKlT" id="1PDQQQzzTzK" role="2OqNvi">
+                        <node concept="3zqWPK" id="4qMlRGRnhDL" role="2OqNvi">
                           <ref role="37wK5l" to="tpcb:hTuDsSD" resolve="isCellIdInitialized" />
                         </node>
                         <node concept="30H73N" id="1PDQQQzzTzL" role="2Oq$k0" />
@@ -1196,9 +1198,9 @@
             <node concept="3clFbS" id="2nIaZ7ixfIu" role="2VODD2">
               <node concept="3clFbF" id="2nIaZ7ixfIv" role="3cqZAp">
                 <node concept="2OqwBi" id="2nIaZ7ixfIw" role="3clFbG">
-                  <node concept="2qgKlT" id="2nIaZ7ixfIx" role="2OqNvi">
+                  <node concept="3zqWPK" id="4qMlRGRnhDN" role="2OqNvi">
                     <ref role="37wK5l" to="tpcb:hHfE2BD" resolve="getFactoryMethodName" />
-                    <node concept="1iwH7S" id="2nIaZ7ixfIy" role="37wK5m" />
+                    <node concept="1iwH7S" id="4qMlRGRnhDP" role="37wK5m" />
                   </node>
                   <node concept="30H73N" id="2nIaZ7ixfIz" role="2Oq$k0" />
                 </node>

@@ -9,6 +9,9 @@
     <import index="7cx9" ref="r:af793ab9-042b-414b-8d5e-765e4059f681(com.mbeddr.mpsutil.interpreter.test.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -67,7 +70,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -87,7 +89,7 @@
             <node concept="1YBJjd" id="65E6xpGVlOw" role="2Oq$k0">
               <ref role="1YBMHb" node="65E6xpGTNt_" resolve="aie" />
             </node>
-            <node concept="2qgKlT" id="65E6xpGVmyR" role="2OqNvi">
+            <node concept="3zqWPK" id="4qMlRGRnhXm" role="2OqNvi">
               <ref role="37wK5l" to="fac3:65E6xpGSh8a" resolve="checkValid" />
             </node>
           </node>
@@ -131,7 +133,7 @@
             <node concept="1YBJjd" id="2pogikRx8Lp" role="2Oq$k0">
               <ref role="1YBMHb" node="2pogikRx7Zf" resolve="abstractInterpreterCondition" />
             </node>
-            <node concept="2qgKlT" id="2pogikRx82b" role="2OqNvi">
+            <node concept="3zqWPK" id="4qMlRGRnhXo" role="2OqNvi">
               <ref role="37wK5l" to="fac3:2pogikRx4Ni" resolve="checkValid" />
             </node>
           </node>

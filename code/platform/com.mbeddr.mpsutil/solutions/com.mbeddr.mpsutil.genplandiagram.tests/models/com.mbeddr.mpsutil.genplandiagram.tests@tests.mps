@@ -34,6 +34,9 @@
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -147,7 +150,6 @@
       <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
@@ -1287,10 +1289,10 @@
             <node concept="3xONca" id="308cpCq5JjL" role="2Oq$k0">
               <ref role="3xOPvv" node="308cpCq5Iwz" resolve="visualizerTopToBottom" />
             </node>
-            <node concept="2qgKlT" id="308cpCq5QZu" role="2OqNvi">
+            <node concept="3zqWPK" id="4qMlRGRnhD8" role="2OqNvi">
               <ref role="37wK5l" to="grvc:2N1CSrzPN_f" resolve="getVisualization" />
-              <node concept="10Nm6u" id="308cpCq5R6b" role="37wK5m" />
-              <node concept="37vLTw" id="308cpCq5R6V" role="37wK5m">
+              <node concept="10Nm6u" id="4qMlRGRnhDa" role="37wK5m" />
+              <node concept="37vLTw" id="4qMlRGRnhDb" role="37wK5m">
                 <ref role="3cqZAo" node="308cpCq5QHn" resolve="graph" />
               </node>
             </node>
@@ -1364,9 +1366,9 @@
                 <node concept="37vLTw" id="308cpCq75Mo" role="2Oq$k0">
                   <ref role="3cqZAo" node="308cpCq6BEK" resolve="actualOutput" />
                 </node>
-                <node concept="2qgKlT" id="308cpCq76sw" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRnhDc" role="2OqNvi">
                   <ref role="37wK5l" to="vdrq:7q4YwcerggR" resolve="addLine" />
-                  <node concept="37vLTw" id="308cpCq76$7" role="37wK5m">
+                  <node concept="37vLTw" id="4qMlRGRnhDe" role="37wK5m">
                     <ref role="3cqZAo" node="308cpCq74I4" resolve="textLine" />
                   </node>
                 </node>
@@ -1407,10 +1409,10 @@
             <node concept="3xONca" id="308cpCq7uUl" role="2Oq$k0">
               <ref role="3xOPvv" node="308cpCq7vQR" resolve="visualizerLeftToRight" />
             </node>
-            <node concept="2qgKlT" id="308cpCq7uUm" role="2OqNvi">
+            <node concept="3zqWPK" id="4qMlRGRnhDf" role="2OqNvi">
               <ref role="37wK5l" to="grvc:2N1CSrzPN_f" resolve="getVisualization" />
-              <node concept="10Nm6u" id="308cpCq7uUn" role="37wK5m" />
-              <node concept="37vLTw" id="308cpCq7uUo" role="37wK5m">
+              <node concept="10Nm6u" id="4qMlRGRnhDh" role="37wK5m" />
+              <node concept="37vLTw" id="4qMlRGRnhDi" role="37wK5m">
                 <ref role="3cqZAo" node="308cpCq7uUf" resolve="graph" />
               </node>
             </node>
@@ -1484,9 +1486,9 @@
                 <node concept="37vLTw" id="308cpCq7uUO" role="2Oq$k0">
                   <ref role="3cqZAo" node="308cpCq7uUq" resolve="actualOutput" />
                 </node>
-                <node concept="2qgKlT" id="308cpCq7uUP" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRnhDj" role="2OqNvi">
                   <ref role="37wK5l" to="vdrq:7q4YwcerggR" resolve="addLine" />
-                  <node concept="37vLTw" id="308cpCq7uUQ" role="37wK5m">
+                  <node concept="37vLTw" id="4qMlRGRnhDl" role="37wK5m">
                     <ref role="3cqZAo" node="308cpCq7uUD" resolve="textLine" />
                   </node>
                 </node>
@@ -1527,10 +1529,10 @@
             <node concept="3xONca" id="308cpCq7_jy" role="2Oq$k0">
               <ref role="3xOPvv" node="308cpCq7$5u" resolve="visualizerEmpty" />
             </node>
-            <node concept="2qgKlT" id="308cpCq7_jz" role="2OqNvi">
+            <node concept="3zqWPK" id="4qMlRGRnhDm" role="2OqNvi">
               <ref role="37wK5l" to="grvc:2N1CSrzPN_f" resolve="getVisualization" />
-              <node concept="10Nm6u" id="308cpCq7_j$" role="37wK5m" />
-              <node concept="37vLTw" id="308cpCq7_j_" role="37wK5m">
+              <node concept="10Nm6u" id="4qMlRGRnhDo" role="37wK5m" />
+              <node concept="37vLTw" id="4qMlRGRnhDp" role="37wK5m">
                 <ref role="3cqZAo" node="308cpCq7_js" resolve="graph" />
               </node>
             </node>
@@ -1574,10 +1576,10 @@
             <node concept="3xONca" id="308cpCqjtuA" role="2Oq$k0">
               <ref role="3xOPvv" node="308cpCqjtHu" resolve="visualizerCyclic" />
             </node>
-            <node concept="2qgKlT" id="308cpCqjtuB" role="2OqNvi">
+            <node concept="3zqWPK" id="4qMlRGRnhDq" role="2OqNvi">
               <ref role="37wK5l" to="grvc:2N1CSrzPN_f" resolve="getVisualization" />
-              <node concept="10Nm6u" id="308cpCqjtuC" role="37wK5m" />
-              <node concept="37vLTw" id="308cpCqjtuD" role="37wK5m">
+              <node concept="10Nm6u" id="4qMlRGRnhDs" role="37wK5m" />
+              <node concept="37vLTw" id="4qMlRGRnhDt" role="37wK5m">
                 <ref role="3cqZAo" node="308cpCqjtuw" resolve="graph" />
               </node>
             </node>
