@@ -14,6 +14,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -125,7 +128,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -268,7 +270,7 @@
                 <node concept="37vLTw" id="20ezT9ZBYuF" role="2Oq$k0">
                   <ref role="3cqZAo" node="7OvXfhzPDHx" resolve="instanceConfig" />
                 </node>
-                <node concept="2qgKlT" id="3_MZZHrtpp3" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRq_A3" role="2OqNvi">
                   <ref role="37wK5l" to="eup9:6JVEnxIhC2$" resolve="instances" />
                 </node>
               </node>
@@ -368,7 +370,7 @@
                   <node concept="2GrUjf" id="7OvXfhzPDKv" role="2Oq$k0">
                     <ref role="2Gs0qQ" node="7OvXfhzPDK8" resolve="comp" />
                   </node>
-                  <node concept="2qgKlT" id="7OvXfhzPDJi" role="2OqNvi">
+                  <node concept="3zqWPK" id="4qMlRGRq_A5" role="2OqNvi">
                     <ref role="37wK5l" to="eup9:71UKpntoZWS" resolve="allRequiredPorts" />
                   </node>
                 </node>
@@ -431,12 +433,12 @@
                                 <node concept="2GrUjf" id="7z1efbQRE2v" role="2Oq$k0">
                                   <ref role="2Gs0qQ" node="7OvXfhzPDKx" resolve="ci" />
                                 </node>
-                                <node concept="2qgKlT" id="7z1efbQRE2w" role="2OqNvi">
+                                <node concept="3zqWPK" id="4qMlRGRq_A7" role="2OqNvi">
                                   <ref role="37wK5l" to="eup9:2ZUGF54lpvh" resolve="getMultiConnectedInstanceAndProvidedPort" />
-                                  <node concept="2GrUjf" id="7z1efbQRE2x" role="37wK5m">
+                                  <node concept="2GrUjf" id="4qMlRGRq_A9" role="37wK5m">
                                     <ref role="2Gs0qQ" node="7OvXfhzPDJa" resolve="rp" />
                                   </node>
-                                  <node concept="37vLTw" id="7z1efbQRE2y" role="37wK5m">
+                                  <node concept="37vLTw" id="4qMlRGRq_Aa" role="37wK5m">
                                     <ref role="3cqZAo" node="7OvXfhzPDHx" resolve="instanceConfig" />
                                   </node>
                                 </node>
@@ -497,7 +499,7 @@
                           <node concept="2GrUjf" id="7z1efbQRE1O" role="2Oq$k0">
                             <ref role="2Gs0qQ" node="7OvXfhzPDJa" resolve="rp" />
                           </node>
-                          <node concept="2qgKlT" id="7z1efbQRE2d" role="2OqNvi">
+                          <node concept="3zqWPK" id="4qMlRGRq_Ab" role="2OqNvi">
                             <ref role="37wK5l" to="eup9:2ZUGF54jY1D" resolve="isMultiple" />
                           </node>
                         </node>
@@ -519,12 +521,12 @@
                                   <node concept="2GrUjf" id="7OvXfhzPDL8" role="2Oq$k0">
                                     <ref role="2Gs0qQ" node="7OvXfhzPDKx" resolve="ci" />
                                   </node>
-                                  <node concept="2qgKlT" id="7OvXfhzPDL9" role="2OqNvi">
+                                  <node concept="3zqWPK" id="4qMlRGRq_Ad" role="2OqNvi">
                                     <ref role="37wK5l" to="eup9:wOd6nl53E$" resolve="getConnectedInstanceAndProvidedPort" />
-                                    <node concept="2GrUjf" id="7OvXfhzPDLa" role="37wK5m">
+                                    <node concept="2GrUjf" id="4qMlRGRq_Af" role="37wK5m">
                                       <ref role="2Gs0qQ" node="7OvXfhzPDJa" resolve="rp" />
                                     </node>
-                                    <node concept="37vLTw" id="7OvXfhzPDLb" role="37wK5m">
+                                    <node concept="37vLTw" id="4qMlRGRq_Ag" role="37wK5m">
                                       <ref role="3cqZAo" node="7OvXfhzPDHx" resolve="instanceConfig" />
                                     </node>
                                   </node>
@@ -907,7 +909,7 @@
                     <ref role="3Tt5mk" to="p7vm:1mfTBng0JlJ" resolve="instanceConfig" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="1ijJyTDr47q" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRq_Ah" role="2OqNvi">
                   <ref role="37wK5l" to="eup9:5fn4FV$c8kP" resolve="adapters" />
                 </node>
               </node>

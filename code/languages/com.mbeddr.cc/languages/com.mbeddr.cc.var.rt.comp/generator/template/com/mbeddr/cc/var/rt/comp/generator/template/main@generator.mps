@@ -17,6 +17,9 @@
     <import index="x6xn" ref="r:6718400a-0d95-41e2-976e-b2f9b177ae4a(com.mbeddr.cc.var.rt.comp.behavior)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -104,7 +107,6 @@
       <concept id="6825476687691317627" name="com.mbeddr.cc.var.fm.structure.OptionalConstraint" flags="ng" index="Idvup" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -183,7 +185,7 @@
                               <node concept="3clFbF" id="6W8yq39oKD3" role="3cqZAp">
                                 <node concept="2OqwBi" id="6W8yq39oKD4" role="3clFbG">
                                   <node concept="30H73N" id="6W8yq39oKD6" role="2Oq$k0" />
-                                  <node concept="2qgKlT" id="6W8yq39oS8n" role="2OqNvi">
+                                  <node concept="3zqWPK" id="4qMlRGRqAvl" role="2OqNvi">
                                     <ref role="37wK5l" to="x6xn:6W8yq39oS5q" resolve="applicableRtFeatureModel" />
                                   </node>
                                 </node>
@@ -206,7 +208,7 @@
                           <node concept="3clFbS" id="6W8yq39oKDk" role="2VODD2">
                             <node concept="3clFbF" id="6W8yq39oKDl" role="3cqZAp">
                               <node concept="2OqwBi" id="6W8yq39oKDm" role="3clFbG">
-                                <node concept="2qgKlT" id="6W8yq39oS8p" role="2OqNvi">
+                                <node concept="3zqWPK" id="4qMlRGRqAvn" role="2OqNvi">
                                   <ref role="37wK5l" to="x6xn:6W8yq39oS5q" resolve="applicableRtFeatureModel" />
                                 </node>
                                 <node concept="30H73N" id="6W8yq39oKDo" role="2Oq$k0" />
