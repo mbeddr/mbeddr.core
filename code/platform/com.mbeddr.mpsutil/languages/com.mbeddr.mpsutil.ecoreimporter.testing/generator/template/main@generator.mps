@@ -15,6 +15,9 @@
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -121,7 +124,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
       <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
         <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
@@ -214,11 +216,11 @@
                           <node concept="37vLTw" id="6WnTJkDd23X" role="2Oq$k0">
                             <ref role="3cqZAo" node="79i$vAYe6Na" resolve="filePicker" />
                           </node>
-                          <node concept="2qgKlT" id="6WnTJkDuT5r" role="2OqNvi">
+                          <node concept="3zqWPK" id="4qMlRGRnhXN" role="2OqNvi">
                             <ref role="37wK5l" to="48kf:35YirduUIVl" resolve="getCanonicalPath" />
-                            <node concept="2OqwBi" id="6WnTJkDuT5s" role="37wK5m">
-                              <node concept="1iwH7S" id="6WnTJkDuT5t" role="2Oq$k0" />
-                              <node concept="1st3f0" id="6WnTJkDuT5u" role="2OqNvi" />
+                            <node concept="2OqwBi" id="4qMlRGRnhXP" role="37wK5m">
+                              <node concept="1iwH7S" id="4qMlRGRnhXQ" role="2Oq$k0" />
+                              <node concept="1st3f0" id="4qMlRGRnhXR" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
@@ -382,11 +384,11 @@
                               <node concept="37vLTw" id="6WnTJkDcx10" role="2Oq$k0">
                                 <ref role="3cqZAo" node="2FOCBFUX9Wz" resolve="filePicker" />
                               </node>
-                              <node concept="2qgKlT" id="1J_ULgBJ106" role="2OqNvi">
+                              <node concept="3zqWPK" id="4qMlRGRnhXS" role="2OqNvi">
                                 <ref role="37wK5l" to="48kf:35YirduUIVl" resolve="getCanonicalPath" />
-                                <node concept="2OqwBi" id="6WnTJkDubpR" role="37wK5m">
-                                  <node concept="1iwH7S" id="6WnTJkDub7o" role="2Oq$k0" />
-                                  <node concept="1st3f0" id="6WnTJkDubJW" role="2OqNvi" />
+                                <node concept="2OqwBi" id="4qMlRGRnhXU" role="37wK5m">
+                                  <node concept="1iwH7S" id="4qMlRGRnhXV" role="2Oq$k0" />
+                                  <node concept="1st3f0" id="4qMlRGRnhXW" role="2OqNvi" />
                                 </node>
                               </node>
                             </node>
