@@ -11,6 +11,9 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
         <child id="1224071154657" name="classifierType" index="0kSFW" />
@@ -117,7 +120,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -285,13 +287,13 @@
                           <ref role="3Tt5mk" to="11rw:3YyHFqO5xVY" resolve="matchStrategy" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="3YyHFqO7Dn_" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRqAfd" role="2OqNvi">
                         <ref role="37wK5l" to="j455:3YyHFqO6HoC" resolve="matchedTargets" />
-                        <node concept="2OqwBi" id="5be2k4jXkif" role="37wK5m">
-                          <node concept="37vLTw" id="5be2k4jXk1O" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4qMlRGRqAff" role="37wK5m">
+                          <node concept="37vLTw" id="4qMlRGRqAfg" role="2Oq$k0">
                             <ref role="3cqZAo" node="3YyHFqO7Bo2" resolve="matchNode" />
                           </node>
-                          <node concept="I4A8Y" id="5be2k4jXkyu" role="2OqNvi" />
+                          <node concept="I4A8Y" id="4qMlRGRqAfh" role="2OqNvi" />
                         </node>
                       </node>
                     </node>
@@ -390,15 +392,15 @@
                                 <ref role="3Tt5mk" to="11rw:3YyHFqO6lm$" resolve="compositionStrategy" />
                               </node>
                             </node>
-                            <node concept="2qgKlT" id="3YyHFqO7FbP" role="2OqNvi">
+                            <node concept="3zqWPK" id="4qMlRGRqAfi" role="2OqNvi">
                               <ref role="37wK5l" to="j455:3YyHFqO7EVE" resolve="compose" />
-                              <node concept="2GrUjf" id="3YyHFqO7Fdc" role="37wK5m">
+                              <node concept="2GrUjf" id="4qMlRGRqAfk" role="37wK5m">
                                 <ref role="2Gs0qQ" node="3YyHFqO7DzL" resolve="target" />
                               </node>
-                              <node concept="37vLTw" id="3YyHFqO7Fhm" role="37wK5m">
+                              <node concept="37vLTw" id="4qMlRGRqAfl" role="37wK5m">
                                 <ref role="3cqZAo" node="3YyHFqO7Bo2" resolve="matchNode" />
                               </node>
-                              <node concept="37vLTw" id="5B$wwdf6FY$" role="37wK5m">
+                              <node concept="37vLTw" id="4qMlRGRqAfm" role="37wK5m">
                                 <ref role="3cqZAo" node="5be2k4k3ZWA" resolve="context" />
                               </node>
                             </node>

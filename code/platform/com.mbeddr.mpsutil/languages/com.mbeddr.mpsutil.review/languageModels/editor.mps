@@ -21,6 +21,9 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
@@ -218,7 +221,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -262,7 +264,7 @@
                           <ref role="37wK5l" to="btm1:~StringUtils.abbreviate(java.lang.String,int)" resolve="abbreviate" />
                           <node concept="2OqwBi" id="1qdZ14gbsMy" role="37wK5m">
                             <node concept="pncrf" id="1qdZ14gbsHv" role="2Oq$k0" />
-                            <node concept="2qgKlT" id="1qdZ14gbte7" role="2OqNvi">
+                            <node concept="3zqWPK" id="4qMlRGRnhK_" role="2OqNvi">
                               <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
                             </node>
                           </node>
@@ -554,7 +556,7 @@
                           <ref role="3Tt5mk" to="7krq:4TNdqI4fvDI" resolve="note" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="7KO_iaKgyp" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRnhKB" role="2OqNvi">
                         <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
                       </node>
                     </node>
