@@ -11,7 +11,7 @@ mpsExtensions251 = "2025.1.3612.8e58247"
 
 # Versions for the master branch
 jbrMaster = "21.0.6-b895.109"
-mpsMaster = "261.23567.359"
+mpsMaster = "261.23567.370"
 mpsExtensionsMaster = "9999.9.3610.e04ea8b-SNAPSHOT"
 
 [plugins]
