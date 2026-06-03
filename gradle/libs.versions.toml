@@ -7,7 +7,7 @@ mpsExtensions241 = "2024.1.3609.9f09e92"
 # Versions for the 2025.1 branch
 jbr251 = "21.0.6-b895.109"
 mps251 = "2025.1.2"
-mpsExtensions251 = "2025.1.3617.f4f3873"
+mpsExtensions251 = "2025.1.3620.f5e6cd3"
 
 [plugins]
 common = "de.itemis.mps.gradle.common:1.30.+"
