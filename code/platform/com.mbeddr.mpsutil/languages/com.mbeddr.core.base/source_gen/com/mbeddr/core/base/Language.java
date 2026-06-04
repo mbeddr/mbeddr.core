@@ -23,6 +23,8 @@ import com.mbeddr.core.base.scripts.ScriptsDescriptor;
 import jetbrains.mps.text.rt.TextGenAspectDescriptor;
 import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
 import com.mbeddr.core.base.typesystem.TypesystemDescriptor;
+import jetbrains.mps.vcs.mergehints.runtime.VCSAspectDescriptor;
+import com.mbeddr.core.base.vcs.VCSDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import com.mbeddr.core.base.structure.ConceptPresentationAspectImpl;
@@ -89,6 +91,9 @@ public class Language extends LanguageRuntime {
     }
     if (aspectClass == IHelginsDescriptor.class) {
       return aspectClass.cast(new TypesystemDescriptor());
+    }
+    if (aspectClass == VCSAspectDescriptor.class) {
+      return aspectClass.cast(new VCSDescriptor());
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return aspectClass.cast(new com.mbeddr.core.base.structure.StructureAspectDescriptor());

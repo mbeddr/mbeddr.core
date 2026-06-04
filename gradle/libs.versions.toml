@@ -2,12 +2,12 @@
 # Versions for the 2024.1 branch
 jbr241 = "17.0.11-b1207.30"
 mps241 = "2024.1.6"
-mpsExtensions241 = "2024.1.3609.9f09e92"
+mpsExtensions241 = "2024.1.3618.a546d05"
 
 # Versions for the 2025.1 branch
 jbr251 = "21.0.6-b895.109"
 mps251 = "2025.1.2"
-mpsExtensions251 = "2025.1.3612.8e58247"
+mpsExtensions251 = "2025.1.3620.f5e6cd3"
 
 # Versions for the master branch
 jbrMaster = "21.0.6-b895.109"

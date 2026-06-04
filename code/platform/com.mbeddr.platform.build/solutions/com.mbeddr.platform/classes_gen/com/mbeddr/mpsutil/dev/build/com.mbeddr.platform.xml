@@ -275,6 +275,7 @@
           <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="63089e65-5c76-4c44-9eb6-15698b4444cf(jetbrains.mps.vcs.mergehints.runtime)" kind="rt" />
           <module ref="df7a5caa-3be8-43f2-a870-f5474c3bcdb5(nl.f1re.mps.editor.swing.runtime)" kind="rt" />
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="cl" />
@@ -370,6 +371,7 @@
           <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
           <language id="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" />
           <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+          <language id="l:37e03aa1-7289-49bc-8269-30de5eceec76:jetbrains.mps.vcs.mergehints" />
           <language id="l:62971cbe-fd2f-4135-b001-ee6cb7a74436:nl.f1re.mps.editor.swing" />
         </uses>
         <classpath>
@@ -29846,6 +29848,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.IDEA}/lib/app.jar" />
@@ -30014,6 +30017,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.jung" />
         <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
@@ -30165,6 +30169,7 @@
         <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.node" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.suppresswarning" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-algorithms.jar" />
         <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-api.jar" />
         <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-graph-impl.jar" />
@@ -30303,6 +30308,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.jung" />
@@ -30645,6 +30651,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
         <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/lib/plantuml.jar" />
@@ -30793,6 +30800,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base.pluginSolution" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
@@ -30945,6 +30953,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base.pluginSolution" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
@@ -31074,6 +31083,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -31197,6 +31207,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528" />
@@ -31320,6 +31331,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -31452,6 +31464,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528" />
@@ -31586,6 +31599,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -31711,6 +31725,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528" />
@@ -31835,6 +31850,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.jung" />
@@ -31962,6 +31978,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528" />
@@ -32086,6 +32103,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.jung" />
@@ -32206,6 +32224,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
@@ -32332,6 +32351,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.meta" />
@@ -32459,6 +32479,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.jung" />
@@ -32589,6 +32610,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.jung" />
@@ -32716,6 +32738,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.markdown" />
@@ -32846,6 +32869,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528" />
@@ -32969,6 +32993,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -33186,6 +33211,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -33311,6 +33337,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -33435,6 +33462,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -33560,6 +33588,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.aspect" />
@@ -33682,6 +33711,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base.pluginSolution" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
@@ -33802,6 +33832,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.aspect" />
@@ -34179,6 +34210,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.aspect" />
@@ -35733,6 +35765,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base.pluginSolution" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
