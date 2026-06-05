@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <slackNotifications enabled="true">
+    <slackNotification channel="#ci-platform" enabled="true" mention-channel-enabled="false" mention-slack-user-enabled="true">
+      <states>
+        <state type="beforeBuildFinish" enabled="false" />
+        <state type="buildFixed" enabled="true" />
+        <state type="buildBroken" enabled="false" />
+        <state type="buildFinished" enabled="true" />
+        <state type="buildSuccessful" enabled="true" />
+        <state type="buildFailed" enabled="true" />
+        <state type="buildStarted" enabled="false" />
+        <state type="responsibilityChanged" enabled="false" />
+        <state type="buildInterrupted" enabled="true" />
+      </states>
+      <build-types enabled-for-all="false" enabled-for-subprojects="false">
+        <build-type id="bt23" />
+      </build-types>
+    </slackNotification>
+    <slackNotification channel="#ci-mbeddr-c" enabled="true" mention-channel-enabled="false" mention-slack-user-enabled="true">
+      <states>
+        <state type="beforeBuildFinish" enabled="false" />
+        <state type="buildFixed" enabled="true" />
+        <state type="buildBroken" enabled="false" />
+        <state type="buildFinished" enabled="true" />
+        <state type="buildSuccessful" enabled="true" />
+        <state type="buildFailed" enabled="true" />
+        <state type="buildStarted" enabled="false" />
+        <state type="responsibilityChanged" enabled="false" />
+        <state type="buildInterrupted" enabled="true" />
+      </states>
+      <build-types enabled-for-all="false" enabled-for-subprojects="false">
+        <build-type id="bt21" />
+      </build-types>
+    </slackNotification>
+    <slackNotification channel="#ci-analyses-tests" enabled="true" mention-channel-enabled="false" mention-slack-user-enabled="true">
+      <states>
+        <state type="beforeBuildFinish" enabled="false" />
+        <state type="buildFixed" enabled="true" />
+        <state type="buildBroken" enabled="false" />
+        <state type="buildFinished" enabled="true" />
+        <state type="buildSuccessful" enabled="true" />
+        <state type="buildFailed" enabled="true" />
+        <state type="buildStarted" enabled="false" />
+        <state type="responsibilityChanged" enabled="false" />
+        <state type="buildInterrupted" enabled="true" />
+      </states>
+      <build-types enabled-for-all="false" enabled-for-subprojects="false">
+        <build-type id="bt20" />
+      </build-types>
+    </slackNotification>
+    <slackNotification channel="#ci-misc" enabled="true" mention-channel-enabled="false" mention-slack-user-enabled="true">
+      <states>
+        <state type="beforeBuildFinish" enabled="false" />
+        <state type="buildFixed" enabled="true" />
+        <state type="buildBroken" enabled="false" />
+        <state type="buildFinished" enabled="true" />
+        <state type="buildSuccessful" enabled="true" />
+        <state type="buildFailed" enabled="true" />
+        <state type="buildStarted" enabled="false" />
+        <state type="responsibilityChanged" enabled="false" />
+        <state type="buildInterrupted" enabled="true" />
+      </states>
+      <build-types enabled-for-all="false" enabled-for-subprojects="false">
+        <build-type id="bt71" />
+        <build-type id="bt22" />
+      </build-types>
+    </slackNotification>
+  </slackNotifications>
+</settings>
+
