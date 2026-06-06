@@ -1,12 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
-import jetbrains.buildServer.configs.kotlin.buildFeatures.AutoMerge
-import jetbrains.buildServer.configs.kotlin.buildFeatures.PullRequests
-import jetbrains.buildServer.configs.kotlin.buildFeatures.XmlReport
-import jetbrains.buildServer.configs.kotlin.buildFeatures.commitStatusPublisher
-import jetbrains.buildServer.configs.kotlin.buildFeatures.merge
-import jetbrains.buildServer.configs.kotlin.buildFeatures.pullRequests
-import jetbrains.buildServer.configs.kotlin.buildFeatures.sshAgent
-import jetbrains.buildServer.configs.kotlin.buildFeatures.xmlReport
+import jetbrains.buildServer.configs.kotlin.buildFeatures.*
 import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
 import jetbrains.buildServer.configs.kotlin.buildSteps.preliminaryMerge
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
@@ -48,12 +41,12 @@ version = "2026.1"
 
 project {
 
-    vcsRoot(Mbeddr_1)
+    vcsRoot(MbeddrVcsRoot)
 
     buildType(Platform)
     buildType(Mbeddr)
     buildType(PublishGithub)
-    buildType(PullRequests_1)
+    buildType(PullRequestsBuild)
 
     params {
         param("system.nexusPassword", "credentialsJSON:377f71c3-7ecc-4cc4-ad6b-0b3ec85e0d85")
@@ -62,25 +55,22 @@ project {
 
     features {
         untrustedBuildsSettings {
-            id = "PROJECT_EXT_28"
             defaultAction = UntrustedBuildsSettings.DefaultAction.APPROVE
             enableLog = false
             approvalRules = "group:MBEDDR_DEV:1"
         }
         githubIssues {
-            id = "PROJECT_EXT_30"
             displayName = "GitHub"
             repositoryURL = "https://github.com/mbeddr/mbeddr.core"
             param("tokenId", "")
         }
         githubConnection {
-            id = "PROJECT_EXT_9"
             displayName = "GitHub.com"
             clientId = "6a77165a61dc1187351c"
             clientSecret = "credentialsJSON:94fa375b-afe5-43d8-9eda-8be6718c5dde"
         }
     }
-    buildTypesOrder = arrayListOf(Platform, Mbeddr, PublishGithub, PullRequests_1)
+    buildTypesOrder = arrayListOf(Platform, Mbeddr, PublishGithub, PullRequestsBuild)
 }
 
 object Mbeddr : BuildType({
@@ -96,14 +86,13 @@ object Mbeddr : BuildType({
     }
 
     vcs {
-        root(Mbeddr_1)
+        root(MbeddrVcsRoot)
 
         showDependenciesChanges = true
     }
 
     steps {
         gradle {
-            id = "RUNNER_10"
             tasks = "com.mbeddr:languages:test_mbeddr com.mbeddr:languages:publish"
             gradleParams = "-Dorg.gradle.internal.http.socketTimeout=120000"
             jdkHome = "%env.JDK_17_0_x64%"
@@ -112,14 +101,12 @@ object Mbeddr : BuildType({
 
     triggers {
         vcs {
-            id = "TRIGGER_24"
             branchFilter = """
                 +:*
                 -:pull/*
             """.trimIndent()
         }
         finishBuildTrigger {
-            id = "TRIGGER_26"
             buildType = "Mbeddr2_Mbeddr_Gradle_MpsExtenstions"
             successfulOnly = true
             branchFilter = """
@@ -131,7 +118,6 @@ object Mbeddr : BuildType({
 
     failureConditions {
         failOnMetricChange {
-            id = "BUILD_EXT_11"
             metric = BuildFailureOnMetric.MetricType.TEST_COUNT
             threshold = 10
             units = BuildFailureOnMetric.MetricUnit.PERCENTS
@@ -144,7 +130,6 @@ object Mbeddr : BuildType({
 
     features {
         xmlReport {
-            id = "BUILD_EXT_5"
             reportType = XmlReport.XmlReportType.JUNIT
             rules = """
                 +:**/TEST-*.xml
@@ -154,8 +139,7 @@ object Mbeddr : BuildType({
             """.trimIndent()
         }
         commitStatusPublisher {
-            id = "BUILD_EXT_14"
-            vcsRootExtId = "${Mbeddr_1.id}"
+            vcsRootExtId = "${MbeddrVcsRoot.id}"
             publisher = github {
                 githubUrl = "https://api.github.com"
                 authType = personalToken {
@@ -164,7 +148,6 @@ object Mbeddr : BuildType({
             }
         }
         merge {
-            id = "BUILD_EXT_17"
             enabled = false
             branchFilter = "+:master"
             destinationBranch = "stable"
@@ -198,14 +181,13 @@ object Platform : BuildType({
     }
 
     vcs {
-        root(Mbeddr_1)
+        root(MbeddrVcsRoot)
 
         showDependenciesChanges = true
     }
 
     steps {
         gradle {
-            id = "RUNNER_14"
             tasks = "test_mbeddr_platform publishMbeddrPlatformPublicationToMavenRepository"
             gradleParams = "--refresh-dependencies -i dependencies -Dorg.gradle.internal.http.socketTimeout=120000"
             enableStacktrace = true
@@ -215,7 +197,6 @@ object Platform : BuildType({
 
     failureConditions {
         failOnMetricChange {
-            id = "BUILD_EXT_12"
             metric = BuildFailureOnMetric.MetricType.TEST_COUNT
             threshold = 10
             units = BuildFailureOnMetric.MetricUnit.PERCENTS
@@ -228,7 +209,6 @@ object Platform : BuildType({
 
     features {
         xmlReport {
-            id = "BUILD_EXT_6"
             reportType = XmlReport.XmlReportType.JUNIT
             rules = """
                 +:**/TEST-*.xml
@@ -238,8 +218,7 @@ object Platform : BuildType({
             """.trimIndent()
         }
         commitStatusPublisher {
-            id = "BUILD_EXT_15"
-            vcsRootExtId = "${Mbeddr_1.id}"
+            vcsRootExtId = "${MbeddrVcsRoot.id}"
             publisher = github {
                 githubUrl = "https://api.github.com"
                 authType = personalToken {
@@ -273,12 +252,11 @@ object PublishGithub : BuildType({
     }
 
     vcs {
-        root(Mbeddr_1)
+        root(MbeddrVcsRoot)
     }
 
     steps {
         gradle {
-            id = "RUNNER_15"
             tasks = "githubRelease"
             jdkHome = "%env.JDK_17_0_x64%"
             jvmArgs = "-Xmx4096m"
@@ -287,7 +265,6 @@ object PublishGithub : BuildType({
 
     triggers {
         schedule {
-            id = "TRIGGER_2"
             schedulingPolicy = weekly {
                 dayOfWeek = ScheduleTrigger.DAY.Monday
                 hour = 1
@@ -310,7 +287,7 @@ object PublishGithub : BuildType({
     }
 })
 
-object PullRequests_1 : BuildType({
+object PullRequestsBuild : BuildType({
     templates(AbsoluteId("RequiresMpsExtions"))
     id("PullRequests")
     name = "Pull Requests"
@@ -324,7 +301,7 @@ object PullRequests_1 : BuildType({
     }
 
     vcs {
-        root(Mbeddr_1)
+        root(MbeddrVcsRoot)
 
         branchFilter = """
             -:*
@@ -336,7 +313,6 @@ object PullRequests_1 : BuildType({
     steps {
         script {
             name = "Unshallow"
-            id = "Unshallow"
             scriptContent = """
                 # Preliminary Merge needs source branch to be unshallowed before merging
                 
@@ -345,17 +321,14 @@ object PullRequests_1 : BuildType({
             """.trimIndent()
         }
         preliminaryMerge {
-            id = "premergeRunner"
             targetBranchName = "%teamcity.pullRequest.target.branch%"
         }
         gradle {
-            id = "gradle_runner"
             tasks = "test_mbeddr_platform test_mbeddr publish migrate remigrate -PforceBuildPlatform"
             gradleParams = "--info"
             jdkHome = "%env.JDK_17_0_x64%"
         }
         step {
-            id = "CheckForDirtyFiles"
             type = "CheckForDirtyFiles"
             executionMode = BuildStep.ExecutionMode.DEFAULT
             param("teamcity.step.phase", "")
@@ -364,14 +337,12 @@ object PullRequests_1 : BuildType({
 
     triggers {
         vcs {
-            id = "TRIGGER_23"
             branchFilter = ""
         }
     }
 
     features {
         pullRequests {
-            id = "BUILD_EXT_26"
             provider = github {
                 authType = token {
                     token = "credentialsJSON:f3714a9a-94d0-4dc2-aa75-5aa3abb9818e"
@@ -380,7 +351,6 @@ object PullRequests_1 : BuildType({
             }
         }
         xmlReport {
-            id = "BUILD_EXT_27"
             reportType = XmlReport.XmlReportType.JUNIT
             rules = """
                 +:**/TEST-*.xml
@@ -389,8 +359,7 @@ object PullRequests_1 : BuildType({
             """.trimIndent()
         }
         commitStatusPublisher {
-            id = "BUILD_EXT_28"
-            vcsRootExtId = "${Mbeddr_1.id}"
+            vcsRootExtId = "${MbeddrVcsRoot.id}"
             publisher = github {
                 githubUrl = "https://api.github.com"
                 authType = personalToken {
@@ -399,13 +368,12 @@ object PullRequests_1 : BuildType({
             }
         }
         sshAgent {
-            id = "BUILD_EXT_30"
             teamcitySshKey = "mbeddr.github"
         }
     }
 })
 
-object Mbeddr_1 : GitVcsRoot({
+object MbeddrVcsRoot : GitVcsRoot({
     id("Mbeddr")
     name = "mbeddr"
     url = "git@github.com:mbeddr/mbeddr.core.git"
