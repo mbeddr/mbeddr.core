@@ -188,7 +188,7 @@ object Platform : BuildType({
 
     steps {
         gradle {
-            tasks = "test_mbeddr_platform publishMbeddrPlatformPublicationToMavenRepository"
+            tasks = ":com.mbeddr:platform:build :com.mbeddr:platform:publish"
             gradleParams = "--refresh-dependencies -i dependencies -Dorg.gradle.internal.http.socketTimeout=120000"
             enableStacktrace = true
             jdkHome = "%env.JDK_17_0_x64%"
