@@ -4,11 +4,16 @@ jbr241 = "17.0.11-b1207.30"
 mps241 = "2024.1.6"
 mpsExtensions241 = "2024.1.3618.a546d05"
 
+# Versions for the 2025.1 branch
+jbr251 = "21.0.6-b895.109"
+mps251 = "2025.1.2"
+mpsExtensions251 = "2025.1.3620.f5e6cd3"
+
 [plugins]
 common = "de.itemis.mps.gradle.common:1.30.+"
 jbr-toolchain = "com.specificlanguages.jbr-toolchain:1.1.0"
 
 [libraries]
-jbr = { module = "com.jetbrains.jdk:jbr_jcef", version.ref = "jbr241" }
-mps = { module = "com.jetbrains:mps", version.ref = "mps241" }
-mpsExtensions = { module = "de.itemis.mps:extensions", version.ref = "mpsExtensions241" }
+jbr = { module = "com.jetbrains.jdk:jbr_jcef", version.ref = "jbr251" }
+mps = { module = "com.jetbrains:mps", version.ref = "mps251" }
+mpsExtensions = { module = "de.itemis.mps:extensions", version.ref = "mpsExtensions251" }
