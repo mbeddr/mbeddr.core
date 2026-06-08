@@ -316,22 +316,3 @@ tasks.register("generate_mbeddr_languages") {
     description = "Generate all mbeddr languages in order to run migrations"
     dependsOn(build_mbeddr, generate_mbeddr_core_ts)
 }
-
-tasks.register("publishMbeddrToLocal") {
-    dependsOn("publishMbeddrPublicationToMavenLocal", ":com.mbeddr:platform:publishMbeddrPlatformToLocal")
-    description = "Publish mbeddr to the local maven repository."
-}
-
-//mbeddr build is "master" also for maintenance branches
-val mbeddrBuild: String by project
-if (mbeddrBuild == "master") {
-    /* this is pretty much a workaround so we don't need to change anything in Teamcity. Teamcity calls the  publishMbeddrPlatformPublicationToMavenRepository
-       tasks but since we have a new publishing target we would need to change the teamcity config to also include publishMbeddrPlatformPublicationToGitHubPackagesRepository
-       If we change the Teamcity configuration this would break older maintenance and feature branches and we would loose the ablilty to
-       rebuild the exact same source code. There for this workaround is present that adds a dependency between the itemis maven repo
-       and github packages when we are on master or a maintenance branch.
-       */
-    tasks.named("publishMbeddrPublicationToMavenRepository") {
-        dependsOn("publishMbeddrPublicationToGitHubPackagesRepository")
-    }
-}
