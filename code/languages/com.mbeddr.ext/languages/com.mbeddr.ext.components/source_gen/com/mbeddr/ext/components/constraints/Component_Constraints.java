@@ -35,7 +35,7 @@ public class Component_Constraints extends BaseConstraintsDescriptor {
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -60,7 +60,7 @@ public class Component_Constraints extends BaseConstraintsDescriptor {
   private static boolean staticCanBeAnAncestor(SNode node, SNode childNode, SAbstractConcept childConcept, SNode parentNode, SContainmentLink link) {
     return childConcept != CONCEPTS.PortAdapterRefExpr$bm;
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:4b72363d-e94a-4383-b5ad-ba453d6efac9(com.mbeddr.ext.components.constraints)", "8237807170236485034");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:4b72363d-e94a-4383-b5ad-ba453d6efac9(com.mbeddr.ext.components.constraints)", "8237807170236485034");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Component$va = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x3e5659cd94a235c9L, "com.mbeddr.ext.components.structure.Component");

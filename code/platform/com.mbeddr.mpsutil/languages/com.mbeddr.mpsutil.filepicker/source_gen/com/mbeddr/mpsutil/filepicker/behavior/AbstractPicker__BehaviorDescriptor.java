@@ -96,6 +96,9 @@ public final class AbstractPicker__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static String findInstalledSolutionPrefix_id6WnTJkDU6W6(@NotNull SNode __thisNode__, SModel originalModel) {
     SNode info = new IAttributeDescriptor.NodeAttribute(CONCEPTS.SourceModelInfo$bD).get(SNodeOperations.getContainingRoot(__thisNode__));
     SModel sourceModel = ((info != null) ? SourceModelInfo__BehaviorDescriptor.resolve_id3YjQI$iKLTv.invoke(info, originalModel.getRepository()) : originalModel);
+    if (sourceModel == null) {
+      return null;
+    }
 
     if (sourceModel.getModule().isPackaged()) {
       String sourceSolutionRoot = SolutionUtil.getSolutionRootPath(sourceModel);

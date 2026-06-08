@@ -154,16 +154,6 @@ val build_platform by tasks.registering(BuildLanguages::class) {
     outputs.upToDateWhen { false }
 }
 
-val install_actionsfilter by tasks.registering(Copy::class) {
-    dependsOn(build_actionsfilter)
-    description = "Copy the actions filter IntelliJ plugin to the MPS plugin\"s directory"
-    from("$rootDir/artifacts/com.mbeddr.mpsutil.actionsfilter/")
-    include("com.mbeddr.mpsutil.actionsfilter/")
-    into(mpsPluginsDir)
-}
-
-tasks.getByPath(":com.mbeddr:install").dependsOn(install_actionsfilter)
-
 val generate_mbeddr_platform_tests by tasks.registering(RunAntScript::class) {
     dependsOn(build_platform)
     script = script_test_mbeddrPlatform
@@ -233,11 +223,6 @@ val defaultWrapper by tasks.registering {
 }
 
 rootProject.defaultTasks("defaultWrapper")
-
-val publishMbeddrPlatformToLocal by tasks.registering {
-    dependsOn("publishMbeddrPlatformPublicationToMavenLocal")
-    description = "Publish the mbeddr platform to the local Maven repository."
-}
 
 fun getPomsOfConfiguration(cfg: Configuration): List<File> {
     val componentIds =
@@ -359,18 +344,6 @@ publishing {
 }
 
 val mbeddrBuild: String by project
-
-if (mbeddrBuild == "master") {
-    /* this is pretty much a workaround so we don"t need to change anything in Teamcity. Teamcity calls the  publishMbeddrPlatformPublicationToMavenRepository
-       tasks but since we have a new publishing target we would need to change the teamcity config to also include publishMbeddrPlatformPublicationToGitHubPackagesRepository
-       If we change the Teamcity configuration this would break older maintenance and feature branches and we would loose the ablilty to
-       rebuild the exact same source code. There for this workaround is present that adds a dependency between the itemis maven repo
-       and github packages when we are on master or a maintenance branch.
-       */
-    tasks.named("publishMbeddrPlatformPublicationToMavenRepository") {
-        dependsOn("publishMbeddrPlatformPublicationToGitHubPackagesRepository")
-    }
-}
 
 tasks.cyclonedxDirectBom {
     jsonOutput = File(reportsDir, "sbom.json")

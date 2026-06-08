@@ -16,7 +16,7 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.intellij.openapi.actionSystem.AnAction;
-import com.intellij.openapi.actionSystem.ex.ActionManagerEx;
+import com.intellij.openapi.actionSystem.ActionManager;
 import jetbrains.mps.ide.ui.tree.TreeScrollingUtil;
 import javax.swing.JPanel;
 import javax.swing.tree.TreeCellRenderer;
@@ -26,7 +26,6 @@ import javax.swing.BoxLayout;
 import com.intellij.ui.JBColor;
 import javax.swing.BorderFactory;
 import java.awt.Component;
-import com.intellij.openapi.actionSystem.ActionManager;
 import jetbrains.mps.plugins.actions.LabelledAnchor;
 import com.intellij.icons.AllIcons;
 
@@ -74,7 +73,7 @@ public class ActionMenuTree extends JTree {
   }
 
   protected void init() {
-    load(myModel.getActiveProfileOrFirst());
+    load(myModel.getActiveProfile());
   }
 
   public void load(@Nullable Profile profile) {
@@ -83,7 +82,7 @@ public class ActionMenuTree extends JTree {
     setModel(new DefaultTreeModel(root));
     if (profile != null) {
       for (ActionRootGroup group : ListSequence.fromList(ActionRootGroup.getGroups())) {
-        AnAction action = ActionManagerEx.getInstanceEx().getAction(group.getId());
+        AnAction action = ActionManager.getInstance().getAction(group.getId());
         if (action == null) {
           continue;
         }

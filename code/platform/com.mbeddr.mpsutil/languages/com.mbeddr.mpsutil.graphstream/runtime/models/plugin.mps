@@ -6,7 +6,7 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
@@ -48,9 +48,11 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
+      </concept>
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
         <property id="2756621024541341363" name="file" index="1iqoE4" />
-        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
       </concept>
       <concept id="8974276187400029891" name="jetbrains.mps.lang.resources.structure.IconExpression" flags="nn" index="1QGGTA">
         <child id="8974276187400029893" name="icon" index="1QGGTw" />
@@ -1593,8 +1595,8 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="4ppn3W9rGV0" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzRmLM" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzRylx" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocsrak" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzRylx" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$General.FitContent" resolve="FitContent" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
       </node>
@@ -1673,8 +1675,8 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="18ZQ$P85cQF" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzRB$o" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzRCLY" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocsral" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzRCLY" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$General.ZoomIn" resolve="ZoomIn" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
       </node>
@@ -1723,8 +1725,8 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="2sPLpCfQjiR" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzRCTr" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzRErq" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocsram" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzRErq" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$General.ZoomOut" resolve="ZoomOut" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
       </node>
@@ -2880,8 +2882,8 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="4iv9KfRBKWY" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzRz0M" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzR$F2" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocsran" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzR$F2" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Back" resolve="Back" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -2930,8 +2932,8 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="4iv9KfRBRSH" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzR$Mv" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzR_ZU" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocsrao" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzR_ZU" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Forward" resolve="Forward" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -2980,8 +2982,8 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="4iv9KfRC_SV" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzRA7n" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzRBmK" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocsrap" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzRBmK" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Refresh" resolve="Refresh" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>

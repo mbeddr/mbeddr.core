@@ -154,6 +154,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
           <module ref="360a4e25-e902-4667-a0a6-0e971c4f3177(com.mbeddr.mpsutil.blutil.rt)" kind="rt" />
+          <module ref="94b17d5e-87d9-4868-8101-157e83e33243(com.mbeddr.mpsutil.editor.querylist.runtime)" kind="rt" />
           <module ref="8f16104e-22e6-406d-8251-ef9688474557(com.mbeddr.mpsutil.refactoring.rt)" kind="rt" />
           <module ref="e1808c0b-7a09-4f46-9950-17a7f0b53c29(com.mbeddr.mpsutil.targetchooser)" kind="rt" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
@@ -187,6 +188,7 @@
         </dependencies>
         <uses>
           <language id="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" />
+          <language id="l:b92f861d-0184-446d-b88b-6dcf0e070241:com.mbeddr.mpsutil.intentions" />
           <language id="l:58e731a3-6aaa-444a-bf40-801b91c15878:com.mbeddr.mpsutil.lang.plugin.extensions" />
           <language id="l:1fc20ffe-f35b-4791-a0b7-d706bad5c49a:com.mbeddr.mpsutil.refactoring" />
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
@@ -274,6 +276,7 @@
           <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="63089e65-5c76-4c44-9eb6-15698b4444cf(jetbrains.mps.vcs.mergehints.runtime)" kind="rt" />
           <module ref="df7a5caa-3be8-43f2-a870-f5474c3bcdb5(nl.f1re.mps.editor.swing.runtime)" kind="rt" />
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="cl" />
@@ -369,6 +372,7 @@
           <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
           <language id="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" />
           <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+          <language id="l:37e03aa1-7289-49bc-8269-30de5eceec76:jetbrains.mps.vcs.mergehints" />
           <language id="l:62971cbe-fd2f-4135-b001-ee6cb7a74436:nl.f1re.mps.editor.swing" />
         </uses>
         <classpath>
@@ -3436,6 +3440,7 @@
           <language id="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" />
           <language id="l:28f9e497-3b42-4291-aeba-0a1039153ab1:jetbrains.mps.lang.plugin" />
           <language id="l:ef7bf5ac-d06c-4342-b11d-e42104eb9343:jetbrains.mps.lang.plugin.standalone" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
           <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
         </uses>
         <classpath>
@@ -4536,6 +4541,7 @@
           <module ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" kind="cl" />
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
           <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="cl" />
+          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
         </dependencies>
         <uses>
@@ -4828,7 +4834,7 @@
         <version>${mbeddr.version}</version>
         <vendor url="http://mbeddr.com">mbeddr</vendor>
         <depends>com.intellij.modules.mps</depends>
-        <depends>jetbrains.mps.core</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>de.q60.mps.collections.libs</depends>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -4880,6 +4886,7 @@
           <language id="l:c0080a47-7e37-4558-bee9-9ae18e690549:jetbrains.mps.lang.extension" />
           <language id="l:28f9e497-3b42-4291-aeba-0a1039153ab1:jetbrains.mps.lang.plugin" />
           <language id="l:ef7bf5ac-d06c-4342-b11d-e42104eb9343:jetbrains.mps.lang.plugin.standalone" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
           <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
         </uses>
         <library jar="../../lib/jung/jung-algorithms.jar" />
@@ -5028,8 +5035,8 @@
         <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>de.itemis.mps.utils</depends>
-        <depends>com.mbeddr.mpsutil.httpsupport</depends>
         <depends>de.itemis.stubs.batik</depends>
+        <depends>jetbrains.mps.ide.httpsupport</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -6070,7 +6077,6 @@
         <depends>de.slisson.mps.richtext</depends>
         <depends>de.itemis.mps.grammarcells</depends>
         <depends>com.mbeddr.mpsutil.editor.querylist</depends>
-        <depends>com.mbeddr.mpsutil.httpsupport</depends>
         <depends>de.itemis.mps.utils</depends>
         <depends>de.itemis.mps.blutil</depends>
         <depends>com.mbeddr.mpsutil.common</depends>
@@ -6174,7 +6180,6 @@
           <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
           <module ref="23949432-aaff-4c03-b7da-26e4e956ccea(jetbrains.mps.baseLanguage.regexp.runtime)" kind="rt" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
@@ -6196,7 +6201,6 @@
           <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
           <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
           <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
-          <language id="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" />
           <language id="l:c0080a47-7e37-4558-bee9-9ae18e690549:jetbrains.mps.lang.extension" />
           <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
           <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
@@ -6389,7 +6393,6 @@
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
           <module ref="c7a315e6-1d93-4186-85bc-2dfafd1ccc21(com.mbeddr.mpsutil.common)" kind="cl" />
           <module ref="735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)" kind="cl" />
-          <module ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3(com.mbeddr.mpsutil.nodeaccess)" kind="cl" />
           <module ref="726886d1-ef90-4249-a08f-1e3ec23a7113(com.mbeddr.mpsutil.traceExplorer)" kind="cl" />
           <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" kind="cl" />
           <module ref="6c563085-e123-4aaf-be88-fb88e02f8282(io.netty)" kind="cl" />
@@ -6487,7 +6490,6 @@
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
           <module ref="47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)" kind="cl" />
           <module ref="735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)" kind="cl" />
-          <module ref="b6f172c1-d3af-40cd-a1c3-ef9952e306b3(com.mbeddr.mpsutil.nodeaccess)" kind="cl" />
           <module ref="6c563085-e123-4aaf-be88-fb88e02f8282(io.netty)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
@@ -7161,6 +7163,7 @@
           <language id="l:28f9e497-3b42-4291-aeba-0a1039153ab1:jetbrains.mps.lang.plugin" />
           <language id="l:ef7bf5ac-d06c-4342-b11d-e42104eb9343:jetbrains.mps.lang.plugin.standalone" />
           <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
           <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
           <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
         </uses>
@@ -8625,7 +8628,6 @@
           <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
-          <module ref="39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)" kind="cl" />
           <module ref="98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea(com.mbeddr.mpsutil.datepicker.runtime)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
@@ -8705,7 +8707,6 @@
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
-          <module ref="39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)" kind="cl" />
           <module ref="fb1561dd-216d-4cd5-9cd8-5d1dc9d20bcf(com.mbeddr.mpsutil.datepicker)" kind="cl" />
           <module ref="0647eca7-da98-422a-8a8b-6ebc0bd014ea(jetbrains.mps.lang.editor#1129914002149)" kind="cl" />
         </dependencies>
@@ -8769,13 +8770,14 @@
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="cl" />
           <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
-          <module ref="39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" />
           <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
           <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
         </uses>
+        <library jar="../../lib/datepicker/microba-0.4.4.jar" />
         <classpath>
           <entry path="." />
         </classpath>
@@ -10917,6 +10919,10 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.toolrunner-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.layout}/mbeddr.mpsutil/lib" />
+    <mkdir dir="${build.layout}/mbeddr.mpsutil/lib/datepicker" />
+    <copy todir="${build.layout}/mbeddr.mpsutil/lib/datepicker">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.datepicker.runtime/lib" />
+    </copy>
     <mkdir dir="${build.layout}/mbeddr.mpsutil/lib/opencsv" />
     <copy todir="${build.layout}/mbeddr.mpsutil/lib/opencsv">
       <fileset dir="${mpsutil}/solutions/com.opencsv/lib" />
@@ -12398,6 +12404,135 @@
       </fileset>
       <zipfileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.nodediff/com.mbeddr.mpsutil.nodediff.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.nodediff-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.layout}/com.mbeddr.mpsutil.genplandiagram" />
+    <mkdir dir="${build.layout}/com.mbeddr.mpsutil.genplandiagram/lib" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.genplandiagram.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.genplandiagram.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.genplandiagram.jar/META-INF/plugin.xml">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>com.mbeddr.mpsutil.genplandiagram</id>
+        <name>com.mbeddr.mpsutil.genplandiagram</name>
+        <version>${mbeddr.version}</version>
+        <vendor url="http://mbeddr.com">mbeddr</vendor>
+        <depends>com.intellij.modules.mps</depends>
+        <depends>com.mbeddr.mpsutil.plantuml</depends>
+        <depends>de.itemis.mps.blutil</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <jar destfile="${build.layout}/com.mbeddr.mpsutil.genplandiagram/lib/com.mbeddr.mpsutil.genplandiagram.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.genplandiagram.jar" />
+    </jar>
+    <mkdir dir="${build.layout}/com.mbeddr.mpsutil.genplandiagram/languages" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.genplandiagram.jar1" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.genplandiagram.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.genplandiagram.jar1/META-INF/module.xml">
+      <module namespace="com.mbeddr.mpsutil.genplandiagram" type="language" uuid="ff3d5f86-c6fa-4c63-aa95-c2de600f92ac">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="rt" />
+          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="360a4e25-e902-4667-a0a6-0e971c4f3177(com.mbeddr.mpsutil.blutil.rt)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="23949432-aaff-4c03-b7da-26e4e956ccea(jetbrains.mps.baseLanguage.regexp.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
+          <module ref="9e9ef4e2-decf-4e97-bf80-9109e8b759bb(jetbrains.mps.lang.feedback.api)" kind="rt" />
+          <module ref="3f98f4e2-decf-4e97-bf80-9109e8b759ab(jetbrains.mps.lang.feedback.problem.rt)" kind="rt" />
+          <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
+          <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
+          <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" kind="cl" />
+          <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="cl" />
+          <module ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" kind="cl" />
+          <module ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1(com.mbeddr.mpsutil.plantuml.pluginSolution)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+          <module ref="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00(jetbrains.mps.lang.generator.plan)" kind="cl" />
+          <module ref="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" />
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" />
+          <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:96ee7a94-411d-4cf8-9b94-96cad7e52411:jetbrains.mps.baseLanguage.jdk7" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:515552c7-fcc0-4ab4-9789-2f3c49344e85:jetbrains.mps.baseLanguage.varVariable" />
+          <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
+          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
+          <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
+          <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
+          <language id="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" />
+          <language id="l:47257bf3-78d3-470b-89d9-8c3261a61d15:jetbrains.mps.lang.constraints.rules" />
+          <language id="l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds" />
+          <language id="l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton" />
+          <language id="l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context" />
+          <language id="l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs" />
+          <language id="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:cd17a113-ca4e-472f-a8de-c49008f9eea8:jetbrains.mps.lang.feedback" />
+          <language id="l:16e76fe3-9534-4def-afb7-925a169a7c0b:jetbrains.mps.lang.feedback.messages" />
+          <language id="l:033598a4-76a9-47e1-ac89-a300c0fceab8:jetbrains.mps.lang.feedback.problem" />
+          <language id="l:db2a46c2-ebec-4b6c-b6c2-f9b55b9b6f8a:jetbrains.mps.lang.feedback.problem.failingRule" />
+          <language id="l:517077fd-e44f-4338-a475-1d29781dfdb8:jetbrains.mps.lang.feedback.skeleton" />
+          <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
+          <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
+          <language id="l:ef7bf5ac-d06c-4342-b11d-e42104eb9343:jetbrains.mps.lang.plugin.standalone" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" />
+          <language id="l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:69b8a993-9b87-4d96-bf0c-3559f4bb0c63:jetbrains.mps.lang.slanguage" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="com.mbeddr.mpsutil.genplandiagram-src.jar" descriptor="com.mbeddr.mpsutil.genplandiagram.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/com.mbeddr.mpsutil.genplandiagram/languages/com.mbeddr.mpsutil.genplandiagram.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.genplandiagram" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.genplandiagram" includes="icons/**, resources/**" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.genplandiagram/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.genplandiagram.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.genplandiagram-models">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.genplandiagram/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/com.mbeddr.mpsutil.genplandiagram/languages/com.mbeddr.mpsutil.genplandiagram-src.jar" duplicate="preserve">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.genplandiagram/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.genplandiagram/com.mbeddr.mpsutil.genplandiagram.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.genplandiagram-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.layout}/com.mbeddr.mpsutil.gensupport" />
     <mkdir dir="${build.layout}/com.mbeddr.mpsutil.gensupport/lib" />
@@ -15875,7 +16010,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.mpsutil.ecore.stubs, java.compile.com.mbeddr.mpsutil.ecore.runtime, java.compile.com.mbeddr.mpsutil.ecore.ui, java.compile.com.mbeddr.mpsutil.ecore, java.compile.com.mbeddr.mpsutil.ecore.testing, java.compile.com.mbeddr.mpsutil.ecore.testing#494571880817442454, java.compile.com.mbeddr.mpsutil.ecore.testing.runtime, java.compile.com.mbeddr.mpsutil.plantuml.pluginSolution, java.compile.com.mbeddr.mpsutil.plantuml.node, java.compile.com.mbeddr.mpsutil.buildassistant, java.compile.com.mbeddr.mpsutil.dataflow, java.compile.com.mbeddr.mpsutil.dataflow#6608588380907931963, java.compile.com.mbeddr.mpsutil.dataflow.runtime, java.compile.com.mbeddr.mpsutil.dataflow.ui, java.compile.com.mbeddr.mpsutil.lang.plugin.extensions, java.compile.com.mbeddr.mpsutil.lang.plugin.extensions#3826319847679702364, java.compile.com.mbeddr.mpsutil.print.pluginSolution, java.compile.com.mbeddr.mpsutil.uniquenames, java.compile.com.mbeddr.mpsutil.conceptdiagram, java.compile.com.mbeddr.mpsutil.dependenciesdiagram, java.compile.com.mbeddr.mpsutil.genericactions, java.compile.com.mbeddr.mpsutil.nodediff, java.compile.com.mbeddr.mpsutil.mappingLabels, java.compile.com.mbeddr.mpsutil.genutil, java.compile.com.mbeddr.mpsutil.genutil#8326627235132567107, java.compile.com.mbeddr.mpsutil.xml.fix, java.compile.com.mbeddr.mpsutil.postprocessGeneratedFiles, java.compile.com.mbeddr.mpsutil.postprocessGeneratedFiles#6221197661420504433, java.compile.com.mbeddr.mpsutil.postprocessGeneratedFiles.runtime, java.compile.com.mbeddr.mpsutil.propertydefault, java.compile.com.mbeddr.mpsutil.propertydefault#1550432487215671946, java.compile.com.mbeddr.mpsutil.iconchar, java.compile.com.mbeddr.mpsutil.iconchar#8866176685648195955, java.compile.com.mbeddr.mpsutil.targetchooser, java.compile.com.mbeddr.mpsutil.hyperlink, java.compile.com.mbeddr.mpsutil.framecell, java.compile.com.mbeddr.mpsutil.framecell#8760592470372463296, java.compile.com.mbeddr.mpsutil.editor.utils, java.compile.com.mbeddr.mpsutil.strings, java.compile.com.mbeddr.mpsutil.richstring, java.compile.com.mbeddr.mpsutil.richstring#3354025285337048382, java.compile.com.mbeddr.mpsutil.common, java.compile.com.mbeddr.mpsutil.smodule, java.compile.com.mbeddr.mpsutil.smodule#8018258162245107842, java.compile.com.mbeddr.mpsutil.smodule.runtime, java.compile.com.mbeddr.mpsutil.rcp, java.compile.com.mbeddr.mpsutil.rcp#8503127430094863115, java.compile.com.mbeddr.mpsutil.rcp.runtime, java.compile.com.mbeddr.mpsutil.suppresswarning, java.compile.com.mbeddr.mpsutil.suppresswarning.gen, java.compile.com.mbeddr.mpsutil.suppresswarning.gen#9116320848000878819, java.compile.com.mbeddr.mpsutil.contextactions.runtime, java.compile.com.mbeddr.mpsutil.contextactions, java.compile.com.mbeddr.mpsutil.contextactions#3020443573906038699, java.compile.com.mbeddr.mpsutil.nodeaccess, java.compile.java.modules.cycle.1, java.compile.com.mbeddr.mpsutil.traceExplorer, java.compile.com.mbeddr.mpsutil.interpreter.rt, java.compile.com.mbeddr.mpsutil.interpreter.plugin, java.compile.com.mbeddr.mpsutil.interpreter.migration, java.compile.com.mbeddr.mpsutil.interpreter, java.compile.com.mbeddr.mpsutil.interpreter#4354378109086982943, java.compile.com.mbeddr.mpsutil.interpreter.test, java.compile.com.mbeddr.mpsutil.javainterpreter, java.compile.com.mbeddr.mpsutil.javainterpreter.richstring, java.compile.java.modules.cycle.2, java.compile.com.mbeddr.mpsutil.incrementalcomputation.runtime, java.compile.com.mbeddr.mpsutil.incrementalcomputation, java.compile.com.mbeddr.mpsutil.refactoring, java.compile.com.mbeddr.mpsutil.refactoring#4354378109086982944, java.compile.com.mbeddr.mpsutil.refactoring.rt, java.compile.java.modules.cycle.3, java.compile.com.mbeddr.mpsutil.jung.pluginSolution, java.compile.com.mbeddr.mpsutil.jung, java.compile.java.modules.cycle.4, java.compile.com.mbeddr.mpsutil.margincell.runtime, java.compile.com.mbeddr.mpsutil.margincell, java.compile.com.mbeddr.mpsutil.margincell.editor, java.compile.com.mbeddr.mpsutil.margincell.editor#97401520565243871, java.compile.java.modules.cycle.5, java.compile.com.mbeddr.mpsutil.review.runtime, java.compile.com.mbeddr.mpsutil.review, java.compile.com.mbeddr.mpsutil.review#5106355271246187087, java.compile.com.mbeddr.mpsutil.review.annotation, java.compile.com.mbeddr.mpsutil.review.readonly, java.compile.java.modules.cycle.6, java.compile.com.mbeddr.mpsutil.editingGuide, java.compile.com.mbeddr.mpsutil.editingGuide#3909459679554885946, java.compile.com.mbeddr.mpsutil.editingGuide.execution, java.compile.com.mbeddr.mpsutil.editingGuide.plugin, java.compile.com.mbeddr.mpsutil.editingGuide.runtime, java.compile.com.mbeddr.mpsutil.editingGuide.execution.lang, java.compile.com.mbeddr.mpsutil.spreferences.runtime, java.compile.com.mbeddr.mpsutil.spreferences, java.compile.com.mbeddr.mpsutil.spreferences#4354378109086982946, java.compile.com.mbeddr.mpsutil.spreferences.context, java.compile.com.mbeddr.mpsutil.preferenceform.runtime, java.compile.com.mbeddr.mpsutil.preferenceform, java.compile.com.mbeddr.mpsutil.preferenceform#4354378109086982949, java.compile.com.mbeddr.mpsutil.datepicker, java.compile.com.mbeddr.mpsutil.datepicker#2733170341479288272, java.compile.com.mbeddr.mpsutil.datepicker.runtime, java.compile.com.mbeddr.mpsutil.extensionclass, java.compile.com.mbeddr.mpsutil.extensionclass#5712676642251909534, java.compile.com.mbeddr.mpsutil.extensionclass.annotation, java.compile.com.mbeddr.mpsutil.wizard.runtime, java.compile.com.mbeddr.mpsutil.wizard, java.compile.com.mbeddr.mpsutil.wizard#4724180912012566652, java.compile.com.mbeddr.mpsutil.userstyles.runtime, java.compile.com.mbeddr.mpsutil.userstyles, java.compile.com.mbeddr.mpsutil.userstyles#8170319964140874928, java.compile.com.mbeddr.mpsutil.userstyles.buildutils, java.compile.com.mbeddr.mpsutil.parameterizedMenu, java.compile.com.mbeddr.mpsutil.parameterizedMenu#6447535233437923555, java.compile.com.mbeddr.mpsutil.asynccell, java.compile.com.mbeddr.mpsutil.blutil.test.waitfor, java.compile.com.mbeddr.mpsutil.blutil.test.waitfor#01, java.compile.org.mockito, java.compile.com.mbeddr.mpsutil.placeholderTextList, java.compile.com.mbeddr.mpsutil.placeholderTextList#1739942158294203901, java.compile.com.mbeddr.mpsutil.placeholderTextList.runtime, java.compile.java.modules.cycle.7, java.compile.com.mbeddr.mpsutil.multilingual.common.runtime, java.compile.com.mbeddr.mpsutil.multilingual.baseLanguage.runtime, java.compile.com.mbeddr.mpsutil.multilingual.concept.runtime, java.compile.com.mbeddr.mpsutil.multilingual.settings.runtime, java.compile.com.mbeddr.mpsutil.multilingual.common, java.compile.com.mbeddr.mpsutil.multilingual.common#568377005202254018, java.compile.com.mbeddr.mpsutil.bldoc, java.compile.com.mbeddr.mpsutil.multilingual.baseLanguage, java.compile.com.mbeddr.mpsutil.multilingual.baseLanguage#568377005202250215, java.compile.com.mbeddr.mpsutil.multilingual.concept, java.compile.com.mbeddr.mpsutil.multilingual.editor, java.compile.com.mbeddr.mpsutil.multilingual.editor#568377005202254015, java.compile.java.modules.cycle.8, java.compile.com.mbeddr.core.base.pluginSolution, java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.base#8626086128958648025, java.compile.com.mbeddr.mpsutil.filepicker, java.compile.com.mbeddr.mpsutil.resources, java.compile.com.mbeddr.platform, java.compile.java.modules.cycle.9, java.compile.com.mbeddr.doc, java.compile.com.mbeddr.doc#4457500422381538528, java.compile.com.mbeddr.doc.gen_latex, java.compile.com.mbeddr.doc.gen_latex#4457500422381351720, java.compile.com.mbeddr.doc.gen_xhtml, java.compile.com.mbeddr.doc.gen_xhtml#3350625596580276036, java.compile.com.mbeddr.doc.terms, java.compile.com.mbeddr.doc.terms#8574110643282389173, java.compile.com.mbeddr.doc.self, java.compile.com.mbeddr.doc.self#8730648445433126495, java.compile.com.mbeddr.doc.latex, java.compile.com.mbeddr.doc.meta, java.compile.com.mbeddr.doc.meta#4715820023543877779, java.compile.com.mbeddr.spreadsheet.libs, java.compile.com.mbeddr.spreadsheet, java.compile.com.mbeddr.spreadsheat#4354378109086982931, java.compile.com.mbeddr.doc.gen_markdown, java.compile.com.mbeddr.doc.gen_markdown.generator, java.compile.com.mbeddr.doc.markdown, java.compile.com.mbeddr.doc.markdown.generator, java.compile.com.mbeddr.slides, java.compile.com.mbeddr.slides#5455967284188432063, java.compile.com.mbeddr.doc.aspect, java.compile.com.mbeddr.doc.aspect#8077410651477853286, java.compile.com.mbeddr.doc.pluginSolution, java.compile.com.mbeddr.doc.aspect.runtime, java.compile.com.mbeddr.doc.aspect.ui, java.compile.com.mbeddr.mpsutil.jfreechart.runtime, java.compile.com.mbeddr.mpsutil.jfreechart, java.compile.java.modules.cycle.10, java.compile.com.mbeddr.mpsutil.varscope.runtime, java.compile.com.mbeddr.mpsutil.varscope, java.compile.com.opencsv, java.compile.com.mbeddr.mpsutil.genreview, java.compile.com.mbeddr.mpsutil.nodes_tracing.test, java.compile.com.mbeddr.mpsutil.nodes_tracing.test#8887445761569382511, java.compile.com.mbeddr.mpsutil.toolrunner, java.compile.com.mbeddr.mpsutil.generatorfacade, java.compile.com.mbeddr.mpsutil.xmlImport, java.compile.com.mbeddr.mpsutil.json, java.compile.com.mbeddr.core.codereview, java.compile.com.mbeddr.mpsutil.editor.displayControl, java.compile.com.mbeddr.mpsutil.logicalChild, java.compile.com.mbeddr.mpsutil.checkinHandler, java.compile.com.mbeddr.mpsutil.collections.runtime, java.compile.com.mbeddr.mpsutil.collections, java.compile.com.mbeddr.mpsutil.collections.generator" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.mpsutil.ecore.stubs, java.compile.com.mbeddr.mpsutil.ecore.runtime, java.compile.com.mbeddr.mpsutil.ecore.ui, java.compile.com.mbeddr.mpsutil.ecore, java.compile.com.mbeddr.mpsutil.ecore.testing, java.compile.com.mbeddr.mpsutil.ecore.testing#494571880817442454, java.compile.com.mbeddr.mpsutil.ecore.testing.runtime, java.compile.com.mbeddr.mpsutil.plantuml.pluginSolution, java.compile.com.mbeddr.mpsutil.plantuml.node, java.compile.com.mbeddr.mpsutil.buildassistant, java.compile.com.mbeddr.mpsutil.dataflow, java.compile.com.mbeddr.mpsutil.dataflow#6608588380907931963, java.compile.com.mbeddr.mpsutil.dataflow.runtime, java.compile.com.mbeddr.mpsutil.dataflow.ui, java.compile.com.mbeddr.mpsutil.lang.plugin.extensions, java.compile.com.mbeddr.mpsutil.lang.plugin.extensions#3826319847679702364, java.compile.com.mbeddr.mpsutil.print.pluginSolution, java.compile.com.mbeddr.mpsutil.uniquenames, java.compile.com.mbeddr.mpsutil.conceptdiagram, java.compile.com.mbeddr.mpsutil.dependenciesdiagram, java.compile.com.mbeddr.mpsutil.genericactions, java.compile.com.mbeddr.mpsutil.nodediff, java.compile.com.mbeddr.mpsutil.genplandiagram, java.compile.com.mbeddr.mpsutil.mappingLabels, java.compile.com.mbeddr.mpsutil.genutil, java.compile.com.mbeddr.mpsutil.genutil#8326627235132567107, java.compile.com.mbeddr.mpsutil.xml.fix, java.compile.com.mbeddr.mpsutil.postprocessGeneratedFiles, java.compile.com.mbeddr.mpsutil.postprocessGeneratedFiles#6221197661420504433, java.compile.com.mbeddr.mpsutil.postprocessGeneratedFiles.runtime, java.compile.com.mbeddr.mpsutil.propertydefault, java.compile.com.mbeddr.mpsutil.propertydefault#1550432487215671946, java.compile.com.mbeddr.mpsutil.iconchar, java.compile.com.mbeddr.mpsutil.iconchar#8866176685648195955, java.compile.com.mbeddr.mpsutil.targetchooser, java.compile.com.mbeddr.mpsutil.hyperlink, java.compile.com.mbeddr.mpsutil.framecell, java.compile.com.mbeddr.mpsutil.framecell#8760592470372463296, java.compile.com.mbeddr.mpsutil.editor.utils, java.compile.com.mbeddr.mpsutil.strings, java.compile.com.mbeddr.mpsutil.richstring, java.compile.com.mbeddr.mpsutil.richstring#3354025285337048382, java.compile.com.mbeddr.mpsutil.common, java.compile.com.mbeddr.mpsutil.smodule, java.compile.com.mbeddr.mpsutil.smodule#8018258162245107842, java.compile.com.mbeddr.mpsutil.smodule.runtime, java.compile.com.mbeddr.mpsutil.rcp, java.compile.com.mbeddr.mpsutil.rcp#8503127430094863115, java.compile.com.mbeddr.mpsutil.rcp.runtime, java.compile.com.mbeddr.mpsutil.suppresswarning, java.compile.com.mbeddr.mpsutil.suppresswarning.gen, java.compile.com.mbeddr.mpsutil.suppresswarning.gen#9116320848000878819, java.compile.com.mbeddr.mpsutil.contextactions.runtime, java.compile.com.mbeddr.mpsutil.contextactions, java.compile.com.mbeddr.mpsutil.contextactions#3020443573906038699, java.compile.com.mbeddr.mpsutil.nodeaccess, java.compile.java.modules.cycle.1, java.compile.com.mbeddr.mpsutil.traceExplorer, java.compile.com.mbeddr.mpsutil.interpreter.rt, java.compile.com.mbeddr.mpsutil.interpreter.plugin, java.compile.com.mbeddr.mpsutil.interpreter.migration, java.compile.com.mbeddr.mpsutil.interpreter, java.compile.com.mbeddr.mpsutil.interpreter#4354378109086982943, java.compile.com.mbeddr.mpsutil.interpreter.test, java.compile.com.mbeddr.mpsutil.javainterpreter, java.compile.com.mbeddr.mpsutil.javainterpreter.richstring, java.compile.java.modules.cycle.2, java.compile.com.mbeddr.mpsutil.incrementalcomputation.runtime, java.compile.com.mbeddr.mpsutil.incrementalcomputation, java.compile.com.mbeddr.mpsutil.refactoring, java.compile.com.mbeddr.mpsutil.refactoring#4354378109086982944, java.compile.com.mbeddr.mpsutil.refactoring.rt, java.compile.java.modules.cycle.3, java.compile.com.mbeddr.mpsutil.jung.pluginSolution, java.compile.com.mbeddr.mpsutil.jung, java.compile.java.modules.cycle.4, java.compile.com.mbeddr.mpsutil.margincell.runtime, java.compile.com.mbeddr.mpsutil.margincell, java.compile.com.mbeddr.mpsutil.margincell.editor, java.compile.com.mbeddr.mpsutil.margincell.editor#97401520565243871, java.compile.java.modules.cycle.5, java.compile.com.mbeddr.mpsutil.review.runtime, java.compile.com.mbeddr.mpsutil.review, java.compile.com.mbeddr.mpsutil.review#5106355271246187087, java.compile.com.mbeddr.mpsutil.review.annotation, java.compile.com.mbeddr.mpsutil.review.readonly, java.compile.java.modules.cycle.6, java.compile.com.mbeddr.mpsutil.editingGuide, java.compile.com.mbeddr.mpsutil.editingGuide#3909459679554885946, java.compile.com.mbeddr.mpsutil.editingGuide.execution, java.compile.com.mbeddr.mpsutil.editingGuide.plugin, java.compile.com.mbeddr.mpsutil.editingGuide.runtime, java.compile.com.mbeddr.mpsutil.editingGuide.execution.lang, java.compile.com.mbeddr.mpsutil.spreferences.runtime, java.compile.com.mbeddr.mpsutil.spreferences, java.compile.com.mbeddr.mpsutil.spreferences#4354378109086982946, java.compile.com.mbeddr.mpsutil.spreferences.context, java.compile.com.mbeddr.mpsutil.preferenceform.runtime, java.compile.com.mbeddr.mpsutil.preferenceform, java.compile.com.mbeddr.mpsutil.preferenceform#4354378109086982949, java.compile.com.mbeddr.mpsutil.datepicker, java.compile.com.mbeddr.mpsutil.datepicker#2733170341479288272, java.compile.com.mbeddr.mpsutil.datepicker.runtime, java.compile.com.mbeddr.mpsutil.extensionclass, java.compile.com.mbeddr.mpsutil.extensionclass#5712676642251909534, java.compile.com.mbeddr.mpsutil.extensionclass.annotation, java.compile.com.mbeddr.mpsutil.wizard.runtime, java.compile.com.mbeddr.mpsutil.wizard, java.compile.com.mbeddr.mpsutil.wizard#4724180912012566652, java.compile.com.mbeddr.mpsutil.userstyles.runtime, java.compile.com.mbeddr.mpsutil.userstyles, java.compile.com.mbeddr.mpsutil.userstyles#8170319964140874928, java.compile.com.mbeddr.mpsutil.userstyles.buildutils, java.compile.com.mbeddr.mpsutil.parameterizedMenu, java.compile.com.mbeddr.mpsutil.parameterizedMenu#6447535233437923555, java.compile.com.mbeddr.mpsutil.asynccell, java.compile.com.mbeddr.mpsutil.blutil.test.waitfor, java.compile.com.mbeddr.mpsutil.blutil.test.waitfor#01, java.compile.org.mockito, java.compile.com.mbeddr.mpsutil.placeholderTextList, java.compile.com.mbeddr.mpsutil.placeholderTextList#1739942158294203901, java.compile.com.mbeddr.mpsutil.placeholderTextList.runtime, java.compile.java.modules.cycle.7, java.compile.com.mbeddr.mpsutil.multilingual.common.runtime, java.compile.com.mbeddr.mpsutil.multilingual.baseLanguage.runtime, java.compile.com.mbeddr.mpsutil.multilingual.concept.runtime, java.compile.com.mbeddr.mpsutil.multilingual.settings.runtime, java.compile.com.mbeddr.mpsutil.multilingual.common, java.compile.com.mbeddr.mpsutil.multilingual.common#568377005202254018, java.compile.com.mbeddr.mpsutil.bldoc, java.compile.com.mbeddr.mpsutil.multilingual.baseLanguage, java.compile.com.mbeddr.mpsutil.multilingual.baseLanguage#568377005202250215, java.compile.com.mbeddr.mpsutil.multilingual.concept, java.compile.com.mbeddr.mpsutil.multilingual.editor, java.compile.com.mbeddr.mpsutil.multilingual.editor#568377005202254015, java.compile.java.modules.cycle.8, java.compile.com.mbeddr.core.base.pluginSolution, java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.base#8626086128958648025, java.compile.com.mbeddr.mpsutil.filepicker, java.compile.com.mbeddr.mpsutil.resources, java.compile.com.mbeddr.platform, java.compile.java.modules.cycle.9, java.compile.com.mbeddr.doc, java.compile.com.mbeddr.doc#4457500422381538528, java.compile.com.mbeddr.doc.gen_latex, java.compile.com.mbeddr.doc.gen_latex#4457500422381351720, java.compile.com.mbeddr.doc.gen_xhtml, java.compile.com.mbeddr.doc.gen_xhtml#3350625596580276036, java.compile.com.mbeddr.doc.terms, java.compile.com.mbeddr.doc.terms#8574110643282389173, java.compile.com.mbeddr.doc.self, java.compile.com.mbeddr.doc.self#8730648445433126495, java.compile.com.mbeddr.doc.latex, java.compile.com.mbeddr.doc.meta, java.compile.com.mbeddr.doc.meta#4715820023543877779, java.compile.com.mbeddr.spreadsheet.libs, java.compile.com.mbeddr.spreadsheet, java.compile.com.mbeddr.spreadsheat#4354378109086982931, java.compile.com.mbeddr.doc.gen_markdown, java.compile.com.mbeddr.doc.gen_markdown.generator, java.compile.com.mbeddr.doc.markdown, java.compile.com.mbeddr.doc.markdown.generator, java.compile.com.mbeddr.slides, java.compile.com.mbeddr.slides#5455967284188432063, java.compile.com.mbeddr.doc.aspect, java.compile.com.mbeddr.doc.aspect#8077410651477853286, java.compile.com.mbeddr.doc.pluginSolution, java.compile.com.mbeddr.doc.aspect.runtime, java.compile.com.mbeddr.doc.aspect.ui, java.compile.com.mbeddr.mpsutil.jfreechart.runtime, java.compile.com.mbeddr.mpsutil.jfreechart, java.compile.java.modules.cycle.10, java.compile.com.mbeddr.mpsutil.varscope.runtime, java.compile.com.mbeddr.mpsutil.varscope, java.compile.com.opencsv, java.compile.com.mbeddr.mpsutil.genreview, java.compile.com.mbeddr.mpsutil.nodes_tracing.test, java.compile.com.mbeddr.mpsutil.nodes_tracing.test#8887445761569382511, java.compile.com.mbeddr.mpsutil.toolrunner, java.compile.com.mbeddr.mpsutil.generatorfacade, java.compile.com.mbeddr.mpsutil.xmlImport, java.compile.com.mbeddr.mpsutil.json, java.compile.com.mbeddr.core.codereview, java.compile.com.mbeddr.mpsutil.editor.displayControl, java.compile.com.mbeddr.mpsutil.logicalChild, java.compile.com.mbeddr.mpsutil.checkinHandler, java.compile.com.mbeddr.mpsutil.collections.runtime, java.compile.com.mbeddr.mpsutil.collections, java.compile.com.mbeddr.mpsutil.collections.generator" />
   
   <target name="processResources" />
   
@@ -15922,12 +16057,16 @@
       <plugin path="${artifacts.mps}/plugins/mps-junit5" id="jetbrains.mps.junit5" />
       <plugin path="${artifacts.mps}/plugins/mps-kotlin" id="jetbrains.mps.kotlin" />
       <plugin path="${artifacts.mps}/plugins/mps-make" id="jetbrains.mps.ide.make" />
+      <plugin path="${artifacts.mps}/plugins/mps-modelchecker" id="jetbrains.mps.ide.modelchecker" />
       <plugin path="${artifacts.mps}/plugins/mps-rcp" id="jetbrains.mps.rcp" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" id="jetbrains.mps.testing" />
       <plugin path="${artifacts.mps}/plugins/mps-tooltips" id="jetbrains.mps.editor.tooltips" />
       <plugin path="${artifacts.mps}/plugins/mps-vcs" id="jetbrains.mps.vcs" />
       <plugin path="${artifacts.mps}/plugins/vcs-git" id="Git4Idea" />
       <plugin path="${artifacts.mps}/plugins/vcs-svn" id="Subversion" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.lang.extension.jar" />
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
@@ -15958,6 +16097,7 @@
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.generatorfacade/com.mbeddr.mpsutil.generatorfacade.msd" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.genericactions/com.mbeddr.mpsutil.genericactions.msd" />
+        <module file="${mpsutil}/languages/com.mbeddr.mpsutil.genplandiagram/com.mbeddr.mpsutil.genplandiagram.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.genreview/com.mbeddr.mpsutil.genreview.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.mpl" />
@@ -17583,6 +17723,85 @@
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.nodediff">
       <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.nodediff/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.com.mbeddr.mpsutil.genplandiagram" depends="java.compile.com.mbeddr.mpsutil.plantuml.node, java.compile.com.mbeddr.mpsutil.plantuml.pluginSolution, fetchDependencies">
+    <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.genplandiagram/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.genplandiagram" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.genplandiagram" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="9" target="9">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mpsutil}/languages/com.mbeddr.mpsutil.genplandiagram/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.node" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.pluginSolution" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/lib/plantuml.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/app.jar" />
+        <fileset file="${artifacts.mps}/lib/app-client.jar" />
+        <fileset file="${artifacts.mps}/lib/lib.jar" />
+        <fileset file="${artifacts.mps}/lib/lib-client.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
+        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
+        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
+        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
+        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
+        <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/trove.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.plan.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.stubs.batik/lib/xmlgraphics-commons.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.stubs.batik/lib/batik-all.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.genplandiagram">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.genplandiagram/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -19799,7 +20018,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.java.modules.cycle.1" depends="java.compile.com.mbeddr.mpsutil.common, java.compile.com.mbeddr.mpsutil.nodeaccess, fetchDependencies">
+  <target name="java.compile.java.modules.cycle.1" depends="java.compile.com.mbeddr.mpsutil.common, fetchDependencies">
     <mkdir dir="${build.tmp}/java.modules.cycle.1" />
     <javac destdir="${build.tmp}/java.modules.cycle.1" fork="false" encoding="utf8" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -19868,7 +20087,6 @@
         <fileset dir="${artifacts.de.itemis.mps.extensions}/mps-apache-commons/lib" includes="commons-primitives.jar" />
         <fileset dir="${artifacts.de.itemis.mps.extensions}/mps-apache-commons/lib" includes="miglayout-core.jar" />
         <fileset dir="${artifacts.de.itemis.mps.extensions}/mps-apache-commons/lib" includes="miglayout-swing.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -19886,7 +20104,6 @@
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
         <fileset dir="${artifacts.de.itemis.mps.extensions}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.common" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.nodeaccess" />
       </classpath>
     </javac>
   </target>
@@ -20165,7 +20382,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.com.mbeddr.mpsutil.interpreter" depends="java.compile.com.mbeddr.mpsutil.common, java.compile.com.mbeddr.mpsutil.nodeaccess, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.com.mbeddr.mpsutil.interpreter" depends="java.compile.com.mbeddr.mpsutil.common, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.interpreter/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.interpreter" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.interpreter" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="9" target="9">
@@ -20195,13 +20412,11 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.common" />
-        <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.nodeaccess" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
@@ -20250,7 +20465,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.com.mbeddr.mpsutil.interpreter#4354378109086982943" depends="java.compile.com.mbeddr.mpsutil.interpreter, java.compile.com.mbeddr.mpsutil.interpreter.rt, java.compile.com.mbeddr.mpsutil.nodeaccess, java.compile.com.mbeddr.mpsutil.traceExplorer, fetchDependencies">
+  <target name="java.compile.com.mbeddr.mpsutil.interpreter#4354378109086982943" depends="java.compile.com.mbeddr.mpsutil.interpreter, java.compile.com.mbeddr.mpsutil.interpreter.rt, java.compile.com.mbeddr.mpsutil.traceExplorer, fetchDependencies">
     <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.interpreter/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.interpreter#4354378109086982943" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.interpreter#4354378109086982943" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="9" target="9">
@@ -20284,10 +20499,8 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.interpreter" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.interpreter.rt" />
-        <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.nodeaccess" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.traceExplorer" />
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
@@ -23025,11 +23238,12 @@
         <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.datepicker.runtime/lib/microba-0.4.4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
-        <fileset file="${artifacts.mps}/lib/lib.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
+        <fileset file="${artifacts.mps}/lib/lib.jar" />
         <fileset file="${artifacts.mps}/lib/lib-client.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
         <fileset file="${artifacts.mps}/lib/util_rt.jar" />
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
@@ -23100,12 +23314,13 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.datepicker" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.datepicker.runtime" />
-        <fileset file="${artifacts.mps}/lib/app.jar" />
-        <fileset file="${artifacts.mps}/lib/lib.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.datepicker.runtime/lib/microba-0.4.4.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
+        <fileset file="${artifacts.mps}/lib/lib.jar" />
         <fileset file="${artifacts.mps}/lib/lib-client.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
         <fileset file="${artifacts.mps}/lib/util_rt.jar" />
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
@@ -23165,11 +23380,12 @@
         <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.datepicker.runtime/lib/microba-0.4.4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
-        <fileset file="${artifacts.mps}/lib/lib.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
+        <fileset file="${artifacts.mps}/lib/lib.jar" />
         <fileset file="${artifacts.mps}/lib/lib-client.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
         <fileset file="${artifacts.mps}/lib/util_rt.jar" />
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
@@ -25387,6 +25603,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -25406,6 +25623,7 @@
         <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.runtime.jar" />
@@ -25452,7 +25670,6 @@
         <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-api.jar" />
         <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-graph-impl.jar" />
         <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-visualization.jar" />
-        <fileset file="${artifacts.de.itemis.mps.extensions}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
@@ -25518,6 +25735,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.jung" />
         <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
@@ -25542,6 +25760,7 @@
         <fileset file="${artifacts.mps}/lib/trove.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
+        <fileset file="${artifacts.de.itemis.mps.extensions}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.runtime.jar" />
@@ -25635,6 +25854,7 @@
         <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.node" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.suppresswarning" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-algorithms.jar" />
         <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-api.jar" />
         <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-graph-impl.jar" />
@@ -25736,6 +25956,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.jung" />
@@ -25979,6 +26200,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
         <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/lib/plantuml.jar" />
@@ -26094,6 +26316,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base.pluginSolution" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
@@ -26213,6 +26436,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base.pluginSolution" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
@@ -26309,6 +26533,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -26399,6 +26624,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528" />
@@ -26489,6 +26715,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -26588,6 +26815,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528" />
@@ -26689,6 +26917,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -26781,6 +27010,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528" />
@@ -26872,6 +27102,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.jung" />
@@ -26966,6 +27197,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528" />
@@ -27057,6 +27289,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.jung" />
@@ -27144,6 +27377,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
@@ -27237,6 +27471,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.meta" />
@@ -27331,6 +27566,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.jung" />
@@ -27428,6 +27664,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.jung" />
@@ -27522,6 +27759,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.markdown" />
@@ -27619,6 +27857,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc#4457500422381538528" />
@@ -27709,6 +27948,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -27860,6 +28100,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -27952,6 +28193,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -28043,6 +28285,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -28135,6 +28378,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.aspect" />
@@ -28224,6 +28468,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base.pluginSolution" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
@@ -28311,6 +28556,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.aspect" />
@@ -28399,6 +28645,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.aspect" />
@@ -29268,6 +29515,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.base.pluginSolution" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.filepicker" />
@@ -29497,8 +29745,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-kotlin/lib/kotlin-builtins.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-kotlin/lib/kotlin-stdlib-1.9.20.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-kotlin/lib/kotlin-stdlib-common-1.9.20.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-kotlin/lib/kotlin-stdlib-2.1.0.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
         <fileset file="${artifacts.mps}/lib/util.jar" />

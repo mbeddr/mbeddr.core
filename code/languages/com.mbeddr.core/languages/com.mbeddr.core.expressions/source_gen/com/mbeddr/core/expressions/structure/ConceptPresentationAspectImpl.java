@@ -1044,7 +1044,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("define the type size mapping");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a221b0of);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_TypeSizeConfiguration = cpb.create();
         }
         return props_TypeSizeConfiguration;

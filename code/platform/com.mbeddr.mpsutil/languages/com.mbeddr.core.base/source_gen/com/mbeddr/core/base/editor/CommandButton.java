@@ -16,6 +16,7 @@ import java.awt.event.MouseEvent;
 import jetbrains.mps.project.MPSProject;
 import jetbrains.mps.workbench.MPSDataKeys;
 import com.intellij.ide.DataManager;
+import jetbrains.mps.project.Project;
 
 public abstract class CommandButton {
   private static Color grey = new Color(240, 240, 240);
@@ -71,9 +72,9 @@ public abstract class CommandButton {
       public void mouseReleased(MouseEvent mouseEvent) {
         l.setBackground(grey);
         // for command execution we need a repository with ProjectAccess (models are attached to a repository with GlobalModelAccess which doesn't support running actions)
-        MPSProject mpsProject = MPSDataKeys.MPS_PROJECT.getData(DataManager.getInstance().getDataContext(mouseEvent.getComponent()));
+        final MPSProject mpsProject = MPSDataKeys.MPS_PROJECT.getData(DataManager.getInstance().getDataContext(mouseEvent.getComponent()));
         assert mpsProject != null;
-        mpsProject.getRepository().getModelAccess().executeCommand(() -> perform(n));
+        mpsProject.getRepository().getModelAccess().executeCommand(() -> perform(mpsProject, n));
       }
     });
 
@@ -84,5 +85,15 @@ public abstract class CommandButton {
     return l;
   }
 
-  public abstract void perform(SNode n);
+  /**
+   * 
+   * @deprecated override perform(Project, SNode)
+   */
+  @Deprecated(since = "2025-11-06", forRemoval = true)
+  public void perform(SNode n) {
+  }
+
+  public void perform(Project mpsProject, SNode n) {
+    perform(n);
+  }
 }

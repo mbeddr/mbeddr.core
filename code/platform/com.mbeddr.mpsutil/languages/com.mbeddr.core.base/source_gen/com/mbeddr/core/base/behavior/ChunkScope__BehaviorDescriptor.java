@@ -10,6 +10,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import jetbrains.mps.project.Project;
 import org.jetbrains.mps.openapi.model.SModel;
 import java.util.List;
 import java.util.Arrays;
@@ -25,15 +26,24 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ChunkScope__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x75d4a7fbfd56888bL, "com.mbeddr.core.base.structure.ChunkScope");
 
+  public static final SMethod<Iterable<SNode>> findElements_id20N7CGtOl8_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2320231815875482149L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""), SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
   public static final SMethod<Iterable<SNode>> findElements_id7nkDZJXluPi = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8490595898229124434L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
+  /*package*/ static final SMethod<Iterable<SNode>> findElements_id69$E9O8syOu = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7089977105793035550L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Boolean> requiresGrouping_id3DYDRw0SXyk = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requiresGrouping").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4214990435118209172L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id7nkDZJXluPi, requiresGrouping_id3DYDRw0SXyk);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id20N7CGtOl8_, findElements_id7nkDZJXluPi, findElements_id69$E9O8syOu, requiresGrouping_id3DYDRw0SXyk);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
+  /*package*/ static Iterable<SNode> findElements_id20N7CGtOl8_(@NotNull SNode __thisNode__, Project mpsProject, SModel currentModel) {
+    return ((Iterable<SNode>) ChunkScope__BehaviorDescriptor.findElements_id69$E9O8syOu.invokeSpecial(__thisNode__));
+  }
+  @Deprecated(since = "2025-11-06", forRemoval = true)
   /*package*/ static Iterable<SNode> findElements_id7nkDZJXluPi(@NotNull SNode __thisNode__, SModel currentModel) {
+    return ((Iterable<SNode>) ChunkScope__BehaviorDescriptor.findElements_id69$E9O8syOu.invokeSpecial(__thisNode__));
+  }
+  /*package*/ static Iterable<SNode> findElements_id69$E9O8syOu(@NotNull SNode __thisNode__) {
     return SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(__thisNode__, LINKS.chunk$5BUE), CONCEPTS.BaseConcept$gP, false, new SAbstractConcept[]{});
   }
   /*package*/ static boolean requiresGrouping_id3DYDRw0SXyk(@NotNull SNode __thisNode__) {
@@ -56,8 +66,12 @@ public final class ChunkScope__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((Iterable<SNode>) findElements_id7nkDZJXluPi(node, (SModel) parameters[0]));
+        return (T) ((Iterable<SNode>) findElements_id20N7CGtOl8_(node, (Project) parameters[0], (SModel) parameters[1]));
       case 1:
+        return (T) ((Iterable<SNode>) findElements_id7nkDZJXluPi(node, (SModel) parameters[0]));
+      case 2:
+        return (T) ((Iterable<SNode>) findElements_id69$E9O8syOu(node));
+      case 3:
         return (T) ((Boolean) requiresGrouping_id3DYDRw0SXyk(node));
       default:
         throw new BHMethodNotFoundException(this, method);
