@@ -115,7 +115,7 @@ To contribute your module to the mbeddr platform for reuse, you probably want to
     - Add your test solution and its dependencies to the group "com.mbeddr.platform.tests"
     - Add it to the default layout
     - Add it to the test modules configuration
-- Run the build locally with `./gradlew publishMbeddrPlatformPublicationToMavenLocal` and check if your project works with it
+- Run the build locally with `./gradlew :com.mbeddr:platform:build` and check if your project works with it
 
 ## Automatic Updating Of Dependencies
 

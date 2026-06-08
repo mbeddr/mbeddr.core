@@ -224,11 +224,6 @@ val defaultWrapper by tasks.registering {
 
 rootProject.defaultTasks("defaultWrapper")
 
-val publishMbeddrPlatformToLocal by tasks.registering {
-    dependsOn("publishMbeddrPlatformPublicationToMavenLocal")
-    description = "Publish the mbeddr platform to the local Maven repository."
-}
-
 fun getPomsOfConfiguration(cfg: Configuration): List<File> {
     val componentIds =
             cfg.incoming.resolutionResult.allDependencies
@@ -349,18 +344,6 @@ publishing {
 }
 
 val mbeddrBuild: String by project
-
-if (mbeddrBuild == "master") {
-    /* this is pretty much a workaround so we don"t need to change anything in Teamcity. Teamcity calls the  publishMbeddrPlatformPublicationToMavenRepository
-       tasks but since we have a new publishing target we would need to change the teamcity config to also include publishMbeddrPlatformPublicationToGitHubPackagesRepository
-       If we change the Teamcity configuration this would break older maintenance and feature branches and we would loose the ablilty to
-       rebuild the exact same source code. There for this workaround is present that adds a dependency between the itemis maven repo
-       and github packages when we are on master or a maintenance branch.
-       */
-    tasks.named("publishMbeddrPlatformPublicationToMavenRepository") {
-        dependsOn("publishMbeddrPlatformPublicationToGitHubPackagesRepository")
-    }
-}
 
 tasks.cyclonedxDirectBom {
     jsonOutput = File(reportsDir, "sbom.json")
