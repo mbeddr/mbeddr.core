@@ -323,6 +323,10 @@ object PullRequestsBuild : BuildType({
         preliminaryMerge {
             targetBranchName = "%teamcity.pullRequest.target.branch%"
         }
+        script {
+            name = "Check libraries.xml for path variables"
+            scriptContent = "./scripts/check-libraries-no-path-vars.sh"
+        }
         gradle {
             tasks = "test_mbeddr_platform test_mbeddr publish migrate remigrate -PforceBuildPlatform"
             gradleParams = "--info"
