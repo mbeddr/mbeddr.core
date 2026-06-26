@@ -2,6 +2,7 @@ import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildFeatures.*
 import jetbrains.buildServer.configs.kotlin.buildSteps.gradle
 import jetbrains.buildServer.configs.kotlin.buildSteps.preliminaryMerge
+import jetbrains.buildServer.configs.kotlin.buildSteps.python
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.failureConditions.BuildFailureOnMetric
 import jetbrains.buildServer.configs.kotlin.failureConditions.failOnMetricChange
@@ -323,9 +324,15 @@ object PullRequestsBuild : BuildType({
         preliminaryMerge {
             targetBranchName = "%teamcity.pullRequest.target.branch%"
         }
-        script {
-            name = "Check libraries.xml for path variables"
-            scriptContent = "./scripts/check-libraries-no-path-vars.sh"
+        python {
+            name = "Pre-commit checks"
+            environment = venv {
+                requirementsFile = ".teamcity/prek-requirements.txt"
+            }
+            command = module {
+                module = "prek"
+                scriptArguments = "run --all-files --show-diff-on-failure"
+            }
         }
         gradle {
             tasks = "test_mbeddr_platform test_mbeddr publish migrate remigrate -PforceBuildPlatform"
