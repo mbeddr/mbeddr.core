@@ -60,11 +60,11 @@ val bundledDeps = listOf(
         BundledDep("jung", listOf("net.sf.jung:jung-algorithms:2.1.1",
                                 "net.sf.jung:jung-visualization:2.1.1",
                                 "net.sf.jung:jung-graph-impl:2.1.1"),
-                "com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution", {
+                "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jung.pluginSolution", {
             exclude(module = "guava")
         }),
         BundledDep("jfreechart", listOf("org.jfree:jfreechart:1.5.6"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime", {}),
-        BundledDep("plantuml", listOf("net.sourceforge.plantuml:plantuml:1.2026.2"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution"),
+        BundledDep("plantuml", listOf("net.sourceforge.plantuml:plantuml:1.2026.2"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution"),
         BundledDep("opencsv", listOf("au.com.bytecode:opencsv:2.4"), "com.mbeddr.mpsutil/solutions/com.opencsv"),
         BundledDep("mockito", listOf("org.mockito:mockito-core:5.23.0"), "com.mbeddr.mpsutil/solutions/org.mockito", {}),
         BundledDep("ecore", listOf(

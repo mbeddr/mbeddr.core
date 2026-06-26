@@ -9,3 +9,9 @@ repos:
     hooks:
       - id: mps-fix-path-variables
       - id: mps-fix-missing-modules
+      - id: mps-check-zero-sized-xmls
+      - id: mps-check-orphan-mpsr-files
+      - id: mps-check-orphan-modules
+      - id: mps-check-orphan-models
+      - id: mps-check-module-naming
+        args: [--exclude=code/applications, --exclude=code/languages, --exclude=sandbox, --exclude=runtime]
