@@ -385,13 +385,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
     SideTransformationHolderCell editorCell = new SideTransformationHolderCell(getEditorContext(), myNode, null, "flag 'volatile'") {
       @Override
       public List<MenuPart<TransformationMenuItem, TransformationMenuContext>> createMenuParts() {
-        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a0a2a0_3());
+        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a0a2a0_2());
       }
     };
     editorCell.setCellId("SideTransformationSectionCell_n4bxco_a0a2a0");
     return editorCell;
   }
-  private class GenericMenuPart_a0a0a2a0_3 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a0a0a2a0_2 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override
