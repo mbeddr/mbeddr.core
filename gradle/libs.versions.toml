@@ -11,7 +11,7 @@ mpsExtensions251 = "2025.1.3627.f265e20"
 
 # Versions for the 2026.1 branch
 jbr261 = "21.0.6-b895.109"
-mps261 = "2026.1-RC1"
+mps261 = "2026.1"
 mpsExtensions261 = "2026.1.3628.51e7c81"
 
 [plugins]
