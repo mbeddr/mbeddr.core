@@ -1,0 +1,17 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  # MPS project-structure checks. See
+  # https://github.com/specificlanguages/mps-pre-commit-hooks for what each one
+  # catches. They scan the whole repository, not just the staged files.
+  - repo: "https://github.com/specificlanguages/mps-pre-commit-hooks"
+    rev: v0.1.0
+    hooks:
+      - id: mps-fix-path-variables
+      - id: mps-fix-missing-modules
+      - id: mps-check-zero-sized-xmls
+      - id: mps-check-orphan-mpsr-files
+      - id: mps-check-orphan-modules
+      - id: mps-check-orphan-models
+      - id: mps-check-module-naming
+        args: [--exclude=code/applications, --exclude=code/languages, --exclude=sandbox, --exclude=runtime]
