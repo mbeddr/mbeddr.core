@@ -16,7 +16,7 @@
       <concept id="4560297596904469355" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModuleGroup" flags="ng" index="22LTRF">
         <reference id="4560297596904469356" name="group" index="22LTRG" />
       </concept>
-      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="nn" index="22LTRH">
+      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="ng" index="22LTRH">
         <child id="4560297596904469360" name="modules" index="22LTRK" />
         <child id="6593674873639474544" name="options" index="24cAkG" />
       </concept>
@@ -52,7 +52,7 @@
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
-      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="nn" index="2Ry0Ak">
+      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="ng" index="2Ry0Ak">
         <property id="8618885170173601779" name="head" index="2Ry0Am" />
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
@@ -102,16 +102,6 @@
       <concept id="6503355885715333289" name="jetbrains.mps.build.mps.structure.BuildMpsAspect" flags="ng" index="2igEWh">
         <property id="6503355885715353788" name="bootstrap" index="2igJW4" />
         <property id="7981469545489178349" name="generationMaxHeapSizeInMb" index="3UIfUI" />
-      </concept>
-      <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
-        <property id="6592112598314498927" name="id" index="m$_wk" />
-        <child id="6592112598314498931" name="version" index="m$_w8" />
-        <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
-        <child id="6592112598314499021" name="name" index="m$_yQ" />
-        <child id="6592112598314855574" name="containerName" index="m_cZH" />
-      </concept>
-      <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
-        <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
@@ -166,7 +156,7 @@
         <property id="322010710375892619" name="uuid" index="3LESm3" />
         <child id="322010710375956261" name="path" index="3LF7KH" />
       </concept>
-      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="nn" index="1SiIV0">
+      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="ng" index="1SiIV0">
         <child id="7259033139236285167" name="dependency" index="1SiIV1" />
       </concept>
     </language>
@@ -421,27 +411,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="m$_wf" id="7eF9rfAnzV5" role="3989C9">
-      <property role="m$_wk" value="dummy" />
-      <node concept="3_J27D" id="7eF9rfAnzV6" role="m$_yQ">
-        <node concept="3Mxwew" id="7eF9rfAnzV7" role="3MwsjC">
-          <property role="3MwjfP" value="dummy" />
-        </node>
-      </node>
-      <node concept="3_J27D" id="7eF9rfAnzV8" role="m_cZH">
-        <node concept="3Mxwew" id="7eF9rfAnzV9" role="3MwsjC">
-          <property role="3MwjfP" value="dummy" />
-        </node>
-      </node>
-      <node concept="3_J27D" id="7eF9rfAnzVa" role="m$_w8">
-        <node concept="3Mxwew" id="7eF9rfAnzVb" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
-        </node>
-      </node>
-      <node concept="m$_yC" id="7eF9rfAnzVc" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:5CFKsRWRuFN" resolve="jetbrains.mps.debugger.api" />
       </node>
     </node>
     <node concept="2G$12M" id="7eF9rfAnzVd" role="3989C9">
