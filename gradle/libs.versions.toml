@@ -17,7 +17,7 @@ mpsExtensions261 = "2026.1.3636.1edf967"
 # Versions for the master branch
 jbrMaster = "25.0.2-b329.117"
 mpsMaster = "261.25134.10249"
-mpsExtensionsMaster = "9999.9.3630.c6c7575-SNAPSHOT"
+mpsExtensionsMaster = "9999.9.3642.6a5a32a-SNAPSHOT"
 
 [plugins]
 common = "de.itemis.mps.gradle.common:1.30.+"
