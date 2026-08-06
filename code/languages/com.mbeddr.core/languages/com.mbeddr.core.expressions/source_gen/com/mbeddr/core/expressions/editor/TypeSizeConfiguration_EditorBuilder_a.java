@@ -20,7 +20,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import de.slisson.mps.tables.runtime.cells.TableEditor;
-import de.slisson.mps.hacks.editor.EditorCacheHacks;
+import de.slisson.mps.tables.runtime.cells.CellCaching;
 import de.slisson.mps.tables.runtime.cells.ChildsTracker;
 import de.slisson.mps.tables.runtime.cells.PartialTableExtractor;
 import de.slisson.mps.tables.runtime.gridmodel.Grid;
@@ -37,6 +37,7 @@ import de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeInsertAction;
 import de.slisson.mps.tables.runtime.gridmodel.ChildNodesInsertAction;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import de.slisson.mps.tables.runtime.cells.TableUtils;
 import jetbrains.mps.openapi.editor.cells.SubstituteInfo;
 import de.slisson.mps.hacks.editor.SubstituteUtil;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -127,7 +128,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
     final Wrappers._T<TableEditor> editorCell = new Wrappers._T<TableEditor>(null);
     _FunctionTypes._void_P0_E0 creator = () -> {
-      EditorCacheHacks.noCaching(editorContext, () -> {
+      CellCaching.maybeDisableCache(node, editorContext, () -> {
         try {
 
           ChildsTracker.pushNewInstance();
@@ -248,7 +249,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       Iterable<SNode> elements = SLinkOperations.getChildren(node, LINKS.specifications$a_D3);
       for (SNode child : Sequence.fromIterable(elements)) {
         final int yFinal = y;
-        EditorCell cell = editorContext.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(child);
+        EditorCell cell = TableUtils.createNodeCell(editorContext, child);
         ChildsTracker.getInstance().registerChild(cell);
         SubstituteInfo substituteInfo = SubstituteUtil.forChild(editorContext, node, (y < ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.specifications$a_D3)).count() ? ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.specifications$a_D3)).getElement(y) : null), LINKS.specifications$a_D3);
         cell.setSubstituteInfo(substituteInfo);
@@ -323,7 +324,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
     final Wrappers._T<TableEditor> editorCell = new Wrappers._T<TableEditor>(null);
     _FunctionTypes._void_P0_E0 creator = () -> {
-      EditorCacheHacks.noCaching(editorContext, () -> {
+      CellCaching.maybeDisableCache(node, editorContext, () -> {
         try {
 
           ChildsTracker.pushNewInstance();
@@ -444,7 +445,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       Iterable<SNode> elements = SLinkOperations.getChildren(node, LINKS.ieee754Specifications$mOcX);
       for (SNode child : Sequence.fromIterable(elements)) {
         final int yFinal = y;
-        EditorCell cell = editorContext.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(child);
+        EditorCell cell = TableUtils.createNodeCell(editorContext, child);
         ChildsTracker.getInstance().registerChild(cell);
         SubstituteInfo substituteInfo = SubstituteUtil.forChild(editorContext, node, (y < ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.ieee754Specifications$mOcX)).count() ? ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.ieee754Specifications$mOcX)).getElement(y) : null), LINKS.ieee754Specifications$mOcX);
         cell.setSubstituteInfo(substituteInfo);
