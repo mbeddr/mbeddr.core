@@ -324,8 +324,8 @@ object PullRequestsBuild : BuildType({
             targetBranchName = "%teamcity.pullRequest.target.branch%"
         }
         script {
-            name = "Check libraries.xml for path variables"
-            scriptContent = "./scripts/check-libraries-no-path-vars.sh"
+            name = "Pre-commit checks"
+            scriptContent = DslContext.baseDir.resolve("prek-checks.sh").readText()
         }
         gradle {
             tasks = "test_mbeddr_platform test_mbeddr publish migrate remigrate -PforceBuildPlatform"

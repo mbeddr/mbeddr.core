@@ -103,16 +103,6 @@
         <property id="6503355885715353788" name="bootstrap" index="2igJW4" />
         <property id="7981469545489178349" name="generationMaxHeapSizeInMb" index="3UIfUI" />
       </concept>
-      <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
-        <property id="6592112598314498927" name="id" index="m$_wk" />
-        <child id="6592112598314498931" name="version" index="m$_w8" />
-        <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
-        <child id="6592112598314499021" name="name" index="m$_yQ" />
-        <child id="6592112598314855574" name="containerName" index="m_cZH" />
-      </concept>
-      <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
-        <reference id="6592112598314499066" name="target" index="m$_y1" />
-      </concept>
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
@@ -242,14 +232,6 @@
         <ref role="398BVh" node="5ueaxoTn61l" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="5ueaxoTpkOX" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="62hLUH71qFg" role="1l3spd">
-      <property role="TrG5h" value="test.reports.root" />
-      <node concept="55IIr" id="62hLUH71qHU" role="398pKh">
-        <node concept="2Ry0Ak" id="62hLUH71qHW" role="iGT6I">
-          <property role="2Ry0Am" value="test-reports" />
         </node>
       </node>
     </node>
@@ -429,27 +411,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="m$_wf" id="7eF9rfAnzV5" role="3989C9">
-      <property role="m$_wk" value="dummy" />
-      <node concept="3_J27D" id="7eF9rfAnzV6" role="m$_yQ">
-        <node concept="3Mxwew" id="7eF9rfAnzV7" role="3MwsjC">
-          <property role="3MwjfP" value="dummy" />
-        </node>
-      </node>
-      <node concept="3_J27D" id="7eF9rfAnzV8" role="m_cZH">
-        <node concept="3Mxwew" id="7eF9rfAnzV9" role="3MwsjC">
-          <property role="3MwjfP" value="dummy" />
-        </node>
-      </node>
-      <node concept="3_J27D" id="7eF9rfAnzVa" role="m$_w8">
-        <node concept="3Mxwew" id="7eF9rfAnzVb" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
-        </node>
-      </node>
-      <node concept="m$_yC" id="7eF9rfAnzVc" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:5CFKsRWRuFN" resolve="jetbrains.mps.debugger.api" />
       </node>
     </node>
     <node concept="2G$12M" id="7eF9rfAnzVd" role="3989C9">
@@ -1778,6 +1739,12 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2SeJqc6Ohp2" role="3bR37C">
+          <node concept="3bR9La" id="2SeJqc6Ohp3" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
+          </node>
+        </node>
         <node concept="398BVA" id="bHMJKhDAXY" role="3LF7KH">
           <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
           <node concept="2Ry0Ak" id="bHMJKhDAYF" role="iGT6I">
@@ -1826,12 +1793,6 @@
             <node concept="3qWCbU" id="5Ap$XSqW8TG" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2SeJqc6Ohp2" role="3bR37C">
-          <node concept="3bR9La" id="2SeJqc6Ohp3" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
       </node>
@@ -3224,9 +3185,6 @@
     </node>
     <node concept="22LTRH" id="7eF9rfAnzVt" role="1hWBAP">
       <property role="TrG5h" value="mpsutil.tests" />
-      <node concept="22LTRF" id="20N7CGtRWcm" role="22LTRK">
-        <ref role="22LTRG" node="7eF9rfAnzVd" resolve="mpsutil.tests" />
-      </node>
       <node concept="24cAiW" id="76N1O$Kj6vJ" role="24cAkG">
         <node concept="24YFd4" id="58lY_Vpv0Uh" role="24YFd7">
           <ref role="24YFd5" to="90a9:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
@@ -3243,15 +3201,18 @@
         <node concept="24YFd4" id="58lY_Vpv0Yh" role="24YFd7">
           <ref role="24YFd5" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
         </node>
-        <node concept="398BVA" id="62hLUH70SSI" role="1RZ71A">
-          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-        </node>
         <node concept="398BVA" id="62hLUH71qK_" role="3l6Mlw">
           <ref role="398BVh" node="62hLUH71qFg" resolve="test.reports.root" />
           <node concept="2Ry0Ak" id="62hLUH71qLi" role="iGT6I">
             <property role="2Ry0Am" value="mpsutil.tests" />
           </node>
         </node>
+        <node concept="398BVA" id="62hLUH70SSI" role="1RZ71A">
+          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+        </node>
+      </node>
+      <node concept="22LTRF" id="20N7CGtRWcm" role="22LTRK">
+        <ref role="22LTRG" node="7eF9rfAnzVd" resolve="mpsutil.tests" />
       </node>
     </node>
     <node concept="22LTRH" id="62hLUH70SOD" role="1hWBAP">
@@ -3298,6 +3259,14 @@
     <node concept="2igEWh" id="3HpWboH_Z$G" role="1hWBAP">
       <property role="2igJW4" value="true" />
       <property role="3UIfUI" value="4096" />
+    </node>
+    <node concept="398rNT" id="62hLUH71qFg" role="1l3spd">
+      <property role="TrG5h" value="test.reports.root" />
+      <node concept="55IIr" id="62hLUH71qHU" role="398pKh">
+        <node concept="2Ry0Ak" id="62hLUH71qHW" role="iGT6I">
+          <property role="2Ry0Am" value="test-reports" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1l3spW" id="E0fxGqls4q">
