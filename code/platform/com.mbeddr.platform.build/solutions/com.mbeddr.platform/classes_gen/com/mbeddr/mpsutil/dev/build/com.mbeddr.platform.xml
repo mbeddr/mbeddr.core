@@ -697,7 +697,7 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="com.mbeddr.doc-src.jar" descriptor="doc.mpl" />
+        <sources jar="com.mbeddr.doc-src.jar" descriptor="com.mbeddr.doc.mpl" />
       </module>
     </echoxml>
     <jar destfile="${build.layout}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" duplicate="preserve">
@@ -759,7 +759,7 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="com.mbeddr.doc-src.jar" descriptor="doc.mpl" />
+        <sources jar="com.mbeddr.doc-src.jar" descriptor="com.mbeddr.doc.mpl" />
       </module>
     </echoxml>
     <jar destfile="${build.layout}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc-generator.jar" duplicate="preserve">
@@ -786,7 +786,7 @@
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mbeddr.doc}/languages/com.mbeddr.doc/doc.mpl" prefix="module" />
+      <zipfileset file="${mbeddr.doc}/languages/com.mbeddr.doc/com.mbeddr.doc.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.doc-languageModels" prefix="module/languageModels" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.doc-generator-template" prefix="module/generator/template" />
     </jar>
@@ -1894,7 +1894,7 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="com.mbeddr.spreadsheet-src.jar" descriptor="spreadsheet.mpl" />
+        <sources jar="com.mbeddr.spreadsheet-src.jar" descriptor="com.mbeddr.spreadsheet.mpl" />
       </module>
     </echoxml>
     <jar destfile="${build.layout}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.spreadsheet.jar" duplicate="preserve">
@@ -1941,7 +1941,7 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="com.mbeddr.spreadsheet-src.jar" descriptor="spreadsheet.mpl" />
+        <sources jar="com.mbeddr.spreadsheet-src.jar" descriptor="com.mbeddr.spreadsheet.mpl" />
       </module>
     </echoxml>
     <jar destfile="${build.layout}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.spreadsheet-generator.jar" duplicate="preserve">
@@ -1968,7 +1968,7 @@
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mbeddr.doc}/languages/com.mbeddr.spreadsheet/spreadsheet.mpl" prefix="module" />
+      <zipfileset file="${mbeddr.doc}/languages/com.mbeddr.spreadsheet/com.mbeddr.spreadsheet.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.spreadsheet-languageModels" prefix="module/languageModels" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.spreadsheet-generator-template" prefix="module/generator/template" />
     </jar>
@@ -2697,27 +2697,27 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="com.mbeddr.doc.pluginSolution-src.jar" descriptor="com.mbeddr.doc.pluginsolution.msd" />
+        <sources jar="com.mbeddr.doc.pluginSolution-src.jar" descriptor="com.mbeddr.doc.pluginSolution.msd" />
       </module>
     </echoxml>
     <jar destfile="${build.layout}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.pluginSolution.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.doc.pluginSolution" />
-      <fileset dir="${mbeddr.doc.aspect}/solutions/com.mbeddr.doc.aspect.runtime" includes="icons/**, resources/**" />
-      <fileset dir="${mbeddr.doc}/languages/com.mbeddr.doc/solutions/pluginssolution/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${mbeddr.doc}/solutions/com.mbeddr.doc.pluginSolution" includes="icons/**, resources/**" />
+      <fileset dir="${mbeddr.doc}/solutions/com.mbeddr.doc.pluginSolution/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.mbeddr.doc.pluginSolution.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.doc-solutions-pluginssolution-models">
-      <fileset dir="${mbeddr.doc}/languages/com.mbeddr.doc/solutions/pluginssolution/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.doc.pluginSolution-models">
+      <fileset dir="${mbeddr.doc}/solutions/com.mbeddr.doc.pluginSolution/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.pluginSolution-src.jar" duplicate="preserve">
-      <fileset dir="${mbeddr.doc}/languages/com.mbeddr.doc/solutions/pluginssolution/source_gen">
+      <fileset dir="${mbeddr.doc}/solutions/com.mbeddr.doc.pluginSolution/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mbeddr.doc}/languages/com.mbeddr.doc/solutions/pluginssolution/com.mbeddr.doc.pluginsolution.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.doc-solutions-pluginssolution-models" prefix="module/models" />
+      <zipfileset file="${mbeddr.doc}/solutions/com.mbeddr.doc.pluginSolution/com.mbeddr.doc.pluginSolution.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.doc.pluginSolution-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.doc.aspect.runtime.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.doc.aspect.runtime.jar/META-INF" />
@@ -3448,22 +3448,22 @@
     </echoxml>
     <jar destfile="${build.layout}/com.mbeddr.mpsutil.ecore/languages/group.ecore/com.mbeddr.mpsutil.ecore.ui.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore.ui" />
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui.modelexporter" includes="icons/**, resources/**" />
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui.modelexporter/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui" includes="icons/**, resources/**" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.ecore.ui.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.ecore.ui.modelexporter-models">
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui.modelexporter/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.ecore.ui-models">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/com.mbeddr.mpsutil.ecore/languages/group.ecore/com.mbeddr.mpsutil.ecore.ui-src.jar" duplicate="preserve">
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui.modelexporter/source_gen">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui.modelexporter/com.mbeddr.mpsutil.ecore.ui.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.ecore.ui.modelexporter-models" prefix="module/models" />
+      <zipfileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui/com.mbeddr.mpsutil.ecore.ui.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.ecore.ui-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.ecore.jar1" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.ecore.jar1/META-INF" />
@@ -3561,22 +3561,22 @@
     </echoxml>
     <jar destfile="${build.layout}/com.mbeddr.mpsutil.ecore/languages/group.ecore/com.mbeddr.mpsutil.ecore.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore" />
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.util" includes="icons/**, resources/**" />
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.util/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore" includes="icons/**, resources/**" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.ecore.jar1" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.ecoreimporter.util-models">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.util/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.ecore-models">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/com.mbeddr.mpsutil.ecore/languages/group.ecore/com.mbeddr.mpsutil.ecore-src.jar" duplicate="preserve">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.util/source_gen">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.util/com.mbeddr.mpsutil.ecore.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.ecoreimporter.util-models" prefix="module/models" />
+      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.ecore/com.mbeddr.mpsutil.ecore.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.ecore-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.ecore.testing.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.ecore.testing.jar/META-INF" />
@@ -3676,8 +3676,8 @@
     </echoxml>
     <jar destfile="${build.layout}/com.mbeddr.mpsutil.ecore/languages/group.ecore/com.mbeddr.mpsutil.ecore.testing.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore.testing" />
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing" includes="icons/**, resources/**" />
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing" includes="icons/**, resources/**" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.ecore.testing.jar" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.ecore.testing-generator.jar" />
@@ -3726,31 +3726,31 @@
     </echoxml>
     <jar destfile="${build.layout}/com.mbeddr.mpsutil.ecore/languages/group.ecore/com.mbeddr.mpsutil.ecore.testing-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore.testing#494571880817442454" />
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.ecore.testing-generator.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.ecoreimporter.testing-models">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.ecore.testing-models">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.ecoreimporter.testing-generator-template">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/generator/template" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.ecore.testing-generator-template">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/generator/template" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/com.mbeddr.mpsutil.ecore/languages/group.ecore/com.mbeddr.mpsutil.ecore.testing-src.jar" duplicate="preserve">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/generator/source_gen">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/source_gen">
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/com.mbeddr.mpsutil.ecore.testing.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.ecoreimporter.testing-models" prefix="module/models" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.ecoreimporter.testing-generator-template" prefix="module/generator/template" />
+      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/com.mbeddr.mpsutil.ecore.testing.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.ecore.testing-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.ecore.testing-generator-template" prefix="module/generator/template" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.ecore.testing.runtime.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.ecore.testing.runtime.jar/META-INF" />
@@ -4898,22 +4898,22 @@
     </echoxml>
     <jar destfile="${build.layout}/com.mbeddr.mpsutil.jung/languages/group.jung/com.mbeddr.mpsutil.jung.pluginSolution.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.jung.pluginSolution" />
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution" includes="icons/**, resources/**" />
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution" includes="icons/**, resources/**" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.jung.pluginSolution.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.jung-solutions-pluginSolution-models">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.jung.pluginSolution-models">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/com.mbeddr.mpsutil.jung/languages/group.jung/com.mbeddr.mpsutil.jung.pluginSolution-src.jar" duplicate="preserve">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/source_gen">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/com.mbeddr.mpsutil.jung.pluginSolution.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.jung-solutions-pluginSolution-models" prefix="module/models" />
+      <zipfileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/com.mbeddr.mpsutil.jung.pluginSolution.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.jung.pluginSolution-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.jung.jar1" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.jung.jar1/META-INF" />
@@ -5018,7 +5018,7 @@
     <mkdir dir="${build.layout}/com.mbeddr.mpsutil.jung/lib" />
     <mkdir dir="${build.layout}/com.mbeddr.mpsutil.jung/lib/jung" />
     <copy todir="${build.layout}/com.mbeddr.mpsutil.jung/lib/jung">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib" />
     </copy>
     <mkdir dir="${build.layout}/com.mbeddr.mpsutil.plantuml" />
     <mkdir dir="${build.layout}/com.mbeddr.mpsutil.plantuml/lib" />
@@ -5093,27 +5093,27 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="com.mbeddr.mpsutil.plantuml.pluginSolution-src.jar" descriptor="pluginSolution.msd" />
+        <sources jar="com.mbeddr.mpsutil.plantuml.pluginSolution-src.jar" descriptor="com.mbeddr.mpsutil.plantuml.pluginSolution.msd" />
       </module>
     </echoxml>
     <jar destfile="${build.layout}/com.mbeddr.mpsutil.plantuml/languages/group.plantuml/com.mbeddr.mpsutil.plantuml.pluginSolution.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.pluginSolution" />
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution" includes="icons/**, resources/**" />
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution" includes="icons/**, resources/**" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.plantuml.pluginSolution.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.plantuml-solutions-pluginSolution-models">
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.plantuml.pluginSolution-models">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/com.mbeddr.mpsutil.plantuml/languages/group.plantuml/com.mbeddr.mpsutil.plantuml.pluginSolution-src.jar" duplicate="preserve">
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/source_gen">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/pluginSolution.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.plantuml-solutions-pluginSolution-models" prefix="module/models" />
+      <zipfileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/com.mbeddr.mpsutil.plantuml.pluginSolution.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.plantuml.pluginSolution-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.plantuml.node.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.plantuml.node.jar/META-INF" />
@@ -5219,7 +5219,7 @@
     <mkdir dir="${build.layout}/com.mbeddr.mpsutil.plantuml/lib" />
     <mkdir dir="${build.layout}/com.mbeddr.mpsutil.plantuml/lib/plantuml" />
     <copy todir="${build.layout}/com.mbeddr.mpsutil.plantuml/lib/plantuml">
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/lib" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/lib" />
     </copy>
     <mkdir dir="${build.layout}/com.mbeddr.mpsutil.suppresswarning" />
     <mkdir dir="${build.layout}/com.mbeddr.mpsutil.suppresswarning/lib" />
@@ -8031,7 +8031,7 @@
       </module>
     </echoxml>
     <jar destfile="${build.layout}/mbeddr.mpsutil/languages/group.commenting.devkit/com.mbeddr.commenting.jar" duplicate="preserve">
-      <zipfileset file="${mpsutil}/devkits/com.mbeddr.commenting.devkit" prefix="module" />
+      <zipfileset file="${mpsutil}/devkits/com.mbeddr.commenting/com.mbeddr.commenting.devkit" prefix="module" />
       <fileset dir="${build.tmp}/default/com.mbeddr.commenting.jar" />
     </jar>
     <mkdir dir="${build.layout}/mbeddr.mpsutil/languages" />
@@ -9677,22 +9677,22 @@
     </echoxml>
     <jar destfile="${build.layout}/mbeddr.mpsutil/languages/group.multilingual/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime" />
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baselanguage.runtime" includes="icons/**, resources/**" />
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baselanguage.runtime/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime" includes="icons/**, resources/**" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.multilingual.baselanguage.runtime-models">
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baselanguage.runtime/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.multilingual.baseLanguage.runtime-models">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mbeddr.mpsutil/languages/group.multilingual/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime-src.jar" duplicate="preserve">
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baselanguage.runtime/source_gen">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baselanguage.runtime/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.multilingual.baselanguage.runtime-models" prefix="module/models" />
+      <zipfileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.multilingual.baseLanguage.runtime-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.multilingual.concept.runtime.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.multilingual.concept.runtime.jar/META-INF" />
@@ -10938,7 +10938,7 @@
       <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.editingGuide.plugin/icons" />
     </copy>
     <copy todir="${build.layout}/mbeddr.mpsutil/icons">
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui.modelexporter/icons" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui/icons" />
     </copy>
     <mkdir dir="${build.layout}/com.mbeddr.platform.build" />
     <mkdir dir="${build.layout}/com.mbeddr.platform.build/lib" />
@@ -12759,7 +12759,7 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="com.mbeddr.mpsutil.genutil-src.jar" descriptor="genutil.mpl" />
+        <sources jar="com.mbeddr.mpsutil.genutil-src.jar" descriptor="com.mbeddr.mpsutil.genutil.mpl" />
       </module>
     </echoxml>
     <jar destfile="${build.layout}/com.mbeddr.mpsutil.gensupport/languages/group.gen-support/com.mbeddr.mpsutil.genutil.jar" duplicate="preserve">
@@ -12805,7 +12805,7 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="com.mbeddr.mpsutil.genutil-src.jar" descriptor="genutil.mpl" />
+        <sources jar="com.mbeddr.mpsutil.genutil-src.jar" descriptor="com.mbeddr.mpsutil.genutil.mpl" />
       </module>
     </echoxml>
     <jar destfile="${build.layout}/com.mbeddr.mpsutil.gensupport/languages/group.gen-support/com.mbeddr.mpsutil.genutil-generator.jar" duplicate="preserve">
@@ -12832,7 +12832,7 @@
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" prefix="module" />
+      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/com.mbeddr.mpsutil.genutil.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.genutil-languageModels" prefix="module/languageModels" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.genutil-generator-template" prefix="module/generator/template" />
     </jar>
@@ -13238,7 +13238,7 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="com.mbeddr.mpsutil.refactoring-src.jar" descriptor="refactoring.mpl" />
+        <sources jar="com.mbeddr.mpsutil.refactoring-src.jar" descriptor="com.mbeddr.mpsutil.refactoring.mpl" />
       </module>
     </echoxml>
     <jar destfile="${build.layout}/mpsutil.refactoring/languages/group.refactoring/com.mbeddr.mpsutil.refactoring.jar" duplicate="preserve">
@@ -13308,7 +13308,7 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="com.mbeddr.mpsutil.refactoring-src.jar" descriptor="refactoring.mpl" />
+        <sources jar="com.mbeddr.mpsutil.refactoring-src.jar" descriptor="com.mbeddr.mpsutil.refactoring.mpl" />
       </module>
     </echoxml>
     <jar destfile="${build.layout}/mpsutil.refactoring/languages/group.refactoring/com.mbeddr.mpsutil.refactoring-generator.jar" duplicate="preserve">
@@ -13335,7 +13335,7 @@
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" prefix="module" />
+      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.refactoring-languageModels" prefix="module/languageModels" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.refactoring-generator-template" prefix="module/generator/template" />
     </jar>
@@ -13368,27 +13368,27 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="com.mbeddr.mpsutil.refactoring.rt-src.jar" descriptor="rt.msd" />
+        <sources jar="com.mbeddr.mpsutil.refactoring.rt-src.jar" descriptor="com.mbeddr.mpsutil.refactoring.rt.msd" />
       </module>
     </echoxml>
     <jar destfile="${build.layout}/mpsutil.refactoring/languages/group.refactoring/com.mbeddr.mpsutil.refactoring.rt.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring.rt" />
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt" includes="icons/**, resources/**" />
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.refactoring.rt" includes="icons/**, resources/**" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.refactoring.rt/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.refactoring.rt.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.refactoring.rt-models">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.refactoring.rt-models">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.refactoring.rt/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.layout}/mpsutil.refactoring/languages/group.refactoring/com.mbeddr.mpsutil.refactoring.rt-src.jar" duplicate="preserve">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/source_gen">
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.refactoring.rt/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/rt.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-com.mbeddr.mpsutil.refactoring.rt-models" prefix="module/models" />
+      <zipfileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.refactoring.rt/com.mbeddr.mpsutil.refactoring.rt.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.mpsutil.refactoring.rt-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.layout}/com.mbeddr.mpsutil.incrementalcomputation" />
     <mkdir dir="${build.layout}/com.mbeddr.mpsutil.incrementalcomputation/lib" />
@@ -16076,7 +16076,7 @@
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.dataflow.ui/com.mbeddr.mpsutil.dataflow.ui.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.datepicker/com.mbeddr.mpsutil.datepicker.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.datepicker.runtime/com.mbeddr.mpsutil.datepicker.runtime.msd" />
-        <module file="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.util/com.mbeddr.mpsutil.ecore.mpl" />
+        <module file="${mpsutil}/languages/com.mbeddr.mpsutil.ecore/com.mbeddr.mpsutil.ecore.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.stubs/com.mbeddr.mpsutil.ecore.stubs.msd" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.editingGuide.runtime/com.mbeddr.mpsutil.editingGuide.runtime.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.editor.displayControl/com.mbeddr.mpsutil.editor.displayControl.mpl" />
@@ -16088,7 +16088,7 @@
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.genericactions/com.mbeddr.mpsutil.genericactions.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.genplandiagram/com.mbeddr.mpsutil.genplandiagram.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.genreview/com.mbeddr.mpsutil.genreview.msd" />
-        <module file="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" />
+        <module file="${mpsutil}/languages/com.mbeddr.mpsutil.genutil/com.mbeddr.mpsutil.genutil.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.incrementalcomputation/com.mbeddr.mpsutil.incrementalcomputation.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.incrementalcomputation/runtime/com.mbeddr.mpsutil.incrementalcomputation.runtime.msd" />
@@ -16101,7 +16101,7 @@
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.jfreechart.runtime/com.mbeddr.mpsutil.jfreechart.runtime.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.json/com.mbeddr.mpsutil.json.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.mpl" />
-        <module file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/com.mbeddr.mpsutil.jung.pluginSolution.msd" />
+        <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/com.mbeddr.mpsutil.jung.pluginSolution.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.lang.plugin.extensions/com.mbeddr.mpsutil.lang.plugin.extensions.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.logicalChild/com.mbeddr.mpsutil.logicalChild.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.mappingLabels/com.mbeddr.mpsutil.mappingLabels.mpl" />
@@ -16109,7 +16109,7 @@
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.margincell.editor/com.mbeddr.mpsutil.margincell.editor.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.margincell.runtime/com.mbeddr.mpsutil.margincell.runtime.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.mpl" />
-        <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baselanguage.runtime/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime.msd" />
+        <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.multilingual.common/com.mbeddr.mpsutil.multilingual.common.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.common.runtime/com.mbeddr.mpsutil.multilingual.common.runtime.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.multilingual.concept/com.mbeddr.mpsutil.multilingual.concept.mpl" />
@@ -16122,7 +16122,7 @@
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.placeholderTextList/com.mbeddr.mpsutil.placeholderTextList.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.placeholderTextList.runtime/com.mbeddr.mpsutil.placeholderTextList.runtime.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.mpl" />
-        <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/pluginSolution.msd" />
+        <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/com.mbeddr.mpsutil.plantuml.pluginSolution.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.postprocessGeneratedFiles/com.mbeddr.mpsutil.postprocessGeneratedFiles.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.postprocessGeneratedFiles.runtime/com.mbeddr.mpsutil.postprocessGeneratedFiles.runtime.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.mpl" />
@@ -16131,8 +16131,8 @@
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.propertydefault/com.mbeddr.mpsutil.propertydefault.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.rcp/com.mbeddr.mpsutil.rcp.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.rcp/runtime/com.mbeddr.mpsutil.rcp.runtime.msd" />
-        <module file="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/refactoring.mpl" />
-        <module file="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/rt.msd" />
+        <module file="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.mpl" />
+        <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.refactoring.rt/com.mbeddr.mpsutil.refactoring.rt.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.resources/com.mbeddr.mpsutil.resources.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.mpl" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.smodule/com.mbeddr.mpsutil.smodule.mpl" />
@@ -16162,11 +16162,11 @@
         <module file="${mpsutil}/solutions/org.mockito/org.mockito.msd" />
       </chunk>
       <chunk>
-        <module file="${mpsutil}/devkits/com.mbeddr.commenting.devkit" />
+        <module file="${mpsutil}/devkits/com.mbeddr.commenting/com.mbeddr.commenting.devkit" />
         <module file="${mpsutil}/languages/com.mbeddr.core.base/com.mbeddr.core.base.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.core.base.pluginSolution/com.mbeddr.core.base.pluginSolution.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.core.codereview/com.mbeddr.core.codereview.mpl" />
-        <module file="${mbeddr.doc}/languages/com.mbeddr.doc/doc.mpl" />
+        <module file="${mbeddr.doc}/languages/com.mbeddr.doc/com.mbeddr.doc.mpl" />
         <module file="${mbeddr.doc.aspect}/languages/com.mbeddr.doc.aspect/com.mbeddr.doc.aspect.mpl" />
         <module file="${mbeddr.doc.aspect}/solutions/com.mbeddr.doc.aspect.runtime/com.mbeddr.doc.aspect.runtime.msd" />
         <module file="${mbeddr.doc.aspect}/solutions/com.mbeddr.doc.aspect.ui/com.mbeddr.doc.aspect.ui.msd" />
@@ -16176,16 +16176,16 @@
         <module file="${mbeddr.doc}/languages/com.mbeddr.doc.latex/com.mbeddr.doc.latex.mpl" />
         <module file="${mbeddr.doc}/languages/com.mbeddr.doc.markdown/com.mbeddr.doc.markdown.mpl" />
         <module file="${mbeddr.doc}/languages/com.mbeddr.doc.meta/com.mbeddr.doc.meta.mpl" />
-        <module file="${mbeddr.doc}/languages/com.mbeddr.doc/solutions/pluginssolution/com.mbeddr.doc.pluginsolution.msd" />
+        <module file="${mbeddr.doc}/solutions/com.mbeddr.doc.pluginSolution/com.mbeddr.doc.pluginSolution.msd" />
         <module file="${mbeddr.doc}/languages/com.mbeddr.doc.self/com.mbeddr.doc.self.mpl" />
         <module file="${mbeddr.doc}/languages/com.mbeddr.doc.terms/com.mbeddr.doc.terms.mpl" />
         <module file="${mbeddr.doc}/devkits/com.mbeddr.documentation/com.mbeddr.documentation.devkit" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.checkinHandler/com.mbeddr.mpsutil.checkinHandler.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.dependenciesdiagram/com.mbeddr.mpsutil.dependenciesdiagram.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.runtime/com.mbeddr.mpsutil.ecore.runtime.msd" />
-        <module file="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/com.mbeddr.mpsutil.ecore.testing.mpl" />
+        <module file="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/com.mbeddr.mpsutil.ecore.testing.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.testing.runtime/com.mbeddr.mpsutil.ecore.testing.runtime.msd" />
-        <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui.modelexporter/com.mbeddr.mpsutil.ecore.ui.msd" />
+        <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui/com.mbeddr.mpsutil.ecore.ui.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.editingGuide/com.mbeddr.mpsutil.editingGuide.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.editingGuide.execution/com.mbeddr.mpsutil.editingGuide.execution.msd" />
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.editingGuide.execution.lang/com.mbeddr.mpsutil.editingGuide.execution.lang.mpl" />
@@ -16201,7 +16201,7 @@
         <module file="${mpsutil}/languages/com.mbeddr.mpsutil.review.readonly/com.mbeddr.mpsutil.review.readonly.mpl" />
         <module file="${mpsutil}/solutions/com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.msd" />
         <module file="${mbeddr.doc}/languages/com.mbeddr.slides/com.mbeddr.slides.mpl" />
-        <module file="${mbeddr.doc}/languages/com.mbeddr.spreadsheet/spreadsheet.mpl" />
+        <module file="${mbeddr.doc}/languages/com.mbeddr.spreadsheet/com.mbeddr.spreadsheet.mpl" />
       </chunk>
       <chunk />
       <jvmargs>
@@ -16351,12 +16351,12 @@
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.ecore.ui" depends="java.compile.com.mbeddr.mpsutil.ecore.runtime, java.compile.com.mbeddr.mpsutil.ecore.stubs, fetchDependencies">
-    <mkdir dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui.modelexporter/source_gen" />
+    <mkdir dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore.ui" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore.ui" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="9" target="9">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui.modelexporter/source_gen" />
+        <path location="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
@@ -16452,17 +16452,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore.ui">
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui.modelexporter/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.ecore" depends="java.compile.com.mbeddr.mpsutil.filepicker, fetchDependencies">
-    <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.util/source_gen" />
+    <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="9" target="9">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.util/source_gen" />
+        <path location="${mpsutil}/languages/com.mbeddr.mpsutil.ecore/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
@@ -16551,17 +16551,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.util/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.ecore.testing" depends="java.compile.com.mbeddr.mpsutil.ecore.testing.runtime, java.compile.com.mbeddr.mpsutil.filepicker, fetchDependencies">
-    <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/source_gen" />
+    <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore.testing" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore.testing" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="9" target="9">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/source_gen" />
+        <path location="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
@@ -16654,17 +16654,17 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore.testing">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.ecore.testing#494571880817442454" depends="java.compile.com.mbeddr.mpsutil.ecore.testing, java.compile.com.mbeddr.mpsutil.ecore.testing.runtime, java.compile.com.mbeddr.mpsutil.filepicker, fetchDependencies">
-    <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/generator/source_gen" />
+    <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore.testing#494571880817442454" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore.testing#494571880817442454" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="9" target="9">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/generator/source_gen" />
+        <path location="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/generator/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
@@ -16753,7 +16753,7 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.ecore.testing#494571880817442454">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/generator/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/generator/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -16873,12 +16873,12 @@
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.plantuml.pluginSolution" depends="java.compile.com.mbeddr.mpsutil.plantuml.node, fetchDependencies">
-    <mkdir dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/source_gen" />
+    <mkdir dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.pluginSolution" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.pluginSolution" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="9" target="9">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/source_gen" />
+        <path location="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
@@ -16908,7 +16908,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.node" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/lib/plantuml.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/lib/plantuml.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.IDEA}/lib/app.jar" />
         <fileset file="${artifacts.IDEA}/lib/app-client.jar" />
@@ -16968,7 +16968,7 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.pluginSolution">
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -18409,7 +18409,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.pluginSolution" />
-        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/lib/plantuml.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/lib/plantuml.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.IDEA}/lib/app.jar" />
         <fileset file="${artifacts.IDEA}/lib/app-client.jar" />
@@ -23294,12 +23294,12 @@
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.refactoring.rt" depends="fetchDependencies">
-    <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/source_gen" />
+    <mkdir dir="${mpsutil}/solutions/com.mbeddr.mpsutil.refactoring.rt/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring.rt" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring.rt" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="9" target="9">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/source_gen" />
+        <path location="${mpsutil}/solutions/com.mbeddr.mpsutil.refactoring.rt/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
@@ -23373,7 +23373,7 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.refactoring.rt">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.refactoring.rt/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.refactoring.rt/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -23382,7 +23382,7 @@
     <javac destdir="${build.tmp}/java.modules.cycle.3" fork="false" encoding="utf8" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/source_gen" />
+        <path location="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/source_gen" />
         <path location="${mpsutil}/languages/com.mbeddr.mpsutil.jung/source_gen" />
       </src>
       <classpath>
@@ -23411,10 +23411,10 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-algorithms.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-api.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-graph-impl.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-visualization.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-algorithms.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-api.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-graph-impl.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-visualization.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.IDEA}/lib/app.jar" />
         <fileset file="${artifacts.IDEA}/lib/app-client.jar" />
@@ -23480,12 +23480,12 @@
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.jung.pluginSolution" depends="java.compile.java.modules.cycle.3, fetchDependencies">
-    <mkdir dir="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/source_gen" />
+    <mkdir dir="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.jung.pluginSolution" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.jung.pluginSolution" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="9" target="9">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/source_gen" />
+        <path location="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
@@ -23513,10 +23513,10 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-algorithms.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-api.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-graph-impl.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-visualization.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-algorithms.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-api.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-graph-impl.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-visualization.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.IDEA}/lib/app.jar" />
         <fileset file="${artifacts.IDEA}/lib/app-client.jar" />
@@ -23576,7 +23576,7 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.jung.pluginSolution">
-      <fileset dir="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -23614,10 +23614,10 @@
         <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-algorithms.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-api.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-graph-impl.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-visualization.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-algorithms.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-api.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-graph-impl.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-visualization.jar" />
         <fileset file="${artifacts.IDEA}/lib/app.jar" />
         <fileset file="${artifacts.IDEA}/lib/app-client.jar" />
         <fileset file="${artifacts.IDEA}/lib/lib.jar" />
@@ -28635,12 +28635,12 @@
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.multilingual.baseLanguage.runtime" depends="java.compile.com.mbeddr.mpsutil.editor.utils, java.compile.com.mbeddr.mpsutil.multilingual.common.runtime, fetchDependencies">
-    <mkdir dir="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baselanguage.runtime/source_gen" />
+    <mkdir dir="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="9" target="9">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baselanguage.runtime/source_gen" />
+        <path location="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
@@ -28718,7 +28718,7 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime">
-      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baselanguage.runtime/source_gen" excludes="**/*.java" />
+      <fileset dir="${mpsutil}/solutions/com.mbeddr.mpsutil.multilingual.baseLanguage.runtime/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -29944,10 +29944,10 @@
         <fileset dir="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.editor.diagram/lib" includes="org.eclipse.xtext.xbase.lib.jar" />
         <fileset dir="${artifacts.de.itemis.mps.extensions}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-algorithms.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-api.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-graph-impl.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-visualization.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-algorithms.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-api.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-graph-impl.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-visualization.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
@@ -30170,10 +30170,10 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.node" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.suppresswarning" />
         <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-algorithms.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-api.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-graph-impl.jar" />
-        <fileset file="${mpsutil}/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution/lib/jung-visualization.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-algorithms.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-api.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-graph-impl.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib/jung-visualization.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.IDEA}/lib/app.jar" />
         <fileset file="${artifacts.IDEA}/lib/app-client.jar" />
@@ -30654,7 +30654,7 @@
         <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
-        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/lib/plantuml.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/lib/plantuml.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.IDEA}/lib/app.jar" />
         <fileset file="${artifacts.IDEA}/lib/app-client.jar" />
@@ -30813,7 +30813,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.node" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.pluginSolution" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.suppresswarning" />
-        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/lib/plantuml.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/lib/plantuml.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.IDEA}/lib/app.jar" />
         <fileset file="${artifacts.IDEA}/lib/app-client.jar" />
@@ -30963,7 +30963,7 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.node" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.plantuml.pluginSolution" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.userstyles.runtime" />
-        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution/lib/plantuml.jar" />
+        <fileset file="${mpsutil}/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/lib/plantuml.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.IDEA}/lib/app.jar" />
         <fileset file="${artifacts.IDEA}/lib/app-client.jar" />
@@ -33676,12 +33676,12 @@
   </target>
   
   <target name="java.compile.com.mbeddr.doc.pluginSolution" depends="java.compile.com.mbeddr.core.base, java.compile.com.mbeddr.core.base.pluginSolution, java.compile.com.mbeddr.doc, java.compile.com.mbeddr.mpsutil.filepicker, java.compile.com.mbeddr.mpsutil.jung, java.compile.com.mbeddr.mpsutil.plantuml.node, fetchDependencies">
-    <mkdir dir="${mbeddr.doc}/languages/com.mbeddr.doc/solutions/pluginssolution/source_gen" />
+    <mkdir dir="${mbeddr.doc}/solutions/com.mbeddr.doc.pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.doc.pluginSolution" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.doc.pluginSolution" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="9" target="9">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${mbeddr.doc}/languages/com.mbeddr.doc/solutions/pluginssolution/source_gen" />
+        <path location="${mbeddr.doc}/solutions/com.mbeddr.doc.pluginSolution/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
@@ -33792,7 +33792,7 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.doc.pluginSolution">
-      <fileset dir="${mbeddr.doc}/languages/com.mbeddr.doc/solutions/pluginssolution/source_gen" excludes="**/*.java" />
+      <fileset dir="${mbeddr.doc}/solutions/com.mbeddr.doc.pluginSolution/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -36721,7 +36721,7 @@
     <delete dir="${mbeddr.doc}/languages/com.mbeddr.doc.markdown/source_gen" />
     <delete dir="${mbeddr.doc}/languages/com.mbeddr.doc.markdown/generator/source_gen" />
     <delete dir="${mbeddr.doc}/languages/com.mbeddr.doc.meta/source_gen" />
-    <delete dir="${mbeddr.doc}/languages/com.mbeddr.doc/solutions/pluginssolution/source_gen" />
+    <delete dir="${mbeddr.doc}/solutions/com.mbeddr.doc.pluginSolution/source_gen" />
     <delete dir="${mbeddr.doc}/languages/com.mbeddr.doc.self/source_gen" />
     <delete dir="${mbeddr.doc}/languages/com.mbeddr.doc.terms/source_gen" />
     <delete dir="${mpsutil}/solutions/com.mbeddr.mpsutil.checkinHandler/source_gen" />
@@ -36729,10 +36729,10 @@
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.contextactions/generator/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.dependenciesdiagram/source_gen" />
     <delete dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.runtime/source_gen" />
-    <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/source_gen" />
-    <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecoreimporter.testing/generator/source_gen" />
+    <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/source_gen" />
+    <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.ecore.testing/generator/source_gen" />
     <delete dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.testing.runtime/source_gen" />
-    <delete dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui.modelexporter/source_gen" />
+    <delete dir="${mpsutil}/solutions/com.mbeddr.mpsutil.ecore.ui/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.editingGuide/source_gen" />
     <delete dir="${mpsutil}/languages/com.mbeddr.mpsutil.editingGuide/generator/source_gen" />
     <delete dir="${mpsutil}/solutions/com.mbeddr.mpsutil.editingGuide.execution/source_gen" />
