@@ -71,6 +71,10 @@ tasks.register("install") {
     }
 }
 
+tasks.named("install") {
+    dependsOn(project(":com.mbeddr:platform").tasks.named("install_actionsfilter"))
+}
+
 logger.info("skipresolve_mps: {}, mpsHomeDir: {}", skipresolve_mps, mpsHomeDir)
 
 val artifactsDir: File by extra(file("${rootProject.projectDir.absolutePath}/artifacts"))
