@@ -2,7 +2,9 @@
 
 ## Checklist for creating a good PR (can be deleted)
 
-- [ ] I've described my change in the CHANGELOG.md if it is visible to users of the platform (**mandatory**).
+- [ ] I've described my user-visible change in exactly one authoritative changelog (**mandatory**):
+  - `code/platform/CHANGELOG.md` for platform modules, builds, publications, or distributions.
+  - `CHANGELOG.md` for the rest of mbeddr, including mbeddr C languages, tests, applications, tutorials, releases, and distributions.
 - [ ] I've selected the correct [base branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-base-branch-of-a-pull-request).
 - [ ] I have checked my code (edge cases, no errors) and corrected any misspellings.
 - [ ] I have added comments to my code in areas where the code is hard to understand.
