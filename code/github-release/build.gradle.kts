@@ -3,6 +3,7 @@ import java.nio.file.Paths
 import java.nio.file.StandardCopyOption
 import java.time.*
 import de.itemis.mps.gradle.GitBasedVersioning
+import org.gradle.kotlin.dsl.support.serviceOf
 
 plugins {
     id("com.github.breadmoirai.github-release") version "2.5.2"
@@ -17,7 +18,7 @@ dependencies {
     releaseArtifacts(project(":tutorial"))
 }
 
-val artifactsRoot = layout.settingsDirectory.dir("artifacts")
+val platformArtifactsRoot = project(":com.mbeddr:platform").layout.buildDirectory.dir("artifacts")
 
 val buildNumber = rootProject.findProperty("build.number")?.toString() ?: ""
 
@@ -28,6 +29,9 @@ val releaseNotes = """Automated Nighly build from ${t}."""
 val tutorialFileName = "com.mbeddr.tutorial-${versions.mbeddrBuildNumber}-MPS-${versions.mpsBuild}.zip"
 val platformFileName = "platform-distribution-${versions.mbeddrPlatformBuildNumber}-MPS-${versions.mpsBuild}.zip"
 
+val platformDistributionZip = platformArtifactsRoot.map { it.file("com.mbeddr.platform.distribution/platform-distribution.zip") }
+val renamedPlatformDistributionZip = platformArtifactsRoot.map { it.file("com.mbeddr.platform.distribution/" + platformFileName) }
+
 githubRelease {
     owner = "mbeddr"
     repo = "mbeddr.core"
@@ -37,22 +41,16 @@ githubRelease {
     releaseName = "Nightly Build " + buildNumber
     body = releaseNotes
     prerelease = true
-    releaseAssets.from(
-        artifactsRoot.file("com.mbeddr.platform.distribution/" + platformFileName),
-        releaseArtifacts)
+    releaseAssets.from(renamedPlatformDistributionZip, releaseArtifacts)
     dryRun = project.hasProperty("githubReleaseDryRun")
 }
 
-val renamePlatform by tasks.registering {
+val renamePlatform = tasks.register("renamePlatform") {
     description = "Rename the mbeddr platform distribution to include the build number."
-    dependsOn(":com.mbeddr:platform:build_platform_distribution")
+    dependsOn(":com.mbeddr:platform:assembleDistribution")
+
     doLast {
-        val dir = artifactsRoot.asFile.toPath().resolve("com.mbeddr.platform.distribution")
-        Files.copy(
-            dir.resolve("platform-distribution.zip"),
-            dir.resolve(platformFileName),
-            StandardCopyOption.REPLACE_EXISTING
-        )
+        platformDistributionZip.get().asFile.copyTo(renamedPlatformDistributionZip.get().asFile, true)
     }
 }
 

@@ -10,36 +10,51 @@ plugins {
     id("org.cyclonedx.bom") version "3.4.1"
 }
 
-val mpsPluginsDir: Provider<String> by project
+@Suppress("UNCHECKED_CAST")
+val mpsPluginsDir = parent?.extensions?.extraProperties?.properties?.get("mpsPluginsDir") as? Provider<String>
 val mbeddrBuildNumber: String by project
 val mbeddrMajor: String by project
 val mbeddrMinor: String by project
 val mbeddrPlatformBuildNumber: String by project
 
+val artifactsDirectory = layout.buildDirectory.dir("artifacts")
+
+fun artifactsDir(buildProjectName: String) = artifactsDirectory.map { it.dir(buildProjectName) }
+
 val buildScriptsDirectory = rootProject.layout.buildDirectory.dir("com.mbeddr.platform")
-val artifactsDirectory = rootProject.layout.projectDirectory.dir("artifacts")
-val platformArtifactsDirectory = rootProject.layout.projectDirectory.dir("artifacts/com.mbeddr.platform")
-val platformTestsArtifactsDirectory = rootProject.layout.projectDirectory.dir("artifacts/com.mbeddr.platform.tests")
-val actionsfilterArtifactsDirectory = rootProject.layout.projectDirectory.dir("artifacts/com.mbeddr.mpsutil.actionsfilter")
 val reportsDirectory = rootProject.layout.buildDirectory.dir("reports")
 val platformBuildFile = buildScriptsDirectory.map { it.file("build.xml") }
 val actionsfilterBuildFile = buildScriptsDirectory.map { it.file("actionsfilter.xml") }
 val platformTestsBuildFile = buildScriptsDirectory.map { it.file("build-ts-tests.xml") }
 val sandboxesBuildFile = buildScriptsDirectory.map { it.file("build-sandboxes.xml") }
 val distributionBuildFile = buildScriptsDirectory.map { it.file("build-distribution.xml") }
+val platformBuildProjectDirectory = layout.projectDirectory.dir("com.mbeddr.platform.build")
+val platformBuildSolutionDescriptor = layout.projectDirectory.file("com.mbeddr.platform.build/solutions/com.mbeddr.platform/com.mbeddr.platform.msd")
+val platformTestsBuildSolutionDescriptor = layout.projectDirectory.file("com.mbeddr.platform.build/solutions/com.mbeddr.platform.tests.build/com.mbeddr.platform.tests.build.msd")
 
 // Project group
 group = "com.mbeddr"
 version = mbeddrPlatformBuildNumber
+
+// MPS-extensions is bundled into the generated MPS builds. It is not a JVM API
+// dependency of this Gradle project, so keep it out of Gradle's API/runtime graphs.
+val providedMpsExtensions by configurations.creating {
+    isCanBeConsumed = false
+    isCanBeResolved = true
+}
+
+configurations.named("mpsLibraries") {
+    extendsFrom(providedMpsExtensions)
+}
 
 dependencies {
     mps(libs.mps)
     jbr(libs.jbr)
 
     if (project.hasProperty("mpsExtensionsZip")) {
-        api(files(project.property("mpsExtensionsZip")))
+        add("providedMpsExtensions", files(project.property("mpsExtensionsZip")))
     } else {
-        api(libs.mpsExtensions)
+        add("providedMpsExtensions", libs.mpsExtensions)
     }
 }
 
@@ -48,19 +63,7 @@ providers.gradleProperty("mpsHomeDir").orNull?.let { mpsHomeDir ->
 }
 
 mpsDefaults.mpsLibrariesDirectory = rootProject.layout.buildDirectory.dir("dependencies")
-mpsDefaults.pathVariables.put("artifacts.root", artifactsDirectory.asFile)
-mpsDefaults.pathVariables.put("mbeddr.github.core.home", rootProject.layout.projectDirectory.asFile)
-
-val preparePlatformArtifacts by tasks.registering {
-    outputs.dir(artifactsDirectory)
-    doLast {
-        artifactsDirectory.asFile.mkdirs()
-    }
-}
-
-tasks.named("generateBuildScripts") {
-    dependsOn(preparePlatformArtifacts)
-}
+mpsDefaults.pathVariables.put("artifacts.root", artifactsDirectory.map { it.asFile })
 
 tasks.withType<RunAnt>().configureEach {
     valueProperties.put("build", mbeddrBuildNumber)
@@ -140,10 +143,21 @@ val resolveBundledLibraries by tasks.registering {
     dependsOn(provider { bundledDependencies.map { it.resolveTask } })
 }
 
-val platform by mpsBuilds.creating(MainBuild::class) {
+mpsBuilds.configureEach {
     mpsProjectDirectory = layout.projectDirectory.dir("com.mbeddr.platform.build")
-    buildArtifactsDirectory = platformArtifactsDirectory
-    buildSolutionDescriptor = layout.projectDirectory.file("com.mbeddr.platform.build/solutions/com.mbeddr.platform/com.mbeddr.platform.msd")
+}
+
+val actionsfilter = mpsBuilds.create<MainBuild>("actionsfilter") {
+    buildArtifactsDirectory = artifactsDir("com.mbeddr.mpsutil.actionsfilter")
+    buildSolutionDescriptor = platformBuildSolutionDescriptor
+    buildFile = actionsfilterBuildFile
+    published = false
+}
+
+val platform = mpsBuilds.create<MainBuild>("platform") {
+    dependsOn(actionsfilter)
+    buildArtifactsDirectory = artifactsDir("com.mbeddr.platform")
+    buildSolutionDescriptor = platformBuildSolutionDescriptor
     buildFile = platformBuildFile
 }
 
@@ -153,125 +167,54 @@ configurations.consumable("platformArtifacts") {
     }
 }
 
-val platformTests by mpsBuilds.creating(TestBuild::class) {
+val platformTests = mpsBuilds.create<TestBuild>("platformTests") {
     dependsOn(platform)
-    mpsProjectDirectory = layout.projectDirectory.dir("com.mbeddr.platform.build")
-    buildArtifactsDirectory = platformTestsArtifactsDirectory
-    buildSolutionDescriptor = layout.projectDirectory.file("com.mbeddr.platform.build/solutions/com.mbeddr.platform.tests.build/com.mbeddr.platform.tests.build.msd")
+    buildArtifactsDirectory = artifactsDir("com.mbeddr.platform.tests")
+    buildSolutionDescriptor = platformTestsBuildSolutionDescriptor
     buildFile = platformTestsBuildFile
 }
 
-val buildActionsfilter by tasks.registering(RunAnt::class) {
-    dependsOn(tasks.named("generateBuildScripts"))
-    buildFile = actionsfilterBuildFile
-    targets = listOf("generate", "assemble")
-    pathProperties.put("build.layout", actionsfilterArtifactsDirectory.asFile)
-    description = "Builds the actions filter IntelliJ plugin."
+mpsPluginsDir?.let { pluginsDirectory ->
+    tasks.register<Copy>("install_actionsfilter") {
+        description = "Copy the actions filter IntelliJ plugin to the MPS plugin's directory"
+        dependsOn(actionsfilter.assembleTask)
+        from(actionsfilter.buildArtifactsDirectory)
+        include("com.mbeddr.mpsutil.actionsfilter/")
+        into(pluginsDirectory)
+    }
 }
 
-platform.assembleTask.configure {
-    dependsOn(buildActionsfilter, resolveBundledLibraries)
-}
-
-val build_allScripts by tasks.registering {
-    dependsOn(tasks.named("generateBuildScripts"))
-    description = "Compatibility alias for generateBuildScripts."
-}
-
-val build_actionsfilter by tasks.registering {
-    dependsOn(buildActionsfilter)
-    description = "Compatibility alias for assemble actionsfilter."
-}
-
-val build_platform by tasks.registering {
-    dependsOn(platform.assembleTask)
-    description = "Compatibility alias for assemblePlatform."
-}
-
-val install_actionsfilter by tasks.registering(Copy::class) {
-    dependsOn(build_actionsfilter)
-    description = "Copy the actions filter IntelliJ plugin to the MPS plugin\"s directory"
-    from(actionsfilterArtifactsDirectory)
-    include("com.mbeddr.mpsutil.actionsfilter/")
-    into(mpsPluginsDir)
-}
-
-val generate_mbeddr_platform_tests by tasks.registering {
-    dependsOn(platformTests.generateTask)
-    description = "Compatibility alias for generatePlatformTests."
-}
-
-val generateSandboxes by tasks.registering(RunAnt::class) {
-    dependsOn(platform.assembleTask)
+val sandboxes by mpsBuilds.creating(MainBuild::class) {
+    dependsOn(platform)
+    buildArtifactsDirectory = artifactsDir("com.mbeddr.platform.sandboxes")
+    buildSolutionDescriptor = platformTestsBuildSolutionDescriptor
     buildFile = sandboxesBuildFile
-    targets = listOf("generate")
-    description = "Build the mbeddr platform sandboxes."
-}
-
-val generate_platform_sandboxes by tasks.registering {
-    dependsOn(generateSandboxes)
-    description = "Compatibility alias for generateSandboxes."
-}
-
-val generate_platform_languages by tasks.registering {
-    dependsOn(build_platform, generate_mbeddr_platform_tests, generate_platform_sandboxes)
-}
-
-val test_mbeddr_platform by tasks.registering {
-    dependsOn(platformTests.assembleAndCheckTask)
-    description = "Compatibility alias for checkPlatformTests."
+    published = false
 }
 
 tasks.named("test") {
-    dependsOn(test_mbeddr_platform)
+    dependsOn(platformTests.assembleAndCheckTask)
     description = "Run all tests in the mbeddr platform."
 }
 
 tasks.named("check") {
-    dependsOn(test_mbeddr_platform)
+    dependsOn(platformTests.assembleAndCheckTask)
     description = "Run all checks."
 }
 
-val buildDistribution by tasks.registering(RunAnt::class) {
-    dependsOn(platform.assembleTask, platformTests.assembleAndCheckTask)
+val distribution by mpsBuilds.creating(MainBuild::class) {
+    dependsOn(platform)
+    buildArtifactsDirectory = artifactsDir("com.mbeddr.platform.distribution")
+    buildSolutionDescriptor = platformBuildSolutionDescriptor
     buildFile = distributionBuildFile
-    targets = listOf("assemble")
-    description = "Build the platform distribution."
+    published = false
 }
 
-val build_platform_distribution by tasks.registering {
-    dependsOn(buildDistribution)
-    description = "Compatibility alias for buildDistribution."
-}
-
-val package_mbeddrPlatform by tasks.registering(Zip::class) {
-    dependsOn(platform.assembleTask)
-    description = "Package the mbeddr platform."
-    archiveFileName = "com.mbeddr.platform.zip"
-    from(artifactsDirectory) {
-        include("com.mbeddr.platform/**")
-    }
+tasks.zip {
     from(tasks.cyclonedxDirectBom) {
         into("com.mbeddr.platform")
     }
 }
-
-artifacts.add("default", package_mbeddrPlatform)
-
-val defaultWrapper by tasks.registering {
-    dependsOn(build_platform)
-    doFirst {
-        println("####################################################################################")
-        println("#                      THE DEFAULT TASK HAS BEEN CHANGED                           #")
-        println("#                                                                                  #")
-        println("# The default task now only builds the mbeddr platform and no longer all of mbeddr #")
-        println("# including the C part. In order to build everything you will have to invoke the   #")
-        println("# task build_mbeddr. This will give you the old behaviour of building everything.  #")
-        println("####################################################################################")
-    }
-}
-
-rootProject.defaultTasks("defaultWrapper")
 
 fun getPomsOfConfiguration(cfg: Configuration): List<File> {
     val componentIds =
@@ -334,12 +277,13 @@ publishing {
             groupId = "com.mbeddr"
             artifactId = "platform"
             version = project.property("mbeddrPlatformBuildNumber").toString()
-            artifact(package_mbeddrPlatform)
+            from(components["mps"])
             pom.withXml {
                 val dependenciesNode = asNode().appendNode("dependencies")
 
                 val configurationsWithProvidedDependencies = buildList {
                     add(configurations["mpsLibraries"])
+                    add(providedMpsExtensions)
                     add(configurations.mps.get())
                     addAll(bundledDependencies.map { it.configuration.get() })
                 }
@@ -401,23 +345,17 @@ publishing {
 val mbeddrBuild: String by project
 
 tasks.cyclonedxDirectBom {
-    jsonOutput = reportsDirectory.get().file("sbom.json")
+    jsonOutput = reportsDirectory.map { it.file("sbom.json") }
     // No XML output
     xmlOutput.unsetConvention()
-    // Don"t include license texts in generated SBOMs
+    // Don't include license texts in generated SBOMs
     includeLicenseText = false
 
     // Include runtime deps only (bundled libs, language libs, mps, jbr)
     includeConfigs = buildList {
         addAll(bundledDependencies.map { it.configuration.name })
-        add(configurations.api.name)
+        add(providedMpsExtensions.name)
         add(configurations.mps.name)
         add("jbr")
     }
-}
-
-afterEvaluate {
-    // Workaround for CycloneDX plugin 3.2.4 modifying configurations when the task gets realized.
-    // We need to realize the task eagerly to avoid 'cannot mutate configuration' error if it is realized too late.
-    tasks.cyclonedxDirectBom.get()
 }
