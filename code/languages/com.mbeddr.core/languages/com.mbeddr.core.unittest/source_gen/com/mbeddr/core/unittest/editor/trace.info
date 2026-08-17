@@ -2831,7 +2831,7 @@
       <node id="6275792049641586527" at="168,52,169,40" concept="2" />
       <node id="6275792049641586527" at="169,40,170,34" concept="2" />
       <node id="6275792049641586527" at="170,34,171,22" concept="8" />
-      <node id="6275792049641586527" at="176,98,177,154" concept="8" />
+      <node id="6275792049641586527" at="176,98,177,156" concept="8" />
       <node id="6275792049641586527" at="179,6,180,71" concept="2" />
       <node id="6275792049641586527" at="180,71,181,22" concept="8" />
       <node id="6275792049641586527" at="187,90,188,107" concept="7" />
@@ -2994,7 +2994,7 @@
       <scope id="6275792049641586527" at="124,12,125,59" />
       <scope id="6275792049641586527" at="131,33,132,19" />
       <scope id="6275792049641586527" at="161,46,162,61" />
-      <scope id="6275792049641586527" at="176,98,177,154" />
+      <scope id="6275792049641586527" at="176,98,177,156" />
       <scope id="6275792049641586527" at="203,57,204,30" />
       <scope id="6275792049641586527" at="208,56,209,34" />
       <scope id="6275792049641586527" at="218,54,219,40" />
@@ -3174,9 +3174,9 @@
       <unit id="6275792049641586527" at="352,0,357,0" name="com.mbeddr.core.unittest.editor.TestCase_EditorBuilder_a$CONCEPTS" />
       <unit id="6275792049641586527" at="143,48,149,7" name="com.mbeddr.core.unittest.editor.TestCase_EditorBuilder_a$1" />
       <unit id="6275792049641586527" at="150,51,156,7" name="com.mbeddr.core.unittest.editor.TestCase_EditorBuilder_a$2" />
-      <unit id="6275792049641586527" at="189,39,199,7" name="com.mbeddr.core.unittest.editor.TestCase_EditorBuilder_a$GenericMenuPart_a0a0a0a$1" />
-      <unit id="6275792049641586527" at="201,67,221,9" name="com.mbeddr.core.unittest.editor.TestCase_EditorBuilder_a$GenericMenuPart_a0a0a0a$2" />
-      <unit id="6275792049641586527" at="183,0,227,0" name="com.mbeddr.core.unittest.editor.TestCase_EditorBuilder_a$GenericMenuPart_a0a0a0a" />
+      <unit id="6275792049641586527" at="189,39,199,7" name="com.mbeddr.core.unittest.editor.TestCase_EditorBuilder_a$GenericMenuPart_a0a0a0a_0$1" />
+      <unit id="6275792049641586527" at="201,67,221,9" name="com.mbeddr.core.unittest.editor.TestCase_EditorBuilder_a$GenericMenuPart_a0a0a0a_0$2" />
+      <unit id="6275792049641586527" at="183,0,227,0" name="com.mbeddr.core.unittest.editor.TestCase_EditorBuilder_a$GenericMenuPart_a0a0a0a_0" />
       <unit id="6275792049641586527" at="267,0,321,0" name="com.mbeddr.core.unittest.editor.TestCase_EditorBuilder_a$bodySingleRoleHandler_g8b7hx_d0a" />
       <unit id="6275792049641586527" at="64,0,367,0" name="com.mbeddr.core.unittest.editor.TestCase_EditorBuilder_a" />
     </file>
@@ -4661,7 +4661,7 @@
       <node id="7955188678846770583" at="178,52,179,40" concept="2" />
       <node id="7955188678846770583" at="179,40,180,34" concept="2" />
       <node id="7955188678846770583" at="180,34,181,22" concept="8" />
-      <node id="7955188678846770583" at="186,98,187,156" concept="8" />
+      <node id="7955188678846770583" at="186,98,187,154" concept="8" />
       <node id="7955188678846770583" at="189,6,190,71" concept="2" />
       <node id="7955188678846770583" at="190,71,191,22" concept="8" />
       <node id="7955188678846770583" at="197,90,198,107" concept="7" />
@@ -5056,7 +5056,7 @@
       <scope id="7955188678846770583" at="134,12,135,59" />
       <scope id="7955188678846770583" at="141,33,142,19" />
       <scope id="7955188678846770583" at="171,46,172,61" />
-      <scope id="7955188678846770583" at="186,98,187,156" />
+      <scope id="7955188678846770583" at="186,98,187,154" />
       <scope id="7955188678846770583" at="213,57,214,30" />
       <scope id="7955188678846770583" at="218,56,219,34" />
       <scope id="7955188678846770583" at="228,54,229,46" />
@@ -5468,14 +5468,14 @@
       <unit id="7955188678846770583" at="690,0,696,0" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$CONCEPTS" />
       <unit id="7955188678846770583" at="404,51,412,7" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$7" />
       <unit id="7955188678846770583" at="413,48,421,7" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$8" />
-      <unit id="7955188678846770583" at="199,39,209,7" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$GenericMenuPart_a0a0a0a_0$1" />
+      <unit id="7955188678846770583" at="199,39,209,7" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$GenericMenuPart_a0a0a0a$1" />
       <unit id="7955188678846770583" at="308,39,318,7" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$GenericMenuPart_a0a1a0$1" />
       <unit id="7955188678846770583" at="435,10,448,7" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$9" />
       <unit id="7955188678846770583" at="558,53,574,9" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$GenericMenuPart_a0a5a0$2" />
-      <unit id="7955188678846770583" at="211,67,231,9" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$GenericMenuPart_a0a0a0a_0$2" />
+      <unit id="7955188678846770583" at="211,67,231,9" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$GenericMenuPart_a0a0a0a$2" />
       <unit id="7955188678846770583" at="320,67,340,9" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$GenericMenuPart_a0a1a0$2" />
       <unit id="7955188678846770583" at="543,0,579,0" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$GenericMenuPart_a0a5a0" />
-      <unit id="7955188678846770583" at="193,0,237,0" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$GenericMenuPart_a0a0a0a_0" />
+      <unit id="7955188678846770583" at="193,0,237,0" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$GenericMenuPart_a0a0a0a" />
       <unit id="7955188678846770583" at="302,0,346,0" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$GenericMenuPart_a0a1a0" />
       <unit id="7955188678846770583" at="479,0,533,0" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$testinitSingleRoleHandler_uslcri_b0a0f0a" />
       <unit id="7955188678846770583" at="601,0,677,0" name="com.mbeddr.core.unittest.editor.TestCollection_EditorBuilder_a$testsListHandler_uslcri_h0a" />
