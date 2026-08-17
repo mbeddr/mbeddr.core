@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.opencsv" uuid="11045775-3aaf-4816-8077-8656c4e8fee1" moduleVersion="0">
   <models>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="opencsv.jar" />
     </modelRoot>
   </models>

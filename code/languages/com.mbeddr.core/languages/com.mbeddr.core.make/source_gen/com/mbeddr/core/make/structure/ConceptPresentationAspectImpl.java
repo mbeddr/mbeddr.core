@@ -266,7 +266,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateProperty(0x7b47fc8eac674a67L, "include_old");
           cpb.shortDesc("a makefile");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a72b0sb);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_Makefile = cpb.create();
         }
         return props_Makefile;

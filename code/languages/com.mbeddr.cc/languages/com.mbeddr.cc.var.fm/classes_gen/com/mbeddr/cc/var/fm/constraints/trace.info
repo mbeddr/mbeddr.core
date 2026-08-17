@@ -394,7 +394,7 @@
       <node id="7642065485964946534" at="22,47,23,46" concept="12" />
       <node id="7642065485964946534" at="30,130,31,161" concept="6" />
       <node id="7642065485964946534" at="31,161,32,0" concept="9" />
-      <node id="7642065485964946534" at="33,55,34,70" concept="2" />
+      <node id="7642065485964946534" at="33,55,34,74" concept="2" />
       <node id="7642065485964946534" at="35,9,36,0" concept="9" />
       <node id="7642065485964946534" at="36,0,37,22" concept="7" />
       <node id="8237807170236525599" at="42,110,43,103" concept="8" />
@@ -407,7 +407,7 @@
       <node id="8237807170236525648" at="62,118,63,20" concept="7" />
       <node id="8237807170236525654" at="64,7,65,19" concept="7" />
       <node id="8237807170236525660" at="66,5,67,16" concept="7" />
-      <node id="7642065485964946534" at="69,0,70,0" concept="10" trace="canBeRootBreakingPoint" />
+      <node id="7642065485964946534" at="69,0,70,0" concept="10" trace="canBeAncestorBreakingPoint" />
       <node id="7642065485964946534" at="72,0,73,0" concept="10" trace="IFeatureConditionsOnly$n8" />
       <node id="7642065485964946534" at="73,0,74,0" concept="10" trace="BinaryExpression$cR" />
       <node id="7642065485964946534" at="74,0,75,0" concept="10" trace="NotExpression$pF" />
@@ -432,7 +432,7 @@
       <node id="8237807170236525597" at="41,149,66,5" concept="4" />
       <node id="7642065485964946534" at="41,0,69,0" concept="11" trace="staticCanBeAnAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
       <scope id="7642065485964946534" at="22,47,23,46" />
-      <scope id="7642065485964946534" at="33,55,34,70" />
+      <scope id="7642065485964946534" at="33,55,34,74" />
       <scope id="8237807170236525602" at="44,118,45,20" />
       <scope id="8237807170236525610" at="47,54,48,20" />
       <scope id="8237807170236525617" at="50,51,51,20" />

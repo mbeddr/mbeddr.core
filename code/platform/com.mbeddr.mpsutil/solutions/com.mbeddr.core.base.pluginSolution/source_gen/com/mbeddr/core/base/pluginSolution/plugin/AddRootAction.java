@@ -18,7 +18,8 @@ import jetbrains.mps.smodel.SNodeUtil;
 import jetbrains.mps.ide.projectPane.CreateNodeExtension;
 import jetbrains.mps.ide.projectPane.CreateRootFilterEP;
 import jetbrains.mps.ide.projectPane.NewRootNodeAction;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
+import jetbrains.mps.openapi.navigation.ProjectPaneNavigator;
+import jetbrains.mps.openapi.navigation.EditorNavigator;
 import java.util.Objects;
 
 public class AddRootAction extends BaseAction implements DumbAware {
@@ -57,10 +58,10 @@ public class AddRootAction extends BaseAction implements DumbAware {
     }
 
     if (!(NewRootNodeAction.trySelectInCurrentPane(myProject, node))) {
-      NavigationSupport.getInstance().selectInTree(myProject, node, false);
+      new ProjectPaneNavigator(myProject).select(node.getReference());
     }
 
-    NavigationSupport.getInstance().openNode(myProject, node, true, false);
+    new EditorNavigator(myProject).shallFocus(true).open(node.getReference());
   }
 
   @Override

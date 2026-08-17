@@ -37,7 +37,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_CompositeComponent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a1b0m);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_CompositeComponent = cpb.create();
         }
         return props_CompositeComponent;

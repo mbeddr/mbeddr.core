@@ -5,9 +5,11 @@ package com.mbeddr.mpsutil.actionsfilter.editor;
 import jetbrains.mps.nodeEditor.AbstractCellProvider;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
+import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
-import com.intellij.openapi.actionSystem.ex.ActionManagerEx;
 import com.intellij.openapi.actionSystem.AnAction;
+import com.intellij.openapi.actionSystem.ActionManager;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Error;
 import org.jetbrains.annotations.Nullable;
 import com.intellij.openapi.actionSystem.ActionGroup;
 import jetbrains.mps.openapi.editor.cells.EditorCell_Collection;
@@ -28,6 +30,8 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.mpsutil.actionsfilter.behavior.ActionBase__BehaviorDescriptor;
 import com.intellij.openapi.actionSystem.DefaultActionGroup;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.internal.collections.runtime.NotNullWhereFilter;
 import com.intellij.openapi.actionSystem.Presentation;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -40,7 +44,7 @@ public class MenuTreeProvider extends AbstractCellProvider {
   private EditorContext myEditorContext;
   private String myRootActionGroupId;
 
-  public MenuTreeProvider(SNode rootNode, EditorContext editorContext, String rootActionGroupId) {
+  public MenuTreeProvider(SNode rootNode, EditorContext editorContext, @NotNull String rootActionGroupId) {
     super(rootNode);
     myNode = rootNode;
     myEditorContext = editorContext;
@@ -49,12 +53,16 @@ public class MenuTreeProvider extends AbstractCellProvider {
 
   @Override
   public EditorCell createEditorCell(EditorContext context) {
-    return createEntryCell(ActionManagerEx.getInstanceEx().getAction(myRootActionGroupId), null);
+    AnAction rootAction = ActionManager.getInstance().getAction(myRootActionGroupId);
+    if (rootAction != null) {
+      return createEntryCell(rootAction, null);
+    }
+    return new EditorCell_Error(myEditorContext, myNode, "Couldn't create an entry for " + myRootActionGroupId);
   }
 
-  protected EditorCell createEntryCell(final AnAction action, @Nullable ActionGroup parentGroup) {
-    final String id = ActionManagerEx.getInstanceEx().getId(action);
-    String text = check_u2e1yf_a0b0j(action.getTemplatePresentation());
+  protected EditorCell createEntryCell(@NotNull final AnAction action, @Nullable ActionGroup parentGroup) {
+    final String id = ActionManager.getInstance().getId(action);
+    String text = check_u2e1yf_a0b0j(check_u2e1yf_a0a1a9(action));
 
     EditorCell_Collection result = jetbrains.mps.nodeEditor.cells.EditorCell_Collection.createIndent2(myEditorContext, myNode);
     result.getStyle().set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
@@ -70,9 +78,9 @@ public class MenuTreeProvider extends AbstractCellProvider {
     if (action instanceof LabelledAnchor) {
       String separator = "_ActionGroup";
       String label = id;
-      int pos = label.indexOf(separator);
+      int pos = check_u2e1yf_a0c0i0j(label, separator);
       if (pos >= 0) {
-        label = label.substring(pos + separator.length());
+        label = check_u2e1yf_a0a0d0i0j(label, separator, pos);
       }
       EditorCell_Constant cell = new EditorCell_Constant(myEditorContext, myNode, "#" + label);
       cell.getStyle().set(StyleAttributes.FONT_STYLE, 0);
@@ -144,14 +152,14 @@ public class MenuTreeProvider extends AbstractCellProvider {
     textCell.getStyle().set(StyleAttributes.FONT_STYLE, 0);
     result.addEditorCell(textCell);
 
-    EditorCell_Constant idCell = new EditorCell_Constant(myEditorContext, myNode, "(" + id + ") " + action.getClass().getSimpleName());
+    EditorCell_Constant idCell = new EditorCell_Constant(myEditorContext, myNode, "(" + id + ") " + check_u2e1yf_a2a0a32a9(check_u2e1yf_a0c0a0x0j(action)));
     idCell.getStyle().set(StyleAttributes.FONT_STYLE, 0);
     idCell.getStyle().set(StyleAttributes.TEXT_COLOR, Color.LIGHT_GRAY);
     result.addEditorCell(idCell);
 
-    if (action instanceof ActionGroup) {
-      ActionGroup group = ((ActionGroup) action);
-      for (AnAction child : group.getChildren(null)) {
+    if (action instanceof DefaultActionGroup) {
+      DefaultActionGroup group = (DefaultActionGroup) action;
+      for (AnAction child : Sequence.fromIterable(Sequence.fromArray(group.getChildActionsOrStubs())).where(new NotNullWhereFilter())) {
         EditorCell childCell = createEntryCell(child, group);
         if (childCell != null) {
           result.addEditorCell(childCell);
@@ -169,6 +177,36 @@ public class MenuTreeProvider extends AbstractCellProvider {
   private static String check_u2e1yf_a0b0j(Presentation checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getText();
+    }
+    return null;
+  }
+  private static Presentation check_u2e1yf_a0a1a9(AnAction checkedDotOperand) {
+    if (null != checkedDotOperand) {
+      return checkedDotOperand.getTemplatePresentation();
+    }
+    return null;
+  }
+  private static int check_u2e1yf_a0c0i0j(String checkedDotOperand, String separator) {
+    if (null != checkedDotOperand) {
+      return checkedDotOperand.indexOf(separator);
+    }
+    return 0;
+  }
+  private static String check_u2e1yf_a0a0d0i0j(String checkedDotOperand, String separator, Integer pos) {
+    if (null != checkedDotOperand) {
+      return checkedDotOperand.substring(pos + separator.length());
+    }
+    return null;
+  }
+  private static String check_u2e1yf_a2a0a32a9(Class<?> checkedDotOperand) {
+    if (null != checkedDotOperand) {
+      return checkedDotOperand.getSimpleName();
+    }
+    return null;
+  }
+  private static Class<?> check_u2e1yf_a0c0a0x0j(AnAction checkedDotOperand) {
+    if (null != checkedDotOperand) {
+      return checkedDotOperand.getClass();
     }
     return null;
   }

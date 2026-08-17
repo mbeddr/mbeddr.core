@@ -10,8 +10,8 @@ import java.beans.PropertyChangeSupport;
 import java.beans.PropertyChangeListener;
 import org.jetbrains.annotations.Nullable;
 import com.intellij.util.xmlb.annotations.Transient;
-import com.intellij.openapi.application.ApplicationInfo;
 import java.util.Objects;
+import com.intellij.openapi.application.ApplicationInfo;
 import java.util.Set;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.LinkedHashSet;
@@ -20,22 +20,18 @@ import java.util.Iterator;
 public class Model implements Serializable, Cloneable {
   public static final String PROPERTY_ACTIVE_PROFILE = "activeProfile";
 
-  public List<Profile> myProfiles = ListSequence.fromList(new ArrayList<Profile>());
-  public int myActiveProfileIndex = -1;
-  public transient PropertyChangeSupport myPropertyChangeSupport;
+  public List<Profile> allProfiles = ListSequence.fromList(new ArrayList<Profile>());
+  public String activeProfileId;
+  public transient PropertyChangeSupport propertyChangeSupport;
 
   public Model() {
   }
 
-  public boolean isEmpty() {
-    return ListSequence.fromList(myProfiles).isEmpty();
-  }
-
   protected PropertyChangeSupport getPropertyChangeSupport() {
-    if (myPropertyChangeSupport == null) {
-      myPropertyChangeSupport = new PropertyChangeSupport(this);
+    if (propertyChangeSupport == null) {
+      propertyChangeSupport = new PropertyChangeSupport(this);
     }
-    return myPropertyChangeSupport;
+    return propertyChangeSupport;
   }
 
   public void addPropertyChangeListener(String propertyName, PropertyChangeListener l) {
@@ -49,48 +45,39 @@ public class Model implements Serializable, Cloneable {
   @Nullable
   @Transient
   public Profile getActiveProfile() {
-    int activeProfileIndex = getActiveProfileIndex();
     List<Profile> profiles = getAllProfiles();
-    if (activeProfileIndex >= 0) {
-      return ListSequence.fromList(profiles).getElement(activeProfileIndex);
+    if (activeProfileId != null) {
+      Profile activeProfile = ListSequence.fromList(profiles).findFirst((it) -> Objects.equals(it.id, activeProfileId));
+      if (activeProfile != null) {
+        return activeProfile;
+      }
     }
     Profile activeByDefault = ListSequence.fromList(profiles).where((it) -> it.getActiveByDefault() && it.canBeActivatedByDefault(ApplicationInfo.getInstance())).sort((it) -> it.getDefaultPriority(), true).last();
-    return activeByDefault;
-  }
-
-  @Nullable
-  @Transient
-  public Profile getActiveProfileOrFirst() {
-    Profile activeProfile = getActiveProfile();
-    return (activeProfile != null ? activeProfile : ListSequence.fromList(getAllProfiles()).first());
-  }
-
-  @Transient
-  public int getActiveProfileIndex() {
-    int allProfilesCount = ListSequence.fromList(getAllProfiles()).count();
-    if (myActiveProfileIndex >= allProfilesCount) {
-      myActiveProfileIndex = allProfilesCount - 1;
+    if (activeByDefault != null) {
+      return activeByDefault;
     }
-    return myActiveProfileIndex;
+
+    return ListSequence.fromList(profiles).first();
   }
+
 
   @Transient
   public void setActiveProfile(@Nullable Profile newValue) {
-    if (Objects.equals(getActiveProfile(), newValue)) {
+    if (Objects.equals(getActiveProfile(), newValue) || newValue == null) {
       return;
     }
 
-    setActiveProfileIndex(ListSequence.fromList(getAllProfiles()).indexOf(newValue));
+    setActiveProfileId(newValue.id);
   }
 
   @Transient
-  public void setActiveProfileIndex(@Nullable int newIndex) {
-    if (newIndex == myActiveProfileIndex) {
+  public void setActiveProfileId(@Nullable String newID) {
+    if (newID == activeProfileId) {
       return;
     }
     Profile oldProfile = getActiveProfile();
-    myActiveProfileIndex = newIndex;
-    if (newIndex == -1) {
+    activeProfileId = newID;
+    if (newID == null) {
       return;
     }
     Profile newProfile = getActiveProfile();
@@ -98,34 +85,23 @@ public class Model implements Serializable, Cloneable {
   }
 
   public void setProfiles(List<Profile> newProfiles) {
-    List<Profile> profiles = ListSequence.fromList(new ArrayList<Profile>());
-
-    for (Profile newProfile : ListSequence.fromList(newProfiles)) {
-      if (!(newProfile.isPredefined())) {
-        ListSequence.fromList(profiles).addElement(newProfile);
-      }
-    }
-    myProfiles = profiles;
+    allProfiles = newProfiles;
   }
 
-  protected void addPredefinedProfiles(Set<Profile> list) {
+  public static void addPredefinedProfilesTo(List<Profile> list) {
     for (final Profile predefined : ListSequence.fromList(ActionsProfileRegistry.getInstance().getProfiles())) {
-      boolean exists = SetSequence.fromSet(list).findFirst((it) -> Objects.equals(it.getName(), predefined.getName())) != null;
+      boolean exists = ListSequence.fromList(list).findFirst((it) -> Objects.equals(it.getName(), predefined.getName())) != null;
       if (!(exists)) {
-        SetSequence.fromSet(list).addElement(predefined.clone());
+        ListSequence.fromList(list).addElement(predefined.clone());
       }
     }
   }
 
   public List<Profile> getAllProfiles() {
     Set<Profile> set = SetSequence.fromSet(new LinkedHashSet<Profile>());
-    addPredefinedProfiles(set);
-    SetSequence.fromSet(set).addSequence(ListSequence.fromList(myProfiles));
+    addPredefinedProfilesTo(allProfiles);
+    SetSequence.fromSet(set).addSequence(ListSequence.fromList(allProfiles));
     return SetSequence.fromSet(set).toList();
-  }
-
-  public List<Profile> getUserDefinedProfiles() {
-    return ListSequence.fromListWithValues(new ArrayList<Profile>(), myProfiles);
   }
 
   public Profile createProfile(String name) {
@@ -135,16 +111,16 @@ public class Model implements Serializable, Cloneable {
   }
 
   public void addProfile(Profile p) {
-    List<Profile> newList = ListSequence.fromListWithValues(new ArrayList<Profile>(), myProfiles);
+    List<Profile> newList = ListSequence.fromListWithValues(new ArrayList<Profile>(), allProfiles);
     ListSequence.fromList(newList).addElement(p);
     setProfiles(newList);
   }
 
   public void removeProfile(Profile profile) {
-    List<Profile> newList = myProfiles;
+    List<Profile> newList = allProfiles;
     ListSequence.fromList(newList).removeElement(profile);
     setProfiles(newList);
-    setActiveProfileIndex(myActiveProfileIndex);
+    setActiveProfileId(activeProfileId);
   }
 
   public void updateProfile(Profile oldProfile, Profile newProfile) {
@@ -166,20 +142,20 @@ public class Model implements Serializable, Cloneable {
       return null;
     }
     Profile copy = activeProfile.clone();
-    copy.myIsPredefined = false;
+    copy.predefined = false;
     addProfile(copy);
     return copy;
   }
 
   public void load(Model source) {
-    setProfiles(ListSequence.fromList(source.getUserDefinedProfiles()).select((it) -> it.clone()).toList());
+    setProfiles(ListSequence.fromList(source.allProfiles).select((it) -> it.clone()).toList());
   }
 
   @Override
   public Model clone() {
     try {
       Model clone = (Model) super.clone();
-      clone.myProfiles = ListSequence.fromList(myProfiles).select((it) -> it.clone()).toList();
+      clone.allProfiles = ListSequence.fromList(allProfiles).select((it) -> it.clone()).toList();
       return clone;
     } catch (CloneNotSupportedException e) {
       throw new RuntimeException(e);
@@ -196,15 +172,15 @@ public class Model implements Serializable, Cloneable {
     }
 
     Model that = (Model) o;
-    if (myActiveProfileIndex != that.myActiveProfileIndex) {
+    if (activeProfileId != that.activeProfileId) {
       return false;
     }
-    if (ListSequence.fromList(myProfiles).count() != ListSequence.fromList(that.myProfiles).count()) {
+    if (ListSequence.fromList(allProfiles).count() != ListSequence.fromList(that.allProfiles).count()) {
       return false;
     }
     {
-      Iterator<Profile> p1_it = ListSequence.fromList(myProfiles).iterator();
-      Iterator<Profile> p2_it = ListSequence.fromList(that.myProfiles).iterator();
+      Iterator<Profile> p1_it = ListSequence.fromList(allProfiles).iterator();
+      Iterator<Profile> p2_it = ListSequence.fromList(that.allProfiles).iterator();
       Profile p1_var;
       Profile p2_var;
       while (p1_it.hasNext() && p2_it.hasNext()) {
@@ -222,8 +198,10 @@ public class Model implements Serializable, Cloneable {
   @Override
   public int hashCode() {
     int result = 0;
-    result = 31 * result + myActiveProfileIndex;
-    result = 31 * result + ((myProfiles != null ? ((Object) myProfiles).hashCode() : 0));
+    if (activeProfileId != null) {
+      result = 31 * result + activeProfileId.hashCode();
+    }
+    result = 31 * result + ((allProfiles != null ? ((Object) allProfiles).hashCode() : 0));
     return result;
   }
 }

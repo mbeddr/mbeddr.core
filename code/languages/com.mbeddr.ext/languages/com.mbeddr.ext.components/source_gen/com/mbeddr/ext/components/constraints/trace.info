@@ -3127,7 +3127,7 @@
       <node id="8729447926330614298" at="26,34,27,33" concept="11" />
       <node id="8729447926330614298" at="34,130,35,161" concept="6" />
       <node id="8729447926330614298" at="35,161,36,0" concept="8" />
-      <node id="8729447926330614298" at="37,55,38,70" concept="2" />
+      <node id="8729447926330614298" at="37,55,38,74" concept="2" />
       <node id="8729447926330614298" at="39,9,40,0" concept="8" />
       <node id="8729447926330614298" at="40,0,41,22" concept="7" />
       <node id="5470497459579426761" at="46,71,47,72" concept="11" />
@@ -3136,7 +3136,7 @@
       <node id="5470497459579426761" at="56,119,57,85" concept="2" />
       <node id="8729447926330614298" at="57,85,58,22" concept="7" />
       <node id="8237807170236485036" at="60,149,61,58" concept="7" />
-      <node id="8729447926330614298" at="63,0,64,0" concept="9" trace="canBeRootBreakingPoint" />
+      <node id="8729447926330614298" at="63,0,64,0" concept="9" trace="canBeAncestorBreakingPoint" />
       <node id="8729447926330614298" at="66,0,67,0" concept="9" trace="Component$va" />
       <node id="8729447926330614298" at="67,0,68,0" concept="9" trace="PortAdapterRefExpr$bm" />
       <node id="8729447926330614298" at="71,0,72,0" concept="9" trace="shortDescription$Yd4v" />
@@ -3150,7 +3150,7 @@
       <node id="8729447926330614298" at="31,109,43,6" concept="7" />
       <node id="8729447926330614298" at="30,0,45,0" concept="5" trace="calculateCanBeAncestorConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
       <scope id="8729447926330614298" at="26,34,27,33" />
-      <scope id="8729447926330614298" at="37,55,38,70" />
+      <scope id="8729447926330614298" at="37,55,38,74" />
       <scope id="5470497459579426761" at="46,71,47,72" />
       <scope id="5470497459579426763" at="50,40,51,119" />
       <scope id="8237807170236485035" at="60,149,61,58" />

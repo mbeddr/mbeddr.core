@@ -10,77 +10,37 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import jetbrains.mps.project.Project;
 import org.jetbrains.mps.openapi.model.SModel;
 import java.util.List;
-import jetbrains.mps.project.Project;
-import jetbrains.mps.project.AbstractModule;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import org.jetbrains.annotations.Nullable;
-import com.intellij.openapi.project.ProjectManager;
-import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.ide.project.ProjectHelper;
-import jetbrains.mps.internal.collections.runtime.NotNullWhereFilter;
-import java.util.Objects;
-import jetbrains.mps.project.ProjectRepository;
-import java.util.Set;
-import jetbrains.mps.smodel.MPSModuleOwner;
-import jetbrains.mps.smodel.ModuleRepositoryFacade;
-import jetbrains.mps.internal.collections.runtime.SetSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.project.AbstractModule;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
+import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ProjectScope__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x571d7a04fb53e66aL, "com.mbeddr.core.base.structure.ProjectScope");
 
+  public static final SMethod<Iterable<SNode>> findElements_id20N7CGtOl8_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2320231815875482149L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""), SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
   public static final SMethod<Iterable<SNode>> findElements_id7nkDZJXluPi = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8490595898229124434L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
-  /*package*/ static final SMethod<List<Project>> getProjects_id3V7vYltwK3m = new SMethodBuilder<List<Project>>(new SJavaCompoundTypeImpl((Class<List<Project>>) ((Class) Object.class))).name("getProjects").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(4523724973810057430L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(AbstractModule.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id7nkDZJXluPi, getProjects_id3V7vYltwK3m);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findElements_id20N7CGtOl8_, findElements_id7nkDZJXluPi);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static Iterable<SNode> findElements_id7nkDZJXluPi(@NotNull SNode __thisNode__, SModel currentModel) {
-    AbstractModule module = as_wqhtum_a0a0a9(currentModel.getModule(), AbstractModule.class);
-    List<Project> projects = ProjectScope__BehaviorDescriptor.getProjects_id3V7vYltwK3m.invokeSpecial(__thisNode__, module);
-    return ListSequence.fromList(projects).translate((project) -> project.getScope().getModels()).select((it) -> {
-      // compile time upcast 
-      SModel m = it;
-      return m;
-    }).distinct().translate((it) -> SModelOperations.nodes(it, null));
+  /*package*/ static Iterable<SNode> findElements_id20N7CGtOl8_(@NotNull SNode __thisNode__, Project mpsProject, SModel currentModel) {
+    Iterable<SModel> models = mpsProject.getScope().getModels();
+    return Sequence.fromIterable(models).distinct().translate((it) -> SModelOperations.nodes(it, null));
   }
-  @NotNull
-  /*package*/ static List<Project> getProjects_id3V7vYltwK3m(@NotNull SNode __thisNode__, @Nullable final AbstractModule module) {
-    ProjectManager pm = ProjectManager.getInstanceIfCreated();
-    if (pm == null) {
-      return ListSequence.fromList(new ArrayList<Project>());
-    }
-    List<com.intellij.openapi.project.Project> ideaProjects = Sequence.fromIterable(Sequence.fromArray(pm.getOpenProjects())).toList();
-    List<Project> allMpsProjects = ListSequence.fromList(ideaProjects).select((it) -> {
-      Project mpsProject = ProjectHelper.fromIdeaProject(it);
-      return mpsProject;
-    }).where(new NotNullWhereFilter()).toList();
-    if (module == null) {
-      return allMpsProjects;
-    }
-
-    List<Project> filteredProjects = ListSequence.fromList(allMpsProjects).where((project) -> {
-      // This is a similar strategy to the one used in jetbrains.mps.project.SModuleOperations.getProjectForModule
-      if (Objects.equals(check_4uhynf_a0b0a0a0a6a1((as_wqhtum_a0a0a1a0a0a0g0k(module.getRepository(), ProjectRepository.class))), project)) {
-        return true;
-      }
-      Set<MPSModuleOwner> moduleOwners = new ModuleRepositoryFacade(project).getModuleOwners(module);
-      return SetSequence.fromSet(moduleOwners).ofType(Project.class).contains(project);
-    }).toList();
-    if (ListSequence.fromList(filteredProjects).isNotEmpty()) {
-      return filteredProjects;
-    }
-
-    return allMpsProjects;
+  @Deprecated(since = "2025-11-07", forRemoval = true)
+  /*package*/ static Iterable<SNode> findElements_id7nkDZJXluPi(@NotNull SNode __thisNode__, SModel currentModel) {
+    return ((Iterable<SNode>) AssessmentScope__BehaviorDescriptor.findElements_id20N7CGtOl8_.invoke(__thisNode__, ListSequence.fromList(GuessCurrentProject.getProjects(as_wqhtum_a0a0b0a0a0a01(currentModel.getModule(), AbstractModule.class))).first(), currentModel));
   }
 
   /*package*/ ProjectScope__BehaviorDescriptor() {
@@ -99,9 +59,9 @@ public final class ProjectScope__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((Iterable<SNode>) findElements_id7nkDZJXluPi(node, (SModel) parameters[0]));
+        return (T) ((Iterable<SNode>) findElements_id20N7CGtOl8_(node, (Project) parameters[0], (SModel) parameters[1]));
       case 1:
-        return (T) ((List<Project>) getProjects_id3V7vYltwK3m(node, (AbstractModule) parameters[0]));
+        return (T) ((Iterable<SNode>) findElements_id7nkDZJXluPi(node, (SModel) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -130,16 +90,7 @@ public final class ProjectScope__BehaviorDescriptor extends BaseBHDescriptor {
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static Project check_4uhynf_a0b0a0a0a6a1(ProjectRepository checkedDotOperand) {
-    if (null != checkedDotOperand) {
-      return checkedDotOperand.getProject();
-    }
-    return null;
-  }
-  private static <T> T as_wqhtum_a0a0a9(Object o, Class<T> type) {
-    return (type.isInstance(o) ? (T) o : null);
-  }
-  private static <T> T as_wqhtum_a0a0a1a0a0a0g0k(Object o, Class<T> type) {
+  private static <T> T as_wqhtum_a0a0b0a0a0a01(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 }

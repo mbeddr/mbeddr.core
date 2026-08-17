@@ -16,7 +16,7 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.plugins.projectplugins.ProjectPluginManager;
 
 public class HighlightCodeForNodeAction_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0;
+  private static final Icon ICON = IconContainer.ICON0;
 
   public HighlightCodeForNodeAction_Action() {
     super("Highlight Generated Lines", "Highlights the generated lines corresponding to the current node", ICON);

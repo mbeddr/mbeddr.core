@@ -300,7 +300,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_ReqStatusBlueIcon == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("ReqStatusBlueIcon");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a82b0vc);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_ReqStatusBlueIcon = cpb.create();
         }
         return props_ReqStatusBlueIcon;
@@ -308,7 +308,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_ReqStatusGreenIcon == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("ReqStatusGreenIcon");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a92b0vc);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_ReqStatusGreenIcon = cpb.create();
         }
         return props_ReqStatusGreenIcon;
@@ -316,7 +316,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_ReqStatusGreyIcon == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("ReqStatusGreyIcon");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a03b0vc);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_ReqStatusGreyIcon = cpb.create();
         }
         return props_ReqStatusGreyIcon;
@@ -331,7 +331,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_ReqStatusRedIcon == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("ReqStatusRedIcon");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a23b0vc);
+          cpb.icon(IconContainer.RESOURCE_3);
           props_ReqStatusRedIcon = cpb.create();
         }
         return props_ReqStatusRedIcon;
@@ -347,7 +347,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a functional requirement");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a43b0vc);
+          cpb.icon(IconContainer.RESOURCE_4);
           props_Requirement = cpb.create();
         }
         return props_Requirement;
@@ -467,7 +467,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_RequirementsModule == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a15b0vc);
+          cpb.icon(IconContainer.RESOURCE_5);
           props_RequirementsModule = cpb.create();
         }
         return props_RequirementsModule;
@@ -577,7 +577,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_TreeStatusMinusIcon == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("TreeStatusMinusIcon");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a66b0vc);
+          cpb.icon(IconContainer.RESOURCE_6);
           props_TreeStatusMinusIcon = cpb.create();
         }
         return props_TreeStatusMinusIcon;
@@ -585,7 +585,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_TreeStatusPlusIcon == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("TreeStatusPlusIcon");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a76b0vc);
+          cpb.icon(IconContainer.RESOURCE_7);
           props_TreeStatusPlusIcon = cpb.create();
         }
         return props_TreeStatusPlusIcon;

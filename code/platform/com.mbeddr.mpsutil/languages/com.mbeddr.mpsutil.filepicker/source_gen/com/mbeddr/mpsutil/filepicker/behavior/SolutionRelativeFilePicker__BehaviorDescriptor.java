@@ -42,7 +42,7 @@ public final class SolutionRelativeFilePicker__BehaviorDescriptor extends BaseBH
     return "solution_root";
   }
   /*package*/ static String getPrefix_id6WnTJkDceu8(@NotNull SNode __thisNode__, SModel originalModel) {
-    return SolutionUtil.getSolutionRootPathForNode(__thisNode__);
+    return SolutionUtil.getSolutionRootPath(originalModel);
   }
   /*package*/ static boolean pickFileOnly_id48DzgHgr2tO(@NotNull SNode __thisNode__) {
     return true;

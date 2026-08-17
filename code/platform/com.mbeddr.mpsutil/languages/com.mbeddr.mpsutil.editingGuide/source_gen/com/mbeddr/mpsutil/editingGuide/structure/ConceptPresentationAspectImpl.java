@@ -53,7 +53,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("A group of tasks that together teach a useful lesson.");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a2b0u);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_Exercise = cpb.create();
         }
         return props_Exercise;

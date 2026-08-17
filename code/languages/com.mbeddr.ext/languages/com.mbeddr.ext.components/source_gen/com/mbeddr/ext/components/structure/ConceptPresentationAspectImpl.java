@@ -194,7 +194,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("component with no instances inside");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a9b0oe);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_AtomicComponent = cpb.create();
         }
         return props_AtomicComponent;
@@ -211,7 +211,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("interface with operations");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a11b0oe);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_ClientServerInterface = cpb.create();
         }
         return props_ClientServerInterface;
@@ -404,7 +404,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("field in component");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a83b0oe);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_Field = cpb.create();
         }
         return props_Field;
@@ -554,7 +554,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a set of instances and connectors");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a16b0oe);
+          cpb.icon(IconContainer.RESOURCE_3);
           props_InstanceConfiguration = cpb.create();
         }
         return props_InstanceConfiguration;
@@ -640,7 +640,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an operation that is part of an interface");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a27b0oe);
+          cpb.icon(IconContainer.RESOURCE_4);
           props_Operation = cpb.create();
         }
         return props_Operation;
@@ -816,7 +816,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("services provided by component");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a59b0oe);
+          cpb.icon(IconContainer.RESOURCE_5);
           props_ProvidedPort = cpb.create();
         }
         return props_ProvidedPort;
@@ -887,7 +887,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("services used by component");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a401b0oe);
+          cpb.icon(IconContainer.RESOURCE_6);
           props_RequiredPort = cpb.create();
         }
         return props_RequiredPort;
@@ -912,7 +912,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("refer to the result of an operation");
           cpb.rawPresentation("result");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a701b0oe);
+          cpb.icon(IconContainer.RESOURCE_7);
           props_ResultExpression = cpb.create();
         }
         return props_ResultExpression;
@@ -921,7 +921,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a \"function\" in a component");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a801b0oe);
+          cpb.icon(IconContainer.RESOURCE_8);
           props_Runnable = cpb.create();
         }
         return props_Runnable;

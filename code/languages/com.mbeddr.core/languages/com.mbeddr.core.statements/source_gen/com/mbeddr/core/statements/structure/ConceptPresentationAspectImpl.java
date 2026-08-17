@@ -361,7 +361,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("local variable");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a14b0dc);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_LocalVariableDeclaration = cpb.create();
         }
         return props_LocalVariableDeclaration;

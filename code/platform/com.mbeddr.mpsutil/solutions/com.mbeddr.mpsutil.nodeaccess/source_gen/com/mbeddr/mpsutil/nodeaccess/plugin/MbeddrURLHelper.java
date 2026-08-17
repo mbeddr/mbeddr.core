@@ -15,7 +15,8 @@ import org.jetbrains.mps.openapi.model.SNodeId;
 import org.jetbrains.mps.openapi.model.SModel;
 import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.ui.Messages;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
+import jetbrains.mps.openapi.navigation.EditorNavigator;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.concurrent.atomic.AtomicReference;
 import org.jetbrains.mps.openapi.module.SRepository;
 
@@ -98,7 +99,7 @@ public class MbeddrURLHelper {
         }
 
         if (resolveNode != null) {
-          NavigationSupport.getInstance().openNode(fP, resolveNode, true, true);
+          new EditorNavigator(fP).shallFocus(true).shallSelect(true).open(SNodeOperations.getPointer(resolveNode));
         }
       }
     });

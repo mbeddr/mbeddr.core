@@ -56,7 +56,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("constrain the number of total calls");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a2b0x);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_ExpectTotalNoOfCalls = cpb.create();
         }
         return props_ExpectTotalNoOfCalls;
@@ -72,7 +72,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("component with expectations");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a4b0x);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_MockComponent = cpb.create();
         }
         return props_MockComponent;
@@ -140,7 +140,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a step in a sequence");
           cpb.rawPresentation("step");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a31b0x);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_Step = cpb.create();
         }
         return props_Step;
@@ -148,7 +148,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_StepAssertion == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("--");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a41b0x);
+          cpb.icon(IconContainer.RESOURCE_3);
           props_StepAssertion = cpb.create();
         }
         return props_StepAssertion;

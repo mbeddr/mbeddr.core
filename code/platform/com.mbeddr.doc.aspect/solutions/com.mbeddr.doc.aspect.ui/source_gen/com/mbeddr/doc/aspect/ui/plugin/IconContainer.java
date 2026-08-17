@@ -5,5 +5,5 @@ package com.mbeddr.doc.aspect.ui.plugin;
 import javax.swing.Icon;
 
 public class IconContainer {
-  protected static Icon ICON_a0a1a9a32;
+  protected static Icon ICON0;
 }

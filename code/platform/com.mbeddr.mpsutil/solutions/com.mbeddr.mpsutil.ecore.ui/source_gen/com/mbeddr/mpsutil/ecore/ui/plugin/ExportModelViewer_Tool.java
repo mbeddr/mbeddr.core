@@ -10,7 +10,7 @@ import javax.swing.JComponent;
 import javax.swing.JFileChooser;
 
 public class ExportModelViewer_Tool extends GeneratedTool {
-  private static final Icon ICON = IconContainer.ICON_a0_2;
+  private static final Icon ICON = IconContainer.ICON3;
   public ExportModelViewer_Tool(Project project) {
     super(project, "Visualisation", null, ICON, ToolWindowAnchor.RIGHT, false);
   }

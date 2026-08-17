@@ -11,6 +11,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import jetbrains.mps.project.Project;
 import java.util.Map;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -32,16 +33,16 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class InstanceCounterAssessment__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc8e0d19c3cf4b31L, 0xaf77531227edbce8L, 0x571d7a04fb1507c7L, "com.mbeddr.core.qa.structure.InstanceCounterAssessment");
 
-  public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
   /*package*/ static final SMethod<Void> addOne_id5stuwjVxDeX = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addOne").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(6277307617442698173L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter((Class<Map<String, Integer>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id7hIyKqbFNeu, addOne_id5stuwjVxDeX);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id4WjNWxKJWaq, addOne_id5stuwjVxDeX);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static List<SNode> runQuery_id7hIyKqbFNeu(@NotNull final SNode __thisNode__) {
-    Iterable<SNode> all = AssessmentScope__BehaviorDescriptor.findElements_id7nkDZJXluPi.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.scope$IgS_), SNodeOperations.getModel(__thisNode__));
+  /*package*/ static List<SNode> runQuery_id4WjNWxKJWaq(@NotNull final SNode __thisNode__, Project mpsProject) {
+    Iterable<SNode> all = AssessmentScope__BehaviorDescriptor.findElements_id20N7CGtOl8_.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.scope$IgS_), mpsProject, SNodeOperations.getModel(__thisNode__));
     if (isNotEmptyString(SPropertyOperations.getString(__thisNode__, PROPS.modelNameFilter$ImhW)) && !(SPropertyOperations.getBoolean(__thisNode__, PROPS.negateModelNameFilter$ImJY))) {
       all = Sequence.fromIterable(all).where((it) -> SModelOperations.getModelName(SNodeOperations.getModel(it)).contains(SPropertyOperations.getString(__thisNode__, PROPS.modelNameFilter$ImhW)));
     }
@@ -88,7 +89,7 @@ public final class InstanceCounterAssessment__BehaviorDescriptor extends BaseBHD
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((List<SNode>) runQuery_id7hIyKqbFNeu(node));
+        return (T) ((List<SNode>) runQuery_id4WjNWxKJWaq(node, (Project) parameters[0]));
       case 1:
         addOne_id5stuwjVxDeX(node, (Map<String, Integer>) parameters[0], (String) parameters[1]);
         return null;

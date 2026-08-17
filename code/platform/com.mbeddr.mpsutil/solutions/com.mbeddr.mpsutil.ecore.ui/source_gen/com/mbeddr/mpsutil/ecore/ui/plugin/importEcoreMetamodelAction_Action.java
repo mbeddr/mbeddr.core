@@ -13,7 +13,7 @@ import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.project.MPSProject;
 
 public class importEcoreMetamodelAction_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0_0;
+  private static final Icon ICON = IconContainer.ICON1;
 
   public importEcoreMetamodelAction_Action() {
     super("Import Ecore Metamodel (ecore file to mps language structure)", "", ICON);

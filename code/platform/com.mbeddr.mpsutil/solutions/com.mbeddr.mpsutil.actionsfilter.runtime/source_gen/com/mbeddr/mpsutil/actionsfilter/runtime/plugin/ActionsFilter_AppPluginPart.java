@@ -13,6 +13,7 @@ public class ActionsFilter_AppPluginPart extends ApplicationPluginPart {
   }
   @Override
   public void init() {
+    ActionsService.replace();
     Configurable.APPLICATION_CONFIGURABLE.getPoint().registerExtension(ActionsFilter_AppPluginPart.this.configurable, Disposer.newDisposable());
   }
   @Override

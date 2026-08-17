@@ -81,7 +81,7 @@ public final class Parameter_DatePicker__BehaviorDescriptor extends BaseBHDescri
     SNode quotedNode_1 = null;
     SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage"), 0x101de48bf9eL, "ClassifierType"));
     quotedNode_1 = nb.getResult();
-    nb.setReference(MetaAdapterFactory.getReferenceLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101de48bf9eL, 0x101de490babL, "classifier"), "39983771-4e9b-401b-a1a9-1da6c777c843/java:com.michaelbaranov.microba.calendar(MPS.ThirdParty/)/~DatePicker");
+    nb.setReference(MetaAdapterFactory.getReferenceLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101de48bf9eL, 0x101de490babL, "classifier"), "98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea/java:com.michaelbaranov.microba.calendar(com.mbeddr.mpsutil.datepicker.runtime/)/~DatePicker");
     return quotedNode_1;
   }
 }

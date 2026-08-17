@@ -13,8 +13,7 @@ import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import org.jetbrains.annotations.NotNull;
-import com.intellij.openapi.project.Project;
-import com.intellij.openapi.actionSystem.CommonDataKeys;
+import jetbrains.mps.project.MPSProject;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.base.behavior.Assessment__BehaviorDescriptor;
@@ -56,7 +55,7 @@ public class UpdateAssessments_Action extends BaseAction {
       }
     }
     {
-      Project p = event.getData(CommonDataKeys.PROJECT);
+      MPSProject p = event.getData(MPSCommonDataKeys.MPS_PROJECT);
       if (p == null) {
         return false;
       }
@@ -66,7 +65,7 @@ public class UpdateAssessments_Action extends BaseAction {
   @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     SModel m = event.getData(MPSCommonDataKeys.MODEL);
-    Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.roots(m, CONCEPTS.AssessmentContainer$Uv), LINKS.assessments$e01F)).visitAll((it) -> Assessment__BehaviorDescriptor.update_id3jNX2XuLy_p.invoke(it));
+    Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.roots(m, CONCEPTS.AssessmentContainer$Uv), LINKS.assessments$e01F)).visitAll((it) -> Assessment__BehaviorDescriptor.update_id4WjNWxKKBRM.invoke(it, event.getData(MPSCommonDataKeys.MPS_PROJECT)));
   }
 
   private static final class CONCEPTS {

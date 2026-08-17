@@ -6,7 +6,7 @@
     <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -23,8 +23,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -388,8 +388,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6ghi$I1W7AX" role="3Uehp1">
-      <node concept="10M0yZ" id="6ghi$I1WacR" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcumQC" role="3Uehp1">
+      <node concept="10M0yZ" id="6ghi$I1WacR" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Checked" resolve="Checked" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -552,8 +552,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6ghi$I1WccG" role="3Uehp1">
-      <node concept="10M0yZ" id="6ghi$I1WdI0" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcumQD" role="3Uehp1">
+      <node concept="10M0yZ" id="6ghi$I1WdI0" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Checked" resolve="Checked" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>

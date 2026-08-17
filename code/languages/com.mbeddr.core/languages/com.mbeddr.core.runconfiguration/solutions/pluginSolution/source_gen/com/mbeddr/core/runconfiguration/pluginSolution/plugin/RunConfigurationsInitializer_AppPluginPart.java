@@ -25,7 +25,7 @@ public class RunConfigurationsInitializer_AppPluginPart extends ApplicationPlugi
     // register kinds
     ExtensionPoint<ConfigurationType> configurationExtensionPoint = Extensions.getRootArea().getExtensionPoint(ConfigurationType.CONFIGURATION_TYPE_EP);
     {
-      ConfigTypeEnvoy runConfigurationKind = new ConfigTypeEnvoy("Mbeddr Binary", IconContainer.ICON_b0a0a0c0d, "Mbeddr Binary", "Mbeddr Binary");
+      ConfigTypeEnvoy runConfigurationKind = new ConfigTypeEnvoy("Mbeddr Binary", IconContainer.ICON0, "Mbeddr Binary", "Mbeddr Binary");
       runConfigurationKind.addFactoryFor("mbeddr executable configuration", MbeddrExecutableConfiguration_Configuration.class);
       RunConfigurationsInitializer_AppPluginPart.this.myRegisteredKinds.add(runConfigurationKind);
       configurationExtensionPoint.registerExtension(runConfigurationKind);

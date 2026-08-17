@@ -5,7 +5,8 @@ package com.mbeddr.core.base.behavior;
 import javax.swing.Icon;
 import jetbrains.mps.project.Project;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
+import jetbrains.mps.openapi.navigation.EditorNavigator;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public abstract class TreeViewAction {
 
@@ -27,7 +28,7 @@ public abstract class TreeViewAction {
 
   protected void selectNodeInEditor(final Project project, final SNode n) {
     if (n != null) {
-      NavigationSupport.getInstance().openNode(project, n, true, true);
+      new EditorNavigator(project).shallFocus(true).shallSelect(true).open(SNodeOperations.getPointer(n));
     }
   }
 

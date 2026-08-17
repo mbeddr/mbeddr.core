@@ -91,7 +91,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x46097107c8d98c14L);
           cpb.deprecateAssociation(0x22c2a484fa022de6L, "target_old");
           cpb.shortDesc("--");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a4b0vb);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_Binary = cpb.create();
         }
         return props_Binary;
@@ -100,7 +100,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("define how the binaries are built");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a5b0vb);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_BuildConfiguration = cpb.create();
         }
         return props_BuildConfiguration;
@@ -161,7 +161,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateProperty(0x2f9f89db3d4fb5bcL, "isTest");
           cpb.shortDesc("an executable binary");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a31b0vb);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_Executable = cpb.create();
         }
         return props_Executable;
@@ -269,7 +269,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("--");
           cpb.presentationByReference(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x6b1af9f9f43c2f4bL, 0x6b1af9f9f43c2f4cL, "module", "", "");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a82b0vb);
+          cpb.icon(IconContainer.RESOURCE_3);
           props_ModuleRef = cpb.create();
         }
         return props_ModuleRef;

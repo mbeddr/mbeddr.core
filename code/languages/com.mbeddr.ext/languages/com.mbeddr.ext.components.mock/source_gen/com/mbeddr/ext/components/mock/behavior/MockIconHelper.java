@@ -8,20 +8,20 @@ public class MockIconHelper {
   public static Icon loadTotalCallsIcon(BinaryState state) {
     assert state != null;
     if (state == BinaryState.FAILED) {
-      return IconContainer.ICON_a0a1a0;
+      return IconContainer.ICON0;
     } else if (state == BinaryState.SUCCESSFUL) {
-      return IconContainer.ICON_a0a0b0a;
+      return IconContainer.ICON1;
     }
     return null;
   }
   public static Icon loadMockIcon(TripleState state) {
     assert state != null;
     if (state == TripleState.FAILED) {
-      return IconContainer.ICON_a0a1a1;
+      return IconContainer.ICON2;
     } else if (state == TripleState.PENDING) {
-      return IconContainer.ICON_a0a0b0b;
+      return IconContainer.ICON3;
     } else if (state == TripleState.SUCCESSFUL) {
-      return IconContainer.ICON_a0a1b0b;
+      return IconContainer.ICON4;
     }
     return null;
   }
@@ -29,11 +29,11 @@ public class MockIconHelper {
     assert state != null;
     String iconName = null;
     if (state == TripleState.FAILED) {
-      return IconContainer.ICON_a0a2a2;
+      return IconContainer.ICON5;
     } else if (state == TripleState.PENDING) {
-      return IconContainer.ICON_a0a0c0c;
+      return IconContainer.ICON6;
     } else if (state == TripleState.SUCCESSFUL) {
-      return IconContainer.ICON_a0a1c0c;
+      return IconContainer.ICON7;
     }
     return null;
   }
@@ -41,11 +41,11 @@ public class MockIconHelper {
     assert state != null;
     String iconName = null;
     if (state == TripleState.FAILED) {
-      return IconContainer.ICON_a0a2a3;
+      return IconContainer.ICON8;
     } else if (state == TripleState.PENDING) {
-      return IconContainer.ICON_a0a0c0d;
+      return IconContainer.ICON9;
     } else if (state == TripleState.SUCCESSFUL) {
-      return IconContainer.ICON_a0a1c0d;
+      return IconContainer.ICON10;
     }
     return null;
   }

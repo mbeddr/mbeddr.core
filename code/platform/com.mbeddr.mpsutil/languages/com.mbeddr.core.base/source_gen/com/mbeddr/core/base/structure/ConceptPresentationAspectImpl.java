@@ -112,7 +112,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xc022423d5828abcL);
           cpb.deprecateProperty(0x301169f6dce6c717L, "exportAsXML");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a0b0pd);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_Assessment = cpb.create();
         }
         return props_Assessment;
@@ -120,7 +120,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_AssessmentContainer == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a1b0pd);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_AssessmentContainer = cpb.create();
         }
         return props_AssessmentContainer;

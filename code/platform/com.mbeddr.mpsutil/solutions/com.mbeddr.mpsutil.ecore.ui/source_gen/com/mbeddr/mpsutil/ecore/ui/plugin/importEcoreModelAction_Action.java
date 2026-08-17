@@ -12,7 +12,7 @@ import org.jetbrains.mps.openapi.model.SModel;
 import org.jetbrains.annotations.NotNull;
 
 public class importEcoreModelAction_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0_1;
+  private static final Icon ICON = IconContainer.ICON2;
 
   public importEcoreModelAction_Action() {
     super("Import Ecore Model (from xml file to mps model)", "", ICON);

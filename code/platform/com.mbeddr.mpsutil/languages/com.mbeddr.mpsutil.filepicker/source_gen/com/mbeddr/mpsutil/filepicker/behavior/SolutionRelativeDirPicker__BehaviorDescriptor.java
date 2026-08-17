@@ -42,7 +42,7 @@ public final class SolutionRelativeDirPicker__BehaviorDescriptor extends BaseBHD
     return "solution_root";
   }
   /*package*/ static String getPrefix_id6WnTJkDceu8(@NotNull SNode __thisNode__, SModel originalModel) {
-    return SolutionUtil.getSolutionRootPathForNode(__thisNode__);
+    return SolutionUtil.getSolutionRootPath(originalModel);
   }
   /*package*/ static boolean pickDirOnly_id5lKnBeB0qXj(@NotNull SNode __thisNode__) {
     return true;

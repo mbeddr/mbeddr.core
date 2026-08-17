@@ -294,7 +294,7 @@
   </root>
   <root nodeRef="r:35144171-bbda-419f-9015-4d1f075e1db4(com.mbeddr.core.runconfiguration.pluginSolution.plugin)/1611636138415080921">
     <file name="RunConfigurationsInitializer_AppPluginPart.java">
-      <node id="1611636138415080921" at="27,5,28,146" concept="8" />
+      <node id="1611636138415080921" at="27,5,28,137" concept="8" />
       <node id="1611636138415080921" at="29,127,30,98" concept="3" />
       <node id="1611636138415080921" at="30,98,31,74" concept="3" />
       <node id="1611636138415080921" at="26,152,32,5" concept="0" />
@@ -473,10 +473,10 @@
       <node id="1611636138415081120" at="82,81,83,43" concept="3" />
       <node id="8614636349694404058" at="83,43,84,87" concept="3" />
       <node id="1611636138415081120" at="84,87,85,25" concept="9" />
-      <node id="1611636138415081120" at="88,39,89,30" concept="9" />
-      <node id="1611636138415081120" at="91,50,92,20" concept="9" />
-      <node id="1611636138415081120" at="95,49,96,31" concept="3" />
-      <node id="1611636138415081120" at="98,60,99,21" concept="3" />
+      <node id="8614636349692458873" at="88,39,89,30" concept="9" />
+      <node id="8614636349694404058" at="91,50,92,20" concept="9" />
+      <node id="8614636349692458873" at="95,49,96,31" concept="3" />
+      <node id="8614636349694404058" at="98,60,99,21" concept="3" />
       <node id="8614636349692458873" at="103,0,104,0" concept="4" trace="mySettings" />
       <node id="1611636138415081120" at="108,11,109,48" concept="8" />
       <node id="8614636349692458873" at="109,48,110,38" concept="3" />
@@ -497,10 +497,10 @@
       <node id="1611636138415081120" at="39,0,41,0" concept="4" trace="myState" />
       <node id="1611636138415081120" at="62,73,65,5" concept="6" />
       <node id="8614636349694404058" at="66,73,69,5" concept="6" />
-      <node id="1611636138415081120" at="88,0,91,0" concept="7" trace="getSettings#()Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrSettings;" />
-      <node id="1611636138415081120" at="91,0,94,0" concept="7" trace="getBinary#()Ljetbrains/mps/execution/api/settings/IPersistentConfiguration;" />
-      <node id="1611636138415081120" at="95,0,98,0" concept="7" trace="setSettings#(Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrSettings;)V" />
-      <node id="1611636138415081120" at="98,0,101,0" concept="7" trace="setBinary#(Ljetbrains/mps/execution/api/settings/IPersistentConfiguration;)V" />
+      <node id="8614636349692458873" at="88,0,91,0" concept="7" trace="getSettings#()Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrSettings;" />
+      <node id="8614636349694404058" at="91,0,94,0" concept="7" trace="getBinary#()Ljetbrains/mps/execution/api/settings/IPersistentConfiguration;" />
+      <node id="8614636349692458873" at="95,0,98,0" concept="7" trace="setSettings#(Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrSettings;)V" />
+      <node id="8614636349694404058" at="98,0,101,0" concept="7" trace="setBinary#(Ljetbrains/mps/execution/api/settings/IPersistentConfiguration;)V" />
       <node id="1611636138415081120" at="122,0,125,0" concept="2" trace="MbeddrExecutableConfiguration_Configuration#(Lcom/intellij/openapi/project/Project;Lcom/intellij/execution/configurations/ConfigurationFactory;Ljava/lang/String;)V" />
       <node id="1611636138415081120" at="133,0,136,0" concept="7" trace="createRunnerSettings#(Lcom/intellij/execution/configurations/ConfigurationInfoProvider;)Lcom/intellij/execution/configurations/ConfigurationPerRunnerSettings;" />
       <node id="1611636138415081120" at="136,0,139,0" concept="7" trace="getConfigurationEditor#()Ljetbrains/mps/execution/api/settings/SettingsEditorEx;" />
@@ -526,10 +526,10 @@
       <scope id="1611636138415081120" at="63,26,64,81" />
       <scope id="8614636349694404058" at="67,45,68,56" />
       <scope id="1611636138415081120" at="74,62,75,18" />
-      <scope id="1611636138415081120" at="88,39,89,30" />
-      <scope id="1611636138415081120" at="91,50,92,20" />
-      <scope id="1611636138415081120" at="95,49,96,31" />
-      <scope id="1611636138415081120" at="98,60,99,21" />
+      <scope id="8614636349692458873" at="88,39,89,30" />
+      <scope id="8614636349694404058" at="91,50,92,20" />
+      <scope id="8614636349692458873" at="95,49,96,31" />
+      <scope id="8614636349694404058" at="98,60,99,21" />
       <scope id="1611636138415081120" at="112,47,113,64" />
       <scope id="1611636138415081120" at="118,27,119,21" />
       <scope id="1611636138415081120" at="122,114,123,34" />
@@ -549,13 +549,13 @@
       <scope id="8614636349694404058" at="54,5,57,39">
         <var name="fieldElement" id="8614636349694404058" />
       </scope>
-      <scope id="1611636138415081120" at="88,0,91,0" />
-      <scope id="1611636138415081120" at="91,0,94,0" />
-      <scope id="1611636138415081120" at="95,0,98,0">
-        <var name="value" id="1611636138415081120" />
+      <scope id="8614636349692458873" at="88,0,91,0" />
+      <scope id="8614636349694404058" at="91,0,94,0" />
+      <scope id="8614636349692458873" at="95,0,98,0">
+        <var name="value" id="8614636349692458873" />
       </scope>
-      <scope id="1611636138415081120" at="98,0,101,0">
-        <var name="value" id="1611636138415081120" />
+      <scope id="8614636349694404058" at="98,0,101,0">
+        <var name="value" id="8614636349694404058" />
       </scope>
       <scope id="1611636138415081120" at="108,11,111,21">
         <var name="state" id="1611636138415081120" />
@@ -657,7 +657,7 @@
       <unit id="1611636138415081120" at="16,0,51,0" name="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MbeddrExecutableConfiguration_Configuration_Editor" />
     </file>
     <file name="RunConfigurationsInitializer_AppPluginPart.java">
-      <node id="1611636138415081120" at="28,146,29,127" concept="3" />
+      <node id="1611636138415081120" at="28,137,29,127" concept="3" />
     </file>
   </root>
   <root nodeRef="r:35144171-bbda-419f-9015-4d1f075e1db4(com.mbeddr.core.runconfiguration.pluginSolution.plugin)/1611636138415081197">
@@ -1969,71 +1969,73 @@
       <node id="8614636349693771755" at="68,46,69,45" concept="3" />
       <node id="8614636349693812140" at="69,45,70,43" concept="3" />
       <node id="8614636349692842067" at="75,0,76,0" concept="4" trace="textField" />
-      <node id="8614636349692852415" at="76,57,77,33" concept="3" />
-      <node id="6391517972808447800" at="80,41,81,27" concept="3" />
-      <node id="6391517972808447802" at="81,27,82,121" concept="3" />
-      <node id="6391517972808447819" at="85,57,86,27" concept="3" />
-      <node id="6391517972808447846" at="95,11,96,38" concept="9" />
-      <node id="6391517972808447838" at="97,41,98,42" concept="15" />
-      <node id="6391517972808447863" at="103,26,104,20" concept="9" />
-      <node id="6391517972808447865" at="105,7,106,47" concept="9" />
-      <node id="6391517972808447825" at="91,0,93,0" concept="2" trace="MyDefaultFormatter#()V" />
-      <node id="6391517972808447790" at="76,0,79,0" concept="2" trace="MyKeyAdapter#(Ljavax/swing/JFormattedTextField;)V" />
-      <node id="6391517972808447858" at="102,79,105,7" concept="6" />
+      <node id="7933905242586957841" at="76,0,77,0" concept="4" trace="initialForegroundColor" />
+      <node id="8614636349692852415" at="78,57,79,33" concept="3" />
+      <node id="7933905242586990075" at="79,33,80,111" concept="3" />
+      <node id="6391517972808447800" at="83,41,84,27" concept="3" />
+      <node id="6391517972808447802" at="84,27,85,94" concept="3" />
+      <node id="6391517972808447819" at="88,57,89,27" concept="3" />
+      <node id="6391517972808447846" at="98,11,99,38" concept="9" />
+      <node id="6391517972808447838" at="100,41,101,42" concept="15" />
+      <node id="6391517972808447863" at="106,26,107,20" concept="9" />
+      <node id="6391517972808447865" at="108,7,109,47" concept="9" />
+      <node id="6391517972808447825" at="94,0,96,0" concept="2" trace="MyDefaultFormatter#()V" />
+      <node id="6391517972808447858" at="105,79,108,7" concept="6" />
       <node id="6391517972808448022" at="58,0,62,0" concept="7" trace="updateUiFromFields#()V" />
       <node id="6391517972808448073" at="68,0,72,0" concept="7" trace="apply#(Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrSettings;)V" />
-      <node id="6391517972808447813" at="84,0,88,0" concept="7" trace="propertyChange#(Ljava/beans/PropertyChangeEvent;)V" />
+      <node id="6391517972808447790" at="78,0,82,0" concept="2" trace="MyKeyAdapter#(Ljavax/swing/JFormattedTextField;)V" />
+      <node id="6391517972808447813" at="87,0,91,0" concept="7" trace="propertyChange#(Ljava/beans/PropertyChangeEvent;)V" />
       <node id="6391517972808448049" at="63,0,68,0" concept="7" trace="reset#(Lcom/mbeddr/core/runconfiguration/pluginSolution/plugin/MbeddrSettings;)V" />
-      <node id="6391517972808447794" at="79,0,84,0" concept="7" trace="keyReleased#(Ljava/awt/event/KeyEvent;)V" />
-      <node id="6391517972808447835" at="94,68,99,7" concept="16" />
+      <node id="6391517972808447794" at="82,0,87,0" concept="7" trace="keyReleased#(Ljava/awt/event/KeyEvent;)V" />
+      <node id="6391517972808447835" at="97,68,102,7" concept="16" />
       <node id="8614636349693343349" at="50,37,56,5" concept="16" />
-      <node id="6391517972808447851" at="101,0,108,0" concept="7" trace="valueToString#(Ljava/lang/Object;)Ljava/lang/String;" />
+      <node id="6391517972808447851" at="104,0,111,0" concept="7" trace="valueToString#(Ljava/lang/Object;)Ljava/lang/String;" />
       <node id="6391517972808447995" at="50,0,58,0" concept="7" trace="updateFieldsFromUi#()V" />
-      <node id="6391517972808447829" at="93,0,101,0" concept="7" trace="stringToValue#(Ljava/lang/String;)Ljava/lang/Object;" />
+      <node id="6391517972808447829" at="96,0,104,0" concept="7" trace="stringToValue#(Ljava/lang/String;)Ljava/lang/Object;" />
       <node id="6391517972808447890" at="27,0,50,0" concept="2" trace="MbeddrSettingsEditor#()V" />
-      <scope id="6391517972808447828" at="91,34,91,34" />
+      <scope id="6391517972808447828" at="94,34,94,34" />
       <scope id="8614636349693343358" at="54,27,55,26" />
-      <scope id="6391517972808447793" at="76,57,77,33" />
-      <scope id="6391517972808447818" at="85,57,86,27" />
-      <scope id="6391517972808447845" at="95,11,96,38" />
-      <scope id="6391517972808447837" at="97,41,98,42" />
-      <scope id="6391517972808447862" at="103,26,104,20" />
+      <scope id="6391517972808447818" at="88,57,89,27" />
+      <scope id="6391517972808447845" at="98,11,99,38" />
+      <scope id="6391517972808447837" at="100,41,101,42" />
+      <scope id="6391517972808447862" at="106,26,107,20" />
       <scope id="8614636349693343351" at="51,9,53,75" />
       <scope id="8614636349693343352" at="54,5,56,5">
         <var name="e" id="8614636349693343354" />
       </scope>
       <scope id="6391517972808448025" at="58,37,60,55" />
       <scope id="6391517972808448078" at="68,46,70,43" />
-      <scope id="6391517972808447799" at="80,41,82,121" />
-      <scope id="6391517972808447825" at="91,0,93,0" />
-      <scope id="6391517972808447836" at="97,7,99,7">
+      <scope id="6391517972808447793" at="78,57,80,111" />
+      <scope id="6391517972808447799" at="83,41,85,94" />
+      <scope id="6391517972808447825" at="94,0,96,0" />
+      <scope id="6391517972808447836" at="100,7,102,7">
         <var name="e" id="6391517972808447843" />
       </scope>
       <scope id="6391517972808448054" at="63,46,66,25" />
-      <scope id="6391517972808447790" at="76,0,79,0">
-        <var name="textField" id="8614636349692848076" />
-      </scope>
       <scope id="6391517972808448022" at="58,0,62,0" />
       <scope id="6391517972808448073" at="68,0,72,0">
         <var name="settings" id="6391517972808448076" />
       </scope>
-      <scope id="6391517972808447813" at="84,0,88,0">
+      <scope id="6391517972808447790" at="78,0,82,0">
+        <var name="textField" id="8614636349692848076" />
+      </scope>
+      <scope id="6391517972808447813" at="87,0,91,0">
         <var name="evt" id="6391517972808447816" />
       </scope>
-      <scope id="6391517972808447857" at="102,79,106,47" />
+      <scope id="6391517972808447857" at="105,79,109,47" />
       <scope id="6391517972808448049" at="63,0,68,0">
         <var name="settings" id="6391517972808448052" />
       </scope>
-      <scope id="6391517972808447794" at="79,0,84,0">
+      <scope id="6391517972808447794" at="82,0,87,0">
         <var name="e" id="6391517972808447797" />
       </scope>
-      <scope id="6391517972808447834" at="94,68,99,7" />
+      <scope id="6391517972808447834" at="97,68,102,7" />
       <scope id="6391517972808447998" at="50,37,56,5" />
-      <scope id="6391517972808447851" at="101,0,108,0">
+      <scope id="6391517972808447851" at="104,0,111,0">
         <var name="value" id="6391517972808447854" />
       </scope>
       <scope id="6391517972808447995" at="50,0,58,0" />
-      <scope id="6391517972808447829" at="93,0,101,0">
+      <scope id="6391517972808447829" at="96,0,104,0">
         <var name="text" id="6391517972808447832" />
       </scope>
       <scope id="6391517972808447893" at="27,33,48,73">
@@ -2042,9 +2044,9 @@
         <var name="launchTimeoutListener" id="8614636349693197663" />
       </scope>
       <scope id="6391517972808447890" at="27,0,50,0" />
-      <unit id="6391517972808447786" at="74,0,89,0" name="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MbeddrSettingsEditor$MyKeyAdapter" />
-      <unit id="6391517972808447822" at="90,0,109,0" name="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MbeddrSettingsEditor$MyDefaultFormatter" />
-      <unit id="6391517972808447783" at="20,0,110,0" name="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MbeddrSettingsEditor" />
+      <unit id="6391517972808447786" at="74,0,92,0" name="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MbeddrSettingsEditor$MyKeyAdapter" />
+      <unit id="6391517972808447822" at="93,0,112,0" name="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MbeddrSettingsEditor$MyDefaultFormatter" />
+      <unit id="6391517972808447783" at="20,0,113,0" name="com.mbeddr.core.runconfiguration.pluginSolution.plugin.MbeddrSettingsEditor" />
     </file>
   </root>
   <root nodeRef="r:35144171-bbda-419f-9015-4d1f075e1db4(com.mbeddr.core.runconfiguration.pluginSolution.plugin)/6804989120607368893">

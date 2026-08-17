@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 import com.intellij.ui.SearchTextField;
 import javax.swing.JComboBox;
 import com.intellij.openapi.actionSystem.AnAction;
-import com.mbeddr.mpsutil.actionsfilter.ideaplugin.ActionsService;
+import com.mbeddr.mpsutil.actionsfilter.runtime.plugin.ActionsService;
 import javax.swing.event.DocumentListener;
 import javax.swing.event.DocumentEvent;
 import java.awt.event.KeyListener;

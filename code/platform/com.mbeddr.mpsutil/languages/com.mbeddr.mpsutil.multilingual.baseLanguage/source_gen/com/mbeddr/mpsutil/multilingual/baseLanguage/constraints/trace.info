@@ -21,7 +21,7 @@
       <node id="9087294576173815569" at="34,45,35,44" concept="10" />
       <node id="9087294576173815569" at="42,130,43,161" concept="5" />
       <node id="9087294576173815569" at="43,161,44,0" concept="7" />
-      <node id="9087294576173815569" at="45,55,46,70" concept="2" />
+      <node id="9087294576173815569" at="45,55,46,74" concept="2" />
       <node id="9087294576173815569" at="47,9,48,0" concept="7" />
       <node id="9087294576173815569" at="48,0,49,22" concept="6" />
       <node id="568377005202722041" at="54,62,55,62" concept="10" />
@@ -34,7 +34,7 @@
       <node id="568377005202722041" at="78,119,79,67" concept="2" />
       <node id="9087294576173815569" at="79,67,80,22" concept="6" />
       <node id="6768392667014107235" at="82,149,83,182" concept="6" />
-      <node id="9087294576173815569" at="85,0,86,0" concept="8" trace="canBeRootBreakingPoint" />
+      <node id="9087294576173815569" at="85,0,86,0" concept="8" trace="canBeAncestorBreakingPoint" />
       <node id="9087294576173815569" at="88,0,89,0" concept="8" trace="RichStringMessageKey$ac" />
       <node id="9087294576173815569" at="89,0,90,0" concept="8" trace="InlineFormat$AE" />
       <node id="9087294576173815569" at="90,0,91,0" concept="8" trace="IInlineExpression$QB" />
@@ -56,7 +56,7 @@
       <node id="9087294576173815569" at="39,109,51,6" concept="6" />
       <node id="9087294576173815569" at="38,0,53,0" concept="4" trace="calculateCanBeAncestorConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
       <scope id="9087294576173815569" at="34,45,35,44" />
-      <scope id="9087294576173815569" at="45,55,46,70" />
+      <scope id="9087294576173815569" at="45,55,46,74" />
       <scope id="568377005202722041" at="54,62,55,62" />
       <scope id="568377005202722045" at="59,78,60,86" />
       <scope id="568377005202722055" at="61,14,62,175" />
