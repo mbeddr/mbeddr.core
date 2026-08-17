@@ -97,8 +97,16 @@
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
+        <property id="7883182368027992003" name="removeUnusedRequiredPorts" index="2$yeXr" />
         <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
+        <reference id="1553713790141527407" name="instanceConfig" index="35zhcq" />
       </concept>
+    </language>
+    <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
+      <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
+        <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
+      </concept>
+      <concept id="4459718605982051985" name="com.mbeddr.core.util.structure.DoNothingReportingStrategy" flags="ng" index="2Q9Fjw" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ngI" index="2Q9xDo">
@@ -140,6 +148,10 @@
         <child id="9172009453269286214" name="kind" index="3_UBH6" />
       </concept>
       <concept id="1017957699896642358" name="com.mbeddr.core.embedded.structure.InterruptDeclaration" flags="ng" index="1O_wwk" />
+      <concept id="6847490852669234129" name="com.mbeddr.core.embedded.structure.RegisterConfigurationItem" flags="ng" index="3V4jtR">
+        <child id="6847490852670616471" name="kind" index="3Vb1WL" />
+      </concept>
+      <concept id="6847490852670653132" name="com.mbeddr.core.embedded.structure.EmulatedRegisterKind" flags="ng" index="3VbeTE" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -1066,6 +1078,24 @@
           <ref role="3GEb4d" to="yrk4:3F9kUGaOPax" resolve="Dummy2" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2v9HqL" id="30ODedpI4aV">
+    <node concept="3i2$bm" id="30ODedpI8zJ" role="2Q9xDr">
+      <node concept="3i3YCL" id="30ODedpI8zL" role="3i30U9">
+        <property role="3Ewwow" value="true" />
+        <property role="2$yeXr" value="true" />
+        <ref role="35zhcq" to="yrk4:3F9kUGaOOYS" resolve="FlatDummyInstances1" />
+      </node>
+    </node>
+    <node concept="2Q9Fgs" id="30ODedpI9oW" role="2Q9xDr">
+      <node concept="2Q9Fjw" id="30ODedpI9oZ" role="2Q9FjI" />
+    </node>
+    <node concept="3V4jtR" id="30ODedpIl98" role="2Q9xDr">
+      <node concept="3VbeTE" id="30ODedpIl9c" role="3Vb1WL" />
+    </node>
+    <node concept="3_UEaq" id="30ODedpIl9f" role="2Q9xDr">
+      <node concept="3_UBHe" id="30ODedpIl9j" role="3_UBH6" />
     </node>
   </node>
 </model>
