@@ -307,7 +307,17 @@ publishing {
                     }
                 }
             }
-            pom(MavenPom::additionalPomInfo)
+            pom {
+                additionalPomInfo()
+                licenses {
+                    license {
+                        name = "EPL-2.0"
+                        url = "https://www.eclipse.org/legal/epl-v20.html"
+                        comments = "Eclipse Public License - v 2.0"
+                        distribution = "repo"
+                    }
+                }
+            }
         }
     }
 }
