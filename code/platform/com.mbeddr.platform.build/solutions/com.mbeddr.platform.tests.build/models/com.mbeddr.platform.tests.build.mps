@@ -21,6 +21,7 @@
         <child id="6593674873639474544" name="options" index="24cAkG" />
       </concept>
       <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
+        <child id="6593674873639478221" name="haltonfailure" index="24c_eh" />
         <child id="6593674873635848987" name="requiredPlugins" index="24YFd7" />
         <child id="7978162869575635130" name="projectPath" index="1RZ71A" />
       </concept>
@@ -2995,6 +2996,11 @@
         <node concept="398BVA" id="62hLUH70SSI" role="1RZ71A">
           <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
         </node>
+        <node concept="NbPM2" id="30ODedpHF03" role="24c_eh">
+          <node concept="3Mxwew" id="30ODedpHF02" role="3MwsjC">
+            <property role="3MwjfP" value="true" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="62hLUH70SOD" role="1hWBAP">
@@ -3028,6 +3034,11 @@
                 <property role="2Ry0Am" value="com.mbeddr.doc" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="NbPM2" id="30ODedpHF0T" role="24c_eh">
+          <node concept="3Mxwew" id="30ODedpHF0S" role="3MwsjC">
+            <property role="3MwjfP" value="true" />
           </node>
         </node>
       </node>

@@ -738,6 +738,72 @@
       <zipfileset file="${mbeddr.ext}/tests/test.ext.components.nodes_tracing/test.ext.components.nodes_tracing.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ext.components.nodes_tracing-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/test.ex.ext.statemachine.jar" />
+    <mkdir dir="${build.tmp}/default/test.ex.ext.statemachine.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/test.ex.ext.statemachine.jar/META-INF/module.xml">
+      <module namespace="test.ex.ext.statemachine" type="solution" uuid="3ef85fa6-42d3-4b91-b2be-19b37203ff69">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="984f0332-8a86-4f5c-9184-03eae96b5d16(com.mbeddr.core.expressions.runtime)" kind="rt" />
+          <module ref="360a4e25-e902-4667-a0a6-0e971c4f3177(com.mbeddr.mpsutil.blutil.rt)" kind="rt" />
+          <module ref="e78f91af-08a8-4a7a-bed6-b22739ed069a(com.mbeddr.mpsutil.spreferences.runtime)" kind="rt" />
+          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="23949432-aaff-4c03-b7da-26e4e956ccea(jetbrains.mps.baseLanguage.regexp.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="6ef0db41-d3b2-47fe-82ac-d55a42cb6b13(jetbrains.mps.baseLanguage.unitTest.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
+        </dependencies>
+        <uses>
+          <language id="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" />
+          <language id="l:2d7fadf5-33f6-4e80-a78f-0f739add2bde:com.mbeddr.core.buildconfig" />
+          <language id="l:61c69711-ed61-4850-81d9-7714ff227fb0:com.mbeddr.core.expressions" />
+          <language id="l:6d11763d-483d-4b2b-8efc-09336c1b0001:com.mbeddr.core.modules" />
+          <language id="l:3bf5377a-e904-4ded-9754-5a516023bfaa:com.mbeddr.core.pointers" />
+          <language id="l:a9d69647-0840-491e-bf39-2eb0805d2011:com.mbeddr.core.statements" />
+          <language id="l:06d68b77-b699-4918-83b8-857e63787800:com.mbeddr.core.unittest" />
+          <language id="l:2693fc71-9b0e-4b05-ab13-f57227d675f2:com.mbeddr.core.util" />
+          <language id="l:97d24244-51db-4e2e-97fc-7bd73b1f5f40:com.mbeddr.ext.components" />
+          <language id="l:bd640b8f-4be4-42b6-8dc0-2c94d1ddf606:com.mbeddr.ext.components.gen_nomw" />
+          <language id="l:13a36f90-83c5-4bf6-9dd6-70e455f1ef36:com.mbeddr.ext.components.statemachine" />
+          <language id="l:41911c23-eb23-4ee6-872f-bc7f7ebce290:com.mbeddr.ext.components.test" />
+          <language id="l:564e97d6-8fb7-41f5-bfc1-c7ed376efd62:com.mbeddr.ext.statemachines" />
+          <language id="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" />
+          <language id="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="test.ex.ext.statemachine-src.jar" descriptor="statemachine.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/test.ex.ext.statemachine.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/test.ex.ext.statemachine" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.statemachine" includes="icons/**, resources/**" />
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.statemachine/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/test.ex.ext.statemachine.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.statemachine">
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.statemachine" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/test.ex.ext.statemachine-src.jar" duplicate="preserve">
+      <fileset dir="${mbeddr.ext}/tests/test.ex.ext.statemachine/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${mbeddr.ext}/tests/test.ex.ext.statemachine/statemachine.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/tests-test.ex.ext.statemachine" prefix="module/" />
+    </jar>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mps.runtimeBuild=${mps.runtimeBuild}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mbeddr.major.version=${mbeddr.major.version}${line.separator}mbeddr.minor.version=${mbeddr.minor.version}${line.separator}mbeddr.build=${mbeddr.build}${line.separator}mbeddr.mbeddr.version=${mbeddr.mbeddr.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.version=${de.itemis.mps.extensions.version}${line.separator}com.mbeddr.mpsutil.actionsfilter.major.version=${com.mbeddr.mpsutil.actionsfilter.major.version}${line.separator}com.mbeddr.mpsutil.actionsfilter.minor.version=${com.mbeddr.mpsutil.actionsfilter.minor.version}${line.separator}com.mbeddr.mpsutil.actionsfilter.build=${com.mbeddr.mpsutil.actionsfilter.build}${line.separator}com.mbeddr.mpsutil.actionsfilter.mbeddr.version=${com.mbeddr.mpsutil.actionsfilter.mbeddr.version}</echo>
   </target>
   
@@ -1004,6 +1070,7 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${mbeddr.ext}/tests/test.ts.ext.components.embedded/source_gen" />
+        <pathelement path="${mbeddr.ext}/tests/test.ts.ext.components.embedded/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
@@ -1105,6 +1172,7 @@
     </javac>
     <copy todir="${build.tmp}/java/out/test.ts.ext.components.embedded">
       <fileset dir="${mbeddr.ext}/tests/test.ts.ext.components.embedded/source_gen" excludes="**/*.java" />
+      <fileset dir="${mbeddr.ext}/tests/test.ts.ext.components.embedded/test_gen/" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -1836,16 +1904,17 @@
     <path id="mps.tests.path">
       <pathelement location="${build.layout}/test.ts.ext.components.jar" />
       <pathelement location="${build.layout}/test.ts.ext.components.embedded.jar" />
+      <pathelement location="${build.layout}/test.ext.components.nodes_tracing.jar" />
       <pathelement location="${build.layout}/test.ts.ext.units.jar" />
       <pathelement location="${build.layout}/test.ts.ext.concurrency.jar" />
       <pathelement location="${build.layout}/test.editor.ext.jar" />
-      <pathelement location="${build.layout}/test.ext.math.nodes_tracing.jar" />
+      <pathelement location="${build.layout}/test.ex.ext.statemachine.jar" />
       <pathelement location="${build.layout}/test.ext.statemachine.nodes_tracing.jar" />
-      <pathelement location="${build.layout}/test.ext.components.nodes_tracing.jar" />
+      <pathelement location="${build.layout}/test.ext.math.nodes_tracing.jar" />
     </path>
     <pathconvert property="mps.tests.path.string" refid="mps.tests.path" />
     <property name="build.jna.library.path" location="${artifacts.mps}/lib/jna" />
-    <launchtests fork="true" haltonfailure="false" mpshome="${artifacts.mps}" reports="${build.tmp}">      
+    <launchtests fork="true" haltonfailure="true" mpshome="${artifacts.mps}" reports="${build.tmp}">      
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xss2048k" />
@@ -1912,6 +1981,7 @@
       <plugin id="de.slisson.mps.tables" path="${artifacts.com.mbeddr.platform}/mps-tables" />
       <plugin id="com.mbeddr.mpsutil.editingGuide" path="${artifacts.com.mbeddr.platform}/mpsutil.editingGuide" />
       <plugin id="com.mbeddr.mpsutil.refactoring" path="${artifacts.com.mbeddr.platform}/mpsutil.refactoring" />
+      <plugin id="com.mbeddr.ext.statemachineInComponents" path="${artifacts.mbeddr}/mbeddr.SmInComp" />
       <plugin id="com.mbeddr.ext.components" path="${artifacts.mbeddr}/mbeddr.components" />
       <plugin id="com.mbeddr.ext.concurrency" path="${artifacts.mbeddr}/mbeddr.concurrency" />
       <plugin id="com.mbeddr.core" path="${artifacts.mbeddr}/mbeddr.core" />
@@ -1971,6 +2041,7 @@
     <delete dir="${mbeddr.ext}/tests/test.ext.math.nodes_tracing/test_gen" />
     <delete dir="${mbeddr.ext}/tests/test.ext.statemachine.nodes_tracing/test_gen" />
     <delete dir="${mbeddr.ext}/tests/test.ts.ext.components/test_gen" />
+    <delete dir="${mbeddr.ext}/tests/test.ts.ext.components.embedded/test_gen" />
     <delete dir="${mbeddr.ext}/tests/test.ts.ext.concurrency/test_gen" />
     <delete dir="${mbeddr.ext}/tests/test.ts.ext.units/test_gen" />
   </target>
