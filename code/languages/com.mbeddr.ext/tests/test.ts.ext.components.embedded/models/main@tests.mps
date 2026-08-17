@@ -108,7 +108,6 @@
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
       </concept>
-      <concept id="4459718605982051985" name="com.mbeddr.core.util.structure.DoNothingReportingStrategy" flags="ng" index="2Q9Fjw" />
       <concept id="4459718605982051980" name="com.mbeddr.core.util.structure.PrintfReportingStrategy" flags="ng" index="2Q9FjX" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
@@ -1082,24 +1081,6 @@
           <ref role="3GEb4d" to="yrk4:3F9kUGaOPax" resolve="Dummy2" />
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="2v9HqL" id="30ODedpI4aV">
-    <node concept="3i2$bm" id="30ODedpI8zJ" role="2Q9xDr">
-      <node concept="3i3YCL" id="30ODedpI8zL" role="3i30U9">
-        <property role="3Ewwow" value="true" />
-        <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" to="yrk4:3F9kUGaOOYS" resolve="FlatDummyInstances1" />
-      </node>
-    </node>
-    <node concept="2Q9Fgs" id="30ODedpI9oW" role="2Q9xDr">
-      <node concept="2Q9Fjw" id="30ODedpI9oZ" role="2Q9FjI" />
-    </node>
-    <node concept="3V4jtR" id="30ODedpIl98" role="2Q9xDr">
-      <node concept="3VbeTE" id="30ODedpIl9c" role="3Vb1WL" />
-    </node>
-    <node concept="3_UEaq" id="30ODedpIl9f" role="2Q9xDr">
-      <node concept="3_UBHe" id="30ODedpIl9j" role="3_UBH6" />
     </node>
   </node>
   <node concept="2v9HqL" id="1nTCJdUh_C_">
