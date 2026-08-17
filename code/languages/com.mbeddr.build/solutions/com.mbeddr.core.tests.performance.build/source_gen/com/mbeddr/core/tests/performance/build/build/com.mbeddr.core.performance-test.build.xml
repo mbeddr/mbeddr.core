@@ -410,7 +410,7 @@
     <path location="${build.layout}/test.ts.core.performance.jar" id="mps.tests.path" />
     <pathconvert property="mps.tests.path.string" refid="mps.tests.path" />
     <property name="build.jna.library.path" location="${artifacts.mps}/lib/jna" />
-    <launchtests fork="true" haltonfailure="false" mpshome="${artifacts.mps}" reports=".">      
+    <launchtests fork="true" haltonfailure="true" mpshome="${artifacts.mps}" reports=".">      
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xss2048k" />

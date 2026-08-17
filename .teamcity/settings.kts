@@ -94,7 +94,7 @@ object Mbeddr : BuildType({
     steps {
         gradle {
             tasks = "com.mbeddr:languages:test_mbeddr com.mbeddr:languages:publish"
-            gradleParams = "-Dorg.gradle.internal.http.socketTimeout=120000"
+            gradleParams = "--continue -Dorg.gradle.internal.http.socketTimeout=120000"
             jdkHome = "%env.JDK_17_0_x64%"
         }
     }
@@ -189,7 +189,7 @@ object Platform : BuildType({
     steps {
         gradle {
             tasks = ":com.mbeddr:platform:build :com.mbeddr:platform:publish"
-            gradleParams = "--refresh-dependencies -i dependencies -Dorg.gradle.internal.http.socketTimeout=120000"
+            gradleParams = "--continue --refresh-dependencies -i dependencies -Dorg.gradle.internal.http.socketTimeout=120000"
             enableStacktrace = true
             jdkHome = "%env.JDK_17_0_x64%"
         }
@@ -329,7 +329,7 @@ object PullRequestsBuild : BuildType({
         }
         gradle {
             tasks = "test_mbeddr_platform test_mbeddr publish migrate remigrate -PforceBuildPlatform"
-            gradleParams = "--info"
+            gradleParams = "--continue --info"
             jdkHome = "%env.JDK_17_0_x64%"
         }
         step {
