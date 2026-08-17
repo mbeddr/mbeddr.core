@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="test.com.mbeddr.mpsutil.collections.runtime" uuid="f88d18b6-41df-491c-ad99-c292037bf751" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>

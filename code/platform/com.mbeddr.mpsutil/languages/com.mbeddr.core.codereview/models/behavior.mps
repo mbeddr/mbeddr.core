@@ -20,6 +20,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="bqxk" ref="r:c93f2be3-1de1-4106-85fd-653ed63baac3(com.mbeddr.core.base.enumMigration)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -141,6 +142,9 @@
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -854,7 +858,7 @@
       <property role="TrG5h" value="runQuery" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="hwgx:7hIyKqbFNeu" resolve="runQuery" />
+      <ref role="13i0hy" to="hwgx:4WjNWxKJWaq" resolve="runQuery" />
       <node concept="3Tm1VV" id="4g52gaNQxpF" role="1B3o_S" />
       <node concept="3clFbS" id="4g52gaNQxpI" role="3clF47">
         <node concept="3cpWs8" id="4g52gaNQB1I" role="3cqZAp">
@@ -874,7 +878,10 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="7nkDZJXlMu1" role="2OqNvi">
-                  <ref role="37wK5l" to="hwgx:7nkDZJXluPi" resolve="findElements" />
+                  <ref role="37wK5l" to="hwgx:20N7CGtOl8_" resolve="findElements" />
+                  <node concept="37vLTw" id="20N7CGtPvzh" role="37wK5m">
+                    <ref role="3cqZAo" node="4WjNWxKKAsJ" resolve="mpsProject" />
+                  </node>
                   <node concept="2OqwBi" id="7nkDZJXlMOi" role="37wK5m">
                     <node concept="13iPFW" id="7nkDZJXlMGD" role="2Oq$k0" />
                     <node concept="I4A8Y" id="7nkDZJXlNop" role="2OqNvi" />
@@ -1010,7 +1017,13 @@
           </node>
         </node>
       </node>
-      <node concept="2I9FWS" id="4g52gaNQxpJ" role="3clF45">
+      <node concept="37vLTG" id="4WjNWxKKAsJ" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <node concept="3uibUv" id="4WjNWxKKAsK" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="2I9FWS" id="4WjNWxKKAsL" role="3clF45">
         <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
       </node>
     </node>

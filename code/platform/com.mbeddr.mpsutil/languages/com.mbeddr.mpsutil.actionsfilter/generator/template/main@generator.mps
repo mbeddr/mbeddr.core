@@ -13,9 +13,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tgbt" ref="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" />
     <import index="ykkq" ref="r:7171fd48-62d6-4c67-ab22-d7d6b8fa4653(com.mbeddr.mpsutil.actionsfilter.runtime)" />
-    <import index="8fb" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.ui.customization(MPS.IDEA/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
-    <import index="mkpt" ref="r:11aea2c3-e421-4253-bccb-b78b0737d67a(com.mbeddr.mpsutil.actionsfilter.ideaplugin)" />
+    <import index="a2ex" ref="r:7455aabd-f467-419c-8384-7f9bd5f17d03(com.mbeddr.mpsutil.actionsfilter.runtime.plugin)" />
     <import index="au0v" ref="r:ae24f9b4-2210-4864-8fbf-79fb5fb02754(com.mbeddr.mpsutil.actionsfilter.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="jm5d" ref="r:48ef7588-196b-4d9d-b0a1-f8a83910685c(com.mbeddr.mpsutil.actionsfilter.behavior)" implicit="true" />
@@ -502,20 +501,19 @@
     <node concept="n94m4" id="3pbsIf6rdtW" role="lGtFl" />
     <node concept="2uRRBj" id="3pbsIf6rggc" role="2uRRBE">
       <node concept="3clFbS" id="3pbsIf6rggd" role="2VODD2">
-        <node concept="3clFbH" id="1_Ri$6xxVPS" role="3cqZAp" />
         <node concept="3cpWs8" id="7tHQrcrQ2gb" role="3cqZAp">
           <node concept="3cpWsn" id="7tHQrcrQ2gc" role="3cpWs9">
             <property role="TrG5h" value="persistentModel" />
             <node concept="3uibUv" id="7tHQrcrQ2g7" role="1tU5fm">
               <ref role="3uigEE" to="ykkq:3NH93czh8sX" resolve="Model" />
             </node>
-            <node concept="2OqwBi" id="7tHQrcrQ2gd" role="33vP2m">
-              <node concept="2YIFZM" id="1KfSgTa_tEx" role="2Oq$k0">
-                <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsService" />
-                <ref role="37wK5l" to="mkpt:5vQUrnx8UbS" resolve="getInstance" />
+            <node concept="2OqwBi" id="5FnYSdvuAM6" role="33vP2m">
+              <node concept="2YIFZM" id="5FnYSdvuzOz" role="2Oq$k0">
+                <ref role="37wK5l" to="a2ex:5vQUrnx8UbS" resolve="getInstance" />
+                <ref role="1Pybhc" to="a2ex:5vQUrnx8UbK" resolve="ActionsService" />
               </node>
-              <node concept="liA8E" id="7tHQrcrQ2gf" role="2OqNvi">
-                <ref role="37wK5l" to="mkpt:5vQUrnx8UdY" resolve="getState" />
+              <node concept="liA8E" id="5FnYSdvuDyZ" role="2OqNvi">
+                <ref role="37wK5l" to="a2ex:5vQUrnx8UdY" resolve="getState" />
               </node>
             </node>
           </node>
@@ -1047,7 +1045,7 @@
                             <ref role="3cqZAo" node="2K_c977ZBZ0" resolve="it" />
                           </node>
                           <node concept="2OwXpG" id="7zBzSouOI49" role="2OqNvi">
-                            <ref role="2Oxat5" to="ykkq:7zBzSouMwxo" resolve="myDefaultPriority" />
+                            <ref role="2Oxat5" to="ykkq:7zBzSouMwxo" resolve="defaultPriority" />
                           </node>
                         </node>
                       </node>

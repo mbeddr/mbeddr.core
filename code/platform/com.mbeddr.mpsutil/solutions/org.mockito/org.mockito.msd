@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.mockito" uuid="9414e29c-0c8d-4bc7-b251-f312597fb993" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="byte-buddy-agent.jar" />
       <sourceRoot location="byte-buddy.jar" />
       <sourceRoot location="mockito-core.jar" />
