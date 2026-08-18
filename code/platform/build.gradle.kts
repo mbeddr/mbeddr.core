@@ -338,7 +338,15 @@ publishing {
                     dependencyNode.appendNode("scope", "provided")
                 }
             }
-            pom(MavenPom::additionalPomInfo)
+            pom {
+                additionalPomInfo()
+                licenses {
+                    license {
+                        name = "EPL-2.0 AND Apache-2.0 AND BSD-3-Clause AND EPL-1.0 AND MIT"
+                        distribution = "repo"
+                    }
+                }
+            }
         }
     }
 }
