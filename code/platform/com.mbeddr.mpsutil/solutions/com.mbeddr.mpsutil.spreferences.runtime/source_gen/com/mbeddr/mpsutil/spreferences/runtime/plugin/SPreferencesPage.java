@@ -104,7 +104,7 @@ public class SPreferencesPage extends BasePrefsPage {
     // The following workaround fakes a custom plugin descriptor for this ConfigurableEP with the ModuleClassLoader that can actually load SPreferencePage class.
     DefaultPluginDescriptor customPluginDesc = new DefaultPluginDescriptor(PluginId.findId("com.mbeddr.mpsutil.spreferences.runtime"), SPreferencesPage.class.getClassLoader());
     // This is necessary so that getDisplayName() can be read.
-    customPluginDesc.setEnabled(true);
+    // FIXME this method was dropped, see IJPL-202407 Get rid of isMarkedForLoading in IdeaPluginDescriptor
     this.setPluginDescriptor(customPluginDesc);
   }
   @Override
