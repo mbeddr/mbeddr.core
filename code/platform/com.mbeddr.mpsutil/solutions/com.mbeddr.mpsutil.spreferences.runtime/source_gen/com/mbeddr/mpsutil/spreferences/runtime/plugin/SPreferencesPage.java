@@ -21,8 +21,6 @@ import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.spreferences.runtime.SPreferencesUtil;
 import jetbrains.mps.ide.ThreadUtils;
-import com.intellij.openapi.extensions.DefaultPluginDescriptor;
-import com.intellij.openapi.extensions.PluginId;
 
 public class SPreferencesPage extends BasePrefsPage {
 
@@ -97,16 +95,8 @@ public class SPreferencesPage extends BasePrefsPage {
   public void register() {
     myIsRegistered = true;
     super.register();
-    // Fixing registration of this Configurable extension to work around ClassNotFoundException when opening Settings in MPS (if spreferences is used) 
-    // The exception is caused by a not properly supported registration of IDEA extension instances from MPS code - the expectation is to have them registered in plugin.xml.
-    // When EP is requested to load its provider class (SPreferencePage) using findClassOrNull() in EpBasedConfigurableGroup.collect, it fails to do so because the class 
-    // is actually loaded by a ModuleClassLoader and EP has no classloader info due to not available pluginDescriptor data.
-    // The following workaround fakes a custom plugin descriptor for this ConfigurableEP with the ModuleClassLoader that can actually load SPreferencePage class.
-    DefaultPluginDescriptor customPluginDesc = new DefaultPluginDescriptor(PluginId.findId("com.mbeddr.mpsutil.spreferences.runtime"), SPreferencesPage.class.getClassLoader());
-    // This is necessary so that getDisplayName() can be read.
-    // FIXME this method was dropped, see IJPL-202407 Get rid of isMarkedForLoading in IdeaPluginDescriptor
-    this.setPluginDescriptor(customPluginDesc);
   }
+
   @Override
   public void unregister() {
     super.unregister();
