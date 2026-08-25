@@ -64,13 +64,13 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.setCellId("Collection_lmvut8_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
-    if (nodeCondition_lmvut8_a0a_0()) {
+    if (nodeCondition_lmvut8_a0a()) {
       editorCell.addEditorCell(createCollection_1());
     }
     editorCell.addEditorCell(createCollection_3());
     return editorCell;
   }
-  private boolean nodeCondition_lmvut8_a0a_0() {
+  private boolean nodeCondition_lmvut8_a0a() {
     return VarEditorModeHelper.modeIs(VarEditorModeHelper.DETAILED);
   }
   private EditorCell createCollection_1() {
