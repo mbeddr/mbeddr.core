@@ -23,6 +23,10 @@
       </concept>
       <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModules_Options" flags="ng" index="24cAiW">
         <child id="6593674873639478221" name="haltonfailure" index="24c_eh" />
+        <child id="6593674873635848987" name="requiredPlugins" index="24YFd7" />
+      </concept>
+      <concept id="6593674873635848984" name="jetbrains.mps.build.mps.tests.structure.RequiredPlugin" flags="ng" index="24YFd4">
+        <reference id="6593674873635848985" name="plugin" index="24YFd5" />
       </concept>
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
@@ -1070,6 +1074,9 @@
           <node concept="3Mxwew" id="30ODedpHEZy" role="3MwsjC">
             <property role="3MwjfP" value="true" />
           </node>
+        </node>
+        <node concept="24YFd4" id="5WQPuQ7MSpy" role="24YFd7">
+          <ref role="24YFd5" to="ffeo:5ziJCXbfbGU" resolve="intellij.structureView.plugin" />
         </node>
       </node>
       <node concept="22LTRF" id="5Z2CJwRoMT1" role="22LTRK">
