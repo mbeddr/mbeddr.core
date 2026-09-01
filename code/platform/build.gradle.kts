@@ -10,7 +10,7 @@ plugins {
     base
     `maven-publish`
     id("buildlogic.mps-conventions")
-    id("org.cyclonedx.bom") version "3.2.4"
+    id("org.cyclonedx.bom") version "3.4.1"
 }
 
 
@@ -51,7 +51,7 @@ data class BundledDep(
 }
 
 val bundledDeps = listOf(
-        BundledDep("commonmark", listOf("org.commonmark:commonmark:0.28.0"), "com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown"),
+        BundledDep("commonmark", listOf("org.commonmark:commonmark:0.30.0"), "com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown"),
         BundledDep("poi-ooxml", listOf("org.apache.poi:poi-ooxml:5.5.1"), "com.mbeddr.doc/solutions/com.mbeddr.spreadsheet.libs", {
             exclude(module = "commons-compress")
             exclude(module = "commons-math3")
@@ -64,7 +64,7 @@ val bundledDeps = listOf(
             exclude(module = "guava")
         }),
         BundledDep("jfreechart", listOf("org.jfree:jfreechart:1.5.6"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime", {}),
-        BundledDep("plantuml", listOf("net.sourceforge.plantuml:plantuml:1.2026.2"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution"),
+        BundledDep("plantuml", listOf("net.sourceforge.plantuml:plantuml:1.2026.7"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution"),
         BundledDep("opencsv", listOf("au.com.bytecode:opencsv:2.4"), "com.mbeddr.mpsutil/solutions/com.opencsv"),
         BundledDep("mockito", listOf("org.mockito:mockito-core:5.23.0"), "com.mbeddr.mpsutil/solutions/org.mockito", {}),
         BundledDep("ecore", listOf(
