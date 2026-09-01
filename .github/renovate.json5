@@ -65,13 +65,20 @@
     },
 
     {
+      // Disable EMF and xtext updates for 2024.1. They need a newer Java than what 2024.1 runs on.
+      "matchBaseBranches": ["maintenance/mps20241"],
+      "matchPackageNames": ["org.eclipse.emf:*", "org.eclipse.xtext:*"],
+      "enabled": false
+    },
+
+    {
       // Group all GitHub Actions updates together
       "matchManagers": ["github-actions"],
       "groupName": "github-actions"
     },
 
-    // Updates to the earliest supported maintenance branch do not need approval.
     {
+      // Updates to the earliest supported maintenance branch do not need approval.
       "matchBaseBranches": ["maintenance/mps20241"],
       "dependencyDashboardApproval": false
     },
