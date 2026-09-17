@@ -29,11 +29,12 @@ public final class ImageWord__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<SModule> getModule_id7r9XsdeqO$Z = new SMethodBuilder<SModule>(new SJavaCompoundTypeImpl(SModule.class)).name("getModule").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8559642785977420095L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
   public static final SMethod<SModule> getImageModuleByModuleId_id7r9Xsder9tx = new SMethodBuilder<SModule>(new SJavaCompoundTypeImpl(SModule.class)).name("getImageModuleByModuleId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8559642785977505633L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
+  public static final SMethod<SModule> getEffectiveModule_id72JwzwpqZ9S = new SMethodBuilder<SModule>(new SJavaCompoundTypeImpl(SModule.class)).name("getEffectiveModule").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8119851830628577912L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
   public static final SMethod<Boolean> isEditingGuideActive_idJJxXu1sAqb = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEditingGuideActive").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(860055413510530699L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
   public static final SMethod<Boolean> isModuleIdRequired_idJJxXu1sw3o = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isModuleIdRequired").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(860055413510504664L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
   public static final SMethod<Boolean> isModuleIdValid_id7r9XsdeqP8E = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isModuleIdValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8559642785977422378L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getModule_id7r9XsdeqO$Z, getImageModuleByModuleId_id7r9Xsder9tx, isEditingGuideActive_idJJxXu1sAqb, isModuleIdRequired_idJJxXu1sw3o, isModuleIdValid_id7r9XsdeqP8E);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getModule_id7r9XsdeqO$Z, getImageModuleByModuleId_id7r9Xsder9tx, getEffectiveModule_id72JwzwpqZ9S, isEditingGuideActive_idJJxXu1sAqb, isModuleIdRequired_idJJxXu1sw3o, isModuleIdValid_id7r9XsdeqP8E);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -43,6 +44,15 @@ public final class ImageWord__BehaviorDescriptor extends BaseBHDescriptor {
   }
   /*package*/ static SModule getImageModuleByModuleId_id7r9Xsder9tx(@NotNull SNode __thisNode__) {
     return Helper.findSModuleByID(ImageWord__BehaviorDescriptor.getModule_id7r9XsdeqO$Z.invoke(__thisNode__).getRepository(), SPropertyOperations.getString(__thisNode__, PROPS.moduleId$IuRY));
+  }
+  /*package*/ static SModule getEffectiveModule_id72JwzwpqZ9S(@NotNull SNode __thisNode__) {
+    // check explicitly configured module first
+    SModule byId = ImageWord__BehaviorDescriptor.getImageModuleByModuleId_id7r9Xsder9tx.invoke(__thisNode__);
+    if (byId != null) {
+      return byId;
+    }
+    // else fall back to the own module, possibly null
+    return ImageWord__BehaviorDescriptor.getModule_id7r9XsdeqO$Z.invoke(__thisNode__);
   }
   /*package*/ static boolean isEditingGuideActive_idJJxXu1sAqb(@NotNull SNode __thisNode__) {
     return TemporaryModels.isTemporary(SNodeOperations.getModel(__thisNode__));
@@ -74,10 +84,12 @@ public final class ImageWord__BehaviorDescriptor extends BaseBHDescriptor {
       case 1:
         return (T) ((SModule) getImageModuleByModuleId_id7r9Xsder9tx(node));
       case 2:
-        return (T) ((Boolean) isEditingGuideActive_idJJxXu1sAqb(node));
+        return (T) ((SModule) getEffectiveModule_id72JwzwpqZ9S(node));
       case 3:
-        return (T) ((Boolean) isModuleIdRequired_idJJxXu1sw3o(node));
+        return (T) ((Boolean) isEditingGuideActive_idJJxXu1sAqb(node));
       case 4:
+        return (T) ((Boolean) isModuleIdRequired_idJJxXu1sw3o(node));
+      case 5:
         return (T) ((Boolean) isModuleIdValid_id7r9XsdeqP8E(node));
       default:
         throw new BHMethodNotFoundException(this, method);
