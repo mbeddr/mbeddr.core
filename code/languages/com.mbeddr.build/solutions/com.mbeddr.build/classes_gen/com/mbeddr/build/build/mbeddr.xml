@@ -11086,9 +11086,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.legacy" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -11440,9 +11437,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -11795,9 +11789,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -12153,9 +12144,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -12516,9 +12504,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -12855,9 +12840,6 @@
         <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
@@ -13203,9 +13185,6 @@
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
@@ -13565,9 +13544,6 @@
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
@@ -13934,9 +13910,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -14286,9 +14259,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -14642,9 +14612,6 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -14994,9 +14961,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -15352,9 +15316,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.legacy" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -15703,9 +15664,6 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -16088,9 +16046,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -16446,9 +16401,6 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.make" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -16497,9 +16449,6 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -16877,9 +16826,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.stdlib" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -17258,9 +17204,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.stdlib" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -17616,9 +17559,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements.interpreter" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -17971,9 +17911,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -18345,9 +18282,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base-generator.jar" />
@@ -18704,9 +18638,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -19069,9 +19000,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -19424,9 +19352,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -19774,9 +19699,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -20140,9 +20062,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -20494,9 +20413,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -20858,9 +20774,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -21210,9 +21123,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -21571,9 +21481,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.unittest" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util.pluginSolution" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
@@ -21930,9 +21837,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
@@ -22286,9 +22190,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.modules" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
@@ -22668,9 +22569,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -23035,9 +22933,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -23400,9 +23295,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -23763,9 +23655,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -24125,9 +24014,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -24506,9 +24392,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util#4354378109086982934" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -24874,9 +24757,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.stdlib" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -25249,9 +25129,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -25607,9 +25484,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -25952,9 +25826,6 @@
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -26314,9 +26185,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.qa" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -26658,9 +26526,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.qa" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -27009,9 +26874,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.qa" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.qa" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -27356,9 +27218,6 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -27709,9 +27568,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -28052,9 +27908,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
@@ -28394,9 +28247,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -28759,9 +28609,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components.mock" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -29119,9 +28966,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -29511,9 +29355,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -29874,9 +29715,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.units" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.units.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -30238,9 +30076,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.units" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.units.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -30600,9 +30435,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.compositecomponents" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.concurrency" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -30965,9 +30797,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.compositecomponents#3716489659188516316" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.concurrency" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -31330,9 +31159,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components.gen_nomw" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.compositecomponents" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -31700,9 +31526,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components.gen_nomw" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components.gen_nomw#8105003328815413560" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -32063,9 +31886,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -32439,9 +32259,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components.gen_nomw" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -32814,9 +32631,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components.gen_nomw" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -33181,9 +32995,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components.gen_nomw#8105003328815413560" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components.test" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -33543,9 +33354,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
@@ -33902,9 +33710,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -34288,9 +34093,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.compositecomponents" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -34647,9 +34449,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -35008,9 +34807,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.concurrency" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -35370,9 +35166,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.concurrency" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -35733,9 +35526,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.concurrency" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.concurrency.pthreads" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -36094,9 +35884,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.concurrency" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -36461,9 +36248,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.concurrency" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.concurrency.plainC" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -36815,9 +36599,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.interpreter" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -37178,9 +36959,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.math" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -37532,9 +37310,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.math" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -37890,9 +37665,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.unittest" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -38286,9 +38058,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.unittest" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.statemachines" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -38645,9 +38414,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.unittest" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.statemachines" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
@@ -39008,9 +38774,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.statemachines" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -39376,9 +39139,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.statemachines" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.statemachines#8836799689252270723" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -39729,9 +39489,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -40105,9 +39862,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -40476,9 +40230,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.units" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.units.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -40836,9 +40587,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.units" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -41193,9 +40941,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -41550,9 +41295,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.stdlib" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -41918,9 +41660,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.serialization" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -42275,9 +42014,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
@@ -42624,9 +42360,6 @@
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -43004,9 +42737,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -43374,9 +43104,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base-generator.jar" />
@@ -43728,9 +43455,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.interpreter" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -44083,9 +43807,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -44446,9 +44167,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.interpreter" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -44802,9 +44520,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -45167,9 +44882,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -45527,9 +45239,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -45891,9 +45600,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -46248,9 +45954,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -46609,9 +46312,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -46965,9 +46665,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -47322,9 +47019,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -47683,9 +47377,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.udt" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.ext.components" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -48038,9 +47729,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -48400,9 +48088,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util.interpreter" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -48769,9 +48454,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -49128,9 +48810,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.util.interpreter" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -49485,9 +49164,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.pointers" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.statements" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -49844,9 +49520,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -50200,9 +49873,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.doc.expressions" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -50558,9 +50228,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.requirements.scenarios" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.trace" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -50914,9 +50581,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.requirements.scenarios" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.trace" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -51271,9 +50935,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -51631,9 +51292,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.core.expressions.runtime" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -51986,9 +51644,6 @@
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.trace" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
@@ -52336,9 +51991,6 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
@@ -52684,9 +52336,6 @@
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/mps-scripts-rt.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -53048,9 +52697,6 @@
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.trace" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -53397,9 +53043,6 @@
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.trace" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -53747,9 +53390,6 @@
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -54096,9 +53736,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.trace" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -54445,9 +54082,6 @@
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.trace" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -54803,9 +54437,6 @@
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.requirements.report" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.trace" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
@@ -55158,9 +54789,6 @@
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <pathelement path="${build.tmp}/java/out/com.mbeddr.cc.trace" />
         <fileset file="${artifacts.IDEA}/lib/annotations.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-structureView-plugin/lib/modules/intellij.platform.structureView.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-testRunner-plugin/lib/modules/intellij.platform.testRunner.jar" />
-        <fileset file="${artifacts.IDEA}/plugins/platform-bookmarks-plugin/lib/modules/intellij.platform.bookmarks.jar" />
         <fileset dir="${artifacts.IDEA}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.doc/languages/com.mbeddr.doc/com.mbeddr.doc.jar" />
