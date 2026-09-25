@@ -154,6 +154,12 @@ val build_platform by tasks.registering(BuildLanguages::class) {
     outputs.upToDateWhen { false }
 }
 
+configurations.consumable("platformArtifacts") {
+    outgoing.artifact(File(artifactsDir, "com.mbeddr.platform")) {
+        builtBy(build_platform)
+    }
+}
+
 val install_actionsfilter by tasks.registering(Copy::class) {
     dependsOn(build_actionsfilter)
     description = "Copy the actions filter IntelliJ plugin to the MPS plugin\"s directory"
