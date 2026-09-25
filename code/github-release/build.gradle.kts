@@ -31,7 +31,7 @@ val platformFileName = "platform-distribution-${versions.mbeddrPlatformBuildNumb
 githubRelease {
     owner = "mbeddr"
     repo = "mbeddr.core"
-    token(rootProject.findProperty("github.token")?.toString() ?: "empty")
+    token(rootProject.findProperty("gpr.token")?.toString() ?: "empty")
     tagName = "nightly-" + buildNumber
     targetCommitish = GitBasedVersioning.getGitCommitHash()
     releaseName = "Nightly Build " + buildNumber
