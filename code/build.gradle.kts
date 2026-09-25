@@ -69,6 +69,8 @@ tasks.register("install") {
             println("The path selector only contains the actual MPS version, for instance \"MPS2017.3\", not the full path to the user plugin directory.")
         }
     }
+
+    dependsOn(project(":com.mbeddr:platform").tasks.named("install_actionsfilter"))
 }
 
 logger.info("skipresolve_mps: {}, mpsHomeDir: {}", skipresolve_mps, mpsHomeDir)
@@ -179,7 +181,12 @@ val projectDirectoriesInDependencyOrder = projectsInDependencyOrder.map {
 }
 
 tasks.register("generate_all_languages") {
-    dependsOn(":com.mbeddr:platform:generate_platform_languages", ":com.mbeddr:languages:generate_mbeddr_languages")
+    dependsOn(
+        project(":com.mbeddr:platform").tasks.named("generatePlatform"),
+        project(":com.mbeddr:platform").tasks.named("generatePlatformTests"),
+        project(":com.mbeddr:platform").tasks.named("generateSandboxes"),
+        ":com.mbeddr:languages:generate_mbeddr_languages",
+    )
 }
 
 tasks.register<MpsMigrate>("migrate") {

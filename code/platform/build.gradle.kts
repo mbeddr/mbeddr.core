@@ -1,238 +1,230 @@
 import buildlogic.additionalPomInfo
-import de.itemis.mps.gradle.BuildLanguages
-import de.itemis.mps.gradle.EnvironmentKind
-import de.itemis.mps.gradle.RunAntScript
-import de.itemis.mps.gradle.TestLanguages
-import de.itemis.mps.gradle.tasks.MpsGenerate
+import com.specificlanguages.mps.MainBuild
+import com.specificlanguages.mps.RunAnt
+import com.specificlanguages.mps.TestBuild
 import javax.xml.parsers.DocumentBuilderFactory
 
 plugins {
-    base
+    id("com.specificlanguages.mps") version "2.1.0"
     `maven-publish`
-    id("buildlogic.mps-conventions")
     id("org.cyclonedx.bom") version "3.4.1"
 }
 
+@Suppress("UNCHECKED_CAST")
+val mpsPluginsDir = parent?.extensions?.extraProperties?.properties?.get("mpsPluginsDir") as? Provider<String>
+val mbeddrBuildNumber: String by project
+val mbeddrMajor: String by project
+val mbeddrMinor: String by project
+val mbeddrPlatformBuildNumber: String by project
+val mpsBuild: String by project
 
-val scriptsBasePath: String by project
-val artifactsDir: File by project
-val mpsPluginsDir: Provider<String> by project
+val artifactsDirectory = layout.buildDirectory.dir("artifacts")
 
-fun scriptFile(relativePath: String): File = File("$scriptsBasePath/$relativePath")
+fun artifactsDir(buildProjectName: String) = artifactsDirectory.map { it.dir(buildProjectName) }
 
-val script_test_mbeddrPlatform = File(scriptsBasePath, "com.mbeddr.platform/build-ts-tests.xml")
-val script_mbeddrPlatform_sandboxes = File(scriptsBasePath, "com.mbeddr.platform/build-sandboxes.xml")
-
-val reportsDir = rootProject.layout.buildDirectory.dir("reports").get().asFile
+val buildScriptsDirectory = rootProject.layout.buildDirectory.dir("com.mbeddr.platform")
+val reportsDirectory = rootProject.layout.buildDirectory.dir("reports")
+val platformBuildFile = buildScriptsDirectory.map { it.file("build.xml") }
+val actionsfilterBuildFile = buildScriptsDirectory.map { it.file("actionsfilter.xml") }
+val platformTestsBuildFile = buildScriptsDirectory.map { it.file("build-ts-tests.xml") }
+val sandboxesBuildFile = buildScriptsDirectory.map { it.file("build-sandboxes.xml") }
+val platformBuildSolutionDescriptor = layout.projectDirectory.file("com.mbeddr.platform.build/solutions/com.mbeddr.platform/com.mbeddr.platform.msd")
+val platformTestsBuildSolutionDescriptor = layout.projectDirectory.file("com.mbeddr.platform.build/solutions/com.mbeddr.platform.tests.build/com.mbeddr.platform.tests.build.msd")
 
 // Project group
 group = "com.mbeddr"
+version = mbeddrPlatformBuildNumber
 
-val mpsLibraries by configurations.registering {
+// MPS-extensions is bundled into the generated MPS builds. It is not a JVM API
+// dependency of this Gradle project, so keep it out of Gradle's API/runtime graphs.
+val providedMpsExtensions by configurations.creating {
     isCanBeConsumed = false
+    isCanBeResolved = true
+}
+
+configurations.named("mpsLibraries") {
+    extendsFrom(providedMpsExtensions)
 }
 
 dependencies {
+    mps(libs.mps)
+    jbr(libs.jbr)
+
     if (project.hasProperty("mpsExtensionsZip")) {
-        mpsLibraries(files(project.property("mpsExtensionsZip")))
+        add("providedMpsExtensions", files(project.property("mpsExtensionsZip")))
     } else {
-        mpsLibraries(libs.mpsExtensions)
+        add("providedMpsExtensions", libs.mpsExtensions)
     }
 }
 
-data class BundledDep(
-    val name: String,
-    val notations: List<String>,
-    val modulePath: String,
-    val depConfigClosure: Action<Configuration> = Action<Configuration> { isTransitive = false }) {
-
-    val configName = name + "_bundled"
-    val taskName = "resolve_" + configName
+providers.gradleProperty("mpsHomeDir").orNull?.let { mpsHomeDir ->
+    mpsDefaults.mpsHome = rootProject.layout.projectDirectory.dir(mpsHomeDir)
 }
 
-val bundledDeps = listOf(
-        BundledDep("commonmark", listOf("org.commonmark:commonmark:0.30.0"), "com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown"),
-        BundledDep("poi-ooxml", listOf("org.apache.poi:poi-ooxml:5.5.1"), "com.mbeddr.doc/solutions/com.mbeddr.spreadsheet.libs", {
+mpsDefaults.mpsLibrariesDirectory = rootProject.layout.buildDirectory.dir("dependencies")
+mpsDefaults.pathVariables.put("artifacts.root", artifactsDirectory.map { it.asFile })
+
+tasks.withType<RunAnt>().configureEach {
+    valueProperties.put("build", mbeddrBuildNumber)
+    valueProperties.put("major.version", mbeddrMajor)
+    valueProperties.put("minor.version", mbeddrMinor)
+}
+
+bundledDependencies {
+    create("commonmark") {
+        destinationDir = layout.projectDirectory.dir("com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown/lib")
+        dependency("org.commonmark:commonmark:0.30.0")
+    }
+    create("poiOoxml") {
+        destinationDir = layout.projectDirectory.dir("com.mbeddr.doc/solutions/com.mbeddr.spreadsheet.libs/lib")
+        dependency("org.apache.poi:poi-ooxml:5.5.1")
+        configuration {
             exclude(module = "commons-compress")
             exclude(module = "commons-math3")
             exclude(module = "SparseBitSet")
-        }),
-        BundledDep("jung", listOf("net.sf.jung:jung-algorithms:2.1.1",
-                                "net.sf.jung:jung-visualization:2.1.1",
-                                "net.sf.jung:jung-graph-impl:2.1.1"),
-                "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jung.pluginSolution", {
+        }
+    }
+    create("jung") {
+        destinationDir = layout.projectDirectory.dir("com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jung.pluginSolution/lib")
+        dependency("net.sf.jung:jung-algorithms:2.1.1")
+        dependency("net.sf.jung:jung-visualization:2.1.1")
+        dependency("net.sf.jung:jung-graph-impl:2.1.1")
+        configuration {
             exclude(module = "guava")
-        }),
-        BundledDep("jfreechart", listOf("org.jfree:jfreechart:1.5.6"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime", {}),
-        BundledDep("plantuml", listOf("net.sourceforge.plantuml:plantuml:1.2026.7"), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution"),
-        BundledDep("opencsv", listOf("au.com.bytecode:opencsv:2.4"), "com.mbeddr.mpsutil/solutions/com.opencsv"),
-        BundledDep("mockito", listOf("org.mockito:mockito-core:5.23.0"), "com.mbeddr.mpsutil/solutions/org.mockito", {}),
-        BundledDep("ecore", listOf(
-                "org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.36.0",
+        }
+    }
+    create("jfreechart") {
+        destinationDir = layout.projectDirectory.dir("com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime/lib")
+        dependency("org.jfree:jfreechart:1.5.6")
+    }
+    create("plantuml") {
+        destinationDir = layout.projectDirectory.dir("com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/lib")
+        dependency("net.sourceforge.plantuml:plantuml:1.2026.7")
+        configuration {
+            isTransitive = false
+            attributes.attribute(Attribute.of("org.gradle.jvm.environment", String::class.java), "standard-jvm")
+        }
+    }
+    create("opencsv") {
+        destinationDir = layout.projectDirectory.dir("com.mbeddr.mpsutil/solutions/com.opencsv/lib")
+        dependency("au.com.bytecode:opencsv:2.4")
+    }
+    create("mockito") {
+        destinationDir = layout.projectDirectory.dir("com.mbeddr.mpsutil/solutions/org.mockito/lib")
+        dependency("org.mockito:mockito-core:5.23.0")
+    }
+    create("ecore") {
+        destinationDir = layout.projectDirectory.dir("com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecore.stubs/lib")
+        dependency("org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.36.0")
                 // xcore 1.36.0's POM requests these xtext modules with open-ended ranges like
                 // [2.13.0,3.0.0). Pin them so we don't accidentally pull an xtext milestone that
                 // targets a Java version newer than the MPS-bundled JBR 17.
-                "org.eclipse.xtext:org.eclipse.xtext:2.42.0",
-                "org.eclipse.xtext:org.eclipse.xtext.util:2.42.0",
-                "org.eclipse.xtext:org.eclipse.xtext.xbase:2.42.0",
-                "org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.42.0",
-                "org.eclipse.xtext:org.eclipse.xtext.common.types:2.42.0",
-                "org.eclipse.xtext:org.eclipse.xtext.ecore:2.42.0",
+        dependency("org.eclipse.xtext:org.eclipse.xtext:2.42.0")
+        dependency("org.eclipse.xtext:org.eclipse.xtext.util:2.42.0")
+        dependency("org.eclipse.xtext:org.eclipse.xtext.xbase:2.42.0")
+        dependency("org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.42.0")
+        dependency("org.eclipse.xtext:org.eclipse.xtext.common.types:2.42.0")
+        dependency("org.eclipse.xtext:org.eclipse.xtext.ecore:2.42.0")
                 // Same open-range problem as xtext: xtext modules declare
                 // mwe2.runtime:[2.9.0,3.0.0), and 2.26.0.M1 targets Java 21.
-                "org.eclipse.emf:org.eclipse.emf.mwe2.runtime:2.25.0",
-        ), "com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecore.stubs", {
+        dependency("org.eclipse.emf:org.eclipse.emf.mwe2.runtime:2.25.0")
+        configuration {
             exclude(module = "aopalliance")
             exclude(module = "antlr-runtime")
             exclude(module = "org.eclipse.osgi")
             exclude(module = "org.eclipse.xtend.lib")
             exclude(module = "guava")
-        })
-)
-
-bundledDeps.forEach { bd ->
-    val config = configurations.register(bd.configName, bd.depConfigClosure)
-    bd.notations.forEach { depNotation -> dependencies.add(bd.configName, depNotation) }
-
-    tasks.register(bd.taskName, Sync::class.java) {
-        from(config)
-        into("${bd.modulePath}/lib")
-
-        // Strip version numbers from file names
-        rename { filename ->
-            val ra = config.get().resolvedConfiguration.resolvedArtifacts.first { ra -> ra.file.name == filename }
-
-            if (ra.classifier != null) {
-                "${ra.name}-${ra.classifier}.${ra.extension}"
-            } else {
-                "${ra.name}.${ra.extension}"
-            }
         }
     }
 }
 
 val resolveBundledLibraries by tasks.registering {
-    dependsOn(bundledDeps.map { it.taskName })
+    dependsOn(provider { bundledDependencies.map { it.resolveTask } })
 }
 
-val resolveMpsLibraries by tasks.registering(Sync::class) {
-    description = "Download the MPS libraries that are used in this project."
-    dependsOn(mpsLibraries)
-    from(mpsLibraries.map { it.files.map(project::zipTree) })
-    into(rootProject.layout.buildDirectory.dir("dependencies"))
+mpsBuilds.configureEach {
+    mpsProjectDirectory = layout.projectDirectory.dir("com.mbeddr.platform.build")
 }
 
-val build_allScripts by tasks.registering(MpsGenerate::class) {
-    description = "Generates the build script that contains all other build scripts."
-    javaLauncher = jbrToolchain.javaLauncher
-    environmentKind = EnvironmentKind.MPS
-
-    val mpsHomeProvider: Provider<Directory> by project
-    mpsHome = mpsHomeProvider
-
-    projectLocation = file("com.mbeddr.platform.build")
-    pluginRoots.from(tasks.named("resolveMpsLibraries", Sync::class.java).map { it.destinationDir })
-    pluginRoots.from(mpsHome.dir("plugins"))
+val actionsfilter = mpsBuilds.create<MainBuild>("actionsfilter") {
+    buildArtifactsDirectory = artifactsDir("com.mbeddr.mpsutil.actionsfilter")
+    buildSolutionDescriptor = platformBuildSolutionDescriptor
+    buildFile = actionsfilterBuildFile
+    published = false
 }
 
-val build_actionsfilter by tasks.registering(BuildLanguages::class) {
-    dependsOn(build_allScripts)
-    script = scriptFile("com.mbeddr.platform/actionsfilter.xml")
-    description = "Builds the actions filter IntelliJ plugin."
-
-    // see comment in build_allScripts, above, for reasons we need to explicitly state task output
-    // to address NO-SOURCE failure for package_mbeddrPlatform
-    outputs.dir(File(artifactsDir, "com.mbeddr.mpsutil.actionsfilter/"))
-    outputs.upToDateWhen { false }
+val platform = mpsBuilds.create<MainBuild>("platform") {
+    dependsOn(actionsfilter)
+    buildArtifactsDirectory = artifactsDir("com.mbeddr.platform")
+    buildSolutionDescriptor = platformBuildSolutionDescriptor
+    buildFile = platformBuildFile
 }
 
-val build_platform by tasks.registering(BuildLanguages::class) {
-    dependsOn(build_allScripts, build_actionsfilter, resolveBundledLibraries)
-    script = scriptFile("com.mbeddr.platform/build.xml")
-    description = "Build the mbeddr platform."
-    outputs.dir(File(artifactsDir, "com.mbeddr.platform/"))
-    outputs.upToDateWhen { false }
+configurations.consumable("platformArtifacts") {
+    outgoing.artifact(platform.buildArtifactsDirectory) {
+        builtBy(platform.assembleTask)
+    }
 }
 
-val install_actionsfilter by tasks.registering(Copy::class) {
-    dependsOn(build_actionsfilter)
-    description = "Copy the actions filter IntelliJ plugin to the MPS plugin\"s directory"
-    from("$rootDir/artifacts/com.mbeddr.mpsutil.actionsfilter/")
-    include("com.mbeddr.mpsutil.actionsfilter/")
-    into(mpsPluginsDir)
+val platformTests = mpsBuilds.create<TestBuild>("platformTests") {
+    dependsOn(platform)
+    buildArtifactsDirectory = artifactsDir("com.mbeddr.platform.tests")
+    buildSolutionDescriptor = platformTestsBuildSolutionDescriptor
+    buildFile = platformTestsBuildFile
 }
 
-tasks.getByPath(":com.mbeddr:install").dependsOn(install_actionsfilter)
-
-val generate_mbeddr_platform_tests by tasks.registering(RunAntScript::class) {
-    dependsOn(build_platform)
-    script = script_test_mbeddrPlatform
-    description = "Build the mbeddr platform tests."
-    targets = listOf("generate")
+mpsPluginsDir?.let { pluginsDirectory ->
+    tasks.register<Copy>("install_actionsfilter") {
+        description = "Copy the actions filter IntelliJ plugin to the MPS plugin's directory"
+        dependsOn(actionsfilter.assembleTask)
+        from(actionsfilter.buildArtifactsDirectory)
+        include("com.mbeddr.mpsutil.actionsfilter/")
+        into(pluginsDirectory)
+    }
 }
 
-val generate_platform_sandboxes by tasks.registering(RunAntScript::class) {
-    dependsOn(build_platform)
-    script = script_mbeddrPlatform_sandboxes
-    description = "Build the mbeddr platform sandboxes."
-    targets = listOf("generate")
+val sandboxes by mpsBuilds.creating(MainBuild::class) {
+    dependsOn(platform)
+    buildArtifactsDirectory = artifactsDir("com.mbeddr.platform.sandboxes")
+    buildSolutionDescriptor = platformTestsBuildSolutionDescriptor
+    buildFile = sandboxesBuildFile
+    published = false
 }
 
-val generate_platform_languages by tasks.registering {
-    dependsOn(build_platform, generate_mbeddr_platform_tests, generate_platform_sandboxes)
-}
-
-val test_mbeddr_platform by tasks.registering(TestLanguages::class) {
-    dependsOn(build_platform, generate_mbeddr_platform_tests)
-    script = script_test_mbeddrPlatform
-    description = "Execute typesystem and generator tests for the mbeddr plaform."
-    targets = listOf("check")
-}
-
-val test by tasks.registering {
-    dependsOn(test_mbeddr_platform)
+tasks.named("test") {
+    dependsOn(platformTests.assembleAndCheckTask)
     description = "Run all tests in the mbeddr platform."
 }
 
-tasks.check {
-    dependsOn(test)
+tasks.named("check") {
+    dependsOn(platformTests.assembleAndCheckTask)
     description = "Run all checks."
 }
 
-val build_platform_distribution by tasks.registering(BuildLanguages::class) {
-    dependsOn(build_platform, test_mbeddr_platform)
-    script = scriptFile("com.mbeddr.platform/build-distribution.xml")
-    description = "Build the platform describution."
+val githubReleaseArtifactDir = layout.buildDirectory.dir("github-release")
+val githubReleaseArtifactFileName = "platform-distribution-$mbeddrPlatformBuildNumber-MPS-$mpsBuild.zip"
+val githubReleaseArtifactFile = githubReleaseArtifactDir.map { it.file(githubReleaseArtifactFileName) }
+
+val renameForGithubReleaseTask = tasks.register<Sync>("renamePlatformDistributionForGithubRelease") {
+    description = "Copy the mbeddr platform distribution for GitHub release."
+
+    from(tasks.zip.flatMap { it.archiveFile })
+
+    into(githubReleaseArtifactDir)
+    rename { githubReleaseArtifactFileName }
 }
 
-val package_mbeddrPlatform by tasks.registering(Zip::class) {
-    dependsOn(build_platform)
-    description = "Package the mbeddr platform."
-    archiveFileName = "com.mbeddr.platform.zip"
-    from(artifactsDir) {
-        include("com.mbeddr.platform/**")
+configurations.consumable("githubReleaseArtifact") {
+    outgoing.artifact(githubReleaseArtifactFile) {
+        builtBy(renameForGithubReleaseTask)
     }
+}
+
+tasks.zip {
     from(tasks.cyclonedxDirectBom) {
         into("com.mbeddr.platform")
     }
 }
-
-artifacts.add("default", package_mbeddrPlatform)
-
-val defaultWrapper by tasks.registering {
-    dependsOn(build_platform)
-    doFirst {
-        println("####################################################################################")
-        println("#                      THE DEFAULT TASK HAS BEEN CHANGED                           #")
-        println("#                                                                                  #")
-        println("# The default task now only builds the mbeddr platform and no longer all of mbeddr #")
-        println("# including the C part. In order to build everything you will have to invoke the   #")
-        println("# task build_mbeddr. This will give you the old behaviour of building everything.  #")
-        println("####################################################################################")
-    }
-}
-
-rootProject.defaultTasks("defaultWrapper")
 
 fun getPomsOfConfiguration(cfg: Configuration): List<File> {
     val componentIds =
@@ -295,16 +287,15 @@ publishing {
             groupId = "com.mbeddr"
             artifactId = "platform"
             version = project.property("mbeddrPlatformBuildNumber").toString()
-            artifact(package_mbeddrPlatform)
+            from(components["mps"])
             pom.withXml {
                 val dependenciesNode = asNode().appendNode("dependencies")
 
                 val configurationsWithProvidedDependencies = buildList {
-                    add(mpsLibraries.get())
-                    addAll(bundledDeps.map { configurations.get(it.configName) })
-                    if (!project.hasProperty("skipresolve_mps")) {
-                        add(project(":com.mbeddr").configurations["mps"])
-                    }
+                    add(configurations["mpsLibraries"])
+                    add(providedMpsExtensions)
+                    add(configurations.mps.get())
+                    addAll(bundledDependencies.map { it.configuration.get() })
                 }
 
                 val seen = mutableSetOf<ResolvedDependency>()
@@ -330,8 +321,8 @@ publishing {
                     }
                 }
 
-                // Add provided dependencies of mpsLibraries (i.e. libraries bundled with MPS-extensions)
-                val pomsOfMpsLibraries = getPomsOfConfiguration(mpsLibraries.get())
+                // Add provided dependencies of MPS libraries (i.e. libraries bundled with MPS-extensions).
+                val pomsOfMpsLibraries = getPomsOfConfiguration(configurations["mpsLibraries"])
                 val providedDependenciesOfMpsLibraries = pomsOfMpsLibraries.flatMap { getProvidedDependenciesFromPom(it) }
 
                 providedDependenciesOfMpsLibraries.forEach {
@@ -364,24 +355,17 @@ publishing {
 val mbeddrBuild: String by project
 
 tasks.cyclonedxDirectBom {
-    jsonOutput = File(reportsDir, "sbom.json")
+    jsonOutput = reportsDirectory.map { it.file("sbom.json") }
     // No XML output
     xmlOutput.unsetConvention()
-    // Don"t include license texts in generated SBOMs
+    // Don't include license texts in generated SBOMs
     includeLicenseText = false
 
     // Include runtime deps only (bundled libs, language libs, mps, jbr)
     includeConfigs = buildList {
-        addAll(bundledDeps.map { it.configName })
-        add(mpsLibraries.name)
+        addAll(bundledDependencies.map { it.configuration.name })
+        add(providedMpsExtensions.name)
+        add(configurations.mps.name)
         add("jbr")
-        // TODO: mps config cannot be handled by cyclonedxBom, since it"s located in com.mbeddr project
-        //runtimeConfigs << project(":com.mbeddr").configurations.mps.name
     }
-}
-
-afterEvaluate {
-    // Workaround for CycloneDX plugin 3.2.4 modifying configurations when the task gets realized.
-    // We need to realize the task eagerly to avoid 'cannot mutate configuration' error if it is realized too late.
-    tasks.cyclonedxDirectBom.get()
 }
