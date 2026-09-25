@@ -10,7 +10,7 @@ import jetbrains.mps.ide.tools.BaseTool;
 import com.intellij.openapi.wm.ToolWindowAnchor;
 import jetbrains.mps.project.MPSProject;
 import java.awt.Container;
-import com.intellij.openapi.application.ApplicationManager;
+import com.intellij.openapi.wm.ToolWindowManager;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import org.jetbrains.mps.openapi.module.SModule;
@@ -45,19 +45,19 @@ public class MbeddrSearchViewer_Tool extends GeneratedTool {
   }
   public void setGlobal() {
     MbeddrSearchViewer_Tool.this.myComponent.setGlobalScope();
-    ApplicationManager.getApplication().invokeLater(() -> MbeddrSearchViewer_Tool.this.getToolWindow().setTitle("global"));
+    ToolWindowManager.getInstance(MbeddrSearchViewer_Tool.this.getProject()).invokeLater(() -> MbeddrSearchViewer_Tool.this.getToolWindow().setTitle("global"));
   }
   public void setProject() {
     MbeddrSearchViewer_Tool.this.myComponent.setProjectScope();
-    ApplicationManager.getApplication().invokeLater(() -> MbeddrSearchViewer_Tool.this.getToolWindow().setTitle("project"));
+    ToolWindowManager.getInstance(MbeddrSearchViewer_Tool.this.getProject()).invokeLater(() -> MbeddrSearchViewer_Tool.this.getToolWindow().setTitle("project"));
   }
   public void setModel(final SModel m) {
     MbeddrSearchViewer_Tool.this.myComponent.setModelScope(m);
-    ApplicationManager.getApplication().invokeLater(() -> MbeddrSearchViewer_Tool.this.getToolWindow().setTitle("model " + SModelOperations.getModelName(m)));
+    ToolWindowManager.getInstance(MbeddrSearchViewer_Tool.this.getProject()).invokeLater(() -> MbeddrSearchViewer_Tool.this.getToolWindow().setTitle("model " + SModelOperations.getModelName(m)));
   }
   public void setModule(final SModule module) {
     MbeddrSearchViewer_Tool.this.myComponent.setModuleScope(module);
-    ApplicationManager.getApplication().invokeLater(() -> MbeddrSearchViewer_Tool.this.getToolWindow().setTitle("module " + module.getModuleName()));
+    ToolWindowManager.getInstance(MbeddrSearchViewer_Tool.this.getProject()).invokeLater(() -> MbeddrSearchViewer_Tool.this.getToolWindow().setTitle("module " + module.getModuleName()));
   }
   public JComponent getComponent() {
     return MbeddrSearchViewer_Tool.this.myComponent;
