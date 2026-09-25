@@ -16,6 +16,7 @@ val mbeddrBuildNumber: String by project
 val mbeddrMajor: String by project
 val mbeddrMinor: String by project
 val mbeddrPlatformBuildNumber: String by project
+val mpsBuild: String by project
 
 val artifactsDirectory = layout.buildDirectory.dir("artifacts")
 
@@ -27,8 +28,6 @@ val platformBuildFile = buildScriptsDirectory.map { it.file("build.xml") }
 val actionsfilterBuildFile = buildScriptsDirectory.map { it.file("actionsfilter.xml") }
 val platformTestsBuildFile = buildScriptsDirectory.map { it.file("build-ts-tests.xml") }
 val sandboxesBuildFile = buildScriptsDirectory.map { it.file("build-sandboxes.xml") }
-val distributionBuildFile = buildScriptsDirectory.map { it.file("build-distribution.xml") }
-val platformBuildProjectDirectory = layout.projectDirectory.dir("com.mbeddr.platform.build")
 val platformBuildSolutionDescriptor = layout.projectDirectory.file("com.mbeddr.platform.build/solutions/com.mbeddr.platform/com.mbeddr.platform.msd")
 val platformTestsBuildSolutionDescriptor = layout.projectDirectory.file("com.mbeddr.platform.build/solutions/com.mbeddr.platform.tests.build/com.mbeddr.platform.tests.build.msd")
 
@@ -202,12 +201,23 @@ tasks.named("check") {
     description = "Run all checks."
 }
 
-val distribution by mpsBuilds.creating(MainBuild::class) {
-    dependsOn(platform)
-    buildArtifactsDirectory = artifactsDir("com.mbeddr.platform.distribution")
-    buildSolutionDescriptor = platformBuildSolutionDescriptor
-    buildFile = distributionBuildFile
-    published = false
+val githubReleaseArtifactDir = layout.buildDirectory.dir("github-release")
+val githubReleaseArtifactFileName = "platform-distribution-$mbeddrPlatformBuildNumber-MPS-$mpsBuild.zip"
+val githubReleaseArtifactFile = githubReleaseArtifactDir.map { it.file(githubReleaseArtifactFileName) }
+
+val renameForGithubReleaseTask = tasks.register<Sync>("renamePlatformDistributionForGithubRelease") {
+    description = "Copy the mbeddr platform distribution for GitHub release."
+
+    from(tasks.zip.flatMap { it.archiveFile })
+
+    into(githubReleaseArtifactDir)
+    rename { githubReleaseArtifactFileName }
+}
+
+configurations.consumable("githubReleaseArtifact") {
+    outgoing.artifact(githubReleaseArtifactFile) {
+        builtBy(renameForGithubReleaseTask)
+    }
 }
 
 tasks.zip {
