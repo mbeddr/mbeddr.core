@@ -1,4 +1,3 @@
-import buildlogic.additionalPomInfo
 import com.specificlanguages.mps.MainBuild
 import com.specificlanguages.mps.RunAnt
 import com.specificlanguages.mps.TestBuild
@@ -6,7 +5,7 @@ import javax.xml.parsers.DocumentBuilderFactory
 
 plugins {
     id("com.specificlanguages.mps") version "2.1.0"
-    `maven-publish`
+    id("buildlogic.maven-publishing")
     id("org.cyclonedx.bom") version "3.4.1"
 }
 
@@ -340,7 +339,6 @@ publishing {
                 }
             }
             pom {
-                additionalPomInfo()
                 licenses {
                     license {
                         name = "EPL-2.0 AND Apache-2.0 AND BSD-3-Clause AND EPL-1.0 AND MIT"
