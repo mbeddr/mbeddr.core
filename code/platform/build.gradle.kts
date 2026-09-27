@@ -5,6 +5,7 @@ import javax.xml.parsers.DocumentBuilderFactory
 
 plugins {
     id("com.specificlanguages.mps") version "2.1.0"
+    id("buildlogic.versioning")
     id("buildlogic.maven-publishing")
     id("org.cyclonedx.bom") version "3.4.1"
 }
@@ -14,7 +15,6 @@ val mpsPluginsDir = parent?.extensions?.extraProperties?.properties?.get("mpsPlu
 val mbeddrBuildNumber: String by project
 val mbeddrMajor: String by project
 val mbeddrMinor: String by project
-val mbeddrPlatformBuildNumber: String by project
 val mpsBuild: String by project
 
 val artifactsDirectory = layout.buildDirectory.dir("artifacts")
@@ -32,7 +32,6 @@ val platformTestsBuildSolutionDescriptor = layout.projectDirectory.file("com.mbe
 
 // Project group
 group = "com.mbeddr"
-version = mbeddrPlatformBuildNumber
 
 // MPS-extensions is bundled into the generated MPS builds. It is not a JVM API
 // dependency of this Gradle project, so keep it out of Gradle's API/runtime graphs.
@@ -201,7 +200,7 @@ tasks.named("check") {
 }
 
 val githubReleaseArtifactDir = layout.buildDirectory.dir("github-release")
-val githubReleaseArtifactFileName = "platform-distribution-$mbeddrPlatformBuildNumber-MPS-$mpsBuild.zip"
+val githubReleaseArtifactFileName = "platform-distribution-${project.version}-MPS-$mpsBuild.zip"
 val githubReleaseArtifactFile = githubReleaseArtifactDir.map { it.file(githubReleaseArtifactFileName) }
 
 val renameForGithubReleaseTask = tasks.register<Sync>("renamePlatformDistributionForGithubRelease") {
@@ -285,7 +284,7 @@ publishing {
         create<MavenPublication>("mbeddrPlatform") {
             groupId = "com.mbeddr"
             artifactId = "platform"
-            version = project.property("mbeddrPlatformBuildNumber").toString()
+            version = project.version.toString()
             from(components["mps"])
             pom.withXml {
                 val dependenciesNode = asNode().appendNode("dependencies")
