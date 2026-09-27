@@ -28,7 +28,12 @@ ant.withGroovyBuilder {
 }
 
 val junitAnt by configurations.creating
-val mbeddrPlatform by configurations.creating
+val platformZip by configurations.creating {
+    isCanBeConsumed = false
+}
+val platformArtifacts by configurations.creating {
+    isCanBeConsumed = false
+}
 
 val ciBuild: Boolean by project
 val usePrebuiltPlatform = ciBuild && !project.hasProperty("forceBuildPlatform")
@@ -42,26 +47,32 @@ dependencies {
         isTransitive = false
     }
 
-    val mbeddrPlatformBuildNumber: String by project
-
-    val mbeddrPlatformDependency: Any = if (usePrebuiltPlatform) {
-        // By default, on CI we don't build the platform but take it from Nexus, unless overridden by `-PforceBuildPlatform`.
-        "com.mbeddr:platform:$mbeddrPlatformBuildNumber"
-    } else {
-        project(":com.mbeddr:platform")
-    }
-
-    mbeddrPlatform(mbeddrPlatformDependency)
 }
 
-val resolve_mbeddr_platform by tasks.registering {
-    description = "Resolve the mbeddr platform artifact via the mbeddr platform configuration."
-    dependsOn(mbeddrPlatform)
-    doLast {
-        copy {
-            from(mbeddrPlatform.resolve().map(::zipTree))
-            into(artifactsDir)
-        }
+// By default, on CI we don't build the platform but take it from Nexus, unless overridden by `-PforceBuildPlatform`.
+if (usePrebuiltPlatform) {
+    val extractPlatformZip = tasks.register<Copy>("extractPlatformZip") {
+        description = "Extract the mbeddr platform ZIP into the mbeddr build."
+        dependsOn(platformZip)
+        from(platformZip.elements.map { elements -> elements.map(project::zipTree) })
+        into(artifactsDir)
+    }
+
+    dependencies {
+        val mbeddrPlatformBuildNumber: String by project
+        platformZip("com.mbeddr:platform:$mbeddrPlatformBuildNumber")
+        platformArtifacts(files(extractPlatformZip.map { File(artifactsDir, "com.mbeddr.platform") }))
+    }
+} else {
+    dependencies {
+        platformArtifacts(project(path = ":com.mbeddr:platform", configuration = "platformArtifacts"))
+    }
+}
+
+tasks.withType<RunAntScript>().configureEach {
+    dependsOn(platformArtifacts)
+    doFirst {
+        scriptArgs += "-Dplatform.artifacts=${platformArtifacts.singleFile}"
     }
 }
 
@@ -73,10 +84,7 @@ val build_allScripts by tasks.registering(MpsGenerate::class) {
 
     projectLocation = rootProject.file("code/languages/com.mbeddr.build")
 
-    pluginRoots.from(
-        evaluationDependsOn(":com.mbeddr:platform")
-            .tasks.named("resolveMpsLibraries", Sync::class.java)
-            .map { it.destinationDir })
+    pluginRoots.from(platformArtifacts)
     pluginRoots.from(mpsHome.dir("plugins"))
 
     folderMacros.put("mbeddr.github.core.home", rootProject.layout.projectDirectory)
@@ -109,7 +117,7 @@ ant.withGroovyBuilder {
 
 val build_mbeddr by tasks.registering(BuildLanguages::class) {
     description = "Build mbeddr itself."
-    dependsOn(build_allScripts, resolve_mbeddr_platform)
+    dependsOn(build_allScripts)
     script = script_build_mbeddr
     outputs.dir("$artifactsDir/mbeddr")
 }
@@ -290,7 +298,7 @@ publishing {
             pom.withXml {
                 val dependenciesNode = asNode().appendNode("dependencies")
                 if (usePrebuiltPlatform) {
-                    mbeddrPlatform.resolvedConfiguration.firstLevelModuleDependencies.forEach {
+                    platformZip.resolvedConfiguration.firstLevelModuleDependencies.forEach {
                         val dependencyNode = dependenciesNode.appendNode("dependency")
                         dependencyNode.appendNode("groupId", it.moduleGroup)
                         dependencyNode.appendNode("artifactId", it.moduleName)
@@ -298,7 +306,7 @@ publishing {
                         dependencyNode.appendNode("type", it.moduleArtifacts.first().type)
                     }
                 } else {
-                    mbeddrPlatform.allDependencies.forEach {
+                    platformArtifacts.allDependencies.forEach {
                         val dependencyNode = dependenciesNode.appendNode("dependency")
                         dependencyNode.appendNode("groupId", it.group)
                         dependencyNode.appendNode("artifactId", it.name)
