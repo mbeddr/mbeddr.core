@@ -1,4 +1,3 @@
-import buildlogic.additionalPomInfo
 import de.itemis.mps.gradle.BuildLanguages
 import de.itemis.mps.gradle.EnvironmentKind
 import de.itemis.mps.gradle.RunAntScript
@@ -7,7 +6,7 @@ import de.itemis.mps.gradle.tasks.MpsGenerate
 
 plugins {
     base
-    `maven-publish`
+    id("buildlogic.maven-publishing")
     id("buildlogic.mps-conventions")
 }
 
@@ -316,7 +315,6 @@ publishing {
                 }
             }
             pom {
-                additionalPomInfo()
                 licenses {
                     license {
                         name = "EPL-2.0"
