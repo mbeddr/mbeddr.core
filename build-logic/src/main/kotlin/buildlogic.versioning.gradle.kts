@@ -42,6 +42,12 @@ val mbeddrBuildNumber by extra(
 val mbeddrPlatformBuildNumber by extra(project.findProperty("mbeddrPlatformVersion")?.toString() ?: mbeddrBuildNumber)
 version = mbeddrPlatformBuildNumber
 
+val antVersionProperties: Map<String, String> by extra(mapOf(
+    "build" to mbeddrBuildNumber,
+    "major.version" to mbeddrMajor,
+    "minor.version" to mbeddrMinor,
+))
+
 // Add versions bundled as an extension to make Gradle type-safe model accessors available in Kotlin build scripts
 extensions.add(
     "versions",
