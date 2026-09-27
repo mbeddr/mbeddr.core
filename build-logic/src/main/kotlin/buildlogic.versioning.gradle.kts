@@ -40,6 +40,7 @@ val mbeddrBuildNumber by extra(
 // Enable mbeddr to be assigned a different version number than mbeddr platform,
 // as well as mbeddr to be built against a specified existing mbeddr platform version
 val mbeddrPlatformBuildNumber by extra(project.findProperty("mbeddrPlatformVersion")?.toString() ?: mbeddrBuildNumber)
+version = mbeddrPlatformBuildNumber
 
 // Add versions bundled as an extension to make Gradle type-safe model accessors available in Kotlin build scripts
 extensions.add(
