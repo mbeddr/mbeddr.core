@@ -12,10 +12,8 @@ plugins {
 
 @Suppress("UNCHECKED_CAST")
 val mpsPluginsDir = parent?.extensions?.extraProperties?.properties?.get("mpsPluginsDir") as? Provider<String>
-val mbeddrBuildNumber: String by project
-val mbeddrMajor: String by project
-val mbeddrMinor: String by project
-val mpsBuild: String by project
+val antVersionProperties: Map<String, String> by extra
+val mpsBuild = libs.mps.get().version!!
 
 val artifactsDirectory = layout.buildDirectory.dir("artifacts")
 
@@ -63,9 +61,7 @@ mpsDefaults.mpsLibrariesDirectory = rootProject.layout.buildDirectory.dir("depen
 mpsDefaults.pathVariables.put("artifacts.root", artifactsDirectory.map { it.asFile })
 
 tasks.withType<RunAnt>().configureEach {
-    valueProperties.put("build", mbeddrBuildNumber)
-    valueProperties.put("major.version", mbeddrMajor)
-    valueProperties.put("minor.version", mbeddrMinor)
+    valueProperties.putAll(antVersionProperties)
 }
 
 bundledDependencies {
