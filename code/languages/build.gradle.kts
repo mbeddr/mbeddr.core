@@ -6,8 +6,8 @@ import de.itemis.mps.gradle.tasks.MpsGenerate
 
 plugins {
     base
-    id("buildlogic.maven-publishing")
     id("buildlogic.mps-conventions")
+    id("buildlogic.maven-publishing")
 }
 
 // :com.mbeddr.build
@@ -58,8 +58,7 @@ if (usePrebuiltPlatform) {
     }
 
     dependencies {
-        val mbeddrPlatformBuildNumber: String by project
-        platformZip("com.mbeddr:platform:$mbeddrPlatformBuildNumber")
+        platformZip("com.mbeddr:platform:${project.version}")
         platformArtifacts(files(extractPlatformZip.map { File(artifactsDir, "com.mbeddr.platform") }))
     }
 } else {
@@ -285,14 +284,12 @@ val package_mbeddr by tasks.registering(Zip::class) {
 
 artifacts.add("default", package_mbeddr)
 
-val mbeddrBuildNumber: String by project
-
 publishing {
     publications {
         create<MavenPublication>("mbeddr") {
             groupId = "com.mbeddr"
             artifactId = "mbeddr"
-            version = mbeddrBuildNumber
+            version = project.version.toString()
             artifact(package_mbeddr)
             pom.withXml {
                 val dependenciesNode = asNode().appendNode("dependencies")
