@@ -3,8 +3,6 @@ plugins {
     id("buildlogic.mps-conventions")
 }
 
-version = versions.mbeddrBuildNumber
-
 val sourcesZip by tasks.registering(Zip::class) {
     doNotTrackState("uses project directory as input, would confuse Gradle")
     description = "Package the mbeddr tutorial."
