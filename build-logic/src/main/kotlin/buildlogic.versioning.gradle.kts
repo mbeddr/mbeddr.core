@@ -35,7 +35,6 @@ version = if (ciBuild) {
 }
 
 val antVersionProperties: Map<String, String> by extra(mapOf(
-    "build" to project.version.toString(),
     "major.version" to mbeddrMajor,
     "minor.version" to mbeddrMinor,
 ))
