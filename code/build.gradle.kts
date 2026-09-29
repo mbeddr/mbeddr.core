@@ -77,19 +77,17 @@ logger.info("skipresolve_mps: {}, mpsHomeDir: {}", skipresolve_mps, mpsHomeDir)
 
 val artifactsDir: File by extra(file("${rootProject.projectDir.absolutePath}/artifacts"))
 
-val mbeddrMajor: String by project
-val mbeddrMinor: String by project
+val antVersionProperties: Map<String, String> by extra
 
 val antSystemProperties = mapOf<String, Any>(
     "mps.home" to mpsHomeDir,
     "build.dir" to rootProject.layout.projectDirectory,
     "artifacts.root" to rootProject.file("artifacts"),
     "mbeddr.github.core.home" to rootProject.layout.projectDirectory,
-    "build" to project.version.toString(),
-    "major.version" to mbeddrMajor,
-    "minor.version" to mbeddrMinor,
+    "version" to project.version.toString(),
     "build.jna.library.path" to File(mpsHomeDir, "lib/jna/${System.getProperty("os.arch")}")
 )
+    .plus(antVersionProperties)
 
 val defaultScriptArgs = antSystemProperties.map { "-D${it.key}=${it.value}" }
 extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs
