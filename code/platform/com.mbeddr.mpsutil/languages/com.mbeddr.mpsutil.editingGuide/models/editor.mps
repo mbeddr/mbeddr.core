@@ -319,7 +319,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
@@ -1427,7 +1426,7 @@
                   <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
                   <node concept="2OqwBi" id="72Jwzwpr39J" role="37wK5m">
                     <node concept="pncrf" id="72Jwzwpr39K" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="72Jwzwpr39L" role="2OqNvi">
+                    <node concept="3zqWPK" id="3Do1kgcvzV1" role="2OqNvi">
                       <ref role="37wK5l" to="l4gp:72JwzwpqZ9S" resolve="getEffectiveModule" />
                     </node>
                   </node>
@@ -1786,7 +1785,7 @@
               <node concept="37vLTw" id="72JwzwprXf1" role="2Oq$k0">
                 <ref role="3cqZAo" node="72JwzwprDRX" resolve="node" />
               </node>
-              <node concept="2qgKlT" id="72JwzwprXoL" role="2OqNvi">
+              <node concept="3zqWPK" id="3Do1kgcvzV3" role="2OqNvi">
                 <ref role="37wK5l" to="l4gp:72JwzwpqZ9S" resolve="getEffectiveModule" />
               </node>
             </node>
