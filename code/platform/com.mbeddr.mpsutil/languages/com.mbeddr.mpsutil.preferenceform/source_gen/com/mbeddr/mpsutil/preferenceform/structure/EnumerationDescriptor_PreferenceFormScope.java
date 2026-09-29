@@ -19,7 +19,7 @@ public class EnumerationDescriptor_PreferenceFormScope extends EnumerationDescri
   private final EnumerationDescriptor.MemberDescriptor myMember_application_0 = new EnumerationDescriptor.MemberDescriptor("application", "application", 0xf47d290fc7d381bL, "1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/1286599818956595590");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x1e7c1f95336c4cecL, 0xb00e8cc6e0c2b265L, 0xf47d290fc7d3801L, 0xf47d290fc7d3802L, 0xf47d290fc7d381bL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_project_0, myMember_application_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_project_0, myMember_application_0);
 
   @Nullable
   @Override

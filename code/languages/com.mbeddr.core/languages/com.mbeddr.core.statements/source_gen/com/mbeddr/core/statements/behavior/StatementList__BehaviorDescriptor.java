@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import com.mbeddr.core.base.behavior.ICommentable__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -32,19 +30,17 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class StatementList__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x3a16e3a9c7ad9955L, "com.mbeddr.core.statements.structure.StatementList");
 
-  public static final SMethod<Iterable<SNode>> getContributedLocalVariables_id3LB9aGm4C$b = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getContributedLocalVariables").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4352487882105194763L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> requiresMultiLines_id1z9MsBsVy8R = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requiresMultiLines").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1786180596061315639L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<Boolean> containsRealStatements_id3MW0c4RnFdW = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsRealStatements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4376373767754920828L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<Boolean> isEmpty_id6viY8n0RBRR = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEmpty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7481315184365960695L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<Boolean> hasOnlyOne_id6viY8n0SlLR = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasOnlyOne").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7481315184366148727L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<Boolean> hasMoreThanOne_id6viY8n0SYZg = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasMoreThanOne").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7481315184366317520L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<Iterable<SNode>> nonEmptyStatements_id3uNea_OzjeN = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("nonEmptyStatements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4013613993373283251L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<Boolean> isCommentable_id3RtPbXKOu_B = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCommentable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457953124863306087L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> getContributedLocalVariables_id3LB9aGm4C$b = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getContributedLocalVariables").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4352487882105194763L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "node"));
+  public static final SMethod<Boolean> requiresMultiLines_id1z9MsBsVy8R = new SMethodBuilder<>(Boolean.TYPE).name("requiresMultiLines").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1786180596061315639L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Boolean> containsRealStatements_id3MW0c4RnFdW = new SMethodBuilder<>(Boolean.TYPE).name("containsRealStatements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4376373767754920828L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Boolean> isEmpty_id6viY8n0RBRR = new SMethodBuilder<>(Boolean.TYPE).name("isEmpty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7481315184365960695L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Boolean> hasOnlyOne_id6viY8n0SlLR = new SMethodBuilder<>(Boolean.TYPE).name("hasOnlyOne").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7481315184366148727L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Boolean> hasMoreThanOne_id6viY8n0SYZg = new SMethodBuilder<>(Boolean.TYPE).name("hasMoreThanOne").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7481315184366317520L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Iterable<SNode>> nonEmptyStatements_id3uNea_OzjeN = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("nonEmptyStatements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4013613993373283251L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Boolean> isCommentable_id3RtPbXKOu_B = new SMethodBuilder<>(Boolean.TYPE).name("isCommentable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457953124863306087L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "trigger"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContributedLocalVariables_id3LB9aGm4C$b, requiresMultiLines_id1z9MsBsVy8R, containsRealStatements_id3MW0c4RnFdW, isEmpty_id6viY8n0RBRR, hasOnlyOne_id6viY8n0SlLR, hasMoreThanOne_id6viY8n0SYZg, nonEmptyStatements_id3uNea_OzjeN, isCommentable_id3RtPbXKOu_B);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContributedLocalVariables_id3LB9aGm4C$b, requiresMultiLines_id1z9MsBsVy8R, containsRealStatements_id3MW0c4RnFdW, isEmpty_id6viY8n0RBRR, hasOnlyOne_id6viY8n0SlLR, hasMoreThanOne_id6viY8n0SYZg, nonEmptyStatements_id3uNea_OzjeN, isCommentable_id3RtPbXKOu_B);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getContributedLocalVariables_id3LB9aGm4C$b(@NotNull SNode __thisNode__, final SNode node) {
     List<SNode> declarations = new ArrayList<SNode>();
@@ -88,10 +84,6 @@ public final class StatementList__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ StatementList__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

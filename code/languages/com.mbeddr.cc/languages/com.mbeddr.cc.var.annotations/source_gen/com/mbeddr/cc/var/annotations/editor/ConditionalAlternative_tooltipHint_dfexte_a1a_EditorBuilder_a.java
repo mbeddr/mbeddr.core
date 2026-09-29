@@ -92,7 +92,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createConstant_0());
-    editorCell.addEditorCell(createQueryList_1());
+    editorCell.addEditorCell(createQueryList_0());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -101,21 +101,18 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_0() {
 
-    QueryListHandler handler = new QueryListHandler_kincxf_b0a0(editorContext, node, true);
+    QueryListHandler handler = new QueryListHandler_kincxf_b0a0(getEditorContext(), getNode(), true);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
     editorCell.setTargeConcept(CONCEPTS.Expression$bT);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_kincxf_b0a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.READ_ONLY, true);
     editorCell.getStyle().putAll(style);
     return editorCell;
 
-  }
-  private EditorCell createQueryList_1() {
-    return createQueryList_0(getEditorContext(), myNode);
   }
   private static class QueryListHandler_kincxf_b0a0 extends QueryListHandler {
     /**
@@ -210,7 +207,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
     editorCell.setCellId("Collection_kincxf_b0a");
     editorCell.addEditorCell(createConstant_1());
-    editorCell.addEditorCell(createQueryList_3());
+    editorCell.addEditorCell(createQueryList_1());
     return editorCell;
   }
   private EditorCell createConstant_1() {
@@ -219,21 +216,18 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createQueryList_2(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_1() {
 
-    QueryListHandler handler = new QueryListHandler_kincxf_b1a0(editorContext, node, true);
+    QueryListHandler handler = new QueryListHandler_kincxf_b1a0(getEditorContext(), getNode(), true);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
     editorCell.setTargeConcept(CONCEPTS.INamedConcept$Kd);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_kincxf_b1a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.READ_ONLY, true);
     editorCell.getStyle().putAll(style);
     return editorCell;
 
-  }
-  private EditorCell createQueryList_3() {
-    return createQueryList_2(getEditorContext(), myNode);
   }
   private static class QueryListHandler_kincxf_b1a0 extends QueryListHandler {
     /**

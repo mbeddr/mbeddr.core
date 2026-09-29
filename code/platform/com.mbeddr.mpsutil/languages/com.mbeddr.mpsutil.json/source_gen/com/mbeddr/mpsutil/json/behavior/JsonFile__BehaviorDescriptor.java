@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -15,7 +14,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -23,12 +21,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class JsonFile__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb5c0bb04c5834b2aL, 0xa66e1eab92d33c68L, 0x3c445779c2b1d3e3L, "com.mbeddr.mpsutil.json.structure.JsonFile");
 
-  public static final SMethod<String> defaultLocation_id4egfvirUw0c = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("defaultLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4868459317984624652L).languageId(0xa66e1eab92d33c68L, 0xb5c0bb04c5834b2aL).build2();
+  public static final SMethod<String> defaultLocation_id4egfvirUw0c = new SMethodBuilder<>(String.class).name("defaultLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4868459317984624652L).languageId(0xa66e1eab92d33c68L, 0xb5c0bb04c5834b2aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(defaultLocation_id4egfvirUw0c);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(defaultLocation_id4egfvirUw0c);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String defaultLocation_id4egfvirUw0c(@NotNull SNode __thisNode__) {
     String virtualPackage = (isNotEmptyString(SPropertyOperations.getString(__thisNode__, PROPS.virtualPackage$EkXl)) ? "." + SPropertyOperations.getString(__thisNode__, PROPS.virtualPackage$EkXl) : "");
@@ -38,10 +34,6 @@ public final class JsonFile__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ JsonFile__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

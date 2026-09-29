@@ -13,7 +13,7 @@
       <unit at="11,0,30,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,28,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.structure.LanguageConceptSwitch" />
+      <unit at="12,0,36,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="15,0,63,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.structure.StructureAspectDescriptor" />
@@ -33,8 +33,8 @@
       <scope id="3645598487160356374" at="19,41,25,29" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3645598487160356374" at="12,0,13,0" concept="6" trace="WaitFor" />
-      <node id="3645598487160356374" at="15,116,16,46" concept="0" />
+      <node id="3645598487160356374" at="14,0,15,0" concept="6" trace="WaitFor" />
+      <node id="3645598487160356374" at="17,116,18,46" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3645598487160356374" at="16,0,17,0" concept="1" trace="myConceptWaitFor" />

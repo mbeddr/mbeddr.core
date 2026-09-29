@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.mpsutil.plantuml.node.behavior.VisGraph;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -23,7 +22,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import java.util.ArrayList;
 import org.jetbrains.annotations.Nullable;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -33,25 +31,23 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xff3d5f86c6fa4c63L, 0xaa95c2de600f92acL, 0x6e309aa8536cf838L, "com.mbeddr.mpsutil.genplandiagram.structure.PlanVisualizer");
 
-  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<String[]>(new SJavaCompoundTypeImpl(String[].class)).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
-  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(VisGraph.class, ""));
-  public static final SMethod<Result> renderPlan_id6SKAExjtCwf = new SMethodBuilder<Result>(new SJavaCompoundTypeImpl(Result.class)).name("renderPlan").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7940016190799644687L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Result.class, ""));
-  public static final SMethod<Result> renderStep_id6SKAExjtGDb = new SMethodBuilder<Result>(new SJavaCompoundTypeImpl(Result.class)).name("renderStep").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7940016190799661643L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Result.class, ""));
-  public static final SMethod<String> stepName_id7KBw$lnVSxB = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("stepName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419134449767L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(Result.class, ""));
-  public static final SMethod<Void> addState_id7KBw$lnY6ka = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addState").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419135030538L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, ""), SMethodBuilder.createJavaParameter(Result.class, ""), SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
-  public static final SMethod<Void> addStep_id7KBw$lo0leH = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addStep").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419135615917L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, ""), SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(Result.class, ""), SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Void> addConnection_id7KBw$lobW_r = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addConnection").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419138660699L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, ""), SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Void> addComments_id5lyXtvAvI7E = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addComments").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6152750348575367658L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, ""), SMethodBuilder.createJavaParameter(Result.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> getDirection_id6SKAExjx0IO = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDirection").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7940016190800530356L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2();
-  public static final SMethod<String> getNoteLocation_id7KBw$lo6Sog = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getNoteLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419137332752L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2();
-  public static final SMethod<Result> createNewResult_id7KBw$loavrA = new SMethodBuilder<Result>(new SJavaCompoundTypeImpl(Result.class)).name("createNewResult").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419138279142L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> join_id7KBw$lojUBG = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("join").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419140749804L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Result.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> sanitizeName_id18bJoJwm3Ej = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("sanitizeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1300341325888502419L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<>(String[].class).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
+  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<>(Void.TYPE).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, "category"), SMethodBuilder.createJavaParameter(VisGraph.class, "graph"));
+  public static final SMethod<Result> renderPlan_id6SKAExjtCwf = new SMethodBuilder<>(Result.class).name("renderPlan").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7940016190799644687L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, "builder"), SMethodBuilder.createJavaParameter(SNode.class, "stepContainingPlan"), SMethodBuilder.createJavaParameter(SNode.class, "originalPlan"), SMethodBuilder.createJavaParameter(SNode.class, "plan"), SMethodBuilder.createJavaParameter(Result.class, "start"));
+  public static final SMethod<Result> renderStep_id6SKAExjtGDb = new SMethodBuilder<>(Result.class).name("renderStep").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7940016190799661643L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, "builder"), SMethodBuilder.createJavaParameter(SNode.class, "originalPlan"), SMethodBuilder.createJavaParameter(SNode.class, "step"), SMethodBuilder.createJavaParameter(Result.class, "result"));
+  public static final SMethod<String> stepName_id7KBw$lnVSxB = new SMethodBuilder<>(String.class).name("stepName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419134449767L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(Result.class, "result"));
+  public static final SMethod<Void> addState_id7KBw$lnY6ka = new SMethodBuilder<>(Void.TYPE).name("addState").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419135030538L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, "builder"), SMethodBuilder.createJavaParameter(Result.class, "result"), SMethodBuilder.createJavaParameter(String.class, "name"), SMethodBuilder.createJavaParameter(String.class, "stereotype"), SMethodBuilder.createJavaParameter(String.class, "alias"), SMethodBuilder.createJavaParameter(Boolean.TYPE, "block"));
+  public static final SMethod<Void> addStep_id7KBw$lo0leH = new SMethodBuilder<>(Void.TYPE).name("addStep").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419135615917L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, "builder"), SMethodBuilder.createJavaParameter(String.class, "parentName"), SMethodBuilder.createJavaParameter(Result.class, "result"), SMethodBuilder.createJavaParameter(String.class, "text"), SMethodBuilder.createJavaParameter(String.class, "description"));
+  public static final SMethod<Void> addConnection_id7KBw$lobW_r = new SMethodBuilder<>(Void.TYPE).name("addConnection").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419138660699L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, "builder"), SMethodBuilder.createJavaParameter(String.class, "from"), SMethodBuilder.createJavaParameter(String.class, "to"), SMethodBuilder.createJavaParameter(String.class, "direction"));
+  public static final SMethod<Void> addComments_id5lyXtvAvI7E = new SMethodBuilder<>(Void.TYPE).name("addComments").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6152750348575367658L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, "builder"), SMethodBuilder.createJavaParameter(Result.class, "result"), SMethodBuilder.createJavaParameter(String.class, "nextItem"));
+  public static final SMethod<String> getDirection_id6SKAExjx0IO = new SMethodBuilder<>(String.class).name("getDirection").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7940016190800530356L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2();
+  public static final SMethod<String> getNoteLocation_id7KBw$lo6Sog = new SMethodBuilder<>(String.class).name("getNoteLocation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419137332752L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2();
+  public static final SMethod<Result> createNewResult_id7KBw$loavrA = new SMethodBuilder<>(Result.class).name("createNewResult").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419138279142L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(SNode.class, "plan"));
+  public static final SMethod<Void> join_id7KBw$lojUBG = new SMethodBuilder<>(Void.TYPE).name("join").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946262419140749804L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(StringBuilder.class, "builder"), SMethodBuilder.createJavaParameter(SNode.class, "originalPlan"), SMethodBuilder.createJavaParameter(Result.class, "result"), SMethodBuilder.createJavaParameter(SNode.class, "step"));
+  public static final SMethod<String> sanitizeName_id18bJoJwm3Ej = new SMethodBuilder<>(String.class).name("sanitizeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1300341325888502419L).languageId(0xaa95c2de600f92acL, 0xff3d5f86c6fa4c63L).build2(SMethodBuilder.createJavaParameter(String.class, "name"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, renderPlan_id6SKAExjtCwf, renderStep_id6SKAExjtGDb, stepName_id7KBw$lnVSxB, addState_id7KBw$lnY6ka, addStep_id7KBw$lo0leH, addConnection_id7KBw$lobW_r, addComments_id5lyXtvAvI7E, getDirection_id6SKAExjx0IO, getNoteLocation_id7KBw$lo6Sog, createNewResult_id7KBw$loavrA, join_id7KBw$lojUBG, sanitizeName_id18bJoJwm3Ej);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, renderPlan_id6SKAExjtCwf, renderStep_id6SKAExjtGDb, stepName_id7KBw$lnVSxB, addState_id7KBw$lnY6ka, addStep_id7KBw$lo0leH, addConnection_id7KBw$lobW_r, addComments_id5lyXtvAvI7E, getDirection_id6SKAExjx0IO, getNoteLocation_id7KBw$lo6Sog, createNewResult_id7KBw$loavrA, join_id7KBw$lojUBG, sanitizeName_id18bJoJwm3Ej);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String[] getCategories_id2N1CSrzPN_a(@NotNull SNode __thisNode__) {
     return new String[]{"generation plan visualization"};
@@ -109,9 +105,15 @@ public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
         PlanVisualizer__BehaviorDescriptor.addComments_id5lyXtvAvI7E.invoke(__thisNode__, builder, result, stepName);
         PlanVisualizer__BehaviorDescriptor.addState_id7KBw$lnY6ka.invoke(__thisNode__, builder, result, "apply", null, stepName, ((boolean) false));
         for (SNode generator : ListSequence.fromList(SLinkOperations.getChildren(applyGenerators, LINKS.generator$bWty))) {
-          SNode modulePointer = SNodeOperations.as(generator, CONCEPTS.GeneratorModulePointer$49);
-          if ((modulePointer != null)) {
-            PlanVisualizer__BehaviorDescriptor.addStep_id7KBw$lo0leH.invoke(__thisNode__, builder, stepName, result, SPropertyOperations.getString(SLinkOperations.getTarget(modulePointer, LINKS.module$u1do), PROPS.moduleName$QKD6), "Generator");
+          {
+            final SNode modulePointerOld = generator;
+            if (SNodeOperations.isInstanceOf(modulePointerOld, CONCEPTS.GeneratorModulePointer$49)) {
+              PlanVisualizer__BehaviorDescriptor.addStep_id7KBw$lo0leH.invoke(__thisNode__, builder, stepName, result, SPropertyOperations.getString(SLinkOperations.getTarget(modulePointerOld, LINKS.module$u1do), PROPS.moduleName$QKD6), "Generator");
+            } else if (SNodeOperations.isInstanceOf(modulePointerOld, CONCEPTS.GeneratorModulePointer$Qh)) {
+              final SNode modulePointer = generator;
+
+              PlanVisualizer__BehaviorDescriptor.addStep_id7KBw$lo0leH.invoke(__thisNode__, builder, stepName, result, SPropertyOperations.getString(SLinkOperations.getTarget(modulePointer, LINKS.module$wPxG), PROPS.moduleName$RP9b), "Generator");
+            }
           }
         }
         result.stepCount((int) result.stepCount() + 1);
@@ -242,10 +244,6 @@ public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ PlanVisualizer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
@@ -323,6 +321,7 @@ public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
     /*package*/ static final SContainmentLink language$pqOb = MetaAdapterFactory.getContainmentLink(0x7ab1a6fa0a114b95L, 0x9e4875f363d6cb00L, 0x100024c0a63c480fL, 0x100024c0a63c4810L, "language");
     /*package*/ static final SContainmentLink entries$T03u = MetaAdapterFactory.getContainmentLink(0x7ab1a6fa0a114b95L, 0x9e4875f363d6cb00L, 0x19443180a2071802L, 0x100024c0a63c5ff6L, "entries");
     /*package*/ static final SContainmentLink module$u1do = MetaAdapterFactory.getContainmentLink(0x7866978ea0f04cc7L, 0x81bc4d213d9375e1L, 0x73246de9adecb80dL, 0x73246de9adecb874L, "module");
+    /*package*/ static final SContainmentLink module$wPxG = MetaAdapterFactory.getContainmentLink(0x7ab1a6fa0a114b95L, 0x9e4875f363d6cb00L, 0x205e11b2358519b2L, 0x205e11b2358519b4L, "module");
     /*package*/ static final SContainmentLink generator$bWty = MetaAdapterFactory.getContainmentLink(0x7ab1a6fa0a114b95L, 0x9e4875f363d6cb00L, 0x73246de9adeca171L, 0x73246de9adf5a45cL, "generator");
     /*package*/ static final SContainmentLink cpSpec$v7$t = MetaAdapterFactory.getContainmentLink(0x7ab1a6fa0a114b95L, 0x9e4875f363d6cb00L, 0x19443180a2071801L, 0x340cd07aed7cb2d2L, "cpSpec");
     /*package*/ static final SContainmentLink checkpoint$18uq = MetaAdapterFactory.getContainmentLink(0x7ab1a6fa0a114b95L, 0x9e4875f363d6cb00L, 0xc11e5088a794d07L, 0x340cd07aedd21238L, "checkpoint");
@@ -336,6 +335,7 @@ public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
     /*package*/ static final SProperty namespace$dZq1 = MetaAdapterFactory.getProperty(0x7866978ea0f04cc7L, 0x81bc4d213d9375e1L, 0x312abca18ab8c8c0L, 0x312abca18ab8ccd7L, "namespace");
     /*package*/ static final SProperty kind$xL6K = MetaAdapterFactory.getProperty(0x7ab1a6fa0a114b95L, 0x9e4875f363d6cb00L, 0x100024c0a63c480fL, 0x100024c0a63c5feeL, "kind");
     /*package*/ static final SProperty moduleName$QKD6 = MetaAdapterFactory.getProperty(0x7866978ea0f04cc7L, 0x81bc4d213d9375e1L, 0x5ef5a1e853388b3L, 0x5ef5a1e85338e19L, "moduleName");
+    /*package*/ static final SProperty moduleName$RP9b = MetaAdapterFactory.getProperty(0x446c26eb2b7b4bf0L, 0x9b35f83fa582753eL, 0x502fe7548a0e361L, 0x19dc9460645ae969L, "moduleName");
     /*package*/ static final SProperty text$nfH7 = MetaAdapterFactory.getProperty(0x7ab1a6fa0a114b95L, 0x9e4875f363d6cb00L, 0x2913ee226f7cdcb5L, 0x2913ee226f7cdcd3L, "text");
     /*package*/ static final SProperty direction$BYHl = MetaAdapterFactory.getProperty(0xff3d5f86c6fa4c63L, 0xaa95c2de600f92acL, 0x6e309aa8536cf838L, 0x6e309aa8536db212L, "direction");
   }
@@ -344,6 +344,7 @@ public final class PlanVisualizer__BehaviorDescriptor extends BaseBHDescriptor {
     /*package*/ static final SConcept Transform$a_ = MetaAdapterFactory.getConcept(0x7ab1a6fa0a114b95L, 0x9e4875f363d6cb00L, 0x19443180a2071802L, "jetbrains.mps.lang.generator.plan.structure.Transform");
     /*package*/ static final SConcept LanguageId$UR = MetaAdapterFactory.getConcept(0x7866978ea0f04cc7L, 0x81bc4d213d9375e1L, 0x312abca18ab8c8c0L, "jetbrains.mps.lang.smodel.structure.LanguageId");
     /*package*/ static final SConcept GeneratorModulePointer$49 = MetaAdapterFactory.getConcept(0x7866978ea0f04cc7L, 0x81bc4d213d9375e1L, 0x73246de9adecb80dL, "jetbrains.mps.lang.smodel.structure.GeneratorModulePointer");
+    /*package*/ static final SConcept GeneratorModulePointer$Qh = MetaAdapterFactory.getConcept(0x7ab1a6fa0a114b95L, 0x9e4875f363d6cb00L, 0x205e11b2358519b2L, "jetbrains.mps.lang.generator.plan.structure.GeneratorModulePointer");
     /*package*/ static final SConcept ApplyGenerators$PQ = MetaAdapterFactory.getConcept(0x7ab1a6fa0a114b95L, 0x9e4875f363d6cb00L, 0x73246de9adeca171L, "jetbrains.mps.lang.generator.plan.structure.ApplyGenerators");
     /*package*/ static final SConcept CheckpointDeclaration$4L = MetaAdapterFactory.getConcept(0x7ab1a6fa0a114b95L, 0x9e4875f363d6cb00L, 0x56d679ca1f4b53ceL, "jetbrains.mps.lang.generator.plan.structure.CheckpointDeclaration");
     /*package*/ static final SConcept Checkpoint$ZV = MetaAdapterFactory.getConcept(0x7ab1a6fa0a114b95L, 0x9e4875f363d6cb00L, 0x19443180a2071801L, "jetbrains.mps.lang.generator.plan.structure.Checkpoint");

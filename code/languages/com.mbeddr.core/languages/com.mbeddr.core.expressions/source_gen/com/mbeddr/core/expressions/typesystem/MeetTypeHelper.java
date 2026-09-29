@@ -22,8 +22,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public class MeetTypeHelper {
 
   /**
-   * Returns true if sub is a subtype of sup. In case of a meet type, both types will be considered to check if the 
-   * subtyping relationship can be satisfied. 
+   * Returns true if sub is a subtype of sup. In case of a meet type, both types will be considered to check if the
+   * subtyping relationship can be satisfied.
    */
   public static boolean isSubType(SNode sub, SNode sup) {
     if (SNodeOperations.isInstanceOf(sub, CONCEPTS.PC99MeetType$$K) && SNodeOperations.isInstanceOf(sup, CONCEPTS.PC99MeetType$$K)) {

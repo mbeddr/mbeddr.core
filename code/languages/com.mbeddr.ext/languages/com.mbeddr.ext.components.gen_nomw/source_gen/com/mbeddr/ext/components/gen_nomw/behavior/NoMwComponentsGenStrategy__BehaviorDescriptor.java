@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -26,11 +25,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class NoMwComponentsGenStrategy__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xbd640b8f4be442b6L, 0x8dc02c94d1ddf606L, 0x1d31b29ecf3e58afL, "com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy");
 
-  public static final SMethod<Boolean> canHandleCrossModelGeneration_idybcgwyDh7F = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canHandleCrossModelGeneration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(615639685076947435L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Void> rebindToProxy_id7jSUHHvkApb = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("rebindToProxy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856331L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> referencedModuleContent_id7jSUHHvkAph = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("referencedModuleContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856337L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> canHandleCrossModelGeneration_idybcgwyDh7F = new SMethodBuilder<>(Boolean.TYPE).name("canHandleCrossModelGeneration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(615639685076947435L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Void> rebindToProxy_id7jSUHHvkApb = new SMethodBuilder<>(Void.TYPE).name("rebindToProxy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856331L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "proxyElement"));
+  public static final SMethod<SNode> referencedModuleContent_id7jSUHHvkAph = new SMethodBuilder<>(SNode.class).name("referencedModuleContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856337L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canHandleCrossModelGeneration_idybcgwyDh7F, rebindToProxy_id7jSUHHvkApb, referencedModuleContent_id7jSUHHvkAph);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canHandleCrossModelGeneration_idybcgwyDh7F, rebindToProxy_id7jSUHHvkApb, referencedModuleContent_id7jSUHHvkAph);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.generateContracts$DO0_, true);

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -28,13 +27,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ClientServerInterface__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x3e5659cd94a25d7aL, "com.mbeddr.ext.components.structure.ClientServerInterface");
 
-  public static final SMethod<Iterable<SNode>> operations_id5Xnv3$Q_HGJ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("operations").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6870096341747817263L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Boolean> hasProtocol_id5oFMniD9Ori = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasProtocol").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014151673554L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Boolean> canBeUsedInMultipleRP_id2ZUGF54k3cG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeUsedInMultipleRP").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3457272138385339180L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Iterable<SNode>> operations_id5Xnv3$Q_HGJ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("operations").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6870096341747817263L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> hasProtocol_id5oFMniD9Ori = new SMethodBuilder<>(Boolean.TYPE).name("hasProtocol").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014151673554L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> canBeUsedInMultipleRP_id2ZUGF54k3cG = new SMethodBuilder<>(Boolean.TYPE).name("canBeUsedInMultipleRP").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3457272138385339180L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Integer> getLOCEquivalent_id6brBMefRfO0 = new SMethodBuilder<>(Integer.TYPE).name("getLOCEquivalent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210702867712L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<>(Boolean.TYPE).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(operations_id5Xnv3$Q_HGJ, hasProtocol_id5oFMniD9Ori, canBeUsedInMultipleRP_id2ZUGF54k3cG, getLOCEquivalent_id6brBMefRfO0, exportable_id5HxjapwgqKI);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(operations_id5Xnv3$Q_HGJ, hasProtocol_id5oFMniD9Ori, canBeUsedInMultipleRP_id2ZUGF54k3cG, getLOCEquivalent_id6brBMefRfO0, exportable_id5HxjapwgqKI);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.exported$V4am, true);

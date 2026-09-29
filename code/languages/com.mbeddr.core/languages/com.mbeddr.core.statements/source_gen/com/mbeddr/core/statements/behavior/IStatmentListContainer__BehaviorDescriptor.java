@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,21 +14,18 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IStatmentListContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x5f5c402aa7667ef3L, "com.mbeddr.core.statements.structure.IStatmentListContainer");
 
-  public static final SMethod<String> getEndLabel_id5Xsg2EBpPwD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEndLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6871437683401906217L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> forceMultiLines_id5oX1Q_zkX36 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("forceMultiLines").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6214131210060550342L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<String> getLabel_id5HxjapwgqK6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getLabel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574534L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<String> getEndLabel_id5Xsg2EBpPwD = new SMethodBuilder<>(String.class).name("getEndLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6871437683401906217L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "statementList"));
+  public static final SMethod<Boolean> forceMultiLines_id5oX1Q_zkX36 = new SMethodBuilder<>(Boolean.TYPE).name("forceMultiLines").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6214131210060550342L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<String> getLabel_id5HxjapwgqK6 = new SMethodBuilder<>(String.class).name("getLabel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574534L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEndLabel_id5Xsg2EBpPwD, forceMultiLines_id5oX1Q_zkX36, getLabel_id5HxjapwgqK6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEndLabel_id5Xsg2EBpPwD, forceMultiLines_id5oX1Q_zkX36, getLabel_id5HxjapwgqK6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getEndLabel_id5Xsg2EBpPwD(@NotNull SNode __thisNode__, SNode statementList) {
     if (IStatmentListContainer__BehaviorDescriptor.getLabel_id5HxjapwgqK6.invoke(SNodeOperations.asSConcept(SNodeOperations.getConcept(__thisNode__))) != null) {
@@ -48,10 +44,6 @@ public final class IStatmentListContainer__BehaviorDescriptor extends BaseBHDesc
   /*package*/ IStatmentListContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

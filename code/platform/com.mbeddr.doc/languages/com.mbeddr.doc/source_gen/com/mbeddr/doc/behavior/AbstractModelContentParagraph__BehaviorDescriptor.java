@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.core.base.behavior.AbstractTreeViewNode;
@@ -21,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.Objects;
 import com.mbeddr.core.base.behavior.IIdentifierNamedConcept__BehaviorDescriptor;
 import com.mbeddr.core.base.behavior.LeafNodeTreeViewNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -32,16 +30,14 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class AbstractModelContentParagraph__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x608796288312c044L, "com.mbeddr.doc.structure.AbstractModelContentParagraph");
 
-  public static final SMethod<Boolean> renderCode_id627_yy34Gnw = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("renderCode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6955693250238924256L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<SNode> targetNode_id627_yy34GnC = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("targetNode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6955693250238924264L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Boolean> shouldBeRemoved_id6TjoDcE6uBZ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("shouldBeRemoved").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7949806151445113343L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> shouldRemoveEmpty_id6TjoDcE6vcp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("shouldRemoveEmpty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7949806151445115673L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<AbstractTreeViewNode>(new SJavaCompoundTypeImpl(AbstractTreeViewNode.class)).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Boolean> renderCode_id627_yy34Gnw = new SMethodBuilder<>(Boolean.TYPE).name("renderCode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6955693250238924256L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<SNode> targetNode_id627_yy34GnC = new SMethodBuilder<>(SNode.class).name("targetNode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6955693250238924264L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Boolean> shouldBeRemoved_id6TjoDcE6uBZ = new SMethodBuilder<>(Boolean.TYPE).name("shouldBeRemoved").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7949806151445113343L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(SNode.class, "candidate"));
+  public static final SMethod<Boolean> shouldRemoveEmpty_id6TjoDcE6vcp = new SMethodBuilder<>(Boolean.TYPE).name("shouldRemoveEmpty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7949806151445115673L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter(SNode.class, "candidate"));
+  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<>(AbstractTreeViewNode.class).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "category"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderCode_id627_yy34Gnw, targetNode_id627_yy34GnC, shouldBeRemoved_id6TjoDcE6uBZ, shouldRemoveEmpty_id6TjoDcE6vcp, getTreeNode_id7NyyyjNtbn2);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderCode_id627_yy34Gnw, targetNode_id627_yy34GnC, shouldBeRemoved_id6TjoDcE6uBZ, shouldRemoveEmpty_id6TjoDcE6vcp, getTreeNode_id7NyyyjNtbn2);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean renderCode_id627_yy34Gnw(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getBoolean(__thisNode__, PROPS.showContents$bWek);
@@ -74,10 +70,6 @@ public final class AbstractModelContentParagraph__BehaviorDescriptor extends Bas
   /*package*/ AbstractModelContentParagraph__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

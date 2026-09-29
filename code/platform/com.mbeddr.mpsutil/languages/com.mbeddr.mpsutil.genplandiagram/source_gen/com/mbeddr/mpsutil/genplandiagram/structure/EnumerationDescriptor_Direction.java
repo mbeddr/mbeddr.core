@@ -19,7 +19,7 @@ public class EnumerationDescriptor_Direction extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember_LEFT_TO_RIGHT_0 = new EnumerationDescriptor.MemberDescriptor("LEFT_TO_RIGHT", "left to right", 0x6e309aa8536dae8aL, "r:69e7f585-d1ea-4d0d-b392-5608c01d468b(com.mbeddr.mpsutil.genplandiagram.structure)/7940016190799064714");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xff3d5f86c6fa4c63L, 0xaa95c2de600f92acL, 0x6e309aa8536dae89L, 0x6e309aa8536dafabL, 0x6e309aa8536dae8aL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_TOP_TO_BOTTOM_0, myMember_LEFT_TO_RIGHT_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_TOP_TO_BOTTOM_0, myMember_LEFT_TO_RIGHT_0);
 
   @Nullable
   @Override

@@ -12,7 +12,7 @@
       <unit at="11,0,61,0" name="com.mbeddr.mpsutil.multilingual.common.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,36,0" name="com.mbeddr.mpsutil.multilingual.common.structure.LanguageConceptSwitch" />
+      <unit at="12,0,44,0" name="com.mbeddr.mpsutil.multilingual.common.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="19,0,121,0" name="com.mbeddr.mpsutil.multilingual.common.structure.StructureAspectDescriptor" />
@@ -31,8 +31,8 @@
       <scope id="2510545900188083931" at="23,51,28,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2510545900188083931" at="12,0,13,0" concept="5" trace="IMessageKeyHolder" />
-      <node id="2510545900188083931" at="19,116,20,56" concept="0" />
+      <node id="2510545900188083931" at="14,0,15,0" concept="5" trace="IMessageKeyHolder" />
+      <node id="2510545900188083931" at="21,116,22,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2510545900188083931" at="20,0,21,0" concept="1" trace="myConceptIMessageKeyHolder" />
@@ -70,8 +70,8 @@
       <scope id="568377005202317228" at="29,42,35,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="568377005202317228" at="13,0,14,0" concept="5" trace="Language" />
-      <node id="568377005202317228" at="20,56,21,46" concept="0" />
+      <node id="568377005202317228" at="15,0,16,0" concept="5" trace="Language" />
+      <node id="568377005202317228" at="22,56,23,46" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="568377005202317228" at="21,0,22,0" concept="1" trace="myConceptLanguage" />
@@ -111,8 +111,8 @@
       <scope id="568377005202317233" at="36,51,42,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="568377005202317233" at="14,0,15,0" concept="5" trace="LanguageContainer" />
-      <node id="568377005202317233" at="21,46,22,55" concept="0" />
+      <node id="568377005202317233" at="16,0,17,0" concept="5" trace="LanguageContainer" />
+      <node id="568377005202317233" at="23,46,24,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="568377005202317233" at="22,0,23,0" concept="1" trace="myConceptLanguageContainer" />
@@ -146,8 +146,8 @@
       <scope id="568377005202317270" at="43,44,49,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="568377005202317270" at="15,0,16,0" concept="5" trace="MessageKey" />
-      <node id="568377005202317270" at="22,55,23,48" concept="0" />
+      <node id="568377005202317270" at="17,0,18,0" concept="5" trace="MessageKey" />
+      <node id="568377005202317270" at="24,55,25,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="568377005202317270" at="23,0,24,0" concept="1" trace="myConceptMessageKey" />
@@ -182,8 +182,8 @@
       <scope id="568377005202317274" at="50,48,56,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="568377005202317274" at="16,0,17,0" concept="5" trace="ResourceBundle" />
-      <node id="568377005202317274" at="23,48,24,52" concept="0" />
+      <node id="568377005202317274" at="18,0,19,0" concept="5" trace="ResourceBundle" />
+      <node id="568377005202317274" at="25,48,26,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="568377005202317274" at="24,0,25,0" concept="1" trace="myConceptResourceBundle" />

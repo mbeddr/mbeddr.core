@@ -13,7 +13,7 @@
       <unit at="11,0,38,0" name="com.mbeddr.mpsutil.ecore.testing.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,30,0" name="com.mbeddr.mpsutil.ecore.testing.structure.LanguageConceptSwitch" />
+      <unit at="12,0,38,0" name="com.mbeddr.mpsutil.ecore.testing.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,80,0" name="com.mbeddr.mpsutil.ecore.testing.structure.StructureAspectDescriptor" />
@@ -33,8 +33,8 @@
       <scope id="494571880817472209" at="20,55,26,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="494571880817472209" at="12,0,13,0" concept="6" trace="AssertImportStatement" />
-      <node id="494571880817472209" at="16,116,17,59" concept="0" />
+      <node id="494571880817472209" at="14,0,15,0" concept="6" trace="AssertImportStatement" />
+      <node id="494571880817472209" at="18,116,19,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="494571880817472209" at="15,0,16,0" concept="1" trace="myConceptAssertImportStatement" />
@@ -71,8 +71,8 @@
       <scope id="5528787623165930366" at="27,69,33,57" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5528787623165930366" at="13,0,14,0" concept="6" trace="AssertInstanceImportExportStatement" />
-      <node id="5528787623165930366" at="17,59,18,74" concept="0" />
+      <node id="5528787623165930366" at="15,0,16,0" concept="6" trace="AssertInstanceImportExportStatement" />
+      <node id="5528787623165930366" at="19,59,20,74" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5528787623165930366" at="16,0,17,0" concept="1" trace="myConceptAssertInstanceImportExportStatement" />

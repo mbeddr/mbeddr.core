@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.scope.ListScope;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.scope.EmptyScope;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -27,12 +25,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class ProgramFragment_ScopeProvider_Element__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x67506b1e43ad47feL, 0xa8e6bc7837e9e11fL, 0xd7eba8700f961a9L, "com.mbeddr.mpsutil.editingGuide.structure.ProgramFragment_ScopeProvider_Element");
 
-  public static final SMethod<Scope> getProvidedNodes_id22irgSmHAOg = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getProvidedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2347058263091473680L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
+  public static final SMethod<Scope> getProvidedNodes_id22irgSmHAOg = new SMethodBuilder<>(Scope.class).name("getProvidedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2347058263091473680L).languageId(0xa8e6bc7837e9e11fL, 0x67506b1e43ad47feL).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "targetConcept"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getProvidedNodes_id22irgSmHAOg);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getProvidedNodes_id22irgSmHAOg);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Scope getProvidedNodes_id22irgSmHAOg(@NotNull SNode __thisNode__, SAbstractConcept targetConcept) {
     // Return the target wrapped in a Scope, if concept matches.
@@ -46,10 +42,6 @@ public final class ProgramFragment_ScopeProvider_Element__BehaviorDescriptor ext
   /*package*/ ProgramFragment_ScopeProvider_Element__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

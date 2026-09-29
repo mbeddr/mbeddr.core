@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,6 @@ import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -29,21 +27,19 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Style__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1d891f7bdc9342f9L, 0xa4bcb016656b14e2L, 0x1c579c584d7f42a8L, "com.mbeddr.spreadsheet.structure.Style");
 
-  public static final SMethod<SNode> findProperty_id1LnB5xdJe7T = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("findProperty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111088633L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> bold_id1LnB5xdJegr = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("bold").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089179L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
-  public static final SMethod<Boolean> italic_id1LnB5xdJegB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("italic").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089191L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
-  public static final SMethod<SNode> bgColor_id1LnB5xdJeh1 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("bgColor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089217L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
-  public static final SMethod<SNode> fontColor_id1LnB5xdJehe = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("fontColor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089230L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
-  public static final SMethod<Integer> border_id1LnB5xdJeno = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("border").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089624L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
-  public static final SMethod<Integer> bottomBorder_id1LnB5xdJenF = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("bottomBorder").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089643L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
-  public static final SMethod<Integer> alignment_id1LnB5xdJerp = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("alignment").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089881L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
-  public static final SMethod<String> font_id1LnB5xdJes9 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("font").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089929L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
-  public static final SMethod<Integer> fontSize_id7FELQjI3HCs = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("fontSize").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8857110853482109468L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
+  public static final SMethod<SNode> findProperty_id1LnB5xdJe7T = new SMethodBuilder<>(SNode.class).name("findProperty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111088633L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "concept"));
+  public static final SMethod<Boolean> bold_id1LnB5xdJegr = new SMethodBuilder<>(Boolean.TYPE).name("bold").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089179L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
+  public static final SMethod<Boolean> italic_id1LnB5xdJegB = new SMethodBuilder<>(Boolean.TYPE).name("italic").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089191L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
+  public static final SMethod<SNode> bgColor_id1LnB5xdJeh1 = new SMethodBuilder<>(SNode.class).name("bgColor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089217L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
+  public static final SMethod<SNode> fontColor_id1LnB5xdJehe = new SMethodBuilder<>(SNode.class).name("fontColor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089230L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
+  public static final SMethod<Integer> border_id1LnB5xdJeno = new SMethodBuilder<>(Integer.TYPE).name("border").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089624L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
+  public static final SMethod<Integer> bottomBorder_id1LnB5xdJenF = new SMethodBuilder<>(Integer.TYPE).name("bottomBorder").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089643L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
+  public static final SMethod<Integer> alignment_id1LnB5xdJerp = new SMethodBuilder<>(Integer.TYPE).name("alignment").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089881L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
+  public static final SMethod<String> font_id1LnB5xdJes9 = new SMethodBuilder<>(String.class).name("font").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042272859111089929L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
+  public static final SMethod<Integer> fontSize_id7FELQjI3HCs = new SMethodBuilder<>(Integer.TYPE).name("fontSize").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8857110853482109468L).languageId(0xa4bcb016656b14e2L, 0x1d891f7bdc9342f9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findProperty_id1LnB5xdJe7T, bold_id1LnB5xdJegr, italic_id1LnB5xdJegB, bgColor_id1LnB5xdJeh1, fontColor_id1LnB5xdJehe, border_id1LnB5xdJeno, bottomBorder_id1LnB5xdJenF, alignment_id1LnB5xdJerp, font_id1LnB5xdJes9, fontSize_id7FELQjI3HCs);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findProperty_id1LnB5xdJe7T, bold_id1LnB5xdJegr, italic_id1LnB5xdJegB, bgColor_id1LnB5xdJeh1, fontColor_id1LnB5xdJehe, border_id1LnB5xdJeno, bottomBorder_id1LnB5xdJenF, alignment_id1LnB5xdJerp, font_id1LnB5xdJes9, fontSize_id7FELQjI3HCs);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode findProperty_id1LnB5xdJe7T(@NotNull SNode __thisNode__, final SNode concept) {
     SNode property = ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.properties$1p$z)).findFirst((it) -> Objects.equals(SNodeOperations.getConcept(it), SNodeOperations.asSConcept(concept)));
@@ -88,10 +84,6 @@ public final class Style__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Style__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

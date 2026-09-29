@@ -22,7 +22,7 @@ public class EnumerationDescriptor_Border extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember_doubleBorder_0 = new EnumerationDescriptor.MemberDescriptor("doubleBorder", "doubleBorder", 0x1c579c584d7f72ceL, "r:f6651a85-73de-42f1-9bd6-d372b5b47f05(com.mbeddr.spreadsheet.structure)/7781501729853392588");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x1d891f7bdc9342f9L, 0xa4bcb016656b14e2L, 0x1c579c584d7f72caL, 0x1c579c584d7f72cbL, 0x1c579c584d7f72ccL, 0x1c579c584d7f72cdL, 0x1c579c584d7f72cfL, 0x1c579c584d7f72ceL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_none_0, myMember_thin_0, myMember_medium_0, myMember_thick_0, myMember_doubleBorder_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_none_0, myMember_thin_0, myMember_medium_0, myMember_thick_0, myMember_doubleBorder_0);
 
   @Nullable
   @Override

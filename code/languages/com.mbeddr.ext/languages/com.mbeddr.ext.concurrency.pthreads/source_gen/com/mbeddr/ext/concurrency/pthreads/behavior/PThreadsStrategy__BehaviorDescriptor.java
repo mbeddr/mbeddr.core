@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class PThreadsStrategy__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8c1a7e14952042a4L, 0xa3a7b15e523af156L, 0x2361f579568d2997L, "com.mbeddr.ext.concurrency.pthreads.structure.PThreadsStrategy");
 
-  public static final SMethod<Void> validateSchedules_id6bs538muOve = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("validateSchedules").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123590915951380430L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<Void> validateSchedules_id6bs538muOve = new SMethodBuilder<>(Void.TYPE).name("validateSchedules").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123590915951380430L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "specs"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(validateSchedules_id6bs538muOve);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(validateSchedules_id6bs538muOve);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void validateSchedules_id6bs538muOve(@NotNull SNode __thisNode__, Iterable<SNode> specs) {
     // currently no limitations relative to the sched specs
@@ -34,10 +30,6 @@ public final class PThreadsStrategy__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ PThreadsStrategy__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

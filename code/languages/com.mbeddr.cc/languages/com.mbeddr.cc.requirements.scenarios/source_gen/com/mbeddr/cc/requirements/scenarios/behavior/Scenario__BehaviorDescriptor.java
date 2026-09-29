@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.mpsutil.plantuml.node.behavior.VisGraph;
 import java.util.List;
@@ -21,7 +20,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.mbeddr.core.base.behavior.IVisualizationParticipant__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -32,13 +30,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class Scenario__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd6714220402d48cbL, 0xa4a288223c6257f6L, 0x4fb6ca52097ae409L, "com.mbeddr.cc.requirements.scenarios.structure.Scenario");
 
-  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<String[]>(new SJavaCompoundTypeImpl(String[].class)).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
-  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(VisGraph.class, ""));
+  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<>(String[].class).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
+  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<>(Void.TYPE).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, "category"), SMethodBuilder.createJavaParameter(VisGraph.class, "g"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String[] getCategories_id2N1CSrzPN_a(@NotNull SNode __thisNode__) {
     return new String[]{"scenario"};
@@ -69,10 +65,6 @@ public final class Scenario__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Scenario__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

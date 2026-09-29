@@ -15,8 +15,8 @@ import jetbrains.mps.editor.runtime.TextBuilderImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 /**
- * This provider implements yet another different strategy for vertical layouting that solves problems 
- * with correct layouting and behaviour experienced in ColoredVerticalBar/-2. 
+ * This provider implements yet another different strategy for vertical layouting that solves problems
+ * with correct layouting and behaviour experienced in ColoredVerticalBar/-2.
  */
 public class VerticalBarCellProvider extends AbstractCellProvider {
 

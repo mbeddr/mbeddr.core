@@ -8,35 +8,27 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SModel;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IPathVariableProvider__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd3a0fd26445a466cL, 0x900e10444ddfed52L, 0x504abeeddc88193aL, "com.mbeddr.mpsutil.filepicker.structure.IPathVariableProvider");
 
-  public static final SMethod<List<String>> getNames_id51aJIRsy1_6 = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("getNames").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785646600127256902L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
-  public static final SMethod<String> getValue_id51aJIRsy2vi = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getValue").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785646600127260626L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
+  public static final SMethod<List<String>> getNames_id51aJIRsy1_6 = new SMethodBuilder<>((Class<List<String>>) ((Class) Object.class)).name("getNames").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785646600127256902L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<String> getValue_id51aJIRsy2vi = new SMethodBuilder<>(String.class).name("getValue").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5785646600127260626L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter(String.class, "name"), SMethodBuilder.createJavaParameter(SModel.class, "model"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNames_id51aJIRsy1_6, getValue_id51aJIRsy2vi);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNames_id51aJIRsy1_6, getValue_id51aJIRsy2vi);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IPathVariableProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

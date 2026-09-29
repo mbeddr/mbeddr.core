@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -15,7 +14,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -23,12 +21,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ForRangeStatement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x79253aa36e2e897cL, "com.mbeddr.core.util.structure.ForRangeStatement");
 
-  public static final SMethod<String> varName_id2I5SFMdwU2i = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("varName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3136162014989361298L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> varName_id2I5SFMdwU2i = new SMethodBuilder<>(String.class).name("varName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3136162014989361298L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(varName_id2I5SFMdwU2i);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(varName_id2I5SFMdwU2i);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String varName_id2I5SFMdwU2i(@NotNull SNode __thisNode__) {
     return "__" + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + SNodeOperations.getIndexInParent(__thisNode__);
@@ -37,10 +33,6 @@ public final class ForRangeStatement__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ ForRangeStatement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

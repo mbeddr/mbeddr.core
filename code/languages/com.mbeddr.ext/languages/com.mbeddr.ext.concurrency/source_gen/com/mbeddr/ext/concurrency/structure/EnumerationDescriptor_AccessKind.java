@@ -19,7 +19,7 @@ public class EnumerationDescriptor_AccessKind extends EnumerationDescriptorBase 
   private final EnumerationDescriptor.MemberDescriptor myMember_readWrite_0 = new EnumerationDescriptor.MemberDescriptor("readWrite", "readWrite", 0x7d015a9e83a5d45L, "r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)/7781501729866152590");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x7d015a9e83a5d43L, 0x7d015a9e83a5d44L, 0x7d015a9e83a5d45L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_read_0, myMember_readWrite_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_read_0, myMember_readWrite_0);
 
   @Nullable
   @Override

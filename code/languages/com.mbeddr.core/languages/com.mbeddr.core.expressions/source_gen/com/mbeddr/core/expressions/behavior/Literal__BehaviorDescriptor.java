@@ -7,28 +7,24 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class Literal__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x7af69e2e83a1ba5aL, "com.mbeddr.core.expressions.structure.Literal");
 
-  public static final SMethod<Boolean> doNotShowDebugger_id$bJ0jgWtSA = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isLiteral").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(651821299956571686L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> isLValue_id6iIoqg1yDKH = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7254843406768839725L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> isDotCapable_id66WTx3vdu2E = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDotCapable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7042756877439328426L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> requiresParenthesisInCast_id4o$BgAQrCHG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requiresParenthesisInCast").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5054337346857503596L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> doNotShowDebugger_id$bJ0jgWtSA = new SMethodBuilder<>(Boolean.TYPE).name("isLiteral").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(651821299956571686L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isLValue_id6iIoqg1yDKH = new SMethodBuilder<>(Boolean.TYPE).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7254843406768839725L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isDotCapable_id66WTx3vdu2E = new SMethodBuilder<>(Boolean.TYPE).name("isDotCapable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7042756877439328426L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> requiresParenthesisInCast_id4o$BgAQrCHG = new SMethodBuilder<>(Boolean.TYPE).name("requiresParenthesisInCast").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5054337346857503596L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(doNotShowDebugger_id$bJ0jgWtSA, isLValue_id6iIoqg1yDKH, isDotCapable_id66WTx3vdu2E, requiresParenthesisInCast_id4o$BgAQrCHG);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(doNotShowDebugger_id$bJ0jgWtSA, isLValue_id6iIoqg1yDKH, isDotCapable_id66WTx3vdu2E, requiresParenthesisInCast_id4o$BgAQrCHG);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean doNotShowDebugger_id$bJ0jgWtSA(@NotNull SNode __thisNode__) {
     return true;
@@ -46,10 +42,6 @@ public final class Literal__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Literal__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

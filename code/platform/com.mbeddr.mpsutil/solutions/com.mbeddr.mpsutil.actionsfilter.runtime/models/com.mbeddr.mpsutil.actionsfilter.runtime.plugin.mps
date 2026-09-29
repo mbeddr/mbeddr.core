@@ -6,7 +6,7 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="ykkq" ref="r:7171fd48-62d6-4c67-ab22-d7d6b8fa4653(com.mbeddr.mpsutil.actionsfilter.runtime)" />
@@ -203,15 +203,9 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
@@ -228,6 +222,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -327,19 +329,124 @@
       <node concept="3clFbT" id="wAdmocbRO1" role="33vP2m" />
       <node concept="3Tm1VV" id="1r7pPKWwUgA" role="1B3o_S" />
       <node concept="z59LJ" id="wAdmocbROa" role="lGtFl">
-        <node concept="TZ5HA" id="wAdmocbROb" role="TZ5H$">
-          <node concept="1dT_AC" id="wAdmocbROc" role="1dT_Ay">
-            <property role="1dT_AB" value="Updates are initially disabled because the service may be initialized earlier than the required services (e.g." />
+        <node concept="1PaTwC" id="3VVgDkJfGkL" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGkM" role="1PaTwD">
+            <property role="3oM_SC" value="Updates" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGkN" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGkO" role="1PaTwD">
+            <property role="3oM_SC" value="initially" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGkP" role="1PaTwD">
+            <property role="3oM_SC" value="disabled" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGkQ" role="1PaTwD">
+            <property role="3oM_SC" value="because" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGkR" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGkS" role="1PaTwD">
+            <property role="3oM_SC" value="service" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGkT" role="1PaTwD">
+            <property role="3oM_SC" value="may" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGkU" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGkV" role="1PaTwD">
+            <property role="3oM_SC" value="initialized" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGkW" role="1PaTwD">
+            <property role="3oM_SC" value="earlier" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGkX" role="1PaTwD">
+            <property role="3oM_SC" value="than" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGkY" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGkZ" role="1PaTwD">
+            <property role="3oM_SC" value="required" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGl0" role="1PaTwD">
+            <property role="3oM_SC" value="services" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGl1" role="1PaTwD">
+            <property role="3oM_SC" value="(e.g." />
           </node>
         </node>
-        <node concept="TZ5HA" id="wAdmocbROd" role="TZ5H$">
-          <node concept="1dT_AC" id="wAdmocbROe" role="1dT_Ay">
-            <property role="1dT_AB" value="ActionManager) and are enabled from a post-startup project activity, i.e. as" />
+        <node concept="1PaTwC" id="3VVgDkJfGl2" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGl3" role="1PaTwD">
+            <property role="3oM_SC" value="ActionManager)" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGl4" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGl5" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGl6" role="1PaTwD">
+            <property role="3oM_SC" value="enabled" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGl7" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGl8" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGl9" role="1PaTwD">
+            <property role="3oM_SC" value="post-startup" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGla" role="1PaTwD">
+            <property role="3oM_SC" value="project" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlb" role="1PaTwD">
+            <property role="3oM_SC" value="activity," />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlc" role="1PaTwD">
+            <property role="3oM_SC" value="i.e." />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGld" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
           </node>
         </node>
-        <node concept="TZ5HA" id="wAdmocbROf" role="TZ5H$">
-          <node concept="1dT_AC" id="wAdmocbROg" role="1dT_Ay">
-            <property role="1dT_AB" value="soon as a project (including the &quot;welcome Screen&quot; project) is created." />
+        <node concept="1PaTwC" id="3VVgDkJfGle" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGlf" role="1PaTwD">
+            <property role="3oM_SC" value="soon" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlg" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlh" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGli" role="1PaTwD">
+            <property role="3oM_SC" value="project" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlj" role="1PaTwD">
+            <property role="3oM_SC" value="(including" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlk" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGll" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;welcome" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlm" role="1PaTwD">
+            <property role="3oM_SC" value="Screen&quot;" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGln" role="1PaTwD">
+            <property role="3oM_SC" value="project)" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlo" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlp" role="1PaTwD">
+            <property role="3oM_SC" value="created." />
           </node>
         </node>
       </node>
@@ -455,14 +562,107 @@
       <node concept="3Tm1VV" id="4nlz5MyJHiX" role="1B3o_S" />
       <node concept="3cqZAl" id="4nlz5MyJLy_" role="3clF45" />
       <node concept="P$JXv" id="3EZ64bSKv3m" role="lGtFl">
-        <node concept="TZ5HA" id="3EZ64bSKv3n" role="TZ5H$">
-          <node concept="1dT_AC" id="3EZ64bSKv3o" role="1dT_Ay">
-            <property role="1dT_AB" value="Reload the service manually or otherwise we run into classloading issues in MPS because the old service is still active." />
+        <node concept="1PaTwC" id="3VVgDkJfGlq" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGlr" role="1PaTwD">
+            <property role="3oM_SC" value="Reload" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGls" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlt" role="1PaTwD">
+            <property role="3oM_SC" value="service" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlu" role="1PaTwD">
+            <property role="3oM_SC" value="manually" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlv" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlw" role="1PaTwD">
+            <property role="3oM_SC" value="otherwise" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlx" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGly" role="1PaTwD">
+            <property role="3oM_SC" value="run" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlz" role="1PaTwD">
+            <property role="3oM_SC" value="into" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGl$" role="1PaTwD">
+            <property role="3oM_SC" value="classloading" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGl_" role="1PaTwD">
+            <property role="3oM_SC" value="issues" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlA" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlB" role="1PaTwD">
+            <property role="3oM_SC" value="MPS" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlC" role="1PaTwD">
+            <property role="3oM_SC" value="because" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlD" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlE" role="1PaTwD">
+            <property role="3oM_SC" value="old" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlF" role="1PaTwD">
+            <property role="3oM_SC" value="service" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlG" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlH" role="1PaTwD">
+            <property role="3oM_SC" value="still" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlI" role="1PaTwD">
+            <property role="3oM_SC" value="active." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3EZ64bSKv_J" role="TZ5H$">
-          <node concept="1dT_AC" id="3EZ64bSKv_K" role="1dT_Ay">
-            <property role="1dT_AB" value="This means that we also have to manually load the state from actionFilter.xml." />
+        <node concept="1PaTwC" id="3VVgDkJfGlJ" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGlK" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlL" role="1PaTwD">
+            <property role="3oM_SC" value="means" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlM" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlN" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlO" role="1PaTwD">
+            <property role="3oM_SC" value="also" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlP" role="1PaTwD">
+            <property role="3oM_SC" value="have" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlQ" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlR" role="1PaTwD">
+            <property role="3oM_SC" value="manually" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlS" role="1PaTwD">
+            <property role="3oM_SC" value="load" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlT" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlU" role="1PaTwD">
+            <property role="3oM_SC" value="state" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlV" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGlW" role="1PaTwD">
+            <property role="3oM_SC" value="actionFilter.xml." />
           </node>
         </node>
       </node>

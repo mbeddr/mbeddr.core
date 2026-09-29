@@ -17,7 +17,7 @@
       <unit at="11,0,69,0" name="com.mbeddr.mpsutil.nodes_tracing.test.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,38,0" name="com.mbeddr.mpsutil.nodes_tracing.test.structure.LanguageConceptSwitch" />
+      <unit at="12,0,46,0" name="com.mbeddr.mpsutil.nodes_tracing.test.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="18,0,139,0" name="com.mbeddr.mpsutil.nodes_tracing.test.structure.StructureAspectDescriptor" />
@@ -87,8 +87,8 @@
       <scope id="8887445761569382562" at="58,51,64,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8887445761569382562" at="17,0,18,0" concept="8" trace="TracingAnnotation" />
-      <node id="8887445761569382562" at="25,61,26,56" concept="1" />
+      <node id="8887445761569382562" at="19,0,20,0" concept="8" trace="TracingAnnotation" />
+      <node id="8887445761569382562" at="27,61,28,56" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8887445761569382562" at="24,0,25,0" concept="2" trace="myConceptTracingAnnotation" />
@@ -124,8 +124,8 @@
       <scope id="8887445761569448329" at="37,61,43,49" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8887445761569448329" at="14,0,15,0" concept="8" trace="GeneratedFileNameAnnotation" />
-      <node id="8887445761569448329" at="22,67,23,66" concept="1" />
+      <node id="8887445761569448329" at="16,0,17,0" concept="8" trace="GeneratedFileNameAnnotation" />
+      <node id="8887445761569448329" at="24,67,25,66" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8887445761569448329" at="21,0,22,0" concept="2" trace="myConceptGeneratedFileNameAnnotation" />
@@ -159,8 +159,8 @@
       <scope id="8887445761569476074" at="24,53,29,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8887445761569476074" at="12,0,13,0" concept="8" trace="AbstractTracingInfo" />
-      <node id="8887445761569476074" at="20,116,21,58" concept="1" />
+      <node id="8887445761569476074" at="14,0,15,0" concept="8" trace="AbstractTracingInfo" />
+      <node id="8887445761569476074" at="22,116,23,58" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8887445761569476074" at="19,0,20,0" concept="2" trace="myConceptAbstractTracingInfo" />
@@ -192,8 +192,8 @@
       <scope id="8887445761569476075" at="44,54,50,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8887445761569476075" at="15,0,16,0" concept="8" trace="LineBasedTracingInfo" />
-      <node id="8887445761569476075" at="23,66,24,59" concept="1" />
+      <node id="8887445761569476075" at="17,0,18,0" concept="8" trace="LineBasedTracingInfo" />
+      <node id="8887445761569476075" at="25,66,26,59" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8887445761569476075" at="22,0,23,0" concept="2" trace="myConceptLineBasedTracingInfo" />
@@ -229,8 +229,8 @@
       <scope id="8887445761569999228" at="30,62,36,50" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8887445761569999228" at="13,0,14,0" concept="8" trace="CheckTracingForRootStatement" />
-      <node id="8887445761569999228" at="21,58,22,67" concept="1" />
+      <node id="8887445761569999228" at="15,0,16,0" concept="8" trace="CheckTracingForRootStatement" />
+      <node id="8887445761569999228" at="23,58,24,67" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8887445761569999228" at="20,0,21,0" concept="2" trace="myConceptCheckTracingForRootStatement" />
@@ -267,8 +267,8 @@
       <scope id="8887445761570791142" at="51,56,57,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8887445761570791142" at="16,0,17,0" concept="8" trace="StringBasedTracingInfo" />
-      <node id="8887445761570791142" at="24,59,25,61" concept="1" />
+      <node id="8887445761570791142" at="18,0,19,0" concept="8" trace="StringBasedTracingInfo" />
+      <node id="8887445761570791142" at="26,59,27,61" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8887445761570791142" at="23,0,24,0" concept="2" trace="myConceptStringBasedTracingInfo" />

@@ -20,7 +20,7 @@ public class EnumerationDescriptor_EntryStatus extends EnumerationDescriptorBase
   private final EnumerationDescriptor.MemberDescriptor myMember_ok_0 = new EnumerationDescriptor.MemberDescriptor("ok", "ok", 0x746e8b068bb17900L, "r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)/1214029888595741641");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x746e8b068bb178fdL, 0x746e8b068bb178feL, 0x746e8b068bb178ffL, 0x746e8b068bb17900L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_old_0, myMember_newlyAdded_0, myMember_ok_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_old_0, myMember_newlyAdded_0, myMember_ok_0);
 
   @Nullable
   @Override

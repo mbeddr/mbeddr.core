@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-9sfpg0kx297zqgc2pr40yeykwevjiff">
+<product version="3" modelHash="-4zvep0fsposr7qjc74kn6rqn3oehd6u">
   <files names="IntentionsDescriptor.java:attachGlossaryPointer_Intention.java:extractNewTerm_Intention.java:refactorToTermRef_Intention.java" />
 </product>
 

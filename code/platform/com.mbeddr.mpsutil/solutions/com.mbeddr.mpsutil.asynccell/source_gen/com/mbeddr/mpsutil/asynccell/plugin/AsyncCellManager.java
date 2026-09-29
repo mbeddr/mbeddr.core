@@ -14,7 +14,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.LinkedList;
 
 /**
- * I keep track of the async cells that don't have values yet {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellManager#_pendingCells }, and own the threads that work on such ({@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellManager#_updater } and {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellManager#_spinningTimer }).
+ * I keep track of the async cells that don't have values yet {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellManager#_pendingCells} , and own the threads that work on such ( {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellManager#_updater} and {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellManager#_spinningTimer} ).
  */
 public class AsyncCellManager {
   protected int SPINNING_INTERVAL = 200;
@@ -23,12 +23,12 @@ public class AsyncCellManager {
    */
   private final Set<EditorCell_Async> _pendingCells = SetSequence.fromSet(new LinkedHashSet<EditorCell_Async>());
   /**
-   * Rechecks regularly if the cell value did arrive and schedules updating its value to EDT and removes that cell from 
-   * my {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellManager#_pendingCells } list.
+   * Rechecks regularly if the cell value did arrive and schedules updating its value to EDT and removes that cell from
+   * my {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellManager#_pendingCells} list.
    */
   private final AsyncCellUpdater _updater = new AsyncCellUpdater(this);
   /**
-   * Updates all {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellManager#_pendingCells } to show the next rotation state of the spinner.
+   * Updates all {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellManager#_pendingCells} to show the next rotation state of the spinner.
    */
   private final Timer _spinningTimer = new Timer(this.SPINNING_INTERVAL, (ActionEvent e) -> {
 

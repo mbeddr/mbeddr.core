@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -30,17 +28,15 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ErrorHandlingContext__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x751646784126c8c1L, "com.mbeddr.core.util.structure.ErrorHandlingContext");
 
-  public static final SMethod<List<SNode>> occuableErrors_id7kmhBx1KION = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("occuableErrors").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8437008434238516531L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<SNode> handlerFor_id7kmhBx2gSuu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("handlerFor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8437008434246944670L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> hasHandlerFor_id7kmhBx2gXbq = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasHandlerFor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8437008434246963930L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> addMissingHandlers_id7kmhBx3QV8C = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addMissingHandlers").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8437008434273694248L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<SNode> errorVariableType_id4jiR73uE$7C = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("errorVariableType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4959268517018485224L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<Integer> requiredNumberOfBits_id4jiR73uGmwk = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("requiredNumberOfBits").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4959268517018953748L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<List<SNode>> occuableErrors_id7kmhBx1KION = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("occuableErrors").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8437008434238516531L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<SNode> handlerFor_id7kmhBx2gSuu = new SMethodBuilder<>(SNode.class).name("handlerFor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8437008434246944670L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter(SNode.class, "error"));
+  public static final SMethod<Boolean> hasHandlerFor_id7kmhBx2gXbq = new SMethodBuilder<>(Boolean.TYPE).name("hasHandlerFor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8437008434246963930L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter(SNode.class, "error"));
+  public static final SMethod<Void> addMissingHandlers_id7kmhBx3QV8C = new SMethodBuilder<>(Void.TYPE).name("addMissingHandlers").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8437008434273694248L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<SNode> errorVariableType_id4jiR73uE$7C = new SMethodBuilder<>(SNode.class).name("errorVariableType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4959268517018485224L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<Integer> requiredNumberOfBits_id4jiR73uGmwk = new SMethodBuilder<>(Integer.TYPE).name("requiredNumberOfBits").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4959268517018953748L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(occuableErrors_id7kmhBx1KION, handlerFor_id7kmhBx2gSuu, hasHandlerFor_id7kmhBx2gXbq, addMissingHandlers_id7kmhBx3QV8C, errorVariableType_id4jiR73uE$7C, requiredNumberOfBits_id4jiR73uGmwk);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(occuableErrors_id7kmhBx1KION, handlerFor_id7kmhBx2gSuu, hasHandlerFor_id7kmhBx2gXbq, addMissingHandlers_id7kmhBx3QV8C, errorVariableType_id4jiR73uE$7C, requiredNumberOfBits_id4jiR73uGmwk);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> occuableErrors_id7kmhBx1KION(@NotNull SNode __thisNode__) {
     List<SNode> res = new ArrayList<SNode>();
@@ -88,10 +84,6 @@ public final class ErrorHandlingContext__BehaviorDescriptor extends BaseBHDescri
   /*package*/ ErrorHandlingContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

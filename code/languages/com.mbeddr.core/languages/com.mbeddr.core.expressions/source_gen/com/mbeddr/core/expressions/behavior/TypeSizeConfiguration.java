@@ -10,8 +10,8 @@ public class TypeSizeConfiguration {
 
   /**
    * This instance is like a singleton and it will be reused between consecutive invocations to obtain
-   * a default type size configuration when the one stored in the Preferences is not available due to 
-   * any reasons or failures. 
+   * a default type size configuration when the one stored in the Preferences is not available due to
+   * any reasons or failures.
    */
   public static SNode INSTANCE = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x2e4bd40f1cbdfd34L, "com.mbeddr.core.expressions.structure.TypeSizeConfiguration"));
 

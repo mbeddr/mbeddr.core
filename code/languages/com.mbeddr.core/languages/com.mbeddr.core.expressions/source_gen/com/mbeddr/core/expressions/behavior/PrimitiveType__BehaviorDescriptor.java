@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,13 +23,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class PrimitiveType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x7af69e2e83a1ba38L, "com.mbeddr.core.expressions.structure.PrimitiveType");
 
-  public static final SMethod<SNode> getCorrespondingC99Type_id1rZqEK2gG9l = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getCorrespondingC99Type").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1657160474900480597L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getCorrespondingC99Type_id1rZqEK2gLnh = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getCorrespondingC99Type").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1657160474900501969L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getCorrespondingC99Type_id1rZqEK2gG9l = new SMethodBuilder<>(SNode.class).name("getCorrespondingC99Type").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1657160474900480597L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(SNode.class, "tsc"));
+  public static final SMethod<SNode> getCorrespondingC99Type_id1rZqEK2gLnh = new SMethodBuilder<>(SNode.class).name("getCorrespondingC99Type").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1657160474900501969L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCorrespondingC99Type_id1rZqEK2gG9l, getCorrespondingC99Type_id1rZqEK2gLnh);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCorrespondingC99Type_id1rZqEK2gG9l, getCorrespondingC99Type_id1rZqEK2gLnh);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getCorrespondingC99Type_id1rZqEK2gG9l(@NotNull SNode __thisNode__, SNode tsc) {
     for (SNode specification : ListSequence.fromList(SLinkOperations.getChildren(tsc, LINKS.specifications$a_D3))) {
@@ -53,10 +49,6 @@ public final class PrimitiveType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ PrimitiveType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

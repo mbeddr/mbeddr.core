@@ -13,7 +13,7 @@
       <unit at="11,0,39,0" name="com.mbeddr.cc.requirements.report.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,30,0" name="com.mbeddr.cc.requirements.report.structure.LanguageConceptSwitch" />
+      <unit at="12,0,38,0" name="com.mbeddr.cc.requirements.report.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="15,0,80,0" name="com.mbeddr.cc.requirements.report.structure.StructureAspectDescriptor" />
@@ -33,8 +33,8 @@
       <scope id="3352153450712131414" at="20,53,26,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3352153450712131414" at="12,0,13,0" concept="6" trace="ReqReportConfigItem" />
-      <node id="3352153450712131414" at="16,116,17,58" concept="0" />
+      <node id="3352153450712131414" at="14,0,15,0" concept="6" trace="ReqReportConfigItem" />
+      <node id="3352153450712131414" at="18,116,19,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3352153450712131414" at="16,0,17,0" concept="1" trace="myConceptReqReportConfigItem" />
@@ -72,8 +72,8 @@
       <scope id="5785245534400474241" at="27,55,34,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5785245534400474241" at="13,0,14,0" concept="6" trace="RequirementsParagraph" />
-      <node id="5785245534400474241" at="17,58,18,60" concept="0" />
+      <node id="5785245534400474241" at="15,0,16,0" concept="6" trace="RequirementsParagraph" />
+      <node id="5785245534400474241" at="19,58,20,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5785245534400474241" at="17,0,18,0" concept="1" trace="myConceptRequirementsParagraph" />

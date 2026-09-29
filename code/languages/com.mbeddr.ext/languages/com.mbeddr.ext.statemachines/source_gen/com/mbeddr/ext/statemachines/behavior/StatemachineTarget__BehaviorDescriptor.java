@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,12 +24,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class StatemachineTarget__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x54e848376fd7bdd0L, "com.mbeddr.ext.statemachines.structure.StatemachineTarget");
 
-  public static final SMethod<SNode> getStatemachine_id4c3N3BNA7XU = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getStatemachine").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4828927774743363450L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<SNode> getStatemachine_id4c3N3BNA7XU = new SMethodBuilder<>(SNode.class).name("getStatemachine").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4828927774743363450L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStatemachine_id4c3N3BNA7XU);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStatemachine_id4c3N3BNA7XU);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getStatemachine_id4c3N3BNA7XU(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(SNodeOperations.cast(TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(SNodeOperations.as(SNodeOperations.getParent(__thisNode__), CONCEPTS.GenericDotExpression$uQ), LINKS.expression$PfNq)), CONCEPTS.StatemachineType$wP), LINKS.machine$eifp);
@@ -40,10 +36,6 @@ public final class StatemachineTarget__BehaviorDescriptor extends BaseBHDescript
   /*package*/ StatemachineTarget__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

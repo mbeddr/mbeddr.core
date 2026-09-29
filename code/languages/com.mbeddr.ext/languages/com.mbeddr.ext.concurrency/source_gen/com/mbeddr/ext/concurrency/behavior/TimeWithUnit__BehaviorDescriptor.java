@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -17,7 +16,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -28,12 +26,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class TimeWithUnit__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x68cc2c476e2382d4L, "com.mbeddr.ext.concurrency.structure.TimeWithUnit");
 
-  public static final SMethod<SNode> valueInMicroseconds_id6zcb4tI8Xn4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("valueInMicroseconds").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7551459360495621572L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<SNode> valueInMicroseconds_id6zcb4tI8Xn4 = new SMethodBuilder<>(SNode.class).name("valueInMicroseconds").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7551459360495621572L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(valueInMicroseconds_id6zcb4tI8Xn4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(valueInMicroseconds_id6zcb4tI8Xn4);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode valueInMicroseconds_id6zcb4tI8Xn4(@NotNull SNode __thisNode__) {
     if (SEnumOperations.isMember(SPropertyOperations.getEnum(__thisNode__, PROPS.unit$zz63), 0x68cc2c476e2382c5L)) {
@@ -48,10 +44,6 @@ public final class TimeWithUnit__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TimeWithUnit__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

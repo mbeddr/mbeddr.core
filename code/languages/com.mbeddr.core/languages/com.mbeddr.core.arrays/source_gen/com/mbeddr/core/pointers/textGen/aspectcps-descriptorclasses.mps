@@ -10,14 +10,17 @@
     <import index="kpbf" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text.impl(MPS.TextGen/)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="if8w" ref="r:95397225-9080-48bc-b1aa-0ce7c4f3d2ce(jetbrains.mps.lang.traceable.behavior)" />
+    <import index="ksn4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel(MPS.Core/)" />
     <import index="yfwt" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text.rt(MPS.TextGen/)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="tpcf" ref="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
@@ -158,7 +161,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -372,7 +374,7 @@
                         <uo k="s:originTrace" v="n:5728674636024853423" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="S" role="2OqNvi">
+                    <node concept="3zqWPK" id="S" role="2OqNvi">
                       <ref role="37wK5l" to="if8w:4pl5GY7LKmH" resolve="getTraceableProperty" />
                       <uo k="s:originTrace" v="n:5728674636024853423" />
                     </node>
@@ -552,7 +554,7 @@
                         <uo k="s:originTrace" v="n:5728674636025002405" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="1E" role="2OqNvi">
+                    <node concept="3zqWPK" id="1E" role="2OqNvi">
                       <ref role="37wK5l" to="if8w:4pl5GY7LKmH" resolve="getTraceableProperty" />
                       <uo k="s:originTrace" v="n:5728674636025002405" />
                     </node>
@@ -812,7 +814,7 @@
                         <uo k="s:originTrace" v="n:5308710777891765957" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="2S" role="2OqNvi">
+                    <node concept="3zqWPK" id="2S" role="2OqNvi">
                       <ref role="37wK5l" to="if8w:4pl5GY7LKmH" resolve="getTraceableProperty" />
                       <uo k="s:originTrace" v="n:5308710777891765957" />
                     </node>
@@ -1079,7 +1081,7 @@
                         <uo k="s:originTrace" v="n:5728674636025002435" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="41" role="2OqNvi">
+                    <node concept="3zqWPK" id="41" role="2OqNvi">
                       <ref role="37wK5l" to="if8w:4pl5GY7LKmH" resolve="getTraceableProperty" />
                       <uo k="s:originTrace" v="n:5728674636025002435" />
                     </node>
@@ -1276,7 +1278,7 @@
                         <uo k="s:originTrace" v="n:864143337943400036" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="4S" role="2OqNvi">
+                    <node concept="3zqWPK" id="4S" role="2OqNvi">
                       <ref role="37wK5l" to="if8w:4pl5GY7LKmH" resolve="getTraceableProperty" />
                       <uo k="s:originTrace" v="n:864143337943400036" />
                     </node>
@@ -1479,7 +1481,7 @@
                         <uo k="s:originTrace" v="n:279446265608410853" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="5K" role="2OqNvi">
+                    <node concept="3zqWPK" id="5K" role="2OqNvi">
                       <ref role="37wK5l" to="if8w:4pl5GY7LKmH" resolve="getTraceableProperty" />
                       <uo k="s:originTrace" v="n:279446265608410853" />
                     </node>
@@ -1677,7 +1679,7 @@
                         <uo k="s:originTrace" v="n:6113173064526131594" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="6B" role="2OqNvi">
+                    <node concept="3zqWPK" id="6B" role="2OqNvi">
                       <ref role="37wK5l" to="if8w:4pl5GY7LKmH" resolve="getTraceableProperty" />
                       <uo k="s:originTrace" v="n:6113173064526131594" />
                     </node>
@@ -1722,13 +1724,13 @@
       <node concept="3Tm6S6" id="6S" role="1B3o_S" />
       <node concept="2eloPW" id="6T" role="1tU5fm">
         <property role="2ely0U" value="com.mbeddr.core.pointers.structure.LanguageConceptSwitch" />
-        <ref role="3uigEE" to="tpcf:1OW7rNmnulT" resolve="LanguageConceptSwitch" />
+        <ref role="3uigEE" to="ksn4:~ConceptIndex" resolve="ConceptIndex" />
       </node>
       <node concept="2ShNRf" id="6U" role="33vP2m">
         <node concept="xCZzO" id="6V" role="2ShVmc">
           <property role="xCZzQ" value="com.mbeddr.core.pointers.structure.LanguageConceptSwitch" />
           <node concept="3uibUv" id="6W" role="xCZzL">
-            <ref role="3uigEE" to="tpcf:1OW7rNmnulT" resolve="LanguageConceptSwitch" />
+            <ref role="3uigEE" to="ksn4:~ConceptIndex" resolve="ConceptIndex" />
           </node>
         </node>
       </node>
@@ -1769,7 +1771,7 @@
               <ref role="3cqZAo" node="6K" resolve="myIndex" />
             </node>
             <node concept="liA8E" id="7k" role="2OqNvi">
-              <ref role="37wK5l" to="tpcf:1OW7rNmnuDr" resolve="index" />
+              <ref role="37wK5l" to="ksn4:~ConceptIndex.index(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="index" />
               <node concept="37vLTw" id="7l" role="37wK5m">
                 <ref role="3cqZAo" node="72" resolve="concept" />
               </node>

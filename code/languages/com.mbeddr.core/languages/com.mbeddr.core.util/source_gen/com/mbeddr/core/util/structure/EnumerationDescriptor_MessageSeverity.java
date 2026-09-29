@@ -20,7 +20,7 @@ public class EnumerationDescriptor_MessageSeverity extends EnumerationDescriptor
   private final EnumerationDescriptor.MemberDescriptor myMember_INFO_0 = new EnumerationDescriptor.MemberDescriptor("INFO", "INFO", 0x255082a0ba0bd975L, "r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)/1214029888595741832");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x255082a0ba0bd972L, 0x255082a0ba0bd973L, 0x255082a0ba0bd974L, 0x255082a0ba0bd975L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_ERROR_0, myMember_WARN_0, myMember_INFO_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_ERROR_0, myMember_WARN_0, myMember_INFO_0);
 
   @Nullable
   @Override

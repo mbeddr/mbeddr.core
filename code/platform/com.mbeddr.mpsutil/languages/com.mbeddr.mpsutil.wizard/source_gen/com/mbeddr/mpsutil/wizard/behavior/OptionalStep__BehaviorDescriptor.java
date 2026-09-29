@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -25,12 +23,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class OptionalStep__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x306d745629e24ea3L, 0x9c46e7b830b08481L, 0x418fa9827b31e6bfL, "com.mbeddr.mpsutil.wizard.structure.OptionalStep");
 
-  public static final SMethod<Iterable<SNode>> getClassContent_idrF8Sb8_jhT = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getClassContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228372513913L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
+  public static final SMethod<Iterable<SNode>> getClassContent_idrF8Sb8_jhT = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getClassContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228372513913L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getClassContent_idrF8Sb8_jhT);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getClassContent_idrF8Sb8_jhT);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getClassContent_idrF8Sb8_jhT(@NotNull SNode __thisNode__) {
     List<SNode> result = Sequence.fromIterable(Step__BehaviorDescriptor.getClassContent_idrF8Sb8_jhT.invokeSuper(__thisNode__, CONCEPTS.OptionalStep$Cs)).toList();
@@ -41,10 +37,6 @@ public final class OptionalStep__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ OptionalStep__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

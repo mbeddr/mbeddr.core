@@ -151,7 +151,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
@@ -164,7 +164,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
@@ -209,7 +209,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_5() {
-    return createCustomFactory_4(getEditorContext(), myNode);
+    return createCustomFactory_4(getEditorContext(), getNode());
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "exported");
@@ -465,7 +465,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 
   }
   private EditorCell createTable_1() {
-    return createTable_0(getEditorContext(), myNode);
+    return createTable_0(getEditorContext(), getNode());
   }
   public HeaderGrid createHeaderGroup_8m1o8z_a0i0a(final EditorContext editorContext, final SNode node) {
 

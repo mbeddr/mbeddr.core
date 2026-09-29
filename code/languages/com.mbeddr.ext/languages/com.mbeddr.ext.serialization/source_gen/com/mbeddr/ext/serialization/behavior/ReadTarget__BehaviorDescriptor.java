@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ReadTarget__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xbb0ad88b63cd45fdL, 0xae278662d274cf3cL, 0x3f5fa3b0308e5c4eL, "com.mbeddr.ext.serialization.structure.ReadTarget");
 
-  public static final SMethod<String> tempVarName_id6pWLWdosvzP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("tempVarName").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7384997130797185269L).languageId(0xae278662d274cf3cL, 0xbb0ad88b63cd45fdL).build2();
+  public static final SMethod<String> tempVarName_id6pWLWdosvzP = new SMethodBuilder<>(String.class).name("tempVarName").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7384997130797185269L).languageId(0xae278662d274cf3cL, 0xbb0ad88b63cd45fdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tempVarName_id6pWLWdosvzP);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(tempVarName_id6pWLWdosvzP);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String tempVarName_id6pWLWdosvzP(@NotNull SAbstractConcept __thisConcept__) {
     return "_tempSize";
@@ -34,10 +30,6 @@ public final class ReadTarget__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ReadTarget__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

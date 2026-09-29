@@ -17,7 +17,7 @@
       <unit at="11,0,95,0" name="com.mbeddr.cc.requirements.wp.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,44,0" name="com.mbeddr.cc.requirements.wp.structure.LanguageConceptSwitch" />
+      <unit at="12,0,52,0" name="com.mbeddr.cc.requirements.wp.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="18,0,193,0" name="com.mbeddr.cc.requirements.wp.structure.StructureAspectDescriptor" />
@@ -37,8 +37,8 @@
       <scope id="3754657941424146576" at="35,51,41,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3754657941424146576" at="13,0,14,0" concept="8" trace="ReqWithoutWPQuery" />
-      <node id="3754657941424146576" at="24,53,25,56" concept="1" />
+      <node id="3754657941424146576" at="15,0,16,0" concept="8" trace="ReqWithoutWPQuery" />
+      <node id="3754657941424146576" at="26,53,27,56" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3754657941424146576" at="20,0,21,0" concept="2" trace="myConceptReqWithoutWPQuery" />
@@ -74,8 +74,8 @@
       <scope id="3754657941424146588" at="42,52,48,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3754657941424146588" at="14,0,15,0" concept="8" trace="ReqWithoutWPResult" />
-      <node id="3754657941424146588" at="25,56,26,57" concept="1" />
+      <node id="3754657941424146588" at="16,0,17,0" concept="8" trace="ReqWithoutWPResult" />
+      <node id="3754657941424146588" at="27,56,28,57" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3754657941424146588" at="21,0,22,0" concept="2" trace="myConceptReqWithoutWPResult" />
@@ -110,8 +110,8 @@
       <scope id="573995335905661940" at="56,46,62,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="573995335905661940" at="16,0,17,0" concept="8" trace="WPActualWork" />
-      <node id="573995335905661940" at="27,46,28,50" concept="1" />
+      <node id="573995335905661940" at="18,0,19,0" concept="8" trace="WPActualWork" />
+      <node id="573995335905661940" at="29,46,30,50" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="573995335905661940" at="23,0,24,0" concept="2" trace="myConceptWPActualWork" />
@@ -205,8 +205,8 @@
       <scope id="8587612447638802592" at="63,45,69,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8587612447638802592" at="17,0,18,0" concept="8" trace="WorkPackage" />
-      <node id="8587612447638802592" at="28,50,29,50" concept="1" />
+      <node id="8587612447638802592" at="19,0,20,0" concept="8" trace="WorkPackage" />
+      <node id="8587612447638802592" at="30,50,31,50" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8587612447638802592" at="24,0,25,0" concept="2" trace="myConceptWorkPackage" />
@@ -250,8 +250,8 @@
       <scope id="8587612447638829939" at="70,54,76,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8587612447638829939" at="18,0,19,0" concept="8" trace="WorkPackagesAssQuery" />
-      <node id="8587612447638829939" at="29,50,30,59" concept="1" />
+      <node id="8587612447638829939" at="20,0,21,0" concept="8" trace="WorkPackagesAssQuery" />
+      <node id="8587612447638829939" at="31,50,32,59" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8587612447638829939" at="25,0,26,0" concept="2" trace="myConceptWorkPackagesAssQuery" />
@@ -291,8 +291,8 @@
       <scope id="8587612447638829963" at="77,55,83,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8587612447638829963" at="19,0,20,0" concept="8" trace="WorkPackagesAssResult" />
-      <node id="8587612447638829963" at="30,59,31,60" concept="1" />
+      <node id="8587612447638829963" at="21,0,22,0" concept="8" trace="WorkPackagesAssResult" />
+      <node id="8587612447638829963" at="32,59,33,60" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8587612447638829963" at="26,0,27,0" concept="2" trace="myConceptWorkPackagesAssResult" />
@@ -327,8 +327,8 @@
       <scope id="8587612447638833763" at="84,56,90,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8587612447638833763" at="20,0,21,0" concept="8" trace="WorkPackagesAssSummary" />
-      <node id="8587612447638833763" at="31,60,32,61" concept="1" />
+      <node id="8587612447638833763" at="22,0,23,0" concept="8" trace="WorkPackagesAssSummary" />
+      <node id="8587612447638833763" at="33,60,34,61" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8587612447638833763" at="27,0,28,0" concept="2" trace="myConceptWorkPackagesAssSummary" />
@@ -365,8 +365,8 @@
       <scope id="882101644643504929" at="27,49,34,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="882101644643504929" at="12,0,13,0" concept="8" trace="HasEffortFilter" />
-      <node id="882101644643504929" at="23,116,24,53" concept="1" />
+      <node id="882101644643504929" at="14,0,15,0" concept="8" trace="HasEffortFilter" />
+      <node id="882101644643504929" at="25,116,26,53" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="882101644643504929" at="19,0,20,0" concept="2" trace="myConceptHasEffortFilter" />
@@ -401,8 +401,8 @@
       <scope id="920436694379342506" at="49,42,55,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="920436694379342506" at="15,0,16,0" concept="8" trace="Technote" />
-      <node id="920436694379342506" at="26,57,27,46" concept="1" />
+      <node id="920436694379342506" at="17,0,18,0" concept="8" trace="Technote" />
+      <node id="920436694379342506" at="28,57,29,46" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="920436694379342506" at="22,0,23,0" concept="2" trace="myConceptTechnote" />

@@ -756,7 +756,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell.value;
   }
   private EditorCell createDiagram_1() {
-    return createDiagram_0(getEditorContext(), myNode);
+    return createDiagram_0(getEditorContext(), getNode());
   }
   private Color _StyleParameter_QueryFunction_wyxrg4_a0a0d0() {
     return DiagramColors.TRANSPARENT;

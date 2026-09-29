@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.base.behavior.IRequiresConfigItem__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -29,14 +27,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class StatemachineComponentAdapter__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x13a36f9083c54bf6L, 0x9dd670e455f1ef36L, 0x783bc1284defb6e4L, "com.mbeddr.ext.components.statemachine.structure.StatemachineComponentAdapter");
 
-  public static final SMethod<SNode> getAdaptedElement_id6clJcrKm6q7 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getAdaptedElement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887661191L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> getPrefix_id5lunSHimOk6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrefix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6151459193021482246L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
-  public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> getAdaptedElement_id6clJcrKm6q7 = new SMethodBuilder<>(SNode.class).name("getAdaptedElement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887661191L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getPrefix_id5lunSHimOk6 = new SMethodBuilder<>(String.class).name("getPrefix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6151459193021482246L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getAdaptedElement_id6clJcrKm6q7, getPrefix_id5lunSHimOk6, getConfigItem_id5HxjapwgqMb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getAdaptedElement_id6clJcrKm6q7, getPrefix_id5lunSHimOk6, getConfigItem_id5HxjapwgqMb);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getAdaptedElement_id6clJcrKm6q7(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.machine$iFvF);
@@ -53,10 +49,6 @@ public final class StatemachineComponentAdapter__BehaviorDescriptor extends Base
   /*package*/ StatemachineComponentAdapter__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

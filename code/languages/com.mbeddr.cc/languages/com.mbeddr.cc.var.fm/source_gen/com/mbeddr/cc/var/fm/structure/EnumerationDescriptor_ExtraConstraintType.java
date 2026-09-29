@@ -19,7 +19,7 @@ public class EnumerationDescriptor_ExtraConstraintType extends EnumerationDescri
   private final EnumerationDescriptor.MemberDescriptor myMember_warning_0 = new EnumerationDescriptor.MemberDescriptor("warning", "warning", 0x3cb9c536c18d3b51L, "r:a74300b8-76a8-461e-befa-fc86b0ad5dd9(com.mbeddr.cc.var.fm.structure)/7781501729894695244");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xe401b44780194ccdL, 0xa72cbfb0230f5782L, 0x3cb9c536c18d3b4fL, 0x3cb9c536c18d3b50L, 0x3cb9c536c18d3b51L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_error_0, myMember_warning_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_error_0, myMember_warning_0);
 
   @Nullable
   @Override

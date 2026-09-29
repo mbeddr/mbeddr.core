@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.interpreter.rt.IInterpreter;
@@ -20,26 +19,23 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterBaseException;
 import com.mbeddr.mpsutil.interpreter.rt.ContextImpl;
 import com.mbeddr.mpsutil.interpreter.rt.NullCoverageAnalyzer;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractInterpreterEvaluation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1c897ba59d434035L, 0xac7f0306495743acL, 0x616a1a166ce030b2L, "com.mbeddr.mpsutil.interpreter.test.structure.AbstractInterpreterEvaluation");
 
-  public static final SMethod<String> checkValid_id65E6xpGSh8a = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("checkValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7019451652828631562L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
-  public static final SMethod<String> getInvalidMessage_id5Gh6GqGJOLf = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getInvalidMessage").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(6562055572659588175L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2(SMethodBuilder.createJavaParameter(Object.class, ""), SMethodBuilder.createJavaParameter(Object.class, ""));
-  public static final SMethod<Object> evaluate_id65E6xpGSh9S = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("evaluate").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7019451652828631672L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Object> getExpected_id65E6xpGSh8P = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("getExpected").modifiers(12, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7019451652828631605L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
-  public static final SMethod<String> getNodeRendering_id65E6xpGVdh9 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getNodeRendering").modifiers(12, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7019451652829402185L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
-  public static final SMethod<IInterpreter> getInterpreter_id65E6xpGShbD = new SMethodBuilder<IInterpreter>(new SJavaCompoundTypeImpl(IInterpreter.class)).name("getInterpreter").modifiers(12, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7019451652828631785L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
-  public static final SMethod<IContext> createContext_id6glrYM_6jr6 = new SMethodBuilder<IContext>(new SJavaCompoundTypeImpl(IContext.class)).name("createContext").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7211793440476575430L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2(SMethodBuilder.createJavaParameter(IInterpreter.class, ""));
-  public static final SMethod<ICoverageAnalyzer> createCoverageAnalyzer_id4_qY3E73$v_ = new SMethodBuilder<ICoverageAnalyzer>(new SJavaCompoundTypeImpl(ICoverageAnalyzer.class)).name("createCoverageAnalyzer").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(5285810042930350053L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
+  public static final SMethod<String> checkValid_id65E6xpGSh8a = new SMethodBuilder<>(String.class).name("checkValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7019451652828631562L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
+  public static final SMethod<String> getInvalidMessage_id5Gh6GqGJOLf = new SMethodBuilder<>(String.class).name("getInvalidMessage").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(6562055572659588175L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2(SMethodBuilder.createJavaParameter(Object.class, "expected"), SMethodBuilder.createJavaParameter(Object.class, "actual"));
+  public static final SMethod<Object> evaluate_id65E6xpGSh9S = new SMethodBuilder<>(Object.class).name("evaluate").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7019451652828631672L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2(SMethodBuilder.createJavaParameter(SNode.class, "node"));
+  public static final SMethod<Object> getExpected_id65E6xpGSh8P = new SMethodBuilder<>(Object.class).name("getExpected").modifiers(12, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7019451652828631605L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
+  public static final SMethod<String> getNodeRendering_id65E6xpGVdh9 = new SMethodBuilder<>(String.class).name("getNodeRendering").modifiers(12, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7019451652829402185L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
+  public static final SMethod<IInterpreter> getInterpreter_id65E6xpGShbD = new SMethodBuilder<>(IInterpreter.class).name("getInterpreter").modifiers(12, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7019451652828631785L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
+  public static final SMethod<IContext> createContext_id6glrYM_6jr6 = new SMethodBuilder<>(IContext.class).name("createContext").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7211793440476575430L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2(SMethodBuilder.createJavaParameter(IInterpreter.class, "interpreter"));
+  public static final SMethod<ICoverageAnalyzer> createCoverageAnalyzer_id4_qY3E73$v_ = new SMethodBuilder<>(ICoverageAnalyzer.class).name("createCoverageAnalyzer").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(5285810042930350053L).languageId(0xac7f0306495743acL, 0x1c897ba59d434035L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(checkValid_id65E6xpGSh8a, getInvalidMessage_id5Gh6GqGJOLf, evaluate_id65E6xpGSh9S, getExpected_id65E6xpGSh8P, getNodeRendering_id65E6xpGVdh9, getInterpreter_id65E6xpGShbD, createContext_id6glrYM_6jr6, createCoverageAnalyzer_id4_qY3E73$v_);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(checkValid_id65E6xpGSh8a, getInvalidMessage_id5Gh6GqGJOLf, evaluate_id65E6xpGSh9S, getExpected_id65E6xpGSh8P, getNodeRendering_id65E6xpGVdh9, getInterpreter_id65E6xpGShbD, createContext_id6glrYM_6jr6, createCoverageAnalyzer_id4_qY3E73$v_);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String checkValid_id65E6xpGSh8a(@NotNull SNode __thisNode__) {
     Object expected;
@@ -78,10 +74,6 @@ public final class AbstractInterpreterEvaluation__BehaviorDescriptor extends Bas
   /*package*/ AbstractInterpreterEvaluation__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

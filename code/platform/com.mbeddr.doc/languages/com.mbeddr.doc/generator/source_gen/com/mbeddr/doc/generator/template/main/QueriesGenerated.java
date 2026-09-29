@@ -38,7 +38,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import com.mbeddr.doc.behavior.StableIdHelper;
 import java.util.ArrayList;
 import com.mbeddr.doc.generator.template.utils.CopyDependentDocumentsUtils;
-import jetbrains.mps.textgen.trace.TracingUtil;
 import java.util.Objects;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import java.util.Set;
@@ -46,6 +45,7 @@ import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import com.mbeddr.doc.behavior.IDocumentLike__BehaviorDescriptor;
+import jetbrains.mps.textgen.trace.TracingUtil;
 import org.jetbrains.mps.openapi.model.SReference;
 import org.jetbrains.mps.openapi.module.SRepository;
 import java.util.Map;
@@ -263,7 +263,7 @@ public class QueriesGenerated extends QueryProviderBase {
     List<SNode> dependentDocuments = new ArrayList<SNode>();
     CopyDependentDocumentsUtils.collectDependentDocuments(SModelOperations.roots(_context.getModel(), CONCEPTS.Document$4G), dependentDocuments);
 
-    List<SNode> copiedDocuments = TracingUtil.copyWithTrace(ListSequence.fromList(dependentDocuments).where((it) -> !(ListSequence.fromList(SModelOperations.roots(_context.getModel(), CONCEPTS.Document$4G)).contains(it))).toList());
+    List<SNode> copiedDocuments = _context.copyWithTrace(ListSequence.fromList(dependentDocuments).where((it) -> !(ListSequence.fromList(SModelOperations.roots(_context.getModel(), CONCEPTS.Document$4G)).contains(it))).toList());
     for (SNode d : ListSequence.fromList(copiedDocuments)) {
       SModelOperations.addRootNode(_context.getModel(), d);
     }

@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.project.Project;
 import java.util.Arrays;
@@ -21,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -30,13 +28,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class ReviewAssessmentQuery__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7d323e6183584656L, 0xa071a2bb68438615L, 0x44050902b3da1614L, "com.mbeddr.core.codereview.structure.ReviewAssessmentQuery");
 
-  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
-  /*package*/ static final SMethod<Void> addResult_id4g52gaO8vxA = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addResult").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(4901333676679362662L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, "mpsProject"));
+  /*package*/ static final SMethod<Void> addResult_id4g52gaO8vxA = new SMethodBuilder<>(Void.TYPE).name("addResult").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(4901333676679362662L).languageId(0xa071a2bb68438615L, 0x7d323e6183584656L).build2(SMethodBuilder.createJavaParameter(SNode.class, "cand"), SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), "res"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id4WjNWxKJWaq, addResult_id4g52gaO8vxA);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id4WjNWxKJWaq, addResult_id4g52gaO8vxA);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> runQuery_id4WjNWxKJWaq(@NotNull SNode __thisNode__, Project mpsProject) {
     Iterable<SNode> reviewCandidates = Sequence.fromIterable(AssessmentScope__BehaviorDescriptor.findElements_id20N7CGtOl8_.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.scope$ng72), mpsProject, SNodeOperations.getModel(__thisNode__))).where((it) -> ReviewHelper.isReviewable(it));
@@ -64,10 +60,6 @@ public final class ReviewAssessmentQuery__BehaviorDescriptor extends BaseBHDescr
   /*package*/ ReviewAssessmentQuery__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

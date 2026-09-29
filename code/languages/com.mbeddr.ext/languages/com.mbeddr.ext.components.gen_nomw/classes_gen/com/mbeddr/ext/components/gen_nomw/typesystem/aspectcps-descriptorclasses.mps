@@ -21,6 +21,9 @@
     <import index="eup9" ref="r:ab391014-3e08-4918-9cc5-1c93e3a55c72(com.mbeddr.ext.components.behavior)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -172,7 +175,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -561,9 +563,9 @@
                     <ref role="3cqZAo" node="1H" resolve="instanceConfig" />
                     <uo k="s:originTrace" v="n:2309941518256826283" />
                   </node>
-                  <node concept="2qgKlT" id="1R" role="2OqNvi">
+                  <node concept="3zqWPK" id="1R" role="2OqNvi">
                     <ref role="37wK5l" to="eup9:6JVEnxIhC2$" resolve="instances" />
-                    <uo k="s:originTrace" v="n:4139652462543214147" />
+                    <uo k="s:originTrace" v="n:5094230315231762819" />
                   </node>
                 </node>
               </node>
@@ -707,9 +709,9 @@
                       <ref role="2Gs0qQ" node="28" resolve="comp" />
                       <uo k="s:originTrace" v="n:9016194309503228959" />
                     </node>
-                    <node concept="2qgKlT" id="2y" role="2OqNvi">
+                    <node concept="3zqWPK" id="2y" role="2OqNvi">
                       <ref role="37wK5l" to="eup9:71UKpntoZWS" resolve="allRequiredPorts" />
-                      <uo k="s:originTrace" v="n:9016194309503228882" />
+                      <uo k="s:originTrace" v="n:5094230315231762821" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="2w" role="2LFqv$">
@@ -798,16 +800,16 @@
                                     <ref role="2Gs0qQ" node="2M" resolve="ci" />
                                     <uo k="s:originTrace" v="n:8701298571231535263" />
                                   </node>
-                                  <node concept="2qgKlT" id="32" role="2OqNvi">
+                                  <node concept="3zqWPK" id="32" role="2OqNvi">
                                     <ref role="37wK5l" to="eup9:2ZUGF54lpvh" resolve="getMultiConnectedInstanceAndProvidedPort" />
-                                    <uo k="s:originTrace" v="n:8701298571231535264" />
+                                    <uo k="s:originTrace" v="n:5094230315231762823" />
                                     <node concept="2GrUjf" id="33" role="37wK5m">
                                       <ref role="2Gs0qQ" node="2u" resolve="rp" />
-                                      <uo k="s:originTrace" v="n:8701298571231535265" />
+                                      <uo k="s:originTrace" v="n:5094230315231762825" />
                                     </node>
                                     <node concept="37vLTw" id="34" role="37wK5m">
                                       <ref role="3cqZAo" node="1H" resolve="instanceConfig" />
-                                      <uo k="s:originTrace" v="n:8701298571231535266" />
+                                      <uo k="s:originTrace" v="n:5094230315231762826" />
                                     </node>
                                   </node>
                                 </node>
@@ -889,9 +891,9 @@
                               <ref role="2Gs0qQ" node="2u" resolve="rp" />
                               <uo k="s:originTrace" v="n:8701298571231535220" />
                             </node>
-                            <node concept="2qgKlT" id="3p" role="2OqNvi">
+                            <node concept="3zqWPK" id="3p" role="2OqNvi">
                               <ref role="37wK5l" to="eup9:2ZUGF54jY1D" resolve="isMultiple" />
-                              <uo k="s:originTrace" v="n:8701298571231535245" />
+                              <uo k="s:originTrace" v="n:5094230315231762827" />
                             </node>
                           </node>
                           <node concept="9aQIb" id="2S" role="9aQIa">
@@ -921,16 +923,16 @@
                                       <ref role="2Gs0qQ" node="2M" resolve="ci" />
                                       <uo k="s:originTrace" v="n:9016194309503229000" />
                                     </node>
-                                    <node concept="2qgKlT" id="3z" role="2OqNvi">
+                                    <node concept="3zqWPK" id="3z" role="2OqNvi">
                                       <ref role="37wK5l" to="eup9:wOd6nl53E$" resolve="getConnectedInstanceAndProvidedPort" />
-                                      <uo k="s:originTrace" v="n:9016194309503229001" />
+                                      <uo k="s:originTrace" v="n:5094230315231762829" />
                                       <node concept="2GrUjf" id="3$" role="37wK5m">
                                         <ref role="2Gs0qQ" node="2u" resolve="rp" />
-                                        <uo k="s:originTrace" v="n:9016194309503229002" />
+                                        <uo k="s:originTrace" v="n:5094230315231762831" />
                                       </node>
                                       <node concept="37vLTw" id="3_" role="37wK5m">
                                         <ref role="3cqZAo" node="1H" resolve="instanceConfig" />
-                                        <uo k="s:originTrace" v="n:9016194309503229003" />
+                                        <uo k="s:originTrace" v="n:5094230315231762832" />
                                       </node>
                                     </node>
                                   </node>
@@ -1685,9 +1687,9 @@
                       <uo k="s:originTrace" v="n:1482737808881500608" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="77" role="2OqNvi">
+                  <node concept="3zqWPK" id="77" role="2OqNvi">
                     <ref role="37wK5l" to="eup9:5fn4FV$c8kP" resolve="adapters" />
-                    <uo k="s:originTrace" v="n:1482737808881500634" />
+                    <uo k="s:originTrace" v="n:5094230315231762833" />
                   </node>
                 </node>
                 <node concept="2HwmR7" id="75" role="2OqNvi">

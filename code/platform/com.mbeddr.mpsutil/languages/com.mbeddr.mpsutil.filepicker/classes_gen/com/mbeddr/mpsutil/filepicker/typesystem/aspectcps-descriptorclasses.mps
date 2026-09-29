@@ -21,6 +21,9 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -165,7 +168,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -533,9 +535,9 @@
                 <ref role="3cqZAo" node="1D" resolve="ap" />
                 <uo k="s:originTrace" v="n:9294901202255218" />
               </node>
-              <node concept="2qgKlT" id="20" role="2OqNvi">
+              <node concept="3zqWPK" id="20" role="2OqNvi">
                 <ref role="37wK5l" to="48kf:2RM$2qudEJJ" resolve="mayBeEmpty" />
-                <uo k="s:originTrace" v="n:3310867171608284776" />
+                <uo k="s:originTrace" v="n:5094230315230894626" />
               </node>
             </node>
             <node concept="2OqwBi" id="1Y" role="3uHU7B">
@@ -981,9 +983,9 @@
                                   <ref role="3cqZAo" node="1D" resolve="ap" />
                                   <uo k="s:originTrace" v="n:6156524541422721121" />
                                 </node>
-                                <node concept="2qgKlT" id="4b" role="2OqNvi">
+                                <node concept="3zqWPK" id="4b" role="2OqNvi">
                                   <ref role="37wK5l" to="48kf:5lKnBeAusVW" resolve="isValidSelection" />
-                                  <uo k="s:originTrace" v="n:6156524541422724058" />
+                                  <uo k="s:originTrace" v="n:5094230315230894628" />
                                 </node>
                               </node>
                             </node>
@@ -993,9 +995,9 @@
                                 <ref role="3cqZAo" node="1D" resolve="ap" />
                                 <uo k="s:originTrace" v="n:5701343294284718866" />
                               </node>
-                              <node concept="2qgKlT" id="4d" role="2OqNvi">
+                              <node concept="3zqWPK" id="4d" role="2OqNvi">
                                 <ref role="37wK5l" to="48kf:2RM$2quh1HO" resolve="mustExist" />
-                                <uo k="s:originTrace" v="n:3310867171609294264" />
+                                <uo k="s:originTrace" v="n:5094230315230894630" />
                               </node>
                             </node>
                           </node>
@@ -1050,9 +1052,9 @@
                                             <ref role="3cqZAo" node="1D" resolve="ap" />
                                             <uo k="s:originTrace" v="n:6156524541422733788" />
                                           </node>
-                                          <node concept="2qgKlT" id="4A" role="2OqNvi">
+                                          <node concept="3zqWPK" id="4A" role="2OqNvi">
                                             <ref role="37wK5l" to="48kf:5lKnBeAutg0" resolve="getErrorMessage" />
-                                            <uo k="s:originTrace" v="n:6156524541422736779" />
+                                            <uo k="s:originTrace" v="n:5094230315230894632" />
                                           </node>
                                         </node>
                                         <node concept="Xl_RD" id="4x" role="37wK5m">
@@ -1155,9 +1157,9 @@
                                     <ref role="3cqZAo" node="1D" resolve="ap" />
                                     <uo k="s:originTrace" v="n:4422219267686333808" />
                                   </node>
-                                  <node concept="2qgKlT" id="52" role="2OqNvi">
+                                  <node concept="3zqWPK" id="52" role="2OqNvi">
                                     <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
-                                    <uo k="s:originTrace" v="n:4422219267686334821" />
+                                    <uo k="s:originTrace" v="n:5094230315230894634" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="50" role="2OqNvi">
@@ -1226,18 +1228,18 @@
                                               <ref role="3cqZAo" node="1D" resolve="ap" />
                                               <uo k="s:originTrace" v="n:5785646600128939386" />
                                             </node>
-                                            <node concept="2qgKlT" id="5y" role="2OqNvi">
+                                            <node concept="3zqWPK" id="5y" role="2OqNvi">
                                               <ref role="37wK5l" to="48kf:4_vItr5cCkz" resolve="resolvePath" />
-                                              <uo k="s:originTrace" v="n:5785646600128942224" />
+                                              <uo k="s:originTrace" v="n:5094230315230894636" />
                                               <node concept="2OqwBi" id="5z" role="37wK5m">
-                                                <uo k="s:originTrace" v="n:5785646600128943479" />
+                                                <uo k="s:originTrace" v="n:5094230315230894638" />
                                                 <node concept="37vLTw" id="5$" role="2Oq$k0">
                                                   <ref role="3cqZAo" node="1D" resolve="ap" />
-                                                  <uo k="s:originTrace" v="n:5785646600128942451" />
+                                                  <uo k="s:originTrace" v="n:5094230315230894639" />
                                                 </node>
                                                 <node concept="3TrcHB" id="5_" role="2OqNvi">
                                                   <ref role="3TsBF5" to="68mc:5lKnBeAtODI" resolve="path" />
-                                                  <uo k="s:originTrace" v="n:5785646600128946138" />
+                                                  <uo k="s:originTrace" v="n:5094230315230894640" />
                                                 </node>
                                               </node>
                                             </node>
@@ -1253,9 +1255,9 @@
                                             <ref role="3cqZAo" node="1D" resolve="ap" />
                                             <uo k="s:originTrace" v="n:5785646600128960282" />
                                           </node>
-                                          <node concept="2qgKlT" id="5B" role="2OqNvi">
+                                          <node concept="3zqWPK" id="5B" role="2OqNvi">
                                             <ref role="37wK5l" to="48kf:5lKnBeAIfOh" resolve="getPrefix" />
-                                            <uo k="s:originTrace" v="n:8005120803307025185" />
+                                            <uo k="s:originTrace" v="n:5094230315230894641" />
                                           </node>
                                         </node>
                                       </node>
@@ -1291,9 +1293,9 @@
                               <ref role="3cqZAo" node="1D" resolve="ap" />
                               <uo k="s:originTrace" v="n:5785646600128933434" />
                             </node>
-                            <node concept="2qgKlT" id="5F" role="2OqNvi">
+                            <node concept="3zqWPK" id="5F" role="2OqNvi">
                               <ref role="37wK5l" to="48kf:5lKnBeAIfOh" resolve="getPrefix" />
-                              <uo k="s:originTrace" v="n:8005120803306921142" />
+                              <uo k="s:originTrace" v="n:5094230315230894643" />
                             </node>
                           </node>
                         </node>
@@ -1352,9 +1354,9 @@
                                               <ref role="3cqZAo" node="1D" resolve="ap" />
                                               <uo k="s:originTrace" v="n:5785646600128871524" />
                                             </node>
-                                            <node concept="2qgKlT" id="66" role="2OqNvi">
+                                            <node concept="3zqWPK" id="66" role="2OqNvi">
                                               <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
-                                              <uo k="s:originTrace" v="n:5785646600128874837" />
+                                              <uo k="s:originTrace" v="n:5094230315230894645" />
                                             </node>
                                           </node>
                                           <node concept="Xl_RD" id="64" role="3uHU7w">
@@ -1394,9 +1396,9 @@
                           <ref role="3cqZAo" node="1D" resolve="ap" />
                           <uo k="s:originTrace" v="n:2711621784026955322" />
                         </node>
-                        <node concept="2qgKlT" id="6a" role="2OqNvi">
+                        <node concept="3zqWPK" id="6a" role="2OqNvi">
                           <ref role="37wK5l" to="48kf:2RM$2quh1HO" resolve="mustExist" />
-                          <uo k="s:originTrace" v="n:3310867171609293966" />
+                          <uo k="s:originTrace" v="n:5094230315230894647" />
                         </node>
                       </node>
                       <node concept="3fqX7Q" id="68" role="3uHU7B">
@@ -1407,9 +1409,9 @@
                             <ref role="3cqZAo" node="1D" resolve="ap" />
                             <uo k="s:originTrace" v="n:6156524541430482106" />
                           </node>
-                          <node concept="2qgKlT" id="6d" role="2OqNvi">
+                          <node concept="3zqWPK" id="6d" role="2OqNvi">
                             <ref role="37wK5l" to="48kf:5lKnBeAtTZu" resolve="exists" />
-                            <uo k="s:originTrace" v="n:6156524541430485383" />
+                            <uo k="s:originTrace" v="n:5094230315230894649" />
                           </node>
                         </node>
                       </node>
@@ -1446,9 +1448,9 @@
                             <ref role="3cqZAo" node="1D" resolve="ap" />
                             <uo k="s:originTrace" v="n:6156524541431498541" />
                           </node>
-                          <node concept="2qgKlT" id="6o" role="2OqNvi">
+                          <node concept="3zqWPK" id="6o" role="2OqNvi">
                             <ref role="37wK5l" to="48kf:5lKnBeAufga" resolve="isValidFile" />
-                            <uo k="s:originTrace" v="n:6156524541431502232" />
+                            <uo k="s:originTrace" v="n:5094230315230894651" />
                           </node>
                         </node>
                       </node>

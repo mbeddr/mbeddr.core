@@ -7,14 +7,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -22,12 +20,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ExpectTotalNoOfCalls__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x36a565f13fa042d6L, 0xbaacf87e209c9789L, 0x44cc979f390c0c2bL, "com.mbeddr.ext.components.mock.structure.ExpectTotalNoOfCalls");
 
-  public static final SMethod<Boolean> validNumberOfCalls_id4MTwk$13QjK = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("validNumberOfCalls").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5528592168124376304L).languageId(0xbaacf87e209c9789L, 0x36a565f13fa042d6L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
+  public static final SMethod<Boolean> validNumberOfCalls_id4MTwk$13QjK = new SMethodBuilder<>(Boolean.TYPE).name("validNumberOfCalls").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5528592168124376304L).languageId(0xbaacf87e209c9789L, 0x36a565f13fa042d6L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "totalNumberOfCalls"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(validNumberOfCalls_id4MTwk$13QjK);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(validNumberOfCalls_id4MTwk$13QjK);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean validNumberOfCalls_id4MTwk$13QjK(@NotNull SNode __thisNode__, int totalNumberOfCalls) {
     return totalNumberOfCalls <= SPropertyOperations.getInteger(__thisNode__, PROPS.noOfCalls$egCW);
@@ -36,10 +32,6 @@ public final class ExpectTotalNoOfCalls__BehaviorDescriptor extends BaseBHDescri
   /*package*/ ExpectTotalNoOfCalls__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

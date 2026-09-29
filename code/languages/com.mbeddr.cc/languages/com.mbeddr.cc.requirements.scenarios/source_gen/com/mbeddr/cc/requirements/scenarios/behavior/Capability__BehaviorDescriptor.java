@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -15,7 +14,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -24,13 +22,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Capability__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd6714220402d48cbL, 0xa4a288223c6257f6L, 0x4fb6ca52097868a5L, "com.mbeddr.cc.requirements.scenarios.structure.Capability");
 
-  public static final SMethod<String> argString_id4YQM_89vtda = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("argString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828453016394L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
-  public static final SMethod<String> signature_id4YQM_89vvUS = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("signature").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828453027512L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
+  public static final SMethod<String> argString_id4YQM_89vtda = new SMethodBuilder<>(String.class).name("argString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828453016394L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
+  public static final SMethod<String> signature_id4YQM_89vvUS = new SMethodBuilder<>(String.class).name("signature").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828453027512L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(argString_id4YQM_89vtda, signature_id4YQM_89vvUS);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(argString_id4YQM_89vtda, signature_id4YQM_89vvUS);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String argString_id4YQM_89vtda(@NotNull SNode __thisNode__) {
     return "" + SLinkOperations.getChildren(__thisNode__, LINKS.args$cjlS);
@@ -42,10 +38,6 @@ public final class Capability__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Capability__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

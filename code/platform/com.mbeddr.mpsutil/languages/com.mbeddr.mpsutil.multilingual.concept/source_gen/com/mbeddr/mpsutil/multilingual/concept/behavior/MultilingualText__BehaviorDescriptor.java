@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -31,13 +30,13 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class MultilingualText__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd0fe2e609f9c4d3cL, 0x94aade9257b67a6dL, 0x22d74031dcf68a33L, "com.mbeddr.mpsutil.multilingual.concept.structure.MultilingualText");
 
-  public static final SMethod<SNode> getText_id2bng37sXCI3 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061123L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
-  public static final SMethod<SNode> getText_id2bng37sXCIc = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061132L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> populateDefaultText_id2bng37sXCI_ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("populateDefaultText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061157L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
-  public static final SMethod<String> getDetailedPresentation_id22G2W3WJ92t = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDetailedPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2354269628709769373L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Void> addString_id2bng37sXCJ_ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061221L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<SNode> getText_id2bng37sXCI3 = new SMethodBuilder<>(SNode.class).name("getText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061123L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
+  public static final SMethod<SNode> getText_id2bng37sXCIc = new SMethodBuilder<>(SNode.class).name("getText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061132L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2(SMethodBuilder.createJavaParameter(SNode.class, "language"));
+  public static final SMethod<SNode> populateDefaultText_id2bng37sXCI_ = new SMethodBuilder<>(SNode.class).name("populateDefaultText").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061157L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2();
+  public static final SMethod<String> getDetailedPresentation_id22G2W3WJ92t = new SMethodBuilder<>(String.class).name("getDetailedPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2354269628709769373L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Void> addString_id2bng37sXCJ_ = new SMethodBuilder<>(Void.TYPE).name("addString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2510545900187061221L).languageId(0x94aade9257b67a6dL, 0xd0fe2e609f9c4d3cL).build2(SMethodBuilder.createJavaParameter(String.class, "w"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getText_id2bng37sXCI3, getText_id2bng37sXCIc, populateDefaultText_id2bng37sXCI_, getDetailedPresentation_id22G2W3WJ92t, addString_id2bng37sXCJ_);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getText_id2bng37sXCI3, getText_id2bng37sXCIc, populateDefaultText_id2bng37sXCI_, getDetailedPresentation_id22G2W3WJ92t, addString_id2bng37sXCJ_);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.addNewChild(__thisNode__, LINKS.values$H$ha, null);

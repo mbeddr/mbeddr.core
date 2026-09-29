@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,9 +22,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ToDoWord__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x3a9157d1f782ed23L, "com.mbeddr.doc.structure.ToDoWord");
 
-  public static final SMethod<String> getSnippet_id627_yy3Sp0O = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSnippet").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6955693250252476468L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> getSnippet_id627_yy3Sp0O = new SMethodBuilder<>(String.class).name("getSnippet").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6955693250252476468L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSnippet_id627_yy3Sp0O);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSnippet_id627_yy3Sp0O);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.text$qwxg, null);

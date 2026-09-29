@@ -14,6 +14,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
@@ -141,9 +144,6 @@
       <concept id="3785936898438263806" name="de.slisson.mps.tables.structure.ColorTableStyleItem" flags="lg" index="3hZEDM">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
-    </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -348,7 +348,7 @@
                     </node>
                     <node concept="2OqwBi" id="vzhXZPAW_X" role="3clFbw">
                       <node concept="pncrf" id="vzhXZPAW_Y" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="vzhXZPAW_Z" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRnhK0" role="2OqNvi">
                         <ref role="37wK5l" to="tp5r:vzhXZPAXZj" resolve="isDefaultSet" />
                       </node>
                     </node>
@@ -380,7 +380,7 @@
                     </node>
                     <node concept="2OqwBi" id="vzhXZPAWAb" role="3clFbw">
                       <node concept="pncrf" id="vzhXZPAWAc" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="vzhXZPAWAd" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRnhK2" role="2OqNvi">
                         <ref role="37wK5l" to="tp5r:vzhXZPAXZj" resolve="isDefaultSet" />
                       </node>
                     </node>

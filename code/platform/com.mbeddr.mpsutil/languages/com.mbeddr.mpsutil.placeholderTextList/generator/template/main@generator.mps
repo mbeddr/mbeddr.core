@@ -47,6 +47,9 @@
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
     </language>
@@ -232,13 +235,13 @@
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
-      <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG">
+      <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="lg" index="5jKBG">
         <child id="1510949579266801461" name="sourceNodeQuery" index="5jGum" />
       </concept>
-      <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
+      <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="lg" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
-      <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
+      <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="lg" index="2b32R4">
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
@@ -253,7 +256,7 @@
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ngI" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
       </concept>
-      <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="ln" index="2ZBi8u" />
+      <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="lg" index="2ZBi8u" />
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -265,7 +268,7 @@
         <child id="1092060348987" name="contentNode" index="13RCb5" />
       </concept>
       <concept id="1225228973247" name="jetbrains.mps.lang.generator.structure.MapSrcMacro_PostMapperFunction" flags="in" index="15lBmy" />
-      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
+      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="lg" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
       </concept>
       <concept id="1087833466690" name="jetbrains.mps.lang.generator.structure.NodeMacro" flags="lg" index="17VmuZ">
@@ -275,7 +278,7 @@
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1184690432998" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_outputNode" flags="nn" index="3l3mFP" />
-      <concept id="1131073187192" name="jetbrains.mps.lang.generator.structure.MapSrcNodeMacro" flags="ln" index="1pdMLZ">
+      <concept id="1131073187192" name="jetbrains.mps.lang.generator.structure.MapSrcNodeMacro" flags="lg" index="1pdMLZ">
         <child id="1168281849769" name="sourceNodeQuery" index="31$UT" />
         <child id="1225229330048" name="postMapperFunction" index="15mYut" />
       </concept>
@@ -285,19 +288,19 @@
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
       <concept id="1167945743726" name="jetbrains.mps.lang.generator.structure.IfMacro_Condition" flags="in" index="3IZrLx" />
-      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
+      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="ig" index="3JmXsc" />
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
       </concept>
-      <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
-      <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="ln" index="1W57fq">
+      <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="ig" index="3NFfHV" />
+      <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="lg" index="1W57fq">
         <child id="1194989344771" name="alternativeConsequence" index="UU_$l" />
         <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
       </concept>
-      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
+      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="lg" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
-      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
+      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="lg" index="1ZhdrF">
         <child id="1167770376702" name="referentFunction" index="3$ytzL" />
       </concept>
     </language>
@@ -344,7 +347,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -1253,12 +1255,12 @@
                             </node>
                             <node concept="2OqwBi" id="1NWvkmRYLa8" role="1m5AlR">
                               <node concept="30H73N" id="1NWvkmRYLa9" role="2Oq$k0" />
-                              <node concept="2qgKlT" id="4YnqLFjkSZi" role="2OqNvi">
+                              <node concept="3zqWPK" id="4qMlRGRnhWc" role="2OqNvi">
                                 <ref role="37wK5l" to="tpcb:4YnqLFjkxyn" resolve="getFeatureForCell" />
                               </node>
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="3Lp5DsINg36" role="2OqNvi">
+                          <node concept="3zqWPK" id="4qMlRGRnhWe" role="2OqNvi">
                             <ref role="37wK5l" to="tpcn:hEwIf_V" resolve="getGenuineLink" />
                           </node>
                         </node>
@@ -1296,7 +1298,7 @@
                             </node>
                             <node concept="2OqwBi" id="1NWvkmRYGhv" role="1m5AlR">
                               <node concept="30H73N" id="1NWvkmRYFVE" role="2Oq$k0" />
-                              <node concept="2qgKlT" id="4YnqLFjkVI8" role="2OqNvi">
+                              <node concept="3zqWPK" id="4qMlRGRnhWg" role="2OqNvi">
                                 <ref role="37wK5l" to="tpcb:4YnqLFjkxyn" resolve="getFeatureForCell" />
                               </node>
                             </node>
@@ -1577,9 +1579,9 @@
                                           <ref role="3Tt5mk" to="tpc2:gAczzzB" resolve="emptyCellModel" />
                                         </node>
                                       </node>
-                                      <node concept="2qgKlT" id="XrrhtvD5yB" role="2OqNvi">
+                                      <node concept="3zqWPK" id="4qMlRGRnhWi" role="2OqNvi">
                                         <ref role="37wK5l" to="tpcb:hHbewHT" resolve="getCellId" />
-                                        <node concept="1iwH7S" id="XrrhtvD5yC" role="37wK5m" />
+                                        <node concept="1iwH7S" id="4qMlRGRnhWk" role="37wK5m" />
                                       </node>
                                     </node>
                                   </node>
@@ -1598,7 +1600,7 @@
                                 <node concept="3cpWs3" id="XrrhtvD5yJ" role="3clFbG">
                                   <node concept="2OqwBi" id="XrrhtvD5yK" role="3uHU7w">
                                     <node concept="30H73N" id="XrrhtvD5yL" role="2Oq$k0" />
-                                    <node concept="2qgKlT" id="XrrhtvD5yM" role="2OqNvi">
+                                    <node concept="3zqWPK" id="4qMlRGRnhWl" role="2OqNvi">
                                       <ref role="37wK5l" to="tpcb:hGPLstu" resolve="getRoleForCell" />
                                     </node>
                                   </node>
@@ -1739,9 +1741,9 @@
                                           <ref role="3Tt5mk" to="tpc2:gAczzzB" resolve="emptyCellModel" />
                                         </node>
                                       </node>
-                                      <node concept="2qgKlT" id="XrrhtvD5zK" role="2OqNvi">
+                                      <node concept="3zqWPK" id="4qMlRGRnhWn" role="2OqNvi">
                                         <ref role="37wK5l" to="tpcb:hHbewHT" resolve="getCellId" />
-                                        <node concept="1iwH7S" id="XrrhtvD5zL" role="37wK5m" />
+                                        <node concept="1iwH7S" id="4qMlRGRnhWp" role="37wK5m" />
                                       </node>
                                     </node>
                                   </node>
@@ -1760,7 +1762,7 @@
                                 <node concept="3cpWs3" id="XrrhtvD5zS" role="3clFbG">
                                   <node concept="2OqwBi" id="XrrhtvD5zT" role="3uHU7w">
                                     <node concept="30H73N" id="XrrhtvD5zU" role="2Oq$k0" />
-                                    <node concept="2qgKlT" id="XrrhtvD5zV" role="2OqNvi">
+                                    <node concept="3zqWPK" id="4qMlRGRnhWq" role="2OqNvi">
                                       <ref role="37wK5l" to="tpcb:hGPLstu" resolve="getRoleForCell" />
                                     </node>
                                   </node>
@@ -2107,7 +2109,7 @@
                             <node concept="3clFbS" id="XrrhtvD5Au" role="2VODD2">
                               <node concept="3clFbF" id="XrrhtvD5Av" role="3cqZAp">
                                 <node concept="2OqwBi" id="XrrhtvD5Aw" role="3clFbG">
-                                  <node concept="2qgKlT" id="XrrhtvD5Ax" role="2OqNvi">
+                                  <node concept="3zqWPK" id="4qMlRGRnhWs" role="2OqNvi">
                                     <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
                                   </node>
                                   <node concept="2OqwBi" id="XrrhtvD5Ay" role="2Oq$k0">
@@ -2270,7 +2272,7 @@
                                               <node concept="37vLTw" id="XrrhtvD5BE" role="2Oq$k0">
                                                 <ref role="3cqZAo" node="XrrhtvD5Bx" resolve="generatedClass" />
                                               </node>
-                                              <node concept="2qgKlT" id="XrrhtvD5BF" role="2OqNvi">
+                                              <node concept="3zqWPK" id="4qMlRGRnhWu" role="2OqNvi">
                                                 <ref role="37wK5l" to="tpek:4_LVZ3pCvsd" resolve="constructors" />
                                               </node>
                                             </node>
@@ -3364,7 +3366,7 @@
                                                                   </node>
                                                                 </node>
                                                               </node>
-                                                              <node concept="2qgKlT" id="6hvYmWkj6ju" role="2OqNvi">
+                                                              <node concept="3zqWPK" id="4qMlRGRnhWw" role="2OqNvi">
                                                                 <ref role="37wK5l" to="tpcb:67EYkym$wx3" resolve="getConceptDeclaration" />
                                                               </node>
                                                             </node>

@@ -71,7 +71,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCollection_1());
     if (nodeCondition_4womgb_a1a()) {
-      editorCell.addEditorCell(createCompartment_1());
+      editorCell.addEditorCell(createCompartment_0());
     }
     if (nodeCondition_4womgb_a2a()) {
       editorCell.addEditorCell(createCollection_2());
@@ -143,13 +143,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private boolean _StyleParameter_QueryFunction_4womgb_a1b0a() {
     return (new IAttributeDescriptor.NodeAttribute(CONCEPTS.DeprecatedNodeAnnotation$zV).get(getNode()) != null);
   }
-  private EditorCell createCompartment_0(EditorContext editorContext, SNode node) {
-    CompartmentCell editorCell = new CompartmentCell(editorContext, node);
+  private EditorCell createCompartment_0() {
+    CompartmentCell editorCell = new CompartmentCell(getEditorContext(), getNode());
     editorCell.setCellId("Compartment_4womgb_b0");
     return editorCell;
-  }
-  private EditorCell createCompartment_1() {
-    return createCompartment_0(getEditorContext(), myNode);
   }
   private EditorCell createCollection_2() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());

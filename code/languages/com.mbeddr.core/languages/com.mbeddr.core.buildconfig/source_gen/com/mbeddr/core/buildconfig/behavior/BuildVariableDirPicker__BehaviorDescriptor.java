@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SModel;
@@ -17,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -25,14 +23,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class BuildVariableDirPicker__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x1475db9ab213c262L, "com.mbeddr.core.buildconfig.structure.BuildVariableDirPicker");
 
-  public static final SMethod<SNode> getCompanionFileOrFolderPicker_id3xqp6yeWGLu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getCompanionFileOrFolderPicker").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4060668414265576542L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
-  public static final SMethod<List<String>> getVariableNames_id6xoAPBjOH1K = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("getVariableNames").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246192L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
-  public static final SMethod<String> getDefaultValue_id6xoAPBjOH2T = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246265L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<SNode> getCompanionFileOrFolderPicker_id3xqp6yeWGLu = new SMethodBuilder<>(SNode.class).name("getCompanionFileOrFolderPicker").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4060668414265576542L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<List<String>> getVariableNames_id6xoAPBjOH1K = new SMethodBuilder<>((Class<List<String>>) ((Class) Object.class)).name("getVariableNames").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246192L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<String> getDefaultValue_id6xoAPBjOH2T = new SMethodBuilder<>(String.class).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246265L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter(SModel.class, "model"), SMethodBuilder.createJavaParameter(String.class, "variableName"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCompanionFileOrFolderPicker_id3xqp6yeWGLu, getVariableNames_id6xoAPBjOH1K, getDefaultValue_id6xoAPBjOH2T);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCompanionFileOrFolderPicker_id3xqp6yeWGLu, getVariableNames_id6xoAPBjOH1K, getDefaultValue_id6xoAPBjOH2T);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getCompanionFileOrFolderPicker_id3xqp6yeWGLu(@NotNull SNode __thisNode__) {
     SNode picker = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x1475db9ab213c262L, "com.mbeddr.core.buildconfig.structure.BuildVariableDirPicker"));
@@ -50,10 +46,6 @@ public final class BuildVariableDirPicker__BehaviorDescriptor extends BaseBHDesc
   /*package*/ BuildVariableDirPicker__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

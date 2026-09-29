@@ -82,7 +82,7 @@ public class ProfileTest_Test extends BaseTransformationTest {
         Profile p2 = new Profile("Equal");
         p2.setId(p1.getId());
         Assert.assertEquals(p2, p1);
-        Assert.assertEquals(p2.hashCode(), p1.hashCode());
+        Assert.assertEquals(Integer.valueOf(p2.hashCode()), Integer.valueOf(p1.hashCode()));
       });
     }
     public void test_canBeActivatedByDefaultTrueByDefault() throws Exception {

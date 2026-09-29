@@ -10,6 +10,9 @@
     <import index="cmo7" ref="r:625bbd58-ab3a-4506-bed6-32039fdf5b9a(com.mbeddr.mpsutil.ecore.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -67,9 +70,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-    </language>
   </registry>
   <node concept="24kQdi" id="2AgFaoOYelk">
     <ref role="1XX52x" to="hvgx:2AgFaoOYcZu" resolve="EMFDataTypeAnnotation" />
@@ -96,7 +96,7 @@
             <node concept="3clFbF" id="2AgFaoOYEJY" role="3cqZAp">
               <node concept="2OqwBi" id="2AgFaoOYF8o" role="3clFbG">
                 <node concept="pncrf" id="2AgFaoOYEJX" role="2Oq$k0" />
-                <node concept="2qgKlT" id="2AgFaoOYFtS" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRnhWy" role="2OqNvi">
                   <ref role="37wK5l" to="cmo7:2AgFaoOYBRA" resolve="emfTypeName" />
                 </node>
               </node>

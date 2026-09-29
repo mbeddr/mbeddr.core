@@ -7,28 +7,24 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class InlineXmlElement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2dec08523a214c4eL, 0xa68cb05236cc37f2L, 0x1e47d094bd120a65L, "com.mbeddr.doc.gen_xhtml.structure.InlineXmlElement");
 
-  public static final SMethod<Boolean> hasNewLineAfter_id1Qs9WekVZ9E = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasNewLineAfter").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2133624044437631594L).languageId(0x9139d910cb22f298L, 0x479c7a8c02f943b5L).build2();
-  public static final SMethod<Boolean> onNewLine_id1Qs9WekVZ9$ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("onNewLine").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2133624044437631588L).languageId(0x9139d910cb22f298L, 0x479c7a8c02f943b5L).build2();
-  public static final SMethod<Boolean> isOneLineBlock_id1Qs9WekVZ7e = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isOneLineBlock").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2133624044437631438L).languageId(0x9139d910cb22f298L, 0x479c7a8c02f943b5L).build2();
-  public static final SMethod<Boolean> oneLineBlock_id1653mnvAgno = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("oneLineBlock").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1262430001741497816L).languageId(0x9139d910cb22f298L, 0x479c7a8c02f943b5L).build2();
+  public static final SMethod<Boolean> hasNewLineAfter_id1Qs9WekVZ9E = new SMethodBuilder<>(Boolean.TYPE).name("hasNewLineAfter").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2133624044437631594L).languageId(0x9139d910cb22f298L, 0x479c7a8c02f943b5L).build2();
+  public static final SMethod<Boolean> onNewLine_id1Qs9WekVZ9$ = new SMethodBuilder<>(Boolean.TYPE).name("onNewLine").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2133624044437631588L).languageId(0x9139d910cb22f298L, 0x479c7a8c02f943b5L).build2();
+  public static final SMethod<Boolean> isOneLineBlock_id1Qs9WekVZ7e = new SMethodBuilder<>(Boolean.TYPE).name("isOneLineBlock").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2133624044437631438L).languageId(0x9139d910cb22f298L, 0x479c7a8c02f943b5L).build2();
+  public static final SMethod<Boolean> oneLineBlock_id1653mnvAgno = new SMethodBuilder<>(Boolean.TYPE).name("oneLineBlock").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1262430001741497816L).languageId(0x9139d910cb22f298L, 0x479c7a8c02f943b5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasNewLineAfter_id1Qs9WekVZ9E, onNewLine_id1Qs9WekVZ9$, isOneLineBlock_id1Qs9WekVZ7e, oneLineBlock_id1653mnvAgno);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasNewLineAfter_id1Qs9WekVZ9E, onNewLine_id1Qs9WekVZ9$, isOneLineBlock_id1Qs9WekVZ7e, oneLineBlock_id1653mnvAgno);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean hasNewLineAfter_id1Qs9WekVZ9E(@NotNull SNode __thisNode__) {
     return false;
@@ -46,10 +42,6 @@ public final class InlineXmlElement__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ InlineXmlElement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

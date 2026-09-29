@@ -48,7 +48,6 @@ import de.slisson.mps.reflection.runtime.ReflectionUtil;
 import com.mbeddr.core.base.behavior.Chunk__BehaviorDescriptor;
 import com.mbeddr.core.base.behavior.IConfigurationItemWithImport__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.NotNullWhereFilter;
-import jetbrains.mps.textgen.trace.TracingUtil;
 import java.util.Iterator;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.model.SModel;
@@ -588,7 +587,7 @@ public class QueriesGenerated extends QueryProviderBase {
     }
 
     List<SNode> nodesToCopyAsList = SetSequence.fromSet(nodesToCopy).where(new NotNullWhereFilter()).toList();
-    List<SNode> copiedNodes = TracingUtil.copyWithTrace(nodesToCopyAsList);
+    List<SNode> copiedNodes = _context.copyWithTrace(nodesToCopyAsList);
 
     {
       Iterator<SNode> copy_it = ListSequence.fromList(copiedNodes).iterator();

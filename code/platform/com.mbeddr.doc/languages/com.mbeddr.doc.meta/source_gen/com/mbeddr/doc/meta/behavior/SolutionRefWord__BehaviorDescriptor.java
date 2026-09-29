@@ -7,26 +7,22 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.project.Solution;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class SolutionRefWord__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe06345c7da824f8bL, 0xbd441425fe158640L, 0x3d3a248b0098584eL, "com.mbeddr.doc.meta.structure.SolutionRefWord");
 
-  public static final SMethod<Class> getModuleType_id1R2r3DPJX9r = new SMethodBuilder<Class>(new SJavaCompoundTypeImpl(Class.class)).name("getModuleType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2144395370921185883L).languageId(0xbd441425fe158640L, 0xe06345c7da824f8bL).build2();
+  public static final SMethod<Class> getModuleType_id1R2r3DPJX9r = new SMethodBuilder<>(Class.class).name("getModuleType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2144395370921185883L).languageId(0xbd441425fe158640L, 0xe06345c7da824f8bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getModuleType_id1R2r3DPJX9r);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getModuleType_id1R2r3DPJX9r);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Class getModuleType_id1R2r3DPJX9r(@NotNull SNode __thisNode__) {
     return Solution.class;
@@ -35,10 +31,6 @@ public final class SolutionRefWord__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ SolutionRefWord__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

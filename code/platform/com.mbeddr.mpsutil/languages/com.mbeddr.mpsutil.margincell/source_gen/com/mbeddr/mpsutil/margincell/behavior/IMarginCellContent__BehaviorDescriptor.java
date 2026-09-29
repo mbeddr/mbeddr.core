@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
@@ -18,7 +17,6 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -27,16 +25,14 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IMarginCellContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x92f195b6a2094804L, 0xad65f5248ecd5873L, 0x1017edaecf766251L, "com.mbeddr.mpsutil.margincell.structure.IMarginCellContent");
 
-  public static final SMethod<Boolean> isConnectionAllowed_id10nVqVftAKg = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isConnectionAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929104L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
-  public static final SMethod<SNode> getPredecessor_id10nVqVftAKE = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPredecessor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929130L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
-  public static final SMethod<Boolean> isCollapseAllowed_id10nVqVftALs = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCollapseAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929180L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
-  public static final SMethod<Integer> compareTo_id10nVqVg5kqc = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("compareTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764142339724L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(EditorContext.class, ""));
-  public static final SMethod<Void> callbackLayout_id10nVqVgfXA7 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("callbackLayout").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764145129863L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2(SMethodBuilder.createJavaParameter(EditorCell.class, ""));
+  public static final SMethod<Boolean> isConnectionAllowed_id10nVqVftAKg = new SMethodBuilder<>(Boolean.TYPE).name("isConnectionAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929104L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
+  public static final SMethod<SNode> getPredecessor_id10nVqVftAKE = new SMethodBuilder<>(SNode.class).name("getPredecessor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929130L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
+  public static final SMethod<Boolean> isCollapseAllowed_id10nVqVftALs = new SMethodBuilder<>(Boolean.TYPE).name("isCollapseAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764131929180L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2();
+  public static final SMethod<Integer> compareTo_id10nVqVg5kqc = new SMethodBuilder<>(Integer.TYPE).name("compareTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764142339724L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"), SMethodBuilder.createJavaParameter(EditorContext.class, "context"));
+  public static final SMethod<Void> callbackLayout_id10nVqVgfXA7 = new SMethodBuilder<>(Void.TYPE).name("callbackLayout").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1159656764145129863L).languageId(0xad65f5248ecd5873L, 0x92f195b6a2094804L).build2(SMethodBuilder.createJavaParameter(EditorCell.class, "contentCell"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isConnectionAllowed_id10nVqVftAKg, getPredecessor_id10nVqVftAKE, isCollapseAllowed_id10nVqVftALs, compareTo_id10nVqVg5kqc, callbackLayout_id10nVqVgfXA7);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isConnectionAllowed_id10nVqVftAKg, getPredecessor_id10nVqVftAKE, isCollapseAllowed_id10nVqVftALs, compareTo_id10nVqVg5kqc, callbackLayout_id10nVqVgfXA7);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isConnectionAllowed_id10nVqVftAKg(@NotNull SNode __thisNode__) {
     return false;
@@ -83,10 +79,6 @@ public final class IMarginCellContent__BehaviorDescriptor extends BaseBHDescript
   /*package*/ IMarginCellContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

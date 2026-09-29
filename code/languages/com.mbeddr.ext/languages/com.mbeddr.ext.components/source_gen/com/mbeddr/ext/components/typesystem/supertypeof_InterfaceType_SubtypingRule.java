@@ -28,9 +28,6 @@ public class supertypeof_InterfaceType_SubtypingRule extends SubtypingRule_Runti
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createPointerType_u8j6yi_a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.PointerType$HX);
     n0.forChild(LINKS.baseType$zMGV).init(CONCEPTS.VoidType$GT);

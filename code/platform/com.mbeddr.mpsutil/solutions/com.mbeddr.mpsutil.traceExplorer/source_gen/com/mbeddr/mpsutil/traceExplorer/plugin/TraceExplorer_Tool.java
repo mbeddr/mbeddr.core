@@ -28,8 +28,8 @@ public class TraceExplorer_Tool extends BaseTabbedProjectTool {
   }
   /**
    * Creates and activates a new trace explorer tab. The tab will be created with the provided tab factory.
-   * Optionally, the created tab can be decorated in another panel, thereby providing the possibility to 
-   * wrap it in other UI elements. 
+   * Optionally, the created tab can be decorated in another panel, thereby providing the possibility to
+   * wrap it in other UI elements.
    * 
    * @param options the options used to create the tab
    * @param tabFactory the tab factory

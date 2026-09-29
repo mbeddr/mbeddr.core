@@ -25,7 +25,7 @@ public final class PTable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf3ed62ca349040d0L, 0x890b9b3133cc2eadL, 0x2985e9af70d590abL, "com.mbeddr.cc.requirements.c.structure.PTable");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.countries$Bi40)).addElement(((_FunctionTypes._return_P0_E0<SNode>) () -> {

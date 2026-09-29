@@ -7,31 +7,27 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AssessmentResult__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xc022423d582d809L, "com.mbeddr.core.base.structure.AssessmentResult");
 
-  public static final SMethod<String> groupLabel_id26F1Swi9trp = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("groupLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105270560473L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<SNode> groupNode_id26F1SwiacwF = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("groupNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105270753323L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> sortKey_id7yuakSiLB02 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("sortKey").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8691429746170818562L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> uniqueIdentifier_idK292flwHwe = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("uniqueIdentifier").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(865293814733133838L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> updateValues_id5L$H31Kf5$y = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateValues").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6657644269294868770L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getErrorMessage_id2PGidvqiihO = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3273071121108903028L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> hasIdentifier_id7hIyKqbGtjy = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasIdentifier").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067564770L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> groupLabel_id26F1Swi9trp = new SMethodBuilder<>(String.class).name("groupLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105270560473L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> groupNode_id26F1SwiacwF = new SMethodBuilder<>(SNode.class).name("groupNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105270753323L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> sortKey_id7yuakSiLB02 = new SMethodBuilder<>(String.class).name("sortKey").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8691429746170818562L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> uniqueIdentifier_idK292flwHwe = new SMethodBuilder<>(String.class).name("uniqueIdentifier").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(865293814733133838L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> updateValues_id5L$H31Kf5$y = new SMethodBuilder<>(Void.TYPE).name("updateValues").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6657644269294868770L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "updatedResult"));
+  public static final SMethod<String> getErrorMessage_id2PGidvqiihO = new SMethodBuilder<>(String.class).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3273071121108903028L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> hasIdentifier_id7hIyKqbGtjy = new SMethodBuilder<>(Boolean.TYPE).name("hasIdentifier").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067564770L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "id"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(groupLabel_id26F1Swi9trp, groupNode_id26F1SwiacwF, sortKey_id7yuakSiLB02, uniqueIdentifier_idK292flwHwe, updateValues_id5L$H31Kf5$y, getErrorMessage_id2PGidvqiihO, hasIdentifier_id7hIyKqbGtjy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(groupLabel_id26F1Swi9trp, groupNode_id26F1SwiacwF, sortKey_id7yuakSiLB02, uniqueIdentifier_idK292flwHwe, updateValues_id5L$H31Kf5$y, getErrorMessage_id2PGidvqiihO, hasIdentifier_id7hIyKqbGtjy);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String groupLabel_id26F1Swi9trp(@NotNull SNode __thisNode__) {
     return null;
@@ -59,10 +55,6 @@ public final class AssessmentResult__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ AssessmentResult__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

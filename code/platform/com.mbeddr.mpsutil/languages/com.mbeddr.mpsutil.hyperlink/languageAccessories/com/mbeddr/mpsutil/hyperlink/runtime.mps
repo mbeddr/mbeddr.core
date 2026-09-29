@@ -2,7 +2,7 @@
 <model ref="04e1f940-330e-483b-9a6a-1648b396a81c/r:4f3facd2-2d6c-40e4-a229-cdeb0a5137d8(com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -131,7 +131,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -139,11 +138,8 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -159,6 +155,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -398,20 +402,106 @@
         </node>
       </node>
       <node concept="P$JXv" id="1vOFPmHilQh" role="lGtFl">
-        <node concept="TZ5HA" id="1vOFPmHilQi" role="TZ5H$">
-          <node concept="1dT_AC" id="1vOFPmHilQj" role="1dT_Ay">
-            <property role="1dT_AB" value="Will open a provided URL via the OS' default browser." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="1vOFPmHiocU" role="TZ5H$">
-          <node concept="1dT_AC" id="1vOFPmHiocV" role="1dT_Ay">
-            <property role="1dT_AB" value="No-op, if the provided URL is null or empty." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="1vOFPmHilQk" role="3nqlJM">
-          <property role="TUZQ4" value="any URL that should be opened in the OS' default browser" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="1vOFPmHilQm" role="zr_5Q">
             <ref role="zr_51" node="5A_Zlt6y22D" resolve="url" />
+          </node>
+          <node concept="1PaTwC" id="3VVgDkJfFWE" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfFWF" role="1PaTwD">
+              <property role="3oM_SC" value="any" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfFWG" role="1PaTwD">
+              <property role="3oM_SC" value="URL" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfFWH" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfFWI" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfFWJ" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfFWK" role="1PaTwD">
+              <property role="3oM_SC" value="opened" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfFWL" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfFWM" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfFWN" role="1PaTwD">
+              <property role="3oM_SC" value="OS'" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfFWO" role="1PaTwD">
+              <property role="3oM_SC" value="default" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfFWP" role="1PaTwD">
+              <property role="3oM_SC" value="browser" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJfFWl" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfFWm" role="1PaTwD">
+            <property role="3oM_SC" value="Will" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWn" role="1PaTwD">
+            <property role="3oM_SC" value="open" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWo" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWp" role="1PaTwD">
+            <property role="3oM_SC" value="provided" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWq" role="1PaTwD">
+            <property role="3oM_SC" value="URL" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWr" role="1PaTwD">
+            <property role="3oM_SC" value="via" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWs" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWt" role="1PaTwD">
+            <property role="3oM_SC" value="OS'" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWu" role="1PaTwD">
+            <property role="3oM_SC" value="default" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWv" role="1PaTwD">
+            <property role="3oM_SC" value="browser." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJfFWw" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfFWx" role="1PaTwD">
+            <property role="3oM_SC" value="No-op," />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWy" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWz" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFW$" role="1PaTwD">
+            <property role="3oM_SC" value="provided" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFW_" role="1PaTwD">
+            <property role="3oM_SC" value="URL" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWA" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWB" role="1PaTwD">
+            <property role="3oM_SC" value="null" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWC" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfFWD" role="1PaTwD">
+            <property role="3oM_SC" value="empty." />
           </node>
         </node>
       </node>

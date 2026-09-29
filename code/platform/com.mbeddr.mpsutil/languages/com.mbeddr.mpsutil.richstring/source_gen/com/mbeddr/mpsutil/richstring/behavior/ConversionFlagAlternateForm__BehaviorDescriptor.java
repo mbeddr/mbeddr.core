@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -17,7 +16,6 @@ import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.LinkedHashSet;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.typesystem.inference.TypeChecker;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -26,12 +24,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ConversionFlagAlternateForm__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x442d3b7dfe4a4293L, 0xa7c16744d440ecaaL, 0x2e8be43a0439353dL, "com.mbeddr.mpsutil.richstring.structure.ConversionFlagAlternateForm");
 
-  public static final SMethod<Boolean> isApplicable_id6Go9U2yx_gX = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isApplicable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532374307901L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> isApplicable_id6Go9U2yx_gX = new SMethodBuilder<>(Boolean.TYPE).name("isApplicable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7716961532374307901L).languageId(0xa7c16744d440ecaaL, 0x442d3b7dfe4a4293L).build2(SMethodBuilder.createJavaParameter(SNode.class, "conversion"), SMethodBuilder.createJavaParameter(SNode.class, "category"), SMethodBuilder.createJavaParameter(SNode.class, "expressionType"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isApplicable_id6Go9U2yx_gX);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isApplicable_id6Go9U2yx_gX);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isApplicable_id6Go9U2yx_gX(@NotNull SNode __thisNode__, SNode conversion, SNode category, SNode expressionType) {
     if (SetSequence.fromSet(SetSequence.fromSetAndArray(new LinkedHashSet<SNode>(), CONCEPTS.ConversionGeneralString$g$.getDeclarationNode(), CONCEPTS.ConversionGeneralStringUpperCase$h6.getDeclarationNode())).contains(SNodeOperations.getConceptDeclaration(conversion))) {
@@ -53,10 +49,6 @@ public final class ConversionFlagAlternateForm__BehaviorDescriptor extends BaseB
   /*package*/ ConversionFlagAlternateForm__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

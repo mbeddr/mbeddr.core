@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,11 +22,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IIncompleteParenthesis__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x4ceb7024898c1adcL, "com.mbeddr.core.expressions.structure.IIncompleteParenthesis");
 
-  public static final SMethod<Void> increaseCount_id4NFs2i9z1KA = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("increaseCount").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5542647068638321702L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Void> decreaseCount_id4NFs2i9z2Sx = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("decreaseCount").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5542647068638326305L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> isSingle_id4NFs2i9z3Ou = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSingle").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5542647068638330142L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Void> increaseCount_id4NFs2i9z1KA = new SMethodBuilder<>(Void.TYPE).name("increaseCount").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5542647068638321702L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Void> decreaseCount_id4NFs2i9z2Sx = new SMethodBuilder<>(Void.TYPE).name("decreaseCount").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5542647068638326305L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isSingle_id4NFs2i9z3Ou = new SMethodBuilder<>(Boolean.TYPE).name("isSingle").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5542647068638330142L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(increaseCount_id4NFs2i9z1KA, decreaseCount_id4NFs2i9z2Sx, isSingle_id4NFs2i9z3Ou);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(increaseCount_id4NFs2i9z1KA, decreaseCount_id4NFs2i9z2Sx, isSingle_id4NFs2i9z3Ou);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.count$vRjz, 1);

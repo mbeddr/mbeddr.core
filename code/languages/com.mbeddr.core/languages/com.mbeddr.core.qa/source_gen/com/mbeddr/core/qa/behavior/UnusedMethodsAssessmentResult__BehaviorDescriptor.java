@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.core.behavior.INamedConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -23,13 +21,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class UnusedMethodsAssessmentResult__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc8e0d19c3cf4b31L, 0xaf77531227edbce8L, 0x5d1699da08992e3aL, "com.mbeddr.core.qa.structure.UnusedMethodsAssessmentResult");
 
-  public static final SMethod<String> uniqueIdentifier_idK292flwHwe = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("uniqueIdentifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(865293814733133838L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> updateValues_id5L$H31Kf5$y = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6657644269294868770L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> uniqueIdentifier_idK292flwHwe = new SMethodBuilder<>(String.class).name("uniqueIdentifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(865293814733133838L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> updateValues_id5L$H31Kf5$y = new SMethodBuilder<>(Void.TYPE).name("updateValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6657644269294868770L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "updatedResult"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniqueIdentifier_idK292flwHwe, updateValues_id5L$H31Kf5$y);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniqueIdentifier_idK292flwHwe, updateValues_id5L$H31Kf5$y);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String uniqueIdentifier_idK292flwHwe(@NotNull SNode __thisNode__) {
     return (String) INamedConcept__BehaviorDescriptor.getFqName_idhEwIO9y.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.method$9M87));
@@ -40,10 +36,6 @@ public final class UnusedMethodsAssessmentResult__BehaviorDescriptor extends Bas
   /*package*/ UnusedMethodsAssessmentResult__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -22,7 +22,7 @@ public class EnumerationDescriptor_WPStatus extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember_over_budget_0 = new EnumerationDescriptor.MemberDescriptor("over_budget", "over budget", 0x250a1b2f347c4ff9L, "r:f4cb7d35-a323-48d6-ad03-3ebdeae26d42(com.mbeddr.cc.requirements.wp.structure)/7781501729894695075");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xe530d4cbefad4822L, 0x92f81d114f03f836L, 0x250a1b2f347c4ff4L, 0x250a1b2f347c4ff5L, 0x250a1b2f347c4ff6L, 0x250a1b2f347c4ff7L, 0x250a1b2f347c4ff8L, 0x250a1b2f347c4ff9L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_any_0, myMember_active_0, myMember_done_0, myMember_bad_trend_0, myMember_over_budget_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_any_0, myMember_active_0, myMember_done_0, myMember_bad_trend_0, myMember_over_budget_0);
 
   @Nullable
   @Override

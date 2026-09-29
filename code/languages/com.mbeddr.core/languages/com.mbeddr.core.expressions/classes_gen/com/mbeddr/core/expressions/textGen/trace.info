@@ -9,18 +9,20 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="106,0,109,0" name="com.mbeddr.core.expressions.textGen.TextGenAspectDescriptor$CONCEPTS" />
-      <unit at="16,0,110,0" name="com.mbeddr.core.expressions.textGen.TextGenAspectDescriptor" />
+      <unit at="109,0,112,0" name="com.mbeddr.core.expressions.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="113,0,116,0" name="com.mbeddr.core.expressions.textGen.TextGenAspectDescriptor$PROPS" />
+      <unit at="18,0,117,0" name="com.mbeddr.core.expressions.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/1052812498356315738">
     <file name="TextGenAspectDescriptor.java">
-      <node id="1052812498356315738" at="82,49,83,45" concept="7" />
-      <scope id="1052812498356315738" at="82,49,83,45" />
+      <node id="1052812498356315738" at="84,49,85,45" concept="7" />
+      <scope id="1052812498356315738" at="84,49,85,45" />
     </file>
     <file name="VaArgExpression_TextGen.java">
       <node id="1052812498356315738" at="17,54,18,55" concept="6" />
@@ -31,9 +33,9 @@
       <node id="1052812498356321696" at="22,20,23,86" concept="2" />
       <node id="1052812498356323826" at="23,86,24,20" concept="2" />
       <node id="1052812498356315738" at="25,30,26,181" concept="2" />
-      <node id="1052812498356315738" at="31,0,32,0" concept="9" trace="va_arg$JFUR" />
-      <node id="1052812498356315738" at="32,0,33,0" concept="9" trace="type$sXU3" />
-      <node id="1052812498356315738" at="36,0,37,0" concept="9" trace="TraceableConcept$L" />
+      <node id="1052812498356315738" at="31,0,32,0" concept="10" trace="va_arg$JFUR" />
+      <node id="1052812498356315738" at="32,0,33,0" concept="10" trace="type$sXU3" />
+      <node id="1052812498356315738" at="36,0,37,0" concept="10" trace="TraceableConcept$L" />
       <node id="1052812498356315738" at="24,20,27,5" concept="4" />
       <node id="1052812498356315738" at="16,0,29,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="1052812498356315738" at="25,30,26,181" />
@@ -56,8 +58,8 @@
       <node id="1054289341113481347" at="20,21,21,87" concept="2" />
       <node id="8350131540168871854" at="21,87,22,20" concept="2" />
       <node id="1054289341113476318" at="23,30,24,181" concept="2" />
-      <node id="1054289341113476318" at="29,0,30,0" concept="9" trace="value$qZmE" />
-      <node id="1054289341113476318" at="33,0,34,0" concept="9" trace="TraceableConcept$L" />
+      <node id="1054289341113476318" at="29,0,30,0" concept="10" trace="value$qZmE" />
+      <node id="1054289341113476318" at="33,0,34,0" concept="10" trace="TraceableConcept$L" />
       <node id="1054289341113476318" at="22,20,25,5" concept="4" />
       <node id="1054289341113476318" at="16,0,27,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="1054289341113476318" at="23,30,24,181" />
@@ -72,8 +74,8 @@
       <unit id="1054289341113476318" at="15,0,36,0" name="com.mbeddr.core.expressions.textGen.HexNumberLiteral_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="1054289341113476318" at="44,50,45,46" concept="7" />
-      <scope id="1054289341113476318" at="44,50,45,46" />
+      <node id="1054289341113476318" at="46,50,47,46" concept="7" />
+      <scope id="1054289341113476318" at="46,50,47,46" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/1054289341113496616">
@@ -86,8 +88,8 @@
       <node id="1054289341113496650" at="22,24,23,87" concept="2" />
       <node id="1054289341113496659" at="23,87,24,21" concept="2" />
       <node id="1054289341113496616" at="25,30,26,181" concept="2" />
-      <node id="1054289341113496616" at="31,0,32,0" concept="9" trace="value$qZmE" />
-      <node id="1054289341113496616" at="35,0,36,0" concept="9" trace="TraceableConcept$L" />
+      <node id="1054289341113496616" at="31,0,32,0" concept="10" trace="value$qZmE" />
+      <node id="1054289341113496616" at="35,0,36,0" concept="10" trace="TraceableConcept$L" />
       <node id="1054289341113496616" at="24,21,27,5" concept="4" />
       <node id="1054289341113496616" at="16,0,29,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="1054289341113496616" at="25,30,26,181" />
@@ -103,8 +105,8 @@
       <unit id="1054289341113496616" at="15,0,38,0" name="com.mbeddr.core.expressions.textGen.BinaryNumberLiteral_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="1054289341113496616" at="28,53,29,49" concept="7" />
-      <scope id="1054289341113496616" at="28,53,29,49" />
+      <node id="1054289341113496616" at="30,53,31,49" concept="7" />
+      <scope id="1054289341113496616" at="30,53,31,49" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/1670233242591046348">
@@ -113,7 +115,7 @@
       <node id="1670233242591046348" at="17,55,18,29" concept="2" />
       <node id="1670233242591049495" at="18,29,19,109" concept="2" />
       <node id="1670233242591046348" at="20,30,21,181" concept="2" />
-      <node id="1670233242591046348" at="26,0,27,0" concept="9" trace="TraceableConcept$L" />
+      <node id="1670233242591046348" at="26,0,27,0" concept="10" trace="TraceableConcept$L" />
       <node id="1670233242591046348" at="19,109,22,5" concept="4" />
       <node id="1670233242591046348" at="15,0,24,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="1670233242591046348" at="20,30,21,181" />
@@ -127,8 +129,8 @@
       <unit id="1670233242591046348" at="14,0,29,0" name="com.mbeddr.core.expressions.textGen.ScientificNumber_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="1670233242591046348" at="70,50,71,46" concept="7" />
-      <scope id="1670233242591046348" at="70,50,71,46" />
+      <node id="1670233242591046348" at="72,50,73,46" concept="7" />
+      <scope id="1670233242591046348" at="72,50,73,46" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/2479209227960236252">
@@ -146,16 +148,16 @@
       <node id="3762938307561781636" at="38,18,39,96" concept="2" />
       <node id="7436951027928212459" at="41,9,42,15" concept="7" />
       <node id="3762938307561779898" at="44,5,45,57" concept="2" />
-      <node id="2479209227960236252" at="49,0,50,0" concept="9" trace="ITextGenContext$$4" />
+      <node id="2479209227960236252" at="49,0,50,0" concept="10" trace="ITextGenContext$$4" />
       <node id="7350547698082068804" at="38,16,40,11" concept="0" />
-      <node id="2479209227960236253" at="16,0,20,0" concept="10" trace="genTypeWithName#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <node id="2479209227960236289" at="20,0,24,0" concept="10" trace="genType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <node id="7436951027928187450" at="24,0,28,0" concept="10" trace="genExpression#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="2479209227960236253" at="16,0,20,0" concept="11" trace="genTypeWithName#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="2479209227960236289" at="20,0,24,0" concept="11" trace="genType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="7436951027928187450" at="24,0,28,0" concept="11" trace="genExpression#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <node id="7350547698082027930" at="33,42,40,11" concept="4" />
       <node id="7350547698081981595" at="32,26,41,9" concept="3" />
       <node id="3762938307561778427" at="31,126,43,7" concept="4" />
       <node id="3762938307561774482" at="29,55,44,5" concept="4" />
-      <node id="2479209227960236321" at="28,0,47,0" concept="10" trace="gen#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="2479209227960236321" at="28,0,47,0" concept="11" trace="gen#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="7350547698082027933" at="34,40,35,41" />
       <scope id="7350547698082054461" at="36,46,37,44" />
       <scope id="7350547698082068805" at="38,18,39,96" />
@@ -209,9 +211,9 @@
       <node id="2790345531545662677" at="21,92,22,119" concept="2" />
       <node id="2790345531545688416" at="22,119,23,88" concept="2" />
       <node id="2790345531545646792" at="24,30,25,181" concept="2" />
-      <node id="2790345531545646792" at="30,0,31,0" concept="9" trace="expression$PfNq" />
-      <node id="2790345531545646792" at="31,0,32,0" concept="9" trace="target$CEPF" />
-      <node id="2790345531545646792" at="35,0,36,0" concept="9" trace="TraceableConcept$L" />
+      <node id="2790345531545646792" at="30,0,31,0" concept="10" trace="expression$PfNq" />
+      <node id="2790345531545646792" at="31,0,32,0" concept="10" trace="target$CEPF" />
+      <node id="2790345531545646792" at="35,0,36,0" concept="10" trace="TraceableConcept$L" />
       <node id="2790345531545646792" at="23,88,26,5" concept="4" />
       <node id="2790345531545646792" at="17,0,28,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="2790345531545646792" at="24,30,25,181" />
@@ -226,8 +228,8 @@
       <unit id="2790345531545646792" at="16,0,38,0" name="com.mbeddr.core.expressions.textGen.GenericDotExpression_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="2790345531545646792" at="42,54,43,50" concept="7" />
-      <scope id="2790345531545646792" at="42,54,43,50" />
+      <node id="2790345531545646792" at="44,54,45,50" concept="7" />
+      <scope id="2790345531545646792" at="44,54,45,50" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/3619430544831791358">
@@ -239,8 +241,8 @@
       <node id="3619430544831799154" at="25,37,26,29" concept="2" />
       <node id="3619430544831799154" at="27,31,28,27" concept="2" />
       <node id="3619430544831791358" at="32,30,33,181" concept="2" />
-      <node id="3619430544831791358" at="38,0,39,0" concept="9" trace="expressions$lRqw" />
-      <node id="3619430544831791358" at="42,0,43,0" concept="9" trace="TraceableConcept$L" />
+      <node id="3619430544831791358" at="38,0,39,0" concept="10" trace="expressions$lRqw" />
+      <node id="3619430544831791358" at="42,0,43,0" concept="10" trace="TraceableConcept$L" />
       <node id="3619430544831799154" at="26,29,29,9" concept="4" />
       <node id="3619430544831791358" at="31,5,34,5" concept="4" />
       <node id="3619430544831799154" at="24,70,30,7" concept="3" />
@@ -267,8 +269,8 @@
       <unit id="3619430544831791358" at="17,0,45,0" name="com.mbeddr.core.expressions.textGen.ExpressionList_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="3619430544831791358" at="38,48,39,44" concept="7" />
-      <scope id="3619430544831791358" at="38,48,39,44" />
+      <node id="3619430544831791358" at="40,48,41,44" concept="7" />
+      <scope id="3619430544831791358" at="40,48,41,44" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/3830958861296867466">
@@ -278,8 +280,8 @@
       <node id="3830958861296867471" at="19,29,20,20" concept="2" />
       <node id="3830958861296867473" at="20,20,21,92" concept="2" />
       <node id="3830958861296867466" at="22,30,23,181" concept="2" />
-      <node id="3830958861296867466" at="28,0,29,0" concept="9" trace="expression$PfNq" />
-      <node id="3830958861296867466" at="32,0,33,0" concept="9" trace="TraceableConcept$L" />
+      <node id="3830958861296867466" at="28,0,29,0" concept="10" trace="expression$PfNq" />
+      <node id="3830958861296867466" at="32,0,33,0" concept="10" trace="TraceableConcept$L" />
       <node id="3830958861296867466" at="21,92,24,5" concept="4" />
       <node id="3830958861296867466" at="16,0,26,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="3830958861296867466" at="22,30,23,181" />
@@ -294,8 +296,8 @@
       <unit id="3830958861296867466" at="15,0,35,0" name="com.mbeddr.core.expressions.textGen.NotExpression_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="3830958861296867466" at="48,47,49,43" concept="7" />
-      <scope id="3830958861296867466" at="48,47,49,43" />
+      <node id="3830958861296867466" at="50,47,51,43" concept="7" />
+      <scope id="3830958861296867466" at="50,47,51,43" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/3976803464656225007">
@@ -305,8 +307,8 @@
       <node id="3976803464656225011" at="19,29,20,92" concept="2" />
       <node id="3976803464656225015" at="20,92,21,21" concept="2" />
       <node id="3976803464656225007" at="22,30,23,181" concept="2" />
-      <node id="3976803464656225007" at="28,0,29,0" concept="9" trace="expression$PfNq" />
-      <node id="3976803464656225007" at="32,0,33,0" concept="9" trace="TraceableConcept$L" />
+      <node id="3976803464656225007" at="28,0,29,0" concept="10" trace="expression$PfNq" />
+      <node id="3976803464656225007" at="32,0,33,0" concept="10" trace="TraceableConcept$L" />
       <node id="3976803464656225007" at="21,21,24,5" concept="4" />
       <node id="3976803464656225007" at="16,0,26,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="3976803464656225007" at="22,30,23,181" />
@@ -321,8 +323,8 @@
       <unit id="3976803464656225007" at="15,0,35,0" name="com.mbeddr.core.expressions.textGen.PostIncrementExpression_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="3976803464656225007" at="58,57,59,53" concept="7" />
-      <scope id="3976803464656225007" at="58,57,59,53" />
+      <node id="3976803464656225007" at="60,57,61,53" concept="7" />
+      <scope id="3976803464656225007" at="60,57,61,53" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/3976803464656225016">
@@ -332,8 +334,8 @@
       <node id="3976803464656225020" at="19,29,20,21" concept="2" />
       <node id="3976803464656225021" at="20,21,21,92" concept="2" />
       <node id="3976803464656225016" at="22,30,23,181" concept="2" />
-      <node id="3976803464656225016" at="28,0,29,0" concept="9" trace="expression$PfNq" />
-      <node id="3976803464656225016" at="32,0,33,0" concept="9" trace="TraceableConcept$L" />
+      <node id="3976803464656225016" at="28,0,29,0" concept="10" trace="expression$PfNq" />
+      <node id="3976803464656225016" at="32,0,33,0" concept="10" trace="TraceableConcept$L" />
       <node id="3976803464656225016" at="21,92,24,5" concept="4" />
       <node id="3976803464656225016" at="16,0,26,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="3976803464656225016" at="22,30,23,181" />
@@ -348,8 +350,8 @@
       <unit id="3976803464656225016" at="15,0,35,0" name="com.mbeddr.core.expressions.textGen.PreIncrementExpression_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="3976803464656225016" at="62,56,63,52" concept="7" />
-      <scope id="3976803464656225016" at="62,56,63,52" />
+      <node id="3976803464656225016" at="64,56,65,52" concept="7" />
+      <scope id="3976803464656225016" at="64,56,65,52" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/3976803464656498445">
@@ -359,8 +361,8 @@
       <node id="3976803464656498455" at="19,29,20,21" concept="2" />
       <node id="3976803464656498460" at="20,21,21,92" concept="2" />
       <node id="3976803464656498445" at="22,30,23,181" concept="2" />
-      <node id="3976803464656498445" at="28,0,29,0" concept="9" trace="expression$PfNq" />
-      <node id="3976803464656498445" at="32,0,33,0" concept="9" trace="TraceableConcept$L" />
+      <node id="3976803464656498445" at="28,0,29,0" concept="10" trace="expression$PfNq" />
+      <node id="3976803464656498445" at="32,0,33,0" concept="10" trace="TraceableConcept$L" />
       <node id="3976803464656498445" at="21,92,24,5" concept="4" />
       <node id="3976803464656498445" at="16,0,26,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="3976803464656498445" at="22,30,23,181" />
@@ -375,8 +377,8 @@
       <unit id="3976803464656498445" at="15,0,35,0" name="com.mbeddr.core.expressions.textGen.PreDecrementExpression_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="3976803464656498445" at="60,56,61,52" concept="7" />
-      <scope id="3976803464656498445" at="60,56,61,52" />
+      <node id="3976803464656498445" at="62,56,63,52" concept="7" />
+      <scope id="3976803464656498445" at="62,56,63,52" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/3976803464656498468">
@@ -386,8 +388,8 @@
       <node id="3976803464656498472" at="19,29,20,92" concept="2" />
       <node id="3976803464656498476" at="20,92,21,21" concept="2" />
       <node id="3976803464656498468" at="22,30,23,181" concept="2" />
-      <node id="3976803464656498468" at="28,0,29,0" concept="9" trace="expression$PfNq" />
-      <node id="3976803464656498468" at="32,0,33,0" concept="9" trace="TraceableConcept$L" />
+      <node id="3976803464656498468" at="28,0,29,0" concept="10" trace="expression$PfNq" />
+      <node id="3976803464656498468" at="32,0,33,0" concept="10" trace="TraceableConcept$L" />
       <node id="3976803464656498468" at="21,21,24,5" concept="4" />
       <node id="3976803464656498468" at="16,0,26,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="3976803464656498468" at="22,30,23,181" />
@@ -402,14 +404,14 @@
       <unit id="3976803464656498468" at="15,0,35,0" name="com.mbeddr.core.expressions.textGen.PostDecrementExpression_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="3976803464656498468" at="56,57,57,53" concept="7" />
-      <scope id="3976803464656498468" at="56,57,57,53" />
+      <node id="3976803464656498468" at="58,57,59,53" concept="7" />
+      <scope id="3976803464656498468" at="58,57,59,53" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/3976803464656531180">
     <file name="TextGenAspectDescriptor.java">
-      <node id="3976803464656531180" at="80,54,81,50" concept="7" />
-      <scope id="3976803464656531180" at="80,54,81,50" />
+      <node id="3976803464656531180" at="82,54,83,50" concept="7" />
+      <scope id="3976803464656531180" at="82,54,83,50" />
     </file>
     <file name="UnaryMinusExpression_TextGen.java">
       <node id="3976803464656531180" at="17,54,18,55" concept="6" />
@@ -417,8 +419,8 @@
       <node id="3976803464656531185" at="19,29,20,20" concept="2" />
       <node id="3976803464656531187" at="20,20,21,92" concept="2" />
       <node id="3976803464656531180" at="22,30,23,181" concept="2" />
-      <node id="3976803464656531180" at="28,0,29,0" concept="9" trace="expression$PfNq" />
-      <node id="3976803464656531180" at="32,0,33,0" concept="9" trace="TraceableConcept$L" />
+      <node id="3976803464656531180" at="28,0,29,0" concept="10" trace="expression$PfNq" />
+      <node id="3976803464656531180" at="32,0,33,0" concept="10" trace="TraceableConcept$L" />
       <node id="3976803464656531180" at="21,92,24,5" concept="4" />
       <node id="3976803464656531180" at="16,0,26,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="3976803464656531180" at="22,30,23,181" />
@@ -440,8 +442,8 @@
       <node id="3976803464656556892" at="19,29,20,20" concept="2" />
       <node id="3976803464656556893" at="20,20,21,92" concept="2" />
       <node id="3976803464656556888" at="22,30,23,181" concept="2" />
-      <node id="3976803464656556888" at="28,0,29,0" concept="9" trace="expression$PfNq" />
-      <node id="3976803464656556888" at="32,0,33,0" concept="9" trace="TraceableConcept$L" />
+      <node id="3976803464656556888" at="28,0,29,0" concept="10" trace="expression$PfNq" />
+      <node id="3976803464656556888" at="32,0,33,0" concept="10" trace="TraceableConcept$L" />
       <node id="3976803464656556888" at="21,92,24,5" concept="4" />
       <node id="3976803464656556888" at="16,0,26,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="3976803464656556888" at="22,30,23,181" />
@@ -456,8 +458,8 @@
       <unit id="3976803464656556888" at="15,0,35,0" name="com.mbeddr.core.expressions.textGen.BitwiseNotExpression_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="3976803464656556888" at="30,54,31,50" concept="7" />
-      <scope id="3976803464656556888" at="30,54,31,50" />
+      <node id="3976803464656556888" at="32,54,33,50" concept="7" />
+      <scope id="3976803464656556888" at="32,54,33,50" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/4296381507831566166">
@@ -468,8 +470,8 @@
       <node id="4296381507831566172" at="20,20,21,87" concept="2" />
       <node id="4296381507831566177" at="21,87,22,20" concept="2" />
       <node id="4296381507831566166" at="23,30,24,181" concept="2" />
-      <node id="4296381507831566166" at="29,0,30,0" concept="9" trace="value$mkqz" />
-      <node id="4296381507831566166" at="33,0,34,0" concept="9" trace="TraceableConcept$L" />
+      <node id="4296381507831566166" at="29,0,30,0" concept="10" trace="value$mkqz" />
+      <node id="4296381507831566166" at="33,0,34,0" concept="10" trace="TraceableConcept$L" />
       <node id="4296381507831566166" at="22,20,25,5" concept="4" />
       <node id="4296381507831566166" at="16,0,27,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="4296381507831566166" at="23,30,24,181" />
@@ -484,8 +486,8 @@
       <unit id="4296381507831566166" at="15,0,36,0" name="com.mbeddr.core.expressions.textGen.CharLiteral_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="4296381507831566166" at="36,45,37,41" concept="7" />
-      <scope id="4296381507831566166" at="36,45,37,41" />
+      <node id="4296381507831566166" at="38,45,39,41" concept="7" />
+      <scope id="4296381507831566166" at="38,45,39,41" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/5806551411806856616">
@@ -502,8 +504,8 @@
       <unit id="5806551411806856616" at="9,0,16,0" name="com.mbeddr.core.expressions.textGen.PtrDiffT_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5806551411806856616" at="68,42,69,38" concept="7" />
-      <scope id="5806551411806856616" at="68,42,69,38" />
+      <node id="5806551411806856616" at="70,42,71,38" concept="7" />
+      <scope id="5806551411806856616" at="70,42,71,38" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/6105672464780771509">
@@ -513,8 +515,8 @@
       <node id="6105672464780771536" at="18,99,19,21" concept="2" />
       <node id="6105672464780771520" at="20,85,21,31" concept="2" />
       <node id="6105672464780771527" at="23,82,24,28" concept="2" />
-      <node id="6105672464780771509" at="29,0,30,0" concept="9" trace="volatile$hJNe" />
-      <node id="6105672464780771509" at="30,0,31,0" concept="9" trace="const$VWr7" />
+      <node id="6105672464780771509" at="29,0,30,0" concept="10" trace="volatile$hJNe" />
+      <node id="6105672464780771509" at="30,0,31,0" concept="10" trace="const$VWr7" />
       <node id="6105672464780771517" at="19,21,22,5" concept="4" />
       <node id="6105672464780771524" at="22,5,25,5" concept="4" />
       <node id="6105672464780771509" at="15,0,27,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
@@ -530,8 +532,8 @@
       <unit id="6105672464780771509" at="14,0,33,0" name="com.mbeddr.core.expressions.textGen.PrimitiveC99IntegralType_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="6105672464780771509" at="64,58,65,54" concept="7" />
-      <scope id="6105672464780771509" at="64,58,65,54" />
+      <node id="6105672464780771509" at="66,58,67,54" concept="7" />
+      <scope id="6105672464780771509" at="66,58,67,54" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/6610873504380058565">
@@ -547,9 +549,9 @@
       <node id="5054337346857513331" at="30,165,31,22" concept="2" />
       <node id="5054337346857509739" at="32,5,33,20" concept="2" />
       <node id="6610873504380058565" at="34,30,35,181" concept="2" />
-      <node id="6610873504380058565" at="40,0,41,0" concept="9" trace="targetType$3smx" />
-      <node id="6610873504380058565" at="41,0,42,0" concept="9" trace="expr$3lz4" />
-      <node id="6610873504380058565" at="45,0,46,0" concept="9" trace="TraceableConcept$L" />
+      <node id="6610873504380058565" at="40,0,41,0" concept="10" trace="targetType$3smx" />
+      <node id="6610873504380058565" at="41,0,42,0" concept="10" trace="expr$3lz4" />
+      <node id="6610873504380058565" at="45,0,46,0" concept="10" trace="TraceableConcept$L" />
       <node id="7516784819897504517" at="26,10,28,5" concept="0" />
       <node id="5054337346857512733" at="29,86,32,5" concept="4" />
       <node id="6610873504380058565" at="33,20,36,5" concept="4" />
@@ -570,8 +572,8 @@
       <unit id="6610873504380058565" at="16,0,48,0" name="com.mbeddr.core.expressions.textGen.CastExpression_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="6610873504380058565" at="34,48,35,44" concept="7" />
-      <scope id="6610873504380058565" at="34,48,35,44" />
+      <node id="6610873504380058565" at="36,48,37,44" concept="7" />
+      <scope id="6610873504380058565" at="36,48,37,44" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/6631303246402170969">
@@ -588,34 +590,35 @@
       <unit id="6631303246402170969" at="9,0,16,0" name="com.mbeddr.core.expressions.textGen.BooleanType_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="6631303246402170969" at="32,45,33,41" concept="7" />
-      <scope id="6631303246402170969" at="32,45,33,41" />
+      <node id="6631303246402170969" at="34,45,35,41" concept="7" />
+      <scope id="6631303246402170969" at="34,45,35,41" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/6775599524324145874">
     <file name="TextGenAspectDescriptor.java">
-      <node id="6775599524324145874" at="76,55,77,51" concept="7" />
-      <node id="6775599524324145874" at="91,72,92,63" concept="6" />
-      <node id="6775599524324145874" at="92,63,93,66" concept="6" />
-      <node id="6775599524324145874" at="93,66,94,84" concept="2" />
-      <node id="6775599524324145874" at="94,84,95,17" concept="1" />
-      <node id="6775599524324145874" at="99,71,100,26" concept="7" />
-      <node id="6775599524324145874" at="102,76,103,16" concept="7" />
-      <node id="6775599524324145874" at="99,0,102,0" concept="10" trace="getFileName_TypeSizeConfiguration#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="6775599524324145874" at="102,0,105,0" concept="10" trace="getFileExtension_TypeSizeConfiguration#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="6775599524324145874" at="90,58,96,7" concept="4" />
-      <scope id="6775599524324145874" at="76,55,77,51" />
-      <scope id="6775599524324145874" at="99,71,100,26" />
-      <scope id="6775599524324145874" at="102,76,103,16" />
-      <scope id="6775599524324145874" at="99,0,102,0">
+      <node id="6775599524324145874" at="78,55,79,51" concept="7" />
+      <node id="6775599524324145874" at="93,72,94,63" concept="6" />
+      <node id="6775599524324145874" at="94,63,95,66" concept="6" />
+      <node id="6775599524324145874" at="95,66,96,84" concept="2" />
+      <node id="6775599524324145874" at="96,84,97,17" concept="1" />
+      <node id="6775599524324145874" at="101,71,102,64" concept="7" />
+      <node id="6775599524324145874" at="102,64,103,0" concept="9" />
+      <node id="6775599524324145874" at="105,76,106,16" concept="7" />
+      <node id="6775599524324145874" at="105,0,108,0" concept="11" trace="getFileExtension_TypeSizeConfiguration#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="6775599524324145874" at="101,0,105,0" concept="11" trace="getFileName_TypeSizeConfiguration#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="6775599524324145874" at="92,58,98,7" concept="4" />
+      <scope id="6775599524324145874" at="78,55,79,51" />
+      <scope id="6775599524324145874" at="105,76,106,16" />
+      <scope id="6775599524324145874" at="101,71,103,0" />
+      <scope id="6775599524324145874" at="105,0,108,0">
         <var name="node" id="6775599524324145874" />
       </scope>
-      <scope id="6775599524324145874" at="102,0,105,0">
-        <var name="node" id="6775599524324145874" />
-      </scope>
-      <scope id="6775599524324145874" at="91,72,95,17">
+      <scope id="6775599524324145874" at="93,72,97,17">
         <var name="ext" id="6775599524324145874" />
         <var name="fname" id="6775599524324145874" />
+      </scope>
+      <scope id="6775599524324145874" at="101,0,105,0">
+        <var name="node" id="6775599524324145874" />
       </scope>
     </file>
     <file name="TypeSizeConfiguration_TextGen.java">
@@ -645,14 +648,14 @@
       <unit id="7808382574383157403" at="9,0,16,0" name="com.mbeddr.core.expressions.textGen.IntPtrT_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7808382574383157403" at="46,41,47,37" concept="7" />
-      <scope id="7808382574383157403" at="46,41,47,37" />
+      <node id="7808382574383157403" at="48,41,49,37" concept="7" />
+      <scope id="7808382574383157403" at="48,41,49,37" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/7808382574383161901">
     <file name="TextGenAspectDescriptor.java">
-      <node id="7808382574383161901" at="78,42,79,38" concept="7" />
-      <scope id="7808382574383161901" at="78,42,79,38" />
+      <node id="7808382574383161901" at="80,42,81,38" concept="7" />
+      <scope id="7808382574383161901" at="80,42,81,38" />
     </file>
     <file name="UIntPtrT_TextGen.java">
       <node id="7808382574383161901" at="11,54,12,55" concept="6" />
@@ -679,10 +682,10 @@
       <node id="785275130114812688" at="24,24,25,90" concept="2" />
       <node id="8084154624658141943" at="25,90,26,20" concept="2" />
       <node id="785275130114812661" at="27,30,28,181" concept="2" />
-      <node id="785275130114812661" at="33,0,34,0" concept="9" trace="condition$eFP3" />
-      <node id="785275130114812661" at="34,0,35,0" concept="9" trace="thenExpr$eG44" />
-      <node id="785275130114812661" at="35,0,36,0" concept="9" trace="elseExpr$eGj5" />
-      <node id="785275130114812661" at="39,0,40,0" concept="9" trace="TraceableConcept$L" />
+      <node id="785275130114812661" at="33,0,34,0" concept="10" trace="condition$eFP3" />
+      <node id="785275130114812661" at="34,0,35,0" concept="10" trace="thenExpr$eG44" />
+      <node id="785275130114812661" at="35,0,36,0" concept="10" trace="elseExpr$eGj5" />
+      <node id="785275130114812661" at="39,0,40,0" concept="10" trace="TraceableConcept$L" />
       <node id="785275130114812661" at="26,20,29,5" concept="4" />
       <node id="785275130114812661" at="16,0,31,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="785275130114812661" at="27,30,28,181" />
@@ -697,8 +700,8 @@
       <unit id="785275130114812661" at="15,0,42,0" name="com.mbeddr.core.expressions.textGen.TernaryExpression_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="785275130114812661" at="72,51,73,47" concept="7" />
-      <scope id="785275130114812661" at="72,51,73,47" />
+      <node id="785275130114812661" at="74,51,75,47" concept="7" />
+      <scope id="785275130114812661" at="74,51,75,47" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/8118534740657855653">
@@ -707,8 +710,8 @@
       <node id="8118534740657855658" at="17,55,18,99" concept="2" />
       <node id="2941277002449781646" at="19,85,20,30" concept="2" />
       <node id="2941277002447374791" at="22,82,23,27" concept="2" />
-      <node id="8118534740657855653" at="28,0,29,0" concept="9" trace="volatile$hJNe" />
-      <node id="8118534740657855653" at="29,0,30,0" concept="9" trace="const$VWr7" />
+      <node id="8118534740657855653" at="28,0,29,0" concept="10" trace="volatile$hJNe" />
+      <node id="8118534740657855653" at="29,0,30,0" concept="10" trace="const$VWr7" />
       <node id="2941277002449781643" at="18,99,21,5" concept="4" />
       <node id="2941277002447374775" at="21,5,24,5" concept="4" />
       <node id="8118534740657855653" at="15,0,26,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
@@ -724,21 +727,21 @@
       <unit id="8118534740657855653" at="14,0,32,0" name="com.mbeddr.core.expressions.textGen.PrimitiveType_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8118534740657855653" at="66,47,67,43" concept="7" />
-      <scope id="8118534740657855653" at="66,47,67,43" />
+      <node id="8118534740657855653" at="68,47,69,43" concept="7" />
+      <scope id="8118534740657855653" at="68,47,69,43" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/8118534740657855678">
     <file name="TextGenAspectDescriptor.java">
-      <node id="8118534740657855678" at="74,45,75,41" concept="7" />
-      <scope id="8118534740657855678" at="74,45,75,41" />
+      <node id="8118534740657855678" at="76,45,77,41" concept="7" />
+      <scope id="8118534740657855678" at="76,45,77,41" />
     </file>
     <file name="TrueLiteral_TextGen.java">
       <node id="8118534740657855678" at="15,54,16,55" concept="6" />
       <node id="8118534740657855678" at="16,55,17,29" concept="2" />
       <node id="8118534740657855683" at="17,29,18,23" concept="2" />
       <node id="8118534740657855678" at="19,30,20,181" concept="2" />
-      <node id="8118534740657855678" at="25,0,26,0" concept="9" trace="TraceableConcept$L" />
+      <node id="8118534740657855678" at="25,0,26,0" concept="10" trace="TraceableConcept$L" />
       <node id="8118534740657855678" at="18,23,21,5" concept="4" />
       <node id="8118534740657855678" at="14,0,23,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="8118534740657855678" at="19,30,20,181" />
@@ -758,8 +761,8 @@
       <node id="8118534740657855703" at="18,55,19,29" concept="2" />
       <node id="8118534740657855708" at="19,29,20,87" concept="2" />
       <node id="8118534740657855703" at="21,30,22,181" concept="2" />
-      <node id="8118534740657855703" at="27,0,28,0" concept="9" trace="value$qZmE" />
-      <node id="8118534740657855703" at="31,0,32,0" concept="9" trace="TraceableConcept$L" />
+      <node id="8118534740657855703" at="27,0,28,0" concept="10" trace="value$qZmE" />
+      <node id="8118534740657855703" at="31,0,32,0" concept="10" trace="TraceableConcept$L" />
       <node id="8118534740657855703" at="20,87,23,5" concept="4" />
       <node id="8118534740657855703" at="16,0,25,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="8118534740657855703" at="21,30,22,181" />
@@ -774,8 +777,8 @@
       <unit id="8118534740657855703" at="15,0,34,0" name="com.mbeddr.core.expressions.textGen.NumberLiteral_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8118534740657855703" at="50,47,51,43" concept="7" />
-      <scope id="8118534740657855703" at="50,47,51,43" />
+      <node id="8118534740657855703" at="52,47,53,43" concept="7" />
+      <scope id="8118534740657855703" at="52,47,53,43" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/8118534740657855716">
@@ -784,7 +787,7 @@
       <node id="8118534740657855716" at="16,55,17,29" concept="2" />
       <node id="8118534740657855721" at="17,29,18,24" concept="2" />
       <node id="8118534740657855716" at="19,30,20,181" concept="2" />
-      <node id="8118534740657855716" at="25,0,26,0" concept="9" trace="TraceableConcept$L" />
+      <node id="8118534740657855716" at="25,0,26,0" concept="10" trace="TraceableConcept$L" />
       <node id="8118534740657855716" at="18,24,21,5" concept="4" />
       <node id="8118534740657855716" at="14,0,23,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="8118534740657855716" at="19,30,20,181" />
@@ -798,8 +801,8 @@
       <unit id="8118534740657855716" at="13,0,28,0" name="com.mbeddr.core.expressions.textGen.FalseLiteral_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8118534740657855716" at="40,46,41,42" concept="7" />
-      <scope id="8118534740657855716" at="40,46,41,42" />
+      <node id="8118534740657855716" at="42,46,43,42" concept="7" />
+      <scope id="8118534740657855716" at="42,46,43,42" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/8118534740657855722">
@@ -810,8 +813,8 @@
       <node id="8118534740657855732" at="20,20,21,92" concept="2" />
       <node id="8118534740657855729" at="21,92,22,20" concept="2" />
       <node id="8118534740657855722" at="23,30,24,181" concept="2" />
-      <node id="8118534740657855722" at="29,0,30,0" concept="9" trace="expression$PfNq" />
-      <node id="8118534740657855722" at="33,0,34,0" concept="9" trace="TraceableConcept$L" />
+      <node id="8118534740657855722" at="29,0,30,0" concept="10" trace="expression$PfNq" />
+      <node id="8118534740657855722" at="33,0,34,0" concept="10" trace="TraceableConcept$L" />
       <node id="8118534740657855722" at="22,20,25,5" concept="4" />
       <node id="8118534740657855722" at="16,0,27,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="8118534740657855722" at="23,30,24,181" />
@@ -826,8 +829,8 @@
       <unit id="8118534740657855722" at="15,0,36,0" name="com.mbeddr.core.expressions.textGen.ParensExpression_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8118534740657855722" at="54,50,55,46" concept="7" />
-      <scope id="8118534740657855722" at="54,50,55,46" />
+      <node id="8118534740657855722" at="56,50,57,46" concept="7" />
+      <scope id="8118534740657855722" at="56,50,57,46" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/8118534740657855740">
@@ -846,9 +849,9 @@
       <node id="4132737653861533519" at="34,89,35,22" concept="2" />
       <node id="4132737653861533529" at="36,12,37,89" concept="2" />
       <node id="8118534740657855740" at="39,30,40,181" concept="2" />
-      <node id="8118534740657855740" at="45,0,46,0" concept="9" trace="left$SkXz" />
-      <node id="8118534740657855740" at="46,0,47,0" concept="9" trace="right$Slc$" />
-      <node id="8118534740657855740" at="50,0,51,0" concept="9" trace="TraceableConcept$L" />
+      <node id="8118534740657855740" at="45,0,46,0" concept="10" trace="left$SkXz" />
+      <node id="8118534740657855740" at="46,0,47,0" concept="10" trace="right$Slc$" />
+      <node id="8118534740657855740" at="50,0,51,0" concept="10" trace="TraceableConcept$L" />
       <node id="4132737653861533501" at="26,10,28,5" concept="0" />
       <node id="4132737653861533526" at="36,10,38,5" concept="0" />
       <node id="8118534740657855740" at="38,5,41,5" concept="4" />
@@ -871,8 +874,8 @@
       <unit id="8118534740657855740" at="17,0,53,0" name="com.mbeddr.core.expressions.textGen.BinaryExpression_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8118534740657855740" at="26,50,27,46" concept="7" />
-      <scope id="8118534740657855740" at="26,50,27,46" />
+      <node id="8118534740657855740" at="28,50,29,46" concept="7" />
+      <scope id="8118534740657855740" at="28,50,29,46" />
     </file>
   </root>
   <root nodeRef="r:9840bc62-cb31-4ef3-9c9b-2de91c97cc15(com.mbeddr.core.expressions.textGen)/938100142480316751">
@@ -882,8 +885,8 @@
       <node id="938100142480316755" at="19,29,20,20" concept="2" />
       <node id="938100142480316756" at="20,20,21,87" concept="2" />
       <node id="938100142480316751" at="22,30,23,181" concept="2" />
-      <node id="938100142480316751" at="28,0,29,0" concept="9" trace="value$qZmE" />
-      <node id="938100142480316751" at="32,0,33,0" concept="9" trace="TraceableConcept$L" />
+      <node id="938100142480316751" at="28,0,29,0" concept="10" trace="value$qZmE" />
+      <node id="938100142480316751" at="32,0,33,0" concept="10" trace="TraceableConcept$L" />
       <node id="938100142480316751" at="21,87,24,5" concept="4" />
       <node id="938100142480316751" at="16,0,26,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="938100142480316751" at="22,30,23,181" />
@@ -898,8 +901,8 @@
       <unit id="938100142480316751" at="15,0,35,0" name="com.mbeddr.core.expressions.textGen.OctalNumberLiteral_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="938100142480316751" at="52,52,53,48" concept="7" />
-      <scope id="938100142480316751" at="52,52,53,48" />
+      <node id="938100142480316751" at="54,52,55,48" concept="7" />
+      <scope id="938100142480316751" at="54,52,55,48" />
     </file>
   </root>
 </debug-info>

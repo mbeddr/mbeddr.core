@@ -20,7 +20,7 @@ public final class TextColorStyleProperty__BehaviorDescriptor extends BaseBHDesc
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1d891f7bdc9342f9L, 0xa4bcb016656b14e2L, 0x1c579c584dbce1d6L, "com.mbeddr.spreadsheet.structure.TextColorStyleProperty");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.r$ykvB, 0);

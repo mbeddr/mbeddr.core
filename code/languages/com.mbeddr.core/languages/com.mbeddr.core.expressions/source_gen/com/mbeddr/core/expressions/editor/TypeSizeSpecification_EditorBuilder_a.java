@@ -90,7 +90,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     }
   }
   private EditorCell createPartialTable_1() {
-    return createPartialTable_0(getEditorContext(), myNode);
+    return createPartialTable_0(getEditorContext(), getNode());
   }
   public Grid createStaticHorizontal_wt2she_a0(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();
@@ -283,7 +283,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   }
   public Grid createTableCell_wt2she_c0a(final EditorContext editorContext, final SNode node) {
 
-    EditorCell cell = createCheckbox_1();
+    EditorCell cell = createCheckbox_0();
     final Style style = new ITableStyleFactory() {
       public Style createStyle(final int columnIndex, final int rowIndex) {
         Style style = new StyleImpl();
@@ -306,12 +306,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
     return grid;
   }
-  private EditorCell createCheckbox_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCheckbox_0() {
     SProperty property = PROPS.exists$fsn2;
-    CellProviderWithRole provider = new CheckboxCellProvider(node, property, editorContext);
+    CellProviderWithRole provider = new CheckboxCellProvider(getNode(), property, getEditorContext());
     provider.setNoTargetText("<no exists>");
     EditorCell_Checkbox editorCell;
-    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(editorContext));
+    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(getEditorContext()));
     editorCell.setCellId("property_exists");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -319,9 +319,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createCheckbox_1() {
-    return createCheckbox_0(getEditorContext(), myNode);
   }
 
   private static final class LINKS {

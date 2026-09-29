@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.core.base.behavior.ICommentable__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -29,26 +27,24 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IModuleContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x595522006a5b934fL, "com.mbeddr.core.modules.structure.IModuleContent");
 
-  public static final SMethod<SNode> owningModule_id19a6$uAAaU1 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("owningModule").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317894735999315585L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Boolean> needsReferenceQualifier_id19a6$uAAaUR = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("needsReferenceQualifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317894735999315639L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> referenceQualifier_id19a6$uAAaUi = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("referenceQualifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317894735999315602L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Boolean> preventNameMangling_id5Oog2UbP_bT = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("preventNameMangling").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6708182213627106041L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> getMangledName_id19a6$uAAq0e = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMangledName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317894735999377422L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> getMangledName_idMToHDoMW9f = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMangledName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(916872689078747727L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Integer> sortWeight_id6W5EUuUE5hm = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("sortWeight").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7999989049973036118L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Iterable<SNode>> allReferencedModuleContents_id1zPfrUoUUqq = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allReferencedModuleContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1798411515023042202L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> kindString_id5KH1ziO54kR = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("kindString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6641971848870642999L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<SNode> createImportedProxy_id35NyAcQ9Xn = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createImportedProxy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(55677248263987031L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<List<SAbstractConcept>> getCommentConcept_id5HxjapwgqLb = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getCommentConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574603L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> isCommentable_id3RtPbXKOu_B = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCommentable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457953124863306087L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isSourceFileContent_id6rD2$2sc6_0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSourceFileContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7415469534056835392L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Boolean> isHeaderFileContent_id6rD2$2sc8kI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isHeaderFileContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7415469534056842542L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<SNode> owningModule_id19a6$uAAaU1 = new SMethodBuilder<>(SNode.class).name("owningModule").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317894735999315585L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> needsReferenceQualifier_id19a6$uAAaUR = new SMethodBuilder<>(Boolean.TYPE).name("needsReferenceQualifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317894735999315639L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(SNode.class, "sourceModule"));
+  public static final SMethod<String> referenceQualifier_id19a6$uAAaUi = new SMethodBuilder<>(String.class).name("referenceQualifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317894735999315602L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> preventNameMangling_id5Oog2UbP_bT = new SMethodBuilder<>(Boolean.TYPE).name("preventNameMangling").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6708182213627106041L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> getMangledName_id19a6$uAAq0e = new SMethodBuilder<>(String.class).name("getMangledName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317894735999377422L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> getMangledName_idMToHDoMW9f = new SMethodBuilder<>(String.class).name("getMangledName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(916872689078747727L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(String.class, "preMangledName"));
+  public static final SMethod<Integer> sortWeight_id6W5EUuUE5hm = new SMethodBuilder<>(Integer.TYPE).name("sortWeight").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7999989049973036118L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Iterable<SNode>> allReferencedModuleContents_id1zPfrUoUUqq = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allReferencedModuleContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1798411515023042202L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> kindString_id5KH1ziO54kR = new SMethodBuilder<>(String.class).name("kindString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6641971848870642999L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<SNode> createImportedProxy_id35NyAcQ9Xn = new SMethodBuilder<>(SNode.class).name("createImportedProxy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(55677248263987031L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<>(Boolean.TYPE).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<List<SAbstractConcept>> getCommentConcept_id5HxjapwgqLb = new SMethodBuilder<>((Class<List<SAbstractConcept>>) ((Class) Object.class)).name("getCommentConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574603L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isCommentable_id3RtPbXKOu_B = new SMethodBuilder<>(Boolean.TYPE).name("isCommentable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457953124863306087L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "trigger"));
+  public static final SMethod<Boolean> isSourceFileContent_id6rD2$2sc6_0 = new SMethodBuilder<>(Boolean.TYPE).name("isSourceFileContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7415469534056835392L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> isHeaderFileContent_id6rD2$2sc8kI = new SMethodBuilder<>(Boolean.TYPE).name("isHeaderFileContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7415469534056842542L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(owningModule_id19a6$uAAaU1, needsReferenceQualifier_id19a6$uAAaUR, referenceQualifier_id19a6$uAAaUi, preventNameMangling_id5Oog2UbP_bT, getMangledName_id19a6$uAAq0e, getMangledName_idMToHDoMW9f, sortWeight_id6W5EUuUE5hm, allReferencedModuleContents_id1zPfrUoUUqq, kindString_id5KH1ziO54kR, createImportedProxy_id35NyAcQ9Xn, exportable_id5HxjapwgqKI, getCommentConcept_id5HxjapwgqLb, isCommentable_id3RtPbXKOu_B, isSourceFileContent_id6rD2$2sc6_0, isHeaderFileContent_id6rD2$2sc8kI);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(owningModule_id19a6$uAAaU1, needsReferenceQualifier_id19a6$uAAaUR, referenceQualifier_id19a6$uAAaUi, preventNameMangling_id5Oog2UbP_bT, getMangledName_id19a6$uAAq0e, getMangledName_idMToHDoMW9f, sortWeight_id6W5EUuUE5hm, allReferencedModuleContents_id1zPfrUoUUqq, kindString_id5KH1ziO54kR, createImportedProxy_id35NyAcQ9Xn, exportable_id5HxjapwgqKI, getCommentConcept_id5HxjapwgqLb, isCommentable_id3RtPbXKOu_B, isSourceFileContent_id6rD2$2sc6_0, isHeaderFileContent_id6rD2$2sc8kI);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode owningModule_id19a6$uAAaU1(@NotNull SNode __thisNode__) {
     return SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.Module$fX, false, false);
@@ -113,10 +109,6 @@ public final class IModuleContent__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IModuleContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

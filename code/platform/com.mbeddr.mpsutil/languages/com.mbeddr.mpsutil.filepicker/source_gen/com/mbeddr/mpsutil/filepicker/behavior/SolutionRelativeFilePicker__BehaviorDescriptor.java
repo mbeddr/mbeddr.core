@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SModel;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -16,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -24,16 +22,14 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class SolutionRelativeFilePicker__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd3a0fd26445a466cL, 0x900e10444ddfed52L, 0x55705e73a687136fL, "com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker");
 
-  public static final SMethod<String> getErrorMessage_id5lKnBeAutg0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541422720000L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
-  public static final SMethod<String> getEditorPrefix_id5lKnBeAulu0 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEditorPrefix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541422688128L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
-  public static final SMethod<String> getPrefix_id6WnTJkDceu8 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrefix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8005120803306792840L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> pickFileOnly_id48DzgHgr2tO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("pickFileOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4767496760281802612L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
-  public static final SMethod<SNode> getCompanionFileOrFolderPicker_id3xqp6yeWGLu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getCompanionFileOrFolderPicker").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4060668414265576542L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<String> getErrorMessage_id5lKnBeAutg0 = new SMethodBuilder<>(String.class).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541422720000L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<String> getEditorPrefix_id5lKnBeAulu0 = new SMethodBuilder<>(String.class).name("getEditorPrefix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541422688128L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<String> getPrefix_id6WnTJkDceu8 = new SMethodBuilder<>(String.class).name("getPrefix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8005120803306792840L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2(SMethodBuilder.createJavaParameter(SModel.class, "originalModel"));
+  public static final SMethod<Boolean> pickFileOnly_id48DzgHgr2tO = new SMethodBuilder<>(Boolean.TYPE).name("pickFileOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4767496760281802612L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<SNode> getCompanionFileOrFolderPicker_id3xqp6yeWGLu = new SMethodBuilder<>(SNode.class).name("getCompanionFileOrFolderPicker").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4060668414265576542L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getErrorMessage_id5lKnBeAutg0, getEditorPrefix_id5lKnBeAulu0, getPrefix_id6WnTJkDceu8, pickFileOnly_id48DzgHgr2tO, getCompanionFileOrFolderPicker_id3xqp6yeWGLu);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getErrorMessage_id5lKnBeAutg0, getEditorPrefix_id5lKnBeAulu0, getPrefix_id6WnTJkDceu8, pickFileOnly_id48DzgHgr2tO, getCompanionFileOrFolderPicker_id3xqp6yeWGLu);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getErrorMessage_id5lKnBeAutg0(@NotNull SNode __thisNode__) {
     return "not a valid file path relative to solution root " + AbstractPicker__BehaviorDescriptor.getPrefix_id5lKnBeAIfOh.invoke(__thisNode__);
@@ -56,10 +52,6 @@ public final class SolutionRelativeFilePicker__BehaviorDescriptor extends BaseBH
   /*package*/ SolutionRelativeFilePicker__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

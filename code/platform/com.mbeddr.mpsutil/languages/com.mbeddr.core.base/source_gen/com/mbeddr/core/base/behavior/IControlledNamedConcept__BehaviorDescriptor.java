@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -29,19 +27,17 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class IControlledNamedConcept__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x2b2ef3be77b48f18L, "com.mbeddr.core.base.structure.IControlledNamedConcept");
 
-  public static final SMethod<Boolean> automaticallySyncPrescribedType_id7ii2FhSDlTM = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("automaticallySyncPrescribedType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8399788025233890930L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> requiresSuffix_id2tP2JaaUk87 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requiresSuffix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2843190776583242247L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> constantsOnly_id2tP2Jab4RYq = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("constantsOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2843190776586010522L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> nonConstantsOnly_idjEMQfWmgfG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("nonConstantsOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(354319150997898220L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> hasControlledName_id36fOCWjiYoY = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasControlledName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3571304541473990206L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<SNode> nameController_id36fOCWjj0uC = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("nameController").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3571304541473998760L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> attachControlledName_id7Xe2aeU2QVC = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("attachControlledName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9173278990294281960L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> allowLocalLanguageSupport_id3x8oZgKaOZT = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowLocalLanguageSupport").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4055601364878446585L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> automaticallySyncPrescribedType_id7ii2FhSDlTM = new SMethodBuilder<>(Boolean.TYPE).name("automaticallySyncPrescribedType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8399788025233890930L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> requiresSuffix_id2tP2JaaUk87 = new SMethodBuilder<>(Boolean.TYPE).name("requiresSuffix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2843190776583242247L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> constantsOnly_id2tP2Jab4RYq = new SMethodBuilder<>(Boolean.TYPE).name("constantsOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2843190776586010522L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> nonConstantsOnly_idjEMQfWmgfG = new SMethodBuilder<>(Boolean.TYPE).name("nonConstantsOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(354319150997898220L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> hasControlledName_id36fOCWjiYoY = new SMethodBuilder<>(Boolean.TYPE).name("hasControlledName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3571304541473990206L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> nameController_id36fOCWjj0uC = new SMethodBuilder<>(SNode.class).name("nameController").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3571304541473998760L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> attachControlledName_id7Xe2aeU2QVC = new SMethodBuilder<>(Void.TYPE).name("attachControlledName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9173278990294281960L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "cn"));
+  public static final SMethod<Boolean> allowLocalLanguageSupport_id3x8oZgKaOZT = new SMethodBuilder<>(Boolean.TYPE).name("allowLocalLanguageSupport").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4055601364878446585L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(automaticallySyncPrescribedType_id7ii2FhSDlTM, requiresSuffix_id2tP2JaaUk87, constantsOnly_id2tP2Jab4RYq, nonConstantsOnly_idjEMQfWmgfG, hasControlledName_id36fOCWjiYoY, nameController_id36fOCWjj0uC, attachControlledName_id7Xe2aeU2QVC, allowLocalLanguageSupport_id3x8oZgKaOZT);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(automaticallySyncPrescribedType_id7ii2FhSDlTM, requiresSuffix_id2tP2JaaUk87, constantsOnly_id2tP2Jab4RYq, nonConstantsOnly_idjEMQfWmgfG, hasControlledName_id36fOCWjiYoY, nameController_id36fOCWjj0uC, attachControlledName_id7Xe2aeU2QVC, allowLocalLanguageSupport_id3x8oZgKaOZT);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean automaticallySyncPrescribedType_id7ii2FhSDlTM(@NotNull SNode __thisNode__) {
     return true;
@@ -73,10 +69,6 @@ public final class IControlledNamedConcept__BehaviorDescriptor extends BaseBHDes
   /*package*/ IControlledNamedConcept__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

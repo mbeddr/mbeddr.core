@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,14 +23,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class DataItem__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x449df48f7ad4e2fcL, "com.mbeddr.core.util.structure.DataItem");
 
-  public static final SMethod<String> genDataItemBufferVarName_id1M41OHscgpo = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genDataItemBufferVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2054775350238447192L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<String> genDataItemTraceVarName_id1M41OHsbKOM = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genDataItemTraceVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2054775350238317874L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<String> genDataItemTimeVarName_id1jbG5O9L9EL = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genDataItemTimeVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1498485214673148593L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<String> genDataItemBufferTypeName_id1M41OHsbtHK = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genDataItemBufferTypeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2054775350238239600L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<String> genDataItemTraceTypeName_id1M41OHsclTU = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genDataItemTraceTypeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2054775350238469754L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<String> genDataItemTimeTypeName_id1jbG5O9Lbw2 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genDataItemTimeTypeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1498485214673156098L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genDataItemBufferVarName_id1M41OHscgpo = new SMethodBuilder<>(String.class).name("genDataItemBufferVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2054775350238447192L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genDataItemTraceVarName_id1M41OHsbKOM = new SMethodBuilder<>(String.class).name("genDataItemTraceVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2054775350238317874L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genDataItemTimeVarName_id1jbG5O9L9EL = new SMethodBuilder<>(String.class).name("genDataItemTimeVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1498485214673148593L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genDataItemBufferTypeName_id1M41OHsbtHK = new SMethodBuilder<>(String.class).name("genDataItemBufferTypeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2054775350238239600L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genDataItemTraceTypeName_id1M41OHsclTU = new SMethodBuilder<>(String.class).name("genDataItemTraceTypeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2054775350238469754L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genDataItemTimeTypeName_id1jbG5O9Lbw2 = new SMethodBuilder<>(String.class).name("genDataItemTimeTypeName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1498485214673156098L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genDataItemBufferVarName_id1M41OHscgpo, genDataItemTraceVarName_id1M41OHsbKOM, genDataItemTimeVarName_id1jbG5O9L9EL, genDataItemBufferTypeName_id1M41OHsbtHK, genDataItemTraceTypeName_id1M41OHsclTU, genDataItemTimeTypeName_id1jbG5O9Lbw2);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genDataItemBufferVarName_id1M41OHscgpo, genDataItemTraceVarName_id1M41OHsbKOM, genDataItemTimeVarName_id1jbG5O9L9EL, genDataItemBufferTypeName_id1M41OHsbtHK, genDataItemTraceTypeName_id1M41OHsclTU, genDataItemTimeTypeName_id1jbG5O9Lbw2);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.active$F8DW, true);

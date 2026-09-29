@@ -14,8 +14,8 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import javax.swing.SwingUtilities;
 
 /**
- * I regularly reevaluate the callable that was provided to this cell ({@link com.mbeddr.mpsutil.asynccell.plugin.EditorCell_Async#getAsyncValueCallable() }.
- * If it returns a non-null value, I update the cell and remove it from {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellManager }.
+ * I regularly reevaluate the callable that was provided to this cell (  {@link com.mbeddr.mpsutil.asynccell.plugin.EditorCell_Async#getAsyncValueCallable()} .
+ * If it returns a non-null value, I update the cell and remove it from {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellManager} .
  */
 public class AsyncCellUpdater {
   private static final Logger LOG = Logger.getLogger(AsyncCellUpdater.class);
@@ -25,7 +25,7 @@ public class AsyncCellUpdater {
   private final Timer _timer = new Timer(this.CHECK_INTERVAL, (ActionEvent evt) -> AsyncCellUpdater.this.scheduleReevaluation());
 
   /**
-   * Start checking if the cells' computation finished every {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellUpdater#CHECK_INTERVAL }
+   * Start checking if the cells' computation finished every {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellUpdater#CHECK_INTERVAL} 
    */
   public void start() {
     _timer.start();
@@ -36,7 +36,7 @@ public class AsyncCellUpdater {
   }
 
   /**
-   * Stop checking every {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellUpdater#CHECK_INTERVAL }
+   * Stop checking every {@link com.mbeddr.mpsutil.asynccell.plugin.AsyncCellUpdater#CHECK_INTERVAL} 
    */
   public void stop() {
     _timer.stop();

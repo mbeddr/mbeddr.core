@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:bfca2182-02d8-4063-be80-0f6682fdecc0(com.mbeddr.mpsutil.editingGuide.editor)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
@@ -33,6 +34,9 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
@@ -1209,9 +1213,9 @@
                     <node concept="3clFbF" id="PYICs0TD_4" role="3cqZAp">
                       <node concept="2OqwBi" id="PYICs0TDNH" role="3clFbG">
                         <node concept="pncrf" id="PYICs0TD_3" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="PYICs0TF3W" role="2OqNvi">
+                        <node concept="3zqWPK" id="4qMlRGRnhA7" role="2OqNvi">
                           <ref role="37wK5l" to="l4gp:PYICs0TAVo" resolve="getPresentationForPrefix" />
-                          <node concept="Xl_RD" id="PYICs0TFHU" role="37wK5m">
+                          <node concept="Xl_RD" id="4qMlRGRnhA9" role="37wK5m">
                             <property role="Xl_RC" value="" />
                           </node>
                         </node>
@@ -1660,9 +1664,9 @@
                     <node concept="2OqwBi" id="44LrdWQ46AF" role="2Oq$k0">
                       <node concept="2OqwBi" id="PYICs12eGq" role="2Oq$k0">
                         <node concept="pncrf" id="PYICs12erp" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="PYICs12fa5" role="2OqNvi">
+                        <node concept="3zqWPK" id="4qMlRGRnhAc" role="2OqNvi">
                           <ref role="37wK5l" to="l4gp:22irgSmHAOg" resolve="getProvidedNodes" />
-                          <node concept="35c_gC" id="PYICs12hn4" role="37wK5m">
+                          <node concept="35c_gC" id="4qMlRGRnhAe" role="37wK5m">
                             <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
                           </node>
                         </node>

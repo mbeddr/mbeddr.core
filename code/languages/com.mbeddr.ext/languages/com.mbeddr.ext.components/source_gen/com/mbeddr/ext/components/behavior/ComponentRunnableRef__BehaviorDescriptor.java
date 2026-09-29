@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -17,7 +16,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -27,12 +25,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class ComponentRunnableRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x7f76b5152d36160cL, "com.mbeddr.ext.components.structure.ComponentRunnableRef");
 
-  public static final SMethod<String> signatureInfo_id7XQHhkHdyqA = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("signatureInfo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9184727592626169510L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> signatureInfo_id7XQHhkHdyqA = new SMethodBuilder<>(String.class).name("signatureInfo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9184727592626169510L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(signatureInfo_id7XQHhkHdyqA);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(signatureInfo_id7XQHhkHdyqA);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String signatureInfo_id7XQHhkHdyqA(@NotNull SNode __thisNode__) {
     String res = "signature: ";
@@ -50,10 +46,6 @@ public final class ComponentRunnableRef__BehaviorDescriptor extends BaseBHDescri
   /*package*/ ComponentRunnableRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

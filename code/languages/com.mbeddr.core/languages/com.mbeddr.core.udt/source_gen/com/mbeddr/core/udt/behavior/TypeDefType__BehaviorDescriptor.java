@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -17,7 +16,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.expressions.behavior.Type__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -28,17 +26,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class TypeDefType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xefda956e491e4f00L, 0xba1436af2f213ecfL, 0x54e261614fd09a17L, "com.mbeddr.core.udt.structure.TypeDefType");
 
-  public static final SMethod<Void> rebindToProxy_id7jSUHHvkApb = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("rebindToProxy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856331L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> referencedModuleContent_id7jSUHHvkAph = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("referencedModuleContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856337L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> getPrintfFormatSpecifier_id4XMHJL4FDjg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrintfFormatSpecifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5724839270941627600L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getDeclaration_id59zzgFRcVlN = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDeclaration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5936743812040996211L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Void> rebindToProxy_id7jSUHHvkApb = new SMethodBuilder<>(Void.TYPE).name("rebindToProxy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856331L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "proxyElement"));
+  public static final SMethod<SNode> referencedModuleContent_id7jSUHHvkAph = new SMethodBuilder<>(SNode.class).name("referencedModuleContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8428744930541856337L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getPrintfFormatSpecifier_id4XMHJL4FDjg = new SMethodBuilder<>(String.class).name("getPrintfFormatSpecifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5724839270941627600L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<>(Integer.TYPE).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getDeclaration_id59zzgFRcVlN = new SMethodBuilder<>(SNode.class).name("getDeclaration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5936743812040996211L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(rebindToProxy_id7jSUHHvkApb, referencedModuleContent_id7jSUHHvkAph, getPrintfFormatSpecifier_id4XMHJL4FDjg, getPresentation_idhEwIMiw, getUsedBytes_id61lw97FtLtJ, getDeclaration_id59zzgFRcVlN);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(rebindToProxy_id7jSUHHvkApb, referencedModuleContent_id7jSUHHvkAph, getPrintfFormatSpecifier_id4XMHJL4FDjg, getPresentation_idhEwIMiw, getUsedBytes_id61lw97FtLtJ, getDeclaration_id59zzgFRcVlN);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void rebindToProxy_id7jSUHHvkApb(@NotNull SNode __thisNode__, SNode proxyElement) {
     SLinkOperations.setTarget(__thisNode__, LINKS.typeDef$LmRK, SNodeOperations.cast(proxyElement, CONCEPTS.TypeDef$QP));
@@ -67,10 +63,6 @@ public final class TypeDefType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TypeDefType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -21,24 +20,21 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ITracerFrame__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x47f075a6558e4640L, 0xa6067ce0236c8023L, 0x760b48e4e8391c1fL, "com.mbeddr.mpsutil.interpreter.structure.ITracerFrame");
 
-  public static final SMethod<Boolean> isFrame_id7obiejCehQ6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isFrame").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8505972469205114246L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<List<SNode>> referencedNodes_id7lHetQxJqtN = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("referencedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8461482898963146611L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<String> renderTraceSyntax_id5Beavy0LkEa = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderTraceSyntax").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6471155861867022986L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<List<SNode>> additionallyShownNodes_id5Beavy19lGt = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("additionallyShownNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6471155861873318685L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<ITraceRecord> constructCustomFrame_id2kg0xI3thT2 = new SMethodBuilder<ITraceRecord>(new SJavaCompoundTypeImpl(ITraceRecord.class)).name("constructCustomFrame").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2670636896223567426L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(ITraceRecord.class, ""), SMethodBuilder.createJavaParameter(ITraceRecord.class, ""));
-  public static final SMethod<Boolean> isMajor_id5U8d23PSzWx = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isMajor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6811751752566718241L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Boolean> isFrame_id7obiejCehQ6 = new SMethodBuilder<>(Boolean.TYPE).name("isFrame").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8505972469205114246L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<List<SNode>> referencedNodes_id7lHetQxJqtN = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("referencedNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8461482898963146611L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<String> renderTraceSyntax_id5Beavy0LkEa = new SMethodBuilder<>(String.class).name("renderTraceSyntax").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6471155861867022986L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<List<SNode>> additionallyShownNodes_id5Beavy19lGt = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("additionallyShownNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6471155861873318685L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<ITraceRecord> constructCustomFrame_id2kg0xI3thT2 = new SMethodBuilder<>(ITraceRecord.class).name("constructCustomFrame").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2670636896223567426L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(ITraceRecord.class, "parent"), SMethodBuilder.createJavaParameter(ITraceRecord.class, "original"));
+  public static final SMethod<Boolean> isMajor_id5U8d23PSzWx = new SMethodBuilder<>(Boolean.TYPE).name("isMajor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6811751752566718241L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isFrame_id7obiejCehQ6, referencedNodes_id7lHetQxJqtN, renderTraceSyntax_id5Beavy0LkEa, additionallyShownNodes_id5Beavy19lGt, constructCustomFrame_id2kg0xI3thT2, isMajor_id5U8d23PSzWx);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isFrame_id7obiejCehQ6, referencedNodes_id7lHetQxJqtN, renderTraceSyntax_id5Beavy0LkEa, additionallyShownNodes_id5Beavy19lGt, constructCustomFrame_id2kg0xI3thT2, isMajor_id5U8d23PSzWx);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isFrame_id7obiejCehQ6(@NotNull SNode __thisNode__) {
     return true;
@@ -67,10 +63,6 @@ public final class ITracerFrame__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ITracerFrame__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

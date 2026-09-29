@@ -20,7 +20,7 @@ public class EnumerationDescriptor_EFontStyle extends EnumerationDescriptorBase 
   private final EnumerationDescriptor.MemberDescriptor myMember_Italic_0 = new EnumerationDescriptor.MemberDescriptor("Italic", "Italic", 0x452c726380755acaL, "r:3a350e23-1ecf-4b26-b501-4772d34dff84(com.mbeddr.mpsutil.resources.structure)/1286599818956595602");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xa4007360b8a64b5bL, 0xa6481c43f0a1cf5dL, 0x452c726380755ac8L, 0x452c726380755acfL, 0x452c726380755ac9L, 0x452c726380755acaL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_Plain_0, myMember_Bold_0, myMember_Italic_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_Plain_0, myMember_Bold_0, myMember_Italic_0);
 
   @Nullable
   @Override

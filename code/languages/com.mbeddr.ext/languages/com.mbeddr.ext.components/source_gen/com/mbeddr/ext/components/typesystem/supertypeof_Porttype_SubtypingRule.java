@@ -28,9 +28,6 @@ public class supertypeof_Porttype_SubtypingRule extends SubtypingRule_Runtime im
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createPointerType_7v0ln5_a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.PointerType$HX);
     n0.forChild(LINKS.baseType$zMGV).init(CONCEPTS.VoidType$GT);

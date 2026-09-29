@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -15,7 +14,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.math.BigInteger;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -23,14 +21,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ModuloExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x26d9c9de7721b2b0L, "com.mbeddr.core.expressions.structure.ModuloExpression");
 
-  public static final SMethod<Boolean> isStaticallyEvaluatable_id3ilck8Kr3zN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isStaticallyEvaluatable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3788988821852141811L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Object> evaluateStatically_id6OxpEKG0KPv = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("evaluateStatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7863679314024402271L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isStaticallyEvaluatable_id3ilck8Kr3zN = new SMethodBuilder<>(Boolean.TYPE).name("isStaticallyEvaluatable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3788988821852141811L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Object> evaluateStatically_id6OxpEKG0KPv = new SMethodBuilder<>(Object.class).name("evaluateStatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7863679314024402271L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Integer> getPriolevel_id5HxjapwgqKu = new SMethodBuilder<>(Integer.TYPE).name("getPriolevel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574558L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isStaticallyEvaluatable_id3ilck8Kr3zN, evaluateStatically_id6OxpEKG0KPv, getPriolevel_id5HxjapwgqKu);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isStaticallyEvaluatable_id3ilck8Kr3zN, evaluateStatically_id6OxpEKG0KPv, getPriolevel_id5HxjapwgqKu);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isStaticallyEvaluatable_id3ilck8Kr3zN(@NotNull SNode __thisNode__) {
     if (!((boolean) Expression__BehaviorDescriptor.isStaticallyEvaluatable_id3ilck8Kr3zN.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.left$SkXz)) && (boolean) Expression__BehaviorDescriptor.isStaticallyEvaluatable_id3ilck8Kr3zN.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.right$Slc$)))) {
@@ -60,10 +56,6 @@ public final class ModuloExpression__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ ModuloExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

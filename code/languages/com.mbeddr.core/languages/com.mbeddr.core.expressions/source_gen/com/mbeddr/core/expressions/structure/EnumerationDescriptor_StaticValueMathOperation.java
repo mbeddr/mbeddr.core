@@ -22,7 +22,7 @@ public class EnumerationDescriptor_StaticValueMathOperation extends EnumerationD
   private final EnumerationDescriptor.MemberDescriptor myMember_floor_0 = new EnumerationDescriptor.MemberDescriptor("floor", "floor", 0x232671d0f9e7b8d2L, "r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)/1214029888595741761");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x232671d0f97dd746L, 0x232671d0f97dd8c5L, 0x232671d0f97dd9ebL, 0x232671d0f97dd9e4L, 0x232671d0f97dd9e7L, 0x232671d0f9e7b8d2L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_none_0, myMember_round_0, myMember_trunc_0, myMember_ceil_0, myMember_floor_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_none_0, myMember_round_0, myMember_trunc_0, myMember_ceil_0, myMember_floor_0);
 
   @Nullable
   @Override

@@ -13,7 +13,7 @@
       <unit at="11,0,66,0" name="com.mbeddr.doc.terms.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,36,0" name="com.mbeddr.doc.terms.structure.LanguageConceptSwitch" />
+      <unit at="12,0,44,0" name="com.mbeddr.doc.terms.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="15,0,121,0" name="com.mbeddr.doc.terms.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="1233689874746925900" at="46,54,53,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1233689874746925900" at="15,0,16,0" concept="6" trace="TermRelationshipText" />
-      <node id="1233689874746925900" at="22,50,23,59" concept="0" />
+      <node id="1233689874746925900" at="17,0,18,0" concept="6" trace="TermRelationshipText" />
+      <node id="1233689874746925900" at="24,50,25,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1233689874746925900" at="19,0,20,0" concept="1" trace="myConceptTermRelationshipText" />
@@ -71,8 +71,8 @@
       <scope id="2588579461811878239" at="54,49,61,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2588579461811878239" at="16,0,17,0" concept="6" trace="TermsConfigItem" />
-      <node id="2588579461811878239" at="23,59,24,54" concept="0" />
+      <node id="2588579461811878239" at="18,0,19,0" concept="6" trace="TermsConfigItem" />
+      <node id="2588579461811878239" at="25,59,26,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2588579461811878239" at="20,0,21,0" concept="1" trace="myConceptTermsConfigItem" />
@@ -106,8 +106,8 @@
       <scope id="4224548511521359213" at="23,49,29,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4224548511521359213" at="12,0,13,0" concept="6" trace="GlossaryPointer" />
-      <node id="4224548511521359213" at="19,116,20,54" concept="0" />
+      <node id="4224548511521359213" at="14,0,15,0" concept="6" trace="GlossaryPointer" />
+      <node id="4224548511521359213" at="21,116,22,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4224548511521359213" at="16,0,17,0" concept="1" trace="myConceptGlossaryPointer" />
@@ -143,8 +143,8 @@
       <scope id="8574110643282370464" at="38,45,45,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8574110643282370464" at="14,0,15,0" concept="6" trace="TermRefWord" />
-      <node id="8574110643282370464" at="21,55,22,50" concept="0" />
+      <node id="8574110643282370464" at="16,0,17,0" concept="6" trace="TermRefWord" />
+      <node id="8574110643282370464" at="23,55,24,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8574110643282370464" at="18,0,19,0" concept="1" trace="myConceptTermRefWord" />
@@ -181,8 +181,8 @@
       <scope id="8574110643282425937" at="30,50,37,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8574110643282425937" at="13,0,14,0" concept="6" trace="TermDefParagraph" />
-      <node id="8574110643282425937" at="20,54,21,55" concept="0" />
+      <node id="8574110643282425937" at="15,0,16,0" concept="6" trace="TermDefParagraph" />
+      <node id="8574110643282425937" at="22,54,23,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8574110643282425937" at="17,0,18,0" concept="1" trace="myConceptTermDefParagraph" />

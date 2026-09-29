@@ -63,7 +63,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_5jh2xi_1");
     editorCell.addEditorCell(createConstant_0());
-    editorCell.addEditorCell(createQueryList_1());
+    editorCell.addEditorCell(createQueryList_0());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -72,18 +72,15 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_0() {
 
-    QueryListHandler handler = new QueryListHandler_5jh2xi_b0a(editorContext, node, false);
+    QueryListHandler handler = new QueryListHandler_5jh2xi_b0a(getEditorContext(), getNode(), false);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
     editorCell.setTargeConcept(CONCEPTS.EntryAction$nF);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_5jh2xi_0");
     return editorCell;
 
-  }
-  private EditorCell createQueryList_1() {
-    return createQueryList_0(getEditorContext(), myNode);
   }
   private static class QueryListHandler_5jh2xi_b0a extends QueryListHandler {
     /**
@@ -181,7 +178,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_5jh2xi_2");
     editorCell.addEditorCell(createConstant_1());
-    editorCell.addEditorCell(createQueryList_3());
+    editorCell.addEditorCell(createQueryList_1());
     return editorCell;
   }
   private EditorCell createConstant_1() {
@@ -190,18 +187,15 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createQueryList_2(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_1() {
 
-    QueryListHandler handler = new QueryListHandler_5jh2xi_b1a(editorContext, node, false);
+    QueryListHandler handler = new QueryListHandler_5jh2xi_b1a(getEditorContext(), getNode(), false);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
     editorCell.setTargeConcept(CONCEPTS.ExitAction$mF);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_5jh2xi_1");
     return editorCell;
 
-  }
-  private EditorCell createQueryList_3() {
-    return createQueryList_2(getEditorContext(), myNode);
   }
   private static class QueryListHandler_5jh2xi_b1a extends QueryListHandler {
     /**
@@ -299,7 +293,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_5jh2xi_3");
     editorCell.addEditorCell(createConstant_2());
-    editorCell.addEditorCell(createQueryList_5());
+    editorCell.addEditorCell(createQueryList_2());
     return editorCell;
   }
   private EditorCell createConstant_2() {
@@ -308,18 +302,15 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createQueryList_4(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_2() {
 
-    QueryListHandler handler = new QueryListHandler_5jh2xi_b2a(editorContext, node, false);
+    QueryListHandler handler = new QueryListHandler_5jh2xi_b2a(getEditorContext(), getNode(), false);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
     editorCell.setTargeConcept(CONCEPTS.DoAction$D6);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_5jh2xi_2");
     return editorCell;
 
-  }
-  private EditorCell createQueryList_5() {
-    return createQueryList_4(getEditorContext(), myNode);
   }
   private static class QueryListHandler_5jh2xi_b2a extends QueryListHandler {
     /**

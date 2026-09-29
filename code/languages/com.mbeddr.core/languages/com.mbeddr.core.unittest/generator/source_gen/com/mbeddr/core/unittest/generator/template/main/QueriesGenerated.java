@@ -52,7 +52,6 @@ import com.mbeddr.core.modules.behavior.IFunctionLike__BehaviorDescriptor;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import com.mbeddr.core.modules.behavior.ImplementationModule__BehaviorDescriptor;
 import com.mbeddr.mpsutil.genutil.plugin.GenerationHelper;
-import jetbrains.mps.textgen.trace.TracingUtil;
 import jetbrains.mps.generator.template.TemplateQueryContext;
 import com.mbeddr.core.buildconfig.behavior.BCHelper;
 import jetbrains.mps.generator.template.TemplateVarContext;
@@ -1383,7 +1382,7 @@ __switch__:
     if (GenerationHelper.isXModelGen(_context.getOriginalInputModel()) && Sequence.fromIterable(SLinkOperations.collectMany(bc, LINKS.binaries$R6lf)).isEmpty()) {
       // needed in case of cross model generation that the later stages know what to copy into the module
       // the actual implementation will be provided of the model with the binary.
-      SModelOperations.addRootNode(_context.getModel(), TracingUtil.copyWithTrace(SPointerOperations.resolveNode(new SNodePointer("r:5ed6e5dc-ec13-45f6-960b-a889d781d323(com.mbeddr.core.unittest.runtime)", "5355719375892477208"), _context.getModel().getRepository())));
+      SModelOperations.addRootNode(_context.getModel(), _context.copyWithTrace(SPointerOperations.resolveNode(new SNodePointer("r:5ed6e5dc-ec13-45f6-960b-a889d781d323(com.mbeddr.core.unittest.runtime)", "5355719375892477208"), _context.getModel().getRepository())));
     }
 
   }

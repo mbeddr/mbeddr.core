@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -22,12 +20,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class TestCollectionRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d68b77b6994918L, 0x83b8857e63787800L, 0x75f299eb98c904eaL, "com.mbeddr.core.unittest.structure.TestCollectionRef");
 
-  public static final SMethod<SNode> referencedTest_iddkANm6s0zG = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("referencedTest").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(239987334348540140L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<SNode> referencedTest_iddkANm6s0zG = new SMethodBuilder<>(SNode.class).name("referencedTest").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(239987334348540140L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(referencedTest_iddkANm6s0zG);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(referencedTest_iddkANm6s0zG);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode referencedTest_iddkANm6s0zG(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.collection$WXIa);
@@ -36,10 +32,6 @@ public final class TestCollectionRef__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ TestCollectionRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

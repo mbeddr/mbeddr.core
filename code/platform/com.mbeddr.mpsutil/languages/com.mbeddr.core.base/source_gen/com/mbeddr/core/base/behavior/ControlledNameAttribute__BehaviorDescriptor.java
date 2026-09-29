@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,13 +23,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ControlledNameAttribute__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x2b2ef3be77b50cf1L, "com.mbeddr.core.base.structure.ControlledNameAttribute");
 
-  public static final SMethod<String> effectiveName_id2tP2JaaH8i3 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("effectiveName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2843190776579785859L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> genHandleDeletion_id5oJ9AK5Fdpm = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("genHandleDeletion").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6210224656560739926L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> effectiveName_id2tP2JaaH8i3 = new SMethodBuilder<>(String.class).name("effectiveName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2843190776579785859L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> genHandleDeletion_id5oJ9AK5Fdpm = new SMethodBuilder<>(Void.TYPE).name("genHandleDeletion").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6210224656560739926L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "node"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(effectiveName_id2tP2JaaH8i3, genHandleDeletion_id5oJ9AK5Fdpm);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(effectiveName_id2tP2JaaH8i3, genHandleDeletion_id5oJ9AK5Fdpm);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String effectiveName_id2tP2JaaH8i3(@NotNull SNode __thisNode__) {
     if (SLinkOperations.getTarget(__thisNode__, LINKS.suffix$6Vre) != null) {
@@ -48,10 +44,6 @@ public final class ControlledNameAttribute__BehaviorDescriptor extends BaseBHDes
   /*package*/ ControlledNameAttribute__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

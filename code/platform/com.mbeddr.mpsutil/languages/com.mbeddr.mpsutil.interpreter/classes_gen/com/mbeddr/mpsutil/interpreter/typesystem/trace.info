@@ -2012,31 +2012,27 @@
       <node id="8845772667422145597" at="45,50,46,41" concept="8" />
       <node id="8845772667422145597" at="48,68,49,102" concept="8" />
       <node id="8845772667422145597" at="51,27,52,17" concept="8" />
-      <node id="8845772667422145597" at="54,39,55,16" concept="8" />
-      <node id="8845772667422145597" at="59,0,60,0" concept="10" trace="classifier$cxMr" />
-      <node id="8845772667422145597" at="60,0,61,0" concept="10" trace="concept$OMgE" />
-      <node id="8845772667422145597" at="61,0,62,0" concept="10" trace="keyType$cmqk" />
-      <node id="8845772667422145597" at="62,0,63,0" concept="10" trace="valueType$hLQn" />
-      <node id="8845772667422145597" at="66,0,67,0" concept="10" trace="BaseConcept$gP" />
-      <node id="8845772667422145597" at="67,0,68,0" concept="10" trace="EnvExpressionType$VY" />
+      <node id="8845772667422145597" at="56,0,57,0" concept="10" trace="classifier$cxMr" />
+      <node id="8845772667422145597" at="57,0,58,0" concept="10" trace="concept$OMgE" />
+      <node id="8845772667422145597" at="58,0,59,0" concept="10" trace="keyType$cmqk" />
+      <node id="8845772667422145597" at="59,0,60,0" concept="10" trace="valueType$hLQn" />
+      <node id="8845772667422145597" at="63,0,64,0" concept="10" trace="BaseConcept$gP" />
+      <node id="8845772667422145597" at="64,0,65,0" concept="10" trace="EnvExpressionType$VY" />
       <node id="8845772667422145597" at="23,0,25,0" concept="1" trace="superType_of_EnvType_SubtypingRule#()V" />
       <node id="8845772667422145597" at="45,0,48,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8845772667422145597" at="48,0,51,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="8845772667422145597" at="51,0,54,0" concept="6" trace="isWeak#()Z" />
-      <node id="8845772667422145597" at="54,0,57,0" concept="6" trace="surelyKeepsConcept#()Z" />
       <node id="8845772667422145597" at="25,0,45,0" concept="6" trace="getSubOrSuperTypes#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Ljava/util/List;" />
       <scope id="8845772667422145597" at="23,47,23,47" />
       <scope id="8845772667422145597" at="45,50,46,41" />
       <scope id="8845772667422145597" at="48,68,49,102" />
       <scope id="8845772667422145597" at="51,27,52,17" />
-      <scope id="8845772667422145597" at="54,39,55,16" />
       <scope id="8845772667422145597" at="23,0,25,0" />
       <scope id="8845772667422145597" at="45,0,48,0" />
       <scope id="8845772667422145597" at="48,0,51,0">
         <var name="argument" id="8845772667422145597" />
       </scope>
       <scope id="8845772667422145597" at="51,0,54,0" />
-      <scope id="8845772667422145597" at="54,0,57,0" />
       <scope id="8845772667422145598" at="25,134,43,15">
         <var name="environmentType" id="8845772667422148483" />
         <var name="keyType" id="8845772667422190030" />
@@ -2049,9 +2045,9 @@
         <var name="status" id="8845772667422145597" />
         <var name="typeCheckingContext" id="8845772667422145597" />
       </scope>
-      <unit id="8845772667422145597" at="65,0,69,0" name="com.mbeddr.mpsutil.interpreter.typesystem.superType_of_EnvType_SubtypingRule$CONCEPTS" />
-      <unit id="8845772667422145597" at="58,0,64,0" name="com.mbeddr.mpsutil.interpreter.typesystem.superType_of_EnvType_SubtypingRule$LINKS" />
-      <unit id="8845772667422145597" at="22,0,70,0" name="com.mbeddr.mpsutil.interpreter.typesystem.superType_of_EnvType_SubtypingRule" />
+      <unit id="8845772667422145597" at="62,0,66,0" name="com.mbeddr.mpsutil.interpreter.typesystem.superType_of_EnvType_SubtypingRule$CONCEPTS" />
+      <unit id="8845772667422145597" at="55,0,61,0" name="com.mbeddr.mpsutil.interpreter.typesystem.superType_of_EnvType_SubtypingRule$LINKS" />
+      <unit id="8845772667422145597" at="22,0,67,0" name="com.mbeddr.mpsutil.interpreter.typesystem.superType_of_EnvType_SubtypingRule" />
     </file>
   </root>
 </debug-info>

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.plantuml.node.behavior.VisGraph;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.mbeddr.core.modules.behavior.ModuleContentDepHelper;
 import com.mbeddr.core.base.behavior.IRequiresConfigItem__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -31,19 +29,17 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class Interface__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x3e5659cd94a25d77L, "com.mbeddr.ext.components.structure.Interface");
 
-  public static final SMethod<String> genStructName_id4WLtQa9fEO8 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genStructName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5706473467948215560L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Iterable<SNode>> allReferencedModuleContents_id1zPfrUoUUqq = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allReferencedModuleContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1798411515023042202L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Boolean> canBeUsedInMultipleRP_id2ZUGF54k3cG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeUsedInMultipleRP").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3457272138385339180L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Boolean> hasProtocol_id5oFMniD9Ori = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasProtocol").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014151673554L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<String[]>(new SJavaCompoundTypeImpl(String[].class)).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
-  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(VisGraph.class, ""));
-  public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> genStructName_id4WLtQa9fEO8 = new SMethodBuilder<>(String.class).name("genStructName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5706473467948215560L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Iterable<SNode>> allReferencedModuleContents_id1zPfrUoUUqq = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allReferencedModuleContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1798411515023042202L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> canBeUsedInMultipleRP_id2ZUGF54k3cG = new SMethodBuilder<>(Boolean.TYPE).name("canBeUsedInMultipleRP").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3457272138385339180L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> hasProtocol_id5oFMniD9Ori = new SMethodBuilder<>(Boolean.TYPE).name("hasProtocol").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014151673554L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<>(String[].class).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
+  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<>(Void.TYPE).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, "category"), SMethodBuilder.createJavaParameter(VisGraph.class, "graph"));
+  public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<>(SNode.class).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genStructName_id4WLtQa9fEO8, allReferencedModuleContents_id1zPfrUoUUqq, canBeUsedInMultipleRP_id2ZUGF54k3cG, hasProtocol_id5oFMniD9Ori, getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, getConfigItem_id5HxjapwgqMb, createType_id3o2OLGv7CoR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genStructName_id4WLtQa9fEO8, allReferencedModuleContents_id1zPfrUoUUqq, canBeUsedInMultipleRP_id2ZUGF54k3cG, hasProtocol_id5oFMniD9Ori, getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, getConfigItem_id5HxjapwgqMb, createType_id3o2OLGv7CoR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String genStructName_id4WLtQa9fEO8(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + "__idata";
@@ -70,10 +66,6 @@ public final class Interface__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Interface__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

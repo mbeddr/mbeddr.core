@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-cu66tsq39k6xnyt4em37qlaqkhr2taf">
+<product version="3" modelHash="9x6hvzvsmur4iejcapmnwt9dg4c5nd9">
   <files names="ExtensionDescriptor.java:ILanguageProvider.java:MultilingualApplicationPlugin_AppPluginPart.java:MultilingualCommonPluginHelper.java:MultilingualCommonUtil.java:MultilingualLanguageProvider.java:MultilingualResourceBundleProvider.java:Runtime_ApplicationPlugin.java" />
 </product>
 

@@ -57,6 +57,9 @@
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -262,7 +265,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -847,7 +849,7 @@
                 <node concept="3xONca" id="2BbcAuIk8Ws" role="2Oq$k0">
                   <ref role="3xOPvv" node="2BbcAuIjWe7" resolve="sumJ2" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEs6Wz" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAsC" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -860,7 +862,7 @@
                 <node concept="3xONca" id="2BbcAuIk92O" role="2Oq$k0">
                   <ref role="3xOPvv" node="2BbcAuIjWZo" resolve="mult2" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEs5Uo" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAsE" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -871,7 +873,7 @@
                 <node concept="3xONca" id="2BbcAuIkhNM" role="2Oq$k0">
                   <ref role="3xOPvv" node="2BbcAuIjVUB" resolve="sumI2" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzErPDM" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAsG" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:6KLCBzCT3Mj" resolve="getDebuggerKeyAsString" />
                 </node>
               </node>
@@ -884,7 +886,7 @@
                 <node concept="3xONca" id="2BbcAuIkio4" role="2Oq$k0">
                   <ref role="3xOPvv" node="2BbcAuIjWe7" resolve="sumJ2" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzErO3u" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAsI" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:6KLCBzCT3Mj" resolve="getDebuggerKeyAsString" />
                 </node>
               </node>
@@ -1031,7 +1033,7 @@
                 <node concept="3xONca" id="2BbcAuIkiQi" role="2Oq$k0">
                   <ref role="3xOPvv" node="2BbcAuIjWe7" resolve="sumJ2" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEs1U2" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAsK" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -1044,7 +1046,7 @@
                 <node concept="3xONca" id="2BbcAuIkiQq" role="2Oq$k0">
                   <ref role="3xOPvv" node="2BbcAuIjWZo" resolve="mult2" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzErZYM" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAsM" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -1055,7 +1057,7 @@
                 <node concept="3xONca" id="2BbcAuIkiQy" role="2Oq$k0">
                   <ref role="3xOPvv" node="2BbcAuIjVUB" resolve="sumI2" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzErMif" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAsO" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:6KLCBzCT3Mj" resolve="getDebuggerKeyAsString" />
                 </node>
               </node>
@@ -1068,7 +1070,7 @@
                 <node concept="3xONca" id="2BbcAuIkiQE" role="2Oq$k0">
                   <ref role="3xOPvv" node="2BbcAuIjWe7" resolve="sumJ2" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzErK$6" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAsQ" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:6KLCBzCT3Mj" resolve="getDebuggerKeyAsString" />
                 </node>
               </node>
@@ -1146,7 +1148,7 @@
                 <node concept="3xONca" id="2BbcAuIkmN6" role="2Oq$k0">
                   <ref role="3xOPvv" node="2BbcAuIjWe7" resolve="sumJ2" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzErXn8" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAsS" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -1159,7 +1161,7 @@
                 <node concept="3xONca" id="2BbcAuIkmNe" role="2Oq$k0">
                   <ref role="3xOPvv" node="2BbcAuIjWZo" resolve="mult2" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzErUzi" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAsU" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -1170,7 +1172,7 @@
                 <node concept="3xONca" id="2BbcAuIkmNm" role="2Oq$k0">
                   <ref role="3xOPvv" node="2BbcAuIjVUB" resolve="sumI2" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzErIVN" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAsW" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:6KLCBzCT3Mj" resolve="getDebuggerKeyAsString" />
                 </node>
               </node>
@@ -1183,7 +1185,7 @@
                 <node concept="3xONca" id="2BbcAuIkmNu" role="2Oq$k0">
                   <ref role="3xOPvv" node="2BbcAuIjWe7" resolve="sumJ2" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzErFsz" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAsY" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:6KLCBzCT3Mj" resolve="getDebuggerKeyAsString" />
                 </node>
               </node>
@@ -1750,7 +1752,7 @@
                 <node concept="3xONca" id="2nXykL7vL5I" role="2Oq$k0">
                   <ref role="3xOPvv" node="54R_Vj4DjTH" resolve="sumI" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEqBnr" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAt0" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:6KLCBzCT3Mj" resolve="getDebuggerKeyAsString" />
                 </node>
               </node>
@@ -1763,7 +1765,7 @@
                 <node concept="3xONca" id="2nXykL7vNW7" role="2Oq$k0">
                   <ref role="3xOPvv" node="54R_Vj4DjT$" resolve="doublesum" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEqG1B" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAt2" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:6KLCBzCT3Mj" resolve="getDebuggerKeyAsString" />
                 </node>
               </node>
@@ -1776,7 +1778,7 @@
                 <node concept="3xONca" id="2nXykL7vO1V" role="2Oq$k0">
                   <ref role="3xOPvv" node="54R_Vj4DjTt" resolve="sumK" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEqI5F" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAt4" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:6KLCBzCT3Mj" resolve="getDebuggerKeyAsString" />
                 </node>
               </node>
@@ -1793,7 +1795,7 @@
                 <node concept="3xONca" id="2nXykL7sU99" role="2Oq$k0">
                   <ref role="3xOPvv" node="54R_Vj4DmAu" resolve="result" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEqMjK" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAt6" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -1806,7 +1808,7 @@
                 <node concept="3xONca" id="2nXykL7sVpR" role="2Oq$k0">
                   <ref role="3xOPvv" node="54R_Vj4DjTH" resolve="sumI" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEqONY" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAt8" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -1819,7 +1821,7 @@
                 <node concept="3xONca" id="2nXykL7sWQi" role="2Oq$k0">
                   <ref role="3xOPvv" node="54R_Vj4DjTE" resolve="sumIBody" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEqV5X" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAta" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -1832,7 +1834,7 @@
                 <node concept="3xONca" id="2nXykL7sX1v" role="2Oq$k0">
                   <ref role="3xOPvv" node="54R_Vj4DjT$" resolve="doublesum" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEqXam" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAtc" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -1845,7 +1847,7 @@
                 <node concept="3xONca" id="2nXykL7sX77" role="2Oq$k0">
                   <ref role="3xOPvv" node="5jFg7j$agMR" resolve="doublesumBody" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEr0Rx" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAte" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -1858,7 +1860,7 @@
                 <node concept="3xONca" id="2nXykL7sXie" role="2Oq$k0">
                   <ref role="3xOPvv" node="54R_Vj4DjTt" resolve="sumK" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEr3nc" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAtg" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -1871,7 +1873,7 @@
                 <node concept="3xONca" id="2nXykL7sXow" role="2Oq$k0">
                   <ref role="3xOPvv" node="54R_Vj4DjTq" resolve="sumKBody" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEr5QZ" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAti" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -1884,7 +1886,7 @@
                 <node concept="3xONca" id="2nXykL7sXuq" role="2Oq$k0">
                   <ref role="3xOPvv" node="54R_Vj4DjTx" resolve="paramMult" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzEr8mJ" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAtk" role="2OqNvi">
                   <ref role="37wK5l" to="hwgx:1c0z7yfFkqB" resolve="getDebuggerValueAsString" />
                 </node>
               </node>
@@ -2092,7 +2094,7 @@
                     <node concept="37vLTw" id="2nXykL7sJYR" role="2Oq$k0">
                       <ref role="3cqZAo" node="2nXykL7sJ5e" resolve="debuggable" />
                     </node>
-                    <node concept="2qgKlT" id="6KLCBzErco8" role="2OqNvi">
+                    <node concept="3zqWPK" id="4qMlRGRqAtm" role="2OqNvi">
                       <ref role="37wK5l" to="hwgx:1c0z7yfF2FB" resolve="getDebuggerValueSource" />
                     </node>
                   </node>
@@ -2113,13 +2115,13 @@
             <node concept="37vLTw" id="6KLCBzErnLo" role="2Oq$k0">
               <ref role="3cqZAo" node="2nXykL7sJ5e" resolve="debuggable" />
             </node>
-            <node concept="2qgKlT" id="6KLCBzErrGP" role="2OqNvi">
+            <node concept="3zqWPK" id="4qMlRGRqAto" role="2OqNvi">
               <ref role="37wK5l" to="hwgx:6KLCBzCT5Dv" resolve="setDebuggerKeyFromString" />
-              <node concept="2OqwBi" id="6KLCBzErtwh" role="37wK5m">
-                <node concept="37vLTw" id="6KLCBzErtuX" role="2Oq$k0">
+              <node concept="2OqwBi" id="4qMlRGRqAtq" role="37wK5m">
+                <node concept="37vLTw" id="4qMlRGRqAtr" role="2Oq$k0">
                   <ref role="3cqZAo" node="2nXykL8eZzN" resolve="key" />
                 </node>
-                <node concept="2qgKlT" id="6KLCBzErv$W" role="2OqNvi">
+                <node concept="3zqWPK" id="vtBku4LxMQ" role="2OqNvi">
                   <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                 </node>
               </node>
@@ -2152,7 +2154,7 @@
                   <node concept="37vLTw" id="2BbcAuIkbAC" role="2Oq$k0">
                     <ref role="3cqZAo" node="2BbcAuIkbkj" resolve="debuggable" />
                   </node>
-                  <node concept="2qgKlT" id="6KLCBzErBuc" role="2OqNvi">
+                  <node concept="3zqWPK" id="4qMlRGRqAtv" role="2OqNvi">
                     <ref role="37wK5l" to="hwgx:1c0z7yfF2FB" resolve="getDebuggerValueSource" />
                   </node>
                 </node>
@@ -2171,7 +2173,7 @@
                         <node concept="37vLTw" id="2BbcAuIkbm9" role="2Oq$k0">
                           <ref role="3cqZAo" node="2SR9xrsN2$8" resolve="it" />
                         </node>
-                        <node concept="2qgKlT" id="2BbcAuIkbma" role="2OqNvi">
+                        <node concept="3zqWPK" id="4qMlRGRqAtx" role="2OqNvi">
                           <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                         </node>
                       </node>

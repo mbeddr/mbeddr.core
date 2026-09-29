@@ -24,7 +24,7 @@ public final class ReadHandler__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xbb0ad88b63cd45fdL, 0xae278662d274cf3cL, 0x1c55392e757b8673L, "com.mbeddr.ext.serialization.structure.ReadHandler");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.arguments$6da0)).addElement(createArgument_70auha_a0a0a0());

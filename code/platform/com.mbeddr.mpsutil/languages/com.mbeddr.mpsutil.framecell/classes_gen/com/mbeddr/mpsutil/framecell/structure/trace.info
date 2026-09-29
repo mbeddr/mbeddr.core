@@ -13,7 +13,7 @@
       <unit at="11,0,30,0" name="com.mbeddr.mpsutil.framecell.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,28,0" name="com.mbeddr.mpsutil.framecell.structure.LanguageConceptSwitch" />
+      <unit at="12,0,36,0" name="com.mbeddr.mpsutil.framecell.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,62,0" name="com.mbeddr.mpsutil.framecell.structure.StructureAspectDescriptor" />
@@ -33,8 +33,8 @@
       <scope id="8760592470373336790" at="19,53,25,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8760592470373336790" at="12,0,13,0" concept="6" trace="CellModel_FrameCell" />
-      <node id="8760592470373336790" at="15,116,16,58" concept="0" />
+      <node id="8760592470373336790" at="14,0,15,0" concept="6" trace="CellModel_FrameCell" />
+      <node id="8760592470373336790" at="17,116,18,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8760592470373336790" at="15,0,16,0" concept="1" trace="myConceptCellModel_FrameCell" />

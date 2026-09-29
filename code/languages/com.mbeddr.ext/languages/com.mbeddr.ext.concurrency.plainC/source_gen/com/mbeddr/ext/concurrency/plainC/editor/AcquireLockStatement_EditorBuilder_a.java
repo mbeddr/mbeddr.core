@@ -60,7 +60,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createConstant_0());
-    editorCell.addEditorCell(createBooleanText_1());
+    editorCell.addEditorCell(createBooleanText_0());
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createRefCell_0());
     editorCell.addEditorCell(createConstant_2());
@@ -75,14 +75,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createBooleanText_0(EditorContext editorContext, SNode node) {
+  private EditorCell createBooleanText_0() {
     SProperty property = PROPS.readLock$4_gz;
-    BooleanTextCellProvider provider = new BooleanTextCellProvider(node, property, editorContext);
+    BooleanTextCellProvider provider = new BooleanTextCellProvider(getNode(), property, getEditorContext());
     provider.setTrueText("read");
     provider.setFalseText("write");
     provider.setNoTargetText("<no readLock>");
     EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
+    editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_readLock");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -90,9 +90,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createBooleanText_1() {
-    return createBooleanText_0(getEditorContext(), myNode);
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "lock");

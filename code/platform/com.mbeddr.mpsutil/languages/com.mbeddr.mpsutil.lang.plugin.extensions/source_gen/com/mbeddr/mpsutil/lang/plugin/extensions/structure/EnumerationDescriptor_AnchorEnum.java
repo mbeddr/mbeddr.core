@@ -21,7 +21,7 @@ public class EnumerationDescriptor_AnchorEnum extends EnumerationDescriptorBase 
   private final EnumerationDescriptor.MemberDescriptor myMember_after_0 = new EnumerationDescriptor.MemberDescriptor("after", "after", 0x29f7163891a13f5fL, "r:ff7cab72-4f58-4133-a2c4-5d907d3fafb0(com.mbeddr.mpsutil.lang.plugin.extensions.structure)/1286599818956595582");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x58e731a36aaa444aL, 0xbf40801b91c15878L, 0x29f71638919f3765L, 0x29f71638919f3766L, 0x29f7163891a13f58L, 0x29f7163891a13f5bL, 0x29f7163891a13f5fL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_first_0, myMember_last_0, myMember_before_0, myMember_after_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_first_0, myMember_last_0, myMember_before_0, myMember_after_0);
 
   @Nullable
   @Override

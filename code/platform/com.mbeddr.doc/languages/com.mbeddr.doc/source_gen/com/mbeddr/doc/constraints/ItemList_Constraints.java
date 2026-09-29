@@ -4,6 +4,7 @@ package com.mbeddr.doc.constraints;
 
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 import jetbrains.mps.logging.Logger;
+import jetbrains.mps.smodel.runtime.ConstraintsDescriptorInitContext;
 import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -11,21 +12,20 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.util.NameUtil;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import java.util.Map;
-import org.jetbrains.mps.openapi.language.SProperty;
-import jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor;
-import java.util.HashMap;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public class ItemList_Constraints extends BaseConstraintsDescriptor {
   private static final Logger LOG = Logger.getLogger(ItemList_Constraints.class);
-  public ItemList_Constraints() {
-    super(CONCEPTS.ItemList$TV);
+  /*package*/ ItemList_Constraints(ConstraintsDescriptorInitContext initContext) {
+    super(CONCEPTS.ItemList$TV, initContext);
+    record(new Ordered_PD(this));
+    record(new Name_PD(this));
   }
 
-  public static class Ordered_Property extends BasePropertyConstraintsDescriptor {
-    public Ordered_Property(ConstraintsDescriptor container) {
+  /*package*/ static final class Ordered_PD extends BasePropertyConstraintsDescriptor {
+    public Ordered_PD(ConstraintsDescriptor container) {
       super(PROPS.ordered$_PLP, container, true, true, false);
     }
     @Override
@@ -49,21 +49,14 @@ public class ItemList_Constraints extends BaseConstraintsDescriptor {
       node.setProperty("ordered", (((Object) propertyValue) != null ? ((Object) propertyValue).toString() : null));
     }
   }
-  public static class Name_Property extends BasePropertyConstraintsDescriptor {
-    public Name_Property(ConstraintsDescriptor container) {
+  /*package*/ static final class Name_PD extends BasePropertyConstraintsDescriptor {
+    public Name_PD(ConstraintsDescriptor container) {
       super(PROPS.name$MnvL, container, true, false, false);
     }
     @Override
     public Object getValue(SNode node) {
       return NameUtil.toValidIdentifier(SConceptOperations.conceptAlias(SNodeOperations.getConcept(node))) + "_" + SNodeOperations.getIndexInParent(node);
     }
-  }
-  @Override
-  protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
-    Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(PROPS.ordered$_PLP, new Ordered_Property(this));
-    properties.put(PROPS.name$MnvL, new Name_Property(this));
-    return properties;
   }
 
   private static final class CONCEPTS {

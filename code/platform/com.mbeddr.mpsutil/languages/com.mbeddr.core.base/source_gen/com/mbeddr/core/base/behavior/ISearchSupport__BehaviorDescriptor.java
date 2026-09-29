@@ -7,28 +7,24 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ISearchSupport__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x4d98b0a500585e3L, "com.mbeddr.core.base.structure.ISearchSupport");
 
-  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsText").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> getResultNode_id4ueXZrqtaGB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getResultNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5156331262984891175L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("resultName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> resultNamespace_idjpyKDg2TXB = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("resultNamespace").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506796903L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<>(Boolean.TYPE).name("containsText").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "text"));
+  public static final SMethod<SNode> getResultNode_id4ueXZrqtaGB = new SMethodBuilder<>(SNode.class).name("getResultNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5156331262984891175L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<>(String.class).name("resultName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> resultNamespace_idjpyKDg2TXB = new SMethodBuilder<>(String.class).name("resultNamespace").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506796903L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(containsText_idjpyKDg1onB, getResultNode_id4ueXZrqtaGB, resultName_idjpyKDg1pW5, resultNamespace_idjpyKDg2TXB);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(containsText_idjpyKDg1onB, getResultNode_id4ueXZrqtaGB, resultName_idjpyKDg1pW5, resultNamespace_idjpyKDg2TXB);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getResultNode_id4ueXZrqtaGB(@NotNull SNode __thisNode__) {
     return __thisNode__;
@@ -41,10 +37,6 @@ public final class ISearchSupport__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ISearchSupport__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

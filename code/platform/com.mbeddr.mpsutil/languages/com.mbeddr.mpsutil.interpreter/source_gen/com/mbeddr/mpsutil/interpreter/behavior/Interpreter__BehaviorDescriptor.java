@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Set;
@@ -32,7 +31,6 @@ import java.util.ArrayList;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.internal.collections.runtime.NotNullWhereFilter;
 import jetbrains.mps.internal.collections.runtime.IterableUtils;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -43,24 +41,22 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class Interpreter__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x47f075a6558e4640L, 0xa6067ce0236c8023L, 0x778ee47a6de672eaL, "com.mbeddr.mpsutil.interpreter.structure.Interpreter");
 
-  public static final SMethod<String> getFqClassName_id4X7QcQ4uRS$ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFqClassName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5712773029545344548L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<String> genClassName_id3iWeQsv_hZU = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genClassName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3799977499691393018L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<Iterable<SNode>> effectiveEvaluators_id2bBLuwRtGtC = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("effectiveEvaluators").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2515196518063327080L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<Iterable<SNode>> collectAllRelationships_id5LSSDsNyu1z = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("collectAllRelationships").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787727261795L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<Set<SNode>> collectRelatedInterpreters_id27SkbdyRYmk = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("collectRelatedInterpreters").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2447795128864073108L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<List<SNode>> listOrderedRelationships_id27SkbdyMwT$ = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("listOrderedRelationships").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2447795128862641764L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  /*package*/ static final SMethod<Void> setupRelationshipSorter_id27SkbdyNmGh = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setupRelationshipSorter").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(2447795128862862097L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(InterpreterSorter.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<List<SNode>> listSortedEvaluators_id5x677oPooet = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("listSortedEvaluators").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6360802817734706077L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<Set<SNode>> collectRelatedTypeMappings_id5LSSDsNz8Zb = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("collectRelatedTypeMappings").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787727437771L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<Set<SNode>> collectAllTypeMappings_id5LSSDsN_VcY = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("collectAllTypeMappings").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787728167742L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<List<SNode>> collectRelatedEvaluators_id5LSSDsN$l14 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("collectRelatedEvaluators").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787727749188L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<List<SNode>> collectAllEvaluators_id5LSSDsNAP6a = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("collectAllEvaluators").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787728404874L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<String> evaluatedLanguagesList_id3WUcYJ3sgIU = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("evaluatedLanguagesList").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4556011060727974842L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<String> getFqClassName_id4X7QcQ4uRS$ = new SMethodBuilder<>(String.class).name("getFqClassName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5712773029545344548L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<String> genClassName_id3iWeQsv_hZU = new SMethodBuilder<>(String.class).name("genClassName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3799977499691393018L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Iterable<SNode>> effectiveEvaluators_id2bBLuwRtGtC = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("effectiveEvaluators").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2515196518063327080L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Iterable<SNode>> collectAllRelationships_id5LSSDsNyu1z = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("collectAllRelationships").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787727261795L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Set<SNode>> collectRelatedInterpreters_id27SkbdyRYmk = new SMethodBuilder<>((Class<Set<SNode>>) ((Class) Object.class)).name("collectRelatedInterpreters").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2447795128864073108L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<List<SNode>> listOrderedRelationships_id27SkbdyMwT$ = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("listOrderedRelationships").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2447795128862641764L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  /*package*/ static final SMethod<Void> setupRelationshipSorter_id27SkbdyNmGh = new SMethodBuilder<>(Void.TYPE).name("setupRelationshipSorter").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(2447795128862862097L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(InterpreterSorter.class, "sorter"), SMethodBuilder.createJavaParameter(SNode.class, "interpreter"));
+  public static final SMethod<List<SNode>> listSortedEvaluators_id5x677oPooet = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("listSortedEvaluators").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6360802817734706077L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Set<SNode>> collectRelatedTypeMappings_id5LSSDsNz8Zb = new SMethodBuilder<>((Class<Set<SNode>>) ((Class) Object.class)).name("collectRelatedTypeMappings").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787727437771L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Set<SNode>> collectAllTypeMappings_id5LSSDsN_VcY = new SMethodBuilder<>((Class<Set<SNode>>) ((Class) Object.class)).name("collectAllTypeMappings").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787728167742L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<List<SNode>> collectRelatedEvaluators_id5LSSDsN$l14 = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("collectRelatedEvaluators").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787727749188L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<List<SNode>> collectAllEvaluators_id5LSSDsNAP6a = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("collectAllEvaluators").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6663324787728404874L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<String> evaluatedLanguagesList_id3WUcYJ3sgIU = new SMethodBuilder<>(String.class).name("evaluatedLanguagesList").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4556011060727974842L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFqClassName_id4X7QcQ4uRS$, genClassName_id3iWeQsv_hZU, effectiveEvaluators_id2bBLuwRtGtC, collectAllRelationships_id5LSSDsNyu1z, collectRelatedInterpreters_id27SkbdyRYmk, listOrderedRelationships_id27SkbdyMwT$, setupRelationshipSorter_id27SkbdyNmGh, listSortedEvaluators_id5x677oPooet, collectRelatedTypeMappings_id5LSSDsNz8Zb, collectAllTypeMappings_id5LSSDsN_VcY, collectRelatedEvaluators_id5LSSDsN$l14, collectAllEvaluators_id5LSSDsNAP6a, evaluatedLanguagesList_id3WUcYJ3sgIU);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFqClassName_id4X7QcQ4uRS$, genClassName_id3iWeQsv_hZU, effectiveEvaluators_id2bBLuwRtGtC, collectAllRelationships_id5LSSDsNyu1z, collectRelatedInterpreters_id27SkbdyRYmk, listOrderedRelationships_id27SkbdyMwT$, setupRelationshipSorter_id27SkbdyNmGh, listSortedEvaluators_id5x677oPooet, collectRelatedTypeMappings_id5LSSDsNz8Zb, collectAllTypeMappings_id5LSSDsN_VcY, collectRelatedEvaluators_id5LSSDsN$l14, collectAllEvaluators_id5LSSDsNAP6a, evaluatedLanguagesList_id3WUcYJ3sgIU);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getFqClassName_id4X7QcQ4uRS$(@NotNull SNode __thisNode__) {
     SModel model = SNodeOperations.getModel(__thisNode__);
@@ -164,10 +160,6 @@ public final class Interpreter__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Interpreter__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

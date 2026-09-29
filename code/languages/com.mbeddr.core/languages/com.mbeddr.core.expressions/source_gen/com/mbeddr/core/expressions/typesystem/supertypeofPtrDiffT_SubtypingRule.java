@@ -27,9 +27,6 @@ public class supertypeofPtrDiffT_SubtypingRule extends SubtypingRule_Runtime imp
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept PtrDiffT$la = MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x53c3e7e064be63d6L, "com.mbeddr.core.expressions.structure.PtrDiffT");

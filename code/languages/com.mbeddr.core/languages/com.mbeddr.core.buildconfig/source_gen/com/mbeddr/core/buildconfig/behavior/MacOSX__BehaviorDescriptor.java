@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,9 +21,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class MacOSX__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x4bff969e1ef9cbf4L, "com.mbeddr.core.buildconfig.structure.MacOSX");
 
-  public static final SMethod<String> getArchitecture_id4JZ_DSvFz7s = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getArchitecture").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5476261277786321372L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<String> getArchitecture_id4JZ_DSvFz7s = new SMethodBuilder<>(String.class).name("getArchitecture").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5476261277786321372L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getArchitecture_id4JZ_DSvFz7s);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getArchitecture_id4JZ_DSvFz7s);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.name$MnvL, SystemHelper.OS_FAMILY_NAME_MACOSX);
