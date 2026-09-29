@@ -9,7 +9,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -376,20 +376,14 @@
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
@@ -2565,9 +2559,63 @@
         </node>
       </node>
       <node concept="z59LJ" id="1URh_kuCPI2" role="lGtFl">
-        <node concept="TZ5HA" id="1URh_kuCPI3" role="TZ5H$">
-          <node concept="1dT_AC" id="1URh_kuCPI4" role="1dT_Ay">
-            <property role="1dT_AB" value="This property currently only allows temporary disabling of context actions based on a particular context (based on pushed hints)" />
+        <node concept="1PaTwC" id="3VVgDkJfGTB" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGTC" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTD" role="1PaTwD">
+            <property role="3oM_SC" value="property" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTE" role="1PaTwD">
+            <property role="3oM_SC" value="currently" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTF" role="1PaTwD">
+            <property role="3oM_SC" value="only" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTG" role="1PaTwD">
+            <property role="3oM_SC" value="allows" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTH" role="1PaTwD">
+            <property role="3oM_SC" value="temporary" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTI" role="1PaTwD">
+            <property role="3oM_SC" value="disabling" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTJ" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTK" role="1PaTwD">
+            <property role="3oM_SC" value="context" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTL" role="1PaTwD">
+            <property role="3oM_SC" value="actions" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTM" role="1PaTwD">
+            <property role="3oM_SC" value="based" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTN" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTO" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTP" role="1PaTwD">
+            <property role="3oM_SC" value="particular" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTQ" role="1PaTwD">
+            <property role="3oM_SC" value="context" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTR" role="1PaTwD">
+            <property role="3oM_SC" value="(based" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTS" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTT" role="1PaTwD">
+            <property role="3oM_SC" value="pushed" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGTU" role="1PaTwD">
+            <property role="3oM_SC" value="hints)" />
           </node>
         </node>
       </node>
@@ -3201,9 +3249,39 @@
       </node>
       <node concept="P$JXv" id="PeUK68Lhr1" role="lGtFl">
         <node concept="TZ5HI" id="PeUK68Lhr2" role="3nqlJM">
-          <node concept="TZ5HA" id="PeUK68Lhr3" role="3HnX3l">
-            <node concept="1dT_AC" id="PeUK68LD86" role="1dT_Ay">
-              <property role="1dT_AB" value="Not necessary anymore. Tool now updates itself when it is opened." />
+          <node concept="1PaTwC" id="3VVgDkJfGTV" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfGTW" role="1PaTwD">
+              <property role="3oM_SC" value="Not" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGTX" role="1PaTwD">
+              <property role="3oM_SC" value="necessary" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGTY" role="1PaTwD">
+              <property role="3oM_SC" value="anymore." />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGTZ" role="1PaTwD">
+              <property role="3oM_SC" value="Tool" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGU0" role="1PaTwD">
+              <property role="3oM_SC" value="now" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGU1" role="1PaTwD">
+              <property role="3oM_SC" value="updates" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGU2" role="1PaTwD">
+              <property role="3oM_SC" value="itself" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGU3" role="1PaTwD">
+              <property role="3oM_SC" value="when" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGU4" role="1PaTwD">
+              <property role="3oM_SC" value="it" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGU5" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGU6" role="1PaTwD">
+              <property role="3oM_SC" value="opened." />
             </node>
           </node>
         </node>
@@ -13726,44 +13804,293 @@
       <ref role="3uigEE" to="z60i:~FlowLayout" resolve="FlowLayout" />
     </node>
     <node concept="3UR2Jj" id="7vUP_qcI0K_" role="lGtFl">
-      <node concept="TZ5HA" id="7vUP_qcI0KG" role="TZ5H$">
-        <node concept="1dT_AC" id="7vUP_qcI0KH" role="1dT_Ay">
-          <property role="1dT_AB" value=" When using a component with a normal FlowLayout at the North or South" />
+      <node concept="1PaTwC" id="3VVgDkJfGS4" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGS5" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGS6" role="1PaTwD">
+          <property role="3oM_SC" value="When" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGS7" role="1PaTwD">
+          <property role="3oM_SC" value="using" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGS8" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGS9" role="1PaTwD">
+          <property role="3oM_SC" value="component" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSa" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSb" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSc" role="1PaTwD">
+          <property role="3oM_SC" value="normal" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSd" role="1PaTwD">
+          <property role="3oM_SC" value="FlowLayout" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSe" role="1PaTwD">
+          <property role="3oM_SC" value="at" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSf" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSg" role="1PaTwD">
+          <property role="3oM_SC" value="North" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSh" role="1PaTwD">
+          <property role="3oM_SC" value="or" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSi" role="1PaTwD">
+          <property role="3oM_SC" value="South" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7vUP_qcI0KI" role="TZ5H$">
-        <node concept="1dT_AC" id="7vUP_qcI0KJ" role="1dT_Ay">
-          <property role="1dT_AB" value=" position of a BorderLayout, some components are not displayed, when they do" />
+      <node concept="1PaTwC" id="3VVgDkJfGSj" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGSk" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSl" role="1PaTwD">
+          <property role="3oM_SC" value="position" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSm" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSn" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSo" role="1PaTwD">
+          <property role="3oM_SC" value="BorderLayout," />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSp" role="1PaTwD">
+          <property role="3oM_SC" value="some" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSq" role="1PaTwD">
+          <property role="3oM_SC" value="components" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSr" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSs" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSt" role="1PaTwD">
+          <property role="3oM_SC" value="displayed," />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSu" role="1PaTwD">
+          <property role="3oM_SC" value="when" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSv" role="1PaTwD">
+          <property role="3oM_SC" value="they" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSw" role="1PaTwD">
+          <property role="3oM_SC" value="do" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7vUP_qcI0KK" role="TZ5H$">
-        <node concept="1dT_AC" id="7vUP_qcI0KL" role="1dT_Ay">
-          <property role="1dT_AB" value=" not fit into one row." />
+      <node concept="1PaTwC" id="3VVgDkJfGSx" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGSy" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSz" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGS$" role="1PaTwD">
+          <property role="3oM_SC" value="fit" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGS_" role="1PaTwD">
+          <property role="3oM_SC" value="into" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSA" role="1PaTwD">
+          <property role="3oM_SC" value="one" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSB" role="1PaTwD">
+          <property role="3oM_SC" value="row." />
         </node>
       </node>
-      <node concept="TZ5HA" id="7vUP_qcI0KM" role="TZ5H$">
-        <node concept="1dT_AC" id="7vUP_qcI0KN" role="1dT_Ay">
-          <property role="1dT_AB" value=" This is because FlowLayout.preferredLayoutSize expects that only one row is" />
+      <node concept="1PaTwC" id="3VVgDkJfGSC" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGSD" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSE" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSF" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSG" role="1PaTwD">
+          <property role="3oM_SC" value="because" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSH" role="1PaTwD">
+          <property role="3oM_SC" value="FlowLayout.preferredLayoutSize" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSI" role="1PaTwD">
+          <property role="3oM_SC" value="expects" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSJ" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSK" role="1PaTwD">
+          <property role="3oM_SC" value="only" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSL" role="1PaTwD">
+          <property role="3oM_SC" value="one" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSM" role="1PaTwD">
+          <property role="3oM_SC" value="row" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSN" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7vUP_qcI0KO" role="TZ5H$">
-        <node concept="1dT_AC" id="7vUP_qcI0KP" role="1dT_Ay">
-          <property role="1dT_AB" value=" used, but FlowLayout.layoutComponent uses multiple rows, when there is not" />
+      <node concept="1PaTwC" id="3VVgDkJfGSO" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGSP" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSQ" role="1PaTwD">
+          <property role="3oM_SC" value="used," />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSR" role="1PaTwD">
+          <property role="3oM_SC" value="but" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSS" role="1PaTwD">
+          <property role="3oM_SC" value="FlowLayout.layoutComponent" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGST" role="1PaTwD">
+          <property role="3oM_SC" value="uses" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSU" role="1PaTwD">
+          <property role="3oM_SC" value="multiple" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSV" role="1PaTwD">
+          <property role="3oM_SC" value="rows," />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSW" role="1PaTwD">
+          <property role="3oM_SC" value="when" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSX" role="1PaTwD">
+          <property role="3oM_SC" value="there" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSY" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGSZ" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7vUP_qcI0KQ" role="TZ5H$">
-        <node concept="1dT_AC" id="7vUP_qcI0KR" role="1dT_Ay">
-          <property role="1dT_AB" value=" enough space for all components in one row." />
+      <node concept="1PaTwC" id="3VVgDkJfGT0" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGT1" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGT2" role="1PaTwD">
+          <property role="3oM_SC" value="enough" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGT3" role="1PaTwD">
+          <property role="3oM_SC" value="space" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGT4" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGT5" role="1PaTwD">
+          <property role="3oM_SC" value="all" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGT6" role="1PaTwD">
+          <property role="3oM_SC" value="components" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGT7" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGT8" role="1PaTwD">
+          <property role="3oM_SC" value="one" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGT9" role="1PaTwD">
+          <property role="3oM_SC" value="row." />
         </node>
       </node>
-      <node concept="TZ5HA" id="7vUP_qcI0KS" role="TZ5H$">
-        <node concept="1dT_AC" id="7vUP_qcI0KT" role="1dT_Ay">
-          <property role="1dT_AB" value=" This class fixes this behavior with the result that the North/South regions" />
+      <node concept="1PaTwC" id="3VVgDkJfGTa" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGTb" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTc" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTd" role="1PaTwD">
+          <property role="3oM_SC" value="class" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTe" role="1PaTwD">
+          <property role="3oM_SC" value="fixes" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTf" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTg" role="1PaTwD">
+          <property role="3oM_SC" value="behavior" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTh" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTi" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTj" role="1PaTwD">
+          <property role="3oM_SC" value="result" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTk" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTl" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTm" role="1PaTwD">
+          <property role="3oM_SC" value="North/South" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTn" role="1PaTwD">
+          <property role="3oM_SC" value="regions" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7vUP_qcI0KU" role="TZ5H$">
-        <node concept="1dT_AC" id="7vUP_qcI0KV" role="1dT_Ay">
-          <property role="1dT_AB" value=" of a BorderLayout are resized to show all components even with multiple rows." />
+      <node concept="1PaTwC" id="3VVgDkJfGTo" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfGTp" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTq" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTr" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTs" role="1PaTwD">
+          <property role="3oM_SC" value="BorderLayout" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTt" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTu" role="1PaTwD">
+          <property role="3oM_SC" value="resized" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTv" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTw" role="1PaTwD">
+          <property role="3oM_SC" value="show" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTx" role="1PaTwD">
+          <property role="3oM_SC" value="all" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTy" role="1PaTwD">
+          <property role="3oM_SC" value="components" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTz" role="1PaTwD">
+          <property role="3oM_SC" value="even" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGT$" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGT_" role="1PaTwD">
+          <property role="3oM_SC" value="multiple" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfGTA" role="1PaTwD">
+          <property role="3oM_SC" value="rows." />
         </node>
       </node>
     </node>

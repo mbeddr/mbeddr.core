@@ -5,7 +5,7 @@
     <use id="ff3d5f86-c6fa-4c63-aa95-c2de600f92ac" name="com.mbeddr.mpsutil.genplandiagram" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
-    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
+    <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="3" />
   </languages>
   <imports>
     <import index="heug" ref="r:d1cf1bdc-d32d-481e-8ec6-73dc1f9dcb76(jetbrains.mps.lang.documentation@genplan)" />
@@ -15,6 +15,9 @@
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
       <concept id="869728027904920839" name="jetbrains.mps.lang.generator.plan.structure.CheckpointSynchronization" flags="ng" index="26qawf">
         <child id="3750601816087335480" name="checkpoint" index="3pRG92" />
+      </concept>
+      <concept id="2332321114124261810" name="jetbrains.mps.lang.generator.plan.structure.GeneratorModulePointer" flags="ng" index="lQKw0">
+        <child id="2332321114124261812" name="module" index="lQKw6" />
       </concept>
       <concept id="3705377275350227759" name="jetbrains.mps.lang.generator.plan.structure.IncludePlan" flags="ng" index="NozSJ">
         <reference id="3705377275350227762" name="plan" index="NozSM" />
@@ -50,17 +53,16 @@
         <child id="894680215637528532" name="comments" index="1ONSkY" />
       </concept>
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
-        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
-        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
+        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
+        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
       </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
-      </concept>
-      <concept id="8296877263936075789" name="jetbrains.mps.lang.smodel.structure.GeneratorModulePointer" flags="ng" index="3uMdn$">
-        <child id="8296877263936075892" name="module" index="3uMdmt" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -112,10 +114,10 @@
       </node>
     </node>
     <node concept="3uMcMo" id="7KBw$lnWhZ6" role="2VgMA7">
-      <node concept="3uMdn$" id="7KBw$lnWi0h" role="3uOsAP">
-        <node concept="20RdaH" id="7KBw$lnWi0i" role="3uMdmt">
-          <property role="20Rdg5" value="3a6b9f2f-4402-4ed6-a7cd-12b272b244d5" />
-          <property role="20Rdg7" value="com.mbeddr.mpsutil.blutil#4354378109086982937" />
+      <node concept="lQKw0" id="6vwc0gQc7Ce" role="3uOsAP">
+        <node concept="1dCxOk" id="6vwc0gQc7Cf" role="lQKw6">
+          <property role="1XweGW" value="3a6b9f2f-4402-4ed6-a7cd-12b272b244d5" />
+          <property role="1XxBO9" value="com.mbeddr.mpsutil.blutil#4354378109086982937" />
         </node>
       </node>
     </node>

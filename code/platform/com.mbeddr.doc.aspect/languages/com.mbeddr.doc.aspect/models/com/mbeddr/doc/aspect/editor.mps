@@ -21,6 +21,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
@@ -213,7 +216,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -341,7 +343,7 @@
             <node concept="3clFbF" id="QRmqzHesRe" role="3cqZAp">
               <node concept="2OqwBi" id="QRmqzHesW2" role="3clFbG">
                 <node concept="pncrf" id="QRmqzHesR7" role="2Oq$k0" />
-                <node concept="2qgKlT" id="3mn43GPizg0" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqpv0" role="2OqNvi">
                   <ref role="37wK5l" to="4gky:1T7O9iWPN9q" resolve="getTextualRepresentation" />
                 </node>
               </node>
@@ -745,7 +747,7 @@
             <node concept="3clFbF" id="2T4ELtZOBh" role="3cqZAp">
               <node concept="2OqwBi" id="2T4ELtZORc" role="3clFbG">
                 <node concept="pncrf" id="2T4ELtZOBg" role="2Oq$k0" />
-                <node concept="2qgKlT" id="2T4ELtZPjQ" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqpv2" role="2OqNvi">
                   <ref role="37wK5l" to="4gky:1T7O9iWPN9q" resolve="getTextualRepresentation" />
                 </node>
               </node>
