@@ -5,6 +5,10 @@ All notable changes to the mbeddr platform will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# September 2026
+
+- `com.mbeddr.mpsutil.editingGuide`: fixed tutorial image rendering and execution-mode editor issues (rendering shows immediately; re-opening a step no longer errors).
+
 # May 2026
 
 - `com.mbeddr.core.base`: VCS merge hints added for assessment results
