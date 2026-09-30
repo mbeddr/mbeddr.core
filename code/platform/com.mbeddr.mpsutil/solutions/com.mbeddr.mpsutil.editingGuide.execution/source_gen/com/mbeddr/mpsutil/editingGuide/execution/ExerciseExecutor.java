@@ -49,7 +49,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
 public class ExerciseExecutor {
 
-  private static Map<Project, Map<SNode, ExerciseExecutor>> ourInstances = MapSequence.fromMap(new WeakHashMap<Project, Map<SNode, ExerciseExecutor>>());
+  private static final Map<Project, Map<SNode, ExerciseExecutor>> ourInstances = MapSequence.fromMap(new WeakHashMap<Project, Map<SNode, ExerciseExecutor>>());
 
   public static ExerciseExecutor getInstance(Project project, SNode exercise) {
     if ((exercise == null)) {
@@ -77,7 +77,7 @@ public class ExerciseExecutor {
 
 
   /**
-   * Returns the first instance for which the given closure returns true, or null if it doesnt exist
+   * Returns the first instance for which the given closure returns true, or null if it doesn't exist
    */
   public static ExerciseExecutor findInstance(_FunctionTypes._return_P2_E0<? extends Boolean, ? super Project, ? super SNode> where) {
     for (IMapping<Project, Map<SNode, ExerciseExecutor>> perProject : MapSequence.fromMap(ourInstances)) {
@@ -116,11 +116,11 @@ public class ExerciseExecutor {
 
   private Project myMpsProject;
   private EditorComponent myEditorComponent;
-  private SNode myOriginalExercise;
+  private final SNode myOriginalExercise;
   private SNode mySandboxExercise;
   private Map<SNode, SNode> myOriginal2SandboxMap;
   private Map<SNode, SNode> mySandbox2OriginalMap;
-  private SelectionListener mySelectionListener = new SelectionListener() {
+  private final SelectionListener mySelectionListener = new SelectionListener() {
     private boolean isUpdating = false;
     public void selectionChanged(jetbrains.mps.openapi.editor.EditorComponent editorComponent, Selection oldSelection, Selection newSelection) {
       if (isUpdating) {
@@ -140,7 +140,7 @@ public class ExerciseExecutor {
       }));
     }
   };
-  private EditorComponent.EditorDisposeListener myEditorDisposeListener = new EditorComponent.EditorDisposeListener() {
+  private final EditorComponent.EditorDisposeListener myEditorDisposeListener = new EditorComponent.EditorDisposeListener() {
     public void editorWillBeDisposed(EditorComponent editorComponent) {
       // give other listeners time to process the event before we kill the temp model
       SwingUtilities.invokeLater(() -> dispose());
@@ -155,7 +155,7 @@ public class ExerciseExecutor {
 
   public SNode getSandboxExercise() {
     if (mySandboxExercise == null) {
-      SModel tempModel = TemporaryModels.getInstance().create(false, true, TempModuleOptions.forDefaultModule());
+      SModel tempModel = TemporaryModels.getInstance().createEditable(true, TempModuleOptions.forDefaultModule());
 
       copyModelProperties(SNodeOperations.getModel(myOriginalExercise), tempModel);
       copyModuleDependencies(SNodeOperations.getModel(myOriginalExercise).getModule(), tempModel.getModule());
@@ -226,14 +226,15 @@ public class ExerciseExecutor {
 
     if (myEditorComponent != null) {
       myEditorComponent.editNode(sandboxExercise);
+      new EditorNavigator(myMpsProject).shallFocus(true).open(SNodeOperations.getPointer(sandboxExercise));
+    } else {
+      new EditorNavigator(myMpsProject).shallFocus(true).onceEditorReady((node, editor) -> {
+        myEditorComponent = (EditorComponent) editor.getCurrentEditorComponent();
+        myEditorComponent.addDisposeListener(myEditorDisposeListener);
+        myEditorComponent.getSelectionManager().addSelectionListener(mySelectionListener);
+        initHints();
+      }).open(SNodeOperations.getPointer(sandboxExercise));
     }
-
-    new EditorNavigator(myMpsProject).shallFocus(true).onceEditorReady((node, editor) -> {
-      myEditorComponent = (EditorComponent) editor.getCurrentEditorComponent();
-      myEditorComponent.addDisposeListener(myEditorDisposeListener);
-      myEditorComponent.getSelectionManager().addSelectionListener(mySelectionListener);
-      initHints();
-    }).open(SNodeOperations.getPointer(sandboxExercise));
   }
 
   public void restart(SNode fromTask) {
@@ -260,6 +261,7 @@ public class ExerciseExecutor {
     }
     SetSequence.fromSet(hints).removeElement(null);
     myEditorComponent.getUpdater().setInitialEditorHints(SetSequence.fromSet(hints).toGenericArray(String.class));
+    myEditorComponent.rebuildEditorContent();
   }
 
   public MonitorResult checkTask(final SNode task) {

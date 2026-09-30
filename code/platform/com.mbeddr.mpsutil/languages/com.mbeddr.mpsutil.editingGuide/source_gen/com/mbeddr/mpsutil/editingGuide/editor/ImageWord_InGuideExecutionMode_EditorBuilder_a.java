@@ -12,13 +12,8 @@ import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Image;
+import jetbrains.mps.nodeEditor.AbstractCellProvider;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import jetbrains.mps.util.MacrosFactory;
-import com.mbeddr.mpsutil.editingGuide.behavior.ImageWord__BehaviorDescriptor;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.jetbrains.mps.openapi.language.SProperty;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 /*package*/ class ImageWord_InGuideExecutionMode_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -47,24 +42,13 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createImage_0());
+    editorCell.addEditorCell(createCustom_0());
     return editorCell;
   }
-  private EditorCell createImage_0() {
-    EditorCell_Image editorCell = fromImageCellProvider0();
-    editorCell.setCellId("Image_uph9vb_a0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.SELECTABLE, false);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDescent(0);
+  private EditorCell createCustom_0() {
+    AbstractCellProvider provider = ((_FunctionTypes._return_P0_E0<ImageWordCellProvider>) () -> new ImageWordCellProvider(myNode)).invoke();
+    EditorCell editorCell = provider.createEditorCell(getEditorContext());
+    editorCell.setCellId("Custom_uph9vb_a0");
     return editorCell;
-  }
-  private EditorCell_Image fromImageCellProvider0() {
-    String imagePath = (((_FunctionTypes._return_P0_E0<String>) () -> MacrosFactory.forModule(ImageWord__BehaviorDescriptor.getImageModuleByModuleId_id7r9Xsder9tx.invoke(myNode)).expandPath(SPropertyOperations.getString(myNode, PROPS.file$He6o)))).invoke();
-    return EditorCell_Image.createImageCell(getEditorContext(), myNode, imagePath);
-  }
-
-  private static final class PROPS {
-    /*package*/ static final SProperty file$He6o = MetaAdapterFactory.getProperty(0x982eb8df2c964bd7L, 0x996311712ea622e5L, 0xb8b96b5078f3367L, 0xb8b96b5078f33bbL, "file");
   }
 }

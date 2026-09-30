@@ -797,103 +797,120 @@
       <node id="8559642785977420084" at="26,0,27,0" concept="10" trace="CONCEPT" />
       <node id="8559642785977420084" at="28,0,29,0" concept="10" trace="getModule_id7r9XsdeqO$Z" />
       <node id="8559642785977420084" at="29,0,30,0" concept="10" trace="getImageModuleByModuleId_id7r9Xsder9tx" />
-      <node id="8559642785977420084" at="30,0,31,0" concept="10" trace="isEditingGuideActive_idJJxXu1sAqb" />
-      <node id="8559642785977420084" at="31,0,32,0" concept="10" trace="isModuleIdRequired_idJJxXu1sw3o" />
-      <node id="8559642785977420084" at="32,0,33,0" concept="10" trace="isModuleIdValid_id7r9XsdeqP8E" />
-      <node id="8559642785977420084" at="34,0,35,0" concept="3" trace="BH_METHODS" />
-      <node id="8559642785977420111" at="37,83,38,73" concept="7" />
-      <node id="860055413510538322" at="40,98,41,192" concept="7" />
-      <node id="860055413510531884" at="43,93,44,79" concept="7" />
-      <node id="860055413510508218" at="46,91,47,176" concept="7" />
-      <node id="8559642785977424563" at="49,89,50,270" concept="7" />
-      <node id="8559642785977420084" at="58,114,59,49" concept="6" />
-      <node id="8559642785977420084" at="60,26,61,56" concept="13" />
-      <node id="8559642785977420084" at="64,13,65,61" concept="7" />
-      <node id="8559642785977420084" at="66,13,67,76" concept="7" />
-      <node id="8559642785977420084" at="68,13,69,71" concept="7" />
-      <node id="8559642785977420084" at="70,13,71,69" concept="7" />
-      <node id="8559642785977420084" at="72,13,73,67" concept="7" />
-      <node id="8559642785977420084" at="74,14,75,58" concept="13" />
-      <node id="8559642785977420084" at="80,128,81,49" concept="6" />
-      <node id="8559642785977420084" at="82,26,83,56" concept="13" />
+      <node id="8559642785977420084" at="30,0,31,0" concept="10" trace="getEffectiveModule_id72JwzwpqZ9S" />
+      <node id="8559642785977420084" at="31,0,32,0" concept="10" trace="isEditingGuideActive_idJJxXu1sAqb" />
+      <node id="8559642785977420084" at="32,0,33,0" concept="10" trace="isModuleIdRequired_idJJxXu1sw3o" />
+      <node id="8559642785977420084" at="33,0,34,0" concept="10" trace="isModuleIdValid_id7r9XsdeqP8E" />
+      <node id="8559642785977420084" at="35,0,36,0" concept="3" trace="BH_METHODS" />
+      <node id="8559642785977420111" at="38,83,39,73" concept="7" />
+      <node id="860055413510538322" at="41,98,42,192" concept="7" />
+      <node id="8119851830628579231" at="44,92,45,47" concept="8" />
+      <node id="8119851830628579449" at="45,47,46,109" concept="6" />
+      <node id="8119851830628581606" at="47,23,48,18" concept="7" />
+      <node id="8119851830628582095" at="49,5,50,54" concept="8" />
+      <node id="8119851830628581804" at="50,54,51,86" concept="7" />
+      <node id="860055413510531884" at="53,93,54,79" concept="7" />
+      <node id="860055413510508218" at="56,91,57,176" concept="7" />
+      <node id="8559642785977424563" at="59,89,60,270" concept="7" />
+      <node id="8559642785977420084" at="68,114,69,49" concept="6" />
+      <node id="8559642785977420084" at="70,26,71,56" concept="13" />
+      <node id="8559642785977420084" at="74,13,75,61" concept="7" />
+      <node id="8559642785977420084" at="76,13,77,76" concept="7" />
+      <node id="8559642785977420084" at="78,13,79,70" concept="7" />
+      <node id="8559642785977420084" at="80,13,81,71" concept="7" />
+      <node id="8559642785977420084" at="82,13,83,69" concept="7" />
+      <node id="8559642785977420084" at="84,13,85,67" concept="7" />
       <node id="8559642785977420084" at="86,14,87,58" concept="13" />
-      <node id="8559642785977420084" at="93,48,94,22" concept="7" />
-      <node id="8559642785977420084" at="99,40,100,19" concept="7" />
-      <node id="860055413510522509" at="102,55,103,43" concept="7" />
-      <node id="8559642785977420084" at="107,0,108,0" concept="10" trace="moduleId$IuRY" />
-      <node id="8559642785977420084" at="108,0,109,0" concept="10" trace="file$He6o" />
-      <node id="8559642785977420084" at="53,0,55,0" concept="1" trace="ImageWord__BehaviorDescriptor#()V" />
-      <node id="8559642785977420084" at="37,0,40,0" concept="11" trace="getModule_id7r9XsdeqO$Z#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/module/SModule;" />
-      <node id="8559642785977420084" at="40,0,43,0" concept="11" trace="getImageModuleByModuleId_id7r9Xsder9tx#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/module/SModule;" />
-      <node id="8559642785977420084" at="43,0,46,0" concept="11" trace="isEditingGuideActive_idJJxXu1sAqb#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="8559642785977420084" at="46,0,49,0" concept="11" trace="isModuleIdRequired_idJJxXu1sw3o#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="8559642785977420084" at="49,0,52,0" concept="11" trace="isModuleIdValid_id7r9XsdeqP8E#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="8559642785977420084" at="59,49,62,5" concept="4" />
-      <node id="8559642785977420084" at="81,49,84,5" concept="4" />
-      <node id="860055413510522509" at="102,0,105,0" concept="11" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
-      <node id="8559642785977420084" at="84,5,88,5" concept="12" />
-      <node id="8559642785977420084" at="91,0,96,0" concept="5" trace="getDeclaredMethods#()Ljava/util/List;" />
-      <node id="8559642785977420084" at="97,0,102,0" concept="5" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="8559642785977420084" at="79,0,90,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="8559642785977420084" at="62,5,76,5" concept="12" />
-      <node id="8559642785977420084" at="57,0,78,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <scope id="8559642785977420084" at="53,47,53,47" />
-      <scope id="8559642785977420098" at="37,83,38,73" />
-      <scope id="8559642785977505636" at="40,98,41,192" />
-      <scope id="860055413510530702" at="43,93,44,79" />
-      <scope id="860055413510504667" at="46,91,47,176" />
-      <scope id="8559642785977422381" at="49,89,50,270" />
-      <scope id="8559642785977420084" at="60,26,61,56" />
-      <scope id="8559642785977420084" at="64,13,65,61" />
-      <scope id="8559642785977420084" at="66,13,67,76" />
-      <scope id="8559642785977420084" at="68,13,69,71" />
-      <scope id="8559642785977420084" at="70,13,71,69" />
-      <scope id="8559642785977420084" at="72,13,73,67" />
-      <scope id="8559642785977420084" at="74,14,75,58" />
-      <scope id="8559642785977420084" at="82,26,83,56" />
+      <node id="8559642785977420084" at="92,128,93,49" concept="6" />
+      <node id="8559642785977420084" at="94,26,95,56" concept="13" />
+      <node id="8559642785977420084" at="98,14,99,58" concept="13" />
+      <node id="8559642785977420084" at="105,48,106,22" concept="7" />
+      <node id="8559642785977420084" at="111,40,112,19" concept="7" />
+      <node id="860055413510522509" at="114,55,115,43" concept="7" />
+      <node id="8559642785977420084" at="119,0,120,0" concept="10" trace="moduleId$IuRY" />
+      <node id="8559642785977420084" at="120,0,121,0" concept="10" trace="file$He6o" />
+      <node id="8559642785977420084" at="63,0,65,0" concept="1" trace="ImageWord__BehaviorDescriptor#()V" />
+      <node id="8559642785977420084" at="38,0,41,0" concept="11" trace="getModule_id7r9XsdeqO$Z#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/module/SModule;" />
+      <node id="8559642785977420084" at="41,0,44,0" concept="11" trace="getImageModuleByModuleId_id7r9Xsder9tx#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/module/SModule;" />
+      <node id="8119851830628580684" at="46,109,49,5" concept="4" />
+      <node id="8559642785977420084" at="53,0,56,0" concept="11" trace="isEditingGuideActive_idJJxXu1sAqb#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8559642785977420084" at="56,0,59,0" concept="11" trace="isModuleIdRequired_idJJxXu1sw3o#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8559642785977420084" at="59,0,62,0" concept="11" trace="isModuleIdValid_id7r9XsdeqP8E#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8559642785977420084" at="69,49,72,5" concept="4" />
+      <node id="8559642785977420084" at="93,49,96,5" concept="4" />
+      <node id="860055413510522509" at="114,0,117,0" concept="11" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="8559642785977420084" at="96,5,100,5" concept="12" />
+      <node id="8559642785977420084" at="103,0,108,0" concept="5" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="8559642785977420084" at="109,0,114,0" concept="5" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8559642785977420084" at="44,0,53,0" concept="11" trace="getEffectiveModule_id72JwzwpqZ9S#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/module/SModule;" />
+      <node id="8559642785977420084" at="91,0,102,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="8559642785977420084" at="72,5,88,5" concept="12" />
+      <node id="8559642785977420084" at="67,0,90,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="8559642785977420084" at="63,47,63,47" />
+      <scope id="8559642785977420098" at="38,83,39,73" />
+      <scope id="8559642785977505636" at="41,98,42,192" />
+      <scope id="8119851830628580686" at="47,23,48,18" />
+      <scope id="860055413510530702" at="53,93,54,79" />
+      <scope id="860055413510504667" at="56,91,57,176" />
+      <scope id="8559642785977422381" at="59,89,60,270" />
+      <scope id="8559642785977420084" at="70,26,71,56" />
+      <scope id="8559642785977420084" at="74,13,75,61" />
+      <scope id="8559642785977420084" at="76,13,77,76" />
+      <scope id="8559642785977420084" at="78,13,79,70" />
+      <scope id="8559642785977420084" at="80,13,81,71" />
+      <scope id="8559642785977420084" at="82,13,83,69" />
+      <scope id="8559642785977420084" at="84,13,85,67" />
       <scope id="8559642785977420084" at="86,14,87,58" />
-      <scope id="8559642785977420084" at="93,48,94,22" />
-      <scope id="8559642785977420084" at="99,40,100,19" />
-      <scope id="860055413510522509" at="102,55,103,43" />
-      <scope id="8559642785977420084" at="53,0,55,0" />
-      <scope id="8559642785977420084" at="37,0,40,0">
+      <scope id="8559642785977420084" at="94,26,95,56" />
+      <scope id="8559642785977420084" at="98,14,99,58" />
+      <scope id="8559642785977420084" at="105,48,106,22" />
+      <scope id="8559642785977420084" at="111,40,112,19" />
+      <scope id="860055413510522509" at="114,55,115,43" />
+      <scope id="8559642785977420084" at="63,0,65,0" />
+      <scope id="8559642785977420084" at="38,0,41,0">
         <var name="__thisNode__" id="8559642785977420084" />
       </scope>
-      <scope id="8559642785977420084" at="40,0,43,0">
+      <scope id="8559642785977420084" at="41,0,44,0">
         <var name="__thisNode__" id="8559642785977420084" />
       </scope>
-      <scope id="8559642785977420084" at="43,0,46,0">
+      <scope id="8559642785977420084" at="53,0,56,0">
         <var name="__thisNode__" id="8559642785977420084" />
       </scope>
-      <scope id="8559642785977420084" at="46,0,49,0">
+      <scope id="8559642785977420084" at="56,0,59,0">
         <var name="__thisNode__" id="8559642785977420084" />
       </scope>
-      <scope id="8559642785977420084" at="49,0,52,0">
+      <scope id="8559642785977420084" at="59,0,62,0">
         <var name="__thisNode__" id="8559642785977420084" />
       </scope>
-      <scope id="860055413510522509" at="102,0,105,0">
+      <scope id="860055413510522509" at="114,0,117,0">
         <var name="str" id="860055413510522509" />
       </scope>
-      <scope id="8559642785977420084" at="91,0,96,0" />
-      <scope id="8559642785977420084" at="97,0,102,0" />
-      <scope id="8559642785977420084" at="80,128,88,5">
+      <scope id="8559642785977420084" at="103,0,108,0" />
+      <scope id="8559642785977420084" at="109,0,114,0" />
+      <scope id="8119851830628577915" at="44,92,51,86">
+        <var name="byId" id="8119851830628579450" />
+      </scope>
+      <scope id="8559642785977420084" at="92,128,100,5">
         <var name="methodIndex" id="8559642785977420084" />
       </scope>
-      <scope id="8559642785977420084" at="79,0,90,0">
+      <scope id="8559642785977420084" at="44,0,53,0">
+        <var name="__thisNode__" id="8559642785977420084" />
+      </scope>
+      <scope id="8559642785977420084" at="91,0,102,0">
         <var name="concept" id="8559642785977420084" />
         <var name="method" id="8559642785977420084" />
         <var name="parameters" id="8559642785977420084" />
       </scope>
-      <scope id="8559642785977420084" at="58,114,76,5">
+      <scope id="8559642785977420084" at="68,114,88,5">
         <var name="methodIndex" id="8559642785977420084" />
       </scope>
-      <scope id="8559642785977420084" at="57,0,78,0">
+      <scope id="8559642785977420084" at="67,0,90,0">
         <var name="method" id="8559642785977420084" />
         <var name="node" id="8559642785977420084" />
         <var name="parameters" id="8559642785977420084" />
       </scope>
-      <unit id="8559642785977420084" at="106,0,110,0" name="com.mbeddr.mpsutil.editingGuide.behavior.ImageWord__BehaviorDescriptor$PROPS" />
-      <unit id="8559642785977420084" at="25,0,111,0" name="com.mbeddr.mpsutil.editingGuide.behavior.ImageWord__BehaviorDescriptor" />
+      <unit id="8559642785977420084" at="118,0,122,0" name="com.mbeddr.mpsutil.editingGuide.behavior.ImageWord__BehaviorDescriptor$PROPS" />
+      <unit id="8559642785977420084" at="25,0,123,0" name="com.mbeddr.mpsutil.editingGuide.behavior.ImageWord__BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:a2db9c62-2dcd-4812-bc5f-0468bbf0b1c1(com.mbeddr.mpsutil.editingGuide.behavior)/8627246747559020505">
