@@ -77,7 +77,6 @@ logger.info("skipresolve_mps: {}, mpsHomeDir: {}", skipresolve_mps, mpsHomeDir)
 
 val artifactsDir: File by extra(file("${rootProject.projectDir.absolutePath}/artifacts"))
 
-val mbeddrBuildNumber: String by project
 val mbeddrMajor: String by project
 val mbeddrMinor: String by project
 
@@ -86,7 +85,7 @@ val antSystemProperties = mapOf<String, Any>(
     "build.dir" to rootProject.layout.projectDirectory,
     "artifacts.root" to rootProject.file("artifacts"),
     "mbeddr.github.core.home" to rootProject.layout.projectDirectory,
-    "build" to mbeddrBuildNumber,
+    "build" to project.version.toString(),
     "major.version" to mbeddrMajor,
     "minor.version" to mbeddrMinor,
     "build.jna.library.path" to File(mpsHomeDir, "lib/jna/${System.getProperty("os.arch")}")
@@ -123,7 +122,7 @@ fun configureRepositories(project: Project) {
             repositories {
                 maven {
                     url = project.uri(
-                        if (project.property("mbeddrBuildNumber").toString().endsWith("-SNAPSHOT"))
+                        if (project.version.toString().endsWith("-SNAPSHOT"))
                             "https://artifacts.itemis.cloud/repository/maven-mps-snapshots/"
                         else
                             "https://artifacts.itemis.cloud/repository/maven-mps-releases/"
@@ -157,11 +156,9 @@ fun configureRepositories(project: Project) {
 
 
 tasks.register("printVersions") {
-    description = "Print the mbeddr and mbeddr platform build number."
-    val mbeddrPlatformBuildNumber: String by project
+    description = "Print the project version."
     doLast {
-        println("mbeddrBuildNumber: $mbeddrBuildNumber")
-        println("mbeddrPlatformBuildNumber: $mbeddrPlatformBuildNumber")
+        println("version: ${project.version}")
     }
 }
 
