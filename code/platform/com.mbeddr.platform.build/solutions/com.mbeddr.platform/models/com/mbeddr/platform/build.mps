@@ -16980,7 +16980,7 @@
       </node>
     </node>
     <node concept="2kB4xC" id="5oJ9AK5kN9h" role="1l3spd">
-      <property role="TrG5h" value="build" />
+      <property role="TrG5h" value="version" />
       <node concept="aVJcg" id="3quoVcnSFzz" role="aVJcv">
         <node concept="NbPM2" id="3quoVcnSFzy" role="aVJcq">
           <node concept="3Mxwew" id="3quoVcnSFzx" role="3MwsjC">
@@ -17006,7 +17006,7 @@
             <property role="3MwjfP" value="-" />
           </node>
           <node concept="3Mxwey" id="5oJ9AK5l1Rn" role="3MwsjC">
-            <ref role="3Mxwex" node="5oJ9AK5kN9h" resolve="build" />
+            <ref role="3Mxwex" node="5oJ9AK5kN9h" resolve="version" />
           </node>
         </node>
       </node>
@@ -18651,7 +18651,7 @@
       </node>
     </node>
     <node concept="2kB4xC" id="4SMNYR2Zl0G" role="1l3spd">
-      <property role="TrG5h" value="build" />
+      <property role="TrG5h" value="version" />
       <node concept="aVJcg" id="4SMNYR2Zl0H" role="aVJcv">
         <node concept="NbPM2" id="4SMNYR2Zl0I" role="aVJcq">
           <node concept="3Mxwew" id="4SMNYR2Zl0J" role="3MwsjC">
@@ -18677,7 +18677,7 @@
             <property role="3MwjfP" value="-" />
           </node>
           <node concept="3Mxwey" id="4SMNYR2Zl0R" role="3MwsjC">
-            <ref role="3Mxwex" node="4SMNYR2Zl0G" resolve="build" />
+            <ref role="3Mxwex" node="4SMNYR2Zl0G" resolve="version" />
           </node>
         </node>
       </node>
