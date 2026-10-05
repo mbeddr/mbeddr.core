@@ -33,3 +33,9 @@ version = if (ciBuild) {
 } else {
     "$mbeddrMajor.$mbeddrMinor-SNAPSHOT"
 }
+
+val antVersionProperties: Map<String, String> by extra(mapOf(
+    "build" to project.version.toString(),
+    "major.version" to mbeddrMajor,
+    "minor.version" to mbeddrMinor,
+))
