@@ -45,7 +45,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
-    alternationCondition = nodeCondition_vmrhk1_a0a();
+    alternationCondition = nodeCondition_vmrhk1_a0a_0();
     EditorCell editorCell = null;
     if (alternationCondition) {
       editorCell = createCollection_0();
@@ -54,7 +54,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
     }
     return editorCell;
   }
-  private boolean nodeCondition_vmrhk1_a0a() {
+  private boolean nodeCondition_vmrhk1_a0a_0() {
     return IValueDebuggable__BehaviorDescriptor.getDebuggerValueSource_id1c0z7yfF2FB.invoke(myNode) != null && (boolean) IValueDebuggable__BehaviorDescriptor.shouldShowDebugger_id6KLCBzCT0$P.invoke(myNode);
   }
   private EditorCell createCollection_0() {

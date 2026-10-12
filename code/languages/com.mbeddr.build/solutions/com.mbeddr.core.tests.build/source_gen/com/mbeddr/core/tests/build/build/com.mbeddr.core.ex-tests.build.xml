@@ -321,7 +321,6 @@
       <plugin path="${artifacts.mps}/plugins/mps-tooltips" id="jetbrains.mps.editor.tooltips" />
       <plugin path="${artifacts.mps}/plugins/mps-vcs" id="jetbrains.mps.vcs" />
       <plugin path="${artifacts.mps}/plugins/vcs-git" id="Git4Idea" />
-      <plugin path="${artifacts.mps}/plugins/vcs-svn" id="Subversion" />
       <library file="${artifacts.com.mbeddr.core.aLibrary.build}/aLibrary.jar" />
       <library file="${artifacts.com.mbeddr.core.aLibrary.build}/com.mbeddr.core.__spreferences.PlatformTemplates.jar" />
       <chunk>
