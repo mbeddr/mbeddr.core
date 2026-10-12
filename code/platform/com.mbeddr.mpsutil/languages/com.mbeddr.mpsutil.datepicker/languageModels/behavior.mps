@@ -12,7 +12,7 @@
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="k0h" ref="r:5369d8b1-f259-457c-8b3f-061c696f3d80(com.mbeddr.mpsutil.datepicker.runtime.model)" />
-    <import index="yzu" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.michaelbaranov.microba.calendar(MPS.ThirdParty/)" />
+    <import index="yzu" ref="98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea/java:com.michaelbaranov.microba.calendar(com.mbeddr.mpsutil.datepicker.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>

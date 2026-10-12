@@ -14,7 +14,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
     <use id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions" version="-1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
   </languages>
@@ -63,8 +63,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -2556,8 +2556,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="2cNe_D15R0$" role="3Uehp1">
-      <node concept="10M0yZ" id="2cNe_D15R0A" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcum0d" role="3Uehp1">
+      <node concept="10M0yZ" id="2cNe_D15R0A" role="1GtWoa">
         <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
         <ref role="3cqZAo" to="xnls:~IdeIcons.PROJECT_ICON" resolve="PROJECT_ICON" />
       </node>
@@ -6738,8 +6738,8 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
       <node concept="1oajcY" id="7sfu2B6B1ZQ" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="2cNe_D13XUZ" role="3Uehp1">
-      <node concept="10M0yZ" id="2cNe_D13Y0e" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcum0e" role="3Uehp1">
+      <node concept="10M0yZ" id="2cNe_D13Y0e" role="1GtWoa">
         <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
         <ref role="3cqZAo" to="xnls:~IdeIcons.SOLUTION_ICON" resolve="SOLUTION_ICON" />
       </node>
