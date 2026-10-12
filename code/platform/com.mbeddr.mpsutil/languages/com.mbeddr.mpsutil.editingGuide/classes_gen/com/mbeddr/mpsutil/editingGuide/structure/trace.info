@@ -13,7 +13,7 @@
       <unit at="11,0,175,0" name="com.mbeddr.mpsutil.editingGuide.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="IconContainer.java">
-      <unit at="7,0,10,0" name="com.mbeddr.mpsutil.editingGuide.structure.IconContainer" />
+      <unit at="8,0,12,0" name="com.mbeddr.mpsutil.editingGuide.structure.IconContainer" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <unit at="10,0,64,0" name="com.mbeddr.mpsutil.editingGuide.structure.LanguageConceptSwitch" />
@@ -434,8 +434,8 @@
       <node id="3909459679554886014" at="52,37,53,76" concept="3" />
       <node id="3909459679554886014" at="53,76,54,81" concept="0" />
       <node id="3909459679554886014" at="54,81,55,35" concept="0" />
-      <node id="3909459679554886014" at="55,35,56,55" concept="0" />
-      <node id="3909459679554886014" at="56,55,57,40" concept="0" />
+      <node id="3909459679554886014" at="55,35,56,45" concept="0" />
+      <node id="3909459679554886014" at="56,45,57,40" concept="0" />
       <node id="3909459679554886014" at="58,9,59,30" concept="4" />
       <node id="3909459679554886014" at="51,42,58,9" concept="2" />
       <scope id="3909459679554886014" at="52,37,57,40">

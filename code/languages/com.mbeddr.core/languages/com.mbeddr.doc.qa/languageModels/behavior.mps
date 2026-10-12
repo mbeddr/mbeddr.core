@@ -16,6 +16,7 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="6otn" ref="r:d1c76b51-b992-43d8-94f8-013d38773d9f(com.mbeddr.doc.qa.structure)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -163,7 +164,7 @@
       <property role="TrG5h" value="runQuery" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="hwgx:7hIyKqbFNeu" resolve="runQuery" />
+      <ref role="13i0hy" to="hwgx:4WjNWxKJWaq" resolve="runQuery" />
       <node concept="3Tm1VV" id="5r_qjlV1sW" role="1B3o_S" />
       <node concept="3clFbS" id="5r_qjlV1sZ" role="3clF47">
         <node concept="3cpWs8" id="5r_qjlUXBd" role="3cqZAp">
@@ -367,7 +368,13 @@
           </node>
         </node>
       </node>
-      <node concept="2I9FWS" id="5r_qjlV1t0" role="3clF45">
+      <node concept="37vLTG" id="20N7CGtRbdf" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <node concept="3uibUv" id="20N7CGtRbdg" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="2I9FWS" id="20N7CGtRbdh" role="3clF45">
         <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
       </node>
     </node>
@@ -422,7 +429,7 @@
       <property role="TrG5h" value="runQuery" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="hwgx:7hIyKqbFNeu" resolve="runQuery" />
+      <ref role="13i0hy" to="hwgx:4WjNWxKJWaq" resolve="runQuery" />
       <node concept="3Tm1VV" id="5r_qjlVNgi" role="1B3o_S" />
       <node concept="3clFbS" id="5r_qjlVNgj" role="3clF47">
         <node concept="3cpWs8" id="5r_qjlVNgk" role="3cqZAp">
@@ -626,7 +633,13 @@
           </node>
         </node>
       </node>
-      <node concept="2I9FWS" id="5r_qjlVNhE" role="3clF45">
+      <node concept="37vLTG" id="20N7CGtRc5W" role="3clF46">
+        <property role="TrG5h" value="mpsProject" />
+        <node concept="3uibUv" id="20N7CGtRc5X" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="2I9FWS" id="20N7CGtRc5Y" role="3clF45">
         <ref role="2I9WkF" to="vs0r:K292flwHw9" resolve="AssessmentResult" />
       </node>
     </node>

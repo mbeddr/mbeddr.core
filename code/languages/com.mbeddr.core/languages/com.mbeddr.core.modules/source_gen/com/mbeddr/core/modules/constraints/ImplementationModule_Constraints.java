@@ -30,7 +30,7 @@ public class ImplementationModule_Constraints extends BaseConstraintsDescriptor 
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -43,7 +43,7 @@ public class ImplementationModule_Constraints extends BaseConstraintsDescriptor 
     }
     return !(SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), CONCEPTS.PrimitiveBasicIntegralType$$2));
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:dfbb97c1-bcef-47dd-a044-a2503489b0dd(com.mbeddr.core.modules.constraints)", "8237807170236180553");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:dfbb97c1-bcef-47dd-a044-a2503489b0dd(com.mbeddr.core.modules.constraints)", "8237807170236180553");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept ImplementationModule$Gy = MetaAdapterFactory.getConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x595522006a5b934eL, "com.mbeddr.core.modules.structure.ImplementationModule");

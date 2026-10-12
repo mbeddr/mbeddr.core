@@ -23,7 +23,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SProperty;
 
 public class RunIED_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0;
+  private static final Icon ICON = IconContainer.ICON0;
 
   public RunIED_Action() {
     super("Run Interactive Guide", "", ICON);

@@ -11,6 +11,7 @@ import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.openapi.editor.EditorContext;
+import jetbrains.mps.project.Project;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -18,10 +19,12 @@ import java.util.ArrayList;
 import com.mbeddr.core.base.intentions.CommandWithMessage;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public final class AssessmentContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xc022423d5828abbL, "com.mbeddr.core.base.structure.AssessmentContainer");
@@ -35,9 +38,10 @@ public final class AssessmentContainer__BehaviorDescriptor extends BaseBHDescrip
   public static final SMethod<Integer> getSortOrder_id1uL8CIs6rGR = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getSortOrder").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1707183716764859191L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Boolean> isImplementationArtifact_id7Vd878ENIh6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isImplementationArtifact").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9136994893721166918L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Void> runAllQueries_id4NwT$lbXi1r = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("runAllQueries").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5539680726967197787L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""));
+  public static final SMethod<Void> runAllQueries_id4WjNWxKLL0I = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("runAllQueries").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413346312238L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
   public static final SMethod<Boolean> allowEverythingExceptWhitespace_id8q0nkX_5K4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowEverythingExceptWhitespace").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(151435140526267396L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allReferenceableContentsInChunk_id6clJcrKmVSn, dependencies_id6clJcrJYPM5, externallyReferenceableContentsInChunk_id6clJcrKmX4x, getIDEDisplayString_idIviauXb0g, getCategory_id1uL8CIsKxiy, addGenericChunkDependency_id94IdDK$n_l, getSortOrder_id1uL8CIs6rGR, isImplementationArtifact_id7Vd878ENIh6, runAllQueries_id4NwT$lbXi1r, allowEverythingExceptWhitespace_id8q0nkX_5K4);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allReferenceableContentsInChunk_id6clJcrKmVSn, dependencies_id6clJcrJYPM5, externallyReferenceableContentsInChunk_id6clJcrKmX4x, getIDEDisplayString_idIviauXb0g, getCategory_id1uL8CIsKxiy, addGenericChunkDependency_id94IdDK$n_l, getSortOrder_id1uL8CIs6rGR, isImplementationArtifact_id7Vd878ENIh6, runAllQueries_id4NwT$lbXi1r, runAllQueries_id4WjNWxKLL0I, allowEverythingExceptWhitespace_id8q0nkX_5K4);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -65,8 +69,12 @@ public final class AssessmentContainer__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ static boolean isImplementationArtifact_id7Vd878ENIh6(@NotNull SNode __thisNode__) {
     return true;
   }
+  @Deprecated(since = "2025-11-06", forRemoval = true)
   /*package*/ static void runAllQueries_id4NwT$lbXi1r(@NotNull final SNode __thisNode__, EditorContext ctx) {
     CommandWithMessage.execute("Updating Queries ...", ctx.getRepository(), () -> ListSequence.fromList(SNodeOperations.getNodeDescendants(__thisNode__, CONCEPTS.Assessment$UY, false, new SAbstractConcept[]{})).visitAll((it) -> Assessment__BehaviorDescriptor.update_id3jNX2XuLy_p.invoke(it)));
+  }
+  /*package*/ static void runAllQueries_id4WjNWxKLL0I(@NotNull final SNode __thisNode__, final Project mpsProject) {
+    CommandWithMessage.execute("Updating Queries ...", mpsProject.getRepository(), () -> ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.assessments$e01F)).visitAll((it) -> Assessment__BehaviorDescriptor.update_id4WjNWxKKBRM.invoke(it, mpsProject)));
   }
   /*package*/ static boolean allowEverythingExceptWhitespace_id8q0nkX_5K4(@NotNull SAbstractConcept __thisConcept__) {
     return true;
@@ -107,6 +115,9 @@ public final class AssessmentContainer__BehaviorDescriptor extends BaseBHDescrip
       case 8:
         runAllQueries_id4NwT$lbXi1r(node, (EditorContext) parameters[0]);
         return null;
+      case 9:
+        runAllQueries_id4WjNWxKLL0I(node, (Project) parameters[0]);
+        return null;
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -119,7 +130,7 @@ public final class AssessmentContainer__BehaviorDescriptor extends BaseBHDescrip
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
-      case 9:
+      case 10:
         return (T) ((Boolean) allowEverythingExceptWhitespace_id8q0nkX_5K4(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
@@ -140,5 +151,9 @@ public final class AssessmentContainer__BehaviorDescriptor extends BaseBHDescrip
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Assessment$UY = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xc022423d5828abcL, "com.mbeddr.core.base.structure.Assessment");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink assessments$e01F = MetaAdapterFactory.getContainmentLink(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xc022423d5828abbL, 0xc022423d5828abdL, "assessments");
   }
 }

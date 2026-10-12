@@ -11,6 +11,7 @@ import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
+import jetbrains.mps.project.Project;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.Sequence;
@@ -32,9 +33,9 @@ public final class NoEffortAssQuery__BehaviorDescriptor extends BaseBHDescriptor
 
   public static final SMethod<String> errorMessage_id3jNX2XuL9ku = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("errorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3815661793603523870L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> updateAutomatically_idKxraUPpeM7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("updateAutomatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(874099300309986439L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(errorMessage_id3jNX2XuL9ku, updateAutomatically_idKxraUPpeM7, runQuery_id7hIyKqbFNeu);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(errorMessage_id3jNX2XuL9ku, updateAutomatically_idKxraUPpeM7, runQuery_id4WjNWxKJWaq);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -45,7 +46,7 @@ public final class NoEffortAssQuery__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ static boolean updateAutomatically_idKxraUPpeM7(@NotNull SNode __thisNode__) {
     return true;
   }
-  /*package*/ static List<SNode> runQuery_id7hIyKqbFNeu(@NotNull SNode __thisNode__) {
+  /*package*/ static List<SNode> runQuery_id4WjNWxKJWaq(@NotNull SNode __thisNode__, Project mpsProject) {
     List<SNode> results = new ArrayList<SNode>();
     List<SNode> modules = SModelOperations.roots(SNodeOperations.getModel(__thisNode__), CONCEPTS.RequirementsModule$Vm);
     for (SNode r : ListSequence.fromList(modules).translate((it) -> (Iterable<SNode>) RequirementsModule__BehaviorDescriptor.requirementsInModule_id7_tU7IQttUA.invoke(it))) {
@@ -78,7 +79,7 @@ public final class NoEffortAssQuery__BehaviorDescriptor extends BaseBHDescriptor
       case 1:
         return (T) ((Boolean) updateAutomatically_idKxraUPpeM7(node));
       case 2:
-        return (T) ((List<SNode>) runQuery_id7hIyKqbFNeu(node));
+        return (T) ((List<SNode>) runQuery_id4WjNWxKJWaq(node, (Project) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

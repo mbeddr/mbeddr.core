@@ -10,9 +10,9 @@ import javax.swing.JLabel;
 import jetbrains.mps.ide.common.LayoutUtil;
 import java.awt.event.KeyAdapter;
 import java.beans.PropertyChangeListener;
-import java.awt.event.KeyEvent;
-import jetbrains.mps.openapi.editor.style.StyleRegistry;
 import java.awt.Color;
+import com.intellij.openapi.editor.colors.EditorColorsManager;
+import java.awt.event.KeyEvent;
 import java.beans.PropertyChangeEvent;
 import java.text.ParseException;
 import org.jetbrains.annotations.Nullable;
@@ -73,13 +73,16 @@ public class MbeddrSettingsEditor extends JPanel {
 
   private class MyKeyAdapter extends KeyAdapter implements PropertyChangeListener {
     /*package*/ JFormattedTextField textField;
+    private final Color initialForegroundColor;
+
     private MyKeyAdapter(JFormattedTextField textField) {
       this.textField = textField;
+      this.initialForegroundColor = EditorColorsManager.getInstance().getGlobalScheme().getDefaultForeground();
     }
     @Override
     public void keyReleased(KeyEvent e) {
       updateFieldsFromUi();
-      textField.setForeground((textField.isEditValid() ? StyleRegistry.getInstance().getEditorForeground() : Color.RED));
+      textField.setForeground((textField.isEditValid() ? initialForegroundColor : Color.RED));
     }
     @Override
     public void propertyChange(PropertyChangeEvent evt) {

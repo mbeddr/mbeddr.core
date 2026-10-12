@@ -21,7 +21,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.deprecated(true);
           cpb.rawPresentation("IconChar");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a0b0c);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_IconChar = cpb.create();
         }
         return props_IconChar;

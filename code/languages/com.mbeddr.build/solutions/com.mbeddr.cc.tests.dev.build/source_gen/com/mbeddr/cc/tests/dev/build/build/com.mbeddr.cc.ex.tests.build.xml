@@ -440,7 +440,6 @@
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" id="com.mbeddr.mpsutil.filepicker" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.genreview" id="com.mbeddr.mpsutil.genreview" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.gensupport" id="com.mbeddr.mpsutil.gensupport" />
-      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.httpsupport" id="com.mbeddr.mpsutil.httpsupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.incrementalcomputation" id="com.mbeddr.mpsutil.incrementalcomputation" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.infrastructure.misc" id="com.mbeddr.mpsutil.infrastructure.misc" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter" id="com.mbeddr.mpsutil.interpreter" />
@@ -504,12 +503,16 @@
       <plugin path="${artifacts.mps}/plugins/mps-ide" id="jetbrains.mps.ide" />
       <plugin path="${artifacts.mps}/plugins/mps-junit5" id="jetbrains.mps.junit5" />
       <plugin path="${artifacts.mps}/plugins/mps-make" id="jetbrains.mps.ide.make" />
+      <plugin path="${artifacts.mps}/plugins/mps-modelchecker" id="jetbrains.mps.ide.modelchecker" />
       <plugin path="${artifacts.mps}/plugins/mps-rcp" id="jetbrains.mps.rcp" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" id="jetbrains.mps.testing" />
       <plugin path="${artifacts.mps}/plugins/mps-tooltips" id="jetbrains.mps.editor.tooltips" />
       <plugin path="${artifacts.mps}/plugins/mps-vcs" id="jetbrains.mps.vcs" />
       <plugin path="${artifacts.mps}/plugins/vcs-git" id="Git4Idea" />
       <plugin path="${artifacts.mps}/plugins/vcs-svn" id="Subversion" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       <chunk>

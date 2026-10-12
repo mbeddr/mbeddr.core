@@ -20,8 +20,6 @@ import jetbrains.mps.openapi.editor.selection.Selection;
 import javax.swing.SwingUtilities;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.mpsutil.editingGuide.behavior.Exercise__BehaviorDescriptor;
-import jetbrains.mps.openapi.editor.Editor;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.smodel.tempmodel.TemporaryModels;
 import jetbrains.mps.smodel.tempmodel.TempModuleOptions;
@@ -37,6 +35,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.module.SModule;
 import org.jetbrains.mps.openapi.module.SDependency;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.openapi.navigation.EditorNavigator;
 import java.util.Set;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
@@ -50,7 +49,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
 public class ExerciseExecutor {
 
-  private static Map<Project, Map<SNode, ExerciseExecutor>> ourInstances = MapSequence.fromMap(new WeakHashMap<Project, Map<SNode, ExerciseExecutor>>());
+  private static final Map<Project, Map<SNode, ExerciseExecutor>> ourInstances = MapSequence.fromMap(new WeakHashMap<Project, Map<SNode, ExerciseExecutor>>());
 
   public static ExerciseExecutor getInstance(Project project, SNode exercise) {
     if ((exercise == null)) {
@@ -78,7 +77,7 @@ public class ExerciseExecutor {
 
 
   /**
-   * Returns the first instance for which the given closure returns true, or null if it doesnt exist
+   * Returns the first instance for which the given closure returns true, or null if it doesn't exist
    */
   public static ExerciseExecutor findInstance(_FunctionTypes._return_P2_E0<? extends Boolean, ? super Project, ? super SNode> where) {
     for (IMapping<Project, Map<SNode, ExerciseExecutor>> perProject : MapSequence.fromMap(ourInstances)) {
@@ -117,11 +116,11 @@ public class ExerciseExecutor {
 
   private Project myMpsProject;
   private EditorComponent myEditorComponent;
-  private SNode myOriginalExercise;
+  private final SNode myOriginalExercise;
   private SNode mySandboxExercise;
   private Map<SNode, SNode> myOriginal2SandboxMap;
   private Map<SNode, SNode> mySandbox2OriginalMap;
-  private SelectionListener mySelectionListener = new SelectionListener() {
+  private final SelectionListener mySelectionListener = new SelectionListener() {
     private boolean isUpdating = false;
     public void selectionChanged(jetbrains.mps.openapi.editor.EditorComponent editorComponent, Selection oldSelection, Selection newSelection) {
       if (isUpdating) {
@@ -141,7 +140,7 @@ public class ExerciseExecutor {
       }));
     }
   };
-  private EditorComponent.EditorDisposeListener myEditorDisposeListener = new EditorComponent.EditorDisposeListener() {
+  private final EditorComponent.EditorDisposeListener myEditorDisposeListener = new EditorComponent.EditorDisposeListener() {
     public void editorWillBeDisposed(EditorComponent editorComponent) {
       // give other listeners time to process the event before we kill the temp model
       SwingUtilities.invokeLater(() -> dispose());
@@ -154,20 +153,9 @@ public class ExerciseExecutor {
     myMpsProject = mpsProject;
   }
 
-  protected EditorComponent getEditorComponent() {
-    if (myEditorComponent == null) {
-      Editor editor = NavigationSupport.getInstance().openNode(myMpsProject, getSandboxExercise(), true, false);
-      myEditorComponent = (EditorComponent) editor.getCurrentEditorComponent();
-      myEditorComponent.addDisposeListener(myEditorDisposeListener);
-      myEditorComponent.getSelectionManager().addSelectionListener(mySelectionListener);
-      initHints();
-    }
-    return myEditorComponent;
-  }
-
   public SNode getSandboxExercise() {
     if (mySandboxExercise == null) {
-      SModel tempModel = TemporaryModels.getInstance().create(false, true, TempModuleOptions.forDefaultModule());
+      SModel tempModel = TemporaryModels.getInstance().createEditable(true, TempModuleOptions.forDefaultModule());
 
       copyModelProperties(SNodeOperations.getModel(myOriginalExercise), tempModel);
       copyModuleDependencies(SNodeOperations.getModel(myOriginalExercise).getModule(), tempModel.getModule());
@@ -236,9 +224,17 @@ public class ExerciseExecutor {
       ListSequence.fromList(SLinkOperations.getChildren(sandboxExercise, LINKS.tasks$FA4J)).where((it) -> SNodeOperations.getIndexInParent(it) < SNodeOperations.getIndexInParent(fromTask)).visitAll((it) -> SPropertyOperations.assign(it, PROPS.isDone$D0eC, true));
     }
 
-    getEditorComponent().editNode(sandboxExercise);
-    NavigationSupport.getInstance().openNode(myMpsProject, sandboxExercise, true, false);
-    getEditorComponent().getEditorContext().getRepository();
+    if (myEditorComponent != null) {
+      myEditorComponent.editNode(sandboxExercise);
+      new EditorNavigator(myMpsProject).shallFocus(true).open(SNodeOperations.getPointer(sandboxExercise));
+    } else {
+      new EditorNavigator(myMpsProject).shallFocus(true).onceEditorReady((node, editor) -> {
+        myEditorComponent = (EditorComponent) editor.getCurrentEditorComponent();
+        myEditorComponent.addDisposeListener(myEditorDisposeListener);
+        myEditorComponent.getSelectionManager().addSelectionListener(mySelectionListener);
+        initHints();
+      }).open(SNodeOperations.getPointer(sandboxExercise));
+    }
   }
 
   public void restart(SNode fromTask) {
@@ -265,15 +261,16 @@ public class ExerciseExecutor {
     }
     SetSequence.fromSet(hints).removeElement(null);
     myEditorComponent.getUpdater().setInitialEditorHints(SetSequence.fromSet(hints).toGenericArray(String.class));
+    myEditorComponent.rebuildEditorContent();
   }
 
   public MonitorResult checkTask(final SNode task) {
     MonitorResult result = MonitorFunction__BehaviorDescriptor.callFunction_id4TMjSvbDmOr.invoke(SLinkOperations.getTarget(SNodeOperations.cast(MapSequence.fromMap(mySandbox2OriginalMap).get(task), CONCEPTS.Task$i3), LINKS.monitor$sj3G), myEditorComponent.getEditorContext(), task);
-    final String resultMessage = check_fnh4l_a0b0ub(result);
+    final String resultMessage = check_fnh4l_a0b0sb(result);
     SwingUtilities.invokeLater(() -> myMpsProject.getRepository().getModelAccess().executeCommand(() -> SPropertyOperations.assign(task, PROPS.resultMessage$Kz2L, resultMessage)));
     return result;
   }
-  private static String check_fnh4l_a0b0ub(MonitorResult checkedDotOperand) {
+  private static String check_fnh4l_a0b0sb(MonitorResult checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getMessage();
     }

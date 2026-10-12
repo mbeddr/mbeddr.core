@@ -30,6 +30,9 @@ import nl.f1re.mps.editor.swing.runtime.FontHelper;
 import javax.swing.JComponent;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.editor.runtime.TextBuilderImpl;
+import jetbrains.mps.util.MacroHelper;
+import jetbrains.mps.util.MacrosFactory;
+import com.mbeddr.mpsutil.editingGuide.behavior.ImageWord__BehaviorDescriptor;
 import jetbrains.mps.editor.runtime.EditorUtil;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -105,7 +108,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private JComponent _QueryFunction_JComponent_e93q4z_a2a() {
-    return EditorUtil.createSelectImageButton(myNode, PROPS.file$He6o, getEditorContext());
+    final MacroHelper forModule = MacrosFactory.forModule(ImageWord__BehaviorDescriptor.getEffectiveModule_id72JwzwpqZ9S.invoke(myNode));
+    return EditorUtil.createSelectImageButton(myNode, PROPS.file$He6o, getEditorContext(), EditorUtil.MPS_EDITOR_IMAGE_FORMATS, (String value, String hint) -> forModule.shrinkPath(value, hint), (String path) -> forModule.expandPath(path));
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "]");

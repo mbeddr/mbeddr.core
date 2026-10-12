@@ -12,6 +12,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.openapi.editor.TextBuilder;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
@@ -101,8 +102,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
       return collection;
     }).invoke();
-    editorCell.setBig(true);
-    setCellContext(editorCell);
+    EditorCell bigCell = BigCellUtil.findBigCell(editorCell, getNode());
+    if (bigCell != null) {
+      bigCell.setBig(true);
+      setCellContext(bigCell);
+    }
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {

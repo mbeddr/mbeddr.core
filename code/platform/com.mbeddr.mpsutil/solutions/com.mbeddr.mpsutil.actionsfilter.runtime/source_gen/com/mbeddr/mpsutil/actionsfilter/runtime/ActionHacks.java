@@ -5,11 +5,10 @@ package com.mbeddr.mpsutil.actionsfilter.runtime;
 import java.util.List;
 import com.intellij.openapi.actionSystem.AnAction;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import com.intellij.openapi.actionSystem.ex.ActionManagerEx;
+import com.intellij.openapi.actionSystem.ActionManager;
 import jetbrains.mps.internal.collections.runtime.NotNullWhereFilter;
 import java.util.Collections;
 import java.util.ArrayList;
-import com.intellij.openapi.actionSystem.ActionGroup;
 import com.intellij.openapi.actionSystem.DefaultActionGroup;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.Map;
@@ -20,11 +19,11 @@ import com.intellij.openapi.actionSystem.Presentation;
 public class ActionHacks {
 
   public static List<AnAction> getActionsById(Iterable<String> ids) {
-    return Sequence.fromIterable(ids).select((id) -> ActionManagerEx.getInstanceEx().getAction(id)).where(new NotNullWhereFilter()).toList();
+    return Sequence.fromIterable(ids).select((id) -> ActionManager.getInstance().getAction(id)).where(new NotNullWhereFilter()).toList();
   }
 
   public static void removeMenuActionId(String actionId) {
-    AnAction action = ActionManagerEx.getInstanceEx().getAction(actionId);
+    AnAction action = ActionManager.getInstance().getAction(actionId);
     if (action != null) {
       removeMenuAction(action);
     }
@@ -39,66 +38,55 @@ public class ActionHacks {
   }
 
   public static void removeMenuActions(List<AnAction> actions) {
-    ActionManagerEx manager = ActionManagerEx.getInstanceEx();
+    final ActionManager manager = ActionManager.getInstance();
     List<AnAction> mpsGroups = new ArrayList<AnAction>();
     for (AnAction action : actions) {
       mpsGroups.add(action);
     }
     // remove mps groups from IDEA groups
-    for (String id : manager.getActionIds("")) {
-      AnAction action = manager.getAction(id);
-      if (action instanceof ActionGroup) {
-        ActionGroup staticGroup = (ActionGroup) action;
-        removeActionsFromGroup(staticGroup, mpsGroups);
-      }
+    List<String> actionIdList = manager.getActionIdList("");
+    for (DefaultActionGroup staticGroup : ListSequence.fromList(actionIdList).select((it) -> manager.getAction(it)).ofType(DefaultActionGroup.class)) {
+      removeActionsFromGroup(staticGroup, mpsGroups);
     }
   }
 
-  public static void removeActionsFromGroup(ActionGroup group, List<AnAction> actions) {
-    if ("com.intellij.util.xml.tree.actions.AddDomElementActionGroup".equals(group.getClass().getName())) {
-      // workaround for a bug in IDEA XML plugin
-      // TODO: remove the workaround
-      return;
-    }
-    AnAction[] children = group.getChildren(null);
+  public static void removeActionsFromGroup(DefaultActionGroup group, List<AnAction> actions) {
+    AnAction[] children = group.getChildActionsOrStubs();
     for (AnAction child : children) {
-      if (child instanceof ActionGroup) {
-        removeActionsFromGroup((ActionGroup) child, actions);
+      if (child instanceof DefaultActionGroup) {
+        removeActionsFromGroup((DefaultActionGroup) child, actions);
       }
     }
-    boolean groupIsDefaultActionGroup = group instanceof DefaultActionGroup;
     for (AnAction g : actions) {
-      if (groupIsDefaultActionGroup) {
-        ((DefaultActionGroup) group).remove(g);
-      }
+      group.remove(g);
     }
   }
 
   public static List<String> getAllActionIds() {
     List<String> result = ListSequence.fromList(new ArrayList<String>());
-    ListSequence.fromList(result).addSequence(Sequence.fromIterable(Sequence.fromArray(ActionManagerEx.getInstanceEx().getActionIds(""))));
+    ListSequence.fromList(result).addSequence(ListSequence.fromList(ActionManager.getInstance().getActionIdList("")));
     return ListSequence.fromList(result).sort((it) -> it, true).toList();
   }
 
   public static List<AnAction> getAllActions() {
-    final ActionManagerEx manager = ActionManagerEx.getInstanceEx();
+    final ActionManager manager = ActionManager.getInstance();
     return ListSequence.fromList(getAllActionIds()).select((it) -> manager.getAction(it)).toList();
   }
 
   public static List<String> getMainMenuActions() {
     List<String> result = ListSequence.fromList(new ArrayList<String>());
-    collectActions(ActionManagerEx.getInstanceEx().getAction("MainMenu"), result, "");
+    collectActions(ActionManager.getInstance().getAction("MainMenu"), result, "");
     return result;
   }
 
   public static void collectActions(AnAction action, List<String> result, String indent) {
-    String id = ActionManagerEx.getInstanceEx().getId(action);
+    String id = ActionManager.getInstance().getId(action);
     String text = check_qpgw9q_a0b0t(action.getTemplatePresentation());
     ListSequence.fromList(result).addElement(indent + text + " (" + id + ")");
 
-    if (action instanceof ActionGroup) {
-      ActionGroup group = ((ActionGroup) action);
-      for (AnAction child : group.getChildren(null)) {
+    if (action instanceof DefaultActionGroup) {
+      DefaultActionGroup group = (DefaultActionGroup) action;
+      for (AnAction child : group.getChildActionsOrStubs()) {
         collectActions(child, result, indent + "  ");
       }
     }
@@ -106,17 +94,17 @@ public class ActionHacks {
   }
 
   public static String getActionText(String actionId) {
-    AnAction action = ActionManagerEx.getInstanceEx().getAction(actionId);
+    AnAction action = ActionManager.getInstance().getAction(actionId);
     return check_qpgw9q_a1a12(check_qpgw9q_a0b0v(action));
   }
 
   public static List<String> findRootGroups() {
-    final ActionManagerEx manager = ActionManagerEx.getInstanceEx();
-    String[] actionIds = manager.getActionIds("");
-    List<AnAction> actions = getActionsById(Sequence.fromIterable(Sequence.fromArray(actionIds)).toList());
+    final ActionManager manager = ActionManager.getInstance();
+    List<String> actionIdList = manager.getActionIdList("");
+    List<AnAction> actions = getActionsById(actionIdList);
     final Map<AnAction, AnAction> parents = MapSequence.fromMap(new HashMap<AnAction, AnAction>());
-    for (AnAction parent : ListSequence.fromList(actions)) {
-      for (AnAction child : Sequence.fromIterable(Sequence.fromArray(check_qpgw9q_a0a0a4a32(as_qpgw9q_a0a0a0a4a32(parent, ActionGroup.class))))) {
+    for (DefaultActionGroup parent : ListSequence.fromList(actions).ofType(DefaultActionGroup.class)) {
+      for (AnAction child : parent.getChildActionsOrStubs()) {
         MapSequence.fromMap(parents).put(child, parent);
       }
     }
@@ -140,14 +128,5 @@ public class ActionHacks {
       return checkedDotOperand.getTemplatePresentation();
     }
     return null;
-  }
-  private static AnAction[] check_qpgw9q_a0a0a4a32(ActionGroup checkedDotOperand) {
-    if (null != checkedDotOperand) {
-      return checkedDotOperand.getChildren(null);
-    }
-    return null;
-  }
-  private static <T> T as_qpgw9q_a0a0a0a4a32(Object o, Class<T> type) {
-    return (type.isInstance(o) ? (T) o : null);
   }
 }

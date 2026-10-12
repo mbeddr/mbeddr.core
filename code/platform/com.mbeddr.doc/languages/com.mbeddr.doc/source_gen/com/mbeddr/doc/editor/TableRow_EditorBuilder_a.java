@@ -198,7 +198,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
                       return super.canExecute(context);
                     }
                     public void execute(EditorContext ec) {
-                      List<SNode> nodesFromClipboard = CopyPasteUtil.getNodesFromClipboard(SNodeOperations.getModel(node));
+                      List<SNode> nodesFromClipboard = CopyPasteUtil.getNodesFromClipboard();
                       SNode nodeFromClipboard = (nodesFromClipboard.size() > 0 ? nodesFromClipboard.get(0) : null);
                       if (nodeFromClipboard != null && SNodeOperations.isInstanceOf(nodeFromClipboard, CONCEPTS.TableCell$U_)) {
                         if ((SNodeOperations.getParent(nodeFromClipboard) != null)) {

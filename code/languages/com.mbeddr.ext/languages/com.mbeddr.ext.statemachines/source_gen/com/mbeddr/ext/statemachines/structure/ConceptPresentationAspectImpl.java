@@ -235,7 +235,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an argument of an event");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a12b0nc);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_EventArg = cpb.create();
         }
         return props_EventArg;
@@ -302,7 +302,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an event flowing into a state machine");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a13b0nc);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_InEvent = cpb.create();
         }
         return props_InEvent;
@@ -347,7 +347,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an event flowing out of the state machine");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a73b0nc);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_OutEvent = cpb.create();
         }
         return props_OutEvent;
@@ -429,7 +429,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a normal state");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a74b0nc);
+          cpb.icon(IconContainer.RESOURCE_3);
           props_State = cpb.create();
         }
         return props_State;
@@ -462,7 +462,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a state machine");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a15b0nc);
+          cpb.icon(IconContainer.RESOURCE_4);
           props_Statemachine = cpb.create();
         }
         return props_Statemachine;
@@ -518,7 +518,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a variable owned by a state machine");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a85b0nc);
+          cpb.icon(IconContainer.RESOURCE_5);
           props_StatemachineVariableDeclaration = cpb.create();
         }
         return props_StatemachineVariableDeclaration;
@@ -527,7 +527,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a transition");
           cpb.rawPresentation("on");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a95b0nc);
+          cpb.icon(IconContainer.RESOURCE_6);
           props_Transition = cpb.create();
         }
         return props_Transition;

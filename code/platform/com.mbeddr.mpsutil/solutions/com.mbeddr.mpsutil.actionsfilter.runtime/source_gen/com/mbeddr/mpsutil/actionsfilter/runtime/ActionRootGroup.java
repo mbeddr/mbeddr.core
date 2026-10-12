@@ -19,8 +19,8 @@ import jetbrains.mps.ide.actions.PackageActions_ActionGroup;
 import jetbrains.mps.ide.actions.ProjectActions_ActionGroup;
 import java.util.LinkedList;
 import com.intellij.openapi.actionSystem.AnAction;
-import com.intellij.openapi.actionSystem.ex.ActionManagerEx;
-import com.intellij.openapi.actionSystem.ActionGroup;
+import com.intellij.openapi.actionSystem.ActionManager;
+import com.intellij.openapi.actionSystem.DefaultActionGroup;
 
 public class ActionRootGroup {
   private String myId;
@@ -60,7 +60,7 @@ public class ActionRootGroup {
     List<String> ids = ListSequence.fromList(new LinkedList<String>());
     try {
       for (ActionRootGroup g : ListSequence.fromList(getGroups())) {
-        AnAction crt = ActionManagerEx.getInstanceEx().getAction(g.getId());
+        AnAction crt = ActionManager.getInstance().getAction(g.getId());
         doCollectActions(crt, ids);
       }
     } catch (Exception ex) {
@@ -70,12 +70,12 @@ public class ActionRootGroup {
   }
 
   private static void doCollectActions(AnAction crt, List<String> ids) {
-    if (crt instanceof ActionGroup) {
-      for (AnAction child : ((ActionGroup) crt).getChildren(null)) {
+    if (crt instanceof DefaultActionGroup) {
+      for (AnAction child : ((DefaultActionGroup) crt).getChildActionsOrStubs()) {
         doCollectActions(child, ids);
       }
     }
-    String id = ActionManagerEx.getInstanceEx().getId(crt);
+    String id = ActionManager.getInstance().getId(crt);
     if ((id != null && id.length() > 0)) {
       ListSequence.fromList(ids).addElement(id);
     }

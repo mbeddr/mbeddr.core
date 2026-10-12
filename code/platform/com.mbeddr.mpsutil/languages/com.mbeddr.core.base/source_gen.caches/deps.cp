@@ -48,6 +48,7 @@
   <uses language="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
   <uses language="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" />
   <uses language="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+  <uses language="l:37e03aa1-7289-49bc-8269-30de5eceec76:jetbrains.mps.vcs.mergehints" />
   <uses language="l:62971cbe-fd2f-4135-b001-ee6cb7a74436:nl.f1re.mps.editor.swing" />
   <uses module="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" kind="dp" />
   <uses module="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt+dp" />
@@ -92,6 +93,7 @@
   <uses module="2e24a298-44d1-4697-baec-5c424fed3a3b(jetbrains.mps.editorlang.runtime)" kind="dp" />
   <uses module="bfbdd672-7ff5-403f-af4f-16da5226f34c(jetbrains.mps.findUsages.runtime)" kind="dp" />
   <uses module="8d29d73f-ed99-4652-ae0a-083cdfe53c34(jetbrains.mps.ide.platform)" kind="dp" />
+  <uses module="85836058-a162-41d7-bb1d-52e99d873f28(jetbrains.mps.ide.vcs.core)" kind="dp" />
   <uses module="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="rt+dp" />
   <uses module="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt+dp" />
   <uses module="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt+dp" />
@@ -115,6 +117,7 @@
   <uses module="b8e4beec-8383-4fb9-b0bb-9d1c9c159cfc(jetbrains.mps.lang.structure#1170324972255)" kind="dp" />
   <uses module="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" kind="dp" />
   <uses module="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt+dp" />
+  <uses module="63089e65-5c76-4c44-9eb6-15698b4444cf(jetbrains.mps.vcs.mergehints.runtime)" kind="rt+dp" />
   <uses module="df7a5caa-3be8-43f2-a870-f5474c3bcdb5(nl.f1re.mps.editor.swing.runtime)" kind="rt+dp" />
   <uses module="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" kind="dp" />
 </dependenciesRoot>

@@ -11,21 +11,23 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import jetbrains.mps.project.Project;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.ArrayList;
 import org.jetbrains.mps.openapi.module.SRepository;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.Set;
+import org.jetbrains.mps.openapi.model.SReference;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
-import org.jetbrains.mps.openapi.model.SReference;
 import org.jetbrains.mps.openapi.module.FindUsagesFacade;
 import jetbrains.mps.FilteredGlobalScope;
+import jetbrains.mps.util.CollectConsumer;
 import jetbrains.mps.progress.EmptyProgressMonitor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
@@ -36,22 +38,20 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ShowTracesQuery__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0x21ab0788121a1d86L, "com.mbeddr.cc.requirements.structure.ShowTracesQuery");
 
-  public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id7hIyKqbFNeu);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id4WjNWxKJWaq);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static List<SNode> runQuery_id7hIyKqbFNeu(@NotNull SNode __thisNode__) {
+  /*package*/ static List<SNode> runQuery_id4WjNWxKJWaq(@NotNull SNode __thisNode__, Project mpsProject) {
     List<SNode> rs = Sequence.fromIterable(RequirementsModule__BehaviorDescriptor.requirementsInModule_id7_tU7IQttUA.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.module$BPFw))).toList();
     List<SNode> res = new ArrayList<SNode>();
-    final SRepository repo = SNodeOperations.getModel(__thisNode__).getRepository();
-    assert repo != null : "assume non-trivial behaviors are not invoked for detached nodes";
+    final SRepository repo = mpsProject.getRepository();
     for (SNode r : ListSequence.fromList(rs)) {
-      Set<SNode> s = SetSequence.fromSet(new HashSet<SNode>());
-      SetSequence.fromSet(s).addElement(r);
-      Set<SReference> resRefs = FindUsagesFacade.getInstance().findUsages(new FilteredGlobalScope(repo), s, new EmptyProgressMonitor());
+      Set<SReference> resRefs = SetSequence.fromSet(new HashSet<SReference>());
+      FindUsagesFacade.getInstance().findUsages(new FilteredGlobalScope(repo), SetSequence.fromSetAndArray(new HashSet<SNode>(), r), new CollectConsumer<SReference>(resRefs), new EmptyProgressMonitor());
 
       Iterable<SNode> seq = SetSequence.fromSet(resRefs).where((it) -> SNodeOperations.isInstanceOf(SNodeOperations.getParent(((SNode) it.getSourceNode())), CONCEPTS.TraceAnnotation$ho)).select((it) -> SNodeOperations.getParent(((SNode) it.getSourceNode())));
 
@@ -84,7 +84,7 @@ public final class ShowTracesQuery__BehaviorDescriptor extends BaseBHDescriptor 
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((List<SNode>) runQuery_id7hIyKqbFNeu(node));
+        return (T) ((List<SNode>) runQuery_id4WjNWxKJWaq(node, (Project) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
