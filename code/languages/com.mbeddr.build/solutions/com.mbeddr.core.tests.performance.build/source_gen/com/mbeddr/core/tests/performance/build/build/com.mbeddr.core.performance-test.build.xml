@@ -233,7 +233,6 @@
       <plugin path="${artifacts.mps}/plugins/mps-tooltips" id="jetbrains.mps.editor.tooltips" />
       <plugin path="${artifacts.mps}/plugins/mps-vcs" id="jetbrains.mps.vcs" />
       <plugin path="${artifacts.mps}/plugins/vcs-git" id="Git4Idea" />
-      <plugin path="${artifacts.mps}/plugins/vcs-svn" id="Subversion" />
       <chunk>
         <module file="${mbeddr.core}/tests/test.ts.core.performance/test.ts.core.performance.msd" />
       </chunk>
@@ -720,7 +719,6 @@
       <plugin id="jetbrains.mps.vcs" path="${artifacts.mps}/plugins/mps-vcs" />
       <plugin id="intellij.structureView.plugin" path="${artifacts.mps}/plugins/platform-structureView-plugin" />
       <plugin id="Git4Idea" path="${artifacts.mps}/plugins/vcs-git" />
-      <plugin id="Subversion" path="${artifacts.mps}/plugins/vcs-svn" />
       <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
       <project path="${basedir}" />
       <testmodules>        
