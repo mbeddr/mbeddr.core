@@ -172,8 +172,7 @@ object Platform : BuildType({
     name = "platform"
 
     artifactRules = """
-        artifacts/com.mbeddr.allScripts.build/mbeddr.allScripts => mbeddr.allScripts
-        artifacts/com.mbeddr.platform => com.mbeddr.platform
+        code/platform/build/artifacts/com.mbeddr.platform => com.mbeddr.platform
     """.trimIndent()
 
     params {
@@ -328,7 +327,7 @@ object PullRequestsBuild : BuildType({
             scriptContent = DslContext.baseDir.resolve("prek-checks.sh").readText()
         }
         gradle {
-            tasks = "test_mbeddr_platform test_mbeddr publish migrate remigrate -PforceBuildPlatform"
+            tasks = "checkPlatformTests test_mbeddr publish migrate remigrate -PforceBuildPlatform"
             gradleParams = "--continue --info"
             jdkHome = "%env.JDK_17_0_x64%"
         }

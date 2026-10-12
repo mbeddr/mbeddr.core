@@ -69,26 +69,25 @@ tasks.register("install") {
             println("The path selector only contains the actual MPS version, for instance \"MPS2017.3\", not the full path to the user plugin directory.")
         }
     }
+
+    dependsOn(project(":com.mbeddr:platform").tasks.named("install_actionsfilter"))
 }
 
 logger.info("skipresolve_mps: {}, mpsHomeDir: {}", skipresolve_mps, mpsHomeDir)
 
 val artifactsDir: File by extra(file("${rootProject.projectDir.absolutePath}/artifacts"))
 
-val mbeddrBuildNumber: String by project
-val mbeddrMajor: String by project
-val mbeddrMinor: String by project
+val antVersionProperties: Map<String, String> by extra
 
 val antSystemProperties = mapOf<String, Any>(
     "mps.home" to mpsHomeDir,
     "build.dir" to rootProject.layout.projectDirectory,
     "artifacts.root" to rootProject.file("artifacts"),
     "mbeddr.github.core.home" to rootProject.layout.projectDirectory,
-    "build" to mbeddrBuildNumber,
-    "major.version" to mbeddrMajor,
-    "minor.version" to mbeddrMinor,
+    "version" to project.version.toString(),
     "build.jna.library.path" to File(mpsHomeDir, "lib/jna/${System.getProperty("os.arch")}")
 )
+    .plus(antVersionProperties)
 
 val defaultScriptArgs = antSystemProperties.map { "-D${it.key}=${it.value}" }
 extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs
@@ -121,7 +120,7 @@ fun configureRepositories(project: Project) {
             repositories {
                 maven {
                     url = project.uri(
-                        if (project.property("mbeddrBuildNumber").toString().endsWith("-SNAPSHOT"))
+                        if (project.version.toString().endsWith("-SNAPSHOT"))
                             "https://artifacts.itemis.cloud/repository/maven-mps-snapshots/"
                         else
                             "https://artifacts.itemis.cloud/repository/maven-mps-releases/"
@@ -155,11 +154,9 @@ fun configureRepositories(project: Project) {
 
 
 tasks.register("printVersions") {
-    description = "Print the mbeddr and mbeddr platform build number."
-    val mbeddrPlatformBuildNumber: String by project
+    description = "Print the project version."
     doLast {
-        println("mbeddrBuildNumber: $mbeddrBuildNumber")
-        println("mbeddrPlatformBuildNumber: $mbeddrPlatformBuildNumber")
+        println("version: ${project.version}")
     }
 }
 
@@ -179,7 +176,12 @@ val projectDirectoriesInDependencyOrder = projectsInDependencyOrder.map {
 }
 
 tasks.register("generate_all_languages") {
-    dependsOn(":com.mbeddr:platform:generate_platform_languages", ":com.mbeddr:languages:generate_mbeddr_languages")
+    dependsOn(
+        project(":com.mbeddr:platform").tasks.named("generatePlatform"),
+        project(":com.mbeddr:platform").tasks.named("generatePlatformTests"),
+        project(":com.mbeddr:platform").tasks.named("generateSandboxes"),
+        ":com.mbeddr:languages:generate_mbeddr_languages",
+    )
 }
 
 tasks.register<MpsMigrate>("migrate") {
