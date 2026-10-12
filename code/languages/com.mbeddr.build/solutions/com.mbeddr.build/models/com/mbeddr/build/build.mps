@@ -11166,7 +11166,7 @@
       </node>
     </node>
     <node concept="2kB4xC" id="7TN8EE6trcX" role="1l3spd">
-      <property role="TrG5h" value="build" />
+      <property role="TrG5h" value="version" />
       <node concept="aVJcg" id="7TN8EE6trcY" role="aVJcv">
         <node concept="NbPM2" id="7TN8EE6trcZ" role="aVJcq">
           <node concept="3Mxwew" id="7TN8EE6trd0" role="3MwsjC">
@@ -11192,7 +11192,7 @@
             <property role="3MwjfP" value="-" />
           </node>
           <node concept="3Mxwey" id="7TN8EE6trd8" role="3MwsjC">
-            <ref role="3Mxwex" node="7TN8EE6trcX" resolve="build" />
+            <ref role="3Mxwex" node="7TN8EE6trcX" resolve="version" />
           </node>
         </node>
       </node>
