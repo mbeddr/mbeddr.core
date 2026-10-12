@@ -6,13 +6,11 @@ plugins {
 extra["artifactsDir"] = File(rootDir, "artifacts")
 
 val ciBuild: Boolean by extra
-val mbeddrBuildNumber: String by extra
-val mbeddrPlatformBuildNumber: String by extra
 
 if (ciBuild) {
-    // Coerce TeamCity build number to mbeddrBuildNumber by default
+    // Coerce TeamCity build number to the project version by default
     // (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
-    println("##teamcity[buildNumber '$mbeddrBuildNumber']")
+    println("##teamcity[buildNumber '${project.version}']")
 } else {
-    println("Local build detected. mbeddr version $mbeddrBuildNumber, mbeddr platform version $mbeddrPlatformBuildNumber")
+    println("Local build detected. mbeddr version ${project.version}")
 }

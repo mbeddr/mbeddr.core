@@ -10,10 +10,5 @@
       <unit id="5634794703879484623" at="1,0,865,10" name="com.mbeddr.mpsutil.dev.build.com$mbeddr$mpsutil$actionsfilter" />
     </file>
   </root>
-  <root nodeRef="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)/7461614749595254338">
-    <file name="com.mbeddr.platform.distribution.xml">
-      <unit id="7461614749595254338" at="1,0,69,10" name="com.mbeddr.mpsutil.dev.build.com$mbeddr$platform$distribution" />
-    </file>
-  </root>
 </debug-info>
 
