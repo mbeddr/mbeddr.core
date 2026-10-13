@@ -7,9 +7,9 @@
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.platform.ts.tests.build" />
   <property name="artifacts.root" location="" />
   <property name="mps.home" location="" />
-  <property name="project.root" location="${basedir}/../../" />
+  <property name="project.root" location="${basedir}/../../../../" />
   <property name="mbeddr.mpsutil" location="${project.root}/code/platform/com.mbeddr.mpsutil" />
-  <property name="dependencies.root" location="${project.root}/build/dependencies" />
+  <property name="dependencies.root" location="${project.root}/code/platform/build/dependencies" />
   <property name="platform.artifacts" location="${artifacts.root}/com.mbeddr.platform" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.platform" location="${platform.artifacts}" />
