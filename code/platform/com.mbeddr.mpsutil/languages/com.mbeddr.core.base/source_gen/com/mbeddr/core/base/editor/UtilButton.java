@@ -30,6 +30,4 @@ public abstract class UtilButton extends CommandButton {
     l.setIcon(icon);
     return l;
   }
-
-  public abstract void perform(SNode n);
 }

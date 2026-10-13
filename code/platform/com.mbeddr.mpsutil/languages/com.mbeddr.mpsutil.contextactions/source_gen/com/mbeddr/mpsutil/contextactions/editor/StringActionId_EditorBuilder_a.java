@@ -101,7 +101,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
 
     protected List<?> createParameterObjects(SNode node, EditorContext editorContext) {
-      return ListSequence.fromListWithValues(new ArrayList<String>(), Sequence.fromArray(ActionManager.getInstance().getActionIds("")));
+      return ListSequence.fromListWithValues(new ArrayList<String>(), ActionManager.getInstance().getActionIdList(""));
 
     }
     protected void handleAction(Object parameterObject, SNode node, SModel model, EditorContext editorContext) {

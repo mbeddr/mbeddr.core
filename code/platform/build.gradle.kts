@@ -10,8 +10,6 @@ plugins {
     id("org.cyclonedx.bom") version "3.4.1"
 }
 
-@Suppress("UNCHECKED_CAST")
-val mpsPluginsDir = parent?.extensions?.extraProperties?.properties?.get("mpsPluginsDir") as? Provider<String>
 val antVersionProperties: Map<String, String> by extra
 val mpsBuild = libs.mps.get().version!!
 
@@ -19,8 +17,8 @@ val artifactsDirectory = layout.buildDirectory.dir("artifacts")
 
 fun artifactsDir(buildProjectName: String) = artifactsDirectory.map { it.dir(buildProjectName) }
 
-val buildScriptsDirectory = rootProject.layout.buildDirectory.dir("com.mbeddr.platform")
-val reportsDirectory = rootProject.layout.buildDirectory.dir("reports")
+val buildScriptsDirectory = layout.buildDirectory.dir("generated")
+val reportsDirectory = layout.buildDirectory.dir("reports")
 val platformBuildFile = buildScriptsDirectory.map { it.file("build.xml") }
 val actionsfilterBuildFile = buildScriptsDirectory.map { it.file("actionsfilter.xml") }
 val platformTestsBuildFile = buildScriptsDirectory.map { it.file("build-ts-tests.xml") }
@@ -57,7 +55,6 @@ providers.gradleProperty("mpsHomeDir").orNull?.let { mpsHomeDir ->
     mpsDefaults.mpsHome = rootProject.layout.projectDirectory.dir(mpsHomeDir)
 }
 
-mpsDefaults.mpsLibrariesDirectory = rootProject.layout.buildDirectory.dir("dependencies")
 mpsDefaults.pathVariables.put("artifacts.root", artifactsDirectory.map { it.asFile })
 
 tasks.withType<RunAnt>().configureEach {
@@ -109,19 +106,19 @@ bundledDependencies {
     }
     create("ecore") {
         destinationDir = layout.projectDirectory.dir("com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecore.stubs/lib")
-        dependency("org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.36.0")
+        dependency("org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.38.0")
                 // xcore 1.36.0's POM requests these xtext modules with open-ended ranges like
                 // [2.13.0,3.0.0). Pin them so we don't accidentally pull an xtext milestone that
                 // targets a Java version newer than the MPS-bundled JBR 17.
-        dependency("org.eclipse.xtext:org.eclipse.xtext:2.42.0")
-        dependency("org.eclipse.xtext:org.eclipse.xtext.util:2.42.0")
-        dependency("org.eclipse.xtext:org.eclipse.xtext.xbase:2.42.0")
-        dependency("org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.42.0")
-        dependency("org.eclipse.xtext:org.eclipse.xtext.common.types:2.42.0")
-        dependency("org.eclipse.xtext:org.eclipse.xtext.ecore:2.42.0")
+        dependency("org.eclipse.xtext:org.eclipse.xtext:2.44.0")
+        dependency("org.eclipse.xtext:org.eclipse.xtext.util:2.44.0")
+        dependency("org.eclipse.xtext:org.eclipse.xtext.xbase:2.44.0")
+        dependency("org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.44.0")
+        dependency("org.eclipse.xtext:org.eclipse.xtext.common.types:2.44.0")
+        dependency("org.eclipse.xtext:org.eclipse.xtext.ecore:2.44.0")
                 // Same open-range problem as xtext: xtext modules declare
                 // mwe2.runtime:[2.9.0,3.0.0), and 2.26.0.M1 targets Java 21.
-        dependency("org.eclipse.emf:org.eclipse.emf.mwe2.runtime:2.25.0")
+        dependency("org.eclipse.emf:org.eclipse.emf.mwe2.runtime:2.27.0")
         configuration {
             exclude(module = "aopalliance")
             exclude(module = "antlr-runtime")
@@ -167,13 +164,9 @@ val platformTests = mpsBuilds.create<TestBuild>("platformTests") {
     buildFile = platformTestsBuildFile
 }
 
-mpsPluginsDir?.let { pluginsDirectory ->
-    tasks.register<Copy>("install_actionsfilter") {
-        description = "Copy the actions filter IntelliJ plugin to the MPS plugin's directory"
-        dependsOn(actionsfilter.assembleTask)
-        from(actionsfilter.buildArtifactsDirectory)
-        include("com.mbeddr.mpsutil.actionsfilter/")
-        into(pluginsDirectory)
+configurations.consumable("actionsfilterArtifacts") {
+    outgoing.artifact(actionsfilter.buildArtifactsDirectory) {
+        builtBy(actionsfilter.assembleTask)
     }
 }
 
@@ -344,8 +337,6 @@ publishing {
         }
     }
 }
-
-val mbeddrBuild: String by project
 
 tasks.cyclonedxDirectBom {
     jsonOutput = reportsDirectory.map { it.file("sbom.json") }

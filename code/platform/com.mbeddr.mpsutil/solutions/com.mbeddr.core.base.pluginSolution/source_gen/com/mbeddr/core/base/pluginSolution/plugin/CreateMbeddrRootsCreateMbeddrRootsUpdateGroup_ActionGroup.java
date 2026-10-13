@@ -14,8 +14,7 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.workbench.action.ApplicationPlugin;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
-import javax.swing.tree.TreeNode;
-import jetbrains.mps.ide.ui.tree.smodel.PackageNode;
+import jetbrains.mps.ide.ui.tree.VirtualFolder;
 import org.jetbrains.mps.openapi.model.SModel;
 import com.intellij.openapi.project.Project;
 import org.jetbrains.annotations.Nullable;
@@ -42,10 +41,10 @@ public class CreateMbeddrRootsCreateMbeddrRootsUpdateGroup_ActionGroup extends G
       return;
     }
 
-    TreeNode treeNode = event.getData(MPSCommonDataKeys.TREE_NODE);
     String selectedPackage = null;
-    if (treeNode instanceof PackageNode) {
-      selectedPackage = ((PackageNode) treeNode).getPackage();
+    Object value = event.getData(MPSCommonDataKeys.VALUE);
+    if (value instanceof VirtualFolder.Nodes) {
+      selectedPackage = ((VirtualFolder.Nodes) value).getName();
     }
 
     SModel model = event.getData(MPSCommonDataKeys.CONTEXT_MODEL);

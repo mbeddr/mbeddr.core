@@ -32,7 +32,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("absolute value");
           cpb.rawPresentation("abs");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a0b0n);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_AbsExpression = cpb.create();
         }
         return props_AbsExpression;
@@ -41,7 +41,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("fraction bar");
           cpb.rawPresentation("frac");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a1b0n);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_FractionExpression = cpb.create();
         }
         return props_FractionExpression;
@@ -64,7 +64,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("n log m");
           cpb.rawPresentation("log");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a4b0n);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_LogarithmExpression = cpb.create();
         }
         return props_LogarithmExpression;
@@ -93,7 +93,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("n^m");
           cpb.rawPresentation("pow");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a8b0n);
+          cpb.icon(IconContainer.RESOURCE_3);
           props_PowerExpression = cpb.create();
         }
         return props_PowerExpression;
@@ -102,7 +102,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("compute product of expression ∏");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a9b0n);
+          cpb.icon(IconContainer.RESOURCE_4);
           props_ProductLoopExpression = cpb.create();
         }
         return props_ProductLoopExpression;
@@ -111,7 +111,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("square root √");
           cpb.rawPresentation("sqrt");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a01b0n);
+          cpb.icon(IconContainer.RESOURCE_5);
           props_SqrtExpression = cpb.create();
         }
         return props_SqrtExpression;
@@ -120,7 +120,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("compute sum of expression ∑");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a11b0n);
+          cpb.icon(IconContainer.RESOURCE_6);
           props_SumExpression = cpb.create();
         }
         return props_SumExpression;

@@ -112,6 +112,10 @@ public class CustomToolBar {
 
   private void removeIconsCustomization() {
     final CustomActionsSchema actionsSchema = CustomActionsSchema.getInstance();
+    if (actionsSchema.getIconCustomizations().isEmpty()) {
+      // Due to a bug in CustomActionsSchema, calling removeIconCustomization when there are no customizations leads to a call to Map.of(K,V) with a null value, which is not allowed. This check is to work around this bug.
+      return;
+    }
     ListSequence.fromList(this.entries).where((it) -> isNotEmptyString(it.getId())).visitAll((it) -> actionsSchema.removeIconCustomization(it.getId()));
   }
   private static boolean isNotEmptyString(String str) {

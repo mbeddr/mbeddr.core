@@ -23,8 +23,8 @@ public class ToolBarEntry {
     this.entryType = type;
   }
 
-  public ToolBarEntry(String actionID, String icon, @NotNull EntryType type) {
-    this.actionID = actionID;
+  public ToolBarEntry(String actionId, String icon, @NotNull EntryType type) {
+    this.actionId = actionId;
     this.icon = icon;
     this.entryType = type;
   }
@@ -32,7 +32,7 @@ public class ToolBarEntry {
   @NotNull
   public EntryType entryType;
   @Nullable
-  public String actionID;
+  public String actionId;
   @Nullable
   public String icon;
 
@@ -45,7 +45,7 @@ public class ToolBarEntry {
   }
 
   public String getId() {
-    return actionID;
+    return actionId;
   }
 
   public String getIcon() {
@@ -53,7 +53,7 @@ public class ToolBarEntry {
   }
 
   public void setId(String id) {
-    this.actionID = id;
+    this.actionId = id;
   }
 
   public void setIcon(String icon) {
@@ -67,7 +67,7 @@ public class ToolBarEntry {
     File iconFile = new File(PathManager.getHomePath() + File.separator + icon);
     if (!(iconFile.exists())) {
       if (LOG.isWarningLevel()) {
-        LOG.warning(String.format("Could not find icon [%s] for action [%s]", icon, actionID));
+        LOG.warning(String.format("Could not find icon [%s] for action [%s]", icon, actionId));
       }
       return null;
     }

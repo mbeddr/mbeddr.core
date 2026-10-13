@@ -192,6 +192,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
         new ConceptNameStyleClass(this).apply(style, editorCell);
         editorCell.getStyle().putAll(style);
         editorCell.setDefaultText("<no name>");
+
         setCellContext(editorCell);
         editorCell.setCommitInCommand(false);
       }

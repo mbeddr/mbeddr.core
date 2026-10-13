@@ -11,27 +11,27 @@ import org.jetbrains.annotations.Nullable;
 
 public class FilterSettings implements Serializable, Cloneable {
 
-  public Set<String> myFilteredIds = SetSequence.fromSet(new HashSet<String>());
+  public Set<String> filteredIds = SetSequence.fromSet(new HashSet<String>());
 
   @Transient
   public Set<String> getFilteredIds() {
-    return SetSequence.fromSetWithValues(new HashSet<String>(), myFilteredIds);
+    return SetSequence.fromSetWithValues(new HashSet<String>(), filteredIds);
   }
 
-  public void setFilteredIds(Set<String> filteredIds) {
-    myFilteredIds = SetSequence.fromSetWithValues(new HashSet<String>(), filteredIds);
+  public void setFilteredIds(Set<String> newFilteredIds) {
+    filteredIds = SetSequence.fromSetWithValues(new HashSet<String>(), newFilteredIds);
   }
 
   public void addFilteredId(String id) {
-    SetSequence.fromSet(myFilteredIds).addElement(id);
+    SetSequence.fromSet(filteredIds).addElement(id);
   }
 
   public void removedFilteredId(String id) {
-    SetSequence.fromSet(myFilteredIds).removeElement(id);
+    SetSequence.fromSet(filteredIds).removeElement(id);
   }
 
   public boolean isFiltered(String id) {
-    return SetSequence.fromSet(myFilteredIds).contains(id);
+    return SetSequence.fromSet(filteredIds).contains(id);
   }
 
   public void load(@Nullable FilterSettings source) {
@@ -42,7 +42,7 @@ public class FilterSettings implements Serializable, Cloneable {
   public FilterSettings clone() {
     try {
       FilterSettings clone = (FilterSettings) super.clone();
-      clone.myFilteredIds = SetSequence.fromSetWithValues(new HashSet<String>(), myFilteredIds);
+      clone.filteredIds = SetSequence.fromSetWithValues(new HashSet<String>(), filteredIds);
       return clone;
     } catch (CloneNotSupportedException e) {
       throw new RuntimeException(e);
@@ -59,10 +59,10 @@ public class FilterSettings implements Serializable, Cloneable {
     }
 
     FilterSettings that = (FilterSettings) o;
-    if (!(SetSequence.fromSet(that.myFilteredIds).containsSequence(SetSequence.fromSet(myFilteredIds)))) {
+    if (!(SetSequence.fromSet(that.filteredIds).containsSequence(SetSequence.fromSet(filteredIds)))) {
       return false;
     }
-    if (!(SetSequence.fromSet(myFilteredIds).containsSequence(SetSequence.fromSet(that.myFilteredIds)))) {
+    if (!(SetSequence.fromSet(filteredIds).containsSequence(SetSequence.fromSet(that.filteredIds)))) {
       return false;
     }
 
@@ -72,7 +72,7 @@ public class FilterSettings implements Serializable, Cloneable {
   @Override
   public int hashCode() {
     int result = 0;
-    result = 31 * result + ((myFilteredIds != null ? ((Object) myFilteredIds).hashCode() : 0));
+    result = 31 * result + ((filteredIds != null ? ((Object) filteredIds).hashCode() : 0));
     return result;
   }
   private static Set<String> check_1ws8vh_a0a0n(FilterSettings checkedDotOperand) {

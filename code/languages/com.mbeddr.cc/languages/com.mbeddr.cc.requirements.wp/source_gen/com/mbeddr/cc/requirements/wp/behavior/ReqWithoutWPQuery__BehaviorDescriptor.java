@@ -11,6 +11,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import jetbrains.mps.project.Project;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
@@ -31,14 +32,14 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class ReqWithoutWPQuery__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe530d4cbefad4822L, 0x92f81d114f03f836L, 0x341b398133af8890L, "com.mbeddr.cc.requirements.wp.structure.ReqWithoutWPQuery");
 
-  public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id7hIyKqbFNeu);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id4WjNWxKJWaq);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static List<SNode> runQuery_id7hIyKqbFNeu(@NotNull final SNode __thisNode__) {
+  /*package*/ static List<SNode> runQuery_id4WjNWxKJWaq(@NotNull final SNode __thisNode__, Project mpsProject) {
     List<SNode> all = SModelOperations.nodes(SNodeOperations.getModel(__thisNode__), CONCEPTS.Requirement$sS);
     if (SLinkOperations.getTarget(__thisNode__, LINKS.status$FI5Q) != null) {
       all = ListSequence.fromList(all).where((it) -> {
@@ -79,7 +80,7 @@ public final class ReqWithoutWPQuery__BehaviorDescriptor extends BaseBHDescripto
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((List<SNode>) runQuery_id7hIyKqbFNeu(node));
+        return (T) ((List<SNode>) runQuery_id4WjNWxKJWaq(node, (Project) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

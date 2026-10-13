@@ -346,6 +346,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x3588b64556af2180L);
     b.origin("r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)/865293814733114044");
     b.version(3);
+    b.property("alwaysShowCheckboxes", 0x20331e8b1dfb8b5cL).type(PrimitiveTypeId.BOOLEAN).origin("2320231815878249308").done();
     b.property("mustBeOk", 0x34f3f42f5ec49409L).type(PrimitiveTypeId.BOOLEAN).origin("3815661793603523593").done();
     b.property("hideOkOnes", 0x7c8c8301966f10e3L).type(PrimitiveTypeId.BOOLEAN).origin("8974692200284623075").done();
     b.property("sorted", 0x789e294e12c6881eL).type(PrimitiveTypeId.BOOLEAN).origin("8691429746170824734").done();

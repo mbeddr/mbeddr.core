@@ -27,8 +27,8 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import jetbrains.mps.nodeEditor.MPSFonts;
 import de.itemis.mps.editor.celllayout.runtime.cells.HorizontalLineCell;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.NodeReadAccessCasterInEditor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.core.base.behavior.TextBlock__BehaviorDescriptor;
 import java.awt.Color;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -181,7 +181,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     return editorCell;
   }
   private boolean nodeCondition_wb3xr0_a1d0() {
-    return SPropertyOperations.getBoolean(NodeReadAccessCasterInEditor.runReadTransparentAction(() -> SNodeOperations.getNodeAncestor(myNode, CONCEPTS.Assessment$UY, false, false)), PROPS.mustBeOk$nDd5);
+    SNode assessment = NodeReadAccessCasterInEditor.runReadTransparentAction(() -> SNodeOperations.getNodeAncestor(myNode, CONCEPTS.Assessment$UY, false, false));
+    return SPropertyOperations.getBoolean(assessment, PROPS.mustBeOk$nDd5) || SPropertyOperations.getBoolean(assessment, PROPS.alwaysShowCheckboxes$CaKI);
   }
   private boolean nodeCondition_wb3xr0_a3d0() {
     return !((boolean) TextBlock__BehaviorDescriptor.isEmpty_id3JD5OqKT3Vw.invoke(SLinkOperations.getTarget(myNode, LINKS.comment$inW0)));
@@ -333,6 +334,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   }
 
   private static final class PROPS {
+    /*package*/ static final SProperty alwaysShowCheckboxes$CaKI = MetaAdapterFactory.getProperty(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xc022423d5828abcL, 0x20331e8b1dfb8b5cL, "alwaysShowCheckboxes");
     /*package*/ static final SProperty mustBeOk$nDd5 = MetaAdapterFactory.getProperty(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xc022423d5828abcL, 0x34f3f42f5ec49409L, "mustBeOk");
     /*package*/ static final SProperty isNew$XqpV = MetaAdapterFactory.getProperty(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xc022423d5829cdeL, 0x25a19da5519d5988L, "isNew");
     /*package*/ static final SProperty markedOk$pmda = MetaAdapterFactory.getProperty(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0xc022423d5829cdeL, 0x25a19da551913fd9L, "markedOk");

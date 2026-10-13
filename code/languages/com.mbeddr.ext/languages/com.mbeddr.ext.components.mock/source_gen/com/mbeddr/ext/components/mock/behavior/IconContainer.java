@@ -6,15 +6,15 @@ import javax.swing.Icon;
 import jetbrains.mps.ide.icons.IconLoadingUtil;
 
 public class IconContainer {
-  protected static Icon ICON_a0a1a0 = IconLoadingUtil.loadIcon("counter_failed.png", IconContainer.class);
-  protected static Icon ICON_a0a0b0a = IconLoadingUtil.loadIcon("counter_successful.png", IconContainer.class);
-  protected static Icon ICON_a0a1a1 = IconLoadingUtil.loadIcon("mock_failed.png", IconContainer.class);
-  protected static Icon ICON_a0a0b0b = IconLoadingUtil.loadIcon("mock_pending.png", IconContainer.class);
-  protected static Icon ICON_a0a1b0b = IconLoadingUtil.loadIcon("mock_successful.png", IconContainer.class);
-  protected static Icon ICON_a0a2a2 = IconLoadingUtil.loadIcon("step_failed.png", IconContainer.class);
-  protected static Icon ICON_a0a0c0c = IconLoadingUtil.loadIcon("step_pending.png", IconContainer.class);
-  protected static Icon ICON_a0a1c0c = IconLoadingUtil.loadIcon("step_successful.png", IconContainer.class);
-  protected static Icon ICON_a0a2a3 = IconLoadingUtil.loadIcon("assert_failed.png", IconContainer.class);
-  protected static Icon ICON_a0a0c0d = IconLoadingUtil.loadIcon("assert_pending.png", IconContainer.class);
-  protected static Icon ICON_a0a1c0d = IconLoadingUtil.loadIcon("assert_successful.png", IconContainer.class);
+  protected static Icon ICON0 = IconLoadingUtil.loadIcon("/icons/counter_failed.png", IconContainer.class);
+  protected static Icon ICON1 = IconLoadingUtil.loadIcon("/icons/counter_successful.png", IconContainer.class);
+  protected static Icon ICON2 = IconLoadingUtil.loadIcon("/icons/mock_failed.png", IconContainer.class);
+  protected static Icon ICON3 = IconLoadingUtil.loadIcon("/icons/mock_pending.png", IconContainer.class);
+  protected static Icon ICON4 = IconLoadingUtil.loadIcon("/icons/mock_successful.png", IconContainer.class);
+  protected static Icon ICON5 = IconLoadingUtil.loadIcon("/icons/step_failed.png", IconContainer.class);
+  protected static Icon ICON6 = IconLoadingUtil.loadIcon("/icons/step_pending.png", IconContainer.class);
+  protected static Icon ICON7 = IconLoadingUtil.loadIcon("/icons/step_successful.png", IconContainer.class);
+  protected static Icon ICON8 = IconLoadingUtil.loadIcon("/icons/assert_failed.png", IconContainer.class);
+  protected static Icon ICON9 = IconLoadingUtil.loadIcon("/icons/assert_pending.png", IconContainer.class);
+  protected static Icon ICON10 = IconLoadingUtil.loadIcon("/icons/assert_successful.png", IconContainer.class);
 }

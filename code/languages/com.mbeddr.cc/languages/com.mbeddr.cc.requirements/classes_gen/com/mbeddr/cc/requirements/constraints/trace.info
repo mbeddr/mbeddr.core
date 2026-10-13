@@ -210,7 +210,7 @@
       <node id="6657644269295177944" at="43,0,44,22" concept="6" />
       <node id="6657644269295177944" at="52,130,53,161" concept="5" />
       <node id="6657644269295177944" at="53,161,54,0" concept="7" />
-      <node id="6657644269295177944" at="55,55,56,70" concept="2" />
+      <node id="6657644269295177944" at="55,55,56,74" concept="2" />
       <node id="6657644269295177944" at="57,9,58,0" concept="7" />
       <node id="6657644269295177944" at="58,0,59,22" concept="6" />
       <node id="6657644269295177945" at="64,59,65,60" concept="10" />
@@ -224,7 +224,7 @@
       <node id="8237807170236519916" at="88,119,89,18" concept="6" />
       <node id="8237807170236519920" at="90,12,91,149" concept="6" />
       <node id="6657644269295177944" at="94,0,95,0" concept="8" trace="canBeChildBreakingPoint" />
-      <node id="6657644269295177944" at="95,0,96,0" concept="8" trace="canBeRootBreakingPoint" />
+      <node id="6657644269295177944" at="95,0,96,0" concept="8" trace="canBeAncestorBreakingPoint" />
       <node id="6657644269295177944" at="98,0,99,0" concept="8" trace="ReqDocParagraph$pM" />
       <node id="6657644269295177944" at="99,0,100,0" concept="8" trace="Requirement$sS" />
       <node id="6657644269295177944" at="100,0,101,0" concept="8" trace="IDocumentContent$hi" />
@@ -252,7 +252,7 @@
       <node id="6657644269295177944" at="48,0,63,0" concept="4" trace="calculateCanBeAncestorConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
       <scope id="6657644269295177944" at="29,40,30,39" />
       <scope id="6657644269295177944" at="40,55,41,71" />
-      <scope id="6657644269295177944" at="55,55,56,70" />
+      <scope id="6657644269295177944" at="55,55,56,74" />
       <scope id="6657644269295177945" at="64,59,65,60" />
       <scope id="6657644269295177947" at="68,40,69,115" />
       <scope id="6657644269295178019" at="72,38,73,43" />

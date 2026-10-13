@@ -62,7 +62,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createCustomFactory_1());
     editorCell.addEditorCell(createConstant_1());
-    editorCell.addEditorCell(createRefNode_1());
+    editorCell.addEditorCell(createCustomFactory_3());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -237,15 +237,35 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_5();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createRefNode_1();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), myNode);
+  }
   private EditorCell createRefNode_1() {
-    SingleRoleCellProvider provider = new baseTypeSingleRoleHandler_ooh0b6_d0(myNode, LINKS.baseType$zMGV, getEditorContext());
+    SingleRoleCellProvider provider = new baseTypeSingleRoleHandler_ooh0b6_a0d0(myNode, LINKS.baseType$zMGV, getEditorContext());
     return provider.createCell();
   }
-  private static class baseTypeSingleRoleHandler_ooh0b6_d0 extends SingleRoleCellProvider {
+  private static class baseTypeSingleRoleHandler_ooh0b6_a0d0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public baseTypeSingleRoleHandler_ooh0b6_d0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public baseTypeSingleRoleHandler_ooh0b6_a0d0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }

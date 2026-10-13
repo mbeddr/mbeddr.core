@@ -6,7 +6,6 @@ import com.intellij.openapi.actionSystem.DefaultActionGroup;
 import com.intellij.openapi.actionSystem.ActionManager;
 import com.intellij.openapi.actionSystem.IdeActions;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import com.intellij.openapi.actionSystem.ex.ActionManagerEx;
 
 public class ToolbarUtils {
 
@@ -17,7 +16,7 @@ public class ToolbarUtils {
    */
   public static Iterable<String> getActions() {
     DefaultActionGroup group = (DefaultActionGroup) ActionManager.getInstance().getAction(IdeActions.GROUP_MAIN_TOOLBAR);
-    return Sequence.fromIterable(Sequence.fromArray(group.getChildActionsOrStubs())).select((it) -> ActionManagerEx.getInstanceEx().getId(it));
+    return Sequence.fromIterable(Sequence.fromArray(group.getChildActionsOrStubs())).select((it) -> ActionManager.getInstance().getId(it));
   }
 
 }

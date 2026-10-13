@@ -19,7 +19,7 @@
   <uses module="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" kind="dp" />
   <uses module="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt+dp" />
   <uses module="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt+dp" />
-  <uses module="c091aa8e-adbb-460a-b99f-e1a7f2242121(com.mbeddr.mpsutil.actionsfilter.ideaplugin)" kind="dp" />
+  <uses module="436eb984-d162-4543-a347-2601ff5bb2a0(com.mbeddr.mpsutil.actionsfilter.runtime)" kind="dp" />
   <uses module="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
   <uses module="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
 </dependenciesRoot>

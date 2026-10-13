@@ -14,8 +14,11 @@ import java.util.Objects;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.nodeEditor.cells.APICellAdapter;
 import com.mbeddr.mpsutil.hyperlink.runtime.HyperlinkUtil;
-import jetbrains.mps.nodeEditor.EditorContext;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
+import jetbrains.mps.project.MPSProject;
+import jetbrains.mps.workbench.MPSDataKeys;
+import com.intellij.ide.DataManager;
+import jetbrains.mps.openapi.navigation.EditorNavigator;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
@@ -100,9 +103,9 @@ public class HyperlinkListener extends MouseAdapter {
   @Override
   public void mousePressed(MouseEvent e) {
     boolean ctrlDown = (SystemInfo.isMac ? e.isMetaDown() : e.isControlDown());
-    final jetbrains.mps.openapi.editor.cells.EditorCell cellAtCursor = myEditorComponent.getRootCell().findLeaf(e.getX(), e.getY());
+    jetbrains.mps.openapi.editor.cells.EditorCell cellAtCursor = myEditorComponent.getRootCell().findLeaf(e.getX(), e.getY());
     HyperlinkStyle hyperlinkStyle = getHyperlinkStyle(cellAtCursor);
-    final SNode hyperlinkNode = getHyperlinkNode(cellAtCursor);
+    SNode hyperlinkNode = getHyperlinkNode(cellAtCursor);
     boolean gotoLink = (!(Objects.equals(hyperlinkStyle, HyperlinkStyle.REFERENCE)) && !(ctrlDown)) || (Objects.equals(hyperlinkStyle, HyperlinkStyle.REFERENCE) && ctrlDown);
     if (gotoLink) {
       if (cellAtCursor == null) {
@@ -115,8 +118,12 @@ public class HyperlinkListener extends MouseAdapter {
       } else if (hyperlinkHandler != null && hyperlinkHandler.isApplicable(myEditorComponent.getEditorContext())) {
         hyperlinkHandler.open(HyperlinkUtil.INSTANCE);
       } else if (hyperlinkNode != null) {
-        final EditorContext editorContext = myEditorComponent.getEditorContext();
-        editorContext.getRepository().getModelAccess().runWriteAction(() -> NavigationSupport.getInstance().openNode(editorContext.getOperationContext().getProject(), hyperlinkNode, getHyperLinkFocus(cellAtCursor), getHyperLinkSelect(cellAtCursor)));
+        MPSProject mpsProject = MPSDataKeys.MPS_PROJECT.getData(DataManager.getInstance().getDataContext(myEditorComponent));
+        if (mpsProject == null) {
+          return;
+        }
+
+        new EditorNavigator(mpsProject).shallFocus(getHyperLinkFocus(cellAtCursor)).shallSelect(getHyperLinkSelect(cellAtCursor)).open(SNodeOperations.getPointer(hyperlinkNode));
       }
 
     }

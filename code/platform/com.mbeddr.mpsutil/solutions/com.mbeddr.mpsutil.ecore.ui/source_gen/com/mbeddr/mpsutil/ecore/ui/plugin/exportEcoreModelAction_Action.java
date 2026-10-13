@@ -12,7 +12,7 @@ import jetbrains.mps.project.MPSProject;
 import org.jetbrains.annotations.NotNull;
 
 public class exportEcoreModelAction_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0;
+  private static final Icon ICON = IconContainer.ICON0;
 
   public exportEcoreModelAction_Action() {
     super("Export Ecore Model (mps model to xml file)", "", ICON);

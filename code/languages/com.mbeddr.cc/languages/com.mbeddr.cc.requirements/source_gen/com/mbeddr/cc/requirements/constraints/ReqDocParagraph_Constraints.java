@@ -53,7 +53,7 @@ public class ReqDocParagraph_Constraints extends BaseConstraintsDescriptor {
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -92,7 +92,7 @@ public class ReqDocParagraph_Constraints extends BaseConstraintsDescriptor {
     }
   }
   private static final SNodePointer canBeChildBreakingPoint = new SNodePointer("r:7997f0fd-03cf-4899-b0e1-fc6ea1a5f5f1(com.mbeddr.cc.requirements.constraints)", "8237807170236519939");
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:7997f0fd-03cf-4899-b0e1-fc6ea1a5f5f1(com.mbeddr.cc.requirements.constraints)", "8237807170236519907");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:7997f0fd-03cf-4899-b0e1-fc6ea1a5f5f1(com.mbeddr.cc.requirements.constraints)", "8237807170236519907");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept ReqDocParagraph$pM = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0x5c64b430703e72e4L, "com.mbeddr.cc.requirements.structure.ReqDocParagraph");

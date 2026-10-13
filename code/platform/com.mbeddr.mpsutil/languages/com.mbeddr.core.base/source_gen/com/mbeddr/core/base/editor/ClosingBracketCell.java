@@ -7,6 +7,7 @@ import java.awt.Color;
 import jetbrains.mps.nodeEditor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Basic;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Label;
 import java.awt.Graphics;
 import jetbrains.mps.nodeEditor.cells.ParentSettings;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
@@ -22,7 +23,7 @@ public class ClosingBracketCell extends AbstractBracketCell {
   }
 
   public EditorCell createEditorCell(final EditorContext context) {
-    EditorCell_Basic result = new EditorCell_Basic(context, getSNode()) {
+    EditorCell_Basic result = new EditorCell_Label(context, getSNode(), "") {
       public void paintContent(Graphics g, ParentSettings parentSettings) {
         prepareGraphicsColor(g);
         EditorCell_Collection parent = this.getParent();

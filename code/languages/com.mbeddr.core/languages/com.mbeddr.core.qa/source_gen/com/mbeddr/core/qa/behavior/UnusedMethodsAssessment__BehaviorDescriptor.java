@@ -11,13 +11,13 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import jetbrains.mps.project.Project;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.smodel.Language;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.findUsages.FindUsagesManager;
 import org.jetbrains.mps.openapi.module.SRepository;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.project.GlobalScope;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.Sequence;
@@ -25,6 +25,7 @@ import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.baseLanguage.behavior.BaseMethodDeclaration__BehaviorDescriptor;
 import jetbrains.mps.baseLanguage.behavior.InstanceMethodDeclaration__BehaviorDescriptor;
 import java.util.Set;
@@ -43,19 +44,18 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class UnusedMethodsAssessment__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc8e0d19c3cf4b31L, 0xaf77531227edbce8L, 0x5d1699da0888bd17L, "com.mbeddr.core.qa.structure.UnusedMethodsAssessment");
 
-  public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id7hIyKqbFNeu);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id4WjNWxKJWaq);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static List<SNode> runQuery_id7hIyKqbFNeu(@NotNull SNode __thisNode__) {
+  /*package*/ static List<SNode> runQuery_id4WjNWxKJWaq(@NotNull SNode __thisNode__, Project mpsProject) {
     Iterable<Language> allLangs = Utils.collectAllLanguagesStartingWithPrefix(SLinkOperations.getChildren(__thisNode__, LINKS.langs$o2dS));
 
     final FindUsagesManager usageManager = FindUsagesManager.getInstance();
-    final SRepository repo = SNodeOperations.getModel(__thisNode__).getRepository();
-    assert repo != null;
+    final SRepository repo = mpsProject.getRepository();
     final GlobalScope globalScope = new GlobalScope(repo);
 
     final List<SNode> res = new ArrayList<SNode>();
@@ -110,7 +110,7 @@ public final class UnusedMethodsAssessment__BehaviorDescriptor extends BaseBHDes
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((List<SNode>) runQuery_id7hIyKqbFNeu(node));
+        return (T) ((List<SNode>) runQuery_id4WjNWxKJWaq(node, (Project) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

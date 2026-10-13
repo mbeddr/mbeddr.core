@@ -25,7 +25,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.tree.TreePath;
 import com.mbeddr.core.base.behavior.NodeTreeViewNode;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
+import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
+import jetbrains.mps.openapi.navigation.EditorNavigator;
 import com.intellij.openapi.ui.JBPopupMenu;
 import java.util.List;
 import com.mbeddr.core.base.behavior.TreeViewAction;
@@ -174,12 +175,12 @@ public class GenericTreeTool_Tool extends GeneratedTool {
             final AbstractTreeViewNode treeNode = ((AbstractTreeViewNode) last);
             if (treeNode instanceof NodeTreeViewNode) {
               if (event.getClickCount() == 2 && treeNode.selectOnDoubleClick()) {
-                GenericTreeTool_Tool.this.project.getRepository().getModelAccess().runWriteAction(() -> {
-                  SNode programNode = ((NodeTreeViewNode) treeNode).getProgramNode();
-                  if (programNode != null) {
-                    NavigationSupport.getInstance().openNode(GenericTreeTool_Tool.this.project, programNode, true, true);
-                  }
-                });
+                final Wrappers._T<SNode> programNode = new Wrappers._T<SNode>();
+                Project mpsProject = GenericTreeTool_Tool.this.project;
+                mpsProject.getRepository().getModelAccess().runReadAction(() -> programNode.value = ((NodeTreeViewNode) treeNode).getProgramNode());
+                if (programNode.value != null) {
+                  new EditorNavigator(mpsProject).shallFocus(true).shallSelect(true).open(SNodeOperations.getPointer(programNode.value));
+                }
               }
             }
           }
@@ -236,12 +237,11 @@ public class GenericTreeTool_Tool extends GeneratedTool {
         if (tvn instanceof NodeTreeViewNode) {
           ListSequence.fromList(defaultActions).addElement(new TreeViewAction("Select in Editor", null) {
             public void execute(final AbstractTreeViewNode treeNode, final Project project) {
-              project.getRepository().getModelAccess().runWriteAction(() -> {
-                SNode programNode = ((NodeTreeViewNode) treeNode).getProgramNode();
-                if (programNode != null) {
-                  NavigationSupport.getInstance().openNode(GenericTreeTool_Tool.this.project, programNode, true, true);
-                }
-              });
+              final Wrappers._T<SNode> programNode = new Wrappers._T<SNode>();
+              project.getRepository().getModelAccess().runReadAction(() -> programNode.value = ((NodeTreeViewNode) treeNode).getProgramNode());
+              if (programNode.value != null) {
+                new EditorNavigator(project).shallFocus(true).shallSelect(true).open(SNodeOperations.getPointer(programNode.value));
+              }
             }
           });
         }
