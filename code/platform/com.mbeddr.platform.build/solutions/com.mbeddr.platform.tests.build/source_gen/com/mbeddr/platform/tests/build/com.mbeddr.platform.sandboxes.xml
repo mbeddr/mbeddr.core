@@ -5,8 +5,8 @@
   <property name="build.layout" location="${build.dir}/artifacts/com.mbeddr.platform.sandboxes" />
   <property name="mps.home" location="" />
   <property name="artifacts.root" location="" />
-  <property name="project.root" location="${basedir}/../../" />
-  <property name="dependencies.root" location="${project.root}/build/dependencies" />
+  <property name="project.root" location="${basedir}/../../../../" />
+  <property name="dependencies.root" location="${project.root}/code/platform/build/dependencies" />
   <property name="mbeddr.mpsutil" location="${project.root}/code/platform/com.mbeddr.mpsutil" />
   <property name="mbeddr.doc.aspect" location="${project.root}/code/platform/com.mbeddr.doc.aspect" />
   <property name="artifacts.mps" location="${mps.home}" />
