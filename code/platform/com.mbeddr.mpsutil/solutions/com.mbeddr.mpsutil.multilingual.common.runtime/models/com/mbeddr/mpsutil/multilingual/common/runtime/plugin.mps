@@ -30,6 +30,9 @@
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="481983775135178851" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginInitBlock" flags="in" index="2uRRBj" />
       <concept id="481983775135178840" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginDeclaration" flags="ng" index="2uRRBC">
@@ -239,7 +242,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7400021826774799413" name="jetbrains.mps.lang.smodel.structure.NodePointerExpression" flags="ng" index="2tJFMh">
         <child id="7400021826774799510" name="ref" index="2tJFKM" />
       </concept>
@@ -417,7 +419,7 @@
                     <node concept="1rXfSq" id="15QjPzrjRFd" role="2Oq$k0">
                       <ref role="37wK5l" node="2bng37t0hf2" resolve="getCurrentLanguage" />
                     </node>
-                    <node concept="2qgKlT" id="15QjPzrjRFe" role="2OqNvi">
+                    <node concept="3zqWPK" id="4qMlRGRnh$S" role="2OqNvi">
                       <ref role="37wK5l" to="tp5r:5Q1XZgMGEow" resolve="toLocale" />
                     </node>
                   </node>
@@ -1055,7 +1057,7 @@
                       <node concept="37vLTw" id="2d55UFtkGx$" role="2Oq$k0">
                         <ref role="3cqZAo" node="2d55UFtkGwS" resolve="key" />
                       </node>
-                      <node concept="2qgKlT" id="2d55UFtkGx_" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRnh$U" role="2OqNvi">
                         <ref role="37wK5l" to="tp5r:vzhXZPAXZu" resolve="deductDefault" />
                       </node>
                     </node>
@@ -1602,7 +1604,7 @@
                   <node concept="37vLTw" id="77gEP6zDgcF" role="2Oq$k0">
                     <ref role="3cqZAo" node="77gEP6z_CeX" resolve="resourceBundleNode" />
                   </node>
-                  <node concept="2qgKlT" id="5Q1XZgMGzXq" role="2OqNvi">
+                  <node concept="3zqWPK" id="4qMlRGRnh$W" role="2OqNvi">
                     <ref role="37wK5l" to="tp5r:5Q1XZgMFUWw" resolve="getResourceBundleProvider" />
                   </node>
                 </node>
@@ -1632,7 +1634,7 @@
                               <ref role="37wK5l" node="2bng37t0hf2" resolve="getCurrentLanguage" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="5Q1XZgMGQt8" role="2OqNvi">
+                          <node concept="3zqWPK" id="4qMlRGRnh$Y" role="2OqNvi">
                             <ref role="37wK5l" to="tp5r:5Q1XZgMGEow" resolve="toLocale" />
                           </node>
                         </node>
@@ -1647,7 +1649,7 @@
                       <node concept="37vLTw" id="77gEP6z$vXd" role="2Oq$k0">
                         <ref role="3cqZAo" node="77gEP6z$vNH" resolve="messageKey" />
                       </node>
-                      <node concept="2qgKlT" id="77gEP6z$woB" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRnh_0" role="2OqNvi">
                         <ref role="37wK5l" to="tp5r:vzhXZPAXYT" resolve="getKey" />
                       </node>
                     </node>
@@ -1736,7 +1738,7 @@
                   <node concept="37vLTw" id="5Q1XZgMGRpo" role="2Oq$k0">
                     <ref role="3cqZAo" node="77gEP6z_LSt" resolve="resourceBundleNode" />
                   </node>
-                  <node concept="2qgKlT" id="5Q1XZgMGRpp" role="2OqNvi">
+                  <node concept="3zqWPK" id="4qMlRGRnh_2" role="2OqNvi">
                     <ref role="37wK5l" to="tp5r:5Q1XZgMFUWw" resolve="getResourceBundleProvider" />
                   </node>
                 </node>
@@ -1766,7 +1768,7 @@
                               <ref role="37wK5l" node="2bng37t0hf2" resolve="getCurrentLanguage" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="5Q1XZgMGS27" role="2OqNvi">
+                          <node concept="3zqWPK" id="4qMlRGRnh_4" role="2OqNvi">
                             <ref role="37wK5l" to="tp5r:5Q1XZgMGEow" resolve="toLocale" />
                           </node>
                         </node>
@@ -1781,7 +1783,7 @@
                       <node concept="37vLTw" id="77gEP6z_5xu" role="2Oq$k0">
                         <ref role="3cqZAo" node="77gEP6z_5y8" resolve="messageKey" />
                       </node>
-                      <node concept="2qgKlT" id="77gEP6z_5xv" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRnh_6" role="2OqNvi">
                         <ref role="37wK5l" to="tp5r:vzhXZPAXYT" resolve="getKey" />
                       </node>
                     </node>

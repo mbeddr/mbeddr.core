@@ -17,14 +17,14 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="21pk" ref="r:be665d13-1e1d-44cd-9817-8bd4d610f422(com.mbeddr.mpsutil.json.structure)" />
     <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" />
-    <import index="7k8f" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.databind(MPS.ThirdParty/)" />
-    <import index="i4mf" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.core(MPS.ThirdParty/)" />
+    <import index="7k8f" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.fasterxml.jackson.databind(MPS.IDEA.Modules/)" />
+    <import index="i4mf" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.fasterxml.jackson.core(MPS.IDEA.Modules/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="lhlt" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.databind.node(MPS.ThirdParty/)" />
+    <import index="lhlt" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.fasterxml.jackson.databind.node(MPS.IDEA.Modules/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="8g4p" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.core.util(MPS.ThirdParty/)" />
+    <import index="8g4p" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.fasterxml.jackson.core.util(MPS.IDEA.Modules/)" />
     <import index="zhzw" ref="r:6492a138-3e52-4756-96b0-7e3c330fe78e(com.mbeddr.mpsutil.json.plugin)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>

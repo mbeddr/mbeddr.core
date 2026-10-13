@@ -18,6 +18,9 @@
     <import index="xedy" ref="r:9d97c467-bd57-46d3-aac0-9569d63248cb(com.mbeddr.mpsutil.richstring.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
@@ -147,7 +150,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7835263205327057228" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenAndChildAttributesOperation" flags="ng" index="Bykcj" />
       <concept id="5168775467716640652" name="jetbrains.mps.lang.smodel.structure.OperationParm_LinkQualifier" flags="ng" index="1aIX9F">
         <child id="5168775467716640653" name="linkQualifier" index="1aIX9E" />
@@ -237,11 +239,11 @@
                   <node concept="2OqwBi" id="2bng37t32P5" role="3clFbG">
                     <node concept="2OqwBi" id="2bng37t32P6" role="2Oq$k0">
                       <node concept="pncrf" id="2bng37t32P7" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="2bng37t32P8" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRnhyq" role="2OqNvi">
                         <ref role="37wK5l" to="h1po:2bng37t32Q8" resolve="getResourceBundle" />
-                        <node concept="2OqwBi" id="2bng37t32P9" role="37wK5m">
-                          <node concept="1Q80Hx" id="2bng37t32Pa" role="2Oq$k0" />
-                          <node concept="liA8E" id="2bng37t32Pb" role="2OqNvi">
+                        <node concept="2OqwBi" id="4qMlRGRnhys" role="37wK5m">
+                          <node concept="1Q80Hx" id="4qMlRGRnhyt" role="2Oq$k0" />
+                          <node concept="liA8E" id="4qMlRGRnhyu" role="2OqNvi">
                             <ref role="37wK5l" to="cj4x:~EditorContext.getModel()" resolve="getModel" />
                           </node>
                         </node>
@@ -359,11 +361,11 @@
                   <node concept="2OqwBi" id="7Ssz$kYblEK" role="3clFbG">
                     <node concept="2OqwBi" id="7Ssz$kYblEL" role="2Oq$k0">
                       <node concept="pncrf" id="7Ssz$kYblEM" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="7Ssz$kYblEN" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRnhyv" role="2OqNvi">
                         <ref role="37wK5l" to="h1po:2bng37t32Q8" resolve="getResourceBundle" />
-                        <node concept="2OqwBi" id="7Ssz$kYblEO" role="37wK5m">
-                          <node concept="1Q80Hx" id="7Ssz$kYblEP" role="2Oq$k0" />
-                          <node concept="liA8E" id="7Ssz$kYblEQ" role="2OqNvi">
+                        <node concept="2OqwBi" id="4qMlRGRnhyx" role="37wK5m">
+                          <node concept="1Q80Hx" id="4qMlRGRnhyy" role="2Oq$k0" />
+                          <node concept="liA8E" id="4qMlRGRnhyz" role="2OqNvi">
                             <ref role="37wK5l" to="cj4x:~EditorContext.getModel()" resolve="getModel" />
                           </node>
                         </node>
@@ -519,7 +521,7 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="7Ssz$kYgbbg" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRnhy$" role="2OqNvi">
                         <ref role="37wK5l" to="xedy:6Go9U2yp2P0" resolve="getExpressionDescription" />
                       </node>
                     </node>

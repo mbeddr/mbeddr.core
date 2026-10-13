@@ -6,7 +6,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -231,15 +231,11 @@
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -4063,23 +4059,115 @@
         <ref role="3uigEE" to="8qxk:3yaa4ph8uUg" resolve="ProgramBuilderContext" />
       </node>
       <node concept="P$JXv" id="2zhiL3fNPsy" role="lGtFl">
-        <node concept="TZ5HA" id="2zhiL3fNPsz" role="TZ5H$">
-          <node concept="1dT_AC" id="2zhiL3fNPs$" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the ProgramBuilderContext associated with the ProgramBuilder." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="2zhiL3fNPR0" role="TZ5H$">
-          <node concept="1dT_AC" id="2zhiL3fNPR1" role="1dT_Ay">
-            <property role="1dT_AB" value="The ProgramBuilderContext is specific to the analysis and provides information" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="2zhiL3fNPRc" role="TZ5H$">
-          <node concept="1dT_AC" id="2zhiL3fNPRd" role="1dT_Ay">
-            <property role="1dT_AB" value="about the data-flow builder modes used during the building of the DFG." />
-          </node>
-        </node>
         <node concept="x79VA" id="2zhiL3fNPs_" role="3nqlJM">
-          <property role="x79VB" value="the program builder context" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3VVgDkJfGUB" role="1Vez_I">
+            <node concept="3oM_SD" id="3VVgDkJfGUC" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGUD" role="1PaTwD">
+              <property role="3oM_SC" value="program" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGUE" role="1PaTwD">
+              <property role="3oM_SC" value="builder" />
+            </node>
+            <node concept="3oM_SD" id="3VVgDkJfGUF" role="1PaTwD">
+              <property role="3oM_SC" value="context" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJfGU7" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGU8" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGU9" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUa" role="1PaTwD">
+            <property role="3oM_SC" value="ProgramBuilderContext" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUb" role="1PaTwD">
+            <property role="3oM_SC" value="associated" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUc" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUd" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUe" role="1PaTwD">
+            <property role="3oM_SC" value="ProgramBuilder." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJfGUf" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGUg" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUh" role="1PaTwD">
+            <property role="3oM_SC" value="ProgramBuilderContext" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUi" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUj" role="1PaTwD">
+            <property role="3oM_SC" value="specific" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUk" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUl" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUm" role="1PaTwD">
+            <property role="3oM_SC" value="analysis" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUn" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUo" role="1PaTwD">
+            <property role="3oM_SC" value="provides" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUp" role="1PaTwD">
+            <property role="3oM_SC" value="information" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3VVgDkJfGUq" role="1Vez_I">
+          <node concept="3oM_SD" id="3VVgDkJfGUr" role="1PaTwD">
+            <property role="3oM_SC" value="about" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUs" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUt" role="1PaTwD">
+            <property role="3oM_SC" value="data-flow" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUu" role="1PaTwD">
+            <property role="3oM_SC" value="builder" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUv" role="1PaTwD">
+            <property role="3oM_SC" value="modes" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUw" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUx" role="1PaTwD">
+            <property role="3oM_SC" value="during" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUy" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUz" role="1PaTwD">
+            <property role="3oM_SC" value="building" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGU$" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGU_" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3VVgDkJfGUA" role="1PaTwD">
+            <property role="3oM_SC" value="DFG." />
+          </node>
         </node>
       </node>
     </node>

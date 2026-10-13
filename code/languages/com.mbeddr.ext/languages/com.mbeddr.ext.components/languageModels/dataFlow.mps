@@ -41,6 +41,9 @@
         <reference id="4943044633101738901" name="concept" index="3ctLHM" />
       </concept>
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="57416e5b-eba5-4910-ade8-42ad18cb5f4d" name="com.mbeddr.mpsutil.dataflow">
       <concept id="2723386792958854790" name="com.mbeddr.mpsutil.dataflow.structure.WithInterProceduralSupport" flags="ng" index="39xIXt" />
     </language>
@@ -180,7 +183,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -594,7 +596,7 @@
             <node concept="3cqzBR" id="1fLWRCl$_5P" role="2Oq$k0">
               <ref role="3cqzBQ" node="6t992PPTNJY" resolve="call" />
             </node>
-            <node concept="2qgKlT" id="25K78YYu3XA" role="2OqNvi">
+            <node concept="3zqWPK" id="4qMlRGRq_tN" role="2OqNvi">
               <ref role="37wK5l" to="qd6m:74lwjTQiYY5" resolve="getFunction" />
             </node>
           </node>
@@ -848,7 +850,7 @@
                         <node concept="37vLTw" id="6t992PPTNLe" role="2Oq$k0">
                           <ref role="3cqZAo" node="6t992PPTNKo" resolve="var" />
                         </node>
-                        <node concept="2qgKlT" id="6t992PPTNLf" role="2OqNvi">
+                        <node concept="3zqWPK" id="4qMlRGRq_tP" role="2OqNvi">
                           <ref role="37wK5l" to="ywuz:1LDGRqyQFAf" resolve="getVariable" />
                         </node>
                       </node>

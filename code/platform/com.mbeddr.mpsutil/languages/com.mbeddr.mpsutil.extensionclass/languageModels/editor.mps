@@ -17,6 +17,9 @@
     <import index="8z2g" ref="r:f002360a-709b-4a55-9d7f-a6924e785c45(com.mbeddr.mpsutil.extensionclass.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784074" name="jetbrains.mps.lang.editor.structure.MenuTypeNamed" flags="ng" index="22hDWg" />
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
@@ -284,7 +287,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -426,16 +428,16 @@
                     <node concept="35c_gC" id="3Q2hMLtMjzq" role="2Oq$k0">
                       <ref role="35c_gD" to="sh3l:4X7wieq8Uik" resolve="ExtensionClassMethodCall" />
                     </node>
-                    <node concept="2qgKlT" id="3Q2hMLtMjzr" role="2OqNvi">
+                    <node concept="3zqWPK" id="4qMlRGRnhKU" role="2OqNvi">
                       <ref role="37wK5l" to="8z2g:4X7wieqBDpX" resolve="concatAutocompleteEntry" />
-                      <node concept="1NM5Ph" id="3Q2hMLtMjzw" role="37wK5m" />
-                      <node concept="2OqwBi" id="3Q2hMLtMjzt" role="37wK5m">
-                        <node concept="2OqwBi" id="3Q2hMLtMjzx" role="2Oq$k0">
-                          <node concept="1NM5Pg" id="3Q2hMLtMjzy" role="2Oq$k0" />
-                          <node concept="I4A8Y" id="3Q2hMLtMjzz" role="2OqNvi" />
+                      <node concept="1NM5Ph" id="4qMlRGRnhKW" role="37wK5m" />
+                      <node concept="2OqwBi" id="4qMlRGRnhKX" role="37wK5m">
+                        <node concept="2OqwBi" id="4qMlRGRnhKY" role="2Oq$k0">
+                          <node concept="1NM5Pg" id="4qMlRGRnhKZ" role="2Oq$k0" />
+                          <node concept="I4A8Y" id="4qMlRGRnhL0" role="2OqNvi" />
                         </node>
-                        <node concept="3lApI0" id="3Q2hMLtMjzv" role="2OqNvi">
-                          <node concept="chp4Y" id="34w7WGUSF2P" role="3MHPDn">
+                        <node concept="3lApI0" id="4qMlRGRnhL1" role="2OqNvi">
+                          <node concept="chp4Y" id="4qMlRGRnhL2" role="3MHPDn">
                             <ref role="cht4Q" to="sh3l:4X7wieq8jk5" resolve="ExtensionClass" />
                           </node>
                         </node>
@@ -1061,7 +1063,7 @@
                             <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" resolve="type" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="LBlPJUzc5c" role="2OqNvi">
+                        <node concept="3zqWPK" id="4qMlRGRnhL3" role="2OqNvi">
                           <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                         </node>
                       </node>
@@ -1103,12 +1105,12 @@
                   <node concept="35c_gC" id="4X7wieqC6je" role="2Oq$k0">
                     <ref role="35c_gD" to="sh3l:4X7wieq8Uik" resolve="ExtensionClassMethodCall" />
                   </node>
-                  <node concept="2qgKlT" id="4X7wieqC6Lh" role="2OqNvi">
+                  <node concept="3zqWPK" id="4qMlRGRnhL5" role="2OqNvi">
                     <ref role="37wK5l" to="8z2g:4X7wieqC1Yq" resolve="getParameterName" />
-                    <node concept="37vLTw" id="4X7wieqC6Qs" role="37wK5m">
+                    <node concept="37vLTw" id="4qMlRGRnhL7" role="37wK5m">
                       <ref role="3cqZAo" node="LBlPJUzc4B" resolve="param" />
                     </node>
-                    <node concept="37vLTw" id="4X7wieqC75F" role="37wK5m">
+                    <node concept="37vLTw" id="4qMlRGRnhL8" role="37wK5m">
                       <ref role="3cqZAo" node="4X7wieqwNLK" resolve="methodAnnotation" />
                     </node>
                   </node>
@@ -1607,13 +1609,13 @@
               <node concept="35c_gC" id="3Q2hMLtKp9D" role="2Oq$k0">
                 <ref role="35c_gD" to="sh3l:4X7wieq8Uik" resolve="ExtensionClassMethodCall" />
               </node>
-              <node concept="2qgKlT" id="3Q2hMLtKp9E" role="2OqNvi">
+              <node concept="3zqWPK" id="4qMlRGRnhL9" role="2OqNvi">
                 <ref role="37wK5l" to="8z2g:4X7wieqBDpX" resolve="concatAutocompleteEntry" />
-                <node concept="1WAUZh" id="3Q2hMLtKp9J" role="37wK5m" />
-                <node concept="2OqwBi" id="3Q2hMLtKp9G" role="37wK5m">
-                  <node concept="1rpKSd" id="3Q2hMLtKp9K" role="2Oq$k0" />
-                  <node concept="3lApI0" id="3Q2hMLtKp9I" role="2OqNvi">
-                    <node concept="chp4Y" id="34w7WGUSF2R" role="3MHPDn">
+                <node concept="1WAUZh" id="4qMlRGRnhLb" role="37wK5m" />
+                <node concept="2OqwBi" id="4qMlRGRnhLc" role="37wK5m">
+                  <node concept="1rpKSd" id="4qMlRGRnhLd" role="2Oq$k0" />
+                  <node concept="3lApI0" id="4qMlRGRnhLe" role="2OqNvi">
+                    <node concept="chp4Y" id="4qMlRGRnhLf" role="3MHPDn">
                       <ref role="cht4Q" to="sh3l:4X7wieq8jk5" resolve="ExtensionClass" />
                     </node>
                   </node>

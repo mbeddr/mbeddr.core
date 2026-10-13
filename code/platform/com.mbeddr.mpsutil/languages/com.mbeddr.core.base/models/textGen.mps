@@ -10,6 +10,9 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -70,7 +73,6 @@
       <concept id="8937790975493363649" name="jetbrains.mps.lang.textGen.structure.AttributedNodePart" flags="ng" index="3mW3T8" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -128,7 +130,7 @@
                       <ref role="3Tt5mk" to="vs0r:7gVrg_0tw6n" resolve="text" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="7T88Na6$DBv" role="2OqNvi">
+                  <node concept="3zqWPK" id="4qMlRGRnhUc" role="2OqNvi">
                     <ref role="37wK5l" to="tbr6:7T88Na6$wwy" resolve="getTextLines" />
                   </node>
                 </node>
@@ -168,7 +170,7 @@
           <node concept="3fqX7Q" id="3m8H$lmIqFQ" role="3clFbw">
             <node concept="2OqwBi" id="3m8H$lmIqFL" role="3fr31v">
               <node concept="117lpO" id="3m8H$lmIqFK" role="2Oq$k0" />
-              <node concept="2qgKlT" id="3m8H$lmIqFP" role="2OqNvi">
+              <node concept="3zqWPK" id="4qMlRGRnhUe" role="2OqNvi">
                 <ref role="37wK5l" to="hwgx:7uLL3Mf3Bol" resolve="isEmpty" />
               </node>
             </node>

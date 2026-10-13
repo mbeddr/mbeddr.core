@@ -25,6 +25,9 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
@@ -166,9 +169,6 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -274,7 +274,7 @@
                     <ref role="37wK5l" to="k6nw:~ChartPanel.&lt;init&gt;(org.jfree.chart.JFreeChart)" resolve="ChartPanel" />
                     <node concept="2OqwBi" id="7uOgiT9N7J" role="37wK5m">
                       <node concept="pncrf" id="7uOgiT9MZm" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="7uOgiT9Nk7" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRnhFL" role="2OqNvi">
                         <ref role="37wK5l" to="joxz:7uOgiT9M4h" resolve="createChart" />
                       </node>
                     </node>
@@ -393,7 +393,7 @@
                                         <ref role="37wK5l" to="vixg:7uOgiT95wm" resolve="setChart" />
                                         <node concept="2OqwBi" id="7uOgiT9WQ3" role="37wK5m">
                                           <node concept="pncrf" id="7uOgiT9WNE" role="2Oq$k0" />
-                                          <node concept="2qgKlT" id="7uOgiT9WV8" role="2OqNvi">
+                                          <node concept="3zqWPK" id="4qMlRGRnhFN" role="2OqNvi">
                                             <ref role="37wK5l" to="joxz:7uOgiT9M4h" resolve="createChart" />
                                           </node>
                                         </node>
