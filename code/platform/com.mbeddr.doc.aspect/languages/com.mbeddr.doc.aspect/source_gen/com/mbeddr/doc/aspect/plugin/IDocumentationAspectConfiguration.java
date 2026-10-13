@@ -20,7 +20,7 @@ public interface IDocumentationAspectConfiguration {
    * Note: Activate this if any DocumentedConceptAnnotation in your application uses
    * the overrideChildren flag. Although a cache will be used to ensure that the IDE
    * performance is acceptable, selecting nodes in the editor while the documentation
-   * view is opened might have a slight delay when the concept of the node hasn't been 
+   * view is opened might have a slight delay when the concept of the node hasn't been
    * encountered in the current IDE session.
    */
   default boolean allowOverrideChildren() {

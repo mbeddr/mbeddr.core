@@ -8,6 +8,9 @@ import edu.uci.ics.jung.visualization.util.VertexShapeFactory;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Area;
 
+/**
+ * Dummy reference to {@link com.google.common.base.Function} to help compilation
+ */
 public class ShapeFactory {
 
   public static Shape rectangle(JNNode node, int size) {

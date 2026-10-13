@@ -29,9 +29,6 @@ public class supertypeof_CharType_SubtypingRule extends SubtypingRule_Runtime im
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createInt16tType_h977fv_a0a1(boolean p0, boolean p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.Int16tType$FW);
     n0.setProperty(PROPS.const$VWr7, "" + (p0));

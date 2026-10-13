@@ -19,7 +19,7 @@ public class EnumerationDescriptor_NameManglingStrategy extends EnumerationDescr
   private final EnumerationDescriptor.MemberDescriptor myMember__1_0 = new EnumerationDescriptor.MemberDescriptor("_1", "use short names where possible", 0x427d78bc9973dad1L, "r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)/6952945697661444516");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x62296a07bc3846d2L, 0x8034198c24063588L, 0x427d78bc9973dacfL, 0x427d78bc9973dad0L, 0x427d78bc9973dad1L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember__0_0, myMember__1_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember__0_0, myMember__1_0);
 
   @Nullable
   @Override

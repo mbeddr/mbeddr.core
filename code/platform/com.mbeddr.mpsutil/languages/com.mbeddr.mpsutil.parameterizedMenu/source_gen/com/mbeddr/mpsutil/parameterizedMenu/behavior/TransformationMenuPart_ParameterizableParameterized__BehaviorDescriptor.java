@@ -22,7 +22,7 @@ public final class TransformationMenuPart_ParameterizableParameterized__Behavior
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3a48930f345144fdL, 0x9b094e7ef448f2bbL, 0x597a3f22643b6512L, "com.mbeddr.mpsutil.parameterizedMenu.structure.TransformationMenuPart_ParameterizableParameterized");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.parameterQuery$PnLY, createQueryFunction_TransformationMenu_ParameterizableParameter_bs6txw_a0a0a());

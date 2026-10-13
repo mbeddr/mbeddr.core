@@ -8,12 +8,10 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -21,12 +19,10 @@ import jetbrains.mps.smodel.builder.SNodeBuilder;
 public final class SubstituteInfoSource__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x677f00fb4488405eL, 0x9885abb75d472fd1L, 0x575b1feb64e9ef51L, "com.mbeddr.mpsutil.contextactions.structure.SubstituteInfoSource");
 
-  public static final SMethod<SNode> getEntryType_id6W_V$ebpjfe = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getEntryType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8009069486217180110L).languageId(0x9885abb75d472fd1L, 0x677f00fb4488405eL).build2();
+  public static final SMethod<SNode> getEntryType_id6W_V$ebpjfe = new SMethodBuilder<>(SNode.class).name("getEntryType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8009069486217180110L).languageId(0x9885abb75d472fd1L, 0x677f00fb4488405eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEntryType_id6W_V$ebpjfe);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEntryType_id6W_V$ebpjfe);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getEntryType_id6W_V$ebpjfe(@NotNull SNode __thisNode__) {
     return _quotation_createNode_kr3fhz_a0a0();
@@ -35,10 +31,6 @@ public final class SubstituteInfoSource__BehaviorDescriptor extends BaseBHDescri
   /*package*/ SubstituteInfoSource__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

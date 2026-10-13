@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -22,7 +21,6 @@ import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.IterableUtils;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -34,16 +32,14 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ExtensionClassMethodCall__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf39336d3128847eeL, 0xbbfead2ea7e4504eL, 0x4f4781239a23a494L, "com.mbeddr.mpsutil.extensionclass.structure.ExtensionClassMethodCall");
 
-  public static final SMethod<List<SNode>> getTypeApplicationParameters_id6ffEDrb$cbj = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getTypeApplicationParameters").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7192154694571049683L).languageId(0xbbfead2ea7e4504eL, 0xf39336d3128847eeL).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<String> concatAutocompleteEntry_id4X7wieqBDpX = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("concatAutocompleteEntry").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5712676642260686461L).languageId(0xbbfead2ea7e4504eL, 0xf39336d3128847eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<String> getParameterName_id4X7wieqBRAN = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getParameterName").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5712676642260744627L).languageId(0xbbfead2ea7e4504eL, 0xf39336d3128847eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getParameterName_id4X7wieqC1Yq = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getParameterName").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5712676642260787098L).languageId(0xbbfead2ea7e4504eL, 0xf39336d3128847eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getAutocompleteEntry_id4X7wieq$Ix1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getAutocompleteEntry").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5712676642259920961L).languageId(0xbbfead2ea7e4504eL, 0xf39336d3128847eeL).build2();
+  public static final SMethod<List<SNode>> getTypeApplicationParameters_id6ffEDrb$cbj = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getTypeApplicationParameters").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7192154694571049683L).languageId(0xbbfead2ea7e4504eL, 0xf39336d3128847eeL).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "actualArgs"));
+  public static final SMethod<String> concatAutocompleteEntry_id4X7wieqBDpX = new SMethodBuilder<>(String.class).name("concatAutocompleteEntry").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5712676642260686461L).languageId(0xbbfead2ea7e4504eL, 0xf39336d3128847eeL).build2(SMethodBuilder.createJavaParameter(SNode.class, "method"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "extensionClasses"));
+  public static final SMethod<String> getParameterName_id4X7wieqBRAN = new SMethodBuilder<>(String.class).name("getParameterName").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5712676642260744627L).languageId(0xbbfead2ea7e4504eL, 0xf39336d3128847eeL).build2(SMethodBuilder.createJavaParameter(SNode.class, "param"), SMethodBuilder.createJavaParameter(SNode.class, "extensionClass"));
+  public static final SMethod<String> getParameterName_id4X7wieqC1Yq = new SMethodBuilder<>(String.class).name("getParameterName").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5712676642260787098L).languageId(0xbbfead2ea7e4504eL, 0xf39336d3128847eeL).build2(SMethodBuilder.createJavaParameter(SNode.class, "param"), SMethodBuilder.createJavaParameter(SNode.class, "methodAnnotation"));
+  public static final SMethod<String> getAutocompleteEntry_id4X7wieq$Ix1 = new SMethodBuilder<>(String.class).name("getAutocompleteEntry").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5712676642259920961L).languageId(0xbbfead2ea7e4504eL, 0xf39336d3128847eeL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTypeApplicationParameters_id6ffEDrb$cbj, concatAutocompleteEntry_id4X7wieqBDpX, getParameterName_id4X7wieqBRAN, getParameterName_id4X7wieqC1Yq, getAutocompleteEntry_id4X7wieq$Ix1);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTypeApplicationParameters_id6ffEDrb$cbj, concatAutocompleteEntry_id4X7wieqBDpX, getParameterName_id4X7wieqBRAN, getParameterName_id4X7wieqC1Yq, getAutocompleteEntry_id4X7wieq$Ix1);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> getTypeApplicationParameters_id6ffEDrb$cbj(@NotNull SNode __thisNode__, int actualArgs) {
     List<SNode> result = new ArrayList<SNode>();
@@ -86,10 +82,6 @@ public final class ExtensionClassMethodCall__BehaviorDescriptor extends BaseBHDe
   /*package*/ ExtensionClassMethodCall__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -43,7 +43,7 @@
     <mkdir dir="${build.tmp}/default/yourplugin.jar" />
     <mkdir dir="${build.tmp}/default/yourplugin.jar/META-INF" />
     <echoxml file="${build.tmp}/default/yourplugin.jar/META-INF/plugin.xml">
-      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+      <idea-plugin>
         <id>yourplugin</id>
         <name>yourplugin</name>
         <version>0.1</version>

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -15,7 +14,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,12 +23,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class UseCasePassiveActor__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd6714220402d48cbL, 0xa4a288223c6257f6L, 0x5a6841df5eb4db4bL, "com.mbeddr.cc.requirements.scenarios.structure.UseCasePassiveActor");
 
-  public static final SMethod<String> asString_id5DCgtXuHhr9 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6514529288613861065L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
+  public static final SMethod<String> asString_id5DCgtXuHhr9 = new SMethodBuilder<>(String.class).name("asString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6514529288613861065L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asString_id5DCgtXuHhr9);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asString_id5DCgtXuHhr9);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String asString_id5DCgtXuHhr9(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.participant$xR8R), LINKS.participant$paZn), PROPS.name$MnvL);
@@ -39,10 +35,6 @@ public final class UseCasePassiveActor__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ UseCasePassiveActor__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

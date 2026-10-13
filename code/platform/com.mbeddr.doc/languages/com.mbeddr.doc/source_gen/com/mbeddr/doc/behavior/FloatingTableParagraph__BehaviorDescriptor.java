@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.core.base.behavior.TextBlock__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,13 +23,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class FloatingTableParagraph__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x47f6e109266f0becL, "com.mbeddr.doc.structure.FloatingTableParagraph");
 
-  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("resultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<>(Boolean.TYPE).name("containsText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "text"));
+  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<>(String.class).name("resultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean containsText_idjpyKDg1onB(@NotNull SNode __thisNode__, String text) {
     return (boolean) TextBlock__BehaviorDescriptor.containsText_idjpyKDg1A7A.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.description$mrLO), text);
@@ -43,10 +39,6 @@ public final class FloatingTableParagraph__BehaviorDescriptor extends BaseBHDesc
   /*package*/ FloatingTableParagraph__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

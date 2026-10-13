@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,10 +23,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class MessageDefinition__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x255082a0ba0bd96fL, "com.mbeddr.core.util.structure.MessageDefinition");
 
-  public static final SMethod<String> genCounterVarName_id5oFMniD7s1q = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genCounterVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014151049306L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<String> genMessageFunctionName_id5usoWIJ3mG7 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genMessageFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6313030504132995847L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genCounterVarName_id5oFMniD7s1q = new SMethodBuilder<>(String.class).name("genCounterVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014151049306L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<String> genMessageFunctionName_id5usoWIJ3mG7 = new SMethodBuilder<>(String.class).name("genMessageFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6313030504132995847L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genCounterVarName_id5oFMniD7s1q, genMessageFunctionName_id5usoWIJ3mG7);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genCounterVarName_id5oFMniD7s1q, genMessageFunctionName_id5usoWIJ3mG7);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.active$dJ0V, true);

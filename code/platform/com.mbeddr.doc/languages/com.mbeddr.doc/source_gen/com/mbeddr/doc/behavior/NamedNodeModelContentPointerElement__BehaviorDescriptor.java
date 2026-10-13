@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -22,12 +20,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class NamedNodeModelContentPointerElement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x1fbaae83ac198c08L, "com.mbeddr.doc.structure.NamedNodeModelContentPointerElement");
 
-  public static final SMethod<SNode> referencedNode_id7IDbqDzNq4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("referencedNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(139229742930802308L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<SNode> referencedNode_id7IDbqDzNq4 = new SMethodBuilder<>(SNode.class).name("referencedNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(139229742930802308L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(referencedNode_id7IDbqDzNq4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(referencedNode_id7IDbqDzNq4);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode referencedNode_id7IDbqDzNq4(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.node$p_LM);
@@ -36,10 +32,6 @@ public final class NamedNodeModelContentPointerElement__BehaviorDescriptor exten
   /*package*/ NamedNodeModelContentPointerElement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

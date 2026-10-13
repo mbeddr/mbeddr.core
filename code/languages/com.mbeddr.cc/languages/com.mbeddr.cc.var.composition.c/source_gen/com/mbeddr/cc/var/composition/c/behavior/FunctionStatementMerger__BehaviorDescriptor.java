@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import com.mbeddr.cc.var.composition.behavior.CompositionResult;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.cc.var.composition.behavior.CompositionContext;
@@ -23,7 +22,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.cc.var.composition.behavior.CompositionResultFail;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -33,12 +31,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class FunctionStatementMerger__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3f78d943f334789L, 0xad355950b32fdad8L, 0x59e482034f2d904cL, "com.mbeddr.cc.var.composition.c.structure.FunctionStatementMerger");
 
-  public static final SMethod<CompositionResult> compose_id3YyHFqO7EVE = new SMethodBuilder<CompositionResult>(new SJavaCompoundTypeImpl(CompositionResult.class)).name("compose").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438799082L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(CompositionContext.class, ""));
+  public static final SMethod<CompositionResult> compose_id3YyHFqO7EVE = new SMethodBuilder<>(CompositionResult.class).name("compose").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438799082L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter(SNode.class, "target"), SMethodBuilder.createJavaParameter(SNode.class, "matchNode"), SMethodBuilder.createJavaParameter(CompositionContext.class, "ctx"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compose_id3YyHFqO7EVE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compose_id3YyHFqO7EVE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static CompositionResult compose_id3YyHFqO7EVE(@NotNull final SNode __thisNode__, SNode target, SNode matchNode, CompositionContext ctx) {
     SNode matchFun = SNodeOperations.copyNode(SNodeOperations.cast(matchNode, CONCEPTS.Function$K8));
@@ -75,10 +71,6 @@ public final class FunctionStatementMerger__BehaviorDescriptor extends BaseBHDes
   /*package*/ FunctionStatementMerger__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

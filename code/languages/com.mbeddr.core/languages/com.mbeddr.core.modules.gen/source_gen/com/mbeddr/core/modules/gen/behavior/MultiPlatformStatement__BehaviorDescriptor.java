@@ -23,7 +23,7 @@ public final class MultiPlatformStatement__BehaviorDescriptor extends BaseBHDesc
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x62296a07bc3846d2L, 0x8034198c24063588L, 0x3c6724ab1493c3fcL, "com.mbeddr.core.modules.gen.structure.MultiPlatformStatement");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.win32Stmts$2Q4w, createStatementList_3xoi2v_a0a0a());

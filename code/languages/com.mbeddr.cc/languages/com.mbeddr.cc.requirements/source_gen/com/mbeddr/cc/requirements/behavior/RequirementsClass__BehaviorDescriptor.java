@@ -7,29 +7,25 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class RequirementsClass__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0x7cacc530cbdf30c4L, "com.mbeddr.cc.requirements.structure.RequirementsClass");
 
-  public static final SMethod<Boolean> isStructurallyOk_id3greo4ND9K9 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isStructurallyOk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3754657941423430665L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> fixRequirementStructure_id3greo4ND9Kk = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("fixRequirementStructure").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3754657941423430676L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> canUseKind_id6Ig5vvlock0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canUseKind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7750719112885617920L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> createDefaultReqKind_id6Ig5vvlorfr = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createDefaultReqKind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7750719112885679067L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<Boolean> isStructurallyOk_id3greo4ND9K9 = new SMethodBuilder<>(Boolean.TYPE).name("isStructurallyOk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3754657941423430665L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter(SNode.class, "r"));
+  public static final SMethod<Void> fixRequirementStructure_id3greo4ND9Kk = new SMethodBuilder<>(Void.TYPE).name("fixRequirementStructure").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3754657941423430676L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter(SNode.class, "r"));
+  public static final SMethod<Boolean> canUseKind_id6Ig5vvlock0 = new SMethodBuilder<>(Boolean.TYPE).name("canUseKind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7750719112885617920L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2(SMethodBuilder.createJavaParameter(SNode.class, "requirementsKind"));
+  public static final SMethod<SNode> createDefaultReqKind_id6Ig5vvlorfr = new SMethodBuilder<>(SNode.class).name("createDefaultReqKind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7750719112885679067L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isStructurallyOk_id3greo4ND9K9, fixRequirementStructure_id3greo4ND9Kk, canUseKind_id6Ig5vvlock0, createDefaultReqKind_id6Ig5vvlorfr);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isStructurallyOk_id3greo4ND9K9, fixRequirementStructure_id3greo4ND9Kk, canUseKind_id6Ig5vvlock0, createDefaultReqKind_id6Ig5vvlorfr);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isStructurallyOk_id3greo4ND9K9(@NotNull SNode __thisNode__, SNode r) {
     return true;
@@ -46,10 +42,6 @@ public final class RequirementsClass__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ RequirementsClass__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

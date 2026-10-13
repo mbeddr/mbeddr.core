@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -18,7 +17,6 @@ import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -27,15 +25,13 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class SendOutEventStatement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x79eee1655cb959bfL, "com.mbeddr.ext.statemachines.structure.SendOutEventStatement");
 
-  public static final SMethod<String> getLabel_id5HxjapwgqK6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getLabel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574534L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<Boolean> canBeFailureAware_id4sAjwkTDdVd = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeFailureAware").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5126871010156797645L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
-  public static final SMethod<Boolean> isFailrueAware_id4sAjwkUZeYA = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isFailrueAware").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5126871010179346342L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
-  public static final SMethod<Boolean> hasSubsequentStatementsToSkipOnFailure_idrICbQKEoTV = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasSubsequentStatementsToSkipOnFailure").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(499513345257868923L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<String> getLabel_id5HxjapwgqK6 = new SMethodBuilder<>(String.class).name("getLabel").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574534L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Boolean> canBeFailureAware_id4sAjwkTDdVd = new SMethodBuilder<>(Boolean.TYPE).name("canBeFailureAware").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5126871010156797645L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<Boolean> isFailrueAware_id4sAjwkUZeYA = new SMethodBuilder<>(Boolean.TYPE).name("isFailrueAware").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5126871010179346342L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<Boolean> hasSubsequentStatementsToSkipOnFailure_idrICbQKEoTV = new SMethodBuilder<>(Boolean.TYPE).name("hasSubsequentStatementsToSkipOnFailure").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(499513345257868923L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLabel_id5HxjapwgqK6, canBeFailureAware_id4sAjwkTDdVd, isFailrueAware_id4sAjwkUZeYA, hasSubsequentStatementsToSkipOnFailure_idrICbQKEoTV);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLabel_id5HxjapwgqK6, canBeFailureAware_id4sAjwkTDdVd, isFailrueAware_id4sAjwkUZeYA, hasSubsequentStatementsToSkipOnFailure_idrICbQKEoTV);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getLabel_id5HxjapwgqK6(@NotNull SAbstractConcept __thisConcept__) {
     return "on failure";
@@ -69,10 +65,6 @@ public final class SendOutEventStatement__BehaviorDescriptor extends BaseBHDescr
   /*package*/ SendOutEventStatement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

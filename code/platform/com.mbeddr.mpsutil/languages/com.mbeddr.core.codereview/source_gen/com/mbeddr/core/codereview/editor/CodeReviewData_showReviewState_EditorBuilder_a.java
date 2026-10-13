@@ -85,7 +85,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       new readyStyleClass(this).apply(style, editorCell);
     }
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createTooltip_1());
+    editorCell.addEditorCell(createTooltip_0());
     editorCell.addEditorCell(createAttributedNodeCell_0());
     return editorCell;
   }
@@ -98,16 +98,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private boolean _StyleParameter_QueryFunction_unpebk_a2a() {
     return ReviewHelper.isReady(SNodeOperations.getParent(getNode()));
   }
-  private EditorCell createTooltip_0(final EditorContext editorContext, final SNode node) {
-    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "com.mbeddr.core.codereview.editor.GeneratedHints.tooltipHint_unpebk_a0", true);
+  private EditorCell createTooltip_0() {
+    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "com.mbeddr.core.codereview.editor.GeneratedHints.tooltipHint_unpebk_a0", true);
     EditorCell visibleCell = createCollection_1();
 
-    TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+    TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
     editorCell.setCellId("Tooltip_unpebk_a0");
     return editorCell;
-  }
-  private EditorCell createTooltip_1() {
-    return createTooltip_0(getEditorContext(), myNode);
   }
   private EditorCell createCollection_1() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());

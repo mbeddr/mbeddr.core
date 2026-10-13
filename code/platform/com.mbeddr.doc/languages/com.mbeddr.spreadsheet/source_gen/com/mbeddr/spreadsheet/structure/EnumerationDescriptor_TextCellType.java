@@ -20,7 +20,7 @@ public class EnumerationDescriptor_TextCellType extends EnumerationDescriptorBas
   private final EnumerationDescriptor.MemberDescriptor myMember_STRING_0 = new EnumerationDescriptor.MemberDescriptor("STRING", "STRING", 0x1c579c584d7e8531L, "r:f6651a85-73de-42f1-9bd6-d372b5b47f05(com.mbeddr.spreadsheet.structure)/7781501729853392581");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x1d891f7bdc9342f9L, 0xa4bcb016656b14e2L, 0x1c579c584d7e852eL, 0x1c579c584d7e852fL, 0x1c579c584d7e8530L, 0x1c579c584d7e8531L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_BOOLEAN_0, myMember_NUMBER_0, myMember_STRING_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_BOOLEAN_0, myMember_NUMBER_0, myMember_STRING_0);
 
   @Nullable
   @Override

@@ -26,6 +26,9 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -217,7 +220,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -864,9 +866,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="3h" role="2OqNvi">
+                  <node concept="3zqWPK" id="3h" role="2OqNvi">
                     <ref role="37wK5l" to="eup9:6JVEnxIj2nQ" resolve="fields" />
-                    <uo k="s:originTrace" v="n:4514118643329620708" />
+                    <uo k="s:originTrace" v="n:5094230315231764459" />
                   </node>
                 </node>
                 <node concept="3zZkjj" id="3f" role="2OqNvi">
@@ -1208,9 +1210,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="4Q" role="2OqNvi">
+                  <node concept="3zqWPK" id="4Q" role="2OqNvi">
                     <ref role="37wK5l" to="eup9:3PT6Z48L3oi" resolve="isAbstract" />
-                    <uo k="s:originTrace" v="n:4828927774766543817" />
+                    <uo k="s:originTrace" v="n:5094230315231764461" />
                   </node>
                 </node>
                 <node concept="1eOMI4" id="4O" role="3uHU7w">
@@ -1415,14 +1417,14 @@
                     <ref role="3cqZAo" node="4m" resolve="smInitTarget" />
                     <uo k="s:originTrace" v="n:832537483755548650" />
                   </node>
-                  <node concept="2qgKlT" id="5Z" role="2OqNvi">
+                  <node concept="3zqWPK" id="5Z" role="2OqNvi">
                     <ref role="37wK5l" to="ktif:4c3N3BNA7XU" resolve="getStatemachine" />
-                    <uo k="s:originTrace" v="n:832537483755548651" />
+                    <uo k="s:originTrace" v="n:5094230315231764463" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="5X" role="2OqNvi">
+                <node concept="3zqWPK" id="5X" role="2OqNvi">
                   <ref role="37wK5l" to="ktif:4c3N3BNw3k3" resolve="hasActiveInitialState" />
-                  <uo k="s:originTrace" v="n:832537483755557249" />
+                  <uo k="s:originTrace" v="n:5094230315231764465" />
                 </node>
               </node>
             </node>
@@ -1436,14 +1438,14 @@
                     <ref role="3cqZAo" node="4m" resolve="smInitTarget" />
                     <uo k="s:originTrace" v="n:4499036566906111523" />
                   </node>
-                  <node concept="2qgKlT" id="65" role="2OqNvi">
+                  <node concept="3zqWPK" id="65" role="2OqNvi">
                     <ref role="37wK5l" to="ktif:4c3N3BNA7XU" resolve="getStatemachine" />
-                    <uo k="s:originTrace" v="n:4499036566906111524" />
+                    <uo k="s:originTrace" v="n:5094230315231764467" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="63" role="2OqNvi">
+                <node concept="3zqWPK" id="63" role="2OqNvi">
                   <ref role="37wK5l" to="ktif:3$f8hf_cqT1" resolve="hasDerivedInitialState" />
-                  <uo k="s:originTrace" v="n:4111541354145939406" />
+                  <uo k="s:originTrace" v="n:5094230315231764469" />
                 </node>
               </node>
               <node concept="3clFbS" id="61" role="3clFbx">
@@ -1494,9 +1496,9 @@
                                     <ref role="3cqZAo" node="4m" resolve="smInitTarget" />
                                     <uo k="s:originTrace" v="n:4499036566906525020" />
                                   </node>
-                                  <node concept="2qgKlT" id="6x" role="2OqNvi">
+                                  <node concept="3zqWPK" id="6x" role="2OqNvi">
                                     <ref role="37wK5l" to="ktif:4c3N3BNA7XU" resolve="getStatemachine" />
-                                    <uo k="s:originTrace" v="n:4499036566906525021" />
+                                    <uo k="s:originTrace" v="n:5094230315231764471" />
                                   </node>
                                 </node>
                                 <node concept="3CFZ6_" id="6v" role="2OqNvi">
@@ -1507,9 +1509,9 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="2qgKlT" id="6t" role="2OqNvi">
+                              <node concept="3zqWPK" id="6t" role="2OqNvi">
                                 <ref role="37wK5l" to="ktif:3TJMuILXb3L" resolve="getImmediateInitialExecutionErrorMessage" />
-                                <uo k="s:originTrace" v="n:4499036566906535145" />
+                                <uo k="s:originTrace" v="n:5094230315231764473" />
                               </node>
                             </node>
                             <node concept="Xl_RD" id="6o" role="37wK5m">

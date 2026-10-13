@@ -7,14 +7,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -23,12 +21,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class InheritSizeSpec__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x77b1c43c8f034d5cL, "com.mbeddr.doc.structure.InheritSizeSpec");
 
-  public static final SMethod<String> getLatexSizeSpec_id7uLL3Mf26EQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getLatexSizeSpec").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8624890525767985846L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> getLatexSizeSpec_id7uLL3Mf26EQ = new SMethodBuilder<>(String.class).name("getLatexSizeSpec").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8624890525767985846L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLatexSizeSpec_id7uLL3Mf26EQ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLatexSizeSpec_id7uLL3Mf26EQ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getLatexSizeSpec_id7uLL3Mf26EQ(@NotNull SNode __thisNode__) {
     return (String) FigureSizeSpec__BehaviorDescriptor.getLatexSizeSpec_id7uLL3Mf26EQ.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.base$cvoQ), LINKS.spec$tS0j));
@@ -37,10 +33,6 @@ public final class InheritSizeSpec__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ InheritSizeSpec__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

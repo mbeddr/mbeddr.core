@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractFilePicker__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd3a0fd26445a466cL, 0x900e10444ddfed52L, 0x5f183131e05d8766L, "com.mbeddr.mpsutil.filepicker.structure.AbstractFilePicker");
 
-  public static final SMethod<Boolean> isValidSelection_id5lKnBeAusVW = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isValidSelection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541422718716L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
+  public static final SMethod<Boolean> isValidSelection_id5lKnBeAusVW = new SMethodBuilder<>(Boolean.TYPE).name("isValidSelection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6156524541422718716L).languageId(0x900e10444ddfed52L, 0xd3a0fd26445a466cL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isValidSelection_id5lKnBeAusVW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isValidSelection_id5lKnBeAusVW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isValidSelection_id5lKnBeAusVW(@NotNull SNode __thisNode__) {
     return ((boolean) AbstractPicker__BehaviorDescriptor.isValidFile_id5lKnBeAufga.invoke(__thisNode__));
@@ -34,10 +30,6 @@ public final class AbstractFilePicker__BehaviorDescriptor extends BaseBHDescript
   /*package*/ AbstractFilePicker__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

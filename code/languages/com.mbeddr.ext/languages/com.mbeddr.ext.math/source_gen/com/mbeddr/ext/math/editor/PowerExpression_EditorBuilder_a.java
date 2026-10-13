@@ -142,7 +142,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createMathBase_1() {
-    return createMathBase_0(getEditorContext(), myNode);
+    return createMathBase_0(getEditorContext(), getNode());
   }
   private EditorCell createMathBase_2(EditorContext editorContext, SNode node) {
     double[] scales = new double[]{1.0};
@@ -223,7 +223,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createMathBase_3() {
-    return createMathBase_2(getEditorContext(), myNode);
+    return createMathBase_2(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_0() {
     SingleRoleCellProvider provider = new baseSingleRoleHandler_vs8bpz_a0a0a0(myNode, LINKS.base$xJpq, getEditorContext());
@@ -401,7 +401,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createMathBase_5() {
-    return createMathBase_4(getEditorContext(), myNode);
+    return createMathBase_4(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_2() {
     SingleRoleCellProvider provider = new baseSingleRoleHandler_vs8bpz_a0a0(myNode, LINKS.base$xJpq, getEditorContext());

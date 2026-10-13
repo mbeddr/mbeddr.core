@@ -12,7 +12,7 @@
       <unit at="11,0,36,0" name="com.mbeddr.mpsutil.varscope.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,30,0" name="com.mbeddr.mpsutil.varscope.structure.LanguageConceptSwitch" />
+      <unit at="12,0,38,0" name="com.mbeddr.mpsutil.varscope.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,68,0" name="com.mbeddr.mpsutil.varscope.structure.StructureAspectDescriptor" />
@@ -31,8 +31,8 @@
       <scope id="926589859261493016" at="26,48,31,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="926589859261493016" at="13,0,14,0" concept="5" trace="IScopeProvider" />
-      <node id="926589859261493016" at="17,51,18,52" concept="0" />
+      <node id="926589859261493016" at="15,0,16,0" concept="5" trace="IScopeProvider" />
+      <node id="926589859261493016" at="19,51,20,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="926589859261493016" at="16,0,17,0" concept="1" trace="myConceptIScopeProvider" />
@@ -63,8 +63,8 @@
       <scope id="926589859261521036" at="20,47,25,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="926589859261521036" at="12,0,13,0" concept="5" trace="IScopeElement" />
-      <node id="926589859261521036" at="16,116,17,51" concept="0" />
+      <node id="926589859261521036" at="14,0,15,0" concept="5" trace="IScopeElement" />
+      <node id="926589859261521036" at="18,116,19,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="926589859261521036" at="15,0,16,0" concept="1" trace="myConceptIScopeElement" />

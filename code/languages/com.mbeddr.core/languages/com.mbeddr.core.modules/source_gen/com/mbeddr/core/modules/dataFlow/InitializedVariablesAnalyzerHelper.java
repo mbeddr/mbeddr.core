@@ -92,7 +92,7 @@ public final class InitializedVariablesAnalyzerHelper {
   }
 
   /**
-   * By default all uninitialized reads will be marked as erroneous. 
+   * By default all uninitialized reads will be marked as erroneous.
    */
   public static Map<SAbstractConcept, MarkerType> markerSpecifications = MapSequence.fromMap(new HashMap<SAbstractConcept, MarkerType>());
 

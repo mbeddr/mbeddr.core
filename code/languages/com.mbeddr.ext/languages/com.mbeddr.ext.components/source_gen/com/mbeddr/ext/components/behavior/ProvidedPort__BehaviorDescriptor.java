@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -26,17 +24,15 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ProvidedPort__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x3e5659cd94a48fa8L, "com.mbeddr.ext.components.structure.ProvidedPort");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<String> genOpsVariableName_id3yeYUb91sxJ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genOpsVariableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4075471389392750703L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> genOpsVariableName_id3LPPE_gtGWW = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genOpsVariableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4356624237238603580L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> genSRMemberName_idRsLjUnPev5 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genSRMemberName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(998890089995364293L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<String> getMemberName_idctKDnnao9U = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMemberName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(224549505254130298L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Boolean> isInPort_id2IZ2bWs0yDx = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3152247881084316257L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<String> genOpsVariableName_id3yeYUb91sxJ = new SMethodBuilder<>(String.class).name("genOpsVariableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4075471389392750703L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "instance"));
+  public static final SMethod<String> genOpsVariableName_id3LPPE_gtGWW = new SMethodBuilder<>(String.class).name("genOpsVariableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4356624237238603580L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "instanceConfiguration"), SMethodBuilder.createJavaParameter(String.class, "instanceName"));
+  public static final SMethod<String> genSRMemberName_idRsLjUnPev5 = new SMethodBuilder<>(String.class).name("genSRMemberName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(998890089995364293L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> getMemberName_idctKDnnao9U = new SMethodBuilder<>(String.class).name("getMemberName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(224549505254130298L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> isInPort_id2IZ2bWs0yDx = new SMethodBuilder<>(Boolean.TYPE).name("isInPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3152247881084316257L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, genOpsVariableName_id3yeYUb91sxJ, genOpsVariableName_id3LPPE_gtGWW, genSRMemberName_idRsLjUnPev5, getMemberName_idctKDnnao9U, isInPort_id2IZ2bWs0yDx);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, genOpsVariableName_id3yeYUb91sxJ, genOpsVariableName_id3LPPE_gtGWW, genSRMemberName_idRsLjUnPev5, getMemberName_idctKDnnao9U, isInPort_id2IZ2bWs0yDx);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + ": " + SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.intf$QYND), PROPS.name$MnvL);
@@ -64,10 +60,6 @@ public final class ProvidedPort__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ProvidedPort__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

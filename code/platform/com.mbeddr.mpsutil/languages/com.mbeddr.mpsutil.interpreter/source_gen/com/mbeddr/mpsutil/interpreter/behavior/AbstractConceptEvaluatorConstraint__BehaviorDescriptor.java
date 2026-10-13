@@ -7,27 +7,23 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractConceptEvaluatorConstraint__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x47f075a6558e4640L, 0xa6067ce0236c8023L, 0x4f47d8cd8320e29aL, "com.mbeddr.mpsutil.interpreter.structure.AbstractConceptEvaluatorConstraint");
 
-  public static final SMethod<Boolean> equals_id5I6_y3ZbJDX = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("equals").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6595123772795058813L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Integer> compareTo_id5x677oPpPUY = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("compareTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6360802817735089854L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> equals_id5I6_y3ZbJDX = new SMethodBuilder<>(Boolean.TYPE).name("equals").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6595123772795058813L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(SNode.class, "otherConstraint"));
+  public static final SMethod<Integer> compareTo_id5x677oPpPUY = new SMethodBuilder<>(Integer.TYPE).name("compareTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6360802817735089854L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(equals_id5I6_y3ZbJDX, compareTo_id5x677oPpPUY);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(equals_id5I6_y3ZbJDX, compareTo_id5x677oPpPUY);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int compareTo_id5x677oPpPUY(@NotNull SNode __thisNode__, SNode other) {
     return BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(__thisNode__).compareTo(BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(other));
@@ -36,10 +32,6 @@ public final class AbstractConceptEvaluatorConstraint__BehaviorDescriptor extend
   /*package*/ AbstractConceptEvaluatorConstraint__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

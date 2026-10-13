@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -26,11 +25,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class MessageKey__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x23f985f2965f4af1L, 0xaee8a32677429514L, 0x7e347dff5959fd6L, "com.mbeddr.mpsutil.multilingual.common.structure.MessageKey");
 
-  public static final SMethod<String> getKey_idvzhXZPAXYT = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getKey").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(568377005202726841L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
-  public static final SMethod<Boolean> isDefaultSet_idvzhXZPAXZj = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDefaultSet").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(568377005202726867L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
-  public static final SMethod<String> deductDefault_idvzhXZPAXZu = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("deductDefault").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(568377005202726878L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
+  public static final SMethod<String> getKey_idvzhXZPAXYT = new SMethodBuilder<>(String.class).name("getKey").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(568377005202726841L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
+  public static final SMethod<Boolean> isDefaultSet_idvzhXZPAXZj = new SMethodBuilder<>(Boolean.TYPE).name("isDefaultSet").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(568377005202726867L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
+  public static final SMethod<String> deductDefault_idvzhXZPAXZu = new SMethodBuilder<>(String.class).name("deductDefault").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(568377005202726878L).languageId(0xaee8a32677429514L, 0x23f985f2965f4af1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getKey_idvzhXZPAXYT, isDefaultSet_idvzhXZPAXZj, deductDefault_idvzhXZPAXZu);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getKey_idvzhXZPAXYT, isDefaultSet_idvzhXZPAXZj, deductDefault_idvzhXZPAXZu);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.technicalKey$p8Z3, " ");

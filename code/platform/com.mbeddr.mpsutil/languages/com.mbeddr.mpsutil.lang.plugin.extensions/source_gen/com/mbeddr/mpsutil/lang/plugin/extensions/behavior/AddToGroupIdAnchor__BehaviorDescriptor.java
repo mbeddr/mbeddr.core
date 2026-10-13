@@ -21,7 +21,7 @@ public final class AddToGroupIdAnchor__BehaviorDescriptor extends BaseBHDescript
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x58e731a36aaa444aL, 0xbf40801b91c15878L, 0x19c53f42a6f9990eL, "com.mbeddr.mpsutil.lang.plugin.extensions.structure.AddToGroupIdAnchor");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setPointer(__thisNode__, LINKS.modifiedGroup$VNVK, new SNodePointer("r:61fb604a-2ab8-423c-94bd-dec61f3a6b61(com.mbeddr.mpsutil.lang.plugin.extensions.dummy)", "267961119357995168"));

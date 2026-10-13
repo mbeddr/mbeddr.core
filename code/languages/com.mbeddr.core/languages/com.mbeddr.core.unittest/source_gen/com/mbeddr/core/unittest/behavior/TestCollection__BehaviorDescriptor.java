@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -32,16 +31,16 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class TestCollection__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d68b77b6994918L, 0x83b8857e63787800L, 0x6e6681f47bde7c66L, "com.mbeddr.core.unittest.structure.TestCollection");
 
-  public static final SMethod<Boolean> actsAsMainFunction_id2MbfxrZIa1M = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("actsAsMainFunction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3209727427932102770L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<List<SNode>> getFlattenedTestCollections_id7nMAuIoMp7p = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getFlattenedTestCollections").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8499024683961258457L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
-  public static final SMethod<SNode> createNewTestRefToThisTest_iddkANm6soSZ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createNewTestRefToThisTest").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(239987334348639807L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
-  public static final SMethod<String> getName_id2SFcQFX9N3G = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3326809284349997292L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
-  public static final SMethod<Integer> getAssertionCount_id2SFcQFX9Nhz = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getAssertionCount").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3326809284349998179L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
-  public static final SMethod<String> getFqName_id2SFcQFX9NxK = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFqName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3326809284349999216L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
-  public static final SMethod<Boolean> isExternVisible_id7nMAuIoJecy = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isExternVisible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8499024683960427298L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<Boolean> actsAsMainFunction_id2MbfxrZIa1M = new SMethodBuilder<>(Boolean.TYPE).name("actsAsMainFunction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3209727427932102770L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> exportable_id5HxjapwgqKI = new SMethodBuilder<>(Boolean.TYPE).name("exportable").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574574L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<List<SNode>> getFlattenedTestCollections_id7nMAuIoMp7p = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getFlattenedTestCollections").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8499024683961258457L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<SNode> createNewTestRefToThisTest_iddkANm6soSZ = new SMethodBuilder<>(SNode.class).name("createNewTestRefToThisTest").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(239987334348639807L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<String> getName_id2SFcQFX9N3G = new SMethodBuilder<>(String.class).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3326809284349997292L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<Integer> getAssertionCount_id2SFcQFX9Nhz = new SMethodBuilder<>(Integer.TYPE).name("getAssertionCount").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3326809284349998179L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<String> getFqName_id2SFcQFX9NxK = new SMethodBuilder<>(String.class).name("getFqName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3326809284349999216L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
+  public static final SMethod<Boolean> isExternVisible_id7nMAuIoJecy = new SMethodBuilder<>(Boolean.TYPE).name("isExternVisible").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8499024683960427298L).languageId(0x83b8857e63787800L, 0x6d68b77b6994918L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(actsAsMainFunction_id2MbfxrZIa1M, exportable_id5HxjapwgqKI, getFlattenedTestCollections_id7nMAuIoMp7p, createNewTestRefToThisTest_iddkANm6soSZ, getName_id2SFcQFX9N3G, getAssertionCount_id2SFcQFX9Nhz, getFqName_id2SFcQFX9NxK, isExternVisible_id7nMAuIoJecy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(actsAsMainFunction_id2MbfxrZIa1M, exportable_id5HxjapwgqKI, getFlattenedTestCollections_id7nMAuIoMp7p, createNewTestRefToThisTest_iddkANm6soSZ, getName_id2SFcQFX9N3G, getAssertionCount_id2SFcQFX9Nhz, getFqName_id2SFcQFX9NxK, isExternVisible_id7nMAuIoJecy);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.entrypoint$RdMb, true);

@@ -98,6 +98,9 @@
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
       <concept id="681855071694758165" name="jetbrains.mps.lang.plugin.standalone.structure.GetToolInProjectOperation" flags="nn" index="LR4U6">
@@ -323,7 +326,6 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="5045161044515397667" name="jetbrains.mps.lang.smodel.structure.Node_PointerOperation" flags="ng" index="iZEcu" />
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -1946,7 +1948,7 @@
                                                 <node concept="37vLTw" id="l3$K9$sFdU" role="2Oq$k0">
                                                   <ref role="3cqZAo" node="2YF67BpFaKE" resolve="iwiv" />
                                                 </node>
-                                                <node concept="2qgKlT" id="l3$K9$sGCR" role="2OqNvi">
+                                                <node concept="3zqWPK" id="4qMlRGRqcF8" role="2OqNvi">
                                                   <ref role="37wK5l" to="4gky:l3$K9zS58p" resolve="TagInViewer" />
                                                 </node>
                                               </node>
@@ -1954,7 +1956,7 @@
                                                 <node concept="37vLTw" id="l3$K9$qsWl" role="2Oq$k0">
                                                   <ref role="3cqZAo" node="2YF67BpFaKE" resolve="iwiv" />
                                                 </node>
-                                                <node concept="2qgKlT" id="l3$K9$qtk0" role="2OqNvi">
+                                                <node concept="3zqWPK" id="4qMlRGRqcFa" role="2OqNvi">
                                                   <ref role="37wK5l" to="4gky:l3$K9zS66z" resolve="TextInViewer" />
                                                 </node>
                                               </node>

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.core.expressions.runtime.plugin.IToken;
@@ -27,7 +26,6 @@ import com.mbeddr.core.expressions.runtime.plugin.CompositeToken;
 import com.mbeddr.core.expressions.runtime.plugin.TypeKind;
 import com.mbeddr.core.expressions.runtime.plugin.AtomicToken;
 import com.mbeddr.core.expressions.behavior.ITextGenContext__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -37,20 +35,18 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class FunctionRefType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x76ad8d576f00349bL, "com.mbeddr.core.modules.structure.FunctionRefType");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Boolean> canBeConst_id2zhwXA$TG$3 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeConst").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002447374595L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> canBeVolatile_id2zhwXA_2SdW = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeVolatile").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002449781628L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<String> getValueForNode_id36fFjS6KAwd = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getValueForNode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3571263511441074189L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  /*package*/ static final SMethod<String> extractFunctionName_id36fFjS6KAtX = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("extractFunctionName").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(3571263511441074045L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  /*package*/ static final SMethod<Boolean> pointsToFunctionWithName_id9AR4gpVgqO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("pointsToFunctionWithName").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(173067820751193780L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  /*package*/ static final SMethod<Boolean> isNullPointer_id35tTzla8u$l = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isNullPointer").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(3557252397243951381L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<IToken> getToken_id6AaN29SvfIf = new SMethodBuilder<IToken>(new SJavaCompoundTypeImpl(IToken.class)).name("getToken").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7605115369190914959L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(IToken.class, ""));
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Boolean> canBeConst_id2zhwXA$TG$3 = new SMethodBuilder<>(Boolean.TYPE).name("canBeConst").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002447374595L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> canBeVolatile_id2zhwXA_2SdW = new SMethodBuilder<>(Boolean.TYPE).name("canBeVolatile").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002449781628L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> getValueForNode_id36fFjS6KAwd = new SMethodBuilder<>(String.class).name("getValueForNode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3571263511441074189L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(SNode.class, "nodeToPointTo"));
+  /*package*/ static final SMethod<String> extractFunctionName_id36fFjS6KAtX = new SMethodBuilder<>(String.class).name("extractFunctionName").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(3571263511441074045L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(String.class, "gdbFunctionNameRepresentation"));
+  /*package*/ static final SMethod<Boolean> pointsToFunctionWithName_id9AR4gpVgqO = new SMethodBuilder<>(Boolean.TYPE).name("pointsToFunctionWithName").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(173067820751193780L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(String.class, "cValue"));
+  /*package*/ static final SMethod<Boolean> isNullPointer_id35tTzla8u$l = new SMethodBuilder<>(Boolean.TYPE).name("isNullPointer").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(3557252397243951381L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(String.class, "cValue"));
+  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<>(Integer.TYPE).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<IToken> getToken_id6AaN29SvfIf = new SMethodBuilder<>(IToken.class).name("getToken").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7605115369190914959L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(IToken.class, "child"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canBeConst_id2zhwXA$TG$3, canBeVolatile_id2zhwXA_2SdW, getValueForNode_id36fFjS6KAwd, extractFunctionName_id36fFjS6KAtX, pointsToFunctionWithName_id9AR4gpVgqO, isNullPointer_id35tTzla8u$l, getUsedBytes_id61lw97FtLtJ, getToken_id6AaN29SvfIf);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canBeConst_id2zhwXA$TG$3, canBeVolatile_id2zhwXA_2SdW, getValueForNode_id36fFjS6KAwd, extractFunctionName_id36fFjS6KAtX, pointsToFunctionWithName_id9AR4gpVgqO, isNullPointer_id35tTzla8u$l, getUsedBytes_id61lw97FtLtJ, getToken_id6AaN29SvfIf);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return "(" + ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.argTypes$R93A)).foldLeft("", (String s, SNode it) -> s += (((SNodeOperations.getIndexInParent(it) == 0) ? "" : ", ")) + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(it)) + ")=>" + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.returnType$R8O_));
@@ -121,10 +117,6 @@ public final class FunctionRefType__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ FunctionRefType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

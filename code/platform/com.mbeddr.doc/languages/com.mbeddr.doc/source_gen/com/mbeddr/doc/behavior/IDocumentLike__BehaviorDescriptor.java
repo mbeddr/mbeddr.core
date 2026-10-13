@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Set;
 import java.util.List;
@@ -26,7 +25,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.mpsutil.common.graph.Graph;
 import com.mbeddr.core.base.behavior.IDetectCycle__BehaviorDescriptor;
 import com.mbeddr.mpsutil.common.graph.GraphUtil;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -37,19 +35,17 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class IDocumentLike__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x5c64b4307041a0cfL, "com.mbeddr.doc.structure.IDocumentLike");
 
-  public static final SMethod<Iterable<SNode>> localReferencableElements_id2TZO3DbvK_k = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("localReferencableElements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3350625596580235604L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Iterable<SNode>> localFloats_idWvp8me4arE = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("localFloats").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1089700159623833322L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Iterable<SNode>> allFloats_idWvp8me4arQ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allFloats").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1089700159623833334L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Iterable<SNode>> visibleReferencableElements_id2TZO3DbvKCd = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleReferencableElements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3350625596580235789L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Void> collectTransitivelyIncludedDocuments_id5mf_X_LbzMD = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("collectTransitivelyIncludedDocuments").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6165313375056051369L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<Set<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<Void> collectTransitivelyUsedPaths_id3UlEobTHAVZ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("collectTransitivelyUsedPaths").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4509696981881745151L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<Set<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getDependenciesRelevantForCycleDetection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<List<SNode>> getTopologicalSortedDocuments_id3lxJBjijN4E = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getTopologicalSortedDocuments").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3846564965705003306L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Iterable<SNode>> localReferencableElements_id2TZO3DbvK_k = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("localReferencableElements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3350625596580235604L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Iterable<SNode>> localFloats_idWvp8me4arE = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("localFloats").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1089700159623833322L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Iterable<SNode>> allFloats_idWvp8me4arQ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allFloats").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1089700159623833334L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Iterable<SNode>> visibleReferencableElements_id2TZO3DbvKCd = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("visibleReferencableElements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3350625596580235789L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Void> collectTransitivelyIncludedDocuments_id5mf_X_LbzMD = new SMethodBuilder<>(Void.TYPE).name("collectTransitivelyIncludedDocuments").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6165313375056051369L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<Set<SNode>>) ((Class) Object.class), "res"));
+  public static final SMethod<Void> collectTransitivelyUsedPaths_id3UlEobTHAVZ = new SMethodBuilder<>(Void.TYPE).name("collectTransitivelyUsedPaths").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4509696981881745151L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<Set<SNode>>) ((Class) Object.class), "paths"));
+  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getDependenciesRelevantForCycleDetection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<SNode>> getTopologicalSortedDocuments_id3lxJBjijN4E = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getTopologicalSortedDocuments").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3846564965705003306L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(localReferencableElements_id2TZO3DbvK_k, localFloats_idWvp8me4arE, allFloats_idWvp8me4arQ, visibleReferencableElements_id2TZO3DbvKCd, collectTransitivelyIncludedDocuments_id5mf_X_LbzMD, collectTransitivelyUsedPaths_id3UlEobTHAVZ, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, getTopologicalSortedDocuments_id3lxJBjijN4E);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(localReferencableElements_id2TZO3DbvK_k, localFloats_idWvp8me4arE, allFloats_idWvp8me4arQ, visibleReferencableElements_id2TZO3DbvKCd, collectTransitivelyIncludedDocuments_id5mf_X_LbzMD, collectTransitivelyUsedPaths_id3UlEobTHAVZ, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, getTopologicalSortedDocuments_id3lxJBjijN4E);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> localReferencableElements_id2TZO3DbvK_k(@NotNull SNode __thisNode__) {
     return SNodeOperations.getNodeDescendants(__thisNode__, CONCEPTS.AbstractSection$8m, false, new SAbstractConcept[]{});
@@ -103,10 +99,6 @@ public final class IDocumentLike__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IDocumentLike__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

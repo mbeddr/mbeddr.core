@@ -23,7 +23,7 @@ public final class ItemSequence__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf93d1dbebfd142ddL, 0x932af375fa6f5373L, 0x50291a9c706e05a2L, "com.mbeddr.core.make.structure.ItemSequence");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.items$EDlI)).addElement(createPlainTextFragment_6d3mse_a0a0a0());

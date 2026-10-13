@@ -7,7 +7,7 @@ import jetbrains.mps.openapi.editor.style.Style;
 /**
  * An instance of me represents the value of a async cell for which the calculation is complete.
  * 
- * If the computation is not complete yet, {@link com.mbeddr.mpsutil.asynccell.plugin.EditorCell_Async#getAsyncValueCallable() } should return null instead of this.
+ * If the computation is not complete yet, {@link com.mbeddr.mpsutil.asynccell.plugin.EditorCell_Async#getAsyncValueCallable()} should return null instead of this.
  */
 public class AsyncCellValue {
 

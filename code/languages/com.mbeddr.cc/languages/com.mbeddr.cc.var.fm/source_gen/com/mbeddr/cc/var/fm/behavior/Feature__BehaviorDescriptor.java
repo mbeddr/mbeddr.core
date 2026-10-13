@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.mpsutil.plantuml.node.behavior.VisGraph;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -21,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import com.mbeddr.core.base.behavior.IVisualizationParticipant__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -31,14 +29,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Feature__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe401b44780194ccdL, 0xa72cbfb0230f5782L, 0x5eb8f6e2708cb292L, "com.mbeddr.cc.var.fm.structure.Feature");
 
-  public static final SMethod<Boolean> isAlwaysPresent_id1qn9LsHSJIE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isAlwaysPresent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1627812770825305002L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
-  public static final SMethod<Void> visualize_id6xkj9mMr7e = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("visualize").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(117464341934617038L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(VisGraph.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Iterable<SNode>> attributes_id6Ce4x7LmZjI = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("attributes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7642065485967389934L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
+  public static final SMethod<Boolean> isAlwaysPresent_id1qn9LsHSJIE = new SMethodBuilder<>(Boolean.TYPE).name("isAlwaysPresent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1627812770825305002L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
+  public static final SMethod<Void> visualize_id6xkj9mMr7e = new SMethodBuilder<>(Void.TYPE).name("visualize").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(117464341934617038L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(VisGraph.class, "g"), SMethodBuilder.createJavaParameter(String.class, "category"));
+  public static final SMethod<Iterable<SNode>> attributes_id6Ce4x7LmZjI = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("attributes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7642065485967389934L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isAlwaysPresent_id1qn9LsHSJIE, visualize_id6xkj9mMr7e, attributes_id6Ce4x7LmZjI);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isAlwaysPresent_id1qn9LsHSJIE, visualize_id6xkj9mMr7e, attributes_id6Ce4x7LmZjI);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isAlwaysPresent_id1qn9LsHSJIE(@NotNull SNode __thisNode__) {
     return ListSequence.fromList(SNodeOperations.getNodeAncestors(__thisNode__, CONCEPTS.Feature$U_, false)).where((it) -> !(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, LINKS.constraint$NUYj), CONCEPTS.MandatoryConstraint$Qd))).isEmpty();
@@ -78,10 +74,6 @@ public final class Feature__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Feature__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

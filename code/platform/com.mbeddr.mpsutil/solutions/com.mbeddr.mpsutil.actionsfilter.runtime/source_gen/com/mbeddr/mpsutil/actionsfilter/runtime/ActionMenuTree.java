@@ -116,7 +116,7 @@ public class ActionMenuTree extends JTree {
   }
 
   /**
-   * Checks if currently shown profile is read only. 
+   * Checks if currently shown profile is read only.
    * This is the case for the predefined profiles as they should not be edited by the user.
    */
   public boolean isCurrentProfileReadOnly() {

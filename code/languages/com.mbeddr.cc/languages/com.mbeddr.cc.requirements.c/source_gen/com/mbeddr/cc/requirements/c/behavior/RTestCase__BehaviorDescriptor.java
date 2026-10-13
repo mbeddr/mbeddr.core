@@ -7,28 +7,24 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.cc.requirements.c.intentions.DebuggedTest;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class RTestCase__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf3ed62ca349040d0L, 0x890b9b3133cc2eadL, 0x3170448c7c6f6badL, "com.mbeddr.cc.requirements.c.structure.RTestCase");
 
-  public static final SMethod<Boolean> isOk_id35Kh8LWs1iv = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isOk").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3562422675423892639L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
-  public static final SMethod<DebuggedTest> getDebuggedTest_iddfV14BWZ$n = new SMethodBuilder<DebuggedTest>(new SJavaCompoundTypeImpl(DebuggedTest.class)).name("getDebuggedTest").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(238668863702825239L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
-  public static final SMethod<Void> setDebuggedTest_iddfV14BYish = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setDebuggedTest").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(238668863703164689L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2(SMethodBuilder.createJavaParameter(DebuggedTest.class, ""));
+  public static final SMethod<Boolean> isOk_id35Kh8LWs1iv = new SMethodBuilder<>(Boolean.TYPE).name("isOk").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3562422675423892639L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
+  public static final SMethod<DebuggedTest> getDebuggedTest_iddfV14BWZ$n = new SMethodBuilder<>(DebuggedTest.class).name("getDebuggedTest").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(238668863702825239L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2();
+  public static final SMethod<Void> setDebuggedTest_iddfV14BYish = new SMethodBuilder<>(Void.TYPE).name("setDebuggedTest").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(238668863703164689L).languageId(0x890b9b3133cc2eadL, 0xf3ed62ca349040d0L).build2(SMethodBuilder.createJavaParameter(DebuggedTest.class, "test"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isOk_id35Kh8LWs1iv, getDebuggedTest_iddfV14BWZ$n, setDebuggedTest_iddfV14BYish);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isOk_id35Kh8LWs1iv, getDebuggedTest_iddfV14BWZ$n, setDebuggedTest_iddfV14BYish);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isOk_id35Kh8LWs1iv(@NotNull SNode __thisNode__) {
     return true;
@@ -48,10 +44,6 @@ public final class RTestCase__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ RTestCase__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

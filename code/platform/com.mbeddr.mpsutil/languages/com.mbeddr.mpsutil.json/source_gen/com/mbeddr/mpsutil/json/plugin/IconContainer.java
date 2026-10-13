@@ -6,5 +6,5 @@ import javax.swing.Icon;
 import jetbrains.mps.ide.icons.IconLoadingUtil;
 
 public class IconContainer {
-  protected static Icon ICON0 = IconLoadingUtil.loadIcon("TextIcon_1.png", IconContainer.class);
+  protected static Icon ICON0 = IconLoadingUtil.loadIcon((IconLoadingUtil.isNewUIActive() ? "TextIconNewUI_1.png" : "TextIcon_1.png"), IconContainer.class);
 }

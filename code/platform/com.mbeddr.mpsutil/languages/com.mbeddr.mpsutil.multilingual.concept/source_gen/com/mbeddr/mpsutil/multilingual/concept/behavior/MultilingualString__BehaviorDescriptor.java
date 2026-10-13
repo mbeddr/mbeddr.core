@@ -20,7 +20,7 @@ public final class MultilingualString__BehaviorDescriptor extends BaseBHDescript
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd0fe2e609f9c4d3cL, 0x94aade9257b67a6dL, 0x22d74031dcf68a2eL, "com.mbeddr.mpsutil.multilingual.concept.structure.MultilingualString");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.addNewChild(__thisNode__, LINKS.values$H$ha, null);

@@ -7,14 +7,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -22,12 +20,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class TextWord__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf8f68d92c6d244b3L, 0x8d63c00ade75ec86L, 0x3ddc39046e31e53cL, "com.mbeddr.doc.latex.structure.TextWord");
 
-  public static final SMethod<Boolean> isEmpty_id2bUgBpZU0mI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEmpty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2520400018186700206L).languageId(0x8d63c00ade75ec86L, 0xf8f68d92c6d244b3L).build2();
+  public static final SMethod<Boolean> isEmpty_id2bUgBpZU0mI = new SMethodBuilder<>(Boolean.TYPE).name("isEmpty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2520400018186700206L).languageId(0x8d63c00ade75ec86L, 0xf8f68d92c6d244b3L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEmpty_id2bUgBpZU0mI);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isEmpty_id2bUgBpZU0mI);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isEmpty_id2bUgBpZU0mI(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.text$LCPB) == null || SPropertyOperations.getString(__thisNode__, PROPS.text$LCPB).equals("") || SPropertyOperations.getString(__thisNode__, PROPS.text$LCPB).trim().equals("");
@@ -36,10 +32,6 @@ public final class TextWord__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TextWord__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

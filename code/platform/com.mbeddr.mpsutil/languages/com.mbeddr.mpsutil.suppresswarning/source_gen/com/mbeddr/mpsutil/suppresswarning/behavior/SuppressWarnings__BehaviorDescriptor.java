@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -28,12 +27,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class SuppressWarnings__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc1c2a88a323c4605L, 0xa37d9ab77a2ccbd2L, 0x7e83ad82cb948a95L, "com.mbeddr.mpsutil.suppresswarning.structure.SuppressWarnings");
 
-  public static final SMethod<Boolean> isNotSuppressed_id7U3Fobb_8Eq = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isNotSuppressed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9116320848000879258L).languageId(0xa37d9ab77a2ccbd2L, 0xc1c2a88a323c4605L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isSuppressed_id7U3Fobb_8E$ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSuppressed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9116320848000879268L).languageId(0xa37d9ab77a2ccbd2L, 0xc1c2a88a323c4605L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isNotSuppressed_id7U3Fobb_8EI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isNotSuppressed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9116320848000879278L).languageId(0xa37d9ab77a2ccbd2L, 0xc1c2a88a323c4605L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SConcept>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isSuppressed_id7U3Fobb_8EV = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSuppressed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9116320848000879291L).languageId(0xa37d9ab77a2ccbd2L, 0xc1c2a88a323c4605L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SConcept>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> isNotSuppressed_id7U3Fobb_8Eq = new SMethodBuilder<>(Boolean.TYPE).name("isNotSuppressed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9116320848000879258L).languageId(0xa37d9ab77a2ccbd2L, 0xc1c2a88a323c4605L).build2(SMethodBuilder.createJavaParameter(SNode.class, "node"));
+  public static final SMethod<Boolean> isSuppressed_id7U3Fobb_8E$ = new SMethodBuilder<>(Boolean.TYPE).name("isSuppressed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9116320848000879268L).languageId(0xa37d9ab77a2ccbd2L, 0xc1c2a88a323c4605L).build2(SMethodBuilder.createJavaParameter(SNode.class, "node"));
+  public static final SMethod<Boolean> isNotSuppressed_id7U3Fobb_8EI = new SMethodBuilder<>(Boolean.TYPE).name("isNotSuppressed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9116320848000879278L).languageId(0xa37d9ab77a2ccbd2L, 0xc1c2a88a323c4605L).build2(SMethodBuilder.createJavaParameter(SNode.class, "node"), SMethodBuilder.createJavaParameter(SConcept.class, "kind"));
+  public static final SMethod<Boolean> isSuppressed_id7U3Fobb_8EV = new SMethodBuilder<>(Boolean.TYPE).name("isSuppressed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9116320848000879291L).languageId(0xa37d9ab77a2ccbd2L, 0xc1c2a88a323c4605L).build2(SMethodBuilder.createJavaParameter(SNode.class, "node"), SMethodBuilder.createJavaParameter(SConcept.class, "kind"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isNotSuppressed_id7U3Fobb_8Eq, isSuppressed_id7U3Fobb_8E$, isNotSuppressed_id7U3Fobb_8EI, isSuppressed_id7U3Fobb_8EV);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isNotSuppressed_id7U3Fobb_8Eq, isSuppressed_id7U3Fobb_8E$, isNotSuppressed_id7U3Fobb_8EI, isSuppressed_id7U3Fobb_8EV);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.kinds$yFIV)).addElement(SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xc1c2a88a323c4605L, 0xa37d9ab77a2ccbd2L, 0x7e83ad82cb948a93L, "com.mbeddr.mpsutil.suppresswarning.structure.SuppressAllWarnings")));

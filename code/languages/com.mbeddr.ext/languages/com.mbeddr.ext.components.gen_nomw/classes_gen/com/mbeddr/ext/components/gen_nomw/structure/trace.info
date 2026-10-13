@@ -13,7 +13,7 @@
       <unit at="11,0,39,0" name="com.mbeddr.ext.components.gen_nomw.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,30,0" name="com.mbeddr.ext.components.gen_nomw.structure.LanguageConceptSwitch" />
+      <unit at="12,0,38,0" name="com.mbeddr.ext.components.gen_nomw.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="15,0,81,0" name="com.mbeddr.ext.components.gen_nomw.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="2103658896110278831" at="20,59,27,47" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2103658896110278831" at="12,0,13,0" concept="6" trace="NoMwComponentsGenStrategy" />
-      <node id="2103658896110278831" at="16,116,17,64" concept="0" />
+      <node id="2103658896110278831" at="14,0,15,0" concept="6" trace="NoMwComponentsGenStrategy" />
+      <node id="2103658896110278831" at="18,116,19,64" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2103658896110278831" at="16,0,17,0" concept="1" trace="myConceptNoMwComponentsGenStrategy" />
@@ -75,8 +75,8 @@
       <scope id="4337203540625018397" at="28,51,34,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4337203540625018397" at="13,0,14,0" concept="6" trace="RunnableProcessed" />
-      <node id="4337203540625018397" at="17,64,18,56" concept="0" />
+      <node id="4337203540625018397" at="15,0,16,0" concept="6" trace="RunnableProcessed" />
+      <node id="4337203540625018397" at="19,64,20,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4337203540625018397" at="17,0,18,0" concept="1" trace="myConceptRunnableProcessed" />

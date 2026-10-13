@@ -21,7 +21,7 @@ public final class AddModelOperation__BehaviorDescriptor extends BaseBHDescripto
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3eada22033104fd3L, 0xb794ff924add7d8aL, 0x33400706ab4528c2L, "com.mbeddr.mpsutil.smodule.structure.AddModelOperation");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.storageType$e3Fa, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x3eada22033104fd3L, 0xb794ff924add7d8aL, 0x55c3a578a07f247L, "com.mbeddr.mpsutil.smodule.structure.SingleFilePersistence")));

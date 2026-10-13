@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -21,7 +20,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.baseLanguage.behavior.ClassConcept__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -33,18 +31,16 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class Wizard__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x306d745629e24ea3L, 0x9c46e7b830b08481L, 0x418fa9827b312ebcL, "com.mbeddr.mpsutil.wizard.structure.Wizard");
 
-  public static final SMethod<String> genClassName_idrF8Sb8V2sC = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genClassName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228378212136L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
-  public static final SMethod<Iterable<SNode>> getVisibleSteps_idrF8Sb8ZYzQ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getVisibleSteps").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228379506934L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> requiresInit_idrF8Sb98vil = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requiresInit").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228381738133L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
-  public static final SMethod<SNode> getOutputType_idrF8Sb98y7f = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getOutputType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228381749711L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
-  public static final SMethod<SNode> genOutputInitExpression_id2rKkvx5Reom = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("genOutputInitExpression").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2805832694617662998L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
-  public static final SMethod<String> getFqStepName_id44rcFjhUtTc = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFqStepName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4691399189033770572L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getFqName_id44rcFjhYmeR = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFqName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4691399189034787767L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
+  public static final SMethod<String> genClassName_idrF8Sb8V2sC = new SMethodBuilder<>(String.class).name("genClassName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228378212136L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
+  public static final SMethod<Iterable<SNode>> getVisibleSteps_idrF8Sb8ZYzQ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getVisibleSteps").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228379506934L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2(SMethodBuilder.createJavaParameter(SNode.class, "current"));
+  public static final SMethod<Boolean> requiresInit_idrF8Sb98vil = new SMethodBuilder<>(Boolean.TYPE).name("requiresInit").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228381738133L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
+  public static final SMethod<SNode> getOutputType_idrF8Sb98y7f = new SMethodBuilder<>(SNode.class).name("getOutputType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(498531228381749711L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
+  public static final SMethod<SNode> genOutputInitExpression_id2rKkvx5Reom = new SMethodBuilder<>(SNode.class).name("genOutputInitExpression").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2805832694617662998L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
+  public static final SMethod<String> getFqStepName_id44rcFjhUtTc = new SMethodBuilder<>(String.class).name("getFqStepName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4691399189033770572L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2(SMethodBuilder.createJavaParameter(SNode.class, "step"));
+  public static final SMethod<String> getFqName_id44rcFjhYmeR = new SMethodBuilder<>(String.class).name("getFqName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4691399189034787767L).languageId(0x9c46e7b830b08481L, 0x306d745629e24ea3L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genClassName_idrF8Sb8V2sC, getVisibleSteps_idrF8Sb8ZYzQ, requiresInit_idrF8Sb98vil, getOutputType_idrF8Sb98y7f, genOutputInitExpression_id2rKkvx5Reom, getFqStepName_id44rcFjhUtTc, getFqName_id44rcFjhYmeR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(genClassName_idrF8Sb8V2sC, getVisibleSteps_idrF8Sb8ZYzQ, requiresInit_idrF8Sb98vil, getOutputType_idrF8Sb98y7f, genOutputInitExpression_id2rKkvx5Reom, getFqStepName_id44rcFjhUtTc, getFqName_id44rcFjhYmeR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String genClassName_idrF8Sb8V2sC(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + "_Wizard";
@@ -93,10 +89,6 @@ public final class Wizard__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Wizard__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

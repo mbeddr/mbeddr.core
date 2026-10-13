@@ -7,7 +7,7 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="c9d137c4-3259-44f8-80ff-33ab2b506ee4" name="jetbrains.mps.lang.util.order" version="0" />
     <use id="95f8a3e6-f994-4ca0-a65e-763c9bae2d3b" name="jetbrains.mps.make.script" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -168,16 +168,10 @@
       <concept id="3175313036448560967" name="jetbrains.mps.lang.extension.structure.GetExtensionObjectsOperation" flags="nn" index="SfwO_" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet">
       <concept id="6418371274763029565" name="jetbrains.mps.make.facet.structure.TargetDeclaration" flags="ng" index="15KeUm">
@@ -841,39 +835,243 @@
     </node>
     <node concept="3Tm1VV" id="4zVj_Op6XAJ" role="1B3o_S" />
     <node concept="3UR2Jj" id="4zVj_Op7cHT" role="lGtFl">
-      <node concept="TZ5HA" id="4zVj_Op7dl3" role="TZ5H$">
-        <node concept="1dT_AC" id="4zVj_Op7dl4" role="1dT_Ay">
-          <property role="1dT_AB" value="This is a workaround for a bug introduced in MPS 2021.3 (MPS-35321/MPSSPRT-409) where XmlCharEscape will escape" />
+      <node concept="1PaTwC" id="3VVgDkJfG7J" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfG7K" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7L" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7M" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7N" role="1PaTwD">
+          <property role="3oM_SC" value="workaround" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7O" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7P" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7Q" role="1PaTwD">
+          <property role="3oM_SC" value="bug" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7R" role="1PaTwD">
+          <property role="3oM_SC" value="introduced" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7S" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7T" role="1PaTwD">
+          <property role="3oM_SC" value="MPS" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7U" role="1PaTwD">
+          <property role="3oM_SC" value="2021.3" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7V" role="1PaTwD">
+          <property role="3oM_SC" value="(MPS-35321/MPSSPRT-409)" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7W" role="1PaTwD">
+          <property role="3oM_SC" value="where" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7X" role="1PaTwD">
+          <property role="3oM_SC" value="XmlCharEscape" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7Y" role="1PaTwD">
+          <property role="3oM_SC" value="will" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG7Z" role="1PaTwD">
+          <property role="3oM_SC" value="escape" />
         </node>
       </node>
-      <node concept="TZ5HA" id="11IIw_SxL7Y" role="TZ5H$">
-        <node concept="1dT_AC" id="11IIw_SxL7Z" role="1dT_Ay">
-          <property role="1dT_AB" value="a quote as &amp;quote; rather than the correct &amp;quot;." />
+      <node concept="1PaTwC" id="3VVgDkJfG80" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfG81" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG82" role="1PaTwD">
+          <property role="3oM_SC" value="quote" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG83" role="1PaTwD">
+          <property role="3oM_SC" value="as" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG84" role="1PaTwD">
+          <property role="3oM_SC" value="&amp;quote;" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG85" role="1PaTwD">
+          <property role="3oM_SC" value="rather" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG86" role="1PaTwD">
+          <property role="3oM_SC" value="than" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG87" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG88" role="1PaTwD">
+          <property role="3oM_SC" value="correct" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG89" role="1PaTwD">
+          <property role="3oM_SC" value="&amp;quot;." />
         </node>
       </node>
-      <node concept="TZ5HA" id="11IIw_SxJHS" role="TZ5H$">
-        <node concept="1dT_AC" id="11IIw_SxJHT" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="3VVgDkJfG8a" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfG8b" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="11IIw_SxJIi" role="TZ5H$">
-        <node concept="1dT_AC" id="11IIw_SxJIj" role="1dT_Ay">
-          <property role="1dT_AB" value="Additionally, the XML language in 2021.3 tries to be smart and only escape entities that were not already escaped." />
+      <node concept="1PaTwC" id="3VVgDkJfG8c" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfG8d" role="1PaTwD">
+          <property role="3oM_SC" value="Additionally," />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8e" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8f" role="1PaTwD">
+          <property role="3oM_SC" value="XML" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8g" role="1PaTwD">
+          <property role="3oM_SC" value="language" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8h" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8i" role="1PaTwD">
+          <property role="3oM_SC" value="2021.3" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8j" role="1PaTwD">
+          <property role="3oM_SC" value="tries" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8k" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8l" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8m" role="1PaTwD">
+          <property role="3oM_SC" value="smart" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8n" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8o" role="1PaTwD">
+          <property role="3oM_SC" value="only" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8p" role="1PaTwD">
+          <property role="3oM_SC" value="escape" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8q" role="1PaTwD">
+          <property role="3oM_SC" value="entities" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8r" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8s" role="1PaTwD">
+          <property role="3oM_SC" value="were" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8t" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8u" role="1PaTwD">
+          <property role="3oM_SC" value="already" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8v" role="1PaTwD">
+          <property role="3oM_SC" value="escaped." />
         </node>
       </node>
-      <node concept="TZ5HA" id="11IIw_SxLNQ" role="TZ5H$">
-        <node concept="1dT_AC" id="11IIw_SxLNR" role="1dT_Ay">
-          <property role="1dT_AB" value="Taken together, this means that &amp;quot; in XML will be wrongly considered unescaped and turned into &amp;amp;quot;." />
+      <node concept="1PaTwC" id="3VVgDkJfG8w" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfG8x" role="1PaTwD">
+          <property role="3oM_SC" value="Taken" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8y" role="1PaTwD">
+          <property role="3oM_SC" value="together," />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8z" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8$" role="1PaTwD">
+          <property role="3oM_SC" value="means" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8_" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8A" role="1PaTwD">
+          <property role="3oM_SC" value="&amp;quot;" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8B" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8C" role="1PaTwD">
+          <property role="3oM_SC" value="XML" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8D" role="1PaTwD">
+          <property role="3oM_SC" value="will" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8E" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8F" role="1PaTwD">
+          <property role="3oM_SC" value="wrongly" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8G" role="1PaTwD">
+          <property role="3oM_SC" value="considered" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8H" role="1PaTwD">
+          <property role="3oM_SC" value="unescaped" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8I" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8J" role="1PaTwD">
+          <property role="3oM_SC" value="turned" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8K" role="1PaTwD">
+          <property role="3oM_SC" value="into" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8L" role="1PaTwD">
+          <property role="3oM_SC" value="&amp;amp;quot;." />
         </node>
       </node>
-      <node concept="TZ5HA" id="11IIw_SxJyK" role="TZ5H$">
-        <node concept="1dT_AC" id="11IIw_SxJyL" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="3VVgDkJfG8M" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfG8N" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="11IIw_SxJz2" role="TZ5H$">
-        <node concept="1dT_AC" id="11IIw_SxJz3" role="1dT_Ay">
-          <property role="1dT_AB" value="The bug is fixed in 2022.2 so the workaround should be temporary." />
+      <node concept="1PaTwC" id="3VVgDkJfG8O" role="1Vez_I">
+        <node concept="3oM_SD" id="3VVgDkJfG8P" role="1PaTwD">
+          <property role="3oM_SC" value="The" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8Q" role="1PaTwD">
+          <property role="3oM_SC" value="bug" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8R" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8S" role="1PaTwD">
+          <property role="3oM_SC" value="fixed" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8T" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8U" role="1PaTwD">
+          <property role="3oM_SC" value="2022.2" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8V" role="1PaTwD">
+          <property role="3oM_SC" value="so" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8W" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8X" role="1PaTwD">
+          <property role="3oM_SC" value="workaround" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8Y" role="1PaTwD">
+          <property role="3oM_SC" value="should" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG8Z" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="3VVgDkJfG90" role="1PaTwD">
+          <property role="3oM_SC" value="temporary." />
         </node>
       </node>
     </node>

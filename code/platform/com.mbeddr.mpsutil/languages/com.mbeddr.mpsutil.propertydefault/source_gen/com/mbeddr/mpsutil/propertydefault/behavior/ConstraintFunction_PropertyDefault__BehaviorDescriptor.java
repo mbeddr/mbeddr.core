@@ -21,7 +21,7 @@ public final class ConstraintFunction_PropertyDefault__BehaviorDescriptor extend
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3f41734b72c342c8L, 0xb22cbacd5a878e17L, 0x15843e21f0b89bc1L, "com.mbeddr.mpsutil.propertydefault.structure.ConstraintFunction_PropertyDefault");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.body$e68K, _quotation_createNode_8ggmef_a0a0a());

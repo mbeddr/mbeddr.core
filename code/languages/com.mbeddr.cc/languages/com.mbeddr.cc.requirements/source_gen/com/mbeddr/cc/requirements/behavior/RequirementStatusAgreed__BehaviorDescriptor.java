@@ -8,25 +8,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.awt.Color;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class RequirementStatusAgreed__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0xc3ddac5b0bf4b1dL, "com.mbeddr.cc.requirements.structure.RequirementStatusAgreed");
 
-  public static final SMethod<Color> getColor_id2U5fsQemzG5 = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3352153450713070341L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<Color> getColor_id2U5fsQemzG5 = new SMethodBuilder<>(Color.class).name("getColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3352153450713070341L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getColor_id2U5fsQemzG5);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getColor_id2U5fsQemzG5);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Color getColor_id2U5fsQemzG5(@NotNull SNode __thisNode__) {
     return Color.blue;
@@ -35,10 +31,6 @@ public final class RequirementStatusAgreed__BehaviorDescriptor extends BaseBHDes
   /*package*/ RequirementStatusAgreed__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

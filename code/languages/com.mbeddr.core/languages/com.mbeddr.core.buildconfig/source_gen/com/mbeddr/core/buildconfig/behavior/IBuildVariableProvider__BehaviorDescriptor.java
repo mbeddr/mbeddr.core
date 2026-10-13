@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Map;
@@ -22,21 +21,18 @@ import jetbrains.mps.project.PathMacros;
 import com.mbeddr.core.buildconfig.plugin.BuildVariableResolver;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.smodel.structure.ExtensionPoint;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IBuildVariableProvider__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x68589b59d3d2d064L, "com.mbeddr.core.buildconfig.structure.IBuildVariableProvider");
 
-  public static final SMethod<String> relativizeDefaultValue_id3JWussfjtXe = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("relativizeDefaultValue").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4322463638231048014L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter((Class<Map<String, String>>) ((Class) Object.class), ""));
-  public static final SMethod<List<String>> getVariableNames_id6xoAPBjOH1K = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("getVariableNames").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246192L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
-  public static final SMethod<String> getDefaultValue_id6xoAPBjOH2T = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246265L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> relativizeDefaultValue_id3JWussfjtXe = new SMethodBuilder<>(String.class).name("relativizeDefaultValue").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4322463638231048014L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter(SNode.class, "platform"), SMethodBuilder.createJavaParameter(String.class, "defaultValue"), SMethodBuilder.createJavaParameter((Class<Map<String, String>>) ((Class) Object.class), "otherVariables"));
+  public static final SMethod<List<String>> getVariableNames_id6xoAPBjOH1K = new SMethodBuilder<>((Class<List<String>>) ((Class) Object.class)).name("getVariableNames").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246192L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2();
+  public static final SMethod<String> getDefaultValue_id6xoAPBjOH2T = new SMethodBuilder<>(String.class).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7518930388003246265L).languageId(0xa78f0f739add2bdeL, 0x2d7fadf533f64e80L).build2(SMethodBuilder.createJavaParameter(SModel.class, "model"), SMethodBuilder.createJavaParameter(String.class, "variableName"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(relativizeDefaultValue_id3JWussfjtXe, getVariableNames_id6xoAPBjOH1K, getDefaultValue_id6xoAPBjOH2T);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(relativizeDefaultValue_id3JWussfjtXe, getVariableNames_id6xoAPBjOH1K, getDefaultValue_id6xoAPBjOH2T);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String relativizeDefaultValue_id3JWussfjtXe(@NotNull SAbstractConcept __thisConcept__, SNode platform, String defaultValue, Map<String, String> otherVariables) {
     final Wrappers._T<String> _defaultValue = new Wrappers._T<String>(defaultValue);
@@ -79,10 +75,6 @@ public final class IBuildVariableProvider__BehaviorDescriptor extends BaseBHDesc
   /*package*/ IBuildVariableProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

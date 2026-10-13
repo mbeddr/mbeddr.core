@@ -19,7 +19,7 @@ public class EnumerationDescriptor_RegisterTransformationKind extends Enumeratio
   private final EnumerationDescriptor.MemberDescriptor myMember_realworld_0 = new EnumerationDescriptor.MemberDescriptor("realworld", "realworld", 0x5f072ca6a415da47L, "r:5104a07c-c91d-412c-8374-26edb13383eb(com.mbeddr.core.embedded.structure)/1214029888595741754");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x783af01f87a7412cL, 0xbe99293a162652b5L, 0x5f072ca6a415da45L, 0x5f072ca6a415da46L, 0x5f072ca6a415da47L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_emulate_0, myMember_realworld_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_emulate_0, myMember_realworld_0);
 
   @Nullable
   @Override

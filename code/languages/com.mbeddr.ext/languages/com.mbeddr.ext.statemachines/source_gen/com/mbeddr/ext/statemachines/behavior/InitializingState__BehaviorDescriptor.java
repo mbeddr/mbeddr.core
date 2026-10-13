@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,10 +23,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class InitializingState__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x4303cc39f49f41afL, "com.mbeddr.ext.statemachines.structure.InitializingState");
 
-  public static final SMethod<SNode> ultimateInitialState_id3FSHg1aEzgk = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("ultimateInitialState").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4249345261281358868L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
-  public static final SMethod<Integer> getValue_id3TJMuIKgpSW = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getValue").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4499036566878002748L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<SNode> ultimateInitialState_id3FSHg1aEzgk = new SMethodBuilder<>(SNode.class).name("ultimateInitialState").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4249345261281358868L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<Integer> getValue_id3TJMuIKgpSW = new SMethodBuilder<>(Integer.TYPE).name("getValue").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4499036566878002748L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(ultimateInitialState_id3FSHg1aEzgk, getValue_id3TJMuIKgpSW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(ultimateInitialState_id3FSHg1aEzgk, getValue_id3TJMuIKgpSW);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.name$MnvL, SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)));

@@ -22,7 +22,7 @@ public class EnumerationDescriptor_EFontFamily extends EnumerationDescriptorBase
   private final EnumerationDescriptor.MemberDescriptor myMember_Monospaced_0 = new EnumerationDescriptor.MemberDescriptor("Monospaced", "Monospaced", 0x452c726380738fa0L, "r:3a350e23-1ecf-4b26-b501-4772d34dff84(com.mbeddr.mpsutil.resources.structure)/1286599818956595597");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xa4007360b8a64b5bL, 0xa6481c43f0a1cf5dL, 0x452c726380738f7bL, 0x452c726380738f7cL, 0x452c726380738f90L, 0x452c726380738f8bL, 0x452c726380738f97L, 0x452c726380738fa0L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_Dialog_0, myMember_DialogInput_0, myMember_SansSerif_0, myMember_Serif_0, myMember_Monospaced_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_Dialog_0, myMember_DialogInput_0, myMember_SansSerif_0, myMember_Serif_0, myMember_Monospaced_0);
 
   @Nullable
   @Override

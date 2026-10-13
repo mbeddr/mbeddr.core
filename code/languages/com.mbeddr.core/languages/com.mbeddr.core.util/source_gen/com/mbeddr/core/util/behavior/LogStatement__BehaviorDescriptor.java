@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.model.SModel;
@@ -22,7 +21,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.expressions.behavior.Type__BehaviorDescriptor;
 import com.mbeddr.core.expressions.typesystem.MeetTypeHelper;
 import jetbrains.mps.typechecking.TypecheckingFacade;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -32,15 +30,13 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class LogStatement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x1abfe28bd1ac1ac6L, "com.mbeddr.core.util.structure.LogStatement");
 
-  public static final SMethod<Boolean> suppressSpaceAfter_id6TPUpo_efNz = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("suppressSpaceAfter").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7959524747526077667L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> suppressSpaceBefore_id3PUmE2lLGid = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("suppressSpaceBefore").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4429952829226402957L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> messageString_id1EZSCJhUnyz = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("messageString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1927508255687932067L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> expressions_id1EZSCJhU$Wc = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("expressions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1927508255687986956L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<Boolean> suppressSpaceAfter_id6TPUpo_efNz = new SMethodBuilder<>(Boolean.TYPE).name("suppressSpaceAfter").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7959524747526077667L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter(SNode.class, "word"));
+  public static final SMethod<Boolean> suppressSpaceBefore_id3PUmE2lLGid = new SMethodBuilder<>(Boolean.TYPE).name("suppressSpaceBefore").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4429952829226402957L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter(SNode.class, "word"));
+  public static final SMethod<String> messageString_id1EZSCJhUnyz = new SMethodBuilder<>(String.class).name("messageString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1927508255687932067L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2(SMethodBuilder.createJavaParameter(SModel.class, "model"));
+  public static final SMethod<Iterable<SNode>> expressions_id1EZSCJhU$Wc = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("expressions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1927508255687986956L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(suppressSpaceAfter_id6TPUpo_efNz, suppressSpaceBefore_id3PUmE2lLGid, messageString_id1EZSCJhUnyz, expressions_id1EZSCJhU$Wc);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(suppressSpaceAfter_id6TPUpo_efNz, suppressSpaceBefore_id3PUmE2lLGid, messageString_id1EZSCJhUnyz, expressions_id1EZSCJhU$Wc);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean suppressSpaceAfter_id6TPUpo_efNz(@NotNull SAbstractConcept __thisConcept__, SNode word) {
     SAbstractConcept cncpt = SNodeOperations.getConcept(word);
@@ -115,10 +111,6 @@ public final class LogStatement__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ LogStatement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

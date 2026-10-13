@@ -13,23 +13,23 @@ import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.internal.collections.runtime.IMapping;
 
 /**
- * A simple directed graph data structure with forward and backward edge mappings. 
- * It is very important to implement the equals and hashcode methods in the  
- * given node type, so that it provides true uniqueness for the nodes. 
+ * A simple directed graph data structure with forward and backward edge mappings.
+ * It is very important to implement the equals and hashcode methods in the
+ * given node type, so that it provides true uniqueness for the nodes.
  *  
- * @param T The type of the nodes in the graph 
+ * @param T The type of the nodes in the graph
  */
 public class Graph<T> {
 
   private Map<T, Set<T>> forwardMap;
   private Map<T, Set<T>> backwardMap;
   /**
-   * This mapping is required so that different instances of nodes  
-   * with the same hashCode will not be inserted into the graph.  
-   * Basically the first inserted node will be used as a representative  
-   * for these nodes. Usually such a situation can arise, when  
-   * during the graph construction we try to insert equal nodes  
-   * to the graph multiple times.  
+   * This mapping is required so that different instances of nodes
+   * with the same hashCode will not be inserted into the graph.
+   * Basically the first inserted node will be used as a representative
+   * for these nodes. Usually such a situation can arise, when
+   * during the graph construction we try to insert equal nodes
+   * to the graph multiple times.
    */
   private Map<T, T> nodeMap;
 
@@ -65,8 +65,8 @@ public class Graph<T> {
   }
 
   /**
-   * Adds the specified edge to the graph.  
-   * This will always be successful, because parallel edges are also allowed.  
+   * Adds the specified edge to the graph.
+   * This will always be successful, because parallel edges are also allowed.
    */
   public void addEdge(T from, T to) {
     addNode(from);

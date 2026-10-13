@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -29,18 +27,16 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class PreferenceForm__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x1e7c1f95336c4cecL, 0xb00e8cc6e0c2b265L, 0x2068b0f6bab77cbL, "com.mbeddr.mpsutil.preferenceform.structure.PreferenceForm");
 
-  public static final SMethod<String> getConfigurableName_idX7OD3Wy$aP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getConfigurableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1101080154069418677L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
-  public static final SMethod<String> getPreferenceComponentName_id86yKXFUAXV = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPreferenceComponentName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(145956936287416187L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
-  public static final SMethod<String> getPluginName_id1DjGUwRg0Or = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPluginName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1897057403115932955L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
-  public static final SMethod<String> getStateName_id41w3udzioRY = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getStateName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4638722886466113022L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
-  public static final SMethod<String> getStorageId_id41w3udzipzt = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getStorageId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4638722886466115805L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
-  public static final SMethod<SNode> createType_idhEwJimy = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877527970L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
-  public static final SMethod<List<SNode>> getMembers_idhEwJioW = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877528124L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
+  public static final SMethod<String> getConfigurableName_idX7OD3Wy$aP = new SMethodBuilder<>(String.class).name("getConfigurableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1101080154069418677L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
+  public static final SMethod<String> getPreferenceComponentName_id86yKXFUAXV = new SMethodBuilder<>(String.class).name("getPreferenceComponentName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(145956936287416187L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
+  public static final SMethod<String> getPluginName_id1DjGUwRg0Or = new SMethodBuilder<>(String.class).name("getPluginName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1897057403115932955L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
+  public static final SMethod<String> getStateName_id41w3udzioRY = new SMethodBuilder<>(String.class).name("getStateName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4638722886466113022L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
+  public static final SMethod<String> getStorageId_id41w3udzipzt = new SMethodBuilder<>(String.class).name("getStorageId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4638722886466115805L).languageId(0xb00e8cc6e0c2b265L, 0x1e7c1f95336c4cecL).build2();
+  public static final SMethod<SNode> createType_idhEwJimy = new SMethodBuilder<>(SNode.class).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877527970L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
+  public static final SMethod<List<SNode>> getMembers_idhEwJioW = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877528124L).languageId(0x95008d06ed259e3eL, 0x443f4c36fcf54eb6L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConfigurableName_idX7OD3Wy$aP, getPreferenceComponentName_id86yKXFUAXV, getPluginName_id1DjGUwRg0Or, getStateName_id41w3udzioRY, getStorageId_id41w3udzipzt, createType_idhEwJimy, getMembers_idhEwJioW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConfigurableName_idX7OD3Wy$aP, getPreferenceComponentName_id86yKXFUAXV, getPluginName_id1DjGUwRg0Or, getStateName_id41w3udzioRY, getStorageId_id41w3udzipzt, createType_idhEwJimy, getMembers_idhEwJioW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getConfigurableName_idX7OD3Wy$aP(@NotNull SNode __thisNode__) {
     return StringUtils.deleteWhitespace(SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL)) + "_Configurable";
@@ -71,10 +67,6 @@ public final class PreferenceForm__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ PreferenceForm__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,13 +24,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class PortVarOpCallExpr__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x176257c4ce6b1de1L, "com.mbeddr.ext.components.structure.PortVarOpCallExpr");
 
-  public static final SMethod<Boolean> canSideTransform_id4GzlXVK__1_ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canSideTransform").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5414267792060207205L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getPort_id3EJ_ji9YEFt = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4228762628009929437L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> canSideTransform_id4GzlXVK__1_ = new SMethodBuilder<>(Boolean.TYPE).name("canSideTransform").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5414267792060207205L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "expr"));
+  public static final SMethod<SNode> getPort_id3EJ_ji9YEFt = new SMethodBuilder<>(SNode.class).name("getPort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4228762628009929437L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canSideTransform_id4GzlXVK__1_, getPort_id3EJ_ji9YEFt);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canSideTransform_id4GzlXVK__1_, getPort_id3EJ_ji9YEFt);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canSideTransform_id4GzlXVK__1_(@NotNull SAbstractConcept __thisConcept__, SNode expr) {
     SNode type = TypecheckingFacade.getFromContext().getTypeOf(expr);
@@ -45,10 +41,6 @@ public final class PortVarOpCallExpr__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ PortVarOpCallExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

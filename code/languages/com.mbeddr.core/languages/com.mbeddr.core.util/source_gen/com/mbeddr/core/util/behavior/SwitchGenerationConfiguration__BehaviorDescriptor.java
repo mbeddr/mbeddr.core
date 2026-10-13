@@ -21,7 +21,7 @@ public final class SwitchGenerationConfiguration__BehaviorDescriptor extends Bas
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x5aee4fb2e0da035dL, "com.mbeddr.core.util.structure.SwitchGenerationConfiguration");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.strategy$xWln, CONCEPTS.DefaultSwitchGenerationStrategy$Zh);

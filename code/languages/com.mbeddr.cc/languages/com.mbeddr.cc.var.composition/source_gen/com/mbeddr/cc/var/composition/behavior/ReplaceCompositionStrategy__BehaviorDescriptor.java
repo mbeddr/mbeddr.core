@@ -7,26 +7,22 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ReplaceCompositionStrategy__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x21ac77a41b6644c5L, 0xaaec94e43bb86519L, 0x3fa2b6b6b41a1357L, "com.mbeddr.cc.var.composition.structure.ReplaceCompositionStrategy");
 
-  public static final SMethod<CompositionResult> compose_id3YyHFqO7EVE = new SMethodBuilder<CompositionResult>(new SJavaCompoundTypeImpl(CompositionResult.class)).name("compose").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438799082L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(CompositionContext.class, ""));
+  public static final SMethod<CompositionResult> compose_id3YyHFqO7EVE = new SMethodBuilder<>(CompositionResult.class).name("compose").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438799082L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter(SNode.class, "target"), SMethodBuilder.createJavaParameter(SNode.class, "matchNode"), SMethodBuilder.createJavaParameter(CompositionContext.class, "context"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compose_id3YyHFqO7EVE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compose_id3YyHFqO7EVE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static CompositionResult compose_id3YyHFqO7EVE(@NotNull SNode __thisNode__, SNode target, SNode matchNode, CompositionContext context) {
     SNode clone = SNodeOperations.copyNode(matchNode);
@@ -40,10 +36,6 @@ public final class ReplaceCompositionStrategy__BehaviorDescriptor extends BaseBH
   /*package*/ ReplaceCompositionStrategy__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

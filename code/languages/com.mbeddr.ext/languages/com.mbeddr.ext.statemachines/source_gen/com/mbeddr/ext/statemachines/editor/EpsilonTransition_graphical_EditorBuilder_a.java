@@ -198,7 +198,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return diagramCell.value;
   }
   private EditorCell createDiagramConnector_1() {
-    return createDiagramConnector_0(getEditorContext(), myNode);
+    return createDiagramConnector_0(getEditorContext(), getNode());
   }
   private LineStyle _StyleParameter_QueryFunction_8c5k4c_a0a() {
     return LineStyle.DASHED;

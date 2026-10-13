@@ -8,27 +8,23 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SModel;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class MatchStrategy__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x21ac77a41b6644c5L, 0xaaec94e43bb86519L, 0x3fa2b6b6b4161efdL, "com.mbeddr.cc.var.composition.structure.MatchStrategy");
 
-  public static final SMethod<SNode> matchNode_id3YyHFqO62F_ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("matchNode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438372069L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2();
-  public static final SMethod<Iterable<SNode>> matchedTargets_id3YyHFqO6HoC = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("matchedTargets").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438546984L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> matchNode_id3YyHFqO62F_ = new SMethodBuilder<>(SNode.class).name("matchNode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438372069L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2();
+  public static final SMethod<Iterable<SNode>> matchedTargets_id3YyHFqO6HoC = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("matchedTargets").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4585428266438546984L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter(SModel.class, "m"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matchNode_id3YyHFqO62F_, matchedTargets_id3YyHFqO6HoC);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matchNode_id3YyHFqO62F_, matchedTargets_id3YyHFqO6HoC);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode matchNode_id3YyHFqO62F_(@NotNull SNode __thisNode__) {
     return SNodeOperations.getParent(SNodeOperations.getParent(__thisNode__));
@@ -37,10 +33,6 @@ public final class MatchStrategy__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ MatchStrategy__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

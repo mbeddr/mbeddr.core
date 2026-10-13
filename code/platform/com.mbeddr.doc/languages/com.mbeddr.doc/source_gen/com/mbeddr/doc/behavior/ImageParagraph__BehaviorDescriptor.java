@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.core.base.behavior.AbstractTreeViewNode;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.base.behavior.TextBlock__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.core.base.behavior.LeafNodeTreeViewNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -28,19 +26,17 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ImageParagraph__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x58a16bfbe08b4e13L, "com.mbeddr.doc.structure.ImageParagraph");
 
-  public static final SMethod<Boolean> hasPathSpecified_id5yxqZJwzdPp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasPathSpecified").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136365401L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Boolean> hasValidPath_id5yxqZJwzdQl = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasValidPath").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136365461L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<String> imageStatusMessage_id5yxqZJwzdQv = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("imageStatusMessage").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136365471L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<SNode> getPath_id3UlEobTHU0G = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4509696981881823276L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("resultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> renderImage_id2x0XdshuE$U = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("renderImage").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2900587364574996794L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<AbstractTreeViewNode>(new SJavaCompoundTypeImpl(AbstractTreeViewNode.class)).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Boolean> hasPathSpecified_id5yxqZJwzdPp = new SMethodBuilder<>(Boolean.TYPE).name("hasPathSpecified").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136365401L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Boolean> hasValidPath_id5yxqZJwzdQl = new SMethodBuilder<>(Boolean.TYPE).name("hasValidPath").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136365461L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<String> imageStatusMessage_id5yxqZJwzdQv = new SMethodBuilder<>(String.class).name("imageStatusMessage").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6386504476136365471L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<SNode> getPath_id3UlEobTHU0G = new SMethodBuilder<>(SNode.class).name("getPath").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4509696981881823276L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<Boolean> containsText_idjpyKDg1onB = new SMethodBuilder<>(Boolean.TYPE).name("containsText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506397159L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "text"));
+  public static final SMethod<String> resultName_idjpyKDg1pW5 = new SMethodBuilder<>(String.class).name("resultName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349463322506403589L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> renderImage_id2x0XdshuE$U = new SMethodBuilder<>(Boolean.TYPE).name("renderImage").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2900587364574996794L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<>(AbstractTreeViewNode.class).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "category"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasPathSpecified_id5yxqZJwzdPp, hasValidPath_id5yxqZJwzdQl, imageStatusMessage_id5yxqZJwzdQv, getPath_id3UlEobTHU0G, containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, renderImage_id2x0XdshuE$U, getTreeNode_id7NyyyjNtbn2);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasPathSpecified_id5yxqZJwzdPp, hasValidPath_id5yxqZJwzdQl, imageStatusMessage_id5yxqZJwzdQv, getPath_id3UlEobTHU0G, containsText_idjpyKDg1onB, resultName_idjpyKDg1pW5, renderImage_id2x0XdshuE$U, getTreeNode_id7NyyyjNtbn2);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean hasPathSpecified_id5yxqZJwzdPp(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.resource$t9jq) != null;
@@ -79,10 +75,6 @@ public final class ImageParagraph__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ImageParagraph__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

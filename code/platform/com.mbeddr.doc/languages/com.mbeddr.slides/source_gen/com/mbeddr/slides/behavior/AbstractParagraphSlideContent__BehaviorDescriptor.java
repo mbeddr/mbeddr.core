@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -15,19 +14,16 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractParagraphSlideContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x94daa6ebe6a44b9fL, 0x90b64b23682ca120L, 0x4bb77d5688345d87L, "com.mbeddr.slides.structure.AbstractParagraphSlideContent");
 
-  public static final SMethod<String> getHTMLTag_id4IRvlq8d5Qd = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getHTMLTag").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5455967284188437901L).languageId(0x90b64b23682ca120L, 0x94daa6ebe6a44b9fL).build2();
+  public static final SMethod<String> getHTMLTag_id4IRvlq8d5Qd = new SMethodBuilder<>(String.class).name("getHTMLTag").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5455967284188437901L).languageId(0x90b64b23682ca120L, 0x94daa6ebe6a44b9fL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getHTMLTag_id4IRvlq8d5Qd);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getHTMLTag_id4IRvlq8d5Qd);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getHTMLTag_id4IRvlq8d5Qd(@NotNull SNode __thisNode__) {
     return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__));
@@ -36,10 +32,6 @@ public final class AbstractParagraphSlideContent__BehaviorDescriptor extends Bas
   /*package*/ AbstractParagraphSlideContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

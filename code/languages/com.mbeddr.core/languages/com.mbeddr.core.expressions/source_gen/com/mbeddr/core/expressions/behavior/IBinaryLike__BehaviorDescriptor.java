@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -16,24 +15,21 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IBinaryLike__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x65a3fdcab15dc528L, "com.mbeddr.core.expressions.structure.IBinaryLike");
 
-  public static final SMethod<Boolean> canPropagateUnmatchedParenthesisUp_id6mzZsELnszz = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canPropagateUnmatchedParenthesisUp").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035493091L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
-  public static final SMethod<Void> setSyntacticallyLeftSideExpression_id6mzZsELnCP6 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setSyntacticallyLeftSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035543366L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> setSyntacticallyRightSideExpression_id6mzZsELnSmP = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setSyntacticallyRightSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035606965L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getSyntacticallyLeftSideExpression_id6mzZsELnTBJ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getSyntacticallyLeftSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035612143L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getSyntacticallyRightSideExpression_id6mzZsELnTMK = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getSyntacticallyRightSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035612848L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Boolean> canPropagateUnmatchedParenthesisUp_id6mzZsELnszz = new SMethodBuilder<>(Boolean.TYPE).name("canPropagateUnmatchedParenthesisUp").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035493091L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(SNode.class, "leaf"), SMethodBuilder.createJavaParameter(Boolean.TYPE, "isRightParenthesis"));
+  public static final SMethod<Void> setSyntacticallyLeftSideExpression_id6mzZsELnCP6 = new SMethodBuilder<>(Void.TYPE).name("setSyntacticallyLeftSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035543366L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expression"));
+  public static final SMethod<Void> setSyntacticallyRightSideExpression_id6mzZsELnSmP = new SMethodBuilder<>(Void.TYPE).name("setSyntacticallyRightSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035606965L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expression"));
+  public static final SMethod<SNode> getSyntacticallyLeftSideExpression_id6mzZsELnTBJ = new SMethodBuilder<>(SNode.class).name("getSyntacticallyLeftSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035612143L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getSyntacticallyRightSideExpression_id6mzZsELnTMK = new SMethodBuilder<>(SNode.class).name("getSyntacticallyRightSideExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7323976466035612848L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canPropagateUnmatchedParenthesisUp_id6mzZsELnszz, setSyntacticallyLeftSideExpression_id6mzZsELnCP6, setSyntacticallyRightSideExpression_id6mzZsELnSmP, getSyntacticallyLeftSideExpression_id6mzZsELnTBJ, getSyntacticallyRightSideExpression_id6mzZsELnTMK, getPresentation_idhEwIMiw);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canPropagateUnmatchedParenthesisUp_id6mzZsELnszz, setSyntacticallyLeftSideExpression_id6mzZsELnCP6, setSyntacticallyRightSideExpression_id6mzZsELnSmP, getSyntacticallyLeftSideExpression_id6mzZsELnTBJ, getSyntacticallyRightSideExpression_id6mzZsELnTMK, getPresentation_idhEwIMiw);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canPropagateUnmatchedParenthesisUp_id6mzZsELnszz(@NotNull SNode __thisNode__, SNode leaf, boolean isRightParenthesis) {
     List<SNode> ancestors = SNodeOperations.getNodeAncestors(leaf, null, true);
@@ -64,10 +60,6 @@ public final class IBinaryLike__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IBinaryLike__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

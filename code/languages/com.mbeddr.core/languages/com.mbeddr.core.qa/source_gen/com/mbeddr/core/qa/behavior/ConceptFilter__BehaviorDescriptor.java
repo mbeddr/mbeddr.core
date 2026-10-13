@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -23,12 +21,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ConceptFilter__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc8e0d19c3cf4b31L, 0xaf77531227edbce8L, 0x571d7a04fb2de378L, "com.mbeddr.core.qa.structure.ConceptFilter");
 
-  public static final SMethod<Iterable<SNode>> matched_id5stuwjVbBxx = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("matched").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6277307617436924001L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> matched_id5stuwjVbBxx = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("matched").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6277307617436924001L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matched_id5stuwjVbBxx);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matched_id5stuwjVbBxx);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> matched_id5stuwjVbBxx(@NotNull SNode __thisNode__, final SNode n) {
     return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.refs$ylLE)).where((it) -> (boolean) ConceptRef__BehaviorDescriptor.matches_id5stuwjVbNOa.invoke(it, n));
@@ -37,10 +33,6 @@ public final class ConceptFilter__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ConceptFilter__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

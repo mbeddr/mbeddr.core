@@ -13,9 +13,9 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="82,0,85,0" name="com.mbeddr.core.modules.gen.textGen.TextGenAspectDescriptor$PROPS" />
-      <unit at="77,0,81,0" name="com.mbeddr.core.modules.gen.textGen.TextGenAspectDescriptor$CONCEPTS" />
-      <unit at="19,0,86,0" name="com.mbeddr.core.modules.gen.textGen.TextGenAspectDescriptor" />
+      <unit at="84,0,87,0" name="com.mbeddr.core.modules.gen.textGen.TextGenAspectDescriptor$PROPS" />
+      <unit at="79,0,83,0" name="com.mbeddr.core.modules.gen.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="19,0,88,0" name="com.mbeddr.core.modules.gen.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:82cbc1be-d9cd-4ff4-95fb-c4c1668a38f7(com.mbeddr.core.modules.gen.textGen)/1317894735999391575">
@@ -146,22 +146,23 @@
       <node id="1758019824472805391" at="52,55,53,84" concept="2" />
       <node id="1758019824472805391" at="53,84,54,17" concept="1" />
       <node id="8758138335607370333" at="64,60,65,93" concept="7" />
-      <node id="7246949367815685942" at="70,65,71,73" concept="7" />
-      <node id="1758019824472805391" at="64,0,67,0" concept="10" trace="getFileName_GenModuleH#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="1758019824472805391" at="70,0,73,0" concept="10" trace="getFileExtension_GenModuleH#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1758019824472805391" at="65,93,66,0" concept="8" />
+      <node id="7246949367815685942" at="72,65,73,73" concept="7" />
+      <node id="1758019824472805391" at="72,0,75,0" concept="10" trace="getFileExtension_GenModuleH#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1758019824472805391" at="64,0,68,0" concept="10" trace="getFileName_GenModuleH#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="1758019824472805391" at="49,58,55,7" concept="4" />
       <scope id="1758019824472805391" at="37,44,38,40" />
-      <scope id="1758019824472805391" at="64,60,65,93" />
-      <scope id="1758019824472805391" at="70,65,71,73" />
-      <scope id="1758019824472805391" at="64,0,67,0">
-        <var name="node" id="1758019824472805391" />
-      </scope>
-      <scope id="1758019824472805391" at="70,0,73,0">
+      <scope id="1758019824472805391" at="72,65,73,73" />
+      <scope id="1758019824472805391" at="64,60,66,0" />
+      <scope id="1758019824472805391" at="72,0,75,0">
         <var name="node" id="1758019824472805391" />
       </scope>
       <scope id="1758019824472805391" at="50,61,54,17">
         <var name="ext" id="1758019824472805391" />
         <var name="fname" id="1758019824472805391" />
+      </scope>
+      <scope id="1758019824472805391" at="64,0,68,0">
+        <var name="node" id="1758019824472805391" />
       </scope>
     </file>
   </root>
@@ -237,23 +238,24 @@
       <node id="1758019824472844906" at="57,52,58,55" concept="6" />
       <node id="1758019824472844906" at="58,55,59,84" concept="2" />
       <node id="1758019824472844906" at="59,84,60,17" concept="1" />
-      <node id="8758138335591864136" at="67,60,68,93" concept="7" />
-      <node id="5048824311958609121" at="73,65,74,73" concept="7" />
-      <node id="1758019824472844906" at="67,0,70,0" concept="10" trace="getFileName_GenModuleC#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="1758019824472844906" at="73,0,76,0" concept="10" trace="getFileExtension_GenModuleC#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="8758138335591864136" at="68,60,69,93" concept="7" />
+      <node id="1758019824472844906" at="69,93,70,0" concept="8" />
+      <node id="5048824311958609121" at="75,65,76,73" concept="7" />
+      <node id="1758019824472844906" at="75,0,78,0" concept="10" trace="getFileExtension_GenModuleC#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1758019824472844906" at="68,0,72,0" concept="10" trace="getFileName_GenModuleC#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="1758019824472844906" at="55,7,61,7" concept="4" />
       <scope id="1758019824472844906" at="35,44,36,40" />
-      <scope id="1758019824472844906" at="67,60,68,93" />
-      <scope id="1758019824472844906" at="73,65,74,73" />
-      <scope id="1758019824472844906" at="67,0,70,0">
-        <var name="node" id="1758019824472844906" />
-      </scope>
-      <scope id="1758019824472844906" at="73,0,76,0">
+      <scope id="1758019824472844906" at="75,65,76,73" />
+      <scope id="1758019824472844906" at="68,60,70,0" />
+      <scope id="1758019824472844906" at="75,0,78,0">
         <var name="node" id="1758019824472844906" />
       </scope>
       <scope id="1758019824472844906" at="56,61,60,17">
         <var name="ext" id="1758019824472844906" />
         <var name="fname" id="1758019824472844906" />
+      </scope>
+      <scope id="1758019824472844906" at="68,0,72,0">
+        <var name="node" id="1758019824472844906" />
       </scope>
     </file>
   </root>

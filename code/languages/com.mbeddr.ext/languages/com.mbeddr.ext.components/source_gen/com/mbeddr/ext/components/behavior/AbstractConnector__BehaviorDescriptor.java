@@ -7,37 +7,29 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractConnector__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x67b00c58c62f1c4fL, "com.mbeddr.ext.components.structure.AbstractConnector");
 
-  public static final SMethod<Boolean> isConnectable_id2V8b0wQJ4ZA = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isConnectable").modifiers(13, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3370992734876487654L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> createInstance_id2V8b0wQKcVy = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createInstance").modifiers(13, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3370992734876782306L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getSource_id5vIM0hK3JEu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getSource").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6336221647142320798L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<SNode> getTarget_id5vIM0hK3KJr = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTarget").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6336221647142325211L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> isConnectable_id2V8b0wQJ4ZA = new SMethodBuilder<>(Boolean.TYPE).name("isConnectable").modifiers(13, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3370992734876487654L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "source"), SMethodBuilder.createJavaParameter(SNode.class, "target"));
+  public static final SMethod<SNode> createInstance_id2V8b0wQKcVy = new SMethodBuilder<>(SNode.class).name("createInstance").modifiers(13, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3370992734876782306L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "sourceInstance"), SMethodBuilder.createJavaParameter(SNode.class, "targetInstance"), SMethodBuilder.createJavaParameter(SNode.class, "source"), SMethodBuilder.createJavaParameter(SNode.class, "target"));
+  public static final SMethod<SNode> getSource_id5vIM0hK3JEu = new SMethodBuilder<>(SNode.class).name("getSource").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6336221647142320798L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<SNode> getTarget_id5vIM0hK3KJr = new SMethodBuilder<>(SNode.class).name("getTarget").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6336221647142325211L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isConnectable_id2V8b0wQJ4ZA, createInstance_id2V8b0wQKcVy, getSource_id5vIM0hK3JEu, getTarget_id5vIM0hK3KJr);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isConnectable_id2V8b0wQJ4ZA, createInstance_id2V8b0wQKcVy, getSource_id5vIM0hK3JEu, getTarget_id5vIM0hK3KJr);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ AbstractConnector__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

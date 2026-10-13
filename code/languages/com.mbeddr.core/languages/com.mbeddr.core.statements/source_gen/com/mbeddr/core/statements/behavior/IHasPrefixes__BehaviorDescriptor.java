@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.modules.behavior.IModuleContent__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -28,16 +26,14 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IHasPrefixes__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x866dc95fc7a033eL, "com.mbeddr.core.statements.structure.IHasPrefixes");
 
-  public static final SMethod<Iterable<SNode>> beforePrefixes_id8PQYytRYmo = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("beforePrefixes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153969112472L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<Iterable<SNode>> beforeAndAttributePrefixes_id8PQYytSeGD = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("beforeAndAttributePrefixes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153969179433L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<Iterable<SNode>> attributePrefixes_id8PQYytVn$K = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("attributePrefixes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153970002224L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<Iterable<SNode>> surroundingPrefixes_id8PQYytSgXH = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("surroundingPrefixes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153969188717L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<String> genName_id3Kc$0Lv_BCq = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4326991724813908506L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Iterable<SNode>> beforePrefixes_id8PQYytRYmo = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("beforePrefixes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153969112472L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Iterable<SNode>> beforeAndAttributePrefixes_id8PQYytSeGD = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("beforeAndAttributePrefixes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153969179433L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Iterable<SNode>> attributePrefixes_id8PQYytVn$K = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("attributePrefixes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153970002224L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Iterable<SNode>> surroundingPrefixes_id8PQYytSgXH = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("surroundingPrefixes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(159275153969188717L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<String> genName_id3Kc$0Lv_BCq = new SMethodBuilder<>(String.class).name("genName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4326991724813908506L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(beforePrefixes_id8PQYytRYmo, beforeAndAttributePrefixes_id8PQYytSeGD, attributePrefixes_id8PQYytVn$K, surroundingPrefixes_id8PQYytSgXH, genName_id3Kc$0Lv_BCq);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(beforePrefixes_id8PQYytRYmo, beforeAndAttributePrefixes_id8PQYytSeGD, attributePrefixes_id8PQYytVn$K, surroundingPrefixes_id8PQYytSgXH, genName_id3Kc$0Lv_BCq);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> beforePrefixes_id8PQYytRYmo(@NotNull SNode __thisNode__) {
     return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.prefixes$hyki)).where((it) -> Prefix__BehaviorDescriptor.type_id8PQYytRYFO.invoke(it) != PrefixType.ATTRIBUTE);
@@ -70,10 +66,6 @@ public final class IHasPrefixes__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IHasPrefixes__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

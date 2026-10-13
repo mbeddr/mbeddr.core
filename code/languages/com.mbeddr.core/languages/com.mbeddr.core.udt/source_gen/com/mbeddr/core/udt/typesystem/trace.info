@@ -3340,21 +3340,18 @@
       <node id="8993001388492641397" at="22,50,23,31" concept="7" />
       <node id="8993001388492641397" at="25,68,26,102" concept="7" />
       <node id="8993001388492641397" at="28,27,29,17" concept="7" />
-      <node id="8993001388492641397" at="31,39,32,16" concept="7" />
-      <node id="8993001388492641397" at="36,0,37,0" concept="9" trace="original$$TxO" />
-      <node id="8993001388492641397" at="40,0,41,0" concept="9" trace="TypeDef$QP" />
+      <node id="8993001388492641397" at="33,0,34,0" concept="9" trace="original$$TxO" />
+      <node id="8993001388492641397" at="37,0,38,0" concept="9" trace="TypeDef$QP" />
       <node id="8993001388492641397" at="17,0,19,0" concept="1" trace="typedef_SubtypingRule#()V" />
       <node id="8993001388492641397" at="19,0,22,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8993001388492641397" at="22,0,25,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8993001388492641397" at="25,0,28,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="8993001388492641397" at="28,0,31,0" concept="5" trace="isWeak#()Z" />
-      <node id="8993001388492641397" at="31,0,34,0" concept="5" trace="surelyKeepsConcept#()Z" />
       <scope id="8993001388492641397" at="17,34,17,34" />
       <scope id="8993001388492641398" at="19,117,20,67" />
       <scope id="8993001388492641397" at="22,50,23,31" />
       <scope id="8993001388492641397" at="25,68,26,102" />
       <scope id="8993001388492641397" at="28,27,29,17" />
-      <scope id="8993001388492641397" at="31,39,32,16" />
       <scope id="8993001388492641397" at="17,0,19,0" />
       <scope id="8993001388492641397" at="19,0,22,0">
         <var name="status" id="8993001388492641397" />
@@ -3366,10 +3363,9 @@
         <var name="argument" id="8993001388492641397" />
       </scope>
       <scope id="8993001388492641397" at="28,0,31,0" />
-      <scope id="8993001388492641397" at="31,0,34,0" />
-      <unit id="8993001388492641397" at="35,0,38,0" name="com.mbeddr.core.udt.typesystem.typedef_SubtypingRule$LINKS" />
-      <unit id="8993001388492641397" at="39,0,42,0" name="com.mbeddr.core.udt.typesystem.typedef_SubtypingRule$CONCEPTS" />
-      <unit id="8993001388492641397" at="16,0,43,0" name="com.mbeddr.core.udt.typesystem.typedef_SubtypingRule" />
+      <unit id="8993001388492641397" at="32,0,35,0" name="com.mbeddr.core.udt.typesystem.typedef_SubtypingRule$LINKS" />
+      <unit id="8993001388492641397" at="36,0,39,0" name="com.mbeddr.core.udt.typesystem.typedef_SubtypingRule$CONCEPTS" />
+      <unit id="8993001388492641397" at="16,0,40,0" name="com.mbeddr.core.udt.typesystem.typedef_SubtypingRule" />
     </file>
   </root>
 </debug-info>

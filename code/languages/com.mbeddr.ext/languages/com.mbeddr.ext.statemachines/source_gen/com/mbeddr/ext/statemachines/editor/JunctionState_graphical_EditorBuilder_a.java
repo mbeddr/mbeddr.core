@@ -70,7 +70,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   /*package*/ EditorCell createCell() {
-    return createDiagramNode_1();
+    return _cell_factory_method_();
   }
 
   private EditorCell createDiagramNode_0(final EditorContext editorContext, final SNode node) {
@@ -144,8 +144,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
     return editorCell.value;
   }
-  private EditorCell createDiagramNode_1() {
-    return createDiagramNode_0(getEditorContext(), myNode);
+  private EditorCell _cell_factory_method_() {
+    return createDiagramNode_0(getEditorContext(), getNode());
   }
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
@@ -248,7 +248,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCustom_1());
-    editorCell.addEditorCell(createCompartment_1());
+    editorCell.addEditorCell(createCompartment_0());
     editorCell.addEditorCell(createCustom_2());
     editorCell.addEditorCell(createCollection_6());
     return editorCell;
@@ -259,8 +259,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("Custom_66o7kt_a2a0");
     return editorCell;
   }
-  private EditorCell createCompartment_0(EditorContext editorContext, SNode node) {
-    CompartmentCell editorCell = new CompartmentCell(editorContext, node);
+  private EditorCell createCompartment_0() {
+    CompartmentCell editorCell = new CompartmentCell(getEditorContext(), getNode());
     editorCell.setCellId("Compartment_66o7kt_b2a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-color"), getStyleRegistry().getSimpleColor(_StyleParameter_QueryFunction_66o7kt_a0b2a0()));
@@ -268,9 +268,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.getInstance().<LineStyle>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-style"), _StyleParameter_QueryFunction_66o7kt_a2b2a0());
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createCompartment_1() {
-    return createCompartment_0(getEditorContext(), myNode);
   }
   private Color _StyleParameter_QueryFunction_66o7kt_a0b2a0() {
     return DiagramColors.STATE_BORDER;

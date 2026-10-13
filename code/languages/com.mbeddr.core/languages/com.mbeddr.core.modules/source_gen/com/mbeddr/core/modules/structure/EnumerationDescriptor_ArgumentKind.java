@@ -19,7 +19,7 @@ public class EnumerationDescriptor_ArgumentKind extends EnumerationDescriptorBas
   private final EnumerationDescriptor.MemberDescriptor myMember_OUT_0 = new EnumerationDescriptor.MemberDescriptor("OUT", "OUT", 0x3968d4c5c324d92cL, "r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)/1214029888595741771");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x3968d4c5c324d45dL, 0x3968d4c5c324d822L, 0x3968d4c5c324d92cL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_IN_0, myMember_OUT_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_IN_0, myMember_OUT_0);
 
   @Nullable
   @Override

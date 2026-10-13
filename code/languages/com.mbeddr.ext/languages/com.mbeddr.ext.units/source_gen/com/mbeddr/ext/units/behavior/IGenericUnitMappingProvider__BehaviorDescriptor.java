@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -20,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import com.mbeddr.ext.units.runtime.plugin.Fraction;
 import com.mbeddr.ext.units.runtime.plugin.UnitConversionUtil;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -30,14 +28,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class IGenericUnitMappingProvider__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd04a6cc773e4069L, 0xb9b011884b2ff1c8L, 0x5f072ca6a2ea1f42L, "com.mbeddr.ext.units.structure.IGenericUnitMappingProvider");
 
-  public static final SMethod<Iterable<SNode>> getGenericUnits_id5W7baqyUyho = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getGenericUnits").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6847490852649575512L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
-  public static final SMethod<Iterable<SNode>> getGenericUnitMappings_id5PsWxcFtosb = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getGenericUnitMappings").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6727518107532101387L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
-  public static final SMethod<SNode> resolveGenericUnit_id6VYXZgFJaKW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("resolveGenericUnit").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7998102616334445628L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> getGenericUnits_id5W7baqyUyho = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getGenericUnits").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6847490852649575512L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
+  public static final SMethod<Iterable<SNode>> getGenericUnitMappings_id5PsWxcFtosb = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getGenericUnitMappings").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6727518107532101387L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
+  public static final SMethod<SNode> resolveGenericUnit_id6VYXZgFJaKW = new SMethodBuilder<>(SNode.class).name("resolveGenericUnit").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7998102616334445628L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2(SMethodBuilder.createJavaParameter(SNode.class, "type"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "mappings"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGenericUnits_id5W7baqyUyho, getGenericUnitMappings_id5PsWxcFtosb, resolveGenericUnit_id6VYXZgFJaKW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGenericUnits_id5W7baqyUyho, getGenericUnitMappings_id5PsWxcFtosb, resolveGenericUnit_id6VYXZgFJaKW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getGenericUnitMappings_id5PsWxcFtosb(@NotNull SNode __thisNode__) {
     return SLinkOperations.getChildren(__thisNode__, LINKS.unitMappings$y8Iz);
@@ -73,10 +69,6 @@ public final class IGenericUnitMappingProvider__BehaviorDescriptor extends BaseB
   /*package*/ IGenericUnitMappingProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

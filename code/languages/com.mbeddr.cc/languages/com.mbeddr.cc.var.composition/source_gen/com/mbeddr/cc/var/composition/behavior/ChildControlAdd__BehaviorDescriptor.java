@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -17,7 +16,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.smodel.SNodeLegacy;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,12 +24,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ChildControlAdd__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x21ac77a41b6644c5L, 0xaaec94e43bb86519L, 0x52ce094113f8b408L, "com.mbeddr.cc.var.composition.structure.ChildControlAdd");
 
-  public static final SMethod<CompositionResult> compose_id5be2k4k0Ce9 = new SMethodBuilder<CompositionResult>(new SJavaCompoundTypeImpl(CompositionResult.class)).name("compose").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5966716731425719177L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<List<String>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(CompositionContext.class, ""));
+  public static final SMethod<CompositionResult> compose_id5be2k4k0Ce9 = new SMethodBuilder<>(CompositionResult.class).name("compose").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5966716731425719177L).languageId(0xaaec94e43bb86519L, 0x21ac77a41b6644c5L).build2(SMethodBuilder.createJavaParameter(SNode.class, "strategy"), SMethodBuilder.createJavaParameter(SNode.class, "target"), SMethodBuilder.createJavaParameter(SNode.class, "nodeWithOp"), SMethodBuilder.createJavaParameter((Class<List<String>>) ((Class) Object.class), "rolePath"), SMethodBuilder.createJavaParameter(CompositionContext.class, "context"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compose_id5be2k4k0Ce9);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compose_id5be2k4k0Ce9);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static CompositionResult compose_id5be2k4k0Ce9(@NotNull SNode __thisNode__, SNode strategy, SNode target, SNode nodeWithOp, List<String> rolePath, CompositionContext context) {
     SNode n = target;
@@ -61,10 +57,6 @@ public final class ChildControlAdd__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ ChildControlAdd__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

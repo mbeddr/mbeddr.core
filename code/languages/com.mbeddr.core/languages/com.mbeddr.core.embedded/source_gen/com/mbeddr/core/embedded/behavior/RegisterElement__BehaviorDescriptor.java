@@ -20,7 +20,7 @@ public final class RegisterElement__BehaviorDescriptor extends BaseBHDescriptor 
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x783af01f87a7412cL, 0xbe99293a162652b5L, 0x47d999428fcadc1eL, "com.mbeddr.core.embedded.structure.RegisterElement");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.size$Qe5u, 1);

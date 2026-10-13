@@ -12,7 +12,7 @@
       <unit at="11,0,67,0" name="com.mbeddr.ext.components.statemachine.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,36,0" name="com.mbeddr.ext.components.statemachine.structure.LanguageConceptSwitch" />
+      <unit at="12,0,44,0" name="com.mbeddr.ext.components.statemachine.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,118,0" name="com.mbeddr.ext.components.statemachine.structure.StructureAspectDescriptor" />
@@ -33,8 +33,8 @@
       <scope id="1598382569875775232" at="23,57,30,45" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1598382569875775232" at="12,0,13,0" concept="5" trace="InternalRunnableBinding" />
-      <node id="1598382569875775232" at="19,116,20,62" concept="0" />
+      <node id="1598382569875775232" at="14,0,15,0" concept="5" trace="InternalRunnableBinding" />
+      <node id="1598382569875775232" at="21,116,22,62" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1598382569875775232" at="15,0,16,0" concept="1" trace="myConceptInternalRunnableBinding" />
@@ -69,8 +69,8 @@
       <scope id="1656687801206464316" at="55,63,62,51" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1656687801206464316" at="16,0,17,0" concept="5" trace="StatemachineInCompsConfigItem" />
-      <node id="1656687801206464316" at="23,67,24,68" concept="0" />
+      <node id="1656687801206464316" at="18,0,19,0" concept="5" trace="StatemachineInCompsConfigItem" />
+      <node id="1656687801206464316" at="25,67,26,68" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1656687801206464316" at="19,0,20,0" concept="1" trace="myConceptStatemachineInCompsConfigItem" />
@@ -105,8 +105,8 @@
       <scope id="4514118643320650007" at="31,58,38,46" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4514118643320650007" at="13,0,14,0" concept="5" trace="ProvidedOperationBinding" />
-      <node id="4514118643320650007" at="20,62,21,63" concept="0" />
+      <node id="4514118643320650007" at="15,0,16,0" concept="5" trace="ProvidedOperationBinding" />
+      <node id="4514118643320650007" at="22,62,23,63" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4514118643320650007" at="16,0,17,0" concept="1" trace="myConceptProvidedOperationBinding" />
@@ -142,8 +142,8 @@
       <scope id="7525936201958402473" at="39,58,46,46" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7525936201958402473" at="14,0,15,0" concept="5" trace="RequiredOperationBinding" />
-      <node id="7525936201958402473" at="21,63,22,63" concept="0" />
+      <node id="7525936201958402473" at="16,0,17,0" concept="5" trace="RequiredOperationBinding" />
+      <node id="7525936201958402473" at="23,63,24,63" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7525936201958402473" at="17,0,18,0" concept="1" trace="myConceptRequiredOperationBinding" />
@@ -180,8 +180,8 @@
       <scope id="8663730687027689188" at="47,62,54,50" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8663730687027689188" at="15,0,16,0" concept="5" trace="StatemachineComponentAdapter" />
-      <node id="8663730687027689188" at="22,63,23,67" concept="0" />
+      <node id="8663730687027689188" at="17,0,18,0" concept="5" trace="StatemachineComponentAdapter" />
+      <node id="8663730687027689188" at="24,63,25,67" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8663730687027689188" at="18,0,19,0" concept="1" trace="myConceptStatemachineComponentAdapter" />

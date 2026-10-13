@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -23,12 +21,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class NonSelfCall__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd6714220402d48cbL, 0xa4a288223c6257f6L, 0x4fb6ca52097b476dL, "com.mbeddr.cc.requirements.scenarios.structure.NonSelfCall");
 
-  public static final SMethod<SNode> getContextParticipant_id4YQM_89uRDd = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getContextParticipant").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828452862541L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
+  public static final SMethod<SNode> getContextParticipant_id4YQM_89uRDd = new SMethodBuilder<>(SNode.class).name("getContextParticipant").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5744000828452862541L).languageId(0xa4a288223c6257f6L, 0xd6714220402d48cbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContextParticipant_id4YQM_89uRDd);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContextParticipant_id4YQM_89uRDd);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getContextParticipant_id4YQM_89uRDd(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.targetParticipant$FRTR), LINKS.participant$paZn);
@@ -37,10 +33,6 @@ public final class NonSelfCall__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ NonSelfCall__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

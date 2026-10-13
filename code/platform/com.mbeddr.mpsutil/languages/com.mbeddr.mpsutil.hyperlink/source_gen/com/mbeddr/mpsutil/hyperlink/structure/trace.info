@@ -12,7 +12,7 @@
       <unit at="11,0,29,0" name="com.mbeddr.mpsutil.hyperlink.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,28,0" name="com.mbeddr.mpsutil.hyperlink.structure.LanguageConceptSwitch" />
+      <unit at="12,0,36,0" name="com.mbeddr.mpsutil.hyperlink.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,57,0" name="com.mbeddr.mpsutil.hyperlink.structure.StructureAspectDescriptor" />
@@ -31,8 +31,8 @@
       <scope id="144279664520985993" at="19,46,24,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="144279664520985993" at="12,0,13,0" concept="5" trace="DummyConcept" />
-      <node id="144279664520985993" at="15,115,16,50" concept="0" />
+      <node id="144279664520985993" at="14,0,15,0" concept="5" trace="DummyConcept" />
+      <node id="144279664520985993" at="17,115,18,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="144279664520985993" at="15,0,16,0" concept="1" trace="myConceptDummyConcept" />

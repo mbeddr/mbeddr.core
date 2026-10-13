@@ -12,7 +12,7 @@ import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
  * 
  * The implementation is very efficient as it does not need null-checks.
  * 
- * Typical usage: Expensive computation collects some data, and the cheap computation 
+ * Typical usage: Expensive computation collects some data, and the cheap computation
  * computes a hashcode based on this data. If a different hashcode is computed later,
  * the expensive data collection has to be executed again.
  * 

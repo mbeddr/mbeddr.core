@@ -12,20 +12,20 @@ public class HyperlinkPlugin_AppPluginPart extends ApplicationPluginPart {
   @Override
   public void init() {
     HyperlinkEditorExtension extension = HyperlinkPlugin_AppPluginPart.this.extension;
-    check_vp7zbg_a1a0(getPlatform().findComponent(EditorExtensionRegistry.class), extension);
+    check_qx5qtc_a1a2(getPlatform().findComponent(EditorExtensionRegistry.class), extension, this);
   }
   @Override
   public void dispose() {
     HyperlinkEditorExtension extension = HyperlinkPlugin_AppPluginPart.this.extension;
-    check_vp7zbg_a1a0_0(getPlatform().findComponent(EditorExtensionRegistry.class), extension);
+    check_qx5qtc_a1a3(getPlatform().findComponent(EditorExtensionRegistry.class), extension, this);
   }
-  private static void check_vp7zbg_a1a0(EditorExtensionRegistry checkedDotOperand, HyperlinkEditorExtension extension) {
+  private static void check_qx5qtc_a1a2(EditorExtensionRegistry checkedDotOperand, HyperlinkEditorExtension extension, HyperlinkPlugin_AppPluginPart checkedDotThisExpression) {
     if (null != checkedDotOperand) {
       checkedDotOperand.registerExtension(extension);
     }
 
   }
-  private static void check_vp7zbg_a1a0_0(EditorExtensionRegistry checkedDotOperand, HyperlinkEditorExtension extension) {
+  private static void check_qx5qtc_a1a3(EditorExtensionRegistry checkedDotOperand, HyperlinkEditorExtension extension, HyperlinkPlugin_AppPluginPart checkedDotThisExpression) {
     if (null != checkedDotOperand) {
       checkedDotOperand.unregisterExtension(extension);
     }

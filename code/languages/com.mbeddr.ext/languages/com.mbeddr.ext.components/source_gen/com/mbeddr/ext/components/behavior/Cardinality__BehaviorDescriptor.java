@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -27,10 +26,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Cardinality__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x2ffab2b144517b3eL, "com.mbeddr.ext.components.structure.Cardinality");
 
-  public static final SMethod<Integer> upperBound_id2ofiXe_sAfm = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("upperBound").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2742494070477841366L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Integer> lowerBound_id2rnvR93av0K = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("lowerBound").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2798845822163873840L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Integer> upperBound_id2ofiXe_sAfm = new SMethodBuilder<>(Integer.TYPE).name("upperBound").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2742494070477841366L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Integer> lowerBound_id2rnvR93av0K = new SMethodBuilder<>(Integer.TYPE).name("lowerBound").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2798845822163873840L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(upperBound_id2ofiXe_sAfm, lowerBound_id2rnvR93av0K);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(upperBound_id2ofiXe_sAfm, lowerBound_id2rnvR93av0K);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SNode lowerBound = SLinkOperations.setNewChild(__thisNode__, LINKS.lowerBound$oTVs, CONCEPTS.NumberLiteral$jK);

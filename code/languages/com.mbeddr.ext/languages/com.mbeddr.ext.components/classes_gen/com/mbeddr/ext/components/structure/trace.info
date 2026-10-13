@@ -16,7 +16,7 @@
       <unit at="8,0,20,0" name="com.mbeddr.ext.components.structure.IconContainer" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,260,0" name="com.mbeddr.ext.components.structure.LanguageConceptSwitch" />
+      <unit at="12,0,268,0" name="com.mbeddr.ext.components.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="15,0,1660,0" name="com.mbeddr.ext.components.structure.StructureAspectDescriptor" />
@@ -36,8 +36,8 @@
       <scope id="1089269900847289701" at="374,60,380,48" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1089269900847289701" at="46,0,47,0" concept="6" trace="EmptyInstanceConfigContent" />
-      <node id="1089269900847289701" at="165,60,166,64" concept="0" />
+      <node id="1089269900847289701" at="48,0,49,0" concept="6" trace="EmptyInstanceConfigContent" />
+      <node id="1089269900847289701" at="167,60,168,64" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1089269900847289701" at="50,0,51,0" concept="1" trace="myConceptEmptyInstanceConfigContent" />
@@ -71,8 +71,8 @@
       <scope id="1302968767135003933" at="614,54,621,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1302968767135003933" at="81,0,82,0" concept="6" trace="InternalRunnableCall" />
-      <node id="1302968767135003933" at="200,62,201,59" concept="0" />
+      <node id="1302968767135003933" at="83,0,84,0" concept="6" trace="InternalRunnableCall" />
+      <node id="1302968767135003933" at="202,62,203,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1302968767135003933" at="85,0,86,0" concept="1" trace="myConceptInternalRunnableCall" />
@@ -111,8 +111,8 @@
       <scope id="1302968767135102724" at="730,48,737,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1302968767135102724" at="96,0,97,0" concept="6" trace="PortContentRef" />
-      <node id="1302968767135102724" at="215,57,216,53" concept="0" />
+      <node id="1302968767135102724" at="98,0,99,0" concept="6" trace="PortContentRef" />
+      <node id="1302968767135102724" at="217,57,218,53" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1302968767135102724" at="100,0,101,0" concept="1" trace="myConceptPortContentRef" />
@@ -146,8 +146,8 @@
       <scope id="1482737808881166716" at="877,59,884,47" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1482737808881166716" at="115,0,116,0" concept="6" trace="ReconnectAdapterStatement" />
-      <node id="1482737808881166716" at="234,50,235,64" concept="0" />
+      <node id="1482737808881166716" at="117,0,118,0" concept="6" trace="ReconnectAdapterStatement" />
+      <node id="1482737808881166716" at="236,50,237,64" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1482737808881166716" at="119,0,120,0" concept="1" trace="myConceptReconnectAdapterStatement" />
@@ -183,8 +183,8 @@
       <scope id="1482737808881210672" at="487,53,492,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1482737808881210672" at="63,0,64,0" concept="6" trace="IReferencesInstance" />
-      <node id="1482737808881210672" at="182,60,183,58" concept="0" />
+      <node id="1482737808881210672" at="65,0,66,0" concept="6" trace="IReferencesInstance" />
+      <node id="1482737808881210672" at="184,60,185,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1482737808881210672" at="67,0,68,0" concept="1" trace="myConceptIReferencesInstance" />
@@ -219,8 +219,8 @@
       <scope id="1539255704409294347" at="724,52,729,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1539255704409294347" at="95,0,96,0" concept="6" trace="PortCharacteristic" />
-      <node id="1539255704409294347" at="214,60,215,57" concept="0" />
+      <node id="1539255704409294347" at="97,0,98,0" concept="6" trace="PortCharacteristic" />
+      <node id="1539255704409294347" at="216,60,217,57" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1539255704409294347" at="99,0,100,0" concept="1" trace="myConceptPortCharacteristic" />
@@ -252,8 +252,8 @@
       <scope id="1539255704409345318" at="950,55,956,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1539255704409345318" at="124,0,125,0" concept="6" trace="TagPortCharacteristic" />
-      <node id="1539255704409345318" at="243,56,244,60" concept="0" />
+      <node id="1539255704409345318" at="126,0,127,0" concept="6" trace="TagPortCharacteristic" />
+      <node id="1539255704409345318" at="245,56,246,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1539255704409345318" at="128,0,129,0" concept="1" trace="myConceptTagPortCharacteristic" />
@@ -290,8 +290,8 @@
       <scope id="1685005713372603130" at="761,42,768,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1685005713372603130" at="100,0,101,0" concept="6" trace="PortType" />
-      <node id="1685005713372603130" at="219,50,220,47" concept="0" />
+      <node id="1685005713372603130" at="102,0,103,0" concept="6" trace="PortType" />
+      <node id="1685005713372603130" at="221,50,222,47" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1685005713372603130" at="104,0,105,0" concept="1" trace="myConceptPortType" />
@@ -332,8 +332,8 @@
       <scope id="1685005713378319841" at="769,51,775,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1685005713378319841" at="101,0,102,0" concept="6" trace="PortVarOpCallExpr" />
-      <node id="1685005713378319841" at="220,47,221,56" concept="0" />
+      <node id="1685005713378319841" at="103,0,104,0" concept="6" trace="PortVarOpCallExpr" />
+      <node id="1685005713378319841" at="222,47,223,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1685005713378319841" at="105,0,106,0" concept="1" trace="myConceptPortVarOpCallExpr" />
@@ -368,8 +368,8 @@
       <scope id="2103658896110121032" at="317,54,324,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2103658896110121032" at="38,0,39,0" concept="6" trace="ComponentsConfigItem" />
-      <node id="2103658896110121032" at="157,52,158,59" concept="0" />
+      <node id="2103658896110121032" at="40,0,41,0" concept="6" trace="ComponentsConfigItem" />
+      <node id="2103658896110121032" at="159,52,160,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2103658896110121032" at="42,0,43,0" concept="1" trace="myConceptComponentsConfigItem" />
@@ -403,8 +403,8 @@
       <scope id="2103658896110121035" at="325,55,330,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2103658896110121035" at="39,0,40,0" concept="6" trace="ComponentsGenStrategy" />
-      <node id="2103658896110121035" at="158,59,159,60" concept="0" />
+      <node id="2103658896110121035" at="41,0,42,0" concept="6" trace="ComponentsGenStrategy" />
+      <node id="2103658896110121035" at="160,59,161,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2103658896110121035" at="43,0,44,0" concept="1" trace="myConceptComponentsGenStrategy" />
@@ -435,8 +435,8 @@
       <scope id="2481387216194330257" at="135,62,140,50" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2481387216194330257" at="12,0,13,0" concept="6" trace="AbstractComponentInitializer" />
-      <node id="2481387216194330257" at="131,116,132,67" concept="0" />
+      <node id="2481387216194330257" at="14,0,15,0" concept="6" trace="AbstractComponentInitializer" />
+      <node id="2481387216194330257" at="133,116,134,67" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2481387216194330257" at="16,0,17,0" concept="1" trace="myConceptAbstractComponentInitializer" />
@@ -468,8 +468,8 @@
       <scope id="2481387216194749727" at="388,50,394,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2481387216194749727" at="48,0,49,0" concept="6" trace="ExternalLocation" />
-      <node id="2481387216194749727" at="167,61,168,55" concept="0" />
+      <node id="2481387216194749727" at="50,0,51,0" concept="6" trace="ExternalLocation" />
+      <node id="2481387216194749727" at="169,61,170,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2481387216194749727" at="52,0,53,0" concept="1" trace="myConceptExternalLocation" />
@@ -502,8 +502,8 @@
       <scope id="2481387216194884709" at="475,65,480,53" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2481387216194884709" at="61,0,62,0" concept="6" trace="IMayRequireComponentInitializer" />
-      <node id="2481387216194884709" at="180,54,181,70" concept="0" />
+      <node id="2481387216194884709" at="63,0,64,0" concept="6" trace="IMayRequireComponentInitializer" />
+      <node id="2481387216194884709" at="182,54,183,70" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2481387216194884709" at="65,0,66,0" concept="1" trace="myConceptIMayRequireComponentInitializer" />
@@ -537,8 +537,8 @@
       <scope id="2481387216194959457" at="395,61,401,49" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2481387216194959457" at="49,0,50,0" concept="6" trace="ExternalLocationInitializer" />
-      <node id="2481387216194959457" at="168,55,169,66" concept="0" />
+      <node id="2481387216194959457" at="51,0,52,0" concept="6" trace="ExternalLocationInitializer" />
+      <node id="2481387216194959457" at="170,55,171,66" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2481387216194959457" at="53,0,54,0" concept="1" trace="myConceptExternalLocationInitializer" />
@@ -574,8 +574,8 @@
       <scope id="2924520848052679299" at="576,66,582,54" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2924520848052679299" at="76,0,77,0" concept="6" trace="InterfaceToImplementationMapping" />
-      <node id="2924520848052679299" at="195,65,196,71" concept="0" />
+      <node id="2924520848052679299" at="78,0,79,0" concept="6" trace="InterfaceToImplementationMapping" />
+      <node id="2924520848052679299" at="197,65,198,71" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2924520848052679299" at="80,0,81,0" concept="1" trace="myConceptInterfaceToImplementationMapping" />
@@ -610,8 +610,8 @@
       <scope id="3064043099234233250" at="823,60,829,48" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3064043099234233250" at="108,0,109,0" concept="6" trace="ProvidedPortRefWithContext" />
-      <node id="3064043099234233250" at="227,51,228,65" concept="0" />
+      <node id="3064043099234233250" at="110,0,111,0" concept="6" trace="ProvidedPortRefWithContext" />
+      <node id="3064043099234233250" at="229,51,230,65" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3064043099234233250" at="112,0,113,0" concept="1" trace="myConceptProvidedPortRefWithContext" />
@@ -644,8 +644,8 @@
       <scope id="3152247881077901683" at="153,50,158,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3152247881077901683" at="15,0,16,0" concept="6" trace="AbstractDummyRef" />
-      <node id="3152247881077901683" at="134,67,135,55" concept="0" />
+      <node id="3152247881077901683" at="17,0,18,0" concept="6" trace="AbstractDummyRef" />
+      <node id="3152247881077901683" at="136,67,137,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3152247881077901683" at="19,0,20,0" concept="1" trace="myConceptAbstractDummyRef" />
@@ -676,8 +676,8 @@
       <scope id="3444913373458562837" at="171,49,176,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3444913373458562837" at="18,0,19,0" concept="6" trace="AbstractPortRef" />
-      <node id="3444913373458562837" at="137,68,138,54" concept="0" />
+      <node id="3444913373458562837" at="20,0,21,0" concept="6" trace="AbstractPortRef" />
+      <node id="3444913373458562837" at="139,68,140,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3444913373458562837" at="22,0,23,0" concept="1" trace="myConceptAbstractPortRef" />
@@ -710,8 +710,8 @@
       <scope id="3457272138385423166" at="201,45,208,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3457272138385423166" at="22,0,23,0" concept="6" trace="Cardinality" />
-      <node id="3457272138385423166" at="141,54,142,50" concept="0" />
+      <node id="3457272138385423166" at="24,0,25,0" concept="6" trace="Cardinality" />
+      <node id="3457272138385423166" at="143,54,144,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3457272138385423166" at="26,0,27,0" concept="1" trace="myConceptCardinality" />
@@ -746,8 +746,8 @@
       <scope id="4075471389393865483" at="717,55,723,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4075471389393865483" at="94,0,95,0" concept="6" trace="PortAsValueExpression" />
-      <node id="4075471389393865483" at="213,57,214,60" concept="0" />
+      <node id="4075471389393865483" at="96,0,97,0" concept="6" trace="PortAsValueExpression" />
+      <node id="4075471389393865483" at="215,57,216,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4075471389393865483" at="98,0,99,0" concept="1" trace="myConceptPortAsValueExpression" />
@@ -785,8 +785,8 @@
       <scope id="4075471389393921682" at="606,57,613,45" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4075471389393921682" at="80,0,81,0" concept="6" trace="InterfaceTypeOpCallExpr" />
-      <node id="4075471389393921682" at="199,65,200,62" concept="0" />
+      <node id="4075471389393921682" at="82,0,83,0" concept="6" trace="InterfaceTypeOpCallExpr" />
+      <node id="4075471389393921682" at="201,65,202,62" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4075471389393921682" at="84,0,85,0" concept="1" trace="myConceptInterfaceTypeOpCallExpr" />
@@ -820,8 +820,8 @@
       <scope id="4337203540627725794" at="799,56,805,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4337203540627725794" at="105,0,106,0" concept="6" trace="PreventConstructorCall" />
-      <node id="4337203540627725794" at="224,55,225,61" concept="0" />
+      <node id="4337203540627725794" at="107,0,108,0" concept="6" trace="PreventConstructorCall" />
+      <node id="4337203540627725794" at="226,55,227,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4337203540627725794" at="109,0,110,0" concept="1" trace="myConceptPreventConstructorCall" />
@@ -855,8 +855,8 @@
       <scope id="4390760819952509116" at="505,55,510,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4390760819952509116" at="66,0,67,0" concept="6" trace="ITriggeredByOperation" />
-      <node id="4390760819952509116" at="185,53,186,60" concept="0" />
+      <node id="4390760819952509116" at="68,0,69,0" concept="6" trace="ITriggeredByOperation" />
+      <node id="4390760819952509116" at="187,53,188,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4390760819952509116" at="70,0,71,0" concept="1" trace="myConceptITriggeredByOperation" />
@@ -889,8 +889,8 @@
       <scope id="4429602430543939814" at="511,54,517,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4429602430543939814" at="67,0,68,0" concept="6" trace="ImplementRunnableRef" />
-      <node id="4429602430543939814" at="186,60,187,59" concept="0" />
+      <node id="4429602430543939814" at="69,0,70,0" concept="6" trace="ImplementRunnableRef" />
+      <node id="4429602430543939814" at="188,60,189,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4429602430543939814" at="71,0,72,0" concept="1" trace="myConceptImplementRunnableRef" />
@@ -923,8 +923,8 @@
       <scope id="4457953124863197018" at="218,61,224,49" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4457953124863197018" at="24,0,25,0" concept="6" trace="CommentedCSInterfaceContent" />
-      <node id="4457953124863197018" at="143,60,144,66" concept="0" />
+      <node id="4457953124863197018" at="26,0,27,0" concept="6" trace="CommentedCSInterfaceContent" />
+      <node id="4457953124863197018" at="145,60,146,66" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4457953124863197018" at="28,0,29,0" concept="1" trace="myConceptCommentedCSInterfaceContent" />
@@ -957,8 +957,8 @@
       <scope id="4491876417845474761" at="239,43,245,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845474761" at="27,0,28,0" concept="6" trace="Component" />
-      <node id="4491876417845474761" at="146,61,147,48" concept="0" />
+      <node id="4491876417845474761" at="29,0,30,0" concept="6" trace="Component" />
+      <node id="4491876417845474761" at="148,61,149,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845474761" at="31,0,32,0" concept="1" trace="myConceptComponent" />
@@ -999,8 +999,8 @@
       <scope id="4491876417845484919" at="561,43,568,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845484919" at="74,0,75,0" concept="6" trace="Interface" />
-      <node id="4491876417845484919" at="193,60,194,48" concept="0" />
+      <node id="4491876417845484919" at="76,0,77,0" concept="6" trace="Interface" />
+      <node id="4491876417845484919" at="195,60,196,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845484919" at="78,0,79,0" concept="1" trace="myConceptInterface" />
@@ -1040,8 +1040,8 @@
       <scope id="4491876417845484922" at="209,55,217,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845484922" at="23,0,24,0" concept="6" trace="ClientServerInterface" />
-      <node id="4491876417845484922" at="142,50,143,60" concept="0" />
+      <node id="4491876417845484922" at="25,0,26,0" concept="6" trace="ClientServerInterface" />
+      <node id="4491876417845484922" at="144,50,145,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845484922" at="27,0,28,0" concept="1" trace="myConceptClientServerInterface" />
@@ -1084,8 +1084,8 @@
       <scope id="4491876417845484924" at="638,43,646,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845484924" at="84,0,85,0" concept="6" trace="Operation" />
-      <node id="4491876417845484924" at="203,52,204,48" concept="0" />
+      <node id="4491876417845484924" at="86,0,87,0" concept="6" trace="Operation" />
+      <node id="4491876417845484924" at="205,52,206,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845484924" at="88,0,89,0" concept="1" trace="myConceptOperation" />
@@ -1128,8 +1128,8 @@
       <scope id="4491876417845484930" at="671,38,677,26" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845484930" at="88,0,89,0" concept="6" trace="Port" />
-      <node id="4491876417845484930" at="207,50,208,43" concept="0" />
+      <node id="4491876417845484930" at="90,0,91,0" concept="6" trace="Port" />
+      <node id="4491876417845484930" at="209,50,210,43" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845484930" at="92,0,93,0" concept="1" trace="myConceptPort" />
@@ -1167,8 +1167,8 @@
       <scope id="4491876417845628840" at="814,46,822,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845628840" at="107,0,108,0" concept="6" trace="ProvidedPort" />
-      <node id="4491876417845628840" at="226,51,227,51" concept="0" />
+      <node id="4491876417845628840" at="109,0,110,0" concept="6" trace="ProvidedPort" />
+      <node id="4491876417845628840" at="228,51,229,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845628840" at="111,0,112,0" concept="1" trace="myConceptProvidedPort" />
@@ -1209,8 +1209,8 @@
       <scope id="4491876417845628841" at="885,46,893,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845628841" at="116,0,117,0" concept="6" trace="RequiredPort" />
-      <node id="4491876417845628841" at="235,64,236,51" concept="0" />
+      <node id="4491876417845628841" at="118,0,119,0" concept="6" trace="RequiredPort" />
+      <node id="4491876417845628841" at="237,64,238,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845628841" at="120,0,121,0" concept="1" trace="myConceptRequiredPort" />
@@ -1250,8 +1250,8 @@
       <scope id="4491876417845641670" at="919,42,927,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845641670" at="120,0,121,0" concept="6" trace="Runnable" />
-      <node id="4491876417845641670" at="239,55,240,47" concept="0" />
+      <node id="4491876417845641670" at="122,0,123,0" concept="6" trace="Runnable" />
+      <node id="4491876417845641670" at="241,55,242,47" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845641670" at="124,0,125,0" concept="1" trace="myConceptRunnable" />
@@ -1297,8 +1297,8 @@
       <scope id="4491876417845641673" at="928,49,934,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845641673" at="121,0,122,0" concept="6" trace="RunnableTrigger" />
-      <node id="4491876417845641673" at="240,47,241,54" concept="0" />
+      <node id="4491876417845641673" at="123,0,124,0" concept="6" trace="RunnableTrigger" />
+      <node id="4491876417845641673" at="242,47,243,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845641673" at="125,0,126,0" concept="1" trace="myConceptRunnableTrigger" />
@@ -1331,8 +1331,8 @@
       <scope id="4491876417845641677" at="655,50,662,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845641677" at="86,0,87,0" concept="6" trace="OperationTrigger" />
-      <node id="4491876417845641677" at="205,57,206,55" concept="0" />
+      <node id="4491876417845641677" at="88,0,89,0" concept="6" trace="OperationTrigger" />
+      <node id="4491876417845641677" at="207,57,208,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845641677" at="90,0,91,0" concept="1" trace="myConceptOperationTrigger" />
@@ -1368,8 +1368,8 @@
       <scope id="4491876417845641679" at="957,46,964,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845641679" at="125,0,126,0" concept="6" trace="TimedTrigger" />
-      <node id="4491876417845641679" at="244,60,245,51" concept="0" />
+      <node id="4491876417845641679" at="127,0,128,0" concept="6" trace="TimedTrigger" />
+      <node id="4491876417845641679" at="246,60,247,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845641679" at="129,0,130,0" concept="1" trace="myConceptTimedTrigger" />
@@ -1406,8 +1406,8 @@
       <scope id="4491876417845649011" at="192,49,200,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845649011" at="21,0,22,0" concept="6" trace="AtomicComponent" />
-      <node id="4491876417845649011" at="140,56,141,54" concept="0" />
+      <node id="4491876417845649011" at="23,0,24,0" concept="6" trace="AtomicComponent" />
+      <node id="4491876417845649011" at="142,56,143,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845649011" at="25,0,26,0" concept="1" trace="myConceptAtomicComponent" />
@@ -1445,8 +1445,8 @@
       <scope id="4491876417845649014" at="266,51,272,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845649014" at="31,0,32,0" concept="6" trace="ComponentInstance" />
-      <node id="4491876417845649014" at="150,56,151,56" concept="0" />
+      <node id="4491876417845649014" at="33,0,34,0" concept="6" trace="ComponentInstance" />
+      <node id="4491876417845649014" at="152,56,153,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845649014" at="35,0,36,0" concept="1" trace="myConceptComponentInstance" />
@@ -1487,8 +1487,8 @@
       <scope id="4491876417845649016" at="184,51,191,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845649016" at="20,0,21,0" concept="6" trace="AssemblyConnector" />
-      <node id="4491876417845649016" at="139,61,140,56" concept="0" />
+      <node id="4491876417845649016" at="22,0,23,0" concept="6" trace="AssemblyConnector" />
+      <node id="4491876417845649016" at="141,61,142,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845649016" at="24,0,25,0" concept="1" trace="myConceptAssemblyConnector" />
@@ -1526,8 +1526,8 @@
       <scope id="4491876417845649017" at="287,50,294,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845649017" at="34,0,35,0" concept="6" trace="ComponentPortRef" />
-      <node id="4491876417845649017" at="153,66,154,55" concept="0" />
+      <node id="4491876417845649017" at="36,0,37,0" concept="6" trace="ComponentPortRef" />
+      <node id="4491876417845649017" at="155,66,156,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845649017" at="38,0,39,0" concept="1" trace="myConceptComponentPortRef" />
@@ -1565,8 +1565,8 @@
       <scope id="4491876417845649024" at="552,55,560,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845649024" at="73,0,74,0" concept="6" trace="InstanceConfiguration" />
-      <node id="4491876417845649024" at="192,56,193,60" concept="0" />
+      <node id="4491876417845649024" at="75,0,76,0" concept="6" trace="InstanceConfiguration" />
+      <node id="4491876417845649024" at="194,56,195,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845649024" at="77,0,78,0" concept="1" trace="myConceptInstanceConfiguration" />
@@ -1610,8 +1610,8 @@
       <scope id="4491876417845683828" at="647,52,654,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4491876417845683828" at="85,0,86,0" concept="6" trace="OperationParameter" />
-      <node id="4491876417845683828" at="204,48,205,57" concept="0" />
+      <node id="4491876417845683828" at="87,0,88,0" concept="6" trace="OperationParameter" />
+      <node id="4491876417845683828" at="206,48,207,57" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4491876417845683828" at="89,0,90,0" concept="1" trace="myConceptOperationParameter" />
@@ -1646,8 +1646,8 @@
       <scope id="4499036566835905524" at="493,54,498,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4499036566835905524" at="64,0,65,0" concept="6" trace="IRequiresComponentID" />
-      <node id="4499036566835905524" at="183,58,184,59" concept="0" />
+      <node id="4499036566835905524" at="66,0,67,0" concept="6" trace="IRequiresComponentID" />
+      <node id="4499036566835905524" at="185,58,186,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4499036566835905524" at="68,0,69,0" concept="1" trace="myConceptIRequiresComponentID" />
@@ -1685,8 +1685,8 @@
       <scope id="4514118643321588318" at="481,55,486,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4514118643321588318" at="62,0,63,0" concept="6" trace="IOperationTriggerLike" />
-      <node id="4514118643321588318" at="181,70,182,60" concept="0" />
+      <node id="4514118643321588318" at="64,0,65,0" concept="6" trace="IOperationTriggerLike" />
+      <node id="4514118643321588318" at="183,70,184,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4514118643321588318" at="66,0,67,0" concept="1" trace="myConceptIOperationTriggerLike" />
@@ -1721,8 +1721,8 @@
       <scope id="4567175157254595828" at="943,51,949,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4567175157254595828" at="123,0,124,0" concept="6" trace="SinglePortRefExpr" />
-      <node id="4567175157254595828" at="242,61,243,56" concept="0" />
+      <node id="4567175157254595828" at="125,0,126,0" concept="6" trace="SinglePortRefExpr" />
+      <node id="4567175157254595828" at="244,61,245,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4567175157254595828" at="127,0,128,0" concept="1" trace="myConceptSinglePortRefExpr" />
@@ -1758,8 +1758,8 @@
       <scope id="4643433264761566506" at="630,47,637,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4643433264761566506" at="83,0,84,0" concept="6" trace="OnInitTrigger" />
-      <node id="4643433264761566506" at="202,53,203,52" concept="0" />
+      <node id="4643433264761566506" at="85,0,86,0" concept="6" trace="OnInitTrigger" />
+      <node id="4643433264761566506" at="204,53,205,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4643433264761566506" at="87,0,88,0" concept="1" trace="myConceptOnInitTrigger" />
@@ -1795,8 +1795,8 @@
       <scope id="466603768608410221" at="701,55,708,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="466603768608410221" at="92,0,93,0" concept="6" trace="PortAdapterOpCallExpr" />
-      <node id="466603768608410221" at="211,66,212,59" concept="0" />
+      <node id="466603768608410221" at="94,0,95,0" concept="6" trace="PortAdapterOpCallExpr" />
+      <node id="466603768608410221" at="213,66,214,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="466603768608410221" at="96,0,97,0" concept="1" trace="myConceptPortAdapterOpCallExpr" />
@@ -1832,8 +1832,8 @@
       <scope id="466603768608442377" at="894,56,901,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="466603768608442377" at="117,0,118,0" concept="6" trace="RequiredPortOpCallExpr" />
-      <node id="466603768608442377" at="236,51,237,60" concept="0" />
+      <node id="466603768608442377" at="119,0,120,0" concept="6" trace="RequiredPortOpCallExpr" />
+      <node id="466603768608442377" at="238,51,239,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="466603768608442377" at="121,0,122,0" concept="1" trace="myConceptRequiredPortOpCallExpr" />
@@ -1867,8 +1867,8 @@
       <scope id="4878782362887006614" at="159,50,164,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4878782362887006614" at="16,0,17,0" concept="6" trace="AbstractInstance" />
-      <node id="4878782362887006614" at="135,55,136,55" concept="0" />
+      <node id="4878782362887006614" at="18,0,19,0" concept="6" trace="AbstractInstance" />
+      <node id="4878782362887006614" at="137,55,138,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4878782362887006614" at="20,0,21,0" concept="1" trace="myConceptAbstractInstance" />
@@ -1900,8 +1900,8 @@
       <scope id="4918717903016647535" at="302,51,308,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4918717903016647535" at="36,0,37,0" concept="6" trace="ComponentThisExpr" />
-      <node id="4918717903016647535" at="155,59,156,56" concept="0" />
+      <node id="4918717903016647535" at="38,0,39,0" concept="6" trace="ComponentThisExpr" />
+      <node id="4918717903016647535" at="157,59,158,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4918717903016647535" at="40,0,41,0" concept="1" trace="myConceptComponentThisExpr" />
@@ -1936,8 +1936,8 @@
       <scope id="5065104421775983277" at="981,56,987,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5065104421775983277" at="128,0,129,0" concept="6" trace="WhenPortsConnectedExpr" />
-      <node id="5065104421775983277" at="247,68,248,61" concept="0" />
+      <node id="5065104421775983277" at="130,0,131,0" concept="6" trace="WhenPortsConnectedExpr" />
+      <node id="5065104421775983277" at="249,68,250,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5065104421775983277" at="132,0,133,0" concept="1" trace="myConceptWhenPortsConnectedExpr" />
@@ -1973,8 +1973,8 @@
       <scope id="5065104421776015558" at="469,49,474,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5065104421776015558" at="60,0,61,0" concept="6" trace="IConnectedCheck" />
-      <node id="5065104421776015558" at="179,66,180,54" concept="0" />
+      <node id="5065104421776015558" at="62,0,63,0" concept="6" trace="IConnectedCheck" />
+      <node id="5065104421776015558" at="181,66,182,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5065104421776015558" at="64,0,65,0" concept="1" trace="myConceptIConnectedCheck" />
@@ -2010,8 +2010,8 @@
       <scope id="5104882350373504631" at="738,54,745,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5104882350373504631" at="97,0,98,0" concept="6" trace="PortContentRefHelper" />
-      <node id="5104882350373504631" at="216,53,217,59" concept="0" />
+      <node id="5104882350373504631" at="99,0,100,0" concept="6" trace="PortContentRefHelper" />
+      <node id="5104882350373504631" at="218,53,219,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5104882350373504631" at="101,0,102,0" concept="1" trace="myConceptPortContentRefHelper" />
@@ -2045,8 +2045,8 @@
       <scope id="5172178961827491386" at="545,51,551,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5172178961827491386" at="72,0,73,0" concept="6" trace="InstanceConfigRef" />
-      <node id="5172178961827491386" at="191,98,192,56" concept="0" />
+      <node id="5172178961827491386" at="74,0,75,0" concept="6" trace="InstanceConfigRef" />
+      <node id="5172178961827491386" at="193,98,194,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5172178961827491386" at="76,0,77,0" concept="1" trace="myConceptInstanceConfigRef" />
@@ -2080,8 +2080,8 @@
       <scope id="5172178961828157634" at="678,45,685,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5172178961828157634" at="89,0,90,0" concept="6" trace="PortAdapter" />
-      <node id="5172178961828157634" at="208,43,209,50" concept="0" />
+      <node id="5172178961828157634" at="91,0,92,0" concept="6" trace="PortAdapter" />
+      <node id="5172178961828157634" at="210,43,211,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5172178961828157634" at="93,0,94,0" concept="1" trace="myConceptPortAdapter" />
@@ -2119,8 +2119,8 @@
       <scope id="5308710777891512019" at="402,39,410,27" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5308710777891512019" at="50,0,51,0" concept="6" trace="Field" />
-      <node id="5308710777891512019" at="169,66,170,44" concept="0" />
+      <node id="5308710777891512019" at="52,0,53,0" concept="6" trace="Field" />
+      <node id="5308710777891512019" at="171,66,172,44" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5308710777891512019" at="54,0,55,0" concept="1" trace="myConceptField" />
@@ -2163,8 +2163,8 @@
       <scope id="5308710777891565561" at="411,42,418,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5308710777891565561" at="51,0,52,0" concept="6" trace="FieldRef" />
-      <node id="5308710777891565561" at="170,44,171,47" concept="0" />
+      <node id="5308710777891565561" at="53,0,54,0" concept="6" trace="FieldRef" />
+      <node id="5308710777891565561" at="172,44,173,47" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5308710777891565561" at="55,0,56,0" concept="1" trace="myConceptFieldRef" />
@@ -2201,8 +2201,8 @@
       <scope id="5308710777891663531" at="965,60,972,48" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5308710777891663531" at="126,0,127,0" concept="6" trace="WhenPortConnectedStatement" />
-      <node id="5308710777891663531" at="245,51,246,65" concept="0" />
+      <node id="5308710777891663531" at="128,0,129,0" concept="6" trace="WhenPortConnectedStatement" />
+      <node id="5308710777891663531" at="247,51,248,65" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5308710777891663531" at="130,0,131,0" concept="1" trace="myConceptWhenPortConnectedStatement" />
@@ -2241,8 +2241,8 @@
       <scope id="5697836475313035734" at="439,59,444,47" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5697836475313035734" at="55,0,56,0" concept="6" trace="ICanOnlyBeUsedInComponent" />
-      <node id="5697836475313035734" at="174,59,175,64" concept="0" />
+      <node id="5697836475313035734" at="57,0,58,0" concept="6" trace="ICanOnlyBeUsedInComponent" />
+      <node id="5697836475313035734" at="176,59,177,64" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5697836475313035734" at="59,0,60,0" concept="1" trace="myConceptICanOnlyBeUsedInComponent" />
@@ -2274,8 +2274,8 @@
       <scope id="5703827575547552890" at="346,54,352,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5703827575547552890" at="42,0,43,0" concept="6" trace="DataElementRefTarget" />
-      <node id="5703827575547552890" at="161,56,162,59" concept="0" />
+      <node id="5703827575547552890" at="44,0,45,0" concept="6" trace="DataElementRefTarget" />
+      <node id="5703827575547552890" at="163,56,164,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5703827575547552890" at="46,0,47,0" concept="1" trace="myConceptDataElementRefTarget" />
@@ -2307,8 +2307,8 @@
       <scope id="5703827575549009178" at="599,60,605,48" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5703827575549009178" at="79,0,80,0" concept="6" trace="InterfaceTypeDataRefTarget" />
-      <node id="5703827575549009178" at="198,62,199,65" concept="0" />
+      <node id="5703827575549009178" at="81,0,82,0" concept="6" trace="InterfaceTypeDataRefTarget" />
+      <node id="5703827575549009178" at="200,62,201,65" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5703827575549009178" at="83,0,84,0" concept="1" trace="myConceptInterfaceTypeDataRefTarget" />
@@ -2339,8 +2339,8 @@
       <scope id="5703827575549009208" at="147,62,152,50" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5703827575549009208" at="14,0,15,0" concept="6" trace="AbstractDataElementRefTarget" />
-      <node id="5703827575549009208" at="133,56,134,67" concept="0" />
+      <node id="5703827575549009208" at="16,0,17,0" concept="6" trace="AbstractDataElementRefTarget" />
+      <node id="5703827575549009208" at="135,56,136,67" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5703827575549009208" at="18,0,19,0" concept="1" trace="myConceptAbstractDataElementRefTarget" />
@@ -2378,8 +2378,8 @@
       <scope id="5703827575549398512" at="694,61,700,49" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5703827575549398512" at="91,0,92,0" concept="6" trace="PortAdapterElementRefTarget" />
-      <node id="5703827575549398512" at="210,64,211,66" concept="0" />
+      <node id="5703827575549398512" at="93,0,94,0" concept="6" trace="PortAdapterElementRefTarget" />
+      <node id="5703827575549398512" at="212,64,213,66" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5703827575549398512" at="95,0,96,0" concept="1" trace="myConceptPortAdapterElementRefTarget" />
@@ -2412,8 +2412,8 @@
       <scope id="591155063063570513" at="525,57,532,45" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="591155063063570513" at="69,0,70,0" concept="6" trace="InitializeConfiguration" />
-      <node id="591155063063570513" at="188,58,189,61" concept="0" />
+      <node id="591155063063570513" at="71,0,72,0" concept="6" trace="InitializeConfiguration" />
+      <node id="591155063063570513" at="190,58,191,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="591155063063570513" at="73,0,74,0" concept="1" trace="myConceptInitializeConfiguration" />
@@ -2450,8 +2450,8 @@
       <scope id="5923305290143503266" at="232,56,238,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5923305290143503266" at="26,0,27,0" concept="6" trace="CommentedConfigContent" />
-      <node id="5923305290143503266" at="145,64,146,61" concept="0" />
+      <node id="5923305290143503266" at="28,0,29,0" concept="6" trace="CommentedConfigContent" />
+      <node id="5923305290143503266" at="147,64,148,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5923305290143503266" at="30,0,31,0" concept="1" trace="myConceptCommentedConfigContent" />
@@ -2483,8 +2483,8 @@
       <scope id="6041318036222235015" at="533,56,538,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6041318036222235015" at="70,0,71,0" concept="6" trace="InstanceConfigContents" />
-      <node id="6041318036222235015" at="189,61,190,61" concept="0" />
+      <node id="6041318036222235015" at="72,0,73,0" concept="6" trace="InstanceConfigContents" />
+      <node id="6041318036222235015" at="191,61,192,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6041318036222235015" at="74,0,75,0" concept="1" trace="myConceptInstanceConfigContents" />
@@ -2523,8 +2523,8 @@
       <scope id="6088504579989317749" at="457,57,462,45" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6088504579989317749" at="58,0,59,0" concept="6" trace="IComponentInstanceAware" />
-      <node id="6088504579989317749" at="177,56,178,62" concept="0" />
+      <node id="6088504579989317749" at="60,0,61,0" concept="6" trace="IComponentInstanceAware" />
+      <node id="6088504579989317749" at="179,56,180,62" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6088504579989317749" at="62,0,63,0" concept="1" trace="myConceptIComponentInstanceAware" />
@@ -2558,8 +2558,8 @@
       <scope id="6088504579991348354" at="451,51,456,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6088504579991348354" at="57,0,58,0" concept="6" trace="IComponentIDAware" />
-      <node id="6088504579991348354" at="176,56,177,56" concept="0" />
+      <node id="6088504579991348354" at="59,0,60,0" concept="6" trace="IComponentIDAware" />
+      <node id="6088504579991348354" at="178,56,179,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6088504579991348354" at="61,0,62,0" concept="1" trace="myConceptIComponentIDAware" />
@@ -2595,8 +2595,8 @@
       <scope id="6209278014150856509" at="622,48,629,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6209278014150856509" at="82,0,83,0" concept="6" trace="OldQueryOpCall" />
-      <node id="6209278014150856509" at="201,59,202,53" concept="0" />
+      <node id="6209278014150856509" at="84,0,85,0" concept="6" trace="OldQueryOpCall" />
+      <node id="6209278014150856509" at="203,59,204,53" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6209278014150856509" at="86,0,87,0" concept="1" trace="myConceptOldQueryOpCall" />
@@ -2633,8 +2633,8 @@
       <scope id="6209278014151449940" at="806,46,813,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6209278014151449940" at="106,0,107,0" concept="6" trace="ProtocolSpec" />
-      <node id="6209278014151449940" at="225,61,226,51" concept="0" />
+      <node id="6209278014151449940" at="108,0,109,0" concept="6" trace="ProtocolSpec" />
+      <node id="6209278014151449940" at="227,61,228,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6209278014151449940" at="110,0,111,0" concept="1" trace="myConceptProtocolSpec" />
@@ -2669,8 +2669,8 @@
       <scope id="6209278014151449941" at="862,42,868,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6209278014151449941" at="113,0,114,0" concept="6" trace="PsmState" />
-      <node id="6209278014151449941" at="232,50,233,47" concept="0" />
+      <node id="6209278014151449941" at="115,0,116,0" concept="6" trace="PsmState" />
+      <node id="6209278014151449941" at="234,50,235,47" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6209278014151449941" at="117,0,118,0" concept="1" trace="myConceptPsmState" />
@@ -2703,8 +2703,8 @@
       <scope id="6209278014151449943" at="846,45,853,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6209278014151449943" at="111,0,112,0" concept="6" trace="PsmNewState" />
-      <node id="6209278014151449943" at="230,51,231,50" concept="0" />
+      <node id="6209278014151449943" at="113,0,114,0" concept="6" trace="PsmNewState" />
+      <node id="6209278014151449943" at="232,51,233,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6209278014151449943" at="115,0,116,0" concept="1" trace="myConceptPsmNewState" />
@@ -2741,8 +2741,8 @@
       <scope id="6209278014151449953" at="838,46,845,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6209278014151449953" at="110,0,111,0" concept="6" trace="PsmInitState" />
-      <node id="6209278014151449953" at="229,50,230,51" concept="0" />
+      <node id="6209278014151449953" at="112,0,113,0" concept="6" trace="PsmInitState" />
+      <node id="6209278014151449953" at="231,50,232,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6209278014151449953" at="114,0,115,0" concept="1" trace="myConceptPsmInitState" />
@@ -2778,8 +2778,8 @@
       <scope id="6209278014151449959" at="830,45,837,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6209278014151449959" at="109,0,110,0" concept="6" trace="PsmAnyState" />
-      <node id="6209278014151449959" at="228,65,229,50" concept="0" />
+      <node id="6209278014151449959" at="111,0,112,0" concept="6" trace="PsmAnyState" />
+      <node id="6209278014151449959" at="230,65,231,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6209278014151449959" at="113,0,114,0" concept="1" trace="myConceptPsmAnyState" />
@@ -2815,8 +2815,8 @@
       <scope id="6209278014151449980" at="854,45,861,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6209278014151449980" at="112,0,113,0" concept="6" trace="PsmRefState" />
-      <node id="6209278014151449980" at="231,50,232,50" concept="0" />
+      <node id="6209278014151449980" at="114,0,115,0" concept="6" trace="PsmRefState" />
+      <node id="6209278014151449980" at="233,50,234,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6209278014151449980" at="116,0,117,0" concept="1" trace="myConceptPsmRefState" />
@@ -2851,8 +2851,8 @@
       <scope id="6591434695300694131" at="792,50,798,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6591434695300694131" at="104,0,105,0" concept="6" trace="PrePostCondition" />
-      <node id="6591434695300694131" at="223,51,224,55" concept="0" />
+      <node id="6591434695300694131" at="106,0,107,0" concept="6" trace="PrePostCondition" />
+      <node id="6591434695300694131" at="225,51,226,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6591434695300694131" at="108,0,109,0" concept="1" trace="myConceptPrePostCondition" />
@@ -2887,8 +2887,8 @@
       <scope id="6591434695300694135" at="784,46,791,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6591434695300694135" at="103,0,104,0" concept="6" trace="PreCondition" />
-      <node id="6591434695300694135" at="222,52,223,51" concept="0" />
+      <node id="6591434695300694135" at="105,0,106,0" concept="6" trace="PreCondition" />
+      <node id="6591434695300694135" at="224,52,225,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6591434695300694135" at="107,0,108,0" concept="1" trace="myConceptPreCondition" />
@@ -2924,8 +2924,8 @@
       <scope id="6591434695300703522" at="663,45,670,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6591434695300703522" at="87,0,88,0" concept="6" trace="PPCParamRef" />
-      <node id="6591434695300703522" at="206,55,207,50" concept="0" />
+      <node id="6591434695300703522" at="89,0,90,0" concept="6" trace="PPCParamRef" />
+      <node id="6591434695300703522" at="208,55,209,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6591434695300703522" at="91,0,92,0" concept="1" trace="myConceptPPCParamRef" />
@@ -2962,8 +2962,8 @@
       <scope id="6591434695300950445" at="776,47,783,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6591434695300950445" at="102,0,103,0" concept="6" trace="PostCondition" />
-      <node id="6591434695300950445" at="221,56,222,52" concept="0" />
+      <node id="6591434695300950445" at="104,0,105,0" concept="6" trace="PostCondition" />
+      <node id="6591434695300950445" at="223,56,224,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6591434695300950445" at="106,0,107,0" concept="1" trace="myConceptPostCondition" />
@@ -3000,8 +3000,8 @@
       <scope id="6591434695300950447" at="910,50,918,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6591434695300950447" at="119,0,120,0" concept="6" trace="ResultExpression" />
-      <node id="6591434695300950447" at="238,62,239,55" concept="0" />
+      <node id="6591434695300950447" at="121,0,122,0" concept="6" trace="ResultExpression" />
+      <node id="6591434695300950447" at="240,62,241,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6591434695300950447" at="123,0,124,0" concept="1" trace="myConceptResultExpression" />
@@ -3037,8 +3037,8 @@
       <scope id="6591434695301820497" at="869,45,876,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6591434695301820497" at="114,0,115,0" concept="6" trace="QueryOpCall" />
-      <node id="6591434695301820497" at="233,47,234,50" concept="0" />
+      <node id="6591434695301820497" at="116,0,117,0" concept="6" trace="QueryOpCall" />
+      <node id="6591434695301820497" at="235,47,236,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6591434695301820497" at="118,0,119,0" concept="1" trace="myConceptQueryOpCall" />
@@ -3074,8 +3074,8 @@
       <scope id="6616025724454668918" at="177,56,183,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6616025724454668918" at="19,0,20,0" concept="6" trace="AdapterInstancePortRef" />
-      <node id="6616025724454668918" at="138,54,139,61" concept="0" />
+      <node id="6616025724454668918" at="21,0,22,0" concept="6" trace="AdapterInstancePortRef" />
+      <node id="6616025724454668918" at="140,54,141,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6616025724454668918" at="23,0,24,0" concept="1" trace="myConceptAdapterInstancePortRef" />
@@ -3109,8 +3109,8 @@
       <scope id="6616054089643593442" at="746,50,752,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6616054089643593442" at="98,0,99,0" concept="6" trace="PortItExpression" />
-      <node id="6616054089643593442" at="217,59,218,55" concept="0" />
+      <node id="6616054089643593442" at="100,0,101,0" concept="6" trace="PortItExpression" />
+      <node id="6616054089643593442" at="219,59,220,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6616054089643593442" at="102,0,103,0" concept="1" trace="myConceptPortItExpression" />
@@ -3144,8 +3144,8 @@
       <scope id="6870096341747799289" at="433,54,438,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6870096341747799289" at="54,0,55,0" concept="6" trace="ICSInterfaceContents" />
-      <node id="6870096341747799289" at="173,62,174,59" concept="0" />
+      <node id="6870096341747799289" at="56,0,57,0" concept="6" trace="ICSInterfaceContents" />
+      <node id="6870096341747799289" at="175,62,176,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6870096341747799289" at="58,0,59,0" concept="1" trace="myConceptICSInterfaceContents" />
@@ -3181,8 +3181,8 @@
       <scope id="6870096341748053862" at="381,56,387,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6870096341748053862" at="47,0,48,0" concept="6" trace="EmptyInterfaceContents" />
-      <node id="6870096341748053862" at="166,64,167,61" concept="0" />
+      <node id="6870096341748053862" at="49,0,50,0" concept="6" trace="EmptyInterfaceContents" />
+      <node id="6870096341748053862" at="168,64,169,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6870096341748053862" at="51,0,52,0" concept="1" trace="myConceptEmptyInterfaceContents" />
@@ -3216,8 +3216,8 @@
       <scope id="699911272313212672" at="591,58,598,46" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="699911272313212672" at="78,0,79,0" concept="6" trace="InterfaceTypeDataRefExpr" />
-      <node id="699911272313212672" at="197,52,198,62" concept="0" />
+      <node id="699911272313212672" at="80,0,81,0" concept="6" trace="InterfaceTypeDataRefExpr" />
+      <node id="699911272313212672" at="199,52,200,62" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="699911272313212672" at="82,0,83,0" concept="1" trace="myConceptInterfaceTypeDataRefExpr" />
@@ -3250,8 +3250,8 @@
       <scope id="7471485357229284431" at="141,51,146,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7471485357229284431" at="13,0,14,0" concept="6" trace="AbstractConnector" />
-      <node id="7471485357229284431" at="132,67,133,56" concept="0" />
+      <node id="7471485357229284431" at="15,0,16,0" concept="6" trace="AbstractConnector" />
+      <node id="7471485357229284431" at="134,67,135,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7471485357229284431" at="17,0,18,0" concept="1" trace="myConceptAbstractConnector" />
@@ -3283,8 +3283,8 @@
       <scope id="7634590097754663225" at="419,54,425,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7634590097754663225" at="52,0,53,0" concept="6" trace="ForEachPortStatement" />
-      <node id="7634590097754663225" at="171,47,172,59" concept="0" />
+      <node id="7634590097754663225" at="54,0,55,0" concept="6" trace="ForEachPortStatement" />
+      <node id="7634590097754663225" at="173,47,174,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7634590097754663225" at="56,0,57,0" concept="1" trace="myConceptForEachPortStatement" />
@@ -3323,8 +3323,8 @@
       <scope id="7780999115923942144" at="165,63,170,51" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7780999115923942144" at="17,0,18,0" concept="6" trace="AbstractInstanceConfiguration" />
-      <node id="7780999115923942144" at="136,55,137,68" concept="0" />
+      <node id="7780999115923942144" at="19,0,20,0" concept="6" trace="AbstractInstanceConfiguration" />
+      <node id="7780999115923942144" at="138,55,139,68" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7780999115923942144" at="21,0,22,0" concept="1" trace="myConceptAbstractInstanceConfiguration" />
@@ -3360,8 +3360,8 @@
       <scope id="7780999115924276745" at="499,48,504,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7780999115924276745" at="65,0,66,0" concept="6" trace="ISatisfiesPort" />
-      <node id="7780999115924276745" at="184,59,185,53" concept="0" />
+      <node id="7780999115924276745" at="67,0,68,0" concept="6" trace="ISatisfiesPort" />
+      <node id="7780999115924276745" at="186,59,187,53" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7780999115924276745" at="69,0,70,0" concept="1" trace="myConceptISatisfiesPort" />
@@ -3394,8 +3394,8 @@
       <scope id="7798021607625279741" at="280,61,286,49" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7798021607625279741" at="33,0,34,0" concept="6" trace="ComponentMappingDebugHelper" />
-      <node id="7798021607625279741" at="152,63,153,66" concept="0" />
+      <node id="7798021607625279741" at="35,0,36,0" concept="6" trace="ComponentMappingDebugHelper" />
+      <node id="7798021607625279741" at="154,63,155,66" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7798021607625279741" at="37,0,38,0" concept="1" trace="myConceptComponentMappingDebugHelper" />
@@ -3430,8 +3430,8 @@
       <scope id="785275130114861597" at="518,54,524,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="785275130114861597" at="68,0,69,0" concept="6" trace="InitFieldInitializer" />
-      <node id="785275130114861597" at="187,59,188,58" concept="0" />
+      <node id="785275130114861597" at="70,0,71,0" concept="6" trace="InitFieldInitializer" />
+      <node id="785275130114861597" at="189,59,190,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="785275130114861597" at="72,0,73,0" concept="1" trace="myConceptInitFieldInitializer" />
@@ -3467,8 +3467,8 @@
       <scope id="8105003328814473408" at="445,51,450,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8105003328814473408" at="56,0,57,0" concept="6" trace="IComponentContent" />
-      <node id="8105003328814473408" at="175,64,176,56" concept="0" />
+      <node id="8105003328814473408" at="58,0,59,0" concept="6" trace="IComponentContent" />
+      <node id="8105003328814473408" at="177,64,178,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8105003328814473408" at="60,0,61,0" concept="1" trace="myConceptIComponentContent" />
@@ -3508,8 +3508,8 @@
       <scope id="8105003328815039001" at="709,52,716,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8105003328815039001" at="93,0,94,0" concept="6" trace="PortAdapterRefExpr" />
-      <node id="8105003328815039001" at="212,59,213,57" concept="0" />
+      <node id="8105003328815039001" at="95,0,96,0" concept="6" trace="PortAdapterRefExpr" />
+      <node id="8105003328815039001" at="214,59,215,57" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8105003328815039001" at="97,0,98,0" concept="1" trace="myConceptPortAdapterRefExpr" />
@@ -3546,8 +3546,8 @@
       <scope id="8105003328815054492" at="583,47,590,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8105003328815054492" at="77,0,78,0" concept="6" trace="InterfaceType" />
-      <node id="8105003328815054492" at="196,71,197,52" concept="0" />
+      <node id="8105003328815054492" at="79,0,80,0" concept="6" trace="InterfaceType" />
+      <node id="8105003328815054492" at="198,71,199,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8105003328815054492" at="81,0,82,0" concept="1" trace="myConceptInterfaceType" />
@@ -3587,8 +3587,8 @@
       <scope id="8105003328815071749" at="569,60,575,48" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8105003328815071749" at="75,0,76,0" concept="6" trace="InterfaceOperationCallExpr" />
-      <node id="8105003328815071749" at="194,48,195,65" concept="0" />
+      <node id="8105003328815071749" at="77,0,78,0" concept="6" trace="InterfaceOperationCallExpr" />
+      <node id="8105003328815071749" at="196,48,197,65" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8105003328815071749" at="79,0,80,0" concept="1" trace="myConceptInterfaceOperationCallExpr" />
@@ -3628,8 +3628,8 @@
       <scope id="8105003328815208362" at="753,45,760,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8105003328815208362" at="99,0,100,0" concept="6" trace="PortRefExpr" />
-      <node id="8105003328815208362" at="218,55,219,50" concept="0" />
+      <node id="8105003328815208362" at="101,0,102,0" concept="6" trace="PortRefExpr" />
+      <node id="8105003328815208362" at="220,55,221,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8105003328815208362" at="103,0,104,0" concept="1" trace="myConceptPortRefExpr" />
@@ -3664,8 +3664,8 @@
       <scope id="8471381922721039487" at="539,93,544,81" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8471381922721039487" at="71,0,72,0" concept="6" trace="InstanceConfigContentsToBeCopiedIntoFlattenedInstanceConfig" />
-      <node id="8471381922721039487" at="190,61,191,98" concept="0" />
+      <node id="8471381922721039487" at="73,0,74,0" concept="6" trace="InstanceConfigContentsToBeCopiedIntoFlattenedInstanceConfig" />
+      <node id="8471381922721039487" at="192,61,193,98" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8471381922721039487" at="75,0,76,0" concept="1" trace="myConceptInstanceConfigContentsToBeCopiedIntoFlattenedInstanceConfig" />
@@ -3697,8 +3697,8 @@
       <scope id="8473757169836531451" at="353,56,359,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8473757169836531451" at="43,0,44,0" concept="6" trace="DirectRunnableCallable" />
-      <node id="8473757169836531451" at="162,59,163,61" concept="0" />
+      <node id="8473757169836531451" at="45,0,46,0" concept="6" trace="DirectRunnableCallable" />
+      <node id="8473757169836531451" at="164,59,165,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8473757169836531451" at="47,0,48,0" concept="1" trace="myConceptDirectRunnableCallable" />
@@ -3732,8 +3732,8 @@
       <scope id="8515777736166878876" at="367,55,373,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8515777736166878876" at="45,0,46,0" concept="6" trace="EmptyComponentContent" />
-      <node id="8515777736166878876" at="164,51,165,60" concept="0" />
+      <node id="8515777736166878876" at="47,0,48,0" concept="6" trace="EmptyComponentContent" />
+      <node id="8515777736166878876" at="166,51,167,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8515777736166878876" at="49,0,50,0" concept="1" trace="myConceptEmptyComponentContent" />
@@ -3766,8 +3766,8 @@
       <scope id="8515777736166912011" at="225,59,231,47" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8515777736166912011" at="25,0,26,0" concept="6" trace="CommentedComponentContent" />
-      <node id="8515777736166912011" at="144,66,145,64" concept="0" />
+      <node id="8515777736166912011" at="27,0,28,0" concept="6" trace="CommentedComponentContent" />
+      <node id="8515777736166912011" at="146,66,147,64" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8515777736166912011" at="29,0,30,0" concept="1" trace="myConceptCommentedComponentContent" />
@@ -3801,8 +3801,8 @@
       <scope id="8594519220734380168" at="686,59,693,47" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8594519220734380168" at="90,0,91,0" concept="6" trace="PortAdapterElementRefExpr" />
-      <node id="8594519220734380168" at="209,50,210,64" concept="0" />
+      <node id="8594519220734380168" at="92,0,93,0" concept="6" trace="PortAdapterElementRefExpr" />
+      <node id="8594519220734380168" at="211,50,212,64" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8594519220734380168" at="94,0,95,0" concept="1" trace="myConceptPortAdapterElementRefExpr" />
@@ -3837,8 +3837,8 @@
       <scope id="8750692310013136192" at="426,57,432,45" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8750692310013136192" at="53,0,54,0" concept="6" trace="ForEachPortVarStatement" />
-      <node id="8750692310013136192" at="172,59,173,62" concept="0" />
+      <node id="8750692310013136192" at="55,0,56,0" concept="6" trace="ForEachPortVarStatement" />
+      <node id="8750692310013136192" at="174,59,175,62" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8750692310013136192" at="57,0,58,0" concept="1" trace="myConceptForEachPortVarStatement" />
@@ -3879,8 +3879,8 @@
       <scope id="8750692310023557363" at="973,63,980,51" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8750692310023557363" at="127,0,128,0" concept="6" trace="WhenPortVarConnectedStatement" />
-      <node id="8750692310023557363" at="246,65,247,68" concept="0" />
+      <node id="8750692310023557363" at="129,0,130,0" concept="6" trace="WhenPortVarConnectedStatement" />
+      <node id="8750692310023557363" at="248,65,249,68" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8750692310023557363" at="131,0,132,0" concept="1" trace="myConceptWhenPortVarConnectedStatement" />
@@ -3919,8 +3919,8 @@
       <scope id="8823664720004818712" at="463,61,468,49" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8823664720004818712" at="59,0,60,0" concept="6" trace="IComponentWatchableResolver" />
-      <node id="8823664720004818712" at="178,62,179,66" concept="0" />
+      <node id="8823664720004818712" at="61,0,62,0" concept="6" trace="IComponentWatchableResolver" />
+      <node id="8823664720004818712" at="180,62,181,66" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8823664720004818712" at="63,0,64,0" concept="1" trace="myConceptIComponentWatchableResolver" />
@@ -3955,8 +3955,8 @@
       <scope id="8922663937488423832" at="902,57,909,45" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8922663937488423832" at="118,0,119,0" concept="6" trace="RequiredPortRestriction" />
-      <node id="8922663937488423832" at="237,60,238,62" concept="0" />
+      <node id="8922663937488423832" at="120,0,121,0" concept="6" trace="RequiredPortRestriction" />
+      <node id="8922663937488423832" at="239,60,240,62" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8922663937488423832" at="122,0,123,0" concept="1" trace="myConceptRequiredPortRestriction" />
@@ -3992,8 +3992,8 @@
       <scope id="8972050657255793736" at="309,47,316,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8972050657255793736" at="37,0,38,0" concept="6" trace="ComponentType" />
-      <node id="8972050657255793736" at="156,56,157,52" concept="0" />
+      <node id="8972050657255793736" at="39,0,40,0" concept="6" trace="ComponentType" />
+      <node id="8972050657255793736" at="158,56,159,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8972050657255793736" at="41,0,42,0" concept="1" trace="myConceptComponentType" />
@@ -4030,8 +4030,8 @@
       <scope id="9141254329931900474" at="360,46,366,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="9141254329931900474" at="44,0,45,0" concept="6" trace="DummyCompRef" />
-      <node id="9141254329931900474" at="163,61,164,51" concept="0" />
+      <node id="9141254329931900474" at="46,0,47,0" concept="6" trace="DummyCompRef" />
+      <node id="9141254329931900474" at="165,61,166,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="9141254329931900474" at="48,0,49,0" concept="1" trace="myConceptDummyCompRef" />
@@ -4066,8 +4066,8 @@
       <scope id="9184727592626069901" at="246,51,252,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="9184727592626069901" at="28,0,29,0" concept="6" trace="ComponentCallExpr" />
-      <node id="9184727592626069901" at="147,48,148,56" concept="0" />
+      <node id="9184727592626069901" at="30,0,31,0" concept="6" trace="ComponentCallExpr" />
+      <node id="9184727592626069901" at="149,48,150,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="9184727592626069901" at="32,0,33,0" concept="1" trace="myConceptComponentCallExpr" />
@@ -4102,8 +4102,8 @@
       <scope id="9184727592626165250" at="253,53,258,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="9184727592626165250" at="29,0,30,0" concept="6" trace="ComponentContentRef" />
-      <node id="9184727592626165250" at="148,56,149,58" concept="0" />
+      <node id="9184727592626165250" at="31,0,32,0" concept="6" trace="ComponentContentRef" />
+      <node id="9184727592626165250" at="150,56,151,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="9184727592626165250" at="33,0,34,0" concept="1" trace="myConceptComponentContentRef" />
@@ -4135,8 +4135,8 @@
       <scope id="9184727592626165260" at="295,54,301,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="9184727592626165260" at="35,0,36,0" concept="6" trace="ComponentRunnableRef" />
-      <node id="9184727592626165260" at="154,55,155,59" concept="0" />
+      <node id="9184727592626165260" at="37,0,38,0" concept="6" trace="ComponentRunnableRef" />
+      <node id="9184727592626165260" at="156,55,157,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="9184727592626165260" at="39,0,40,0" concept="1" trace="myConceptComponentRunnableRef" />
@@ -4172,8 +4172,8 @@
       <scope id="9184727592626304283" at="259,51,265,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="9184727592626304283" at="30,0,31,0" concept="6" trace="ComponentFieldRef" />
-      <node id="9184727592626304283" at="149,58,150,56" concept="0" />
+      <node id="9184727592626304283" at="32,0,33,0" concept="6" trace="ComponentFieldRef" />
+      <node id="9184727592626304283" at="151,58,152,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="9184727592626304283" at="34,0,35,0" concept="1" trace="myConceptComponentFieldRef" />
@@ -4208,8 +4208,8 @@
       <scope id="9184727592626582507" at="273,58,279,46" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="9184727592626582507" at="32,0,33,0" concept="6" trace="ComponentInstanceRefExpr" />
-      <node id="9184727592626582507" at="151,56,152,63" concept="0" />
+      <node id="9184727592626582507" at="34,0,35,0" concept="6" trace="ComponentInstanceRefExpr" />
+      <node id="9184727592626582507" at="153,56,154,63" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="9184727592626582507" at="36,0,37,0" concept="1" trace="myConceptComponentInstanceRefExpr" />
@@ -4246,8 +4246,8 @@
       <scope id="998890089994729412" at="935,57,942,45" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="998890089994729412" at="122,0,123,0" concept="6" trace="SenderReceiverInterface" />
-      <node id="998890089994729412" at="241,54,242,61" concept="0" />
+      <node id="998890089994729412" at="124,0,125,0" concept="6" trace="SenderReceiverInterface" />
+      <node id="998890089994729412" at="243,54,244,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="998890089994729412" at="126,0,127,0" concept="1" trace="myConceptSenderReceiverInterface" />
@@ -4287,8 +4287,8 @@
       <scope id="998890089994729418" at="331,45,337,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="998890089994729418" at="40,0,41,0" concept="6" trace="DataElement" />
-      <node id="998890089994729418" at="159,60,160,49" concept="0" />
+      <node id="998890089994729418" at="42,0,43,0" concept="6" trace="DataElement" />
+      <node id="998890089994729418" at="161,60,162,49" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="998890089994729418" at="44,0,45,0" concept="1" trace="myConceptDataElement" />
@@ -4326,8 +4326,8 @@
       <scope id="998890089995051771" at="338,52,345,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="998890089995051771" at="41,0,42,0" concept="6" trace="DataElementRefExpr" />
-      <node id="998890089995051771" at="160,49,161,56" concept="0" />
+      <node id="998890089995051771" at="43,0,44,0" concept="6" trace="DataElementRefExpr" />
+      <node id="998890089995051771" at="162,49,163,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="998890089995051771" at="45,0,46,0" concept="1" trace="myConceptDataElementRefExpr" />

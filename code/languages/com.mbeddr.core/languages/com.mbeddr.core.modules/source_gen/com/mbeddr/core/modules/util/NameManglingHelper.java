@@ -22,10 +22,10 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public class NameManglingHelper {
 
   /**
-   * Returns those ICanMangleNames nodes from the model which have a unique name (within the model). 
+   * Returns those ICanMangleNames nodes from the model which have a unique name (within the model).
    * 
    * During generation these nodes will have the prevent name mangling flag set to true, so no
-   * module name will be prepended to their name in C. 
+   * module name will be prepended to their name in C.
    */
   public static List<SNode> uniqueMangleableModuleContents(SModel model) {
 

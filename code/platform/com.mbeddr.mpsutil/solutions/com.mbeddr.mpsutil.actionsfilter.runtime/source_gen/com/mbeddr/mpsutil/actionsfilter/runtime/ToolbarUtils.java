@@ -10,7 +10,7 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 public class ToolbarUtils {
 
   /**
-   * Returns the list of actions in the ToolBar 
+   * Returns the list of actions in the ToolBar
    * 
    * @return list of actions
    */

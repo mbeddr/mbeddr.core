@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="ago0xxay2hlc5adbh6alj86bktbcoxe">
+<product version="3" modelHash="-12y4g1i9w68dflafx8exereqifu1n3j">
   <files names="MigrationDescriptor.java:addConfigItemToBuildConfig.java:migrateExecuteTestExpression.java:migrateTestCollection.java:removeTestStrategy.java" />
 </product>
 

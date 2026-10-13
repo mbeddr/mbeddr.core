@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -20,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import java.util.Collections;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -32,14 +30,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class TableOfContents__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0xdb759a8ecedab59L, "com.mbeddr.doc.structure.TableOfContents");
 
-  public static final SMethod<Boolean> actuallyShowInOutline_id3il$LAnRN_V = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("actuallyShowInOutline").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3789096399633594747L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Iterable<SNode>> getEntriesFlat_id73FPRWNpfg_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getEntriesFlat").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8136834093098005541L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
-  /*package*/ static final SMethod<Iterable<SNode>> getEntriesRec_id73FPRWNpfC6 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getEntriesRec").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(8136834093098007046L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> actuallyShowInOutline_id3il$LAnRN_V = new SMethodBuilder<>(Boolean.TYPE).name("actuallyShowInOutline").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3789096399633594747L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> getEntriesFlat_id73FPRWNpfg_ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getEntriesFlat").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8136834093098005541L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2();
+  /*package*/ static final SMethod<Iterable<SNode>> getEntriesRec_id73FPRWNpfC6 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getEntriesRec").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(8136834093098007046L).languageId(0xa9c4c2e35194c36aL, 0x2374bc907e3741f1L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "contents"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(actuallyShowInOutline_id3il$LAnRN_V, getEntriesFlat_id73FPRWNpfg_, getEntriesRec_id73FPRWNpfC6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(actuallyShowInOutline_id3il$LAnRN_V, getEntriesFlat_id73FPRWNpfg_, getEntriesRec_id73FPRWNpfC6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean actuallyShowInOutline_id3il$LAnRN_V(@NotNull SNode __thisNode__) {
     return false;
@@ -69,10 +65,6 @@ public final class TableOfContents__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ TableOfContents__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

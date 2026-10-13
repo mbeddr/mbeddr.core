@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -17,7 +16,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -27,13 +25,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class HandlerFunction__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xbb0ad88b63cd45fdL, 0xae278662d274cf3cL, 0x1c55392e757b8a74L, "com.mbeddr.ext.serialization.structure.HandlerFunction");
 
-  public static final SMethod<SNode> getStatementList_id71UKpntnl7S = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getStatementList").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8105003328814797304L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> name_id7op4RkOizH1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("name").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8509854365002644289L).languageId(0xae278662d274cf3cL, 0xbb0ad88b63cd45fdL).build2();
+  public static final SMethod<SNode> getStatementList_id71UKpntnl7S = new SMethodBuilder<>(SNode.class).name("getStatementList").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8105003328814797304L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> name_id7op4RkOizH1 = new SMethodBuilder<>(String.class).name("name").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8509854365002644289L).languageId(0xae278662d274cf3cL, 0xbb0ad88b63cd45fdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStatementList_id71UKpntnl7S, name_id7op4RkOizH1);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStatementList_id71UKpntnl7S, name_id7op4RkOizH1);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getStatementList_id71UKpntnl7S(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.body$WNA2);
@@ -45,10 +41,6 @@ public final class HandlerFunction__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ HandlerFunction__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

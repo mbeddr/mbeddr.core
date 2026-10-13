@@ -315,7 +315,7 @@ public class PreferenceModules {
   }
 
   /**
-   * PLEASE USE THIS METHOD AS AN EXAMPLE. PreferenceModules class, full of static methods, is poorly designed, please refactor!
+   * PLEASE USE THIS METHOD AS AN EXAMPLE. PreferenceModules class, full of static methods, is poorly designed, please refactor! 
    */
   private static Solution getPreferencesSolution_(@NotNull final Project mpsProject, final String directory, final String modelName) {
     final ModuleId solutionId = ModuleId.foreign("_PreferencesModule#" + modelName);

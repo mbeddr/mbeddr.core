@@ -16,7 +16,7 @@
       <unit at="11,0,31,0" name="com.mbeddr.mpsutil.genplandiagram.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,28,0" name="com.mbeddr.mpsutil.genplandiagram.structure.LanguageConceptSwitch" />
+      <unit at="12,0,36,0" name="com.mbeddr.mpsutil.genplandiagram.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="17,0,71,0" name="com.mbeddr.mpsutil.genplandiagram.structure.StructureAspectDescriptor" />
@@ -37,8 +37,8 @@
       <scope id="7940016190799018040" at="19,48,26,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7940016190799018040" at="12,0,13,0" concept="7" trace="PlanVisualizer" />
-      <node id="7940016190799018040" at="15,116,16,53" concept="1" />
+      <node id="7940016190799018040" at="14,0,15,0" concept="7" trace="PlanVisualizer" />
+      <node id="7940016190799018040" at="17,116,18,53" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7940016190799018040" at="18,0,19,0" concept="2" trace="myConceptPlanVisualizer" />

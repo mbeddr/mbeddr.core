@@ -7,29 +7,25 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class CharType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x17196bfd1c52fd5cL, "com.mbeddr.core.expressions.structure.CharType");
 
-  public static final SMethod<String> getPrintfFormatSpecifier_id4XMHJL4FDjg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrintfFormatSpecifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5724839270941627600L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> createdUnsignedCompanion_id5Xnv3$QELwg = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createdUnsignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6870096341749143568L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> createNextBiggerSignedCompanion_id4O$fzoYZDgS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createNextBiggerSignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5558636242788062264L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> getPrintfFormatSpecifier_id4XMHJL4FDjg = new SMethodBuilder<>(String.class).name("getPrintfFormatSpecifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5724839270941627600L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> createdUnsignedCompanion_id5Xnv3$QELwg = new SMethodBuilder<>(SNode.class).name("createdUnsignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6870096341749143568L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> createNextBiggerSignedCompanion_id4O$fzoYZDgS = new SMethodBuilder<>(SNode.class).name("createNextBiggerSignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5558636242788062264L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<>(Integer.TYPE).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPrintfFormatSpecifier_id4XMHJL4FDjg, createdUnsignedCompanion_id5Xnv3$QELwg, createNextBiggerSignedCompanion_id4O$fzoYZDgS, getUsedBytes_id61lw97FtLtJ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPrintfFormatSpecifier_id4XMHJL4FDjg, createdUnsignedCompanion_id5Xnv3$QELwg, createNextBiggerSignedCompanion_id4O$fzoYZDgS, getUsedBytes_id61lw97FtLtJ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPrintfFormatSpecifier_id4XMHJL4FDjg(@NotNull SNode __thisNode__) {
     return "%c";
@@ -48,10 +44,6 @@ public final class CharType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ CharType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

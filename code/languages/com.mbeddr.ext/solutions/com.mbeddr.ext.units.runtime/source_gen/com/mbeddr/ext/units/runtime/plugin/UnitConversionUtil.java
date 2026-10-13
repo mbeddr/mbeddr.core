@@ -60,8 +60,8 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Returns true if the given map represents a unitless mapping, 
-   * meaning the map is empty or null. 
+   * Returns true if the given map represents a unitless mapping,
+   * meaning the map is empty or null.
    * 
    * @param unitMap the unit mapping
    * @return true if the mapping represents a unitless mapping, false otherwise
@@ -75,7 +75,7 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Returns true of the given type is a unitless type. 
+   * Returns true of the given type is a unitless type.
    * 
    * @param type the type
    * @return true if the type has no unit annotation, false otherwise
@@ -90,8 +90,8 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Returns the unit mapping for the given type. 
-   * If the given type is not an annotated type then an empty map will be returned. 
+   * Returns the unit mapping for the given type.
+   * If the given type is not an annotated type then an empty map will be returned.
    * 
    * @param type the type
    * @return the unit mapping
@@ -105,10 +105,10 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Generates the unit mapping from the given unit specification and inferred attributes. 
-   * If a given meta unit cannot be found among the inferred ones, then it will simply be omitted. 
-   * Composite units are always broken down to atomic units. 
-   * 
+   * Generates the unit mapping from the given unit specification and inferred attributes.
+   * If a given meta unit cannot be found among the inferred ones, then it will simply be omitted.
+   * Composite units are always broken down to atomic units.
+   *  
    * This method returns a new unit mapping. 
    */
   public static Map<SNode, Fraction> getUnitMap_UnitSpecification(SNode specification, SNode attribute) {
@@ -174,10 +174,10 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Generates the unit mapping from the given unit specification, no meta unit resolving is applied. 
-   * Composite units are always broken down to atomic units. 
-   * 
-   * This method returns a new unit mapping. 
+   * Generates the unit mapping from the given unit specification, no meta unit resolving is applied.
+   * Composite units are always broken down to atomic units.
+   *  
+   * This method returns a new unit mapping.
    */
   public static Map<SNode, Fraction> getUnitMap_UnitSpecification(SNode specification) {
     Map<SNode, Fraction> result = MapSequence.fromMap(new HashMap<SNode, Fraction>());
@@ -188,9 +188,9 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Generates the unit mapping from the given unit reference and multiplies all the exponents with the given one. 
-   * Composite units are always broken down to atomic units. 
-   * 
+   * Generates the unit mapping from the given unit reference and multiplies all the exponents with the given one.
+   * Composite units are always broken down to atomic units.
+   *  
    * This method returns a new unit mapping. 
    */
   public static Map<SNode, Fraction> getUnitMap_UnitReference(SNode reference, Fraction exponent) {
@@ -225,7 +225,7 @@ public class UnitConversionUtil {
 
   /**
    * Generates the unit mapping from the given unit and multiplies all the exponents with the given one. 
-   * Composite units are always broken down to atomic units. 
+   * Composite units are always broken down to atomic units.
    * 
    * This method returns a new unit mapping. 
    */
@@ -261,10 +261,10 @@ public class UnitConversionUtil {
 
   /**
    * Divides all of the exponents in the unit mapping with the given value if it is possible.
-   * As fractions are used in their minimal form this can only be possible if two fractions 
-   * have the exact same denumerator and the modulo check should be performed with their numerators. 
+   * As fractions are used in their minimal form this can only be possible if two fractions
+   * have the exact same denumerator and the modulo check should be performed with their numerators.
    * 
-   * This method returns a new unit mapping. 
+   * This method returns a new unit mapping.
    */
   public static Map<SNode, Fraction> rootBy(Map<SNode, Fraction> unitMap, SNode root) {
     Map<SNode, Fraction> result = MapSequence.fromMap(new HashMap<SNode, Fraction>());
@@ -278,12 +278,12 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Reduces the given unit mapping with an other unit mapping. This means that all of the exponents will be 
-   * substracted in the unit mapping with the corresponding exponent from the other mapping. If a unit is 
-   * not present in the original mapping, then the inverse exponent of the other mapping's unit will be inserted. 
-   * Units with zero exponents are eliminated from the resuling unit mapping. 
-   * 
-   * This method returns a new unit mapping. 
+   * Reduces the given unit mapping with an other unit mapping. This means that all of the exponents will be
+   * substracted in the unit mapping with the corresponding exponent from the other mapping. If a unit is
+   * not present in the original mapping, then the inverse exponent of the other mapping's unit will be inserted.
+   * Units with zero exponents are eliminated from the resuling unit mapping.
+   *  
+   * This method returns a new unit mapping.
    */
   public static Map<SNode, Fraction> reduceBy(Map<SNode, Fraction> unitMap, Map<SNode, Fraction> withWhom) {
     Map<SNode, Fraction> result = MapSequence.fromMap(new HashMap<SNode, Fraction>());
@@ -306,10 +306,10 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Unifies the given unit mapping with an other unit mapping. This means that all of the exponents will be 
-   * summed in the unit mapping with the corresponding exponent from the other mapping. If a unit is not 
-   * present in the original mapping, then the exponent of the other mapping's unit will be inserted. 
-   * Units with zero exponents are eliminated from the resuling unit mapping. 
+   * Unifies the given unit mapping with an other unit mapping. This means that all of the exponents will be
+   * summed in the unit mapping with the corresponding exponent from the other mapping. If a unit is not
+   * present in the original mapping, then the exponent of the other mapping's unit will be inserted.
+   * Units with zero exponents are eliminated from the resuling unit mapping.
    * 
    * This method returns a new unit mapping. 
    */
@@ -337,7 +337,7 @@ public class UnitConversionUtil {
   }
 
   /**
-   * It is expected that the passed map is already broken down to atomic units. 
+   * It is expected that the passed map is already broken down to atomic units.
    */
   public static List<SNode> createUnitReferences(Map<SNode, Fraction> unitMap) {
     List<SNode> references = ListSequence.fromList(new ArrayList<SNode>());
@@ -363,7 +363,7 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Flips all the exponents to the reciprocal with modifying the given unit mapping in place. 
+   * Flips all the exponents to the reciprocal with modifying the given unit mapping in place.
    */
   public static Map<SNode, Fraction> negate(Map<SNode, Fraction> unitMap) {
     for (SNode key : SetSequence.fromSet(MapSequence.fromMap(unitMap).keySet())) {
@@ -373,7 +373,7 @@ public class UnitConversionUtil {
   }
 
   /**
-   * This method modifies the original unit mapping. 
+   * This method modifies the original unit mapping.
    */
   public static Map<SNode, Fraction> multiply(Map<SNode, Fraction> unitMap, Fraction m) {
     for (SNode key : SetSequence.fromSet(MapSequence.fromMap(unitMap).keySet())) {
@@ -383,14 +383,14 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Checks wether two unit mappings can be possibly matched / exactly matched. 
+   * Checks wether two unit mappings can be possibly matched / exactly matched.
    * 
    * In case of exact match check the unit mappings must be entirely the same.
    * In case of possible match check:
    * (1) if either one of them (or both) contains 2 or more meta units -> false
    * (2) if both of them contain exactly 1 meta unit then they can be matched if these meta units are not the same ones
    * (3) if either one of them contains a meta unit (but not both) then the exponents must be checked. In this case
-   * there must not be any other unit in the mapping which contains the meta unit. 
+   * there must not be any other unit in the mapping which contains the meta unit.
    * (4) if they do not contain meta units then the unit mappings must be exactly the same
    */
   public static boolean matchingUnits(Map<SNode, Fraction> leftUnitMap, Map<SNode, Fraction> rightUnitMap, boolean exactMatchCheck) {
