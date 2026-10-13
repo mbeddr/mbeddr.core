@@ -12,6 +12,7 @@
     <entry key="jetbrains.mps.ide.mpsmigration.v_2023_1.DataFlowStubsToRegularNodes" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v_2023_1.JavaModuleSettingsToFacet" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v_2023_3.CleanStubForeignMethodIds" value="executed" />
-    <entry key="project.migrated.version" value="241" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v_2024_3.LangResourceImport4Migration" value="executed" />
+    <entry key="project.migrated.version" value="251" />
   </component>
 </project>

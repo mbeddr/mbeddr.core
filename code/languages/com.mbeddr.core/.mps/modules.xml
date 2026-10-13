@@ -42,8 +42,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.util.interpreter/com.mbeddr.core.util.interpreter.msd" folder="core-extended" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.tutorialActions/com.mbeddr.tutorialActions.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/tests/aLibrary/aLibrary.msd" folder="tests" />
-      <modulePath path="$PROJECT_DIR$/tests/test.assessments.testlang/test.assessments.testlang.mpl" folder="core.tests" />
-      <modulePath path="$PROJECT_DIR$/tests/test.assessments/test.assessments.msd" folder="core.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.editor.core/test.editor.core.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.core/core.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.errorreporting/errorreporting.msd" folder="tests" />
