@@ -14,11 +14,16 @@ jbr261 = "25.0.2-b329.117"
 mps261 = "2026.1.1"
 mpsExtensions261 = "2026.1.3671.724f373"
 
+# Versions for the master branch
+jbrMaster = "25.0.2-b329.117"
+mpsMaster = "262.10968.505"
+mpsExtensionsMaster = "9999.9.3669.f8c8760-SNAPSHOT"
+
 [plugins]
 common = "de.itemis.mps.gradle.common:1.30.+"
 jbr-toolchain = "com.specificlanguages.jbr-toolchain:1.2.0"
 
 [libraries]
-jbr = { module = "com.jetbrains.jdk:jbr_jcef", version.ref = "jbr261" }
-mps = { module = "com.jetbrains:mps", version.ref = "mps261" }
-mpsExtensions = { module = "de.itemis.mps:extensions", version.ref = "mpsExtensions261" }
+jbr = { module = "com.jetbrains.jdk:jbr_jcef", version.ref = "jbrMaster" }
+mps = { module = "com.jetbrains.mps:mps-prerelease", version.ref = "mpsMaster" }
+mpsExtensions = { module = "de.itemis.mps:extensions", version.ref = "mpsExtensionsMaster" }
