@@ -164,7 +164,7 @@
   </registry>
   <node concept="1l3spW" id="7eF9rfAnzRy">
     <property role="TrG5h" value="com.mbeddr.platform.ts.tests.build" />
-    <property role="2DA0ip" value="../../../../../build/com.mbeddr.platform" />
+    <property role="2DA0ip" value="../../../build/generated" />
     <property role="turDy" value="build-ts-tests.xml" />
     <node concept="398rNT" id="5ueaxoTn61l" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
@@ -193,8 +193,14 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="7eF9rfAnzU6" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="7eF9rfAnzU7" role="2Ry0An">
-              <property role="2Ry0Am" value="" />
+            <node concept="2Ry0Ak" id="1dsCaCdicyY" role="2Ry0An">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="1dsCaCdicyZ" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="7eF9rfAnzU7" role="2Ry0An">
+                  <property role="2Ry0Am" value="" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -219,10 +225,16 @@
       <property role="TrG5h" value="dependencies.root" />
       <node concept="398BVA" id="1OEbLwd81ml" role="398pKh">
         <ref role="398BVh" node="7eF9rfAnzU3" resolve="project.root" />
-        <node concept="2Ry0Ak" id="1OEbLwd81mm" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="1OEbLwd81mn" role="2Ry0An">
-            <property role="2Ry0Am" value="dependencies" />
+        <node concept="2Ry0Ak" id="1dsCaCdicGo" role="iGT6I">
+          <property role="2Ry0Am" value="code" />
+          <node concept="2Ry0Ak" id="1dsCaCdicGp" role="2Ry0An">
+            <property role="2Ry0Am" value="platform" />
+            <node concept="2Ry0Ak" id="1OEbLwd81mm" role="2Ry0An">
+              <property role="2Ry0Am" value="build" />
+              <node concept="2Ry0Ak" id="1OEbLwd81mn" role="2Ry0An">
+                <property role="2Ry0Am" value="dependencies" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -3281,7 +3293,7 @@
     </node>
   </node>
   <node concept="1l3spW" id="E0fxGqls4q">
-    <property role="2DA0ip" value="../../../../../build/com.mbeddr.platform" />
+    <property role="2DA0ip" value="../../../build/generated" />
     <property role="TrG5h" value="com.mbeddr.platform.sandboxes" />
     <property role="turDy" value="build-sandboxes.xml" />
     <node concept="398rNT" id="E0fxGqls69" role="1l3spd">
@@ -3297,8 +3309,14 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="E0fxGqls7g" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="E0fxGqls7h" role="2Ry0An">
-              <property role="2Ry0Am" value="" />
+            <node concept="2Ry0Ak" id="1dsCaCdicz0" role="2Ry0An">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="1dsCaCdicz1" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="E0fxGqls7h" role="2Ry0An">
+                  <property role="2Ry0Am" value="" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -3308,10 +3326,16 @@
       <property role="TrG5h" value="dependencies.root" />
       <node concept="398BVA" id="1OEbLwd81ei" role="398pKh">
         <ref role="398BVh" node="E0fxGqls7d" resolve="project.root" />
-        <node concept="2Ry0Ak" id="1OEbLwd81i5" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="1OEbLwd81jj" role="2Ry0An">
-            <property role="2Ry0Am" value="dependencies" />
+        <node concept="2Ry0Ak" id="1dsCaCdicGq" role="iGT6I">
+          <property role="2Ry0Am" value="code" />
+          <node concept="2Ry0Ak" id="1dsCaCdicGr" role="2Ry0An">
+            <property role="2Ry0Am" value="platform" />
+            <node concept="2Ry0Ak" id="1OEbLwd81i5" role="2Ry0An">
+              <property role="2Ry0Am" value="build" />
+              <node concept="2Ry0Ak" id="1OEbLwd81jj" role="2Ry0An">
+                <property role="2Ry0Am" value="dependencies" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
