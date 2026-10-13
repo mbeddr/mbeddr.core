@@ -57,8 +57,23 @@ val mpsPluginsDir: Provider<String> by extra(provider {
     }
 })
 
+val actionsfilterInstallation by configurations.dependencyScope("actionsfilterInstallation")
+val actionsfilterArtifacts by configurations.resolvable("actionsfilterArtifacts") {
+    extendsFrom(actionsfilterInstallation)
+}
+
+dependencies {
+    actionsfilterInstallation(project(path = ":com.mbeddr:platform", configuration = "actionsfilterArtifacts"))
+}
+
+val installActionsfilter = tasks.register<Copy>("install_actionsfilter") {
+    description = "Copy the actions filter IntelliJ plugin to the MPS plugin's directory"
+    from(actionsfilterArtifacts)
+    include("com.mbeddr.mpsutil.actionsfilter/")
+    into(mpsPluginsDir)
+}
+
 tasks.register("install") {
-    // dependencies to this task are added dynamically from other scripts (com.mbeddr.platform, com.mbeddr.languages)
     description = "Install the required IntelliJ plugins into the MPS plugin repository."
     group = "Build Setup"
     doFirst {
@@ -70,7 +85,7 @@ tasks.register("install") {
         }
     }
 
-    dependsOn(project(":com.mbeddr:platform").tasks.named("install_actionsfilter"))
+    dependsOn(installActionsfilter)
 }
 
 logger.info("skipresolve_mps: {}, mpsHomeDir: {}", skipresolve_mps, mpsHomeDir)

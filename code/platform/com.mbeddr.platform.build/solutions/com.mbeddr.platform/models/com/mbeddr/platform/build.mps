@@ -232,7 +232,7 @@
   </registry>
   <node concept="1l3spW" id="3AVJcIMlF8l">
     <property role="TrG5h" value="com.mbeddr.platform" />
-    <property role="2DA0ip" value="../../../../../build/com.mbeddr.platform" />
+    <property role="2DA0ip" value="../../../build/generated" />
     <node concept="2igEWh" id="$bJ0jguQs8" role="1hWBAP">
       <property role="2igJW4" value="true" />
       <property role="3UIfUI" value="16384" />
@@ -16965,8 +16965,14 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="3AVJcIMlF8s" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="3AVJcIMlF8t" role="2Ry0An">
-              <property role="2Ry0Am" value="" />
+            <node concept="2Ry0Ak" id="1dsCaCdicyU" role="2Ry0An">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="1dsCaCdicyV" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="3AVJcIMlF8t" role="2Ry0An">
+                  <property role="2Ry0Am" value="" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -16997,10 +17003,16 @@
       <property role="TrG5h" value="dependencies.root" />
       <node concept="398BVA" id="1OEbLwd7YgW" role="398pKh">
         <ref role="398BVh" node="3AVJcIMlF8p" resolve="project.root" />
-        <node concept="2Ry0Ak" id="1OEbLwd7YJR" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="1OEbLwd7Z37" role="2Ry0An">
-            <property role="2Ry0Am" value="dependencies" />
+        <node concept="2Ry0Ak" id="1dsCaCdicGm" role="iGT6I">
+          <property role="2Ry0Am" value="code" />
+          <node concept="2Ry0Ak" id="1dsCaCdicGn" role="2Ry0An">
+            <property role="2Ry0Am" value="platform" />
+            <node concept="2Ry0Ak" id="1OEbLwd7YJR" role="2Ry0An">
+              <property role="2Ry0Am" value="build" />
+              <node concept="2Ry0Ak" id="1OEbLwd7Z37" role="2Ry0An">
+                <property role="2Ry0Am" value="dependencies" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -18272,7 +18284,7 @@
   </node>
   <node concept="1l3spW" id="4SMNYR2Zjjf">
     <property role="TrG5h" value="com.mbeddr.mpsutil.actionsfilter" />
-    <property role="2DA0ip" value="../../../../../build/com.mbeddr.platform" />
+    <property role="2DA0ip" value="../../../build/generated" />
     <property role="turDy" value="actionsfilter.xml" />
     <node concept="2igEWh" id="4SMNYR2Zjjg" role="1hWBAP">
       <property role="2igJW4" value="true" />
@@ -18633,6 +18645,11 @@
             <ref role="3bR37D" to="ffeo:HHlBn9$wJ2" resolve="org.jdom" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3QFyxurH2Er" role="3bR37C">
+          <node concept="3bR9La" id="3QFyxurH2Es" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="4SMNYR2ZkZZ" role="10PD9s" />
@@ -18644,8 +18661,14 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="4SMNYR2Zl04" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="4SMNYR2Zl05" role="2Ry0An">
-              <property role="2Ry0Am" value="" />
+            <node concept="2Ry0Ak" id="1dsCaCdicyW" role="2Ry0An">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="1dsCaCdicyX" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="4SMNYR2Zl05" role="2Ry0An">
+                  <property role="2Ry0Am" value="" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -18724,6 +18747,12 @@
     <node concept="2sgV4H" id="4SMNYR2Zl0S" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="4SMNYR2Zl0T" role="2JcizS">
+        <ref role="398BVh" node="4SMNYR2Zl06" resolve="mps.home" />
+      </node>
+    </node>
+    <node concept="13uUGR" id="7R2SOOA$dST" role="1l3spa">
+      <ref role="13uUGO" to="ffeo:6eCuTcwOnJO" resolve="IDEA" />
+      <node concept="398BVA" id="7R2SOOA$dSU" role="13uUGP">
         <ref role="398BVh" node="4SMNYR2Zl06" resolve="mps.home" />
       </node>
     </node>
