@@ -10,8 +10,6 @@ plugins {
     id("org.cyclonedx.bom") version "3.4.1"
 }
 
-@Suppress("UNCHECKED_CAST")
-val mpsPluginsDir = parent?.extensions?.extraProperties?.properties?.get("mpsPluginsDir") as? Provider<String>
 val antVersionProperties: Map<String, String> by extra
 val mpsBuild = libs.mps.get().version!!
 
@@ -19,8 +17,8 @@ val artifactsDirectory = layout.buildDirectory.dir("artifacts")
 
 fun artifactsDir(buildProjectName: String) = artifactsDirectory.map { it.dir(buildProjectName) }
 
-val buildScriptsDirectory = rootProject.layout.buildDirectory.dir("com.mbeddr.platform")
-val reportsDirectory = rootProject.layout.buildDirectory.dir("reports")
+val buildScriptsDirectory = layout.buildDirectory.dir("generated")
+val reportsDirectory = layout.buildDirectory.dir("reports")
 val platformBuildFile = buildScriptsDirectory.map { it.file("build.xml") }
 val actionsfilterBuildFile = buildScriptsDirectory.map { it.file("actionsfilter.xml") }
 val platformTestsBuildFile = buildScriptsDirectory.map { it.file("build-ts-tests.xml") }
@@ -57,7 +55,6 @@ providers.gradleProperty("mpsHomeDir").orNull?.let { mpsHomeDir ->
     mpsDefaults.mpsHome = rootProject.layout.projectDirectory.dir(mpsHomeDir)
 }
 
-mpsDefaults.mpsLibrariesDirectory = rootProject.layout.buildDirectory.dir("dependencies")
 mpsDefaults.pathVariables.put("artifacts.root", artifactsDirectory.map { it.asFile })
 
 tasks.withType<RunAnt>().configureEach {
@@ -167,13 +164,9 @@ val platformTests = mpsBuilds.create<TestBuild>("platformTests") {
     buildFile = platformTestsBuildFile
 }
 
-mpsPluginsDir?.let { pluginsDirectory ->
-    tasks.register<Copy>("install_actionsfilter") {
-        description = "Copy the actions filter IntelliJ plugin to the MPS plugin's directory"
-        dependsOn(actionsfilter.assembleTask)
-        from(actionsfilter.buildArtifactsDirectory)
-        include("com.mbeddr.mpsutil.actionsfilter/")
-        into(pluginsDirectory)
+configurations.consumable("actionsfilterArtifacts") {
+    outgoing.artifact(actionsfilter.buildArtifactsDirectory) {
+        builtBy(actionsfilter.assembleTask)
     }
 }
 
@@ -344,8 +337,6 @@ publishing {
         }
     }
 }
-
-val mbeddrBuild: String by project
 
 tasks.cyclonedxDirectBom {
     jsonOutput = reportsDirectory.map { it.file("sbom.json") }
