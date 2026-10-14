@@ -3,6 +3,8 @@ import de.itemis.mps.gradle.EnvironmentKind
 import de.itemis.mps.gradle.RunAntScript
 import de.itemis.mps.gradle.TestLanguages
 import de.itemis.mps.gradle.tasks.MpsGenerate
+import de.itemis.mps.gradle.tasks.MpsMigrate
+import de.itemis.mps.gradle.tasks.Remigrate
 
 plugins {
     base
@@ -120,8 +122,6 @@ val build_mbeddr by tasks.registering(BuildLanguages::class) {
     outputs.dir("$artifactsDir/mbeddr")
 }
 
-val script_test_mbeddrTutorial = File("$scriptsBasePath/com.mbeddr.tutorial/build-tests.xml")
-
 val script_test_mbeddrPerformance = File("$scriptsBasePath/com.mbeddr.core/build-performance-tests.xml")
 val script_test_mbeddrCoreEx = File("$scriptsBasePath/com.mbeddr.core/build-ex-tests.xml")
 val script_test_mbeddrCoreTs = File("$scriptsBasePath/com.mbeddr.core/build-ts-tests.xml")
@@ -130,32 +130,6 @@ val script_test_mbeddrCcEx = File("$scriptsBasePath/com.mbeddr.cc/build-ex-tests
 val script_test_mbeddrExtTs = File("$scriptsBasePath/com.mbeddr.ext/build-ts-tests.xml")
 val script_test_mbeddrExtEx = File("$scriptsBasePath/com.mbeddr.ext/build-ex-tests.xml")
 val script_test_mbeddrXmodelEx = File("$scriptsBasePath/com.mbeddr.xmodel/build-ex-tests.xml")
-
-val script_build_tutorialLanguages = File("$scriptsBasePath/com.mbeddr.tutorial/build-languages.xml")
-val script_build_tutorialSolutions = File("$scriptsBasePath/com.mbeddr.tutorial/build-solutions.xml")
-
-val build_tutorial_languages by tasks.registering(BuildLanguages::class) {
-    dependsOn(build_mbeddr)
-    script = script_build_tutorialLanguages
-    description = "Build the mbeddr tutorial languages."
-}
-
-val build_tutorial_solutions by tasks.registering(BuildLanguages::class) {
-    dependsOn(build_tutorial_languages)
-    script = script_build_tutorialSolutions
-    description = "Build the mbeddr tutorial solutions."
-}
-
-val build_tutorial by tasks.registering {
-    dependsOn(build_tutorial_solutions)
-    description = "Build the mbeddr tutorial."
-}
-
-val test_mbeddr_tutorial by tasks.registering(TestLanguages::class) {
-    dependsOn(build_tutorial)
-    script = script_test_mbeddrTutorial
-    description = "Test the mbeddr tutorial."
-}
 
 val test_mbeddr_ext_ts by tasks.registering(TestLanguages::class) {
     dependsOn(build_mbeddr)
@@ -325,7 +299,41 @@ publishing {
     }
 }
 
-tasks.register("generate_mbeddr_languages") {
+val generateAllLanguages = tasks.register("generateAllLanguages") {
     description = "Generate all mbeddr languages in order to run migrations"
     dependsOn(build_mbeddr, generate_mbeddr_core_ts)
+}
+
+val projectDirectoriesInDependencyOrder = listOf(
+    "com.mbeddr.core",
+    "com.mbeddr.ext",
+    "com.mbeddr.cc",
+    "com.mbeddr.build",
+).map { layout.projectDirectory.dir(it) }
+
+tasks.register<MpsMigrate>("migrate") {
+    description = "Run all pending migrations in the mbeddr language projects."
+    dependsOn(generateAllLanguages)
+
+    javaLauncher = jbrToolchain.javaLauncher
+    haltOnPrecheckFailure = false
+    haltOnDependencyError = false
+    mpsHome = mpsHomeProvider
+    projectDirectories.from(projectDirectoriesInDependencyOrder)
+    folderMacros.put("mbeddr.github.core.home", rootProject.layout.projectDirectory)
+    pluginRoots.from(mpsHome.dir("plugins"))
+    maxHeapSize = "4G"
+}
+
+tasks.register<Remigrate>("remigrate") {
+    description = "Execute rerunnable migrations in the mbeddr language projects."
+    dependsOn(generateAllLanguages)
+    mustRunAfter("migrate")
+
+    javaLauncher = jbrToolchain.javaLauncher
+    mpsHome = mpsHomeProvider
+    projectDirectories.from(projectDirectoriesInDependencyOrder)
+    folderMacros.put("mbeddr.github.core.home", rootProject.layout.projectDirectory)
+    pluginRoots.from(mpsHome.dir("plugins"))
+    maxHeapSize = "4G"
 }
