@@ -568,6 +568,9 @@
         <node concept="24YFd4" id="ER$8mnzbYN" role="24YFd7">
           <ref role="24YFd5" to="ffeo:5ziJCXbfbGU" resolve="intellij.structureView.plugin" />
         </node>
+        <node concept="24YFd4" id="5k2BKW5ewN0" role="24YFd7">
+          <ref role="24YFd5" to="ffeo:5whBXIGTrNc" resolve="com.intellij.xml" />
+        </node>
         <node concept="NbPM2" id="30ODedpHEZw" role="24c_eh">
           <node concept="3Mxwew" id="30ODedpHEZx" role="3MwsjC">
             <property role="3MwjfP" value="true" />
