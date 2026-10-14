@@ -4,7 +4,7 @@ import com.specificlanguages.mps.TestBuild
 import javax.xml.parsers.DocumentBuilderFactory
 
 plugins {
-    id("com.specificlanguages.mps") version "2.1.0"
+    id("com.specificlanguages.mps") version "2.1.1"
     id("buildlogic.versioning")
     id("buildlogic.maven-publishing")
     id("org.cyclonedx.bom") version "3.4.1"
