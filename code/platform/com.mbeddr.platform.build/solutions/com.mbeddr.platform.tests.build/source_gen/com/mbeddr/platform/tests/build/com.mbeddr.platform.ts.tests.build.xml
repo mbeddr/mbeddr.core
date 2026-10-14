@@ -3286,7 +3286,6 @@
       <plugin path="${artifacts.mps}/plugins/mps-tooltips" id="jetbrains.mps.editor.tooltips" />
       <plugin path="${artifacts.mps}/plugins/mps-vcs" id="jetbrains.mps.vcs" />
       <plugin path="${artifacts.mps}/plugins/vcs-git" id="Git4Idea" />
-      <plugin path="${artifacts.mps}/plugins/vcs-svn" id="Subversion" />
       <chunk>
         <module file="${project.root}/code/platform/com.mbeddr.doc/solutions/com.mbeddr.doc.test.documents/com.mbeddr.doc.test.documents.msd" />
         <module file="${mbeddr.mpsutil}/languages/com.mbeddr.mpsutil.asynccell.sandbox/com.mbeddr.mpsutil.asynccell.sandbox.mpl" />
@@ -16784,7 +16783,6 @@
       <plugin id="jetbrains.mps.editor.tooltips" path="${artifacts.mps}/plugins/mps-tooltips" />
       <plugin id="jetbrains.mps.vcs" path="${artifacts.mps}/plugins/mps-vcs" />
       <plugin id="Git4Idea" path="${artifacts.mps}/plugins/vcs-git" />
-      <plugin id="Subversion" path="${artifacts.mps}/plugins/vcs-svn" />
       <project path="${mbeddr.mpsutil}" />
       <testmodules>        
         <path refid="mps.tests.path" />
@@ -16864,7 +16862,6 @@
       <plugin id="jetbrains.mps.editor.tooltips" path="${artifacts.mps}/plugins/mps-tooltips" />
       <plugin id="jetbrains.mps.vcs" path="${artifacts.mps}/plugins/mps-vcs" />
       <plugin id="Git4Idea" path="${artifacts.mps}/plugins/vcs-git" />
-      <plugin id="Subversion" path="${artifacts.mps}/plugins/vcs-svn" />
       <project path="${project.root}/code/platform/com.mbeddr.doc" />
       <testmodules>        
         <path refid="mps.tests.path" />
