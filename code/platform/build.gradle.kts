@@ -1,10 +1,13 @@
 import com.specificlanguages.mps.MainBuild
 import com.specificlanguages.mps.RunAnt
 import com.specificlanguages.mps.TestBuild
+import de.itemis.mps.gradle.tasks.MpsMigrate
+import de.itemis.mps.gradle.tasks.Remigrate
 import javax.xml.parsers.DocumentBuilderFactory
 
 plugins {
-    id("com.specificlanguages.mps") version "2.1.0"
+    id("com.specificlanguages.mps") version "2.1.1"
+    id("de.itemis.mps.gradle.common")
     id("buildlogic.versioning")
     id("buildlogic.maven-publishing")
     id("org.cyclonedx.bom") version "3.4.1"
@@ -352,4 +355,52 @@ tasks.cyclonedxDirectBom {
         add(configurations.mps.name)
         add("jbr")
     }
+}
+
+val projectDirectoriesInDependencyOrder = listOf(
+    "com.mbeddr.platform.build",
+    "com.mbeddr.mpsutil",
+    "com.mbeddr.doc",
+    "com.mbeddr.doc.aspect",
+).map { layout.projectDirectory.dir(it) }
+
+val generateAllLanguages = tasks.register("generateAllLanguages") {
+    description = "Generate all platform languages, tests, and sandboxes in order to run migrations."
+    dependsOn(platform.generateTask, platformTests.generateTask, sandboxes.generateTask)
+}
+val packagingTasks = listOf(
+    tasks.zip,
+    tasks.cyclonedxDirectBom,
+    tasks.withType<GenerateMavenPom>(),
+    tasks.withType<GenerateModuleMetadata>(),
+    renameForGithubReleaseTask,
+)
+
+tasks.register<MpsMigrate>("migrate") {
+    description = "Run all pending migrations in the platform projects."
+    dependsOn(generateAllLanguages)
+    mustRunAfter(packagingTasks)
+
+    javaLauncher = jbrToolchain.javaLauncher
+    haltOnPrecheckFailure = false
+    haltOnDependencyError = false
+    mpsHome = mpsDefaults.mpsHome
+    projectDirectories.from(projectDirectoriesInDependencyOrder)
+    folderMacros.put("mbeddr.github.core.home", rootProject.layout.projectDirectory)
+    pluginRoots.from(mpsHome.dir("plugins"))
+    maxHeapSize = "4G"
+}
+
+tasks.register<Remigrate>("remigrate") {
+    description = "Execute rerunnable migrations in the platform projects."
+    dependsOn(generateAllLanguages)
+    mustRunAfter("migrate")
+    mustRunAfter(packagingTasks)
+
+    javaLauncher = jbrToolchain.javaLauncher
+    mpsHome = mpsDefaults.mpsHome
+    projectDirectories.from(projectDirectoriesInDependencyOrder)
+    folderMacros.put("mbeddr.github.core.home", rootProject.layout.projectDirectory)
+    pluginRoots.from(mpsHome.dir("plugins"))
+    maxHeapSize = "4G"
 }
