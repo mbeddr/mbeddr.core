@@ -1,6 +1,3 @@
-import de.itemis.mps.gradle.tasks.MpsMigrate
-import de.itemis.mps.gradle.tasks.Remigrate
-
 plugins {
     id("buildlogic.mps-conventions")
 }
@@ -175,57 +172,8 @@ tasks.register("printVersions") {
     }
 }
 
-val projectsInDependencyOrder = listOf(
-    "platform/com.mbeddr.platform.build",
-    "platform/com.mbeddr.mpsutil",
-    "platform/com.mbeddr.doc",
-    "platform/com.mbeddr.doc.aspect",
-    "languages/com.mbeddr.core",
-    "languages/com.mbeddr.ext",
-    "languages/com.mbeddr.cc",
-    "languages/com.mbeddr.build",
-)
+val languagesProject = project(":com.mbeddr:languages")
 
-val projectDirectoriesInDependencyOrder = projectsInDependencyOrder.map {
-    rootProject.file("code/$it")
-}
-
-tasks.register("generate_all_languages") {
-    dependsOn(
-        project(":com.mbeddr:platform").tasks.named("generatePlatform"),
-        project(":com.mbeddr:platform").tasks.named("generatePlatformTests"),
-        project(":com.mbeddr:platform").tasks.named("generateSandboxes"),
-        ":com.mbeddr:languages:generate_mbeddr_languages",
-    )
-}
-
-tasks.register<MpsMigrate>("migrate") {
-    description = "Run all pending migrations in the project."
-    dependsOn("generate_all_languages")
-    javaLauncher = jbrToolchain.javaLauncher
-    haltOnPrecheckFailure = false
-    haltOnDependencyError = false
-    mpsHome = mpsHomeDir
-    projectDirectories.from(projectDirectoriesInDependencyOrder)
-
-    folderMacros.put("mbeddr.github.core.home", rootProject.layout.projectDirectory)
-
-    pluginRoots.from(File(mpsHomeDir, "plugins"))
-
-    maxHeapSize = "4G"
-}
-
-tasks.register<Remigrate>("remigrate") {
-    description = "Execute rerunnable module migrations and project migrations."
-    dependsOn("generate_all_languages")
-    javaLauncher = jbrToolchain.javaLauncher
-
-    mpsHome = mpsHomeDir
-    projectDirectories.from(projectDirectoriesInDependencyOrder)
-
-    folderMacros.put("mbeddr.github.core.home", rootProject.layout.projectDirectory)
-
-    pluginRoots.from(File(mpsHomeDir, "plugins"))
-
-    maxHeapSize = "4G"
+languagesProject.tasks.matching { it.name == "migrate" || it.name == "remigrate" }.configureEach {
+    mustRunAfter(":com.mbeddr:platform:migrate", ":com.mbeddr:platform:remigrate")
 }
