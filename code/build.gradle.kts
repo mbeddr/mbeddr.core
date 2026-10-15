@@ -110,9 +110,6 @@ val scriptsBasePath: String by extra(rootProject.file("build").absolutePath)
 
 // mbeddr properties
 subprojects {
-    // repository urls
-    configureRepositories(this)
-
     // configs
     val ant_lib by configurations.creating
 
@@ -125,45 +122,6 @@ subprojects {
 
 
 fun scriptFile(relativePath: String): File = File("$rootDir/build/$relativePath")
-
-fun configureRepositories(project: Project) {
-    project.pluginManager.withPlugin("maven-publish") {
-        project.extensions.configure<PublishingExtension> {
-            repositories {
-                maven {
-                    url = project.uri(
-                        if (project.version.toString().endsWith("-SNAPSHOT"))
-                            "https://artifacts.itemis.cloud/repository/maven-mps-snapshots/"
-                        else
-                            "https://artifacts.itemis.cloud/repository/maven-mps-releases/"
-                    )
-                    if (project.hasProperty("artifacts.itemis.cloud.user") && project.hasProperty("artifacts.itemis.cloud.pw")) {
-                        credentials {
-                            username = project.property("artifacts.itemis.cloud.user").toString()
-                            password = project.property("artifacts.itemis.cloud.pw").toString()
-                        }
-                    }
-                }
-
-                //mbeddr build is "master" also for maintenance branches
-                val mbeddrBuild: String by project
-                if (mbeddrBuild == "master") {
-                    maven {
-                        name = "GitHubPackages"
-                        url = project.uri("https://maven.pkg.github.com/mbeddr/mbeddr.core")
-                        if (project.hasProperty("gpr.token")) {
-                            credentials {
-                                username = project.findProperty("gpr.user")?.toString()
-                                password = project.findProperty("gpr.token")?.toString()
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 
 tasks.register("printVersions") {
     description = "Print the project version."
