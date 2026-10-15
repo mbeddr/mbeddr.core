@@ -17,7 +17,7 @@
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="jmi8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.util(MPS.IDEA/)" />
-    <import index="4zvo" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.intellij.openapi.vcs.ui(MPS.IDEA.Modules/)" />
+    <import index="4zvo" ref="f35cbfcb-ea50-4f20-9d5c-c765fbd8fd3b/java:com.intellij.openapi.vcs.ui(jetbrains.mps.vcs.idea.stubs/)" />
     <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" />
     <import index="jlcu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vcs(MPS.IDEA/)" />
     <import index="9ti4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.extensions(MPS.IDEA/)" />
@@ -25,7 +25,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="1037" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vcs.changes(MPS.IDEA/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
-    <import index="18nx" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.intellij.openapi.vcs.checkin(MPS.IDEA.Modules/)" />
+    <import index="18nx" ref="f35cbfcb-ea50-4f20-9d5c-c765fbd8fd3b/java:com.intellij.openapi.vcs.checkin(jetbrains.mps.vcs.idea.stubs/)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
@@ -39,8 +39,8 @@
     <import index="tljb" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.concurrency.annotations(MPS.IDEA/)" />
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" />
     <import index="ksrs" ref="47198eff-d292-4dcd-85af-227f983426b5/java:kotlin.coroutines(MPS.Kotlin/)" />
-    <import index="jlcv" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.intellij.openapi.vcs(MPS.IDEA.Modules/)" />
-    <import index="1038" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.intellij.openapi.vcs.changes(MPS.IDEA.Modules/)" />
+    <import index="jlcv" ref="f35cbfcb-ea50-4f20-9d5c-c765fbd8fd3b/java:com.intellij.openapi.vcs(jetbrains.mps.vcs.idea.stubs/)" />
+    <import index="1038" ref="f35cbfcb-ea50-4f20-9d5c-c765fbd8fd3b/java:com.intellij.openapi.vcs.changes(jetbrains.mps.vcs.idea.stubs/)" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
@@ -722,7 +722,7 @@
       <property role="TrG5h" value="context" />
       <node concept="3Tmbuc" id="2Nko9yATvfx" role="1B3o_S" />
       <node concept="3uibUv" id="2Nko9yATwJ6" role="1tU5fm">
-        <ref role="3uigEE" to="1038:~CommitContext" resolve="CommitContext" />
+        <ref role="3uigEE" to="1037:~CommitContext" resolve="CommitContext" />
       </node>
     </node>
     <node concept="2tJIrI" id="w97ei4G_Dx" role="jymVt" />
@@ -988,7 +988,7 @@
       <node concept="37vLTG" id="2Nko9yATJu4" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="2Nko9yATKsT" role="1tU5fm">
-          <ref role="3uigEE" to="1038:~CommitContext" resolve="CommitContext" />
+          <ref role="3uigEE" to="1037:~CommitContext" resolve="CommitContext" />
         </node>
       </node>
       <node concept="3clFbS" id="1yfWS2nO7Ru" role="3clF47">
@@ -1901,7 +1901,7 @@
       <node concept="37vLTG" id="2Nko9yAUHAk" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="2Nko9yAUIhy" role="1tU5fm">
-          <ref role="3uigEE" to="1038:~CommitContext" resolve="CommitContext" />
+          <ref role="3uigEE" to="1037:~CommitContext" resolve="CommitContext" />
         </node>
       </node>
       <node concept="3clFbS" id="3Vy2pj$XgBr" role="3clF47">
@@ -2272,7 +2272,7 @@
                   <node concept="37vLTG" id="2Nko9yATVH9" role="3clF46">
                     <property role="TrG5h" value="context" />
                     <node concept="3uibUv" id="2Nko9yATVHa" role="1tU5fm">
-                      <ref role="3uigEE" to="1038:~CommitContext" resolve="CommitContext" />
+                      <ref role="3uigEE" to="1037:~CommitContext" resolve="CommitContext" />
                     </node>
                     <node concept="2AHcQZ" id="2Nko9yATVHb" role="2AJF6D">
                       <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
