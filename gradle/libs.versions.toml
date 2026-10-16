@@ -2,7 +2,7 @@
 # Versions for the 2024.1 branch
 jbr241 = "17.0.11-b1207.30"
 mps241 = "2024.1.6"
-mpsExtensions241 = "2024.1.3673.0763bfa"
+mpsExtensions241 = "2024.1.3692.8a4e8a4"
 
 [plugins]
 common = "de.itemis.mps.gradle.common:1.30.+"
