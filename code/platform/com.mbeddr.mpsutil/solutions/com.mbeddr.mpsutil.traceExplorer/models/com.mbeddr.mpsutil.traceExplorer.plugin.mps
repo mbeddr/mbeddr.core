@@ -105,6 +105,9 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
+      <concept id="2323553266850475941" name="jetbrains.mps.baseLanguage.structure.IHasModifiers" flags="ngI" index="2frcj7">
+        <child id="2323553266850475953" name="modifiers" index="2frcjj" />
+      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
@@ -127,6 +130,7 @@
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
+      <concept id="4678410916365116210" name="jetbrains.mps.baseLanguage.structure.DefaultModifier" flags="ng" index="2JFqV2" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -403,6 +407,7 @@
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
@@ -8321,6 +8326,20 @@
       </node>
       <node concept="17QB3L" id="3wJ9Qm11Dhm" role="3clF45" />
     </node>
+    <node concept="3clFb_" id="4KEpWP$9Jyj" role="jymVt">
+      <property role="TrG5h" value="initialize" />
+      <node concept="3UR2Jj" id="4KEpWP$9Jyn" role="lGtFl">
+        <node concept="TZ5HA" id="4KEpWP$9Jyo" role="TZ5H$">
+          <node concept="1dT_AC" id="4KEpWP$9Jyp" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes everything this record needs read access for. The trace explorer calls it in a read action before it shows the record, because Swing can ask for the record's text outside a read action. Does nothing by default. " />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4KEpWP$9Jyq" role="1B3o_S" />
+      <node concept="2JFqV2" id="4KEpWP$9Jyr" role="2frcjj" />
+      <node concept="3cqZAl" id="4KEpWP$9Jys" role="3clF45" />
+      <node concept="3clFbS" id="4KEpWP$9Jyt" role="3clF47" />
+    </node>
     <node concept="2tJIrI" id="5U8d23PLXQN" role="jymVt" />
     <node concept="2tJIrI" id="13FXotcW5q_" role="jymVt" />
     <node concept="3Tm1VV" id="43aY2QmSq3f" role="1B3o_S" />
@@ -12134,6 +12153,16 @@
         <node concept="1QHqEK" id="aAJuxFI7PO" role="3cqZAp">
           <node concept="1QHqEC" id="aAJuxFI7PP" role="1QHqEI">
             <node concept="3clFbS" id="aAJuxFI7PQ" role="1bW5cS">
+              <node concept="3clFbF" id="4KEpWP$cUdg" role="3cqZAp">
+                <node concept="2OqwBi" id="4KEpWP$cUdi" role="3clFbG">
+                  <node concept="37vLTw" id="4KEpWP$cUdl" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1Fii5Z39HJj" resolve="rootTrace" />
+                  </node>
+                  <node concept="liA8E" id="4KEpWP$cUdm" role="2OqNvi">
+                    <ref role="37wK5l" node="4KEpWP$9Jyj" resolve="initialize" />
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="1Fii5Z39Cnx" role="3cqZAp">
                 <node concept="1rXfSq" id="1Fii5Z39Cnv" role="3clFbG">
                   <ref role="37wK5l" node="1Fii5Z36VuA" resolve="fillTreeRecursive" />
@@ -12679,6 +12708,16 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4KEpWP$cCLh" role="3cqZAp">
+              <node concept="2OqwBi" id="4KEpWP$cCLj" role="3clFbG">
+                <node concept="37vLTw" id="4KEpWP$cCLm" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1Fii5Z39wN$" resolve="child" />
+                </node>
+                <node concept="liA8E" id="4KEpWP$cCLn" role="2OqNvi">
+                  <ref role="37wK5l" node="4KEpWP$9Jyj" resolve="initialize" />
                 </node>
               </node>
             </node>
