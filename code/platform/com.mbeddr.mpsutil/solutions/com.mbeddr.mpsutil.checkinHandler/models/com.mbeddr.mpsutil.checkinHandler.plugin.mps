@@ -41,6 +41,7 @@
     <import index="ksrs" ref="47198eff-d292-4dcd-85af-227f983426b5/java:kotlin.coroutines(MPS.Kotlin/)" />
     <import index="jlcv" ref="f35cbfcb-ea50-4f20-9d5c-c765fbd8fd3b/java:com.intellij.openapi.vcs(jetbrains.mps.vcs.idea.stubs/)" />
     <import index="1038" ref="f35cbfcb-ea50-4f20-9d5c-c765fbd8fd3b/java:com.intellij.openapi.vcs.changes(jetbrains.mps.vcs.idea.stubs/)" />
+    <import index="1039" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.intellij.openapi.vcs.changes(MPS.IDEA.Modules/)" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
@@ -722,7 +723,7 @@
       <property role="TrG5h" value="context" />
       <node concept="3Tmbuc" id="2Nko9yATvfx" role="1B3o_S" />
       <node concept="3uibUv" id="2Nko9yATwJ6" role="1tU5fm">
-        <ref role="3uigEE" to="1037:~CommitContext" resolve="CommitContext" />
+        <ref role="3uigEE" to="1039:~CommitContext" resolve="CommitContext" />
       </node>
     </node>
     <node concept="2tJIrI" id="w97ei4G_Dx" role="jymVt" />
@@ -988,7 +989,7 @@
       <node concept="37vLTG" id="2Nko9yATJu4" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="2Nko9yATKsT" role="1tU5fm">
-          <ref role="3uigEE" to="1037:~CommitContext" resolve="CommitContext" />
+          <ref role="3uigEE" to="1039:~CommitContext" resolve="CommitContext" />
         </node>
       </node>
       <node concept="3clFbS" id="1yfWS2nO7Ru" role="3clF47">
@@ -1901,7 +1902,7 @@
       <node concept="37vLTG" id="2Nko9yAUHAk" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="2Nko9yAUIhy" role="1tU5fm">
-          <ref role="3uigEE" to="1037:~CommitContext" resolve="CommitContext" />
+          <ref role="3uigEE" to="1039:~CommitContext" resolve="CommitContext" />
         </node>
       </node>
       <node concept="3clFbS" id="3Vy2pj$XgBr" role="3clF47">
@@ -2272,7 +2273,7 @@
                   <node concept="37vLTG" id="2Nko9yATVH9" role="3clF46">
                     <property role="TrG5h" value="context" />
                     <node concept="3uibUv" id="2Nko9yATVHa" role="1tU5fm">
-                      <ref role="3uigEE" to="1037:~CommitContext" resolve="CommitContext" />
+                      <ref role="3uigEE" to="1039:~CommitContext" resolve="CommitContext" />
                     </node>
                     <node concept="2AHcQZ" id="2Nko9yATVHb" role="2AJF6D">
                       <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
