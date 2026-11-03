@@ -130,110 +130,114 @@
       <node id="1932686766227817835" at="43,73,44,33" concept="4" />
       <node id="6030685443389899264" at="44,33,45,55" concept="4" />
       <node id="5006739210461851677" at="45,55,46,52" concept="4" />
-      <node id="191048840147139956" at="46,52,47,114" concept="4" />
-      <node id="7104299011418457168" at="47,114,48,67" concept="4" />
-      <node id="5006739210462531794" at="48,67,49,29" concept="4" />
-      <node id="8571240483843915837" at="52,88,53,21" concept="4" />
-      <node id="6030685443389933762" at="53,21,54,24" concept="4" />
-      <node id="7290639040991553338" at="57,126,58,91" concept="10" />
-      <node id="7290639040991673023" at="61,60,62,17" concept="11" />
-      <node id="7290639040991683181" at="63,9,64,56" concept="4" />
-      <node id="7290639040992083555" at="66,6,67,108" concept="4" />
-      <node id="7290639040992939015" at="67,108,68,18" concept="11" />
-      <node id="6030685443390500161" at="72,84,73,66" concept="11" />
-      <node id="1279884920125063062" at="78,52,79,29" concept="11" />
-      <node id="1279884920125033309" at="83,83,84,255" concept="4" />
-      <node id="1932686766228507842" at="90,143,91,87" concept="10" />
-      <node id="1932686766228507822" at="92,45,93,52" concept="12" />
-      <node id="5006739210463041526" at="94,98,95,73" concept="12" />
-      <node id="5006739210461948740" at="95,73,96,101" concept="4" />
-      <node id="8767073233282888303" at="97,86,98,19" concept="2" />
-      <node id="5006739210461976446" at="100,14,101,62" concept="4" />
-      <node id="1932686766228607418" at="102,7,103,75" concept="10" />
-      <node id="6030685443389944309" at="103,75,104,71" concept="4" />
-      <node id="1932686766228507870" at="104,71,105,36" concept="4" />
-      <node id="1932686766228624402" at="105,36,106,51" concept="4" />
-      <node id="1279884920123826784" at="100,12,102,7" concept="0" />
-      <node id="7290639040991630169" at="60,46,63,9" concept="8" />
-      <node id="8571240483836783196" at="72,0,75,0" concept="9" trace="getChildContainingTraceRecord#(Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)Ljavax/swing/tree/DefaultMutableTreeNode;" />
-      <node id="1279884920125055507" at="78,0,81,0" concept="9" trace="invoke#(Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)Ljava/lang/Comparable;" />
-      <node id="1279884920125033307" at="82,43,85,9" concept="8" />
-      <node id="5006739210462987173" at="96,101,99,9" concept="8" />
-      <node id="8571240483843887568" at="52,0,56,0" concept="9" trace="createTree#(Ljava/lang/Iterable;Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)V" />
-      <node id="1279884920125033305" at="82,0,87,0" concept="9" trace="invoke#(Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)V" />
+      <node id="5488313227751433040" at="47,66,48,29" concept="4" />
+      <node id="1932686766228538849" at="48,29,49,54" concept="4" />
+      <node id="7104299011418457168" at="50,7,51,67" concept="4" />
+      <node id="5006739210462531794" at="51,67,52,29" concept="4" />
+      <node id="8571240483843915837" at="55,88,56,21" concept="4" />
+      <node id="6030685443389933762" at="56,21,57,24" concept="4" />
+      <node id="7290639040991553338" at="60,126,61,91" concept="10" />
+      <node id="7290639040991673023" at="64,60,65,17" concept="11" />
+      <node id="7290639040991683181" at="66,9,67,56" concept="4" />
+      <node id="7290639040992083555" at="69,6,70,108" concept="4" />
+      <node id="7290639040992939015" at="70,108,71,18" concept="11" />
+      <node id="6030685443390500161" at="75,84,76,66" concept="11" />
+      <node id="1279884920125063062" at="81,52,82,29" concept="11" />
+      <node id="1279884920125033309" at="86,83,87,255" concept="4" />
+      <node id="1932686766228507842" at="93,143,94,87" concept="10" />
+      <node id="1932686766228507822" at="95,45,96,52" concept="12" />
+      <node id="5006739210463041526" at="97,98,98,73" concept="12" />
+      <node id="5006739210461948740" at="98,73,99,101" concept="4" />
+      <node id="8767073233282888303" at="100,86,101,19" concept="2" />
+      <node id="5006739210461976446" at="103,14,104,62" concept="4" />
+      <node id="5488313227751361617" at="105,7,106,25" concept="4" />
+      <node id="1932686766228607418" at="106,25,107,75" concept="10" />
+      <node id="6030685443389944309" at="107,75,108,71" concept="4" />
+      <node id="1932686766228507870" at="108,71,109,36" concept="4" />
+      <node id="1932686766228624402" at="109,36,110,51" concept="4" />
+      <node id="1279884920123826784" at="103,12,105,7" concept="0" />
+      <node id="7290639040991630169" at="63,46,66,9" concept="8" />
+      <node id="8571240483836783196" at="75,0,78,0" concept="9" trace="getChildContainingTraceRecord#(Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)Ljavax/swing/tree/DefaultMutableTreeNode;" />
+      <node id="1279884920125055507" at="81,0,84,0" concept="9" trace="invoke#(Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)Ljava/lang/Comparable;" />
+      <node id="1279884920125033307" at="85,43,88,9" concept="8" />
+      <node id="5006739210462987173" at="99,101,102,9" concept="8" />
+      <node id="191048840147139956" at="46,52,50,7" concept="4" />
+      <node id="8571240483843887568" at="55,0,59,0" concept="9" trace="createTree#(Ljava/lang/Iterable;Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)V" />
+      <node id="1279884920125033305" at="85,0,90,0" concept="9" trace="invoke#(Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)V" />
       <node id="1932686766227717747" at="35,0,41,0" concept="1" trace="TraceTreeModel#(Ljetbrains/mps/project/MPSProject;Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)V" />
-      <node id="7290639040991612137" at="60,0,66,0" concept="9" trace="accept#(Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)V" />
-      <node id="7290639040991589260" at="58,91,66,6" concept="10" />
-      <node id="1932686766227811276" at="42,0,51,0" concept="9" trace="createTree#(Ljava/lang/Iterable;)V" />
-      <node id="638905055373934074" at="93,52,102,7" concept="8" />
-      <node id="5006739210462145012" at="76,41,87,7" concept="4" />
-      <node id="4750478327845402716" at="57,0,70,0" concept="9" trace="getChildren#(Ljava/lang/Iterable;Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)Ljava/util/List;" />
-      <node id="5006739210462134421" at="76,0,89,0" concept="9" trace="printCollectedMessages#()V" />
-      <node id="1932686766228507868" at="91,87,107,5" concept="7" />
-      <node id="1932686766227830694" at="90,0,109,0" concept="9" trace="fillTreeRecursive#(Ljava/lang/Iterable;Ljavax/swing/tree/DefaultMutableTreeNode;Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)V" />
-      <scope id="7290639040991630171" at="61,60,62,17" />
-      <scope id="8571240483836783199" at="72,84,73,66" />
-      <scope id="1279884920125055508" at="78,52,79,29" />
-      <scope id="1279884920125033308" at="83,83,84,255" />
-      <scope id="5006739210462987175" at="97,86,98,19" />
-      <scope id="1279884920123826785" at="100,14,101,62" />
-      <scope id="8571240483843887569" at="52,88,54,24" />
-      <scope id="8571240483836783196" at="72,0,75,0">
+      <node id="7290639040991612137" at="63,0,69,0" concept="9" trace="accept#(Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)V" />
+      <node id="7290639040991589260" at="61,91,69,6" concept="10" />
+      <node id="638905055373934074" at="96,52,105,7" concept="8" />
+      <node id="5006739210462145012" at="79,41,90,7" concept="4" />
+      <node id="1932686766227811276" at="42,0,54,0" concept="9" trace="createTree#(Ljava/lang/Iterable;)V" />
+      <node id="4750478327845402716" at="60,0,73,0" concept="9" trace="getChildren#(Ljava/lang/Iterable;Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)Ljava/util/List;" />
+      <node id="5006739210462134421" at="79,0,92,0" concept="9" trace="printCollectedMessages#()V" />
+      <node id="1932686766228507868" at="94,87,111,5" concept="7" />
+      <node id="1932686766227830694" at="93,0,113,0" concept="9" trace="fillTreeRecursive#(Ljava/lang/Iterable;Ljavax/swing/tree/DefaultMutableTreeNode;Lcom/mbeddr/mpsutil/traceExplorer/plugin/ITraceRecord;)V" />
+      <scope id="7290639040991630171" at="64,60,65,17" />
+      <scope id="8571240483836783199" at="75,84,76,66" />
+      <scope id="1279884920125055508" at="81,52,82,29" />
+      <scope id="1279884920125033308" at="86,83,87,255" />
+      <scope id="5006739210462987175" at="100,86,101,19" />
+      <scope id="1279884920123826785" at="103,14,104,62" />
+      <scope id="191048840147139958" at="47,66,49,54" />
+      <scope id="8571240483843887569" at="55,88,57,24" />
+      <scope id="8571240483836783196" at="75,0,78,0">
         <var name="record" id="8571240483836793739" />
       </scope>
-      <scope id="1279884920125055507" at="78,0,81,0">
+      <scope id="1279884920125055507" at="81,0,84,0">
         <var name="it" id="1279884920125055507" />
       </scope>
-      <scope id="1279884920125033306" at="82,43,85,9" />
+      <scope id="1279884920125033306" at="85,43,88,9" />
       <scope id="1932686766227717757" at="35,64,39,52" />
-      <scope id="8571240483843887568" at="52,0,56,0">
+      <scope id="8571240483843887568" at="55,0,59,0">
         <var name="filters" id="7290639040987385773" />
         <var name="root" id="8571240483843906310" />
       </scope>
-      <scope id="7290639040991612139" at="60,46,64,56" />
-      <scope id="1279884920125033305" at="82,0,87,0">
+      <scope id="7290639040991612139" at="63,46,67,56" />
+      <scope id="1279884920125033305" at="85,0,90,0">
         <var name="it" id="1279884920125033305" />
       </scope>
-      <scope id="638905055373934076" at="94,98,99,9" />
+      <scope id="638905055373934076" at="97,98,102,9" />
       <scope id="1932686766227717747" at="35,0,41,0">
         <var name="project" id="5897411666368715560" />
         <var name="root" id="1932686766227721258" />
       </scope>
-      <scope id="7290639040991612137" at="60,0,66,0">
+      <scope id="7290639040991612137" at="63,0,69,0">
         <var name="trace" id="7290639040991612137" />
       </scope>
-      <scope id="1932686766227811279" at="42,75,49,29" />
-      <scope id="1932686766227811276" at="42,0,51,0">
-        <var name="filters" id="638905055374466965" />
-      </scope>
-      <scope id="4750478327845402719" at="57,126,68,18">
+      <scope id="1932686766227811279" at="42,75,52,29" />
+      <scope id="4750478327845402719" at="60,126,71,18">
         <var name="addDistinctToList" id="7290639040991589261" />
         <var name="result" id="7290639040991553341" />
       </scope>
-      <scope id="5006739210462134424" at="76,41,87,7" />
-      <scope id="4750478327845402716" at="57,0,70,0">
+      <scope id="5006739210462134424" at="79,41,90,7" />
+      <scope id="1932686766227811276" at="42,0,54,0">
+        <var name="filters" id="638905055374466965" />
+      </scope>
+      <scope id="4750478327845402716" at="60,0,73,0">
         <var name="filters" id="7290639040988517613" />
         <var name="traceRecord" id="5626481667456731881" />
       </scope>
-      <scope id="5006739210462134421" at="76,0,89,0" />
-      <scope id="1932686766228507869" at="92,45,106,51">
+      <scope id="5006739210462134421" at="79,0,92,0" />
+      <scope id="1932686766228507869" at="95,45,110,51">
         <var name="childNode" id="1932686766228607419" />
       </scope>
-      <scope id="1932686766228507868" at="91,87,107,5">
+      <scope id="1932686766228507868" at="94,87,111,5">
         <var name="child" id="1932686766228507876" />
       </scope>
-      <scope id="1932686766227830697" at="90,143,107,5">
+      <scope id="1932686766227830697" at="93,143,111,5">
         <var name="traceRecords" id="1932686766228507843" />
       </scope>
-      <scope id="1932686766227830694" at="90,0,109,0">
+      <scope id="1932686766227830694" at="93,0,113,0">
         <var name="filters" id="7290639040986867470" />
         <var name="parentRecord" id="1932686766227838366" />
         <var name="parentTreeNode" id="1932686766228574194" />
       </scope>
-      <unit id="1279884920125055507" at="77,83,81,5" name="com.mbeddr.mpsutil.traceExplorer.plugin.TraceTreeModel$2" />
-      <unit id="1279884920125033305" at="81,26,87,5" name="com.mbeddr.mpsutil.traceExplorer.plugin.TraceTreeModel$3" />
-      <unit id="7290639040991612137" at="59,57,66,5" name="com.mbeddr.mpsutil.traceExplorer.plugin.TraceTreeModel$1" />
-      <unit id="1932686766227282989" at="21,0,111,0" name="com.mbeddr.mpsutil.traceExplorer.plugin.TraceTreeModel" />
+      <unit id="1279884920125055507" at="80,83,84,5" name="com.mbeddr.mpsutil.traceExplorer.plugin.TraceTreeModel$2" />
+      <unit id="1279884920125033305" at="84,26,90,5" name="com.mbeddr.mpsutil.traceExplorer.plugin.TraceTreeModel$3" />
+      <unit id="7290639040991612137" at="62,57,69,5" name="com.mbeddr.mpsutil.traceExplorer.plugin.TraceTreeModel$1" />
+      <unit id="1932686766227282989" at="21,0,115,0" name="com.mbeddr.mpsutil.traceExplorer.plugin.TraceTreeModel" />
     </file>
   </root>
   <root nodeRef="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.mpsutil.traceExplorer.plugin)/2194366564240536144">
@@ -1632,6 +1636,8 @@
       <node id="4668816838411529898" at="24,0,26,0" concept="9" trace="getTarget#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
       <node id="276986023023293711" at="32,0,34,0" concept="9" trace="getTargetNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4668816838411532151" at="41,0,43,0" concept="9" trace="getChildren#(Z)Ljava/lang/Iterable;" />
+      <node id="5488313227750602899" at="74,0,76,0" concept="9" trace="initialize#()V" />
+      <scope id="5488313227750602909" at="74,29,74,29" />
       <scope id="3038759137011269260" at="49,0,50,0" />
       <scope id="5239443577662636956" at="56,0,57,0" />
       <scope id="654499056495797492" at="63,0,64,0" />
@@ -1642,7 +1648,8 @@
       <scope id="4668816838411532151" at="41,0,43,0">
         <var name="filtered" id="6278856093661842647" />
       </scope>
-      <unit id="4668816838411526350" at="10,0,74,0" name="com.mbeddr.mpsutil.traceExplorer.plugin.ITraceRecord" />
+      <scope id="5488313227750602899" at="74,0,76,0" />
+      <unit id="4668816838411526350" at="10,0,79,0" name="com.mbeddr.mpsutil.traceExplorer.plugin.ITraceRecord" />
     </file>
   </root>
   <root nodeRef="r:9e94dd0f-9221-4302-af65-0a889986fe22(com.mbeddr.mpsutil.traceExplorer.plugin)/4668816838411533724">

@@ -44,7 +44,10 @@ public class TraceTreeModel extends DefaultTreeModel {
     rootNode.removeAllChildren();
     MapSequence.fromMap(traceRecordToTreeNode).clear();
     MapSequence.fromMap(avoidinfiniteTrees).clear();
-    project.getRepository().getModelAccess().runReadAction(() -> fillTreeRecursive(filters, rootNode, rootTrace));
+    project.getRepository().getModelAccess().runReadAction(() -> {
+      rootTrace.initialize();
+      fillTreeRecursive(filters, rootNode, rootTrace);
+    });
     Sequence.fromIterable(filters).visitAll((it) -> it.tearDown());
     printCollectedMessages();
   }
@@ -100,6 +103,7 @@ public class TraceTreeModel extends DefaultTreeModel {
       } else {
         MapSequence.fromMap(avoidinfiniteTrees).put(child, 1);
       }
+      child.initialize();
       DefaultMutableTreeNode childNode = new DefaultMutableTreeNode(child);
       MapSequence.fromMap(traceRecordToTreeNode).put(child, childNode);
       parentTreeNode.add(childNode);

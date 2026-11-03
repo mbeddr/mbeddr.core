@@ -68,6 +68,11 @@ public interface ITraceRecord<RecT extends ITraceRecord<RecT>> {
    * @return the node that created this trace
    */
   String computationSourceURL();
+  /**
+   * Computes everything this record needs read access for. The trace explorer calls it in a read action before it shows the record, because Swing can ask for the record's text outside a read action. Does nothing by default. 
+   */
+  default void initialize() {
+  }
 
 
 }
