@@ -34,6 +34,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="8bn5" ref="r:7fa64b2e-9276-48d0-83e8-bd0a49298c05(jetbrains.mps.ide.httpsupport.nodeaccess.plugin)" />
+    <import index="bipv" ref="r:4f311e3a-83a9-4138-8c56-4228082416a9(jetbrains.mps.ide.httpsupport.manager)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" implicit="true" />
   </imports>
@@ -399,8 +400,8 @@
                 <property role="Xl_RC" value="http://localhost:" />
               </node>
               <node concept="2YIFZM" id="6UfXqIN_JJU" role="3uHU7w">
-                <ref role="37wK5l" to="4h87:3BwRxVwW$fn" resolve="getCurrentPort" />
-                <ref role="1Pybhc" to="4h87:3PMO5H7WIrG" resolve="MPSInternalPortManager" />
+                <ref role="37wK5l" to="bipv:3BwRxVwW$fn" resolve="getCurrentPort" />
+                <ref role="1Pybhc" to="bipv:37EBbA_INx3" resolve="MPSInternalPort" />
               </node>
             </node>
           </node>
