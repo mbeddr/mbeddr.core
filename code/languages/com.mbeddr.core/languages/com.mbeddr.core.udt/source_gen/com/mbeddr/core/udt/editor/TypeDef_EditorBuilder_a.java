@@ -303,13 +303,13 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     SideTransformationHolderCell editorCell = new SideTransformationHolderCell(getEditorContext(), myNode, null, "flag 'exported'") {
       @Override
       public List<MenuPart<TransformationMenuItem, TransformationMenuContext>> createMenuParts() {
-        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a0b0a_1());
+        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a0b0a());
       }
     };
     editorCell.setCellId("SideTransformationSectionCell_txkidc_a0b0a");
     return editorCell;
   }
-  private class GenericMenuPart_a0a0b0a_1 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a0a0b0a implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override
