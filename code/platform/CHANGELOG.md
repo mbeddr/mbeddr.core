@@ -5,6 +5,16 @@ All notable changes to the mbeddr platform will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# November 2026
+
+## Changed
+
+- `com.mbeddr.mpsutil.review`: The `RemoveComments` intention is now also available on the commented node, not only inside a note.
+
+## Fixed
+
+- `com.mbeddr.mpsutil.review`: The `RemoveComments` intention no longer leaves an empty comment container behind.
+
 # March 2026
 
 ## Fixed
