@@ -14,11 +14,16 @@ import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
+import java.util.Objects;
+import java.util.Optional;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public final class RemoveComments_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
@@ -54,15 +59,18 @@ public final class RemoveComments_Intention extends AbstractIntentionDescriptor 
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNode parentOfReview = SNodeOperations.getParent(SNodeOperations.getNodeAncestor(node, CONCEPTS.ReviewNote$Wo, true, false));
-      SNodeOperations.deleteNode(SNodeOperations.getNodeAncestor(node, CONCEPTS.ReviewNote$Wo, true, false));
-
-      if (ListSequence.fromList(SNodeOperations.getNodeDescendants(ListSequence.fromList(SNodeOperations.getNodeAncestors(parentOfReview, null, false)).last(), CONCEPTS.ReviewNote$Wo, false, new SAbstractConcept[]{})).isEmpty()) {
-        for (SNode a : ListSequence.fromList(SNodeOperations.getNodeAncestors(parentOfReview, null, false))) {
-          if ((new IAttributeDescriptor.NodeAttribute(CONCEPTS.CommentAnnotationContainer$3o).get(a) != null)) {
-            SNodeOperations.deleteNode(new IAttributeDescriptor.NodeAttribute(CONCEPTS.CommentAnnotationContainer$3o).get(a));
-          }
-        }
+      // All notes of a root are held by the CommentAnnotationContainer attribute of that root.
+      SNode root = SNodeOperations.getContainingRoot(node);
+      // Remove the notes attached to the node itself. The operations are null-safe, so nothing happens without a container.
+      ListSequence.fromList(SLinkOperations.getChildren(new IAttributeDescriptor.NodeAttribute(CONCEPTS.CommentAnnotationContainer$3o).get(root), LINKS.comments$KPYX)).removeWhere((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.attachedNode$Bgt0), node));
+      // If invoked inside a note, remove that note as well.
+      Optional<SNode> enclosingNote = this._additional_findEnclosingNote(node);
+      if (enclosingNote.isPresent()) {
+        SNodeOperations.deleteNode(enclosingNote.get());
+      }
+      // Clean up: once no note is left on the root, remove the empty comment container.
+      if (ListSequence.fromList(SNodeOperations.getNodeDescendants(root, CONCEPTS.ReviewNote$Wo, false, new SAbstractConcept[]{})).isEmpty()) {
+        ListSequence.fromList(SNodeOperations.getNodeDescendants(root, CONCEPTS.CommentAnnotationContainer$3o, false, new SAbstractConcept[]{})).visitAll((it) -> SNodeOperations.deleteNode(it));
       }
     }
 
@@ -75,10 +83,32 @@ public final class RemoveComments_Intention extends AbstractIntentionDescriptor 
     }
 
     private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-      return (SNodeOperations.getNodeAncestor(node, CONCEPTS.ReviewNote$Wo, true, false) != null);
+      // Available on a commented node, i.e. a note is attached to it,
+      // or the node lies inside a note (the note itself, its text, ...).
+      return this._additional_findNoteAttachedTo(node).isPresent() || this._additional_findEnclosingNote(node).isPresent();
     }
 
 
+    /**
+     * Finds the note that is attached to the given node. The notes of a root are held by the
+     * CommentAnnotationContainer attribute of that root.
+     * 
+     * @param node the node that may carry a comment
+     * @return the first note attached to the node, or an empty Optional if the node carries no comment
+     */
+    private Optional<SNode> _additional_findNoteAttachedTo(final SNode node) {
+      return Optional.ofNullable(ListSequence.fromList(SLinkOperations.getChildren(new IAttributeDescriptor.NodeAttribute(CONCEPTS.CommentAnnotationContainer$3o).get(SNodeOperations.getContainingRoot(node)), LINKS.comments$KPYX)).findFirst((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.attachedNode$Bgt0), node)));
+    }
+    /**
+     * Finds the note the given node belongs to. The node may be the note itself or any node inside it,
+     * e.g. the words of its text.
+     * 
+     * @param node the node to start the search from
+     * @return the closest enclosing note including the node itself, or an empty Optional outside of notes
+     */
+    private Optional<SNode> _additional_findEnclosingNote(SNode node) {
+      return Optional.ofNullable(SNodeOperations.getNodeAncestor(node, CONCEPTS.ReviewNote$Wo, true, false));
+    }
     @Override
     public IntentionDescriptor getDescriptor() {
       return RemoveComments_Intention.this;
@@ -87,7 +117,12 @@ public final class RemoveComments_Intention extends AbstractIntentionDescriptor 
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept ReviewNote$Wo = MetaAdapterFactory.getConcept(0xc788b04620194656L, 0x8b608bb9bbb177b5L, 0x1017edaecf8ecafbL, "com.mbeddr.mpsutil.review.structure.ReviewNote");
     /*package*/ static final SConcept CommentAnnotationContainer$3o = MetaAdapterFactory.getConcept(0x7a060fae09e04372L, 0xbe366696d6554c0eL, 0x7556ef16fac6bfb4L, "com.mbeddr.mpsutil.review.annotation.structure.CommentAnnotationContainer");
+    /*package*/ static final SConcept ReviewNote$Wo = MetaAdapterFactory.getConcept(0xc788b04620194656L, 0x8b608bb9bbb177b5L, 0x1017edaecf8ecafbL, "com.mbeddr.mpsutil.review.structure.ReviewNote");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink comments$KPYX = MetaAdapterFactory.getContainmentLink(0x7a060fae09e04372L, 0xbe366696d6554c0eL, 0x7556ef16fac6bfb4L, 0x7556ef16fac6bfb5L, "comments");
+    /*package*/ static final SReferenceLink attachedNode$Bgt0 = MetaAdapterFactory.getReferenceLink(0x92f195b6a2094804L, 0xad65f5248ecd5873L, 0x1017edaecf766251L, 0x6f909de0265512a1L, "attachedNode");
   }
 }
