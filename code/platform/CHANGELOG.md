@@ -14,6 +14,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ## Fixed
 
 - `com.mbeddr.mpsutil.review`: The `RemoveComments` intention no longer leaves an empty comment container behind.
+- `com.mbeddr.mpsutil.review`: The `RemoveComments` intention also removes the replies to a removed note instead of leaving them with a dangling reference.
 
 # March 2026
 
