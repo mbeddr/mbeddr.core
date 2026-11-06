@@ -338,6 +338,9 @@
       <node concept="L2wRC" id="$Kq8MetFj4" role="39821P">
         <ref role="L2wRA" node="$Kq8MetB_8" resolve="test.com.mbeddr.mpsutil.smodule" />
       </node>
+      <node concept="L2wRC" id="4djtaRZoatM" role="39821P">
+        <ref role="L2wRA" node="4djtaRZoatq" resolve="test.com.mbeddr.mpsutil.review" />
+      </node>
       <node concept="L2wRC" id="75qFqB43eXX" role="39821P">
         <ref role="L2wRA" node="75qFqB43e5u" resolve="tests.com.mbeddr.mpsutil.json" />
       </node>
@@ -2629,6 +2632,77 @@
                 <property role="2Ry0Am" value="tests" />
                 <node concept="2Ry0Ak" id="7sICkyms5Pn" role="2Ry0An">
                   <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.smodule" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="4djtaRZoatq" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.com.mbeddr.mpsutil.review" />
+        <property role="3LESm3" value="6a0ada69-af02-45fa-a841-f883d2374c48" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <node concept="398BVA" id="4djtaRZoatr" role="3LF7KH">
+          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+          <node concept="2Ry0Ak" id="4djtaRZoats" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="4djtaRZoatt" role="2Ry0An">
+              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.review" />
+              <node concept="2Ry0Ak" id="4djtaRZoatu" role="2Ry0An">
+                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.review.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4djtaRZpUCI" role="3bR37C">
+          <node concept="3bR9La" id="4djtaRZpUCJ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4djtaRZpUCK" role="3bR37C">
+          <node concept="3bR9La" id="4djtaRZpUCL" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:1qdZ14g6roG" resolve="com.mbeddr.mpsutil.review" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4djtaRZpUCM" role="3bR37C">
+          <node concept="3bR9La" id="4djtaRZpUCN" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:3cilTAC1n_V" resolve="com.mbeddr.mpsutil.review.annotation" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="4djtaRZpUCZ" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4djtaRZpUD0" role="1HemKq">
+            <node concept="398BVA" id="4djtaRZpUCO" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="4djtaRZpUCP" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="4djtaRZpUCQ" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.review" />
+                  <node concept="2Ry0Ak" id="4djtaRZpUCR" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4djtaRZpUD1" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4OUfrVzF6B2" role="3bR31x">
+          <node concept="3LXTmp" id="4OUfrVzF6B3" role="3rtmxm">
+            <node concept="3qWCbU" id="4OUfrVzF6B4" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="4OUfrVzF6B5" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="4OUfrVzF6B6" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="4OUfrVzF6B7" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.review" />
                 </node>
               </node>
             </node>
