@@ -235,6 +235,11 @@
         <node concept="2bRw2S" id="6QrZKjBSNON" role="3vFALc">
           <ref role="2bRw2V" to="i1wi:4$UH3h$Wny6" resolve="RemoveComments" />
         </node>
+        <node concept="3_1$Yv" id="4djtaRYs3f4" role="3_9lra">
+          <node concept="Xl_RD" id="4djtaRYs3f5" role="3_1BAH">
+            <property role="Xl_RC" value="Remove Margin Comments must not be offered on a root without any comment" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -267,6 +272,11 @@
       <node concept="3vwNmj" id="6QrZKjBSNOX" role="3cqZAp">
         <node concept="2bRw2S" id="6QrZKjBSNOY" role="3vwVQn">
           <ref role="2bRw2V" to="i1wi:4$UH3h$Wny6" resolve="RemoveComments" />
+        </node>
+        <node concept="3_1$Yv" id="4djtaRYs3kE" role="3_9lra">
+          <node concept="Xl_RD" id="4djtaRYs3kF" role="3_1BAH">
+            <property role="Xl_RC" value="Remove Margin Comments must be offered on the class, as a note is attached to it" />
+          </node>
         </node>
       </node>
     </node>
@@ -666,6 +676,11 @@
       <node concept="3vwNmj" id="6QrZKjBUsqi" role="3cqZAp">
         <node concept="2bRw2S" id="6QrZKjBUsqj" role="3vwVQn">
           <ref role="2bRw2V" to="i1wi:4$UH3h$Wny6" resolve="RemoveComments" />
+        </node>
+        <node concept="3_1$Yv" id="4djtaRYs3qi" role="3_9lra">
+          <node concept="Xl_RD" id="4djtaRYs3qj" role="3_1BAH">
+            <property role="Xl_RC" value="Remove Margin Comments must be offered with the caret inside a note" />
+          </node>
         </node>
       </node>
     </node>
