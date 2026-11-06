@@ -12,13 +12,11 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import java.util.Objects;
-import java.util.Optional;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -60,17 +58,14 @@ public final class RemoveComments_Intention extends AbstractIntentionDescriptor 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
       // All notes of a root are held by the CommentAnnotationContainer attribute of that root.
-      SNode root = SNodeOperations.getContainingRoot(node);
+      SNode container = new IAttributeDescriptor.NodeAttribute(CONCEPTS.CommentAnnotationContainer$3o).get(SNodeOperations.getContainingRoot(node));
       // Remove the notes attached to the node itself. The operations are null-safe, so nothing happens without a container.
-      ListSequence.fromList(SLinkOperations.getChildren(new IAttributeDescriptor.NodeAttribute(CONCEPTS.CommentAnnotationContainer$3o).get(root), LINKS.comments$KPYX)).removeWhere((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.attachedNode$Bgt0), node));
+      ListSequence.fromList(SLinkOperations.getChildren(container, LINKS.comments$KPYX)).removeWhere((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.attachedNode$Bgt0), node));
       // If invoked inside a note, remove that note as well.
-      Optional<SNode> enclosingNote = this._additional_findEnclosingNote(node);
-      if (enclosingNote.isPresent()) {
-        SNodeOperations.deleteNode(enclosingNote.get());
-      }
-      // Clean up: once no note is left on the root, remove the empty comment container.
-      if (ListSequence.fromList(SNodeOperations.getNodeDescendants(root, CONCEPTS.ReviewNote$Wo, false, new SAbstractConcept[]{})).isEmpty()) {
-        ListSequence.fromList(SNodeOperations.getNodeDescendants(root, CONCEPTS.CommentAnnotationContainer$3o, false, new SAbstractConcept[]{})).visitAll((it) -> SNodeOperations.deleteNode(it));
+      SNodeOperations.deleteNode(SNodeOperations.getNodeAncestor(node, CONCEPTS.ReviewNote$Wo, true, false));
+      // Clean up: once no note is left, remove the empty comment container.
+      if ((container != null) && ListSequence.fromList(SLinkOperations.getChildren(container, LINKS.comments$KPYX)).isEmpty()) {
+        SNodeOperations.deleteNode(container);
       }
     }
 
@@ -85,30 +80,10 @@ public final class RemoveComments_Intention extends AbstractIntentionDescriptor 
     private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
       // Available on a commented node, i.e. a note is attached to it,
       // or the node lies inside a note (the note itself, its text, ...).
-      return this._additional_findNoteAttachedTo(node).isPresent() || this._additional_findEnclosingNote(node).isPresent();
+      return ListSequence.fromList(SLinkOperations.getChildren(new IAttributeDescriptor.NodeAttribute(CONCEPTS.CommentAnnotationContainer$3o).get(SNodeOperations.getContainingRoot(node)), LINKS.comments$KPYX)).any((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.attachedNode$Bgt0), node)) || (SNodeOperations.getNodeAncestor(node, CONCEPTS.ReviewNote$Wo, true, false) != null);
     }
 
 
-    /**
-     * Finds the note that is attached to the given node. The notes of a root are held by the
-     * CommentAnnotationContainer attribute of that root.
-     * 
-     * @param node the node that may carry a comment
-     * @return the first note attached to the node, or an empty Optional if the node carries no comment
-     */
-    private Optional<SNode> _additional_findNoteAttachedTo(final SNode node) {
-      return Optional.ofNullable(ListSequence.fromList(SLinkOperations.getChildren(new IAttributeDescriptor.NodeAttribute(CONCEPTS.CommentAnnotationContainer$3o).get(SNodeOperations.getContainingRoot(node)), LINKS.comments$KPYX)).findFirst((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.attachedNode$Bgt0), node)));
-    }
-    /**
-     * Finds the note the given node belongs to. The node may be the note itself or any node inside it,
-     * e.g. the words of its text.
-     * 
-     * @param node the node to start the search from
-     * @return the closest enclosing note including the node itself, or an empty Optional outside of notes
-     */
-    private Optional<SNode> _additional_findEnclosingNote(SNode node) {
-      return Optional.ofNullable(SNodeOperations.getNodeAncestor(node, CONCEPTS.ReviewNote$Wo, true, false));
-    }
     @Override
     public IntentionDescriptor getDescriptor() {
       return RemoveComments_Intention.this;
