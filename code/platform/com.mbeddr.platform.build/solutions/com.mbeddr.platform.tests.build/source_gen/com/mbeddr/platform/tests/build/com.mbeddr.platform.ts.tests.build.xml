@@ -1751,6 +1751,7 @@
     </echoxml>
     <jar destfile="${build.layout}/test.com.mbeddr.mpsutil.review.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/test.com.mbeddr.mpsutil.review" />
+      <fileset dir="${mbeddr.mpsutil}/tests/test.com.mbeddr.mpsutil.review" includes="icons/**, resources/**" />
       <fileset dir="${mbeddr.mpsutil}/tests/test.com.mbeddr.mpsutil.review/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/test.com.mbeddr.mpsutil.review.jar" />
     </jar>
