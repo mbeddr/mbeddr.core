@@ -173,6 +173,12 @@
       <concept id="1171983834376" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertFalse" flags="nn" index="3vFxKo">
         <child id="1171983854940" name="condition" index="3vFALc" />
       </concept>
+      <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
+        <child id="1172073511101" name="message" index="3_1BAH" />
+      </concept>
+      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ngI" index="3_9gw8">
+        <child id="1172075534298" name="message" index="3_9lra" />
+      </concept>
     </language>
     <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review">
       <concept id="1159656764133526267" name="com.mbeddr.mpsutil.review.structure.ReviewNote" flags="ng" index="3vAitl">
@@ -827,6 +833,52 @@
       <node concept="TZ5HA" id="3YH6BTvYmPl" role="TZ5H$">
         <node concept="1dT_AC" id="3YH6BTvYmPm" role="1dT_Ay">
           <property role="1dT_AB" value="Used from the code section of an EditorTestCase, where the test body does not run inside a write action." />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="4djtaRYu1Zt">
+    <property role="TrG5h" value="RemoveComments_notApplicableOnUncommentedNode" />
+    <property role="3YCmrE" value="The intention is not offered on a node without a note of its own, even if another node of the same root has one: the caret is on the class, the only note is attached to the field." />
+    <node concept="1qefOq" id="4djtaRYu1Zu" role="25YQCW">
+      <node concept="312cEu" id="4djtaRYu1Zv" role="1qenE9">
+        <property role="TrG5h" value="Foo" />
+        <node concept="312cEg" id="4djtaRYu1Zw" role="jymVt">
+          <property role="TrG5h" value="bar" />
+          <node concept="10Oyi0" id="4djtaRYu1Zx" role="1tU5fm" />
+          <node concept="3Tm6S6" id="4djtaRYu1Zy" role="1B3o_S" />
+          <node concept="3cmrfG" id="4djtaRYu1Zz" role="33vP2m">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+        <node concept="LIFWc" id="4djtaRYu1Z$" role="lGtFl">
+          <property role="LIFWd" value="property_name" />
+          <property role="LIFWa" value="0" />
+        </node>
+        <node concept="2f$52y" id="4djtaRYu1Z_" role="lGtFl">
+          <node concept="3vAitl" id="4djtaRYu1ZD" role="2f$52z">
+            <property role="3ajGZW" value="tester" />
+            <property role="3ajGZ3" value="2024-01-01" />
+            <property role="19LeSh" value="property_name" />
+            <ref role="19LoX1" node="4djtaRYu1Zw" resolve="bar" />
+            <node concept="19SGf9" id="4djtaRYu1ZE" role="3ajGZ5">
+              <node concept="19SUe$" id="4djtaRYu1ZF" role="19SJt6">
+                <property role="19SUeA" value="on field" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="4djtaRYu1ZQ" role="LjaKd">
+      <node concept="3vFxKo" id="4djtaRYu1ZS" role="3cqZAp">
+        <node concept="2bRw2S" id="4djtaRYu1ZT" role="3vFALc">
+          <ref role="2bRw2V" to="i1wi:4$UH3h$Wny6" resolve="RemoveComments" />
+        </node>
+        <node concept="3_1$Yv" id="4djtaRYu1ZU" role="3_9lra">
+          <node concept="Xl_RD" id="4djtaRYu1ZV" role="3_1BAH">
+            <property role="Xl_RC" value="Remove Margin Comments must not be offered on the class, as its only note is attached to the field" />
+          </node>
         </node>
       </node>
     </node>
