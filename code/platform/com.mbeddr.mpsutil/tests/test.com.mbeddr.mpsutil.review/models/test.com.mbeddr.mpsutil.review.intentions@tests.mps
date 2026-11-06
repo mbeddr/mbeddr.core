@@ -173,8 +173,17 @@
       <concept id="1171983834376" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertFalse" flags="nn" index="3vFxKo">
         <child id="1171983854940" name="condition" index="3vFALc" />
       </concept>
+      <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
+        <child id="1172073511101" name="message" index="3_1BAH" />
+      </concept>
+      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ngI" index="3_9gw8">
+        <child id="1172075534298" name="message" index="3_9lra" />
+      </concept>
     </language>
     <language id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review">
+      <concept id="1159656764133538905" name="com.mbeddr.mpsutil.review.structure.ReviewReplyNote" flags="ng" index="3vAh7R">
+        <reference id="1159656764133538906" name="repliedNote" index="3vAh7O" />
+      </concept>
       <concept id="1159656764133526267" name="com.mbeddr.mpsutil.review.structure.ReviewNote" flags="ng" index="3vAitl">
         <property id="5652920968054438504" name="created" index="3ajGZ3" />
         <property id="5652920968054438487" name="creator" index="3ajGZW" />
@@ -229,6 +238,11 @@
         <node concept="2bRw2S" id="6QrZKjBSNON" role="3vFALc">
           <ref role="2bRw2V" to="i1wi:4$UH3h$Wny6" resolve="RemoveComments" />
         </node>
+        <node concept="3_1$Yv" id="4djtaRYs3f4" role="3_9lra">
+          <node concept="Xl_RD" id="4djtaRYs3f5" role="3_1BAH">
+            <property role="Xl_RC" value="Remove Margin Comments must not be offered on a root without any comment" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -261,6 +275,11 @@
       <node concept="3vwNmj" id="6QrZKjBSNOX" role="3cqZAp">
         <node concept="2bRw2S" id="6QrZKjBSNOY" role="3vwVQn">
           <ref role="2bRw2V" to="i1wi:4$UH3h$Wny6" resolve="RemoveComments" />
+        </node>
+        <node concept="3_1$Yv" id="4djtaRYs3kE" role="3_9lra">
+          <node concept="Xl_RD" id="4djtaRYs3kF" role="3_1BAH">
+            <property role="Xl_RC" value="Remove Margin Comments must be offered on the class, as a note is attached to it" />
+          </node>
         </node>
       </node>
     </node>
@@ -661,6 +680,11 @@
         <node concept="2bRw2S" id="6QrZKjBUsqj" role="3vwVQn">
           <ref role="2bRw2V" to="i1wi:4$UH3h$Wny6" resolve="RemoveComments" />
         </node>
+        <node concept="3_1$Yv" id="4djtaRYs3qi" role="3_9lra">
+          <node concept="Xl_RD" id="4djtaRYs3qj" role="3_1BAH">
+            <property role="Xl_RC" value="Remove Margin Comments must be offered with the caret inside a note" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -828,6 +852,152 @@
         <node concept="1dT_AC" id="3YH6BTvYmPm" role="1dT_Ay">
           <property role="1dT_AB" value="Used from the code section of an EditorTestCase, where the test body does not run inside a write action." />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="4djtaRYu1Zt">
+    <property role="TrG5h" value="RemoveComments_notApplicableOnUncommentedNode" />
+    <property role="3YCmrE" value="The intention is not offered on a node without a note of its own, even if another node of the same root has one: the caret is on the class, the only note is attached to the field." />
+    <node concept="1qefOq" id="4djtaRYu1Zu" role="25YQCW">
+      <node concept="312cEu" id="4djtaRYu1Zv" role="1qenE9">
+        <property role="TrG5h" value="Foo" />
+        <node concept="312cEg" id="4djtaRYu1Zw" role="jymVt">
+          <property role="TrG5h" value="bar" />
+          <node concept="10Oyi0" id="4djtaRYu1Zx" role="1tU5fm" />
+          <node concept="3Tm6S6" id="4djtaRYu1Zy" role="1B3o_S" />
+          <node concept="3cmrfG" id="4djtaRYu1Zz" role="33vP2m">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+        <node concept="LIFWc" id="4djtaRYu1Z$" role="lGtFl">
+          <property role="LIFWd" value="property_name" />
+          <property role="LIFWa" value="0" />
+        </node>
+        <node concept="2f$52y" id="4djtaRYu1Z_" role="lGtFl">
+          <node concept="3vAitl" id="4djtaRYu1ZD" role="2f$52z">
+            <property role="3ajGZW" value="tester" />
+            <property role="3ajGZ3" value="2024-01-01" />
+            <property role="19LeSh" value="property_name" />
+            <ref role="19LoX1" node="4djtaRYu1Zw" resolve="bar" />
+            <node concept="19SGf9" id="4djtaRYu1ZE" role="3ajGZ5">
+              <node concept="19SUe$" id="4djtaRYu1ZF" role="19SJt6">
+                <property role="19SUeA" value="on field" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="4djtaRYu1ZQ" role="LjaKd">
+      <node concept="3vFxKo" id="4djtaRYu1ZS" role="3cqZAp">
+        <node concept="2bRw2S" id="4djtaRYu1ZT" role="3vFALc">
+          <ref role="2bRw2V" to="i1wi:4$UH3h$Wny6" resolve="RemoveComments" />
+        </node>
+        <node concept="3_1$Yv" id="4djtaRYu1ZU" role="3_9lra">
+          <node concept="Xl_RD" id="4djtaRYu1ZV" role="3_1BAH">
+            <property role="Xl_RC" value="Remove Margin Comments must not be offered on the class, as its only note is attached to the field" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="4djtaRYu1ZW">
+    <property role="TrG5h" value="RemoveComments_onNote_removesRepliesToo" />
+    <property role="3YCmrE" value="With the caret inside a note, the replies to that note go with it, also a reply to a reply; the note attached to the field and the container stay." />
+    <node concept="1qefOq" id="4djtaRYu1ZX" role="25YQCW">
+      <node concept="312cEu" id="4djtaRYu1ZY" role="1qenE9">
+        <property role="TrG5h" value="Foo" />
+        <node concept="312cEg" id="4djtaRYu1ZZ" role="jymVt">
+          <property role="TrG5h" value="bar" />
+          <node concept="10Oyi0" id="4djtaRYu200" role="1tU5fm" />
+          <node concept="3Tm6S6" id="4djtaRYu201" role="1B3o_S" />
+          <node concept="3cmrfG" id="4djtaRYu202" role="33vP2m">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+        <node concept="2f$52y" id="4djtaRYu203" role="lGtFl">
+          <node concept="3vAitl" id="4djtaRYu204" role="2f$52z">
+            <property role="3ajGZW" value="tester" />
+            <property role="3ajGZ3" value="2024-01-01" />
+            <property role="19LeSh" value="property_name" />
+            <ref role="19LoX1" node="4djtaRYu1ZY" resolve="Foo" />
+            <node concept="19SGf9" id="4djtaRYu205" role="3ajGZ5">
+              <node concept="19SUe$" id="4djtaRYu206" role="19SJt6">
+                <property role="19SUeA" value="on class" />
+                <node concept="LIFWc" id="4djtaRYu207" role="lGtFl">
+                  <property role="LIFWd" value="property_escapedValue_word0" />
+                  <property role="LIFWa" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vAitl" id="4djtaRYu208" role="2f$52z">
+            <property role="3ajGZW" value="tester" />
+            <property role="3ajGZ3" value="2024-01-01" />
+            <property role="19LeSh" value="property_name" />
+            <ref role="19LoX1" node="4djtaRYu1ZZ" resolve="bar" />
+            <node concept="19SGf9" id="4djtaRYu209" role="3ajGZ5">
+              <node concept="19SUe$" id="4djtaRYu20a" role="19SJt6">
+                <property role="19SUeA" value="on field" />
+              </node>
+            </node>
+          </node>
+          <node concept="3vAh7R" id="4djtaRYu20n" role="2f$52z">
+            <property role="3ajGZW" value="tester" />
+            <property role="3ajGZ3" value="2024-01-01" />
+            <property role="19LeSh" value="property_name" />
+            <ref role="3vAh7O" node="4djtaRYu204" />
+            <ref role="19LoX1" node="4djtaRYu1ZY" resolve="Foo" />
+            <node concept="19SGf9" id="4djtaRYu20q" role="3ajGZ5">
+              <node concept="19SUe$" id="4djtaRYu20s" role="19SJt6">
+                <property role="19SUeA" value="reply to on class" />
+              </node>
+            </node>
+          </node>
+          <node concept="3vAh7R" id="4djtaRYu20t" role="2f$52z">
+            <property role="3ajGZW" value="tester" />
+            <property role="3ajGZ3" value="2024-01-01" />
+            <property role="19LeSh" value="property_name" />
+            <ref role="3vAh7O" node="4djtaRYu20n" />
+            <ref role="19LoX1" node="4djtaRYu1ZY" resolve="Foo" />
+            <node concept="19SGf9" id="4djtaRYu20w" role="3ajGZ5">
+              <node concept="19SUe$" id="4djtaRYu20y" role="19SJt6">
+                <property role="19SUeA" value="reply to the reply" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="4djtaRYu20b" role="25YQFr">
+      <node concept="312cEu" id="4djtaRYu20c" role="1qenE9">
+        <property role="TrG5h" value="Foo" />
+        <node concept="312cEg" id="4djtaRYu20d" role="jymVt">
+          <property role="TrG5h" value="bar" />
+          <node concept="10Oyi0" id="4djtaRYu20e" role="1tU5fm" />
+          <node concept="3Tm6S6" id="4djtaRYu20f" role="1B3o_S" />
+          <node concept="3cmrfG" id="4djtaRYu20g" role="33vP2m">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+        <node concept="2f$52y" id="4djtaRYu20h" role="lGtFl">
+          <node concept="3vAitl" id="4djtaRYu20i" role="2f$52z">
+            <property role="3ajGZW" value="tester" />
+            <property role="3ajGZ3" value="2024-01-01" />
+            <property role="19LeSh" value="property_name" />
+            <ref role="19LoX1" node="4djtaRYu20d" resolve="bar" />
+            <node concept="19SGf9" id="4djtaRYu20j" role="3ajGZ5">
+              <node concept="19SUe$" id="4djtaRYu20k" role="19SJt6">
+                <property role="19SUeA" value="on field" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="4djtaRYu20l" role="LjaKd">
+      <node concept="1MFPAf" id="4djtaRYu20m" role="3cqZAp">
+        <ref role="1MFYO6" to="i1wi:4$UH3h$Wny6" resolve="RemoveComments" />
       </node>
     </node>
   </node>
