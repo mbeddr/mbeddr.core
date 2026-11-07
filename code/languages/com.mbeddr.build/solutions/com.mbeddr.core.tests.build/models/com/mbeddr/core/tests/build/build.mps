@@ -1084,6 +1084,9 @@
         <node concept="24YFd4" id="5WQPuQ7MSpy" role="24YFd7">
           <ref role="24YFd5" to="ffeo:5ziJCXbfbGU" resolve="intellij.structureView.plugin" />
         </node>
+        <node concept="24YFd4" id="4oJwFWCSPsH" role="24YFd7">
+          <ref role="24YFd5" to="ffeo:5whBXIGTrNc" resolve="com.intellij.xml" />
+        </node>
       </node>
       <node concept="22LTRF" id="5Z2CJwRoMT1" role="22LTRK">
         <ref role="22LTRG" node="7eF9rfAuutn" resolve="com.mbeddr.core.tests" />
