@@ -20,8 +20,8 @@
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
-    <import index="qajb" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.jsoup(MPS.IDEA.Modules/)" />
-    <import index="b3ru" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.jsoup.nodes(MPS.IDEA.Modules/)" />
+    <import index="qajb" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:org.jsoup(MPS.IDEA/)" />
+    <import index="b3ru" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:org.jsoup.nodes(MPS.IDEA/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="w827" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs.openapi(MPS.Core/)" implicit="true" />
   </imports>
