@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class NameSuffix_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new NameSuffix_EditorBuilder_a(editorContext, node).createCell();
+    return new NameSuffix_EditorBuilder(editorContext, node).createCell();
   }
 }

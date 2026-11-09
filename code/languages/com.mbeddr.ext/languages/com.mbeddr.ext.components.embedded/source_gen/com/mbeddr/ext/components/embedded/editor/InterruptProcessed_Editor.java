@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class InterruptProcessed_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new InterruptProcessed_EditorBuilder_a(editorContext, node).createCell();
+    return new InterruptProcessed_EditorBuilder(editorContext, node).createCell();
   }
 }

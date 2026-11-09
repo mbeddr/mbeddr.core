@@ -25,17 +25,17 @@
   </root>
   <root nodeRef="r:58dfa65f-7904-4ab1-8c08-4ec8da65db0a(com.mbeddr.mpsutil.rcp.editor)/8503127430094872141">
     <file name="Persistence_Editor.java">
-      <node id="8503127430094872141" at="11,79,12,77" concept="6" />
+      <node id="8503127430094872141" at="11,79,12,75" concept="6" />
       <node id="8503127430094872141" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8503127430094872141" at="11,79,12,77" />
+      <scope id="8503127430094872141" at="11,79,12,75" />
       <scope id="8503127430094872141" at="11,0,14,0">
         <var name="editorContext" id="8503127430094872141" />
         <var name="node" id="8503127430094872141" />
       </scope>
       <unit id="8503127430094872141" at="10,0,15,0" name="com.mbeddr.mpsutil.rcp.editor.Persistence_Editor" />
     </file>
-    <file name="Persistence_EditorBuilder_a.java">
-      <node id="8503127430094872141" at="20,91,21,19" concept="9" />
+    <file name="Persistence_EditorBuilder.java">
+      <node id="8503127430094872141" at="20,89,21,19" concept="9" />
       <node id="8503127430094872141" at="21,19,22,18" concept="1" />
       <node id="8503127430094872141" at="27,26,28,18" concept="6" />
       <node id="8503127430094872141" at="31,39,32,31" concept="6" />
@@ -49,13 +49,13 @@
       <node id="8503127430094873714" at="44,40,45,22" concept="6" />
       <node id="8503127430094872141" at="17,0,19,0" concept="2" trace="myNode" />
       <node id="8503127430094872141" at="31,0,34,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8503127430094872141" at="20,0,24,0" concept="0" trace="Persistence_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8503127430094872141" at="20,0,24,0" concept="0" trace="Persistence_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8503127430094873714" at="37,72,41,5" concept="3" />
       <node id="8503127430094872141" at="25,0,30,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8503127430094873714" at="35,0,47,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="8503127430094872141" at="27,26,28,18" />
       <scope id="8503127430094872141" at="31,39,32,31" />
-      <scope id="8503127430094872141" at="20,91,22,18" />
+      <scope id="8503127430094872141" at="20,89,22,18" />
       <scope id="8503127430094873714" at="38,26,40,30" />
       <scope id="8503127430094872141" at="31,0,34,0" />
       <scope id="8503127430094872141" at="20,0,24,0">
@@ -69,22 +69,22 @@
         <var name="style" id="8503127430094873714" />
       </scope>
       <scope id="8503127430094873714" at="35,0,47,0" />
-      <unit id="8503127430094872141" at="16,0,48,0" name="com.mbeddr.mpsutil.rcp.editor.Persistence_EditorBuilder_a" />
+      <unit id="8503127430094872141" at="16,0,48,0" name="com.mbeddr.mpsutil.rcp.editor.Persistence_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:58dfa65f-7904-4ab1-8c08-4ec8da65db0a(com.mbeddr.mpsutil.rcp.editor)/8503127430094944608">
     <file name="DefKitRef_Editor.java">
-      <node id="8503127430094944608" at="11,79,12,75" concept="6" />
+      <node id="8503127430094944608" at="11,79,12,73" concept="6" />
       <node id="8503127430094944608" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8503127430094944608" at="11,79,12,75" />
+      <scope id="8503127430094944608" at="11,79,12,73" />
       <scope id="8503127430094944608" at="11,0,14,0">
         <var name="editorContext" id="8503127430094944608" />
         <var name="node" id="8503127430094944608" />
       </scope>
       <unit id="8503127430094944608" at="10,0,15,0" name="com.mbeddr.mpsutil.rcp.editor.DefKitRef_Editor" />
     </file>
-    <file name="DefKitRef_EditorBuilder_a.java">
-      <node id="8503127430094944608" at="42,89,43,19" concept="9" />
+    <file name="DefKitRef_EditorBuilder.java">
+      <node id="8503127430094944608" at="42,87,43,19" concept="9" />
       <node id="8503127430094944608" at="43,19,44,18" concept="1" />
       <node id="8503127430094944608" at="49,26,50,18" concept="6" />
       <node id="8503127430094944608" at="53,39,54,32" concept="6" />
@@ -140,7 +140,7 @@
       <node id="8503127430094944608" at="53,0,56,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8503127430094944619" at="114,0,117,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8503127430094944629" at="126,0,129,0" concept="4" trace="getText#()Ljava/lang/String;" />
-      <node id="8503127430094944608" at="42,0,46,0" concept="0" trace="DefKitRef_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8503127430094944608" at="42,0,46,0" concept="0" trace="DefKitRef_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8503127430094944608" at="86,0,90,5" concept="3" />
       <node id="8503127430094944608" at="47,0,52,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8503127430094944608" at="96,205,101,22" concept="3" />
@@ -158,7 +158,7 @@
       <scope id="8503127430094944619" at="114,41,115,45" />
       <scope id="8503127430094944619" at="120,28,121,20" />
       <scope id="8503127430094944635" at="126,33,127,95" />
-      <scope id="8503127430094944608" at="42,89,44,18" />
+      <scope id="8503127430094944608" at="42,87,44,18" />
       <scope id="8503127430094944608" at="87,40,89,45" />
       <scope id="8503127430094944608" at="97,73,99,145">
         <var name="manager" id="8503127430094944608" />
@@ -208,27 +208,27 @@
         <var name="style" id="8503127430094944608" />
       </scope>
       <scope id="8503127430094944608" at="65,0,103,0" />
-      <unit id="8503127430094944608" at="140,0,143,0" name="com.mbeddr.mpsutil.rcp.editor.DefKitRef_EditorBuilder_a$LINKS" />
-      <unit id="8503127430094944608" at="144,0,147,0" name="com.mbeddr.mpsutil.rcp.editor.DefKitRef_EditorBuilder_a$CONCEPTS" />
-      <unit id="8503127430094944629" at="125,90,129,7" name="com.mbeddr.mpsutil.rcp.editor.DefKitRef_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="8503127430094944608" at="67,42,82,5" name="com.mbeddr.mpsutil.rcp.editor.DefKitRef_EditorBuilder_a$1" />
-      <unit id="8503127430094944619" at="103,0,139,0" name="com.mbeddr.mpsutil.rcp.editor.DefKitRef_EditorBuilder_a$Inline_Builder0" />
-      <unit id="8503127430094944608" at="38,0,148,0" name="com.mbeddr.mpsutil.rcp.editor.DefKitRef_EditorBuilder_a" />
+      <unit id="8503127430094944608" at="140,0,143,0" name="com.mbeddr.mpsutil.rcp.editor.DefKitRef_EditorBuilder$LINKS" />
+      <unit id="8503127430094944608" at="144,0,147,0" name="com.mbeddr.mpsutil.rcp.editor.DefKitRef_EditorBuilder$CONCEPTS" />
+      <unit id="8503127430094944629" at="125,90,129,7" name="com.mbeddr.mpsutil.rcp.editor.DefKitRef_EditorBuilder$Inline_Builder0$1" />
+      <unit id="8503127430094944608" at="67,42,82,5" name="com.mbeddr.mpsutil.rcp.editor.DefKitRef_EditorBuilder$1" />
+      <unit id="8503127430094944619" at="103,0,139,0" name="com.mbeddr.mpsutil.rcp.editor.DefKitRef_EditorBuilder$Inline_Builder0" />
+      <unit id="8503127430094944608" at="38,0,148,0" name="com.mbeddr.mpsutil.rcp.editor.DefKitRef_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:58dfa65f-7904-4ab1-8c08-4ec8da65db0a(com.mbeddr.mpsutil.rcp.editor)/8503127430095097239">
     <file name="NewModelDialogConfig_Editor.java">
-      <node id="8503127430095097239" at="11,79,12,86" concept="6" />
+      <node id="8503127430095097239" at="11,79,12,84" concept="6" />
       <node id="8503127430095097239" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8503127430095097239" at="11,79,12,86" />
+      <scope id="8503127430095097239" at="11,79,12,84" />
       <scope id="8503127430095097239" at="11,0,14,0">
         <var name="editorContext" id="8503127430095097239" />
         <var name="node" id="8503127430095097239" />
       </scope>
       <unit id="8503127430095097239" at="10,0,15,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_Editor" />
     </file>
-    <file name="NewModelDialogConfig_EditorBuilder_a.java">
-      <node id="8503127430095097239" at="44,100,45,19" concept="9" />
+    <file name="NewModelDialogConfig_EditorBuilder.java">
+      <node id="8503127430095097239" at="44,98,45,19" concept="9" />
       <node id="8503127430095097239" at="45,19,46,18" concept="1" />
       <node id="8503127430095097239" at="51,26,52,18" concept="6" />
       <node id="8503127430095097239" at="55,39,56,32" concept="6" />
@@ -466,7 +466,7 @@
       <node id="8503127430095097239" at="368,87,371,7" concept="3" />
       <node id="8503127430095097239" at="371,7,374,7" concept="3" />
       <node id="8503127430095097239" at="390,0,393,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="8503127430095097239" at="44,0,48,0" concept="0" trace="NewModelDialogConfig_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8503127430095097239" at="44,0,48,0" concept="0" trace="NewModelDialogConfig_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8503127430095097239" at="197,0,201,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8503127430095097239" at="205,0,209,0" concept="0" trace="defaultPersistenceSingleRoleHandler_g5s4sc_b3a#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="8503127430095097239" at="268,0,272,0" concept="4" trace="createRefNode_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -537,7 +537,7 @@
       <scope id="8503127430095097239" at="386,17,387,42" />
       <scope id="8503127430095097239" at="390,40,391,36" />
       <scope id="4350248109465913364" at="427,15,428,40" />
-      <scope id="8503127430095097239" at="44,100,46,18" />
+      <scope id="8503127430095097239" at="44,98,46,18" />
       <scope id="8503127430095097282" at="98,74,100,145">
         <var name="manager" id="8503127430095097282" />
       </scope>
@@ -741,28 +741,28 @@
       <scope id="4350248109465913585" at="123,0,144,0" />
       <scope id="8503127430095097328" at="160,0,181,0" />
       <scope id="4350248109465913364" at="410,0,431,0" />
-      <unit id="8503127430095097239" at="439,0,442,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder_a$CONCEPTS" />
-      <unit id="8503127430095097239" at="443,0,448,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder_a$LINKS" />
-      <unit id="8503127430095097239" at="432,0,438,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder_a$PROPS" />
-      <unit id="8503127430095097239" at="201,0,252,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder_a$defaultPersistenceSingleRoleHandler_g5s4sc_b3a" />
-      <unit id="8503127430095097239" at="272,0,323,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder_a$mandantoryDevKitsSingleRoleHandler_g5s4sc_b4a" />
-      <unit id="8503127430095097239" at="343,0,394,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder_a$optionalDevKitsSingleRoleHandler_g5s4sc_b5a" />
-      <unit id="8503127430095097239" at="40,0,449,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder_a" />
+      <unit id="8503127430095097239" at="439,0,442,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder$CONCEPTS" />
+      <unit id="8503127430095097239" at="443,0,448,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder$LINKS" />
+      <unit id="8503127430095097239" at="432,0,438,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder$PROPS" />
+      <unit id="8503127430095097239" at="201,0,252,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder$defaultPersistenceSingleRoleHandler_g5s4sc_b3a" />
+      <unit id="8503127430095097239" at="272,0,323,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder$mandantoryDevKitsSingleRoleHandler_g5s4sc_b4a" />
+      <unit id="8503127430095097239" at="343,0,394,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder$optionalDevKitsSingleRoleHandler_g5s4sc_b5a" />
+      <unit id="8503127430095097239" at="40,0,449,0" name="com.mbeddr.mpsutil.rcp.editor.NewModelDialogConfig_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:58dfa65f-7904-4ab1-8c08-4ec8da65db0a(com.mbeddr.mpsutil.rcp.editor)/8503127430095169840">
     <file name="DevKitList_Editor.java">
-      <node id="8503127430095169840" at="11,79,12,76" concept="6" />
+      <node id="8503127430095169840" at="11,79,12,74" concept="6" />
       <node id="8503127430095169840" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8503127430095169840" at="11,79,12,76" />
+      <scope id="8503127430095169840" at="11,79,12,74" />
       <scope id="8503127430095169840" at="11,0,14,0">
         <var name="editorContext" id="8503127430095169840" />
         <var name="node" id="8503127430095169840" />
       </scope>
       <unit id="8503127430095169840" at="10,0,15,0" name="com.mbeddr.mpsutil.rcp.editor.DevKitList_Editor" />
     </file>
-    <file name="DevKitList_EditorBuilder_a.java">
-      <node id="8503127430095169840" at="34,90,35,19" concept="9" />
+    <file name="DevKitList_EditorBuilder.java">
+      <node id="8503127430095169840" at="34,88,35,19" concept="9" />
       <node id="8503127430095169840" at="35,19,36,18" concept="1" />
       <node id="8503127430095169840" at="41,26,42,18" concept="6" />
       <node id="8503127430095169840" at="45,39,46,32" concept="6" />
@@ -836,7 +836,7 @@
       <node id="8503127430095169840" at="91,0,94,0" concept="4" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8503127430095169840" at="95,0,98,0" concept="4" trace="getSeparatorText#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="8503127430095169840" at="138,96,141,9" concept="3" />
-      <node id="8503127430095169840" at="34,0,38,0" concept="0" trace="DevKitList_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8503127430095169840" at="34,0,38,0" concept="0" trace="DevKitList_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8503127430095169840" at="79,0,83,0" concept="0" trace="devkitsListHandler_i4pth2_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="8503127430095169840" at="84,0,88,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8503127430095169840" at="120,97,124,9" concept="3" />
@@ -864,7 +864,7 @@
       <scope id="8503127430095169871" at="95,69,96,17" />
       <scope id="8503127430095169840" at="112,17,113,42" />
       <scope id="8503127430095169840" at="139,34,140,91" />
-      <scope id="8503127430095169840" at="34,90,36,18" />
+      <scope id="8503127430095169840" at="34,88,36,18" />
       <scope id="8503127430095169840" at="79,81,81,25" />
       <scope id="8503127430095169840" at="121,122,123,146" />
       <scope id="8503127430095169840" at="127,34,129,142" />
@@ -934,10 +934,10 @@
         <var name="elementNode" id="8503127430095169840" />
         <var name="isEmptyCell" id="8503127430095169840" />
       </scope>
-      <unit id="8503127430095169840" at="167,0,170,0" name="com.mbeddr.mpsutil.rcp.editor.DevKitList_EditorBuilder_a$LINKS" />
-      <unit id="8503127430095169840" at="171,0,174,0" name="com.mbeddr.mpsutil.rcp.editor.DevKitList_EditorBuilder_a$CONCEPTS" />
-      <unit id="8503127430095169840" at="75,0,157,0" name="com.mbeddr.mpsutil.rcp.editor.DevKitList_EditorBuilder_a$devkitsListHandler_i4pth2_b0" />
-      <unit id="8503127430095169840" at="30,0,175,0" name="com.mbeddr.mpsutil.rcp.editor.DevKitList_EditorBuilder_a" />
+      <unit id="8503127430095169840" at="167,0,170,0" name="com.mbeddr.mpsutil.rcp.editor.DevKitList_EditorBuilder$LINKS" />
+      <unit id="8503127430095169840" at="171,0,174,0" name="com.mbeddr.mpsutil.rcp.editor.DevKitList_EditorBuilder$CONCEPTS" />
+      <unit id="8503127430095169840" at="75,0,157,0" name="com.mbeddr.mpsutil.rcp.editor.DevKitList_EditorBuilder$devkitsListHandler_i4pth2_b0" />
+      <unit id="8503127430095169840" at="30,0,175,0" name="com.mbeddr.mpsutil.rcp.editor.DevKitList_EditorBuilder" />
     </file>
   </root>
 </debug-info>

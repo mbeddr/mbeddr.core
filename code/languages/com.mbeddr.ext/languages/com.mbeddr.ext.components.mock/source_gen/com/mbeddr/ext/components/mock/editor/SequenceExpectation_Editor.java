@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class SequenceExpectation_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SequenceExpectation_EditorBuilder_a(editorContext, node).createCell();
+    return new SequenceExpectation_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GlossaryPointer_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GlossaryPointer_EditorBuilder_a(editorContext, node).createCell();
+    return new GlossaryPointer_EditorBuilder(editorContext, node).createCell();
   }
 }

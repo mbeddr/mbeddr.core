@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class FloatingTableParagraph_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new FloatingTableParagraph_EditorBuilder_a(editorContext, node).createCell();
+    return new FloatingTableParagraph_EditorBuilder(editorContext, node).createCell();
   }
 }

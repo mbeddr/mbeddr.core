@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class StaticMemoryLocation_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new StaticMemoryLocation_EditorBuilder_a(editorContext, node).createCell();
+    return new StaticMemoryLocation_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new StaticMemoryLocation_InspectorBuilder_a(editorContext, node).createCell();
+    return new StaticMemoryLocation_InspectorBuilder(editorContext, node).createCell();
   }
 }

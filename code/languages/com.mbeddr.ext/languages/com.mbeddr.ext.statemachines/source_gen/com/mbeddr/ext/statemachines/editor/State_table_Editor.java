@@ -18,9 +18,9 @@ public class State_table_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new State_table_EditorBuilder_a(editorContext, node).createCell();
+    return new State_table_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new State_table_InspectorBuilder_a(editorContext, node).createCell();
+    return new State_table_InspectorBuilder(editorContext, node).createCell();
   }
 }

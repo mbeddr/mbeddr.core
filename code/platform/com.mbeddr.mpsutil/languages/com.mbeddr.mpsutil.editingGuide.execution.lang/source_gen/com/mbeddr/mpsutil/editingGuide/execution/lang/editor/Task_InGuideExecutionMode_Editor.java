@@ -18,6 +18,6 @@ public class Task_InGuideExecutionMode_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Task_InGuideExecutionMode_EditorBuilder_a(editorContext, node).createCell();
+    return new Task_InGuideExecutionMode_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -16,6 +16,6 @@ public class ExternalPath_pathPicker implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ExternalPath_pathPicker_ComponentBuilder_a(editorContext, node).createCell();
+    return new ExternalPath_pathPicker_ComponentBuilder(editorContext, node).createCell();
   }
 }

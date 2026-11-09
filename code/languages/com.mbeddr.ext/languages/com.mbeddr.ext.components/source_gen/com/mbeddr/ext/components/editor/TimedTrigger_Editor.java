@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class TimedTrigger_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TimedTrigger_EditorBuilder_a(editorContext, node).createCell();
+    return new TimedTrigger_EditorBuilder(editorContext, node).createCell();
   }
 }

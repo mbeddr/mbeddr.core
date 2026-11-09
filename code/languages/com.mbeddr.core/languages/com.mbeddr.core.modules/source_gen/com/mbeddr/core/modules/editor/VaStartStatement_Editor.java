@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class VaStartStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new VaStartStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new VaStartStatement_EditorBuilder(editorContext, node).createCell();
   }
 }

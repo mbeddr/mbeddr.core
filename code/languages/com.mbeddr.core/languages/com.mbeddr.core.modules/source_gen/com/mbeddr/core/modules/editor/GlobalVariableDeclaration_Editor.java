@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GlobalVariableDeclaration_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GlobalVariableDeclaration_EditorBuilder_a(editorContext, node).createCell();
+    return new GlobalVariableDeclaration_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new GlobalVariableDeclaration_InspectorBuilder_a(editorContext, node).createCell();
+    return new GlobalVariableDeclaration_InspectorBuilder(editorContext, node).createCell();
   }
 }

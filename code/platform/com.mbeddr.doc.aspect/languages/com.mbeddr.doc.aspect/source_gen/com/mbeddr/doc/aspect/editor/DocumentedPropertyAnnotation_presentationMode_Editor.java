@@ -18,6 +18,6 @@ public class DocumentedPropertyAnnotation_presentationMode_Editor extends Defaul
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DocumentedPropertyAnnotation_presentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new DocumentedPropertyAnnotation_presentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -18,6 +18,6 @@ public class CheckHashAssessmentResult_tooltipHint_lsvctn_a0_Editor extends Defa
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CheckHashAssessmentResult_tooltipHint_lsvctn_a0_EditorBuilder_a(editorContext, node).createCell();
+    return new CheckHashAssessmentResult_tooltipHint_lsvctn_a0_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ToDoWord_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ToDoWord_EditorBuilder_a(editorContext, node).createCell();
+    return new ToDoWord_EditorBuilder(editorContext, node).createCell();
   }
 }

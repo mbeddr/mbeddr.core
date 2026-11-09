@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class JSONObject_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new JSONObject_EditorBuilder_a(editorContext, node).createCell();
+    return new JSONObject_EditorBuilder(editorContext, node).createCell();
   }
 }

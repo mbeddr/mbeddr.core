@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RingBufferType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RingBufferType_EditorBuilder_a(editorContext, node).createCell();
+    return new RingBufferType_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new RingBufferType_InspectorBuilder_a(editorContext, node).createCell();
+    return new RingBufferType_InspectorBuilder(editorContext, node).createCell();
   }
 }

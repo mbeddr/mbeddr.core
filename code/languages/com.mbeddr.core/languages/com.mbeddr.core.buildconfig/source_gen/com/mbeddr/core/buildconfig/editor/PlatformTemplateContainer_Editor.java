@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PlatformTemplateContainer_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PlatformTemplateContainer_EditorBuilder_a(editorContext, node).createCell();
+    return new PlatformTemplateContainer_EditorBuilder(editorContext, node).createCell();
   }
 }

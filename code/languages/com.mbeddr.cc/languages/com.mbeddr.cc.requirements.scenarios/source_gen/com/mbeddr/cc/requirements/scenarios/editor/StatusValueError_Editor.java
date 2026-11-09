@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class StatusValueError_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new StatusValueError_EditorBuilder_a(editorContext, node).createCell();
+    return new StatusValueError_EditorBuilder(editorContext, node).createCell();
   }
 }

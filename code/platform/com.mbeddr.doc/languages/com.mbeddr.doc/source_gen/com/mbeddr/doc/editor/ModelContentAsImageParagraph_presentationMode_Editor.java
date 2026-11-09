@@ -18,6 +18,6 @@ public class ModelContentAsImageParagraph_presentationMode_Editor extends Defaul
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ModelContentAsImageParagraph_presentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new ModelContentAsImageParagraph_presentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

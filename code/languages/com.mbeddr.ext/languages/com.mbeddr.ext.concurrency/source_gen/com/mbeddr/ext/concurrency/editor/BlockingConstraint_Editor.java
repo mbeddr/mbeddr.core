@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class BlockingConstraint_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new BlockingConstraint_EditorBuilder_a(editorContext, node).createCell();
+    return new BlockingConstraint_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ConditionalSwitchCase_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConditionalSwitchCase_EditorBuilder_a(editorContext, node).createCell();
+    return new ConditionalSwitchCase_EditorBuilder(editorContext, node).createCell();
   }
 }

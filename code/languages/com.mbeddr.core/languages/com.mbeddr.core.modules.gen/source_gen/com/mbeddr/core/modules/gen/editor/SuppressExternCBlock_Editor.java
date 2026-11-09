@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class SuppressExternCBlock_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SuppressExternCBlock_EditorBuilder_a(editorContext, node).createCell();
+    return new SuppressExternCBlock_EditorBuilder(editorContext, node).createCell();
   }
 }

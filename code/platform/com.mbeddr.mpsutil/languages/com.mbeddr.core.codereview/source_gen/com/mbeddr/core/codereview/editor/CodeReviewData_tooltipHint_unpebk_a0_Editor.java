@@ -18,6 +18,6 @@ public class CodeReviewData_tooltipHint_unpebk_a0_Editor extends DefaultNodeEdit
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CodeReviewData_tooltipHint_unpebk_a0_EditorBuilder_a(editorContext, node).createCell();
+    return new CodeReviewData_tooltipHint_unpebk_a0_EditorBuilder(editorContext, node).createCell();
   }
 }

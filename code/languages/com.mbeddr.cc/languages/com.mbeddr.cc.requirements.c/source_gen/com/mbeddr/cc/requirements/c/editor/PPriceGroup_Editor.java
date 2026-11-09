@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PPriceGroup_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PPriceGroup_EditorBuilder_a(editorContext, node).createCell();
+    return new PPriceGroup_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GenStdHeaderImport_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GenStdHeaderImport_EditorBuilder_a(editorContext, node).createCell();
+    return new GenStdHeaderImport_EditorBuilder(editorContext, node).createCell();
   }
 }

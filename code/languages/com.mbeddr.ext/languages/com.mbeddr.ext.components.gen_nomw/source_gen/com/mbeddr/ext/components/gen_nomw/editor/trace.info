@@ -18,17 +18,17 @@
   </root>
   <root nodeRef="r:ab1563bf-5863-41c9-8b32-5a1740e076b0(com.mbeddr.ext.components.gen_nomw.editor)/2103658896110278834">
     <file name="NoMwComponentsGenStrategy_Editor.java">
-      <node id="2103658896110278834" at="11,79,12,91" concept="6" />
+      <node id="2103658896110278834" at="11,79,12,89" concept="6" />
       <node id="2103658896110278834" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2103658896110278834" at="11,79,12,91" />
+      <scope id="2103658896110278834" at="11,79,12,89" />
       <scope id="2103658896110278834" at="11,0,14,0">
         <var name="editorContext" id="2103658896110278834" />
         <var name="node" id="2103658896110278834" />
       </scope>
       <unit id="2103658896110278834" at="10,0,15,0" name="com.mbeddr.ext.components.gen_nomw.editor.NoMwComponentsGenStrategy_Editor" />
     </file>
-    <file name="NoMwComponentsGenStrategy_EditorBuilder_a.java">
-      <node id="2103658896110278834" at="41,105,42,19" concept="9" />
+    <file name="NoMwComponentsGenStrategy_EditorBuilder.java">
+      <node id="2103658896110278834" at="41,103,42,19" concept="9" />
       <node id="2103658896110278834" at="42,19,43,18" concept="1" />
       <node id="2103658896110278834" at="48,26,49,18" concept="6" />
       <node id="2103658896110278834" at="52,39,53,32" concept="6" />
@@ -37,13 +37,13 @@
       <node id="2103658896110278834" at="58,48,59,28" concept="1" />
       <node id="2103658896110278834" at="59,28,60,31" concept="1" />
       <node id="2103658896110278835" at="60,31,61,49" concept="1" />
-      <node id="1553713790141527430" at="62,37,63,53" concept="1" />
+      <node id="1553713790141527430" at="62,27,63,53" concept="1" />
       <node id="1553713790141527416" at="64,5,65,51" concept="1" />
       <node id="7883182368028004460" at="65,51,66,51" concept="1" />
       <node id="4768833643347725531" at="66,51,67,51" concept="1" />
       <node id="4768833643347725008" at="67,51,68,49" concept="1" />
       <node id="2103658896110278834" at="68,49,69,22" concept="6" />
-      <node id="7883182368027992498" at="71,46,72,157" concept="6" />
+      <node id="7883182368027992498" at="71,36,72,157" concept="6" />
       <node id="2103658896110278835" at="74,41,75,108" concept="5" />
       <node id="2103658896110278835" at="75,108,76,47" concept="1" />
       <node id="2103658896110278835" at="76,47,77,34" concept="1" />
@@ -202,9 +202,9 @@
       <node id="1553713790141527437" at="127,0,129,0" concept="2" trace="myNode" />
       <node id="2103658896110278834" at="52,0,55,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1553713790141527430" at="61,49,64,5" concept="3" />
-      <node id="7883182368027992024" at="71,0,74,0" concept="4" trace="nodeCondition_16alcl_a1a#()Z" />
+      <node id="7883182368027992024" at="71,0,74,0" concept="4" trace="nodeCondition0#()Z" />
       <node id="1553713790141527437" at="137,0,140,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2103658896110278834" at="41,0,45,0" concept="0" trace="NoMwComponentsGenStrategy_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2103658896110278834" at="41,0,45,0" concept="0" trace="NoMwComponentsGenStrategy_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2103658896110278834" at="112,0,116,5" concept="3" />
       <node id="2103658896110278834" at="46,0,51,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2103658896110278834" at="119,205,124,22" concept="3" />
@@ -238,15 +238,15 @@
       <node id="2103658896110278834" at="98,0,126,0" concept="4" trace="createRefCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="2103658896110278834" at="48,26,49,18" />
       <scope id="2103658896110278834" at="52,39,53,32" />
-      <scope id="1553713790141527430" at="62,37,63,53" />
-      <scope id="7883182368027992025" at="71,46,72,157" />
+      <scope id="1553713790141527430" at="62,27,63,53" />
+      <scope id="7883182368027992025" at="71,36,72,157" />
       <scope id="1553713790141527437" at="137,41,138,32" />
       <scope id="1553713790141527437" at="143,28,144,20" />
       <scope id="1553713790141527439" at="164,17,165,42" />
       <scope id="1553713790141527424" at="204,15,205,40" />
       <scope id="7883182368028005233" at="243,15,244,40" />
       <scope id="4768833643347725541" at="282,15,283,40" />
-      <scope id="2103658896110278834" at="41,105,43,18" />
+      <scope id="2103658896110278834" at="41,103,43,18" />
       <scope id="2103658896110278834" at="113,40,115,53" />
       <scope id="2103658896110278834" at="120,73,122,145">
         <var name="manager" id="2103658896110278834" />
@@ -373,27 +373,27 @@
         <var name="referenceLink" id="2103658896110278834" />
       </scope>
       <scope id="2103658896110278834" at="98,0,126,0" />
-      <unit id="2103658896110278834" at="303,0,306,0" name="com.mbeddr.ext.components.gen_nomw.editor.NoMwComponentsGenStrategy_EditorBuilder_a$LINKS" />
-      <unit id="2103658896110278834" at="307,0,311,0" name="com.mbeddr.ext.components.gen_nomw.editor.NoMwComponentsGenStrategy_EditorBuilder_a$CONCEPTS" />
-      <unit id="2103658896110278834" at="296,0,302,0" name="com.mbeddr.ext.components.gen_nomw.editor.NoMwComponentsGenStrategy_EditorBuilder_a$PROPS" />
-      <unit id="2103658896110278834" at="100,42,108,5" name="com.mbeddr.ext.components.gen_nomw.editor.NoMwComponentsGenStrategy_EditorBuilder_a$1" />
-      <unit id="1553713790141527437" at="126,0,169,0" name="com.mbeddr.ext.components.gen_nomw.editor.NoMwComponentsGenStrategy_EditorBuilder_a$Inline_Builder0" />
-      <unit id="2103658896110278834" at="37,0,312,0" name="com.mbeddr.ext.components.gen_nomw.editor.NoMwComponentsGenStrategy_EditorBuilder_a" />
+      <unit id="2103658896110278834" at="303,0,306,0" name="com.mbeddr.ext.components.gen_nomw.editor.NoMwComponentsGenStrategy_EditorBuilder$LINKS" />
+      <unit id="2103658896110278834" at="307,0,311,0" name="com.mbeddr.ext.components.gen_nomw.editor.NoMwComponentsGenStrategy_EditorBuilder$CONCEPTS" />
+      <unit id="2103658896110278834" at="296,0,302,0" name="com.mbeddr.ext.components.gen_nomw.editor.NoMwComponentsGenStrategy_EditorBuilder$PROPS" />
+      <unit id="2103658896110278834" at="100,42,108,5" name="com.mbeddr.ext.components.gen_nomw.editor.NoMwComponentsGenStrategy_EditorBuilder$1" />
+      <unit id="1553713790141527437" at="126,0,169,0" name="com.mbeddr.ext.components.gen_nomw.editor.NoMwComponentsGenStrategy_EditorBuilder$Inline_Builder0" />
+      <unit id="2103658896110278834" at="37,0,312,0" name="com.mbeddr.ext.components.gen_nomw.editor.NoMwComponentsGenStrategy_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:ab1563bf-5863-41c9-8b32-5a1740e076b0(com.mbeddr.ext.components.gen_nomw.editor)/4337203540625018461">
     <file name="RunnableProcessed_Editor.java">
-      <node id="4337203540625018461" at="11,79,12,83" concept="6" />
+      <node id="4337203540625018461" at="11,79,12,81" concept="6" />
       <node id="4337203540625018461" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="4337203540625018461" at="11,79,12,83" />
+      <scope id="4337203540625018461" at="11,79,12,81" />
       <scope id="4337203540625018461" at="11,0,14,0">
         <var name="editorContext" id="4337203540625018461" />
         <var name="node" id="4337203540625018461" />
       </scope>
       <unit id="4337203540625018461" at="10,0,15,0" name="com.mbeddr.ext.components.gen_nomw.editor.RunnableProcessed_Editor" />
     </file>
-    <file name="RunnableProcessed_EditorBuilder_a.java">
-      <node id="4337203540625018461" at="19,97,20,19" concept="9" />
+    <file name="RunnableProcessed_EditorBuilder.java">
+      <node id="4337203540625018461" at="19,95,20,19" concept="9" />
       <node id="4337203540625018461" at="20,19,21,18" concept="1" />
       <node id="4337203540625018461" at="26,26,27,18" concept="6" />
       <node id="4337203540625018461" at="30,39,31,32" concept="6" />
@@ -411,14 +411,14 @@
       <node id="4337203540625018957" at="49,93,50,22" concept="6" />
       <node id="4337203540625018461" at="16,0,18,0" concept="2" trace="myNode" />
       <node id="4337203540625018461" at="30,0,33,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="4337203540625018461" at="19,0,23,0" concept="0" trace="RunnableProcessed_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4337203540625018461" at="19,0,23,0" concept="0" trace="RunnableProcessed_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4337203540625018946" at="43,0,47,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4337203540625018461" at="24,0,29,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4337203540625018957" at="47,0,52,0" concept="4" trace="createAttributedNodeCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4337203540625018461" at="34,0,43,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="4337203540625018461" at="26,26,27,18" />
       <scope id="4337203540625018461" at="30,39,31,32" />
-      <scope id="4337203540625018461" at="19,97,21,18" />
+      <scope id="4337203540625018461" at="19,95,21,18" />
       <scope id="4337203540625018946" at="43,42,45,22">
         <var name="editorCell" id="4337203540625018946" />
       </scope>
@@ -438,7 +438,7 @@
         <var name="editorCell" id="4337203540625018461" />
       </scope>
       <scope id="4337203540625018461" at="34,0,43,0" />
-      <unit id="4337203540625018461" at="15,0,53,0" name="com.mbeddr.ext.components.gen_nomw.editor.RunnableProcessed_EditorBuilder_a" />
+      <unit id="4337203540625018461" at="15,0,53,0" name="com.mbeddr.ext.components.gen_nomw.editor.RunnableProcessed_EditorBuilder" />
     </file>
   </root>
 </debug-info>

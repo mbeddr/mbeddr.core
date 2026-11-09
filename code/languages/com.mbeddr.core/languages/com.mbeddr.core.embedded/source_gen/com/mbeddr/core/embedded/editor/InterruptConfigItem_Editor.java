@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class InterruptConfigItem_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new InterruptConfigItem_EditorBuilder_a(editorContext, node).createCell();
+    return new InterruptConfigItem_EditorBuilder(editorContext, node).createCell();
   }
 }

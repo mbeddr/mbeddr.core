@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ShowTracesResult_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ShowTracesResult_EditorBuilder_a(editorContext, node).createCell();
+    return new ShowTracesResult_EditorBuilder(editorContext, node).createCell();
   }
 }

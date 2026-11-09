@@ -18,6 +18,6 @@ public class FunctionPrototype_tooltipHint_fogur5_b8a0a0_Editor extends DefaultN
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new FunctionPrototype_tooltipHint_fogur5_b8a0a0_EditorBuilder_a(editorContext, node).createCell();
+    return new FunctionPrototype_tooltipHint_fogur5_b8a0a0_EditorBuilder(editorContext, node).createCell();
   }
 }

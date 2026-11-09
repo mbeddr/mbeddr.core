@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class SimpleStep_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SimpleStep_EditorBuilder_a(editorContext, node).createCell();
+    return new SimpleStep_EditorBuilder(editorContext, node).createCell();
   }
 }

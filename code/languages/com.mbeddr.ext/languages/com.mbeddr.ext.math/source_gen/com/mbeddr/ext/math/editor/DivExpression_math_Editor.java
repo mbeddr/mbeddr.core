@@ -18,9 +18,9 @@ public class DivExpression_math_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DivExpression_math_EditorBuilder_a(editorContext, node).createCell();
+    return new DivExpression_math_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new DivExpression_math_InspectorBuilder_a(editorContext, node).createCell();
+    return new DivExpression_math_InspectorBuilder(editorContext, node).createCell();
   }
 }

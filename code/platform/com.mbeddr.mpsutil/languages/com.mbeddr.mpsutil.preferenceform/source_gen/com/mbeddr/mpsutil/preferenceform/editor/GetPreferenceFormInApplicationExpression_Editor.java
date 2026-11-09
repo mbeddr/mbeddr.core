@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GetPreferenceFormInApplicationExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GetPreferenceFormInApplicationExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new GetPreferenceFormInApplicationExpression_EditorBuilder(editorContext, node).createCell();
   }
 }

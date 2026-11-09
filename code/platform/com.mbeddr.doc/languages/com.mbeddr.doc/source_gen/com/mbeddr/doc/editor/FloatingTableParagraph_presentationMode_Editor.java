@@ -18,6 +18,6 @@ public class FloatingTableParagraph_presentationMode_Editor extends DefaultNodeE
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new FloatingTableParagraph_presentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new FloatingTableParagraph_presentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

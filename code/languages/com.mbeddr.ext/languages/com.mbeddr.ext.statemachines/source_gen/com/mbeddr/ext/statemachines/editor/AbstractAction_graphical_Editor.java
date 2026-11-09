@@ -18,6 +18,6 @@ public class AbstractAction_graphical_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AbstractAction_graphical_EditorBuilder_a(editorContext, node).createCell();
+    return new AbstractAction_graphical_EditorBuilder(editorContext, node).createCell();
   }
 }

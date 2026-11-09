@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class DLPrintfImmediately_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DLPrintfImmediately_EditorBuilder_a(editorContext, node).createCell();
+    return new DLPrintfImmediately_EditorBuilder(editorContext, node).createCell();
   }
 }

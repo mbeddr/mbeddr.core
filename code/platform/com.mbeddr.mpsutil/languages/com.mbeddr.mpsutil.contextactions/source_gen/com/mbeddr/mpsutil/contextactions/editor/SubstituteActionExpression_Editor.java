@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class SubstituteActionExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SubstituteActionExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new SubstituteActionExpression_EditorBuilder(editorContext, node).createCell();
   }
 }

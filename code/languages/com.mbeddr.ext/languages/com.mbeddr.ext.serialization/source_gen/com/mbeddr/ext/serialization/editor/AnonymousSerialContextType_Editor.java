@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AnonymousSerialContextType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AnonymousSerialContextType_EditorBuilder_a(editorContext, node).createCell();
+    return new AnonymousSerialContextType_EditorBuilder(editorContext, node).createCell();
   }
 }

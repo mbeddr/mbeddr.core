@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class InterruptExitHandler_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new InterruptExitHandler_EditorBuilder_a(editorContext, node).createCell();
+    return new InterruptExitHandler_EditorBuilder(editorContext, node).createCell();
   }
 }

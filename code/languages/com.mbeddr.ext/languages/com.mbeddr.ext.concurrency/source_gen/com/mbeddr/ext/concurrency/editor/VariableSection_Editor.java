@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class VariableSection_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new VariableSection_EditorBuilder_a(editorContext, node).createCell();
+    return new VariableSection_EditorBuilder(editorContext, node).createCell();
   }
 }

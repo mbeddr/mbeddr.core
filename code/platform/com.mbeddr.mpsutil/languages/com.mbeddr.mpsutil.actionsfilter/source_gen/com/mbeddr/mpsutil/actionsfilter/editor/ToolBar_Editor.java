@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ToolBar_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ToolBar_EditorBuilder_a(editorContext, node).createCell();
+    return new ToolBar_EditorBuilder(editorContext, node).createCell();
   }
 }

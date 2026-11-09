@@ -18,6 +18,6 @@ public class PresenceCondition_tooltipHint_6yzsc6_a0b0_Editor extends DefaultNod
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PresenceCondition_tooltipHint_6yzsc6_a0b0_EditorBuilder_a(editorContext, node).createCell();
+    return new PresenceCondition_tooltipHint_6yzsc6_a0b0_EditorBuilder(editorContext, node).createCell();
   }
 }

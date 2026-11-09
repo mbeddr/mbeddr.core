@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GenericDotExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GenericDotExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new GenericDotExpression_EditorBuilder(editorContext, node).createCell();
   }
 }

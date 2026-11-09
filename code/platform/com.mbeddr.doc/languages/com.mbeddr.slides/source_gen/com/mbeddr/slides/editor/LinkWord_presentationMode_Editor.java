@@ -18,6 +18,6 @@ public class LinkWord_presentationMode_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new LinkWord_presentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new LinkWord_presentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

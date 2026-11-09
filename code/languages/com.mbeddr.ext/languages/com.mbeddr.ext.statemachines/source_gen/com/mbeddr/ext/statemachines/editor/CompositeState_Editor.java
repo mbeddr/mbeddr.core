@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class CompositeState_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CompositeState_EditorBuilder_a(editorContext, node).createCell();
+    return new CompositeState_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class InterruptRunnableMappingActive_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new InterruptRunnableMappingActive_EditorBuilder_a(editorContext, node).createCell();
+    return new InterruptRunnableMappingActive_EditorBuilder(editorContext, node).createCell();
   }
 }

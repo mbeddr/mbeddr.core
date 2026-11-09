@@ -16,6 +16,6 @@ public class exportedFlag implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new exportedFlag_ComponentBuilder_a(editorContext, node).createCell();
+    return new exportedFlag_ComponentBuilder(editorContext, node).createCell();
   }
 }

@@ -16,6 +16,6 @@ public class multiPlatformConstructComponent implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new multiPlatformConstructComponent_ComponentBuilder_a(editorContext, node).createCell();
+    return new multiPlatformConstructComponent_ComponentBuilder(editorContext, node).createCell();
   }
 }

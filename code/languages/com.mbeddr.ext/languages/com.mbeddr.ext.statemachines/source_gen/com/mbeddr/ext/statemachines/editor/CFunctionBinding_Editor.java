@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class CFunctionBinding_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CFunctionBinding_EditorBuilder_a(editorContext, node).createCell();
+    return new CFunctionBinding_EditorBuilder(editorContext, node).createCell();
   }
 }

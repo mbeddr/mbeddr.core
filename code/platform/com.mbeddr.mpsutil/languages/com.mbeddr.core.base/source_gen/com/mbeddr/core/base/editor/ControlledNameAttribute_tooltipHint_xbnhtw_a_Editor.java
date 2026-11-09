@@ -18,6 +18,6 @@ public class ControlledNameAttribute_tooltipHint_xbnhtw_a_Editor extends Default
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ControlledNameAttribute_tooltipHint_xbnhtw_a_EditorBuilder_a(editorContext, node).createCell();
+    return new ControlledNameAttribute_tooltipHint_xbnhtw_a_EditorBuilder(editorContext, node).createCell();
   }
 }

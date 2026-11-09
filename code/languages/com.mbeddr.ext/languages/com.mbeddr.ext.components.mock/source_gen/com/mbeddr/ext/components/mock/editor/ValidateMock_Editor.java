@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ValidateMock_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ValidateMock_EditorBuilder_a(editorContext, node).createCell();
+    return new ValidateMock_EditorBuilder(editorContext, node).createCell();
   }
 }

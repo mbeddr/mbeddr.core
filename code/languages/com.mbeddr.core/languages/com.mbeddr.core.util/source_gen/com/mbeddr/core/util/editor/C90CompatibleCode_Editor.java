@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class C90CompatibleCode_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new C90CompatibleCode_EditorBuilder_a(editorContext, node).createCell();
+    return new C90CompatibleCode_EditorBuilder(editorContext, node).createCell();
   }
 }

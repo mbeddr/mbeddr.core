@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class CfReqModRefWord_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CfReqModRefWord_EditorBuilder_a(editorContext, node).createCell();
+    return new CfReqModRefWord_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -16,6 +16,6 @@ public class AbstractConceptDeclarationBox implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AbstractConceptDeclarationBox_ComponentBuilder_a(editorContext, node).createCell();
+    return new AbstractConceptDeclarationBox_ComponentBuilder(editorContext, node).createCell();
   }
 }

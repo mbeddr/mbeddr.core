@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ConceptCoverageAssessmentResult_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConceptCoverageAssessmentResult_EditorBuilder_a(editorContext, node).createCell();
+    return new ConceptCoverageAssessmentResult_EditorBuilder(editorContext, node).createCell();
   }
 }

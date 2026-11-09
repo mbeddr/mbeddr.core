@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ReqWithoutWPQuery_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ReqWithoutWPQuery_EditorBuilder_a(editorContext, node).createCell();
+    return new ReqWithoutWPQuery_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ItalicWord_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ItalicWord_EditorBuilder_a(editorContext, node).createCell();
+    return new ItalicWord_EditorBuilder(editorContext, node).createCell();
   }
 }

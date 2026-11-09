@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class NothingPlatform_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new NothingPlatform_EditorBuilder_a(editorContext, node).createCell();
+    return new NothingPlatform_EditorBuilder(editorContext, node).createCell();
   }
 }

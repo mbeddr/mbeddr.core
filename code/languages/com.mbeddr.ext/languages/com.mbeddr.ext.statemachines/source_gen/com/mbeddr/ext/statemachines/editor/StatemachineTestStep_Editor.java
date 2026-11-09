@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class StatemachineTestStep_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new StatemachineTestStep_EditorBuilder_a(editorContext, node).createCell();
+    return new StatemachineTestStep_EditorBuilder(editorContext, node).createCell();
   }
 }

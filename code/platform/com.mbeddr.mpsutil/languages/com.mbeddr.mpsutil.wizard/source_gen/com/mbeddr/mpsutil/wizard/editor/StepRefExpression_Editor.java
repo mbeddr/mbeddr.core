@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class StepRefExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new StepRefExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new StepRefExpression_EditorBuilder(editorContext, node).createCell();
   }
 }

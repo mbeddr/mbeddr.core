@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PEqWord_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PEqWord_EditorBuilder_a(editorContext, node).createCell();
+    return new PEqWord_EditorBuilder(editorContext, node).createCell();
   }
 }

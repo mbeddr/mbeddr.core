@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ITestStrategy_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ITestStrategy_EditorBuilder_a(editorContext, node).createCell();
+    return new ITestStrategy_EditorBuilder(editorContext, node).createCell();
   }
 }

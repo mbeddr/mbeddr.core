@@ -43,17 +43,17 @@
   </root>
   <root nodeRef="r:84b9ae24-57a4-4cba-8c16-9121e799ed8a(com.mbeddr.ext.components.concurrency.editor)/2678242487724783637">
     <file name="ComponentInstanceReference_Editor.java">
-      <node id="2678242487724783637" at="11,79,12,92" concept="6" />
+      <node id="2678242487724783637" at="11,79,12,90" concept="6" />
       <node id="2678242487724783637" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2678242487724783637" at="11,79,12,92" />
+      <scope id="2678242487724783637" at="11,79,12,90" />
       <scope id="2678242487724783637" at="11,0,14,0">
         <var name="editorContext" id="2678242487724783637" />
         <var name="node" id="2678242487724783637" />
       </scope>
       <unit id="2678242487724783637" at="10,0,15,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceReference_Editor" />
     </file>
-    <file name="ComponentInstanceReference_EditorBuilder_a.java">
-      <node id="2678242487724783637" at="44,106,45,19" concept="9" />
+    <file name="ComponentInstanceReference_EditorBuilder.java">
+      <node id="2678242487724783637" at="44,104,45,19" concept="9" />
       <node id="2678242487724783637" at="45,19,46,18" concept="1" />
       <node id="2678242487724783637" at="51,26,52,18" concept="6" />
       <node id="2678242487724783637" at="55,39,56,32" concept="6" />
@@ -117,7 +117,7 @@
       <node id="2678242487724785273" at="103,0,105,0" concept="2" trace="myNode" />
       <node id="2678242487724783637" at="55,0,58,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2678242487724785273" at="113,0,116,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2678242487724783637" at="44,0,48,0" concept="0" trace="ComponentInstanceReference_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2678242487724783637" at="44,0,48,0" concept="0" trace="ComponentInstanceReference_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2678242487724783637" at="88,0,92,5" concept="3" />
       <node id="2678242487724783637" at="49,0,54,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2678242487724783637" at="95,205,100,22" concept="3" />
@@ -136,7 +136,7 @@
       <scope id="2678242487724785273" at="113,41,114,32" />
       <scope id="2678242487724785273" at="119,28,120,20" />
       <scope id="2678242487724785283" at="144,17,145,42" />
-      <scope id="2678242487724783637" at="44,106,46,18" />
+      <scope id="2678242487724783637" at="44,104,46,18" />
       <scope id="2678242487724783637" at="89,40,91,47" />
       <scope id="2678242487724783637" at="96,73,98,145">
         <var name="manager" id="2678242487724783637" />
@@ -191,27 +191,27 @@
         <var name="referenceLink" id="2678242487724783637" />
       </scope>
       <scope id="2678242487724783637" at="67,0,102,0" />
-      <unit id="2678242487724783637" at="150,0,153,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceReference_EditorBuilder_a$LINKS" />
-      <unit id="2678242487724783637" at="159,0,162,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceReference_EditorBuilder_a$PROPS" />
-      <unit id="2678242487724783637" at="154,0,158,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceReference_EditorBuilder_a$CONCEPTS" />
-      <unit id="2678242487724783637" at="69,42,84,5" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceReference_EditorBuilder_a$1" />
-      <unit id="2678242487724785273" at="102,0,149,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceReference_EditorBuilder_a$Inline_Builder0" />
-      <unit id="2678242487724783637" at="40,0,163,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceReference_EditorBuilder_a" />
+      <unit id="2678242487724783637" at="150,0,153,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceReference_EditorBuilder$LINKS" />
+      <unit id="2678242487724783637" at="159,0,162,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceReference_EditorBuilder$PROPS" />
+      <unit id="2678242487724783637" at="154,0,158,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceReference_EditorBuilder$CONCEPTS" />
+      <unit id="2678242487724783637" at="69,42,84,5" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceReference_EditorBuilder$1" />
+      <unit id="2678242487724785273" at="102,0,149,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceReference_EditorBuilder$Inline_Builder0" />
+      <unit id="2678242487724783637" at="40,0,163,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceReference_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:84b9ae24-57a4-4cba-8c16-9121e799ed8a(com.mbeddr.ext.components.concurrency.editor)/2678242487724785292">
     <file name="InternalComponentInstanceReference_Editor.java">
-      <node id="2678242487724785292" at="11,79,12,100" concept="6" />
+      <node id="2678242487724785292" at="11,79,12,98" concept="6" />
       <node id="2678242487724785292" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2678242487724785292" at="11,79,12,100" />
+      <scope id="2678242487724785292" at="11,79,12,98" />
       <scope id="2678242487724785292" at="11,0,14,0">
         <var name="editorContext" id="2678242487724785292" />
         <var name="node" id="2678242487724785292" />
       </scope>
       <unit id="2678242487724785292" at="10,0,15,0" name="com.mbeddr.ext.components.concurrency.editor.InternalComponentInstanceReference_Editor" />
     </file>
-    <file name="InternalComponentInstanceReference_EditorBuilder_a.java">
-      <node id="2678242487724785292" at="30,114,31,19" concept="9" />
+    <file name="InternalComponentInstanceReference_EditorBuilder.java">
+      <node id="2678242487724785292" at="30,112,31,19" concept="9" />
       <node id="2678242487724785292" at="31,19,32,18" concept="1" />
       <node id="2678242487724785292" at="37,26,38,18" concept="6" />
       <node id="2678242487724785292" at="41,39,42,32" concept="6" />
@@ -285,7 +285,7 @@
       <node id="2678242487724785292" at="149,87,152,7" concept="3" />
       <node id="2678242487724785292" at="152,7,155,7" concept="3" />
       <node id="2678242487724785292" at="171,0,174,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="2678242487724785292" at="30,0,34,0" concept="0" trace="InternalComponentInstanceReference_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2678242487724785292" at="30,0,34,0" concept="0" trace="InternalComponentInstanceReference_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2678242487724785292" at="55,0,59,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2678242487724785292" at="63,0,67,0" concept="0" trace="compositeInstanceRefSingleRoleHandler_kfka4b_a0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2678242487724785292" at="120,0,124,0" concept="4" trace="createRefNode_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -315,7 +315,7 @@
       <scope id="2678242487724785292" at="153,42,154,60" />
       <scope id="2678242487724785292" at="167,17,168,42" />
       <scope id="2678242487724785292" at="171,40,172,40" />
-      <scope id="2678242487724785292" at="30,114,32,18" />
+      <scope id="2678242487724785292" at="30,112,32,18" />
       <scope id="2678242487724785292" at="55,40,57,33">
         <var name="provider" id="2678242487724785292" />
       </scope>
@@ -389,10 +389,10 @@
       <scope id="2678242487724785292" at="158,44,169,7" />
       <scope id="2678242487724785292" at="92,0,106,0" />
       <scope id="2678242487724785292" at="157,0,171,0" />
-      <unit id="2678242487724785292" at="176,0,180,0" name="com.mbeddr.ext.components.concurrency.editor.InternalComponentInstanceReference_EditorBuilder_a$LINKS" />
-      <unit id="2678242487724785292" at="59,0,110,0" name="com.mbeddr.ext.components.concurrency.editor.InternalComponentInstanceReference_EditorBuilder_a$compositeInstanceRefSingleRoleHandler_kfka4b_a0" />
-      <unit id="2678242487724785292" at="124,0,175,0" name="com.mbeddr.ext.components.concurrency.editor.InternalComponentInstanceReference_EditorBuilder_a$internalInstanceRefSingleRoleHandler_kfka4b_c0" />
-      <unit id="2678242487724785292" at="26,0,181,0" name="com.mbeddr.ext.components.concurrency.editor.InternalComponentInstanceReference_EditorBuilder_a" />
+      <unit id="2678242487724785292" at="176,0,180,0" name="com.mbeddr.ext.components.concurrency.editor.InternalComponentInstanceReference_EditorBuilder$LINKS" />
+      <unit id="2678242487724785292" at="59,0,110,0" name="com.mbeddr.ext.components.concurrency.editor.InternalComponentInstanceReference_EditorBuilder$compositeInstanceRefSingleRoleHandler_kfka4b_a0" />
+      <unit id="2678242487724785292" at="124,0,175,0" name="com.mbeddr.ext.components.concurrency.editor.InternalComponentInstanceReference_EditorBuilder$internalInstanceRefSingleRoleHandler_kfka4b_c0" />
+      <unit id="2678242487724785292" at="26,0,181,0" name="com.mbeddr.ext.components.concurrency.editor.InternalComponentInstanceReference_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:84b9ae24-57a4-4cba-8c16-9121e799ed8a(com.mbeddr.ext.components.concurrency.editor)/2711078148127703254">
@@ -406,17 +406,17 @@
   </root>
   <root nodeRef="r:84b9ae24-57a4-4cba-8c16-9121e799ed8a(com.mbeddr.ext.components.concurrency.editor)/3933288758479894251">
     <file name="ScheduleSpecificationInComponent_Editor.java">
-      <node id="3933288758479894251" at="11,79,12,98" concept="6" />
+      <node id="3933288758479894251" at="11,79,12,96" concept="6" />
       <node id="3933288758479894251" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="3933288758479894251" at="11,79,12,98" />
+      <scope id="3933288758479894251" at="11,79,12,96" />
       <scope id="3933288758479894251" at="11,0,14,0">
         <var name="editorContext" id="3933288758479894251" />
         <var name="node" id="3933288758479894251" />
       </scope>
       <unit id="3933288758479894251" at="10,0,15,0" name="com.mbeddr.ext.components.concurrency.editor.ScheduleSpecificationInComponent_Editor" />
     </file>
-    <file name="ScheduleSpecificationInComponent_EditorBuilder_a.java">
-      <node id="3933288758479894251" at="26,112,27,19" concept="9" />
+    <file name="ScheduleSpecificationInComponent_EditorBuilder.java">
+      <node id="3933288758479894251" at="26,110,27,19" concept="9" />
       <node id="3933288758479894251" at="27,19,28,18" concept="1" />
       <node id="3933288758479894251" at="33,26,34,18" concept="6" />
       <node id="3933288758479894251" at="37,39,38,32" concept="6" />
@@ -454,7 +454,7 @@
       <node id="3933288758479894251" at="78,87,81,7" concept="3" />
       <node id="3933288758479894251" at="81,7,84,7" concept="3" />
       <node id="3933288758479894251" at="100,0,103,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="3933288758479894251" at="26,0,30,0" concept="0" trace="ScheduleSpecificationInComponent_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3933288758479894251" at="26,0,30,0" concept="0" trace="ScheduleSpecificationInComponent_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3933288758479894251" at="49,0,53,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3933288758479894251" at="57,0,61,0" concept="0" trace="scheduleSingleRoleHandler_uiqmbk_a0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="3933288758479894251" at="31,0,36,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -471,7 +471,7 @@
       <scope id="3933288758479894251" at="82,42,83,49" />
       <scope id="3933288758479894251" at="96,17,97,42" />
       <scope id="3933288758479894251" at="100,40,101,29" />
-      <scope id="3933288758479894251" at="26,112,28,18" />
+      <scope id="3933288758479894251" at="26,110,28,18" />
       <scope id="3933288758479894251" at="49,40,51,33">
         <var name="provider" id="3933288758479894251" />
       </scope>
@@ -511,24 +511,24 @@
       </scope>
       <scope id="3933288758479894251" at="87,44,98,7" />
       <scope id="3933288758479894251" at="86,0,100,0" />
-      <unit id="3933288758479894251" at="105,0,108,0" name="com.mbeddr.ext.components.concurrency.editor.ScheduleSpecificationInComponent_EditorBuilder_a$LINKS" />
-      <unit id="3933288758479894251" at="53,0,104,0" name="com.mbeddr.ext.components.concurrency.editor.ScheduleSpecificationInComponent_EditorBuilder_a$scheduleSingleRoleHandler_uiqmbk_a0" />
-      <unit id="3933288758479894251" at="22,0,109,0" name="com.mbeddr.ext.components.concurrency.editor.ScheduleSpecificationInComponent_EditorBuilder_a" />
+      <unit id="3933288758479894251" at="105,0,108,0" name="com.mbeddr.ext.components.concurrency.editor.ScheduleSpecificationInComponent_EditorBuilder$LINKS" />
+      <unit id="3933288758479894251" at="53,0,104,0" name="com.mbeddr.ext.components.concurrency.editor.ScheduleSpecificationInComponent_EditorBuilder$scheduleSingleRoleHandler_uiqmbk_a0" />
+      <unit id="3933288758479894251" at="22,0,109,0" name="com.mbeddr.ext.components.concurrency.editor.ScheduleSpecificationInComponent_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:84b9ae24-57a4-4cba-8c16-9121e799ed8a(com.mbeddr.ext.components.concurrency.editor)/4565572669164914228">
     <file name="SectionInComponent_Editor.java">
-      <node id="4565572669164914228" at="11,79,12,84" concept="6" />
+      <node id="4565572669164914228" at="11,79,12,82" concept="6" />
       <node id="4565572669164914228" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="4565572669164914228" at="11,79,12,84" />
+      <scope id="4565572669164914228" at="11,79,12,82" />
       <scope id="4565572669164914228" at="11,0,14,0">
         <var name="editorContext" id="4565572669164914228" />
         <var name="node" id="4565572669164914228" />
       </scope>
       <unit id="4565572669164914228" at="10,0,15,0" name="com.mbeddr.ext.components.concurrency.editor.SectionInComponent_Editor" />
     </file>
-    <file name="SectionInComponent_EditorBuilder_a.java">
-      <node id="4565572669164914228" at="26,98,27,19" concept="9" />
+    <file name="SectionInComponent_EditorBuilder.java">
+      <node id="4565572669164914228" at="26,96,27,19" concept="9" />
       <node id="4565572669164914228" at="27,19,28,18" concept="1" />
       <node id="4565572669164914228" at="33,26,34,18" concept="6" />
       <node id="4565572669164914228" at="37,39,38,32" concept="6" />
@@ -566,7 +566,7 @@
       <node id="4565572669164914228" at="78,87,81,7" concept="3" />
       <node id="4565572669164914228" at="81,7,84,7" concept="3" />
       <node id="4565572669164914228" at="100,0,103,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="4565572669164914228" at="26,0,30,0" concept="0" trace="SectionInComponent_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4565572669164914228" at="26,0,30,0" concept="0" trace="SectionInComponent_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4565572669164914228" at="49,0,53,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4565572669164914228" at="57,0,61,0" concept="0" trace="sectionSingleRoleHandler_pg1szg_a0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="4565572669164914228" at="31,0,36,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -583,7 +583,7 @@
       <scope id="4565572669164914228" at="82,42,83,48" />
       <scope id="4565572669164914228" at="96,17,97,42" />
       <scope id="4565572669164914228" at="100,40,101,28" />
-      <scope id="4565572669164914228" at="26,98,28,18" />
+      <scope id="4565572669164914228" at="26,96,28,18" />
       <scope id="4565572669164914228" at="49,40,51,33">
         <var name="provider" id="4565572669164914228" />
       </scope>
@@ -623,24 +623,24 @@
       </scope>
       <scope id="4565572669164914228" at="87,44,98,7" />
       <scope id="4565572669164914228" at="86,0,100,0" />
-      <unit id="4565572669164914228" at="105,0,108,0" name="com.mbeddr.ext.components.concurrency.editor.SectionInComponent_EditorBuilder_a$LINKS" />
-      <unit id="4565572669164914228" at="53,0,104,0" name="com.mbeddr.ext.components.concurrency.editor.SectionInComponent_EditorBuilder_a$sectionSingleRoleHandler_pg1szg_a0" />
-      <unit id="4565572669164914228" at="22,0,109,0" name="com.mbeddr.ext.components.concurrency.editor.SectionInComponent_EditorBuilder_a" />
+      <unit id="4565572669164914228" at="105,0,108,0" name="com.mbeddr.ext.components.concurrency.editor.SectionInComponent_EditorBuilder$LINKS" />
+      <unit id="4565572669164914228" at="53,0,104,0" name="com.mbeddr.ext.components.concurrency.editor.SectionInComponent_EditorBuilder$sectionSingleRoleHandler_pg1szg_a0" />
+      <unit id="4565572669164914228" at="22,0,109,0" name="com.mbeddr.ext.components.concurrency.editor.SectionInComponent_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:84b9ae24-57a4-4cba-8c16-9121e799ed8a(com.mbeddr.ext.components.concurrency.editor)/4565572669166061609">
     <file name="TaskInComponent_Editor.java">
-      <node id="4565572669166061609" at="11,79,12,81" concept="6" />
+      <node id="4565572669166061609" at="11,79,12,79" concept="6" />
       <node id="4565572669166061609" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="4565572669166061609" at="11,79,12,81" />
+      <scope id="4565572669166061609" at="11,79,12,79" />
       <scope id="4565572669166061609" at="11,0,14,0">
         <var name="editorContext" id="4565572669166061609" />
         <var name="node" id="4565572669166061609" />
       </scope>
       <unit id="4565572669166061609" at="10,0,15,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponent_Editor" />
     </file>
-    <file name="TaskInComponent_EditorBuilder_a.java">
-      <node id="4565572669166061609" at="26,95,27,19" concept="9" />
+    <file name="TaskInComponent_EditorBuilder.java">
+      <node id="4565572669166061609" at="26,93,27,19" concept="9" />
       <node id="4565572669166061609" at="27,19,28,18" concept="1" />
       <node id="4565572669166061609" at="33,26,34,18" concept="6" />
       <node id="4565572669166061609" at="37,39,38,32" concept="6" />
@@ -678,7 +678,7 @@
       <node id="4565572669166061609" at="78,87,81,7" concept="3" />
       <node id="4565572669166061609" at="81,7,84,7" concept="3" />
       <node id="4565572669166061609" at="100,0,103,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="4565572669166061609" at="26,0,30,0" concept="0" trace="TaskInComponent_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4565572669166061609" at="26,0,30,0" concept="0" trace="TaskInComponent_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4565572669166061609" at="49,0,53,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4565572669166061609" at="57,0,61,0" concept="0" trace="taskSingleRoleHandler_qcwygc_a0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="4565572669166061609" at="31,0,36,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -695,7 +695,7 @@
       <scope id="4565572669166061609" at="82,42,83,45" />
       <scope id="4565572669166061609" at="96,17,97,42" />
       <scope id="4565572669166061609" at="100,40,101,25" />
-      <scope id="4565572669166061609" at="26,95,28,18" />
+      <scope id="4565572669166061609" at="26,93,28,18" />
       <scope id="4565572669166061609" at="49,40,51,33">
         <var name="provider" id="4565572669166061609" />
       </scope>
@@ -735,24 +735,24 @@
       </scope>
       <scope id="4565572669166061609" at="87,44,98,7" />
       <scope id="4565572669166061609" at="86,0,100,0" />
-      <unit id="4565572669166061609" at="105,0,108,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponent_EditorBuilder_a$LINKS" />
-      <unit id="4565572669166061609" at="53,0,104,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponent_EditorBuilder_a$taskSingleRoleHandler_qcwygc_a0" />
-      <unit id="4565572669166061609" at="22,0,109,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponent_EditorBuilder_a" />
+      <unit id="4565572669166061609" at="105,0,108,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponent_EditorBuilder$LINKS" />
+      <unit id="4565572669166061609" at="53,0,104,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponent_EditorBuilder$taskSingleRoleHandler_qcwygc_a0" />
+      <unit id="4565572669166061609" at="22,0,109,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponent_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:84b9ae24-57a4-4cba-8c16-9121e799ed8a(com.mbeddr.ext.components.concurrency.editor)/6699454864317025716">
     <file name="NameOfComponentInstanceFunction_Editor.java">
-      <node id="6699454864317025716" at="11,79,12,97" concept="6" />
+      <node id="6699454864317025716" at="11,79,12,95" concept="6" />
       <node id="6699454864317025716" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="6699454864317025716" at="11,79,12,97" />
+      <scope id="6699454864317025716" at="11,79,12,95" />
       <scope id="6699454864317025716" at="11,0,14,0">
         <var name="editorContext" id="6699454864317025716" />
         <var name="node" id="6699454864317025716" />
       </scope>
       <unit id="6699454864317025716" at="10,0,15,0" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_Editor" />
     </file>
-    <file name="NameOfComponentInstanceFunction_EditorBuilder_a.java">
-      <node id="6699454864317025716" at="51,111,52,19" concept="9" />
+    <file name="NameOfComponentInstanceFunction_EditorBuilder.java">
+      <node id="6699454864317025716" at="51,109,52,19" concept="9" />
       <node id="6699454864317025716" at="52,19,53,18" concept="1" />
       <node id="6699454864317025716" at="58,26,59,18" concept="6" />
       <node id="6699454864317025716" at="62,39,63,32" concept="6" />
@@ -860,7 +860,7 @@
       <node id="6699454864317025716" at="200,87,203,7" concept="3" />
       <node id="6699454864317025716" at="203,7,206,7" concept="3" />
       <node id="6699454864317025716" at="222,0,225,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="6699454864317025716" at="51,0,55,0" concept="0" trace="NameOfComponentInstanceFunction_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6699454864317025716" at="51,0,55,0" concept="0" trace="NameOfComponentInstanceFunction_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6699454864317025716" at="108,0,112,5" concept="3" />
       <node id="6699454864317025716" at="171,0,175,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6699454864317025716" at="179,0,183,0" concept="0" trace="instanceRefSingleRoleHandler_4gu736_d0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -894,7 +894,7 @@
       <scope id="6699454864317025716" at="204,42,205,52" />
       <scope id="6699454864317025716" at="218,17,219,42" />
       <scope id="6699454864317025716" at="222,40,223,32" />
-      <scope id="6699454864317025716" at="51,111,53,18" />
+      <scope id="6699454864317025716" at="51,109,53,18" />
       <scope id="6699454864317025716" at="109,40,111,47" />
       <scope id="6699454864317025716" at="116,73,118,145">
         <var name="manager" id="6699454864317025716" />
@@ -991,13 +991,13 @@
         <var name="referenceLink" id="6699454864317025716" />
       </scope>
       <scope id="6699454864317025716" at="87,0,122,0" />
-      <unit id="6699454864317025716" at="246,0,249,0" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder_a$PROPS" />
-      <unit id="6699454864317025716" at="236,0,240,0" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder_a$LINKS" />
-      <unit id="6699454864317025716" at="241,0,245,0" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder_a$CONCEPTS" />
-      <unit id="6699454864317025716" at="89,42,104,5" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder_a$1" />
-      <unit id="6699454864317027345" at="122,0,165,0" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder_a$Inline_Builder0" />
-      <unit id="6699454864317025716" at="175,0,226,0" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder_a$instanceRefSingleRoleHandler_4gu736_d0" />
-      <unit id="6699454864317025716" at="47,0,250,0" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder_a" />
+      <unit id="6699454864317025716" at="246,0,249,0" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder$PROPS" />
+      <unit id="6699454864317025716" at="236,0,240,0" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder$LINKS" />
+      <unit id="6699454864317025716" at="241,0,245,0" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder$CONCEPTS" />
+      <unit id="6699454864317025716" at="89,42,104,5" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder$1" />
+      <unit id="6699454864317027345" at="122,0,165,0" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder$Inline_Builder0" />
+      <unit id="6699454864317025716" at="175,0,226,0" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder$instanceRefSingleRoleHandler_4gu736_d0" />
+      <unit id="6699454864317025716" at="47,0,250,0" name="com.mbeddr.ext.components.concurrency.editor.NameOfComponentInstanceFunction_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:84b9ae24-57a4-4cba-8c16-9121e799ed8a(com.mbeddr.ext.components.concurrency.editor)/8610007178375359223">
@@ -1005,17 +1005,17 @@
       <node id="2751388224255786152" at="11,0,12,0" concept="8" trace="PRESENTATION_acx77u_a0a2a" />
     </file>
     <file name="TaskInComponentReference_Editor.java">
-      <node id="8610007178375359223" at="11,79,12,90" concept="6" />
+      <node id="8610007178375359223" at="11,79,12,88" concept="6" />
       <node id="8610007178375359223" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8610007178375359223" at="11,79,12,90" />
+      <scope id="8610007178375359223" at="11,79,12,88" />
       <scope id="8610007178375359223" at="11,0,14,0">
         <var name="editorContext" id="8610007178375359223" />
         <var name="node" id="8610007178375359223" />
       </scope>
       <unit id="8610007178375359223" at="10,0,15,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_Editor" />
     </file>
-    <file name="TaskInComponentReference_EditorBuilder_a.java">
-      <node id="8610007178375359223" at="50,104,51,19" concept="9" />
+    <file name="TaskInComponentReference_EditorBuilder.java">
+      <node id="8610007178375359223" at="50,102,51,19" concept="9" />
       <node id="8610007178375359223" at="51,19,52,18" concept="1" />
       <node id="8610007178375359223" at="57,26,58,18" concept="6" />
       <node id="8610007178375359223" at="61,39,62,32" concept="6" />
@@ -1129,7 +1129,7 @@
       <node id="8610007178375359223" at="61,0,64,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8610007178375585876" at="121,0,124,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8610007178375360855" at="202,0,205,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8610007178375359223" at="50,0,54,0" concept="0" trace="TaskInComponentReference_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8610007178375359223" at="50,0,54,0" concept="0" trace="TaskInComponentReference_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8610007178375359223" at="96,0,100,5" concept="3" />
       <node id="8610007178375359223" at="177,0,181,5" concept="3" />
       <node id="8610007178375359223" at="55,0,60,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -1167,7 +1167,7 @@
       <scope id="8610007178376285260" at="229,17,230,42" />
       <scope id="2751388224255786150" at="239,71,240,61" />
       <scope id="2751388224255786150" at="244,78,245,61" />
-      <scope id="8610007178375359223" at="50,104,52,18" />
+      <scope id="8610007178375359223" at="50,102,52,18" />
       <scope id="8610007178375359223" at="97,40,99,56" />
       <scope id="8610007178375359223" at="104,73,106,145">
         <var name="manager" id="8610007178375359223" />
@@ -1266,30 +1266,30 @@
         <var name="referenceLink" id="8610007178375359223" />
       </scope>
       <scope id="8610007178375359223" at="75,0,110,0" />
-      <unit id="8610007178375359223" at="259,0,262,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder_a$PROPS" />
-      <unit id="8610007178375359223" at="249,0,253,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder_a$LINKS" />
-      <unit id="8610007178375359223" at="254,0,258,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder_a$CONCEPTS" />
-      <unit id="8610007178375359223" at="165,42,173,5" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder_a$2" />
-      <unit id="2751388224255786150" at="234,0,248,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder_a$TaskInComponentReference_task_cellMenu_acx77u_a0c0" />
-      <unit id="8610007178375359223" at="77,42,92,5" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder_a$1" />
-      <unit id="8610007178375585876" at="110,0,153,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder_a$Inline_Builder0" />
-      <unit id="8610007178375360855" at="191,0,234,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder_a$Inline_Builder1" />
-      <unit id="8610007178375359223" at="46,0,263,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder_a" />
+      <unit id="8610007178375359223" at="259,0,262,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder$PROPS" />
+      <unit id="8610007178375359223" at="249,0,253,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder$LINKS" />
+      <unit id="8610007178375359223" at="254,0,258,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder$CONCEPTS" />
+      <unit id="8610007178375359223" at="165,42,173,5" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder$2" />
+      <unit id="2751388224255786150" at="234,0,248,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder$TaskInComponentReference_task_cellMenu_acx77u_a0c0" />
+      <unit id="8610007178375359223" at="77,42,92,5" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder$1" />
+      <unit id="8610007178375585876" at="110,0,153,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder$Inline_Builder0" />
+      <unit id="8610007178375360855" at="191,0,234,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder$Inline_Builder1" />
+      <unit id="8610007178375359223" at="46,0,263,0" name="com.mbeddr.ext.components.concurrency.editor.TaskInComponentReference_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:84b9ae24-57a4-4cba-8c16-9121e799ed8a(com.mbeddr.ext.components.concurrency.editor)/8610007178378343094">
     <file name="ComponentInstanceFieldRef_Editor.java">
-      <node id="8610007178378343094" at="11,79,12,91" concept="6" />
+      <node id="8610007178378343094" at="11,79,12,89" concept="6" />
       <node id="8610007178378343094" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8610007178378343094" at="11,79,12,91" />
+      <scope id="8610007178378343094" at="11,79,12,89" />
       <scope id="8610007178378343094" at="11,0,14,0">
         <var name="editorContext" id="8610007178378343094" />
         <var name="node" id="8610007178378343094" />
       </scope>
       <unit id="8610007178378343094" at="10,0,15,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_Editor" />
     </file>
-    <file name="ComponentInstanceFieldRef_EditorBuilder_a.java">
-      <node id="8610007178378343094" at="49,105,50,19" concept="9" />
+    <file name="ComponentInstanceFieldRef_EditorBuilder.java">
+      <node id="8610007178378343094" at="49,103,50,19" concept="9" />
       <node id="8610007178378343094" at="50,19,51,18" concept="1" />
       <node id="8610007178378343094" at="56,26,57,18" concept="6" />
       <node id="8610007178378343094" at="60,39,61,32" concept="6" />
@@ -1385,7 +1385,7 @@
       <node id="8610007178378343094" at="106,7,109,7" concept="3" />
       <node id="8610007178378343094" at="125,0,128,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
       <node id="8610007178378343176" at="179,0,182,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8610007178378343094" at="49,0,53,0" concept="0" trace="ComponentInstanceFieldRef_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8610007178378343094" at="49,0,53,0" concept="0" trace="ComponentInstanceFieldRef_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8610007178378343094" at="74,0,78,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8610007178378343094" at="82,0,86,0" concept="0" trace="instanceRefSingleRoleHandler_xz2uk0_a0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="8610007178378343094" at="154,0,158,5" concept="3" />
@@ -1416,7 +1416,7 @@
       <scope id="8610007178378343176" at="179,41,180,32" />
       <scope id="8610007178378343176" at="185,28,186,20" />
       <scope id="8610007178378343194" at="209,17,210,42" />
-      <scope id="8610007178378343094" at="49,105,51,18" />
+      <scope id="8610007178378343094" at="49,103,51,18" />
       <scope id="8610007178378343094" at="74,40,76,33">
         <var name="provider" id="8610007178378343094" />
       </scope>
@@ -1499,28 +1499,28 @@
         <var name="referenceLink" id="8610007178378343094" />
       </scope>
       <scope id="8610007178378343094" at="140,0,168,0" />
-      <unit id="8610007178378343094" at="225,0,228,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder_a$PROPS" />
-      <unit id="8610007178378343094" at="215,0,219,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder_a$LINKS" />
-      <unit id="8610007178378343094" at="220,0,224,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder_a$CONCEPTS" />
-      <unit id="8610007178378343094" at="142,42,150,5" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder_a$1" />
-      <unit id="8610007178378343176" at="168,0,214,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder_a$Inline_Builder0" />
-      <unit id="8610007178378343094" at="78,0,129,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder_a$instanceRefSingleRoleHandler_xz2uk0_a0" />
-      <unit id="8610007178378343094" at="45,0,229,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder_a" />
+      <unit id="8610007178378343094" at="225,0,228,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder$PROPS" />
+      <unit id="8610007178378343094" at="215,0,219,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder$LINKS" />
+      <unit id="8610007178378343094" at="220,0,224,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder$CONCEPTS" />
+      <unit id="8610007178378343094" at="142,42,150,5" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder$1" />
+      <unit id="8610007178378343176" at="168,0,214,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder$Inline_Builder0" />
+      <unit id="8610007178378343094" at="78,0,129,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder$instanceRefSingleRoleHandler_xz2uk0_a0" />
+      <unit id="8610007178378343094" at="45,0,229,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceFieldRef_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:84b9ae24-57a4-4cba-8c16-9121e799ed8a(com.mbeddr.ext.components.concurrency.editor)/8610007178378343589">
     <file name="ComponentInstanceRunnableCall_Editor.java">
-      <node id="8610007178378343589" at="11,79,12,95" concept="6" />
+      <node id="8610007178378343589" at="11,79,12,93" concept="6" />
       <node id="8610007178378343589" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8610007178378343589" at="11,79,12,95" />
+      <scope id="8610007178378343589" at="11,79,12,93" />
       <scope id="8610007178378343589" at="11,0,14,0">
         <var name="editorContext" id="8610007178378343589" />
         <var name="node" id="8610007178378343589" />
       </scope>
       <unit id="8610007178378343589" at="10,0,15,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_Editor" />
     </file>
-    <file name="ComponentInstanceRunnableCall_EditorBuilder_a.java">
-      <node id="8610007178378343589" at="54,109,55,19" concept="9" />
+    <file name="ComponentInstanceRunnableCall_EditorBuilder.java">
+      <node id="8610007178378343589" at="54,107,55,19" concept="9" />
       <node id="8610007178378343589" at="55,19,56,18" concept="1" />
       <node id="8610007178378343589" at="61,26,62,18" concept="6" />
       <node id="8610007178378343589" at="65,39,66,32" concept="6" />
@@ -1675,7 +1675,7 @@
       <node id="8610007178378343649" at="185,0,188,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8610007178378343589" at="249,0,252,0" concept="4" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="8610007178378343589" at="252,0,255,0" concept="4" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="8610007178378343589" at="54,0,58,0" concept="0" trace="ComponentInstanceRunnableCall_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8610007178378343589" at="54,0,58,0" concept="0" trace="ComponentInstanceRunnableCall_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8610007178378343589" at="82,0,86,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8610007178378343589" at="90,0,94,0" concept="0" trace="instanceRefSingleRoleHandler_mtciov_a0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="8610007178378343589" at="160,0,164,5" concept="3" />
@@ -1728,7 +1728,7 @@
       <scope id="8610007178378343589" at="249,40,250,32" />
       <scope id="8610007178378343589" at="252,48,253,36" />
       <scope id="8610007178378343589" at="270,17,271,42" />
-      <scope id="8610007178378343589" at="54,109,56,18" />
+      <scope id="8610007178378343589" at="54,107,56,18" />
       <scope id="8610007178378343589" at="82,40,84,33">
         <var name="provider" id="8610007178378343589" />
       </scope>
@@ -1867,14 +1867,14 @@
         <var name="isEmptyCell" id="8610007178378343589" />
       </scope>
       <scope id="8610007178378343589" at="146,0,174,0" />
-      <unit id="8610007178378343589" at="338,0,341,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder_a$PROPS" />
-      <unit id="8610007178378343589" at="326,0,331,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder_a$LINKS" />
-      <unit id="8610007178378343589" at="332,0,337,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder_a$CONCEPTS" />
-      <unit id="8610007178378343589" at="148,42,156,5" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder_a$1" />
-      <unit id="8610007178378343649" at="174,0,220,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder_a$Inline_Builder0" />
-      <unit id="8610007178378343589" at="86,0,137,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder_a$instanceRefSingleRoleHandler_mtciov_a0" />
-      <unit id="8610007178378343589" at="236,0,316,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder_a$actualsListHandler_mtciov_e0" />
-      <unit id="8610007178378343589" at="50,0,342,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder_a" />
+      <unit id="8610007178378343589" at="338,0,341,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder$PROPS" />
+      <unit id="8610007178378343589" at="326,0,331,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder$LINKS" />
+      <unit id="8610007178378343589" at="332,0,337,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder$CONCEPTS" />
+      <unit id="8610007178378343589" at="148,42,156,5" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder$1" />
+      <unit id="8610007178378343649" at="174,0,220,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder$Inline_Builder0" />
+      <unit id="8610007178378343589" at="86,0,137,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder$instanceRefSingleRoleHandler_mtciov_a0" />
+      <unit id="8610007178378343589" at="236,0,316,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder$actualsListHandler_mtciov_e0" />
+      <unit id="8610007178378343589" at="50,0,342,0" name="com.mbeddr.ext.components.concurrency.editor.ComponentInstanceRunnableCall_EditorBuilder" />
     </file>
   </root>
 </debug-info>

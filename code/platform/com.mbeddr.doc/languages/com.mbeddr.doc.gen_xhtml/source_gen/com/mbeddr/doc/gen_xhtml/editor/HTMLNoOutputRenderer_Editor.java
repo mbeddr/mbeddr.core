@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class HTMLNoOutputRenderer_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new HTMLNoOutputRenderer_EditorBuilder_a(editorContext, node).createCell();
+    return new HTMLNoOutputRenderer_EditorBuilder(editorContext, node).createCell();
   }
 }

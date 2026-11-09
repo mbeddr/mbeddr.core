@@ -21,11 +21,11 @@
     <file name="LinkWord_presentationMode_Editor.java">
       <node id="2144395370923165355" at="14,0,15,0" concept="3" trace="myContextHints" />
       <node id="2144395370923165355" at="17,47,18,26" concept="7" />
-      <node id="2144395370923165355" at="20,79,21,91" concept="7" />
+      <node id="2144395370923165355" at="20,79,21,89" concept="7" />
       <node id="2144395370923165355" at="20,0,23,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2144395370923165355" at="15,0,20,0" concept="5" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="2144395370923165355" at="17,47,18,26" />
-      <scope id="2144395370923165355" at="20,79,21,91" />
+      <scope id="2144395370923165355" at="20,79,21,89" />
       <scope id="2144395370923165355" at="20,0,23,0">
         <var name="editorContext" id="2144395370923165355" />
         <var name="node" id="2144395370923165355" />
@@ -33,8 +33,8 @@
       <scope id="2144395370923165355" at="15,0,20,0" />
       <unit id="2144395370923165355" at="13,0,24,0" name="com.mbeddr.slides.editor.LinkWord_presentationMode_Editor" />
     </file>
-    <file name="LinkWord_presentationMode_EditorBuilder_a.java">
-      <node id="2144395370923165355" at="35,105,36,19" concept="10" />
+    <file name="LinkWord_presentationMode_EditorBuilder.java">
+      <node id="2144395370923165355" at="35,103,36,19" concept="10" />
       <node id="2144395370923165355" at="36,19,37,18" concept="2" />
       <node id="2144395370923165355" at="42,26,43,18" concept="7" />
       <node id="2144395370923165355" at="46,39,47,32" concept="7" />
@@ -81,7 +81,7 @@
       <node id="2144395370923165355" at="90,7,93,7" concept="4" />
       <node id="2144395370923165355" at="114,0,117,0" concept="5" trace="getNoTargetText#()Ljava/lang/String;" />
       <node id="2144395370923215277" at="120,46,123,11" concept="4" />
-      <node id="2144395370923165355" at="35,0,39,0" concept="1" trace="LinkWord_presentationMode_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2144395370923165355" at="35,0,39,0" concept="1" trace="LinkWord_presentationMode_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2144395370923165355" at="58,0,62,0" concept="5" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2144395370923165355" at="66,0,70,0" concept="1" trace="textSingleRoleHandler_1n7zbu_a0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2144395370923165355" at="40,0,45,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -102,7 +102,7 @@
       <scope id="2144395370923165355" at="110,17,111,42" />
       <scope id="2144395370923165355" at="114,40,115,25" />
       <scope id="2144395370923215279" at="121,28,122,36" />
-      <scope id="2144395370923165355" at="35,105,37,18" />
+      <scope id="2144395370923165355" at="35,103,37,18" />
       <scope id="2144395370923165355" at="58,40,60,33">
         <var name="provider" id="2144395370923165355" />
       </scope>
@@ -152,26 +152,26 @@
         <var name="isEmpty" id="2144395370923165355" />
       </scope>
       <scope id="2144395370923165355" at="100,0,114,0" />
-      <unit id="2144395370923165355" at="129,0,132,0" name="com.mbeddr.slides.editor.LinkWord_presentationMode_EditorBuilder_a$LINKS" />
-      <unit id="2144395370923165355" at="133,0,136,0" name="com.mbeddr.slides.editor.LinkWord_presentationMode_EditorBuilder_a$PROPS" />
-      <unit id="7207185140085184102" at="119,17,125,7" name="com.mbeddr.slides.editor.LinkWord_presentationMode_EditorBuilder_a$textSingleRoleHandler_1n7zbu_a0$1" />
-      <unit id="2144395370923165355" at="62,0,128,0" name="com.mbeddr.slides.editor.LinkWord_presentationMode_EditorBuilder_a$textSingleRoleHandler_1n7zbu_a0" />
-      <unit id="2144395370923165355" at="31,0,137,0" name="com.mbeddr.slides.editor.LinkWord_presentationMode_EditorBuilder_a" />
+      <unit id="2144395370923165355" at="129,0,132,0" name="com.mbeddr.slides.editor.LinkWord_presentationMode_EditorBuilder$LINKS" />
+      <unit id="2144395370923165355" at="133,0,136,0" name="com.mbeddr.slides.editor.LinkWord_presentationMode_EditorBuilder$PROPS" />
+      <unit id="7207185140085184102" at="119,17,125,7" name="com.mbeddr.slides.editor.LinkWord_presentationMode_EditorBuilder$textSingleRoleHandler_1n7zbu_a0$1" />
+      <unit id="2144395370923165355" at="62,0,128,0" name="com.mbeddr.slides.editor.LinkWord_presentationMode_EditorBuilder$textSingleRoleHandler_1n7zbu_a0" />
+      <unit id="2144395370923165355" at="31,0,137,0" name="com.mbeddr.slides.editor.LinkWord_presentationMode_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:81afa1db-614d-4337-8be1-abb7e78d23b3(com.mbeddr.slides.editor)/5455967284188316029">
     <file name="SlideDeck_Editor.java">
-      <node id="5455967284188316029" at="11,79,12,75" concept="7" />
+      <node id="5455967284188316029" at="11,79,12,73" concept="7" />
       <node id="5455967284188316029" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5455967284188316029" at="11,79,12,75" />
+      <scope id="5455967284188316029" at="11,79,12,73" />
       <scope id="5455967284188316029" at="11,0,14,0">
         <var name="editorContext" id="5455967284188316029" />
         <var name="node" id="5455967284188316029" />
       </scope>
       <unit id="5455967284188316029" at="10,0,15,0" name="com.mbeddr.slides.editor.SlideDeck_Editor" />
     </file>
-    <file name="SlideDeck_EditorBuilder_a.java">
-      <node id="5455967284188316029" at="50,89,51,19" concept="10" />
+    <file name="SlideDeck_EditorBuilder.java">
+      <node id="5455967284188316029" at="50,87,51,19" concept="10" />
       <node id="5455967284188316029" at="51,19,52,18" concept="2" />
       <node id="5455967284188316029" at="57,26,58,18" concept="7" />
       <node id="5455967284188316029" at="61,39,62,32" concept="7" />
@@ -293,7 +293,7 @@
       <node id="5455967284188316029" at="206,0,209,0" concept="5" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="5455967284188316029" at="209,0,212,0" concept="5" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="5455967284188316029" at="253,96,256,9" concept="4" />
-      <node id="5455967284188316029" at="50,0,54,0" concept="1" trace="SlideDeck_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5455967284188316029" at="50,0,54,0" concept="1" trace="SlideDeck_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5455967284188316029" at="124,0,128,5" concept="4" />
       <node id="5455967284188316029" at="197,0,201,0" concept="1" trace="slidesListHandler_obee2x_e0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="5455967284188316029" at="202,0,206,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -336,7 +336,7 @@
       <scope id="5455967284188316029" at="209,48,210,31" />
       <scope id="5455967284188316029" at="227,17,228,42" />
       <scope id="5455967284188316029" at="254,34,255,91" />
-      <scope id="5455967284188316029" at="50,89,52,18" />
+      <scope id="5455967284188316029" at="50,87,52,18" />
       <scope id="5455967284188316038" at="95,74,97,145">
         <var name="manager" id="5455967284188316038" />
       </scope>
@@ -441,28 +441,28 @@
         <var name="referenceLink" id="5455967284188316029" />
       </scope>
       <scope id="5455967284188316029" at="110,0,138,0" />
-      <unit id="5455967284188316029" at="261,0,264,0" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder_a$PROPS" />
-      <unit id="5455967284188316029" at="271,0,275,0" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder_a$LINKS" />
-      <unit id="5455967284188316029" at="265,0,270,0" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder_a$CONCEPTS" />
-      <unit id="5455967284188316029" at="112,42,120,5" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder_a$1" />
-      <unit id="5455967284188345314" at="138,0,181,0" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder_a$Inline_Builder0" />
-      <unit id="5455967284188316029" at="193,0,260,0" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder_a$slidesListHandler_obee2x_e0" />
-      <unit id="5455967284188316029" at="46,0,276,0" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder_a" />
+      <unit id="5455967284188316029" at="261,0,264,0" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder$PROPS" />
+      <unit id="5455967284188316029" at="271,0,275,0" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder$LINKS" />
+      <unit id="5455967284188316029" at="265,0,270,0" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder$CONCEPTS" />
+      <unit id="5455967284188316029" at="112,42,120,5" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder$1" />
+      <unit id="5455967284188345314" at="138,0,181,0" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder$Inline_Builder0" />
+      <unit id="5455967284188316029" at="193,0,260,0" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder$slidesListHandler_obee2x_e0" />
+      <unit id="5455967284188316029" at="46,0,276,0" name="com.mbeddr.slides.editor.SlideDeck_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:81afa1db-614d-4337-8be1-abb7e78d23b3(com.mbeddr.slides.editor)/5455967284188341776">
     <file name="Slide_Editor.java">
-      <node id="5455967284188341776" at="11,79,12,71" concept="7" />
+      <node id="5455967284188341776" at="11,79,12,69" concept="7" />
       <node id="5455967284188341776" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5455967284188341776" at="11,79,12,71" />
+      <scope id="5455967284188341776" at="11,79,12,69" />
       <scope id="5455967284188341776" at="11,0,14,0">
         <var name="editorContext" id="5455967284188341776" />
         <var name="node" id="5455967284188341776" />
       </scope>
       <unit id="5455967284188341776" at="10,0,15,0" name="com.mbeddr.slides.editor.Slide_Editor" />
     </file>
-    <file name="Slide_EditorBuilder_a.java">
-      <node id="5455967284188341776" at="50,85,51,19" concept="10" />
+    <file name="Slide_EditorBuilder.java">
+      <node id="5455967284188341776" at="50,83,51,19" concept="10" />
       <node id="5455967284188341776" at="51,19,52,18" concept="2" />
       <node id="5455967284188341776" at="57,26,58,18" concept="7" />
       <node id="5455967284188341776" at="61,39,62,32" concept="7" />
@@ -541,7 +541,7 @@
       <node id="5455967284188341776" at="128,0,131,0" concept="5" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="5455967284188341776" at="131,0,134,0" concept="5" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="5455967284188341776" at="175,96,178,9" concept="4" />
-      <node id="5455967284188341776" at="50,0,54,0" concept="1" trace="Slide_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5455967284188341776" at="50,0,54,0" concept="1" trace="Slide_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5455967284188341776" at="119,0,123,0" concept="1" trace="contentListHandler_iei5tp_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="5455967284188341776" at="124,0,128,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="5455967284188341776" at="157,97,161,9" concept="4" />
@@ -571,7 +571,7 @@
       <scope id="5455967284188341776" at="131,48,132,39" />
       <scope id="5455967284188341776" at="149,17,150,42" />
       <scope id="5455967284188341776" at="176,34,177,91" />
-      <scope id="5455967284188341776" at="50,85,52,18" />
+      <scope id="5455967284188341776" at="50,83,52,18" />
       <scope id="5455967284188342721" at="94,74,96,145">
         <var name="manager" id="5455967284188342721" />
       </scope>
@@ -640,26 +640,26 @@
         <var name="elementNode" id="5455967284188341776" />
         <var name="isEmptyCell" id="5455967284188341776" />
       </scope>
-      <unit id="5455967284188341776" at="189,0,192,0" name="com.mbeddr.slides.editor.Slide_EditorBuilder_a$PROPS" />
-      <unit id="5455967284188341776" at="198,0,201,0" name="com.mbeddr.slides.editor.Slide_EditorBuilder_a$LINKS" />
-      <unit id="5455967284188341776" at="193,0,197,0" name="com.mbeddr.slides.editor.Slide_EditorBuilder_a$CONCEPTS" />
-      <unit id="5455967284188341776" at="115,0,182,0" name="com.mbeddr.slides.editor.Slide_EditorBuilder_a$contentListHandler_iei5tp_c0" />
-      <unit id="5455967284188341776" at="46,0,202,0" name="com.mbeddr.slides.editor.Slide_EditorBuilder_a" />
+      <unit id="5455967284188341776" at="189,0,192,0" name="com.mbeddr.slides.editor.Slide_EditorBuilder$PROPS" />
+      <unit id="5455967284188341776" at="198,0,201,0" name="com.mbeddr.slides.editor.Slide_EditorBuilder$LINKS" />
+      <unit id="5455967284188341776" at="193,0,197,0" name="com.mbeddr.slides.editor.Slide_EditorBuilder$CONCEPTS" />
+      <unit id="5455967284188341776" at="115,0,182,0" name="com.mbeddr.slides.editor.Slide_EditorBuilder$contentListHandler_iei5tp_c0" />
+      <unit id="5455967284188341776" at="46,0,202,0" name="com.mbeddr.slides.editor.Slide_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:81afa1db-614d-4337-8be1-abb7e78d23b3(com.mbeddr.slides.editor)/5455967284188343727">
     <file name="AbstractParagraphSlideContent_Editor.java">
-      <node id="5455967284188343727" at="11,79,12,95" concept="7" />
+      <node id="5455967284188343727" at="11,79,12,93" concept="7" />
       <node id="5455967284188343727" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5455967284188343727" at="11,79,12,95" />
+      <scope id="5455967284188343727" at="11,79,12,93" />
       <scope id="5455967284188343727" at="11,0,14,0">
         <var name="editorContext" id="5455967284188343727" />
         <var name="node" id="5455967284188343727" />
       </scope>
       <unit id="5455967284188343727" at="10,0,15,0" name="com.mbeddr.slides.editor.AbstractParagraphSlideContent_Editor" />
     </file>
-    <file name="AbstractParagraphSlideContent_EditorBuilder_a.java">
-      <node id="5455967284188343727" at="30,109,31,19" concept="10" />
+    <file name="AbstractParagraphSlideContent_EditorBuilder.java">
+      <node id="5455967284188343727" at="30,107,31,19" concept="10" />
       <node id="5455967284188343727" at="31,19,32,18" concept="2" />
       <node id="5455967284188343727" at="37,26,38,18" concept="7" />
       <node id="5455967284188343727" at="41,39,42,32" concept="7" />
@@ -737,7 +737,7 @@
       <node id="5455967284188343727" at="111,87,114,7" concept="4" />
       <node id="5455967284188343727" at="114,7,117,7" concept="4" />
       <node id="5455967284188343727" at="133,0,136,0" concept="5" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="5455967284188343727" at="30,0,34,0" concept="1" trace="AbstractParagraphSlideContent_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5455967284188343727" at="30,0,34,0" concept="1" trace="AbstractParagraphSlideContent_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6584628407654476025" at="68,0,72,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5455967284188343727" at="82,0,86,0" concept="5" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5455967284188343727" at="90,0,94,0" concept="1" trace="textSingleRoleHandler_n11nz0_d0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -760,7 +760,7 @@
       <scope id="5455967284188343727" at="115,42,116,45" />
       <scope id="5455967284188343727" at="129,17,130,42" />
       <scope id="5455967284188343727" at="133,40,134,25" />
-      <scope id="5455967284188343727" at="30,109,32,18" />
+      <scope id="5455967284188343727" at="30,107,32,18" />
       <scope id="6584628407654476025" at="68,42,70,22">
         <var name="editorCell" id="6584628407654476025" />
       </scope>
@@ -828,24 +828,24 @@
       </scope>
       <scope id="5455967284188343727" at="45,0,59,0" />
       <scope id="5455967284188343727" at="119,0,133,0" />
-      <unit id="5455967284188343727" at="161,0,164,0" name="com.mbeddr.slides.editor.AbstractParagraphSlideContent_EditorBuilder_a$LINKS" />
-      <unit id="5455967284188343727" at="86,0,137,0" name="com.mbeddr.slides.editor.AbstractParagraphSlideContent_EditorBuilder_a$textSingleRoleHandler_n11nz0_d0" />
-      <unit id="5455967284188343727" at="26,0,165,0" name="com.mbeddr.slides.editor.AbstractParagraphSlideContent_EditorBuilder_a" />
+      <unit id="5455967284188343727" at="161,0,164,0" name="com.mbeddr.slides.editor.AbstractParagraphSlideContent_EditorBuilder$LINKS" />
+      <unit id="5455967284188343727" at="86,0,137,0" name="com.mbeddr.slides.editor.AbstractParagraphSlideContent_EditorBuilder$textSingleRoleHandler_n11nz0_d0" />
+      <unit id="5455967284188343727" at="26,0,165,0" name="com.mbeddr.slides.editor.AbstractParagraphSlideContent_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:81afa1db-614d-4337-8be1-abb7e78d23b3(com.mbeddr.slides.editor)/5455967284188347169">
     <file name="SlideWord_Editor.java">
-      <node id="5455967284188347169" at="11,79,12,75" concept="7" />
+      <node id="5455967284188347169" at="11,79,12,73" concept="7" />
       <node id="5455967284188347169" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5455967284188347169" at="11,79,12,75" />
+      <scope id="5455967284188347169" at="11,79,12,73" />
       <scope id="5455967284188347169" at="11,0,14,0">
         <var name="editorContext" id="5455967284188347169" />
         <var name="node" id="5455967284188347169" />
       </scope>
       <unit id="5455967284188347169" at="10,0,15,0" name="com.mbeddr.slides.editor.SlideWord_Editor" />
     </file>
-    <file name="SlideWord_EditorBuilder_a.java">
-      <node id="5455967284188347169" at="30,89,31,19" concept="10" />
+    <file name="SlideWord_EditorBuilder.java">
+      <node id="5455967284188347169" at="30,87,31,19" concept="10" />
       <node id="5455967284188347169" at="31,19,32,18" concept="2" />
       <node id="5455967284188347169" at="37,26,38,18" concept="7" />
       <node id="5455967284188347169" at="41,39,42,32" concept="7" />
@@ -904,7 +904,7 @@
       <node id="5455967284188347169" at="99,87,102,7" concept="4" />
       <node id="5455967284188347169" at="102,7,105,7" concept="4" />
       <node id="5455967284188347169" at="121,0,124,0" concept="5" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="5455967284188347169" at="30,0,34,0" concept="1" trace="SlideWord_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5455967284188347169" at="30,0,34,0" concept="1" trace="SlideWord_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8609451857843751108" at="56,0,60,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5455967284188347169" at="70,0,74,0" concept="5" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5455967284188347169" at="78,0,82,0" concept="1" trace="textSingleRoleHandler_4fom4o_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -924,7 +924,7 @@
       <scope id="5455967284188347169" at="103,42,104,45" />
       <scope id="5455967284188347169" at="117,17,118,42" />
       <scope id="5455967284188347169" at="121,40,122,25" />
-      <scope id="5455967284188347169" at="30,89,32,18" />
+      <scope id="5455967284188347169" at="30,87,32,18" />
       <scope id="8609451857843751108" at="56,42,58,22">
         <var name="editorCell" id="8609451857843751108" />
       </scope>
@@ -978,19 +978,19 @@
       <scope id="5455967284188347169" at="45,0,56,0" />
       <scope id="5455967284188347169" at="108,44,119,7" />
       <scope id="5455967284188347169" at="107,0,121,0" />
-      <unit id="5455967284188347169" at="136,0,139,0" name="com.mbeddr.slides.editor.SlideWord_EditorBuilder_a$LINKS" />
-      <unit id="5455967284188347169" at="74,0,125,0" name="com.mbeddr.slides.editor.SlideWord_EditorBuilder_a$textSingleRoleHandler_4fom4o_c0" />
-      <unit id="5455967284188347169" at="26,0,140,0" name="com.mbeddr.slides.editor.SlideWord_EditorBuilder_a" />
+      <unit id="5455967284188347169" at="136,0,139,0" name="com.mbeddr.slides.editor.SlideWord_EditorBuilder$LINKS" />
+      <unit id="5455967284188347169" at="74,0,125,0" name="com.mbeddr.slides.editor.SlideWord_EditorBuilder$textSingleRoleHandler_4fom4o_c0" />
+      <unit id="5455967284188347169" at="26,0,140,0" name="com.mbeddr.slides.editor.SlideWord_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:81afa1db-614d-4337-8be1-abb7e78d23b3(com.mbeddr.slides.editor)/5455967284188413424">
     <file name="LinkWord_Editor.java">
-      <node id="5455967284188413424" at="11,79,12,74" concept="7" />
-      <node id="5455967284188413424" at="14,82,15,77" concept="7" />
+      <node id="5455967284188413424" at="11,79,12,72" concept="7" />
+      <node id="5455967284188413424" at="14,82,15,75" concept="7" />
       <node id="5455967284188413424" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5455967284188413424" at="14,0,17,0" concept="5" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5455967284188413424" at="11,79,12,74" />
-      <scope id="5455967284188413424" at="14,82,15,77" />
+      <scope id="5455967284188413424" at="11,79,12,72" />
+      <scope id="5455967284188413424" at="14,82,15,75" />
       <scope id="5455967284188413424" at="11,0,14,0">
         <var name="editorContext" id="5455967284188413424" />
         <var name="node" id="5455967284188413424" />
@@ -1001,8 +1001,8 @@
       </scope>
       <unit id="5455967284188413424" at="10,0,18,0" name="com.mbeddr.slides.editor.LinkWord_Editor" />
     </file>
-    <file name="LinkWord_EditorBuilder_a.java">
-      <node id="5455967284188413424" at="30,88,31,19" concept="10" />
+    <file name="LinkWord_EditorBuilder.java">
+      <node id="5455967284188413424" at="30,86,31,19" concept="10" />
       <node id="5455967284188413424" at="31,19,32,18" concept="2" />
       <node id="5455967284188413424" at="37,26,38,18" concept="7" />
       <node id="5455967284188413424" at="41,39,42,32" concept="7" />
@@ -1061,7 +1061,7 @@
       <node id="5455967284188413424" at="99,87,102,7" concept="4" />
       <node id="5455967284188413424" at="102,7,105,7" concept="4" />
       <node id="5455967284188413424" at="121,0,124,0" concept="5" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="5455967284188413424" at="30,0,34,0" concept="1" trace="LinkWord_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5455967284188413424" at="30,0,34,0" concept="1" trace="LinkWord_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8609451857843750315" at="56,0,60,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5455967284188413424" at="70,0,74,0" concept="5" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5455967284188413424" at="78,0,82,0" concept="1" trace="textSingleRoleHandler_93azn8_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -1081,7 +1081,7 @@
       <scope id="5455967284188413424" at="103,42,104,45" />
       <scope id="5455967284188413424" at="117,17,118,42" />
       <scope id="5455967284188413424" at="121,40,122,25" />
-      <scope id="5455967284188413424" at="30,88,32,18" />
+      <scope id="5455967284188413424" at="30,86,32,18" />
       <scope id="8609451857843750315" at="56,42,58,22">
         <var name="editorCell" id="8609451857843750315" />
       </scope>
@@ -1135,12 +1135,12 @@
       <scope id="5455967284188413424" at="45,0,56,0" />
       <scope id="5455967284188413424" at="108,44,119,7" />
       <scope id="5455967284188413424" at="107,0,121,0" />
-      <unit id="5455967284188413424" at="136,0,139,0" name="com.mbeddr.slides.editor.LinkWord_EditorBuilder_a$LINKS" />
-      <unit id="5455967284188413424" at="74,0,125,0" name="com.mbeddr.slides.editor.LinkWord_EditorBuilder_a$textSingleRoleHandler_93azn8_c0" />
-      <unit id="5455967284188413424" at="26,0,140,0" name="com.mbeddr.slides.editor.LinkWord_EditorBuilder_a" />
+      <unit id="5455967284188413424" at="136,0,139,0" name="com.mbeddr.slides.editor.LinkWord_EditorBuilder$LINKS" />
+      <unit id="5455967284188413424" at="74,0,125,0" name="com.mbeddr.slides.editor.LinkWord_EditorBuilder$textSingleRoleHandler_93azn8_c0" />
+      <unit id="5455967284188413424" at="26,0,140,0" name="com.mbeddr.slides.editor.LinkWord_EditorBuilder" />
     </file>
-    <file name="LinkWord_InspectorBuilder_a.java">
-      <node id="5455967284188413424" at="32,91,33,19" concept="10" />
+    <file name="LinkWord_InspectorBuilder.java">
+      <node id="5455967284188413424" at="32,89,33,19" concept="10" />
       <node id="5455967284188413424" at="33,19,34,18" concept="2" />
       <node id="5455967284188413424" at="39,26,40,18" concept="7" />
       <node id="5455967284188413424" at="43,39,44,32" concept="7" />
@@ -1173,7 +1173,7 @@
       <node id="5455967284188413424" at="89,0,90,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="5455967284188413424" at="29,0,31,0" concept="3" trace="myNode" />
       <node id="5455967284188413424" at="43,0,46,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="5455967284188413424" at="32,0,36,0" concept="1" trace="LinkWord_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5455967284188413424" at="32,0,36,0" concept="1" trace="LinkWord_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5455967284188413424" at="37,0,42,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="5455967284188413443" at="73,208,78,24" concept="4" />
       <node id="5455967284188413439" at="56,0,62,0" concept="5" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -1183,7 +1183,7 @@
       <scope id="5455967284188413424" at="39,26,40,18" />
       <scope id="5455967284188413424" at="43,39,44,32" />
       <scope id="5455967284188413443" at="79,15,80,40" />
-      <scope id="5455967284188413424" at="32,91,34,18" />
+      <scope id="5455967284188413424" at="32,89,34,18" />
       <scope id="5455967284188413443" at="74,74,76,145">
         <var name="manager" id="5455967284188413443" />
       </scope>
@@ -1209,24 +1209,24 @@
       </scope>
       <scope id="5455967284188413443" at="62,41,81,5" />
       <scope id="5455967284188413443" at="62,0,83,0" />
-      <unit id="5455967284188413424" at="84,0,87,0" name="com.mbeddr.slides.editor.LinkWord_InspectorBuilder_a$PROPS" />
-      <unit id="5455967284188413424" at="88,0,91,0" name="com.mbeddr.slides.editor.LinkWord_InspectorBuilder_a$CONCEPTS" />
-      <unit id="5455967284188413424" at="28,0,92,0" name="com.mbeddr.slides.editor.LinkWord_InspectorBuilder_a" />
+      <unit id="5455967284188413424" at="84,0,87,0" name="com.mbeddr.slides.editor.LinkWord_InspectorBuilder$PROPS" />
+      <unit id="5455967284188413424" at="88,0,91,0" name="com.mbeddr.slides.editor.LinkWord_InspectorBuilder$CONCEPTS" />
+      <unit id="5455967284188413424" at="28,0,92,0" name="com.mbeddr.slides.editor.LinkWord_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:81afa1db-614d-4337-8be1-abb7e78d23b3(com.mbeddr.slides.editor)/5455967284188426199">
     <file name="ImageSlideContent_Editor.java">
-      <node id="5455967284188426199" at="11,79,12,83" concept="7" />
+      <node id="5455967284188426199" at="11,79,12,81" concept="7" />
       <node id="5455967284188426199" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5455967284188426199" at="11,79,12,83" />
+      <scope id="5455967284188426199" at="11,79,12,81" />
       <scope id="5455967284188426199" at="11,0,14,0">
         <var name="editorContext" id="5455967284188426199" />
         <var name="node" id="5455967284188426199" />
       </scope>
       <unit id="5455967284188426199" at="10,0,15,0" name="com.mbeddr.slides.editor.ImageSlideContent_Editor" />
     </file>
-    <file name="ImageSlideContent_EditorBuilder_a.java">
-      <node id="5455967284188426199" at="62,97,63,19" concept="10" />
+    <file name="ImageSlideContent_EditorBuilder.java">
+      <node id="5455967284188426199" at="62,95,63,19" concept="10" />
       <node id="5455967284188426199" at="63,19,64,18" concept="2" />
       <node id="5455967284188426199" at="69,26,70,18" concept="7" />
       <node id="5455967284188426199" at="73,39,74,32" concept="7" />
@@ -1236,13 +1236,13 @@
       <node id="5455967284188426199" at="80,28,81,31" concept="2" />
       <node id="8730648445433571705" at="81,31,82,47" concept="2" />
       <node id="6068976060903274194" at="82,47,83,47" concept="2" />
-      <node id="6327895697655084195" at="84,37,85,59" concept="2" />
-      <node id="6386504476136365313" at="87,37,88,53" concept="2" />
+      <node id="6327895697655084195" at="84,27,85,59" concept="2" />
+      <node id="6386504476136365313" at="87,27,88,53" concept="2" />
       <node id="6068976060903274203" at="89,5,90,47" concept="2" />
       <node id="8730648445433571736" at="90,47,91,47" concept="2" />
       <node id="5455967284188426199" at="91,47,92,22" concept="7" />
-      <node id="3273071121108373437" at="94,46,95,72" concept="7" />
-      <node id="3273071121108373468" at="97,46,98,75" concept="7" />
+      <node id="3273071121108373437" at="94,36,95,72" concept="7" />
+      <node id="3273071121108373468" at="97,36,98,75" concept="7" />
       <node id="8730648445433571705" at="100,39,101,146" concept="6" />
       <node id="8730648445433571705" at="101,146,102,74" concept="6" />
       <node id="8730648445433571705" at="102,74,103,45" concept="2" />
@@ -1387,12 +1387,12 @@
       <node id="5455967284188426199" at="73,0,76,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6327895697655084195" at="83,47,86,5" concept="4" />
       <node id="6386504476136365313" at="86,5,89,5" concept="4" />
-      <node id="6327895697655101233" at="94,0,97,0" concept="5" trace="nodeCondition_p7o390_a2a#()Z" />
-      <node id="3273071121108373466" at="97,0,100,0" concept="5" trace="nodeCondition_p7o390_a3a#()Z" />
+      <node id="6327895697655101233" at="94,0,97,0" concept="5" trace="nodeCondition0#()Z" />
+      <node id="3273071121108373466" at="97,0,100,0" concept="5" trace="nodeCondition1#()Z" />
       <node id="5455967284188426199" at="193,87,196,7" concept="4" />
       <node id="5455967284188426199" at="196,7,199,7" concept="4" />
       <node id="5455967284188426199" at="215,0,218,0" concept="5" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="5455967284188426199" at="62,0,66,0" concept="1" trace="ImageSlideContent_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5455967284188426199" at="62,0,66,0" concept="1" trace="ImageSlideContent_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5455967284188426199" at="164,0,168,0" concept="5" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5455967284188426199" at="172,0,176,0" concept="1" trace="resourceSingleRoleHandler_p7o390_c3a#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="5455967284188426199" at="67,0,72,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -1429,10 +1429,10 @@
       <node id="5455967284188453276" at="287,0,308,0" concept="5" trace="createProperty_2#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="5455967284188426199" at="69,26,70,18" />
       <scope id="5455967284188426199" at="73,39,74,32" />
-      <scope id="6327895697655084195" at="84,37,85,59" />
-      <scope id="6386504476136365313" at="87,37,88,53" />
-      <scope id="6327895697655101234" at="94,46,95,72" />
-      <scope id="3273071121108373467" at="97,46,98,75" />
+      <scope id="6327895697655084195" at="84,27,85,59" />
+      <scope id="6386504476136365313" at="87,27,88,53" />
+      <scope id="6327895697655101234" at="94,36,95,72" />
+      <scope id="3273071121108373467" at="97,36,98,75" />
       <scope id="6386504476136532577" at="123,141,124,40" />
       <scope id="5455967284188426199" at="179,28,180,20" />
       <scope id="5455967284188426199" at="194,118,195,137" />
@@ -1442,7 +1442,7 @@
       <scope id="5455967284188426250" at="246,15,247,40" />
       <scope id="5455967284188426254" at="273,15,274,40" />
       <scope id="5455967284188453276" at="304,15,305,40" />
-      <scope id="5455967284188426199" at="62,97,64,18" />
+      <scope id="5455967284188426199" at="62,95,64,18" />
       <scope id="4457500422381735234" at="126,11,128,47">
         <var name="imeg" id="4457500422381722856" />
       </scope>
@@ -1583,11 +1583,11 @@
       <scope id="5455967284188426250" at="229,0,250,0" />
       <scope id="5455967284188426254" at="256,0,277,0" />
       <scope id="5455967284188453276" at="287,0,308,0" />
-      <unit id="5455967284188426199" at="328,0,331,0" name="com.mbeddr.slides.editor.ImageSlideContent_EditorBuilder_a$LINKS" />
-      <unit id="5455967284188426199" at="332,0,335,0" name="com.mbeddr.slides.editor.ImageSlideContent_EditorBuilder_a$CONCEPTS" />
-      <unit id="5455967284188426199" at="321,0,327,0" name="com.mbeddr.slides.editor.ImageSlideContent_EditorBuilder_a$PROPS" />
-      <unit id="5455967284188426199" at="168,0,219,0" name="com.mbeddr.slides.editor.ImageSlideContent_EditorBuilder_a$resourceSingleRoleHandler_p7o390_c3a" />
-      <unit id="5455967284188426199" at="58,0,336,0" name="com.mbeddr.slides.editor.ImageSlideContent_EditorBuilder_a" />
+      <unit id="5455967284188426199" at="328,0,331,0" name="com.mbeddr.slides.editor.ImageSlideContent_EditorBuilder$LINKS" />
+      <unit id="5455967284188426199" at="332,0,335,0" name="com.mbeddr.slides.editor.ImageSlideContent_EditorBuilder$CONCEPTS" />
+      <unit id="5455967284188426199" at="321,0,327,0" name="com.mbeddr.slides.editor.ImageSlideContent_EditorBuilder$PROPS" />
+      <unit id="5455967284188426199" at="168,0,219,0" name="com.mbeddr.slides.editor.ImageSlideContent_EditorBuilder$resourceSingleRoleHandler_p7o390_c3a" />
+      <unit id="5455967284188426199" at="58,0,336,0" name="com.mbeddr.slides.editor.ImageSlideContent_EditorBuilder" />
     </file>
   </root>
 </debug-info>

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class SimpleStringReqData_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SimpleStringReqData_EditorBuilder_a(editorContext, node).createCell();
+    return new SimpleStringReqData_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -18,6 +18,6 @@ public class AbstractSection_ToCEntry_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AbstractSection_ToCEntry_EditorBuilder_a(editorContext, node).createCell();
+    return new AbstractSection_ToCEntry_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class VariantCase_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new VariantCase_EditorBuilder_a(editorContext, node).createCell();
+    return new VariantCase_EditorBuilder(editorContext, node).createCell();
   }
 }

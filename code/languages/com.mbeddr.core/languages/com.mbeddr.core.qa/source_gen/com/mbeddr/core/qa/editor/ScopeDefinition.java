@@ -16,6 +16,6 @@ public class ScopeDefinition implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ScopeDefinition_ComponentBuilder_a(editorContext, node).createCell();
+    return new ScopeDefinition_ComponentBuilder(editorContext, node).createCell();
   }
 }

@@ -16,6 +16,6 @@ public class externFlag implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new externFlag_ComponentBuilder_a(editorContext, node).createCell();
+    return new externFlag_ComponentBuilder(editorContext, node).createCell();
   }
 }

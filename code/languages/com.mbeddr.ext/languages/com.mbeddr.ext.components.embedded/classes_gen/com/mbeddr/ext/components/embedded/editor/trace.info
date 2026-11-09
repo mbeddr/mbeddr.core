@@ -20,12 +20,12 @@
   </root>
   <root nodeRef="r:785fa9c8-f837-4deb-8b2a-5851f3658bf3(com.mbeddr.ext.components.embedded.editor)/1265662339477389130">
     <file name="InterruptRunnableReturnValue_Editor.java">
-      <node id="1265662339477389130" at="11,79,12,94" concept="6" />
-      <node id="1265662339477389130" at="14,82,15,97" concept="6" />
+      <node id="1265662339477389130" at="11,79,12,92" concept="6" />
+      <node id="1265662339477389130" at="14,82,15,95" concept="6" />
       <node id="1265662339477389130" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1265662339477389130" at="14,0,17,0" concept="4" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="1265662339477389130" at="11,79,12,94" />
-      <scope id="1265662339477389130" at="14,82,15,97" />
+      <scope id="1265662339477389130" at="11,79,12,92" />
+      <scope id="1265662339477389130" at="14,82,15,95" />
       <scope id="1265662339477389130" at="11,0,14,0">
         <var name="editorContext" id="1265662339477389130" />
         <var name="node" id="1265662339477389130" />
@@ -36,8 +36,8 @@
       </scope>
       <unit id="1265662339477389130" at="10,0,18,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableReturnValue_Editor" />
     </file>
-    <file name="InterruptRunnableReturnValue_EditorBuilder_a.java">
-      <node id="1265662339477389130" at="19,108,20,19" concept="11" />
+    <file name="InterruptRunnableReturnValue_EditorBuilder.java">
+      <node id="1265662339477389130" at="19,106,20,19" concept="11" />
       <node id="1265662339477389130" at="20,19,21,18" concept="1" />
       <node id="1265662339477389130" at="26,26,27,18" concept="6" />
       <node id="1265662339477389130" at="30,39,31,31" concept="6" />
@@ -51,13 +51,13 @@
       <node id="1265662339477389132" at="43,40,44,22" concept="6" />
       <node id="1265662339477389130" at="16,0,18,0" concept="2" trace="myNode" />
       <node id="1265662339477389130" at="30,0,33,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1265662339477389130" at="19,0,23,0" concept="0" trace="InterruptRunnableReturnValue_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1265662339477389130" at="19,0,23,0" concept="0" trace="InterruptRunnableReturnValue_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1265662339477389132" at="36,72,40,5" concept="3" />
       <node id="1265662339477389130" at="24,0,29,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1265662339477389132" at="34,0,46,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="1265662339477389130" at="26,26,27,18" />
       <scope id="1265662339477389130" at="30,39,31,31" />
-      <scope id="1265662339477389130" at="19,108,21,18" />
+      <scope id="1265662339477389130" at="19,106,21,18" />
       <scope id="1265662339477389132" at="37,26,39,30" />
       <scope id="1265662339477389130" at="30,0,33,0" />
       <scope id="1265662339477389130" at="19,0,23,0">
@@ -71,10 +71,10 @@
         <var name="style" id="1265662339477389132" />
       </scope>
       <scope id="1265662339477389132" at="34,0,46,0" />
-      <unit id="1265662339477389130" at="15,0,47,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableReturnValue_EditorBuilder_a" />
+      <unit id="1265662339477389130" at="15,0,47,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableReturnValue_EditorBuilder" />
     </file>
-    <file name="InterruptRunnableReturnValue_InspectorBuilder_a.java">
-      <node id="1265662339477389130" at="16,111,17,19" concept="11" />
+    <file name="InterruptRunnableReturnValue_InspectorBuilder.java">
+      <node id="1265662339477389130" at="16,109,17,19" concept="11" />
       <node id="1265662339477389130" at="17,19,18,18" concept="1" />
       <node id="1265662339477389130" at="23,26,24,18" concept="6" />
       <node id="1265662339477389130" at="27,39,28,31" concept="6" />
@@ -85,13 +85,13 @@
       <node id="3381342940918265628" at="37,5,38,22" concept="6" />
       <node id="1265662339477389130" at="13,0,15,0" concept="2" trace="myNode" />
       <node id="1265662339477389130" at="27,0,30,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1265662339477389130" at="16,0,20,0" concept="0" trace="InterruptRunnableReturnValue_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1265662339477389130" at="16,0,20,0" concept="0" trace="InterruptRunnableReturnValue_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3381342940918265628" at="33,72,37,5" concept="3" />
       <node id="1265662339477389130" at="21,0,26,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3381342940918265628" at="31,0,40,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="1265662339477389130" at="23,26,24,18" />
       <scope id="1265662339477389130" at="27,39,28,31" />
-      <scope id="1265662339477389130" at="16,111,18,18" />
+      <scope id="1265662339477389130" at="16,109,18,18" />
       <scope id="3381342940918265628" at="34,26,36,30" />
       <scope id="1265662339477389130" at="27,0,30,0" />
       <scope id="1265662339477389130" at="16,0,20,0">
@@ -104,22 +104,22 @@
         <var name="editorCell" id="3381342940918265628" />
       </scope>
       <scope id="3381342940918265628" at="31,0,40,0" />
-      <unit id="1265662339477389130" at="12,0,41,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableReturnValue_InspectorBuilder_a" />
+      <unit id="1265662339477389130" at="12,0,41,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableReturnValue_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:785fa9c8-f837-4deb-8b2a-5851f3658bf3(com.mbeddr.ext.components.embedded.editor)/1265662339477559599">
     <file name="InterruptExitHandler_Editor.java">
-      <node id="1265662339477559599" at="11,79,12,86" concept="6" />
+      <node id="1265662339477559599" at="11,79,12,84" concept="6" />
       <node id="1265662339477559599" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="1265662339477559599" at="11,79,12,86" />
+      <scope id="1265662339477559599" at="11,79,12,84" />
       <scope id="1265662339477559599" at="11,0,14,0">
         <var name="editorContext" id="1265662339477559599" />
         <var name="node" id="1265662339477559599" />
       </scope>
       <unit id="1265662339477559599" at="10,0,15,0" name="com.mbeddr.ext.components.embedded.editor.InterruptExitHandler_Editor" />
     </file>
-    <file name="InterruptExitHandler_EditorBuilder_a.java">
-      <node id="1265662339477559599" at="34,100,35,19" concept="11" />
+    <file name="InterruptExitHandler_EditorBuilder.java">
+      <node id="1265662339477559599" at="34,98,35,19" concept="11" />
       <node id="1265662339477559599" at="35,19,36,18" concept="1" />
       <node id="1265662339477559599" at="41,26,42,18" concept="6" />
       <node id="1265662339477559599" at="45,39,46,32" concept="6" />
@@ -177,7 +177,7 @@
       <node id="1265662339477559599" at="107,87,110,7" concept="3" />
       <node id="1265662339477559599" at="110,7,113,7" concept="3" />
       <node id="1265662339477559599" at="129,0,132,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="1265662339477559599" at="34,0,38,0" concept="0" trace="InterruptExitHandler_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1265662339477559599" at="34,0,38,0" concept="0" trace="InterruptExitHandler_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1265662339477559599" at="78,0,82,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1265662339477559599" at="86,0,90,0" concept="0" trace="bodySingleRoleHandler_huqf5_b0a#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="1265662339477559599" at="39,0,44,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -197,7 +197,7 @@
       <scope id="1265662339477559599" at="111,42,112,45" />
       <scope id="1265662339477559599" at="125,17,126,42" />
       <scope id="1265662339477559599" at="129,40,130,25" />
-      <scope id="1265662339477559599" at="34,100,36,18" />
+      <scope id="1265662339477559599" at="34,98,36,18" />
       <scope id="1265662339477559599" at="78,40,80,33">
         <var name="provider" id="1265662339477559599" />
       </scope>
@@ -252,9 +252,9 @@
       <scope id="1265662339477559599" at="58,0,69,0" />
       <scope id="1265662339477559599" at="116,44,127,7" />
       <scope id="1265662339477559599" at="115,0,129,0" />
-      <unit id="1265662339477559599" at="139,0,142,0" name="com.mbeddr.ext.components.embedded.editor.InterruptExitHandler_EditorBuilder_a$LINKS" />
-      <unit id="1265662339477559599" at="82,0,133,0" name="com.mbeddr.ext.components.embedded.editor.InterruptExitHandler_EditorBuilder_a$bodySingleRoleHandler_huqf5_b0a" />
-      <unit id="1265662339477559599" at="30,0,143,0" name="com.mbeddr.ext.components.embedded.editor.InterruptExitHandler_EditorBuilder_a" />
+      <unit id="1265662339477559599" at="139,0,142,0" name="com.mbeddr.ext.components.embedded.editor.InterruptExitHandler_EditorBuilder$LINKS" />
+      <unit id="1265662339477559599" at="82,0,133,0" name="com.mbeddr.ext.components.embedded.editor.InterruptExitHandler_EditorBuilder$bodySingleRoleHandler_huqf5_b0a" />
+      <unit id="1265662339477559599" at="30,0,143,0" name="com.mbeddr.ext.components.embedded.editor.InterruptExitHandler_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:785fa9c8-f837-4deb-8b2a-5851f3658bf3(com.mbeddr.ext.components.embedded.editor)/1265662339477561012">
@@ -342,17 +342,17 @@
   </root>
   <root nodeRef="r:785fa9c8-f837-4deb-8b2a-5851f3658bf3(com.mbeddr.ext.components.embedded.editor)/4236008918584585837">
     <file name="InterruptProcessed_Editor.java">
-      <node id="4236008918584585837" at="11,79,12,84" concept="6" />
+      <node id="4236008918584585837" at="11,79,12,82" concept="6" />
       <node id="4236008918584585837" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="4236008918584585837" at="11,79,12,84" />
+      <scope id="4236008918584585837" at="11,79,12,82" />
       <scope id="4236008918584585837" at="11,0,14,0">
         <var name="editorContext" id="4236008918584585837" />
         <var name="node" id="4236008918584585837" />
       </scope>
       <unit id="4236008918584585837" at="10,0,15,0" name="com.mbeddr.ext.components.embedded.editor.InterruptProcessed_Editor" />
     </file>
-    <file name="InterruptProcessed_EditorBuilder_a.java">
-      <node id="4236008918584585837" at="19,98,20,19" concept="11" />
+    <file name="InterruptProcessed_EditorBuilder.java">
+      <node id="4236008918584585837" at="19,96,20,19" concept="11" />
       <node id="4236008918584585837" at="20,19,21,18" concept="1" />
       <node id="4236008918584585837" at="26,26,27,18" concept="6" />
       <node id="4236008918584585837" at="30,39,31,32" concept="6" />
@@ -370,14 +370,14 @@
       <node id="4337203540625018957" at="49,93,50,22" concept="6" />
       <node id="4236008918584585837" at="16,0,18,0" concept="2" trace="myNode" />
       <node id="4236008918584585837" at="30,0,33,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="4236008918584585837" at="19,0,23,0" concept="0" trace="InterruptProcessed_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4236008918584585837" at="19,0,23,0" concept="0" trace="InterruptProcessed_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4337203540625018946" at="43,0,47,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4236008918584585837" at="24,0,29,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4337203540625018957" at="47,0,52,0" concept="4" trace="createAttributedNodeCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4236008918584585837" at="34,0,43,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="4236008918584585837" at="26,26,27,18" />
       <scope id="4236008918584585837" at="30,39,31,32" />
-      <scope id="4236008918584585837" at="19,98,21,18" />
+      <scope id="4236008918584585837" at="19,96,21,18" />
       <scope id="4337203540625018946" at="43,42,45,22">
         <var name="editorCell" id="4337203540625018946" />
       </scope>
@@ -397,22 +397,22 @@
         <var name="editorCell" id="4236008918584585837" />
       </scope>
       <scope id="4236008918584585837" at="34,0,43,0" />
-      <unit id="4236008918584585837" at="15,0,53,0" name="com.mbeddr.ext.components.embedded.editor.InterruptProcessed_EditorBuilder_a" />
+      <unit id="4236008918584585837" at="15,0,53,0" name="com.mbeddr.ext.components.embedded.editor.InterruptProcessed_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:785fa9c8-f837-4deb-8b2a-5851f3658bf3(com.mbeddr.ext.components.embedded.editor)/4236008918584585859">
     <file name="InterruptRunnableMappingActive_Editor.java">
-      <node id="4236008918584585859" at="11,79,12,96" concept="6" />
+      <node id="4236008918584585859" at="11,79,12,94" concept="6" />
       <node id="4236008918584585859" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="4236008918584585859" at="11,79,12,96" />
+      <scope id="4236008918584585859" at="11,79,12,94" />
       <scope id="4236008918584585859" at="11,0,14,0">
         <var name="editorContext" id="4236008918584585859" />
         <var name="node" id="4236008918584585859" />
       </scope>
       <unit id="4236008918584585859" at="10,0,15,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMappingActive_Editor" />
     </file>
-    <file name="InterruptRunnableMappingActive_EditorBuilder_a.java">
-      <node id="4236008918584585859" at="19,110,20,19" concept="11" />
+    <file name="InterruptRunnableMappingActive_EditorBuilder.java">
+      <node id="4236008918584585859" at="19,108,20,19" concept="11" />
       <node id="4236008918584585859" at="20,19,21,18" concept="1" />
       <node id="4236008918584585859" at="26,26,27,18" concept="6" />
       <node id="4236008918584585859" at="30,39,31,32" concept="6" />
@@ -430,14 +430,14 @@
       <node id="4236008918584585864" at="49,93,50,22" concept="6" />
       <node id="4236008918584585859" at="16,0,18,0" concept="2" trace="myNode" />
       <node id="4236008918584585859" at="30,0,33,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="4236008918584585859" at="19,0,23,0" concept="0" trace="InterruptRunnableMappingActive_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4236008918584585859" at="19,0,23,0" concept="0" trace="InterruptRunnableMappingActive_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4236008918584585863" at="43,0,47,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4236008918584585859" at="24,0,29,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4236008918584585864" at="47,0,52,0" concept="4" trace="createAttributedNodeCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4236008918584585859" at="34,0,43,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="4236008918584585859" at="26,26,27,18" />
       <scope id="4236008918584585859" at="30,39,31,32" />
-      <scope id="4236008918584585859" at="19,110,21,18" />
+      <scope id="4236008918584585859" at="19,108,21,18" />
       <scope id="4236008918584585863" at="43,42,45,22">
         <var name="editorCell" id="4236008918584585863" />
       </scope>
@@ -457,22 +457,22 @@
         <var name="editorCell" id="4236008918584585859" />
       </scope>
       <scope id="4236008918584585859" at="34,0,43,0" />
-      <unit id="4236008918584585859" at="15,0,53,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMappingActive_EditorBuilder_a" />
+      <unit id="4236008918584585859" at="15,0,53,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMappingActive_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:785fa9c8-f837-4deb-8b2a-5851f3658bf3(com.mbeddr.ext.components.embedded.editor)/9172009453270375593">
     <file name="InterruptRunnableMapping_Editor.java">
-      <node id="9172009453270375593" at="11,79,12,90" concept="6" />
+      <node id="9172009453270375593" at="11,79,12,88" concept="6" />
       <node id="9172009453270375593" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="9172009453270375593" at="11,79,12,90" />
+      <scope id="9172009453270375593" at="11,79,12,88" />
       <scope id="9172009453270375593" at="11,0,14,0">
         <var name="editorContext" id="9172009453270375593" />
         <var name="node" id="9172009453270375593" />
       </scope>
       <unit id="9172009453270375593" at="10,0,15,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_Editor" />
     </file>
-    <file name="InterruptRunnableMapping_EditorBuilder_a.java">
-      <node id="9172009453270375593" at="42,104,43,19" concept="11" />
+    <file name="InterruptRunnableMapping_EditorBuilder.java">
+      <node id="9172009453270375593" at="42,102,43,19" concept="11" />
       <node id="9172009453270375593" at="43,19,44,18" concept="1" />
       <node id="9172009453270375593" at="49,26,50,18" concept="6" />
       <node id="9172009453270375593" at="53,39,54,32" concept="6" />
@@ -638,7 +638,7 @@
       <node id="9172009453270375598" at="118,0,121,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="9172009453270375602" at="198,0,201,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="9172009453270375608" at="280,0,283,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="9172009453270375593" at="42,0,46,0" concept="0" trace="InterruptRunnableMapping_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="9172009453270375593" at="42,0,46,0" concept="0" trace="InterruptRunnableMapping_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="9172009453270375593" at="93,0,97,5" concept="3" />
       <node id="9172009453270375593" at="173,0,177,5" concept="3" />
       <node id="9172009453270375593" at="255,0,259,5" concept="3" />
@@ -685,7 +685,7 @@
       <scope id="9172009453270375608" at="280,41,281,32" />
       <scope id="9172009453270375608" at="286,28,287,20" />
       <scope id="9172009453270375609" at="307,17,308,42" />
-      <scope id="9172009453270375593" at="42,104,44,18" />
+      <scope id="9172009453270375593" at="42,102,44,18" />
       <scope id="9172009453270375593" at="94,40,96,48" />
       <scope id="9172009453270375593" at="101,73,103,145">
         <var name="manager" id="9172009453270375593" />
@@ -822,31 +822,31 @@
       <scope id="9172009453270375593" at="79,0,107,0" />
       <scope id="9172009453270375593" at="159,0,187,0" />
       <scope id="9172009453270375593" at="241,0,269,0" />
-      <unit id="9172009453270375593" at="324,0,327,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder_a$PROPS" />
-      <unit id="9172009453270375593" at="319,0,323,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder_a$CONCEPTS" />
-      <unit id="9172009453270375593" at="313,0,318,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder_a$LINKS" />
-      <unit id="9172009453270375593" at="81,42,89,5" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder_a$1" />
-      <unit id="9172009453270375593" at="161,42,169,5" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder_a$2" />
-      <unit id="9172009453270375593" at="243,42,251,5" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder_a$3" />
-      <unit id="9172009453270375598" at="107,0,150,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder_a$Inline_Builder0" />
-      <unit id="9172009453270375602" at="187,0,230,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder_a$Inline_Builder1" />
-      <unit id="9172009453270375608" at="269,0,312,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder_a$Inline_Builder2" />
-      <unit id="9172009453270375593" at="38,0,328,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder_a" />
+      <unit id="9172009453270375593" at="324,0,327,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder$PROPS" />
+      <unit id="9172009453270375593" at="319,0,323,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder$CONCEPTS" />
+      <unit id="9172009453270375593" at="313,0,318,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder$LINKS" />
+      <unit id="9172009453270375593" at="81,42,89,5" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder$1" />
+      <unit id="9172009453270375593" at="161,42,169,5" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder$2" />
+      <unit id="9172009453270375593" at="243,42,251,5" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder$3" />
+      <unit id="9172009453270375598" at="107,0,150,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder$Inline_Builder0" />
+      <unit id="9172009453270375602" at="187,0,230,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder$Inline_Builder1" />
+      <unit id="9172009453270375608" at="269,0,312,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder$Inline_Builder2" />
+      <unit id="9172009453270375593" at="38,0,328,0" name="com.mbeddr.ext.components.embedded.editor.InterruptRunnableMapping_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:785fa9c8-f837-4deb-8b2a-5851f3658bf3(com.mbeddr.ext.components.embedded.editor)/9172009453270379332">
     <file name="InterruptTrigger_Editor.java">
-      <node id="9172009453270379332" at="11,79,12,82" concept="6" />
+      <node id="9172009453270379332" at="11,79,12,80" concept="6" />
       <node id="9172009453270379332" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="9172009453270379332" at="11,79,12,82" />
+      <scope id="9172009453270379332" at="11,79,12,80" />
       <scope id="9172009453270379332" at="11,0,14,0">
         <var name="editorContext" id="9172009453270379332" />
         <var name="node" id="9172009453270379332" />
       </scope>
       <unit id="9172009453270379332" at="10,0,15,0" name="com.mbeddr.ext.components.embedded.editor.InterruptTrigger_Editor" />
     </file>
-    <file name="InterruptTrigger_EditorBuilder_a.java">
-      <node id="9172009453270379332" at="16,96,17,19" concept="11" />
+    <file name="InterruptTrigger_EditorBuilder.java">
+      <node id="9172009453270379332" at="16,94,17,19" concept="11" />
       <node id="9172009453270379332" at="17,19,18,18" concept="1" />
       <node id="9172009453270379332" at="23,26,24,18" concept="6" />
       <node id="9172009453270379332" at="27,39,28,31" concept="6" />
@@ -857,13 +857,13 @@
       <node id="1265662339476651305" at="37,5,38,22" concept="6" />
       <node id="9172009453270379332" at="13,0,15,0" concept="2" trace="myNode" />
       <node id="9172009453270379332" at="27,0,30,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="9172009453270379332" at="16,0,20,0" concept="0" trace="InterruptTrigger_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="9172009453270379332" at="16,0,20,0" concept="0" trace="InterruptTrigger_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1265662339476651305" at="33,72,37,5" concept="3" />
       <node id="9172009453270379332" at="21,0,26,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1265662339476651305" at="31,0,40,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="9172009453270379332" at="23,26,24,18" />
       <scope id="9172009453270379332" at="27,39,28,31" />
-      <scope id="9172009453270379332" at="16,96,18,18" />
+      <scope id="9172009453270379332" at="16,94,18,18" />
       <scope id="1265662339476651305" at="34,26,36,30" />
       <scope id="9172009453270379332" at="27,0,30,0" />
       <scope id="9172009453270379332" at="16,0,20,0">
@@ -876,7 +876,7 @@
         <var name="editorCell" id="1265662339476651305" />
       </scope>
       <scope id="1265662339476651305" at="31,0,40,0" />
-      <unit id="9172009453270379332" at="12,0,41,0" name="com.mbeddr.ext.components.embedded.editor.InterruptTrigger_EditorBuilder_a" />
+      <unit id="9172009453270379332" at="12,0,41,0" name="com.mbeddr.ext.components.embedded.editor.InterruptTrigger_EditorBuilder" />
     </file>
   </root>
 </debug-info>

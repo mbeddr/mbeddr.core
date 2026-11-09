@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class UncheckedSymbol_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new UncheckedSymbol_EditorBuilder_a(editorContext, node).createCell();
+    return new UncheckedSymbol_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new UncheckedSymbol_InspectorBuilder_a(editorContext, node).createCell();
+    return new UncheckedSymbol_InspectorBuilder(editorContext, node).createCell();
   }
 }

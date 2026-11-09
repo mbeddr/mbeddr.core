@@ -18,6 +18,6 @@ public class CodeReviewData_showReviewState_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CodeReviewData_showReviewState_EditorBuilder_a(editorContext, node).createCell();
+    return new CodeReviewData_showReviewState_EditorBuilder(editorContext, node).createCell();
   }
 }

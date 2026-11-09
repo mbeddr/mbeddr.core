@@ -16,6 +16,6 @@ public class NodeDistinguisher implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new NodeDistinguisher_ComponentBuilder_a(editorContext, node).createCell();
+    return new NodeDistinguisher_ComponentBuilder(editorContext, node).createCell();
   }
 }

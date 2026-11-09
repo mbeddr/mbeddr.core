@@ -18,6 +18,6 @@ public class DocumentInclude_ToCEntry_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DocumentInclude_ToCEntry_EditorBuilder_a(editorContext, node).createCell();
+    return new DocumentInclude_ToCEntry_EditorBuilder(editorContext, node).createCell();
   }
 }

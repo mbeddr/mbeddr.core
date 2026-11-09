@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ReconnectAdapterStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ReconnectAdapterStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new ReconnectAdapterStatement_EditorBuilder(editorContext, node).createCell();
   }
 }

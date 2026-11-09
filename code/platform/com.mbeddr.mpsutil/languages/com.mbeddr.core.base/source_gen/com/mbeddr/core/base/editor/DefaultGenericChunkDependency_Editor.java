@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class DefaultGenericChunkDependency_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DefaultGenericChunkDependency_EditorBuilder_a(editorContext, node).createCell();
+    return new DefaultGenericChunkDependency_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -18,6 +18,6 @@ public class TypeWord_InGuideExecutionMode_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TypeWord_InGuideExecutionMode_EditorBuilder_a(editorContext, node).createCell();
+    return new TypeWord_InGuideExecutionMode_EditorBuilder(editorContext, node).createCell();
   }
 }

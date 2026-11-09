@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class CountingSummary_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CountingSummary_EditorBuilder_a(editorContext, node).createCell();
+    return new CountingSummary_EditorBuilder(editorContext, node).createCell();
   }
 }

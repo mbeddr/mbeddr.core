@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class NameContainsStringFilter_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new NameContainsStringFilter_EditorBuilder_a(editorContext, node).createCell();
+    return new NameContainsStringFilter_EditorBuilder(editorContext, node).createCell();
   }
 }

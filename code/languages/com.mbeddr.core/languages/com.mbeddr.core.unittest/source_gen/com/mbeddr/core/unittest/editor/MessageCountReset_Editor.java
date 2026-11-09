@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class MessageCountReset_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new MessageCountReset_EditorBuilder_a(editorContext, node).createCell();
+    return new MessageCountReset_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -18,6 +18,6 @@ public class Argument_tooltipHint_jagqzb_b0a_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Argument_tooltipHint_jagqzb_b0a_EditorBuilder_a(editorContext, node).createCell();
+    return new Argument_tooltipHint_jagqzb_b0a_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -17,17 +17,17 @@
   </root>
   <root nodeRef="r:5b0f1cb1-f91e-42e5-8d95-56c2b1c9e1dc(com.mbeddr.ext.concurrency.pthreads.editor)/2549588765560623824">
     <file name="PThreadsStrategy_Editor.java">
-      <node id="2549588765560623824" at="11,79,12,82" concept="6" />
+      <node id="2549588765560623824" at="11,79,12,80" concept="6" />
       <node id="2549588765560623824" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2549588765560623824" at="11,79,12,82" />
+      <scope id="2549588765560623824" at="11,79,12,80" />
       <scope id="2549588765560623824" at="11,0,14,0">
         <var name="editorContext" id="2549588765560623824" />
         <var name="node" id="2549588765560623824" />
       </scope>
       <unit id="2549588765560623824" at="10,0,15,0" name="com.mbeddr.ext.concurrency.pthreads.editor.PThreadsStrategy_Editor" />
     </file>
-    <file name="PThreadsStrategy_EditorBuilder_a.java">
-      <node id="2549588765560623824" at="33,96,34,19" concept="8" />
+    <file name="PThreadsStrategy_EditorBuilder.java">
+      <node id="2549588765560623824" at="33,94,34,19" concept="8" />
       <node id="2549588765560623824" at="34,19,35,18" concept="1" />
       <node id="2549588765560623824" at="40,26,41,18" concept="6" />
       <node id="2549588765560623824" at="44,39,45,32" concept="6" />
@@ -94,7 +94,7 @@
       <node id="2549588765560623824" at="139,0,140,0" concept="7" trace="PropertyAttribute$Gb" />
       <node id="2549588765560623824" at="30,0,32,0" concept="2" trace="myNode" />
       <node id="2549588765560623824" at="44,0,47,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2549588765560623824" at="33,0,37,0" concept="0" trace="PThreadsStrategy_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2549588765560623824" at="33,0,37,0" concept="0" trace="PThreadsStrategy_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2549588765560623824" at="38,0,43,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4932209942851500524" at="88,208,93,24" concept="3" />
       <node id="7201265489934161170" at="122,208,127,24" concept="3" />
@@ -112,7 +112,7 @@
       <scope id="2549588765560623824" at="44,39,45,32" />
       <scope id="4932209942851500524" at="94,15,95,40" />
       <scope id="7201265489934161170" at="128,15,129,40" />
-      <scope id="2549588765560623824" at="33,96,35,18" />
+      <scope id="2549588765560623824" at="33,94,35,18" />
       <scope id="4932209942851500524" at="89,74,91,145">
         <var name="manager" id="4932209942851500524" />
       </scope>
@@ -165,9 +165,9 @@
       <scope id="7201265489934161170" at="111,41,130,5" />
       <scope id="4932209942851500524" at="77,0,98,0" />
       <scope id="7201265489934161170" at="111,0,132,0" />
-      <unit id="2549588765560623824" at="138,0,141,0" name="com.mbeddr.ext.concurrency.pthreads.editor.PThreadsStrategy_EditorBuilder_a$CONCEPTS" />
-      <unit id="2549588765560623824" at="133,0,137,0" name="com.mbeddr.ext.concurrency.pthreads.editor.PThreadsStrategy_EditorBuilder_a$PROPS" />
-      <unit id="2549588765560623824" at="29,0,142,0" name="com.mbeddr.ext.concurrency.pthreads.editor.PThreadsStrategy_EditorBuilder_a" />
+      <unit id="2549588765560623824" at="138,0,141,0" name="com.mbeddr.ext.concurrency.pthreads.editor.PThreadsStrategy_EditorBuilder$CONCEPTS" />
+      <unit id="2549588765560623824" at="133,0,137,0" name="com.mbeddr.ext.concurrency.pthreads.editor.PThreadsStrategy_EditorBuilder$PROPS" />
+      <unit id="2549588765560623824" at="29,0,142,0" name="com.mbeddr.ext.concurrency.pthreads.editor.PThreadsStrategy_EditorBuilder" />
     </file>
   </root>
 </debug-info>

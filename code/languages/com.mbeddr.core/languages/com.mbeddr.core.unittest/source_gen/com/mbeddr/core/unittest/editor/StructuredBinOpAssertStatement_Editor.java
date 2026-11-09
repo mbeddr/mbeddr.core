@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class StructuredBinOpAssertStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new StructuredBinOpAssertStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new StructuredBinOpAssertStatement_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new StructuredBinOpAssertStatement_InspectorBuilder_a(editorContext, node).createCell();
+    return new StructuredBinOpAssertStatement_InspectorBuilder(editorContext, node).createCell();
   }
 }

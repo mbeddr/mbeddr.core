@@ -24,17 +24,17 @@
   </root>
   <root nodeRef="c788b046-2019-4656-8b60-8bb9bbb177b5/r:88b37120-551f-4055-ab79-3976d34b2ab2(com.mbeddr.mpsutil.review/com.mbeddr.mpsutil.review.editor)/1159656764133528418">
     <file name="ReviewNote_Editor.java">
-      <node id="1159656764133528418" at="11,79,12,76" concept="6" />
+      <node id="1159656764133528418" at="11,79,12,74" concept="6" />
       <node id="1159656764133528418" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="1159656764133528418" at="11,79,12,76" />
+      <scope id="1159656764133528418" at="11,79,12,74" />
       <scope id="1159656764133528418" at="11,0,14,0">
         <var name="editorContext" id="1159656764133528418" />
         <var name="node" id="1159656764133528418" />
       </scope>
       <unit id="1159656764133528418" at="10,0,15,0" name="com.mbeddr.mpsutil.review.editor.ReviewNote_Editor" />
     </file>
-    <file name="ReviewNote_EditorBuilder_a.java">
-      <node id="1159656764133528418" at="63,90,64,19" concept="8" />
+    <file name="ReviewNote_EditorBuilder.java">
+      <node id="1159656764133528418" at="63,88,64,19" concept="8" />
       <node id="1159656764133528418" at="64,19,65,18" concept="1" />
       <node id="1159656764133528418" at="70,26,71,18" concept="6" />
       <node id="1159656764133528418" at="74,39,75,32" concept="6" />
@@ -57,20 +57,20 @@
       <node id="1625232190766690797" at="100,34,101,49" concept="1" />
       <node id="1159656764133528418" at="101,49,102,40" concept="1" />
       <node id="139842848993833845" at="102,40,103,51" concept="1" />
-      <node id="139842848995469746" at="104,38,105,53" concept="1" />
+      <node id="139842848995469746" at="104,27,105,53" concept="1" />
       <node id="1159656764133528418" at="106,5,107,22" concept="6" />
-      <node id="139842848995472204" at="109,47,110,136" concept="6" />
+      <node id="139842848995472204" at="109,36,110,136" concept="6" />
       <node id="1159656764133528418" at="112,43,113,120" concept="5" />
       <node id="1159656764133528418" at="113,120,114,50" concept="1" />
       <node id="1159656764133528418" at="114,50,115,34" concept="5" />
       <node id="139842848993833847" at="115,34,116,49" concept="1" />
       <node id="1159656764133528418" at="116,49,117,40" concept="1" />
-      <node id="1625232190766694857" at="118,39,119,50" concept="1" />
-      <node id="1625232190766683356" at="121,39,122,50" concept="1" />
+      <node id="1625232190766694857" at="118,27,119,50" concept="1" />
+      <node id="1625232190766683356" at="121,27,122,50" concept="1" />
       <node id="139842848995085165" at="123,5,124,47" concept="1" />
       <node id="1159656764133528418" at="124,47,125,22" concept="6" />
-      <node id="1625232190766703309" at="127,48,128,142" concept="6" />
-      <node id="1625232190766685327" at="130,48,131,75" concept="6" />
+      <node id="1625232190766703309" at="127,36,128,142" concept="6" />
+      <node id="1625232190766685327" at="130,36,131,75" concept="6" />
       <node id="1159656764133528418" at="137,98,138,102" concept="5" />
       <node id="1159656764133528418" at="138,102,139,43" concept="1" />
       <node id="1159656764133528418" at="139,43,140,20" concept="6" />
@@ -214,18 +214,18 @@
       <node id="6825879790490121235" at="91,0,94,0" concept="4" trace="_StyleParameter_QueryFunction_4sqnzl_a0a#()I" />
       <node id="6182194975190098233" at="94,0,97,0" concept="4" trace="_StyleParameter_QueryFunction_4sqnzl_a1a#()F" />
       <node id="139842848995469746" at="103,51,106,5" concept="3" />
-      <node id="139842848995471539" at="109,0,112,0" concept="4" trace="nodeCondition_4sqnzl_a1a0#()Z" />
+      <node id="139842848995471539" at="109,0,112,0" concept="4" trace="nodeCondition0#()Z" />
       <node id="1625232190766694857" at="117,40,120,5" concept="3" />
       <node id="1625232190766683356" at="120,5,123,5" concept="3" />
-      <node id="1625232190766701862" at="127,0,130,0" concept="4" trace="nodeCondition_4sqnzl_a0a0a#()Z" />
-      <node id="1625232190766684670" at="130,0,133,0" concept="4" trace="nodeCondition_4sqnzl_a1a0a#()Z" />
+      <node id="1625232190766701862" at="127,0,130,0" concept="4" trace="nodeCondition1#()Z" />
+      <node id="1625232190766684670" at="130,0,133,0" concept="4" trace="nodeCondition2#()Z" />
       <node id="1625232190766694858" at="172,0,175,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1625232190766694884" at="184,0,187,0" concept="4" trace="getText#()Ljava/lang/String;" />
       <node id="1159656764133528418" at="226,87,229,7" concept="3" />
       <node id="1159656764133528418" at="229,7,232,7" concept="3" />
       <node id="1159656764133528418" at="251,0,254,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
       <node id="6182194975190190375" at="323,0,326,0" concept="4" trace="_StyleParameter_QueryFunction_4sqnzl_a1b0#()I" />
-      <node id="1159656764133528418" at="63,0,67,0" concept="0" trace="ReviewNote_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1159656764133528418" at="63,0,67,0" concept="0" trace="ReviewNote_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1159656764133528418" at="145,63,149,5" concept="3" />
       <node id="1159656764133528418" at="197,0,201,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1159656764133528418" at="205,0,209,0" concept="0" trace="noteSingleRoleHandler_4sqnzl_b0a0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -269,12 +269,12 @@
       <scope id="1159656764133528418" at="74,39,75,32" />
       <scope id="6825879790490121236" at="91,58,92,15" />
       <scope id="6182194975190098234" at="94,60,95,13" />
-      <scope id="139842848995469746" at="104,38,105,53" />
-      <scope id="139842848995471540" at="109,47,110,136" />
-      <scope id="1625232190766694857" at="118,39,119,50" />
-      <scope id="1625232190766683356" at="121,39,122,50" />
-      <scope id="1625232190766701863" at="127,48,128,142" />
-      <scope id="1625232190766684671" at="130,48,131,75" />
+      <scope id="139842848995469746" at="104,27,105,53" />
+      <scope id="139842848995471540" at="109,36,110,136" />
+      <scope id="1625232190766694857" at="118,27,119,50" />
+      <scope id="1625232190766683356" at="121,27,122,50" />
+      <scope id="1625232190766701863" at="127,36,128,142" />
+      <scope id="1625232190766684671" at="130,36,131,75" />
       <scope id="1625232190766694858" at="172,41,173,45" />
       <scope id="1625232190766694858" at="178,28,179,20" />
       <scope id="1625232190766694890" at="184,33,185,112" />
@@ -288,7 +288,7 @@
       <scope id="1625232190766429596" at="306,35,307,115" />
       <scope id="6182194975190190376" at="323,59,324,70" />
       <scope id="5652920968056382713" at="372,15,373,40" />
-      <scope id="1159656764133528418" at="63,90,65,18" />
+      <scope id="1159656764133528418" at="63,88,65,18" />
       <scope id="1159656764133528418" at="146,40,148,43" />
       <scope id="1159656764133528418" at="155,35,157,112">
         <var name="manager" id="1159656764133528418" />
@@ -440,17 +440,17 @@
         <var name="provider" id="139842848995085165" />
       </scope>
       <scope id="139842848995085165" at="255,0,286,0" />
-      <unit id="1159656764133528418" at="377,0,380,0" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder_a$LINKS" />
-      <unit id="1625232190766694884" at="183,90,187,7" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="8039098920905361563" at="327,88,332,5" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder_a$3" />
-      <unit id="1159656764133528418" at="381,0,386,0" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder_a$CONCEPTS" />
-      <unit id="1159656764133528418" at="387,0,392,0" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder_a$PROPS" />
-      <unit id="1159656764133528418" at="134,40,142,5" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder_a$1" />
-      <unit id="139842848995133515" at="263,21,278,11" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder_a$2$1" />
-      <unit id="139842848995128949" at="257,17,280,7" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder_a$2" />
-      <unit id="1625232190766694858" at="161,0,197,0" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder_a$Inline_Builder0" />
-      <unit id="1159656764133528418" at="201,0,255,0" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder_a$noteSingleRoleHandler_4sqnzl_b0a0" />
-      <unit id="1159656764133528418" at="59,0,393,0" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder_a" />
+      <unit id="1159656764133528418" at="377,0,380,0" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder$LINKS" />
+      <unit id="1625232190766694884" at="183,90,187,7" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder$Inline_Builder0$1" />
+      <unit id="8039098920905361563" at="327,88,332,5" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder$3" />
+      <unit id="1159656764133528418" at="381,0,386,0" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder$CONCEPTS" />
+      <unit id="1159656764133528418" at="387,0,392,0" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder$PROPS" />
+      <unit id="1159656764133528418" at="134,40,142,5" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder$1" />
+      <unit id="139842848995133515" at="263,21,278,11" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder$2$1" />
+      <unit id="139842848995128949" at="257,17,280,7" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder$2" />
+      <unit id="1625232190766694858" at="161,0,197,0" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder$Inline_Builder0" />
+      <unit id="1159656764133528418" at="201,0,255,0" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder$noteSingleRoleHandler_4sqnzl_b0a0" />
+      <unit id="1159656764133528418" at="59,0,393,0" name="com.mbeddr.mpsutil.review.editor.ReviewNote_EditorBuilder" />
     </file>
   </root>
 </debug-info>

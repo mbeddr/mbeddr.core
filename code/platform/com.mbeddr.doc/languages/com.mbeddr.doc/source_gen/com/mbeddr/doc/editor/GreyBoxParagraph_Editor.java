@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GreyBoxParagraph_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GreyBoxParagraph_EditorBuilder_a(editorContext, node).createCell();
+    return new GreyBoxParagraph_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new GreyBoxParagraph_InspectorBuilder_a(editorContext, node).createCell();
+    return new GreyBoxParagraph_InspectorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PageWidthSizeSpec_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PageWidthSizeSpec_EditorBuilder_a(editorContext, node).createCell();
+    return new PageWidthSizeSpec_EditorBuilder(editorContext, node).createCell();
   }
 }

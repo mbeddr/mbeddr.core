@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RegisterBranchesStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RegisterBranchesStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new RegisterBranchesStatement_EditorBuilder(editorContext, node).createCell();
   }
 }

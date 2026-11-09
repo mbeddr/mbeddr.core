@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ErrorAnnotation_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ErrorAnnotation_EditorBuilder_a(editorContext, node).createCell();
+    return new ErrorAnnotation_EditorBuilder(editorContext, node).createCell();
   }
 }
