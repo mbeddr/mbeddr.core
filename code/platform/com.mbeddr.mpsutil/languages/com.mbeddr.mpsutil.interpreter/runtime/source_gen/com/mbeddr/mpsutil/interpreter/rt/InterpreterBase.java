@@ -13,6 +13,7 @@ import java.util.HashSet;
 import java.util.Map;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -38,6 +39,9 @@ public abstract class InterpreterBase implements IInterpreter, IMapTypeProvider 
   private Set<SAbstractConcept> neverCacheLookup = SetSequence.fromSet(new HashSet<SAbstractConcept>());
   private Map<SAbstractConcept, IEvaluator> evalLookupCache = MapSequence.fromMap(new HashMap<SAbstractConcept, IEvaluator>());
 
+  private volatile List<? extends IEvaluator> sortedEvaluators = null;
+  private final ConcurrentHashMap<SAbstractConcept, List<? extends IEvaluator>> candidatesByConcept = new ConcurrentHashMap<SAbstractConcept, List<? extends IEvaluator>>();
+
   protected void init() {
     populateEvaluators(evaluators);
     for (IEvaluator e : ListSequence.fromList(evaluators)) {
@@ -52,7 +56,25 @@ public abstract class InterpreterBase implements IInterpreter, IMapTypeProvider 
   protected abstract void populateEvaluators(List<? extends IEvaluator> evaluators);
 
   public List<? extends IEvaluator> listEvaluators() {
-    return ListSequence.fromList(evaluators).sort((it) -> it.canLookupBeCached(), true).toList();
+    // the evaluators do not change after init(), so they are sorted only once
+    List<? extends IEvaluator> sorted = sortedEvaluators;
+    if (sorted == null) {
+      sorted = ListSequence.fromList(evaluators).sort((it) -> it.canLookupBeCached(), true).toList();
+      if (ListSequence.fromList(evaluators).isNotEmpty()) {
+        sortedEvaluators = sorted;
+      }
+    }
+    return sorted;
+  }
+
+  private List<? extends IEvaluator> candidateEvaluators(final SAbstractConcept concept) {
+    // the evaluators a node of this concept can match, in the order of listEvaluators()
+    List<? extends IEvaluator> candidates = candidatesByConcept.get(concept);
+    if (candidates == null) {
+      candidates = ListSequence.fromList(listEvaluators()).where((it) -> it.getConcept() == null || concept.isSubConceptOf(it.getConcept())).toList();
+      candidatesByConcept.put(concept, candidates);
+    }
+    return candidates;
   }
 
 
@@ -90,16 +112,16 @@ public abstract class InterpreterBase implements IInterpreter, IMapTypeProvider 
     if (cachedEvaluator != null) {
       Object evalResult = evalInternal(cachedEvaluator, node, context, coverage, contextTrace, stopOnStop);
       // cached evaluator might still return tryAnotherInterpreter
-      // if this is the case, we try to look for another interpreter 
+      // if this is the case, we try to look for another interpreter
       if (evalResult != __NEXT__INTERPRETER__) {
         return evalResult;
       }
     }
 
-    List<? extends IEvaluator> evaluators = listEvaluators();
+    List<? extends IEvaluator> evaluators = candidateEvaluators(SNodeOperations.getConcept(node));
 
     for (IEvaluator evaluator : ListSequence.fromList(evaluators)) {
-      // skip evaluator that was previously looked up in the cache  
+      // skip evaluator that was previously looked up in the cache
       if (evaluator == cachedEvaluator) {
         continue;
       }
@@ -123,7 +145,7 @@ public abstract class InterpreterBase implements IInterpreter, IMapTypeProvider 
     if (LOG.isErrorLevel()) {
       LOG.error("None of the following evaluators matched:");
     }
-    for (IEvaluator evaluator : ListSequence.fromList(evaluators)) {
+    for (IEvaluator evaluator : ListSequence.fromList(listEvaluators())) {
       if (LOG.isErrorLevel()) {
         LOG.error(evaluator.getInfo().toString());
       }

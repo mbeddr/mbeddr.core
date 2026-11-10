@@ -35,6 +35,7 @@ public class ComputationTrace implements IRerunnableTraceRecord {
   private boolean isInfo;
   private String kind;
   private String syntax;
+  private boolean syntaxComputed;
   private String conceptName;
   private Object value;
   private long time;
@@ -65,7 +66,6 @@ public class ComputationTrace implements IRerunnableTraceRecord {
     kind = SNodeOperations.getConcept(n).getConceptAlias();
     syntax = BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(n);
     conceptName = SNodeOperations.getConcept(n).getName();
-
     if (SNodeOperations.isInstanceOf(n, CONCEPTS.ITracerFrame$iZ) && (boolean) ITracerFrame__BehaviorDescriptor.isFrame_id7obiejCehQ6.invoke(SNodeOperations.cast(n, CONCEPTS.ITracerFrame$iZ))) {
       isFrame = true;
       syntax = ITracerFrame__BehaviorDescriptor.renderTraceSyntax_id5Beavy0LkEa.invoke(SNodeOperations.cast(n, CONCEPTS.ITracerFrame$iZ));
@@ -147,16 +147,19 @@ public class ComputationTrace implements IRerunnableTraceRecord {
   }
 
   public ComputationTrace addChild(ComputationTrace t) {
-    if (t == null) {
+    if (t == null || t == this) {
       return this;
     }
-    ComputationTrace next = this;
-    while (next != null) {
-      // prevent creating cycles in computation trace
-      if (next == t) {
-        return this;
+    // prevent creating cycles in computation trace: only a trace with children can be an ancestor of this one,
+    // so the walk up the parents is skipped for the fresh leaf traces the interpreter adds for every evaluation
+    if (ListSequence.fromList(t.children).isNotEmpty()) {
+      ComputationTrace ancestor = this.parent;
+      while (ancestor != null) {
+        if (ancestor == t) {
+          return this;
+        }
+        ancestor = ancestor.parent;
       }
-      next = next.parent;
     }
     t.parent = this;
     ListSequence.fromList(children).addElement(t);
@@ -388,6 +391,12 @@ public class ComputationTrace implements IRerunnableTraceRecord {
   }
 
   public void deleteChildren() {
+    // keeps "a trace that is some trace's parent has children" true, which addChild relies on
+    for (ComputationTrace c : ListSequence.fromList(this.children)) {
+      if (c.parent == this) {
+        c.parent = null;
+      }
+    }
     ListSequence.fromList(this.children).clear();
   }
 

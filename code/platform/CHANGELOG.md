@@ -5,6 +5,16 @@ All notable changes to the mbeddr platform will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# November 2026
+
+## Changed
+
+- `com.mbeddr.mpsutil.interpreter`: Evaluation is considerably faster. The evaluators a concept can match are now
+  determined once per concept instead of re-sorting all evaluators for every evaluated node, the results of typed
+  child constraints are cached per type, and adding a child to a computation trace no longer walks up all its parents.
+  An `IEvaluator` is now asked whether it matches only for nodes of the concept that its `getConcept()` returns (or of
+  any concept when that is `null`).
+
 # September 2026
 
 - `com.mbeddr.mpsutil.editingGuide`: fixed tutorial image rendering and execution-mode editor issues (rendering shows immediately; re-opening a step no longer errors).
