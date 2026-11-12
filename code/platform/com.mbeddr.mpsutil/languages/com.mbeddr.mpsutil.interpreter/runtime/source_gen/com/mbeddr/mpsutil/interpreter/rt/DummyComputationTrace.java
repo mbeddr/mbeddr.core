@@ -8,6 +8,9 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Stands in for "no trace" where code needs a non-null trace. The interpreter treats it like null, and it keeps no state: a dummy may be shared by a whole evaluation, so it must not hold on to the values written to it.  
+ */
 public class DummyComputationTrace extends ComputationTrace {
 
   public DummyComputationTrace(SNode node) {
@@ -32,6 +35,31 @@ public class DummyComputationTrace extends ComputationTrace {
   @Override
   public ComputationTrace newChild(SNode n, boolean showInAnyCase, String label, Object value) {
     return this;
+  }
+
+  @Override
+  public void setValue(Object val) {
+    // keeps no value
+  }
+
+  @Override
+  public void setValue(Object val, long time) {
+    // keeps no value
+  }
+
+  @Override
+  public boolean markForReveal() {
+    return false;
+  }
+
+  @Override
+  public void setConstraintFailure(String message) {
+    // keeps no failure
+  }
+
+  @Override
+  public void deleteChildren() {
+    // has no children
   }
 
   @Override

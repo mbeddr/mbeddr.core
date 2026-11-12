@@ -160,7 +160,9 @@ public abstract class InterpreterBase implements IInterpreter, IMapTypeProvider 
 
     Object result;
     ComputationTrace newTrace = null;
-    if (contextTrace != null) {
+    // a DummyComputationTrace stands in for "no trace" where evaluator code needs a non-null trace. It is treated
+    // like null: tracing below it would only build a detached trace tree that nobody sees.
+    if (contextTrace != null && !(contextTrace instanceof DummyComputationTrace)) {
       long start = System.currentTimeMillis();
       newTrace = new ComputationTrace(node);
       newTrace.setComputationSource(evaluator.computationSource());
@@ -195,7 +197,8 @@ public abstract class InterpreterBase implements IInterpreter, IMapTypeProvider 
       }
 
     } else {
-      result = evaluator.evaluateEvaluator(node, context, coverage, null);
+      // passes the dummy on, so that evaluator code asking for a trace does not create a new dummy every time
+      result = evaluator.evaluateEvaluator(node, context, coverage, contextTrace);
     }
 
     if (stopOnStop && result instanceof IStopAndReturn) {
