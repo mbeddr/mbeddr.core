@@ -27,7 +27,7 @@ public class IncludeBeforeAfterTransformations extends TransformationMenuBase {
       result.add(new GenericMenuPart_a0_0());
     }
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.RIGHT_SIDE_TRANSFORM).contains(_context.getMenuLocation())) {
-      result.add(new GenericMenuPart_a1_0());
+      result.add(new GenericMenuPart_a1());
     }
     return result;
   }
@@ -40,7 +40,7 @@ public class IncludeBeforeAfterTransformations extends TransformationMenuBase {
       return new RedirectToBeforeAndAfter(true).createItems(ctx);
     }
   }
-  private class GenericMenuPart_a1_0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a1 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override

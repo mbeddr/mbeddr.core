@@ -30,7 +30,7 @@ public class BracketsCell_SideTransformations_ParensExpression_a0 extends Transf
       result.add(new GenericMenuPart_a0());
     }
     if (ListSequence.fromListAndArray(new ArrayList<String>(), GrammarCellsMenuLocations.AFTER).contains(_context.getMenuLocation())) {
-      result.add(new GenericMenuPart_a1());
+      result.add(new GenericMenuPart_a1_0());
     }
     return result;
   }
@@ -49,7 +49,7 @@ public class BracketsCell_SideTransformations_ParensExpression_a0 extends Transf
       }
     }
   }
-  private class GenericMenuPart_a1 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a1_0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override
