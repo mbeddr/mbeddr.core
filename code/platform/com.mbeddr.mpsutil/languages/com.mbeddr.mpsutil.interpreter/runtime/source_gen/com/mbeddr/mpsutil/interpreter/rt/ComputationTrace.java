@@ -11,12 +11,14 @@ import java.util.ArrayList;
 import com.mbeddr.mpsutil.traceExplorer.plugin.ITraceRerunner;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import com.mbeddr.mpsutil.interpreter.behavior.ITracerFrame__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ISequence;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.model.SNodeReference;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import org.jetbrains.mps.openapi.model.SModel;
+import org.jetbrains.mps.openapi.module.SRepository;
+import com.mbeddr.mpsutil.interpreter.behavior.ITracerFrame__BehaviorDescriptor;
+import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import com.mbeddr.mpsutil.interpreter.behavior.ITrivialNode__BehaviorDescriptor;
 import com.mbeddr.mpsutil.traceExplorer.plugin.ITraceRecord;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
@@ -35,6 +37,7 @@ public class ComputationTrace implements IRerunnableTraceRecord {
   private boolean isInfo;
   private String kind;
   private String syntax;
+  private boolean initialized;
   private String conceptName;
   private Object value;
   private long time;
@@ -63,13 +66,7 @@ public class ComputationTrace implements IRerunnableTraceRecord {
     this();
     node = n;
     kind = SNodeOperations.getConcept(n).getConceptAlias();
-    syntax = BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(n);
     conceptName = SNodeOperations.getConcept(n).getName();
-
-    if (SNodeOperations.isInstanceOf(n, CONCEPTS.ITracerFrame$iZ) && (boolean) ITracerFrame__BehaviorDescriptor.isFrame_id7obiejCehQ6.invoke(SNodeOperations.cast(n, CONCEPTS.ITracerFrame$iZ))) {
-      isFrame = true;
-      syntax = ITracerFrame__BehaviorDescriptor.renderTraceSyntax_id5Beavy0LkEa.invoke(SNodeOperations.cast(n, CONCEPTS.ITracerFrame$iZ));
-    }
   }
 
   public ComputationTrace(SNode n, boolean showAlways) {
@@ -147,16 +144,19 @@ public class ComputationTrace implements IRerunnableTraceRecord {
   }
 
   public ComputationTrace addChild(ComputationTrace t) {
-    if (t == null) {
+    if (t == null || t == this) {
       return this;
     }
-    ComputationTrace next = this;
-    while (next != null) {
-      // prevent creating cycles in computation trace
-      if (next == t) {
-        return this;
+    // prevent creating cycles in computation trace: only a trace with children can be an ancestor of this one,
+    // so the walk up the parents is skipped for the fresh leaf traces the interpreter adds for every evaluation
+    if (ListSequence.fromList(t.children).isNotEmpty()) {
+      ComputationTrace ancestor = this.parent;
+      while (ancestor != null) {
+        if (ancestor == t) {
+          return this;
+        }
+        ancestor = ancestor.parent;
       }
-      next = next.parent;
     }
     t.parent = this;
     ListSequence.fromList(children).addElement(t);
@@ -226,6 +226,7 @@ public class ComputationTrace implements IRerunnableTraceRecord {
     if (indent == null) {
       indent = "";
     }
+    initialize();
     String valStr = (value != null ? value.toString() : "<no value>");
     if (this.isFrame) {
       System.err.println(indent + "--------");
@@ -305,12 +306,44 @@ public class ComputationTrace implements IRerunnableTraceRecord {
     return this.kind;
 
   }
+  /**
+   * The presentation of the traced node. It is computed at the first call that has read access to the node and shows the node as it is then. A call without read access takes no lock and returns the concept name. 
+   */
   public String getSyntax() {
+    initialize();
+    if (!(initialized)) {
+      return conceptName;
+    }
     String s = this.syntax;
     if (s == null) {
       return "<no syntax>";
     }
     return s;
+  }
+  @Override
+  public void initialize() {
+    // most traces are never shown, so what needs read access is computed at the first use and not for every evaluated node
+    if (initialized) {
+      return;
+    }
+    if (node == null) {
+      initialized = true;
+      return;
+    }
+    // toString() ends up here and can be called from any thread, so no read action is taken here: without read access
+    // nothing is computed and a later call with read access computes it
+    SModel nodeModel = SNodeOperations.getModel(node);
+    SRepository repository = (nodeModel == null ? null : nodeModel.getRepository());
+    if (repository != null && !(repository.getModelAccess().canRead())) {
+      return;
+    }
+    initialized = true;
+    if (SNodeOperations.isInstanceOf(node, CONCEPTS.ITracerFrame$iZ) && (boolean) ITracerFrame__BehaviorDescriptor.isFrame_id7obiejCehQ6.invoke(SNodeOperations.cast(node, CONCEPTS.ITracerFrame$iZ))) {
+      isFrame = true;
+      syntax = ITracerFrame__BehaviorDescriptor.renderTraceSyntax_id5Beavy0LkEa.invoke(SNodeOperations.cast(node, CONCEPTS.ITracerFrame$iZ));
+    } else {
+      syntax = BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(node);
+    }
   }
 
   public String getConceptName() {
@@ -388,6 +421,12 @@ public class ComputationTrace implements IRerunnableTraceRecord {
   }
 
   public void deleteChildren() {
+    // keeps "a trace that is some trace's parent has children" true, which addChild relies on
+    for (ComputationTrace c : ListSequence.fromList(this.children)) {
+      if (c.parent == this) {
+        c.parent = null;
+      }
+    }
     ListSequence.fromList(this.children).clear();
   }
 
