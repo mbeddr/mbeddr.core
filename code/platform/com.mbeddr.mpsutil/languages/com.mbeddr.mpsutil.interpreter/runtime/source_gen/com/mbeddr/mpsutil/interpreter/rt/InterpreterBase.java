@@ -199,6 +199,10 @@ public abstract class InterpreterBase implements IInterpreter, IMapTypeProvider 
     } else {
       // passes the dummy on, so that evaluator code asking for a trace does not create a new dummy every time
       result = evaluator.evaluateEvaluator(node, context, coverage, contextTrace);
+      // a value inspector still collects below a dummy, as it did when the subtree below a dummy was traced
+      if (contextTrace != null && new IAttributeDescriptor.NodeAttribute(CONCEPTS.ValueInspector$ql).get(node) != null) {
+        ValueInspector__BehaviorDescriptor.addValue_id2ufoZQIGI7Z.invoke(new IAttributeDescriptor.NodeAttribute(CONCEPTS.ValueInspector$ql).get(node), result);
+      }
     }
 
     if (stopOnStop && result instanceof IStopAndReturn) {

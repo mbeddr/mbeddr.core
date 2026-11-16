@@ -37,7 +37,7 @@ public class ComputationTrace implements IRerunnableTraceRecord {
   private boolean isInfo;
   private String kind;
   private String syntax;
-  private boolean initialized;
+  private volatile boolean initialized;
   private String conceptName;
   private Object value;
   private long time;
@@ -337,13 +337,21 @@ public class ComputationTrace implements IRerunnableTraceRecord {
     if (repository != null && !(repository.getModelAccess().canRead())) {
       return;
     }
-    initialized = true;
+    // several threads can hold read access at once: the fields are assigned first and the volatile write to initialized
+    // publishes them, so a thread that sees initialized also sees the syntax
+    boolean frame = false;
+    String s;
     if (SNodeOperations.isInstanceOf(node, CONCEPTS.ITracerFrame$iZ) && (boolean) ITracerFrame__BehaviorDescriptor.isFrame_id7obiejCehQ6.invoke(SNodeOperations.cast(node, CONCEPTS.ITracerFrame$iZ))) {
-      isFrame = true;
-      syntax = ITracerFrame__BehaviorDescriptor.renderTraceSyntax_id5Beavy0LkEa.invoke(SNodeOperations.cast(node, CONCEPTS.ITracerFrame$iZ));
+      frame = true;
+      s = ITracerFrame__BehaviorDescriptor.renderTraceSyntax_id5Beavy0LkEa.invoke(SNodeOperations.cast(node, CONCEPTS.ITracerFrame$iZ));
     } else {
-      syntax = BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(node);
+      s = BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(node);
     }
+    if (frame) {
+      isFrame = true;
+    }
+    syntax = s;
+    initialized = true;
   }
 
   public String getConceptName() {
