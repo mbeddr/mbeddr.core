@@ -12,5 +12,8 @@ public interface IEvaluator {
   EvaluatorInfo getInfo();
   boolean canLookupBeCached();
   String computationSource();
+  /**
+   * The concept whose instances this evaluator can match, or null when it can match a node of any concept. An interpreter calls matchesEvaluator only for nodes of this concept and its subconcepts. 
+   */
   SAbstractConcept getConcept();
 }
