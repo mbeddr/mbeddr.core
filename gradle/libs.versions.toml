@@ -20,7 +20,7 @@ mpsMaster = "263.7307.336"
 mpsExtensionsMaster = "9999.9.3713.c5fa76b-SNAPSHOT"
 
 [plugins]
-common = "de.itemis.mps.gradle.common:1.30.+"
+common = "de.itemis.mps.gradle.common:1.32.0"
 jbr-toolchain = "com.specificlanguages.jbr-toolchain:1.2.0"
 
 [libraries]
