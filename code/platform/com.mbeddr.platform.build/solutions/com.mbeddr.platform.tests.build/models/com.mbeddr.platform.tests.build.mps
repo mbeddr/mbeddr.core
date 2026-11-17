@@ -842,6 +842,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2zySNzietdD" role="3bR37C">
+          <node concept="3bR9La" id="2zySNzietdE" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
+          </node>
+        </node>
         <node concept="1BupzO" id="$Kq8MetEWD" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
