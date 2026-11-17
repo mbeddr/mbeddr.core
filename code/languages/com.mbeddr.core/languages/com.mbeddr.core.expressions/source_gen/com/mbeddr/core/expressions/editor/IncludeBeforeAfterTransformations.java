@@ -24,15 +24,15 @@ public class IncludeBeforeAfterTransformations extends TransformationMenuBase {
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.LEFT_SIDE_TRANSFORM).contains(_context.getMenuLocation())) {
-      result.add(new GenericMenuPart_a0());
+      result.add(new GenericMenuPart_a0_0());
     }
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.RIGHT_SIDE_TRANSFORM).contains(_context.getMenuLocation())) {
-      result.add(new GenericMenuPart_a1());
+      result.add(new GenericMenuPart_a1_0());
     }
     return result;
   }
 
-  private class GenericMenuPart_a0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a0_0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override
@@ -40,7 +40,7 @@ public class IncludeBeforeAfterTransformations extends TransformationMenuBase {
       return new RedirectToBeforeAndAfter(true).createItems(ctx);
     }
   }
-  private class GenericMenuPart_a1 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a1_0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override
