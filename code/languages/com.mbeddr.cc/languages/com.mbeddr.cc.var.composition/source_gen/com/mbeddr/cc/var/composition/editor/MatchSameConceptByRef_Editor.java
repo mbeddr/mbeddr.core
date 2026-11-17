@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class MatchSameConceptByRef_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new MatchSameConceptByRef_EditorBuilder_a(editorContext, node).createCell();
+    return new MatchSameConceptByRef_EditorBuilder(editorContext, node).createCell();
   }
 }

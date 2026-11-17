@@ -19,17 +19,17 @@
   </root>
   <root nodeRef="7a060fae-09e0-4372-be36-6696d6554c0e/r:23772755-da65-4e2a-98c1-a794313a29bb(com.mbeddr.mpsutil.review.annotation/com.mbeddr.mpsutil.review.annotation.editor)/8455208232410333113">
     <file name="CommentAnnotationContainer_Editor.java">
-      <node id="8455208232410333113" at="11,79,12,92" concept="7" />
+      <node id="8455208232410333113" at="11,79,12,90" concept="7" />
       <node id="8455208232410333113" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8455208232410333113" at="11,79,12,92" />
+      <scope id="8455208232410333113" at="11,79,12,90" />
       <scope id="8455208232410333113" at="11,0,14,0">
         <var name="editorContext" id="8455208232410333113" />
         <var name="node" id="8455208232410333113" />
       </scope>
       <unit id="8455208232410333113" at="10,0,15,0" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_Editor" />
     </file>
-    <file name="CommentAnnotationContainer_EditorBuilder_a.java">
-      <node id="8455208232410333113" at="48,106,49,19" concept="10" />
+    <file name="CommentAnnotationContainer_EditorBuilder.java">
+      <node id="8455208232410333113" at="48,104,49,19" concept="10" />
       <node id="8455208232410333113" at="49,19,50,18" concept="1" />
       <node id="8455208232410333113" at="55,26,56,18" concept="7" />
       <node id="8455208232410333113" at="59,39,60,32" concept="7" />
@@ -121,7 +121,7 @@
       <node id="4771260708420673066" at="94,0,97,0" concept="5" trace="getText#()Ljava/lang/String;" />
       <node id="5760222092164714146" at="110,229,113,9" concept="4" />
       <node id="8455208232410333113" at="186,0,189,5" concept="3" />
-      <node id="8455208232410333113" at="48,0,52,0" concept="0" trace="CommentAnnotationContainer_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8455208232410333113" at="48,0,52,0" concept="0" trace="CommentAnnotationContainer_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4771260708420673217" at="149,0,153,0" concept="5" trace="getHeight#()I" />
       <node id="4771260708420673225" at="154,0,158,0" concept="5" trace="getWidth#()I" />
       <node id="8455208232410333113" at="53,0,58,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -153,7 +153,7 @@
       <scope id="4771260708420673220" at="150,36,151,23" />
       <scope id="4771260708420673228" at="155,35,156,25" />
       <scope id="8455208232410333113" at="187,108,188,138" />
-      <scope id="8455208232410333113" at="48,106,50,18" />
+      <scope id="8455208232410333113" at="48,104,50,18" />
       <scope id="4771260708420673138" at="118,9,120,9">
         <var name="ex" id="4771260708420673148" />
       </scope>
@@ -234,13 +234,13 @@
         <var name="provider" id="4771260708420673150" />
       </scope>
       <scope id="4771260708420673150" at="132,0,166,0" />
-      <unit id="8455208232410333113" at="199,0,202,0" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder_a$LINKS" />
-      <unit id="4771260708420673066" at="93,88,97,5" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder_a$1" />
-      <unit id="8455208232410333113" at="203,0,207,0" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder_a$PROPS" />
-      <unit id="4771260708420673079" at="108,88,122,5" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder_a$2" />
-      <unit id="4771260708420673167" at="137,21,158,11" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder_a$3$1" />
-      <unit id="4771260708420673156" at="134,17,160,7" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder_a$3" />
-      <unit id="8455208232410333113" at="44,0,208,0" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder_a" />
+      <unit id="8455208232410333113" at="199,0,202,0" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder$LINKS" />
+      <unit id="4771260708420673066" at="93,88,97,5" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder$1" />
+      <unit id="8455208232410333113" at="203,0,207,0" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder$PROPS" />
+      <unit id="4771260708420673079" at="108,88,122,5" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder$2" />
+      <unit id="4771260708420673167" at="137,21,158,11" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder$3$1" />
+      <unit id="4771260708420673156" at="134,17,160,7" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder$3" />
+      <unit id="8455208232410333113" at="44,0,208,0" name="com.mbeddr.mpsutil.review.annotation.editor.CommentAnnotationContainer_EditorBuilder" />
     </file>
   </root>
 </debug-info>

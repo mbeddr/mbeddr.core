@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class QAAssessmentResult_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new QAAssessmentResult_EditorBuilder_a(editorContext, node).createCell();
+    return new QAAssessmentResult_EditorBuilder(editorContext, node).createCell();
   }
 }

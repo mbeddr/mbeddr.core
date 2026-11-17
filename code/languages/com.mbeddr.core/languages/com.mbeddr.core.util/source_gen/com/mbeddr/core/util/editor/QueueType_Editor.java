@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class QueueType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new QueueType_EditorBuilder_a(editorContext, node).createCell();
+    return new QueueType_EditorBuilder(editorContext, node).createCell();
   }
 }

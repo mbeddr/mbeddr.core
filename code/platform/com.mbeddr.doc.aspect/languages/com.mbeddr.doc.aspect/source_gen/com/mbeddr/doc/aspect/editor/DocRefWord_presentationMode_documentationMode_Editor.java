@@ -18,6 +18,6 @@ public class DocRefWord_presentationMode_documentationMode_Editor extends Defaul
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DocRefWord_presentationMode_documentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new DocRefWord_presentationMode_documentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

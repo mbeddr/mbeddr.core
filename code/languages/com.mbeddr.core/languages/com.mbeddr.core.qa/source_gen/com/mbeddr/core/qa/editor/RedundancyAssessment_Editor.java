@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RedundancyAssessment_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RedundancyAssessment_EditorBuilder_a(editorContext, node).createCell();
+    return new RedundancyAssessment_EditorBuilder(editorContext, node).createCell();
   }
 }

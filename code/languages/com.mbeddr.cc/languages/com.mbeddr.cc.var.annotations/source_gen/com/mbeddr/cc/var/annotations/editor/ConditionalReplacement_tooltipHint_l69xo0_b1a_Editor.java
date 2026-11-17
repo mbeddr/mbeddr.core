@@ -18,6 +18,6 @@ public class ConditionalReplacement_tooltipHint_l69xo0_b1a_Editor extends Defaul
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConditionalReplacement_tooltipHint_l69xo0_b1a_EditorBuilder_a(editorContext, node).createCell();
+    return new ConditionalReplacement_tooltipHint_l69xo0_b1a_EditorBuilder(editorContext, node).createCell();
   }
 }

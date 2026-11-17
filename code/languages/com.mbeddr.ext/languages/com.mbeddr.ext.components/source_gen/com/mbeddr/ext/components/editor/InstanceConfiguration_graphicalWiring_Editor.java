@@ -18,6 +18,6 @@ public class InstanceConfiguration_graphicalWiring_Editor extends DefaultNodeEdi
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new InstanceConfiguration_graphicalWiring_EditorBuilder_a(editorContext, node).createCell();
+    return new InstanceConfiguration_graphicalWiring_EditorBuilder(editorContext, node).createCell();
   }
 }

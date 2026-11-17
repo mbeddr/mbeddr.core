@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class DoubleSumIterator_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DoubleSumIterator_EditorBuilder_a(editorContext, node).createCell();
+    return new DoubleSumIterator_EditorBuilder(editorContext, node).createCell();
   }
 }

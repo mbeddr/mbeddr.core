@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PhaseChangeTrigger_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PhaseChangeTrigger_EditorBuilder_a(editorContext, node).createCell();
+    return new PhaseChangeTrigger_EditorBuilder(editorContext, node).createCell();
   }
 }

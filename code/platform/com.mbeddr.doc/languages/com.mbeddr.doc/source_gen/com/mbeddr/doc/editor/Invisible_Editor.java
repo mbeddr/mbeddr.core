@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class Invisible_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Invisible_EditorBuilder_a(editorContext, node).createCell();
+    return new Invisible_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ActionSourceWithExtendingFolder_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ActionSourceWithExtendingFolder_EditorBuilder_a(editorContext, node).createCell();
+    return new ActionSourceWithExtendingFolder_EditorBuilder(editorContext, node).createCell();
   }
 }

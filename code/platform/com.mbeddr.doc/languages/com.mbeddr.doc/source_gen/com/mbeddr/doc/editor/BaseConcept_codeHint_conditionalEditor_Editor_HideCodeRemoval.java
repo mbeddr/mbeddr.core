@@ -19,10 +19,10 @@ public class BaseConcept_codeHint_conditionalEditor_Editor_HideCodeRemoval exten
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new BaseConcept_codeHint_conditionalEditor_EditorBuilder_a(editorContext, node).createCell();
+    return new BaseConcept_codeHint_conditionalEditor_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new BaseConcept_codeHint_conditionalEditor_InspectorBuilder_a(editorContext, node).createCell();
+    return new BaseConcept_codeHint_conditionalEditor_InspectorBuilder(editorContext, node).createCell();
   }
   public int getPriority() {
     return 110;

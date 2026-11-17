@@ -16,6 +16,6 @@ public class DefaultPickerInspector_EditorComponent implements ConceptEditorComp
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DefaultPickerInspector_EditorComponent_ComponentBuilder_a(editorContext, node).createCell();
+    return new DefaultPickerInspector_EditorComponent_ComponentBuilder(editorContext, node).createCell();
   }
 }

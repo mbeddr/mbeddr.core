@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AnnotatedExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AnnotatedExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new AnnotatedExpression_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new AnnotatedExpression_InspectorBuilder_a(editorContext, node).createCell();
+    return new AnnotatedExpression_InspectorBuilder(editorContext, node).createCell();
   }
 }

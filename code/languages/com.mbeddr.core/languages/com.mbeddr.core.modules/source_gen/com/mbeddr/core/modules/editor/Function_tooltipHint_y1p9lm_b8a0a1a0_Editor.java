@@ -18,6 +18,6 @@ public class Function_tooltipHint_y1p9lm_b8a0a1a0_Editor extends DefaultNodeEdit
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Function_tooltipHint_y1p9lm_b8a0a1a0_EditorBuilder_a(editorContext, node).createCell();
+    return new Function_tooltipHint_y1p9lm_b8a0a1a0_EditorBuilder(editorContext, node).createCell();
   }
 }

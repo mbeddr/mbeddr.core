@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class DeclareListCoverage_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DeclareListCoverage_EditorBuilder_a(editorContext, node).createCell();
+    return new DeclareListCoverage_EditorBuilder(editorContext, node).createCell();
   }
 }

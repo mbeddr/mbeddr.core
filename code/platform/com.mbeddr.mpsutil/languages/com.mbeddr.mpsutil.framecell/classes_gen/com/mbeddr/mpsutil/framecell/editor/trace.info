@@ -30,12 +30,12 @@
   </root>
   <root nodeRef="b33d119e-196d-4497-977c-5c167b21fe33/r:b7f325a3-1f57-46bc-8b14-d2d7c5ff6714(com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.editor)/8760592470373398350">
     <file name="CellModel_FrameCell_Editor.java">
-      <node id="8760592470373398350" at="11,79,12,85" concept="6" />
-      <node id="8760592470373398350" at="14,82,15,88" concept="6" />
+      <node id="8760592470373398350" at="11,79,12,83" concept="6" />
+      <node id="8760592470373398350" at="14,82,15,86" concept="6" />
       <node id="8760592470373398350" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8760592470373398350" at="14,0,17,0" concept="4" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8760592470373398350" at="11,79,12,85" />
-      <scope id="8760592470373398350" at="14,82,15,88" />
+      <scope id="8760592470373398350" at="11,79,12,83" />
+      <scope id="8760592470373398350" at="14,82,15,86" />
       <scope id="8760592470373398350" at="11,0,14,0">
         <var name="editorContext" id="8760592470373398350" />
         <var name="node" id="8760592470373398350" />
@@ -46,8 +46,8 @@
       </scope>
       <unit id="8760592470373398350" at="10,0,18,0" name="com.mbeddr.mpsutil.framecell.editor.CellModel_FrameCell_Editor" />
     </file>
-    <file name="CellModel_FrameCell_EditorBuilder_a.java">
-      <node id="8760592470373398350" at="32,99,33,19" concept="8" />
+    <file name="CellModel_FrameCell_EditorBuilder.java">
+      <node id="8760592470373398350" at="32,97,33,19" concept="8" />
       <node id="8760592470373398350" at="33,19,34,18" concept="1" />
       <node id="8760592470373398350" at="39,26,40,18" concept="6" />
       <node id="8760592470373398350" at="43,39,44,32" concept="6" />
@@ -97,7 +97,7 @@
       <node id="8760592470373398350" at="98,87,101,7" concept="3" />
       <node id="8760592470373398350" at="101,7,104,7" concept="3" />
       <node id="8760592470373398350" at="120,0,123,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="8760592470373398350" at="32,0,36,0" concept="0" trace="CellModel_FrameCell_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8760592470373398350" at="32,0,36,0" concept="0" trace="CellModel_FrameCell_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8760592470373398350" at="69,0,73,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8760592470373398350" at="77,0,81,0" concept="0" trace="childSingleRoleHandler_csacqi_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="8760592470373398350" at="37,0,42,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -115,7 +115,7 @@
       <scope id="8760592470373398350" at="102,42,103,46" />
       <scope id="8760592470373398350" at="116,17,117,42" />
       <scope id="8760592470373398350" at="120,40,121,26" />
-      <scope id="8760592470373398350" at="32,99,34,18" />
+      <scope id="8760592470373398350" at="32,97,34,18" />
       <scope id="8760592470373398350" at="69,40,71,33">
         <var name="provider" id="8760592470373398350" />
       </scope>
@@ -161,12 +161,12 @@
       <scope id="8760592470373398350" at="107,44,118,7" />
       <scope id="8760592470373398350" at="47,0,59,0" />
       <scope id="8760592470373398350" at="106,0,120,0" />
-      <unit id="8760592470373398350" at="125,0,128,0" name="com.mbeddr.mpsutil.framecell.editor.CellModel_FrameCell_EditorBuilder_a$LINKS" />
-      <unit id="8760592470373398350" at="73,0,124,0" name="com.mbeddr.mpsutil.framecell.editor.CellModel_FrameCell_EditorBuilder_a$childSingleRoleHandler_csacqi_b0" />
-      <unit id="8760592470373398350" at="28,0,129,0" name="com.mbeddr.mpsutil.framecell.editor.CellModel_FrameCell_EditorBuilder_a" />
+      <unit id="8760592470373398350" at="125,0,128,0" name="com.mbeddr.mpsutil.framecell.editor.CellModel_FrameCell_EditorBuilder$LINKS" />
+      <unit id="8760592470373398350" at="73,0,124,0" name="com.mbeddr.mpsutil.framecell.editor.CellModel_FrameCell_EditorBuilder$childSingleRoleHandler_csacqi_b0" />
+      <unit id="8760592470373398350" at="28,0,129,0" name="com.mbeddr.mpsutil.framecell.editor.CellModel_FrameCell_EditorBuilder" />
     </file>
-    <file name="CellModel_FrameCell_InspectorBuilder_a.java">
-      <node id="8760592470373398350" at="22,102,23,19" concept="8" />
+    <file name="CellModel_FrameCell_InspectorBuilder.java">
+      <node id="8760592470373398350" at="22,100,23,19" concept="8" />
       <node id="8760592470373398350" at="23,19,24,18" concept="1" />
       <node id="8760592470373398350" at="29,26,30,18" concept="6" />
       <node id="8760592470373398350" at="33,39,34,32" concept="6" />
@@ -208,7 +208,7 @@
       <node id="1078936199314" at="80,35,81,22" concept="6" />
       <node id="8760592470373398350" at="19,0,21,0" concept="2" trace="myNode" />
       <node id="8760592470373398350" at="33,0,36,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8760592470373398350" at="22,0,26,0" concept="0" trace="CellModel_FrameCell_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8760592470373398350" at="22,0,26,0" concept="0" trace="CellModel_FrameCell_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1214478849829" at="51,0,55,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8760592470373398350" at="27,0,32,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1214478854924" at="55,0,64,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -217,7 +217,7 @@
       <node id="8760592470373398350" at="37,0,51,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="8760592470373398350" at="29,26,30,18" />
       <scope id="8760592470373398350" at="33,39,34,32" />
-      <scope id="8760592470373398350" at="22,102,24,18" />
+      <scope id="8760592470373398350" at="22,100,24,18" />
       <scope id="1214478849829" at="51,42,53,22">
         <var name="editorCell" id="1214478849829" />
       </scope>
@@ -248,7 +248,7 @@
         <var name="style" id="8760592470373398350" />
       </scope>
       <scope id="8760592470373398350" at="37,0,51,0" />
-      <unit id="8760592470373398350" at="18,0,84,0" name="com.mbeddr.mpsutil.framecell.editor.CellModel_FrameCell_InspectorBuilder_a" />
+      <unit id="8760592470373398350" at="18,0,84,0" name="com.mbeddr.mpsutil.framecell.editor.CellModel_FrameCell_InspectorBuilder" />
     </file>
   </root>
 </debug-info>

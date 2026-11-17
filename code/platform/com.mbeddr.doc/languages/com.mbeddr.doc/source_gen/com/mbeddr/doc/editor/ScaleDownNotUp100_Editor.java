@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ScaleDownNotUp100_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ScaleDownNotUp100_EditorBuilder_a(editorContext, node).createCell();
+    return new ScaleDownNotUp100_EditorBuilder(editorContext, node).createCell();
   }
 }

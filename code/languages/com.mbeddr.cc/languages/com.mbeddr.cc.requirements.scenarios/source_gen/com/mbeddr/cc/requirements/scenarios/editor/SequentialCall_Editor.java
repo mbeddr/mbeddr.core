@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class SequentialCall_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SequentialCall_EditorBuilder_a(editorContext, node).createCell();
+    return new SequentialCall_EditorBuilder(editorContext, node).createCell();
   }
 }

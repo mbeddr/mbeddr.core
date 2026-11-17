@@ -16,6 +16,6 @@ public class staticValueComponent implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new staticValueComponent_ComponentBuilder_a(editorContext, node).createCell();
+    return new staticValueComponent_ComponentBuilder(editorContext, node).createCell();
   }
 }

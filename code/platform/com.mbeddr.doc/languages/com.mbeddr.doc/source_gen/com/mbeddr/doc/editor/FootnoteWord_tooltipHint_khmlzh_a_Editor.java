@@ -18,6 +18,6 @@ public class FootnoteWord_tooltipHint_khmlzh_a_Editor extends DefaultNodeEditor 
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new FootnoteWord_tooltipHint_khmlzh_a_EditorBuilder_a(editorContext, node).createCell();
+    return new FootnoteWord_tooltipHint_khmlzh_a_EditorBuilder(editorContext, node).createCell();
   }
 }

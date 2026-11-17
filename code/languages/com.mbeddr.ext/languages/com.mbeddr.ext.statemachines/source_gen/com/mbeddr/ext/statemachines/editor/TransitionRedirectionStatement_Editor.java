@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class TransitionRedirectionStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TransitionRedirectionStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new TransitionRedirectionStatement_EditorBuilder(editorContext, node).createCell();
   }
 }

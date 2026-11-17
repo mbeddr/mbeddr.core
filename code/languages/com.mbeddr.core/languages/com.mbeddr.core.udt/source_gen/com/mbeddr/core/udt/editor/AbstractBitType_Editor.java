@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AbstractBitType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AbstractBitType_EditorBuilder_a(editorContext, node).createCell();
+    return new AbstractBitType_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new AbstractBitType_InspectorBuilder_a(editorContext, node).createCell();
+    return new AbstractBitType_InspectorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ConceptDiagram_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConceptDiagram_EditorBuilder_a(editorContext, node).createCell();
+    return new ConceptDiagram_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new ConceptDiagram_InspectorBuilder_a(editorContext, node).createCell();
+    return new ConceptDiagram_InspectorBuilder(editorContext, node).createCell();
   }
 }

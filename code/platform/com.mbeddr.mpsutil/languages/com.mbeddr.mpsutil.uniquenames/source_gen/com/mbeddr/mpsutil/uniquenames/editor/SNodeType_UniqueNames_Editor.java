@@ -18,9 +18,9 @@ public class SNodeType_UniqueNames_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SNodeType_UniqueNames_EditorBuilder_a(editorContext, node).createCell();
+    return new SNodeType_UniqueNames_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new SNodeType_UniqueNames_InspectorBuilder_a(editorContext, node).createCell();
+    return new SNodeType_UniqueNames_InspectorBuilder(editorContext, node).createCell();
   }
 }

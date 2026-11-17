@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class StubCellModel_PlaceholderTextList_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new StubCellModel_PlaceholderTextList_EditorBuilder_a(editorContext, node).createCell();
+    return new StubCellModel_PlaceholderTextList_EditorBuilder(editorContext, node).createCell();
   }
 }

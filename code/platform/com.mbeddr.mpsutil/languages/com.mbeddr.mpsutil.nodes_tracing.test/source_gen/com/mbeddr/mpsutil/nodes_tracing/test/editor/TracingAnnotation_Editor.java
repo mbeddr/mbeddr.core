@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class TracingAnnotation_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TracingAnnotation_EditorBuilder_a(editorContext, node).createCell();
+    return new TracingAnnotation_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class SlideWord_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SlideWord_EditorBuilder_a(editorContext, node).createCell();
+    return new SlideWord_EditorBuilder(editorContext, node).createCell();
   }
 }

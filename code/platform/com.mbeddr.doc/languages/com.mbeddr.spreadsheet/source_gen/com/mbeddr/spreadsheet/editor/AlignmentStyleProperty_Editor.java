@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AlignmentStyleProperty_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AlignmentStyleProperty_EditorBuilder_a(editorContext, node).createCell();
+    return new AlignmentStyleProperty_EditorBuilder(editorContext, node).createCell();
   }
 }

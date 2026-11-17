@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class UnusedMethodsAssessmentResult_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new UnusedMethodsAssessmentResult_EditorBuilder_a(editorContext, node).createCell();
+    return new UnusedMethodsAssessmentResult_EditorBuilder(editorContext, node).createCell();
   }
 }

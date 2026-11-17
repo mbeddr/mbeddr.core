@@ -16,6 +16,6 @@ public class StyleDistinguisher implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new StyleDistinguisher_ComponentBuilder_a(editorContext, node).createCell();
+    return new StyleDistinguisher_ComponentBuilder(editorContext, node).createCell();
   }
 }

@@ -110,17 +110,17 @@
   </root>
   <root nodeRef="r:71832b82-d87a-4966-ac3d-65fac49d19ae(com.mbeddr.mpsutil.suppresswarning.gen.editor)/9116320848001359839">
     <file name="CheckCategoryAnnotation_Editor.java">
-      <node id="9116320848001359839" at="11,79,12,89" concept="6" />
+      <node id="9116320848001359839" at="11,79,12,87" concept="6" />
       <node id="9116320848001359839" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="9116320848001359839" at="11,79,12,89" />
+      <scope id="9116320848001359839" at="11,79,12,87" />
       <scope id="9116320848001359839" at="11,0,14,0">
         <var name="editorContext" id="9116320848001359839" />
         <var name="node" id="9116320848001359839" />
       </scope>
       <unit id="9116320848001359839" at="10,0,15,0" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.CheckCategoryAnnotation_Editor" />
     </file>
-    <file name="CheckCategoryAnnotation_EditorBuilder_a.java">
-      <node id="9116320848001359839" at="34,103,35,19" concept="11" />
+    <file name="CheckCategoryAnnotation_EditorBuilder.java">
+      <node id="9116320848001359839" at="34,101,35,19" concept="11" />
       <node id="9116320848001359839" at="35,19,36,18" concept="1" />
       <node id="9116320848001359839" at="41,26,42,18" concept="6" />
       <node id="9116320848001359839" at="45,39,46,32" concept="6" />
@@ -176,7 +176,7 @@
       <node id="9116320848001359839" at="105,87,108,7" concept="3" />
       <node id="9116320848001359839" at="108,7,111,7" concept="3" />
       <node id="9116320848001359839" at="127,0,130,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="9116320848001359839" at="34,0,38,0" concept="0" trace="CheckCategoryAnnotation_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="9116320848001359839" at="34,0,38,0" concept="0" trace="CheckCategoryAnnotation_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="9116320848001359839" at="76,0,80,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="9116320848001359839" at="84,0,88,0" concept="0" trace="kindSingleRoleHandler_bf15ln_b0a#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="9116320848001359839" at="39,0,44,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -196,7 +196,7 @@
       <scope id="9116320848001359839" at="109,42,110,45" />
       <scope id="9116320848001359839" at="123,17,124,42" />
       <scope id="9116320848001359839" at="127,40,128,25" />
-      <scope id="9116320848001359839" at="34,103,36,18" />
+      <scope id="9116320848001359839" at="34,101,36,18" />
       <scope id="9116320848001359839" at="76,40,78,33">
         <var name="provider" id="9116320848001359839" />
       </scope>
@@ -250,24 +250,24 @@
       <scope id="9116320848001361403" at="65,0,76,0" />
       <scope id="9116320848001359839" at="114,44,125,7" />
       <scope id="9116320848001359839" at="113,0,127,0" />
-      <unit id="9116320848001359839" at="137,0,140,0" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.CheckCategoryAnnotation_EditorBuilder_a$LINKS" />
-      <unit id="9116320848001359839" at="80,0,131,0" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.CheckCategoryAnnotation_EditorBuilder_a$kindSingleRoleHandler_bf15ln_b0a" />
-      <unit id="9116320848001359839" at="30,0,141,0" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.CheckCategoryAnnotation_EditorBuilder_a" />
+      <unit id="9116320848001359839" at="137,0,140,0" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.CheckCategoryAnnotation_EditorBuilder$LINKS" />
+      <unit id="9116320848001359839" at="80,0,131,0" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.CheckCategoryAnnotation_EditorBuilder$kindSingleRoleHandler_bf15ln_b0a" />
+      <unit id="9116320848001359839" at="30,0,141,0" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.CheckCategoryAnnotation_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:71832b82-d87a-4966-ac3d-65fac49d19ae(com.mbeddr.mpsutil.suppresswarning.gen.editor)/9116320848001492856">
     <file name="KindReference_Editor.java">
-      <node id="9116320848001492856" at="11,79,12,79" concept="6" />
+      <node id="9116320848001492856" at="11,79,12,77" concept="6" />
       <node id="9116320848001492856" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="9116320848001492856" at="11,79,12,79" />
+      <scope id="9116320848001492856" at="11,79,12,77" />
       <scope id="9116320848001492856" at="11,0,14,0">
         <var name="editorContext" id="9116320848001492856" />
         <var name="node" id="9116320848001492856" />
       </scope>
       <unit id="9116320848001492856" at="10,0,15,0" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.KindReference_Editor" />
     </file>
-    <file name="KindReference_EditorBuilder_a.java">
-      <node id="9116320848001492856" at="29,93,30,19" concept="11" />
+    <file name="KindReference_EditorBuilder.java">
+      <node id="9116320848001492856" at="29,91,30,19" concept="11" />
       <node id="9116320848001492856" at="30,19,31,18" concept="1" />
       <node id="9116320848001492856" at="36,26,37,18" concept="6" />
       <node id="9116320848001492856" at="40,39,41,43" concept="6" />
@@ -286,14 +286,14 @@
       <node id="9116320848001492856" at="64,0,65,0" concept="9" trace="kind$QoeL" />
       <node id="9116320848001492856" at="26,0,28,0" concept="2" trace="myNode" />
       <node id="9116320848001492856" at="40,0,43,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="9116320848001492856" at="29,0,33,0" concept="0" trace="KindReference_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="9116320848001492856" at="29,0,33,0" concept="0" trace="KindReference_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8237250467076123076" at="46,0,50,0" concept="4" trace="getText#()Ljava/lang/String;" />
       <node id="9116320848001492856" at="34,0,39,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8237250467076123076" at="44,54,50,15" concept="5" />
       <node id="8237250467076123076" at="44,0,62,0" concept="4" trace="createReadOnlyModelAccessor_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="9116320848001492856" at="36,26,37,18" />
       <scope id="9116320848001492856" at="40,39,41,43" />
-      <scope id="9116320848001492856" at="29,93,31,18" />
+      <scope id="9116320848001492856" at="29,91,31,18" />
       <scope id="8237250467076123082" at="46,31,48,121">
         <var name="concept" id="8237250467076132206" />
       </scope>
@@ -309,9 +309,9 @@
         <var name="style" id="8237250467076123076" />
       </scope>
       <scope id="8237250467076123076" at="44,0,62,0" />
-      <unit id="9116320848001492856" at="63,0,66,0" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.KindReference_EditorBuilder_a$LINKS" />
-      <unit id="8237250467076123076" at="45,88,50,5" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.KindReference_EditorBuilder_a$1" />
-      <unit id="9116320848001492856" at="25,0,67,0" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.KindReference_EditorBuilder_a" />
+      <unit id="9116320848001492856" at="63,0,66,0" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.KindReference_EditorBuilder$LINKS" />
+      <unit id="8237250467076123076" at="45,88,50,5" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.KindReference_EditorBuilder$1" />
+      <unit id="9116320848001492856" at="25,0,67,0" name="com.mbeddr.mpsutil.suppresswarning.gen.editor.KindReference_EditorBuilder" />
     </file>
   </root>
 </debug-info>

@@ -17,17 +17,17 @@
   </root>
   <root nodeRef="r:44431e00-de7e-4f6b-8825-857a6dbdd309(com.mbeddr.mpsutil.ecore.testing.editor)/494571880817472411">
     <file name="AssertImportStatement_Editor.java">
-      <node id="494571880817472411" at="11,79,12,87" concept="6" />
+      <node id="494571880817472411" at="11,79,12,85" concept="6" />
       <node id="494571880817472411" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="494571880817472411" at="11,79,12,87" />
+      <scope id="494571880817472411" at="11,79,12,85" />
       <scope id="494571880817472411" at="11,0,14,0">
         <var name="editorContext" id="494571880817472411" />
         <var name="node" id="494571880817472411" />
       </scope>
       <unit id="494571880817472411" at="10,0,15,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertImportStatement_Editor" />
     </file>
-    <file name="AssertImportStatement_EditorBuilder_a.java">
-      <node id="494571880817472411" at="31,101,32,19" concept="8" />
+    <file name="AssertImportStatement_EditorBuilder.java">
+      <node id="494571880817472411" at="31,99,32,19" concept="8" />
       <node id="494571880817472411" at="32,19,33,18" concept="1" />
       <node id="494571880817472411" at="38,26,39,18" concept="6" />
       <node id="494571880817472411" at="42,39,43,32" concept="6" />
@@ -114,7 +114,7 @@
       <node id="494571880817472411" at="158,87,161,7" concept="3" />
       <node id="494571880817472411" at="161,7,164,7" concept="3" />
       <node id="494571880817472411" at="180,0,183,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="494571880817472411" at="31,0,35,0" concept="0" trace="AssertImportStatement_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="494571880817472411" at="31,0,35,0" concept="0" trace="AssertImportStatement_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="494571880817472411" at="65,0,69,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="494571880817472411" at="73,0,77,0" concept="0" trace="pathToEcoreFileSingleRoleHandler_8w3rtg_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="494571880817472411" at="129,0,133,0" concept="4" trace="createRefNode_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -146,7 +146,7 @@
       <scope id="494571880817472411" at="162,42,163,58" />
       <scope id="494571880817472411" at="176,17,177,42" />
       <scope id="494571880817472411" at="180,40,181,36" />
-      <scope id="494571880817472411" at="31,101,33,18" />
+      <scope id="494571880817472411" at="31,99,33,18" />
       <scope id="494571880817472411" at="65,40,67,33">
         <var name="provider" id="494571880817472411" />
       </scope>
@@ -230,25 +230,25 @@
       <scope id="494571880817472411" at="46,0,58,0" />
       <scope id="494571880817472411" at="102,0,116,0" />
       <scope id="494571880817472411" at="166,0,180,0" />
-      <unit id="494571880817472411" at="194,0,198,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertImportStatement_EditorBuilder_a$LINKS" />
-      <unit id="494571880817472411" at="69,0,120,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertImportStatement_EditorBuilder_a$pathToEcoreFileSingleRoleHandler_8w3rtg_b0" />
-      <unit id="494571880817472411" at="133,0,184,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertImportStatement_EditorBuilder_a$referenceLanguageSingleRoleHandler_8w3rtg_d0" />
-      <unit id="494571880817472411" at="27,0,199,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertImportStatement_EditorBuilder_a" />
+      <unit id="494571880817472411" at="194,0,198,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertImportStatement_EditorBuilder$LINKS" />
+      <unit id="494571880817472411" at="69,0,120,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertImportStatement_EditorBuilder$pathToEcoreFileSingleRoleHandler_8w3rtg_b0" />
+      <unit id="494571880817472411" at="133,0,184,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertImportStatement_EditorBuilder$referenceLanguageSingleRoleHandler_8w3rtg_d0" />
+      <unit id="494571880817472411" at="27,0,199,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertImportStatement_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:44431e00-de7e-4f6b-8825-857a6dbdd309(com.mbeddr.mpsutil.ecore.testing.editor)/5528787623165930835">
     <file name="AssertInstanceImportExportStatement_Editor.java">
-      <node id="5528787623165930835" at="11,79,12,101" concept="6" />
+      <node id="5528787623165930835" at="11,79,12,99" concept="6" />
       <node id="5528787623165930835" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5528787623165930835" at="11,79,12,101" />
+      <scope id="5528787623165930835" at="11,79,12,99" />
       <scope id="5528787623165930835" at="11,0,14,0">
         <var name="editorContext" id="5528787623165930835" />
         <var name="node" id="5528787623165930835" />
       </scope>
       <unit id="5528787623165930835" at="10,0,15,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertInstanceImportExportStatement_Editor" />
     </file>
-    <file name="AssertInstanceImportExportStatement_EditorBuilder_a.java">
-      <node id="5528787623165930835" at="32,115,33,19" concept="8" />
+    <file name="AssertInstanceImportExportStatement_EditorBuilder.java">
+      <node id="5528787623165930835" at="32,113,33,19" concept="8" />
       <node id="5528787623165930835" at="33,19,34,18" concept="1" />
       <node id="5528787623165930835" at="39,26,40,18" concept="6" />
       <node id="5528787623165930835" at="43,39,44,32" concept="6" />
@@ -391,7 +391,7 @@
       <node id="5528787623165930835" at="261,87,264,7" concept="3" />
       <node id="5528787623165930835" at="264,7,267,7" concept="3" />
       <node id="5528787623165930835" at="283,0,286,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="5528787623165930835" at="32,0,36,0" concept="0" trace="AssertInstanceImportExportStatement_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5528787623165930835" at="32,0,36,0" concept="0" trace="AssertInstanceImportExportStatement_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5528787623165930835" at="84,0,88,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5528787623165930835" at="92,0,96,0" concept="0" trace="pathToEcoreFileSingleRoleHandler_pc7o54_b1a#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="5528787623165930835" at="158,0,162,0" concept="4" trace="createRefNode_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -439,7 +439,7 @@
       <scope id="5528787623165930835" at="265,42,266,58" />
       <scope id="5528787623165930835" at="279,17,280,42" />
       <scope id="5528787623165930835" at="283,40,284,38" />
-      <scope id="5528787623165930835" at="32,115,34,18" />
+      <scope id="5528787623165930835" at="32,113,34,18" />
       <scope id="5528787623165930835" at="84,40,86,33">
         <var name="provider" id="5528787623165930835" />
       </scope>
@@ -572,11 +572,11 @@
       <scope id="5528787623165930835" at="121,0,135,0" />
       <scope id="5528787623165930835" at="195,0,209,0" />
       <scope id="5528787623165930835" at="269,0,283,0" />
-      <unit id="5528787623165930835" at="288,0,293,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertInstanceImportExportStatement_EditorBuilder_a$LINKS" />
-      <unit id="5528787623165930835" at="88,0,139,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertInstanceImportExportStatement_EditorBuilder_a$pathToEcoreFileSingleRoleHandler_pc7o54_b1a" />
-      <unit id="5528787623165930835" at="162,0,213,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertInstanceImportExportStatement_EditorBuilder_a$referenceLanguageSingleRoleHandler_pc7o54_b2a" />
-      <unit id="5528787623165930835" at="236,0,287,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertInstanceImportExportStatement_EditorBuilder_a$referenceInstanceSingleRoleHandler_pc7o54_b3a" />
-      <unit id="5528787623165930835" at="28,0,294,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertInstanceImportExportStatement_EditorBuilder_a" />
+      <unit id="5528787623165930835" at="288,0,293,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertInstanceImportExportStatement_EditorBuilder$LINKS" />
+      <unit id="5528787623165930835" at="88,0,139,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertInstanceImportExportStatement_EditorBuilder$pathToEcoreFileSingleRoleHandler_pc7o54_b1a" />
+      <unit id="5528787623165930835" at="162,0,213,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertInstanceImportExportStatement_EditorBuilder$referenceLanguageSingleRoleHandler_pc7o54_b2a" />
+      <unit id="5528787623165930835" at="236,0,287,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertInstanceImportExportStatement_EditorBuilder$referenceInstanceSingleRoleHandler_pc7o54_b3a" />
+      <unit id="5528787623165930835" at="28,0,294,0" name="com.mbeddr.mpsutil.ecore.testing.editor.AssertInstanceImportExportStatement_EditorBuilder" />
     </file>
   </root>
 </debug-info>

@@ -16,6 +16,6 @@ public class DefaultReqSummary implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DefaultReqSummary_ComponentBuilder_a(editorContext, node).createCell();
+    return new DefaultReqSummary_ComponentBuilder(editorContext, node).createCell();
   }
 }

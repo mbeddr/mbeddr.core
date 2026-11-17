@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AssertInstanceImportExportStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AssertInstanceImportExportStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new AssertInstanceImportExportStatement_EditorBuilder(editorContext, node).createCell();
   }
 }

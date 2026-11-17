@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class IntentionsActionSource_Compact_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new IntentionsActionSource_Compact_EditorBuilder_a(editorContext, node).createCell();
+    return new IntentionsActionSource_Compact_EditorBuilder(editorContext, node).createCell();
   }
 }

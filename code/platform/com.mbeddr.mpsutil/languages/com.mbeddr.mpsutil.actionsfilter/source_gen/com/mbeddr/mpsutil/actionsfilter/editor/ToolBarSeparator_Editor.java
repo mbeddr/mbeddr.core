@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ToolBarSeparator_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ToolBarSeparator_EditorBuilder_a(editorContext, node).createCell();
+    return new ToolBarSeparator_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PsmInitState_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PsmInitState_EditorBuilder_a(editorContext, node).createCell();
+    return new PsmInitState_EditorBuilder(editorContext, node).createCell();
   }
 }

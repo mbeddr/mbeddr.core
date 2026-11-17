@@ -17,17 +17,17 @@
   </root>
   <root nodeRef="5e845763-f4ca-40bf-b31f-74e236ffed75/r:88e13e05-1ddd-41db-83a8-8c9c4e3a0cd0(com.mbeddr.mpsutil.spreferences.context/com.mbeddr.mpsutil.spreferences.context.editor)/877857976375363162">
     <file name="SPreferencesContext_Editor.java">
-      <node id="877857976375363162" at="11,79,12,85" concept="6" />
+      <node id="877857976375363162" at="11,79,12,83" concept="6" />
       <node id="877857976375363162" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="877857976375363162" at="11,79,12,85" />
+      <scope id="877857976375363162" at="11,79,12,83" />
       <scope id="877857976375363162" at="11,0,14,0">
         <var name="editorContext" id="877857976375363162" />
         <var name="node" id="877857976375363162" />
       </scope>
       <unit id="877857976375363162" at="10,0,15,0" name="com.mbeddr.mpsutil.spreferences.context.editor.SPreferencesContext_Editor" />
     </file>
-    <file name="SPreferencesContext_EditorBuilder_a.java">
-      <node id="877857976375363162" at="31,99,32,19" concept="8" />
+    <file name="SPreferencesContext_EditorBuilder.java">
+      <node id="877857976375363162" at="31,97,32,19" concept="8" />
       <node id="877857976375363162" at="32,19,33,18" concept="1" />
       <node id="877857976375363162" at="38,26,39,18" concept="6" />
       <node id="877857976375363162" at="42,39,43,32" concept="6" />
@@ -87,7 +87,7 @@
       <node id="877857976375363162" at="113,87,116,7" concept="3" />
       <node id="877857976375363162" at="116,7,119,7" concept="3" />
       <node id="877857976375363162" at="135,0,138,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="877857976375363162" at="31,0,35,0" concept="0" trace="SPreferencesContext_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="877857976375363162" at="31,0,35,0" concept="0" trace="SPreferencesContext_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="877857976375363162" at="84,0,88,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="877857976375363162" at="92,0,96,0" concept="0" trace="redirectToModelSingleRoleHandler_mw44cx_b2a#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="877857976375363162" at="36,0,41,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -108,7 +108,7 @@
       <scope id="877857976375363162" at="117,42,118,56" />
       <scope id="877857976375363162" at="131,17,132,42" />
       <scope id="877857976375363162" at="135,40,136,36" />
-      <scope id="877857976375363162" at="31,99,33,18" />
+      <scope id="877857976375363162" at="31,97,33,18" />
       <scope id="877857976375363162" at="84,40,86,33">
         <var name="provider" id="877857976375363162" />
       </scope>
@@ -165,9 +165,9 @@
       <scope id="877857976375363162" at="68,0,78,0" />
       <scope id="877857976375363162" at="122,44,133,7" />
       <scope id="877857976375363162" at="121,0,135,0" />
-      <unit id="877857976375363162" at="140,0,143,0" name="com.mbeddr.mpsutil.spreferences.context.editor.SPreferencesContext_EditorBuilder_a$LINKS" />
-      <unit id="877857976375363162" at="88,0,139,0" name="com.mbeddr.mpsutil.spreferences.context.editor.SPreferencesContext_EditorBuilder_a$redirectToModelSingleRoleHandler_mw44cx_b2a" />
-      <unit id="877857976375363162" at="27,0,144,0" name="com.mbeddr.mpsutil.spreferences.context.editor.SPreferencesContext_EditorBuilder_a" />
+      <unit id="877857976375363162" at="140,0,143,0" name="com.mbeddr.mpsutil.spreferences.context.editor.SPreferencesContext_EditorBuilder$LINKS" />
+      <unit id="877857976375363162" at="88,0,139,0" name="com.mbeddr.mpsutil.spreferences.context.editor.SPreferencesContext_EditorBuilder$redirectToModelSingleRoleHandler_mw44cx_b2a" />
+      <unit id="877857976375363162" at="27,0,144,0" name="com.mbeddr.mpsutil.spreferences.context.editor.SPreferencesContext_EditorBuilder" />
     </file>
   </root>
 </debug-info>

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AssertExprList_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AssertExprList_EditorBuilder_a(editorContext, node).createCell();
+    return new AssertExprList_EditorBuilder(editorContext, node).createCell();
   }
 }

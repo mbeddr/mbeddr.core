@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class LatexIncludable_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new LatexIncludable_EditorBuilder_a(editorContext, node).createCell();
+    return new LatexIncludable_EditorBuilder(editorContext, node).createCell();
   }
 }

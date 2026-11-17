@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class UseCaseSummary_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new UseCaseSummary_EditorBuilder_a(editorContext, node).createCell();
+    return new UseCaseSummary_EditorBuilder(editorContext, node).createCell();
   }
 }

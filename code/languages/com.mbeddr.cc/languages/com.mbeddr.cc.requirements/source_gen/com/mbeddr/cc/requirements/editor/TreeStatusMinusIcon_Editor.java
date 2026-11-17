@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class TreeStatusMinusIcon_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TreeStatusMinusIcon_EditorBuilder_a(editorContext, node).createCell();
+    return new TreeStatusMinusIcon_EditorBuilder(editorContext, node).createCell();
   }
 }

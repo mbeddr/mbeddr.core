@@ -18,9 +18,9 @@ public class ElementDocumentation_graphical_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ElementDocumentation_graphical_EditorBuilder_a(editorContext, node).createCell();
+    return new ElementDocumentation_graphical_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new ElementDocumentation_graphical_InspectorBuilder_a(editorContext, node).createCell();
+    return new ElementDocumentation_graphical_InspectorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class BuildVariableDirPicker_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new BuildVariableDirPicker_EditorBuilder_a(editorContext, node).createCell();
+    return new BuildVariableDirPicker_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new BuildVariableDirPicker_InspectorBuilder_a(editorContext, node).createCell();
+    return new BuildVariableDirPicker_InspectorBuilder(editorContext, node).createCell();
   }
 }

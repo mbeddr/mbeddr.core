@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class EMFDataTypeAnnotation_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new EMFDataTypeAnnotation_EditorBuilder_a(editorContext, node).createCell();
+    return new EMFDataTypeAnnotation_EditorBuilder(editorContext, node).createCell();
   }
 }

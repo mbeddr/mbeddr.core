@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class MultiLineVariable_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new MultiLineVariable_EditorBuilder_a(editorContext, node).createCell();
+    return new MultiLineVariable_EditorBuilder(editorContext, node).createCell();
   }
 }

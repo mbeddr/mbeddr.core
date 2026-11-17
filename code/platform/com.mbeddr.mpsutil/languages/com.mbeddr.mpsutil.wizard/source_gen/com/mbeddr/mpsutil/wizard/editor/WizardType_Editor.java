@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class WizardType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new WizardType_EditorBuilder_a(editorContext, node).createCell();
+    return new WizardType_EditorBuilder(editorContext, node).createCell();
   }
 }

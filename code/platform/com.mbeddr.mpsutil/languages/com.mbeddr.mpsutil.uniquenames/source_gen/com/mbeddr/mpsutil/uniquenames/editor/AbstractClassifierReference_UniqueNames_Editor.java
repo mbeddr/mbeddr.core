@@ -18,6 +18,6 @@ public class AbstractClassifierReference_UniqueNames_Editor extends DefaultNodeE
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AbstractClassifierReference_UniqueNames_EditorBuilder_a(editorContext, node).createCell();
+    return new AbstractClassifierReference_UniqueNames_EditorBuilder(editorContext, node).createCell();
   }
 }

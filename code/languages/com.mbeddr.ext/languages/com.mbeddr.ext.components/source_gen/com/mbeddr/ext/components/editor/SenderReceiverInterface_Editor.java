@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class SenderReceiverInterface_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SenderReceiverInterface_EditorBuilder_a(editorContext, node).createCell();
+    return new SenderReceiverInterface_EditorBuilder(editorContext, node).createCell();
   }
 }

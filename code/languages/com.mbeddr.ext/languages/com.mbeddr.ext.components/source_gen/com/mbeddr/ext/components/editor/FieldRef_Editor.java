@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class FieldRef_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new FieldRef_EditorBuilder_a(editorContext, node).createCell();
+    return new FieldRef_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new FieldRef_InspectorBuilder_a(editorContext, node).createCell();
+    return new FieldRef_InspectorBuilder(editorContext, node).createCell();
   }
 }

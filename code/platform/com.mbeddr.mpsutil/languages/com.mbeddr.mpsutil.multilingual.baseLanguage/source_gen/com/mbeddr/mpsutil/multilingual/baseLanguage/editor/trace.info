@@ -22,12 +22,12 @@
   </root>
   <root nodeRef="r:bd6eadde-0753-4ee6-b1ba-de5fed34eb94(com.mbeddr.mpsutil.multilingual.baseLanguage.editor)/2510545900188478757">
     <file name="MultilingualJavaString_Editor.java">
-      <node id="2510545900188478757" at="11,79,12,88" concept="9" />
-      <node id="2510545900188478757" at="14,82,15,91" concept="9" />
+      <node id="2510545900188478757" at="11,79,12,86" concept="9" />
+      <node id="2510545900188478757" at="14,82,15,89" concept="9" />
       <node id="2510545900188478757" at="11,0,14,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2510545900188478757" at="14,0,17,0" concept="7" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2510545900188478757" at="11,79,12,88" />
-      <scope id="2510545900188478757" at="14,82,15,91" />
+      <scope id="2510545900188478757" at="11,79,12,86" />
+      <scope id="2510545900188478757" at="14,82,15,89" />
       <scope id="2510545900188478757" at="11,0,14,0">
         <var name="editorContext" id="2510545900188478757" />
         <var name="node" id="2510545900188478757" />
@@ -38,8 +38,8 @@
       </scope>
       <unit id="2510545900188478757" at="10,0,18,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_Editor" />
     </file>
-    <file name="MultilingualJavaString_EditorBuilder_a.java">
-      <node id="2510545900188478757" at="41,102,42,19" concept="12" />
+    <file name="MultilingualJavaString_EditorBuilder.java">
+      <node id="2510545900188478757" at="41,100,42,19" concept="12" />
       <node id="2510545900188478757" at="42,19,43,18" concept="2" />
       <node id="2510545900188478757" at="48,26,49,18" concept="9" />
       <node id="2510545900188478757" at="52,39,53,32" concept="9" />
@@ -115,7 +115,7 @@
       <node id="2510545900188478757" at="52,0,55,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2510545900188478766" at="126,0,129,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2510545900188478767" at="138,0,141,0" concept="7" trace="getText#()Ljava/lang/String;" />
-      <node id="2510545900188478757" at="41,0,45,0" concept="1" trace="MultilingualJavaString_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2510545900188478757" at="41,0,45,0" concept="1" trace="MultilingualJavaString_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2510545900188478757" at="101,0,105,5" concept="6" />
       <node id="2510545900188478757" at="46,0,51,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2510545900188478757" at="108,205,113,22" concept="6" />
@@ -135,7 +135,7 @@
       <scope id="2510545900188478766" at="126,41,127,45" />
       <scope id="2510545900188478766" at="132,28,133,20" />
       <scope id="2510545900188478770" at="138,33,139,75" />
-      <scope id="2510545900188478757" at="41,102,43,18" />
+      <scope id="2510545900188478757" at="41,100,43,18" />
       <scope id="2510545900188478757" at="102,40,104,42" />
       <scope id="2510545900188478757" at="109,73,111,145">
         <var name="manager" id="2510545900188478757" />
@@ -193,16 +193,16 @@
         <var name="referenceLink" id="2510545900188478757" />
       </scope>
       <scope id="2510545900188478757" at="87,0,115,0" />
-      <unit id="2510545900188478757" at="161,0,164,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder_a$LINKS" />
-      <unit id="2510545900188478757" at="165,0,168,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder_a$CONCEPTS" />
-      <unit id="2510545900188478757" at="169,0,172,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder_a$PROPS" />
-      <unit id="2510545900188478767" at="137,90,141,7" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="2510545900188478757" at="89,42,97,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder_a$1" />
-      <unit id="2510545900188478766" at="115,0,151,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder_a$Inline_Builder0" />
-      <unit id="2510545900188478757" at="37,0,173,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder_a" />
+      <unit id="2510545900188478757" at="161,0,164,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder$LINKS" />
+      <unit id="2510545900188478757" at="165,0,168,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder$CONCEPTS" />
+      <unit id="2510545900188478757" at="169,0,172,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder$PROPS" />
+      <unit id="2510545900188478767" at="137,90,141,7" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder$Inline_Builder0$1" />
+      <unit id="2510545900188478757" at="89,42,97,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder$1" />
+      <unit id="2510545900188478766" at="115,0,151,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder$Inline_Builder0" />
+      <unit id="2510545900188478757" at="37,0,173,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_EditorBuilder" />
     </file>
-    <file name="MultilingualJavaString_InspectorBuilder_a.java">
-      <node id="2510545900188478757" at="30,105,31,19" concept="12" />
+    <file name="MultilingualJavaString_InspectorBuilder.java">
+      <node id="2510545900188478757" at="30,103,31,19" concept="12" />
       <node id="2510545900188478757" at="31,19,32,18" concept="2" />
       <node id="2510545900188478757" at="37,26,38,18" concept="9" />
       <node id="2510545900188478757" at="41,39,42,32" concept="9" />
@@ -236,7 +236,7 @@
       <node id="2510545900188478757" at="27,0,29,0" concept="3" trace="myNode" />
       <node id="2510545900188478757" at="41,0,44,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2510545900188478783" at="71,0,74,0" concept="7" trace="getText#()Ljava/lang/String;" />
-      <node id="2510545900188478757" at="30,0,34,0" concept="1" trace="MultilingualJavaString_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2510545900188478757" at="30,0,34,0" concept="1" trace="MultilingualJavaString_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2510545900188478757" at="35,0,40,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2510545900188478783" at="69,54,74,15" concept="8" />
       <node id="2510545900188478782" at="63,0,69,0" concept="7" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -246,7 +246,7 @@
       <scope id="2510545900188478757" at="37,26,38,18" />
       <scope id="2510545900188478757" at="41,39,42,32" />
       <scope id="2510545900188478786" at="71,31,72,188" />
-      <scope id="2510545900188478757" at="30,105,32,18" />
+      <scope id="2510545900188478757" at="30,103,32,18" />
       <scope id="2510545900188478757" at="41,0,44,0" />
       <scope id="2510545900188478783" at="71,0,74,0" />
       <scope id="2510545900188478757" at="30,0,34,0">
@@ -272,24 +272,24 @@
         <var name="style" id="2510545900188478783" />
       </scope>
       <scope id="2510545900188478783" at="69,0,83,0" />
-      <unit id="2510545900188478757" at="84,0,87,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_InspectorBuilder_a$PROPS" />
-      <unit id="2510545900188478783" at="70,88,74,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_InspectorBuilder_a$1" />
-      <unit id="2510545900188478757" at="26,0,88,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_InspectorBuilder_a" />
+      <unit id="2510545900188478757" at="84,0,87,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_InspectorBuilder$PROPS" />
+      <unit id="2510545900188478783" at="70,88,74,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_InspectorBuilder$1" />
+      <unit id="2510545900188478757" at="26,0,88,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaString_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:bd6eadde-0753-4ee6-b1ba-de5fed34eb94(com.mbeddr.mpsutil.multilingual.baseLanguage.editor)/9087294576173504571">
     <file name="RichStringMessageKey_Editor.java">
-      <node id="9087294576173504571" at="11,79,12,86" concept="9" />
+      <node id="9087294576173504571" at="11,79,12,84" concept="9" />
       <node id="9087294576173504571" at="11,0,14,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="9087294576173504571" at="11,79,12,86" />
+      <scope id="9087294576173504571" at="11,79,12,84" />
       <scope id="9087294576173504571" at="11,0,14,0">
         <var name="editorContext" id="9087294576173504571" />
         <var name="node" id="9087294576173504571" />
       </scope>
       <unit id="9087294576173504571" at="10,0,15,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_Editor" />
     </file>
-    <file name="RichStringMessageKey_EditorBuilder_a.java">
-      <node id="9087294576173504571" at="50,100,51,19" concept="12" />
+    <file name="RichStringMessageKey_EditorBuilder.java">
+      <node id="9087294576173504571" at="50,98,51,19" concept="12" />
       <node id="9087294576173504571" at="51,19,52,18" concept="2" />
       <node id="9087294576173504571" at="57,26,58,18" concept="9" />
       <node id="9087294576173504571" at="61,39,62,34" concept="9" />
@@ -452,7 +452,7 @@
       <node id="9087294576173504571" at="239,87,242,7" concept="6" />
       <node id="9087294576173504571" at="242,7,245,7" concept="6" />
       <node id="9087294576173504571" at="261,0,264,0" concept="7" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="9087294576173504571" at="50,0,54,0" concept="1" trace="RichStringMessageKey_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="9087294576173504571" at="50,0,54,0" concept="1" trace="RichStringMessageKey_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="9087294576173504571" at="210,0,214,0" concept="7" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="9087294576173504571" at="218,0,222,0" concept="1" trace="richDefaultSingleRoleHandler_9s4g7n_a1a0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="9087294576173504571" at="55,0,60,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -513,7 +513,7 @@
       <scope id="9087294576173504571" at="261,40,262,32" />
       <scope id="9087294576173504571" at="282,45,283,59" />
       <scope id="568377005202721172" at="311,15,312,40" />
-      <scope id="9087294576173504571" at="50,100,52,18" />
+      <scope id="9087294576173504571" at="50,98,52,18" />
       <scope id="568377005202721138" at="172,74,174,145">
         <var name="manager" id="568377005202721138" />
       </scope>
@@ -702,26 +702,26 @@
         <var name="editorContext" id="9087294576173504571" />
         <var name="node" id="9087294576173504571" />
       </scope>
-      <unit id="9087294576173504571" at="326,0,329,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder_a$CONCEPTS" />
-      <unit id="9087294576173504571" at="330,0,333,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder_a$LINKS" />
-      <unit id="9087294576173504571" at="321,0,325,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder_a$PROPS" />
-      <unit id="9087294576173504571" at="71,30,77,7" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder_a$1" />
-      <unit id="9087294576173504571" at="126,28,132,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder_a$2" />
-      <unit id="9087294576173504571" at="139,28,145,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder_a$3" />
-      <unit id="9087294576173504571" at="189,28,195,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder_a$4" />
-      <unit id="9087294576173504571" at="273,28,279,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder_a$5" />
-      <unit id="9087294576173504571" at="214,0,265,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder_a$richDefaultSingleRoleHandler_9s4g7n_a1a0" />
-      <unit id="9087294576173504571" at="46,0,334,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder_a" />
+      <unit id="9087294576173504571" at="326,0,329,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder$CONCEPTS" />
+      <unit id="9087294576173504571" at="330,0,333,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder$LINKS" />
+      <unit id="9087294576173504571" at="321,0,325,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder$PROPS" />
+      <unit id="9087294576173504571" at="71,30,77,7" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder$1" />
+      <unit id="9087294576173504571" at="126,28,132,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder$2" />
+      <unit id="9087294576173504571" at="139,28,145,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder$3" />
+      <unit id="9087294576173504571" at="189,28,195,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder$4" />
+      <unit id="9087294576173504571" at="273,28,279,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder$5" />
+      <unit id="9087294576173504571" at="214,0,265,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder$richDefaultSingleRoleHandler_9s4g7n_a1a0" />
+      <unit id="9087294576173504571" at="46,0,334,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.RichStringMessageKey_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:bd6eadde-0753-4ee6-b1ba-de5fed34eb94(com.mbeddr.mpsutil.multilingual.baseLanguage.editor)/9087294576173862052">
     <file name="MultilingualJavaRichString_Editor.java">
-      <node id="9087294576173862052" at="11,79,12,92" concept="9" />
-      <node id="9087294576173862052" at="14,82,15,95" concept="9" />
+      <node id="9087294576173862052" at="11,79,12,90" concept="9" />
+      <node id="9087294576173862052" at="14,82,15,93" concept="9" />
       <node id="9087294576173862052" at="11,0,14,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="9087294576173862052" at="14,0,17,0" concept="7" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="9087294576173862052" at="11,79,12,92" />
-      <scope id="9087294576173862052" at="14,82,15,95" />
+      <scope id="9087294576173862052" at="11,79,12,90" />
+      <scope id="9087294576173862052" at="14,82,15,93" />
       <scope id="9087294576173862052" at="11,0,14,0">
         <var name="editorContext" id="9087294576173862052" />
         <var name="node" id="9087294576173862052" />
@@ -732,8 +732,8 @@
       </scope>
       <unit id="9087294576173862052" at="10,0,18,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_Editor" />
     </file>
-    <file name="MultilingualJavaRichString_EditorBuilder_a.java">
-      <node id="9087294576173862052" at="55,106,56,19" concept="12" />
+    <file name="MultilingualJavaRichString_EditorBuilder.java">
+      <node id="9087294576173862052" at="55,104,56,19" concept="12" />
       <node id="9087294576173862052" at="56,19,57,18" concept="2" />
       <node id="9087294576173862052" at="62,26,63,18" concept="9" />
       <node id="9087294576173862052" at="66,39,67,32" concept="9" />
@@ -920,7 +920,7 @@
       <node id="9087294576179805482" at="278,0,281,0" concept="7" trace="getNoTargetText#()Ljava/lang/String;" />
       <node id="9087294576173862052" at="309,0,312,0" concept="7" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="9087294576173862052" at="312,0,315,0" concept="7" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="9087294576173862052" at="55,0,59,0" concept="1" trace="MultilingualJavaRichString_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="9087294576173862052" at="55,0,59,0" concept="1" trace="MultilingualJavaRichString_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="9087294576173862052" at="108,0,112,5" concept="6" />
       <node id="9087294576173862052" at="183,0,187,5" concept="6" />
       <node id="9087294576179805482" at="224,0,228,0" concept="7" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -983,7 +983,7 @@
       <scope id="9087294576173862052" at="309,40,310,36" />
       <scope id="9087294576173862052" at="312,48,313,36" />
       <scope id="9087294576173862052" at="330,17,331,42" />
-      <scope id="9087294576173862052" at="55,106,57,18" />
+      <scope id="9087294576173862052" at="55,104,57,18" />
       <scope id="9087294576173862052" at="109,40,111,42" />
       <scope id="9087294576173862052" at="116,73,118,145">
         <var name="manager" id="9087294576173862052" />
@@ -1152,19 +1152,19 @@
       </scope>
       <scope id="9087294576173862052" at="93,0,122,0" />
       <scope id="9087294576173862052" at="168,0,197,0" />
-      <unit id="9087294576173862052" at="397,0,400,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder_a$PROPS" />
-      <unit id="9087294576173862052" at="383,0,389,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder_a$LINKS" />
-      <unit id="9087294576173862052" at="390,0,396,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder_a$CONCEPTS" />
-      <unit id="9087294576173862052" at="95,42,103,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder_a$1" />
-      <unit id="9087294576173862052" at="170,42,178,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder_a$2" />
-      <unit id="9087294576180882767" at="122,0,168,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder_a$Inline_Builder0" />
-      <unit id="9087294576179805482" at="228,0,282,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder_a$Inline_Builder1$richDefaultSingleRoleHandler_rfbv9i_a0a2a" />
-      <unit id="9087294576173862052" at="296,0,376,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder_a$expressionsListHandler_rfbv9i_e0" />
-      <unit id="9087294576179805482" at="197,0,283,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder_a$Inline_Builder1" />
-      <unit id="9087294576173862052" at="51,0,401,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder_a" />
+      <unit id="9087294576173862052" at="397,0,400,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder$PROPS" />
+      <unit id="9087294576173862052" at="383,0,389,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder$LINKS" />
+      <unit id="9087294576173862052" at="390,0,396,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder$CONCEPTS" />
+      <unit id="9087294576173862052" at="95,42,103,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder$1" />
+      <unit id="9087294576173862052" at="170,42,178,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder$2" />
+      <unit id="9087294576180882767" at="122,0,168,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder$Inline_Builder0" />
+      <unit id="9087294576179805482" at="228,0,282,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder$Inline_Builder1$richDefaultSingleRoleHandler_rfbv9i_a0a2a" />
+      <unit id="9087294576173862052" at="296,0,376,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder$expressionsListHandler_rfbv9i_e0" />
+      <unit id="9087294576179805482" at="197,0,283,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder$Inline_Builder1" />
+      <unit id="9087294576173862052" at="51,0,401,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_EditorBuilder" />
     </file>
-    <file name="MultilingualJavaRichString_InspectorBuilder_a.java">
-      <node id="9087294576173862052" at="30,109,31,19" concept="12" />
+    <file name="MultilingualJavaRichString_InspectorBuilder.java">
+      <node id="9087294576173862052" at="30,107,31,19" concept="12" />
       <node id="9087294576173862052" at="31,19,32,18" concept="2" />
       <node id="9087294576173862052" at="37,26,38,18" concept="9" />
       <node id="9087294576173862052" at="41,39,42,32" concept="9" />
@@ -1198,7 +1198,7 @@
       <node id="9087294576173862052" at="27,0,29,0" concept="3" trace="myNode" />
       <node id="9087294576173862052" at="41,0,44,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="9087294576173865642" at="71,0,74,0" concept="7" trace="getText#()Ljava/lang/String;" />
-      <node id="9087294576173862052" at="30,0,34,0" concept="1" trace="MultilingualJavaRichString_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="9087294576173862052" at="30,0,34,0" concept="1" trace="MultilingualJavaRichString_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="9087294576173862052" at="35,0,40,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="9087294576173865642" at="69,54,74,15" concept="8" />
       <node id="9087294576173865641" at="63,0,69,0" concept="7" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -1208,7 +1208,7 @@
       <scope id="9087294576173862052" at="37,26,38,18" />
       <scope id="9087294576173862052" at="41,39,42,32" />
       <scope id="9087294576173865645" at="71,31,72,188" />
-      <scope id="9087294576173862052" at="30,109,32,18" />
+      <scope id="9087294576173862052" at="30,107,32,18" />
       <scope id="9087294576173862052" at="41,0,44,0" />
       <scope id="9087294576173865642" at="71,0,74,0" />
       <scope id="9087294576173862052" at="30,0,34,0">
@@ -1234,19 +1234,19 @@
         <var name="style" id="9087294576173865642" />
       </scope>
       <scope id="9087294576173865642" at="69,0,83,0" />
-      <unit id="9087294576173862052" at="84,0,87,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_InspectorBuilder_a$PROPS" />
-      <unit id="9087294576173865642" at="70,88,74,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_InspectorBuilder_a$1" />
-      <unit id="9087294576173862052" at="26,0,88,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_InspectorBuilder_a" />
+      <unit id="9087294576173862052" at="84,0,87,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_InspectorBuilder$PROPS" />
+      <unit id="9087294576173865642" at="70,88,74,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_InspectorBuilder$1" />
+      <unit id="9087294576173862052" at="26,0,88,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualJavaRichString_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:bd6eadde-0753-4ee6-b1ba-de5fed34eb94(com.mbeddr.mpsutil.multilingual.baseLanguage.editor)/9087294576174758717">
     <file name="MultilingualInlineFormat_Editor.java">
-      <node id="9087294576174758717" at="11,79,12,90" concept="9" />
-      <node id="9087294576174758717" at="14,82,15,93" concept="9" />
+      <node id="9087294576174758717" at="11,79,12,88" concept="9" />
+      <node id="9087294576174758717" at="14,82,15,91" concept="9" />
       <node id="9087294576174758717" at="11,0,14,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="9087294576174758717" at="14,0,17,0" concept="7" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="9087294576174758717" at="11,79,12,90" />
-      <scope id="9087294576174758717" at="14,82,15,93" />
+      <scope id="9087294576174758717" at="11,79,12,88" />
+      <scope id="9087294576174758717" at="14,82,15,91" />
       <scope id="9087294576174758717" at="11,0,14,0">
         <var name="editorContext" id="9087294576174758717" />
         <var name="node" id="9087294576174758717" />
@@ -1257,8 +1257,8 @@
       </scope>
       <unit id="9087294576174758717" at="10,0,18,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_Editor" />
     </file>
-    <file name="MultilingualInlineFormat_EditorBuilder_a.java">
-      <node id="9087294576174758717" at="61,104,62,19" concept="12" />
+    <file name="MultilingualInlineFormat_EditorBuilder.java">
+      <node id="9087294576174758717" at="61,102,62,19" concept="12" />
       <node id="9087294576174758717" at="62,19,63,18" concept="2" />
       <node id="9087294576174758717" at="68,26,69,18" concept="9" />
       <node id="9087294576174758717" at="72,39,73,32" concept="9" />
@@ -1272,16 +1272,16 @@
       <node id="3354025285337569588" at="83,40,84,49" concept="2" />
       <node id="9087294576174764815" at="84,49,85,49" concept="2" />
       <node id="9087294576174766440" at="85,49,86,49" concept="2" />
-      <node id="3354025285337569590" at="87,37,88,54" concept="2" />
+      <node id="3354025285337569590" at="87,27,88,54" concept="2" />
       <node id="3354025285337785060" at="89,5,90,48" concept="2" />
-      <node id="7716961532362937588" at="91,37,92,53" concept="2" />
+      <node id="7716961532362937588" at="91,27,92,53" concept="2" />
       <node id="3354025285337569597" at="93,5,94,48" concept="2" />
       <node id="9087294576174835173" at="94,48,95,49" concept="2" />
       <node id="9087294576174837370" at="95,49,96,48" concept="2" />
       <node id="9087294576174841793" at="96,48,97,49" concept="2" />
       <node id="9087294576174758717" at="97,49,98,22" concept="9" />
-      <node id="3354025285339964126" at="100,46,101,120" concept="9" />
-      <node id="7716961532362940164" at="103,46,104,124" concept="9" />
+      <node id="3354025285339964126" at="100,36,101,120" concept="9" />
+      <node id="7716961532362940164" at="103,36,104,124" concept="9" />
       <node id="3354025285337569588" at="106,41,107,94" concept="8" />
       <node id="3354025285337569588" at="107,94,108,47" concept="2" />
       <node id="3354025285337569588" at="108,47,109,34" concept="8" />
@@ -1497,8 +1497,8 @@
       <node id="9087294576174758717" at="72,0,75,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3354025285337569590" at="86,49,89,5" concept="6" />
       <node id="7716961532362937588" at="90,48,93,5" concept="6" />
-      <node id="3354025285339963471" at="100,0,103,0" concept="7" trace="nodeCondition_ddkkzp_a3a#()Z" />
-      <node id="7716961532362939508" at="103,0,106,0" concept="7" trace="nodeCondition_ddkkzp_a5a#()Z" />
+      <node id="3354025285339963471" at="100,0,103,0" concept="7" trace="nodeCondition0#()Z" />
+      <node id="7716961532362939508" at="103,0,106,0" concept="7" trace="nodeCondition1#()Z" />
       <node id="9087294576174758717" at="170,0,173,0" concept="7" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="9087294576174758717" at="173,0,176,0" concept="7" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="9087294576174758717" at="217,96,220,9" concept="6" />
@@ -1512,7 +1512,7 @@
       <node id="9087294576174758717" at="413,0,416,0" concept="7" trace="getNoTargetText#()Ljava/lang/String;" />
       <node id="9087294576174837372" at="466,0,469,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="9087294576175112947" at="478,0,481,0" concept="7" trace="getText#()Ljava/lang/String;" />
-      <node id="9087294576174758717" at="61,0,65,0" concept="1" trace="MultilingualInlineFormat_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="9087294576174758717" at="61,0,65,0" concept="1" trace="MultilingualInlineFormat_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="9087294576174758717" at="161,0,165,0" concept="1" trace="flagsListHandler_ddkkzp_d0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="9087294576174758717" at="166,0,170,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="9087294576174758717" at="199,97,203,9" concept="6" />
@@ -1571,10 +1571,10 @@
       <node id="9087294576174758717" at="427,0,455,0" concept="7" trace="createRefCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="9087294576174758717" at="68,26,69,18" />
       <scope id="9087294576174758717" at="72,39,73,32" />
-      <scope id="3354025285337569590" at="87,37,88,54" />
-      <scope id="7716961532362937588" at="91,37,92,53" />
-      <scope id="3354025285339963472" at="100,46,101,120" />
-      <scope id="7716961532362939509" at="103,46,104,124" />
+      <scope id="3354025285337569590" at="87,27,88,54" />
+      <scope id="7716961532362937588" at="91,27,92,53" />
+      <scope id="3354025285339963472" at="100,36,101,120" />
+      <scope id="7716961532362939509" at="103,36,104,124" />
       <scope id="9087294576174764815" at="132,15,133,40" />
       <scope id="9087294576174758717" at="167,28,168,20" />
       <scope id="9087294576174758717" at="170,40,171,30" />
@@ -1598,7 +1598,7 @@
       <scope id="9087294576174837372" at="466,41,467,45" />
       <scope id="9087294576174837372" at="472,28,473,20" />
       <scope id="9087294576175112953" at="478,33,479,160" />
-      <scope id="9087294576174758717" at="61,104,63,18" />
+      <scope id="9087294576174758717" at="61,102,63,18" />
       <scope id="9087294576174764815" at="127,74,129,145">
         <var name="manager" id="9087294576174764815" />
       </scope>
@@ -1815,20 +1815,20 @@
         <var name="referenceLink" id="9087294576174758717" />
       </scope>
       <scope id="9087294576174758717" at="427,0,455,0" />
-      <unit id="9087294576174758717" at="509,0,512,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder_a$PROPS" />
-      <unit id="9087294576175112947" at="477,90,481,7" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="9087294576174758717" at="513,0,519,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder_a$CONCEPTS" />
-      <unit id="9087294576174758717" at="501,0,508,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder_a$LINKS" />
-      <unit id="9087294576174758717" at="429,42,437,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder_a$1" />
-      <unit id="9087294576174837372" at="455,0,491,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder_a$Inline_Builder0" />
-      <unit id="9087294576174758717" at="307,0,358,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder_a$precisionSingleRoleHandler_ddkkzp_b5a" />
-      <unit id="9087294576174758717" at="228,0,283,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder_a$widthSingleRoleHandler_ddkkzp_e0" />
-      <unit id="9087294576174758717" at="362,0,417,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder_a$conversionSingleRoleHandler_ddkkzp_g0" />
-      <unit id="9087294576174758717" at="157,0,224,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder_a$flagsListHandler_ddkkzp_d0" />
-      <unit id="9087294576174758717" at="57,0,520,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder_a" />
+      <unit id="9087294576174758717" at="509,0,512,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder$PROPS" />
+      <unit id="9087294576175112947" at="477,90,481,7" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder$Inline_Builder0$1" />
+      <unit id="9087294576174758717" at="513,0,519,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder$CONCEPTS" />
+      <unit id="9087294576174758717" at="501,0,508,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder$LINKS" />
+      <unit id="9087294576174758717" at="429,42,437,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder$1" />
+      <unit id="9087294576174837372" at="455,0,491,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder$Inline_Builder0" />
+      <unit id="9087294576174758717" at="307,0,358,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder$precisionSingleRoleHandler_ddkkzp_b5a" />
+      <unit id="9087294576174758717" at="228,0,283,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder$widthSingleRoleHandler_ddkkzp_e0" />
+      <unit id="9087294576174758717" at="362,0,417,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder$conversionSingleRoleHandler_ddkkzp_g0" />
+      <unit id="9087294576174758717" at="157,0,224,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder$flagsListHandler_ddkkzp_d0" />
+      <unit id="9087294576174758717" at="57,0,520,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_EditorBuilder" />
     </file>
-    <file name="MultilingualInlineFormat_InspectorBuilder_a.java">
-      <node id="9087294576174758717" at="16,107,17,19" concept="12" />
+    <file name="MultilingualInlineFormat_InspectorBuilder.java">
+      <node id="9087294576174758717" at="16,105,17,19" concept="12" />
       <node id="9087294576174758717" at="17,19,18,18" concept="2" />
       <node id="9087294576174758717" at="23,26,24,18" concept="9" />
       <node id="9087294576174758717" at="27,39,28,31" concept="9" />
@@ -1839,13 +1839,13 @@
       <node id="3354025285337569922" at="37,5,38,22" concept="9" />
       <node id="9087294576174758717" at="13,0,15,0" concept="3" trace="myNode" />
       <node id="9087294576174758717" at="27,0,30,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="9087294576174758717" at="16,0,20,0" concept="1" trace="MultilingualInlineFormat_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="9087294576174758717" at="16,0,20,0" concept="1" trace="MultilingualInlineFormat_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3354025285337569922" at="33,72,37,5" concept="6" />
       <node id="9087294576174758717" at="21,0,26,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3354025285337569922" at="31,0,40,0" concept="7" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="9087294576174758717" at="23,26,24,18" />
       <scope id="9087294576174758717" at="27,39,28,31" />
-      <scope id="9087294576174758717" at="16,107,18,18" />
+      <scope id="9087294576174758717" at="16,105,18,18" />
       <scope id="3354025285337569922" at="34,26,36,30" />
       <scope id="9087294576174758717" at="27,0,30,0" />
       <scope id="9087294576174758717" at="16,0,20,0">
@@ -1858,7 +1858,7 @@
         <var name="editorCell" id="3354025285337569922" />
       </scope>
       <scope id="3354025285337569922" at="31,0,40,0" />
-      <unit id="9087294576174758717" at="12,0,41,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_InspectorBuilder_a" />
+      <unit id="9087294576174758717" at="12,0,41,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.editor.MultilingualInlineFormat_InspectorBuilder" />
     </file>
   </root>
 </debug-info>

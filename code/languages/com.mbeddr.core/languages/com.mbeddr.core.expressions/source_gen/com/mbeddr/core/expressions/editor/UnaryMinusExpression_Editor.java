@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class UnaryMinusExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new UnaryMinusExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new UnaryMinusExpression_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new UnaryMinusExpression_InspectorBuilder_a(editorContext, node).createCell();
+    return new UnaryMinusExpression_InspectorBuilder(editorContext, node).createCell();
   }
 }

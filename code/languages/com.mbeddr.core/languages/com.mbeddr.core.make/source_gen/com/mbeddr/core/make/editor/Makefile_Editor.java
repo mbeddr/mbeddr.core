@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class Makefile_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Makefile_EditorBuilder_a(editorContext, node).createCell();
+    return new Makefile_EditorBuilder(editorContext, node).createCell();
   }
 }

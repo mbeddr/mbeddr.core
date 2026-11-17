@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class NoOp_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new NoOp_EditorBuilder_a(editorContext, node).createCell();
+    return new NoOp_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new NoOp_InspectorBuilder_a(editorContext, node).createCell();
+    return new NoOp_InspectorBuilder(editorContext, node).createCell();
   }
 }

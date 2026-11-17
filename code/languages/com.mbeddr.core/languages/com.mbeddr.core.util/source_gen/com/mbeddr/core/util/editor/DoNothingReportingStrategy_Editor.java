@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class DoNothingReportingStrategy_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DoNothingReportingStrategy_EditorBuilder_a(editorContext, node).createCell();
+    return new DoNothingReportingStrategy_EditorBuilder(editorContext, node).createCell();
   }
 }

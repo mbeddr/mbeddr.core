@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ReqWithoutWPResult_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ReqWithoutWPResult_EditorBuilder_a(editorContext, node).createCell();
+    return new ReqWithoutWPResult_EditorBuilder(editorContext, node).createCell();
   }
 }

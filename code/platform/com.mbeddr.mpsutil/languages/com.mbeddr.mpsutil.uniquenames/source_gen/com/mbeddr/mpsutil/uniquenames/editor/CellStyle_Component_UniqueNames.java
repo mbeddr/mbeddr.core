@@ -17,6 +17,6 @@ public class CellStyle_Component_UniqueNames implements ConceptEditorComponent {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CellStyle_Component_UniqueNames_ComponentBuilder_a(editorContext, node).createCell();
+    return new CellStyle_Component_UniqueNames_ComponentBuilder(editorContext, node).createCell();
   }
 }

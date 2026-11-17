@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class MarkdownRenderer_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new MarkdownRenderer_EditorBuilder_a(editorContext, node).createCell();
+    return new MarkdownRenderer_EditorBuilder(editorContext, node).createCell();
   }
 }

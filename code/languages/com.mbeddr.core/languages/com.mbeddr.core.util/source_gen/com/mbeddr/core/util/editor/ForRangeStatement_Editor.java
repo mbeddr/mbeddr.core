@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ForRangeStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ForRangeStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new ForRangeStatement_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new ForRangeStatement_InspectorBuilder_a(editorContext, node).createCell();
+    return new ForRangeStatement_InspectorBuilder(editorContext, node).createCell();
   }
 }

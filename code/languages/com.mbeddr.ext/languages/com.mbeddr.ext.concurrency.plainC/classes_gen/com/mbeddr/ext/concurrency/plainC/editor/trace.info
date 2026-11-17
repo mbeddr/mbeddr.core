@@ -21,17 +21,17 @@
   </root>
   <root nodeRef="r:80c23f30-b611-47e7-a72e-676515328dc5(com.mbeddr.ext.concurrency.plainC.editor)/2184369924322850204">
     <file name="ExitTaskStatement_Editor.java">
-      <node id="2184369924322850204" at="11,79,12,83" concept="6" />
+      <node id="2184369924322850204" at="11,79,12,81" concept="6" />
       <node id="2184369924322850204" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2184369924322850204" at="11,79,12,83" />
+      <scope id="2184369924322850204" at="11,79,12,81" />
       <scope id="2184369924322850204" at="11,0,14,0">
         <var name="editorContext" id="2184369924322850204" />
         <var name="node" id="2184369924322850204" />
       </scope>
       <unit id="2184369924322850204" at="10,0,15,0" name="com.mbeddr.ext.concurrency.plainC.editor.ExitTaskStatement_Editor" />
     </file>
-    <file name="ExitTaskStatement_EditorBuilder_a.java">
-      <node id="2184369924322850204" at="22,97,23,19" concept="9" />
+    <file name="ExitTaskStatement_EditorBuilder.java">
+      <node id="2184369924322850204" at="22,95,23,19" concept="9" />
       <node id="2184369924322850204" at="23,19,24,18" concept="1" />
       <node id="2184369924322850204" at="29,26,30,18" concept="6" />
       <node id="2184369924322850204" at="33,39,34,32" concept="6" />
@@ -58,14 +58,14 @@
       <node id="2184369924322850231" at="61,34,62,22" concept="6" />
       <node id="2184369924322850204" at="19,0,21,0" concept="2" trace="myNode" />
       <node id="2184369924322850204" at="33,0,36,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2184369924322850204" at="22,0,26,0" concept="0" trace="ExitTaskStatement_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2184369924322850204" at="22,0,26,0" concept="0" trace="ExitTaskStatement_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2184369924322850204" at="27,0,32,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2184369924322850204" at="37,0,46,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2184369924322850219" at="46,0,55,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2184369924322850231" at="55,0,64,0" concept="4" trace="createConstant_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="2184369924322850204" at="29,26,30,18" />
       <scope id="2184369924322850204" at="33,39,34,32" />
-      <scope id="2184369924322850204" at="22,97,24,18" />
+      <scope id="2184369924322850204" at="22,95,24,18" />
       <scope id="2184369924322850204" at="33,0,36,0" />
       <scope id="2184369924322850204" at="22,0,26,0">
         <var name="context" id="2184369924322850204" />
@@ -86,22 +86,22 @@
       <scope id="2184369924322850204" at="37,0,46,0" />
       <scope id="2184369924322850219" at="46,0,55,0" />
       <scope id="2184369924322850231" at="55,0,64,0" />
-      <unit id="2184369924322850204" at="18,0,65,0" name="com.mbeddr.ext.concurrency.plainC.editor.ExitTaskStatement_EditorBuilder_a" />
+      <unit id="2184369924322850204" at="18,0,65,0" name="com.mbeddr.ext.concurrency.plainC.editor.ExitTaskStatement_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:80c23f30-b611-47e7-a72e-676515328dc5(com.mbeddr.ext.concurrency.plainC.editor)/2184369924327143837">
     <file name="CurrentTimeExpression_Editor.java">
-      <node id="2184369924327143837" at="11,79,12,87" concept="6" />
+      <node id="2184369924327143837" at="11,79,12,85" concept="6" />
       <node id="2184369924327143837" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2184369924327143837" at="11,79,12,87" />
+      <scope id="2184369924327143837" at="11,79,12,85" />
       <scope id="2184369924327143837" at="11,0,14,0">
         <var name="editorContext" id="2184369924327143837" />
         <var name="node" id="2184369924327143837" />
       </scope>
       <unit id="2184369924327143837" at="10,0,15,0" name="com.mbeddr.ext.concurrency.plainC.editor.CurrentTimeExpression_Editor" />
     </file>
-    <file name="CurrentTimeExpression_EditorBuilder_a.java">
-      <node id="2184369924327143837" at="19,101,20,19" concept="9" />
+    <file name="CurrentTimeExpression_EditorBuilder.java">
+      <node id="2184369924327143837" at="19,99,20,19" concept="9" />
       <node id="2184369924327143837" at="20,19,21,18" concept="1" />
       <node id="2184369924327143837" at="26,26,27,18" concept="6" />
       <node id="2184369924327143837" at="30,39,31,30" concept="6" />
@@ -116,12 +116,12 @@
       <node id="2184369924327143878" at="42,34,43,22" concept="6" />
       <node id="2184369924327143837" at="16,0,18,0" concept="2" trace="myNode" />
       <node id="2184369924327143837" at="30,0,33,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2184369924327143837" at="19,0,23,0" concept="0" trace="CurrentTimeExpression_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2184369924327143837" at="19,0,23,0" concept="0" trace="CurrentTimeExpression_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2184369924327143837" at="24,0,29,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2184369924327143878" at="34,0,45,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="2184369924327143837" at="26,26,27,18" />
       <scope id="2184369924327143837" at="30,39,31,30" />
-      <scope id="2184369924327143837" at="19,101,21,18" />
+      <scope id="2184369924327143837" at="19,99,21,18" />
       <scope id="2184369924327143837" at="30,0,33,0" />
       <scope id="2184369924327143837" at="19,0,23,0">
         <var name="context" id="2184369924327143837" />
@@ -133,22 +133,22 @@
         <var name="style" id="2184369924327143878" />
       </scope>
       <scope id="2184369924327143878" at="34,0,45,0" />
-      <unit id="2184369924327143837" at="15,0,46,0" name="com.mbeddr.ext.concurrency.plainC.editor.CurrentTimeExpression_EditorBuilder_a" />
+      <unit id="2184369924327143837" at="15,0,46,0" name="com.mbeddr.ext.concurrency.plainC.editor.CurrentTimeExpression_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:80c23f30-b611-47e7-a72e-676515328dc5(com.mbeddr.ext.concurrency.plainC.editor)/2184369924335182466">
     <file name="LockDeclaration_Editor.java">
-      <node id="2184369924335182466" at="11,79,12,81" concept="6" />
+      <node id="2184369924335182466" at="11,79,12,79" concept="6" />
       <node id="2184369924335182466" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2184369924335182466" at="11,79,12,81" />
+      <scope id="2184369924335182466" at="11,79,12,79" />
       <scope id="2184369924335182466" at="11,0,14,0">
         <var name="editorContext" id="2184369924335182466" />
         <var name="node" id="2184369924335182466" />
       </scope>
       <unit id="2184369924335182466" at="10,0,15,0" name="com.mbeddr.ext.concurrency.plainC.editor.LockDeclaration_Editor" />
     </file>
-    <file name="LockDeclaration_EditorBuilder_a.java">
-      <node id="2184369924335182466" at="36,95,37,19" concept="9" />
+    <file name="LockDeclaration_EditorBuilder.java">
+      <node id="2184369924335182466" at="36,93,37,19" concept="9" />
       <node id="2184369924335182466" at="37,19,38,18" concept="1" />
       <node id="2184369924335182466" at="43,26,44,18" concept="6" />
       <node id="2184369924335182466" at="47,39,48,32" concept="6" />
@@ -192,7 +192,7 @@
       <node id="2184369924335182466" at="106,0,107,0" concept="8" trace="PropertyAttribute$Gb" />
       <node id="2184369924335182466" at="33,0,35,0" concept="2" trace="myNode" />
       <node id="2184369924335182466" at="47,0,50,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2184369924335182466" at="36,0,40,0" concept="0" trace="LockDeclaration_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2184369924335182466" at="36,0,40,0" concept="0" trace="LockDeclaration_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2184369924335182466" at="41,0,46,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2184369924335182534" at="81,208,86,24" concept="3" />
       <node id="2184369924335182522" at="61,0,70,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -203,7 +203,7 @@
       <scope id="2184369924335182466" at="43,26,44,18" />
       <scope id="2184369924335182466" at="47,39,48,32" />
       <scope id="2184369924335182534" at="87,15,88,40" />
-      <scope id="2184369924335182466" at="36,95,38,18" />
+      <scope id="2184369924335182466" at="36,93,38,18" />
       <scope id="2184369924335182534" at="82,74,84,145">
         <var name="manager" id="2184369924335182534" />
       </scope>
@@ -235,24 +235,24 @@
       </scope>
       <scope id="2184369924335182534" at="70,41,89,5" />
       <scope id="2184369924335182534" at="70,0,91,0" />
-      <unit id="2184369924335182466" at="101,0,104,0" name="com.mbeddr.ext.concurrency.plainC.editor.LockDeclaration_EditorBuilder_a$PROPS" />
-      <unit id="2184369924335182466" at="105,0,108,0" name="com.mbeddr.ext.concurrency.plainC.editor.LockDeclaration_EditorBuilder_a$CONCEPTS" />
-      <unit id="2184369924335182466" at="32,0,109,0" name="com.mbeddr.ext.concurrency.plainC.editor.LockDeclaration_EditorBuilder_a" />
+      <unit id="2184369924335182466" at="101,0,104,0" name="com.mbeddr.ext.concurrency.plainC.editor.LockDeclaration_EditorBuilder$PROPS" />
+      <unit id="2184369924335182466" at="105,0,108,0" name="com.mbeddr.ext.concurrency.plainC.editor.LockDeclaration_EditorBuilder$CONCEPTS" />
+      <unit id="2184369924335182466" at="32,0,109,0" name="com.mbeddr.ext.concurrency.plainC.editor.LockDeclaration_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:80c23f30-b611-47e7-a72e-676515328dc5(com.mbeddr.ext.concurrency.plainC.editor)/2184369924336739101">
     <file name="AcquireLockStatement_Editor.java">
-      <node id="2184369924336739101" at="11,79,12,86" concept="6" />
+      <node id="2184369924336739101" at="11,79,12,84" concept="6" />
       <node id="2184369924336739101" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2184369924336739101" at="11,79,12,86" />
+      <scope id="2184369924336739101" at="11,79,12,84" />
       <scope id="2184369924336739101" at="11,0,14,0">
         <var name="editorContext" id="2184369924336739101" />
         <var name="node" id="2184369924336739101" />
       </scope>
       <unit id="2184369924336739101" at="10,0,15,0" name="com.mbeddr.ext.concurrency.plainC.editor.AcquireLockStatement_Editor" />
     </file>
-    <file name="AcquireLockStatement_EditorBuilder_a.java">
-      <node id="2184369924336739101" at="42,100,43,19" concept="9" />
+    <file name="AcquireLockStatement_EditorBuilder.java">
+      <node id="2184369924336739101" at="42,98,43,19" concept="9" />
       <node id="2184369924336739101" at="43,19,44,18" concept="1" />
       <node id="2184369924336739101" at="49,26,50,18" concept="6" />
       <node id="2184369924336739101" at="53,39,54,32" concept="6" />
@@ -346,7 +346,7 @@
       <node id="2184369924336739134" at="132,0,134,0" concept="2" trace="myNode" />
       <node id="2184369924336739101" at="53,0,56,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2184369924336739134" at="142,0,145,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2184369924336739101" at="42,0,46,0" concept="0" trace="AcquireLockStatement_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2184369924336739101" at="42,0,46,0" concept="0" trace="AcquireLockStatement_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4655396304297305812" at="88,57,92,22" concept="3" />
       <node id="2184369924336739101" at="117,0,121,5" concept="3" />
       <node id="2184369924336739101" at="47,0,52,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -370,7 +370,7 @@
       <scope id="2184369924336739134" at="142,41,143,32" />
       <scope id="2184369924336739134" at="148,28,149,20" />
       <scope id="2184369924336739150" at="169,17,170,42" />
-      <scope id="2184369924336739101" at="42,100,44,18" />
+      <scope id="2184369924336739101" at="42,98,44,18" />
       <scope id="2184369924336739101" at="118,40,120,43" />
       <scope id="2184369924336739101" at="125,73,127,145">
         <var name="manager" id="2184369924336739101" />
@@ -440,27 +440,27 @@
         <var name="referenceLink" id="2184369924336739101" />
       </scope>
       <scope id="2184369924336739101" at="103,0,131,0" />
-      <unit id="2184369924336739101" at="189,0,192,0" name="com.mbeddr.ext.concurrency.plainC.editor.AcquireLockStatement_EditorBuilder_a$LINKS" />
-      <unit id="2184369924336739101" at="184,0,188,0" name="com.mbeddr.ext.concurrency.plainC.editor.AcquireLockStatement_EditorBuilder_a$PROPS" />
-      <unit id="2184369924336739101" at="193,0,197,0" name="com.mbeddr.ext.concurrency.plainC.editor.AcquireLockStatement_EditorBuilder_a$CONCEPTS" />
-      <unit id="2184369924336739101" at="105,42,113,5" name="com.mbeddr.ext.concurrency.plainC.editor.AcquireLockStatement_EditorBuilder_a$1" />
-      <unit id="2184369924336739134" at="131,0,174,0" name="com.mbeddr.ext.concurrency.plainC.editor.AcquireLockStatement_EditorBuilder_a$Inline_Builder0" />
-      <unit id="2184369924336739101" at="38,0,198,0" name="com.mbeddr.ext.concurrency.plainC.editor.AcquireLockStatement_EditorBuilder_a" />
+      <unit id="2184369924336739101" at="189,0,192,0" name="com.mbeddr.ext.concurrency.plainC.editor.AcquireLockStatement_EditorBuilder$LINKS" />
+      <unit id="2184369924336739101" at="184,0,188,0" name="com.mbeddr.ext.concurrency.plainC.editor.AcquireLockStatement_EditorBuilder$PROPS" />
+      <unit id="2184369924336739101" at="193,0,197,0" name="com.mbeddr.ext.concurrency.plainC.editor.AcquireLockStatement_EditorBuilder$CONCEPTS" />
+      <unit id="2184369924336739101" at="105,42,113,5" name="com.mbeddr.ext.concurrency.plainC.editor.AcquireLockStatement_EditorBuilder$1" />
+      <unit id="2184369924336739134" at="131,0,174,0" name="com.mbeddr.ext.concurrency.plainC.editor.AcquireLockStatement_EditorBuilder$Inline_Builder0" />
+      <unit id="2184369924336739101" at="38,0,198,0" name="com.mbeddr.ext.concurrency.plainC.editor.AcquireLockStatement_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:80c23f30-b611-47e7-a72e-676515328dc5(com.mbeddr.ext.concurrency.plainC.editor)/2184369924336739197">
     <file name="ReleaseLockStatement_Editor.java">
-      <node id="2184369924336739197" at="11,79,12,86" concept="6" />
+      <node id="2184369924336739197" at="11,79,12,84" concept="6" />
       <node id="2184369924336739197" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2184369924336739197" at="11,79,12,86" />
+      <scope id="2184369924336739197" at="11,79,12,84" />
       <scope id="2184369924336739197" at="11,0,14,0">
         <var name="editorContext" id="2184369924336739197" />
         <var name="node" id="2184369924336739197" />
       </scope>
       <unit id="2184369924336739197" at="10,0,15,0" name="com.mbeddr.ext.concurrency.plainC.editor.ReleaseLockStatement_Editor" />
     </file>
-    <file name="ReleaseLockStatement_EditorBuilder_a.java">
-      <node id="2184369924336739197" at="42,100,43,19" concept="9" />
+    <file name="ReleaseLockStatement_EditorBuilder.java">
+      <node id="2184369924336739197" at="42,98,43,19" concept="9" />
       <node id="2184369924336739197" at="43,19,44,18" concept="1" />
       <node id="2184369924336739197" at="49,26,50,18" concept="6" />
       <node id="2184369924336739197" at="53,39,54,32" concept="6" />
@@ -554,7 +554,7 @@
       <node id="2184369924336739230" at="132,0,134,0" concept="2" trace="myNode" />
       <node id="2184369924336739197" at="53,0,56,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2184369924336739230" at="142,0,145,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2184369924336739197" at="42,0,46,0" concept="0" trace="ReleaseLockStatement_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2184369924336739197" at="42,0,46,0" concept="0" trace="ReleaseLockStatement_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4655396304297308943" at="88,57,92,22" concept="3" />
       <node id="2184369924336739197" at="117,0,121,5" concept="3" />
       <node id="2184369924336739197" at="47,0,52,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -578,7 +578,7 @@
       <scope id="2184369924336739230" at="142,41,143,32" />
       <scope id="2184369924336739230" at="148,28,149,20" />
       <scope id="2184369924336739231" at="169,17,170,42" />
-      <scope id="2184369924336739197" at="42,100,44,18" />
+      <scope id="2184369924336739197" at="42,98,44,18" />
       <scope id="2184369924336739197" at="118,40,120,43" />
       <scope id="2184369924336739197" at="125,73,127,145">
         <var name="manager" id="2184369924336739197" />
@@ -648,12 +648,12 @@
         <var name="referenceLink" id="2184369924336739197" />
       </scope>
       <scope id="2184369924336739197" at="103,0,131,0" />
-      <unit id="2184369924336739197" at="189,0,192,0" name="com.mbeddr.ext.concurrency.plainC.editor.ReleaseLockStatement_EditorBuilder_a$LINKS" />
-      <unit id="2184369924336739197" at="184,0,188,0" name="com.mbeddr.ext.concurrency.plainC.editor.ReleaseLockStatement_EditorBuilder_a$PROPS" />
-      <unit id="2184369924336739197" at="193,0,197,0" name="com.mbeddr.ext.concurrency.plainC.editor.ReleaseLockStatement_EditorBuilder_a$CONCEPTS" />
-      <unit id="2184369924336739197" at="105,42,113,5" name="com.mbeddr.ext.concurrency.plainC.editor.ReleaseLockStatement_EditorBuilder_a$1" />
-      <unit id="2184369924336739230" at="131,0,174,0" name="com.mbeddr.ext.concurrency.plainC.editor.ReleaseLockStatement_EditorBuilder_a$Inline_Builder0" />
-      <unit id="2184369924336739197" at="38,0,198,0" name="com.mbeddr.ext.concurrency.plainC.editor.ReleaseLockStatement_EditorBuilder_a" />
+      <unit id="2184369924336739197" at="189,0,192,0" name="com.mbeddr.ext.concurrency.plainC.editor.ReleaseLockStatement_EditorBuilder$LINKS" />
+      <unit id="2184369924336739197" at="184,0,188,0" name="com.mbeddr.ext.concurrency.plainC.editor.ReleaseLockStatement_EditorBuilder$PROPS" />
+      <unit id="2184369924336739197" at="193,0,197,0" name="com.mbeddr.ext.concurrency.plainC.editor.ReleaseLockStatement_EditorBuilder$CONCEPTS" />
+      <unit id="2184369924336739197" at="105,42,113,5" name="com.mbeddr.ext.concurrency.plainC.editor.ReleaseLockStatement_EditorBuilder$1" />
+      <unit id="2184369924336739230" at="131,0,174,0" name="com.mbeddr.ext.concurrency.plainC.editor.ReleaseLockStatement_EditorBuilder$Inline_Builder0" />
+      <unit id="2184369924336739197" at="38,0,198,0" name="com.mbeddr.ext.concurrency.plainC.editor.ReleaseLockStatement_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:80c23f30-b611-47e7-a72e-676515328dc5(com.mbeddr.ext.concurrency.plainC.editor)/2711078148127703391">
@@ -667,17 +667,17 @@
   </root>
   <root nodeRef="r:80c23f30-b611-47e7-a72e-676515328dc5(com.mbeddr.ext.concurrency.plainC.editor)/4655396304296605234">
     <file name="GotoSectionAfterStatement_Editor.java">
-      <node id="4655396304296605234" at="11,79,12,91" concept="6" />
+      <node id="4655396304296605234" at="11,79,12,89" concept="6" />
       <node id="4655396304296605234" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="4655396304296605234" at="11,79,12,91" />
+      <scope id="4655396304296605234" at="11,79,12,89" />
       <scope id="4655396304296605234" at="11,0,14,0">
         <var name="editorContext" id="4655396304296605234" />
         <var name="node" id="4655396304296605234" />
       </scope>
       <unit id="4655396304296605234" at="10,0,15,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_Editor" />
     </file>
-    <file name="GotoSectionAfterStatement_EditorBuilder_a.java">
-      <node id="4655396304296605234" at="46,105,47,19" concept="9" />
+    <file name="GotoSectionAfterStatement_EditorBuilder.java">
+      <node id="4655396304296605234" at="46,103,47,19" concept="9" />
       <node id="4655396304296605234" at="47,19,48,18" concept="1" />
       <node id="4655396304296605234" at="53,26,54,18" concept="6" />
       <node id="4655396304296605234" at="57,39,58,32" concept="6" />
@@ -745,7 +745,7 @@
       <node id="4655396304296605234" at="57,0,60,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4655396304296605262" at="119,0,122,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4655396304296605278" at="131,0,134,0" concept="4" trace="getText#()Ljava/lang/String;" />
-      <node id="4655396304296605234" at="46,0,50,0" concept="0" trace="GotoSectionAfterStatement_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4655396304296605234" at="46,0,50,0" concept="0" trace="GotoSectionAfterStatement_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4655396304296605234" at="94,0,98,5" concept="3" />
       <node id="4655396304296605234" at="51,0,56,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4655396304296605234" at="101,205,106,22" concept="3" />
@@ -769,7 +769,7 @@
       <scope id="4655396304296605284" at="131,33,132,93" />
       <scope id="2751388224255786293" at="149,71,150,61" />
       <scope id="2751388224255786293" at="154,78,155,61" />
-      <scope id="4655396304296605234" at="46,105,48,18" />
+      <scope id="4655396304296605234" at="46,103,48,18" />
       <scope id="4655396304296605234" at="95,40,97,46" />
       <scope id="4655396304296605234" at="102,73,104,145">
         <var name="manager" id="4655396304296605234" />
@@ -825,13 +825,13 @@
         <var name="referenceLink" id="4655396304296605234" />
       </scope>
       <scope id="4655396304296605234" at="80,0,108,0" />
-      <unit id="4655396304296605234" at="168,0,171,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder_a$LINKS" />
-      <unit id="4655396304296605234" at="172,0,175,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder_a$CONCEPTS" />
-      <unit id="4655396304296605278" at="130,90,134,7" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="4655396304296605234" at="82,42,90,5" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder_a$1" />
-      <unit id="2751388224255786293" at="144,0,158,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder_a$GotoSectionAfterStatement_section_cellMenu_23cl3f_a0b0" />
-      <unit id="4655396304296605262" at="108,0,144,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder_a$Inline_Builder0" />
-      <unit id="4655396304296605234" at="42,0,176,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder_a" />
+      <unit id="4655396304296605234" at="168,0,171,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder$LINKS" />
+      <unit id="4655396304296605234" at="172,0,175,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder$CONCEPTS" />
+      <unit id="4655396304296605278" at="130,90,134,7" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder$Inline_Builder0$1" />
+      <unit id="4655396304296605234" at="82,42,90,5" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder$1" />
+      <unit id="2751388224255786293" at="144,0,158,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder$GotoSectionAfterStatement_section_cellMenu_23cl3f_a0b0" />
+      <unit id="4655396304296605262" at="108,0,144,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder$Inline_Builder0" />
+      <unit id="4655396304296605234" at="42,0,176,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionAfterStatement_EditorBuilder" />
     </file>
     <file name="PresentationProviders.java">
       <node id="2751388224255786295" at="12,0,13,0" concept="8" trace="PRESENTATION_23cl3f_a0a1a" />
@@ -839,17 +839,17 @@
   </root>
   <root nodeRef="r:80c23f30-b611-47e7-a72e-676515328dc5(com.mbeddr.ext.concurrency.plainC.editor)/4655396304301829625">
     <file name="GotoNextSectionStatement_Editor.java">
-      <node id="4655396304301829625" at="11,79,12,90" concept="6" />
+      <node id="4655396304301829625" at="11,79,12,88" concept="6" />
       <node id="4655396304301829625" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="4655396304301829625" at="11,79,12,90" />
+      <scope id="4655396304301829625" at="11,79,12,88" />
       <scope id="4655396304301829625" at="11,0,14,0">
         <var name="editorContext" id="4655396304301829625" />
         <var name="node" id="4655396304301829625" />
       </scope>
       <unit id="4655396304301829625" at="10,0,15,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoNextSectionStatement_Editor" />
     </file>
-    <file name="GotoNextSectionStatement_EditorBuilder_a.java">
-      <node id="4655396304301829625" at="22,104,23,19" concept="9" />
+    <file name="GotoNextSectionStatement_EditorBuilder.java">
+      <node id="4655396304301829625" at="22,102,23,19" concept="9" />
       <node id="4655396304301829625" at="23,19,24,18" concept="1" />
       <node id="4655396304301829625" at="29,26,30,18" concept="6" />
       <node id="4655396304301829625" at="33,39,34,32" concept="6" />
@@ -876,14 +876,14 @@
       <node id="4655396304301829676" at="61,34,62,22" concept="6" />
       <node id="4655396304301829625" at="19,0,21,0" concept="2" trace="myNode" />
       <node id="4655396304301829625" at="33,0,36,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="4655396304301829625" at="22,0,26,0" concept="0" trace="GotoNextSectionStatement_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4655396304301829625" at="22,0,26,0" concept="0" trace="GotoNextSectionStatement_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4655396304301829625" at="27,0,32,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4655396304301829625" at="37,0,46,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4655396304301829658" at="46,0,55,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4655396304301829676" at="55,0,64,0" concept="4" trace="createConstant_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="4655396304301829625" at="29,26,30,18" />
       <scope id="4655396304301829625" at="33,39,34,32" />
-      <scope id="4655396304301829625" at="22,104,24,18" />
+      <scope id="4655396304301829625" at="22,102,24,18" />
       <scope id="4655396304301829625" at="33,0,36,0" />
       <scope id="4655396304301829625" at="22,0,26,0">
         <var name="context" id="4655396304301829625" />
@@ -904,22 +904,22 @@
       <scope id="4655396304301829625" at="37,0,46,0" />
       <scope id="4655396304301829658" at="46,0,55,0" />
       <scope id="4655396304301829676" at="55,0,64,0" />
-      <unit id="4655396304301829625" at="18,0,65,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoNextSectionStatement_EditorBuilder_a" />
+      <unit id="4655396304301829625" at="18,0,65,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoNextSectionStatement_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:80c23f30-b611-47e7-a72e-676515328dc5(com.mbeddr.ext.concurrency.plainC.editor)/6070390538382955300">
     <file name="TaskSection_Editor.java">
-      <node id="6070390538382955300" at="11,79,12,77" concept="6" />
+      <node id="6070390538382955300" at="11,79,12,75" concept="6" />
       <node id="6070390538382955300" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="6070390538382955300" at="11,79,12,77" />
+      <scope id="6070390538382955300" at="11,79,12,75" />
       <scope id="6070390538382955300" at="11,0,14,0">
         <var name="editorContext" id="6070390538382955300" />
         <var name="node" id="6070390538382955300" />
       </scope>
       <unit id="6070390538382955300" at="10,0,15,0" name="com.mbeddr.ext.concurrency.plainC.editor.TaskSection_Editor" />
     </file>
-    <file name="TaskSection_EditorBuilder_a.java">
-      <node id="6070390538382955300" at="43,91,44,19" concept="9" />
+    <file name="TaskSection_EditorBuilder.java">
+      <node id="6070390538382955300" at="43,89,44,19" concept="9" />
       <node id="6070390538382955300" at="44,19,45,18" concept="1" />
       <node id="6070390538382955300" at="50,26,51,18" concept="6" />
       <node id="6070390538382955300" at="54,39,55,32" concept="6" />
@@ -982,7 +982,7 @@
       <node id="6070390538382955300" at="127,87,130,7" concept="3" />
       <node id="6070390538382955300" at="130,7,133,7" concept="3" />
       <node id="6070390538382955300" at="149,0,152,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="6070390538382955300" at="43,0,47,0" concept="0" trace="TaskSection_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6070390538382955300" at="43,0,47,0" concept="0" trace="TaskSection_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6070390538382955300" at="98,0,102,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6070390538382955300" at="106,0,110,0" concept="0" trace="bodySingleRoleHandler_xyqqvq_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="6070390538382955300" at="48,0,53,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -1004,7 +1004,7 @@
       <scope id="6070390538382955300" at="131,42,132,45" />
       <scope id="6070390538382955300" at="145,17,146,42" />
       <scope id="6070390538382955300" at="149,40,150,25" />
-      <scope id="6070390538382955300" at="43,91,45,18" />
+      <scope id="6070390538382955300" at="43,89,45,18" />
       <scope id="2184369924318676719" at="89,74,91,145">
         <var name="manager" id="2184369924318676719" />
       </scope>
@@ -1060,26 +1060,26 @@
       <scope id="6070390538382955300" at="135,0,149,0" />
       <scope id="2184369924318676719" at="77,41,96,5" />
       <scope id="2184369924318676719" at="77,0,98,0" />
-      <unit id="6070390538382955300" at="154,0,157,0" name="com.mbeddr.ext.concurrency.plainC.editor.TaskSection_EditorBuilder_a$PROPS" />
-      <unit id="6070390538382955300" at="158,0,161,0" name="com.mbeddr.ext.concurrency.plainC.editor.TaskSection_EditorBuilder_a$CONCEPTS" />
-      <unit id="6070390538382955300" at="162,0,165,0" name="com.mbeddr.ext.concurrency.plainC.editor.TaskSection_EditorBuilder_a$LINKS" />
-      <unit id="6070390538382955300" at="102,0,153,0" name="com.mbeddr.ext.concurrency.plainC.editor.TaskSection_EditorBuilder_a$bodySingleRoleHandler_xyqqvq_c0" />
-      <unit id="6070390538382955300" at="39,0,166,0" name="com.mbeddr.ext.concurrency.plainC.editor.TaskSection_EditorBuilder_a" />
+      <unit id="6070390538382955300" at="154,0,157,0" name="com.mbeddr.ext.concurrency.plainC.editor.TaskSection_EditorBuilder$PROPS" />
+      <unit id="6070390538382955300" at="158,0,161,0" name="com.mbeddr.ext.concurrency.plainC.editor.TaskSection_EditorBuilder$CONCEPTS" />
+      <unit id="6070390538382955300" at="162,0,165,0" name="com.mbeddr.ext.concurrency.plainC.editor.TaskSection_EditorBuilder$LINKS" />
+      <unit id="6070390538382955300" at="102,0,153,0" name="com.mbeddr.ext.concurrency.plainC.editor.TaskSection_EditorBuilder$bodySingleRoleHandler_xyqqvq_c0" />
+      <unit id="6070390538382955300" at="39,0,166,0" name="com.mbeddr.ext.concurrency.plainC.editor.TaskSection_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:80c23f30-b611-47e7-a72e-676515328dc5(com.mbeddr.ext.concurrency.plainC.editor)/6070390538386085019">
     <file name="GotoSectionStatement_Editor.java">
-      <node id="6070390538386085019" at="11,79,12,86" concept="6" />
+      <node id="6070390538386085019" at="11,79,12,84" concept="6" />
       <node id="6070390538386085019" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="6070390538386085019" at="11,79,12,86" />
+      <scope id="6070390538386085019" at="11,79,12,84" />
       <scope id="6070390538386085019" at="11,0,14,0">
         <var name="editorContext" id="6070390538386085019" />
         <var name="node" id="6070390538386085019" />
       </scope>
       <unit id="6070390538386085019" at="10,0,15,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_Editor" />
     </file>
-    <file name="GotoSectionStatement_EditorBuilder_a.java">
-      <node id="6070390538386085019" at="46,100,47,19" concept="9" />
+    <file name="GotoSectionStatement_EditorBuilder.java">
+      <node id="6070390538386085019" at="46,98,47,19" concept="9" />
       <node id="6070390538386085019" at="47,19,48,18" concept="1" />
       <node id="6070390538386085019" at="53,26,54,18" concept="6" />
       <node id="6070390538386085019" at="57,39,58,32" concept="6" />
@@ -1147,7 +1147,7 @@
       <node id="6070390538386085019" at="57,0,60,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6070390538386085090" at="119,0,122,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6070390538386085112" at="131,0,134,0" concept="4" trace="getText#()Ljava/lang/String;" />
-      <node id="6070390538386085019" at="46,0,50,0" concept="0" trace="GotoSectionStatement_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6070390538386085019" at="46,0,50,0" concept="0" trace="GotoSectionStatement_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6070390538386085019" at="94,0,98,5" concept="3" />
       <node id="6070390538386085019" at="51,0,56,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="6070390538386085019" at="101,205,106,22" concept="3" />
@@ -1171,7 +1171,7 @@
       <scope id="6070390538386085118" at="131,33,132,93" />
       <scope id="2751388224255786284" at="149,71,150,61" />
       <scope id="2751388224255786284" at="154,78,155,61" />
-      <scope id="6070390538386085019" at="46,100,48,18" />
+      <scope id="6070390538386085019" at="46,98,48,18" />
       <scope id="6070390538386085019" at="95,40,97,46" />
       <scope id="6070390538386085019" at="102,73,104,145">
         <var name="manager" id="6070390538386085019" />
@@ -1227,13 +1227,13 @@
         <var name="referenceLink" id="6070390538386085019" />
       </scope>
       <scope id="6070390538386085019" at="80,0,108,0" />
-      <unit id="6070390538386085019" at="168,0,171,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder_a$LINKS" />
-      <unit id="6070390538386085019" at="172,0,175,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder_a$CONCEPTS" />
-      <unit id="6070390538386085112" at="130,90,134,7" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="6070390538386085019" at="82,42,90,5" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder_a$1" />
-      <unit id="2751388224255786284" at="144,0,158,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder_a$GotoSectionStatement_section_cellMenu_9xmecv_a0b0" />
-      <unit id="6070390538386085090" at="108,0,144,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder_a$Inline_Builder0" />
-      <unit id="6070390538386085019" at="42,0,176,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder_a" />
+      <unit id="6070390538386085019" at="168,0,171,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder$LINKS" />
+      <unit id="6070390538386085019" at="172,0,175,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder$CONCEPTS" />
+      <unit id="6070390538386085112" at="130,90,134,7" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder$Inline_Builder0$1" />
+      <unit id="6070390538386085019" at="82,42,90,5" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder$1" />
+      <unit id="2751388224255786284" at="144,0,158,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder$GotoSectionStatement_section_cellMenu_9xmecv_a0b0" />
+      <unit id="6070390538386085090" at="108,0,144,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder$Inline_Builder0" />
+      <unit id="6070390538386085019" at="42,0,176,0" name="com.mbeddr.ext.concurrency.plainC.editor.GotoSectionStatement_EditorBuilder" />
     </file>
     <file name="PresentationProviders.java">
       <node id="2751388224255786286" at="11,0,12,0" concept="8" trace="PRESENTATION_9xmecv_a0a1a" />
@@ -1241,17 +1241,17 @@
   </root>
   <root nodeRef="r:80c23f30-b611-47e7-a72e-676515328dc5(com.mbeddr.ext.concurrency.plainC.editor)/7587272608861057498">
     <file name="PlainCStrategy_Editor.java">
-      <node id="7587272608861057498" at="11,79,12,80" concept="6" />
+      <node id="7587272608861057498" at="11,79,12,78" concept="6" />
       <node id="7587272608861057498" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="7587272608861057498" at="11,79,12,80" />
+      <scope id="7587272608861057498" at="11,79,12,78" />
       <scope id="7587272608861057498" at="11,0,14,0">
         <var name="editorContext" id="7587272608861057498" />
         <var name="node" id="7587272608861057498" />
       </scope>
       <unit id="7587272608861057498" at="10,0,15,0" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_Editor" />
     </file>
-    <file name="PlainCStrategy_EditorBuilder_a.java">
-      <node id="7587272608861057498" at="46,94,47,19" concept="9" />
+    <file name="PlainCStrategy_EditorBuilder.java">
+      <node id="7587272608861057498" at="46,92,47,19" concept="9" />
       <node id="7587272608861057498" at="47,19,48,18" concept="1" />
       <node id="7587272608861057498" at="53,26,54,18" concept="6" />
       <node id="7587272608861057498" at="57,39,58,32" concept="6" />
@@ -1334,7 +1334,7 @@
       <node id="7587272608861057498" at="57,0,60,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8610007178382119597" at="149,0,152,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8610007178382599690" at="161,0,164,0" concept="4" trace="getText#()Ljava/lang/String;" />
-      <node id="7587272608861057498" at="46,0,50,0" concept="0" trace="PlainCStrategy_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7587272608861057498" at="46,0,50,0" concept="0" trace="PlainCStrategy_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="7587272608861059178" at="70,0,74,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="7587272608861057498" at="124,0,128,5" concept="3" />
       <node id="7587272608861057498" at="51,0,56,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -1361,7 +1361,7 @@
       <scope id="8610007178382599696" at="161,33,162,113" />
       <scope id="2751388224255786302" at="179,71,180,62" />
       <scope id="2751388224255786302" at="184,78,185,62" />
-      <scope id="7587272608861057498" at="46,94,48,18" />
+      <scope id="7587272608861057498" at="46,92,48,18" />
       <scope id="7587272608861059178" at="70,42,72,22">
         <var name="editorCell" id="7587272608861059178" />
       </scope>
@@ -1430,13 +1430,13 @@
         <var name="referenceLink" id="7587272608861057498" />
       </scope>
       <scope id="7587272608861057498" at="110,0,138,0" />
-      <unit id="7587272608861057498" at="189,0,192,0" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder_a$LINKS" />
-      <unit id="7587272608861057498" at="193,0,196,0" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder_a$CONCEPTS" />
-      <unit id="8610007178382599690" at="160,90,164,7" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="7587272608861057498" at="112,42,120,5" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder_a$1" />
-      <unit id="2751388224255786302" at="174,0,188,0" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder_a$PlainCStrategy_timeSource_cellMenu_7yk2g0_a0d1a" />
-      <unit id="8610007178382119597" at="138,0,174,0" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder_a$Inline_Builder0" />
-      <unit id="7587272608861057498" at="42,0,197,0" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder_a" />
+      <unit id="7587272608861057498" at="189,0,192,0" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder$LINKS" />
+      <unit id="7587272608861057498" at="193,0,196,0" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder$CONCEPTS" />
+      <unit id="8610007178382599690" at="160,90,164,7" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder$Inline_Builder0$1" />
+      <unit id="7587272608861057498" at="112,42,120,5" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder$1" />
+      <unit id="2751388224255786302" at="174,0,188,0" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder$PlainCStrategy_timeSource_cellMenu_7yk2g0_a0d1a" />
+      <unit id="8610007178382119597" at="138,0,174,0" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder$Inline_Builder0" />
+      <unit id="7587272608861057498" at="42,0,197,0" name="com.mbeddr.ext.concurrency.plainC.editor.PlainCStrategy_EditorBuilder" />
     </file>
     <file name="PresentationProviders.java">
       <node id="2751388224255786304" at="10,0,11,0" concept="8" trace="PRESENTATION_7yk2g0_a0a3b0" />

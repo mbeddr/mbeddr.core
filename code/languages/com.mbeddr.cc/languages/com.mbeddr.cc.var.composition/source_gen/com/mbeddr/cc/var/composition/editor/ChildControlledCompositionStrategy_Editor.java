@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ChildControlledCompositionStrategy_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ChildControlledCompositionStrategy_EditorBuilder_a(editorContext, node).createCell();
+    return new ChildControlledCompositionStrategy_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -18,6 +18,6 @@ public class ConditionalSwitch_tooltipHint_7zd1jt_a1a_Editor extends DefaultNode
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConditionalSwitch_tooltipHint_7zd1jt_a1a_EditorBuilder_a(editorContext, node).createCell();
+    return new ConditionalSwitch_tooltipHint_7zd1jt_a1a_EditorBuilder(editorContext, node).createCell();
   }
 }

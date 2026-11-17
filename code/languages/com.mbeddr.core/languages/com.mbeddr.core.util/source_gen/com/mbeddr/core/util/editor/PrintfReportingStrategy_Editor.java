@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PrintfReportingStrategy_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PrintfReportingStrategy_EditorBuilder_a(editorContext, node).createCell();
+    return new PrintfReportingStrategy_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -44,7 +44,7 @@ public class nset_subtypeOf_set_of_nodes_InequationReplacementRule extends Abstr
   }
   public IsApplicableStatus isApplicableSubtypeAndPattern(SNode node) {
     {
-      GeneratedMatchingPattern pattern = new Pattern_ypjf7y_a0a0a0g(_quotation_createNode_ypjf7y_a0a0a0a0g());
+      GeneratedMatchingPattern pattern = new Pattern_ypjf7y_b0a0a3g(_quotation_createNode_ypjf7y_a0a0a0a0g());
       this.myMatchingPattern1 = pattern;
       boolean b = pattern.match(node);
       return new IsApplicableStatus(b, pattern);
@@ -52,7 +52,7 @@ public class nset_subtypeOf_set_of_nodes_InequationReplacementRule extends Abstr
   }
   public IsApplicableStatus isApplicableSupertypeAndPattern(SNode node) {
     {
-      GeneratedMatchingPattern pattern = new Pattern_ypjf7y_a0a0a0h(_quotation_createNode_ypjf7y_a0a0a0a0h());
+      GeneratedMatchingPattern pattern = new Pattern_ypjf7y_b0a0a1h(_quotation_createNode_ypjf7y_a0a0a0a0h());
       this.myMatchingPattern2 = pattern;
       boolean b = pattern.match(node);
       return new IsApplicableStatus(b, pattern);

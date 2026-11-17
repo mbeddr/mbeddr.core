@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RefactoringReference_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RefactoringReference_EditorBuilder_a(editorContext, node).createCell();
+    return new RefactoringReference_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -20,12 +20,12 @@
   </root>
   <root nodeRef="r:aa291b23-b575-4ed2-ad34-a48cecfddd30(com.mbeddr.doc.meta.editor)/4411878964391805658">
     <file name="AbstractModuleRefWord_Editor.java">
-      <node id="4411878964391805658" at="11,79,12,87" concept="7" />
-      <node id="4411878964391805658" at="14,82,15,90" concept="7" />
+      <node id="4411878964391805658" at="11,79,12,85" concept="7" />
+      <node id="4411878964391805658" at="14,82,15,88" concept="7" />
       <node id="4411878964391805658" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4411878964391805658" at="14,0,17,0" concept="5" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="4411878964391805658" at="11,79,12,87" />
-      <scope id="4411878964391805658" at="14,82,15,90" />
+      <scope id="4411878964391805658" at="11,79,12,85" />
+      <scope id="4411878964391805658" at="14,82,15,88" />
       <scope id="4411878964391805658" at="11,0,14,0">
         <var name="editorContext" id="4411878964391805658" />
         <var name="node" id="4411878964391805658" />
@@ -36,8 +36,8 @@
       </scope>
       <unit id="4411878964391805658" at="10,0,18,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_Editor" />
     </file>
-    <file name="AbstractModuleRefWord_EditorBuilder_a.java">
-      <node id="4411878964391805658" at="47,101,48,19" concept="11" />
+    <file name="AbstractModuleRefWord_EditorBuilder.java">
+      <node id="4411878964391805658" at="47,99,48,19" concept="11" />
       <node id="4411878964391805658" at="48,19,49,18" concept="1" />
       <node id="4411878964391805658" at="54,26,55,18" concept="7" />
       <node id="4411878964391805658" at="58,39,59,32" concept="7" />
@@ -127,7 +127,7 @@
       <node id="8480291644169949841" at="169,0,172,0" concept="5" trace="handleAction#(Ljava/lang/Object;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="8480291644169949841" at="172,0,175,0" concept="5" trace="handleAction_impl#(Lorg/jetbrains/mps/openapi/module/SModuleReference;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="8480291644169949841" at="175,0,178,0" concept="5" trace="isReferentPresentation#()Z" />
-      <node id="4411878964391805658" at="47,0,51,0" concept="0" trace="AbstractModuleRefWord_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4411878964391805658" at="47,0,51,0" concept="0" trace="AbstractModuleRefWord_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4411878964391805658" at="98,0,102,0" concept="5" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4411878964391805658" at="106,0,110,0" concept="0" trace="identitySingleRoleHandler_qby1y6_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="8480291644169949841" at="178,0,182,0" concept="5" trace="getMatchingText#(Ljava/lang/Object;)Ljava/lang/String;" />
@@ -157,7 +157,7 @@
       <scope id="8480291644169949841" at="172,127,173,203" />
       <scope id="8480291644169949841" at="175,50,176,21" />
       <scope id="8480291644169949841" at="184,86,185,257" />
-      <scope id="4411878964391805658" at="47,101,49,18" />
+      <scope id="4411878964391805658" at="47,99,49,18" />
       <scope id="4411878964391805658" at="98,40,100,33">
         <var name="provider" id="4411878964391805658" />
       </scope>
@@ -249,14 +249,14 @@
       </scope>
       <scope id="4411878964391805658" at="138,0,152,0" />
       <scope id="4411878964391805658" at="62,0,78,0" />
-      <unit id="4411878964391805658" at="201,0,204,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_EditorBuilder_a$LINKS" />
-      <unit id="4411878964391805658" at="205,0,208,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_EditorBuilder_a$CONCEPTS" />
-      <unit id="8480291644169949841" at="155,0,188,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_EditorBuilder_a$identitySingleRoleHandler_qby1y6_c0$AbstractModuleRefWord_generic_cellMenu_qby1y6_a0c0" />
-      <unit id="4411878964391805658" at="102,0,189,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_EditorBuilder_a$identitySingleRoleHandler_qby1y6_c0" />
-      <unit id="4411878964391805658" at="43,0,209,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_EditorBuilder_a" />
+      <unit id="4411878964391805658" at="201,0,204,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_EditorBuilder$LINKS" />
+      <unit id="4411878964391805658" at="205,0,208,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_EditorBuilder$CONCEPTS" />
+      <unit id="8480291644169949841" at="155,0,188,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_EditorBuilder$identitySingleRoleHandler_qby1y6_c0$AbstractModuleRefWord_generic_cellMenu_qby1y6_a0c0" />
+      <unit id="4411878964391805658" at="102,0,189,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_EditorBuilder$identitySingleRoleHandler_qby1y6_c0" />
+      <unit id="4411878964391805658" at="43,0,209,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_EditorBuilder" />
     </file>
-    <file name="AbstractModuleRefWord_InspectorBuilder_a.java">
-      <node id="4411878964391805658" at="16,104,17,19" concept="11" />
+    <file name="AbstractModuleRefWord_InspectorBuilder.java">
+      <node id="4411878964391805658" at="16,102,17,19" concept="11" />
       <node id="4411878964391805658" at="17,19,18,18" concept="1" />
       <node id="4411878964391805658" at="23,26,24,18" concept="7" />
       <node id="4411878964391805658" at="27,39,28,31" concept="7" />
@@ -267,13 +267,13 @@
       <node id="3861573051976065990" at="37,5,38,22" concept="7" />
       <node id="4411878964391805658" at="13,0,15,0" concept="2" trace="myNode" />
       <node id="4411878964391805658" at="27,0,30,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="4411878964391805658" at="16,0,20,0" concept="0" trace="AbstractModuleRefWord_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4411878964391805658" at="16,0,20,0" concept="0" trace="AbstractModuleRefWord_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3861573051976065990" at="33,72,37,5" concept="4" />
       <node id="4411878964391805658" at="21,0,26,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3861573051976065990" at="31,0,40,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="4411878964391805658" at="23,26,24,18" />
       <scope id="4411878964391805658" at="27,39,28,31" />
-      <scope id="4411878964391805658" at="16,104,18,18" />
+      <scope id="4411878964391805658" at="16,102,18,18" />
       <scope id="3861573051976065990" at="34,26,36,30" />
       <scope id="4411878964391805658" at="27,0,30,0" />
       <scope id="4411878964391805658" at="16,0,20,0">
@@ -286,7 +286,7 @@
         <var name="editorCell" id="3861573051976065990" />
       </scope>
       <scope id="3861573051976065990" at="31,0,40,0" />
-      <unit id="4411878964391805658" at="12,0,41,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_InspectorBuilder_a" />
+      <unit id="4411878964391805658" at="12,0,41,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:aa291b23-b575-4ed2-ad34-a48cecfddd30(com.mbeddr.doc.meta.editor)/4715820023543872585">
@@ -326,11 +326,11 @@
     <file name="AbstractModuleRefWord_presentationMode_Editor.java">
       <node id="5158139512760497142" at="14,0,15,0" concept="2" trace="myContextHints" />
       <node id="5158139512760497142" at="17,47,18,26" concept="7" />
-      <node id="5158139512760497142" at="20,79,21,104" concept="7" />
+      <node id="5158139512760497142" at="20,79,21,102" concept="7" />
       <node id="5158139512760497142" at="20,0,23,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5158139512760497142" at="15,0,20,0" concept="5" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="5158139512760497142" at="17,47,18,26" />
-      <scope id="5158139512760497142" at="20,79,21,104" />
+      <scope id="5158139512760497142" at="20,79,21,102" />
       <scope id="5158139512760497142" at="20,0,23,0">
         <var name="editorContext" id="5158139512760497142" />
         <var name="node" id="5158139512760497142" />
@@ -338,8 +338,8 @@
       <scope id="5158139512760497142" at="15,0,20,0" />
       <unit id="5158139512760497142" at="13,0,24,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_presentationMode_Editor" />
     </file>
-    <file name="AbstractModuleRefWord_presentationMode_EditorBuilder_a.java">
-      <node id="5158139512760497142" at="33,118,34,19" concept="11" />
+    <file name="AbstractModuleRefWord_presentationMode_EditorBuilder.java">
+      <node id="5158139512760497142" at="33,116,34,19" concept="11" />
       <node id="5158139512760497142" at="34,19,35,18" concept="1" />
       <node id="5158139512760497142" at="40,26,41,18" concept="7" />
       <node id="5158139512760497142" at="44,39,45,43" concept="7" />
@@ -371,10 +371,10 @@
       <node id="5158139512760497142" at="50,0,53,0" concept="5" trace="getText#()Ljava/lang/String;" />
       <node id="185414526250114614" at="77,80,80,13" concept="4" />
       <node id="185414526250113740" at="86,115,89,5" concept="4" />
-      <node id="5158139512760497142" at="33,0,37,0" concept="0" trace="AbstractModuleRefWord_presentationMode_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5158139512760497142" at="33,0,37,0" concept="0" trace="AbstractModuleRefWord_presentationMode_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5158139512760497142" at="38,0,43,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="5158139512760497142" at="48,54,53,15" concept="6" />
-      <node id="185414526250113740" at="86,0,92,0" concept="10" trace="check_qz8k73_a0c0a0a0a0a2a9#(Lorg/jetbrains/mps/openapi/module/SModuleReference;Ljetbrains/mps/openapi/editor/EditorContext;)Lorg/jetbrains/mps/openapi/module/SModule;" />
+      <node id="185414526250113740" at="86,0,92,0" concept="10" trace="check_jzg7gu_a0c0a0a0a0a2a9#(Lorg/jetbrains/mps/openapi/module/SModuleReference;Ljetbrains/mps/openapi/editor/EditorContext;)Lorg/jetbrains/mps/openapi/module/SModule;" />
       <node id="185414526250045046" at="74,0,82,0" concept="5" trace="run#()V" />
       <node id="185414526250045044" at="72,44,82,11" concept="1" />
       <node id="185414526249621625" at="72,0,84,0" concept="5" trace="open#(Lcom/mbeddr/mpsutil/hyperlink/runtime/HyperlinkUtil;)V" />
@@ -386,7 +386,7 @@
       <scope id="5158139512760497219" at="50,31,51,112" />
       <scope id="185414526250114617" at="78,34,79,51" />
       <scope id="185414526250113740" at="87,36,88,66" />
-      <scope id="5158139512760497142" at="33,118,35,18" />
+      <scope id="5158139512760497142" at="33,116,35,18" />
       <scope id="5158139512760497142" at="44,0,47,0" />
       <scope id="5158139512760497142" at="50,0,53,0" />
       <scope id="5158139512760497142" at="33,0,37,0">
@@ -419,11 +419,11 @@
       </scope>
       <scope id="185414526249607041" at="68,0,86,0" />
       <scope id="5158139512760497142" at="48,0,68,0" />
-      <unit id="5158139512760497142" at="93,0,96,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_presentationMode_EditorBuilder_a$LINKS" />
-      <unit id="5158139512760497142" at="49,88,53,5" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_presentationMode_EditorBuilder_a$1" />
-      <unit id="185414526250045046" at="73,69,82,9" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_presentationMode_EditorBuilder_a$2$1" />
-      <unit id="185414526249621623" at="71,15,84,5" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_presentationMode_EditorBuilder_a$2" />
-      <unit id="5158139512760497142" at="29,0,97,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_presentationMode_EditorBuilder_a" />
+      <unit id="5158139512760497142" at="93,0,96,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_presentationMode_EditorBuilder$LINKS" />
+      <unit id="5158139512760497142" at="49,88,53,5" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_presentationMode_EditorBuilder$1" />
+      <unit id="185414526250045046" at="73,69,82,9" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_presentationMode_EditorBuilder$2$1" />
+      <unit id="185414526249621623" at="71,15,84,5" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_presentationMode_EditorBuilder$2" />
+      <unit id="5158139512760497142" at="29,0,97,0" name="com.mbeddr.doc.meta.editor.AbstractModuleRefWord_presentationMode_EditorBuilder" />
     </file>
   </root>
 </debug-info>

@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PortAdapterRefExpr_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PortAdapterRefExpr_EditorBuilder_a(editorContext, node).createCell();
+    return new PortAdapterRefExpr_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new PortAdapterRefExpr_InspectorBuilder_a(editorContext, node).createCell();
+    return new PortAdapterRefExpr_InspectorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AssemblyConnector_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AssemblyConnector_EditorBuilder_a(editorContext, node).createCell();
+    return new AssemblyConnector_EditorBuilder(editorContext, node).createCell();
   }
 }

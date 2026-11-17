@@ -16,6 +16,6 @@ public class ConceptEvaluatorInspector implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConceptEvaluatorInspector_ComponentBuilder_a(editorContext, node).createCell();
+    return new ConceptEvaluatorInspector_ComponentBuilder(editorContext, node).createCell();
   }
 }

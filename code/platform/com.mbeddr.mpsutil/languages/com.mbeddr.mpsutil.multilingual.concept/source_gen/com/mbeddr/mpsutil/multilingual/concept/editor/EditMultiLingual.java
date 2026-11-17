@@ -16,6 +16,6 @@ public class EditMultiLingual implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new EditMultiLingual_ComponentBuilder_a(editorContext, node).createCell();
+    return new EditMultiLingual_ComponentBuilder(editorContext, node).createCell();
   }
 }

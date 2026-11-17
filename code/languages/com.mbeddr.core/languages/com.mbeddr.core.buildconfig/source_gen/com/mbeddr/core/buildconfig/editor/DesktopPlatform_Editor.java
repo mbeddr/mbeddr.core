@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class DesktopPlatform_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DesktopPlatform_EditorBuilder_a(editorContext, node).createCell();
+    return new DesktopPlatform_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new DesktopPlatform_InspectorBuilder_a(editorContext, node).createCell();
+    return new DesktopPlatform_InspectorBuilder(editorContext, node).createCell();
   }
 }

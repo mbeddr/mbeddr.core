@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class EmptyQueueExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new EmptyQueueExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new EmptyQueueExpression_EditorBuilder(editorContext, node).createCell();
   }
 }

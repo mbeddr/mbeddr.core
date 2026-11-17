@@ -18,6 +18,6 @@ public class AssemblyConnector_graphicalWiring_Editor extends DefaultNodeEditor 
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AssemblyConnector_graphicalWiring_EditorBuilder_a(editorContext, node).createCell();
+    return new AssemblyConnector_graphicalWiring_EditorBuilder(editorContext, node).createCell();
   }
 }

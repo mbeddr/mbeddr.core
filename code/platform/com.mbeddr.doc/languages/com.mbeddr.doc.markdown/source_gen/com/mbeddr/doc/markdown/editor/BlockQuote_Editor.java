@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class BlockQuote_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new BlockQuote_EditorBuilder_a(editorContext, node).createCell();
+    return new BlockQuote_EditorBuilder(editorContext, node).createCell();
   }
 }

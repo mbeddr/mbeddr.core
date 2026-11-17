@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class InterProcedural_BuilderMode_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new InterProcedural_BuilderMode_EditorBuilder_a(editorContext, node).createCell();
+    return new InterProcedural_BuilderMode_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -16,6 +16,6 @@ public class buildProcessors implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new buildProcessors_ComponentBuilder_a(editorContext, node).createCell();
+    return new buildProcessors_ComponentBuilder(editorContext, node).createCell();
   }
 }

@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class StdHeaderImport_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new StdHeaderImport_EditorBuilder_a(editorContext, node).createCell();
+    return new StdHeaderImport_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new StdHeaderImport_InspectorBuilder_a(editorContext, node).createCell();
+    return new StdHeaderImport_InspectorBuilder(editorContext, node).createCell();
   }
 }
