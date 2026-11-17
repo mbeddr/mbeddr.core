@@ -12,13 +12,17 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import java.util.Objects;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public final class RemoveComments_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
@@ -54,15 +58,20 @@ public final class RemoveComments_Intention extends AbstractIntentionDescriptor 
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNode parentOfReview = SNodeOperations.getParent(SNodeOperations.getNodeAncestor(node, CONCEPTS.ReviewNote$Wo, true, false));
-      SNodeOperations.deleteNode(SNodeOperations.getNodeAncestor(node, CONCEPTS.ReviewNote$Wo, true, false));
-
-      if (ListSequence.fromList(SNodeOperations.getNodeDescendants(ListSequence.fromList(SNodeOperations.getNodeAncestors(parentOfReview, null, false)).last(), CONCEPTS.ReviewNote$Wo, false, new SAbstractConcept[]{})).isEmpty()) {
-        for (SNode a : ListSequence.fromList(SNodeOperations.getNodeAncestors(parentOfReview, null, false))) {
-          if ((new IAttributeDescriptor.NodeAttribute(CONCEPTS.CommentAnnotationContainer$3o).get(a) != null)) {
-            SNodeOperations.deleteNode(new IAttributeDescriptor.NodeAttribute(CONCEPTS.CommentAnnotationContainer$3o).get(a));
-          }
-        }
+      // All notes of a root are held by the CommentAnnotationContainer attribute of that root.
+      SNode container = new IAttributeDescriptor.NodeAttribute(CONCEPTS.CommentAnnotationContainer$3o).get(SNodeOperations.getContainingRoot(node));
+      // Remove the notes attached to the node itself. A copy of the sequence, as removing changes the list it reads.
+      for (SNode note : ListSequence.fromList(ListSequence.fromList(SLinkOperations.getChildren(container, LINKS.comments$KPYX)).where((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.attachedNode$Bgt0), node)).toList())) {
+        this._additional_removeNoteWithReplies(note);
+      }
+      // If invoked inside a note, remove that note as well.
+      SNode enclosingNote = SNodeOperations.getNodeAncestor(node, CONCEPTS.ReviewNote$Wo, true, false);
+      if ((enclosingNote != null)) {
+        this._additional_removeNoteWithReplies(enclosingNote);
+      }
+      // Clean up: once no note is left, remove the empty comment container.
+      if ((container != null) && ListSequence.fromList(SLinkOperations.getChildren(container, LINKS.comments$KPYX)).isEmpty()) {
+        SNodeOperations.deleteNode(container);
       }
     }
 
@@ -75,10 +84,26 @@ public final class RemoveComments_Intention extends AbstractIntentionDescriptor 
     }
 
     private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-      return (SNodeOperations.getNodeAncestor(node, CONCEPTS.ReviewNote$Wo, true, false) != null);
+      // Available on a commented node, i.e. a note is attached to it,
+      // or the node lies inside a note (the note itself, its text, ...).
+      return ListSequence.fromList(SLinkOperations.getChildren(new IAttributeDescriptor.NodeAttribute(CONCEPTS.CommentAnnotationContainer$3o).get(SNodeOperations.getContainingRoot(node)), LINKS.comments$KPYX)).any((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.attachedNode$Bgt0), node)) || (SNodeOperations.getNodeAncestor(node, CONCEPTS.ReviewNote$Wo, true, false) != null);
     }
 
 
+    /**
+     * Removes the note and, before it, every reply to it. A note that an earlier call already removed as a reply
+     * has no parent any more and is left alone.
+     * 
+     * @param note the note to remove
+     */
+    private void _additional_removeNoteWithReplies(final SNode note) {
+      // Replies to the note go with it, and replies to those replies, as ReviewUtil.deleteReviewNote in the runtime does.
+      // A copy of the sequence, as removing changes the list it reads.
+      for (SNode reply : ListSequence.fromList(Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(SNodeOperations.getParent(note)), CONCEPTS.ReviewReplyNote$Ue)).where((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.repliedNote$u_0w), note)).toList())) {
+        this._additional_removeNoteWithReplies(reply);
+      }
+      SNodeOperations.deleteNode(note);
+    }
     @Override
     public IntentionDescriptor getDescriptor() {
       return RemoveComments_Intention.this;
@@ -87,7 +112,14 @@ public final class RemoveComments_Intention extends AbstractIntentionDescriptor 
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept ReviewNote$Wo = MetaAdapterFactory.getConcept(0xc788b04620194656L, 0x8b608bb9bbb177b5L, 0x1017edaecf8ecafbL, "com.mbeddr.mpsutil.review.structure.ReviewNote");
     /*package*/ static final SConcept CommentAnnotationContainer$3o = MetaAdapterFactory.getConcept(0x7a060fae09e04372L, 0xbe366696d6554c0eL, 0x7556ef16fac6bfb4L, "com.mbeddr.mpsutil.review.annotation.structure.CommentAnnotationContainer");
+    /*package*/ static final SConcept ReviewNote$Wo = MetaAdapterFactory.getConcept(0xc788b04620194656L, 0x8b608bb9bbb177b5L, 0x1017edaecf8ecafbL, "com.mbeddr.mpsutil.review.structure.ReviewNote");
+    /*package*/ static final SConcept ReviewReplyNote$Ue = MetaAdapterFactory.getConcept(0xc788b04620194656L, 0x8b608bb9bbb177b5L, 0x1017edaecf8efc59L, "com.mbeddr.mpsutil.review.structure.ReviewReplyNote");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink comments$KPYX = MetaAdapterFactory.getContainmentLink(0x7a060fae09e04372L, 0xbe366696d6554c0eL, 0x7556ef16fac6bfb4L, 0x7556ef16fac6bfb5L, "comments");
+    /*package*/ static final SReferenceLink attachedNode$Bgt0 = MetaAdapterFactory.getReferenceLink(0x92f195b6a2094804L, 0xad65f5248ecd5873L, 0x1017edaecf766251L, 0x6f909de0265512a1L, "attachedNode");
+    /*package*/ static final SReferenceLink repliedNote$u_0w = MetaAdapterFactory.getReferenceLink(0xc788b04620194656L, 0x8b608bb9bbb177b5L, 0x1017edaecf8efc59L, 0x1017edaecf8efc5aL, "repliedNote");
   }
 }
