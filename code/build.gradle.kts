@@ -114,7 +114,7 @@ subprojects {
     val ant_lib by configurations.creating
 
     dependencies {
-        ant_lib("org.apache.ant:ant-junit:1.10.17")
+        ant_lib("org.apache.ant:ant-junit:1.10.18")
     }
 
     extra["itemis.mps.gradle.ant.defaultScriptClasspath"] = ant_lib
