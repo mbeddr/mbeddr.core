@@ -6,6 +6,9 @@ import jetbrains.mps.logging.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.model.SNode;
+import java.util.Map;
+import java.util.Collections;
+import java.util.WeakHashMap;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
@@ -20,6 +23,7 @@ public class TypedChildConstraintImpl implements IConstraint {
   private final SContainmentLink childLink;
   @NotNull
   private final SNode type;
+  private final Map<SNode, Boolean> subtypeResults = Collections.synchronizedMap(new WeakHashMap<SNode, Boolean>());
 
   public TypedChildConstraintImpl(@NotNull SContainmentLink childLink, @NotNull SNode type) {
     this.childLink = childLink;
@@ -73,12 +77,25 @@ public class TypedChildConstraintImpl implements IConstraint {
       throwUnknownTypeOfChild(String.format("Unwrapping type %s resulted in null", SNodeOperations.present(mappedType)), node, matchingChild);
     }
 
+    // the answer is kept only for a type node that is in no model: a type node in a model, such as a declared type,
+    // can be edited in place and would then keep the answer of its old content
+    boolean cacheable = SNodeOperations.getModel(mappedType) == null;
+    if (cacheable) {
+      Boolean known = subtypeResults.get(mappedType);
+      if (known != null) {
+        return known;
+      }
+    }
+
     // TypeChecker allows to check isSubTypeByReplacementRules() which TypecheckingFacade doesn't support
-    // hence we still need to use TypeChecker for compatibility 
-    TypeChecker typeChecker = TypeChecker.getInstance();
-    boolean result = typeChecker.getSubtypingManager().isSubtype(mappedType, type);
+    // hence we still need to use TypeChecker for compatibility
+    TypeChecker checker = TypeChecker.getInstance();
+    boolean result = checker.getSubtypingManager().isSubtype(mappedType, type);
     if (!(result)) {
-      result = typeChecker.getSubtypingManager().isSubTypeByReplacementRules(mappedType, type, true);
+      result = checker.getSubtypingManager().isSubTypeByReplacementRules(mappedType, type, true);
+    }
+    if (cacheable) {
+      subtypeResults.put(mappedType, result);
     }
 
     if (LOG.isTraceLevel()) {
