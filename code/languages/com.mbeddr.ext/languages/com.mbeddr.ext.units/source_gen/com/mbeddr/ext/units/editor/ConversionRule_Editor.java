@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ConversionRule_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConversionRule_EditorBuilder_a(editorContext, node).createCell();
+    return new ConversionRule_EditorBuilder(editorContext, node).createCell();
   }
 }

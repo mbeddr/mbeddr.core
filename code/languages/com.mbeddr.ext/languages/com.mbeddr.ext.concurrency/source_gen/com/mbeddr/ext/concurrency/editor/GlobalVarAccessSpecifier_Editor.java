@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GlobalVarAccessSpecifier_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GlobalVarAccessSpecifier_EditorBuilder_a(editorContext, node).createCell();
+    return new GlobalVarAccessSpecifier_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class TagPortCharacteristic_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TagPortCharacteristic_EditorBuilder_a(editorContext, node).createCell();
+    return new TagPortCharacteristic_EditorBuilder(editorContext, node).createCell();
   }
 }

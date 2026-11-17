@@ -18,6 +18,6 @@ public class ConditionalAlternative_tooltipHint_dfexte_a1a_Editor extends Defaul
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConditionalAlternative_tooltipHint_dfexte_a1a_EditorBuilder_a(editorContext, node).createCell();
+    return new ConditionalAlternative_tooltipHint_dfexte_a1a_EditorBuilder(editorContext, node).createCell();
   }
 }

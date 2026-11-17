@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class NameAnnotation_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new NameAnnotation_EditorBuilder_a(editorContext, node).createCell();
+    return new NameAnnotation_EditorBuilder(editorContext, node).createCell();
   }
 }

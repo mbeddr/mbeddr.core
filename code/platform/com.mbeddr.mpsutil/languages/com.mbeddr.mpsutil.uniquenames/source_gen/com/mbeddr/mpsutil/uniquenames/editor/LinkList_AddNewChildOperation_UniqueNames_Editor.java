@@ -18,6 +18,6 @@ public class LinkList_AddNewChildOperation_UniqueNames_Editor extends DefaultNod
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new LinkList_AddNewChildOperation_UniqueNames_EditorBuilder_a(editorContext, node).createCell();
+    return new LinkList_AddNewChildOperation_UniqueNames_EditorBuilder(editorContext, node).createCell();
   }
 }

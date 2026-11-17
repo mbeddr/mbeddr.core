@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class FontSizeStyleProperty_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new FontSizeStyleProperty_EditorBuilder_a(editorContext, node).createCell();
+    return new FontSizeStyleProperty_EditorBuilder(editorContext, node).createCell();
   }
 }

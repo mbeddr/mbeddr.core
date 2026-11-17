@@ -18,6 +18,6 @@ public class ReviewAssessmentResult_tooltipHint_pg53h6_e0_Editor extends Default
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ReviewAssessmentResult_tooltipHint_pg53h6_e0_EditorBuilder_a(editorContext, node).createCell();
+    return new ReviewAssessmentResult_tooltipHint_pg53h6_e0_EditorBuilder(editorContext, node).createCell();
   }
 }

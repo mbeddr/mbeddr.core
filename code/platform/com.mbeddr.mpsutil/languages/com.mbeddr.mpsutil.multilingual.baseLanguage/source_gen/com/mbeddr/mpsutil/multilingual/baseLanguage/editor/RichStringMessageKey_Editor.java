@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RichStringMessageKey_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RichStringMessageKey_EditorBuilder_a(editorContext, node).createCell();
+    return new RichStringMessageKey_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RCalculation_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RCalculation_EditorBuilder_a(editorContext, node).createCell();
+    return new RCalculation_EditorBuilder(editorContext, node).createCell();
   }
 }

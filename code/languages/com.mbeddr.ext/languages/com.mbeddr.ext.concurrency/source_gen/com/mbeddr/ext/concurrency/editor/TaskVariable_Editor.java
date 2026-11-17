@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class TaskVariable_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TaskVariable_EditorBuilder_a(editorContext, node).createCell();
+    return new TaskVariable_EditorBuilder(editorContext, node).createCell();
   }
 }

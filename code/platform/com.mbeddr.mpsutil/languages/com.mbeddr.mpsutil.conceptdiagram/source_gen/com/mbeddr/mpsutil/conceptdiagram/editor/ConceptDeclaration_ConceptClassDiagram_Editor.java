@@ -18,6 +18,6 @@ public class ConceptDeclaration_ConceptClassDiagram_Editor extends DefaultNodeEd
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a(editorContext, node).createCell();
+    return new ConceptDeclaration_ConceptClassDiagram_EditorBuilder(editorContext, node).createCell();
   }
 }

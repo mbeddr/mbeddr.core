@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ReqStatusGreyIcon_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ReqStatusGreyIcon_EditorBuilder_a(editorContext, node).createCell();
+    return new ReqStatusGreyIcon_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PreferencesRootExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PreferencesRootExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new PreferencesRootExpression_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -19,6 +19,7 @@
     <dependency reexport="false">b50d89c0-0fb9-4105-b652-222148c26a9b(jetbrains.mps.kotlin.stdlib)</dependency>
     <dependency reexport="false">47198eff-d292-4dcd-85af-227f983426b5(MPS.Kotlin)</dependency>
     <dependency reexport="false">b00f36f0-49b7-456c-8405-740447ebb192(MPS.IDEA.Modules)</dependency>
+    <dependency reexport="false">f35cbfcb-ea50-4f20-9d5c-c765fbd8fd3b(jetbrains.mps.vcs.idea.stubs)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3b3dc28-fee3-49e1-a46e-685e96389094:com.mbeddr.mpsutil.bldoc" version="0" />
@@ -50,6 +51,7 @@
     <module reference="39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)" version="0" />
     <module reference="5e43bd52-71f1-484a-90fa-e1e624f7e44b(com.mbeddr.mpsutil.checkinHandler)" version="0" />
     <module reference="b50d89c0-0fb9-4105-b652-222148c26a9b(jetbrains.mps.kotlin.stdlib)" version="0" />
+    <module reference="f35cbfcb-ea50-4f20-9d5c-c765fbd8fd3b(jetbrains.mps.vcs.idea.stubs)" version="0" />
   </dependencyVersions>
 </solution>
 

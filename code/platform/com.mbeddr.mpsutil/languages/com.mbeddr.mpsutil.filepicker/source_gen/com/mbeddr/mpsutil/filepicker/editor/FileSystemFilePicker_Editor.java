@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class FileSystemFilePicker_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new FileSystemFilePicker_EditorBuilder_a(editorContext, node).createCell();
+    return new FileSystemFilePicker_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new FileSystemFilePicker_InspectorBuilder_a(editorContext, node).createCell();
+    return new FileSystemFilePicker_InspectorBuilder(editorContext, node).createCell();
   }
 }

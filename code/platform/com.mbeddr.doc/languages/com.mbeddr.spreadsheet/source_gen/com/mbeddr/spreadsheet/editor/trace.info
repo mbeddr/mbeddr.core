@@ -19,12 +19,12 @@
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859106810422">
     <file name="Workbook_Editor.java">
-      <node id="2042272859106810422" at="11,79,12,74" concept="7" />
-      <node id="2042272859106810422" at="14,82,15,77" concept="7" />
+      <node id="2042272859106810422" at="11,79,12,72" concept="7" />
+      <node id="2042272859106810422" at="14,82,15,75" concept="7" />
       <node id="2042272859106810422" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2042272859106810422" at="14,0,17,0" concept="5" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2042272859106810422" at="11,79,12,74" />
-      <scope id="2042272859106810422" at="14,82,15,77" />
+      <scope id="2042272859106810422" at="11,79,12,72" />
+      <scope id="2042272859106810422" at="14,82,15,75" />
       <scope id="2042272859106810422" at="11,0,14,0">
         <var name="editorContext" id="2042272859106810422" />
         <var name="node" id="2042272859106810422" />
@@ -35,8 +35,8 @@
       </scope>
       <unit id="2042272859106810422" at="10,0,18,0" name="com.mbeddr.spreadsheet.editor.Workbook_Editor" />
     </file>
-    <file name="Workbook_EditorBuilder_a.java">
-      <node id="2042272859106810422" at="45,88,46,19" concept="10" />
+    <file name="Workbook_EditorBuilder.java">
+      <node id="2042272859106810422" at="45,86,46,19" concept="10" />
       <node id="2042272859106810422" at="46,19,47,18" concept="2" />
       <node id="2042272859106810422" at="52,26,53,18" concept="7" />
       <node id="2042272859106810422" at="56,39,57,32" concept="7" />
@@ -110,7 +110,7 @@
       <node id="2042272859106810422" at="122,0,125,0" concept="5" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="2042272859106810422" at="125,0,128,0" concept="5" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="2042272859106810422" at="169,96,172,9" concept="4" />
-      <node id="2042272859106810422" at="45,0,49,0" concept="1" trace="Workbook_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859106810422" at="45,0,49,0" concept="1" trace="Workbook_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859106810422" at="113,0,117,0" concept="1" trace="sheetsListHandler_mo13vt_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2042272859106810422" at="118,0,122,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859106810422" at="151,97,155,9" concept="4" />
@@ -139,7 +139,7 @@
       <scope id="2042272859106810422" at="125,48,126,31" />
       <scope id="2042272859106810422" at="143,17,144,42" />
       <scope id="2042272859106810422" at="170,34,171,91" />
-      <scope id="2042272859106810422" at="45,88,47,18" />
+      <scope id="2042272859106810422" at="45,86,47,18" />
       <scope id="2042272859106810429" at="88,74,90,145">
         <var name="manager" id="2042272859106810429" />
       </scope>
@@ -203,14 +203,14 @@
         <var name="elementNode" id="2042272859106810422" />
         <var name="isEmptyCell" id="2042272859106810422" />
       </scope>
-      <unit id="2042272859106810422" at="177,0,180,0" name="com.mbeddr.spreadsheet.editor.Workbook_EditorBuilder_a$PROPS" />
-      <unit id="2042272859106810422" at="186,0,189,0" name="com.mbeddr.spreadsheet.editor.Workbook_EditorBuilder_a$LINKS" />
-      <unit id="2042272859106810422" at="181,0,185,0" name="com.mbeddr.spreadsheet.editor.Workbook_EditorBuilder_a$CONCEPTS" />
-      <unit id="2042272859106810422" at="109,0,176,0" name="com.mbeddr.spreadsheet.editor.Workbook_EditorBuilder_a$sheetsListHandler_mo13vt_c0" />
-      <unit id="2042272859106810422" at="41,0,190,0" name="com.mbeddr.spreadsheet.editor.Workbook_EditorBuilder_a" />
+      <unit id="2042272859106810422" at="177,0,180,0" name="com.mbeddr.spreadsheet.editor.Workbook_EditorBuilder$PROPS" />
+      <unit id="2042272859106810422" at="186,0,189,0" name="com.mbeddr.spreadsheet.editor.Workbook_EditorBuilder$LINKS" />
+      <unit id="2042272859106810422" at="181,0,185,0" name="com.mbeddr.spreadsheet.editor.Workbook_EditorBuilder$CONCEPTS" />
+      <unit id="2042272859106810422" at="109,0,176,0" name="com.mbeddr.spreadsheet.editor.Workbook_EditorBuilder$sheetsListHandler_mo13vt_c0" />
+      <unit id="2042272859106810422" at="41,0,190,0" name="com.mbeddr.spreadsheet.editor.Workbook_EditorBuilder" />
     </file>
-    <file name="Workbook_InspectorBuilder_a.java">
-      <node id="2042272859106810422" at="33,91,34,19" concept="10" />
+    <file name="Workbook_InspectorBuilder.java">
+      <node id="2042272859106810422" at="33,89,34,19" concept="10" />
       <node id="2042272859106810422" at="34,19,35,18" concept="2" />
       <node id="2042272859106810422" at="40,26,41,18" concept="7" />
       <node id="2042272859106810422" at="44,39,45,32" concept="7" />
@@ -267,7 +267,7 @@
       <node id="2042272859106810422" at="88,0,91,0" concept="5" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="2042272859106810422" at="91,0,94,0" concept="5" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="2042272859106810422" at="135,96,138,9" concept="4" />
-      <node id="2042272859106810422" at="33,0,37,0" concept="1" trace="Workbook_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859106810422" at="33,0,37,0" concept="1" trace="Workbook_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859106810422" at="79,0,83,0" concept="1" trace="stylesListHandler_mo13vt_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2042272859106810422" at="84,0,88,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859106810422" at="117,97,121,9" concept="4" />
@@ -292,7 +292,7 @@
       <scope id="2042272859106810422" at="91,48,92,31" />
       <scope id="2042272859106810422" at="109,17,110,42" />
       <scope id="2042272859106810422" at="136,34,137,91" />
-      <scope id="2042272859106810422" at="33,91,35,18" />
+      <scope id="2042272859106810422" at="33,89,35,18" />
       <scope id="2042272859106810422" at="79,80,81,25" />
       <scope id="2042272859106810422" at="118,122,120,146" />
       <scope id="2042272859106810422" at="124,34,126,142" />
@@ -345,20 +345,20 @@
         <var name="elementNode" id="2042272859106810422" />
         <var name="isEmptyCell" id="2042272859106810422" />
       </scope>
-      <unit id="2042272859106810422" at="143,0,146,0" name="com.mbeddr.spreadsheet.editor.Workbook_InspectorBuilder_a$LINKS" />
-      <unit id="2042272859106810422" at="147,0,150,0" name="com.mbeddr.spreadsheet.editor.Workbook_InspectorBuilder_a$CONCEPTS" />
-      <unit id="2042272859106810422" at="75,0,142,0" name="com.mbeddr.spreadsheet.editor.Workbook_InspectorBuilder_a$stylesListHandler_mo13vt_b0" />
-      <unit id="2042272859106810422" at="29,0,151,0" name="com.mbeddr.spreadsheet.editor.Workbook_InspectorBuilder_a" />
+      <unit id="2042272859106810422" at="143,0,146,0" name="com.mbeddr.spreadsheet.editor.Workbook_InspectorBuilder$LINKS" />
+      <unit id="2042272859106810422" at="147,0,150,0" name="com.mbeddr.spreadsheet.editor.Workbook_InspectorBuilder$CONCEPTS" />
+      <unit id="2042272859106810422" at="75,0,142,0" name="com.mbeddr.spreadsheet.editor.Workbook_InspectorBuilder$stylesListHandler_mo13vt_b0" />
+      <unit id="2042272859106810422" at="29,0,151,0" name="com.mbeddr.spreadsheet.editor.Workbook_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859106810441">
     <file name="Sheet_Editor.java">
-      <node id="2042272859106810441" at="11,79,12,71" concept="7" />
-      <node id="2042272859106810441" at="14,82,15,74" concept="7" />
+      <node id="2042272859106810441" at="11,79,12,69" concept="7" />
+      <node id="2042272859106810441" at="14,82,15,72" concept="7" />
       <node id="2042272859106810441" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2042272859106810441" at="14,0,17,0" concept="5" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2042272859106810441" at="11,79,12,71" />
-      <scope id="2042272859106810441" at="14,82,15,74" />
+      <scope id="2042272859106810441" at="11,79,12,69" />
+      <scope id="2042272859106810441" at="14,82,15,72" />
       <scope id="2042272859106810441" at="11,0,14,0">
         <var name="editorContext" id="2042272859106810441" />
         <var name="node" id="2042272859106810441" />
@@ -369,8 +369,8 @@
       </scope>
       <unit id="2042272859106810441" at="10,0,18,0" name="com.mbeddr.spreadsheet.editor.Sheet_Editor" />
     </file>
-    <file name="Sheet_EditorBuilder_a.java">
-      <node id="2042272859106810441" at="48,85,49,19" concept="10" />
+    <file name="Sheet_EditorBuilder.java">
+      <node id="2042272859106810441" at="48,83,49,19" concept="10" />
       <node id="2042272859106810441" at="49,19,50,18" concept="2" />
       <node id="2042272859106810441" at="55,26,56,18" concept="7" />
       <node id="2042272859106810441" at="59,39,60,32" concept="7" />
@@ -449,7 +449,7 @@
       <node id="2042272859106810441" at="126,0,129,0" concept="5" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="2042272859106810441" at="129,0,132,0" concept="5" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="2042272859106810441" at="173,96,176,9" concept="4" />
-      <node id="2042272859106810441" at="48,0,52,0" concept="1" trace="Sheet_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859106810441" at="48,0,52,0" concept="1" trace="Sheet_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859106810441" at="117,0,121,0" concept="1" trace="rowsListHandler_1fw85i_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2042272859106810441" at="122,0,126,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859106810441" at="155,97,159,9" concept="4" />
@@ -479,7 +479,7 @@
       <scope id="2042272859106810441" at="129,48,130,29" />
       <scope id="2042272859106810441" at="147,17,148,42" />
       <scope id="2042272859106810441" at="174,34,175,91" />
-      <scope id="2042272859106810441" at="48,85,50,18" />
+      <scope id="2042272859106810441" at="48,83,50,18" />
       <scope id="2042272859106810458" at="92,74,94,145">
         <var name="manager" id="2042272859106810458" />
       </scope>
@@ -548,14 +548,14 @@
         <var name="elementNode" id="2042272859106810441" />
         <var name="isEmptyCell" id="2042272859106810441" />
       </scope>
-      <unit id="2042272859106810441" at="187,0,190,0" name="com.mbeddr.spreadsheet.editor.Sheet_EditorBuilder_a$PROPS" />
-      <unit id="2042272859106810441" at="196,0,199,0" name="com.mbeddr.spreadsheet.editor.Sheet_EditorBuilder_a$LINKS" />
-      <unit id="2042272859106810441" at="191,0,195,0" name="com.mbeddr.spreadsheet.editor.Sheet_EditorBuilder_a$CONCEPTS" />
-      <unit id="2042272859106810441" at="113,0,180,0" name="com.mbeddr.spreadsheet.editor.Sheet_EditorBuilder_a$rowsListHandler_1fw85i_c0" />
-      <unit id="2042272859106810441" at="44,0,200,0" name="com.mbeddr.spreadsheet.editor.Sheet_EditorBuilder_a" />
+      <unit id="2042272859106810441" at="187,0,190,0" name="com.mbeddr.spreadsheet.editor.Sheet_EditorBuilder$PROPS" />
+      <unit id="2042272859106810441" at="196,0,199,0" name="com.mbeddr.spreadsheet.editor.Sheet_EditorBuilder$LINKS" />
+      <unit id="2042272859106810441" at="191,0,195,0" name="com.mbeddr.spreadsheet.editor.Sheet_EditorBuilder$CONCEPTS" />
+      <unit id="2042272859106810441" at="113,0,180,0" name="com.mbeddr.spreadsheet.editor.Sheet_EditorBuilder$rowsListHandler_1fw85i_c0" />
+      <unit id="2042272859106810441" at="44,0,200,0" name="com.mbeddr.spreadsheet.editor.Sheet_EditorBuilder" />
     </file>
-    <file name="Sheet_InspectorBuilder_a.java">
-      <node id="2042272859106810441" at="46,88,47,19" concept="10" />
+    <file name="Sheet_InspectorBuilder.java">
+      <node id="2042272859106810441" at="46,86,47,19" concept="10" />
       <node id="2042272859106810441" at="47,19,48,18" concept="2" />
       <node id="2042272859106810441" at="53,26,54,18" concept="7" />
       <node id="2042272859106810441" at="57,39,58,32" concept="7" />
@@ -637,7 +637,7 @@
       <node id="2042272859106810441" at="133,0,136,0" concept="5" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="2042272859106810441" at="136,0,139,0" concept="5" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="2042272859106810441" at="180,96,183,9" concept="4" />
-      <node id="2042272859106810441" at="46,0,50,0" concept="1" trace="Sheet_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859106810441" at="46,0,50,0" concept="1" trace="Sheet_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859106810441" at="124,0,128,0" concept="1" trace="groupsListHandler_1fw85i_d0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2042272859106810441" at="129,0,133,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859106810441" at="162,97,166,9" concept="4" />
@@ -667,7 +667,7 @@
       <scope id="2042272859106810441" at="136,48,137,32" />
       <scope id="2042272859106810441" at="154,17,155,42" />
       <scope id="2042272859106810441" at="181,34,182,91" />
-      <scope id="2042272859106810441" at="46,88,48,18" />
+      <scope id="2042272859106810441" at="46,86,48,18" />
       <scope id="8857110853481717373" at="90,74,92,145">
         <var name="manager" id="8857110853481717373" />
       </scope>
@@ -736,26 +736,26 @@
         <var name="elementNode" id="2042272859106810441" />
         <var name="isEmptyCell" id="2042272859106810441" />
       </scope>
-      <unit id="2042272859106810441" at="188,0,191,0" name="com.mbeddr.spreadsheet.editor.Sheet_InspectorBuilder_a$PROPS" />
-      <unit id="2042272859106810441" at="197,0,200,0" name="com.mbeddr.spreadsheet.editor.Sheet_InspectorBuilder_a$LINKS" />
-      <unit id="2042272859106810441" at="192,0,196,0" name="com.mbeddr.spreadsheet.editor.Sheet_InspectorBuilder_a$CONCEPTS" />
-      <unit id="2042272859106810441" at="120,0,187,0" name="com.mbeddr.spreadsheet.editor.Sheet_InspectorBuilder_a$groupsListHandler_1fw85i_d0" />
-      <unit id="2042272859106810441" at="42,0,201,0" name="com.mbeddr.spreadsheet.editor.Sheet_InspectorBuilder_a" />
+      <unit id="2042272859106810441" at="188,0,191,0" name="com.mbeddr.spreadsheet.editor.Sheet_InspectorBuilder$PROPS" />
+      <unit id="2042272859106810441" at="197,0,200,0" name="com.mbeddr.spreadsheet.editor.Sheet_InspectorBuilder$LINKS" />
+      <unit id="2042272859106810441" at="192,0,196,0" name="com.mbeddr.spreadsheet.editor.Sheet_InspectorBuilder$CONCEPTS" />
+      <unit id="2042272859106810441" at="120,0,187,0" name="com.mbeddr.spreadsheet.editor.Sheet_InspectorBuilder$groupsListHandler_1fw85i_d0" />
+      <unit id="2042272859106810441" at="42,0,201,0" name="com.mbeddr.spreadsheet.editor.Sheet_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859106810466">
     <file name="Row_Editor.java">
-      <node id="2042272859106810466" at="11,79,12,69" concept="7" />
+      <node id="2042272859106810466" at="11,79,12,67" concept="7" />
       <node id="2042272859106810466" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2042272859106810466" at="11,79,12,69" />
+      <scope id="2042272859106810466" at="11,79,12,67" />
       <scope id="2042272859106810466" at="11,0,14,0">
         <var name="editorContext" id="2042272859106810466" />
         <var name="node" id="2042272859106810466" />
       </scope>
       <unit id="2042272859106810466" at="10,0,15,0" name="com.mbeddr.spreadsheet.editor.Row_Editor" />
     </file>
-    <file name="Row_EditorBuilder_a.java">
-      <node id="2042272859106810466" at="38,83,39,19" concept="10" />
+    <file name="Row_EditorBuilder.java">
+      <node id="2042272859106810466" at="38,81,39,19" concept="10" />
       <node id="2042272859106810466" at="39,19,40,18" concept="2" />
       <node id="2042272859106810466" at="45,26,46,18" concept="7" />
       <node id="2042272859106810466" at="49,39,50,32" concept="7" />
@@ -833,7 +833,7 @@
       <node id="2042272859106810466" at="103,0,106,0" concept="5" trace="createNodeToInsert#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;I)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859106810466" at="107,0,110,0" concept="5" trace="nodeFactory#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;I)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859106810466" at="150,96,153,9" concept="4" />
-      <node id="2042272859106810466" at="38,0,42,0" concept="1" trace="Row_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859106810466" at="38,0,42,0" concept="1" trace="Row_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859106810466" at="88,0,92,0" concept="1" trace="cellsListHandler_x9dt5l_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2042272859106810466" at="93,0,97,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859106810466" at="132,97,136,9" concept="4" />
@@ -864,7 +864,7 @@
       <scope id="2042272859107005870" at="107,73,108,185" />
       <scope id="2042272859106810466" at="124,17,125,42" />
       <scope id="2042272859106810466" at="151,34,152,91" />
-      <scope id="2042272859106810466" at="38,83,40,18" />
+      <scope id="2042272859106810466" at="38,81,40,18" />
       <scope id="2042272859106810466" at="88,79,90,25" />
       <scope id="2042272859106810466" at="133,122,135,146" />
       <scope id="2042272859106810466" at="139,34,141,142" />
@@ -942,21 +942,21 @@
         <var name="elementNode" id="2042272859106810466" />
         <var name="isEmptyCell" id="2042272859106810466" />
       </scope>
-      <unit id="2042272859106810466" at="179,0,182,0" name="com.mbeddr.spreadsheet.editor.Row_EditorBuilder_a$LINKS" />
-      <unit id="2042272859106810466" at="183,0,186,0" name="com.mbeddr.spreadsheet.editor.Row_EditorBuilder_a$CONCEPTS" />
-      <unit id="2042272859106810471" at="64,88,68,5" name="com.mbeddr.spreadsheet.editor.Row_EditorBuilder_a$1" />
-      <unit id="2042272859106810466" at="84,0,169,0" name="com.mbeddr.spreadsheet.editor.Row_EditorBuilder_a$cellsListHandler_x9dt5l_b0" />
-      <unit id="2042272859106810466" at="34,0,187,0" name="com.mbeddr.spreadsheet.editor.Row_EditorBuilder_a" />
+      <unit id="2042272859106810466" at="179,0,182,0" name="com.mbeddr.spreadsheet.editor.Row_EditorBuilder$LINKS" />
+      <unit id="2042272859106810466" at="183,0,186,0" name="com.mbeddr.spreadsheet.editor.Row_EditorBuilder$CONCEPTS" />
+      <unit id="2042272859106810471" at="64,88,68,5" name="com.mbeddr.spreadsheet.editor.Row_EditorBuilder$1" />
+      <unit id="2042272859106810466" at="84,0,169,0" name="com.mbeddr.spreadsheet.editor.Row_EditorBuilder$cellsListHandler_x9dt5l_b0" />
+      <unit id="2042272859106810466" at="34,0,187,0" name="com.mbeddr.spreadsheet.editor.Row_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859106810479">
     <file name="TextCell_Editor.java">
-      <node id="2042272859106810479" at="11,79,12,74" concept="7" />
-      <node id="2042272859106810479" at="14,82,15,77" concept="7" />
+      <node id="2042272859106810479" at="11,79,12,72" concept="7" />
+      <node id="2042272859106810479" at="14,82,15,75" concept="7" />
       <node id="2042272859106810479" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2042272859106810479" at="14,0,17,0" concept="5" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2042272859106810479" at="11,79,12,74" />
-      <scope id="2042272859106810479" at="14,82,15,77" />
+      <scope id="2042272859106810479" at="11,79,12,72" />
+      <scope id="2042272859106810479" at="14,82,15,75" />
       <scope id="2042272859106810479" at="11,0,14,0">
         <var name="editorContext" id="2042272859106810479" />
         <var name="node" id="2042272859106810479" />
@@ -967,8 +967,8 @@
       </scope>
       <unit id="2042272859106810479" at="10,0,18,0" name="com.mbeddr.spreadsheet.editor.TextCell_Editor" />
     </file>
-    <file name="TextCell_EditorBuilder_a.java">
-      <node id="2042272859106810479" at="29,88,30,19" concept="10" />
+    <file name="TextCell_EditorBuilder.java">
+      <node id="2042272859106810479" at="29,86,30,19" concept="10" />
       <node id="2042272859106810479" at="30,19,31,18" concept="2" />
       <node id="2042272859106810479" at="36,26,37,18" concept="7" />
       <node id="2042272859106810479" at="40,39,41,30" concept="7" />
@@ -992,7 +992,7 @@
       <node id="2042272859106810479" at="73,0,74,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="2042272859106810479" at="26,0,28,0" concept="3" trace="myNode" />
       <node id="2042272859106810479" at="40,0,43,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2042272859106810479" at="29,0,33,0" concept="1" trace="TextCell_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859106810479" at="29,0,33,0" concept="1" trace="TextCell_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859106810479" at="34,0,39,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859106810481" at="57,208,62,24" concept="4" />
       <node id="2042272859106810481" at="45,39,65,5" concept="11" />
@@ -1000,7 +1000,7 @@
       <scope id="2042272859106810479" at="36,26,37,18" />
       <scope id="2042272859106810479" at="40,39,41,30" />
       <scope id="2042272859106810481" at="63,15,64,40" />
-      <scope id="2042272859106810479" at="29,88,31,18" />
+      <scope id="2042272859106810479" at="29,86,31,18" />
       <scope id="2042272859106810481" at="58,74,60,145">
         <var name="manager" id="2042272859106810481" />
       </scope>
@@ -1018,12 +1018,12 @@
       </scope>
       <scope id="2042272859106810481" at="44,41,65,5" />
       <scope id="2042272859106810481" at="44,0,67,0" />
-      <unit id="2042272859106810479" at="68,0,71,0" name="com.mbeddr.spreadsheet.editor.TextCell_EditorBuilder_a$PROPS" />
-      <unit id="2042272859106810479" at="72,0,75,0" name="com.mbeddr.spreadsheet.editor.TextCell_EditorBuilder_a$CONCEPTS" />
-      <unit id="2042272859106810479" at="25,0,76,0" name="com.mbeddr.spreadsheet.editor.TextCell_EditorBuilder_a" />
+      <unit id="2042272859106810479" at="68,0,71,0" name="com.mbeddr.spreadsheet.editor.TextCell_EditorBuilder$PROPS" />
+      <unit id="2042272859106810479" at="72,0,75,0" name="com.mbeddr.spreadsheet.editor.TextCell_EditorBuilder$CONCEPTS" />
+      <unit id="2042272859106810479" at="25,0,76,0" name="com.mbeddr.spreadsheet.editor.TextCell_EditorBuilder" />
     </file>
-    <file name="TextCell_InspectorBuilder_a.java">
-      <node id="2042272859106810479" at="37,91,38,19" concept="10" />
+    <file name="TextCell_InspectorBuilder.java">
+      <node id="2042272859106810479" at="37,89,38,19" concept="10" />
       <node id="2042272859106810479" at="38,19,39,18" concept="2" />
       <node id="2042272859106810479" at="44,26,45,18" concept="7" />
       <node id="2042272859106810479" at="48,39,49,32" concept="7" />
@@ -1089,7 +1089,7 @@
       <node id="2042272859107053542" at="103,0,105,0" concept="3" trace="myNode" />
       <node id="2042272859106810479" at="48,0,51,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2042272859107053542" at="113,0,116,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2042272859106810479" at="37,0,41,0" concept="1" trace="TextCell_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859106810479" at="37,0,41,0" concept="1" trace="TextCell_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859106810479" at="88,0,92,5" concept="4" />
       <node id="2042272859106810479" at="42,0,47,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859106810479" at="95,205,100,22" concept="4" />
@@ -1109,7 +1109,7 @@
       <scope id="2042272859107053542" at="113,41,114,32" />
       <scope id="2042272859107053542" at="119,28,120,20" />
       <scope id="2042272859107053544" at="140,17,141,42" />
-      <scope id="2042272859106810479" at="37,91,39,18" />
+      <scope id="2042272859106810479" at="37,89,39,18" />
       <scope id="2042272859106810479" at="89,40,91,44" />
       <scope id="2042272859106810479" at="96,73,98,145">
         <var name="manager" id="2042272859106810479" />
@@ -1165,27 +1165,27 @@
         <var name="referenceLink" id="2042272859106810479" />
       </scope>
       <scope id="2042272859106810479" at="74,0,102,0" />
-      <unit id="2042272859106810479" at="146,0,149,0" name="com.mbeddr.spreadsheet.editor.TextCell_InspectorBuilder_a$LINKS" />
-      <unit id="2042272859106810479" at="155,0,158,0" name="com.mbeddr.spreadsheet.editor.TextCell_InspectorBuilder_a$PROPS" />
-      <unit id="2042272859106810479" at="150,0,154,0" name="com.mbeddr.spreadsheet.editor.TextCell_InspectorBuilder_a$CONCEPTS" />
-      <unit id="2042272859106810479" at="76,42,84,5" name="com.mbeddr.spreadsheet.editor.TextCell_InspectorBuilder_a$1" />
-      <unit id="2042272859107053542" at="102,0,145,0" name="com.mbeddr.spreadsheet.editor.TextCell_InspectorBuilder_a$Inline_Builder0" />
-      <unit id="2042272859106810479" at="33,0,159,0" name="com.mbeddr.spreadsheet.editor.TextCell_InspectorBuilder_a" />
+      <unit id="2042272859106810479" at="146,0,149,0" name="com.mbeddr.spreadsheet.editor.TextCell_InspectorBuilder$LINKS" />
+      <unit id="2042272859106810479" at="155,0,158,0" name="com.mbeddr.spreadsheet.editor.TextCell_InspectorBuilder$PROPS" />
+      <unit id="2042272859106810479" at="150,0,154,0" name="com.mbeddr.spreadsheet.editor.TextCell_InspectorBuilder$CONCEPTS" />
+      <unit id="2042272859106810479" at="76,42,84,5" name="com.mbeddr.spreadsheet.editor.TextCell_InspectorBuilder$1" />
+      <unit id="2042272859107053542" at="102,0,145,0" name="com.mbeddr.spreadsheet.editor.TextCell_InspectorBuilder$Inline_Builder0" />
+      <unit id="2042272859106810479" at="33,0,159,0" name="com.mbeddr.spreadsheet.editor.TextCell_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859107001895">
     <file name="IGroup_Editor.java">
-      <node id="2042272859107001895" at="11,79,12,72" concept="7" />
+      <node id="2042272859107001895" at="11,79,12,70" concept="7" />
       <node id="2042272859107001895" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2042272859107001895" at="11,79,12,72" />
+      <scope id="2042272859107001895" at="11,79,12,70" />
       <scope id="2042272859107001895" at="11,0,14,0">
         <var name="editorContext" id="2042272859107001895" />
         <var name="node" id="2042272859107001895" />
       </scope>
       <unit id="2042272859107001895" at="10,0,15,0" name="com.mbeddr.spreadsheet.editor.IGroup_Editor" />
     </file>
-    <file name="IGroup_EditorBuilder_a.java">
-      <node id="2042272859107001895" at="32,86,33,19" concept="10" />
+    <file name="IGroup_EditorBuilder.java">
+      <node id="2042272859107001895" at="32,84,33,19" concept="10" />
       <node id="2042272859107001895" at="33,19,34,18" concept="2" />
       <node id="2042272859107001895" at="39,26,40,18" concept="7" />
       <node id="2042272859107001895" at="43,39,44,32" concept="7" />
@@ -1237,7 +1237,7 @@
       <node id="2042272859107001895" at="117,0,118,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="2042272859107001895" at="29,0,31,0" concept="3" trace="myNode" />
       <node id="2042272859107001895" at="43,0,46,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2042272859107001895" at="32,0,36,0" concept="1" trace="IGroup_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859107001895" at="32,0,36,0" concept="1" trace="IGroup_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6584628407654476024" at="58,0,62,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2042272859107001895" at="37,0,42,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859107001902" at="73,208,78,24" concept="4" />
@@ -1252,7 +1252,7 @@
       <scope id="2042272859107001895" at="43,39,44,32" />
       <scope id="2042272859107001902" at="79,15,80,40" />
       <scope id="2042272859107001906" at="106,15,107,40" />
-      <scope id="2042272859107001895" at="32,86,34,18" />
+      <scope id="2042272859107001895" at="32,84,34,18" />
       <scope id="6584628407654476024" at="58,42,60,22">
         <var name="editorCell" id="6584628407654476024" />
       </scope>
@@ -1293,24 +1293,24 @@
       <scope id="2042272859107001906" at="89,41,108,5" />
       <scope id="2042272859107001902" at="62,0,83,0" />
       <scope id="2042272859107001906" at="89,0,110,0" />
-      <unit id="2042272859107001895" at="116,0,119,0" name="com.mbeddr.spreadsheet.editor.IGroup_EditorBuilder_a$CONCEPTS" />
-      <unit id="2042272859107001895" at="111,0,115,0" name="com.mbeddr.spreadsheet.editor.IGroup_EditorBuilder_a$PROPS" />
-      <unit id="2042272859107001895" at="28,0,120,0" name="com.mbeddr.spreadsheet.editor.IGroup_EditorBuilder_a" />
+      <unit id="2042272859107001895" at="116,0,119,0" name="com.mbeddr.spreadsheet.editor.IGroup_EditorBuilder$CONCEPTS" />
+      <unit id="2042272859107001895" at="111,0,115,0" name="com.mbeddr.spreadsheet.editor.IGroup_EditorBuilder$PROPS" />
+      <unit id="2042272859107001895" at="28,0,120,0" name="com.mbeddr.spreadsheet.editor.IGroup_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859107062468">
     <file name="Style_Editor.java">
-      <node id="2042272859107062468" at="11,79,12,71" concept="7" />
+      <node id="2042272859107062468" at="11,79,12,69" concept="7" />
       <node id="2042272859107062468" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2042272859107062468" at="11,79,12,71" />
+      <scope id="2042272859107062468" at="11,79,12,69" />
       <scope id="2042272859107062468" at="11,0,14,0">
         <var name="editorContext" id="2042272859107062468" />
         <var name="node" id="2042272859107062468" />
       </scope>
       <unit id="2042272859107062468" at="10,0,15,0" name="com.mbeddr.spreadsheet.editor.Style_Editor" />
     </file>
-    <file name="Style_EditorBuilder_a.java">
-      <node id="2042272859107062468" at="48,85,49,19" concept="10" />
+    <file name="Style_EditorBuilder.java">
+      <node id="2042272859107062468" at="48,83,49,19" concept="10" />
       <node id="2042272859107062468" at="49,19,50,18" concept="2" />
       <node id="2042272859107062468" at="55,26,56,18" concept="7" />
       <node id="2042272859107062468" at="59,39,60,32" concept="7" />
@@ -1461,7 +1461,7 @@
       <node id="2042272859107062468" at="249,0,252,0" concept="5" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="2042272859107062468" at="252,0,255,0" concept="5" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="2042272859107062468" at="296,96,299,9" concept="4" />
-      <node id="2042272859107062468" at="48,0,52,0" concept="1" trace="Style_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859107062468" at="48,0,52,0" concept="1" trace="Style_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859107062468" at="143,0,147,0" concept="1" trace="propertiesListHandler_2kix31_a3a#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2042272859107062468" at="148,0,152,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859107062468" at="181,97,185,9" concept="4" />
@@ -1513,7 +1513,7 @@
       <scope id="2042272859107062468" at="252,48,253,31" />
       <scope id="2042272859107062468" at="270,17,271,42" />
       <scope id="2042272859107062468" at="297,34,298,91" />
-      <scope id="2042272859107062468" at="48,85,50,18" />
+      <scope id="2042272859107062468" at="48,83,50,18" />
       <scope id="2042272859107585348" at="100,74,102,145">
         <var name="manager" id="2042272859107585348" />
       </scope>
@@ -1635,12 +1635,12 @@
         <var name="elementNode" id="2042272859107062468" />
         <var name="isEmptyCell" id="2042272859107062468" />
       </scope>
-      <unit id="2042272859107062468" at="304,0,307,0" name="com.mbeddr.spreadsheet.editor.Style_EditorBuilder_a$PROPS" />
-      <unit id="2042272859107062468" at="314,0,318,0" name="com.mbeddr.spreadsheet.editor.Style_EditorBuilder_a$LINKS" />
-      <unit id="2042272859107062468" at="308,0,313,0" name="com.mbeddr.spreadsheet.editor.Style_EditorBuilder_a$CONCEPTS" />
-      <unit id="2042272859107062468" at="139,0,206,0" name="com.mbeddr.spreadsheet.editor.Style_EditorBuilder_a$propertiesListHandler_2kix31_a3a" />
-      <unit id="2042272859107062468" at="236,0,303,0" name="com.mbeddr.spreadsheet.editor.Style_EditorBuilder_a$substylesListHandler_2kix31_a5a" />
-      <unit id="2042272859107062468" at="44,0,319,0" name="com.mbeddr.spreadsheet.editor.Style_EditorBuilder_a" />
+      <unit id="2042272859107062468" at="304,0,307,0" name="com.mbeddr.spreadsheet.editor.Style_EditorBuilder$PROPS" />
+      <unit id="2042272859107062468" at="314,0,318,0" name="com.mbeddr.spreadsheet.editor.Style_EditorBuilder$LINKS" />
+      <unit id="2042272859107062468" at="308,0,313,0" name="com.mbeddr.spreadsheet.editor.Style_EditorBuilder$CONCEPTS" />
+      <unit id="2042272859107062468" at="139,0,206,0" name="com.mbeddr.spreadsheet.editor.Style_EditorBuilder$propertiesListHandler_2kix31_a3a" />
+      <unit id="2042272859107062468" at="236,0,303,0" name="com.mbeddr.spreadsheet.editor.Style_EditorBuilder$substylesListHandler_2kix31_a5a" />
+      <unit id="2042272859107062468" at="44,0,319,0" name="com.mbeddr.spreadsheet.editor.Style_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859107069669">
@@ -1714,17 +1714,17 @@
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859107090885">
     <file name="Color_Editor.java">
-      <node id="2042272859107090885" at="11,79,12,71" concept="7" />
+      <node id="2042272859107090885" at="11,79,12,69" concept="7" />
       <node id="2042272859107090885" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2042272859107090885" at="11,79,12,71" />
+      <scope id="2042272859107090885" at="11,79,12,69" />
       <scope id="2042272859107090885" at="11,0,14,0">
         <var name="editorContext" id="2042272859107090885" />
         <var name="node" id="2042272859107090885" />
       </scope>
       <unit id="2042272859107090885" at="10,0,15,0" name="com.mbeddr.spreadsheet.editor.Color_Editor" />
     </file>
-    <file name="Color_EditorBuilder_a.java">
-      <node id="2042272859107090885" at="32,85,33,19" concept="10" />
+    <file name="Color_EditorBuilder.java">
+      <node id="2042272859107090885" at="32,83,33,19" concept="10" />
       <node id="2042272859107090885" at="33,19,34,18" concept="2" />
       <node id="2042272859107090885" at="39,26,40,18" concept="7" />
       <node id="2042272859107090885" at="43,39,44,32" concept="7" />
@@ -1799,7 +1799,7 @@
       <node id="2042272859107090885" at="149,0,150,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="2042272859107090885" at="29,0,31,0" concept="3" trace="myNode" />
       <node id="2042272859107090885" at="43,0,46,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2042272859107090885" at="32,0,36,0" concept="1" trace="Color_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859107090885" at="32,0,36,0" concept="1" trace="Color_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859107090885" at="37,0,42,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859107090900" at="77,208,82,24" concept="4" />
       <node id="2042272859107090898" at="104,208,109,24" concept="4" />
@@ -1819,7 +1819,7 @@
       <scope id="2042272859107090900" at="83,15,84,40" />
       <scope id="2042272859107090898" at="110,15,111,40" />
       <scope id="2042272859107090896" at="137,15,138,40" />
-      <scope id="2042272859107090885" at="32,85,34,18" />
+      <scope id="2042272859107090885" at="32,83,34,18" />
       <scope id="2042272859107090900" at="78,74,80,145">
         <var name="manager" id="2042272859107090900" />
       </scope>
@@ -1875,24 +1875,24 @@
       <scope id="2042272859107090900" at="66,0,87,0" />
       <scope id="2042272859107090898" at="93,0,114,0" />
       <scope id="2042272859107090896" at="120,0,141,0" />
-      <unit id="2042272859107090885" at="148,0,151,0" name="com.mbeddr.spreadsheet.editor.Color_EditorBuilder_a$CONCEPTS" />
-      <unit id="2042272859107090885" at="142,0,147,0" name="com.mbeddr.spreadsheet.editor.Color_EditorBuilder_a$PROPS" />
-      <unit id="2042272859107090885" at="28,0,152,0" name="com.mbeddr.spreadsheet.editor.Color_EditorBuilder_a" />
+      <unit id="2042272859107090885" at="148,0,151,0" name="com.mbeddr.spreadsheet.editor.Color_EditorBuilder$CONCEPTS" />
+      <unit id="2042272859107090885" at="142,0,147,0" name="com.mbeddr.spreadsheet.editor.Color_EditorBuilder$PROPS" />
+      <unit id="2042272859107090885" at="28,0,152,0" name="com.mbeddr.spreadsheet.editor.Color_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859111083683">
     <file name="BooleanStyleProperty_Editor.java">
-      <node id="2042272859111083683" at="11,79,12,86" concept="7" />
+      <node id="2042272859111083683" at="11,79,12,84" concept="7" />
       <node id="2042272859111083683" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2042272859111083683" at="11,79,12,86" />
+      <scope id="2042272859111083683" at="11,79,12,84" />
       <scope id="2042272859111083683" at="11,0,14,0">
         <var name="editorContext" id="2042272859111083683" />
         <var name="node" id="2042272859111083683" />
       </scope>
       <unit id="2042272859111083683" at="10,0,15,0" name="com.mbeddr.spreadsheet.editor.BooleanStyleProperty_Editor" />
     </file>
-    <file name="BooleanStyleProperty_EditorBuilder_a.java">
-      <node id="2042272859111083683" at="31,100,32,19" concept="10" />
+    <file name="BooleanStyleProperty_EditorBuilder.java">
+      <node id="2042272859111083683" at="31,98,32,19" concept="10" />
       <node id="2042272859111083683" at="32,19,33,18" concept="2" />
       <node id="2042272859111083683" at="38,26,39,18" concept="7" />
       <node id="2042272859111083683" at="42,39,43,32" concept="7" />
@@ -1923,7 +1923,7 @@
       <node id="2042272859111083683" at="86,0,87,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="2042272859111083683" at="28,0,30,0" concept="3" trace="myNode" />
       <node id="2042272859111083683" at="42,0,45,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2042272859111083683" at="31,0,35,0" concept="1" trace="BooleanStyleProperty_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859111083683" at="31,0,35,0" concept="1" trace="BooleanStyleProperty_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859111088542" at="55,0,59,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2042272859111083683" at="36,0,41,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859111083692" at="70,208,75,24" concept="4" />
@@ -1933,7 +1933,7 @@
       <scope id="2042272859111083683" at="38,26,39,18" />
       <scope id="2042272859111083683" at="42,39,43,32" />
       <scope id="2042272859111083692" at="76,15,77,40" />
-      <scope id="2042272859111083683" at="31,100,33,18" />
+      <scope id="2042272859111083683" at="31,98,33,18" />
       <scope id="2042272859111088542" at="55,42,57,22">
         <var name="editorCell" id="2042272859111088542" />
       </scope>
@@ -1959,24 +1959,24 @@
       </scope>
       <scope id="2042272859111083692" at="59,41,78,5" />
       <scope id="2042272859111083692" at="59,0,80,0" />
-      <unit id="2042272859111083683" at="81,0,84,0" name="com.mbeddr.spreadsheet.editor.BooleanStyleProperty_EditorBuilder_a$PROPS" />
-      <unit id="2042272859111083683" at="85,0,88,0" name="com.mbeddr.spreadsheet.editor.BooleanStyleProperty_EditorBuilder_a$CONCEPTS" />
-      <unit id="2042272859111083683" at="27,0,89,0" name="com.mbeddr.spreadsheet.editor.BooleanStyleProperty_EditorBuilder_a" />
+      <unit id="2042272859111083683" at="81,0,84,0" name="com.mbeddr.spreadsheet.editor.BooleanStyleProperty_EditorBuilder$PROPS" />
+      <unit id="2042272859111083683" at="85,0,88,0" name="com.mbeddr.spreadsheet.editor.BooleanStyleProperty_EditorBuilder$CONCEPTS" />
+      <unit id="2042272859111083683" at="27,0,89,0" name="com.mbeddr.spreadsheet.editor.BooleanStyleProperty_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859111088511">
     <file name="FontStyleProperty_Editor.java">
-      <node id="2042272859111088511" at="11,79,12,83" concept="7" />
+      <node id="2042272859111088511" at="11,79,12,81" concept="7" />
       <node id="2042272859111088511" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2042272859111088511" at="11,79,12,83" />
+      <scope id="2042272859111088511" at="11,79,12,81" />
       <scope id="2042272859111088511" at="11,0,14,0">
         <var name="editorContext" id="2042272859111088511" />
         <var name="node" id="2042272859111088511" />
       </scope>
       <unit id="2042272859111088511" at="10,0,15,0" name="com.mbeddr.spreadsheet.editor.FontStyleProperty_Editor" />
     </file>
-    <file name="FontStyleProperty_EditorBuilder_a.java">
-      <node id="2042272859111088511" at="31,97,32,19" concept="10" />
+    <file name="FontStyleProperty_EditorBuilder.java">
+      <node id="2042272859111088511" at="31,95,32,19" concept="10" />
       <node id="2042272859111088511" at="32,19,33,18" concept="2" />
       <node id="2042272859111088511" at="38,26,39,18" concept="7" />
       <node id="2042272859111088511" at="42,39,43,32" concept="7" />
@@ -2007,7 +2007,7 @@
       <node id="2042272859111088511" at="86,0,87,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="2042272859111088511" at="28,0,30,0" concept="3" trace="myNode" />
       <node id="2042272859111088511" at="42,0,45,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2042272859111088511" at="31,0,35,0" concept="1" trace="FontStyleProperty_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859111088511" at="31,0,35,0" concept="1" trace="FontStyleProperty_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859111088545" at="55,0,59,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2042272859111088511" at="36,0,41,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859111088547" at="70,208,75,24" concept="4" />
@@ -2017,7 +2017,7 @@
       <scope id="2042272859111088511" at="38,26,39,18" />
       <scope id="2042272859111088511" at="42,39,43,32" />
       <scope id="2042272859111088547" at="76,15,77,40" />
-      <scope id="2042272859111088511" at="31,97,33,18" />
+      <scope id="2042272859111088511" at="31,95,33,18" />
       <scope id="2042272859111088545" at="55,42,57,22">
         <var name="editorCell" id="2042272859111088545" />
       </scope>
@@ -2043,19 +2043,19 @@
       </scope>
       <scope id="2042272859111088547" at="59,41,78,5" />
       <scope id="2042272859111088547" at="59,0,80,0" />
-      <unit id="2042272859111088511" at="81,0,84,0" name="com.mbeddr.spreadsheet.editor.FontStyleProperty_EditorBuilder_a$PROPS" />
-      <unit id="2042272859111088511" at="85,0,88,0" name="com.mbeddr.spreadsheet.editor.FontStyleProperty_EditorBuilder_a$CONCEPTS" />
-      <unit id="2042272859111088511" at="27,0,89,0" name="com.mbeddr.spreadsheet.editor.FontStyleProperty_EditorBuilder_a" />
+      <unit id="2042272859111088511" at="81,0,84,0" name="com.mbeddr.spreadsheet.editor.FontStyleProperty_EditorBuilder$PROPS" />
+      <unit id="2042272859111088511" at="85,0,88,0" name="com.mbeddr.spreadsheet.editor.FontStyleProperty_EditorBuilder$CONCEPTS" />
+      <unit id="2042272859111088511" at="27,0,89,0" name="com.mbeddr.spreadsheet.editor.FontStyleProperty_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859111088520">
     <file name="alias.java">
       <node id="2042272859111088520" at="15,47,16,35" concept="7" />
-      <node id="2042272859111088520" at="18,79,19,74" concept="7" />
+      <node id="2042272859111088520" at="18,79,19,72" concept="7" />
       <node id="2042272859111088520" at="18,0,21,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2042272859111088520" at="14,0,18,0" concept="5" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="2042272859111088520" at="15,47,16,35" />
-      <scope id="2042272859111088520" at="18,79,19,74" />
+      <scope id="2042272859111088520" at="18,79,19,72" />
       <scope id="2042272859111088520" at="18,0,21,0">
         <var name="editorContext" id="2042272859111088520" />
         <var name="node" id="2042272859111088520" />
@@ -2063,8 +2063,8 @@
       <scope id="2042272859111088520" at="14,0,18,0" />
       <unit id="2042272859111088520" at="13,0,22,0" name="com.mbeddr.spreadsheet.editor.alias" />
     </file>
-    <file name="alias_ComponentBuilder_a.java">
-      <node id="2042272859111088520" at="21,88,22,19" concept="10" />
+    <file name="alias_ComponentBuilder.java">
+      <node id="2042272859111088520" at="21,86,22,19" concept="10" />
       <node id="2042272859111088520" at="22,19,23,18" concept="2" />
       <node id="2042272859111088520" at="28,26,29,18" concept="7" />
       <node id="2042272859111088520" at="32,39,33,32" concept="7" />
@@ -2084,14 +2084,14 @@
       <node id="2042272859111088518" at="53,34,54,22" concept="7" />
       <node id="2042272859111088520" at="18,0,20,0" concept="3" trace="myNode" />
       <node id="2042272859111088520" at="32,0,35,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2042272859111088520" at="21,0,25,0" concept="1" trace="alias_ComponentBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859111088520" at="21,0,25,0" concept="1" trace="alias_ComponentBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6584628407654476021" at="43,0,47,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2042272859111088520" at="26,0,31,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859111088520" at="36,0,43,0" concept="5" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2042272859111088518" at="47,0,56,0" concept="5" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="2042272859111088520" at="28,26,29,18" />
       <scope id="2042272859111088520" at="32,39,33,32" />
-      <scope id="2042272859111088520" at="21,88,23,18" />
+      <scope id="2042272859111088520" at="21,86,23,18" />
       <scope id="6584628407654476021" at="43,42,45,22">
         <var name="editorCell" id="6584628407654476021" />
       </scope>
@@ -2111,22 +2111,22 @@
         <var name="style" id="2042272859111088518" />
       </scope>
       <scope id="2042272859111088518" at="47,0,56,0" />
-      <unit id="2042272859111088520" at="17,0,57,0" name="com.mbeddr.spreadsheet.editor.alias_ComponentBuilder_a" />
+      <unit id="2042272859111088520" at="17,0,57,0" name="com.mbeddr.spreadsheet.editor.alias_ComponentBuilder" />
     </file>
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859111088551">
     <file name="AlignmentStyleProperty_Editor.java">
-      <node id="2042272859111088551" at="11,79,12,88" concept="7" />
+      <node id="2042272859111088551" at="11,79,12,86" concept="7" />
       <node id="2042272859111088551" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2042272859111088551" at="11,79,12,88" />
+      <scope id="2042272859111088551" at="11,79,12,86" />
       <scope id="2042272859111088551" at="11,0,14,0">
         <var name="editorContext" id="2042272859111088551" />
         <var name="node" id="2042272859111088551" />
       </scope>
       <unit id="2042272859111088551" at="10,0,15,0" name="com.mbeddr.spreadsheet.editor.AlignmentStyleProperty_Editor" />
     </file>
-    <file name="AlignmentStyleProperty_EditorBuilder_a.java">
-      <node id="2042272859111088551" at="31,102,32,19" concept="10" />
+    <file name="AlignmentStyleProperty_EditorBuilder.java">
+      <node id="2042272859111088551" at="31,100,32,19" concept="10" />
       <node id="2042272859111088551" at="32,19,33,18" concept="2" />
       <node id="2042272859111088551" at="38,26,39,18" concept="7" />
       <node id="2042272859111088551" at="42,39,43,32" concept="7" />
@@ -2157,7 +2157,7 @@
       <node id="2042272859111088551" at="86,0,87,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="2042272859111088551" at="28,0,30,0" concept="3" trace="myNode" />
       <node id="2042272859111088551" at="42,0,45,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2042272859111088551" at="31,0,35,0" concept="1" trace="AlignmentStyleProperty_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859111088551" at="31,0,35,0" concept="1" trace="AlignmentStyleProperty_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859111088556" at="55,0,59,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2042272859111088551" at="36,0,41,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859111088558" at="70,208,75,24" concept="4" />
@@ -2167,7 +2167,7 @@
       <scope id="2042272859111088551" at="38,26,39,18" />
       <scope id="2042272859111088551" at="42,39,43,32" />
       <scope id="2042272859111088558" at="76,15,77,40" />
-      <scope id="2042272859111088551" at="31,102,33,18" />
+      <scope id="2042272859111088551" at="31,100,33,18" />
       <scope id="2042272859111088556" at="55,42,57,22">
         <var name="editorCell" id="2042272859111088556" />
       </scope>
@@ -2193,24 +2193,24 @@
       </scope>
       <scope id="2042272859111088558" at="59,41,78,5" />
       <scope id="2042272859111088558" at="59,0,80,0" />
-      <unit id="2042272859111088551" at="81,0,84,0" name="com.mbeddr.spreadsheet.editor.AlignmentStyleProperty_EditorBuilder_a$PROPS" />
-      <unit id="2042272859111088551" at="85,0,88,0" name="com.mbeddr.spreadsheet.editor.AlignmentStyleProperty_EditorBuilder_a$CONCEPTS" />
-      <unit id="2042272859111088551" at="27,0,89,0" name="com.mbeddr.spreadsheet.editor.AlignmentStyleProperty_EditorBuilder_a" />
+      <unit id="2042272859111088551" at="81,0,84,0" name="com.mbeddr.spreadsheet.editor.AlignmentStyleProperty_EditorBuilder$PROPS" />
+      <unit id="2042272859111088551" at="85,0,88,0" name="com.mbeddr.spreadsheet.editor.AlignmentStyleProperty_EditorBuilder$CONCEPTS" />
+      <unit id="2042272859111088551" at="27,0,89,0" name="com.mbeddr.spreadsheet.editor.AlignmentStyleProperty_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859111088566">
     <file name="BorderStyleProperty_Editor.java">
-      <node id="2042272859111088566" at="11,79,12,85" concept="7" />
+      <node id="2042272859111088566" at="11,79,12,83" concept="7" />
       <node id="2042272859111088566" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2042272859111088566" at="11,79,12,85" />
+      <scope id="2042272859111088566" at="11,79,12,83" />
       <scope id="2042272859111088566" at="11,0,14,0">
         <var name="editorContext" id="2042272859111088566" />
         <var name="node" id="2042272859111088566" />
       </scope>
       <unit id="2042272859111088566" at="10,0,15,0" name="com.mbeddr.spreadsheet.editor.BorderStyleProperty_Editor" />
     </file>
-    <file name="BorderStyleProperty_EditorBuilder_a.java">
-      <node id="2042272859111088566" at="31,99,32,19" concept="10" />
+    <file name="BorderStyleProperty_EditorBuilder.java">
+      <node id="2042272859111088566" at="31,97,32,19" concept="10" />
       <node id="2042272859111088566" at="32,19,33,18" concept="2" />
       <node id="2042272859111088566" at="38,26,39,18" concept="7" />
       <node id="2042272859111088566" at="42,39,43,32" concept="7" />
@@ -2241,7 +2241,7 @@
       <node id="2042272859111088566" at="86,0,87,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="2042272859111088566" at="28,0,30,0" concept="3" trace="myNode" />
       <node id="2042272859111088566" at="42,0,45,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2042272859111088566" at="31,0,35,0" concept="1" trace="BorderStyleProperty_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859111088566" at="31,0,35,0" concept="1" trace="BorderStyleProperty_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859111088571" at="55,0,59,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2042272859111088566" at="36,0,41,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859111088573" at="70,208,75,24" concept="4" />
@@ -2251,7 +2251,7 @@
       <scope id="2042272859111088566" at="38,26,39,18" />
       <scope id="2042272859111088566" at="42,39,43,32" />
       <scope id="2042272859111088573" at="76,15,77,40" />
-      <scope id="2042272859111088566" at="31,99,33,18" />
+      <scope id="2042272859111088566" at="31,97,33,18" />
       <scope id="2042272859111088571" at="55,42,57,22">
         <var name="editorCell" id="2042272859111088571" />
       </scope>
@@ -2277,24 +2277,24 @@
       </scope>
       <scope id="2042272859111088573" at="59,41,78,5" />
       <scope id="2042272859111088573" at="59,0,80,0" />
-      <unit id="2042272859111088566" at="81,0,84,0" name="com.mbeddr.spreadsheet.editor.BorderStyleProperty_EditorBuilder_a$PROPS" />
-      <unit id="2042272859111088566" at="85,0,88,0" name="com.mbeddr.spreadsheet.editor.BorderStyleProperty_EditorBuilder_a$CONCEPTS" />
-      <unit id="2042272859111088566" at="27,0,89,0" name="com.mbeddr.spreadsheet.editor.BorderStyleProperty_EditorBuilder_a" />
+      <unit id="2042272859111088566" at="81,0,84,0" name="com.mbeddr.spreadsheet.editor.BorderStyleProperty_EditorBuilder$PROPS" />
+      <unit id="2042272859111088566" at="85,0,88,0" name="com.mbeddr.spreadsheet.editor.BorderStyleProperty_EditorBuilder$CONCEPTS" />
+      <unit id="2042272859111088566" at="27,0,89,0" name="com.mbeddr.spreadsheet.editor.BorderStyleProperty_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/2042272859111088582">
     <file name="ColorStyleProperty_Editor.java">
-      <node id="2042272859111088582" at="11,79,12,84" concept="7" />
+      <node id="2042272859111088582" at="11,79,12,82" concept="7" />
       <node id="2042272859111088582" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2042272859111088582" at="11,79,12,84" />
+      <scope id="2042272859111088582" at="11,79,12,82" />
       <scope id="2042272859111088582" at="11,0,14,0">
         <var name="editorContext" id="2042272859111088582" />
         <var name="node" id="2042272859111088582" />
       </scope>
       <unit id="2042272859111088582" at="10,0,15,0" name="com.mbeddr.spreadsheet.editor.ColorStyleProperty_Editor" />
     </file>
-    <file name="ColorStyleProperty_EditorBuilder_a.java">
-      <node id="2042272859111088582" at="35,98,36,19" concept="10" />
+    <file name="ColorStyleProperty_EditorBuilder.java">
+      <node id="2042272859111088582" at="35,96,36,19" concept="10" />
       <node id="2042272859111088582" at="36,19,37,18" concept="2" />
       <node id="2042272859111088582" at="42,26,43,18" concept="7" />
       <node id="2042272859111088582" at="46,39,47,32" concept="7" />
@@ -2374,7 +2374,7 @@
       <node id="2042272859111088582" at="159,0,160,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="2042272859111088582" at="32,0,34,0" concept="3" trace="myNode" />
       <node id="2042272859111088582" at="46,0,49,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2042272859111088582" at="35,0,39,0" concept="1" trace="ColorStyleProperty_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2042272859111088582" at="35,0,39,0" concept="1" trace="ColorStyleProperty_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2042272859111088587" at="59,0,63,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2042272859111088582" at="40,0,45,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2042272859111088589" at="87,208,92,24" concept="4" />
@@ -2395,7 +2395,7 @@
       <scope id="2042272859111088589" at="93,15,94,40" />
       <scope id="2042272859111088593" at="120,15,121,40" />
       <scope id="2042272859111088597" at="147,15,148,40" />
-      <scope id="2042272859111088582" at="35,98,37,18" />
+      <scope id="2042272859111088582" at="35,96,37,18" />
       <scope id="2042272859111088587" at="59,42,61,22">
         <var name="editorCell" id="2042272859111088587" />
       </scope>
@@ -2456,24 +2456,24 @@
       <scope id="2042272859111088589" at="76,0,97,0" />
       <scope id="2042272859111088593" at="103,0,124,0" />
       <scope id="2042272859111088597" at="130,0,151,0" />
-      <unit id="2042272859111088582" at="158,0,161,0" name="com.mbeddr.spreadsheet.editor.ColorStyleProperty_EditorBuilder_a$CONCEPTS" />
-      <unit id="2042272859111088582" at="152,0,157,0" name="com.mbeddr.spreadsheet.editor.ColorStyleProperty_EditorBuilder_a$PROPS" />
-      <unit id="2042272859111088582" at="31,0,162,0" name="com.mbeddr.spreadsheet.editor.ColorStyleProperty_EditorBuilder_a" />
+      <unit id="2042272859111088582" at="158,0,161,0" name="com.mbeddr.spreadsheet.editor.ColorStyleProperty_EditorBuilder$CONCEPTS" />
+      <unit id="2042272859111088582" at="152,0,157,0" name="com.mbeddr.spreadsheet.editor.ColorStyleProperty_EditorBuilder$PROPS" />
+      <unit id="2042272859111088582" at="31,0,162,0" name="com.mbeddr.spreadsheet.editor.ColorStyleProperty_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:31b17a4e-c6a6-46a5-855a-f4509277837f(com.mbeddr.spreadsheet.editor)/8857110853482109459">
     <file name="FontSizeStyleProperty_Editor.java">
-      <node id="8857110853482109459" at="11,79,12,87" concept="7" />
+      <node id="8857110853482109459" at="11,79,12,85" concept="7" />
       <node id="8857110853482109459" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8857110853482109459" at="11,79,12,87" />
+      <scope id="8857110853482109459" at="11,79,12,85" />
       <scope id="8857110853482109459" at="11,0,14,0">
         <var name="editorContext" id="8857110853482109459" />
         <var name="node" id="8857110853482109459" />
       </scope>
       <unit id="8857110853482109459" at="10,0,15,0" name="com.mbeddr.spreadsheet.editor.FontSizeStyleProperty_Editor" />
     </file>
-    <file name="FontSizeStyleProperty_EditorBuilder_a.java">
-      <node id="8857110853482109459" at="31,101,32,19" concept="10" />
+    <file name="FontSizeStyleProperty_EditorBuilder.java">
+      <node id="8857110853482109459" at="31,99,32,19" concept="10" />
       <node id="8857110853482109459" at="32,19,33,18" concept="2" />
       <node id="8857110853482109459" at="38,26,39,18" concept="7" />
       <node id="8857110853482109459" at="42,39,43,32" concept="7" />
@@ -2504,7 +2504,7 @@
       <node id="8857110853482109459" at="86,0,87,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="8857110853482109459" at="28,0,30,0" concept="3" trace="myNode" />
       <node id="8857110853482109459" at="42,0,45,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8857110853482109459" at="31,0,35,0" concept="1" trace="FontSizeStyleProperty_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8857110853482109459" at="31,0,35,0" concept="1" trace="FontSizeStyleProperty_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8857110853482109464" at="55,0,59,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8857110853482109459" at="36,0,41,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8857110853482109466" at="70,208,75,24" concept="4" />
@@ -2514,7 +2514,7 @@
       <scope id="8857110853482109459" at="38,26,39,18" />
       <scope id="8857110853482109459" at="42,39,43,32" />
       <scope id="8857110853482109466" at="76,15,77,40" />
-      <scope id="8857110853482109459" at="31,101,33,18" />
+      <scope id="8857110853482109459" at="31,99,33,18" />
       <scope id="8857110853482109464" at="55,42,57,22">
         <var name="editorCell" id="8857110853482109464" />
       </scope>
@@ -2540,9 +2540,9 @@
       </scope>
       <scope id="8857110853482109466" at="59,41,78,5" />
       <scope id="8857110853482109466" at="59,0,80,0" />
-      <unit id="8857110853482109459" at="81,0,84,0" name="com.mbeddr.spreadsheet.editor.FontSizeStyleProperty_EditorBuilder_a$PROPS" />
-      <unit id="8857110853482109459" at="85,0,88,0" name="com.mbeddr.spreadsheet.editor.FontSizeStyleProperty_EditorBuilder_a$CONCEPTS" />
-      <unit id="8857110853482109459" at="27,0,89,0" name="com.mbeddr.spreadsheet.editor.FontSizeStyleProperty_EditorBuilder_a" />
+      <unit id="8857110853482109459" at="81,0,84,0" name="com.mbeddr.spreadsheet.editor.FontSizeStyleProperty_EditorBuilder$PROPS" />
+      <unit id="8857110853482109459" at="85,0,88,0" name="com.mbeddr.spreadsheet.editor.FontSizeStyleProperty_EditorBuilder$CONCEPTS" />
+      <unit id="8857110853482109459" at="27,0,89,0" name="com.mbeddr.spreadsheet.editor.FontSizeStyleProperty_EditorBuilder" />
     </file>
   </root>
 </debug-info>

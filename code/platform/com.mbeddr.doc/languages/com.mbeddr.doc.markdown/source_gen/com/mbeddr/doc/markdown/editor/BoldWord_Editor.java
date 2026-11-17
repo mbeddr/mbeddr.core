@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class BoldWord_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new BoldWord_EditorBuilder_a(editorContext, node).createCell();
+    return new BoldWord_EditorBuilder(editorContext, node).createCell();
   }
 }

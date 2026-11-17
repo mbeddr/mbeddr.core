@@ -17,17 +17,17 @@
   </root>
   <root nodeRef="r:4134f9a0-5d04-47f1-8254-558aaa3cf739(com.mbeddr.mpsutil.iconchar.editor)/8866176685648721555">
     <file name="IconChar_Editor.java">
-      <node id="8866176685648721555" at="11,79,12,74" concept="6" />
+      <node id="8866176685648721555" at="11,79,12,72" concept="6" />
       <node id="8866176685648721555" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8866176685648721555" at="11,79,12,74" />
+      <scope id="8866176685648721555" at="11,79,12,72" />
       <scope id="8866176685648721555" at="11,0,14,0">
         <var name="editorContext" id="8866176685648721555" />
         <var name="node" id="8866176685648721555" />
       </scope>
       <unit id="8866176685648721555" at="10,0,15,0" name="com.mbeddr.mpsutil.iconchar.editor.IconChar_Editor" />
     </file>
-    <file name="IconChar_EditorBuilder_a.java">
-      <node id="8866176685648721555" at="36,88,37,19" concept="8" />
+    <file name="IconChar_EditorBuilder.java">
+      <node id="8866176685648721555" at="36,86,37,19" concept="8" />
       <node id="8866176685648721555" at="37,19,38,18" concept="1" />
       <node id="8866176685648721555" at="43,26,44,18" concept="6" />
       <node id="8866176685648721555" at="47,39,48,32" concept="6" />
@@ -170,7 +170,7 @@
       <node id="8866176685648721555" at="247,0,248,0" concept="7" trace="PropertyAttribute$Gb" />
       <node id="8866176685648721555" at="33,0,35,0" concept="2" trace="myNode" />
       <node id="8866176685648721555" at="47,0,50,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8866176685648721555" at="36,0,40,0" concept="0" trace="IconChar_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8866176685648721555" at="36,0,40,0" concept="0" trace="IconChar_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8866176685648721555" at="41,0,46,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8866176685648726323" at="88,208,93,24" concept="3" />
       <node id="8866176685648726371" at="136,208,141,24" concept="3" />
@@ -204,7 +204,7 @@
       <scope id="8866176685648726423" at="169,15,170,40" />
       <scope id="8866176685648726512" at="196,15,197,40" />
       <scope id="6919889078244835234" at="233,15,234,40" />
-      <scope id="8866176685648721555" at="36,88,38,18" />
+      <scope id="8866176685648721555" at="36,86,38,18" />
       <scope id="8866176685648726323" at="89,74,91,145">
         <var name="manager" id="8866176685648726323" />
       </scope>
@@ -309,9 +309,9 @@
       <scope id="8866176685648726423" at="152,0,173,0" />
       <scope id="8866176685648726512" at="179,0,200,0" />
       <scope id="6919889078244835234" at="216,0,237,0" />
-      <unit id="8866176685648721555" at="246,0,249,0" name="com.mbeddr.mpsutil.iconchar.editor.IconChar_EditorBuilder_a$CONCEPTS" />
-      <unit id="8866176685648721555" at="238,0,245,0" name="com.mbeddr.mpsutil.iconchar.editor.IconChar_EditorBuilder_a$PROPS" />
-      <unit id="8866176685648721555" at="32,0,250,0" name="com.mbeddr.mpsutil.iconchar.editor.IconChar_EditorBuilder_a" />
+      <unit id="8866176685648721555" at="246,0,249,0" name="com.mbeddr.mpsutil.iconchar.editor.IconChar_EditorBuilder$CONCEPTS" />
+      <unit id="8866176685648721555" at="238,0,245,0" name="com.mbeddr.mpsutil.iconchar.editor.IconChar_EditorBuilder$PROPS" />
+      <unit id="8866176685648721555" at="32,0,250,0" name="com.mbeddr.mpsutil.iconchar.editor.IconChar_EditorBuilder" />
     </file>
   </root>
 </debug-info>

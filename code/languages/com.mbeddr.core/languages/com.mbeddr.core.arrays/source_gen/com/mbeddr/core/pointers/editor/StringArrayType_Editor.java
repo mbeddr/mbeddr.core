@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class StringArrayType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new StringArrayType_EditorBuilder_a(editorContext, node).createCell();
+    return new StringArrayType_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new StringArrayType_InspectorBuilder_a(editorContext, node).createCell();
+    return new StringArrayType_InspectorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class EventArgRef_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new EventArgRef_EditorBuilder_a(editorContext, node).createCell();
+    return new EventArgRef_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new EventArgRef_InspectorBuilder_a(editorContext, node).createCell();
+    return new EventArgRef_InspectorBuilder(editorContext, node).createCell();
   }
 }

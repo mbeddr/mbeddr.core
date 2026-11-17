@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class TermRefWord_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TermRefWord_EditorBuilder_a(editorContext, node).createCell();
+    return new TermRefWord_EditorBuilder(editorContext, node).createCell();
   }
 }

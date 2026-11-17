@@ -16,6 +16,6 @@ public class IStoreInRegisterComponent implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new IStoreInRegisterComponent_ComponentBuilder_a(editorContext, node).createCell();
+    return new IStoreInRegisterComponent_ComponentBuilder(editorContext, node).createCell();
   }
 }

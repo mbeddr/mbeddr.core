@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ExpectNoCall_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ExpectNoCall_EditorBuilder_a(editorContext, node).createCell();
+    return new ExpectNoCall_EditorBuilder(editorContext, node).createCell();
   }
 }

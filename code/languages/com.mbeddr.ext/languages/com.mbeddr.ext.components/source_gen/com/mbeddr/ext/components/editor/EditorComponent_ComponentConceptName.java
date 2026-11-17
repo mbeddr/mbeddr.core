@@ -16,6 +16,6 @@ public class EditorComponent_ComponentConceptName implements ConceptEditorCompon
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new EditorComponent_ComponentConceptName_ComponentBuilder_a(editorContext, node).createCell();
+    return new EditorComponent_ComponentConceptName_ComponentBuilder(editorContext, node).createCell();
   }
 }

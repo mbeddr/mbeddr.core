@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class DummyMangledNameFinalizer_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DummyMangledNameFinalizer_EditorBuilder_a(editorContext, node).createCell();
+    return new DummyMangledNameFinalizer_EditorBuilder(editorContext, node).createCell();
   }
 }

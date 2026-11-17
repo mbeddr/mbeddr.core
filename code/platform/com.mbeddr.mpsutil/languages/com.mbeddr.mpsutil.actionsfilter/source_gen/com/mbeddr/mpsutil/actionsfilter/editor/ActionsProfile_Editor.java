@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ActionsProfile_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ActionsProfile_EditorBuilder_a(editorContext, node).createCell();
+    return new ActionsProfile_EditorBuilder(editorContext, node).createCell();
   }
 }

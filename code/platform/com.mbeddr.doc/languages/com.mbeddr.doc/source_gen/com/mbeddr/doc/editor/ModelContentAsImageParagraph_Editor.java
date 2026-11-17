@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ModelContentAsImageParagraph_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ModelContentAsImageParagraph_EditorBuilder_a(editorContext, node).createCell();
+    return new ModelContentAsImageParagraph_EditorBuilder(editorContext, node).createCell();
   }
 }

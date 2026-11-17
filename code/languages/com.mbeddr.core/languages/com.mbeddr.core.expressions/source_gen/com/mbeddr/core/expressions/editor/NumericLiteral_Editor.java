@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class NumericLiteral_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new NumericLiteral_EditorBuilder_a(editorContext, node).createCell();
+    return new NumericLiteral_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new NumericLiteral_InspectorBuilder_a(editorContext, node).createCell();
+    return new NumericLiteral_InspectorBuilder(editorContext, node).createCell();
   }
 }

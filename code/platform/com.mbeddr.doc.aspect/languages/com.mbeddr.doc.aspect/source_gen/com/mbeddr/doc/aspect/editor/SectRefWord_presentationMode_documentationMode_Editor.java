@@ -18,6 +18,6 @@ public class SectRefWord_presentationMode_documentationMode_Editor extends Defau
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SectRefWord_presentationMode_documentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new SectRefWord_presentationMode_documentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

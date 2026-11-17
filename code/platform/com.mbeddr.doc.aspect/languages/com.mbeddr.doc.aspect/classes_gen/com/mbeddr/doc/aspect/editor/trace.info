@@ -27,12 +27,12 @@
   </root>
   <root nodeRef="r:23ce84b3-7dc4-479d-a4ba-481817934114(com.mbeddr.doc.aspect.editor)/1058510331725761222">
     <file name="DocumentedConceptAnnotation_Editor.java">
-      <node id="1058510331725761222" at="11,79,12,93" concept="6" />
-      <node id="1058510331725761222" at="14,82,15,96" concept="6" />
+      <node id="1058510331725761222" at="11,79,12,91" concept="6" />
+      <node id="1058510331725761222" at="14,82,15,94" concept="6" />
       <node id="1058510331725761222" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1058510331725761222" at="14,0,17,0" concept="4" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="1058510331725761222" at="11,79,12,93" />
-      <scope id="1058510331725761222" at="14,82,15,96" />
+      <scope id="1058510331725761222" at="11,79,12,91" />
+      <scope id="1058510331725761222" at="14,82,15,94" />
       <scope id="1058510331725761222" at="11,0,14,0">
         <var name="editorContext" id="1058510331725761222" />
         <var name="node" id="1058510331725761222" />
@@ -43,8 +43,8 @@
       </scope>
       <unit id="1058510331725761222" at="10,0,18,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_Editor" />
     </file>
-    <file name="DocumentedConceptAnnotation_EditorBuilder_a.java">
-      <node id="1058510331725761222" at="47,107,48,19" concept="11" />
+    <file name="DocumentedConceptAnnotation_EditorBuilder.java">
+      <node id="1058510331725761222" at="47,105,48,19" concept="11" />
       <node id="1058510331725761222" at="48,19,49,18" concept="1" />
       <node id="1058510331725761222" at="54,26,55,18" concept="6" />
       <node id="1058510331725761222" at="58,39,59,32" concept="6" />
@@ -135,7 +135,7 @@
       <node id="1058510331725761369" at="127,0,129,0" concept="2" trace="myNode" />
       <node id="1058510331725761222" at="58,0,61,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1058510331725761369" at="137,0,140,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1058510331725761222" at="47,0,51,0" concept="0" trace="DocumentedConceptAnnotation_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1058510331725761222" at="47,0,51,0" concept="0" trace="DocumentedConceptAnnotation_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1058510331725761222" at="112,0,116,5" concept="3" />
       <node id="1058510331725761222" at="52,0,57,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1058510331725761222" at="119,205,124,22" concept="3" />
@@ -158,7 +158,7 @@
       <scope id="1058510331725761369" at="137,41,138,32" />
       <scope id="1058510331725761369" at="143,28,144,20" />
       <scope id="1058510331725761378" at="167,17,168,42" />
-      <scope id="1058510331725761222" at="47,107,49,18" />
+      <scope id="1058510331725761222" at="47,105,49,18" />
       <scope id="1058510331725761222" at="113,40,115,46" />
       <scope id="1058510331725761222" at="120,73,122,145">
         <var name="manager" id="1058510331725761222" />
@@ -232,15 +232,15 @@
         <var name="referenceLink" id="1058510331725761222" />
       </scope>
       <scope id="1058510331725761222" at="91,0,126,0" />
-      <unit id="1058510331725761222" at="188,0,191,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_EditorBuilder_a$LINKS" />
-      <unit id="1058510331725761222" at="197,0,200,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_EditorBuilder_a$PROPS" />
-      <unit id="1058510331725761222" at="192,0,196,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_EditorBuilder_a$CONCEPTS" />
-      <unit id="1058510331725761222" at="93,42,108,5" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_EditorBuilder_a$1" />
-      <unit id="1058510331725761369" at="126,0,172,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_EditorBuilder_a$Inline_Builder0" />
-      <unit id="1058510331725761222" at="43,0,201,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_EditorBuilder_a" />
+      <unit id="1058510331725761222" at="188,0,191,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_EditorBuilder$LINKS" />
+      <unit id="1058510331725761222" at="197,0,200,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_EditorBuilder$PROPS" />
+      <unit id="1058510331725761222" at="192,0,196,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_EditorBuilder$CONCEPTS" />
+      <unit id="1058510331725761222" at="93,42,108,5" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_EditorBuilder$1" />
+      <unit id="1058510331725761369" at="126,0,172,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_EditorBuilder$Inline_Builder0" />
+      <unit id="1058510331725761222" at="43,0,201,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_EditorBuilder" />
     </file>
-    <file name="DocumentedConceptAnnotation_InspectorBuilder_a.java">
-      <node id="1058510331725761222" at="36,110,37,19" concept="11" />
+    <file name="DocumentedConceptAnnotation_InspectorBuilder.java">
+      <node id="1058510331725761222" at="36,108,37,19" concept="11" />
       <node id="1058510331725761222" at="37,19,38,18" concept="1" />
       <node id="1058510331725761222" at="43,26,44,18" concept="6" />
       <node id="1058510331725761222" at="47,39,48,32" concept="6" />
@@ -306,7 +306,7 @@
       <node id="1058510331725761222" at="139,0,140,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="1058510331725761222" at="33,0,35,0" concept="2" trace="myNode" />
       <node id="1058510331725761222" at="47,0,50,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1058510331725761222" at="36,0,40,0" concept="0" trace="DocumentedConceptAnnotation_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1058510331725761222" at="36,0,40,0" concept="0" trace="DocumentedConceptAnnotation_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1058510331725761222" at="41,0,46,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1881564090922902416" at="85,208,90,24" concept="3" />
       <node id="2265458908609337375" at="122,208,127,24" concept="3" />
@@ -323,7 +323,7 @@
       <scope id="1058510331725761222" at="47,39,48,32" />
       <scope id="1881564090922902416" at="91,15,92,40" />
       <scope id="2265458908609337375" at="128,15,129,40" />
-      <scope id="1058510331725761222" at="36,110,38,18" />
+      <scope id="1058510331725761222" at="36,108,38,18" />
       <scope id="1881564090922902416" at="86,74,88,145">
         <var name="manager" id="1881564090922902416" />
       </scope>
@@ -373,9 +373,9 @@
       <scope id="2265458908609337375" at="111,41,130,5" />
       <scope id="1881564090922902416" at="74,0,95,0" />
       <scope id="2265458908609337375" at="111,0,132,0" />
-      <unit id="1058510331725761222" at="138,0,141,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_InspectorBuilder_a$CONCEPTS" />
-      <unit id="1058510331725761222" at="133,0,137,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_InspectorBuilder_a$PROPS" />
-      <unit id="1058510331725761222" at="32,0,142,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_InspectorBuilder_a" />
+      <unit id="1058510331725761222" at="138,0,141,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_InspectorBuilder$CONCEPTS" />
+      <unit id="1058510331725761222" at="133,0,137,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_InspectorBuilder$PROPS" />
+      <unit id="1058510331725761222" at="32,0,142,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:23ce84b3-7dc4-479d-a4ba-481817934114(com.mbeddr.doc.aspect.editor)/1252397495527464890">
@@ -487,12 +487,12 @@
   </root>
   <root nodeRef="r:23ce84b3-7dc4-479d-a4ba-481817934114(com.mbeddr.doc.aspect.editor)/1587141976994809871">
     <file name="DocumentedPropertyAnnotation_Editor.java">
-      <node id="1587141976994809871" at="11,79,12,94" concept="6" />
-      <node id="1587141976994809871" at="14,82,15,97" concept="6" />
+      <node id="1587141976994809871" at="11,79,12,92" concept="6" />
+      <node id="1587141976994809871" at="14,82,15,95" concept="6" />
       <node id="1587141976994809871" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1587141976994809871" at="14,0,17,0" concept="4" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="1587141976994809871" at="11,79,12,94" />
-      <scope id="1587141976994809871" at="14,82,15,97" />
+      <scope id="1587141976994809871" at="11,79,12,92" />
+      <scope id="1587141976994809871" at="14,82,15,95" />
       <scope id="1587141976994809871" at="11,0,14,0">
         <var name="editorContext" id="1587141976994809871" />
         <var name="node" id="1587141976994809871" />
@@ -503,8 +503,8 @@
       </scope>
       <unit id="1587141976994809871" at="10,0,18,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_Editor" />
     </file>
-    <file name="DocumentedPropertyAnnotation_EditorBuilder_a.java">
-      <node id="1587141976994809871" at="43,108,44,19" concept="11" />
+    <file name="DocumentedPropertyAnnotation_EditorBuilder.java">
+      <node id="1587141976994809871" at="43,106,44,19" concept="11" />
       <node id="1587141976994809871" at="44,19,45,18" concept="1" />
       <node id="1587141976994809871" at="50,26,51,18" concept="6" />
       <node id="1587141976994809871" at="54,39,55,32" concept="6" />
@@ -646,7 +646,7 @@
       <node id="1587141976994809871" at="54,0,57,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1587141976994809880" at="128,0,131,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1587141976994810229" at="212,0,215,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1587141976994809871" at="43,0,47,0" concept="0" trace="DocumentedPropertyAnnotation_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1587141976994809871" at="43,0,47,0" concept="0" trace="DocumentedPropertyAnnotation_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1587141976994809871" at="103,0,107,5" concept="3" />
       <node id="1587141976994809871" at="187,0,191,5" concept="3" />
       <node id="1587141976994809871" at="48,0,53,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -682,7 +682,7 @@
       <scope id="1587141976994810229" at="212,41,213,32" />
       <scope id="1587141976994810229" at="218,28,219,20" />
       <scope id="1587141976994810281" at="242,17,243,42" />
-      <scope id="1587141976994809871" at="43,108,45,18" />
+      <scope id="1587141976994809871" at="43,106,45,18" />
       <scope id="1587141976994809871" at="104,40,106,46" />
       <scope id="1587141976994809871" at="111,73,113,145">
         <var name="manager" id="1587141976994809871" />
@@ -793,17 +793,17 @@
       </scope>
       <scope id="1587141976994809871" at="89,0,117,0" />
       <scope id="1587141976994809871" at="173,0,201,0" />
-      <unit id="1587141976994809871" at="274,0,277,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder_a$PROPS" />
-      <unit id="1587141976994809871" at="264,0,268,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder_a$LINKS" />
-      <unit id="1587141976994809871" at="269,0,273,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder_a$CONCEPTS" />
-      <unit id="1587141976994809871" at="91,42,99,5" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder_a$1" />
-      <unit id="1587141976994809871" at="175,42,183,5" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder_a$2" />
-      <unit id="1587141976994809880" at="117,0,163,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder_a$Inline_Builder0" />
-      <unit id="1587141976994810229" at="201,0,247,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder_a$Inline_Builder1" />
-      <unit id="1587141976994809871" at="39,0,278,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder_a" />
+      <unit id="1587141976994809871" at="274,0,277,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder$PROPS" />
+      <unit id="1587141976994809871" at="264,0,268,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder$LINKS" />
+      <unit id="1587141976994809871" at="269,0,273,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder$CONCEPTS" />
+      <unit id="1587141976994809871" at="91,42,99,5" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder$1" />
+      <unit id="1587141976994809871" at="175,42,183,5" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder$2" />
+      <unit id="1587141976994809880" at="117,0,163,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder$Inline_Builder0" />
+      <unit id="1587141976994810229" at="201,0,247,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder$Inline_Builder1" />
+      <unit id="1587141976994809871" at="39,0,278,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_EditorBuilder" />
     </file>
-    <file name="DocumentedPropertyAnnotation_InspectorBuilder_a.java">
-      <node id="1587141976994809871" at="32,111,33,19" concept="11" />
+    <file name="DocumentedPropertyAnnotation_InspectorBuilder.java">
+      <node id="1587141976994809871" at="32,109,33,19" concept="11" />
       <node id="1587141976994809871" at="33,19,34,18" concept="1" />
       <node id="1587141976994809871" at="39,26,40,18" concept="6" />
       <node id="1587141976994809871" at="43,39,44,32" concept="6" />
@@ -836,7 +836,7 @@
       <node id="1587141976994809871" at="89,0,90,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="1587141976994809871" at="29,0,31,0" concept="2" trace="myNode" />
       <node id="1587141976994809871" at="43,0,46,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1587141976994809871" at="32,0,36,0" concept="0" trace="DocumentedPropertyAnnotation_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1587141976994809871" at="32,0,36,0" concept="0" trace="DocumentedPropertyAnnotation_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1587141976994809871" at="37,0,42,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1881564090923181446" at="73,208,78,24" concept="3" />
       <node id="1881564090923181445" at="56,0,62,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -846,7 +846,7 @@
       <scope id="1587141976994809871" at="39,26,40,18" />
       <scope id="1587141976994809871" at="43,39,44,32" />
       <scope id="1881564090923181446" at="79,15,80,40" />
-      <scope id="1587141976994809871" at="32,111,34,18" />
+      <scope id="1587141976994809871" at="32,109,34,18" />
       <scope id="1881564090923181446" at="74,74,76,145">
         <var name="manager" id="1881564090923181446" />
       </scope>
@@ -872,20 +872,20 @@
       </scope>
       <scope id="1881564090923181446" at="62,41,81,5" />
       <scope id="1881564090923181446" at="62,0,83,0" />
-      <unit id="1587141976994809871" at="84,0,87,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_InspectorBuilder_a$PROPS" />
-      <unit id="1587141976994809871" at="88,0,91,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_InspectorBuilder_a$CONCEPTS" />
-      <unit id="1587141976994809871" at="28,0,92,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_InspectorBuilder_a" />
+      <unit id="1587141976994809871" at="84,0,87,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_InspectorBuilder$PROPS" />
+      <unit id="1587141976994809871" at="88,0,91,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_InspectorBuilder$CONCEPTS" />
+      <unit id="1587141976994809871" at="28,0,92,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:23ce84b3-7dc4-479d-a4ba-481817934114(com.mbeddr.doc.aspect.editor)/1587141976994810323">
     <file name="DocumentedPropertyAnnotation_presentationMode_Editor.java">
       <node id="1587141976994810323" at="14,0,15,0" concept="2" trace="myContextHints" />
       <node id="1587141976994810323" at="17,47,18,26" concept="6" />
-      <node id="1587141976994810323" at="20,79,21,111" concept="6" />
+      <node id="1587141976994810323" at="20,79,21,109" concept="6" />
       <node id="1587141976994810323" at="20,0,23,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1587141976994810323" at="15,0,20,0" concept="4" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="1587141976994810323" at="17,47,18,26" />
-      <scope id="1587141976994810323" at="20,79,21,111" />
+      <scope id="1587141976994810323" at="20,79,21,109" />
       <scope id="1587141976994810323" at="20,0,23,0">
         <var name="editorContext" id="1587141976994810323" />
         <var name="node" id="1587141976994810323" />
@@ -893,8 +893,8 @@
       <scope id="1587141976994810323" at="15,0,20,0" />
       <unit id="1587141976994810323" at="13,0,24,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_presentationMode_Editor" />
     </file>
-    <file name="DocumentedPropertyAnnotation_presentationMode_EditorBuilder_a.java">
-      <node id="1587141976994810323" at="19,125,20,19" concept="11" />
+    <file name="DocumentedPropertyAnnotation_presentationMode_EditorBuilder.java">
+      <node id="1587141976994810323" at="19,123,20,19" concept="11" />
       <node id="1587141976994810323" at="20,19,21,18" concept="1" />
       <node id="1587141976994810323" at="26,26,27,18" concept="6" />
       <node id="1587141976994810323" at="30,39,31,32" concept="6" />
@@ -909,13 +909,13 @@
       <node id="1587141976994810334" at="44,93,45,22" concept="6" />
       <node id="1587141976994810323" at="16,0,18,0" concept="2" trace="myNode" />
       <node id="1587141976994810323" at="30,0,33,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1587141976994810323" at="19,0,23,0" concept="0" trace="DocumentedPropertyAnnotation_presentationMode_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1587141976994810323" at="19,0,23,0" concept="0" trace="DocumentedPropertyAnnotation_presentationMode_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1587141976994810323" at="24,0,29,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1587141976994810334" at="42,0,47,0" concept="4" trace="createAttributedNodeCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1587141976994810323" at="34,0,42,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="1587141976994810323" at="26,26,27,18" />
       <scope id="1587141976994810323" at="30,39,31,32" />
-      <scope id="1587141976994810323" at="19,125,21,18" />
+      <scope id="1587141976994810323" at="19,123,21,18" />
       <scope id="1587141976994810323" at="30,0,33,0" />
       <scope id="1587141976994810334" at="42,51,45,22">
         <var name="editorCell" id="1587141976994810334" />
@@ -931,18 +931,18 @@
         <var name="editorCell" id="1587141976994810323" />
       </scope>
       <scope id="1587141976994810323" at="34,0,42,0" />
-      <unit id="1587141976994810323" at="15,0,48,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_presentationMode_EditorBuilder_a" />
+      <unit id="1587141976994810323" at="15,0,48,0" name="com.mbeddr.doc.aspect.editor.DocumentedPropertyAnnotation_presentationMode_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:23ce84b3-7dc4-479d-a4ba-481817934114(com.mbeddr.doc.aspect.editor)/184733277255505655">
     <file name="DocumentedConceptAnnotation_presentationMode_Editor.java">
       <node id="184733277255505655" at="14,0,15,0" concept="2" trace="myContextHints" />
       <node id="184733277255505655" at="17,47,18,26" concept="6" />
-      <node id="184733277255505655" at="20,79,21,110" concept="6" />
+      <node id="184733277255505655" at="20,79,21,108" concept="6" />
       <node id="184733277255505655" at="20,0,23,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="184733277255505655" at="15,0,20,0" concept="4" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="184733277255505655" at="17,47,18,26" />
-      <scope id="184733277255505655" at="20,79,21,110" />
+      <scope id="184733277255505655" at="20,79,21,108" />
       <scope id="184733277255505655" at="20,0,23,0">
         <var name="editorContext" id="184733277255505655" />
         <var name="node" id="184733277255505655" />
@@ -950,8 +950,8 @@
       <scope id="184733277255505655" at="15,0,20,0" />
       <unit id="184733277255505655" at="13,0,24,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_presentationMode_Editor" />
     </file>
-    <file name="DocumentedConceptAnnotation_presentationMode_EditorBuilder_a.java">
-      <node id="184733277255505655" at="19,124,20,19" concept="11" />
+    <file name="DocumentedConceptAnnotation_presentationMode_EditorBuilder.java">
+      <node id="184733277255505655" at="19,122,20,19" concept="11" />
       <node id="184733277255505655" at="20,19,21,18" concept="1" />
       <node id="184733277255505655" at="26,26,27,18" concept="6" />
       <node id="184733277255505655" at="30,39,31,32" concept="6" />
@@ -966,13 +966,13 @@
       <node id="184733277255505664" at="44,93,45,22" concept="6" />
       <node id="184733277255505655" at="16,0,18,0" concept="2" trace="myNode" />
       <node id="184733277255505655" at="30,0,33,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="184733277255505655" at="19,0,23,0" concept="0" trace="DocumentedConceptAnnotation_presentationMode_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="184733277255505655" at="19,0,23,0" concept="0" trace="DocumentedConceptAnnotation_presentationMode_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="184733277255505655" at="24,0,29,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="184733277255505664" at="42,0,47,0" concept="4" trace="createAttributedNodeCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="184733277255505655" at="34,0,42,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="184733277255505655" at="26,26,27,18" />
       <scope id="184733277255505655" at="30,39,31,32" />
-      <scope id="184733277255505655" at="19,124,21,18" />
+      <scope id="184733277255505655" at="19,122,21,18" />
       <scope id="184733277255505655" at="30,0,33,0" />
       <scope id="184733277255505664" at="42,51,45,22">
         <var name="editorCell" id="184733277255505664" />
@@ -988,18 +988,18 @@
         <var name="editorCell" id="184733277255505655" />
       </scope>
       <scope id="184733277255505655" at="34,0,42,0" />
-      <unit id="184733277255505655" at="15,0,48,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_presentationMode_EditorBuilder_a" />
+      <unit id="184733277255505655" at="15,0,48,0" name="com.mbeddr.doc.aspect.editor.DocumentedConceptAnnotation_presentationMode_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:23ce84b3-7dc4-479d-a4ba-481817934114(com.mbeddr.doc.aspect.editor)/4858335459912145925">
     <file name="DocRefWord_presentationMode_documentationMode_Editor.java">
       <node id="4858335459912145925" at="14,0,15,0" concept="2" trace="myContextHints" />
       <node id="4858335459912145925" at="17,47,18,26" concept="6" />
-      <node id="4858335459912145925" at="20,79,21,111" concept="6" />
+      <node id="4858335459912145925" at="20,79,21,109" concept="6" />
       <node id="4858335459912145925" at="20,0,23,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4858335459912145925" at="15,0,20,0" concept="4" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="4858335459912145925" at="17,47,18,26" />
-      <scope id="4858335459912145925" at="20,79,21,111" />
+      <scope id="4858335459912145925" at="20,79,21,109" />
       <scope id="4858335459912145925" at="20,0,23,0">
         <var name="editorContext" id="4858335459912145925" />
         <var name="node" id="4858335459912145925" />
@@ -1007,8 +1007,8 @@
       <scope id="4858335459912145925" at="15,0,20,0" />
       <unit id="4858335459912145925" at="13,0,24,0" name="com.mbeddr.doc.aspect.editor.DocRefWord_presentationMode_documentationMode_Editor" />
     </file>
-    <file name="DocRefWord_presentationMode_documentationMode_EditorBuilder_a.java">
-      <node id="4858335459912145925" at="30,125,31,19" concept="11" />
+    <file name="DocRefWord_presentationMode_documentationMode_EditorBuilder.java">
+      <node id="4858335459912145925" at="30,123,31,19" concept="11" />
       <node id="4858335459912145925" at="31,19,32,18" concept="1" />
       <node id="4858335459912145925" at="37,26,38,18" concept="6" />
       <node id="4858335459912145925" at="41,39,42,43" concept="6" />
@@ -1028,15 +1028,15 @@
       <node id="4858335459912146015" at="64,39,65,53" concept="5" />
       <node id="4858335459912146033" at="68,81,69,93" concept="7" />
       <node id="4858335459911728913" at="69,93,70,142" concept="7" />
-      <node id="4858335459912146045" at="70,142,71,161" concept="1" />
-      <node id="4858335459912146057" at="71,161,72,110" concept="1" />
-      <node id="4858335459912146048" at="77,78,78,47" concept="6" />
+      <node id="4858335459912146045" at="70,142,71,160" concept="1" />
+      <node id="4858335459912146057" at="71,160,72,110" concept="1" />
+      <node id="4858335459912146048" at="77,77,78,47" concept="6" />
       <node id="4858335459912145925" at="82,0,83,0" concept="9" trace="target$aemi" />
       <node id="4858335459912145925" at="27,0,29,0" concept="2" trace="myNode" />
       <node id="4858335459912145925" at="41,0,44,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4858335459912145925" at="47,0,50,0" concept="4" trace="getText#()Ljava/lang/String;" />
-      <node id="4858335459912146048" at="77,0,80,0" concept="10" trace="as_c10fcz_a0a0c0a0a0a0a0a2a9#(Ljava/lang/Object;Ljava/lang/Class;)null" />
-      <node id="4858335459912145925" at="30,0,34,0" concept="0" trace="DocRefWord_presentationMode_documentationMode_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4858335459912146048" at="77,0,80,0" concept="10" trace="as_1s47m_a0a0c0a0a0a0a0a2a9#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="4858335459912145925" at="30,0,34,0" concept="0" trace="DocRefWord_presentationMode_documentationMode_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4858335459912145925" at="35,0,40,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4858335459912145925" at="45,54,50,15" concept="5" />
       <node id="4858335459912146030" at="67,44,73,11" concept="1" />
@@ -1047,8 +1047,8 @@
       <scope id="4858335459912145925" at="37,26,38,18" />
       <scope id="4858335459912145925" at="41,39,42,43" />
       <scope id="52093402212157120" at="47,31,48,112" />
-      <scope id="4858335459912146048" at="77,78,78,47" />
-      <scope id="4858335459912145925" at="30,125,32,18" />
+      <scope id="4858335459912146048" at="77,77,78,47" />
+      <scope id="4858335459912145925" at="30,123,32,18" />
       <scope id="4858335459912145925" at="41,0,44,0" />
       <scope id="4858335459912145925" at="47,0,50,0" />
       <scope id="4858335459912146048" at="77,0,80,0">
@@ -1075,21 +1075,21 @@
         <var name="style" id="4858335459912145925" />
       </scope>
       <scope id="4858335459912145925" at="45,0,63,0" />
-      <unit id="4858335459912145925" at="81,0,84,0" name="com.mbeddr.doc.aspect.editor.DocRefWord_presentationMode_documentationMode_EditorBuilder_a$LINKS" />
-      <unit id="4858335459912145925" at="46,88,50,5" name="com.mbeddr.doc.aspect.editor.DocRefWord_presentationMode_documentationMode_EditorBuilder_a$1" />
-      <unit id="4858335459912146022" at="66,15,75,5" name="com.mbeddr.doc.aspect.editor.DocRefWord_presentationMode_documentationMode_EditorBuilder_a$2" />
-      <unit id="4858335459912145925" at="26,0,85,0" name="com.mbeddr.doc.aspect.editor.DocRefWord_presentationMode_documentationMode_EditorBuilder_a" />
+      <unit id="4858335459912145925" at="81,0,84,0" name="com.mbeddr.doc.aspect.editor.DocRefWord_presentationMode_documentationMode_EditorBuilder$LINKS" />
+      <unit id="4858335459912145925" at="46,88,50,5" name="com.mbeddr.doc.aspect.editor.DocRefWord_presentationMode_documentationMode_EditorBuilder$1" />
+      <unit id="4858335459912146022" at="66,15,75,5" name="com.mbeddr.doc.aspect.editor.DocRefWord_presentationMode_documentationMode_EditorBuilder$2" />
+      <unit id="4858335459912145925" at="26,0,85,0" name="com.mbeddr.doc.aspect.editor.DocRefWord_presentationMode_documentationMode_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:23ce84b3-7dc4-479d-a4ba-481817934114(com.mbeddr.doc.aspect.editor)/4971378430054344140">
     <file name="SectRefWord_presentationMode_documentationMode_Editor.java">
       <node id="4971378430054344140" at="14,0,15,0" concept="2" trace="myContextHints" />
       <node id="4971378430054344140" at="17,47,18,26" concept="6" />
-      <node id="4971378430054344140" at="20,79,21,112" concept="6" />
+      <node id="4971378430054344140" at="20,79,21,110" concept="6" />
       <node id="4971378430054344140" at="20,0,23,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4971378430054344140" at="15,0,20,0" concept="4" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="4971378430054344140" at="17,47,18,26" />
-      <scope id="4971378430054344140" at="20,79,21,112" />
+      <scope id="4971378430054344140" at="20,79,21,110" />
       <scope id="4971378430054344140" at="20,0,23,0">
         <var name="editorContext" id="4971378430054344140" />
         <var name="node" id="4971378430054344140" />
@@ -1097,8 +1097,8 @@
       <scope id="4971378430054344140" at="15,0,20,0" />
       <unit id="4971378430054344140" at="13,0,24,0" name="com.mbeddr.doc.aspect.editor.SectRefWord_presentationMode_documentationMode_Editor" />
     </file>
-    <file name="SectRefWord_presentationMode_documentationMode_EditorBuilder_a.java">
-      <node id="4971378430054344140" at="33,126,34,19" concept="11" />
+    <file name="SectRefWord_presentationMode_documentationMode_EditorBuilder.java">
+      <node id="4971378430054344140" at="33,124,34,19" concept="11" />
       <node id="4971378430054344140" at="34,19,35,18" concept="1" />
       <node id="4971378430054344140" at="40,26,41,18" concept="6" />
       <node id="4971378430054344140" at="44,39,45,43" concept="6" />
@@ -1127,8 +1127,8 @@
       <node id="4971378430054344140" at="30,0,32,0" concept="2" trace="myNode" />
       <node id="4971378430054344140" at="44,0,47,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4971378430054344140" at="50,0,53,0" concept="4" trace="getText#()Ljava/lang/String;" />
-      <node id="921067565288643128" at="83,0,86,0" concept="10" trace="as_9fmbns_a0a0b0c0a0a0a0a0a2a9#(Ljava/lang/Object;Ljava/lang/Class;)null" />
-      <node id="4971378430054344140" at="33,0,37,0" concept="0" trace="SectRefWord_presentationMode_documentationMode_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="921067565288643128" at="83,0,86,0" concept="10" trace="as_zc99pz_a0a0b0c0a0a0a0a0a2a9#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="4971378430054344140" at="33,0,37,0" concept="0" trace="SectRefWord_presentationMode_documentationMode_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="921067565289636460" at="73,159,77,11" concept="3" />
       <node id="4971378430054344140" at="38,0,43,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4971378430054344140" at="48,54,53,15" concept="5" />
@@ -1141,7 +1141,7 @@
       <scope id="4971378430054344140" at="44,39,45,43" />
       <scope id="4971378430054396282" at="50,31,51,112" />
       <scope id="921067565288643128" at="83,80,84,47" />
-      <scope id="4971378430054344140" at="33,126,35,18" />
+      <scope id="4971378430054344140" at="33,124,35,18" />
       <scope id="921067565289636462" at="74,67,76,123" />
       <scope id="4971378430054344140" at="44,0,47,0" />
       <scope id="4971378430054344140" at="50,0,53,0" />
@@ -1172,11 +1172,11 @@
       </scope>
       <scope id="4971378430054443288" at="66,0,83,0" />
       <scope id="4971378430054344140" at="48,0,66,0" />
-      <unit id="4971378430054344140" at="87,0,90,0" name="com.mbeddr.doc.aspect.editor.SectRefWord_presentationMode_documentationMode_EditorBuilder_a$CONCEPTS" />
-      <unit id="4971378430054344140" at="91,0,94,0" name="com.mbeddr.doc.aspect.editor.SectRefWord_presentationMode_documentationMode_EditorBuilder_a$LINKS" />
-      <unit id="4971378430054344140" at="49,88,53,5" name="com.mbeddr.doc.aspect.editor.SectRefWord_presentationMode_documentationMode_EditorBuilder_a$1" />
-      <unit id="184733277256071320" at="69,15,81,5" name="com.mbeddr.doc.aspect.editor.SectRefWord_presentationMode_documentationMode_EditorBuilder_a$2" />
-      <unit id="4971378430054344140" at="29,0,95,0" name="com.mbeddr.doc.aspect.editor.SectRefWord_presentationMode_documentationMode_EditorBuilder_a" />
+      <unit id="4971378430054344140" at="87,0,90,0" name="com.mbeddr.doc.aspect.editor.SectRefWord_presentationMode_documentationMode_EditorBuilder$CONCEPTS" />
+      <unit id="4971378430054344140" at="91,0,94,0" name="com.mbeddr.doc.aspect.editor.SectRefWord_presentationMode_documentationMode_EditorBuilder$LINKS" />
+      <unit id="4971378430054344140" at="49,88,53,5" name="com.mbeddr.doc.aspect.editor.SectRefWord_presentationMode_documentationMode_EditorBuilder$1" />
+      <unit id="184733277256071320" at="69,15,81,5" name="com.mbeddr.doc.aspect.editor.SectRefWord_presentationMode_documentationMode_EditorBuilder$2" />
+      <unit id="4971378430054344140" at="29,0,95,0" name="com.mbeddr.doc.aspect.editor.SectRefWord_presentationMode_documentationMode_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:23ce84b3-7dc4-479d-a4ba-481817934114(com.mbeddr.doc.aspect.editor)/7274233592957000245">

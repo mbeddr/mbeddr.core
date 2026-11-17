@@ -38,8 +38,8 @@ public class ApplicationPlugin_AppPluginPart extends ApplicationPluginPart {
   }
   @Override
   public void init() {
-    Extensions.getArea(null).getExtensionPoint(ColorAndFontPanelFactory.EP_NAME).registerExtension(ApplicationPlugin_AppPluginPart.this.myFactory);
-    Extensions.getArea(null).getExtensionPoint(ColorAndFontDescriptorsProvider.EP_NAME).registerExtension(ApplicationPlugin_AppPluginPart.this.myProvider);
+    Extensions.getRootArea().getExtensionPoint(ColorAndFontPanelFactory.EP_NAME).registerExtension(ApplicationPlugin_AppPluginPart.this.myFactory);
+    Extensions.getRootArea().getExtensionPoint(ColorAndFontDescriptorsProvider.EP_NAME).registerExtension(ApplicationPlugin_AppPluginPart.this.myProvider);
 
     ApplicationPlugin_AppPluginPart.this.myConfigurableEP = new ConfigurableEP<Configurable>() {
       @Override
@@ -57,13 +57,13 @@ public class ApplicationPlugin_AppPluginPart extends ApplicationPluginPart {
     ApplicationPlugin_AppPluginPart.this.myConfigurableEP.id = "reference.settingsdialog.IDE.editor.colors";
     ApplicationPlugin_AppPluginPart.this.myConfigurableEP.key = "title.colors.and.fonts";
     ApplicationPlugin_AppPluginPart.this.myConfigurableEP.bundle = "messages.ApplicationBundle";
-    Extensions.getArea(null).getExtensionPoint(Configurable.APPLICATION_CONFIGURABLE).registerExtension(ApplicationPlugin_AppPluginPart.this.myConfigurableEP);
+    Extensions.getRootArea().getExtensionPoint(Configurable.APPLICATION_CONFIGURABLE).registerExtension(ApplicationPlugin_AppPluginPart.this.myConfigurableEP);
 
   }
   @Override
   public void dispose() {
-    Extensions.getArea(null).getExtensionPoint(ColorAndFontPanelFactory.EP_NAME).unregisterExtension(ApplicationPlugin_AppPluginPart.this.myFactory);
-    Extensions.getArea(null).getExtensionPoint(ColorAndFontDescriptorsProvider.EP_NAME).unregisterExtension(ApplicationPlugin_AppPluginPart.this.myProvider);
-    Extensions.getArea(null).getExtensionPoint(Configurable.APPLICATION_CONFIGURABLE).unregisterExtension(ApplicationPlugin_AppPluginPart.this.myConfigurableEP);
+    Extensions.getRootArea().getExtensionPoint(ColorAndFontPanelFactory.EP_NAME).unregisterExtension(ApplicationPlugin_AppPluginPart.this.myFactory);
+    Extensions.getRootArea().getExtensionPoint(ColorAndFontDescriptorsProvider.EP_NAME).unregisterExtension(ApplicationPlugin_AppPluginPart.this.myProvider);
+    Extensions.getRootArea().getExtensionPoint(Configurable.APPLICATION_CONFIGURABLE).unregisterExtension(ApplicationPlugin_AppPluginPart.this.myConfigurableEP);
   }
 }

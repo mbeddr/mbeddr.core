@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class TraceTargetProviderRef_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TraceTargetProviderRef_EditorBuilder_a(editorContext, node).createCell();
+    return new TraceTargetProviderRef_EditorBuilder(editorContext, node).createCell();
   }
 }

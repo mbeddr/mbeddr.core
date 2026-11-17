@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class DLCollectAndPrintOnFinish_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DLCollectAndPrintOnFinish_EditorBuilder_a(editorContext, node).createCell();
+    return new DLCollectAndPrintOnFinish_EditorBuilder(editorContext, node).createCell();
   }
 }

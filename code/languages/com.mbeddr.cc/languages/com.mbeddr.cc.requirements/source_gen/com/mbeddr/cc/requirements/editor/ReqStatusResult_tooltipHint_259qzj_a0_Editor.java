@@ -18,6 +18,6 @@ public class ReqStatusResult_tooltipHint_259qzj_a0_Editor extends DefaultNodeEdi
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ReqStatusResult_tooltipHint_259qzj_a0_EditorBuilder_a(editorContext, node).createCell();
+    return new ReqStatusResult_tooltipHint_259qzj_a0_EditorBuilder(editorContext, node).createCell();
   }
 }

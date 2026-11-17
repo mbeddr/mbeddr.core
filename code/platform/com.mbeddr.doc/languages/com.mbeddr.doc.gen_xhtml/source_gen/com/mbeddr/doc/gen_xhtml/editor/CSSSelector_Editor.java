@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class CSSSelector_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CSSSelector_EditorBuilder_a(editorContext, node).createCell();
+    return new CSSSelector_EditorBuilder(editorContext, node).createCell();
   }
 }

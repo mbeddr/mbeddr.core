@@ -16,6 +16,6 @@ public class IPreferenceFormExpressionEditor implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new IPreferenceFormExpressionEditor_ComponentBuilder_a(editorContext, node).createCell();
+    return new IPreferenceFormExpressionEditor_ComponentBuilder(editorContext, node).createCell();
   }
 }

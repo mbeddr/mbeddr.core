@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GenericDLFinishOp_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GenericDLFinishOp_EditorBuilder_a(editorContext, node).createCell();
+    return new GenericDLFinishOp_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GenericDLLogOp_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GenericDLLogOp_EditorBuilder_a(editorContext, node).createCell();
+    return new GenericDLLogOp_EditorBuilder(editorContext, node).createCell();
   }
 }

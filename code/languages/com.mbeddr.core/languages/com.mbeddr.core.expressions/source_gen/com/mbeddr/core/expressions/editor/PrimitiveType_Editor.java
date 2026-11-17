@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PrimitiveType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PrimitiveType_EditorBuilder_a(editorContext, node).createCell();
+    return new PrimitiveType_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new PrimitiveType_InspectorBuilder_a(editorContext, node).createCell();
+    return new PrimitiveType_InspectorBuilder(editorContext, node).createCell();
   }
 }

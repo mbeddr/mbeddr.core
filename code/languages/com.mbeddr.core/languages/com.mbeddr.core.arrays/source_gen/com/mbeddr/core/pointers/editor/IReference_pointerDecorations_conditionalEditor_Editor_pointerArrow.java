@@ -19,10 +19,10 @@ public class IReference_pointerDecorations_conditionalEditor_Editor_pointerArrow
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new IReference_pointerDecorations_conditionalEditor_EditorBuilder_a(editorContext, node).createCell();
+    return new IReference_pointerDecorations_conditionalEditor_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new IReference_pointerDecorations_conditionalEditor_InspectorBuilder_a(editorContext, node).createCell();
+    return new IReference_pointerDecorations_conditionalEditor_InspectorBuilder(editorContext, node).createCell();
   }
   public int getPriority() {
     return 100;

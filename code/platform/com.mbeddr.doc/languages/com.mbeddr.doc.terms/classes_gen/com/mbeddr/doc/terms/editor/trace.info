@@ -30,11 +30,11 @@
     <file name="TermRefWord_presentationMode_Editor.java">
       <node id="2144395370915943011" at="14,0,15,0" concept="3" trace="myContextHints" />
       <node id="2144395370915943011" at="17,47,18,26" concept="7" />
-      <node id="2144395370915943011" at="20,79,21,94" concept="7" />
+      <node id="2144395370915943011" at="20,79,21,92" concept="7" />
       <node id="2144395370915943011" at="20,0,23,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2144395370915943011" at="15,0,20,0" concept="5" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="2144395370915943011" at="17,47,18,26" />
-      <scope id="2144395370915943011" at="20,79,21,94" />
+      <scope id="2144395370915943011" at="20,79,21,92" />
       <scope id="2144395370915943011" at="20,0,23,0">
         <var name="editorContext" id="2144395370915943011" />
         <var name="node" id="2144395370915943011" />
@@ -42,8 +42,8 @@
       <scope id="2144395370915943011" at="15,0,20,0" />
       <unit id="2144395370915943011" at="13,0,24,0" name="com.mbeddr.doc.terms.editor.TermRefWord_presentationMode_Editor" />
     </file>
-    <file name="TermRefWord_presentationMode_EditorBuilder_a.java">
-      <node id="2144395370915943011" at="40,108,41,19" concept="12" />
+    <file name="TermRefWord_presentationMode_EditorBuilder.java">
+      <node id="2144395370915943011" at="40,106,41,19" concept="12" />
       <node id="2144395370915943011" at="41,19,42,18" concept="2" />
       <node id="2144395370915943011" at="47,26,48,18" concept="7" />
       <node id="2144395370915943011" at="51,39,52,29" concept="7" />
@@ -107,7 +107,7 @@
       <node id="2144395370915943017" at="97,0,99,0" concept="3" trace="myNode" />
       <node id="2144395370915943011" at="51,0,54,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2144395370915943017" at="107,0,110,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2144395370915943011" at="40,0,44,0" concept="1" trace="TermRefWord_presentationMode_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2144395370915943011" at="40,0,44,0" concept="1" trace="TermRefWord_presentationMode_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2144395370915943011" at="79,0,83,5" concept="4" />
       <node id="2144395370915943011" at="45,0,50,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2144395370915943011" at="89,205,94,22" concept="4" />
@@ -125,7 +125,7 @@
       <scope id="2144395370915943017" at="107,41,108,32" />
       <scope id="2144395370915943017" at="113,28,114,20" />
       <scope id="2144395370915943018" at="137,17,138,42" />
-      <scope id="2144395370915943011" at="40,108,42,18" />
+      <scope id="2144395370915943011" at="40,106,42,18" />
       <scope id="2144395370915943011" at="80,40,82,43" />
       <scope id="2144395370915943011" at="90,73,92,145">
         <var name="manager" id="2144395370915943011" />
@@ -177,21 +177,21 @@
         <var name="style" id="2144395370915943011" />
       </scope>
       <scope id="2144395370915943011" at="65,0,96,0" />
-      <unit id="2144395370915943011" at="143,0,146,0" name="com.mbeddr.doc.terms.editor.TermRefWord_presentationMode_EditorBuilder_a$LINKS" />
-      <unit id="2144395370915943011" at="152,0,155,0" name="com.mbeddr.doc.terms.editor.TermRefWord_presentationMode_EditorBuilder_a$PROPS" />
-      <unit id="2144395370915943011" at="147,0,151,0" name="com.mbeddr.doc.terms.editor.TermRefWord_presentationMode_EditorBuilder_a$CONCEPTS" />
-      <unit id="2144395370915943011" at="67,42,75,5" name="com.mbeddr.doc.terms.editor.TermRefWord_presentationMode_EditorBuilder_a$1" />
-      <unit id="2144395370915943017" at="96,0,142,0" name="com.mbeddr.doc.terms.editor.TermRefWord_presentationMode_EditorBuilder_a$Inline_Builder0" />
-      <unit id="2144395370915943011" at="36,0,156,0" name="com.mbeddr.doc.terms.editor.TermRefWord_presentationMode_EditorBuilder_a" />
+      <unit id="2144395370915943011" at="143,0,146,0" name="com.mbeddr.doc.terms.editor.TermRefWord_presentationMode_EditorBuilder$LINKS" />
+      <unit id="2144395370915943011" at="152,0,155,0" name="com.mbeddr.doc.terms.editor.TermRefWord_presentationMode_EditorBuilder$PROPS" />
+      <unit id="2144395370915943011" at="147,0,151,0" name="com.mbeddr.doc.terms.editor.TermRefWord_presentationMode_EditorBuilder$CONCEPTS" />
+      <unit id="2144395370915943011" at="67,42,75,5" name="com.mbeddr.doc.terms.editor.TermRefWord_presentationMode_EditorBuilder$1" />
+      <unit id="2144395370915943017" at="96,0,142,0" name="com.mbeddr.doc.terms.editor.TermRefWord_presentationMode_EditorBuilder$Inline_Builder0" />
+      <unit id="2144395370915943011" at="36,0,156,0" name="com.mbeddr.doc.terms.editor.TermRefWord_presentationMode_EditorBuilder" />
     </file>
     <file name="TermRefWord_tooltipHint_s74oao_a_Editor.java">
       <node id="3008087864025756951" at="14,0,15,0" concept="3" trace="myContextHints" />
       <node id="3008087864025756951" at="17,47,18,26" concept="7" />
-      <node id="3008087864025756951" at="20,79,21,98" concept="7" />
+      <node id="3008087864025756951" at="20,79,21,96" concept="7" />
       <node id="3008087864025756951" at="20,0,23,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3008087864025756951" at="15,0,20,0" concept="5" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="3008087864025756951" at="17,47,18,26" />
-      <scope id="3008087864025756951" at="20,79,21,98" />
+      <scope id="3008087864025756951" at="20,79,21,96" />
       <scope id="3008087864025756951" at="20,0,23,0">
         <var name="editorContext" id="3008087864025756951" />
         <var name="node" id="3008087864025756951" />
@@ -199,8 +199,8 @@
       <scope id="3008087864025756951" at="15,0,20,0" />
       <unit id="3008087864025756951" at="13,0,24,0" name="com.mbeddr.doc.terms.editor.TermRefWord_tooltipHint_s74oao_a_Editor" />
     </file>
-    <file name="TermRefWord_tooltipHint_s74oao_a_EditorBuilder_a.java">
-      <node id="3008087864025756951" at="39,112,40,19" concept="12" />
+    <file name="TermRefWord_tooltipHint_s74oao_a_EditorBuilder.java">
+      <node id="3008087864025756951" at="39,110,40,19" concept="12" />
       <node id="3008087864025756951" at="40,19,41,18" concept="2" />
       <node id="3008087864025756951" at="46,26,47,18" concept="7" />
       <node id="3008087864025756951" at="50,39,51,32" concept="7" />
@@ -310,7 +310,7 @@
       <node id="3008087864025766245" at="227,89,230,9" concept="4" />
       <node id="3008087864025766245" at="230,9,233,9" concept="4" />
       <node id="3008087864025766245" at="259,0,262,0" concept="5" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="3008087864025756951" at="39,0,43,0" concept="1" trace="TermRefWord_tooltipHint_s74oao_a_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3008087864025756951" at="39,0,43,0" concept="1" trace="TermRefWord_tooltipHint_s74oao_a_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3008087864025756951" at="84,0,88,0" concept="1" trace="QueryListHandler_dxjkgd_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;Z)V" />
       <node id="3008087864025756951" at="138,0,142,0" concept="5" trace="getSubstituteInfo#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/editor/querylist/runtime/SubstituteInfoFactory;Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/SubstituteInfo;" />
       <node id="3008087864025756951" at="153,75,157,9" concept="0" />
@@ -363,7 +363,7 @@
       <scope id="3008087864025766245" at="241,19,242,44" />
       <scope id="3008087864025766245" at="255,19,256,44" />
       <scope id="3008087864025766245" at="259,42,260,27" />
-      <scope id="3008087864025756951" at="39,112,41,18" />
+      <scope id="3008087864025756951" at="39,110,41,18" />
       <scope id="3008087864025756951" at="84,97,86,25" />
       <scope id="3008087864025756951" at="154,9,156,71">
         <var name="provider" id="3008087864025756951" />
@@ -496,27 +496,27 @@
         <var name="context" id="3008087864025756951" />
         <var name="node" id="3008087864025756951" />
       </scope>
-      <unit id="3008087864025756951" at="265,0,268,0" name="com.mbeddr.doc.terms.editor.TermRefWord_tooltipHint_s74oao_a_EditorBuilder_a$CONCEPTS" />
-      <unit id="3008087864025756951" at="269,0,273,0" name="com.mbeddr.doc.terms.editor.TermRefWord_tooltipHint_s74oao_a_EditorBuilder_a$LINKS" />
-      <unit id="3008087864025766245" at="202,0,263,0" name="com.mbeddr.doc.terms.editor.TermRefWord_tooltipHint_s74oao_a_EditorBuilder_a$Inline_Builder0$textSingleRoleHandler_dxjkgd_a0a0a" />
-      <unit id="3008087864025756951" at="79,0,171,0" name="com.mbeddr.doc.terms.editor.TermRefWord_tooltipHint_s74oao_a_EditorBuilder_a$QueryListHandler_dxjkgd_a0" />
-      <unit id="3008087864025766245" at="171,0,264,0" name="com.mbeddr.doc.terms.editor.TermRefWord_tooltipHint_s74oao_a_EditorBuilder_a$Inline_Builder0" />
-      <unit id="3008087864025756951" at="35,0,274,0" name="com.mbeddr.doc.terms.editor.TermRefWord_tooltipHint_s74oao_a_EditorBuilder_a" />
+      <unit id="3008087864025756951" at="265,0,268,0" name="com.mbeddr.doc.terms.editor.TermRefWord_tooltipHint_s74oao_a_EditorBuilder$CONCEPTS" />
+      <unit id="3008087864025756951" at="269,0,273,0" name="com.mbeddr.doc.terms.editor.TermRefWord_tooltipHint_s74oao_a_EditorBuilder$LINKS" />
+      <unit id="3008087864025766245" at="202,0,263,0" name="com.mbeddr.doc.terms.editor.TermRefWord_tooltipHint_s74oao_a_EditorBuilder$Inline_Builder0$textSingleRoleHandler_dxjkgd_a0a0a" />
+      <unit id="3008087864025756951" at="79,0,171,0" name="com.mbeddr.doc.terms.editor.TermRefWord_tooltipHint_s74oao_a_EditorBuilder$QueryListHandler_dxjkgd_a0" />
+      <unit id="3008087864025766245" at="171,0,264,0" name="com.mbeddr.doc.terms.editor.TermRefWord_tooltipHint_s74oao_a_EditorBuilder$Inline_Builder0" />
+      <unit id="3008087864025756951" at="35,0,274,0" name="com.mbeddr.doc.terms.editor.TermRefWord_tooltipHint_s74oao_a_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:7f15aae7-ba57-41a4-bdf8-aea0fafa9c34(com.mbeddr.doc.terms.editor)/2588579461811878242">
     <file name="TermsConfigItem_Editor.java">
-      <node id="2588579461811878242" at="11,79,12,81" concept="7" />
+      <node id="2588579461811878242" at="11,79,12,79" concept="7" />
       <node id="2588579461811878242" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2588579461811878242" at="11,79,12,81" />
+      <scope id="2588579461811878242" at="11,79,12,79" />
       <scope id="2588579461811878242" at="11,0,14,0">
         <var name="editorContext" id="2588579461811878242" />
         <var name="node" id="2588579461811878242" />
       </scope>
       <unit id="2588579461811878242" at="10,0,15,0" name="com.mbeddr.doc.terms.editor.TermsConfigItem_Editor" />
     </file>
-    <file name="TermsConfigItem_EditorBuilder_a.java">
-      <node id="2588579461811878242" at="16,95,17,19" concept="12" />
+    <file name="TermsConfigItem_EditorBuilder.java">
+      <node id="2588579461811878242" at="16,93,17,19" concept="12" />
       <node id="2588579461811878242" at="17,19,18,18" concept="2" />
       <node id="2588579461811878242" at="23,26,24,18" concept="7" />
       <node id="2588579461811878242" at="27,39,28,30" concept="7" />
@@ -528,12 +528,12 @@
       <node id="2588579461811878244" at="36,34,37,22" concept="7" />
       <node id="2588579461811878242" at="13,0,15,0" concept="3" trace="myNode" />
       <node id="2588579461811878242" at="27,0,30,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2588579461811878242" at="16,0,20,0" concept="1" trace="TermsConfigItem_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2588579461811878242" at="16,0,20,0" concept="1" trace="TermsConfigItem_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2588579461811878242" at="21,0,26,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2588579461811878244" at="31,0,39,0" concept="5" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="2588579461811878242" at="23,26,24,18" />
       <scope id="2588579461811878242" at="27,39,28,30" />
-      <scope id="2588579461811878242" at="16,95,18,18" />
+      <scope id="2588579461811878242" at="16,93,18,18" />
       <scope id="2588579461811878242" at="27,0,30,0" />
       <scope id="2588579461811878242" at="16,0,20,0">
         <var name="context" id="2588579461811878242" />
@@ -544,22 +544,22 @@
         <var name="editorCell" id="2588579461811878244" />
       </scope>
       <scope id="2588579461811878244" at="31,0,39,0" />
-      <unit id="2588579461811878242" at="12,0,40,0" name="com.mbeddr.doc.terms.editor.TermsConfigItem_EditorBuilder_a" />
+      <unit id="2588579461811878242" at="12,0,40,0" name="com.mbeddr.doc.terms.editor.TermsConfigItem_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:7f15aae7-ba57-41a4-bdf8-aea0fafa9c34(com.mbeddr.doc.terms.editor)/4224548511521359215">
     <file name="GlossaryPointer_Editor.java">
-      <node id="4224548511521359215" at="11,79,12,81" concept="7" />
+      <node id="4224548511521359215" at="11,79,12,79" concept="7" />
       <node id="4224548511521359215" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="4224548511521359215" at="11,79,12,81" />
+      <scope id="4224548511521359215" at="11,79,12,79" />
       <scope id="4224548511521359215" at="11,0,14,0">
         <var name="editorContext" id="4224548511521359215" />
         <var name="node" id="4224548511521359215" />
       </scope>
       <unit id="4224548511521359215" at="10,0,15,0" name="com.mbeddr.doc.terms.editor.GlossaryPointer_Editor" />
     </file>
-    <file name="GlossaryPointer_EditorBuilder_a.java">
-      <node id="4224548511521359215" at="45,95,46,19" concept="12" />
+    <file name="GlossaryPointer_EditorBuilder.java">
+      <node id="4224548511521359215" at="45,93,46,19" concept="12" />
       <node id="4224548511521359215" at="46,19,47,18" concept="2" />
       <node id="4224548511521359215" at="52,26,53,18" concept="7" />
       <node id="4224548511521359215" at="56,39,57,32" concept="7" />
@@ -638,7 +638,7 @@
       <node id="4224548511521359223" at="120,0,122,0" concept="3" trace="myNode" />
       <node id="4224548511521359215" at="56,0,59,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4224548511521359223" at="130,0,133,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="4224548511521359215" at="45,0,49,0" concept="1" trace="GlossaryPointer_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4224548511521359215" at="45,0,49,0" concept="1" trace="GlossaryPointer_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4224548511521359215" at="105,0,109,5" concept="4" />
       <node id="4224548511521359215" at="50,0,55,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4224548511521359215" at="112,205,117,22" concept="4" />
@@ -661,7 +661,7 @@
       <scope id="4224548511521359223" at="130,41,131,32" />
       <scope id="4224548511521359223" at="136,28,137,20" />
       <scope id="4224548511521359225" at="157,17,158,42" />
-      <scope id="4224548511521359215" at="45,95,47,18" />
+      <scope id="4224548511521359215" at="45,93,47,18" />
       <scope id="4224548511521359215" at="106,40,108,42" />
       <scope id="4224548511521359215" at="113,73,115,145">
         <var name="manager" id="4224548511521359215" />
@@ -733,12 +733,12 @@
         <var name="referenceLink" id="4224548511521359215" />
       </scope>
       <scope id="4224548511521359215" at="84,0,119,0" />
-      <unit id="4224548511521359215" at="174,0,177,0" name="com.mbeddr.doc.terms.editor.GlossaryPointer_EditorBuilder_a$LINKS" />
-      <unit id="4224548511521359215" at="183,0,186,0" name="com.mbeddr.doc.terms.editor.GlossaryPointer_EditorBuilder_a$PROPS" />
-      <unit id="4224548511521359215" at="178,0,182,0" name="com.mbeddr.doc.terms.editor.GlossaryPointer_EditorBuilder_a$CONCEPTS" />
-      <unit id="4224548511521359215" at="86,42,101,5" name="com.mbeddr.doc.terms.editor.GlossaryPointer_EditorBuilder_a$1" />
-      <unit id="4224548511521359223" at="119,0,162,0" name="com.mbeddr.doc.terms.editor.GlossaryPointer_EditorBuilder_a$Inline_Builder0" />
-      <unit id="4224548511521359215" at="41,0,187,0" name="com.mbeddr.doc.terms.editor.GlossaryPointer_EditorBuilder_a" />
+      <unit id="4224548511521359215" at="174,0,177,0" name="com.mbeddr.doc.terms.editor.GlossaryPointer_EditorBuilder$LINKS" />
+      <unit id="4224548511521359215" at="183,0,186,0" name="com.mbeddr.doc.terms.editor.GlossaryPointer_EditorBuilder$PROPS" />
+      <unit id="4224548511521359215" at="178,0,182,0" name="com.mbeddr.doc.terms.editor.GlossaryPointer_EditorBuilder$CONCEPTS" />
+      <unit id="4224548511521359215" at="86,42,101,5" name="com.mbeddr.doc.terms.editor.GlossaryPointer_EditorBuilder$1" />
+      <unit id="4224548511521359223" at="119,0,162,0" name="com.mbeddr.doc.terms.editor.GlossaryPointer_EditorBuilder$Inline_Builder0" />
+      <unit id="4224548511521359215" at="41,0,187,0" name="com.mbeddr.doc.terms.editor.GlossaryPointer_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:7f15aae7-ba57-41a4-bdf8-aea0fafa9c34(com.mbeddr.doc.terms.editor)/4224548511521367171">
@@ -826,17 +826,17 @@
   </root>
   <root nodeRef="r:7f15aae7-ba57-41a4-bdf8-aea0fafa9c34(com.mbeddr.doc.terms.editor)/8574110643282370467">
     <file name="TermRefWord_Editor.java">
-      <node id="8574110643282370467" at="11,79,12,77" concept="7" />
+      <node id="8574110643282370467" at="11,79,12,75" concept="7" />
       <node id="8574110643282370467" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8574110643282370467" at="11,79,12,77" />
+      <scope id="8574110643282370467" at="11,79,12,75" />
       <scope id="8574110643282370467" at="11,0,14,0">
         <var name="editorContext" id="8574110643282370467" />
         <var name="node" id="8574110643282370467" />
       </scope>
       <unit id="8574110643282370467" at="10,0,15,0" name="com.mbeddr.doc.terms.editor.TermRefWord_Editor" />
     </file>
-    <file name="TermRefWord_EditorBuilder_a.java">
-      <node id="8574110643282370467" at="41,91,42,19" concept="12" />
+    <file name="TermRefWord_EditorBuilder.java">
+      <node id="8574110643282370467" at="41,89,42,19" concept="12" />
       <node id="8574110643282370467" at="42,19,43,18" concept="2" />
       <node id="8574110643282370467" at="48,26,49,18" concept="7" />
       <node id="8574110643282370467" at="52,39,53,32" concept="7" />
@@ -936,7 +936,7 @@
       <node id="8574110643282431642" at="107,0,109,0" concept="3" trace="myNode" />
       <node id="8574110643282370467" at="52,0,55,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8574110643282431642" at="117,0,120,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8574110643282370467" at="41,0,45,0" concept="1" trace="TermRefWord_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8574110643282370467" at="41,0,45,0" concept="1" trace="TermRefWord_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8574110643282370467" at="92,0,96,5" concept="4" />
       <node id="8574110643282370467" at="46,0,51,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8574110643282370467" at="99,205,104,22" concept="4" />
@@ -961,7 +961,7 @@
       <scope id="8574110643282431642" at="123,28,124,20" />
       <scope id="8574110643282431644" at="144,17,145,42" />
       <scope id="4201933574507578553" at="177,15,178,40" />
-      <scope id="8574110643282370467" at="41,91,43,18" />
+      <scope id="8574110643282370467" at="41,89,43,18" />
       <scope id="8574110643282370467" at="93,40,95,43" />
       <scope id="8574110643282370467" at="100,73,102,145">
         <var name="manager" id="8574110643282370467" />
@@ -1035,12 +1035,12 @@
         <var name="referenceLink" id="8574110643282370467" />
       </scope>
       <scope id="8574110643282370467" at="78,0,106,0" />
-      <unit id="8574110643282370467" at="192,0,195,0" name="com.mbeddr.doc.terms.editor.TermRefWord_EditorBuilder_a$LINKS" />
-      <unit id="8574110643282370467" at="196,0,200,0" name="com.mbeddr.doc.terms.editor.TermRefWord_EditorBuilder_a$CONCEPTS" />
-      <unit id="8574110643282370467" at="201,0,205,0" name="com.mbeddr.doc.terms.editor.TermRefWord_EditorBuilder_a$PROPS" />
-      <unit id="8574110643282370467" at="80,42,88,5" name="com.mbeddr.doc.terms.editor.TermRefWord_EditorBuilder_a$1" />
-      <unit id="8574110643282431642" at="106,0,149,0" name="com.mbeddr.doc.terms.editor.TermRefWord_EditorBuilder_a$Inline_Builder0" />
-      <unit id="8574110643282370467" at="37,0,206,0" name="com.mbeddr.doc.terms.editor.TermRefWord_EditorBuilder_a" />
+      <unit id="8574110643282370467" at="192,0,195,0" name="com.mbeddr.doc.terms.editor.TermRefWord_EditorBuilder$LINKS" />
+      <unit id="8574110643282370467" at="196,0,200,0" name="com.mbeddr.doc.terms.editor.TermRefWord_EditorBuilder$CONCEPTS" />
+      <unit id="8574110643282370467" at="201,0,205,0" name="com.mbeddr.doc.terms.editor.TermRefWord_EditorBuilder$PROPS" />
+      <unit id="8574110643282370467" at="80,42,88,5" name="com.mbeddr.doc.terms.editor.TermRefWord_EditorBuilder$1" />
+      <unit id="8574110643282431642" at="106,0,149,0" name="com.mbeddr.doc.terms.editor.TermRefWord_EditorBuilder$Inline_Builder0" />
+      <unit id="8574110643282370467" at="37,0,206,0" name="com.mbeddr.doc.terms.editor.TermRefWord_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:7f15aae7-ba57-41a4-bdf8-aea0fafa9c34(com.mbeddr.doc.terms.editor)/8574110643282370480">
@@ -1064,17 +1064,17 @@
   </root>
   <root nodeRef="r:7f15aae7-ba57-41a4-bdf8-aea0fafa9c34(com.mbeddr.doc.terms.editor)/8574110643282426002">
     <file name="TermDefParagraph_Editor.java">
-      <node id="8574110643282426002" at="11,79,12,82" concept="7" />
+      <node id="8574110643282426002" at="11,79,12,80" concept="7" />
       <node id="8574110643282426002" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8574110643282426002" at="11,79,12,82" />
+      <scope id="8574110643282426002" at="11,79,12,80" />
       <scope id="8574110643282426002" at="11,0,14,0">
         <var name="editorContext" id="8574110643282426002" />
         <var name="node" id="8574110643282426002" />
       </scope>
       <unit id="8574110643282426002" at="10,0,15,0" name="com.mbeddr.doc.terms.editor.TermDefParagraph_Editor" />
     </file>
-    <file name="TermDefParagraph_EditorBuilder_a.java">
-      <node id="8574110643282426002" at="45,96,46,19" concept="12" />
+    <file name="TermDefParagraph_EditorBuilder.java">
+      <node id="8574110643282426002" at="45,94,46,19" concept="12" />
       <node id="8574110643282426002" at="46,19,47,18" concept="2" />
       <node id="8574110643282426002" at="52,26,53,18" concept="7" />
       <node id="8574110643282426002" at="56,39,57,32" concept="7" />
@@ -1148,7 +1148,7 @@
       <node id="8574110643282426002" at="140,87,143,7" concept="4" />
       <node id="8574110643282426002" at="143,7,146,7" concept="4" />
       <node id="8574110643282426002" at="162,0,165,0" concept="5" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="8574110643282426002" at="45,0,49,0" concept="1" trace="TermDefParagraph_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8574110643282426002" at="45,0,49,0" concept="1" trace="TermDefParagraph_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8574110643282426002" at="111,0,115,0" concept="5" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8574110643282426002" at="119,0,123,0" concept="1" trace="textSingleRoleHandler_lnqojf_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="8574110643282426002" at="50,0,55,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -1173,7 +1173,7 @@
       <scope id="8574110643282426002" at="144,42,145,45" />
       <scope id="8574110643282426002" at="158,17,159,42" />
       <scope id="8574110643282426002" at="162,40,163,25" />
-      <scope id="8574110643282426002" at="45,96,47,18" />
+      <scope id="8574110643282426002" at="45,94,47,18" />
       <scope id="8574110643282427869" at="102,74,104,145">
         <var name="manager" id="8574110643282427869" />
       </scope>
@@ -1242,11 +1242,11 @@
       <scope id="8574110643282426002" at="148,0,162,0" />
       <scope id="8574110643282427869" at="90,41,109,5" />
       <scope id="8574110643282427869" at="90,0,111,0" />
-      <unit id="8574110643282426002" at="173,0,176,0" name="com.mbeddr.doc.terms.editor.TermDefParagraph_EditorBuilder_a$PROPS" />
-      <unit id="8574110643282426002" at="177,0,180,0" name="com.mbeddr.doc.terms.editor.TermDefParagraph_EditorBuilder_a$CONCEPTS" />
-      <unit id="8574110643282426002" at="181,0,184,0" name="com.mbeddr.doc.terms.editor.TermDefParagraph_EditorBuilder_a$LINKS" />
-      <unit id="8574110643282426002" at="115,0,166,0" name="com.mbeddr.doc.terms.editor.TermDefParagraph_EditorBuilder_a$textSingleRoleHandler_lnqojf_c0" />
-      <unit id="8574110643282426002" at="41,0,185,0" name="com.mbeddr.doc.terms.editor.TermDefParagraph_EditorBuilder_a" />
+      <unit id="8574110643282426002" at="173,0,176,0" name="com.mbeddr.doc.terms.editor.TermDefParagraph_EditorBuilder$PROPS" />
+      <unit id="8574110643282426002" at="177,0,180,0" name="com.mbeddr.doc.terms.editor.TermDefParagraph_EditorBuilder$CONCEPTS" />
+      <unit id="8574110643282426002" at="181,0,184,0" name="com.mbeddr.doc.terms.editor.TermDefParagraph_EditorBuilder$LINKS" />
+      <unit id="8574110643282426002" at="115,0,166,0" name="com.mbeddr.doc.terms.editor.TermDefParagraph_EditorBuilder$textSingleRoleHandler_lnqojf_c0" />
+      <unit id="8574110643282426002" at="41,0,185,0" name="com.mbeddr.doc.terms.editor.TermDefParagraph_EditorBuilder" />
     </file>
   </root>
 </debug-info>

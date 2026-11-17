@@ -18,6 +18,6 @@ public class FunctionSignature_tooltipHint_njyx9c_b8a0_Editor extends DefaultNod
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new FunctionSignature_tooltipHint_njyx9c_b8a0_EditorBuilder_a(editorContext, node).createCell();
+    return new FunctionSignature_tooltipHint_njyx9c_b8a0_EditorBuilder(editorContext, node).createCell();
   }
 }

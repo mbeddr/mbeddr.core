@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class MultilingualText_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new MultilingualText_EditorBuilder_a(editorContext, node).createCell();
+    return new MultilingualText_EditorBuilder(editorContext, node).createCell();
   }
 }

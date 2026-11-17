@@ -18,9 +18,9 @@ public class TableOfContents_presentationMode_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TableOfContents_presentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new TableOfContents_presentationMode_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new TableOfContents_presentationMode_InspectorBuilder_a(editorContext, node).createCell();
+    return new TableOfContents_presentationMode_InspectorBuilder(editorContext, node).createCell();
   }
 }

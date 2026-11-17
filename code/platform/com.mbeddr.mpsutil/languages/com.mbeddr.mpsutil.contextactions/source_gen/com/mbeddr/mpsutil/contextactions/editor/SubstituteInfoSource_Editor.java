@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class SubstituteInfoSource_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SubstituteInfoSource_EditorBuilder_a(editorContext, node).createCell();
+    return new SubstituteInfoSource_EditorBuilder(editorContext, node).createCell();
   }
 }

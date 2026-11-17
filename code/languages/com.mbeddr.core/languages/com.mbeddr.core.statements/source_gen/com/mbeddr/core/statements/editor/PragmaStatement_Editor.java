@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PragmaStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PragmaStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new PragmaStatement_EditorBuilder(editorContext, node).createCell();
   }
 }

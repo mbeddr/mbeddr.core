@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class HasEffortFilter_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new HasEffortFilter_EditorBuilder_a(editorContext, node).createCell();
+    return new HasEffortFilter_EditorBuilder(editorContext, node).createCell();
   }
 }

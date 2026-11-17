@@ -16,6 +16,6 @@ public class IHasPrefixesComponent implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new IHasPrefixesComponent_ComponentBuilder_a(editorContext, node).createCell();
+    return new IHasPrefixesComponent_ComponentBuilder(editorContext, node).createCell();
   }
 }

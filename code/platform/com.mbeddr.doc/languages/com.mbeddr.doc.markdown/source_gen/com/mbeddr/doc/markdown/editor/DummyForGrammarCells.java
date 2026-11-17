@@ -16,6 +16,6 @@ public class DummyForGrammarCells implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DummyForGrammarCells_ComponentBuilder_a(editorContext, node).createCell();
+    return new DummyForGrammarCells_ComponentBuilder(editorContext, node).createCell();
   }
 }

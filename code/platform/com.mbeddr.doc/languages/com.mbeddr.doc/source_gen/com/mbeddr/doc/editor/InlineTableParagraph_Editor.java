@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class InlineTableParagraph_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new InlineTableParagraph_EditorBuilder_a(editorContext, node).createCell();
+    return new InlineTableParagraph_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new InlineTableParagraph_InspectorBuilder_a(editorContext, node).createCell();
+    return new InlineTableParagraph_InspectorBuilder(editorContext, node).createCell();
   }
 }

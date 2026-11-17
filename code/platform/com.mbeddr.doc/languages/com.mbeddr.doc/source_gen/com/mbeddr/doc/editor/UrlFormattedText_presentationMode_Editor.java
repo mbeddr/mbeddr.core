@@ -18,6 +18,6 @@ public class UrlFormattedText_presentationMode_Editor extends DefaultNodeEditor 
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new UrlFormattedText_presentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new UrlFormattedText_presentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

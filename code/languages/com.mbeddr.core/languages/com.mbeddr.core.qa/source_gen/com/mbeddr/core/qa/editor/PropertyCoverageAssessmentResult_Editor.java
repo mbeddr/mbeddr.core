@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PropertyCoverageAssessmentResult_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PropertyCoverageAssessmentResult_EditorBuilder_a(editorContext, node).createCell();
+    return new PropertyCoverageAssessmentResult_EditorBuilder(editorContext, node).createCell();
   }
 }

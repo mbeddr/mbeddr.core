@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class SuppressWarnings_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SuppressWarnings_EditorBuilder_a(editorContext, node).createCell();
+    return new SuppressWarnings_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ReportCheckExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ReportCheckExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new ReportCheckExpression_EditorBuilder(editorContext, node).createCell();
   }
 }

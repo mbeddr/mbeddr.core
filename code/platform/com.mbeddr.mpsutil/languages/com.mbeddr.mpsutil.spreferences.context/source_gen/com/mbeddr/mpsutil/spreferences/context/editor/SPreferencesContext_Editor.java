@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class SPreferencesContext_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SPreferencesContext_EditorBuilder_a(editorContext, node).createCell();
+    return new SPreferencesContext_EditorBuilder(editorContext, node).createCell();
   }
 }

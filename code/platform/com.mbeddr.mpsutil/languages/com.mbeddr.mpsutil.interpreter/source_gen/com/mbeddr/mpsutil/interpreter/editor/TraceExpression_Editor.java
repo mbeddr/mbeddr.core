@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class TraceExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TraceExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new TraceExpression_EditorBuilder(editorContext, node).createCell();
   }
 }

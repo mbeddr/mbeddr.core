@@ -18,6 +18,6 @@ public class ConceptRefExpression_UniqueNames_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConceptRefExpression_UniqueNames_EditorBuilder_a(editorContext, node).createCell();
+    return new ConceptRefExpression_UniqueNames_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class Visualization_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Visualization_EditorBuilder_a(editorContext, node).createCell();
+    return new Visualization_EditorBuilder(editorContext, node).createCell();
   }
 }

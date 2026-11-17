@@ -16,6 +16,6 @@ public class TypeSize implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TypeSize_ComponentBuilder_a(editorContext, node).createCell();
+    return new TypeSize_ComponentBuilder(editorContext, node).createCell();
   }
 }

@@ -20,17 +20,17 @@
   </root>
   <root nodeRef="r:7dd13d5c-8d93-4e75-b59f-b8abcd5abd27(com.mbeddr.mpsutil.suppresswarning.editor)/9116320848000879420">
     <file name="SuppressWarnings_Editor.java">
-      <node id="9116320848000879420" at="11,79,12,82" concept="6" />
+      <node id="9116320848000879420" at="11,79,12,80" concept="6" />
       <node id="9116320848000879420" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="9116320848000879420" at="11,79,12,82" />
+      <scope id="9116320848000879420" at="11,79,12,80" />
       <scope id="9116320848000879420" at="11,0,14,0">
         <var name="editorContext" id="9116320848000879420" />
         <var name="node" id="9116320848000879420" />
       </scope>
       <unit id="9116320848000879420" at="10,0,15,0" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarnings_Editor" />
     </file>
-    <file name="SuppressWarnings_EditorBuilder_a.java">
-      <node id="9116320848000879420" at="38,96,39,19" concept="11" />
+    <file name="SuppressWarnings_EditorBuilder.java">
+      <node id="9116320848000879420" at="38,94,39,19" concept="11" />
       <node id="9116320848000879420" at="39,19,40,18" concept="1" />
       <node id="9116320848000879420" at="45,26,46,18" concept="6" />
       <node id="9116320848000879420" at="49,39,50,32" concept="6" />
@@ -117,7 +117,7 @@
       <node id="9116320848000879420" at="49,0,52,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="9116320848000879420" at="105,0,108,0" concept="4" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="9116320848000879420" at="108,0,111,0" concept="4" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="9116320848000879420" at="38,0,42,0" concept="0" trace="SuppressWarnings_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="9116320848000879420" at="38,0,42,0" concept="0" trace="SuppressWarnings_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="9116320848000879420" at="96,0,100,0" concept="0" trace="kindsListHandler_6zoh2o_b0a#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="9116320848000879420" at="101,0,105,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="9116320848000879420" at="134,97,138,9" concept="3" />
@@ -146,7 +146,7 @@
       <scope id="9116320848000879420" at="105,40,106,30" />
       <scope id="9116320848000879420" at="108,48,109,45" />
       <scope id="9116320848000879420" at="126,17,127,42" />
-      <scope id="9116320848000879420" at="38,96,40,18" />
+      <scope id="9116320848000879420" at="38,94,40,18" />
       <scope id="9116320848000879420" at="96,80,98,25" />
       <scope id="9116320848000879420" at="135,122,137,146" />
       <scope id="9116320848000879420" at="141,34,143,142" />
@@ -223,10 +223,10 @@
         <var name="elementNode" id="9116320848000879420" />
         <var name="isEmptyCell" id="9116320848000879420" />
       </scope>
-      <unit id="9116320848000879420" at="188,0,191,0" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarnings_EditorBuilder_a$LINKS" />
-      <unit id="9116320848000879420" at="192,0,195,0" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarnings_EditorBuilder_a$CONCEPTS" />
-      <unit id="9116320848000879420" at="92,0,172,0" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarnings_EditorBuilder_a$kindsListHandler_6zoh2o_b0a" />
-      <unit id="9116320848000879420" at="34,0,196,0" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarnings_EditorBuilder_a" />
+      <unit id="9116320848000879420" at="188,0,191,0" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarnings_EditorBuilder$LINKS" />
+      <unit id="9116320848000879420" at="192,0,195,0" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarnings_EditorBuilder$CONCEPTS" />
+      <unit id="9116320848000879420" at="92,0,172,0" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarnings_EditorBuilder$kindsListHandler_6zoh2o_b0a" />
+      <unit id="9116320848000879420" at="34,0,196,0" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarnings_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:7dd13d5c-8d93-4e75-b59f-b8abcd5abd27(com.mbeddr.mpsutil.suppresswarning.editor)/9116320848000879436">
@@ -314,17 +314,17 @@
   </root>
   <root nodeRef="r:7dd13d5c-8d93-4e75-b59f-b8abcd5abd27(com.mbeddr.mpsutil.suppresswarning.editor)/9116320848000879444">
     <file name="SuppressWarningKind_Editor.java">
-      <node id="9116320848000879444" at="11,79,12,85" concept="6" />
+      <node id="9116320848000879444" at="11,79,12,83" concept="6" />
       <node id="9116320848000879444" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="9116320848000879444" at="11,79,12,85" />
+      <scope id="9116320848000879444" at="11,79,12,83" />
       <scope id="9116320848000879444" at="11,0,14,0">
         <var name="editorContext" id="9116320848000879444" />
         <var name="node" id="9116320848000879444" />
       </scope>
       <unit id="9116320848000879444" at="10,0,15,0" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarningKind_Editor" />
     </file>
-    <file name="SuppressWarningKind_EditorBuilder_a.java">
-      <node id="9116320848000879444" at="25,99,26,19" concept="11" />
+    <file name="SuppressWarningKind_EditorBuilder.java">
+      <node id="9116320848000879444" at="25,97,26,19" concept="11" />
       <node id="9116320848000879444" at="26,19,27,18" concept="1" />
       <node id="9116320848000879444" at="32,26,33,18" concept="6" />
       <node id="9116320848000879444" at="36,39,37,43" concept="6" />
@@ -342,14 +342,14 @@
       <node id="9116320848000879444" at="22,0,24,0" concept="2" trace="myNode" />
       <node id="9116320848000879444" at="36,0,39,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="9116320848000879445" at="42,0,45,0" concept="4" trace="getText#()Ljava/lang/String;" />
-      <node id="9116320848000879444" at="25,0,29,0" concept="0" trace="SuppressWarningKind_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="9116320848000879444" at="25,0,29,0" concept="0" trace="SuppressWarningKind_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="9116320848000879444" at="30,0,35,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="9116320848000879445" at="40,54,45,15" concept="5" />
       <node id="9116320848000879445" at="40,0,57,0" concept="4" trace="createReadOnlyModelAccessor_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="9116320848000879444" at="32,26,33,18" />
       <scope id="9116320848000879444" at="36,39,37,43" />
       <scope id="9116320848000879449" at="42,31,43,157" />
-      <scope id="9116320848000879444" at="25,99,27,18" />
+      <scope id="9116320848000879444" at="25,97,27,18" />
       <scope id="9116320848000879444" at="36,0,39,0" />
       <scope id="9116320848000879445" at="42,0,45,0" />
       <scope id="9116320848000879444" at="25,0,29,0">
@@ -362,8 +362,8 @@
         <var name="style" id="9116320848000879445" />
       </scope>
       <scope id="9116320848000879445" at="40,0,57,0" />
-      <unit id="9116320848000879445" at="41,88,45,5" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarningKind_EditorBuilder_a$1" />
-      <unit id="9116320848000879444" at="21,0,58,0" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarningKind_EditorBuilder_a" />
+      <unit id="9116320848000879445" at="41,88,45,5" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarningKind_EditorBuilder$1" />
+      <unit id="9116320848000879444" at="21,0,58,0" name="com.mbeddr.mpsutil.suppresswarning.editor.SuppressWarningKind_EditorBuilder" />
     </file>
   </root>
 </debug-info>

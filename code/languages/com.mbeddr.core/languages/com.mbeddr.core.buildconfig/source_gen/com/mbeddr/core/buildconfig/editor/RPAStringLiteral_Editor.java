@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RPAStringLiteral_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RPAStringLiteral_EditorBuilder_a(editorContext, node).createCell();
+    return new RPAStringLiteral_EditorBuilder(editorContext, node).createCell();
   }
 }

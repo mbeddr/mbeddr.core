@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class IEMFDataType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new IEMFDataType_EditorBuilder_a(editorContext, node).createCell();
+    return new IEMFDataType_EditorBuilder(editorContext, node).createCell();
   }
 }

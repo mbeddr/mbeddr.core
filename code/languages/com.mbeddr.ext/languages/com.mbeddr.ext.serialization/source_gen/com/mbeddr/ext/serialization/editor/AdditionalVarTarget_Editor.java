@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AdditionalVarTarget_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AdditionalVarTarget_EditorBuilder_a(editorContext, node).createCell();
+    return new AdditionalVarTarget_EditorBuilder(editorContext, node).createCell();
   }
 }

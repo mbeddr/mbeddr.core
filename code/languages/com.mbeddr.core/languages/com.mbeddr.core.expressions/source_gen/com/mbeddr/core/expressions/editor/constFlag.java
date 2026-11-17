@@ -16,6 +16,6 @@ public class constFlag implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new constFlag_ComponentBuilder_a(editorContext, node).createCell();
+    return new constFlag_ComponentBuilder(editorContext, node).createCell();
   }
 }

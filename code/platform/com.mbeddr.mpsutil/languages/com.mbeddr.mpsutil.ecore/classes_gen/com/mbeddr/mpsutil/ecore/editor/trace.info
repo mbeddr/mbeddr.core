@@ -17,17 +17,17 @@
   </root>
   <root nodeRef="r:f7474f82-1196-436f-9505-0a00ce717808(com.mbeddr.mpsutil.ecore.editor)/2995083582054655316">
     <file name="EMFDataTypeAnnotation_Editor.java">
-      <node id="2995083582054655316" at="11,79,12,87" concept="6" />
+      <node id="2995083582054655316" at="11,79,12,85" concept="6" />
       <node id="2995083582054655316" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2995083582054655316" at="11,79,12,87" />
+      <scope id="2995083582054655316" at="11,79,12,85" />
       <scope id="2995083582054655316" at="11,0,14,0">
         <var name="editorContext" id="2995083582054655316" />
         <var name="node" id="2995083582054655316" />
       </scope>
       <unit id="2995083582054655316" at="10,0,15,0" name="com.mbeddr.mpsutil.ecore.editor.EMFDataTypeAnnotation_Editor" />
     </file>
-    <file name="EMFDataTypeAnnotation_EditorBuilder_a.java">
-      <node id="2995083582054655316" at="32,101,33,19" concept="8" />
+    <file name="EMFDataTypeAnnotation_EditorBuilder.java">
+      <node id="2995083582054655316" at="32,99,33,19" concept="8" />
       <node id="2995083582054655316" at="33,19,34,18" concept="1" />
       <node id="2995083582054655316" at="39,26,40,18" concept="6" />
       <node id="2995083582054655316" at="43,39,44,32" concept="6" />
@@ -77,7 +77,7 @@
       <node id="2995083582054655316" at="92,87,95,7" concept="3" />
       <node id="2995083582054655316" at="95,7,98,7" concept="3" />
       <node id="2995083582054655316" at="117,0,120,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="2995083582054655316" at="32,0,36,0" concept="0" trace="EMFDataTypeAnnotation_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2995083582054655316" at="32,0,36,0" concept="0" trace="EMFDataTypeAnnotation_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2995083582054655316" at="63,0,67,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2995083582054655316" at="71,0,75,0" concept="0" trace="typeSingleRoleHandler_meitj1_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2995083582054655316" at="37,0,42,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -96,7 +96,7 @@
       <scope id="2995083582054655316" at="96,42,97,45" />
       <scope id="2995083582054655316" at="113,17,114,42" />
       <scope id="2995083582054655316" at="117,40,118,25" />
-      <scope id="2995083582054655316" at="32,101,34,18" />
+      <scope id="2995083582054655316" at="32,99,34,18" />
       <scope id="2995083582054655316" at="63,40,65,33">
         <var name="provider" id="2995083582054655316" />
       </scope>
@@ -147,24 +147,24 @@
       </scope>
       <scope id="2995083582054655316" at="104,44,115,7" />
       <scope id="2995083582054655316" at="103,0,117,0" />
-      <unit id="2995083582054655316" at="127,0,130,0" name="com.mbeddr.mpsutil.ecore.editor.EMFDataTypeAnnotation_EditorBuilder_a$LINKS" />
-      <unit id="2995083582054655316" at="67,0,121,0" name="com.mbeddr.mpsutil.ecore.editor.EMFDataTypeAnnotation_EditorBuilder_a$typeSingleRoleHandler_meitj1_b0" />
-      <unit id="2995083582054655316" at="28,0,131,0" name="com.mbeddr.mpsutil.ecore.editor.EMFDataTypeAnnotation_EditorBuilder_a" />
+      <unit id="2995083582054655316" at="127,0,130,0" name="com.mbeddr.mpsutil.ecore.editor.EMFDataTypeAnnotation_EditorBuilder$LINKS" />
+      <unit id="2995083582054655316" at="67,0,121,0" name="com.mbeddr.mpsutil.ecore.editor.EMFDataTypeAnnotation_EditorBuilder$typeSingleRoleHandler_meitj1_b0" />
+      <unit id="2995083582054655316" at="28,0,131,0" name="com.mbeddr.mpsutil.ecore.editor.EMFDataTypeAnnotation_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:f7474f82-1196-436f-9505-0a00ce717808(com.mbeddr.mpsutil.ecore.editor)/2995083582054765517">
     <file name="IEMFDataType_Editor.java">
-      <node id="2995083582054765517" at="11,79,12,78" concept="6" />
+      <node id="2995083582054765517" at="11,79,12,76" concept="6" />
       <node id="2995083582054765517" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2995083582054765517" at="11,79,12,78" />
+      <scope id="2995083582054765517" at="11,79,12,76" />
       <scope id="2995083582054765517" at="11,0,14,0">
         <var name="editorContext" id="2995083582054765517" />
         <var name="node" id="2995083582054765517" />
       </scope>
       <unit id="2995083582054765517" at="10,0,15,0" name="com.mbeddr.mpsutil.ecore.editor.IEMFDataType_Editor" />
     </file>
-    <file name="IEMFDataType_EditorBuilder_a.java">
-      <node id="2995083582054765517" at="23,92,24,19" concept="8" />
+    <file name="IEMFDataType_EditorBuilder.java">
+      <node id="2995083582054765517" at="23,90,24,19" concept="8" />
       <node id="2995083582054765517" at="24,19,25,18" concept="1" />
       <node id="2995083582054765517" at="30,26,31,18" concept="6" />
       <node id="2995083582054765517" at="34,39,35,43" concept="6" />
@@ -181,14 +181,14 @@
       <node id="2995083582054765517" at="20,0,22,0" concept="2" trace="myNode" />
       <node id="2995083582054765517" at="34,0,37,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2995083582054771161" at="40,0,43,0" concept="4" trace="getText#()Ljava/lang/String;" />
-      <node id="2995083582054765517" at="23,0,27,0" concept="0" trace="IEMFDataType_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2995083582054765517" at="23,0,27,0" concept="0" trace="IEMFDataType_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2995083582054765517" at="28,0,33,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2995083582054771161" at="38,54,43,15" concept="5" />
       <node id="2995083582054771161" at="38,0,54,0" concept="4" trace="createReadOnlyModelAccessor_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="2995083582054765517" at="30,26,31,18" />
       <scope id="2995083582054765517" at="34,39,35,43" />
       <scope id="2995083582054771167" at="40,31,41,98" />
-      <scope id="2995083582054765517" at="23,92,25,18" />
+      <scope id="2995083582054765517" at="23,90,25,18" />
       <scope id="2995083582054765517" at="34,0,37,0" />
       <scope id="2995083582054771161" at="40,0,43,0" />
       <scope id="2995083582054765517" at="23,0,27,0">
@@ -201,23 +201,23 @@
         <var name="style" id="2995083582054771161" />
       </scope>
       <scope id="2995083582054771161" at="38,0,54,0" />
-      <unit id="2995083582054771161" at="39,88,43,5" name="com.mbeddr.mpsutil.ecore.editor.IEMFDataType_EditorBuilder_a$1" />
-      <unit id="2995083582054765517" at="19,0,55,0" name="com.mbeddr.mpsutil.ecore.editor.IEMFDataType_EditorBuilder_a" />
+      <unit id="2995083582054771161" at="39,88,43,5" name="com.mbeddr.mpsutil.ecore.editor.IEMFDataType_EditorBuilder$1" />
+      <unit id="2995083582054765517" at="19,0,55,0" name="com.mbeddr.mpsutil.ecore.editor.IEMFDataType_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:f7474f82-1196-436f-9505-0a00ce717808(com.mbeddr.mpsutil.ecore.editor)/6180831338628293503">
     <file name="EcoreFileInfo_Editor.java">
-      <node id="6180831338628293503" at="11,79,12,79" concept="6" />
+      <node id="6180831338628293503" at="11,79,12,77" concept="6" />
       <node id="6180831338628293503" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="6180831338628293503" at="11,79,12,79" />
+      <scope id="6180831338628293503" at="11,79,12,77" />
       <scope id="6180831338628293503" at="11,0,14,0">
         <var name="editorContext" id="6180831338628293503" />
         <var name="node" id="6180831338628293503" />
       </scope>
       <unit id="6180831338628293503" at="10,0,15,0" name="com.mbeddr.mpsutil.ecore.editor.EcoreFileInfo_Editor" />
     </file>
-    <file name="EcoreFileInfo_EditorBuilder_a.java">
-      <node id="6180831338628293503" at="40,93,41,19" concept="8" />
+    <file name="EcoreFileInfo_EditorBuilder.java">
+      <node id="6180831338628293503" at="40,91,41,19" concept="8" />
       <node id="6180831338628293503" at="41,19,42,18" concept="1" />
       <node id="6180831338628293503" at="47,26,48,18" concept="6" />
       <node id="6180831338628293503" at="51,39,52,32" concept="6" />
@@ -287,7 +287,7 @@
       <node id="6180831338628293503" at="102,87,105,7" concept="3" />
       <node id="6180831338628293503" at="105,7,108,7" concept="3" />
       <node id="6180831338628293503" at="124,0,127,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="6180831338628293503" at="40,0,44,0" concept="0" trace="EcoreFileInfo_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6180831338628293503" at="40,0,44,0" concept="0" trace="EcoreFileInfo_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6180831338628293503" at="73,0,77,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6180831338628293503" at="81,0,85,0" concept="0" trace="pathToEcoreFileSingleRoleHandler_ml9ggf_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="6180831338628293503" at="45,0,50,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -311,7 +311,7 @@
       <scope id="6180831338628293503" at="120,17,121,42" />
       <scope id="6180831338628293503" at="124,40,125,36" />
       <scope id="3586491774338535486" at="151,15,152,40" />
-      <scope id="6180831338628293503" at="40,93,42,18" />
+      <scope id="6180831338628293503" at="40,91,42,18" />
       <scope id="6180831338628293503" at="73,40,75,33">
         <var name="provider" id="6180831338628293503" />
       </scope>
@@ -374,11 +374,11 @@
       </scope>
       <scope id="3586491774338535486" at="134,41,153,5" />
       <scope id="3586491774338535486" at="134,0,155,0" />
-      <unit id="6180831338628293503" at="162,0,165,0" name="com.mbeddr.mpsutil.ecore.editor.EcoreFileInfo_EditorBuilder_a$LINKS" />
-      <unit id="6180831338628293503" at="166,0,169,0" name="com.mbeddr.mpsutil.ecore.editor.EcoreFileInfo_EditorBuilder_a$PROPS" />
-      <unit id="6180831338628293503" at="170,0,173,0" name="com.mbeddr.mpsutil.ecore.editor.EcoreFileInfo_EditorBuilder_a$CONCEPTS" />
-      <unit id="6180831338628293503" at="77,0,128,0" name="com.mbeddr.mpsutil.ecore.editor.EcoreFileInfo_EditorBuilder_a$pathToEcoreFileSingleRoleHandler_ml9ggf_b0" />
-      <unit id="6180831338628293503" at="36,0,174,0" name="com.mbeddr.mpsutil.ecore.editor.EcoreFileInfo_EditorBuilder_a" />
+      <unit id="6180831338628293503" at="162,0,165,0" name="com.mbeddr.mpsutil.ecore.editor.EcoreFileInfo_EditorBuilder$LINKS" />
+      <unit id="6180831338628293503" at="166,0,169,0" name="com.mbeddr.mpsutil.ecore.editor.EcoreFileInfo_EditorBuilder$PROPS" />
+      <unit id="6180831338628293503" at="170,0,173,0" name="com.mbeddr.mpsutil.ecore.editor.EcoreFileInfo_EditorBuilder$CONCEPTS" />
+      <unit id="6180831338628293503" at="77,0,128,0" name="com.mbeddr.mpsutil.ecore.editor.EcoreFileInfo_EditorBuilder$pathToEcoreFileSingleRoleHandler_ml9ggf_b0" />
+      <unit id="6180831338628293503" at="36,0,174,0" name="com.mbeddr.mpsutil.ecore.editor.EcoreFileInfo_EditorBuilder" />
     </file>
   </root>
 </debug-info>

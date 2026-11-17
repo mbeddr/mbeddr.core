@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class Collaboration_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Collaboration_EditorBuilder_a(editorContext, node).createCell();
+    return new Collaboration_EditorBuilder(editorContext, node).createCell();
   }
 }

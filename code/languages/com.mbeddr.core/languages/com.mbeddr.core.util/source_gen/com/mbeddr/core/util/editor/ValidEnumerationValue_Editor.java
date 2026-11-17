@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ValidEnumerationValue_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ValidEnumerationValue_EditorBuilder_a(editorContext, node).createCell();
+    return new ValidEnumerationValue_EditorBuilder(editorContext, node).createCell();
   }
 }

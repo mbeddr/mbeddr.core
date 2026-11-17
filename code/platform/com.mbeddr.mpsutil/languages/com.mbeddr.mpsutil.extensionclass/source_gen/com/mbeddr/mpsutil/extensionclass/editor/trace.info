@@ -304,17 +304,17 @@
   </root>
   <root nodeRef="r:388dbf55-f629-4e92-bf85-4335a8102727(com.mbeddr.mpsutil.extensionclass.editor)/5712676642252469561">
     <file name="ExtensionClass_Editor.java">
-      <node id="5712676642252469561" at="11,79,12,80" concept="8" />
+      <node id="5712676642252469561" at="11,79,12,78" concept="8" />
       <node id="5712676642252469561" at="11,0,14,0" concept="6" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5712676642252469561" at="11,79,12,80" />
+      <scope id="5712676642252469561" at="11,79,12,78" />
       <scope id="5712676642252469561" at="11,0,14,0">
         <var name="editorContext" id="5712676642252469561" />
         <var name="node" id="5712676642252469561" />
       </scope>
       <unit id="5712676642252469561" at="10,0,15,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClass_Editor" />
     </file>
-    <file name="ExtensionClass_EditorBuilder_a.java">
-      <node id="5712676642252469561" at="52,94,53,19" concept="11" />
+    <file name="ExtensionClass_EditorBuilder.java">
+      <node id="5712676642252469561" at="52,92,53,19" concept="11" />
       <node id="5712676642252469561" at="53,19,54,18" concept="2" />
       <node id="5712676642252469561" at="59,26,60,18" concept="8" />
       <node id="5712676642252469561" at="63,39,64,32" concept="8" />
@@ -438,7 +438,7 @@
       <node id="5712676642252469561" at="193,0,196,0" concept="6" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="5712676642252469561" at="196,0,199,0" concept="6" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="5712676642252469561" at="240,96,243,9" concept="5" />
-      <node id="5712676642252469561" at="52,0,56,0" concept="1" trace="ExtensionClass_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5712676642252469561" at="52,0,56,0" concept="1" trace="ExtensionClass_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5712676642252469561" at="109,0,113,5" concept="5" />
       <node id="5712676642252469561" at="184,0,188,0" concept="1" trace="annotationsListHandler_qtwwl5_a3a#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="5712676642252469561" at="189,0,193,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -478,7 +478,7 @@
       <scope id="5712676642252469561" at="196,48,197,56" />
       <scope id="5712676642252469561" at="214,17,215,42" />
       <scope id="5712676642252469561" at="241,34,242,91" />
-      <scope id="5712676642252469561" at="52,94,54,18" />
+      <scope id="5712676642252469561" at="52,92,54,18" />
       <scope id="5712676642252469561" at="110,40,112,44" />
       <scope id="5712676642252469561" at="117,73,119,145">
         <var name="manager" id="5712676642252469561" />
@@ -587,27 +587,27 @@
         <var name="referenceLink" id="5712676642252469561" />
       </scope>
       <scope id="5712676642252469561" at="88,0,123,0" />
-      <unit id="5712676642252469561" at="264,0,268,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClass_EditorBuilder_a$LINKS" />
-      <unit id="5712676642252469561" at="269,0,273,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClass_EditorBuilder_a$CONCEPTS" />
-      <unit id="5712676642252469561" at="90,42,105,5" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClass_EditorBuilder_a$1" />
-      <unit id="5712676642252469795" at="123,0,150,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClass_EditorBuilder_a$Inline_Builder0" />
-      <unit id="5712676642252469561" at="180,0,253,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClass_EditorBuilder_a$annotationsListHandler_qtwwl5_a3a" />
-      <unit id="5712676642252469561" at="48,0,274,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClass_EditorBuilder_a" />
+      <unit id="5712676642252469561" at="264,0,268,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClass_EditorBuilder$LINKS" />
+      <unit id="5712676642252469561" at="269,0,273,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClass_EditorBuilder$CONCEPTS" />
+      <unit id="5712676642252469561" at="90,42,105,5" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClass_EditorBuilder$1" />
+      <unit id="5712676642252469795" at="123,0,150,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClass_EditorBuilder$Inline_Builder0" />
+      <unit id="5712676642252469561" at="180,0,253,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClass_EditorBuilder$annotationsListHandler_qtwwl5_a3a" />
+      <unit id="5712676642252469561" at="48,0,274,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClass_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:388dbf55-f629-4e92-bf85-4335a8102727(com.mbeddr.mpsutil.extensionclass.editor)/5712676642255248865">
     <file name="ExtensionClassMethodCall_Editor.java">
-      <node id="5712676642255248865" at="11,79,12,90" concept="8" />
+      <node id="5712676642255248865" at="11,79,12,88" concept="8" />
       <node id="5712676642255248865" at="11,0,14,0" concept="6" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5712676642255248865" at="11,79,12,90" />
+      <scope id="5712676642255248865" at="11,79,12,88" />
       <scope id="5712676642255248865" at="11,0,14,0">
         <var name="editorContext" id="5712676642255248865" />
         <var name="node" id="5712676642255248865" />
       </scope>
       <unit id="5712676642255248865" at="10,0,15,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_Editor" />
     </file>
-    <file name="ExtensionClassMethodCall_EditorBuilder_a.java">
-      <node id="5712676642255248865" at="63,104,64,19" concept="11" />
+    <file name="ExtensionClassMethodCall_EditorBuilder.java">
+      <node id="5712676642255248865" at="63,102,64,19" concept="11" />
       <node id="5712676642255248865" at="64,19,65,18" concept="2" />
       <node id="5712676642255248865" at="70,26,71,18" concept="8" />
       <node id="5712676642255248865" at="74,39,75,32" concept="8" />
@@ -706,7 +706,7 @@
       <node id="5712676642255248865" at="228,55,229,34" concept="7" />
       <node id="893779103613532329" at="229,34,230,96" concept="2" />
       <node id="5712676642255248865" at="230,96,231,40" concept="2" />
-      <node id="5712676642255248865" at="232,38,233,95" concept="2" />
+      <node id="5712676642255248865" at="232,27,233,95" concept="2" />
       <node id="5712676642255248865" at="234,5,235,51" concept="2" />
       <node id="5712676642255248865" at="235,51,236,22" concept="8" />
       <node id="5712676642255248865" at="242,89,243,28" concept="11" />
@@ -752,7 +752,7 @@
       <node id="1173990956440" at="323,61,324,42" concept="2" />
       <node id="1173990956440" at="324,42,325,36" concept="2" />
       <node id="1173990956440" at="325,36,326,24" concept="8" />
-      <node id="1225529681230" at="329,47,330,165" concept="8" />
+      <node id="1225529681230" at="329,36,330,165" concept="8" />
       <node id="5712676642255248865" at="332,41,333,94" concept="7" />
       <node id="5712676642255248865" at="333,94,334,48" concept="2" />
       <node id="5712676642255248865" at="334,48,335,34" concept="7" />
@@ -761,7 +761,7 @@
       <node id="1214314934050" at="337,48,338,58" concept="2" />
       <node id="1214398031996" at="338,58,339,47" concept="2" />
       <node id="5712676642255248865" at="339,47,340,40" concept="2" />
-      <node id="5712676642255248865" at="341,38,342,90" concept="2" />
+      <node id="5712676642255248865" at="341,27,342,90" concept="2" />
       <node id="5712676642255248865" at="343,5,344,34" concept="2" />
       <node id="5712676642255248865" at="344,34,345,22" concept="8" />
       <node id="1198681973540" at="348,86,349,19" concept="8" />
@@ -783,10 +783,10 @@
       <node id="5712676642255248865" at="231,40,234,5" concept="5" />
       <node id="5712676642255248865" at="251,0,254,0" concept="6" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="5712676642255248865" at="254,0,257,0" concept="6" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="1225529606622" at="329,0,332,0" concept="6" trace="nodeCondition_ncozvu_a1d0#()Z" />
+      <node id="1225529606622" at="329,0,332,0" concept="6" trace="nodeCondition0#()Z" />
       <node id="5712676642255248865" at="340,40,343,5" concept="5" />
-      <node id="1198681960152" at="347,47,350,5" concept="5" />
-      <node id="5712676642255248865" at="63,0,67,0" concept="1" trace="ExtensionClassMethodCall_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1198681960152" at="347,36,350,5" concept="5" />
+      <node id="5712676642255248865" at="63,0,67,0" concept="1" trace="ExtensionClassMethodCall_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5712676642255248865" at="121,0,125,5" concept="5" />
       <node id="5712676642255248865" at="242,0,246,0" concept="1" trace="actualArgumentListHandler_ncozvu_b3a#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="5712676642255248865" at="247,0,251,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -806,7 +806,7 @@
       <node id="5712676642255248865" at="285,7,291,7" concept="5" />
       <node id="5712676642255248865" at="291,7,297,7" concept="5" />
       <node id="5712676642255248865" at="297,7,303,7" concept="5" />
-      <node id="1198529046862" at="347,0,353,0" concept="6" trace="nodeCondition_ncozvu_a2d0#()Z" />
+      <node id="1198529046862" at="347,0,353,0" concept="6" trace="nodeCondition1#()Z" />
       <node id="4972241301747234896" at="92,0,99,0" concept="6" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5712676642255248865" at="102,0,109,0" concept="6" trace="createReferenceCell#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5712676642255248865" at="109,0,116,0" concept="6" trace="createErrorCell#(Ljava/lang/String;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -833,15 +833,15 @@
       <scope id="7997068947888871708" at="173,17,174,42" />
       <scope id="4432183239163590868" at="183,71,184,61" />
       <scope id="4432183239163590868" at="188,78,189,61" />
-      <scope id="5712676642255248865" at="232,38,233,95" />
+      <scope id="5712676642255248865" at="232,27,233,95" />
       <scope id="5712676642255248865" at="248,28,249,20" />
       <scope id="5712676642255248865" at="251,40,252,39" />
       <scope id="5712676642255248865" at="254,48,255,36" />
       <scope id="5712676642255248865" at="272,17,273,42" />
-      <scope id="1225529606623" at="329,47,330,165" />
-      <scope id="5712676642255248865" at="341,38,342,90" />
+      <scope id="1225529606623" at="329,36,330,165" />
+      <scope id="5712676642255248865" at="341,27,342,90" />
       <scope id="1198681960153" at="348,86,349,19" />
-      <scope id="5712676642255248865" at="63,104,65,18" />
+      <scope id="5712676642255248865" at="63,102,65,18" />
       <scope id="5712676642255248865" at="122,40,124,60" />
       <scope id="5712676642255248865" at="129,73,131,145">
         <var name="manager" id="5712676642255248865" />
@@ -880,7 +880,7 @@
       <scope id="5712676642255248865" at="286,95,290,9" />
       <scope id="5712676642255248865" at="292,74,296,9" />
       <scope id="5712676642255248865" at="298,96,302,9" />
-      <scope id="1198529046863" at="347,47,351,165" />
+      <scope id="1198529046863" at="347,36,351,165" />
       <scope id="5712676642255248865" at="68,0,73,0" />
       <scope id="4972241301747234896" at="92,42,97,22">
         <var name="editorCell" id="4972241301747234896" />
@@ -979,14 +979,14 @@
         <var name="referenceLink" id="5712676642255248865" />
       </scope>
       <scope id="5712676642255248865" at="99,0,135,0" />
-      <unit id="5712676642255248865" at="367,0,370,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder_a$PROPS" />
-      <unit id="5712676642255248865" at="361,0,366,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder_a$CONCEPTS" />
-      <unit id="5712676642255248865" at="354,0,360,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder_a$LINKS" />
-      <unit id="4432183239163590868" at="178,0,192,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder_a$ExtensionClassMethodCall_method_cellMenu_ncozvu_a0b0" />
-      <unit id="5712676642255248865" at="101,42,116,5" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder_a$1" />
-      <unit id="7997068947888871706" at="135,0,178,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder_a$Inline_Builder0" />
-      <unit id="5712676642255248865" at="238,0,329,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder_a$actualArgumentListHandler_ncozvu_b3a" />
-      <unit id="5712676642255248865" at="59,0,371,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder_a" />
+      <unit id="5712676642255248865" at="367,0,370,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder$PROPS" />
+      <unit id="5712676642255248865" at="361,0,366,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder$CONCEPTS" />
+      <unit id="5712676642255248865" at="354,0,360,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder$LINKS" />
+      <unit id="4432183239163590868" at="178,0,192,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder$ExtensionClassMethodCall_method_cellMenu_ncozvu_a0b0" />
+      <unit id="5712676642255248865" at="101,42,116,5" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder$1" />
+      <unit id="7997068947888871706" at="135,0,178,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder$Inline_Builder0" />
+      <unit id="5712676642255248865" at="238,0,329,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder$actualArgumentListHandler_ncozvu_b3a" />
+      <unit id="5712676642255248865" at="59,0,371,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodCall_EditorBuilder" />
     </file>
     <file name="PresentationProviders.java">
       <node id="4432183239163590870" at="19,0,20,0" concept="10" trace="PRESENTATION_ncozvu_a0a1a" />
@@ -1101,17 +1101,17 @@
   </root>
   <root nodeRef="r:388dbf55-f629-4e92-bf85-4335a8102727(com.mbeddr.mpsutil.extensionclass.editor)/5712676642257699563">
     <file name="ExtensionClassMethodParameterAnnotation_Editor.java">
-      <node id="5712676642257699563" at="11,79,12,105" concept="8" />
+      <node id="5712676642257699563" at="11,79,12,103" concept="8" />
       <node id="5712676642257699563" at="11,0,14,0" concept="6" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5712676642257699563" at="11,79,12,105" />
+      <scope id="5712676642257699563" at="11,79,12,103" />
       <scope id="5712676642257699563" at="11,0,14,0">
         <var name="editorContext" id="5712676642257699563" />
         <var name="node" id="5712676642257699563" />
       </scope>
       <unit id="5712676642257699563" at="10,0,15,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodParameterAnnotation_Editor" />
     </file>
-    <file name="ExtensionClassMethodParameterAnnotation_EditorBuilder_a.java">
-      <node id="5712676642257699563" at="43,119,44,19" concept="11" />
+    <file name="ExtensionClassMethodParameterAnnotation_EditorBuilder.java">
+      <node id="5712676642257699563" at="43,117,44,19" concept="11" />
       <node id="5712676642257699563" at="44,19,45,18" concept="2" />
       <node id="5712676642257699563" at="50,26,51,18" concept="8" />
       <node id="5712676642257699563" at="54,39,55,32" concept="8" />
@@ -1160,7 +1160,7 @@
       <node id="5712676642257699563" at="125,0,126,0" concept="10" trace="name$MnvL" />
       <node id="5712676642257699563" at="40,0,42,0" concept="3" trace="myNode" />
       <node id="5712676642257699563" at="54,0,57,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="5712676642257699563" at="43,0,47,0" concept="1" trace="ExtensionClassMethodParameterAnnotation_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5712676642257699563" at="43,0,47,0" concept="1" trace="ExtensionClassMethodParameterAnnotation_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="963246645668797842" at="70,0,74,0" concept="6" trace="getText#()Ljava/lang/String;" />
       <node id="5712676642257699563" at="48,0,53,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="5712676642257699720" at="103,208,108,24" concept="5" />
@@ -1173,7 +1173,7 @@
       <scope id="5712676642257699563" at="50,26,51,18" />
       <scope id="5712676642257699563" at="54,39,55,32" />
       <scope id="5712676642257699720" at="109,15,110,40" />
-      <scope id="5712676642257699563" at="43,119,45,18" />
+      <scope id="5712676642257699563" at="43,117,45,18" />
       <scope id="963246645668797848" at="70,31,72,73">
         <var name="origParam" id="963246645668815062" />
       </scope>
@@ -1209,26 +1209,26 @@
       <scope id="963246645668797842" at="68,0,83,0" />
       <scope id="5712676642257699720" at="92,41,111,5" />
       <scope id="5712676642257699720" at="92,0,113,0" />
-      <unit id="5712676642257699563" at="124,0,127,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodParameterAnnotation_EditorBuilder_a$PROPS" />
-      <unit id="5712676642257699563" at="114,0,118,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodParameterAnnotation_EditorBuilder_a$CONCEPTS" />
-      <unit id="5712676642257699563" at="119,0,123,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodParameterAnnotation_EditorBuilder_a$LINKS" />
-      <unit id="963246645668797842" at="69,88,74,5" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodParameterAnnotation_EditorBuilder_a$1" />
-      <unit id="5712676642257699563" at="39,0,128,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodParameterAnnotation_EditorBuilder_a" />
+      <unit id="5712676642257699563" at="124,0,127,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodParameterAnnotation_EditorBuilder$PROPS" />
+      <unit id="5712676642257699563" at="114,0,118,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodParameterAnnotation_EditorBuilder$CONCEPTS" />
+      <unit id="5712676642257699563" at="119,0,123,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodParameterAnnotation_EditorBuilder$LINKS" />
+      <unit id="963246645668797842" at="69,88,74,5" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodParameterAnnotation_EditorBuilder$1" />
+      <unit id="5712676642257699563" at="39,0,128,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodParameterAnnotation_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:388dbf55-f629-4e92-bf85-4335a8102727(com.mbeddr.mpsutil.extensionclass.editor)/5712676642257719430">
     <file name="ExtensionClassMethodAnnotation_Editor.java">
-      <node id="5712676642257719430" at="11,79,12,96" concept="8" />
+      <node id="5712676642257719430" at="11,79,12,94" concept="8" />
       <node id="5712676642257719430" at="11,0,14,0" concept="6" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5712676642257719430" at="11,79,12,96" />
+      <scope id="5712676642257719430" at="11,79,12,94" />
       <scope id="5712676642257719430" at="11,0,14,0">
         <var name="editorContext" id="5712676642257719430" />
         <var name="node" id="5712676642257719430" />
       </scope>
       <unit id="5712676642257719430" at="10,0,15,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_Editor" />
     </file>
-    <file name="ExtensionClassMethodAnnotation_EditorBuilder_a.java">
-      <node id="5712676642257719430" at="62,110,63,19" concept="11" />
+    <file name="ExtensionClassMethodAnnotation_EditorBuilder.java">
+      <node id="5712676642257719430" at="62,108,63,19" concept="11" />
       <node id="5712676642257719430" at="63,19,64,18" concept="2" />
       <node id="5712676642257719430" at="69,26,70,18" concept="8" />
       <node id="5712676642257719430" at="73,39,74,32" concept="8" />
@@ -1394,7 +1394,7 @@
       <node id="5712676642257719430" at="307,0,310,0" concept="6" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="5712676642257719430" at="310,0,313,0" concept="6" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="5712676642257719430" at="354,96,357,9" concept="5" />
-      <node id="5712676642257719430" at="62,0,66,0" concept="1" trace="ExtensionClassMethodAnnotation_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5712676642257719430" at="62,0,66,0" concept="1" trace="ExtensionClassMethodAnnotation_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5712676642257719430" at="111,0,115,5" concept="5" />
       <node id="5712676642257719430" at="212,0,216,5" concept="5" />
       <node id="5712676642263066993" at="249,0,253,0" concept="6" trace="getText#()Ljava/lang/String;" />
@@ -1458,7 +1458,7 @@
       <scope id="5712676642257719430" at="310,48,311,65" />
       <scope id="5712676642257719430" at="328,17,329,42" />
       <scope id="5712676642257719430" at="355,34,356,91" />
-      <scope id="5712676642257719430" at="62,110,64,18" />
+      <scope id="5712676642257719430" at="62,108,64,18" />
       <scope id="5712676642257719430" at="112,40,114,45" />
       <scope id="5712676642257719430" at="119,73,121,145">
         <var name="manager" id="5712676642257719430" />
@@ -1610,18 +1610,18 @@
       </scope>
       <scope id="5712676642257719430" at="90,0,125,0" />
       <scope id="5712676642257719430" at="191,0,226,0" />
-      <unit id="5712676642257719430" at="381,0,384,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder_a$PROPS" />
-      <unit id="5712676642263066993" at="248,90,253,7" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder_a$Inline_Builder1$1" />
-      <unit id="5712676642257719430" at="375,0,380,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder_a$CONCEPTS" />
-      <unit id="5712676642257719430" at="368,0,374,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder_a$LINKS" />
-      <unit id="4432183239163590884" at="171,0,185,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder_a$ExtensionClassMethodAnnotation_method_cellMenu_nujn8x_a0a0" />
-      <unit id="4432183239163590921" at="264,0,278,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder_a$ExtensionClassMethodAnnotation_method_cellMenu_nujn8x_a0c0" />
-      <unit id="5712676642257719430" at="92,42,107,5" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder_a$1" />
-      <unit id="5712676642257719430" at="193,42,208,5" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder_a$2" />
-      <unit id="5712676642263066967" at="226,0,264,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder_a$Inline_Builder1" />
-      <unit id="5712676642257719462" at="125,0,171,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder_a$Inline_Builder0" />
-      <unit id="5712676642257719430" at="294,0,361,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder_a$parametersListHandler_nujn8x_e0" />
-      <unit id="5712676642257719430" at="58,0,385,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder_a" />
+      <unit id="5712676642257719430" at="381,0,384,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder$PROPS" />
+      <unit id="5712676642263066993" at="248,90,253,7" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder$Inline_Builder1$1" />
+      <unit id="5712676642257719430" at="375,0,380,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder$CONCEPTS" />
+      <unit id="5712676642257719430" at="368,0,374,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder$LINKS" />
+      <unit id="4432183239163590884" at="171,0,185,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder$ExtensionClassMethodAnnotation_method_cellMenu_nujn8x_a0a0" />
+      <unit id="4432183239163590921" at="264,0,278,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder$ExtensionClassMethodAnnotation_method_cellMenu_nujn8x_a0c0" />
+      <unit id="5712676642257719430" at="92,42,107,5" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder$1" />
+      <unit id="5712676642257719430" at="193,42,208,5" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder$2" />
+      <unit id="5712676642263066967" at="226,0,264,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder$Inline_Builder1" />
+      <unit id="5712676642257719462" at="125,0,171,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder$Inline_Builder0" />
+      <unit id="5712676642257719430" at="294,0,361,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder$parametersListHandler_nujn8x_e0" />
+      <unit id="5712676642257719430" at="58,0,385,0" name="com.mbeddr.mpsutil.extensionclass.editor.ExtensionClassMethodAnnotation_EditorBuilder" />
     </file>
     <file name="PresentationProviders.java">
       <node id="4432183239163590886" at="20,0,21,0" concept="10" trace="PRESENTATION_nujn8x_a0a0a" />

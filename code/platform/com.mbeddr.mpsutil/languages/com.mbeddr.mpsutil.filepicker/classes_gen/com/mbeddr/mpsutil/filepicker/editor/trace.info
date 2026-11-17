@@ -19,17 +19,17 @@
   </root>
   <root nodeRef="r:7fdd874b-4384-4587-921a-bc2dc46676c9(com.mbeddr.mpsutil.filepicker.editor)/284075028763363831">
     <file name="SourceModelInfo_Editor.java">
-      <node id="284075028763363831" at="11,79,12,81" concept="7" />
+      <node id="284075028763363831" at="11,79,12,79" concept="7" />
       <node id="284075028763363831" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="284075028763363831" at="11,79,12,81" />
+      <scope id="284075028763363831" at="11,79,12,79" />
       <scope id="284075028763363831" at="11,0,14,0">
         <var name="editorContext" id="284075028763363831" />
         <var name="node" id="284075028763363831" />
       </scope>
       <unit id="284075028763363831" at="10,0,15,0" name="com.mbeddr.mpsutil.filepicker.editor.SourceModelInfo_Editor" />
     </file>
-    <file name="SourceModelInfo_EditorBuilder_a.java">
-      <node id="284075028763363831" at="41,95,42,19" concept="10" />
+    <file name="SourceModelInfo_EditorBuilder.java">
+      <node id="284075028763363831" at="41,93,42,19" concept="10" />
       <node id="284075028763363831" at="42,19,43,18" concept="2" />
       <node id="284075028763363831" at="48,26,49,18" concept="7" />
       <node id="284075028763363831" at="52,39,53,32" concept="7" />
@@ -167,7 +167,7 @@
       <node id="284075028763363831" at="38,0,40,0" concept="3" trace="myNode" />
       <node id="284075028763363831" at="52,0,55,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="284075028766669744" at="76,0,79,0" concept="5" trace="getText#()Ljava/lang/String;" />
-      <node id="284075028763363831" at="41,0,45,0" concept="1" trace="SourceModelInfo_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="284075028763363831" at="41,0,45,0" concept="1" trace="SourceModelInfo_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="284075028763363831" at="46,0,51,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="284075028766669744" at="74,54,79,15" concept="6" />
       <node id="284075028769515760" at="136,208,141,24" concept="4" />
@@ -191,7 +191,7 @@
       <scope id="284075028766669750" at="76,31,77,199" />
       <scope id="284075028769515760" at="142,15,143,40" />
       <scope id="284075028769537684" at="197,15,198,40" />
-      <scope id="284075028763363831" at="41,95,43,18" />
+      <scope id="284075028763363831" at="41,93,43,18" />
       <scope id="284075028769515760" at="137,74,139,145">
         <var name="manager" id="284075028769515760" />
       </scope>
@@ -273,20 +273,20 @@
       <scope id="284075028769537684" at="177,41,199,5" />
       <scope id="284075028769515760" at="122,0,146,0" />
       <scope id="284075028769537684" at="177,0,201,0" />
-      <unit id="284075028766669744" at="75,88,79,5" name="com.mbeddr.mpsutil.filepicker.editor.SourceModelInfo_EditorBuilder_a$1" />
-      <unit id="284075028763363831" at="221,0,225,0" name="com.mbeddr.mpsutil.filepicker.editor.SourceModelInfo_EditorBuilder_a$CONCEPTS" />
-      <unit id="284075028763363831" at="226,0,231,0" name="com.mbeddr.mpsutil.filepicker.editor.SourceModelInfo_EditorBuilder_a$PROPS" />
-      <unit id="284075028763363831" at="37,0,232,0" name="com.mbeddr.mpsutil.filepicker.editor.SourceModelInfo_EditorBuilder_a" />
+      <unit id="284075028766669744" at="75,88,79,5" name="com.mbeddr.mpsutil.filepicker.editor.SourceModelInfo_EditorBuilder$1" />
+      <unit id="284075028763363831" at="221,0,225,0" name="com.mbeddr.mpsutil.filepicker.editor.SourceModelInfo_EditorBuilder$CONCEPTS" />
+      <unit id="284075028763363831" at="226,0,231,0" name="com.mbeddr.mpsutil.filepicker.editor.SourceModelInfo_EditorBuilder$PROPS" />
+      <unit id="284075028763363831" at="37,0,232,0" name="com.mbeddr.mpsutil.filepicker.editor.SourceModelInfo_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:7fdd874b-4384-4587-921a-bc2dc46676c9(com.mbeddr.mpsutil.filepicker.editor)/3310867171608152661">
     <file name="DefaultPicker_EditorComponent.java">
       <node id="3310867171608152661" at="15,47,16,35" concept="7" />
-      <node id="3310867171608152661" at="18,79,19,98" concept="7" />
+      <node id="3310867171608152661" at="18,79,19,96" concept="7" />
       <node id="3310867171608152661" at="18,0,21,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3310867171608152661" at="14,0,18,0" concept="5" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="3310867171608152661" at="15,47,16,35" />
-      <scope id="3310867171608152661" at="18,79,19,98" />
+      <scope id="3310867171608152661" at="18,79,19,96" />
       <scope id="3310867171608152661" at="18,0,21,0">
         <var name="editorContext" id="3310867171608152661" />
         <var name="node" id="3310867171608152661" />
@@ -294,8 +294,8 @@
       <scope id="3310867171608152661" at="14,0,18,0" />
       <unit id="3310867171608152661" at="13,0,22,0" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPicker_EditorComponent" />
     </file>
-    <file name="DefaultPicker_EditorComponent_ComponentBuilder_a.java">
-      <node id="3310867171608152661" at="52,112,53,19" concept="10" />
+    <file name="DefaultPicker_EditorComponent_ComponentBuilder.java">
+      <node id="3310867171608152661" at="52,110,53,19" concept="10" />
       <node id="3310867171608152661" at="53,19,54,18" concept="2" />
       <node id="3310867171608152661" at="59,26,60,18" concept="7" />
       <node id="3310867171608152661" at="63,39,64,32" concept="7" />
@@ -343,7 +343,7 @@
       <node id="3310867171608152709" at="119,0,121,0" concept="1" trace="AbstractPicker_path_cellMenu_1ecpgg_a0b0#()V" />
       <node id="3310867171608152661" at="63,0,66,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3310867171608152709" at="135,0,138,0" concept="5" trace="getPropertyValues#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/List;" />
-      <node id="3310867171608152661" at="52,0,56,0" concept="1" trace="DefaultPicker_EditorComponent_ComponentBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3310867171608152661" at="52,0,56,0" concept="1" trace="DefaultPicker_EditorComponent_ComponentBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3310867171608152661" at="57,0,62,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3310867171608152680" at="77,104,82,9" concept="4" />
       <node id="3310867171608152661" at="108,208,113,24" concept="4" />
@@ -364,7 +364,7 @@
       <scope id="3310867171608152688" at="80,16,81,30" />
       <scope id="3310867171608152661" at="114,15,115,40" />
       <scope id="3310867171608152709" at="135,87,136,100" />
-      <scope id="3310867171608152661" at="52,112,54,18" />
+      <scope id="3310867171608152661" at="52,110,54,18" />
       <scope id="3310867171608152661" at="109,74,111,145">
         <var name="manager" id="3310867171608152661" />
       </scope>
@@ -410,12 +410,12 @@
       <scope id="3310867171608152661" at="96,41,116,5" />
       <scope id="3310867171608152670" at="74,0,96,0" />
       <scope id="3310867171608152661" at="96,0,118,0" />
-      <unit id="3310867171608152661" at="140,0,143,0" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPicker_EditorComponent_ComponentBuilder_a$PROPS" />
-      <unit id="3310867171608152661" at="144,0,147,0" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPicker_EditorComponent_ComponentBuilder_a$CONCEPTS" />
-      <unit id="3310867171608152709" at="124,38,131,9" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPicker_EditorComponent_ComponentBuilder_a$AbstractPicker_path_cellMenu_1ecpgg_a0b0$1" />
-      <unit id="3310867171608152670" at="75,88,84,5" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPicker_EditorComponent_ComponentBuilder_a$1" />
-      <unit id="3310867171608152709" at="118,0,139,0" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPicker_EditorComponent_ComponentBuilder_a$AbstractPicker_path_cellMenu_1ecpgg_a0b0" />
-      <unit id="3310867171608152661" at="48,0,148,0" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPicker_EditorComponent_ComponentBuilder_a" />
+      <unit id="3310867171608152661" at="140,0,143,0" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPicker_EditorComponent_ComponentBuilder$PROPS" />
+      <unit id="3310867171608152661" at="144,0,147,0" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPicker_EditorComponent_ComponentBuilder$CONCEPTS" />
+      <unit id="3310867171608152709" at="124,38,131,9" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPicker_EditorComponent_ComponentBuilder$AbstractPicker_path_cellMenu_1ecpgg_a0b0$1" />
+      <unit id="3310867171608152670" at="75,88,84,5" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPicker_EditorComponent_ComponentBuilder$1" />
+      <unit id="3310867171608152709" at="118,0,139,0" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPicker_EditorComponent_ComponentBuilder$AbstractPicker_path_cellMenu_1ecpgg_a0b0" />
+      <unit id="3310867171608152661" at="48,0,148,0" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPicker_EditorComponent_ComponentBuilder" />
     </file>
     <file name="EditorAspectDescriptorImpl.java">
       <node id="3310867171608152661" at="45,80,46,78" concept="7" />
@@ -425,11 +425,11 @@
   <root nodeRef="r:7fdd874b-4384-4587-921a-bc2dc46676c9(com.mbeddr.mpsutil.filepicker.editor)/3310867171608157251">
     <file name="DefaultPickerInspector_EditorComponent.java">
       <node id="3310867171608157251" at="15,47,16,35" concept="7" />
-      <node id="3310867171608157251" at="18,79,19,107" concept="7" />
+      <node id="3310867171608157251" at="18,79,19,105" concept="7" />
       <node id="3310867171608157251" at="18,0,21,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3310867171608157251" at="14,0,18,0" concept="5" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="3310867171608157251" at="15,47,16,35" />
-      <scope id="3310867171608157251" at="18,79,19,107" />
+      <scope id="3310867171608157251" at="18,79,19,105" />
       <scope id="3310867171608157251" at="18,0,21,0">
         <var name="editorContext" id="3310867171608157251" />
         <var name="node" id="3310867171608157251" />
@@ -437,8 +437,8 @@
       <scope id="3310867171608157251" at="14,0,18,0" />
       <unit id="3310867171608157251" at="13,0,22,0" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPickerInspector_EditorComponent" />
     </file>
-    <file name="DefaultPickerInspector_EditorComponent_ComponentBuilder_a.java">
-      <node id="3310867171608157251" at="26,121,27,19" concept="10" />
+    <file name="DefaultPickerInspector_EditorComponent_ComponentBuilder.java">
+      <node id="3310867171608157251" at="26,119,27,19" concept="10" />
       <node id="3310867171608157251" at="27,19,28,18" concept="2" />
       <node id="3310867171608157251" at="33,26,34,18" concept="7" />
       <node id="3310867171608157251" at="37,39,38,32" concept="7" />
@@ -462,7 +462,7 @@
       <node id="3310867171608157251" at="23,0,25,0" concept="3" trace="myNode" />
       <node id="3310867171608157251" at="37,0,40,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3310867171608157256" at="56,0,59,0" concept="5" trace="getText#()Ljava/lang/String;" />
-      <node id="3310867171608157251" at="26,0,30,0" concept="1" trace="DefaultPickerInspector_EditorComponent_ComponentBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3310867171608157251" at="26,0,30,0" concept="1" trace="DefaultPickerInspector_EditorComponent_ComponentBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3310867171608157251" at="31,0,36,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3310867171608157256" at="54,54,59,15" concept="6" />
       <node id="3310867171608157255" at="48,0,54,0" concept="5" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -471,7 +471,7 @@
       <scope id="3310867171608157251" at="33,26,34,18" />
       <scope id="3310867171608157251" at="37,39,38,32" />
       <scope id="3310867171608157259" at="56,31,57,105" />
-      <scope id="3310867171608157251" at="26,121,28,18" />
+      <scope id="3310867171608157251" at="26,119,28,18" />
       <scope id="3310867171608157251" at="37,0,40,0" />
       <scope id="3310867171608157256" at="56,0,59,0" />
       <scope id="3310867171608157251" at="26,0,30,0">
@@ -492,8 +492,8 @@
         <var name="style" id="3310867171608157256" />
       </scope>
       <scope id="3310867171608157256" at="54,0,68,0" />
-      <unit id="3310867171608157256" at="55,88,59,5" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPickerInspector_EditorComponent_ComponentBuilder_a$1" />
-      <unit id="3310867171608157251" at="22,0,69,0" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPickerInspector_EditorComponent_ComponentBuilder_a" />
+      <unit id="3310867171608157256" at="55,88,59,5" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPickerInspector_EditorComponent_ComponentBuilder$1" />
+      <unit id="3310867171608157251" at="22,0,69,0" name="com.mbeddr.mpsutil.filepicker.editor.DefaultPickerInspector_EditorComponent_ComponentBuilder" />
     </file>
     <file name="EditorAspectDescriptorImpl.java">
       <node id="3310867171608157251" at="43,89,44,87" concept="7" />
@@ -502,12 +502,12 @@
   </root>
   <root nodeRef="r:7fdd874b-4384-4587-921a-bc2dc46676c9(com.mbeddr.mpsutil.filepicker.editor)/3310867171608157970">
     <file name="FileSystemFilePicker_Editor.java">
-      <node id="3310867171608157970" at="11,79,12,86" concept="7" />
-      <node id="3310867171608157970" at="14,82,15,89" concept="7" />
+      <node id="3310867171608157970" at="11,79,12,84" concept="7" />
+      <node id="3310867171608157970" at="14,82,15,87" concept="7" />
       <node id="3310867171608157970" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3310867171608157970" at="14,0,17,0" concept="5" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="3310867171608157970" at="11,79,12,86" />
-      <scope id="3310867171608157970" at="14,82,15,89" />
+      <scope id="3310867171608157970" at="11,79,12,84" />
+      <scope id="3310867171608157970" at="14,82,15,87" />
       <scope id="3310867171608157970" at="11,0,14,0">
         <var name="editorContext" id="3310867171608157970" />
         <var name="node" id="3310867171608157970" />
@@ -518,8 +518,8 @@
       </scope>
       <unit id="3310867171608157970" at="10,0,18,0" name="com.mbeddr.mpsutil.filepicker.editor.FileSystemFilePicker_Editor" />
     </file>
-    <file name="FileSystemFilePicker_EditorBuilder_a.java">
-      <node id="3310867171608157970" at="16,100,17,19" concept="10" />
+    <file name="FileSystemFilePicker_EditorBuilder.java">
+      <node id="3310867171608157970" at="16,98,17,19" concept="10" />
       <node id="3310867171608157970" at="17,19,18,18" concept="2" />
       <node id="3310867171608157970" at="23,26,24,18" concept="7" />
       <node id="3310867171608157970" at="27,39,28,31" concept="7" />
@@ -530,13 +530,13 @@
       <node id="3310867171608157972" at="37,5,38,22" concept="7" />
       <node id="3310867171608157970" at="13,0,15,0" concept="3" trace="myNode" />
       <node id="3310867171608157970" at="27,0,30,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3310867171608157970" at="16,0,20,0" concept="1" trace="FileSystemFilePicker_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3310867171608157970" at="16,0,20,0" concept="1" trace="FileSystemFilePicker_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3310867171608157972" at="33,72,37,5" concept="4" />
       <node id="3310867171608157970" at="21,0,26,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3310867171608157972" at="31,0,40,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="3310867171608157970" at="23,26,24,18" />
       <scope id="3310867171608157970" at="27,39,28,31" />
-      <scope id="3310867171608157970" at="16,100,18,18" />
+      <scope id="3310867171608157970" at="16,98,18,18" />
       <scope id="3310867171608157972" at="34,26,36,30" />
       <scope id="3310867171608157970" at="27,0,30,0" />
       <scope id="3310867171608157970" at="16,0,20,0">
@@ -549,10 +549,10 @@
         <var name="editorCell" id="3310867171608157972" />
       </scope>
       <scope id="3310867171608157972" at="31,0,40,0" />
-      <unit id="3310867171608157970" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.FileSystemFilePicker_EditorBuilder_a" />
+      <unit id="3310867171608157970" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.FileSystemFilePicker_EditorBuilder" />
     </file>
-    <file name="FileSystemFilePicker_InspectorBuilder_a.java">
-      <node id="3310867171608157970" at="16,103,17,19" concept="10" />
+    <file name="FileSystemFilePicker_InspectorBuilder.java">
+      <node id="3310867171608157970" at="16,101,17,19" concept="10" />
       <node id="3310867171608157970" at="17,19,18,18" concept="2" />
       <node id="3310867171608157970" at="23,26,24,18" concept="7" />
       <node id="3310867171608157970" at="27,39,28,31" concept="7" />
@@ -563,13 +563,13 @@
       <node id="3310867171608157975" at="37,5,38,22" concept="7" />
       <node id="3310867171608157970" at="13,0,15,0" concept="3" trace="myNode" />
       <node id="3310867171608157970" at="27,0,30,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3310867171608157970" at="16,0,20,0" concept="1" trace="FileSystemFilePicker_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3310867171608157970" at="16,0,20,0" concept="1" trace="FileSystemFilePicker_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3310867171608157975" at="33,72,37,5" concept="4" />
       <node id="3310867171608157970" at="21,0,26,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3310867171608157975" at="31,0,40,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="3310867171608157970" at="23,26,24,18" />
       <scope id="3310867171608157970" at="27,39,28,31" />
-      <scope id="3310867171608157970" at="16,103,18,18" />
+      <scope id="3310867171608157970" at="16,101,18,18" />
       <scope id="3310867171608157975" at="34,26,36,30" />
       <scope id="3310867171608157970" at="27,0,30,0" />
       <scope id="3310867171608157970" at="16,0,20,0">
@@ -582,17 +582,17 @@
         <var name="editorCell" id="3310867171608157975" />
       </scope>
       <scope id="3310867171608157975" at="31,0,40,0" />
-      <unit id="3310867171608157970" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.FileSystemFilePicker_InspectorBuilder_a" />
+      <unit id="3310867171608157970" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.FileSystemFilePicker_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:7fdd874b-4384-4587-921a-bc2dc46676c9(com.mbeddr.mpsutil.filepicker.editor)/3310867171608159920">
     <file name="SolutionRelativeFilePicker_Editor.java">
-      <node id="3310867171608159920" at="11,79,12,92" concept="7" />
-      <node id="3310867171608159920" at="14,82,15,95" concept="7" />
+      <node id="3310867171608159920" at="11,79,12,90" concept="7" />
+      <node id="3310867171608159920" at="14,82,15,93" concept="7" />
       <node id="3310867171608159920" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3310867171608159920" at="14,0,17,0" concept="5" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="3310867171608159920" at="11,79,12,92" />
-      <scope id="3310867171608159920" at="14,82,15,95" />
+      <scope id="3310867171608159920" at="11,79,12,90" />
+      <scope id="3310867171608159920" at="14,82,15,93" />
       <scope id="3310867171608159920" at="11,0,14,0">
         <var name="editorContext" id="3310867171608159920" />
         <var name="node" id="3310867171608159920" />
@@ -603,8 +603,8 @@
       </scope>
       <unit id="3310867171608159920" at="10,0,18,0" name="com.mbeddr.mpsutil.filepicker.editor.SolutionRelativeFilePicker_Editor" />
     </file>
-    <file name="SolutionRelativeFilePicker_EditorBuilder_a.java">
-      <node id="3310867171608159920" at="16,106,17,19" concept="10" />
+    <file name="SolutionRelativeFilePicker_EditorBuilder.java">
+      <node id="3310867171608159920" at="16,104,17,19" concept="10" />
       <node id="3310867171608159920" at="17,19,18,18" concept="2" />
       <node id="3310867171608159920" at="23,26,24,18" concept="7" />
       <node id="3310867171608159920" at="27,39,28,31" concept="7" />
@@ -615,13 +615,13 @@
       <node id="3310867171608159922" at="37,5,38,22" concept="7" />
       <node id="3310867171608159920" at="13,0,15,0" concept="3" trace="myNode" />
       <node id="3310867171608159920" at="27,0,30,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3310867171608159920" at="16,0,20,0" concept="1" trace="SolutionRelativeFilePicker_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3310867171608159920" at="16,0,20,0" concept="1" trace="SolutionRelativeFilePicker_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3310867171608159922" at="33,72,37,5" concept="4" />
       <node id="3310867171608159920" at="21,0,26,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3310867171608159922" at="31,0,40,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="3310867171608159920" at="23,26,24,18" />
       <scope id="3310867171608159920" at="27,39,28,31" />
-      <scope id="3310867171608159920" at="16,106,18,18" />
+      <scope id="3310867171608159920" at="16,104,18,18" />
       <scope id="3310867171608159922" at="34,26,36,30" />
       <scope id="3310867171608159920" at="27,0,30,0" />
       <scope id="3310867171608159920" at="16,0,20,0">
@@ -634,10 +634,10 @@
         <var name="editorCell" id="3310867171608159922" />
       </scope>
       <scope id="3310867171608159922" at="31,0,40,0" />
-      <unit id="3310867171608159920" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.SolutionRelativeFilePicker_EditorBuilder_a" />
+      <unit id="3310867171608159920" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.SolutionRelativeFilePicker_EditorBuilder" />
     </file>
-    <file name="SolutionRelativeFilePicker_InspectorBuilder_a.java">
-      <node id="3310867171608159920" at="16,109,17,19" concept="10" />
+    <file name="SolutionRelativeFilePicker_InspectorBuilder.java">
+      <node id="3310867171608159920" at="16,107,17,19" concept="10" />
       <node id="3310867171608159920" at="17,19,18,18" concept="2" />
       <node id="3310867171608159920" at="23,26,24,18" concept="7" />
       <node id="3310867171608159920" at="27,39,28,31" concept="7" />
@@ -648,13 +648,13 @@
       <node id="3310867171608159925" at="37,5,38,22" concept="7" />
       <node id="3310867171608159920" at="13,0,15,0" concept="3" trace="myNode" />
       <node id="3310867171608159920" at="27,0,30,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3310867171608159920" at="16,0,20,0" concept="1" trace="SolutionRelativeFilePicker_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3310867171608159920" at="16,0,20,0" concept="1" trace="SolutionRelativeFilePicker_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3310867171608159925" at="33,72,37,5" concept="4" />
       <node id="3310867171608159920" at="21,0,26,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3310867171608159925" at="31,0,40,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="3310867171608159920" at="23,26,24,18" />
       <scope id="3310867171608159920" at="27,39,28,31" />
-      <scope id="3310867171608159920" at="16,109,18,18" />
+      <scope id="3310867171608159920" at="16,107,18,18" />
       <scope id="3310867171608159925" at="34,26,36,30" />
       <scope id="3310867171608159920" at="27,0,30,0" />
       <scope id="3310867171608159920" at="16,0,20,0">
@@ -667,17 +667,17 @@
         <var name="editorCell" id="3310867171608159925" />
       </scope>
       <scope id="3310867171608159925" at="31,0,40,0" />
-      <unit id="3310867171608159920" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.SolutionRelativeFilePicker_InspectorBuilder_a" />
+      <unit id="3310867171608159920" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.SolutionRelativeFilePicker_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:7fdd874b-4384-4587-921a-bc2dc46676c9(com.mbeddr.mpsutil.filepicker.editor)/3310867171608159962">
     <file name="FileSystemDirPicker_Editor.java">
-      <node id="3310867171608159962" at="11,79,12,85" concept="7" />
-      <node id="3310867171608159962" at="14,82,15,88" concept="7" />
+      <node id="3310867171608159962" at="11,79,12,83" concept="7" />
+      <node id="3310867171608159962" at="14,82,15,86" concept="7" />
       <node id="3310867171608159962" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3310867171608159962" at="14,0,17,0" concept="5" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="3310867171608159962" at="11,79,12,85" />
-      <scope id="3310867171608159962" at="14,82,15,88" />
+      <scope id="3310867171608159962" at="11,79,12,83" />
+      <scope id="3310867171608159962" at="14,82,15,86" />
       <scope id="3310867171608159962" at="11,0,14,0">
         <var name="editorContext" id="3310867171608159962" />
         <var name="node" id="3310867171608159962" />
@@ -688,8 +688,8 @@
       </scope>
       <unit id="3310867171608159962" at="10,0,18,0" name="com.mbeddr.mpsutil.filepicker.editor.FileSystemDirPicker_Editor" />
     </file>
-    <file name="FileSystemDirPicker_EditorBuilder_a.java">
-      <node id="3310867171608159962" at="16,99,17,19" concept="10" />
+    <file name="FileSystemDirPicker_EditorBuilder.java">
+      <node id="3310867171608159962" at="16,97,17,19" concept="10" />
       <node id="3310867171608159962" at="17,19,18,18" concept="2" />
       <node id="3310867171608159962" at="23,26,24,18" concept="7" />
       <node id="3310867171608159962" at="27,39,28,31" concept="7" />
@@ -700,13 +700,13 @@
       <node id="3310867171608159964" at="37,5,38,22" concept="7" />
       <node id="3310867171608159962" at="13,0,15,0" concept="3" trace="myNode" />
       <node id="3310867171608159962" at="27,0,30,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3310867171608159962" at="16,0,20,0" concept="1" trace="FileSystemDirPicker_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3310867171608159962" at="16,0,20,0" concept="1" trace="FileSystemDirPicker_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3310867171608159964" at="33,72,37,5" concept="4" />
       <node id="3310867171608159962" at="21,0,26,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3310867171608159964" at="31,0,40,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="3310867171608159962" at="23,26,24,18" />
       <scope id="3310867171608159962" at="27,39,28,31" />
-      <scope id="3310867171608159962" at="16,99,18,18" />
+      <scope id="3310867171608159962" at="16,97,18,18" />
       <scope id="3310867171608159964" at="34,26,36,30" />
       <scope id="3310867171608159962" at="27,0,30,0" />
       <scope id="3310867171608159962" at="16,0,20,0">
@@ -719,10 +719,10 @@
         <var name="editorCell" id="3310867171608159964" />
       </scope>
       <scope id="3310867171608159964" at="31,0,40,0" />
-      <unit id="3310867171608159962" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.FileSystemDirPicker_EditorBuilder_a" />
+      <unit id="3310867171608159962" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.FileSystemDirPicker_EditorBuilder" />
     </file>
-    <file name="FileSystemDirPicker_InspectorBuilder_a.java">
-      <node id="3310867171608159962" at="16,102,17,19" concept="10" />
+    <file name="FileSystemDirPicker_InspectorBuilder.java">
+      <node id="3310867171608159962" at="16,100,17,19" concept="10" />
       <node id="3310867171608159962" at="17,19,18,18" concept="2" />
       <node id="3310867171608159962" at="23,26,24,18" concept="7" />
       <node id="3310867171608159962" at="27,39,28,31" concept="7" />
@@ -733,13 +733,13 @@
       <node id="3310867171608159967" at="37,5,38,22" concept="7" />
       <node id="3310867171608159962" at="13,0,15,0" concept="3" trace="myNode" />
       <node id="3310867171608159962" at="27,0,30,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3310867171608159962" at="16,0,20,0" concept="1" trace="FileSystemDirPicker_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3310867171608159962" at="16,0,20,0" concept="1" trace="FileSystemDirPicker_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3310867171608159967" at="33,72,37,5" concept="4" />
       <node id="3310867171608159962" at="21,0,26,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3310867171608159967" at="31,0,40,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="3310867171608159962" at="23,26,24,18" />
       <scope id="3310867171608159962" at="27,39,28,31" />
-      <scope id="3310867171608159962" at="16,102,18,18" />
+      <scope id="3310867171608159962" at="16,100,18,18" />
       <scope id="3310867171608159967" at="34,26,36,30" />
       <scope id="3310867171608159962" at="27,0,30,0" />
       <scope id="3310867171608159962" at="16,0,20,0">
@@ -752,17 +752,17 @@
         <var name="editorCell" id="3310867171608159967" />
       </scope>
       <scope id="3310867171608159967" at="31,0,40,0" />
-      <unit id="3310867171608159962" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.FileSystemDirPicker_InspectorBuilder_a" />
+      <unit id="3310867171608159962" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.FileSystemDirPicker_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:7fdd874b-4384-4587-921a-bc2dc46676c9(com.mbeddr.mpsutil.filepicker.editor)/3310867171608159978">
     <file name="SolutionRelativeDirPicker_Editor.java">
-      <node id="3310867171608159978" at="11,79,12,91" concept="7" />
-      <node id="3310867171608159978" at="14,82,15,94" concept="7" />
+      <node id="3310867171608159978" at="11,79,12,89" concept="7" />
+      <node id="3310867171608159978" at="14,82,15,92" concept="7" />
       <node id="3310867171608159978" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3310867171608159978" at="14,0,17,0" concept="5" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="3310867171608159978" at="11,79,12,91" />
-      <scope id="3310867171608159978" at="14,82,15,94" />
+      <scope id="3310867171608159978" at="11,79,12,89" />
+      <scope id="3310867171608159978" at="14,82,15,92" />
       <scope id="3310867171608159978" at="11,0,14,0">
         <var name="editorContext" id="3310867171608159978" />
         <var name="node" id="3310867171608159978" />
@@ -773,8 +773,8 @@
       </scope>
       <unit id="3310867171608159978" at="10,0,18,0" name="com.mbeddr.mpsutil.filepicker.editor.SolutionRelativeDirPicker_Editor" />
     </file>
-    <file name="SolutionRelativeDirPicker_EditorBuilder_a.java">
-      <node id="3310867171608159978" at="16,105,17,19" concept="10" />
+    <file name="SolutionRelativeDirPicker_EditorBuilder.java">
+      <node id="3310867171608159978" at="16,103,17,19" concept="10" />
       <node id="3310867171608159978" at="17,19,18,18" concept="2" />
       <node id="3310867171608159978" at="23,26,24,18" concept="7" />
       <node id="3310867171608159978" at="27,39,28,31" concept="7" />
@@ -785,13 +785,13 @@
       <node id="3310867171608159984" at="37,5,38,22" concept="7" />
       <node id="3310867171608159978" at="13,0,15,0" concept="3" trace="myNode" />
       <node id="3310867171608159978" at="27,0,30,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3310867171608159978" at="16,0,20,0" concept="1" trace="SolutionRelativeDirPicker_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3310867171608159978" at="16,0,20,0" concept="1" trace="SolutionRelativeDirPicker_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3310867171608159984" at="33,72,37,5" concept="4" />
       <node id="3310867171608159978" at="21,0,26,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3310867171608159984" at="31,0,40,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="3310867171608159978" at="23,26,24,18" />
       <scope id="3310867171608159978" at="27,39,28,31" />
-      <scope id="3310867171608159978" at="16,105,18,18" />
+      <scope id="3310867171608159978" at="16,103,18,18" />
       <scope id="3310867171608159984" at="34,26,36,30" />
       <scope id="3310867171608159978" at="27,0,30,0" />
       <scope id="3310867171608159978" at="16,0,20,0">
@@ -804,10 +804,10 @@
         <var name="editorCell" id="3310867171608159984" />
       </scope>
       <scope id="3310867171608159984" at="31,0,40,0" />
-      <unit id="3310867171608159978" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.SolutionRelativeDirPicker_EditorBuilder_a" />
+      <unit id="3310867171608159978" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.SolutionRelativeDirPicker_EditorBuilder" />
     </file>
-    <file name="SolutionRelativeDirPicker_InspectorBuilder_a.java">
-      <node id="3310867171608159978" at="16,108,17,19" concept="10" />
+    <file name="SolutionRelativeDirPicker_InspectorBuilder.java">
+      <node id="3310867171608159978" at="16,106,17,19" concept="10" />
       <node id="3310867171608159978" at="17,19,18,18" concept="2" />
       <node id="3310867171608159978" at="23,26,24,18" concept="7" />
       <node id="3310867171608159978" at="27,39,28,31" concept="7" />
@@ -818,13 +818,13 @@
       <node id="3310867171608159987" at="37,5,38,22" concept="7" />
       <node id="3310867171608159978" at="13,0,15,0" concept="3" trace="myNode" />
       <node id="3310867171608159978" at="27,0,30,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3310867171608159978" at="16,0,20,0" concept="1" trace="SolutionRelativeDirPicker_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3310867171608159978" at="16,0,20,0" concept="1" trace="SolutionRelativeDirPicker_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3310867171608159987" at="33,72,37,5" concept="4" />
       <node id="3310867171608159978" at="21,0,26,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3310867171608159987" at="31,0,40,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="3310867171608159978" at="23,26,24,18" />
       <scope id="3310867171608159978" at="27,39,28,31" />
-      <scope id="3310867171608159978" at="16,108,18,18" />
+      <scope id="3310867171608159978" at="16,106,18,18" />
       <scope id="3310867171608159987" at="34,26,36,30" />
       <scope id="3310867171608159978" at="27,0,30,0" />
       <scope id="3310867171608159978" at="16,0,20,0">
@@ -837,17 +837,17 @@
         <var name="editorCell" id="3310867171608159987" />
       </scope>
       <scope id="3310867171608159987" at="31,0,40,0" />
-      <unit id="3310867171608159978" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.SolutionRelativeDirPicker_InspectorBuilder_a" />
+      <unit id="3310867171608159978" at="12,0,41,0" name="com.mbeddr.mpsutil.filepicker.editor.SolutionRelativeDirPicker_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:7fdd874b-4384-4587-921a-bc2dc46676c9(com.mbeddr.mpsutil.filepicker.editor)/4881264737617084641">
     <file name="MacroFolderPicker_Editor.java">
-      <node id="4881264737617084641" at="11,79,12,83" concept="7" />
-      <node id="4881264737617084641" at="14,82,15,86" concept="7" />
+      <node id="4881264737617084641" at="11,79,12,81" concept="7" />
+      <node id="4881264737617084641" at="14,82,15,84" concept="7" />
       <node id="4881264737617084641" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4881264737617084641" at="14,0,17,0" concept="5" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="4881264737617084641" at="11,79,12,83" />
-      <scope id="4881264737617084641" at="14,82,15,86" />
+      <scope id="4881264737617084641" at="11,79,12,81" />
+      <scope id="4881264737617084641" at="14,82,15,84" />
       <scope id="4881264737617084641" at="11,0,14,0">
         <var name="editorContext" id="4881264737617084641" />
         <var name="node" id="4881264737617084641" />
@@ -858,8 +858,8 @@
       </scope>
       <unit id="4881264737617084641" at="10,0,18,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_Editor" />
     </file>
-    <file name="MacroFolderPicker_EditorBuilder_a.java">
-      <node id="4881264737617084641" at="53,97,54,19" concept="10" />
+    <file name="MacroFolderPicker_EditorBuilder.java">
+      <node id="4881264737617084641" at="53,95,54,19" concept="10" />
       <node id="4881264737617084641" at="54,19,55,18" concept="2" />
       <node id="4881264737617084641" at="60,26,61,18" concept="7" />
       <node id="4881264737617084641" at="64,39,65,32" concept="7" />
@@ -939,7 +939,7 @@
       <node id="4881264737617084641" at="64,0,67,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4881264737619838167" at="134,0,137,0" concept="9" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
       <node id="4881264737617085425" at="187,0,190,0" concept="5" trace="getPropertyValues#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/List;" />
-      <node id="4881264737617084641" at="53,0,57,0" concept="1" trace="MacroFolderPicker_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4881264737617084641" at="53,0,57,0" concept="1" trace="MacroFolderPicker_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4881264737617084641" at="58,0,63,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4881264737617084641" at="102,208,107,24" concept="4" />
       <node id="4881264737617783781" at="129,0,134,0" concept="5" trace="getPropertyValues#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/List;" />
@@ -967,7 +967,7 @@
       <scope id="4881264737619838167" at="134,57,135,45" />
       <scope id="4881264737617084641" at="166,15,167,40" />
       <scope id="4881264737617085425" at="187,87,188,100" />
-      <scope id="4881264737617084641" at="53,97,55,18" />
+      <scope id="4881264737617084641" at="53,95,55,18" />
       <scope id="4881264737617084641" at="103,74,105,145">
         <var name="manager" id="4881264737617084641" />
       </scope>
@@ -1048,16 +1048,16 @@
       <scope id="4881264737617084641" at="88,41,110,5" />
       <scope id="4881264737617084641" at="148,0,170,0" />
       <scope id="4881264737617084641" at="88,0,112,0" />
-      <unit id="4881264737617084641" at="197,0,200,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder_a$CONCEPTS" />
-      <unit id="4881264737617084641" at="192,0,196,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder_a$PROPS" />
-      <unit id="4881264737617783781" at="118,38,125,9" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder_a$MacroFolderPicker_macro_cellMenu_uon06a_a0b0$1" />
-      <unit id="4881264737617085425" at="176,38,183,9" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder_a$MacroFolderPicker_path_cellMenu_uon06a_a0d0$1" />
-      <unit id="4881264737617085425" at="170,0,191,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder_a$MacroFolderPicker_path_cellMenu_uon06a_a0d0" />
-      <unit id="4881264737617783781" at="112,0,138,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder_a$MacroFolderPicker_macro_cellMenu_uon06a_a0b0" />
-      <unit id="4881264737617084641" at="49,0,201,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder_a" />
+      <unit id="4881264737617084641" at="197,0,200,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder$CONCEPTS" />
+      <unit id="4881264737617084641" at="192,0,196,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder$PROPS" />
+      <unit id="4881264737617783781" at="118,38,125,9" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder$MacroFolderPicker_macro_cellMenu_uon06a_a0b0$1" />
+      <unit id="4881264737617085425" at="176,38,183,9" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder$MacroFolderPicker_path_cellMenu_uon06a_a0d0$1" />
+      <unit id="4881264737617085425" at="170,0,191,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder$MacroFolderPicker_path_cellMenu_uon06a_a0d0" />
+      <unit id="4881264737617783781" at="112,0,138,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder$MacroFolderPicker_macro_cellMenu_uon06a_a0b0" />
+      <unit id="4881264737617084641" at="49,0,201,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_EditorBuilder" />
     </file>
-    <file name="MacroFolderPicker_InspectorBuilder_a.java">
-      <node id="4881264737617084641" at="26,100,27,19" concept="10" />
+    <file name="MacroFolderPicker_InspectorBuilder.java">
+      <node id="4881264737617084641" at="26,98,27,19" concept="10" />
       <node id="4881264737617084641" at="27,19,28,18" concept="2" />
       <node id="4881264737617084641" at="33,26,34,18" concept="7" />
       <node id="4881264737617084641" at="37,39,38,32" concept="7" />
@@ -1083,7 +1083,7 @@
       <node id="4881264737617084641" at="23,0,25,0" concept="3" trace="myNode" />
       <node id="4881264737617084641" at="37,0,40,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2809388953623586573" at="58,0,61,0" concept="5" trace="getText#()Ljava/lang/String;" />
-      <node id="4881264737617084641" at="26,0,30,0" concept="1" trace="MacroFolderPicker_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4881264737617084641" at="26,0,30,0" concept="1" trace="MacroFolderPicker_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4881264737617084641" at="31,0,36,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2809388953623586573" at="56,54,61,15" concept="6" />
       <node id="2809388953623586572" at="50,0,56,0" concept="5" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -1092,7 +1092,7 @@
       <scope id="4881264737617084641" at="33,26,34,18" />
       <scope id="4881264737617084641" at="37,39,38,32" />
       <scope id="2809388953623586576" at="58,31,59,105" />
-      <scope id="4881264737617084641" at="26,100,28,18" />
+      <scope id="4881264737617084641" at="26,98,28,18" />
       <scope id="4881264737617084641" at="37,0,40,0" />
       <scope id="2809388953623586573" at="58,0,61,0" />
       <scope id="4881264737617084641" at="26,0,30,0">
@@ -1113,8 +1113,8 @@
         <var name="style" id="2809388953623586573" />
       </scope>
       <scope id="2809388953623586573" at="56,0,70,0" />
-      <unit id="2809388953623586573" at="57,88,61,5" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_InspectorBuilder_a$1" />
-      <unit id="4881264737617084641" at="22,0,71,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_InspectorBuilder_a" />
+      <unit id="2809388953623586573" at="57,88,61,5" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_InspectorBuilder$1" />
+      <unit id="4881264737617084641" at="22,0,71,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFolderPicker_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:7fdd874b-4384-4587-921a-bc2dc46676c9(com.mbeddr.mpsutil.filepicker.editor)/5779127112631408948">
@@ -1325,12 +1325,12 @@
   </root>
   <root nodeRef="r:7fdd874b-4384-4587-921a-bc2dc46676c9(com.mbeddr.mpsutil.filepicker.editor)/8297282968580458132">
     <file name="MacroFilePicker_Editor.java">
-      <node id="8297282968580458132" at="11,79,12,81" concept="7" />
-      <node id="8297282968580458132" at="14,82,15,84" concept="7" />
+      <node id="8297282968580458132" at="11,79,12,79" concept="7" />
+      <node id="8297282968580458132" at="14,82,15,82" concept="7" />
       <node id="8297282968580458132" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8297282968580458132" at="14,0,17,0" concept="5" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8297282968580458132" at="11,79,12,81" />
-      <scope id="8297282968580458132" at="14,82,15,84" />
+      <scope id="8297282968580458132" at="11,79,12,79" />
+      <scope id="8297282968580458132" at="14,82,15,82" />
       <scope id="8297282968580458132" at="11,0,14,0">
         <var name="editorContext" id="8297282968580458132" />
         <var name="node" id="8297282968580458132" />
@@ -1341,8 +1341,8 @@
       </scope>
       <unit id="8297282968580458132" at="10,0,18,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_Editor" />
     </file>
-    <file name="MacroFilePicker_EditorBuilder_a.java">
-      <node id="8297282968580458132" at="53,95,54,19" concept="10" />
+    <file name="MacroFilePicker_EditorBuilder.java">
+      <node id="8297282968580458132" at="53,93,54,19" concept="10" />
       <node id="8297282968580458132" at="54,19,55,18" concept="2" />
       <node id="8297282968580458132" at="60,26,61,18" concept="7" />
       <node id="8297282968580458132" at="64,39,65,32" concept="7" />
@@ -1422,7 +1422,7 @@
       <node id="8297282968580458132" at="64,0,67,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2809388953623395255" at="134,0,137,0" concept="9" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
       <node id="8297282968580464315" at="187,0,190,0" concept="5" trace="getPropertyValues#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/List;" />
-      <node id="8297282968580458132" at="53,0,57,0" concept="1" trace="MacroFilePicker_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8297282968580458132" at="53,0,57,0" concept="1" trace="MacroFilePicker_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8297282968580458132" at="58,0,63,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8297282968580458132" at="102,208,107,24" concept="4" />
       <node id="2809388953623395224" at="129,0,134,0" concept="5" trace="getPropertyValues#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/List;" />
@@ -1450,7 +1450,7 @@
       <scope id="2809388953623395255" at="134,57,135,45" />
       <scope id="8297282968580458132" at="166,15,167,40" />
       <scope id="8297282968580464315" at="187,87,188,100" />
-      <scope id="8297282968580458132" at="53,95,55,18" />
+      <scope id="8297282968580458132" at="53,93,55,18" />
       <scope id="8297282968580458132" at="103,74,105,145">
         <var name="manager" id="8297282968580458132" />
       </scope>
@@ -1531,16 +1531,16 @@
       <scope id="8297282968580458132" at="88,41,110,5" />
       <scope id="8297282968580458132" at="148,0,170,0" />
       <scope id="8297282968580458132" at="88,0,112,0" />
-      <unit id="8297282968580458132" at="197,0,200,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder_a$CONCEPTS" />
-      <unit id="8297282968580458132" at="192,0,196,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder_a$PROPS" />
-      <unit id="2809388953623395224" at="118,38,125,9" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder_a$MacroFilePicker_macro_cellMenu_gk03jv_a0b0$1" />
-      <unit id="8297282968580464315" at="176,38,183,9" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder_a$MacroFilePicker_path_cellMenu_gk03jv_a0d0$1" />
-      <unit id="8297282968580464315" at="170,0,191,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder_a$MacroFilePicker_path_cellMenu_gk03jv_a0d0" />
-      <unit id="2809388953623395224" at="112,0,138,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder_a$MacroFilePicker_macro_cellMenu_gk03jv_a0b0" />
-      <unit id="8297282968580458132" at="49,0,201,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder_a" />
+      <unit id="8297282968580458132" at="197,0,200,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder$CONCEPTS" />
+      <unit id="8297282968580458132" at="192,0,196,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder$PROPS" />
+      <unit id="2809388953623395224" at="118,38,125,9" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder$MacroFilePicker_macro_cellMenu_gk03jv_a0b0$1" />
+      <unit id="8297282968580464315" at="176,38,183,9" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder$MacroFilePicker_path_cellMenu_gk03jv_a0d0$1" />
+      <unit id="8297282968580464315" at="170,0,191,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder$MacroFilePicker_path_cellMenu_gk03jv_a0d0" />
+      <unit id="2809388953623395224" at="112,0,138,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder$MacroFilePicker_macro_cellMenu_gk03jv_a0b0" />
+      <unit id="8297282968580458132" at="49,0,201,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_EditorBuilder" />
     </file>
-    <file name="MacroFilePicker_InspectorBuilder_a.java">
-      <node id="8297282968580458132" at="26,98,27,19" concept="10" />
+    <file name="MacroFilePicker_InspectorBuilder.java">
+      <node id="8297282968580458132" at="26,96,27,19" concept="10" />
       <node id="8297282968580458132" at="27,19,28,18" concept="2" />
       <node id="8297282968580458132" at="33,26,34,18" concept="7" />
       <node id="8297282968580458132" at="37,39,38,32" concept="7" />
@@ -1566,7 +1566,7 @@
       <node id="8297282968580458132" at="23,0,25,0" concept="3" trace="myNode" />
       <node id="8297282968580458132" at="37,0,40,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2809388953623584972" at="58,0,61,0" concept="5" trace="getText#()Ljava/lang/String;" />
-      <node id="8297282968580458132" at="26,0,30,0" concept="1" trace="MacroFilePicker_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8297282968580458132" at="26,0,30,0" concept="1" trace="MacroFilePicker_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8297282968580458132" at="31,0,36,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2809388953623584972" at="56,54,61,15" concept="6" />
       <node id="2809388953623584971" at="50,0,56,0" concept="5" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -1575,7 +1575,7 @@
       <scope id="8297282968580458132" at="33,26,34,18" />
       <scope id="8297282968580458132" at="37,39,38,32" />
       <scope id="2809388953623584975" at="58,31,59,105" />
-      <scope id="8297282968580458132" at="26,98,28,18" />
+      <scope id="8297282968580458132" at="26,96,28,18" />
       <scope id="8297282968580458132" at="37,0,40,0" />
       <scope id="2809388953623584972" at="58,0,61,0" />
       <scope id="8297282968580458132" at="26,0,30,0">
@@ -1596,8 +1596,8 @@
         <var name="style" id="2809388953623584972" />
       </scope>
       <scope id="2809388953623584972" at="56,0,70,0" />
-      <unit id="2809388953623584972" at="57,88,61,5" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_InspectorBuilder_a$1" />
-      <unit id="8297282968580458132" at="22,0,71,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_InspectorBuilder_a" />
+      <unit id="2809388953623584972" at="57,88,61,5" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_InspectorBuilder$1" />
+      <unit id="8297282968580458132" at="22,0,71,0" name="com.mbeddr.mpsutil.filepicker.editor.MacroFilePicker_InspectorBuilder" />
     </file>
   </root>
 </debug-info>

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class IntegerExponent_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new IntegerExponent_EditorBuilder_a(editorContext, node).createCell();
+    return new IntegerExponent_EditorBuilder(editorContext, node).createCell();
   }
 }

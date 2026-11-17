@@ -18,6 +18,6 @@ public class Node_ReplaceWithNewOperation_UniqueNames_Editor extends DefaultNode
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Node_ReplaceWithNewOperation_UniqueNames_EditorBuilder_a(editorContext, node).createCell();
+    return new Node_ReplaceWithNewOperation_UniqueNames_EditorBuilder(editorContext, node).createCell();
   }
 }

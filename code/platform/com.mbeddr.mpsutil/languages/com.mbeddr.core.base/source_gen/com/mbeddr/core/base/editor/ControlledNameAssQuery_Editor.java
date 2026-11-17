@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ControlledNameAssQuery_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ControlledNameAssQuery_EditorBuilder_a(editorContext, node).createCell();
+    return new ControlledNameAssQuery_EditorBuilder(editorContext, node).createCell();
   }
 }

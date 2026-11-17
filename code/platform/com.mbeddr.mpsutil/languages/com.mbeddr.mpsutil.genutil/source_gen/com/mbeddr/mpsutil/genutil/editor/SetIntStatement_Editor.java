@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class SetIntStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SetIntStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new SetIntStatement_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RegExFilter_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RegExFilter_EditorBuilder_a(editorContext, node).createCell();
+    return new RegExFilter_EditorBuilder(editorContext, node).createCell();
   }
 }

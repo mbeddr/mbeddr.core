@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PhaseChangeStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PhaseChangeStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new PhaseChangeStatement_EditorBuilder(editorContext, node).createCell();
   }
 }

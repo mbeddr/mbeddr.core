@@ -16,6 +16,6 @@ public class AliasInfo implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AliasInfo_ComponentBuilder_a(editorContext, node).createCell();
+    return new AliasInfo_ComponentBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class IMakefileItem_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new IMakefileItem_EditorBuilder_a(editorContext, node).createCell();
+    return new IMakefileItem_EditorBuilder(editorContext, node).createCell();
   }
 }

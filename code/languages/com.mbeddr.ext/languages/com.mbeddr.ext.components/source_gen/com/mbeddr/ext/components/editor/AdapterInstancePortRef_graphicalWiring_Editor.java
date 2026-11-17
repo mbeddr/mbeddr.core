@@ -18,6 +18,6 @@ public class AdapterInstancePortRef_graphicalWiring_Editor extends DefaultNodeEd
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AdapterInstancePortRef_graphicalWiring_EditorBuilder_a(editorContext, node).createCell();
+    return new AdapterInstancePortRef_graphicalWiring_EditorBuilder(editorContext, node).createCell();
   }
 }

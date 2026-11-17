@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ReplaceHookOp_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ReplaceHookOp_EditorBuilder_a(editorContext, node).createCell();
+    return new ReplaceHookOp_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class EmitMapStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new EmitMapStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new EmitMapStatement_EditorBuilder(editorContext, node).createCell();
   }
 }

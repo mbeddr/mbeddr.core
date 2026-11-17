@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class CoverageExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CoverageExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new CoverageExpression_EditorBuilder(editorContext, node).createCell();
   }
 }

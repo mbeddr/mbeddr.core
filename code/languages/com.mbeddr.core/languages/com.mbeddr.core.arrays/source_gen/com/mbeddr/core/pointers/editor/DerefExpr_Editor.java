@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class DerefExpr_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DerefExpr_EditorBuilder_a(editorContext, node).createCell();
+    return new DerefExpr_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new DerefExpr_InspectorBuilder_a(editorContext, node).createCell();
+    return new DerefExpr_InspectorBuilder(editorContext, node).createCell();
   }
 }

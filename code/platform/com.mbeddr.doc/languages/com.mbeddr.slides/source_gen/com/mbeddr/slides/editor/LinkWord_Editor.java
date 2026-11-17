@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class LinkWord_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new LinkWord_EditorBuilder_a(editorContext, node).createCell();
+    return new LinkWord_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new LinkWord_InspectorBuilder_a(editorContext, node).createCell();
+    return new LinkWord_InspectorBuilder(editorContext, node).createCell();
   }
 }

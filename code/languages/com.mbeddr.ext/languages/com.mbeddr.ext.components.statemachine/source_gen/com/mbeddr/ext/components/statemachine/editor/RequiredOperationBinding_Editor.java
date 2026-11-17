@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RequiredOperationBinding_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RequiredOperationBinding_EditorBuilder_a(editorContext, node).createCell();
+    return new RequiredOperationBinding_EditorBuilder(editorContext, node).createCell();
   }
 }

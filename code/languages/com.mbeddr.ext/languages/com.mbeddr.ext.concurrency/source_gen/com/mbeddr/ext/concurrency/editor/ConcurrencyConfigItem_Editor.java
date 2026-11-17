@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ConcurrencyConfigItem_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConcurrencyConfigItem_EditorBuilder_a(editorContext, node).createCell();
+    return new ConcurrencyConfigItem_EditorBuilder(editorContext, node).createCell();
   }
 }
