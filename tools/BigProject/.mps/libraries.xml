@@ -3,11 +3,11 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="mps-extensions">
+        <entry key="mbeddr.platform">
           <value>
             <Library>
-              <option name="name" value="mps-extensions" />
-              <option name="path" value="$PROJECT_DIR$/../../code/platform/build/dependencies/de.itemis.mps.extensions" />
+              <option name="name" value="mbeddr.platform" />
+              <option name="path" value="$PROJECT_DIR$/../../code/build/dependencies/com.mbeddr.platform" />
             </Library>
           </value>
         </entry>
