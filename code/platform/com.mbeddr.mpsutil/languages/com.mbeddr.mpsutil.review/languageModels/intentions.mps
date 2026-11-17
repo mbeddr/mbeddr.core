@@ -135,7 +135,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -143,11 +142,8 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
@@ -878,20 +874,118 @@
       </node>
       <node concept="3cqZAl" id="4djtaRYs1Tj" role="3clF45" />
       <node concept="P$JXv" id="3YH6BTvZ4cU" role="lGtFl">
-        <node concept="TZ5HA" id="3YH6BTvZ4cV" role="TZ5H$">
-          <node concept="1dT_AC" id="3YH6BTvZ4cW" role="1dT_Ay">
-            <property role="1dT_AB" value="Removes the note and, before it, every reply to it. A note that an earlier call already removed as a reply" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="3YH6BTvZ4cX" role="TZ5H$">
-          <node concept="1dT_AC" id="3YH6BTvZ4cY" role="1dT_Ay">
-            <property role="1dT_AB" value="has no parent any more and is left alone." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="3YH6BTvZ4cZ" role="3nqlJM">
-          <property role="TUZQ4" value="the note to remove" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="3YH6BTvZ4d0" role="zr_5Q">
             <ref role="zr_51" node="6O8Trd1CNkA" resolve="note" />
+          </node>
+          <node concept="1PaTwC" id="5PqaIpwK907" role="1Vez_I">
+            <node concept="3oM_SD" id="5PqaIpwK908" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5PqaIpwK909" role="1PaTwD">
+              <property role="3oM_SC" value="note" />
+            </node>
+            <node concept="3oM_SD" id="5PqaIpwK90a" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="5PqaIpwK90b" role="1PaTwD">
+              <property role="3oM_SC" value="remove" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5PqaIpwK8ZB" role="1Vez_I">
+          <node concept="3oM_SD" id="5PqaIpwK8ZC" role="1PaTwD">
+            <property role="3oM_SC" value="Removes" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZD" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZE" role="1PaTwD">
+            <property role="3oM_SC" value="note" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZF" role="1PaTwD">
+            <property role="3oM_SC" value="and," />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZG" role="1PaTwD">
+            <property role="3oM_SC" value="before" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZH" role="1PaTwD">
+            <property role="3oM_SC" value="it," />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZI" role="1PaTwD">
+            <property role="3oM_SC" value="every" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZJ" role="1PaTwD">
+            <property role="3oM_SC" value="reply" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZK" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZL" role="1PaTwD">
+            <property role="3oM_SC" value="it." />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZM" role="1PaTwD">
+            <property role="3oM_SC" value="A" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZN" role="1PaTwD">
+            <property role="3oM_SC" value="note" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZO" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZP" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZQ" role="1PaTwD">
+            <property role="3oM_SC" value="earlier" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZR" role="1PaTwD">
+            <property role="3oM_SC" value="call" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZS" role="1PaTwD">
+            <property role="3oM_SC" value="already" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZT" role="1PaTwD">
+            <property role="3oM_SC" value="removed" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZU" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZV" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZW" role="1PaTwD">
+            <property role="3oM_SC" value="reply" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5PqaIpwK8ZX" role="1Vez_I">
+          <node concept="3oM_SD" id="5PqaIpwK8ZY" role="1PaTwD">
+            <property role="3oM_SC" value="has" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK8ZZ" role="1PaTwD">
+            <property role="3oM_SC" value="no" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK900" role="1PaTwD">
+            <property role="3oM_SC" value="parent" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK901" role="1PaTwD">
+            <property role="3oM_SC" value="any" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK902" role="1PaTwD">
+            <property role="3oM_SC" value="more" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK903" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK904" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK905" role="1PaTwD">
+            <property role="3oM_SC" value="left" />
+          </node>
+          <node concept="3oM_SD" id="5PqaIpwK906" role="1PaTwD">
+            <property role="3oM_SC" value="alone." />
           </node>
         </node>
       </node>
