@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ReviewNote_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ReviewNote_EditorBuilder_a(editorContext, node).createCell();
+    return new ReviewNote_EditorBuilder(editorContext, node).createCell();
   }
 }

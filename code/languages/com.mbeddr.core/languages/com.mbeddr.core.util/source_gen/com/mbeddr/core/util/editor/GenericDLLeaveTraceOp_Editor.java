@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GenericDLLeaveTraceOp_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GenericDLLeaveTraceOp_EditorBuilder_a(editorContext, node).createCell();
+    return new GenericDLLeaveTraceOp_EditorBuilder(editorContext, node).createCell();
   }
 }

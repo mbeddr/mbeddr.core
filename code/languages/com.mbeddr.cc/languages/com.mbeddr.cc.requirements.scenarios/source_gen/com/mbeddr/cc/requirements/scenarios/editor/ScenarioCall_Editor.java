@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ScenarioCall_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ScenarioCall_EditorBuilder_a(editorContext, node).createCell();
+    return new ScenarioCall_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PrefixDirPicker_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PrefixDirPicker_EditorBuilder_a(editorContext, node).createCell();
+    return new PrefixDirPicker_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new PrefixDirPicker_InspectorBuilder_a(editorContext, node).createCell();
+    return new PrefixDirPicker_InspectorBuilder(editorContext, node).createCell();
   }
 }

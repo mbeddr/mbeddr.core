@@ -49,17 +49,17 @@
   </root>
   <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)/145956936284277591">
     <file name="CheckBoxPreferenceFormProperty_Editor.java">
-      <node id="145956936284277591" at="11,79,12,96" concept="6" />
+      <node id="145956936284277591" at="11,79,12,94" concept="6" />
       <node id="145956936284277591" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="145956936284277591" at="11,79,12,96" />
+      <scope id="145956936284277591" at="11,79,12,94" />
       <scope id="145956936284277591" at="11,0,14,0">
         <var name="editorContext" id="145956936284277591" />
         <var name="node" id="145956936284277591" />
       </scope>
       <unit id="145956936284277591" at="10,0,15,0" name="com.mbeddr.mpsutil.preferenceform.editor.CheckBoxPreferenceFormProperty_Editor" />
     </file>
-    <file name="CheckBoxPreferenceFormProperty_EditorBuilder_a.java">
-      <node id="145956936284277591" at="43,110,44,19" concept="9" />
+    <file name="CheckBoxPreferenceFormProperty_EditorBuilder.java">
+      <node id="145956936284277591" at="43,108,44,19" concept="9" />
       <node id="145956936284277591" at="44,19,45,18" concept="1" />
       <node id="145956936284277591" at="50,26,51,18" concept="6" />
       <node id="145956936284277591" at="54,39,55,32" concept="6" />
@@ -153,7 +153,7 @@
       <node id="145956936284277591" at="133,87,136,7" concept="3" />
       <node id="145956936284277591" at="136,7,139,7" concept="3" />
       <node id="145956936284277591" at="155,0,158,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="145956936284277591" at="43,0,47,0" concept="0" trace="CheckBoxPreferenceFormProperty_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="145956936284277591" at="43,0,47,0" concept="0" trace="CheckBoxPreferenceFormProperty_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="145956936284279422" at="70,0,74,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="145956936284277591" at="104,0,108,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="145956936284277591" at="112,0,116,0" concept="0" trace="labelSingleRoleHandler_o50xru_d0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -182,7 +182,7 @@
       <scope id="145956936284277591" at="151,17,152,42" />
       <scope id="145956936284277591" at="155,40,156,26" />
       <scope id="145956936284279500" at="192,15,193,40" />
-      <scope id="145956936284277591" at="43,110,45,18" />
+      <scope id="145956936284277591" at="43,108,45,18" />
       <scope id="145956936284279422" at="70,42,72,22">
         <var name="editorCell" id="145956936284279422" />
       </scope>
@@ -262,26 +262,26 @@
       <scope id="145956936284279500" at="175,41,194,5" />
       <scope id="145956936284279454" at="74,0,95,0" />
       <scope id="145956936284279500" at="175,0,196,0" />
-      <unit id="145956936284277591" at="202,0,205,0" name="com.mbeddr.mpsutil.preferenceform.editor.CheckBoxPreferenceFormProperty_EditorBuilder_a$CONCEPTS" />
-      <unit id="145956936284277591" at="206,0,209,0" name="com.mbeddr.mpsutil.preferenceform.editor.CheckBoxPreferenceFormProperty_EditorBuilder_a$LINKS" />
-      <unit id="145956936284277591" at="197,0,201,0" name="com.mbeddr.mpsutil.preferenceform.editor.CheckBoxPreferenceFormProperty_EditorBuilder_a$PROPS" />
-      <unit id="145956936284277591" at="108,0,159,0" name="com.mbeddr.mpsutil.preferenceform.editor.CheckBoxPreferenceFormProperty_EditorBuilder_a$labelSingleRoleHandler_o50xru_d0" />
-      <unit id="145956936284277591" at="39,0,210,0" name="com.mbeddr.mpsutil.preferenceform.editor.CheckBoxPreferenceFormProperty_EditorBuilder_a" />
+      <unit id="145956936284277591" at="202,0,205,0" name="com.mbeddr.mpsutil.preferenceform.editor.CheckBoxPreferenceFormProperty_EditorBuilder$CONCEPTS" />
+      <unit id="145956936284277591" at="206,0,209,0" name="com.mbeddr.mpsutil.preferenceform.editor.CheckBoxPreferenceFormProperty_EditorBuilder$LINKS" />
+      <unit id="145956936284277591" at="197,0,201,0" name="com.mbeddr.mpsutil.preferenceform.editor.CheckBoxPreferenceFormProperty_EditorBuilder$PROPS" />
+      <unit id="145956936284277591" at="108,0,159,0" name="com.mbeddr.mpsutil.preferenceform.editor.CheckBoxPreferenceFormProperty_EditorBuilder$labelSingleRoleHandler_o50xru_d0" />
+      <unit id="145956936284277591" at="39,0,210,0" name="com.mbeddr.mpsutil.preferenceform.editor.CheckBoxPreferenceFormProperty_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)/145956936284279834">
     <file name="TextFieldPreferenceFormProperty_Editor.java">
-      <node id="145956936284279834" at="11,79,12,97" concept="6" />
+      <node id="145956936284279834" at="11,79,12,95" concept="6" />
       <node id="145956936284279834" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="145956936284279834" at="11,79,12,97" />
+      <scope id="145956936284279834" at="11,79,12,95" />
       <scope id="145956936284279834" at="11,0,14,0">
         <var name="editorContext" id="145956936284279834" />
         <var name="node" id="145956936284279834" />
       </scope>
       <unit id="145956936284279834" at="10,0,15,0" name="com.mbeddr.mpsutil.preferenceform.editor.TextFieldPreferenceFormProperty_Editor" />
     </file>
-    <file name="TextFieldPreferenceFormProperty_EditorBuilder_a.java">
-      <node id="145956936284279834" at="43,111,44,19" concept="9" />
+    <file name="TextFieldPreferenceFormProperty_EditorBuilder.java">
+      <node id="145956936284279834" at="43,109,44,19" concept="9" />
       <node id="145956936284279834" at="44,19,45,18" concept="1" />
       <node id="145956936284279834" at="50,26,51,18" concept="6" />
       <node id="145956936284279834" at="54,39,55,32" concept="6" />
@@ -375,7 +375,7 @@
       <node id="145956936284279834" at="133,87,136,7" concept="3" />
       <node id="145956936284279834" at="136,7,139,7" concept="3" />
       <node id="145956936284279834" at="155,0,158,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="145956936284279834" at="43,0,47,0" concept="0" trace="TextFieldPreferenceFormProperty_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="145956936284279834" at="43,0,47,0" concept="0" trace="TextFieldPreferenceFormProperty_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="145956936284279873" at="70,0,74,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="145956936284279834" at="104,0,108,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="145956936284279834" at="112,0,116,0" concept="0" trace="labelSingleRoleHandler_x1dlph_d0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -404,7 +404,7 @@
       <scope id="145956936284279834" at="151,17,152,42" />
       <scope id="145956936284279834" at="155,40,156,26" />
       <scope id="145956936284279881" at="192,15,193,40" />
-      <scope id="145956936284279834" at="43,111,45,18" />
+      <scope id="145956936284279834" at="43,109,45,18" />
       <scope id="145956936284279873" at="70,42,72,22">
         <var name="editorCell" id="145956936284279873" />
       </scope>
@@ -484,26 +484,26 @@
       <scope id="145956936284279881" at="175,41,194,5" />
       <scope id="145956936284279874" at="74,0,95,0" />
       <scope id="145956936284279881" at="175,0,196,0" />
-      <unit id="145956936284279834" at="202,0,205,0" name="com.mbeddr.mpsutil.preferenceform.editor.TextFieldPreferenceFormProperty_EditorBuilder_a$CONCEPTS" />
-      <unit id="145956936284279834" at="206,0,209,0" name="com.mbeddr.mpsutil.preferenceform.editor.TextFieldPreferenceFormProperty_EditorBuilder_a$LINKS" />
-      <unit id="145956936284279834" at="197,0,201,0" name="com.mbeddr.mpsutil.preferenceform.editor.TextFieldPreferenceFormProperty_EditorBuilder_a$PROPS" />
-      <unit id="145956936284279834" at="108,0,159,0" name="com.mbeddr.mpsutil.preferenceform.editor.TextFieldPreferenceFormProperty_EditorBuilder_a$labelSingleRoleHandler_x1dlph_d0" />
-      <unit id="145956936284279834" at="39,0,210,0" name="com.mbeddr.mpsutil.preferenceform.editor.TextFieldPreferenceFormProperty_EditorBuilder_a" />
+      <unit id="145956936284279834" at="202,0,205,0" name="com.mbeddr.mpsutil.preferenceform.editor.TextFieldPreferenceFormProperty_EditorBuilder$CONCEPTS" />
+      <unit id="145956936284279834" at="206,0,209,0" name="com.mbeddr.mpsutil.preferenceform.editor.TextFieldPreferenceFormProperty_EditorBuilder$LINKS" />
+      <unit id="145956936284279834" at="197,0,201,0" name="com.mbeddr.mpsutil.preferenceform.editor.TextFieldPreferenceFormProperty_EditorBuilder$PROPS" />
+      <unit id="145956936284279834" at="108,0,159,0" name="com.mbeddr.mpsutil.preferenceform.editor.TextFieldPreferenceFormProperty_EditorBuilder$labelSingleRoleHandler_x1dlph_d0" />
+      <unit id="145956936284279834" at="39,0,210,0" name="com.mbeddr.mpsutil.preferenceform.editor.TextFieldPreferenceFormProperty_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)/145956936284279944">
     <file name="PreferenceForm_Editor.java">
-      <node id="145956936284279944" at="11,79,12,80" concept="6" />
+      <node id="145956936284279944" at="11,79,12,78" concept="6" />
       <node id="145956936284279944" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="145956936284279944" at="11,79,12,80" />
+      <scope id="145956936284279944" at="11,79,12,78" />
       <scope id="145956936284279944" at="11,0,14,0">
         <var name="editorContext" id="145956936284279944" />
         <var name="node" id="145956936284279944" />
       </scope>
       <unit id="145956936284279944" at="10,0,15,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_Editor" />
     </file>
-    <file name="PreferenceForm_EditorBuilder_a.java">
-      <node id="145956936284279944" at="51,94,52,19" concept="9" />
+    <file name="PreferenceForm_EditorBuilder.java">
+      <node id="145956936284279944" at="51,92,52,19" concept="9" />
       <node id="145956936284279944" at="52,19,53,18" concept="1" />
       <node id="145956936284279944" at="58,26,59,18" concept="6" />
       <node id="145956936284279944" at="62,39,63,32" concept="6" />
@@ -518,11 +518,11 @@
       <node id="1101080154069059895" at="74,51,75,49" concept="1" />
       <node id="145956936284280660" at="75,49,76,52" concept="1" />
       <node id="1101080154069053709" at="76,52,77,49" concept="1" />
-      <node id="1101080154069040492" at="78,37,79,53" concept="1" />
-      <node id="1101080154069052745" at="81,37,82,53" concept="1" />
+      <node id="1101080154069040492" at="78,27,79,53" concept="1" />
+      <node id="1101080154069052745" at="81,27,82,53" concept="1" />
       <node id="145956936284279944" at="83,5,84,22" concept="6" />
-      <node id="1101080154069041225" at="86,46,87,111" concept="6" />
-      <node id="1101080154069052753" at="89,46,90,111" concept="6" />
+      <node id="1101080154069041225" at="86,36,87,111" concept="6" />
+      <node id="1101080154069052753" at="89,36,90,111" concept="6" />
       <node id="145956936284279944" at="92,43,93,122" concept="5" />
       <node id="145956936284279944" at="93,122,94,49" concept="1" />
       <node id="145956936284279944" at="94,49,95,34" concept="5" />
@@ -769,8 +769,8 @@
       <node id="145956936284279944" at="62,0,65,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1101080154069040492" at="77,49,80,5" concept="3" />
       <node id="1101080154069052745" at="80,5,83,5" concept="3" />
-      <node id="1101080154069040554" at="86,0,89,0" concept="4" trace="nodeCondition_la84hi_a7a#()Z" />
-      <node id="1101080154069052751" at="89,0,92,0" concept="4" trace="nodeCondition_la84hi_a8a#()Z" />
+      <node id="1101080154069040554" at="86,0,89,0" concept="4" trace="nodeCondition0#()Z" />
+      <node id="1101080154069052751" at="89,0,92,0" concept="4" trace="nodeCondition1#()Z" />
       <node id="145956936284279944" at="233,0,236,0" concept="4" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="145956936284279944" at="236,0,239,0" concept="4" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="145956936284279944" at="280,96,283,9" concept="3" />
@@ -786,7 +786,7 @@
       <node id="145956936284279944" at="521,87,524,7" concept="3" />
       <node id="145956936284279944" at="524,7,527,7" concept="3" />
       <node id="145956936284279944" at="543,0,546,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="145956936284279944" at="51,0,55,0" concept="0" trace="PreferenceForm_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="145956936284279944" at="51,0,55,0" concept="0" trace="PreferenceForm_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="145956936284279975" at="102,0,106,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="145956936284279944" at="224,0,228,0" concept="0" trace="propertiesListHandler_la84hi_f0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="145956936284279944" at="229,0,233,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -855,10 +855,10 @@
       <node id="145956936284279944" at="261,0,286,0" concept="4" trace="installElementCellActions#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/cells/EditorCell;Z)V" />
       <scope id="145956936284279944" at="58,26,59,18" />
       <scope id="145956936284279944" at="62,39,63,32" />
-      <scope id="1101080154069040492" at="78,37,79,53" />
-      <scope id="1101080154069052745" at="81,37,82,53" />
-      <scope id="1101080154069040555" at="86,46,87,111" />
-      <scope id="1101080154069052752" at="89,46,90,111" />
+      <scope id="1101080154069040492" at="78,27,79,53" />
+      <scope id="1101080154069052745" at="81,27,82,53" />
+      <scope id="1101080154069040555" at="86,36,87,111" />
+      <scope id="1101080154069052752" at="89,36,90,111" />
       <scope id="145956936284279980" at="123,15,124,40" />
       <scope id="1101080154069061690" at="166,15,167,40" />
       <scope id="5176801476817785565" at="203,15,204,40" />
@@ -887,7 +887,7 @@
       <scope id="145956936284279944" at="525,42,526,66" />
       <scope id="145956936284279944" at="539,17,540,42" />
       <scope id="145956936284279944" at="543,40,544,46" />
-      <scope id="145956936284279944" at="51,94,53,18" />
+      <scope id="145956936284279944" at="51,92,53,18" />
       <scope id="145956936284279975" at="102,42,104,22">
         <var name="editorCell" id="145956936284279975" />
       </scope>
@@ -1143,30 +1143,30 @@
         <var name="elementNode" id="145956936284279944" />
         <var name="isEmptyCell" id="145956936284279944" />
       </scope>
-      <unit id="145956936284279944" at="554,0,558,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder_a$CONCEPTS" />
-      <unit id="145956936284279944" at="548,0,553,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder_a$PROPS" />
-      <unit id="145956936284279944" at="559,0,566,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder_a$LINKS" />
-      <unit id="145956936284279944" at="308,0,359,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder_a$beforeWriteBlockProjectSingleRoleHandler_la84hi_a7a" />
-      <unit id="145956936284279944" at="369,0,420,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder_a$afterReadBlockProjectSingleRoleHandler_la84hi_c7a" />
-      <unit id="145956936284279944" at="435,0,486,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder_a$beforeWriteBlockApplicationSingleRoleHandler_la84hi_a8a" />
-      <unit id="145956936284279944" at="496,0,547,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder_a$afterReadBlockApplicationSingleRoleHandler_la84hi_c8a" />
-      <unit id="145956936284279944" at="220,0,287,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder_a$propertiesListHandler_la84hi_f0" />
-      <unit id="145956936284279944" at="47,0,567,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder_a" />
+      <unit id="145956936284279944" at="554,0,558,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder$CONCEPTS" />
+      <unit id="145956936284279944" at="548,0,553,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder$PROPS" />
+      <unit id="145956936284279944" at="559,0,566,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder$LINKS" />
+      <unit id="145956936284279944" at="308,0,359,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder$beforeWriteBlockProjectSingleRoleHandler_la84hi_a7a" />
+      <unit id="145956936284279944" at="369,0,420,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder$afterReadBlockProjectSingleRoleHandler_la84hi_c7a" />
+      <unit id="145956936284279944" at="435,0,486,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder$beforeWriteBlockApplicationSingleRoleHandler_la84hi_a8a" />
+      <unit id="145956936284279944" at="496,0,547,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder$afterReadBlockApplicationSingleRoleHandler_la84hi_c8a" />
+      <unit id="145956936284279944" at="220,0,287,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder$propertiesListHandler_la84hi_f0" />
+      <unit id="145956936284279944" at="47,0,567,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceForm_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)/145956936288309043">
     <file name="PreferenceFormType_Editor.java">
-      <node id="145956936288309043" at="11,79,12,84" concept="6" />
+      <node id="145956936288309043" at="11,79,12,82" concept="6" />
       <node id="145956936288309043" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="145956936288309043" at="11,79,12,84" />
+      <scope id="145956936288309043" at="11,79,12,82" />
       <scope id="145956936288309043" at="11,0,14,0">
         <var name="editorContext" id="145956936288309043" />
         <var name="node" id="145956936288309043" />
       </scope>
       <unit id="145956936288309043" at="10,0,15,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormType_Editor" />
     </file>
-    <file name="PreferenceFormType_EditorBuilder_a.java">
-      <node id="145956936288309043" at="48,98,49,19" concept="9" />
+    <file name="PreferenceFormType_EditorBuilder.java">
+      <node id="145956936288309043" at="48,96,49,19" concept="9" />
       <node id="145956936288309043" at="49,19,50,18" concept="1" />
       <node id="145956936288309043" at="55,26,56,18" concept="6" />
       <node id="145956936288309043" at="59,39,60,32" concept="6" />
@@ -1257,7 +1257,7 @@
       <node id="7974234327425250717" at="131,0,133,0" concept="2" trace="myNode" />
       <node id="145956936288309043" at="59,0,62,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="7974234327425250717" at="141,0,144,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="145956936288309043" at="48,0,52,0" concept="0" trace="PreferenceFormType_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="145956936288309043" at="48,0,52,0" concept="0" trace="PreferenceFormType_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="145956936288309043" at="116,0,120,5" concept="3" />
       <node id="145956936288309043" at="53,0,58,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="145956936288309043" at="123,205,128,22" concept="3" />
@@ -1279,7 +1279,7 @@
       <scope id="7974234327425250717" at="141,41,142,32" />
       <scope id="7974234327425250717" at="147,28,148,20" />
       <scope id="7974234327425250718" at="171,17,172,42" />
-      <scope id="145956936288309043" at="48,98,50,18" />
+      <scope id="145956936288309043" at="48,96,50,18" />
       <scope id="145956936288309043" at="117,40,119,53" />
       <scope id="145956936288309043" at="124,73,126,145">
         <var name="manager" id="145956936288309043" />
@@ -1349,27 +1349,27 @@
         <var name="referenceLink" id="145956936288309043" />
       </scope>
       <scope id="145956936288309043" at="95,0,130,0" />
-      <unit id="145956936288309043" at="187,0,190,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormType_EditorBuilder_a$LINKS" />
-      <unit id="145956936288309043" at="196,0,199,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormType_EditorBuilder_a$PROPS" />
-      <unit id="145956936288309043" at="191,0,195,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormType_EditorBuilder_a$CONCEPTS" />
-      <unit id="145956936288309043" at="97,42,112,5" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormType_EditorBuilder_a$1" />
-      <unit id="7974234327425250717" at="130,0,176,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormType_EditorBuilder_a$Inline_Builder0" />
-      <unit id="145956936288309043" at="44,0,200,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormType_EditorBuilder_a" />
+      <unit id="145956936288309043" at="187,0,190,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormType_EditorBuilder$LINKS" />
+      <unit id="145956936288309043" at="196,0,199,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormType_EditorBuilder$PROPS" />
+      <unit id="145956936288309043" at="191,0,195,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormType_EditorBuilder$CONCEPTS" />
+      <unit id="145956936288309043" at="97,42,112,5" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormType_EditorBuilder$1" />
+      <unit id="7974234327425250717" at="130,0,176,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormType_EditorBuilder$Inline_Builder0" />
+      <unit id="145956936288309043" at="44,0,200,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormType_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)/145956936288329603">
     <file name="PreferenceFormPropertyReference_Editor.java">
-      <node id="145956936288329603" at="11,79,12,97" concept="6" />
+      <node id="145956936288329603" at="11,79,12,95" concept="6" />
       <node id="145956936288329603" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="145956936288329603" at="11,79,12,97" />
+      <scope id="145956936288329603" at="11,79,12,95" />
       <scope id="145956936288329603" at="11,0,14,0">
         <var name="editorContext" id="145956936288329603" />
         <var name="node" id="145956936288329603" />
       </scope>
       <unit id="145956936288329603" at="10,0,15,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormPropertyReference_Editor" />
     </file>
-    <file name="PreferenceFormPropertyReference_EditorBuilder_a.java">
-      <node id="145956936288329603" at="47,111,48,19" concept="9" />
+    <file name="PreferenceFormPropertyReference_EditorBuilder.java">
+      <node id="145956936288329603" at="47,109,48,19" concept="9" />
       <node id="145956936288329603" at="48,19,49,18" concept="1" />
       <node id="145956936288329603" at="54,26,55,18" concept="6" />
       <node id="145956936288329603" at="58,39,59,32" concept="6" />
@@ -1437,7 +1437,7 @@
       <node id="1210181153279" at="107,0,109,0" concept="2" trace="myNode" />
       <node id="145956936288329603" at="58,0,61,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1210181153279" at="117,0,120,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="145956936288329603" at="47,0,51,0" concept="0" trace="PreferenceFormPropertyReference_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="145956936288329603" at="47,0,51,0" concept="0" trace="PreferenceFormPropertyReference_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="145956936288329603" at="92,0,96,5" concept="3" />
       <node id="145956936288329603" at="52,0,57,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="145956936288329603" at="99,205,104,22" concept="3" />
@@ -1456,7 +1456,7 @@
       <scope id="1210181153279" at="117,41,118,32" />
       <scope id="1210181153279" at="123,28,124,20" />
       <scope id="1210181156769" at="149,17,150,42" />
-      <scope id="145956936288329603" at="47,111,49,18" />
+      <scope id="145956936288329603" at="47,109,49,18" />
       <scope id="145956936288329603" at="93,40,95,45" />
       <scope id="145956936288329603" at="100,73,102,145">
         <var name="manager" id="145956936288329603" />
@@ -1511,27 +1511,27 @@
         <var name="referenceLink" id="145956936288329603" />
       </scope>
       <scope id="145956936288329603" at="70,0,106,0" />
-      <unit id="145956936288329603" at="166,0,169,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormPropertyReference_EditorBuilder_a$PROPS" />
-      <unit id="145956936288329603" at="155,0,159,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormPropertyReference_EditorBuilder_a$LINKS" />
-      <unit id="145956936288329603" at="160,0,165,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormPropertyReference_EditorBuilder_a$CONCEPTS" />
-      <unit id="145956936288329603" at="72,42,87,5" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormPropertyReference_EditorBuilder_a$1" />
-      <unit id="1210181153279" at="106,0,154,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormPropertyReference_EditorBuilder_a$Inline_Builder0" />
-      <unit id="145956936288329603" at="43,0,170,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormPropertyReference_EditorBuilder_a" />
+      <unit id="145956936288329603" at="166,0,169,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormPropertyReference_EditorBuilder$PROPS" />
+      <unit id="145956936288329603" at="155,0,159,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormPropertyReference_EditorBuilder$LINKS" />
+      <unit id="145956936288329603" at="160,0,165,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormPropertyReference_EditorBuilder$CONCEPTS" />
+      <unit id="145956936288329603" at="72,42,87,5" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormPropertyReference_EditorBuilder$1" />
+      <unit id="1210181153279" at="106,0,154,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormPropertyReference_EditorBuilder$Inline_Builder0" />
+      <unit id="145956936288329603" at="43,0,170,0" name="com.mbeddr.mpsutil.preferenceform.editor.PreferenceFormPropertyReference_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)/3057648661794592571">
     <file name="GetPreferenceFormInApplicationExpression_Editor.java">
-      <node id="3057648661794592571" at="11,79,12,106" concept="6" />
+      <node id="3057648661794592571" at="11,79,12,104" concept="6" />
       <node id="3057648661794592571" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="3057648661794592571" at="11,79,12,106" />
+      <scope id="3057648661794592571" at="11,79,12,104" />
       <scope id="3057648661794592571" at="11,0,14,0">
         <var name="editorContext" id="3057648661794592571" />
         <var name="node" id="3057648661794592571" />
       </scope>
       <unit id="3057648661794592571" at="10,0,15,0" name="com.mbeddr.mpsutil.preferenceform.editor.GetPreferenceFormInApplicationExpression_Editor" />
     </file>
-    <file name="GetPreferenceFormInApplicationExpression_EditorBuilder_a.java">
-      <node id="3057648661794592571" at="16,120,17,19" concept="9" />
+    <file name="GetPreferenceFormInApplicationExpression_EditorBuilder.java">
+      <node id="3057648661794592571" at="16,118,17,19" concept="9" />
       <node id="3057648661794592571" at="17,19,18,18" concept="1" />
       <node id="3057648661794592571" at="23,26,24,18" concept="6" />
       <node id="3057648661794592571" at="27,39,28,31" concept="6" />
@@ -1542,13 +1542,13 @@
       <node id="3057648661794658400" at="37,5,38,22" concept="6" />
       <node id="3057648661794592571" at="13,0,15,0" concept="2" trace="myNode" />
       <node id="3057648661794592571" at="27,0,30,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3057648661794592571" at="16,0,20,0" concept="0" trace="GetPreferenceFormInApplicationExpression_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3057648661794592571" at="16,0,20,0" concept="0" trace="GetPreferenceFormInApplicationExpression_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3057648661794658400" at="33,72,37,5" concept="3" />
       <node id="3057648661794592571" at="21,0,26,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3057648661794658400" at="31,0,40,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="3057648661794592571" at="23,26,24,18" />
       <scope id="3057648661794592571" at="27,39,28,31" />
-      <scope id="3057648661794592571" at="16,120,18,18" />
+      <scope id="3057648661794592571" at="16,118,18,18" />
       <scope id="3057648661794658400" at="34,26,36,30" />
       <scope id="3057648661794592571" at="27,0,30,0" />
       <scope id="3057648661794592571" at="16,0,20,0">
@@ -1561,17 +1561,17 @@
         <var name="editorCell" id="3057648661794658400" />
       </scope>
       <scope id="3057648661794658400" at="31,0,40,0" />
-      <unit id="3057648661794592571" at="12,0,41,0" name="com.mbeddr.mpsutil.preferenceform.editor.GetPreferenceFormInApplicationExpression_EditorBuilder_a" />
+      <unit id="3057648661794592571" at="12,0,41,0" name="com.mbeddr.mpsutil.preferenceform.editor.GetPreferenceFormInApplicationExpression_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)/3057648661794658019">
     <file name="IPreferenceFormExpressionEditor.java">
       <node id="3057648661794658019" at="15,47,16,35" concept="6" />
-      <node id="3057648661794658019" at="18,79,19,100" concept="6" />
+      <node id="3057648661794658019" at="18,79,19,98" concept="6" />
       <node id="3057648661794658019" at="18,0,21,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3057648661794658019" at="14,0,18,0" concept="4" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="3057648661794658019" at="15,47,16,35" />
-      <scope id="3057648661794658019" at="18,79,19,100" />
+      <scope id="3057648661794658019" at="18,79,19,98" />
       <scope id="3057648661794658019" at="18,0,21,0">
         <var name="editorContext" id="3057648661794658019" />
         <var name="node" id="3057648661794658019" />
@@ -1579,8 +1579,8 @@
       <scope id="3057648661794658019" at="14,0,18,0" />
       <unit id="3057648661794658019" at="13,0,22,0" name="com.mbeddr.mpsutil.preferenceform.editor.IPreferenceFormExpressionEditor" />
     </file>
-    <file name="IPreferenceFormExpressionEditor_ComponentBuilder_a.java">
-      <node id="3057648661794658019" at="43,114,44,19" concept="9" />
+    <file name="IPreferenceFormExpressionEditor_ComponentBuilder.java">
+      <node id="3057648661794658019" at="43,112,44,19" concept="9" />
       <node id="3057648661794658019" at="44,19,45,18" concept="1" />
       <node id="3057648661794658019" at="50,26,51,18" concept="6" />
       <node id="3057648661794658019" at="54,39,55,32" concept="6" />
@@ -1661,7 +1661,7 @@
       <node id="3057648661793101274" at="116,0,118,0" concept="2" trace="myNode" />
       <node id="3057648661794658019" at="54,0,57,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3057648661793101274" at="126,0,129,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3057648661794658019" at="43,0,47,0" concept="0" trace="IPreferenceFormExpressionEditor_ComponentBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3057648661794658019" at="43,0,47,0" concept="0" trace="IPreferenceFormExpressionEditor_ComponentBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3057648661794658019" at="101,0,105,5" concept="3" />
       <node id="3057648661794658019" at="48,0,53,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3057648661794658019" at="108,205,113,22" concept="3" />
@@ -1682,7 +1682,7 @@
       <scope id="3057648661793101274" at="126,41,127,32" />
       <scope id="3057648661793101274" at="132,28,133,20" />
       <scope id="3057648661793101275" at="153,17,154,42" />
-      <scope id="3057648661794658019" at="43,114,45,18" />
+      <scope id="3057648661794658019" at="43,112,45,18" />
       <scope id="3057648661794658019" at="102,40,104,54" />
       <scope id="3057648661794658019" at="109,73,111,145">
         <var name="manager" id="3057648661794658019" />
@@ -1745,27 +1745,27 @@
         <var name="referenceLink" id="3057648661794658019" />
       </scope>
       <scope id="3057648661794658019" at="87,0,115,0" />
-      <unit id="3057648661794658019" at="169,0,172,0" name="com.mbeddr.mpsutil.preferenceform.editor.IPreferenceFormExpressionEditor_ComponentBuilder_a$LINKS" />
-      <unit id="3057648661794658019" at="178,0,181,0" name="com.mbeddr.mpsutil.preferenceform.editor.IPreferenceFormExpressionEditor_ComponentBuilder_a$PROPS" />
-      <unit id="3057648661794658019" at="173,0,177,0" name="com.mbeddr.mpsutil.preferenceform.editor.IPreferenceFormExpressionEditor_ComponentBuilder_a$CONCEPTS" />
-      <unit id="3057648661794658019" at="89,42,97,5" name="com.mbeddr.mpsutil.preferenceform.editor.IPreferenceFormExpressionEditor_ComponentBuilder_a$1" />
-      <unit id="3057648661793101274" at="115,0,158,0" name="com.mbeddr.mpsutil.preferenceform.editor.IPreferenceFormExpressionEditor_ComponentBuilder_a$Inline_Builder0" />
-      <unit id="3057648661794658019" at="39,0,182,0" name="com.mbeddr.mpsutil.preferenceform.editor.IPreferenceFormExpressionEditor_ComponentBuilder_a" />
+      <unit id="3057648661794658019" at="169,0,172,0" name="com.mbeddr.mpsutil.preferenceform.editor.IPreferenceFormExpressionEditor_ComponentBuilder$LINKS" />
+      <unit id="3057648661794658019" at="178,0,181,0" name="com.mbeddr.mpsutil.preferenceform.editor.IPreferenceFormExpressionEditor_ComponentBuilder$PROPS" />
+      <unit id="3057648661794658019" at="173,0,177,0" name="com.mbeddr.mpsutil.preferenceform.editor.IPreferenceFormExpressionEditor_ComponentBuilder$CONCEPTS" />
+      <unit id="3057648661794658019" at="89,42,97,5" name="com.mbeddr.mpsutil.preferenceform.editor.IPreferenceFormExpressionEditor_ComponentBuilder$1" />
+      <unit id="3057648661793101274" at="115,0,158,0" name="com.mbeddr.mpsutil.preferenceform.editor.IPreferenceFormExpressionEditor_ComponentBuilder$Inline_Builder0" />
+      <unit id="3057648661794658019" at="39,0,182,0" name="com.mbeddr.mpsutil.preferenceform.editor.IPreferenceFormExpressionEditor_ComponentBuilder" />
     </file>
   </root>
   <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)/3057648661794658448">
     <file name="GetPreferenceFormInProjectOperation_Editor.java">
-      <node id="3057648661794658448" at="11,79,12,101" concept="6" />
+      <node id="3057648661794658448" at="11,79,12,99" concept="6" />
       <node id="3057648661794658448" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="3057648661794658448" at="11,79,12,101" />
+      <scope id="3057648661794658448" at="11,79,12,99" />
       <scope id="3057648661794658448" at="11,0,14,0">
         <var name="editorContext" id="3057648661794658448" />
         <var name="node" id="3057648661794658448" />
       </scope>
       <unit id="3057648661794658448" at="10,0,15,0" name="com.mbeddr.mpsutil.preferenceform.editor.GetPreferenceFormInProjectOperation_Editor" />
     </file>
-    <file name="GetPreferenceFormInProjectOperation_EditorBuilder_a.java">
-      <node id="3057648661794658448" at="16,115,17,19" concept="9" />
+    <file name="GetPreferenceFormInProjectOperation_EditorBuilder.java">
+      <node id="3057648661794658448" at="16,113,17,19" concept="9" />
       <node id="3057648661794658448" at="17,19,18,18" concept="1" />
       <node id="3057648661794658448" at="23,26,24,18" concept="6" />
       <node id="3057648661794658448" at="27,39,28,31" concept="6" />
@@ -1776,13 +1776,13 @@
       <node id="3057648661794658450" at="37,5,38,22" concept="6" />
       <node id="3057648661794658448" at="13,0,15,0" concept="2" trace="myNode" />
       <node id="3057648661794658448" at="27,0,30,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3057648661794658448" at="16,0,20,0" concept="0" trace="GetPreferenceFormInProjectOperation_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3057648661794658448" at="16,0,20,0" concept="0" trace="GetPreferenceFormInProjectOperation_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3057648661794658450" at="33,72,37,5" concept="3" />
       <node id="3057648661794658448" at="21,0,26,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3057648661794658450" at="31,0,40,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="3057648661794658448" at="23,26,24,18" />
       <scope id="3057648661794658448" at="27,39,28,31" />
-      <scope id="3057648661794658448" at="16,115,18,18" />
+      <scope id="3057648661794658448" at="16,113,18,18" />
       <scope id="3057648661794658450" at="34,26,36,30" />
       <scope id="3057648661794658448" at="27,0,30,0" />
       <scope id="3057648661794658448" at="16,0,20,0">
@@ -1795,22 +1795,22 @@
         <var name="editorCell" id="3057648661794658450" />
       </scope>
       <scope id="3057648661794658450" at="31,0,40,0" />
-      <unit id="3057648661794658448" at="12,0,41,0" name="com.mbeddr.mpsutil.preferenceform.editor.GetPreferenceFormInProjectOperation_EditorBuilder_a" />
+      <unit id="3057648661794658448" at="12,0,41,0" name="com.mbeddr.mpsutil.preferenceform.editor.GetPreferenceFormInProjectOperation_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)/4412484936305616">
     <file name="PassWordFieldPreferenceFormProperty_Editor.java">
-      <node id="4412484936305616" at="11,79,12,101" concept="6" />
+      <node id="4412484936305616" at="11,79,12,99" concept="6" />
       <node id="4412484936305616" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="4412484936305616" at="11,79,12,101" />
+      <scope id="4412484936305616" at="11,79,12,99" />
       <scope id="4412484936305616" at="11,0,14,0">
         <var name="editorContext" id="4412484936305616" />
         <var name="node" id="4412484936305616" />
       </scope>
       <unit id="4412484936305616" at="10,0,15,0" name="com.mbeddr.mpsutil.preferenceform.editor.PassWordFieldPreferenceFormProperty_Editor" />
     </file>
-    <file name="PassWordFieldPreferenceFormProperty_EditorBuilder_a.java">
-      <node id="4412484936305616" at="43,115,44,19" concept="9" />
+    <file name="PassWordFieldPreferenceFormProperty_EditorBuilder.java">
+      <node id="4412484936305616" at="43,113,44,19" concept="9" />
       <node id="4412484936305616" at="44,19,45,18" concept="1" />
       <node id="4412484936305616" at="50,26,51,18" concept="6" />
       <node id="4412484936305616" at="54,39,55,32" concept="6" />
@@ -1904,7 +1904,7 @@
       <node id="4412484936305616" at="133,87,136,7" concept="3" />
       <node id="4412484936305616" at="136,7,139,7" concept="3" />
       <node id="4412484936305616" at="155,0,158,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="4412484936305616" at="43,0,47,0" concept="0" trace="PassWordFieldPreferenceFormProperty_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4412484936305616" at="43,0,47,0" concept="0" trace="PassWordFieldPreferenceFormProperty_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4412484936305618" at="70,0,74,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4412484936305616" at="104,0,108,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4412484936305616" at="112,0,116,0" concept="0" trace="labelSingleRoleHandler_p865v0_d0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -1933,7 +1933,7 @@
       <scope id="4412484936305616" at="151,17,152,42" />
       <scope id="4412484936305616" at="155,40,156,26" />
       <scope id="4412484936305626" at="192,15,193,40" />
-      <scope id="4412484936305616" at="43,115,45,18" />
+      <scope id="4412484936305616" at="43,113,45,18" />
       <scope id="4412484936305618" at="70,42,72,22">
         <var name="editorCell" id="4412484936305618" />
       </scope>
@@ -2013,26 +2013,26 @@
       <scope id="4412484936305626" at="175,41,194,5" />
       <scope id="4412484936305619" at="74,0,95,0" />
       <scope id="4412484936305626" at="175,0,196,0" />
-      <unit id="4412484936305616" at="202,0,205,0" name="com.mbeddr.mpsutil.preferenceform.editor.PassWordFieldPreferenceFormProperty_EditorBuilder_a$CONCEPTS" />
-      <unit id="4412484936305616" at="206,0,209,0" name="com.mbeddr.mpsutil.preferenceform.editor.PassWordFieldPreferenceFormProperty_EditorBuilder_a$LINKS" />
-      <unit id="4412484936305616" at="197,0,201,0" name="com.mbeddr.mpsutil.preferenceform.editor.PassWordFieldPreferenceFormProperty_EditorBuilder_a$PROPS" />
-      <unit id="4412484936305616" at="108,0,159,0" name="com.mbeddr.mpsutil.preferenceform.editor.PassWordFieldPreferenceFormProperty_EditorBuilder_a$labelSingleRoleHandler_p865v0_d0" />
-      <unit id="4412484936305616" at="39,0,210,0" name="com.mbeddr.mpsutil.preferenceform.editor.PassWordFieldPreferenceFormProperty_EditorBuilder_a" />
+      <unit id="4412484936305616" at="202,0,205,0" name="com.mbeddr.mpsutil.preferenceform.editor.PassWordFieldPreferenceFormProperty_EditorBuilder$CONCEPTS" />
+      <unit id="4412484936305616" at="206,0,209,0" name="com.mbeddr.mpsutil.preferenceform.editor.PassWordFieldPreferenceFormProperty_EditorBuilder$LINKS" />
+      <unit id="4412484936305616" at="197,0,201,0" name="com.mbeddr.mpsutil.preferenceform.editor.PassWordFieldPreferenceFormProperty_EditorBuilder$PROPS" />
+      <unit id="4412484936305616" at="108,0,159,0" name="com.mbeddr.mpsutil.preferenceform.editor.PassWordFieldPreferenceFormProperty_EditorBuilder$labelSingleRoleHandler_p865v0_d0" />
+      <unit id="4412484936305616" at="39,0,210,0" name="com.mbeddr.mpsutil.preferenceform.editor.PassWordFieldPreferenceFormProperty_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)/4728279602824477092">
     <file name="IntegerFieldPreferenceFormProperty_Editor.java">
-      <node id="4728279602824477092" at="11,79,12,100" concept="6" />
+      <node id="4728279602824477092" at="11,79,12,98" concept="6" />
       <node id="4728279602824477092" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="4728279602824477092" at="11,79,12,100" />
+      <scope id="4728279602824477092" at="11,79,12,98" />
       <scope id="4728279602824477092" at="11,0,14,0">
         <var name="editorContext" id="4728279602824477092" />
         <var name="node" id="4728279602824477092" />
       </scope>
       <unit id="4728279602824477092" at="10,0,15,0" name="com.mbeddr.mpsutil.preferenceform.editor.IntegerFieldPreferenceFormProperty_Editor" />
     </file>
-    <file name="IntegerFieldPreferenceFormProperty_EditorBuilder_a.java">
-      <node id="4728279602824477092" at="43,114,44,19" concept="9" />
+    <file name="IntegerFieldPreferenceFormProperty_EditorBuilder.java">
+      <node id="4728279602824477092" at="43,112,44,19" concept="9" />
       <node id="4728279602824477092" at="44,19,45,18" concept="1" />
       <node id="4728279602824477092" at="50,26,51,18" concept="6" />
       <node id="4728279602824477092" at="54,39,55,32" concept="6" />
@@ -2126,7 +2126,7 @@
       <node id="4728279602824477092" at="133,87,136,7" concept="3" />
       <node id="4728279602824477092" at="136,7,139,7" concept="3" />
       <node id="4728279602824477092" at="155,0,158,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="4728279602824477092" at="43,0,47,0" concept="0" trace="IntegerFieldPreferenceFormProperty_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4728279602824477092" at="43,0,47,0" concept="0" trace="IntegerFieldPreferenceFormProperty_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4728279602824496361" at="70,0,74,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4728279602824477092" at="104,0,108,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4728279602824477092" at="112,0,116,0" concept="0" trace="labelSingleRoleHandler_pvlt66_d0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -2155,7 +2155,7 @@
       <scope id="4728279602824477092" at="151,17,152,42" />
       <scope id="4728279602824477092" at="155,40,156,26" />
       <scope id="4728279602824496369" at="192,15,193,40" />
-      <scope id="4728279602824477092" at="43,114,45,18" />
+      <scope id="4728279602824477092" at="43,112,45,18" />
       <scope id="4728279602824496361" at="70,42,72,22">
         <var name="editorCell" id="4728279602824496361" />
       </scope>
@@ -2235,26 +2235,26 @@
       <scope id="4728279602824496369" at="175,41,194,5" />
       <scope id="4728279602824496362" at="74,0,95,0" />
       <scope id="4728279602824496369" at="175,0,196,0" />
-      <unit id="4728279602824477092" at="202,0,205,0" name="com.mbeddr.mpsutil.preferenceform.editor.IntegerFieldPreferenceFormProperty_EditorBuilder_a$CONCEPTS" />
-      <unit id="4728279602824477092" at="206,0,209,0" name="com.mbeddr.mpsutil.preferenceform.editor.IntegerFieldPreferenceFormProperty_EditorBuilder_a$LINKS" />
-      <unit id="4728279602824477092" at="197,0,201,0" name="com.mbeddr.mpsutil.preferenceform.editor.IntegerFieldPreferenceFormProperty_EditorBuilder_a$PROPS" />
-      <unit id="4728279602824477092" at="108,0,159,0" name="com.mbeddr.mpsutil.preferenceform.editor.IntegerFieldPreferenceFormProperty_EditorBuilder_a$labelSingleRoleHandler_pvlt66_d0" />
-      <unit id="4728279602824477092" at="39,0,210,0" name="com.mbeddr.mpsutil.preferenceform.editor.IntegerFieldPreferenceFormProperty_EditorBuilder_a" />
+      <unit id="4728279602824477092" at="202,0,205,0" name="com.mbeddr.mpsutil.preferenceform.editor.IntegerFieldPreferenceFormProperty_EditorBuilder$CONCEPTS" />
+      <unit id="4728279602824477092" at="206,0,209,0" name="com.mbeddr.mpsutil.preferenceform.editor.IntegerFieldPreferenceFormProperty_EditorBuilder$LINKS" />
+      <unit id="4728279602824477092" at="197,0,201,0" name="com.mbeddr.mpsutil.preferenceform.editor.IntegerFieldPreferenceFormProperty_EditorBuilder$PROPS" />
+      <unit id="4728279602824477092" at="108,0,159,0" name="com.mbeddr.mpsutil.preferenceform.editor.IntegerFieldPreferenceFormProperty_EditorBuilder$labelSingleRoleHandler_pvlt66_d0" />
+      <unit id="4728279602824477092" at="39,0,210,0" name="com.mbeddr.mpsutil.preferenceform.editor.IntegerFieldPreferenceFormProperty_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)/8201243288561456835">
     <file name="PredefinedComboBoxEntry_Editor.java">
-      <node id="8201243288561456835" at="11,79,12,89" concept="6" />
+      <node id="8201243288561456835" at="11,79,12,87" concept="6" />
       <node id="8201243288561456835" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8201243288561456835" at="11,79,12,89" />
+      <scope id="8201243288561456835" at="11,79,12,87" />
       <scope id="8201243288561456835" at="11,0,14,0">
         <var name="editorContext" id="8201243288561456835" />
         <var name="node" id="8201243288561456835" />
       </scope>
       <unit id="8201243288561456835" at="10,0,15,0" name="com.mbeddr.mpsutil.preferenceform.editor.PredefinedComboBoxEntry_Editor" />
     </file>
-    <file name="PredefinedComboBoxEntry_EditorBuilder_a.java">
-      <node id="8201243288561456835" at="35,103,36,19" concept="9" />
+    <file name="PredefinedComboBoxEntry_EditorBuilder.java">
+      <node id="8201243288561456835" at="35,101,36,19" concept="9" />
       <node id="8201243288561456835" at="36,19,37,18" concept="1" />
       <node id="8201243288561456835" at="42,26,43,18" concept="6" />
       <node id="8201243288561456835" at="46,39,47,32" concept="6" />
@@ -2306,7 +2306,7 @@
       <node id="8201243288561456835" at="118,0,119,0" concept="8" trace="PropertyAttribute$Gb" />
       <node id="8201243288561456835" at="32,0,34,0" concept="2" trace="myNode" />
       <node id="8201243288561456835" at="46,0,49,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8201243288561456835" at="35,0,39,0" concept="0" trace="PredefinedComboBoxEntry_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8201243288561456835" at="35,0,39,0" concept="0" trace="PredefinedComboBoxEntry_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8201243288561456835" at="40,0,45,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8201243288561477896" at="71,208,76,24" concept="3" />
       <node id="8201243288561477918" at="101,208,106,24" concept="3" />
@@ -2320,7 +2320,7 @@
       <scope id="8201243288561456835" at="46,39,47,32" />
       <scope id="8201243288561477896" at="77,15,78,40" />
       <scope id="8201243288561477918" at="107,15,108,40" />
-      <scope id="8201243288561456835" at="35,103,37,18" />
+      <scope id="8201243288561456835" at="35,101,37,18" />
       <scope id="8201243288561477896" at="72,74,74,145">
         <var name="manager" id="8201243288561477896" />
       </scope>
@@ -2358,24 +2358,24 @@
       <scope id="8201243288561477918" at="90,41,109,5" />
       <scope id="8201243288561477896" at="60,0,81,0" />
       <scope id="8201243288561477918" at="90,0,111,0" />
-      <unit id="8201243288561456835" at="117,0,120,0" name="com.mbeddr.mpsutil.preferenceform.editor.PredefinedComboBoxEntry_EditorBuilder_a$CONCEPTS" />
-      <unit id="8201243288561456835" at="112,0,116,0" name="com.mbeddr.mpsutil.preferenceform.editor.PredefinedComboBoxEntry_EditorBuilder_a$PROPS" />
-      <unit id="8201243288561456835" at="31,0,121,0" name="com.mbeddr.mpsutil.preferenceform.editor.PredefinedComboBoxEntry_EditorBuilder_a" />
+      <unit id="8201243288561456835" at="117,0,120,0" name="com.mbeddr.mpsutil.preferenceform.editor.PredefinedComboBoxEntry_EditorBuilder$CONCEPTS" />
+      <unit id="8201243288561456835" at="112,0,116,0" name="com.mbeddr.mpsutil.preferenceform.editor.PredefinedComboBoxEntry_EditorBuilder$PROPS" />
+      <unit id="8201243288561456835" at="31,0,121,0" name="com.mbeddr.mpsutil.preferenceform.editor.PredefinedComboBoxEntry_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:634fbd89-9cb6-498f-8a6f-4d903c3bc9ac(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.editor)/8201243288561544815">
     <file name="DynamicComboBoxPreferenceFormProperty_Editor.java">
-      <node id="8201243288561544815" at="11,79,12,103" concept="6" />
+      <node id="8201243288561544815" at="11,79,12,101" concept="6" />
       <node id="8201243288561544815" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8201243288561544815" at="11,79,12,103" />
+      <scope id="8201243288561544815" at="11,79,12,101" />
       <scope id="8201243288561544815" at="11,0,14,0">
         <var name="editorContext" id="8201243288561544815" />
         <var name="node" id="8201243288561544815" />
       </scope>
       <unit id="8201243288561544815" at="10,0,15,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_Editor" />
     </file>
-    <file name="DynamicComboBoxPreferenceFormProperty_EditorBuilder_a.java">
-      <node id="8201243288561544815" at="44,117,45,19" concept="9" />
+    <file name="DynamicComboBoxPreferenceFormProperty_EditorBuilder.java">
+      <node id="8201243288561544815" at="44,115,45,19" concept="9" />
       <node id="8201243288561544815" at="45,19,46,18" concept="1" />
       <node id="8201243288561544815" at="51,26,52,18" concept="6" />
       <node id="8201243288561544815" at="55,39,56,32" concept="6" />
@@ -2502,7 +2502,7 @@
       <node id="8201243288561544815" at="254,87,257,7" concept="3" />
       <node id="8201243288561544815" at="257,7,260,7" concept="3" />
       <node id="8201243288561544815" at="276,0,279,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="8201243288561544815" at="44,0,48,0" concept="0" trace="DynamicComboBoxPreferenceFormProperty_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8201243288561544815" at="44,0,48,0" concept="0" trace="DynamicComboBoxPreferenceFormProperty_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8201243288561544862" at="81,0,85,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8201243288561544815" at="115,0,119,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8201243288561544815" at="123,0,127,0" concept="0" trace="labelSingleRoleHandler_k7w25a_d0a#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -2550,7 +2550,7 @@
       <scope id="8201243288561544815" at="258,42,259,61" />
       <scope id="8201243288561544815" at="272,17,273,42" />
       <scope id="8201243288561544815" at="276,40,277,41" />
-      <scope id="8201243288561544815" at="44,117,46,18" />
+      <scope id="8201243288561544815" at="44,115,46,18" />
       <scope id="8201243288561544862" at="81,42,83,22">
         <var name="editorCell" id="8201243288561544862" />
       </scope>
@@ -2673,13 +2673,13 @@
       <scope id="8201243288561544815" at="262,0,276,0" />
       <scope id="8201243288561544863" at="85,41,104,5" />
       <scope id="8201243288561544863" at="85,0,106,0" />
-      <unit id="8201243288561544815" at="281,0,284,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder_a$PROPS" />
-      <unit id="8201243288561544815" at="285,0,288,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder_a$CONCEPTS" />
-      <unit id="8201243288561544815" at="289,0,294,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder_a$LINKS" />
-      <unit id="8201243288561544815" at="119,0,170,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder_a$labelSingleRoleHandler_k7w25a_d0a" />
-      <unit id="8201243288561544815" at="174,0,225,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder_a$getEntriesFunctionSingleRoleHandler_k7w25a_b0" />
-      <unit id="8201243288561544815" at="229,0,280,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder_a$defaultEntryFunctionSingleRoleHandler_k7w25a_c0" />
-      <unit id="8201243288561544815" at="40,0,295,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder_a" />
+      <unit id="8201243288561544815" at="281,0,284,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder$PROPS" />
+      <unit id="8201243288561544815" at="285,0,288,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder$CONCEPTS" />
+      <unit id="8201243288561544815" at="289,0,294,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder$LINKS" />
+      <unit id="8201243288561544815" at="119,0,170,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder$labelSingleRoleHandler_k7w25a_d0a" />
+      <unit id="8201243288561544815" at="174,0,225,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder$getEntriesFunctionSingleRoleHandler_k7w25a_b0" />
+      <unit id="8201243288561544815" at="229,0,280,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder$defaultEntryFunctionSingleRoleHandler_k7w25a_c0" />
+      <unit id="8201243288561544815" at="40,0,295,0" name="com.mbeddr.mpsutil.preferenceform.editor.DynamicComboBoxPreferenceFormProperty_EditorBuilder" />
     </file>
   </root>
 </debug-info>

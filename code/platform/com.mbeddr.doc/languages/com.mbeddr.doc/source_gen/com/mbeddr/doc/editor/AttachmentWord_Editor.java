@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AttachmentWord_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AttachmentWord_EditorBuilder_a(editorContext, node).createCell();
+    return new AttachmentWord_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class TaskContextExpr_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TaskContextExpr_EditorBuilder_a(editorContext, node).createCell();
+    return new TaskContextExpr_EditorBuilder(editorContext, node).createCell();
   }
 }

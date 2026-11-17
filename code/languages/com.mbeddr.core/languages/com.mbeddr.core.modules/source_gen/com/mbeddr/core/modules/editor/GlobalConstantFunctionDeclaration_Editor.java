@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GlobalConstantFunctionDeclaration_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GlobalConstantFunctionDeclaration_EditorBuilder_a(editorContext, node).createCell();
+    return new GlobalConstantFunctionDeclaration_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new GlobalConstantFunctionDeclaration_InspectorBuilder_a(editorContext, node).createCell();
+    return new GlobalConstantFunctionDeclaration_InspectorBuilder(editorContext, node).createCell();
   }
 }

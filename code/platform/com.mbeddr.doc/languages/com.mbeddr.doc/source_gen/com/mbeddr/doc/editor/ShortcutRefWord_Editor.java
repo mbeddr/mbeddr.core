@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ShortcutRefWord_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ShortcutRefWord_EditorBuilder_a(editorContext, node).createCell();
+    return new ShortcutRefWord_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new ShortcutRefWord_InspectorBuilder_a(editorContext, node).createCell();
+    return new ShortcutRefWord_InspectorBuilder(editorContext, node).createCell();
   }
 }

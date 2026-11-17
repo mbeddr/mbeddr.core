@@ -18,6 +18,6 @@ public class TermRefWord_tooltipHint_s74oao_a_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TermRefWord_tooltipHint_s74oao_a_EditorBuilder_a(editorContext, node).createCell();
+    return new TermRefWord_tooltipHint_s74oao_a_EditorBuilder(editorContext, node).createCell();
   }
 }

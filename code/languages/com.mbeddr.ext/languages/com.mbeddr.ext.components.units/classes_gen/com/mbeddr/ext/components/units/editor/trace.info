@@ -17,17 +17,17 @@
   </root>
   <root nodeRef="r:26e24ff7-f9a4-4078-a206-48b63b58f37e(com.mbeddr.ext.components.units.editor)/6727518107533941871">
     <file name="GenericUnitInitializer_Editor.java">
-      <node id="6727518107533941871" at="11,79,12,88" concept="6" />
+      <node id="6727518107533941871" at="11,79,12,86" concept="6" />
       <node id="6727518107533941871" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="6727518107533941871" at="11,79,12,88" />
+      <scope id="6727518107533941871" at="11,79,12,86" />
       <scope id="6727518107533941871" at="11,0,14,0">
         <var name="editorContext" id="6727518107533941871" />
         <var name="node" id="6727518107533941871" />
       </scope>
       <unit id="6727518107533941871" at="10,0,15,0" name="com.mbeddr.ext.components.units.editor.GenericUnitInitializer_Editor" />
     </file>
-    <file name="GenericUnitInitializer_EditorBuilder_a.java">
-      <node id="6727518107533941871" at="34,102,35,19" concept="8" />
+    <file name="GenericUnitInitializer_EditorBuilder.java">
+      <node id="6727518107533941871" at="34,100,35,19" concept="8" />
       <node id="6727518107533941871" at="35,19,36,18" concept="1" />
       <node id="6727518107533941871" at="41,26,42,18" concept="6" />
       <node id="6727518107533941871" at="45,39,46,32" concept="6" />
@@ -93,7 +93,7 @@
       <node id="6727518107533941871" at="45,0,48,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6727518107533941871" at="85,0,88,0" concept="4" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="6727518107533941871" at="88,0,91,0" concept="4" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="6727518107533941871" at="34,0,38,0" concept="0" trace="GenericUnitInitializer_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6727518107533941871" at="34,0,38,0" concept="0" trace="GenericUnitInitializer_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6727518107533941871" at="76,0,80,0" concept="0" trace="unitMappingsListHandler_kr3vc2_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="6727518107533941871" at="81,0,85,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="6727518107533941871" at="114,97,118,9" concept="3" />
@@ -120,7 +120,7 @@
       <scope id="6727518107533941871" at="85,40,86,37" />
       <scope id="6727518107533941871" at="88,48,89,44" />
       <scope id="6727518107533941871" at="106,17,107,42" />
-      <scope id="6727518107533941871" at="34,102,36,18" />
+      <scope id="6727518107533941871" at="34,100,36,18" />
       <scope id="6727518107533941871" at="76,86,78,25" />
       <scope id="6727518107533941871" at="115,122,117,146" />
       <scope id="6727518107533941871" at="121,34,123,142" />
@@ -185,10 +185,10 @@
         <var name="elementNode" id="6727518107533941871" />
         <var name="isEmptyCell" id="6727518107533941871" />
       </scope>
-      <unit id="6727518107533941871" at="159,0,162,0" name="com.mbeddr.ext.components.units.editor.GenericUnitInitializer_EditorBuilder_a$LINKS" />
-      <unit id="6727518107533941871" at="163,0,166,0" name="com.mbeddr.ext.components.units.editor.GenericUnitInitializer_EditorBuilder_a$CONCEPTS" />
-      <unit id="6727518107533941871" at="72,0,152,0" name="com.mbeddr.ext.components.units.editor.GenericUnitInitializer_EditorBuilder_a$unitMappingsListHandler_kr3vc2_b0" />
-      <unit id="6727518107533941871" at="30,0,167,0" name="com.mbeddr.ext.components.units.editor.GenericUnitInitializer_EditorBuilder_a" />
+      <unit id="6727518107533941871" at="159,0,162,0" name="com.mbeddr.ext.components.units.editor.GenericUnitInitializer_EditorBuilder$LINKS" />
+      <unit id="6727518107533941871" at="163,0,166,0" name="com.mbeddr.ext.components.units.editor.GenericUnitInitializer_EditorBuilder$CONCEPTS" />
+      <unit id="6727518107533941871" at="72,0,152,0" name="com.mbeddr.ext.components.units.editor.GenericUnitInitializer_EditorBuilder$unitMappingsListHandler_kr3vc2_b0" />
+      <unit id="6727518107533941871" at="30,0,167,0" name="com.mbeddr.ext.components.units.editor.GenericUnitInitializer_EditorBuilder" />
     </file>
   </root>
 </debug-info>

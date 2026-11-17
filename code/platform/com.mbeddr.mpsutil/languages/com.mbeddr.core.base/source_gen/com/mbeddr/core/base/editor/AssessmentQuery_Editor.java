@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AssessmentQuery_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AssessmentQuery_EditorBuilder_a(editorContext, node).createCell();
+    return new AssessmentQuery_EditorBuilder(editorContext, node).createCell();
   }
 }

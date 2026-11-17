@@ -20,17 +20,17 @@
   </root>
   <root nodeRef="r:e9554d5d-d84e-4b29-8bb5-62d44ef6635b(com.mbeddr.core.cinterpreter.editor)/2763029999492923173">
     <file name="InlineInterpreterCondition_Editor.java">
-      <node id="2763029999492923173" at="11,79,12,92" concept="6" />
+      <node id="2763029999492923173" at="11,79,12,90" concept="6" />
       <node id="2763029999492923173" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2763029999492923173" at="11,79,12,92" />
+      <scope id="2763029999492923173" at="11,79,12,90" />
       <scope id="2763029999492923173" at="11,0,14,0">
         <var name="editorContext" id="2763029999492923173" />
         <var name="node" id="2763029999492923173" />
       </scope>
       <unit id="2763029999492923173" at="10,0,15,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterCondition_Editor" />
     </file>
-    <file name="InlineInterpreterCondition_EditorBuilder_a.java">
-      <node id="2763029999492923173" at="37,106,38,19" concept="11" />
+    <file name="InlineInterpreterCondition_EditorBuilder.java">
+      <node id="2763029999492923173" at="37,104,38,19" concept="11" />
       <node id="2763029999492923173" at="38,19,39,18" concept="1" />
       <node id="2763029999492923173" at="44,26,45,18" concept="6" />
       <node id="2763029999492923173" at="48,39,49,32" concept="6" />
@@ -81,7 +81,7 @@
       <node id="2763029999492923173" at="116,0,117,0" concept="9" trace="PropertyAttribute$Gb" />
       <node id="2763029999492923173" at="34,0,36,0" concept="2" trace="myNode" />
       <node id="2763029999492923173" at="48,0,51,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="2763029999492923173" at="37,0,41,0" concept="0" trace="InlineInterpreterCondition_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2763029999492923173" at="37,0,41,0" concept="0" trace="InlineInterpreterCondition_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2763029999492923173" at="42,0,47,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2763029999492934296" at="92,208,97,24" concept="3" />
       <node id="2763029999492931517" at="102,0,110,0" concept="4" trace="createAttributedNodeCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -93,7 +93,7 @@
       <scope id="2763029999492923173" at="44,26,45,18" />
       <scope id="2763029999492923173" at="48,39,49,32" />
       <scope id="2763029999492934296" at="98,15,99,40" />
-      <scope id="2763029999492923173" at="37,106,39,18" />
+      <scope id="2763029999492923173" at="37,104,39,18" />
       <scope id="2763029999492934296" at="93,74,95,145">
         <var name="manager" id="2763029999492934296" />
       </scope>
@@ -131,9 +131,9 @@
       </scope>
       <scope id="2763029999492934296" at="81,41,100,5" />
       <scope id="2763029999492934296" at="81,0,102,0" />
-      <unit id="2763029999492923173" at="111,0,114,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterCondition_EditorBuilder_a$PROPS" />
-      <unit id="2763029999492923173" at="115,0,118,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterCondition_EditorBuilder_a$CONCEPTS" />
-      <unit id="2763029999492923173" at="33,0,119,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterCondition_EditorBuilder_a" />
+      <unit id="2763029999492923173" at="111,0,114,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterCondition_EditorBuilder$PROPS" />
+      <unit id="2763029999492923173" at="115,0,118,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterCondition_EditorBuilder$CONCEPTS" />
+      <unit id="2763029999492923173" at="33,0,119,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterCondition_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:e9554d5d-d84e-4b29-8bb5-62d44ef6635b(com.mbeddr.core.cinterpreter.editor)/6885888867521791739">
@@ -221,17 +221,17 @@
   </root>
   <root nodeRef="r:e9554d5d-d84e-4b29-8bb5-62d44ef6635b(com.mbeddr.core.cinterpreter.editor)/7019451652828663741">
     <file name="InlineInterpreterEvaluation_Editor.java">
-      <node id="7019451652828663741" at="11,79,12,93" concept="6" />
+      <node id="7019451652828663741" at="11,79,12,91" concept="6" />
       <node id="7019451652828663741" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="7019451652828663741" at="11,79,12,93" />
+      <scope id="7019451652828663741" at="11,79,12,91" />
       <scope id="7019451652828663741" at="11,0,14,0">
         <var name="editorContext" id="7019451652828663741" />
         <var name="node" id="7019451652828663741" />
       </scope>
       <unit id="7019451652828663741" at="10,0,15,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterEvaluation_Editor" />
     </file>
-    <file name="InlineInterpreterEvaluation_EditorBuilder_a.java">
-      <node id="7019451652828663741" at="34,107,35,19" concept="11" />
+    <file name="InlineInterpreterEvaluation_EditorBuilder.java">
+      <node id="7019451652828663741" at="34,105,35,19" concept="11" />
       <node id="7019451652828663741" at="35,19,36,18" concept="1" />
       <node id="7019451652828663741" at="41,26,42,18" concept="6" />
       <node id="7019451652828663741" at="45,39,46,32" concept="6" />
@@ -320,7 +320,7 @@
       <node id="7019451652828663741" at="107,87,110,7" concept="3" />
       <node id="7019451652828663741" at="110,7,113,7" concept="3" />
       <node id="7019451652828663741" at="132,0,135,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="7019451652828663741" at="34,0,38,0" concept="0" trace="InlineInterpreterEvaluation_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7019451652828663741" at="34,0,38,0" concept="0" trace="InlineInterpreterEvaluation_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="7019451652828663741" at="78,0,82,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="7019451652828663741" at="86,0,90,0" concept="0" trace="expressionSingleRoleHandler_9pwauv_b0a#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="7019451652828663741" at="39,0,44,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -343,7 +343,7 @@
       <scope id="7019451652828663741" at="111,42,112,51" />
       <scope id="7019451652828663741" at="128,17,129,42" />
       <scope id="7019451652828663741" at="132,40,133,31" />
-      <scope id="7019451652828663741" at="34,107,36,18" />
+      <scope id="7019451652828663741" at="34,105,36,18" />
       <scope id="7019451652828663741" at="78,40,80,33">
         <var name="provider" id="7019451652828663741" />
       </scope>
@@ -416,9 +416,9 @@
       <scope id="7019451652828663741" at="119,44,130,7" />
       <scope id="7019451652828663741" at="136,0,147,0" />
       <scope id="7019451652828663741" at="118,0,132,0" />
-      <unit id="7019451652828663741" at="176,0,179,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterEvaluation_EditorBuilder_a$LINKS" />
-      <unit id="7019451652828663741" at="82,0,136,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterEvaluation_EditorBuilder_a$expressionSingleRoleHandler_9pwauv_b0a" />
-      <unit id="7019451652828663741" at="30,0,180,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterEvaluation_EditorBuilder_a" />
+      <unit id="7019451652828663741" at="176,0,179,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterEvaluation_EditorBuilder$LINKS" />
+      <unit id="7019451652828663741" at="82,0,136,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterEvaluation_EditorBuilder$expressionSingleRoleHandler_9pwauv_b0a" />
+      <unit id="7019451652828663741" at="30,0,180,0" name="com.mbeddr.core.cinterpreter.editor.InlineInterpreterEvaluation_EditorBuilder" />
     </file>
   </root>
 </debug-info>

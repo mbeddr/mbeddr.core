@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class VariantSwitch_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new VariantSwitch_EditorBuilder_a(editorContext, node).createCell();
+    return new VariantSwitch_EditorBuilder(editorContext, node).createCell();
   }
 }

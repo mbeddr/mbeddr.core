@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class DerivedFeature_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DerivedFeature_EditorBuilder_a(editorContext, node).createCell();
+    return new DerivedFeature_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class IInlineFormatCategory_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new IInlineFormatCategory_EditorBuilder_a(editorContext, node).createCell();
+    return new IInlineFormatCategory_EditorBuilder(editorContext, node).createCell();
   }
 }

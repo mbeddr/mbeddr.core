@@ -27,12 +27,12 @@
   </root>
   <root nodeRef="r:cbd97e40-a38b-4a25-8c00-47ec318477d5(com.mbeddr.mpsutil.placeholderTextList.editor)/1739942158294187568">
     <file name="CellModel_PlaceholderTextList_Editor.java">
-      <node id="1739942158294187568" at="11,79,12,95" concept="7" />
-      <node id="1739942158294187568" at="14,82,15,98" concept="7" />
+      <node id="1739942158294187568" at="11,79,12,93" concept="7" />
+      <node id="1739942158294187568" at="14,82,15,96" concept="7" />
       <node id="1739942158294187568" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1739942158294187568" at="14,0,17,0" concept="5" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="1739942158294187568" at="11,79,12,95" />
-      <scope id="1739942158294187568" at="14,82,15,98" />
+      <scope id="1739942158294187568" at="11,79,12,93" />
+      <scope id="1739942158294187568" at="14,82,15,96" />
       <scope id="1739942158294187568" at="11,0,14,0">
         <var name="editorContext" id="1739942158294187568" />
         <var name="node" id="1739942158294187568" />
@@ -43,8 +43,8 @@
       </scope>
       <unit id="1739942158294187568" at="10,0,18,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_Editor" />
     </file>
-    <file name="CellModel_PlaceholderTextList_EditorBuilder_a.java">
-      <node id="1739942158294187568" at="59,109,60,19" concept="10" />
+    <file name="CellModel_PlaceholderTextList_EditorBuilder.java">
+      <node id="1739942158294187568" at="59,107,60,19" concept="10" />
       <node id="1739942158294187568" at="60,19,61,18" concept="2" />
       <node id="1739942158294187568" at="66,26,67,18" concept="7" />
       <node id="1739942158294187568" at="70,39,71,32" concept="7" />
@@ -56,11 +56,11 @@
       <node id="1739942158294187568" at="79,34,80,68" concept="2" />
       <node id="1739942158294187568" at="80,68,81,40" concept="2" />
       <node id="1182191264563" at="81,40,82,50" concept="2" />
-      <node id="1182948741353" at="83,37,84,51" concept="2" />
+      <node id="1182948741353" at="83,27,84,51" concept="2" />
       <node id="1182191264564" at="85,5,86,51" concept="2" />
       <node id="1182191264597" at="86,51,87,50" concept="2" />
       <node id="1739942158294187568" at="87,50,88,22" concept="7" />
-      <node id="1218239030901" at="90,46,91,79" concept="7" />
+      <node id="1218239030901" at="90,36,91,79" concept="7" />
       <node id="1182191264563" at="93,42,94,124" concept="6" />
       <node id="1182191264563" at="94,124,95,34" concept="6" />
       <node id="1182191264563" at="95,34,96,53" concept="2" />
@@ -86,11 +86,11 @@
       <node id="1214310996333" at="124,34,125,49" concept="2" />
       <node id="1214314939685" at="125,49,126,49" concept="2" />
       <node id="1739942158294187568" at="126,49,127,40" concept="2" />
-      <node id="1182191264565" at="128,38,129,53" concept="2" />
-      <node id="1182191264581" at="131,38,132,53" concept="2" />
+      <node id="1182191264565" at="128,27,129,53" concept="2" />
+      <node id="1182191264581" at="131,27,132,53" concept="2" />
       <node id="1739942158294187568" at="133,5,134,22" concept="7" />
-      <node id="1182191264577" at="136,47,137,100" concept="7" />
-      <node id="1182191264592" at="139,47,140,103" concept="7" />
+      <node id="1182191264577" at="136,36,137,100" concept="7" />
+      <node id="1182191264592" at="139,36,140,103" concept="7" />
       <node id="1739942158294187568" at="142,43,143,120" concept="6" />
       <node id="1739942158294187568" at="143,120,144,50" concept="2" />
       <node id="1739942158294187568" at="144,50,145,34" concept="6" />
@@ -179,9 +179,9 @@
       <node id="1739942158294187568" at="271,49,272,40" concept="2" />
       <node id="1739942158294187568" at="272,40,273,35" concept="2" />
       <node id="1182191264572" at="273,35,274,51" concept="2" />
-      <node id="6046489571270834060" at="275,40,276,52" concept="2" />
+      <node id="6046489571270834060" at="275,27,276,52" concept="2" />
       <node id="1739942158294187568" at="277,5,278,22" concept="7" />
-      <node id="6046489571270847691" at="280,49,281,110" concept="7" />
+      <node id="6046489571270847691" at="280,36,281,110" concept="7" />
       <node id="1739942158294187568" at="283,43,284,122" concept="6" />
       <node id="1739942158294187568" at="284,122,285,52" concept="2" />
       <node id="1739942158294187568" at="285,52,286,34" concept="6" />
@@ -240,9 +240,9 @@
       <node id="1182191264587" at="380,48,381,49" concept="2" />
       <node id="1182191264588" at="381,49,382,49" concept="2" />
       <node id="1182191264589" at="382,49,383,48" concept="2" />
-      <node id="6046489571270847699" at="384,40,385,52" concept="2" />
+      <node id="6046489571270847699" at="384,27,385,52" concept="2" />
       <node id="1739942158294187568" at="386,5,387,22" concept="7" />
-      <node id="6046489571270847702" at="389,49,390,74" concept="7" />
+      <node id="6046489571270847702" at="389,36,390,74" concept="7" />
       <node id="1182191264583" at="392,41,393,94" concept="6" />
       <node id="1182191264583" at="393,94,394,50" concept="2" />
       <node id="1182191264583" at="394,50,395,34" concept="6" />
@@ -360,24 +360,24 @@
       <node id="1739942158294187568" at="509,0,511,0" concept="3" trace="myNode" />
       <node id="1739942158294187568" at="70,0,73,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1182948741353" at="82,50,85,5" concept="4" />
-      <node id="1182948746816" at="90,0,93,0" concept="5" trace="nodeCondition_dcilz7_a1a#()Z" />
+      <node id="1182948746816" at="90,0,93,0" concept="5" trace="nodeCondition0#()Z" />
       <node id="1182191264565" at="127,40,130,5" concept="4" />
       <node id="1182191264581" at="130,5,133,5" concept="4" />
-      <node id="1182191264575" at="136,0,139,0" concept="5" trace="nodeCondition_dcilz7_a0c0#()Z" />
-      <node id="1182191264590" at="139,0,142,0" concept="5" trace="nodeCondition_dcilz7_a1c0#()Z" />
+      <node id="1182191264575" at="136,0,139,0" concept="5" trace="nodeCondition1#()Z" />
+      <node id="1182191264590" at="139,0,142,0" concept="5" trace="nodeCondition2#()Z" />
       <node id="1182191264569" at="223,0,226,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6046489571270834060" at="274,51,277,5" concept="4" />
-      <node id="6046489571270834061" at="280,0,283,0" concept="5" trace="nodeCondition_dcilz7_a1b0c0#()Z" />
+      <node id="6046489571270834061" at="280,0,283,0" concept="5" trace="nodeCondition3#()Z" />
       <node id="1739942158294187568" at="331,87,334,7" concept="4" />
       <node id="1739942158294187568" at="334,7,337,7" concept="4" />
       <node id="1739942158294187568" at="356,0,359,0" concept="5" trace="getNoTargetText#()Ljava/lang/String;" />
       <node id="6046489571270847699" at="383,48,386,5" concept="4" />
-      <node id="6046489571270847700" at="389,0,392,0" concept="5" trace="nodeCondition_dcilz7_a5a1c0#()Z" />
+      <node id="6046489571270847700" at="389,0,392,0" concept="5" trace="nodeCondition4#()Z" />
       <node id="1182191264585" at="451,0,454,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1739942158294187568" at="533,87,536,7" concept="4" />
       <node id="1739942158294187568" at="536,7,539,7" concept="4" />
       <node id="1739942158294187568" at="558,0,561,0" concept="5" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="1739942158294187568" at="59,0,63,0" concept="1" trace="CellModel_PlaceholderTextList_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1739942158294187568" at="59,0,63,0" concept="1" trace="CellModel_PlaceholderTextList_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1739942158294187568" at="195,0,199,5" concept="4" />
       <node id="1739942158294187568" at="302,0,306,0" concept="5" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1739942158294187568" at="310,0,314,0" concept="1" trace="emptyCellModelSingleRoleHandler_dcilz7_b0b0c0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -438,25 +438,25 @@
       <node id="1739942158294187568" at="401,0,440,0" concept="5" trace="createRefCell_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="1739942158294187568" at="66,26,67,18" />
       <scope id="1739942158294187568" at="70,39,71,32" />
-      <scope id="1182948741353" at="83,37,84,51" />
-      <scope id="1182948746817" at="90,46,91,79" />
+      <scope id="1182948741353" at="83,27,84,51" />
+      <scope id="1182948746817" at="90,36,91,79" />
       <scope id="1182948741353" at="117,15,118,40" />
-      <scope id="1182191264565" at="128,38,129,53" />
-      <scope id="1182191264581" at="131,38,132,53" />
-      <scope id="1182191264576" at="136,47,137,100" />
-      <scope id="1182191264591" at="139,47,140,103" />
+      <scope id="1182191264565" at="128,27,129,53" />
+      <scope id="1182191264581" at="131,27,132,53" />
+      <scope id="1182191264576" at="136,36,137,100" />
+      <scope id="1182191264591" at="139,36,140,103" />
       <scope id="1182191264569" at="223,41,224,32" />
       <scope id="1182191264569" at="229,28,230,20" />
       <scope id="1182191264570" at="253,17,254,42" />
-      <scope id="6046489571270834060" at="275,40,276,52" />
-      <scope id="6046489571270834062" at="280,49,281,110" />
+      <scope id="6046489571270834060" at="275,27,276,52" />
+      <scope id="6046489571270834062" at="280,36,281,110" />
       <scope id="1739942158294187568" at="317,28,318,20" />
       <scope id="1739942158294187568" at="332,118,333,137" />
       <scope id="1739942158294187568" at="335,42,336,55" />
       <scope id="1739942158294187568" at="352,17,353,42" />
       <scope id="1739942158294187568" at="356,40,357,25" />
-      <scope id="6046489571270847699" at="384,40,385,52" />
-      <scope id="6046489571270847701" at="389,49,390,74" />
+      <scope id="6046489571270847699" at="384,27,385,52" />
+      <scope id="6046489571270847701" at="389,36,390,74" />
       <scope id="1182191264585" at="451,41,452,32" />
       <scope id="1182191264585" at="457,28,458,20" />
       <scope id="1182191264586" at="481,17,482,42" />
@@ -465,7 +465,7 @@
       <scope id="1739942158294187568" at="537,42,538,55" />
       <scope id="1739942158294187568" at="554,17,555,42" />
       <scope id="1739942158294187568" at="558,40,559,25" />
-      <scope id="1739942158294187568" at="59,109,61,18" />
+      <scope id="1739942158294187568" at="59,107,61,18" />
       <scope id="1182948741353" at="112,74,114,145">
         <var name="manager" id="1182948741353" />
       </scope>
@@ -728,19 +728,19 @@
       </scope>
       <scope id="1739942158294187568" at="173,0,212,0" />
       <scope id="1739942158294187568" at="401,0,440,0" />
-      <unit id="1739942158294187568" at="574,0,579,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder_a$PROPS" />
-      <unit id="1739942158294187568" at="580,0,585,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder_a$CONCEPTS" />
-      <unit id="1739942158294187568" at="586,0,591,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder_a$LINKS" />
-      <unit id="1739942158294187568" at="175,42,190,5" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder_a$1" />
-      <unit id="1739942158294187568" at="403,42,418,5" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder_a$2" />
-      <unit id="1182191264569" at="212,0,258,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder_a$Inline_Builder0" />
-      <unit id="1182191264585" at="440,0,486,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder_a$Inline_Builder1" />
-      <unit id="1739942158294187568" at="306,0,360,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder_a$emptyCellModelSingleRoleHandler_dcilz7_b0b0c0" />
-      <unit id="1739942158294187568" at="508,0,562,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder_a$emptyCellModelSingleRoleHandler_dcilz7_e0b2a" />
-      <unit id="1739942158294187568" at="55,0,592,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder_a" />
+      <unit id="1739942158294187568" at="574,0,579,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder$PROPS" />
+      <unit id="1739942158294187568" at="580,0,585,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder$CONCEPTS" />
+      <unit id="1739942158294187568" at="586,0,591,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder$LINKS" />
+      <unit id="1739942158294187568" at="175,42,190,5" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder$1" />
+      <unit id="1739942158294187568" at="403,42,418,5" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder$2" />
+      <unit id="1182191264569" at="212,0,258,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder$Inline_Builder0" />
+      <unit id="1182191264585" at="440,0,486,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder$Inline_Builder1" />
+      <unit id="1739942158294187568" at="306,0,360,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder$emptyCellModelSingleRoleHandler_dcilz7_b0b0c0" />
+      <unit id="1739942158294187568" at="508,0,562,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder$emptyCellModelSingleRoleHandler_dcilz7_e0b2a" />
+      <unit id="1739942158294187568" at="55,0,592,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_EditorBuilder" />
     </file>
-    <file name="CellModel_PlaceholderTextList_InspectorBuilder_a.java">
-      <node id="1739942158294187568" at="81,112,82,19" concept="10" />
+    <file name="CellModel_PlaceholderTextList_InspectorBuilder.java">
+      <node id="1739942158294187568" at="81,110,82,19" concept="10" />
       <node id="1739942158294187568" at="82,19,83,18" concept="2" />
       <node id="1739942158294187568" at="88,26,89,18" concept="7" />
       <node id="1739942158294187568" at="92,39,93,32" concept="7" />
@@ -1015,15 +1015,15 @@
       <node id="1214477638562" at="541,40,542,34" concept="2" />
       <node id="1214477638562" at="542,34,543,22" concept="7" />
       <node id="1739942158294187568" at="545,44,546,40" concept="6" />
-      <node id="1739942158294187568" at="546,40,547,56" concept="2" />
-      <node id="1739942158294187568" at="547,56,548,33" concept="6" />
+      <node id="1739942158294187568" at="546,40,547,44" concept="2" />
+      <node id="1739942158294187568" at="547,44,548,33" concept="6" />
       <node id="1739942158294187568" at="549,31,550,38" concept="2" />
       <node id="1739942158294187568" at="551,12,552,37" concept="2" />
       <node id="1739942158294187568" at="553,5,554,34" concept="6" />
       <node id="4601216887035995274" at="554,34,555,49" concept="2" />
       <node id="1739942158294187568" at="555,49,556,40" concept="2" />
       <node id="1739942158294187568" at="556,40,557,22" concept="7" />
-      <node id="4601216887035995275" at="559,48,560,88" concept="7" />
+      <node id="4601216887035995275" at="559,36,560,88" concept="7" />
       <node id="1739942158294187568" at="562,41,563,39" concept="2" />
       <node id="1739942158294187568" at="564,9,565,56" concept="6" />
       <node id="1739942158294187568" at="565,56,566,76" concept="2" />
@@ -1082,10 +1082,10 @@
       <node id="1214477655577" at="696,49,697,49" concept="2" />
       <node id="1739942158294187568" at="697,49,698,40" concept="2" />
       <node id="1214477655569" at="698,40,699,49" concept="2" />
-      <node id="1214477655572" at="700,39,701,51" concept="2" />
+      <node id="1214477655572" at="700,27,701,51" concept="2" />
       <node id="928328222692015529" at="702,5,703,48" concept="2" />
       <node id="1739942158294187568" at="703,48,704,22" concept="7" />
-      <node id="928328222692015058" at="706,48,707,84" concept="7" />
+      <node id="928328222692015058" at="706,36,707,84" concept="7" />
       <node id="1214477655569" at="709,41,710,102" concept="6" />
       <node id="1214477655569" at="710,102,711,46" concept="2" />
       <node id="1214477655569" at="711,46,712,34" concept="6" />
@@ -1522,7 +1522,7 @@
       <node id="1739942158294187568" at="458,87,461,7" concept="4" />
       <node id="1739942158294187568" at="461,7,464,7" concept="4" />
       <node id="1739942158294187568" at="480,0,483,0" concept="5" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="4601216887035995271" at="559,0,562,0" concept="5" trace="nodeCondition_dcilz7_a1f3a#()Z" />
+      <node id="4601216887035995271" at="559,0,562,0" concept="5" trace="nodeCondition0#()Z" />
       <node id="4601216887035995290" at="600,0,603,0" concept="5" trace="getPropertyValues#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/List;" />
       <node id="4601216887035995299" at="621,0,624,0" concept="5" trace="handleAction#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="4601216887035995299" at="624,0,627,0" concept="5" trace="getMatchingText#()Ljava/lang/String;" />
@@ -1530,7 +1530,7 @@
       <node id="1739942158294187568" at="660,7,663,7" concept="4" />
       <node id="1739942158294187568" at="679,0,682,0" concept="5" trace="getNoTargetText#()Ljava/lang/String;" />
       <node id="1214477655572" at="699,49,702,5" concept="4" />
-      <node id="928328222691997953" at="706,0,709,0" concept="5" trace="nodeCondition_dcilz7_a1h3a#()Z" />
+      <node id="928328222691997953" at="706,0,709,0" concept="5" trace="nodeCondition1#()Z" />
       <node id="4231890441199624608" at="754,0,757,0" concept="5" trace="handleAction#(Ljava/lang/Object;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="4231890441199624608" at="757,0,760,0" concept="5" trace="handleAction_impl#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="4231890441199624608" at="760,0,763,0" concept="5" trace="isReferentPresentation#()Z" />
@@ -1555,7 +1555,7 @@
       <node id="1739942158294187568" at="1397,87,1400,7" concept="4" />
       <node id="1739942158294187568" at="1400,7,1403,7" concept="4" />
       <node id="1739942158294187568" at="1420,0,1423,0" concept="5" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="1739942158294187568" at="81,0,85,0" concept="1" trace="CellModel_PlaceholderTextList_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1739942158294187568" at="81,0,85,0" concept="1" trace="CellModel_PlaceholderTextList_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1214306591383" at="110,0,114,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1739942158294187568" at="199,0,203,5" concept="4" />
       <node id="1739942158294187568" at="279,0,283,0" concept="5" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -1744,7 +1744,7 @@
       <scope id="1214477638557" at="521,15,522,40" />
       <scope id="1739942158294187568" at="549,31,550,38" />
       <scope id="1739942158294187568" at="551,12,552,37" />
-      <scope id="4601216887035995272" at="559,48,560,88" />
+      <scope id="4601216887035995272" at="559,36,560,88" />
       <scope id="1739942158294187568" at="579,15,580,40" />
       <scope id="4601216887035995290" at="600,87,601,85" />
       <scope id="4601216887035995299" at="621,88,622,86" />
@@ -1754,8 +1754,8 @@
       <scope id="1739942158294187568" at="661,42,662,61" />
       <scope id="1739942158294187568" at="675,17,676,42" />
       <scope id="1739942158294187568" at="679,40,680,41" />
-      <scope id="1214477655572" at="700,39,701,51" />
-      <scope id="928328222691997954" at="706,48,707,84" />
+      <scope id="1214477655572" at="700,27,701,51" />
+      <scope id="928328222691997954" at="706,36,707,84" />
       <scope id="1739942158294187568" at="740,15,741,40" />
       <scope id="4231890441199624608" at="754,112,755,82" />
       <scope id="4231890441199624608" at="757,114,758,86" />
@@ -1799,7 +1799,7 @@
       <scope id="1739942158294187568" at="1401,42,1402,52" />
       <scope id="1739942158294187568" at="1416,17,1417,42" />
       <scope id="1739942158294187568" at="1420,40,1421,32" />
-      <scope id="1739942158294187568" at="81,112,83,18" />
+      <scope id="1739942158294187568" at="81,110,83,18" />
       <scope id="1214306591383" at="110,42,112,22">
         <var name="editorCell" id="1214306591383" />
       </scope>
@@ -2528,45 +2528,45 @@
         <var name="referenceLink" id="1739942158294187568" />
       </scope>
       <scope id="1739942158294187568" at="177,0,213,0" />
-      <unit id="1739942158294187568" at="1441,0,1447,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$CONCEPTS" />
-      <unit id="4601216887035995290" at="589,38,596,9" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$CellModel_PlaceholderTextList_usesFolding_cellMenu_dcilz7_a0a1f3a$1" />
-      <unit id="4601216887035995299" at="610,38,617,9" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$CellModel_PlaceholderTextList_generic_cellMenu_dcilz7_b0a1f3a$1" />
-      <unit id="1739942158294187568" at="1122,42,1130,5" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$2" />
-      <unit id="1739942158294187568" at="1448,0,1457,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$PROPS" />
-      <unit id="1739942158294187568" at="179,42,194,5" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$1" />
-      <unit id="1739942158294187568" at="1425,0,1440,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$LINKS" />
-      <unit id="4601216887035995290" at="583,0,604,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$CellModel_PlaceholderTextList_usesFolding_cellMenu_dcilz7_a0a1f3a" />
-      <unit id="4601216887035995299" at="604,0,628,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$CellModel_PlaceholderTextList_generic_cellMenu_dcilz7_b0a1f3a" />
-      <unit id="4231890441199624608" at="744,0,773,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$CellModel_PlaceholderTextList_generic_cellMenu_dcilz7_a0b7d0" />
-      <unit id="4231890441200471058" at="831,0,864,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$separatorTextQuerySingleRoleHandler_dcilz7_c7d0$CellModel_PlaceholderTextList_generic_cellMenu_dcilz7_a0c7d0" />
-      <unit id="1214477655600" at="1151,0,1194,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$Inline_Builder1" />
-      <unit id="1182191264604" at="213,0,259,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$Inline_Builder0" />
-      <unit id="1739942158294187568" at="283,0,334,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$placeholderTextQuerySingleRoleHandler_dcilz7_b1d0" />
-      <unit id="1739942158294187568" at="358,0,409,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$filterSingleRoleHandler_dcilz7_b2d0" />
-      <unit id="1739942158294187568" at="433,0,484,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$cellLayoutSingleRoleHandler_dcilz7_b3d0" />
-      <unit id="1739942158294187568" at="632,0,683,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$usesFoldingConditionSingleRoleHandler_dcilz7_a1f3a" />
-      <unit id="1739942158294187568" at="1050,0,1101,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$nodeFactorySingleRoleHandler_dcilz7_b11d0" />
-      <unit id="1739942158294187568" at="1296,0,1348,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$addHintsSingleRoleHandler_dcilz7_b41d0" />
-      <unit id="1739942158294187568" at="1372,0,1424,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$removeHintsSingleRoleHandler_dcilz7_b51d0" />
-      <unit id="1739942158294187568" at="932,0,986,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$separatorStyleSingleRoleHandler_dcilz7_b9d0" />
-      <unit id="1739942158294187568" at="1218,0,1272,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$elementMenuDescriptorSingleRoleHandler_dcilz7_b31d0" />
-      <unit id="1739942158294187568" at="777,0,865,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a$separatorTextQuerySingleRoleHandler_dcilz7_c7d0" />
-      <unit id="1739942158294187568" at="77,0,1458,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder_a" />
+      <unit id="1739942158294187568" at="1441,0,1447,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$CONCEPTS" />
+      <unit id="4601216887035995290" at="589,38,596,9" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$CellModel_PlaceholderTextList_usesFolding_cellMenu_dcilz7_a0a1f3a$1" />
+      <unit id="4601216887035995299" at="610,38,617,9" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$CellModel_PlaceholderTextList_generic_cellMenu_dcilz7_b0a1f3a$1" />
+      <unit id="1739942158294187568" at="1122,42,1130,5" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$2" />
+      <unit id="1739942158294187568" at="1448,0,1457,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$PROPS" />
+      <unit id="1739942158294187568" at="179,42,194,5" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$1" />
+      <unit id="1739942158294187568" at="1425,0,1440,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$LINKS" />
+      <unit id="4601216887035995290" at="583,0,604,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$CellModel_PlaceholderTextList_usesFolding_cellMenu_dcilz7_a0a1f3a" />
+      <unit id="4601216887035995299" at="604,0,628,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$CellModel_PlaceholderTextList_generic_cellMenu_dcilz7_b0a1f3a" />
+      <unit id="4231890441199624608" at="744,0,773,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$CellModel_PlaceholderTextList_generic_cellMenu_dcilz7_a0b7d0" />
+      <unit id="4231890441200471058" at="831,0,864,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$separatorTextQuerySingleRoleHandler_dcilz7_c7d0$CellModel_PlaceholderTextList_generic_cellMenu_dcilz7_a0c7d0" />
+      <unit id="1214477655600" at="1151,0,1194,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$Inline_Builder1" />
+      <unit id="1182191264604" at="213,0,259,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$Inline_Builder0" />
+      <unit id="1739942158294187568" at="283,0,334,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$placeholderTextQuerySingleRoleHandler_dcilz7_b1d0" />
+      <unit id="1739942158294187568" at="358,0,409,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$filterSingleRoleHandler_dcilz7_b2d0" />
+      <unit id="1739942158294187568" at="433,0,484,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$cellLayoutSingleRoleHandler_dcilz7_b3d0" />
+      <unit id="1739942158294187568" at="632,0,683,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$usesFoldingConditionSingleRoleHandler_dcilz7_a1f3a" />
+      <unit id="1739942158294187568" at="1050,0,1101,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$nodeFactorySingleRoleHandler_dcilz7_b11d0" />
+      <unit id="1739942158294187568" at="1296,0,1348,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$addHintsSingleRoleHandler_dcilz7_b41d0" />
+      <unit id="1739942158294187568" at="1372,0,1424,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$removeHintsSingleRoleHandler_dcilz7_b51d0" />
+      <unit id="1739942158294187568" at="932,0,986,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$separatorStyleSingleRoleHandler_dcilz7_b9d0" />
+      <unit id="1739942158294187568" at="1218,0,1272,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$elementMenuDescriptorSingleRoleHandler_dcilz7_b31d0" />
+      <unit id="1739942158294187568" at="777,0,865,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder$separatorTextQuerySingleRoleHandler_dcilz7_c7d0" />
+      <unit id="1739942158294187568" at="77,0,1458,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.CellModel_PlaceholderTextList_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:cbd97e40-a38b-4a25-8c00-47ec318477d5(com.mbeddr.mpsutil.placeholderTextList.editor)/1739942158294203071">
     <file name="StubCellModel_PlaceholderTextList_Editor.java">
-      <node id="1739942158294203071" at="11,79,12,99" concept="7" />
+      <node id="1739942158294203071" at="11,79,12,97" concept="7" />
       <node id="1739942158294203071" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="1739942158294203071" at="11,79,12,99" />
+      <scope id="1739942158294203071" at="11,79,12,97" />
       <scope id="1739942158294203071" at="11,0,14,0">
         <var name="editorContext" id="1739942158294203071" />
         <var name="node" id="1739942158294203071" />
       </scope>
       <unit id="1739942158294203071" at="10,0,15,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.StubCellModel_PlaceholderTextList_Editor" />
     </file>
-    <file name="StubCellModel_PlaceholderTextList_EditorBuilder_a.java">
-      <node id="1739942158294203071" at="16,113,17,19" concept="10" />
+    <file name="StubCellModel_PlaceholderTextList_EditorBuilder.java">
+      <node id="1739942158294203071" at="16,111,17,19" concept="10" />
       <node id="1739942158294203071" at="17,19,18,18" concept="2" />
       <node id="1739942158294203071" at="23,26,24,18" concept="7" />
       <node id="1739942158294203071" at="27,39,28,31" concept="7" />
@@ -2577,13 +2577,13 @@
       <node id="1739942158294203072" at="37,5,38,22" concept="7" />
       <node id="1739942158294203071" at="13,0,15,0" concept="3" trace="myNode" />
       <node id="1739942158294203071" at="27,0,30,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="1739942158294203071" at="16,0,20,0" concept="1" trace="StubCellModel_PlaceholderTextList_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1739942158294203071" at="16,0,20,0" concept="1" trace="StubCellModel_PlaceholderTextList_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1739942158294203072" at="33,72,37,5" concept="4" />
       <node id="1739942158294203071" at="21,0,26,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1739942158294203072" at="31,0,40,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="1739942158294203071" at="23,26,24,18" />
       <scope id="1739942158294203071" at="27,39,28,31" />
-      <scope id="1739942158294203071" at="16,113,18,18" />
+      <scope id="1739942158294203071" at="16,111,18,18" />
       <scope id="1739942158294203072" at="34,26,36,30" />
       <scope id="1739942158294203071" at="27,0,30,0" />
       <scope id="1739942158294203071" at="16,0,20,0">
@@ -2596,7 +2596,7 @@
         <var name="editorCell" id="1739942158294203072" />
       </scope>
       <scope id="1739942158294203072" at="31,0,40,0" />
-      <unit id="1739942158294203071" at="12,0,41,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.StubCellModel_PlaceholderTextList_EditorBuilder_a" />
+      <unit id="1739942158294203071" at="12,0,41,0" name="com.mbeddr.mpsutil.placeholderTextList.editor.StubCellModel_PlaceholderTextList_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:cbd97e40-a38b-4a25-8c00-47ec318477d5(com.mbeddr.mpsutil.placeholderTextList.editor)/2531002643688017445">

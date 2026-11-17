@@ -29,12 +29,12 @@
   </root>
   <root nodeRef="r:f4f9cb22-513c-4c2a-bf03-5ba144f465a9(com.mbeddr.mpsutil.conceptdiagram.editor)/2634829965775260717">
     <file name="ConceptDiagram_Editor.java">
-      <node id="2634829965775260717" at="11,79,12,80" concept="8" />
-      <node id="2634829965775260717" at="14,82,15,83" concept="8" />
+      <node id="2634829965775260717" at="11,79,12,78" concept="8" />
+      <node id="2634829965775260717" at="14,82,15,81" concept="8" />
       <node id="2634829965775260717" at="11,0,14,0" concept="6" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2634829965775260717" at="14,0,17,0" concept="6" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="2634829965775260717" at="11,79,12,80" />
-      <scope id="2634829965775260717" at="14,82,15,83" />
+      <scope id="2634829965775260717" at="11,79,12,78" />
+      <scope id="2634829965775260717" at="14,82,15,81" />
       <scope id="2634829965775260717" at="11,0,14,0">
         <var name="editorContext" id="2634829965775260717" />
         <var name="node" id="2634829965775260717" />
@@ -45,8 +45,8 @@
       </scope>
       <unit id="2634829965775260717" at="10,0,18,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_Editor" />
     </file>
-    <file name="ConceptDiagram_EditorBuilder_a.java">
-      <node id="2634829965775260717" at="133,94,134,19" concept="13" />
+    <file name="ConceptDiagram_EditorBuilder.java">
+      <node id="2634829965775260717" at="133,92,134,19" concept="13" />
       <node id="2634829965775260717" at="134,19,135,18" concept="2" />
       <node id="2634829965775260717" at="140,26,141,18" concept="8" />
       <node id="2634829965775260717" at="144,39,145,32" concept="8" />
@@ -321,12 +321,12 @@
       <node id="1243488734002546815" at="734,113,735,286" concept="2" />
       <node id="1243488734002546821" at="735,286,736,80" concept="2" />
       <node id="2634829965775260717" at="740,31,741,39" concept="8" />
-      <node id="1934248081280218239" at="747,58,748,96" concept="8" />
-      <node id="2634829965775260717" at="752,50,753,50" concept="8" />
-      <node id="1934248081280187937" at="756,60,757,91" concept="8" />
+      <node id="1934248081280218239" at="747,48,748,96" concept="8" />
+      <node id="2634829965775260717" at="752,50,753,40" concept="8" />
+      <node id="1934248081280187937" at="756,48,757,91" concept="8" />
       <node id="2634829965775260717" at="775,52,776,47" concept="7" />
-      <node id="2634829965775260717" at="776,47,777,62" concept="2" />
-      <node id="2634829965775260717" at="777,62,778,38" concept="8" />
+      <node id="2634829965775260717" at="776,47,777,50" concept="2" />
+      <node id="2634829965775260717" at="777,50,778,38" concept="8" />
       <node id="2634829965775260717" at="782,54,783,47" concept="7" />
       <node id="2634829965775260717" at="783,47,784,38" concept="8" />
       <node id="2634829965775260717" at="788,48,789,42" concept="7" />
@@ -576,8 +576,8 @@
       <node id="5378811289357491939" at="701,120,704,25" concept="5" />
       <node id="1243488734002546748" at="718,0,721,0" concept="6" trace="getName#()Ljava/lang/String;" />
       <node id="5378811289357534226" at="722,120,725,25" concept="5" />
-      <node id="1934248081280191217" at="747,0,750,0" concept="6" trace="nodeCondition_alumpc_a4a#()Z" />
-      <node id="1934248081280166223" at="756,0,759,0" concept="6" trace="nodeCondition_alumpc_a4a_0#()Z" />
+      <node id="1934248081280191217" at="747,0,750,0" concept="6" trace="nodeCondition0#()Z" />
+      <node id="1934248081280166223" at="756,0,759,0" concept="6" trace="nodeCondition1#()Z" />
       <node id="2634829965778357071" at="880,0,883,0" concept="6" trace="get#(Lde/itemis/mps/editor/diagram/runtime/substitute/SubstituteInfoFactory;)Ljetbrains/mps/openapi/editor/cells/SubstituteInfo;" />
       <node id="2634829965775260717" at="897,97,900,21" concept="5" />
       <node id="2634829965775260717" at="901,111,904,21" concept="5" />
@@ -604,7 +604,7 @@
       <node id="2634829965775748285" at="1203,0,1206,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="7483173130819574639" at="1223,0,1226,0" concept="6" trace="_StyleParameter_QueryFunction_alumpc_a1a0d4a#()I" />
       <node id="6996316882642691209" at="1227,102,1230,5" concept="5" />
-      <node id="2634829965775260717" at="133,0,137,0" concept="1" trace="ConceptDiagram_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2634829965775260717" at="133,0,137,0" concept="1" trace="ConceptDiagram_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2634829965775678859" at="242,82,246,25" concept="5" />
       <node id="2634829965775678864" at="255,82,259,25" concept="5" />
       <node id="2634829965775678873" at="272,88,276,31" concept="5" />
@@ -686,7 +686,7 @@
       <node id="1934248081258593328" at="196,0,202,0" concept="6" trace="createConstant_2#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="7483173130821516030" at="428,120,434,27" concept="5" />
       <node id="2634829965775260717" at="774,0,780,0" concept="6" trace="runAutoLayoutOnInit#()Z" />
-      <node id="6996316882642691209" at="1227,0,1233,0" concept="12" trace="check_oumt7y_a4a2a1a0d0b0b0bb0c0a0c0a0a0a0b0d0n#(Lde/itemis/mps/editor/diagram/runtime/model/Edge;)Ljava/util/List;" />
+      <node id="6996316882642691209" at="1227,0,1233,0" concept="12" trace="check_i3in5p_a4a2a1a0d0b0b0bb0c0a0c0a0a0a0b0d0n#(Lde/itemis/mps/editor/diagram/runtime/model/Edge;)Ljava/util/List;" />
       <node id="2634829965775602266" at="337,0,344,0" concept="6" trace="getNavigationTargets#()Ljava/lang/Iterable;" />
       <node id="2634829965775748090" at="441,0,448,0" concept="6" trace="getNavigationTargets#()Ljava/lang/Iterable;" />
       <node id="2634829965775748051" at="522,0,529,0" concept="6" trace="delete#()V" />
@@ -831,9 +831,9 @@
       <scope id="5378811289357491941" at="702,88,703,39" />
       <scope id="1243488734002546751" at="718,47,719,43" />
       <scope id="5378811289357534228" at="723,88,724,39" />
-      <scope id="1934248081280191218" at="747,58,748,96" />
-      <scope id="2634829965775260717" at="752,50,753,50" />
-      <scope id="1934248081280166224" at="756,60,757,91" />
+      <scope id="1934248081280191218" at="747,48,748,96" />
+      <scope id="2634829965775260717" at="752,50,753,40" />
+      <scope id="1934248081280166224" at="756,48,757,91" />
       <scope id="2634829965775260717" at="826,21,827,96" />
       <scope id="2634829965775260717" at="828,40,829,27" />
       <scope id="2634829965778357071" at="880,72,881,222" />
@@ -870,7 +870,7 @@
       <scope id="2634829965775748285" at="1209,28,1210,20" />
       <scope id="7483173130819574640" at="1223,64,1224,16" />
       <scope id="6996316882642691209" at="1228,36,1229,54" />
-      <scope id="2634829965775260717" at="133,94,135,18" />
+      <scope id="2634829965775260717" at="133,92,135,18" />
       <scope id="2634829965778106780" at="172,74,174,145">
         <var name="manager" id="2634829965778106780" />
       </scope>
@@ -1471,43 +1471,43 @@
         <var name="editorContext" id="2634829965775260717" />
         <var name="node" id="2634829965775260717" />
       </scope>
-      <unit id="2634829965775602266" at="225,55,229,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$2" />
-      <unit id="2634829965778357071" at="879,134,883,13" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$2" />
-      <unit id="2634829965775748252" at="554,55,559,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$8" />
-      <unit id="2634829965775748051" at="461,55,467,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$6" />
-      <unit id="2634829965775260717" at="1244,0,1250,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$CONCEPTS" />
-      <unit id="2634829965775260717" at="1234,0,1243,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$PROPS" />
-      <unit id="2634829965775260717" at="1251,0,1260,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$LINKS" />
-      <unit id="2634829965775748090" at="360,73,371,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$4" />
-      <unit id="2634829965775260717" at="894,53,908,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$3" />
-      <unit id="2634829965775260717" at="980,292,996,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$6" />
-      <unit id="2634829965775678869" at="263,109,280,25" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$1$1" />
-      <unit id="7483173130817899687" at="283,109,300,25" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$1$2" />
-      <unit id="2634829965775260717" at="935,292,952,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$4" />
-      <unit id="2634829965780234937" at="677,27,696,21" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$9$2" />
-      <unit id="1243488734001624407" at="696,27,717,21" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$9$3" />
-      <unit id="1243488734002546746" at="717,27,738,21" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$9$4" />
-      <unit id="2634829965779776390" at="653,95,677,21" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$9$1" />
-      <unit id="2634829965775602268" at="1036,0,1060,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$Inline_Builder_alumpc_a0e0" />
-      <unit id="2634829965775260717" at="953,294,979,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$5" />
-      <unit id="2634829965775748285" at="1194,0,1227,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$Inline_Builder_alumpc_a3e0" />
-      <unit id="2634829965775748250" at="1060,0,1094,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$Inline_Builder_alumpc_a1e0" />
-      <unit id="2634829965775602266" at="305,57,348,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$1$3" />
-      <unit id="3998349871861044583" at="1094,0,1144,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$Inline_Builder_alumpc_a0c4a" />
-      <unit id="2634829965775748085" at="1144,0,1194,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$Inline_Builder_alumpc_a2e0" />
-      <unit id="2634829965775748051" at="485,58,541,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$5$1" />
-      <unit id="2634829965775748252" at="573,58,630,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$7$1" />
-      <unit id="2634829965775748090" at="385,58,448,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$3$1" />
-      <unit id="2634829965775748051" at="468,113,552,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$5" />
-      <unit id="2634829965775748252" at="560,113,644,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$7" />
-      <unit id="2634829965775748090" at="372,113,459,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$3" />
-      <unit id="2634829965775448093" at="651,43,740,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$9" />
-      <unit id="2634829965775602266" at="230,113,358,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1$1" />
-      <unit id="2634829965775260717" at="222,44,875,13" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a$1" />
-      <unit id="2634829965775260717" at="129,0,1261,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder_a" />
+      <unit id="2634829965775602266" at="225,55,229,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$2" />
+      <unit id="2634829965778357071" at="879,134,883,13" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$2" />
+      <unit id="2634829965775748252" at="554,55,559,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$8" />
+      <unit id="2634829965775748051" at="461,55,467,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$6" />
+      <unit id="2634829965775260717" at="1244,0,1250,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$CONCEPTS" />
+      <unit id="2634829965775260717" at="1234,0,1243,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$PROPS" />
+      <unit id="2634829965775260717" at="1251,0,1260,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$LINKS" />
+      <unit id="2634829965775748090" at="360,73,371,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$4" />
+      <unit id="2634829965775260717" at="894,53,908,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$3" />
+      <unit id="2634829965775260717" at="980,292,996,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$6" />
+      <unit id="2634829965775678869" at="263,109,280,25" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$1$1" />
+      <unit id="7483173130817899687" at="283,109,300,25" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$1$2" />
+      <unit id="2634829965775260717" at="935,292,952,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$4" />
+      <unit id="2634829965780234937" at="677,27,696,21" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$9$2" />
+      <unit id="1243488734001624407" at="696,27,717,21" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$9$3" />
+      <unit id="1243488734002546746" at="717,27,738,21" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$9$4" />
+      <unit id="2634829965779776390" at="653,95,677,21" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$9$1" />
+      <unit id="2634829965775602268" at="1036,0,1060,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$Inline_Builder_alumpc_a0e0" />
+      <unit id="2634829965775260717" at="953,294,979,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$5" />
+      <unit id="2634829965775748285" at="1194,0,1227,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$Inline_Builder_alumpc_a3e0" />
+      <unit id="2634829965775748250" at="1060,0,1094,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$Inline_Builder_alumpc_a1e0" />
+      <unit id="2634829965775602266" at="305,57,348,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$1$3" />
+      <unit id="3998349871861044583" at="1094,0,1144,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$Inline_Builder_alumpc_a0c4a" />
+      <unit id="2634829965775748085" at="1144,0,1194,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$Inline_Builder_alumpc_a2e0" />
+      <unit id="2634829965775748051" at="485,58,541,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$5$1" />
+      <unit id="2634829965775748252" at="573,58,630,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$7$1" />
+      <unit id="2634829965775748090" at="385,58,448,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$3$1" />
+      <unit id="2634829965775748051" at="468,113,552,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$5" />
+      <unit id="2634829965775748252" at="560,113,644,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$7" />
+      <unit id="2634829965775748090" at="372,113,459,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$3" />
+      <unit id="2634829965775448093" at="651,43,740,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$9" />
+      <unit id="2634829965775602266" at="230,113,358,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1$1" />
+      <unit id="2634829965775260717" at="222,44,875,13" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder$1" />
+      <unit id="2634829965775260717" at="129,0,1261,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_EditorBuilder" />
     </file>
-    <file name="ConceptDiagram_InspectorBuilder_a.java">
-      <node id="2634829965775260717" at="59,97,60,19" concept="13" />
+    <file name="ConceptDiagram_InspectorBuilder.java">
+      <node id="2634829965775260717" at="59,95,60,19" concept="13" />
       <node id="2634829965775260717" at="60,19,61,18" concept="2" />
       <node id="2634829965775260717" at="66,26,67,18" concept="8" />
       <node id="2634829965775260717" at="70,39,71,32" concept="8" />
@@ -1688,10 +1688,10 @@
       <node id="1934248081280721942" at="351,15,352,40" concept="2" />
       <node id="2634829965775260717" at="355,43,356,122" concept="7" />
       <node id="2634829965775260717" at="356,122,357,48" concept="2" />
-      <node id="1934248081261669613" at="358,38,359,53" concept="2" />
+      <node id="1934248081261669613" at="358,27,359,53" concept="2" />
       <node id="6327895697656025119" at="360,5,361,57" concept="2" />
       <node id="2634829965775260717" at="361,57,362,22" concept="8" />
-      <node id="1934248081262174599" at="364,47,365,112" concept="8" />
+      <node id="1934248081262174599" at="364,36,365,112" concept="8" />
       <node id="2634829965775260717" at="367,43,368,122" concept="7" />
       <node id="2634829965775260717" at="368,122,369,48" concept="2" />
       <node id="6327895697655834660" at="369,48,370,57" concept="2" />
@@ -1741,8 +1741,8 @@
       <node id="2634829965775260717" at="134,0,137,0" concept="6" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="2634829965775260717" at="178,96,181,9" concept="5" />
       <node id="1934248081261669613" at="357,48,360,5" concept="5" />
-      <node id="1934248081262172694" at="364,0,367,0" concept="6" trace="nodeCondition_alumpc_a0g0#()Z" />
-      <node id="2634829965775260717" at="59,0,63,0" concept="1" trace="ConceptDiagram_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1934248081262172694" at="364,0,367,0" concept="6" trace="nodeCondition0#()Z" />
+      <node id="2634829965775260717" at="59,0,63,0" concept="1" trace="ConceptDiagram_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2634829965775260717" at="122,0,126,0" concept="1" trace="languagesInScopeListHandler_alumpc_b0a#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="2634829965775260717" at="127,0,131,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2634829965775260717" at="160,97,164,9" concept="5" />
@@ -1815,10 +1815,10 @@
       <scope id="1934248081282063775" at="283,15,284,40" />
       <scope id="1934248081280165550" at="317,15,318,40" />
       <scope id="1934248081280721942" at="351,15,352,40" />
-      <scope id="1934248081261669613" at="358,38,359,53" />
-      <scope id="1934248081262172695" at="364,47,365,112" />
+      <scope id="1934248081261669613" at="358,27,359,53" />
+      <scope id="1934248081262172695" at="364,36,365,112" />
       <scope id="1934248081262489429" at="430,51,431,152" />
-      <scope id="2634829965775260717" at="59,97,61,18" />
+      <scope id="2634829965775260717" at="59,95,61,18" />
       <scope id="2634829965775260717" at="122,91,124,25" />
       <scope id="2634829965775260717" at="161,122,163,146" />
       <scope id="2634829965775260717" at="167,34,169,142" />
@@ -2035,14 +2035,14 @@
         <var name="elementNode" id="2634829965775260717" />
         <var name="isEmptyCell" id="2634829965775260717" />
       </scope>
-      <unit id="2634829965775260717" at="437,0,440,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder_a$LINKS" />
-      <unit id="2634829965775260717" at="441,0,445,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder_a$CONCEPTS" />
-      <unit id="1934248081262489422" at="428,38,433,5" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder_a$3" />
-      <unit id="1934248081258635909" at="386,38,392,5" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder_a$1" />
-      <unit id="1934248081261673036" at="407,38,413,5" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder_a$2" />
-      <unit id="2634829965775260717" at="446,0,453,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder_a$PROPS" />
-      <unit id="2634829965775260717" at="118,0,185,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder_a$languagesInScopeListHandler_alumpc_b0a" />
-      <unit id="2634829965775260717" at="55,0,454,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder_a" />
+      <unit id="2634829965775260717" at="437,0,440,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder$LINKS" />
+      <unit id="2634829965775260717" at="441,0,445,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder$CONCEPTS" />
+      <unit id="1934248081262489422" at="428,38,433,5" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder$3" />
+      <unit id="1934248081258635909" at="386,38,392,5" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder$1" />
+      <unit id="1934248081261673036" at="407,38,413,5" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder$2" />
+      <unit id="2634829965775260717" at="446,0,453,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder$PROPS" />
+      <unit id="2634829965775260717" at="118,0,185,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder$languagesInScopeListHandler_alumpc_b0a" />
+      <unit id="2634829965775260717" at="55,0,454,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDiagram_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:f4f9cb22-513c-4c2a-bf03-5ba144f465a9(com.mbeddr.mpsutil.conceptdiagram.editor)/4402211681570425959">
@@ -2078,11 +2078,11 @@
     <file name="ConceptDeclaration_ConceptClassDiagram_Editor.java">
       <node id="6068210057811500139" at="14,0,15,0" concept="3" trace="myContextHints" />
       <node id="6068210057811500139" at="17,47,18,26" concept="8" />
-      <node id="6068210057811500139" at="20,79,21,104" concept="8" />
+      <node id="6068210057811500139" at="20,79,21,102" concept="8" />
       <node id="6068210057811500139" at="20,0,23,0" concept="6" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6068210057811500139" at="15,0,20,0" concept="6" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="6068210057811500139" at="17,47,18,26" />
-      <scope id="6068210057811500139" at="20,79,21,104" />
+      <scope id="6068210057811500139" at="20,79,21,102" />
       <scope id="6068210057811500139" at="20,0,23,0">
         <var name="editorContext" id="6068210057811500139" />
         <var name="node" id="6068210057811500139" />
@@ -2090,8 +2090,8 @@
       <scope id="6068210057811500139" at="15,0,20,0" />
       <unit id="6068210057811500139" at="13,0,24,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_Editor" />
     </file>
-    <file name="ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a.java">
-      <node id="6068210057811500139" at="98,118,99,19" concept="13" />
+    <file name="ConceptDeclaration_ConceptClassDiagram_EditorBuilder.java">
+      <node id="6068210057811500139" at="98,116,99,19" concept="13" />
       <node id="6068210057811500139" at="99,19,100,18" concept="2" />
       <node id="6068210057811500139" at="105,26,106,18" concept="8" />
       <node id="6068210057811500139" at="109,39,110,32" concept="8" />
@@ -2255,10 +2255,10 @@
       <node id="6068210057811500139" at="479,65,480,89" concept="7" />
       <node id="6068210057811960943" at="482,66,483,83" concept="8" />
       <node id="6068210057811500139" at="485,31,486,39" concept="8" />
-      <node id="1934248081260490446" at="494,58,495,28" concept="8" />
+      <node id="1934248081260490446" at="494,48,495,28" concept="8" />
       <node id="6068210057811500139" at="513,52,514,47" concept="7" />
-      <node id="6068210057811500139" at="514,47,515,60" concept="2" />
-      <node id="6068210057811500139" at="515,60,516,38" concept="8" />
+      <node id="6068210057811500139" at="514,47,515,50" concept="2" />
+      <node id="6068210057811500139" at="515,50,516,38" concept="8" />
       <node id="6068210057811500139" at="520,54,521,47" concept="7" />
       <node id="6068210057811500139" at="521,47,522,38" concept="8" />
       <node id="6068210057811500139" at="526,48,527,42" concept="7" />
@@ -2403,7 +2403,7 @@
       <node id="6068210057812644645" at="407,158,410,23" concept="5" />
       <node id="6068210057812644645" at="452,0,455,0" concept="6" trace="delete#()V" />
       <node id="6068210057811685836" at="482,0,485,0" concept="6" trace="queryMany#()Ljava/util/Collection;" />
-      <node id="1934248081260489586" at="494,0,497,0" concept="6" trace="nodeCondition_guq73v_a0a#()Z" />
+      <node id="1934248081260489586" at="494,0,497,0" concept="6" trace="nodeCondition0#()Z" />
       <node id="6068210057811500139" at="631,97,634,21" concept="5" />
       <node id="6068210057811500139" at="635,111,638,21" concept="5" />
       <node id="6068210057811500139" at="647,73,650,15" concept="5" />
@@ -2414,7 +2414,7 @@
       <node id="6068210057812076529" at="711,0,714,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6068210057812301108" at="761,0,764,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6068210057812777364" at="787,0,790,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="6068210057811500139" at="98,0,102,0" concept="1" trace="ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6068210057811500139" at="98,0,102,0" concept="1" trace="ConceptDeclaration_ConceptClassDiagram_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8497631024546711362" at="161,82,165,25" concept="5" />
       <node id="8497631024547039505" at="174,82,178,25" concept="5" />
       <node id="8497631024546923722" at="191,88,195,31" concept="5" />
@@ -2575,7 +2575,7 @@
       <scope id="6068210057812644645" at="449,58,450,43" />
       <scope id="6068210057812644645" at="456,49,457,49" />
       <scope id="6068210057811685836" at="482,66,483,83" />
-      <scope id="1934248081260489587" at="494,58,495,28" />
+      <scope id="1934248081260489587" at="494,48,495,28" />
       <scope id="6068210057811500139" at="564,21,565,96" />
       <scope id="6068210057811500139" at="566,40,567,27" />
       <scope id="6068210057811500139" at="620,56,621,81" />
@@ -2594,7 +2594,7 @@
       <scope id="6068210057812301108" at="767,28,768,20" />
       <scope id="6068210057812777364" at="787,41,788,32" />
       <scope id="6068210057812777364" at="793,28,794,20" />
-      <scope id="6068210057811500139" at="98,118,100,18" />
+      <scope id="6068210057811500139" at="98,116,100,18" />
       <scope id="8497631024546711362" at="162,73,164,93">
         <var name="layouter" id="8497631024546711362" />
       </scope>
@@ -2965,40 +2965,40 @@
         <var name="editorContext" id="6068210057811500139" />
         <var name="node" id="6068210057811500139" />
       </scope>
-      <unit id="6068210057811687065" at="144,55,148,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$2" />
-      <unit id="6068210057811990021" at="237,55,241,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$4" />
-      <unit id="6068210057812644645" at="396,55,400,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$8" />
-      <unit id="6068210057811685836" at="481,43,485,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$9" />
-      <unit id="6068210057811500139" at="814,0,818,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$PROPS" />
-      <unit id="6068210057811500139" at="819,0,824,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$CONCEPTS" />
-      <unit id="6068210057811500139" at="805,0,813,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$LINKS" />
-      <unit id="6068210057812095046" at="309,73,323,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$6" />
-      <unit id="6068210057811500139" at="628,53,642,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$2" />
-      <unit id="8497631024546923718" at="182,109,199,25" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$1$1" />
-      <unit id="6068210057811687065" at="204,57,225,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$1$2" />
-      <unit id="6068210057811687066" at="678,0,702,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$Inline_Builder_guq73v_a0a0" />
-      <unit id="6068210057812301108" at="752,0,778,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$Inline_Builder_guq73v_a2a0" />
-      <unit id="6068210057812777364" at="778,0,804,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$Inline_Builder_guq73v_a3a0" />
-      <unit id="6068210057811990021" at="255,58,296,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$3$1" />
-      <unit id="6068210057812095046" at="337,58,383,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$5$1" />
-      <unit id="6068210057812644645" at="414,58,460,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$7$1" />
-      <unit id="6068210057812076529" at="702,0,752,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$Inline_Builder_guq73v_a1a0" />
-      <unit id="6068210057811990021" at="242,113,307,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$3" />
-      <unit id="6068210057812095046" at="324,113,394,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$5" />
-      <unit id="6068210057812644645" at="401,113,474,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$7" />
-      <unit id="6068210057811687065" at="149,113,235,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1$1" />
-      <unit id="6068210057811500139" at="141,44,613,13" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a$1" />
-      <unit id="6068210057811500139" at="94,0,825,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder_a" />
+      <unit id="6068210057811687065" at="144,55,148,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$2" />
+      <unit id="6068210057811990021" at="237,55,241,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$4" />
+      <unit id="6068210057812644645" at="396,55,400,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$8" />
+      <unit id="6068210057811685836" at="481,43,485,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$9" />
+      <unit id="6068210057811500139" at="814,0,818,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$PROPS" />
+      <unit id="6068210057811500139" at="819,0,824,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$CONCEPTS" />
+      <unit id="6068210057811500139" at="805,0,813,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$LINKS" />
+      <unit id="6068210057812095046" at="309,73,323,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$6" />
+      <unit id="6068210057811500139" at="628,53,642,17" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$2" />
+      <unit id="8497631024546923718" at="182,109,199,25" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$1$1" />
+      <unit id="6068210057811687065" at="204,57,225,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$1$2" />
+      <unit id="6068210057811687066" at="678,0,702,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$Inline_Builder_guq73v_a0a0" />
+      <unit id="6068210057812301108" at="752,0,778,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$Inline_Builder_guq73v_a2a0" />
+      <unit id="6068210057812777364" at="778,0,804,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$Inline_Builder_guq73v_a3a0" />
+      <unit id="6068210057811990021" at="255,58,296,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$3$1" />
+      <unit id="6068210057812095046" at="337,58,383,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$5$1" />
+      <unit id="6068210057812644645" at="414,58,460,23" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$7$1" />
+      <unit id="6068210057812076529" at="702,0,752,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$Inline_Builder_guq73v_a1a0" />
+      <unit id="6068210057811990021" at="242,113,307,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$3" />
+      <unit id="6068210057812095046" at="324,113,394,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$5" />
+      <unit id="6068210057812644645" at="401,113,474,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$7" />
+      <unit id="6068210057811687065" at="149,113,235,19" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1$1" />
+      <unit id="6068210057811500139" at="141,44,613,13" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder$1" />
+      <unit id="6068210057811500139" at="94,0,825,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.ConceptDeclaration_ConceptClassDiagram_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:f4f9cb22-513c-4c2a-bf03-5ba144f465a9(com.mbeddr.mpsutil.conceptdiagram.editor)/6068210057813606453">
     <file name="AbstractConceptDeclarationBox.java">
       <node id="6068210057813606453" at="15,47,16,35" concept="8" />
-      <node id="6068210057813606453" at="18,79,19,98" concept="8" />
+      <node id="6068210057813606453" at="18,79,19,96" concept="8" />
       <node id="6068210057813606453" at="18,0,21,0" concept="6" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6068210057813606453" at="14,0,18,0" concept="6" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="6068210057813606453" at="15,47,16,35" />
-      <scope id="6068210057813606453" at="18,79,19,98" />
+      <scope id="6068210057813606453" at="18,79,19,96" />
       <scope id="6068210057813606453" at="18,0,21,0">
         <var name="editorContext" id="6068210057813606453" />
         <var name="node" id="6068210057813606453" />
@@ -3006,8 +3006,8 @@
       <scope id="6068210057813606453" at="14,0,18,0" />
       <unit id="6068210057813606453" at="13,0,22,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.AbstractConceptDeclarationBox" />
     </file>
-    <file name="AbstractConceptDeclarationBox_ComponentBuilder_a.java">
-      <node id="6068210057813606453" at="51,112,52,19" concept="13" />
+    <file name="AbstractConceptDeclarationBox_ComponentBuilder.java">
+      <node id="6068210057813606453" at="51,110,52,19" concept="13" />
       <node id="6068210057813606453" at="52,19,53,18" concept="2" />
       <node id="6068210057813606453" at="58,26,59,18" concept="8" />
       <node id="6068210057813606453" at="62,39,63,32" concept="8" />
@@ -3017,11 +3017,11 @@
       <node id="6068210057812870915" at="69,34,70,49" concept="2" />
       <node id="6068210057813606453" at="70,49,71,40" concept="2" />
       <node id="6068210057812870934" at="71,40,72,51" concept="2" />
-      <node id="6068210057812870948" at="73,37,74,54" concept="2" />
-      <node id="6068210057812870962" at="76,37,77,53" concept="2" />
+      <node id="6068210057812870948" at="73,27,74,54" concept="2" />
+      <node id="6068210057812870962" at="76,27,77,53" concept="2" />
       <node id="6068210057813606453" at="78,5,79,22" concept="8" />
-      <node id="1934248081274981283" at="81,46,82,115" concept="8" />
-      <node id="1934248081275017226" at="84,46,85,115" concept="8" />
+      <node id="1934248081274981283" at="81,36,82,115" concept="8" />
+      <node id="1934248081275017226" at="84,36,85,115" concept="8" />
       <node id="6068210057813606453" at="87,43,88,120" concept="7" />
       <node id="6068210057813606453" at="88,120,89,49" concept="2" />
       <node id="6068210057813606453" at="89,49,90,34" concept="7" />
@@ -3112,15 +3112,15 @@
       <node id="6068210057813606453" at="62,0,65,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="6068210057812870948" at="72,51,75,5" concept="5" />
       <node id="6068210057812870962" at="75,5,78,5" concept="5" />
-      <node id="1934248081274981275" at="81,0,84,0" concept="6" trace="nodeCondition_4womgb_a1a#()Z" />
-      <node id="1934248081275017218" at="84,0,87,0" concept="6" trace="nodeCondition_4womgb_a2a#()Z" />
+      <node id="1934248081274981275" at="81,0,84,0" concept="6" trace="nodeCondition0#()Z" />
+      <node id="1934248081275017218" at="84,0,87,0" concept="6" trace="nodeCondition1#()Z" />
       <node id="6068210057813606453" at="100,0,103,0" concept="6" trace="getText#()Ljava/lang/String;" />
       <node id="7483173130818892831" at="115,0,118,0" concept="6" trace="_StyleParameter_QueryFunction_4womgb_a1a0a#()I" />
       <node id="1934248081281583596" at="143,0,146,0" concept="6" trace="_StyleParameter_QueryFunction_4womgb_a1b0a#()Z" />
       <node id="6068210057813606453" at="180,0,183,0" concept="6" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="6068210057813606453" at="183,0,186,0" concept="6" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="6068210057813606453" at="227,96,230,9" concept="5" />
-      <node id="6068210057813606453" at="51,0,55,0" concept="1" trace="AbstractConceptDeclarationBox_ComponentBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6068210057813606453" at="51,0,55,0" concept="1" trace="AbstractConceptDeclarationBox_ComponentBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6068210057813606453" at="171,0,175,0" concept="1" trace="propertyDeclarationListHandler_4womgb_a2a#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="6068210057813606453" at="176,0,180,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="6068210057813606453" at="209,97,213,9" concept="5" />
@@ -3147,10 +3147,10 @@
       <node id="6068210057813606453" at="208,0,233,0" concept="6" trace="installElementCellActions#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/cells/EditorCell;Z)V" />
       <scope id="6068210057813606453" at="58,26,59,18" />
       <scope id="6068210057813606453" at="62,39,63,32" />
-      <scope id="6068210057812870948" at="73,37,74,54" />
-      <scope id="6068210057812870962" at="76,37,77,53" />
-      <scope id="1934248081274981276" at="81,46,82,115" />
-      <scope id="1934248081275017219" at="84,46,85,115" />
+      <scope id="6068210057812870948" at="73,27,74,54" />
+      <scope id="6068210057812870962" at="76,27,77,53" />
+      <scope id="1934248081274981276" at="81,36,82,115" />
+      <scope id="1934248081275017219" at="84,36,85,115" />
       <scope id="6068210057813351681" at="100,31,101,125" />
       <scope id="7483173130818892832" at="115,60,116,14" />
       <scope id="6068210057813606453" at="139,15,140,40" />
@@ -3160,7 +3160,7 @@
       <scope id="6068210057813606453" at="183,48,184,45" />
       <scope id="6068210057813606453" at="201,17,202,42" />
       <scope id="6068210057813606453" at="228,34,229,91" />
-      <scope id="6068210057813606453" at="51,112,53,18" />
+      <scope id="6068210057813606453" at="51,110,53,18" />
       <scope id="6068210057813606453" at="134,74,136,145">
         <var name="manager" id="6068210057813606453" />
       </scope>
@@ -3245,12 +3245,12 @@
         <var name="elementNode" id="6068210057813606453" />
         <var name="isEmptyCell" id="6068210057813606453" />
       </scope>
-      <unit id="6068210057813606453" at="235,0,238,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.AbstractConceptDeclarationBox_ComponentBuilder_a$LINKS" />
-      <unit id="6068210057813606453" at="246,0,249,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.AbstractConceptDeclarationBox_ComponentBuilder_a$PROPS" />
-      <unit id="6068210057813606453" at="99,88,103,5" name="com.mbeddr.mpsutil.conceptdiagram.editor.AbstractConceptDeclarationBox_ComponentBuilder_a$1" />
-      <unit id="6068210057813606453" at="239,0,245,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.AbstractConceptDeclarationBox_ComponentBuilder_a$CONCEPTS" />
-      <unit id="6068210057813606453" at="167,0,234,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.AbstractConceptDeclarationBox_ComponentBuilder_a$propertyDeclarationListHandler_4womgb_a2a" />
-      <unit id="6068210057813606453" at="47,0,250,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.AbstractConceptDeclarationBox_ComponentBuilder_a" />
+      <unit id="6068210057813606453" at="235,0,238,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.AbstractConceptDeclarationBox_ComponentBuilder$LINKS" />
+      <unit id="6068210057813606453" at="246,0,249,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.AbstractConceptDeclarationBox_ComponentBuilder$PROPS" />
+      <unit id="6068210057813606453" at="99,88,103,5" name="com.mbeddr.mpsutil.conceptdiagram.editor.AbstractConceptDeclarationBox_ComponentBuilder$1" />
+      <unit id="6068210057813606453" at="239,0,245,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.AbstractConceptDeclarationBox_ComponentBuilder$CONCEPTS" />
+      <unit id="6068210057813606453" at="167,0,234,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.AbstractConceptDeclarationBox_ComponentBuilder$propertyDeclarationListHandler_4womgb_a2a" />
+      <unit id="6068210057813606453" at="47,0,250,0" name="com.mbeddr.mpsutil.conceptdiagram.editor.AbstractConceptDeclarationBox_ComponentBuilder" />
     </file>
   </root>
   <root nodeRef="r:f4f9cb22-513c-4c2a-bf03-5ba144f465a9(com.mbeddr.mpsutil.conceptdiagram.editor)/6068210057816604385">

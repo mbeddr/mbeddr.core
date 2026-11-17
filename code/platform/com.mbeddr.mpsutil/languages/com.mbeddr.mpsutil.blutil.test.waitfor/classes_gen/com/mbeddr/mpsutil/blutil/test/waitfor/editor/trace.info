@@ -17,12 +17,12 @@
   </root>
   <root nodeRef="r:3ff89ebf-cfed-4486-9211-7aff68f57432(com.mbeddr.mpsutil.blutil.test.waitfor.editor)/3645598487160492003">
     <file name="WaitFor_Editor.java">
-      <node id="3645598487160492003" at="11,79,12,73" concept="6" />
-      <node id="3645598487160492003" at="14,82,15,76" concept="6" />
+      <node id="3645598487160492003" at="11,79,12,71" concept="6" />
+      <node id="3645598487160492003" at="14,82,15,74" concept="6" />
       <node id="3645598487160492003" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3645598487160492003" at="14,0,17,0" concept="4" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="3645598487160492003" at="11,79,12,73" />
-      <scope id="3645598487160492003" at="14,82,15,76" />
+      <scope id="3645598487160492003" at="11,79,12,71" />
+      <scope id="3645598487160492003" at="14,82,15,74" />
       <scope id="3645598487160492003" at="11,0,14,0">
         <var name="editorContext" id="3645598487160492003" />
         <var name="node" id="3645598487160492003" />
@@ -33,8 +33,8 @@
       </scope>
       <unit id="3645598487160492003" at="10,0,18,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.editor.WaitFor_Editor" />
     </file>
-    <file name="WaitFor_EditorBuilder_a.java">
-      <node id="3645598487160492003" at="31,87,32,19" concept="8" />
+    <file name="WaitFor_EditorBuilder.java">
+      <node id="3645598487160492003" at="31,85,32,19" concept="8" />
       <node id="3645598487160492003" at="32,19,33,18" concept="1" />
       <node id="3645598487160492003" at="38,26,39,18" concept="6" />
       <node id="3645598487160492003" at="42,39,43,32" concept="6" />
@@ -92,7 +92,7 @@
       <node id="3645598487160492003" at="93,87,96,7" concept="3" />
       <node id="3645598487160492003" at="96,7,99,7" concept="3" />
       <node id="3645598487160492003" at="115,0,118,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="3645598487160492003" at="31,0,35,0" concept="0" trace="WaitFor_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3645598487160492003" at="31,0,35,0" concept="0" trace="WaitFor_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3645598487160492003" at="64,0,68,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3645598487160492003" at="72,0,76,0" concept="0" trace="conditionSingleRoleHandler_7js42k_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="3645598487160492003" at="36,0,41,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -112,7 +112,7 @@
       <scope id="3645598487160492003" at="97,42,98,50" />
       <scope id="3645598487160492003" at="111,17,112,42" />
       <scope id="3645598487160492003" at="115,40,116,30" />
-      <scope id="3645598487160492003" at="31,87,33,18" />
+      <scope id="3645598487160492003" at="31,85,33,18" />
       <scope id="3645598487160492003" at="64,40,66,33">
         <var name="provider" id="3645598487160492003" />
       </scope>
@@ -167,12 +167,12 @@
       <scope id="3645598487160492003" at="46,0,57,0" />
       <scope id="3645598487160492003" at="102,44,113,7" />
       <scope id="3645598487160492003" at="101,0,115,0" />
-      <unit id="3645598487160492003" at="136,0,139,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.editor.WaitFor_EditorBuilder_a$LINKS" />
-      <unit id="3645598487160492003" at="68,0,119,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.editor.WaitFor_EditorBuilder_a$conditionSingleRoleHandler_7js42k_b0" />
-      <unit id="3645598487160492003" at="27,0,140,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.editor.WaitFor_EditorBuilder_a" />
+      <unit id="3645598487160492003" at="136,0,139,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.editor.WaitFor_EditorBuilder$LINKS" />
+      <unit id="3645598487160492003" at="68,0,119,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.editor.WaitFor_EditorBuilder$conditionSingleRoleHandler_7js42k_b0" />
+      <unit id="3645598487160492003" at="27,0,140,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.editor.WaitFor_EditorBuilder" />
     </file>
-    <file name="WaitFor_InspectorBuilder_a.java">
-      <node id="3645598487160492003" at="38,90,39,19" concept="8" />
+    <file name="WaitFor_InspectorBuilder.java">
+      <node id="3645598487160492003" at="38,88,39,19" concept="8" />
       <node id="3645598487160492003" at="39,19,40,18" concept="1" />
       <node id="3645598487160492003" at="45,26,46,18" concept="6" />
       <node id="3645598487160492003" at="49,39,50,32" concept="6" />
@@ -330,7 +330,7 @@
       <node id="3645598487160492003" at="265,0,266,0" concept="7" trace="PropertyAttribute$Gb" />
       <node id="3645598487160492003" at="35,0,37,0" concept="2" trace="myNode" />
       <node id="3645598487160492003" at="49,0,52,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3645598487160492003" at="38,0,42,0" concept="0" trace="WaitFor_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3645598487160492003" at="38,0,42,0" concept="0" trace="WaitFor_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3645598487160492003" at="43,0,48,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="5445759082310468171" at="93,208,98,24" concept="3" />
       <node id="5445759082310469181" at="137,208,142,24" concept="3" />
@@ -364,7 +364,7 @@
       <scope id="5445759082310469181" at="143,15,144,40" />
       <scope id="5445759082310468159" at="213,15,214,40" />
       <scope id="5445759082310468167" at="254,15,255,40" />
-      <scope id="3645598487160492003" at="38,90,40,18" />
+      <scope id="3645598487160492003" at="38,88,40,18" />
       <scope id="5445759082310468171" at="94,74,96,145">
         <var name="manager" id="5445759082310468171" />
       </scope>
@@ -478,9 +478,9 @@
       <scope id="5445759082310469181" at="126,0,147,0" />
       <scope id="5445759082310468159" at="196,0,217,0" />
       <scope id="5445759082310468167" at="237,0,258,0" />
-      <unit id="3645598487160492003" at="264,0,267,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.editor.WaitFor_InspectorBuilder_a$CONCEPTS" />
-      <unit id="3645598487160492003" at="259,0,263,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.editor.WaitFor_InspectorBuilder_a$PROPS" />
-      <unit id="3645598487160492003" at="34,0,268,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.editor.WaitFor_InspectorBuilder_a" />
+      <unit id="3645598487160492003" at="264,0,267,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.editor.WaitFor_InspectorBuilder$CONCEPTS" />
+      <unit id="3645598487160492003" at="259,0,263,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.editor.WaitFor_InspectorBuilder$PROPS" />
+      <unit id="3645598487160492003" at="34,0,268,0" name="com.mbeddr.mpsutil.blutil.test.waitfor.editor.WaitFor_InspectorBuilder" />
     </file>
   </root>
 </debug-info>

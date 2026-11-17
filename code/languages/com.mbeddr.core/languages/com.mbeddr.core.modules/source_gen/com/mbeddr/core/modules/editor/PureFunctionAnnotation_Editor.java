@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PureFunctionAnnotation_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PureFunctionAnnotation_EditorBuilder_a(editorContext, node).createCell();
+    return new PureFunctionAnnotation_EditorBuilder(editorContext, node).createCell();
   }
 }

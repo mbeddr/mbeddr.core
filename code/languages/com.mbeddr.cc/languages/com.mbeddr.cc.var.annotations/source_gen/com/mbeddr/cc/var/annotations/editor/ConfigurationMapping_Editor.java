@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ConfigurationMapping_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConfigurationMapping_EditorBuilder_a(editorContext, node).createCell();
+    return new ConfigurationMapping_EditorBuilder(editorContext, node).createCell();
   }
 }

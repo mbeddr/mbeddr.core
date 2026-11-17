@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class JsonFile_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new JsonFile_EditorBuilder_a(editorContext, node).createCell();
+    return new JsonFile_EditorBuilder(editorContext, node).createCell();
   }
 }

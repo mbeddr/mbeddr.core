@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class CurrentTimeExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CurrentTimeExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new CurrentTimeExpression_EditorBuilder(editorContext, node).createCell();
   }
 }

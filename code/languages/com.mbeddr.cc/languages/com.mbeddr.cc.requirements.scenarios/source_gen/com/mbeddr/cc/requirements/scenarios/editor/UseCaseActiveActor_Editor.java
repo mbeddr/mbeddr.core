@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class UseCaseActiveActor_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new UseCaseActiveActor_EditorBuilder_a(editorContext, node).createCell();
+    return new UseCaseActiveActor_EditorBuilder(editorContext, node).createCell();
   }
 }

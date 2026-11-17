@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class VarRTConfigItem_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new VarRTConfigItem_EditorBuilder_a(editorContext, node).createCell();
+    return new VarRTConfigItem_EditorBuilder(editorContext, node).createCell();
   }
 }

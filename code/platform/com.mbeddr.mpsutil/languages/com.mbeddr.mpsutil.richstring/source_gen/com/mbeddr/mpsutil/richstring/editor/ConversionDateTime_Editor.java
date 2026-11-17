@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ConversionDateTime_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConversionDateTime_EditorBuilder_a(editorContext, node).createCell();
+    return new ConversionDateTime_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new ConversionDateTime_InspectorBuilder_a(editorContext, node).createCell();
+    return new ConversionDateTime_InspectorBuilder(editorContext, node).createCell();
   }
 }

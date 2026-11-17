@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class VariadicArgument_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new VariadicArgument_EditorBuilder_a(editorContext, node).createCell();
+    return new VariadicArgument_EditorBuilder(editorContext, node).createCell();
   }
 }

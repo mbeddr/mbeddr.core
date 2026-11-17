@@ -18,6 +18,6 @@ public class MultilingualString_singleLingual_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new MultilingualString_singleLingual_EditorBuilder_a(editorContext, node).createCell();
+    return new MultilingualString_singleLingual_EditorBuilder(editorContext, node).createCell();
   }
 }

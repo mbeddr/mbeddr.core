@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PortAsValueExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PortAsValueExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new PortAsValueExpression_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new PortAsValueExpression_InspectorBuilder_a(editorContext, node).createCell();
+    return new PortAsValueExpression_InspectorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PlainCStrategy_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PlainCStrategy_EditorBuilder_a(editorContext, node).createCell();
+    return new PlainCStrategy_EditorBuilder(editorContext, node).createCell();
   }
 }

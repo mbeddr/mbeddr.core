@@ -17,6 +17,6 @@ public class ModuleReference implements ConceptEditorComponent {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ModuleReference_ComponentBuilder_a(editorContext, node).createCell();
+    return new ModuleReference_ComponentBuilder(editorContext, node).createCell();
   }
 }

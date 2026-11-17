@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ConvertExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConvertExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new ConvertExpression_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new ConvertExpression_InspectorBuilder_a(editorContext, node).createCell();
+    return new ConvertExpression_InspectorBuilder(editorContext, node).createCell();
   }
 }

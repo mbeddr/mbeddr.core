@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ModuleHNameOverride_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ModuleHNameOverride_EditorBuilder_a(editorContext, node).createCell();
+    return new ModuleHNameOverride_EditorBuilder(editorContext, node).createCell();
   }
 }

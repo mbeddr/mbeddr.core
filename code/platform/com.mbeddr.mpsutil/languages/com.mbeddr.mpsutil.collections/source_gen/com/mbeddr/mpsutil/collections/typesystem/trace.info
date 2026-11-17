@@ -140,29 +140,29 @@
     </file>
   </root>
   <root nodeRef="r:98449c2c-1cb6-4e11-8e93-d22a8497c2fe(com.mbeddr.mpsutil.collections.typesystem)/1264839739508592618">
-    <file name="Pattern_ypjf7y_a0a0a0g.java">
-      <node id="9010112635247813758" at="10,52,11,30" concept="12" />
-      <node id="9010112635247813758" at="11,30,12,0" concept="9" />
-      <node id="9010112635247813758" at="12,0,13,0" concept="9" />
-      <node id="9010112635248008245" at="13,0,14,174" concept="2" />
-      <node id="9010112635247813758" at="10,0,16,0" concept="1" trace="Pattern_ypjf7y_a0a0a0g#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="9010112635247813758" at="10,52,14,174" />
-      <scope id="9010112635247813758" at="10,0,16,0">
-        <var name="patternNode" id="9010112635247813758" />
-      </scope>
-      <unit id="9010112635247813758" at="9,0,18,0" name="com.mbeddr.mpsutil.collections.typesystem.Pattern_ypjf7y_a0a0a0g" />
-    </file>
-    <file name="Pattern_ypjf7y_a0a0a0h.java">
+    <file name="Pattern_ypjf7y_b0a0a1h.java">
       <node id="1264839739508592628" at="10,52,11,30" concept="12" />
       <node id="1264839739508592628" at="11,30,12,0" concept="9" />
       <node id="1264839739508592628" at="12,0,13,0" concept="9" />
       <node id="6355510489489822099" at="13,0,14,176" concept="2" />
-      <node id="1264839739508592628" at="10,0,16,0" concept="1" trace="Pattern_ypjf7y_a0a0a0h#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1264839739508592628" at="10,0,16,0" concept="1" trace="Pattern_ypjf7y_b0a0a1h#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="1264839739508592628" at="10,52,14,176" />
       <scope id="1264839739508592628" at="10,0,16,0">
         <var name="patternNode" id="1264839739508592628" />
       </scope>
-      <unit id="1264839739508592628" at="9,0,18,0" name="com.mbeddr.mpsutil.collections.typesystem.Pattern_ypjf7y_a0a0a0h" />
+      <unit id="1264839739508592628" at="9,0,18,0" name="com.mbeddr.mpsutil.collections.typesystem.Pattern_ypjf7y_b0a0a1h" />
+    </file>
+    <file name="Pattern_ypjf7y_b0a0a3g.java">
+      <node id="9010112635247813758" at="10,52,11,30" concept="12" />
+      <node id="9010112635247813758" at="11,30,12,0" concept="9" />
+      <node id="9010112635247813758" at="12,0,13,0" concept="9" />
+      <node id="9010112635248008245" at="13,0,14,174" concept="2" />
+      <node id="9010112635247813758" at="10,0,16,0" concept="1" trace="Pattern_ypjf7y_b0a0a3g#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="9010112635247813758" at="10,52,14,174" />
+      <scope id="9010112635247813758" at="10,0,16,0">
+        <var name="patternNode" id="9010112635247813758" />
+      </scope>
+      <unit id="9010112635247813758" at="9,0,18,0" name="com.mbeddr.mpsutil.collections.typesystem.Pattern_ypjf7y_b0a0a3g" />
     </file>
     <file name="TypesystemDescriptor.java">
       <node id="1264839739508592618" at="28,5,29,118" concept="7" />
@@ -552,29 +552,29 @@
     </file>
   </root>
   <root nodeRef="r:98449c2c-1cb6-4e11-8e93-d22a8497c2fe(com.mbeddr.mpsutil.collections.typesystem)/8725877324454745043">
-    <file name="Pattern_uj9dl2_a0a0a0g.java">
-      <node id="9010112635248006854" at="10,52,11,30" concept="12" />
-      <node id="9010112635248006854" at="11,30,12,0" concept="9" />
-      <node id="9010112635248006854" at="12,0,13,0" concept="9" />
-      <node id="9010112635248007047" at="13,0,14,174" concept="2" />
-      <node id="9010112635248006854" at="10,0,16,0" concept="1" trace="Pattern_uj9dl2_a0a0a0g#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="9010112635248006854" at="10,52,14,174" />
-      <scope id="9010112635248006854" at="10,0,16,0">
-        <var name="patternNode" id="9010112635248006854" />
-      </scope>
-      <unit id="9010112635248006854" at="9,0,18,0" name="com.mbeddr.mpsutil.collections.typesystem.Pattern_uj9dl2_a0a0a0g" />
-    </file>
-    <file name="Pattern_uj9dl2_a0a0a0h.java">
+    <file name="Pattern_uj9dl2_b0a0a1h.java">
       <node id="8725877324454749347" at="10,52,11,30" concept="12" />
       <node id="8725877324454749347" at="11,30,12,0" concept="9" />
       <node id="8725877324454749347" at="12,0,13,0" concept="9" />
       <node id="8725877324454749384" at="13,0,14,176" concept="2" />
-      <node id="8725877324454749347" at="10,0,16,0" concept="1" trace="Pattern_uj9dl2_a0a0a0h#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8725877324454749347" at="10,0,16,0" concept="1" trace="Pattern_uj9dl2_b0a0a1h#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="8725877324454749347" at="10,52,14,176" />
       <scope id="8725877324454749347" at="10,0,16,0">
         <var name="patternNode" id="8725877324454749347" />
       </scope>
-      <unit id="8725877324454749347" at="9,0,18,0" name="com.mbeddr.mpsutil.collections.typesystem.Pattern_uj9dl2_a0a0a0h" />
+      <unit id="8725877324454749347" at="9,0,18,0" name="com.mbeddr.mpsutil.collections.typesystem.Pattern_uj9dl2_b0a0a1h" />
+    </file>
+    <file name="Pattern_uj9dl2_b0a0a3g.java">
+      <node id="9010112635248006854" at="10,52,11,30" concept="12" />
+      <node id="9010112635248006854" at="11,30,12,0" concept="9" />
+      <node id="9010112635248006854" at="12,0,13,0" concept="9" />
+      <node id="9010112635248007047" at="13,0,14,174" concept="2" />
+      <node id="9010112635248006854" at="10,0,16,0" concept="1" trace="Pattern_uj9dl2_b0a0a3g#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="9010112635248006854" at="10,52,14,174" />
+      <scope id="9010112635248006854" at="10,0,16,0">
+        <var name="patternNode" id="9010112635248006854" />
+      </scope>
+      <unit id="9010112635248006854" at="9,0,18,0" name="com.mbeddr.mpsutil.collections.typesystem.Pattern_uj9dl2_b0a0a3g" />
     </file>
     <file name="TypesystemDescriptor.java">
       <node id="8725877324454745043" at="24,5,25,123" concept="7" />

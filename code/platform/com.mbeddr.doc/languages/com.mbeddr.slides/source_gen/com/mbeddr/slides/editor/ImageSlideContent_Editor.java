@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ImageSlideContent_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ImageSlideContent_EditorBuilder_a(editorContext, node).createCell();
+    return new ImageSlideContent_EditorBuilder(editorContext, node).createCell();
   }
 }

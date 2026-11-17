@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class WCETConstraint_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new WCETConstraint_EditorBuilder_a(editorContext, node).createCell();
+    return new WCETConstraint_EditorBuilder(editorContext, node).createCell();
   }
 }

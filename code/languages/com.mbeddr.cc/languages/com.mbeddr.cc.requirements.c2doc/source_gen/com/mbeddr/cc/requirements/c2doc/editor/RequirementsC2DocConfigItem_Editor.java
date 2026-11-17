@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RequirementsC2DocConfigItem_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RequirementsC2DocConfigItem_EditorBuilder_a(editorContext, node).createCell();
+    return new RequirementsC2DocConfigItem_EditorBuilder(editorContext, node).createCell();
   }
 }

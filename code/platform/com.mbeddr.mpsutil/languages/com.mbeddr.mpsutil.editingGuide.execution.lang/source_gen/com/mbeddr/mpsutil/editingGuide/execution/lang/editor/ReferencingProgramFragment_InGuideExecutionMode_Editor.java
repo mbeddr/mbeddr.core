@@ -18,9 +18,9 @@ public class ReferencingProgramFragment_InGuideExecutionMode_Editor extends Defa
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ReferencingProgramFragment_InGuideExecutionMode_EditorBuilder_a(editorContext, node).createCell();
+    return new ReferencingProgramFragment_InGuideExecutionMode_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new ReferencingProgramFragment_InGuideExecutionMode_InspectorBuilder_a(editorContext, node).createCell();
+    return new ReferencingProgramFragment_InGuideExecutionMode_InspectorBuilder(editorContext, node).createCell();
   }
 }

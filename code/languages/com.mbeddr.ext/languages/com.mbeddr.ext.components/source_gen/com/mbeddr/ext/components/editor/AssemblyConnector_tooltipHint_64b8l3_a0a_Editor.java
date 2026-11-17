@@ -18,6 +18,6 @@ public class AssemblyConnector_tooltipHint_64b8l3_a0a_Editor extends DefaultNode
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AssemblyConnector_tooltipHint_64b8l3_a0a_EditorBuilder_a(editorContext, node).createCell();
+    return new AssemblyConnector_tooltipHint_64b8l3_a0a_EditorBuilder(editorContext, node).createCell();
   }
 }

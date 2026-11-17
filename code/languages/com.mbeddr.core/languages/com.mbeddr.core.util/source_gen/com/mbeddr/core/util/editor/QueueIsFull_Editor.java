@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class QueueIsFull_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new QueueIsFull_EditorBuilder_a(editorContext, node).createCell();
+    return new QueueIsFull_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -33,17 +33,17 @@
   </root>
   <root nodeRef="04e1f940-330e-483b-9a6a-1648b396a81c/r:db2c041e-54bd-4fbb-9087-056c7a8ef247(com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.editor)/144279664520986068">
     <file name="DummyConcept_Editor.java">
-      <node id="144279664520986068" at="11,79,12,78" concept="5" />
+      <node id="144279664520986068" at="11,79,12,76" concept="5" />
       <node id="144279664520986068" at="11,0,14,0" concept="3" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="144279664520986068" at="11,79,12,78" />
+      <scope id="144279664520986068" at="11,79,12,76" />
       <scope id="144279664520986068" at="11,0,14,0">
         <var name="editorContext" id="144279664520986068" />
         <var name="node" id="144279664520986068" />
       </scope>
       <unit id="144279664520986068" at="10,0,15,0" name="com.mbeddr.mpsutil.hyperlink.editor.DummyConcept_Editor" />
     </file>
-    <file name="DummyConcept_EditorBuilder_a.java">
-      <node id="144279664520986068" at="16,92,17,19" concept="6" />
+    <file name="DummyConcept_EditorBuilder.java">
+      <node id="144279664520986068" at="16,90,17,19" concept="6" />
       <node id="144279664520986068" at="17,19,18,18" concept="1" />
       <node id="144279664520986068" at="23,26,24,18" concept="5" />
       <node id="144279664520986068" at="27,39,28,30" concept="5" />
@@ -55,12 +55,12 @@
       <node id="144279664520986121" at="36,34,37,22" concept="5" />
       <node id="144279664520986068" at="13,0,15,0" concept="2" trace="myNode" />
       <node id="144279664520986068" at="27,0,30,0" concept="3" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="144279664520986068" at="16,0,20,0" concept="0" trace="DummyConcept_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="144279664520986068" at="16,0,20,0" concept="0" trace="DummyConcept_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="144279664520986068" at="21,0,26,0" concept="3" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="144279664520986121" at="31,0,39,0" concept="3" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="144279664520986068" at="23,26,24,18" />
       <scope id="144279664520986068" at="27,39,28,30" />
-      <scope id="144279664520986068" at="16,92,18,18" />
+      <scope id="144279664520986068" at="16,90,18,18" />
       <scope id="144279664520986068" at="27,0,30,0" />
       <scope id="144279664520986068" at="16,0,20,0">
         <var name="context" id="144279664520986068" />
@@ -71,7 +71,7 @@
         <var name="editorCell" id="144279664520986121" />
       </scope>
       <scope id="144279664520986121" at="31,0,39,0" />
-      <unit id="144279664520986068" at="12,0,40,0" name="com.mbeddr.mpsutil.hyperlink.editor.DummyConcept_EditorBuilder_a" />
+      <unit id="144279664520986068" at="12,0,40,0" name="com.mbeddr.mpsutil.hyperlink.editor.DummyConcept_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="04e1f940-330e-483b-9a6a-1648b396a81c/r:db2c041e-54bd-4fbb-9087-056c7a8ef247(com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.editor)/4487898060061696395">

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class BinaryCompositionScope_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new BinaryCompositionScope_EditorBuilder_a(editorContext, node).createCell();
+    return new BinaryCompositionScope_EditorBuilder(editorContext, node).createCell();
   }
 }

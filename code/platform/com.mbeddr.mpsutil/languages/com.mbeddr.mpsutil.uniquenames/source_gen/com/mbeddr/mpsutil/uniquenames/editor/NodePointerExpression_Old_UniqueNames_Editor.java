@@ -18,6 +18,6 @@ public class NodePointerExpression_Old_UniqueNames_Editor extends DefaultNodeEdi
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new NodePointerExpression_Old_UniqueNames_EditorBuilder_a(editorContext, node).createCell();
+    return new NodePointerExpression_Old_UniqueNames_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ExpectTotalNoOfCalls_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ExpectTotalNoOfCalls_EditorBuilder_a(editorContext, node).createCell();
+    return new ExpectTotalNoOfCalls_EditorBuilder(editorContext, node).createCell();
   }
 }

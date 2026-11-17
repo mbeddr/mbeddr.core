@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class StatemachineType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new StatemachineType_EditorBuilder_a(editorContext, node).createCell();
+    return new StatemachineType_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new StatemachineType_InspectorBuilder_a(editorContext, node).createCell();
+    return new StatemachineType_InspectorBuilder(editorContext, node).createCell();
   }
 }

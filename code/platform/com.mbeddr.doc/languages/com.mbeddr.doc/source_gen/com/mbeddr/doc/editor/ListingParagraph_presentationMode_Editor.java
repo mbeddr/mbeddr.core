@@ -18,6 +18,6 @@ public class ListingParagraph_presentationMode_Editor extends DefaultNodeEditor 
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ListingParagraph_presentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new ListingParagraph_presentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

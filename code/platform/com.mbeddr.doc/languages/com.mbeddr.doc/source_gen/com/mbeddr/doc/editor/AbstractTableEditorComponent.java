@@ -16,6 +16,6 @@ public class AbstractTableEditorComponent implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AbstractTableEditorComponent_ComponentBuilder_a(editorContext, node).createCell();
+    return new AbstractTableEditorComponent_ComponentBuilder(editorContext, node).createCell();
   }
 }

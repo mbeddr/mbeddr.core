@@ -18,6 +18,6 @@ public class HypertextReferenceFormattedText_presentationMode_Editor extends Def
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new HypertextReferenceFormattedText_presentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new HypertextReferenceFormattedText_presentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

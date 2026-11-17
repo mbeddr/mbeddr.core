@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ColorStyleProperty_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ColorStyleProperty_EditorBuilder_a(editorContext, node).createCell();
+    return new ColorStyleProperty_EditorBuilder(editorContext, node).createCell();
   }
 }

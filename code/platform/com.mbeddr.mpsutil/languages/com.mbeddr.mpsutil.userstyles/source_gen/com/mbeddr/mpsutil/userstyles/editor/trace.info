@@ -17,17 +17,17 @@
   </root>
   <root nodeRef="r:1b6a475a-7123-4b91-bd3d-7f5bf3de12cf(com.mbeddr.mpsutil.userstyles.editor)/1072158555907409350">
     <file name="InlineStyle_Editor.java">
-      <node id="1072158555907409350" at="11,79,12,77" concept="6" />
+      <node id="1072158555907409350" at="11,79,12,75" concept="6" />
       <node id="1072158555907409350" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="1072158555907409350" at="11,79,12,77" />
+      <scope id="1072158555907409350" at="11,79,12,75" />
       <scope id="1072158555907409350" at="11,0,14,0">
         <var name="editorContext" id="1072158555907409350" />
         <var name="node" id="1072158555907409350" />
       </scope>
       <unit id="1072158555907409350" at="10,0,15,0" name="com.mbeddr.mpsutil.userstyles.editor.InlineStyle_Editor" />
     </file>
-    <file name="InlineStyle_EditorBuilder_a.java">
-      <node id="1072158555907409350" at="26,91,27,19" concept="8" />
+    <file name="InlineStyle_EditorBuilder.java">
+      <node id="1072158555907409350" at="26,89,27,19" concept="8" />
       <node id="1072158555907409350" at="27,19,28,18" concept="1" />
       <node id="1072158555907409350" at="33,26,34,18" concept="6" />
       <node id="1072158555907409350" at="37,39,38,32" concept="6" />
@@ -68,7 +68,7 @@
       <node id="1072158555907409350" at="83,87,86,7" concept="3" />
       <node id="1072158555907409350" at="86,7,89,7" concept="3" />
       <node id="1072158555907409350" at="105,0,108,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="1072158555907409350" at="26,0,30,0" concept="0" trace="InlineStyle_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1072158555907409350" at="26,0,30,0" concept="0" trace="InlineStyle_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1072158555907421170" at="50,0,54,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1072158555907409350" at="54,0,58,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1072158555907409350" at="62,0,66,0" concept="0" trace="styleSingleRoleHandler_xxtl0a_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -86,7 +86,7 @@
       <scope id="1072158555907409350" at="87,42,88,46" />
       <scope id="1072158555907409350" at="101,17,102,42" />
       <scope id="1072158555907409350" at="105,40,106,26" />
-      <scope id="1072158555907409350" at="26,91,28,18" />
+      <scope id="1072158555907409350" at="26,89,28,18" />
       <scope id="1072158555907421170" at="50,42,52,22">
         <var name="editorCell" id="1072158555907421170" />
       </scope>
@@ -130,19 +130,19 @@
       <scope id="1072158555907409350" at="41,0,50,0" />
       <scope id="1072158555907409350" at="92,44,103,7" />
       <scope id="1072158555907409350" at="91,0,105,0" />
-      <unit id="1072158555907409350" at="110,0,113,0" name="com.mbeddr.mpsutil.userstyles.editor.InlineStyle_EditorBuilder_a$LINKS" />
-      <unit id="1072158555907409350" at="58,0,109,0" name="com.mbeddr.mpsutil.userstyles.editor.InlineStyle_EditorBuilder_a$styleSingleRoleHandler_xxtl0a_b0" />
-      <unit id="1072158555907409350" at="22,0,114,0" name="com.mbeddr.mpsutil.userstyles.editor.InlineStyle_EditorBuilder_a" />
+      <unit id="1072158555907409350" at="110,0,113,0" name="com.mbeddr.mpsutil.userstyles.editor.InlineStyle_EditorBuilder$LINKS" />
+      <unit id="1072158555907409350" at="58,0,109,0" name="com.mbeddr.mpsutil.userstyles.editor.InlineStyle_EditorBuilder$styleSingleRoleHandler_xxtl0a_b0" />
+      <unit id="1072158555907409350" at="22,0,114,0" name="com.mbeddr.mpsutil.userstyles.editor.InlineStyle_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:1b6a475a-7123-4b91-bd3d-7f5bf3de12cf(com.mbeddr.mpsutil.userstyles.editor)/8170319964141059655">
     <file name="UserStyle_Editor.java">
-      <node id="8170319964141059655" at="11,79,12,75" concept="6" />
-      <node id="8170319964141059655" at="14,82,15,78" concept="6" />
+      <node id="8170319964141059655" at="11,79,12,73" concept="6" />
+      <node id="8170319964141059655" at="14,82,15,76" concept="6" />
       <node id="8170319964141059655" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8170319964141059655" at="14,0,17,0" concept="4" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8170319964141059655" at="11,79,12,75" />
-      <scope id="8170319964141059655" at="14,82,15,78" />
+      <scope id="8170319964141059655" at="11,79,12,73" />
+      <scope id="8170319964141059655" at="14,82,15,76" />
       <scope id="8170319964141059655" at="11,0,14,0">
         <var name="editorContext" id="8170319964141059655" />
         <var name="node" id="8170319964141059655" />
@@ -153,8 +153,8 @@
       </scope>
       <unit id="8170319964141059655" at="10,0,18,0" name="com.mbeddr.mpsutil.userstyles.editor.UserStyle_Editor" />
     </file>
-    <file name="UserStyle_EditorBuilder_a.java">
-      <node id="8170319964141059655" at="36,89,37,19" concept="8" />
+    <file name="UserStyle_EditorBuilder.java">
+      <node id="8170319964141059655" at="36,87,37,19" concept="8" />
       <node id="8170319964141059655" at="37,19,38,18" concept="1" />
       <node id="8170319964141059655" at="43,26,44,18" concept="6" />
       <node id="8170319964141059655" at="47,39,48,32" concept="6" />
@@ -229,7 +229,7 @@
       <node id="8170319964141059655" at="147,0,148,0" concept="7" trace="PropertyAttribute$Gb" />
       <node id="8170319964141059655" at="33,0,35,0" concept="2" trace="myNode" />
       <node id="8170319964141059655" at="47,0,50,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8170319964141059655" at="36,0,40,0" concept="0" trace="UserStyle_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8170319964141059655" at="36,0,40,0" concept="0" trace="UserStyle_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8170319964141059655" at="41,0,46,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1454515498906155435" at="117,208,122,24" concept="3" />
       <node id="8170319964141059719" at="136,0,141,0" concept="4" trace="createAttributedNodeCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -245,7 +245,7 @@
       <scope id="8170319964141059655" at="43,26,44,18" />
       <scope id="8170319964141059655" at="47,39,48,32" />
       <scope id="1454515498906155435" at="123,15,124,40" />
-      <scope id="8170319964141059655" at="36,89,38,18" />
+      <scope id="8170319964141059655" at="36,87,38,18" />
       <scope id="1454515498906155435" at="118,74,120,145">
         <var name="manager" id="1454515498906155435" />
       </scope>
@@ -300,12 +300,12 @@
       </scope>
       <scope id="1454515498906155435" at="106,41,125,5" />
       <scope id="1454515498906155435" at="106,0,127,0" />
-      <unit id="8170319964141059655" at="142,0,145,0" name="com.mbeddr.mpsutil.userstyles.editor.UserStyle_EditorBuilder_a$PROPS" />
-      <unit id="8170319964141059655" at="146,0,149,0" name="com.mbeddr.mpsutil.userstyles.editor.UserStyle_EditorBuilder_a$CONCEPTS" />
-      <unit id="8170319964141059655" at="32,0,150,0" name="com.mbeddr.mpsutil.userstyles.editor.UserStyle_EditorBuilder_a" />
+      <unit id="8170319964141059655" at="142,0,145,0" name="com.mbeddr.mpsutil.userstyles.editor.UserStyle_EditorBuilder$PROPS" />
+      <unit id="8170319964141059655" at="146,0,149,0" name="com.mbeddr.mpsutil.userstyles.editor.UserStyle_EditorBuilder$CONCEPTS" />
+      <unit id="8170319964141059655" at="32,0,150,0" name="com.mbeddr.mpsutil.userstyles.editor.UserStyle_EditorBuilder" />
     </file>
-    <file name="UserStyle_InspectorBuilder_a.java">
-      <node id="8170319964141059655" at="32,92,33,19" concept="8" />
+    <file name="UserStyle_InspectorBuilder.java">
+      <node id="8170319964141059655" at="32,90,33,19" concept="8" />
       <node id="8170319964141059655" at="33,19,34,18" concept="1" />
       <node id="8170319964141059655" at="39,26,40,18" concept="6" />
       <node id="8170319964141059655" at="43,39,44,32" concept="6" />
@@ -338,7 +338,7 @@
       <node id="8170319964141059655" at="89,0,90,0" concept="7" trace="PropertyAttribute$Gb" />
       <node id="8170319964141059655" at="29,0,31,0" concept="2" trace="myNode" />
       <node id="8170319964141059655" at="43,0,46,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8170319964141059655" at="32,0,36,0" concept="0" trace="UserStyle_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8170319964141059655" at="32,0,36,0" concept="0" trace="UserStyle_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8170319964141059655" at="37,0,42,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="6130906046685557325" at="73,208,78,24" concept="3" />
       <node id="1454515498906453650" at="56,0,62,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -348,7 +348,7 @@
       <scope id="8170319964141059655" at="39,26,40,18" />
       <scope id="8170319964141059655" at="43,39,44,32" />
       <scope id="6130906046685557325" at="79,15,80,40" />
-      <scope id="8170319964141059655" at="32,92,34,18" />
+      <scope id="8170319964141059655" at="32,90,34,18" />
       <scope id="6130906046685557325" at="74,74,76,145">
         <var name="manager" id="6130906046685557325" />
       </scope>
@@ -374,9 +374,9 @@
       </scope>
       <scope id="6130906046685557325" at="62,41,81,5" />
       <scope id="6130906046685557325" at="62,0,83,0" />
-      <unit id="8170319964141059655" at="84,0,87,0" name="com.mbeddr.mpsutil.userstyles.editor.UserStyle_InspectorBuilder_a$PROPS" />
-      <unit id="8170319964141059655" at="88,0,91,0" name="com.mbeddr.mpsutil.userstyles.editor.UserStyle_InspectorBuilder_a$CONCEPTS" />
-      <unit id="8170319964141059655" at="28,0,92,0" name="com.mbeddr.mpsutil.userstyles.editor.UserStyle_InspectorBuilder_a" />
+      <unit id="8170319964141059655" at="84,0,87,0" name="com.mbeddr.mpsutil.userstyles.editor.UserStyle_InspectorBuilder$PROPS" />
+      <unit id="8170319964141059655" at="88,0,91,0" name="com.mbeddr.mpsutil.userstyles.editor.UserStyle_InspectorBuilder$CONCEPTS" />
+      <unit id="8170319964141059655" at="28,0,92,0" name="com.mbeddr.mpsutil.userstyles.editor.UserStyle_InspectorBuilder" />
     </file>
   </root>
 </debug-info>

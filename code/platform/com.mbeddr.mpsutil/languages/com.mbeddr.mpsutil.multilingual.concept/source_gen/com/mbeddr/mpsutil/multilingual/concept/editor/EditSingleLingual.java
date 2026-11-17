@@ -16,6 +16,6 @@ public class EditSingleLingual implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new EditSingleLingual_ComponentBuilder_a(editorContext, node).createCell();
+    return new EditSingleLingual_ComponentBuilder(editorContext, node).createCell();
   }
 }

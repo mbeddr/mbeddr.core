@@ -18,6 +18,6 @@ public class CompositeState_graphical_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CompositeState_graphical_EditorBuilder_a(editorContext, node).createCell();
+    return new CompositeState_graphical_EditorBuilder(editorContext, node).createCell();
   }
 }

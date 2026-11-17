@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class FeatureAttrRefExpr_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new FeatureAttrRefExpr_EditorBuilder_a(editorContext, node).createCell();
+    return new FeatureAttrRefExpr_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new FeatureAttrRefExpr_InspectorBuilder_a(editorContext, node).createCell();
+    return new FeatureAttrRefExpr_InspectorBuilder(editorContext, node).createCell();
   }
 }

@@ -18,9 +18,9 @@ public class TraceAnnotation_shortTraces_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TraceAnnotation_shortTraces_EditorBuilder_a(editorContext, node).createCell();
+    return new TraceAnnotation_shortTraces_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new TraceAnnotation_shortTraces_InspectorBuilder_a(editorContext, node).createCell();
+    return new TraceAnnotation_shortTraces_InspectorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class JunctionState_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new JunctionState_EditorBuilder_a(editorContext, node).createCell();
+    return new JunctionState_EditorBuilder(editorContext, node).createCell();
   }
 }

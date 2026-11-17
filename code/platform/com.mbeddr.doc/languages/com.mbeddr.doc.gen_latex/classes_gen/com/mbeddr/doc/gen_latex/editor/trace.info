@@ -17,17 +17,17 @@
   </root>
   <root nodeRef="r:90c78076-66cd-4687-855c-6c0898a2f1b2(com.mbeddr.doc.gen_latex.editor)/4457500422381351718">
     <file name="LatexRenderer_Editor.java">
-      <node id="4457500422381351718" at="11,79,12,79" concept="6" />
+      <node id="4457500422381351718" at="11,79,12,77" concept="6" />
       <node id="4457500422381351718" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="4457500422381351718" at="11,79,12,79" />
+      <scope id="4457500422381351718" at="11,79,12,77" />
       <scope id="4457500422381351718" at="11,0,14,0">
         <var name="editorContext" id="4457500422381351718" />
         <var name="node" id="4457500422381351718" />
       </scope>
       <unit id="4457500422381351718" at="10,0,15,0" name="com.mbeddr.doc.gen_latex.editor.LatexRenderer_Editor" />
     </file>
-    <file name="LatexRenderer_EditorBuilder_a.java">
-      <node id="4457500422381351718" at="36,93,37,19" concept="8" />
+    <file name="LatexRenderer_EditorBuilder.java">
+      <node id="4457500422381351718" at="36,91,37,19" concept="8" />
       <node id="4457500422381351718" at="37,19,38,18" concept="1" />
       <node id="4457500422381351718" at="43,26,44,18" concept="6" />
       <node id="4457500422381351718" at="47,39,48,32" concept="6" />
@@ -36,9 +36,9 @@
       <node id="4457500422381351718" at="53,48,54,28" concept="1" />
       <node id="4457500422381351718" at="54,28,55,31" concept="1" />
       <node id="3350625596580275041" at="55,31,56,49" concept="1" />
-      <node id="2293093897292933817" at="57,37,58,53" concept="1" />
+      <node id="2293093897292933817" at="57,27,58,53" concept="1" />
       <node id="4457500422381351718" at="59,5,60,22" concept="6" />
-      <node id="2293093897292933823" at="62,46,63,103" concept="6" />
+      <node id="2293093897292933823" at="62,36,63,103" concept="6" />
       <node id="3350625596580275041" at="65,41,66,98" concept="5" />
       <node id="3350625596580275041" at="66,98,67,47" concept="1" />
       <node id="3350625596580275041" at="67,47,68,34" concept="1" />
@@ -129,8 +129,8 @@
       <node id="4457500422381351718" at="33,0,35,0" concept="2" trace="myNode" />
       <node id="4457500422381351718" at="47,0,50,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2293093897292933817" at="56,49,59,5" concept="3" />
-      <node id="2293093897292933821" at="62,0,65,0" concept="4" trace="nodeCondition_3p5pln_a1a#()Z" />
-      <node id="4457500422381351718" at="36,0,40,0" concept="0" trace="LatexRenderer_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2293093897292933821" at="62,0,65,0" concept="4" trace="nodeCondition0#()Z" />
+      <node id="4457500422381351718" at="36,0,40,0" concept="0" trace="LatexRenderer_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4457500422381351718" at="41,0,46,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4457500422381329092" at="106,208,111,24" concept="3" />
       <node id="4755612053022230706" at="140,208,145,24" concept="3" />
@@ -152,12 +152,12 @@
       <node id="5185579450379334227" at="163,0,184,0" concept="4" trace="createProperty_2#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="4457500422381351718" at="43,26,44,18" />
       <scope id="4457500422381351718" at="47,39,48,32" />
-      <scope id="2293093897292933817" at="57,37,58,53" />
-      <scope id="2293093897292933822" at="62,46,63,103" />
+      <scope id="2293093897292933817" at="57,27,58,53" />
+      <scope id="2293093897292933822" at="62,36,63,103" />
       <scope id="4457500422381329092" at="112,15,113,40" />
       <scope id="4755612053022230706" at="146,15,147,40" />
       <scope id="5185579450379334227" at="180,15,181,40" />
-      <scope id="4457500422381351718" at="36,93,38,18" />
+      <scope id="4457500422381351718" at="36,91,38,18" />
       <scope id="4457500422381329092" at="107,74,109,145">
         <var name="manager" id="4457500422381329092" />
       </scope>
@@ -235,9 +235,9 @@
       <scope id="4457500422381329092" at="95,0,116,0" />
       <scope id="4755612053022230706" at="129,0,150,0" />
       <scope id="5185579450379334227" at="163,0,184,0" />
-      <unit id="4457500422381351718" at="185,0,189,0" name="com.mbeddr.doc.gen_latex.editor.LatexRenderer_EditorBuilder_a$CONCEPTS" />
-      <unit id="4457500422381351718" at="190,0,195,0" name="com.mbeddr.doc.gen_latex.editor.LatexRenderer_EditorBuilder_a$PROPS" />
-      <unit id="4457500422381351718" at="32,0,196,0" name="com.mbeddr.doc.gen_latex.editor.LatexRenderer_EditorBuilder_a" />
+      <unit id="4457500422381351718" at="185,0,189,0" name="com.mbeddr.doc.gen_latex.editor.LatexRenderer_EditorBuilder$CONCEPTS" />
+      <unit id="4457500422381351718" at="190,0,195,0" name="com.mbeddr.doc.gen_latex.editor.LatexRenderer_EditorBuilder$PROPS" />
+      <unit id="4457500422381351718" at="32,0,196,0" name="com.mbeddr.doc.gen_latex.editor.LatexRenderer_EditorBuilder" />
     </file>
   </root>
 </debug-info>

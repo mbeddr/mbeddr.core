@@ -18,9 +18,9 @@ public class ArrayType_showArrayTypeOnLeftSide_Editor extends DefaultNodeEditor 
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ArrayType_showArrayTypeOnLeftSide_EditorBuilder_a(editorContext, node).createCell();
+    return new ArrayType_showArrayTypeOnLeftSide_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new ArrayType_showArrayTypeOnLeftSide_InspectorBuilder_a(editorContext, node).createCell();
+    return new ArrayType_showArrayTypeOnLeftSide_InspectorBuilder(editorContext, node).createCell();
   }
 }

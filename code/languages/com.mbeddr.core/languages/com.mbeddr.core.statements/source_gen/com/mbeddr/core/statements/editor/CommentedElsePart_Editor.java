@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class CommentedElsePart_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CommentedElsePart_EditorBuilder_a(editorContext, node).createCell();
+    return new CommentedElsePart_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AwaitStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AwaitStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new AwaitStatement_EditorBuilder(editorContext, node).createCell();
   }
 }

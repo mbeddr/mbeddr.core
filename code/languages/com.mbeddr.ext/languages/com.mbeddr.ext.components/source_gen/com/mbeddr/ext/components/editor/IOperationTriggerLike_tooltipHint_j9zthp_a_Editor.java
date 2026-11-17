@@ -18,6 +18,6 @@ public class IOperationTriggerLike_tooltipHint_j9zthp_a_Editor extends DefaultNo
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new IOperationTriggerLike_tooltipHint_j9zthp_a_EditorBuilder_a(editorContext, node).createCell();
+    return new IOperationTriggerLike_tooltipHint_j9zthp_a_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ConcurrentQueueValExpr_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConcurrentQueueValExpr_EditorBuilder_a(editorContext, node).createCell();
+    return new ConcurrentQueueValExpr_EditorBuilder(editorContext, node).createCell();
   }
 }

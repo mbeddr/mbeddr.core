@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ForEachPortStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ForEachPortStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new ForEachPortStatement_EditorBuilder(editorContext, node).createCell();
   }
 }

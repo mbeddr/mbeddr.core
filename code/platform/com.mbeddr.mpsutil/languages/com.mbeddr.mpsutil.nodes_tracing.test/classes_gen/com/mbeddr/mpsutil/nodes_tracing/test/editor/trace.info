@@ -17,17 +17,17 @@
   </root>
   <root nodeRef="r:efcfb29a-e20b-4200-8c4e-d58bb27558a0(com.mbeddr.mpsutil.nodes_tracing.test.editor)/8887445761569467102">
     <file name="GeneratedFileNameAnnotation_Editor.java">
-      <node id="8887445761569467102" at="11,79,12,93" concept="6" />
+      <node id="8887445761569467102" at="11,79,12,91" concept="6" />
       <node id="8887445761569467102" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8887445761569467102" at="11,79,12,93" />
+      <scope id="8887445761569467102" at="11,79,12,91" />
       <scope id="8887445761569467102" at="11,0,14,0">
         <var name="editorContext" id="8887445761569467102" />
         <var name="node" id="8887445761569467102" />
       </scope>
       <unit id="8887445761569467102" at="10,0,15,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.GeneratedFileNameAnnotation_Editor" />
     </file>
-    <file name="GeneratedFileNameAnnotation_EditorBuilder_a.java">
-      <node id="8887445761569467102" at="37,107,38,19" concept="8" />
+    <file name="GeneratedFileNameAnnotation_EditorBuilder.java">
+      <node id="8887445761569467102" at="37,105,38,19" concept="8" />
       <node id="8887445761569467102" at="38,19,39,18" concept="1" />
       <node id="8887445761569467102" at="44,26,45,18" concept="6" />
       <node id="8887445761569467102" at="48,39,49,32" concept="6" />
@@ -74,7 +74,7 @@
       <node id="8887445761569467102" at="112,0,113,0" concept="7" trace="PropertyAttribute$Gb" />
       <node id="8887445761569467102" at="34,0,36,0" concept="2" trace="myNode" />
       <node id="8887445761569467102" at="48,0,51,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8887445761569467102" at="37,0,41,0" concept="0" trace="GeneratedFileNameAnnotation_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8887445761569467102" at="37,0,41,0" concept="0" trace="GeneratedFileNameAnnotation_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8887445761569467102" at="42,0,47,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8887445761569475977" at="91,208,96,24" concept="3" />
       <node id="8887445761569475994" at="101,0,106,0" concept="4" trace="createAttributedNodeCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -86,7 +86,7 @@
       <scope id="8887445761569467102" at="44,26,45,18" />
       <scope id="8887445761569467102" at="48,39,49,32" />
       <scope id="8887445761569475977" at="97,15,98,40" />
-      <scope id="8887445761569467102" at="37,107,39,18" />
+      <scope id="8887445761569467102" at="37,105,39,18" />
       <scope id="8887445761569475977" at="92,74,94,145">
         <var name="manager" id="8887445761569475977" />
       </scope>
@@ -123,24 +123,24 @@
       </scope>
       <scope id="8887445761569475977" at="77,41,99,5" />
       <scope id="8887445761569475977" at="77,0,101,0" />
-      <unit id="8887445761569467102" at="107,0,110,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.GeneratedFileNameAnnotation_EditorBuilder_a$PROPS" />
-      <unit id="8887445761569467102" at="111,0,114,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.GeneratedFileNameAnnotation_EditorBuilder_a$CONCEPTS" />
-      <unit id="8887445761569467102" at="33,0,115,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.GeneratedFileNameAnnotation_EditorBuilder_a" />
+      <unit id="8887445761569467102" at="107,0,110,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.GeneratedFileNameAnnotation_EditorBuilder$PROPS" />
+      <unit id="8887445761569467102" at="111,0,114,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.GeneratedFileNameAnnotation_EditorBuilder$CONCEPTS" />
+      <unit id="8887445761569467102" at="33,0,115,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.GeneratedFileNameAnnotation_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:efcfb29a-e20b-4200-8c4e-d58bb27558a0(com.mbeddr.mpsutil.nodes_tracing.test.editor)/8887445761569476014">
     <file name="TracingAnnotation_Editor.java">
-      <node id="8887445761569476014" at="11,79,12,83" concept="6" />
+      <node id="8887445761569476014" at="11,79,12,81" concept="6" />
       <node id="8887445761569476014" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8887445761569476014" at="11,79,12,83" />
+      <scope id="8887445761569476014" at="11,79,12,81" />
       <scope id="8887445761569476014" at="11,0,14,0">
         <var name="editorContext" id="8887445761569476014" />
         <var name="node" id="8887445761569476014" />
       </scope>
       <unit id="8887445761569476014" at="10,0,15,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.TracingAnnotation_Editor" />
     </file>
-    <file name="TracingAnnotation_EditorBuilder_a.java">
-      <node id="8887445761569476014" at="46,97,47,19" concept="8" />
+    <file name="TracingAnnotation_EditorBuilder.java">
+      <node id="8887445761569476014" at="46,95,47,19" concept="8" />
       <node id="8887445761569476014" at="47,19,48,18" concept="1" />
       <node id="8887445761569476014" at="53,26,54,18" concept="6" />
       <node id="8887445761569476014" at="57,39,58,32" concept="6" />
@@ -241,7 +241,7 @@
       <node id="8887445761569476014" at="135,87,138,7" concept="3" />
       <node id="8887445761569476014" at="138,7,141,7" concept="3" />
       <node id="8887445761569476014" at="157,0,160,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="8887445761569476014" at="46,0,50,0" concept="0" trace="TracingAnnotation_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8887445761569476014" at="46,0,50,0" concept="0" trace="TracingAnnotation_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8887445761569476014" at="106,0,110,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8887445761569476014" at="114,0,118,0" concept="0" trace="tacingInfoSingleRoleHandler_o3ijgt_b1a0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="8887445761569476014" at="51,0,56,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -268,7 +268,7 @@
       <scope id="8887445761569476014" at="153,17,154,42" />
       <scope id="8887445761569476014" at="157,40,158,31" />
       <scope id="8887445761571137601" at="191,15,192,40" />
-      <scope id="8887445761569476014" at="46,97,48,18" />
+      <scope id="8887445761569476014" at="46,95,48,18" />
       <scope id="8887445761569476014" at="106,40,108,33">
         <var name="provider" id="8887445761569476014" />
       </scope>
@@ -350,26 +350,26 @@
       </scope>
       <scope id="8887445761571137601" at="170,41,193,5" />
       <scope id="8887445761571137601" at="170,0,195,0" />
-      <unit id="8887445761569476014" at="205,0,208,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.TracingAnnotation_EditorBuilder_a$LINKS" />
-      <unit id="8887445761569476014" at="209,0,212,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.TracingAnnotation_EditorBuilder_a$PROPS" />
-      <unit id="8887445761569476014" at="213,0,216,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.TracingAnnotation_EditorBuilder_a$CONCEPTS" />
-      <unit id="8887445761569476014" at="110,0,161,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.TracingAnnotation_EditorBuilder_a$tacingInfoSingleRoleHandler_o3ijgt_b1a0" />
-      <unit id="8887445761569476014" at="42,0,217,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.TracingAnnotation_EditorBuilder_a" />
+      <unit id="8887445761569476014" at="205,0,208,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.TracingAnnotation_EditorBuilder$LINKS" />
+      <unit id="8887445761569476014" at="209,0,212,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.TracingAnnotation_EditorBuilder$PROPS" />
+      <unit id="8887445761569476014" at="213,0,216,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.TracingAnnotation_EditorBuilder$CONCEPTS" />
+      <unit id="8887445761569476014" at="110,0,161,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.TracingAnnotation_EditorBuilder$tacingInfoSingleRoleHandler_o3ijgt_b1a0" />
+      <unit id="8887445761569476014" at="42,0,217,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.TracingAnnotation_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:efcfb29a-e20b-4200-8c4e-d58bb27558a0(com.mbeddr.mpsutil.nodes_tracing.test.editor)/8887445761569476087">
     <file name="LineBasedTracingInfo_Editor.java">
-      <node id="8887445761569476087" at="11,79,12,86" concept="6" />
+      <node id="8887445761569476087" at="11,79,12,84" concept="6" />
       <node id="8887445761569476087" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8887445761569476087" at="11,79,12,86" />
+      <scope id="8887445761569476087" at="11,79,12,84" />
       <scope id="8887445761569476087" at="11,0,14,0">
         <var name="editorContext" id="8887445761569476087" />
         <var name="node" id="8887445761569476087" />
       </scope>
       <unit id="8887445761569476087" at="10,0,15,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.LineBasedTracingInfo_Editor" />
     </file>
-    <file name="LineBasedTracingInfo_EditorBuilder_a.java">
-      <node id="8887445761569476087" at="32,100,33,19" concept="8" />
+    <file name="LineBasedTracingInfo_EditorBuilder.java">
+      <node id="8887445761569476087" at="32,98,33,19" concept="8" />
       <node id="8887445761569476087" at="33,19,34,18" concept="1" />
       <node id="8887445761569476087" at="39,26,40,18" concept="6" />
       <node id="8887445761569476087" at="43,39,44,32" concept="6" />
@@ -402,7 +402,7 @@
       <node id="8887445761569476087" at="89,0,90,0" concept="7" trace="PropertyAttribute$Gb" />
       <node id="8887445761569476087" at="29,0,31,0" concept="2" trace="myNode" />
       <node id="8887445761569476087" at="43,0,46,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8887445761569476087" at="32,0,36,0" concept="0" trace="LineBasedTracingInfo_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8887445761569476087" at="32,0,36,0" concept="0" trace="LineBasedTracingInfo_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8887445761569476087" at="37,0,42,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8887445761569476108" at="73,208,78,24" concept="3" />
       <node id="8887445761569476099" at="56,0,62,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -412,7 +412,7 @@
       <scope id="8887445761569476087" at="39,26,40,18" />
       <scope id="8887445761569476087" at="43,39,44,32" />
       <scope id="8887445761569476108" at="79,15,80,40" />
-      <scope id="8887445761569476087" at="32,100,34,18" />
+      <scope id="8887445761569476087" at="32,98,34,18" />
       <scope id="8887445761569476108" at="74,74,76,145">
         <var name="manager" id="8887445761569476108" />
       </scope>
@@ -438,24 +438,24 @@
       </scope>
       <scope id="8887445761569476108" at="62,41,81,5" />
       <scope id="8887445761569476108" at="62,0,83,0" />
-      <unit id="8887445761569476087" at="84,0,87,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.LineBasedTracingInfo_EditorBuilder_a$PROPS" />
-      <unit id="8887445761569476087" at="88,0,91,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.LineBasedTracingInfo_EditorBuilder_a$CONCEPTS" />
-      <unit id="8887445761569476087" at="28,0,92,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.LineBasedTracingInfo_EditorBuilder_a" />
+      <unit id="8887445761569476087" at="84,0,87,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.LineBasedTracingInfo_EditorBuilder$PROPS" />
+      <unit id="8887445761569476087" at="88,0,91,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.LineBasedTracingInfo_EditorBuilder$CONCEPTS" />
+      <unit id="8887445761569476087" at="28,0,92,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.LineBasedTracingInfo_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:efcfb29a-e20b-4200-8c4e-d58bb27558a0(com.mbeddr.mpsutil.nodes_tracing.test.editor)/8887445761570006368">
     <file name="CheckTracingForRootStatement_Editor.java">
-      <node id="8887445761570006368" at="11,79,12,94" concept="6" />
+      <node id="8887445761570006368" at="11,79,12,92" concept="6" />
       <node id="8887445761570006368" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8887445761570006368" at="11,79,12,94" />
+      <scope id="8887445761570006368" at="11,79,12,92" />
       <scope id="8887445761570006368" at="11,0,14,0">
         <var name="editorContext" id="8887445761570006368" />
         <var name="node" id="8887445761570006368" />
       </scope>
       <unit id="8887445761570006368" at="10,0,15,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.CheckTracingForRootStatement_Editor" />
     </file>
-    <file name="CheckTracingForRootStatement_EditorBuilder_a.java">
-      <node id="8887445761570006368" at="30,108,31,19" concept="8" />
+    <file name="CheckTracingForRootStatement_EditorBuilder.java">
+      <node id="8887445761570006368" at="30,106,31,19" concept="8" />
       <node id="8887445761570006368" at="31,19,32,18" concept="1" />
       <node id="8887445761570006368" at="37,26,38,18" concept="6" />
       <node id="8887445761570006368" at="41,39,42,32" concept="6" />
@@ -550,7 +550,7 @@
       <node id="8887445761570006368" at="167,87,170,7" concept="3" />
       <node id="8887445761570006368" at="170,7,173,7" concept="3" />
       <node id="8887445761570006368" at="189,0,192,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="8887445761570006368" at="30,0,34,0" concept="0" trace="CheckTracingForRootStatement_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8887445761570006368" at="30,0,34,0" concept="0" trace="CheckTracingForRootStatement_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8887445761570006368" at="74,0,78,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8887445761570006368" at="82,0,86,0" concept="0" trace="mreSingleRoleHandler_d8vmqf_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="8887445761570006368" at="138,0,142,0" concept="4" trace="createRefNode_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -583,7 +583,7 @@
       <scope id="8887445761570006368" at="171,42,172,53" />
       <scope id="8887445761570006368" at="185,17,186,42" />
       <scope id="8887445761570006368" at="189,40,190,33" />
-      <scope id="8887445761570006368" at="30,108,32,18" />
+      <scope id="8887445761570006368" at="30,106,32,18" />
       <scope id="8887445761570006368" at="74,40,76,33">
         <var name="provider" id="8887445761570006368" />
       </scope>
@@ -671,25 +671,25 @@
       <scope id="8887445761570006368" at="45,0,58,0" />
       <scope id="8887445761570006368" at="111,0,125,0" />
       <scope id="8887445761570006368" at="175,0,189,0" />
-      <unit id="8887445761570006368" at="203,0,207,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.CheckTracingForRootStatement_EditorBuilder_a$LINKS" />
-      <unit id="8887445761570006368" at="78,0,129,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.CheckTracingForRootStatement_EditorBuilder_a$mreSingleRoleHandler_d8vmqf_c0" />
-      <unit id="8887445761570006368" at="142,0,193,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.CheckTracingForRootStatement_EditorBuilder_a$rootNodeNameSingleRoleHandler_d8vmqf_e0" />
-      <unit id="8887445761570006368" at="26,0,208,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.CheckTracingForRootStatement_EditorBuilder_a" />
+      <unit id="8887445761570006368" at="203,0,207,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.CheckTracingForRootStatement_EditorBuilder$LINKS" />
+      <unit id="8887445761570006368" at="78,0,129,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.CheckTracingForRootStatement_EditorBuilder$mreSingleRoleHandler_d8vmqf_c0" />
+      <unit id="8887445761570006368" at="142,0,193,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.CheckTracingForRootStatement_EditorBuilder$rootNodeNameSingleRoleHandler_d8vmqf_e0" />
+      <unit id="8887445761570006368" at="26,0,208,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.CheckTracingForRootStatement_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:efcfb29a-e20b-4200-8c4e-d58bb27558a0(com.mbeddr.mpsutil.nodes_tracing.test.editor)/8887445761570791154">
     <file name="StringBasedTracingInfo_Editor.java">
-      <node id="8887445761570791154" at="11,79,12,88" concept="6" />
+      <node id="8887445761570791154" at="11,79,12,86" concept="6" />
       <node id="8887445761570791154" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8887445761570791154" at="11,79,12,88" />
+      <scope id="8887445761570791154" at="11,79,12,86" />
       <scope id="8887445761570791154" at="11,0,14,0">
         <var name="editorContext" id="8887445761570791154" />
         <var name="node" id="8887445761570791154" />
       </scope>
       <unit id="8887445761570791154" at="10,0,15,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.StringBasedTracingInfo_Editor" />
     </file>
-    <file name="StringBasedTracingInfo_EditorBuilder_a.java">
-      <node id="8887445761570791154" at="36,102,37,19" concept="8" />
+    <file name="StringBasedTracingInfo_EditorBuilder.java">
+      <node id="8887445761570791154" at="36,100,37,19" concept="8" />
       <node id="8887445761570791154" at="37,19,38,18" concept="1" />
       <node id="8887445761570791154" at="43,26,44,18" concept="6" />
       <node id="8887445761570791154" at="47,39,48,32" concept="6" />
@@ -744,7 +744,7 @@
       <node id="8887445761570791154" at="119,0,120,0" concept="7" trace="PropertyAttribute$Gb" />
       <node id="8887445761570791154" at="33,0,35,0" concept="2" trace="myNode" />
       <node id="8887445761570791154" at="47,0,50,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8887445761570791154" at="36,0,40,0" concept="0" trace="StringBasedTracingInfo_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8887445761570791154" at="36,0,40,0" concept="0" trace="StringBasedTracingInfo_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8887445761570791154" at="41,0,46,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8887445761570791158" at="94,208,99,24" concept="3" />
       <node id="8887445761570791157" at="62,0,71,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -756,7 +756,7 @@
       <scope id="8887445761570791154" at="43,26,44,18" />
       <scope id="8887445761570791154" at="47,39,48,32" />
       <scope id="8887445761570791158" at="100,15,101,40" />
-      <scope id="8887445761570791154" at="36,102,38,18" />
+      <scope id="8887445761570791154" at="36,100,38,18" />
       <scope id="8887445761570791158" at="95,74,97,145">
         <var name="manager" id="8887445761570791158" />
       </scope>
@@ -794,9 +794,9 @@
       </scope>
       <scope id="8887445761570791158" at="80,41,102,5" />
       <scope id="8887445761570791158" at="80,0,104,0" />
-      <unit id="8887445761570791154" at="114,0,117,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.StringBasedTracingInfo_EditorBuilder_a$PROPS" />
-      <unit id="8887445761570791154" at="118,0,121,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.StringBasedTracingInfo_EditorBuilder_a$CONCEPTS" />
-      <unit id="8887445761570791154" at="32,0,122,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.StringBasedTracingInfo_EditorBuilder_a" />
+      <unit id="8887445761570791154" at="114,0,117,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.StringBasedTracingInfo_EditorBuilder$PROPS" />
+      <unit id="8887445761570791154" at="118,0,121,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.StringBasedTracingInfo_EditorBuilder$CONCEPTS" />
+      <unit id="8887445761570791154" at="32,0,122,0" name="com.mbeddr.mpsutil.nodes_tracing.test.editor.StringBasedTracingInfo_EditorBuilder" />
     </file>
   </root>
 </debug-info>

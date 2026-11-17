@@ -18,6 +18,6 @@ public class DelegatingConnector_tooltipHint_c02bp_a0a_Editor extends DefaultNod
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DelegatingConnector_tooltipHint_c02bp_a0a_EditorBuilder_a(editorContext, node).createCell();
+    return new DelegatingConnector_tooltipHint_c02bp_a0a_EditorBuilder(editorContext, node).createCell();
   }
 }

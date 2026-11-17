@@ -26,17 +26,17 @@
   </root>
   <root nodeRef="r:43fa966b-22ce-4dca-976c-c25d74f40558(com.mbeddr.mpsutil.propertydefault.editor)/1550432487216081330">
     <file name="NodePropertyConstraintDefault_Editor.java">
-      <node id="1550432487216081330" at="11,79,12,95" concept="6" />
+      <node id="1550432487216081330" at="11,79,12,93" concept="6" />
       <node id="1550432487216081330" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="1550432487216081330" at="11,79,12,95" />
+      <scope id="1550432487216081330" at="11,79,12,93" />
       <scope id="1550432487216081330" at="11,0,14,0">
         <var name="editorContext" id="1550432487216081330" />
         <var name="node" id="1550432487216081330" />
       </scope>
       <unit id="1550432487216081330" at="10,0,15,0" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_Editor" />
     </file>
-    <file name="NodePropertyConstraintDefault_EditorBuilder_a.java">
-      <node id="1550432487216081330" at="56,109,57,19" concept="9" />
+    <file name="NodePropertyConstraintDefault_EditorBuilder.java">
+      <node id="1550432487216081330" at="56,107,57,19" concept="9" />
       <node id="1550432487216081330" at="57,19,58,18" concept="1" />
       <node id="1550432487216081330" at="63,26,64,18" concept="6" />
       <node id="1550432487216081330" at="67,39,68,32" concept="6" />
@@ -191,7 +191,7 @@
       <node id="1550432487216081330" at="257,87,260,7" concept="3" />
       <node id="1550432487216081330" at="260,7,263,7" concept="3" />
       <node id="1550432487216081330" at="282,0,285,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="1550432487216081330" at="56,0,60,0" concept="0" trace="NodePropertyConstraintDefault_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1550432487216081330" at="56,0,60,0" concept="0" trace="NodePropertyConstraintDefault_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1550432487216081330" at="123,0,127,5" concept="3" />
       <node id="1550432487216081330" at="228,0,232,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1550432487216081330" at="236,0,240,0" concept="0" trace="defaultValueSingleRoleHandler_wqbdgf_c4a#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -229,7 +229,7 @@
       <scope id="1550432487216081330" at="261,42,262,53" />
       <scope id="1550432487216081330" at="278,17,279,42" />
       <scope id="1550432487216081330" at="282,40,283,25" />
-      <scope id="1550432487216081330" at="56,109,58,18" />
+      <scope id="1550432487216081330" at="56,107,58,18" />
       <scope id="1550432487216081330" at="124,40,126,57" />
       <scope id="1550432487216081330" at="131,73,133,145">
         <var name="manager" id="1550432487216081330" />
@@ -349,28 +349,28 @@
         <var name="referenceLink" id="1550432487216081330" />
       </scope>
       <scope id="1550432487216081330" at="102,0,137,0" />
-      <unit id="1550432487216081330" at="306,0,309,0" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder_a$PROPS" />
-      <unit id="1550432487216081330" at="296,0,300,0" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder_a$LINKS" />
-      <unit id="1550432487216081330" at="301,0,305,0" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder_a$CONCEPTS" />
-      <unit id="1550432487216081330" at="104,42,119,5" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder_a$1" />
-      <unit id="1149010775553" at="137,0,184,0" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder_a$Inline_Builder0" />
-      <unit id="1550432487216081330" at="232,0,286,0" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder_a$defaultValueSingleRoleHandler_wqbdgf_c4a" />
-      <unit id="1550432487216081330" at="52,0,310,0" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder_a" />
+      <unit id="1550432487216081330" at="306,0,309,0" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder$PROPS" />
+      <unit id="1550432487216081330" at="296,0,300,0" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder$LINKS" />
+      <unit id="1550432487216081330" at="301,0,305,0" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder$CONCEPTS" />
+      <unit id="1550432487216081330" at="104,42,119,5" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder$1" />
+      <unit id="1149010775553" at="137,0,184,0" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder$Inline_Builder0" />
+      <unit id="1550432487216081330" at="232,0,286,0" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder$defaultValueSingleRoleHandler_wqbdgf_c4a" />
+      <unit id="1550432487216081330" at="52,0,310,0" name="com.mbeddr.mpsutil.propertydefault.editor.NodePropertyConstraintDefault_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:43fa966b-22ce-4dca-976c-c25d74f40558(com.mbeddr.mpsutil.propertydefault.editor)/1550432487216082159">
     <file name="ConstraintFunction_PropertyDefault_Editor.java">
-      <node id="1550432487216082159" at="11,79,12,100" concept="6" />
+      <node id="1550432487216082159" at="11,79,12,98" concept="6" />
       <node id="1550432487216082159" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="1550432487216082159" at="11,79,12,100" />
+      <scope id="1550432487216082159" at="11,79,12,98" />
       <scope id="1550432487216082159" at="11,0,14,0">
         <var name="editorContext" id="1550432487216082159" />
         <var name="node" id="1550432487216082159" />
       </scope>
       <unit id="1550432487216082159" at="10,0,15,0" name="com.mbeddr.mpsutil.propertydefault.editor.ConstraintFunction_PropertyDefault_Editor" />
     </file>
-    <file name="ConstraintFunction_PropertyDefault_EditorBuilder_a.java">
-      <node id="1550432487216082159" at="30,114,31,19" concept="9" />
+    <file name="ConstraintFunction_PropertyDefault_EditorBuilder.java">
+      <node id="1550432487216082159" at="30,112,31,19" concept="9" />
       <node id="1550432487216082159" at="31,19,32,18" concept="1" />
       <node id="1550432487216082159" at="37,26,38,18" concept="6" />
       <node id="1550432487216082159" at="41,39,42,32" concept="6" />
@@ -428,7 +428,7 @@
       <node id="1550432487216082159" at="106,87,109,7" concept="3" />
       <node id="1550432487216082159" at="109,7,112,7" concept="3" />
       <node id="1550432487216082159" at="128,0,131,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="1550432487216082159" at="30,0,34,0" concept="0" trace="ConstraintFunction_PropertyDefault_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1550432487216082159" at="30,0,34,0" concept="0" trace="ConstraintFunction_PropertyDefault_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1550432487216082159" at="77,0,81,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1550432487216082159" at="85,0,89,0" concept="0" trace="defaultValueSingleRoleHandler_3qpx91_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="1550432487216082159" at="35,0,40,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -447,7 +447,7 @@
       <scope id="1550432487216082159" at="110,42,111,53" />
       <scope id="1550432487216082159" at="124,17,125,42" />
       <scope id="1550432487216082159" at="128,40,129,25" />
-      <scope id="1550432487216082159" at="30,114,32,18" />
+      <scope id="1550432487216082159" at="30,112,32,18" />
       <scope id="1550432487216082159" at="77,40,79,33">
         <var name="provider" id="1550432487216082159" />
       </scope>
@@ -498,9 +498,9 @@
       <scope id="1550432487216082159" at="115,44,126,7" />
       <scope id="1550432487216082159" at="45,0,58,0" />
       <scope id="1550432487216082159" at="114,0,128,0" />
-      <unit id="1550432487216082159" at="133,0,136,0" name="com.mbeddr.mpsutil.propertydefault.editor.ConstraintFunction_PropertyDefault_EditorBuilder_a$LINKS" />
-      <unit id="1550432487216082159" at="81,0,132,0" name="com.mbeddr.mpsutil.propertydefault.editor.ConstraintFunction_PropertyDefault_EditorBuilder_a$defaultValueSingleRoleHandler_3qpx91_c0" />
-      <unit id="1550432487216082159" at="26,0,137,0" name="com.mbeddr.mpsutil.propertydefault.editor.ConstraintFunction_PropertyDefault_EditorBuilder_a" />
+      <unit id="1550432487216082159" at="133,0,136,0" name="com.mbeddr.mpsutil.propertydefault.editor.ConstraintFunction_PropertyDefault_EditorBuilder$LINKS" />
+      <unit id="1550432487216082159" at="81,0,132,0" name="com.mbeddr.mpsutil.propertydefault.editor.ConstraintFunction_PropertyDefault_EditorBuilder$defaultValueSingleRoleHandler_3qpx91_c0" />
+      <unit id="1550432487216082159" at="26,0,137,0" name="com.mbeddr.mpsutil.propertydefault.editor.ConstraintFunction_PropertyDefault_EditorBuilder" />
     </file>
   </root>
 </debug-info>

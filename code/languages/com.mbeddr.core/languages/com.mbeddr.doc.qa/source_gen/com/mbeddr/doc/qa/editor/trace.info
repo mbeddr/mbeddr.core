@@ -25,12 +25,12 @@
   </root>
   <root nodeRef="r:d3fef858-9f37-478e-8bd0-8d5e9e74ef8a(com.mbeddr.doc.qa.editor)/97836352114791971">
     <file name="ConceptsDocumentationAssessment_Editor.java">
-      <node id="97836352114791971" at="11,79,12,97" concept="6" />
-      <node id="97836352114791971" at="14,82,15,100" concept="6" />
+      <node id="97836352114791971" at="11,79,12,95" concept="6" />
+      <node id="97836352114791971" at="14,82,15,98" concept="6" />
       <node id="97836352114791971" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="97836352114791971" at="14,0,17,0" concept="4" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="97836352114791971" at="11,79,12,97" />
-      <scope id="97836352114791971" at="14,82,15,100" />
+      <scope id="97836352114791971" at="11,79,12,95" />
+      <scope id="97836352114791971" at="14,82,15,98" />
       <scope id="97836352114791971" at="11,0,14,0">
         <var name="editorContext" id="97836352114791971" />
         <var name="node" id="97836352114791971" />
@@ -41,8 +41,8 @@
       </scope>
       <unit id="97836352114791971" at="10,0,18,0" name="com.mbeddr.doc.qa.editor.ConceptsDocumentationAssessment_Editor" />
     </file>
-    <file name="ConceptsDocumentationAssessment_EditorBuilder_a.java">
-      <node id="97836352114791971" at="23,111,24,19" concept="9" />
+    <file name="ConceptsDocumentationAssessment_EditorBuilder.java">
+      <node id="97836352114791971" at="23,109,24,19" concept="9" />
       <node id="97836352114791971" at="24,19,25,18" concept="1" />
       <node id="97836352114791971" at="30,26,31,18" concept="6" />
       <node id="97836352114791971" at="34,39,35,32" concept="6" />
@@ -71,7 +71,7 @@
       <node id="97836352114772424" at="68,124,69,22" concept="6" />
       <node id="97836352114791971" at="20,0,22,0" concept="2" trace="myNode" />
       <node id="97836352114791971" at="34,0,37,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="97836352114791971" at="23,0,27,0" concept="0" trace="ConceptsDocumentationAssessment_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="97836352114791971" at="23,0,27,0" concept="0" trace="ConceptsDocumentationAssessment_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="97836352114772423" at="63,0,67,0" concept="4" trace="createIndentCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="97836352114772424" at="67,0,71,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="97836352114791971" at="28,0,33,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -80,7 +80,7 @@
       <node id="97836352114791971" at="53,0,63,0" concept="4" trace="createCollection_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="97836352114791971" at="30,26,31,18" />
       <scope id="97836352114791971" at="34,39,35,32" />
-      <scope id="97836352114791971" at="23,111,25,18" />
+      <scope id="97836352114791971" at="23,109,25,18" />
       <scope id="97836352114772423" at="63,43,65,22">
         <var name="editorCell" id="97836352114772423" />
       </scope>
@@ -108,10 +108,10 @@
       </scope>
       <scope id="97836352114791971" at="38,0,47,0" />
       <scope id="97836352114791971" at="53,0,63,0" />
-      <unit id="97836352114791971" at="19,0,72,0" name="com.mbeddr.doc.qa.editor.ConceptsDocumentationAssessment_EditorBuilder_a" />
+      <unit id="97836352114791971" at="19,0,72,0" name="com.mbeddr.doc.qa.editor.ConceptsDocumentationAssessment_EditorBuilder" />
     </file>
-    <file name="ConceptsDocumentationAssessment_InspectorBuilder_a.java">
-      <node id="97836352114791971" at="18,114,19,19" concept="9" />
+    <file name="ConceptsDocumentationAssessment_InspectorBuilder.java">
+      <node id="97836352114791971" at="18,112,19,19" concept="9" />
       <node id="97836352114791971" at="19,19,20,18" concept="1" />
       <node id="97836352114791971" at="25,26,26,18" concept="6" />
       <node id="97836352114791971" at="29,39,30,32" concept="6" />
@@ -132,14 +132,14 @@
       <node id="97836352114772472" at="51,34,52,22" concept="6" />
       <node id="97836352114791971" at="15,0,17,0" concept="2" trace="myNode" />
       <node id="97836352114791971" at="29,0,32,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="97836352114791971" at="18,0,22,0" concept="0" trace="ConceptsDocumentationAssessment_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="97836352114791971" at="18,0,22,0" concept="0" trace="ConceptsDocumentationAssessment_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="97836352114791971" at="23,0,28,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="97836352114772471" at="42,0,48,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="97836352114772472" at="48,0,54,0" concept="4" trace="createConstant_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="97836352114791971" at="33,0,42,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="97836352114791971" at="25,26,26,18" />
       <scope id="97836352114791971" at="29,39,30,32" />
-      <scope id="97836352114791971" at="18,114,20,18" />
+      <scope id="97836352114791971" at="18,112,20,18" />
       <scope id="97836352114791971" at="29,0,32,0" />
       <scope id="97836352114791971" at="18,0,22,0">
         <var name="context" id="97836352114791971" />
@@ -158,22 +158,22 @@
         <var name="editorCell" id="97836352114791971" />
       </scope>
       <scope id="97836352114791971" at="33,0,42,0" />
-      <unit id="97836352114791971" at="14,0,55,0" name="com.mbeddr.doc.qa.editor.ConceptsDocumentationAssessment_InspectorBuilder_a" />
+      <unit id="97836352114791971" at="14,0,55,0" name="com.mbeddr.doc.qa.editor.ConceptsDocumentationAssessment_InspectorBuilder" />
     </file>
   </root>
   <root nodeRef="r:d3fef858-9f37-478e-8bd0-8d5e9e74ef8a(com.mbeddr.doc.qa.editor)/97836352114963133">
     <file name="SpecificationAssessmentResult_Editor.java">
-      <node id="97836352114963133" at="11,79,12,95" concept="6" />
+      <node id="97836352114963133" at="11,79,12,93" concept="6" />
       <node id="97836352114963133" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="97836352114963133" at="11,79,12,95" />
+      <scope id="97836352114963133" at="11,79,12,93" />
       <scope id="97836352114963133" at="11,0,14,0">
         <var name="editorContext" id="97836352114963133" />
         <var name="node" id="97836352114963133" />
       </scope>
       <unit id="97836352114963133" at="10,0,15,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_Editor" />
     </file>
-    <file name="SpecificationAssessmentResult_EditorBuilder_a.java">
-      <node id="97836352114963133" at="43,109,44,19" concept="9" />
+    <file name="SpecificationAssessmentResult_EditorBuilder.java">
+      <node id="97836352114963133" at="43,107,44,19" concept="9" />
       <node id="97836352114963133" at="44,19,45,18" concept="1" />
       <node id="97836352114963133" at="50,26,51,18" concept="6" />
       <node id="97836352114963133" at="54,39,55,32" concept="6" />
@@ -236,7 +236,7 @@
       <node id="97836352114963187" at="102,0,104,0" concept="2" trace="myNode" />
       <node id="97836352114963133" at="54,0,57,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="97836352114963187" at="112,0,115,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="97836352114963133" at="43,0,47,0" concept="0" trace="SpecificationAssessmentResult_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="97836352114963133" at="43,0,47,0" concept="0" trace="SpecificationAssessmentResult_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="97836352114963133" at="87,0,91,5" concept="3" />
       <node id="97836352114963133" at="48,0,53,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="97836352114963133" at="94,205,99,22" concept="3" />
@@ -255,7 +255,7 @@
       <scope id="97836352114963187" at="112,41,113,32" />
       <scope id="97836352114963187" at="118,28,119,20" />
       <scope id="97836352114963201" at="142,17,143,42" />
-      <scope id="97836352114963133" at="43,109,45,18" />
+      <scope id="97836352114963133" at="43,107,45,18" />
       <scope id="97836352114963133" at="88,40,90,43" />
       <scope id="97836352114963133" at="95,73,97,145">
         <var name="manager" id="97836352114963133" />
@@ -310,22 +310,22 @@
         <var name="referenceLink" id="97836352114963133" />
       </scope>
       <scope id="97836352114963133" at="66,0,101,0" />
-      <unit id="97836352114963133" at="148,0,151,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder_a$LINKS" />
-      <unit id="97836352114963133" at="157,0,160,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder_a$PROPS" />
-      <unit id="97836352114963133" at="152,0,156,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder_a$CONCEPTS" />
-      <unit id="97836352114963133" at="68,42,83,5" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder_a$1" />
-      <unit id="97836352114963187" at="101,0,147,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder_a$Inline_Builder0" />
-      <unit id="97836352114963133" at="39,0,161,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder_a" />
+      <unit id="97836352114963133" at="148,0,151,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder$LINKS" />
+      <unit id="97836352114963133" at="157,0,160,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder$PROPS" />
+      <unit id="97836352114963133" at="152,0,156,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder$CONCEPTS" />
+      <unit id="97836352114963133" at="68,42,83,5" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder$1" />
+      <unit id="97836352114963187" at="101,0,147,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder$Inline_Builder0" />
+      <unit id="97836352114963133" at="39,0,161,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:d3fef858-9f37-478e-8bd0-8d5e9e74ef8a(com.mbeddr.doc.qa.editor)/97836352114994068">
     <file name="RulesDocumentationAssessment_Editor.java">
-      <node id="97836352114994068" at="11,79,12,94" concept="6" />
-      <node id="97836352114994068" at="14,82,15,97" concept="6" />
+      <node id="97836352114994068" at="11,79,12,92" concept="6" />
+      <node id="97836352114994068" at="14,82,15,95" concept="6" />
       <node id="97836352114994068" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="97836352114994068" at="14,0,17,0" concept="4" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="97836352114994068" at="11,79,12,94" />
-      <scope id="97836352114994068" at="14,82,15,97" />
+      <scope id="97836352114994068" at="11,79,12,92" />
+      <scope id="97836352114994068" at="14,82,15,95" />
       <scope id="97836352114994068" at="11,0,14,0">
         <var name="editorContext" id="97836352114994068" />
         <var name="node" id="97836352114994068" />
@@ -336,8 +336,8 @@
       </scope>
       <unit id="97836352114994068" at="10,0,18,0" name="com.mbeddr.doc.qa.editor.RulesDocumentationAssessment_Editor" />
     </file>
-    <file name="RulesDocumentationAssessment_EditorBuilder_a.java">
-      <node id="97836352114994068" at="23,108,24,19" concept="9" />
+    <file name="RulesDocumentationAssessment_EditorBuilder.java">
+      <node id="97836352114994068" at="23,106,24,19" concept="9" />
       <node id="97836352114994068" at="24,19,25,18" concept="1" />
       <node id="97836352114994068" at="30,26,31,18" concept="6" />
       <node id="97836352114994068" at="34,39,35,32" concept="6" />
@@ -366,7 +366,7 @@
       <node id="97836352114994165" at="68,124,69,22" concept="6" />
       <node id="97836352114994068" at="20,0,22,0" concept="2" trace="myNode" />
       <node id="97836352114994068" at="34,0,37,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="97836352114994068" at="23,0,27,0" concept="0" trace="RulesDocumentationAssessment_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="97836352114994068" at="23,0,27,0" concept="0" trace="RulesDocumentationAssessment_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="97836352114994164" at="63,0,67,0" concept="4" trace="createIndentCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="97836352114994165" at="67,0,71,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="97836352114994068" at="28,0,33,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -375,7 +375,7 @@
       <node id="97836352114994068" at="53,0,63,0" concept="4" trace="createCollection_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="97836352114994068" at="30,26,31,18" />
       <scope id="97836352114994068" at="34,39,35,32" />
-      <scope id="97836352114994068" at="23,108,25,18" />
+      <scope id="97836352114994068" at="23,106,25,18" />
       <scope id="97836352114994164" at="63,43,65,22">
         <var name="editorCell" id="97836352114994164" />
       </scope>
@@ -403,10 +403,10 @@
       </scope>
       <scope id="97836352114994068" at="38,0,47,0" />
       <scope id="97836352114994068" at="53,0,63,0" />
-      <unit id="97836352114994068" at="19,0,72,0" name="com.mbeddr.doc.qa.editor.RulesDocumentationAssessment_EditorBuilder_a" />
+      <unit id="97836352114994068" at="19,0,72,0" name="com.mbeddr.doc.qa.editor.RulesDocumentationAssessment_EditorBuilder" />
     </file>
-    <file name="RulesDocumentationAssessment_InspectorBuilder_a.java">
-      <node id="97836352114994068" at="18,111,19,19" concept="9" />
+    <file name="RulesDocumentationAssessment_InspectorBuilder.java">
+      <node id="97836352114994068" at="18,109,19,19" concept="9" />
       <node id="97836352114994068" at="19,19,20,18" concept="1" />
       <node id="97836352114994068" at="25,26,26,18" concept="6" />
       <node id="97836352114994068" at="29,39,30,32" concept="6" />
@@ -427,14 +427,14 @@
       <node id="97836352114994222" at="51,34,52,22" concept="6" />
       <node id="97836352114994068" at="15,0,17,0" concept="2" trace="myNode" />
       <node id="97836352114994068" at="29,0,32,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="97836352114994068" at="18,0,22,0" concept="0" trace="RulesDocumentationAssessment_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="97836352114994068" at="18,0,22,0" concept="0" trace="RulesDocumentationAssessment_InspectorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="97836352114994068" at="23,0,28,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="97836352114994221" at="42,0,48,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="97836352114994222" at="48,0,54,0" concept="4" trace="createConstant_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="97836352114994068" at="33,0,42,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="97836352114994068" at="25,26,26,18" />
       <scope id="97836352114994068" at="29,39,30,32" />
-      <scope id="97836352114994068" at="18,111,20,18" />
+      <scope id="97836352114994068" at="18,109,20,18" />
       <scope id="97836352114994068" at="29,0,32,0" />
       <scope id="97836352114994068" at="18,0,22,0">
         <var name="context" id="97836352114994068" />
@@ -453,7 +453,7 @@
         <var name="editorCell" id="97836352114994068" />
       </scope>
       <scope id="97836352114994068" at="33,0,42,0" />
-      <unit id="97836352114994068" at="14,0,55,0" name="com.mbeddr.doc.qa.editor.RulesDocumentationAssessment_InspectorBuilder_a" />
+      <unit id="97836352114994068" at="14,0,55,0" name="com.mbeddr.doc.qa.editor.RulesDocumentationAssessment_InspectorBuilder" />
     </file>
   </root>
 </debug-info>

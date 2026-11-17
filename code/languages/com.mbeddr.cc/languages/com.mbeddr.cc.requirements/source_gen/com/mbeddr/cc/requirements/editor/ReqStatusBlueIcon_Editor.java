@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ReqStatusBlueIcon_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ReqStatusBlueIcon_EditorBuilder_a(editorContext, node).createCell();
+    return new ReqStatusBlueIcon_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -18,6 +18,6 @@ public class Node_InsertNewNextSiblingOperation_UniqueNames_Editor extends Defau
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Node_InsertNewNextSiblingOperation_UniqueNames_EditorBuilder_a(editorContext, node).createCell();
+    return new Node_InsertNewNextSiblingOperation_UniqueNames_EditorBuilder(editorContext, node).createCell();
   }
 }

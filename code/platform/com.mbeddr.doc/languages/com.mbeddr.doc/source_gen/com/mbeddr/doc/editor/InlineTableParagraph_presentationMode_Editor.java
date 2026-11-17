@@ -18,6 +18,6 @@ public class InlineTableParagraph_presentationMode_Editor extends DefaultNodeEdi
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new InlineTableParagraph_presentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new InlineTableParagraph_presentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

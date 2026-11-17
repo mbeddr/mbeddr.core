@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GeneratedFileNameAnnotation_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GeneratedFileNameAnnotation_EditorBuilder_a(editorContext, node).createCell();
+    return new GeneratedFileNameAnnotation_EditorBuilder(editorContext, node).createCell();
   }
 }

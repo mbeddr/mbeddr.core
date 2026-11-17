@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RequiredPortRestriction_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RequiredPortRestriction_EditorBuilder_a(editorContext, node).createCell();
+    return new RequiredPortRestriction_EditorBuilder(editorContext, node).createCell();
   }
 }

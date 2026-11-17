@@ -18,6 +18,6 @@ public class OperationParameter_tooltipHint_9ndag5_a0_Editor extends DefaultNode
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new OperationParameter_tooltipHint_9ndag5_a0_EditorBuilder_a(editorContext, node).createCell();
+    return new OperationParameter_tooltipHint_9ndag5_a0_EditorBuilder(editorContext, node).createCell();
   }
 }

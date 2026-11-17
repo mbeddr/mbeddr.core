@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class Pause_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Pause_EditorBuilder_a(editorContext, node).createCell();
+    return new Pause_EditorBuilder(editorContext, node).createCell();
   }
 }

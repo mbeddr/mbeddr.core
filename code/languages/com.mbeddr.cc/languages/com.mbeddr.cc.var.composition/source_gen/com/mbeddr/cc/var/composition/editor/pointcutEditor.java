@@ -16,6 +16,6 @@ public class pointcutEditor implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new pointcutEditor_ComponentBuilder_a(editorContext, node).createCell();
+    return new pointcutEditor_ComponentBuilder(editorContext, node).createCell();
   }
 }

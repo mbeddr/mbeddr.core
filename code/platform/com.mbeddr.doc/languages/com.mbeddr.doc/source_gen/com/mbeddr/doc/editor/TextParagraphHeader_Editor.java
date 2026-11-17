@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class TextParagraphHeader_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TextParagraphHeader_EditorBuilder_a(editorContext, node).createCell();
+    return new TextParagraphHeader_EditorBuilder(editorContext, node).createCell();
   }
 }

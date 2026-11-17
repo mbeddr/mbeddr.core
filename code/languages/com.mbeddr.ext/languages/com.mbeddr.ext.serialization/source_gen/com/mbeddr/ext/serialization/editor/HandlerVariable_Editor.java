@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class HandlerVariable_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new HandlerVariable_EditorBuilder_a(editorContext, node).createCell();
+    return new HandlerVariable_EditorBuilder(editorContext, node).createCell();
   }
 }

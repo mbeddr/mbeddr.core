@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GenStructPrintFunction_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GenStructPrintFunction_EditorBuilder_a(editorContext, node).createCell();
+    return new GenStructPrintFunction_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GenericUnitInitializer_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GenericUnitInitializer_EditorBuilder_a(editorContext, node).createCell();
+    return new GenericUnitInitializer_EditorBuilder(editorContext, node).createCell();
   }
 }

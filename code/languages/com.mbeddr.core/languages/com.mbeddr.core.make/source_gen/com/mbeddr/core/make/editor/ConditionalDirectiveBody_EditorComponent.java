@@ -16,6 +16,6 @@ public class ConditionalDirectiveBody_EditorComponent implements ConceptEditorCo
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConditionalDirectiveBody_EditorComponent_ComponentBuilder_a(editorContext, node).createCell();
+    return new ConditionalDirectiveBody_EditorComponent_ComponentBuilder(editorContext, node).createCell();
   }
 }

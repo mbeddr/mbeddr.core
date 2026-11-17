@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class Abstract2IntExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Abstract2IntExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new Abstract2IntExpression_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new Abstract2IntExpression_InspectorBuilder_a(editorContext, node).createCell();
+    return new Abstract2IntExpression_InspectorBuilder(editorContext, node).createCell();
   }
 }

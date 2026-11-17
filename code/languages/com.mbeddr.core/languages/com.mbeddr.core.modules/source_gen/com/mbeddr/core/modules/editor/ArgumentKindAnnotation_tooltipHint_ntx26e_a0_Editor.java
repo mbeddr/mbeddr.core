@@ -18,6 +18,6 @@ public class ArgumentKindAnnotation_tooltipHint_ntx26e_a0_Editor extends Default
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ArgumentKindAnnotation_tooltipHint_ntx26e_a0_EditorBuilder_a(editorContext, node).createCell();
+    return new ArgumentKindAnnotation_tooltipHint_ntx26e_a0_EditorBuilder(editorContext, node).createCell();
   }
 }

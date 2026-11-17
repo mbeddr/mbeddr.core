@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class NewModelDialogConfig_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new NewModelDialogConfig_EditorBuilder_a(editorContext, node).createCell();
+    return new NewModelDialogConfig_EditorBuilder(editorContext, node).createCell();
   }
 }

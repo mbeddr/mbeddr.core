@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class Macro_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Macro_EditorBuilder_a(editorContext, node).createCell();
+    return new Macro_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new Macro_InspectorBuilder_a(editorContext, node).createCell();
+    return new Macro_InspectorBuilder(editorContext, node).createCell();
   }
 }

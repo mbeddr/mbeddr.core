@@ -18,6 +18,6 @@ public class Visualization_presentationMode_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Visualization_presentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new Visualization_presentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

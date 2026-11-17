@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class IntentionIdReference_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new IntentionIdReference_EditorBuilder_a(editorContext, node).createCell();
+    return new IntentionIdReference_EditorBuilder(editorContext, node).createCell();
   }
 }

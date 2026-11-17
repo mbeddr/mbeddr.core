@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class CheckHashAssessmentQuery_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CheckHashAssessmentQuery_EditorBuilder_a(editorContext, node).createCell();
+    return new CheckHashAssessmentQuery_EditorBuilder(editorContext, node).createCell();
   }
 }

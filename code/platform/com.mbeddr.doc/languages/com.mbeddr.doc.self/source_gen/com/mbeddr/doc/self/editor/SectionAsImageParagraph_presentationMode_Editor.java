@@ -18,6 +18,6 @@ public class SectionAsImageParagraph_presentationMode_Editor extends DefaultNode
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SectionAsImageParagraph_presentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new SectionAsImageParagraph_presentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

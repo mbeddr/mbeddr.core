@@ -18,6 +18,6 @@ public class ModelContentAsTextParagraph_presentationMode_Editor extends Default
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ModelContentAsTextParagraph_presentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new ModelContentAsTextParagraph_presentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -18,6 +18,6 @@ public class KeyPressFormattedText_presentationMode_Editor extends DefaultNodeEd
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new KeyPressFormattedText_presentationMode_EditorBuilder_a(editorContext, node).createCell();
+    return new KeyPressFormattedText_presentationMode_EditorBuilder(editorContext, node).createCell();
   }
 }

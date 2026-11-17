@@ -67,17 +67,17 @@
   </root>
   <root nodeRef="r:4f2dff94-955c-48b4-b92a-c0cde46b1bd9(com.mbeddr.mpsutil.dependenciesdiagram.editor)/7129450248256810351">
     <file name="DependenciesDiagram_Editor.java">
-      <node id="7129450248256810351" at="11,79,12,85" concept="8" />
+      <node id="7129450248256810351" at="11,79,12,83" concept="8" />
       <node id="7129450248256810351" at="11,0,14,0" concept="6" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="7129450248256810351" at="11,79,12,85" />
+      <scope id="7129450248256810351" at="11,79,12,83" />
       <scope id="7129450248256810351" at="11,0,14,0">
         <var name="editorContext" id="7129450248256810351" />
         <var name="node" id="7129450248256810351" />
       </scope>
       <unit id="7129450248256810351" at="10,0,15,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_Editor" />
     </file>
-    <file name="DependenciesDiagram_EditorBuilder_a.java">
-      <node id="7129450248256810351" at="113,99,114,19" concept="13" />
+    <file name="DependenciesDiagram_EditorBuilder.java">
+      <node id="7129450248256810351" at="113,97,114,19" concept="13" />
       <node id="7129450248256810351" at="114,19,115,18" concept="2" />
       <node id="7129450248256810351" at="120,26,121,18" concept="8" />
       <node id="7129450248256810351" at="124,39,125,32" concept="8" />
@@ -153,8 +153,8 @@
       <node id="3859303623468948999" at="268,0,269,331" concept="8" />
       <node id="7129450248259062136" at="273,39,274,95" concept="7" />
       <node id="7129450248259062136" at="274,95,275,123" concept="7" />
-      <node id="7129450248259062136" at="275,123,276,213" concept="2" />
-      <node id="7129450248259062136" at="276,213,277,0" concept="10" />
+      <node id="7129450248259062136" at="275,123,276,215" concept="2" />
+      <node id="7129450248259062136" at="276,215,277,0" concept="10" />
       <node id="7129450248259062136" at="277,0,278,147" concept="7" />
       <node id="7129450248259062136" at="279,46,280,60" concept="2" />
       <node id="7129450248259062136" at="281,23,282,0" concept="10" />
@@ -393,19 +393,19 @@
       <node id="7129450248259230906" at="894,45,895,122" concept="7" />
       <node id="7129450248259230906" at="895,122,896,54" concept="2" />
       <node id="3859303623480238038" at="896,54,897,53" concept="2" />
-      <node id="3859303623479191820" at="898,43,899,66" concept="2" />
+      <node id="3859303623479191820" at="898,29,899,66" concept="2" />
       <node id="7129450248259230906" at="900,7,901,24" concept="8" />
-      <node id="3859303623480248402" at="903,52,904,159" concept="8" />
+      <node id="3859303623480248402" at="903,38,904,159" concept="8" />
       <node id="7129450248259230906" at="906,45,907,124" concept="7" />
       <node id="7129450248259230906" at="907,124,908,55" concept="2" />
       <node id="7129450248259230906" at="908,55,909,36" concept="7" />
       <node id="3859303623480238040" at="909,36,910,51" concept="2" />
       <node id="9029479893327045121" at="910,51,911,68" concept="2" />
       <node id="7129450248259230906" at="911,68,912,42" concept="2" />
-      <node id="3859303623479185947" at="913,44,914,53" concept="2" />
+      <node id="3859303623479185947" at="913,29,914,53" concept="2" />
       <node id="7129450248259233573" at="915,7,916,51" concept="2" />
       <node id="7129450248259230906" at="916,51,917,24" concept="8" />
-      <node id="3859303623479186611" at="919,53,920,125" concept="8" />
+      <node id="3859303623479186611" at="919,38,920,125" concept="8" />
       <node id="3859303623479185947" at="922,43,923,98" concept="7" />
       <node id="3859303623479185947" at="923,98,924,54" concept="2" />
       <node id="3859303623479185947" at="924,54,925,36" concept="2" />
@@ -504,14 +504,14 @@
       <node id="8213078286159051186" at="860,0,863,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="7129450248259230906" at="884,0,887,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3859303623479191820" at="897,53,900,7" concept="5" />
-      <node id="3859303623480247375" at="903,0,906,0" concept="6" trace="nodeCondition_27agb5_a1a0b1a#()Z" />
+      <node id="3859303623480247375" at="903,0,906,0" concept="6" trace="nodeCondition0#()Z" />
       <node id="3859303623479185947" at="912,42,915,7" concept="5" />
-      <node id="3859303623479185952" at="919,0,922,0" concept="6" trace="nodeCondition_27agb5_a0a0a1b0#()Z" />
+      <node id="3859303623479185952" at="919,0,922,0" concept="6" trace="nodeCondition1#()Z" />
       <node id="3859303623479191820" at="936,0,939,0" concept="6" trace="getText#()Ljava/lang/String;" />
       <node id="7129450248259237211" at="960,0,963,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8213078286159499625" at="989,0,992,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="3859303623467002644" at="1019,0,1022,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="7129450248256810351" at="113,0,117,0" concept="1" trace="DependenciesDiagram_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7129450248256810351" at="113,0,117,0" concept="1" trace="DependenciesDiagram_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8213078286159051184" at="188,0,192,0" concept="6" trace="query#()Ljava/lang/Iterable;" />
       <node id="8213078286159051184" at="230,0,234,0" concept="6" trace="getSNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8213078286159051184" at="246,0,250,0" concept="6" trace="getShape#()Lde/itemis/mps/editor/diagram/runtime/shape/IShape;" />
@@ -736,10 +736,10 @@
       <scope id="8213078286159051186" at="866,28,867,20" />
       <scope id="7129450248259230906" at="884,41,885,34" />
       <scope id="7129450248259230906" at="890,28,891,20" />
-      <scope id="3859303623479191820" at="898,43,899,66" />
-      <scope id="3859303623480247376" at="903,52,904,159" />
-      <scope id="3859303623479185947" at="913,44,914,53" />
-      <scope id="3859303623479185953" at="919,53,920,125" />
+      <scope id="3859303623479191820" at="898,29,899,66" />
+      <scope id="3859303623480247376" at="903,38,904,159" />
+      <scope id="3859303623479185947" at="913,29,914,53" />
+      <scope id="3859303623479185953" at="919,38,920,125" />
       <scope id="3859303623479191826" at="936,33,937,148" />
       <scope id="7129450248259237211" at="960,41,961,32" />
       <scope id="7129450248259237211" at="966,28,967,20" />
@@ -747,7 +747,7 @@
       <scope id="8213078286159499625" at="995,28,996,20" />
       <scope id="3859303623467002644" at="1019,41,1020,32" />
       <scope id="3859303623467002644" at="1025,28,1026,20" />
-      <scope id="7129450248256810351" at="113,99,115,18" />
+      <scope id="7129450248256810351" at="113,97,115,18" />
       <scope id="7129450248256844911" at="156,74,158,145">
         <var name="manager" id="7129450248256844911" />
       </scope>
@@ -1223,43 +1223,43 @@
         <var name="editorContext" id="7129450248256810351" />
         <var name="node" id="7129450248256810351" />
       </scope>
-      <unit id="7129450248256810351" at="1047,0,1050,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$CONCEPTS" />
-      <unit id="8213078286160209393" at="200,66,204,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$1$1" />
-      <unit id="8213078286160353348" at="204,29,208,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$1$2" />
-      <unit id="8213078286160353677" at="208,29,212,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$1$3" />
-      <unit id="8213078286160363985" at="212,29,216,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$1$4" />
-      <unit id="5313546923128848020" at="216,29,220,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$1$5" />
-      <unit id="3859303623469108158" at="431,80,435,21" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$8$1" />
-      <unit id="3859303623479191820" at="935,90,939,7" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$Inline_Builder_27agb5_a1b0$1" />
-      <unit id="7129450248256810351" at="1051,0,1055,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$LINKS" />
-      <unit id="8213078286159051184" at="187,55,192,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$2" />
-      <unit id="7129450248256810351" at="1041,0,1046,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$PROPS" />
-      <unit id="7129450248259062136" at="262,81,271,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$4" />
-      <unit id="7129450248259237129" at="342,79,351,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$6" />
-      <unit id="3859303623469377755" at="516,80,527,21" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$10$1" />
-      <unit id="7129450248256810351" at="804,53,818,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$3" />
-      <unit id="8213078286159227652" at="422,78,437,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$8" />
-      <unit id="7129450248259352126" at="747,31,763,21" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$2$1" />
-      <unit id="7129450248259476604" at="771,31,787,21" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$2$2" />
-      <unit id="3859303623467002539" at="508,84,529,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$10" />
-      <unit id="8213078286159051186" at="851,0,875,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$Inline_Builder_27agb5_a0b0" />
-      <unit id="8213078286159051184" at="222,57,250,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$1$6" />
-      <unit id="7129450248259237211" at="951,0,980,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$Inline_Builder_27agb5_a2b0" />
-      <unit id="8213078286159499625" at="980,0,1010,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$Inline_Builder_27agb5_a3b0" />
-      <unit id="3859303623467002644" at="1010,0,1040,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$Inline_Builder_27agb5_a4b0" />
-      <unit id="7129450248259062136" at="285,58,326,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$3$1" />
-      <unit id="7129450248259237129" at="365,58,406,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$5$1" />
-      <unit id="8213078286159227652" at="451,58,492,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$7$1" />
-      <unit id="3859303623467002539" at="543,58,584,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$9$1" />
-      <unit id="7129450248259276367" at="732,95,793,13" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$2" />
-      <unit id="8213078286159051184" at="193,113,260,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$1" />
-      <unit id="7129450248259062136" at="272,113,340,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$3" />
-      <unit id="7129450248259237129" at="352,113,420,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$5" />
-      <unit id="8213078286159227652" at="438,113,506,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$7" />
-      <unit id="3859303623467002539" at="530,113,598,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1$9" />
-      <unit id="7129450248259230906" at="875,0,951,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$Inline_Builder_27agb5_a1b0" />
-      <unit id="7129450248256810351" at="184,44,728,13" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a$1" />
-      <unit id="7129450248256810351" at="109,0,1056,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder_a" />
+      <unit id="7129450248256810351" at="1047,0,1050,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$CONCEPTS" />
+      <unit id="8213078286160209393" at="200,66,204,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$1$1" />
+      <unit id="8213078286160353348" at="204,29,208,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$1$2" />
+      <unit id="8213078286160353677" at="208,29,212,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$1$3" />
+      <unit id="8213078286160363985" at="212,29,216,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$1$4" />
+      <unit id="5313546923128848020" at="216,29,220,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$1$5" />
+      <unit id="3859303623469108158" at="431,80,435,21" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$8$1" />
+      <unit id="3859303623479191820" at="935,90,939,7" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$Inline_Builder_27agb5_a1b0$1" />
+      <unit id="7129450248256810351" at="1051,0,1055,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$LINKS" />
+      <unit id="8213078286159051184" at="187,55,192,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$2" />
+      <unit id="7129450248256810351" at="1041,0,1046,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$PROPS" />
+      <unit id="7129450248259062136" at="262,81,271,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$4" />
+      <unit id="7129450248259237129" at="342,79,351,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$6" />
+      <unit id="3859303623469377755" at="516,80,527,21" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$10$1" />
+      <unit id="7129450248256810351" at="804,53,818,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$3" />
+      <unit id="8213078286159227652" at="422,78,437,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$8" />
+      <unit id="7129450248259352126" at="747,31,763,21" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$2$1" />
+      <unit id="7129450248259476604" at="771,31,787,21" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$2$2" />
+      <unit id="3859303623467002539" at="508,84,529,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$10" />
+      <unit id="8213078286159051186" at="851,0,875,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$Inline_Builder_27agb5_a0b0" />
+      <unit id="8213078286159051184" at="222,57,250,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$1$6" />
+      <unit id="7129450248259237211" at="951,0,980,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$Inline_Builder_27agb5_a2b0" />
+      <unit id="8213078286159499625" at="980,0,1010,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$Inline_Builder_27agb5_a3b0" />
+      <unit id="3859303623467002644" at="1010,0,1040,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$Inline_Builder_27agb5_a4b0" />
+      <unit id="7129450248259062136" at="285,58,326,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$3$1" />
+      <unit id="7129450248259237129" at="365,58,406,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$5$1" />
+      <unit id="8213078286159227652" at="451,58,492,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$7$1" />
+      <unit id="3859303623467002539" at="543,58,584,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$9$1" />
+      <unit id="7129450248259276367" at="732,95,793,13" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$2" />
+      <unit id="8213078286159051184" at="193,113,260,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$1" />
+      <unit id="7129450248259062136" at="272,113,340,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$3" />
+      <unit id="7129450248259237129" at="352,113,420,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$5" />
+      <unit id="8213078286159227652" at="438,113,506,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$7" />
+      <unit id="3859303623467002539" at="530,113,598,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1$9" />
+      <unit id="7129450248259230906" at="875,0,951,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$Inline_Builder_27agb5_a1b0" />
+      <unit id="7129450248256810351" at="184,44,728,13" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder$1" />
+      <unit id="7129450248256810351" at="109,0,1056,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.DependenciesDiagram_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:4f2dff94-955c-48b4-b92a-c0cde46b1bd9(com.mbeddr.mpsutil.dependenciesdiagram.editor)/7713532355154275047">
@@ -1470,11 +1470,11 @@
     <file name="ModuleReference.java">
       <node id="8213078286159071671" at="14,0,15,0" concept="3" trace="myContextHints" />
       <node id="8213078286159071671" at="16,47,17,26" concept="8" />
-      <node id="8213078286159071671" at="19,79,20,84" concept="8" />
+      <node id="8213078286159071671" at="19,79,20,82" concept="8" />
       <node id="8213078286159071671" at="19,0,22,0" concept="6" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8213078286159071671" at="15,0,19,0" concept="6" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="8213078286159071671" at="16,47,17,26" />
-      <scope id="8213078286159071671" at="19,79,20,84" />
+      <scope id="8213078286159071671" at="19,79,20,82" />
       <scope id="8213078286159071671" at="19,0,22,0">
         <var name="editorContext" id="8213078286159071671" />
         <var name="node" id="8213078286159071671" />
@@ -1482,8 +1482,8 @@
       <scope id="8213078286159071671" at="15,0,19,0" />
       <unit id="8213078286159071671" at="13,0,23,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference" />
     </file>
-    <file name="ModuleReference_ComponentBuilder_a.java">
-      <node id="8213078286159071671" at="92,98,93,19" concept="13" />
+    <file name="ModuleReference_ComponentBuilder.java">
+      <node id="8213078286159071671" at="92,96,93,19" concept="13" />
       <node id="8213078286159071671" at="93,19,94,18" concept="2" />
       <node id="8213078286159071671" at="99,26,100,18" concept="8" />
       <node id="8213078286159071671" at="103,39,104,32" concept="8" />
@@ -1493,9 +1493,9 @@
       <node id="8213078286158842548" at="110,34,111,49" concept="2" />
       <node id="8213078286159071671" at="111,49,112,40" concept="2" />
       <node id="8213078286158842462" at="112,40,113,62" concept="2" />
-      <node id="8213078286158842477" at="114,37,115,50" concept="2" />
+      <node id="8213078286158842477" at="114,27,115,50" concept="2" />
       <node id="8213078286159071671" at="116,5,117,22" concept="8" />
-      <node id="5313546923130709602" at="119,46,120,79" concept="7" />
+      <node id="5313546923130709602" at="119,36,120,79" concept="7" />
       <node id="5313546923130684278" at="120,79,121,77" concept="7" />
       <node id="5313546923130703940" at="121,77,122,107" concept="7" />
       <node id="5313546923130719075" at="122,107,123,104" concept="7" />
@@ -1587,8 +1587,8 @@
       <node id="3859303623468730630" at="329,0,330,148" concept="8" />
       <node id="8213078286159207481" at="336,39,337,95" concept="7" />
       <node id="8213078286159207481" at="337,95,338,123" concept="7" />
-      <node id="8213078286159207481" at="338,123,339,217" concept="2" />
-      <node id="8213078286159207481" at="339,217,340,0" concept="10" />
+      <node id="8213078286159207481" at="338,123,339,215" concept="2" />
+      <node id="8213078286159207481" at="339,215,340,0" concept="10" />
       <node id="8213078286159207481" at="340,0,341,147" concept="7" />
       <node id="8213078286159207481" at="342,46,343,60" concept="2" />
       <node id="8213078286159207481" at="344,23,345,0" concept="10" />
@@ -1750,7 +1750,7 @@
       <node id="8213078286159071671" at="592,0,595,0" concept="6" trace="createDiagram_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8213078286158842488" at="604,0,607,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="8213078286159468789" at="647,0,650,0" concept="6" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="8213078286159071671" at="92,0,96,0" concept="1" trace="ModuleReference_ComponentBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8213078286159071671" at="92,0,96,0" concept="1" trace="ModuleReference_ComponentBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8213078286158842487" at="274,0,278,0" concept="6" trace="getSNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8213078286158842487" at="290,0,294,0" concept="6" trace="getShape#()Lde/itemis/mps/editor/diagram/runtime/shape/IShape;" />
       <node id="8213078286158842487" at="296,80,300,23" concept="5" />
@@ -1791,7 +1791,7 @@
       <node id="8213078286158842488" at="608,0,613,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3859303623475078859" at="620,262,625,13" concept="5" />
       <node id="8213078286159468789" at="651,0,656,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="5313546923130664561" at="119,0,126,0" concept="6" trace="nodeCondition_38by1b_a1a#()Z" />
+      <node id="5313546923130664561" at="119,0,126,0" concept="6" trace="nodeCondition0#()Z" />
       <node id="8213078286158842487" at="168,0,175,0" concept="6" trace="query#()Ljava/lang/Iterable;" />
       <node id="3859303623468637905" at="325,0,332,0" concept="6" trace="invoke#(Lorg/jetbrains/mps/openapi/model/SModel;)Ljava/lang/Iterable;" />
       <node id="8213078286159071671" at="573,0,580,13" concept="5" />
@@ -1835,7 +1835,7 @@
       <scope id="8213078286159207481" at="382,46,382,46" />
       <scope id="8213078286159071671" at="99,26,100,18" />
       <scope id="8213078286159071671" at="103,39,104,32" />
-      <scope id="8213078286158842477" at="114,37,115,50" />
+      <scope id="8213078286158842477" at="114,27,115,50" />
       <scope id="5313546923129848818" at="130,36,131,47" />
       <scope id="3859303623481118377" at="132,16,133,108" />
       <scope id="8213078286160666366" at="184,53,185,120" />
@@ -1889,7 +1889,7 @@
       <scope id="3859303623475095437" at="623,20,624,28" />
       <scope id="8213078286159468789" at="647,41,648,32" />
       <scope id="8213078286159468789" at="653,28,654,20" />
-      <scope id="8213078286159071671" at="92,98,94,18" />
+      <scope id="8213078286159071671" at="92,96,94,18" />
       <scope id="8213078286158842487" at="278,0,280,0" />
       <scope id="8213078286158842487" at="297,46,299,86">
         <var name="layouter" id="8213078286158842487" />
@@ -2020,7 +2020,7 @@
         <var name="node" id="8213078286159468789" />
       </scope>
       <scope id="8213078286159071671" at="97,0,102,0" />
-      <scope id="5313546923130664562" at="119,46,124,171">
+      <scope id="5313546923130664562" at="119,36,124,171">
         <var name="diagram" id="5313546923130703941" />
         <var name="helper" id="5313546923130709603" />
         <var name="modelsInDiagram" id="5313546923130719076" />
@@ -2168,44 +2168,44 @@
         <var name="editorContext" id="8213078286159071671" />
         <var name="node" id="8213078286159071671" />
       </scope>
-      <unit id="8213078286159071671" at="669,0,672,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$CONCEPTS" />
-      <unit id="8213078286159071671" at="673,0,676,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$PROPS" />
-      <unit id="8213078286160666366" at="183,66,187,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$1" />
-      <unit id="8213078286160678984" at="187,29,191,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$2" />
-      <unit id="8213078286160679054" at="191,29,195,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$3" />
-      <unit id="8213078286160953541" at="195,69,199,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$1" />
-      <unit id="7713532355154018727" at="199,29,203,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$2" />
-      <unit id="7713532355154018763" at="203,29,207,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$3" />
-      <unit id="7713532355154018806" at="207,29,211,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$4" />
-      <unit id="7713532355154018856" at="211,29,215,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$5" />
-      <unit id="7713532355154018913" at="215,29,219,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$6" />
-      <unit id="7713532355154018977" at="219,29,223,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$7" />
-      <unit id="7713532355154022503" at="223,29,227,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$8" />
-      <unit id="7713532355154022581" at="227,29,231,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$9" />
-      <unit id="7713532355154022666" at="231,29,235,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$10" />
-      <unit id="7713532355154022758" at="235,29,239,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$11" />
-      <unit id="7713532355154025772" at="239,29,243,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$12" />
-      <unit id="7713532355154027245" at="243,29,247,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$13" />
-      <unit id="7713532355154027358" at="247,29,251,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$14" />
-      <unit id="7713532355154027478" at="251,29,255,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$15" />
-      <unit id="5358790982760177937" at="255,29,259,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4$16" />
-      <unit id="3859303623476534194" at="263,29,267,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$5" />
-      <unit id="7713532355154040415" at="267,29,271,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$6" />
-      <unit id="8213078286158842487" at="167,56,175,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$2" />
-      <unit id="3859303623468637905" at="324,83,332,21" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$4$1" />
-      <unit id="8213078286158842462" at="127,88,136,5" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$1" />
-      <unit id="8213078286158842489" at="615,90,628,7" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$Inline_Builder_38by1b_a0b0$1" />
-      <unit id="8213078286159071671" at="548,53,562,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$3" />
-      <unit id="8213078286158842487" at="273,57,294,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$7" />
-      <unit id="8213078286159207481" at="306,84,334,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$4" />
-      <unit id="8213078286159468789" at="638,0,668,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$Inline_Builder_38by1b_a1b0" />
-      <unit id="8213078286159207481" at="348,58,389,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$3$1" />
-      <unit id="8213078286158842488" at="595,0,638,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$Inline_Builder_38by1b_a0b0" />
-      <unit id="7713532355154031835" at="195,29,263,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1$4" />
-      <unit id="8213078286159207481" at="335,113,403,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$3" />
-      <unit id="8213078286158842487" at="176,113,304,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2$1" />
-      <unit id="8213078286159071671" at="164,44,533,13" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a$2" />
-      <unit id="8213078286159071671" at="88,0,677,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder_a" />
+      <unit id="8213078286159071671" at="669,0,672,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$CONCEPTS" />
+      <unit id="8213078286159071671" at="673,0,676,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$PROPS" />
+      <unit id="8213078286160666366" at="183,66,187,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$1" />
+      <unit id="8213078286160678984" at="187,29,191,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$2" />
+      <unit id="8213078286160679054" at="191,29,195,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$3" />
+      <unit id="8213078286160953541" at="195,69,199,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$1" />
+      <unit id="7713532355154018727" at="199,29,203,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$2" />
+      <unit id="7713532355154018763" at="203,29,207,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$3" />
+      <unit id="7713532355154018806" at="207,29,211,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$4" />
+      <unit id="7713532355154018856" at="211,29,215,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$5" />
+      <unit id="7713532355154018913" at="215,29,219,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$6" />
+      <unit id="7713532355154018977" at="219,29,223,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$7" />
+      <unit id="7713532355154022503" at="223,29,227,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$8" />
+      <unit id="7713532355154022581" at="227,29,231,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$9" />
+      <unit id="7713532355154022666" at="231,29,235,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$10" />
+      <unit id="7713532355154022758" at="235,29,239,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$11" />
+      <unit id="7713532355154025772" at="239,29,243,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$12" />
+      <unit id="7713532355154027245" at="243,29,247,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$13" />
+      <unit id="7713532355154027358" at="247,29,251,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$14" />
+      <unit id="7713532355154027478" at="251,29,255,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$15" />
+      <unit id="5358790982760177937" at="255,29,259,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4$16" />
+      <unit id="3859303623476534194" at="263,29,267,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$5" />
+      <unit id="7713532355154040415" at="267,29,271,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$6" />
+      <unit id="8213078286158842487" at="167,56,175,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$2" />
+      <unit id="3859303623468637905" at="324,83,332,21" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$4$1" />
+      <unit id="8213078286158842462" at="127,88,136,5" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$1" />
+      <unit id="8213078286158842489" at="615,90,628,7" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$Inline_Builder_38by1b_a0b0$1" />
+      <unit id="8213078286159071671" at="548,53,562,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$3" />
+      <unit id="8213078286158842487" at="273,57,294,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$7" />
+      <unit id="8213078286159207481" at="306,84,334,17" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$4" />
+      <unit id="8213078286159468789" at="638,0,668,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$Inline_Builder_38by1b_a1b0" />
+      <unit id="8213078286159207481" at="348,58,389,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$3$1" />
+      <unit id="8213078286158842488" at="595,0,638,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$Inline_Builder_38by1b_a0b0" />
+      <unit id="7713532355154031835" at="195,29,263,23" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1$4" />
+      <unit id="8213078286159207481" at="335,113,403,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$3" />
+      <unit id="8213078286158842487" at="176,113,304,19" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2$1" />
+      <unit id="8213078286159071671" at="164,44,533,13" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder$2" />
+      <unit id="8213078286159071671" at="88,0,677,0" name="com.mbeddr.mpsutil.dependenciesdiagram.editor.ModuleReference_ComponentBuilder" />
     </file>
   </root>
   <root nodeRef="r:4f2dff94-955c-48b4-b92a-c0cde46b1bd9(com.mbeddr.mpsutil.dependenciesdiagram.editor)/8213078286160641408">

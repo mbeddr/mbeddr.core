@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PrefixFilePicker_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PrefixFilePicker_EditorBuilder_a(editorContext, node).createCell();
+    return new PrefixFilePicker_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new PrefixFilePicker_InspectorBuilder_a(editorContext, node).createCell();
+    return new PrefixFilePicker_InspectorBuilder(editorContext, node).createCell();
   }
 }

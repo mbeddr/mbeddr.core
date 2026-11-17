@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ProgramFragment_ScopeProvider_Element_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ProgramFragment_ScopeProvider_Element_EditorBuilder_a(editorContext, node).createCell();
+    return new ProgramFragment_ScopeProvider_Element_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new ProgramFragment_ScopeProvider_Element_InspectorBuilder_a(editorContext, node).createCell();
+    return new ProgramFragment_ScopeProvider_Element_InspectorBuilder(editorContext, node).createCell();
   }
 }

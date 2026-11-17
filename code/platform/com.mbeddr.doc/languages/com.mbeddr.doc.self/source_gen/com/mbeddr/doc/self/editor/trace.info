@@ -20,11 +20,11 @@
     <file name="SectionAsImageParagraph_presentationMode_Editor.java">
       <node id="2144395370904681487" at="14,0,15,0" concept="2" trace="myContextHints" />
       <node id="2144395370904681487" at="17,47,18,26" concept="6" />
-      <node id="2144395370904681487" at="20,79,21,106" concept="6" />
+      <node id="2144395370904681487" at="20,79,21,104" concept="6" />
       <node id="2144395370904681487" at="20,0,23,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2144395370904681487" at="15,0,20,0" concept="4" trace="getContextHints#()Ljava/util/Collection;" />
       <scope id="2144395370904681487" at="17,47,18,26" />
-      <scope id="2144395370904681487" at="20,79,21,106" />
+      <scope id="2144395370904681487" at="20,79,21,104" />
       <scope id="2144395370904681487" at="20,0,23,0">
         <var name="editorContext" id="2144395370904681487" />
         <var name="node" id="2144395370904681487" />
@@ -32,8 +32,8 @@
       <scope id="2144395370904681487" at="15,0,20,0" />
       <unit id="2144395370904681487" at="13,0,24,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_Editor" />
     </file>
-    <file name="SectionAsImageParagraph_presentationMode_EditorBuilder_a.java">
-      <node id="2144395370904681487" at="54,120,55,19" concept="9" />
+    <file name="SectionAsImageParagraph_presentationMode_EditorBuilder.java">
+      <node id="2144395370904681487" at="54,118,55,19" concept="9" />
       <node id="2144395370904681487" at="55,19,56,18" concept="1" />
       <node id="2144395370904681487" at="61,26,62,18" concept="6" />
       <node id="2144395370904681487" at="65,39,66,32" concept="6" />
@@ -165,7 +165,7 @@
       <node id="2144395370904681487" at="222,87,225,7" concept="3" />
       <node id="2144395370904681487" at="225,7,228,7" concept="3" />
       <node id="2144395370904681487" at="247,0,250,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="2144395370904681487" at="54,0,58,0" concept="0" trace="SectionAsImageParagraph_presentationMode_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2144395370904681487" at="54,0,58,0" concept="0" trace="SectionAsImageParagraph_presentationMode_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2144395370904681487" at="130,0,134,5" concept="3" />
       <node id="2144395370904681487" at="193,0,197,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2144395370904681487" at="201,0,205,0" concept="0" trace="descriptionSingleRoleHandler_1b1ugt_d0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
@@ -202,7 +202,7 @@
       <scope id="2144395370904681487" at="226,42,227,52" />
       <scope id="2144395370904681487" at="243,17,244,42" />
       <scope id="2144395370904681487" at="247,40,248,32" />
-      <scope id="2144395370904681487" at="54,120,56,18" />
+      <scope id="2144395370904681487" at="54,118,56,18" />
       <scope id="2144395370904681487" at="131,40,133,46" />
       <scope id="2144395370904681487" at="141,73,143,145">
         <var name="manager" id="2144395370904681487" />
@@ -315,28 +315,28 @@
         <var name="style" id="2144395370904681487" />
       </scope>
       <scope id="2144395370904681487" at="116,0,147,0" />
-      <unit id="2144395370904681487" at="277,0,280,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder_a$PROPS" />
-      <unit id="2144395370904681487" at="267,0,271,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder_a$LINKS" />
-      <unit id="2144395370904681487" at="272,0,276,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder_a$CONCEPTS" />
-      <unit id="2144395370904681487" at="118,42,126,5" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder_a$1" />
-      <unit id="2144395370904681513" at="147,0,190,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder_a$Inline_Builder0" />
-      <unit id="2144395370904681487" at="197,0,251,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder_a$descriptionSingleRoleHandler_1b1ugt_d0" />
-      <unit id="2144395370904681487" at="50,0,281,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder_a" />
+      <unit id="2144395370904681487" at="277,0,280,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder$PROPS" />
+      <unit id="2144395370904681487" at="267,0,271,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder$LINKS" />
+      <unit id="2144395370904681487" at="272,0,276,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder$CONCEPTS" />
+      <unit id="2144395370904681487" at="118,42,126,5" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder$1" />
+      <unit id="2144395370904681513" at="147,0,190,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder$Inline_Builder0" />
+      <unit id="2144395370904681487" at="197,0,251,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder$descriptionSingleRoleHandler_1b1ugt_d0" />
+      <unit id="2144395370904681487" at="50,0,281,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_presentationMode_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:83966516-8219-4ef3-b15e-57b39e494352(com.mbeddr.doc.self.editor)/8730648445432859549">
     <file name="SectionAsImageParagraph_Editor.java">
-      <node id="8730648445432859549" at="11,79,12,89" concept="6" />
+      <node id="8730648445432859549" at="11,79,12,87" concept="6" />
       <node id="8730648445432859549" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="8730648445432859549" at="11,79,12,89" />
+      <scope id="8730648445432859549" at="11,79,12,87" />
       <scope id="8730648445432859549" at="11,0,14,0">
         <var name="editorContext" id="8730648445432859549" />
         <var name="node" id="8730648445432859549" />
       </scope>
       <unit id="8730648445432859549" at="10,0,15,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_Editor" />
     </file>
-    <file name="SectionAsImageParagraph_EditorBuilder_a.java">
-      <node id="8730648445432859549" at="62,103,63,19" concept="9" />
+    <file name="SectionAsImageParagraph_EditorBuilder.java">
+      <node id="8730648445432859549" at="62,101,63,19" concept="9" />
       <node id="8730648445432859549" at="63,19,64,18" concept="1" />
       <node id="8730648445432859549" at="69,26,70,18" concept="6" />
       <node id="8730648445432859549" at="73,39,74,32" concept="6" />
@@ -646,7 +646,7 @@
       <node id="8730648445432859549" at="529,87,532,7" concept="3" />
       <node id="8730648445432859549" at="532,7,535,7" concept="3" />
       <node id="8730648445432859549" at="554,0,557,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
-      <node id="8730648445432859549" at="62,0,66,0" concept="0" trace="SectionAsImageParagraph_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8730648445432859549" at="62,0,66,0" concept="0" trace="SectionAsImageParagraph_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8730648445432859549" at="149,0,153,5" concept="3" />
       <node id="8730648445432859549" at="257,0,261,5" concept="3" />
       <node id="8730648445432859549" at="324,0,328,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -739,7 +739,7 @@
       <scope id="8730648445432859549" at="533,42,534,52" />
       <scope id="8730648445432859549" at="550,17,551,42" />
       <scope id="8730648445432859549" at="554,40,555,32" />
-      <scope id="8730648445432859549" at="62,103,64,18" />
+      <scope id="8730648445432859549" at="62,101,64,18" />
       <scope id="8730648445432859549" at="150,40,152,46" />
       <scope id="8730648445432859549" at="157,73,159,145">
         <var name="manager" id="8730648445432859549" />
@@ -1004,17 +1004,17 @@
       </scope>
       <scope id="8730648445432859549" at="135,0,163,0" />
       <scope id="8730648445432859549" at="243,0,271,0" />
-      <unit id="8730648445432859549" at="588,0,592,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder_a$PROPS" />
-      <unit id="8730648445432859549" at="582,0,587,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder_a$CONCEPTS" />
-      <unit id="8730648445432859549" at="574,0,581,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder_a$LINKS" />
-      <unit id="8730648445432859549" at="137,42,145,5" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder_a$1" />
-      <unit id="8730648445432859549" at="245,42,253,5" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder_a$2" />
-      <unit id="8730648445432859559" at="163,0,206,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder_a$Inline_Builder0" />
-      <unit id="8730648445432859567" at="271,0,314,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder_a$Inline_Builder1" />
-      <unit id="8730648445432859549" at="328,0,379,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder_a$sizeSpecSingleRoleHandler_x9xl0x_h2a" />
-      <unit id="8730648445432859549" at="504,0,558,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder_a$descriptionSingleRoleHandler_x9xl0x_d0" />
-      <unit id="8730648445432859549" at="396,0,476,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder_a$hintsListHandler_x9xl0x_j2a" />
-      <unit id="8730648445432859549" at="58,0,593,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder_a" />
+      <unit id="8730648445432859549" at="588,0,592,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder$PROPS" />
+      <unit id="8730648445432859549" at="582,0,587,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder$CONCEPTS" />
+      <unit id="8730648445432859549" at="574,0,581,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder$LINKS" />
+      <unit id="8730648445432859549" at="137,42,145,5" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder$1" />
+      <unit id="8730648445432859549" at="245,42,253,5" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder$2" />
+      <unit id="8730648445432859559" at="163,0,206,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder$Inline_Builder0" />
+      <unit id="8730648445432859567" at="271,0,314,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder$Inline_Builder1" />
+      <unit id="8730648445432859549" at="328,0,379,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder$sizeSpecSingleRoleHandler_x9xl0x_h2a" />
+      <unit id="8730648445432859549" at="504,0,558,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder$descriptionSingleRoleHandler_x9xl0x_d0" />
+      <unit id="8730648445432859549" at="396,0,476,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder$hintsListHandler_x9xl0x_j2a" />
+      <unit id="8730648445432859549" at="58,0,593,0" name="com.mbeddr.doc.self.editor.SectionAsImageParagraph_EditorBuilder" />
     </file>
   </root>
 </debug-info>

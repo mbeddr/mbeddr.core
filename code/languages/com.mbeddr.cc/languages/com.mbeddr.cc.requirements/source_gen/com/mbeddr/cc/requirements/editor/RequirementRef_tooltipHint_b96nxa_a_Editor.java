@@ -18,6 +18,6 @@ public class RequirementRef_tooltipHint_b96nxa_a_Editor extends DefaultNodeEdito
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RequirementRef_tooltipHint_b96nxa_a_EditorBuilder_a(editorContext, node).createCell();
+    return new RequirementRef_tooltipHint_b96nxa_a_EditorBuilder(editorContext, node).createCell();
   }
 }

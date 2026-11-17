@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ChunkScope_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ChunkScope_EditorBuilder_a(editorContext, node).createCell();
+    return new ChunkScope_EditorBuilder(editorContext, node).createCell();
   }
 }

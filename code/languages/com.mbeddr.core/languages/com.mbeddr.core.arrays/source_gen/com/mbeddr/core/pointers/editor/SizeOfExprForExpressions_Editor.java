@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class SizeOfExprForExpressions_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new SizeOfExprForExpressions_EditorBuilder_a(editorContext, node).createCell();
+    return new SizeOfExprForExpressions_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new SizeOfExprForExpressions_InspectorBuilder_a(editorContext, node).createCell();
+    return new SizeOfExprForExpressions_InspectorBuilder(editorContext, node).createCell();
   }
 }

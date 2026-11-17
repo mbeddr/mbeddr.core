@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ErrorTypeNotFound_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ErrorTypeNotFound_EditorBuilder_a(editorContext, node).createCell();
+    return new ErrorTypeNotFound_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new ErrorTypeNotFound_InspectorBuilder_a(editorContext, node).createCell();
+    return new ErrorTypeNotFound_InspectorBuilder(editorContext, node).createCell();
   }
 }

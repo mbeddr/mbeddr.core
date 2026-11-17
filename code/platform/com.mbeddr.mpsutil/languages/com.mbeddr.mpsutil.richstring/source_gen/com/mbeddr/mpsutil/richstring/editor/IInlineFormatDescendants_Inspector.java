@@ -16,6 +16,6 @@ public class IInlineFormatDescendants_Inspector implements ConceptEditorComponen
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new IInlineFormatDescendants_Inspector_ComponentBuilder_a(editorContext, node).createCell();
+    return new IInlineFormatDescendants_Inspector_ComponentBuilder(editorContext, node).createCell();
   }
 }
