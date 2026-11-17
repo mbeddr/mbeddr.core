@@ -5,8 +5,8 @@ mps241 = "2024.1.6"
 mpsExtensions241 = "2024.1.3710.380b7d0"
 
 [plugins]
-common = "de.itemis.mps.gradle.common:1.30.+"
-jbr-toolchain = "com.specificlanguages.jbr-toolchain:1.2.0"
+common = "de.itemis.mps.gradle.common:1.32.0"
+jbr-toolchain = "com.specificlanguages.jbr-toolchain:1.3.0"
 
 [libraries]
 jbr = { module = "com.jetbrains.jdk:jbr_jcef", version.ref = "jbr241" }
