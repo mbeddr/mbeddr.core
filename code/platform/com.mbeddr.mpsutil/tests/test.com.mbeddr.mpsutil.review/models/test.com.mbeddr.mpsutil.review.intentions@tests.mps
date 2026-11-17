@@ -306,9 +306,7 @@
             <property role="19LeSh" value="property_name" />
             <ref role="19LoX1" node="6QrZKjBTP0y" resolve="Foo" />
             <node concept="19SGf9" id="6QrZKjBTP0_" role="3ajGZ5">
-              <node concept="19SUe$" id="6QrZKjBTP0A" role="19SJt6">
-                <property role="19SUeA" value=" " />
-              </node>
+              <node concept="19SUe$" id="6QrZKjBTP0A" role="19SJt6" />
             </node>
           </node>
         </node>
@@ -389,9 +387,7 @@
             <property role="19LeSh" value="property_name" />
             <ref role="19LoX1" node="6QrZKjBTP1c" resolve="Foo" />
             <node concept="19SGf9" id="6QrZKjBTP1i" role="3ajGZ5">
-              <node concept="19SUe$" id="6QrZKjBTP1j" role="19SJt6">
-                <property role="19SUeA" value=" " />
-              </node>
+              <node concept="19SUe$" id="6QrZKjBTP1j" role="19SJt6" />
             </node>
           </node>
         </node>
