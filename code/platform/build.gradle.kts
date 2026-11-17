@@ -10,7 +10,7 @@ plugins {
     id("de.itemis.mps.gradle.common")
     id("buildlogic.versioning")
     id("buildlogic.maven-publishing")
-    id("org.cyclonedx.bom") version "3.4.1"
+    id("org.cyclonedx.bom") version "3.6.1"
 }
 
 val antVersionProperties: Map<String, String> by extra
@@ -67,7 +67,7 @@ tasks.withType<RunAnt>().configureEach {
 bundledDependencies {
     create("commonmark") {
         destinationDir = layout.projectDirectory.dir("com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown/lib")
-        dependency("org.commonmark:commonmark:0.30.0")
+        dependency("org.commonmark:commonmark:0.32.0")
     }
     create("poiOoxml") {
         destinationDir = layout.projectDirectory.dir("com.mbeddr.doc/solutions/com.mbeddr.spreadsheet.libs/lib")
@@ -93,7 +93,7 @@ bundledDependencies {
     }
     create("plantuml") {
         destinationDir = layout.projectDirectory.dir("com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml.pluginSolution/lib")
-        dependency("net.sourceforge.plantuml:plantuml:1.2026.7")
+        dependency("net.sourceforge.plantuml:plantuml:1.2026.10")
         configuration {
             isTransitive = false
             attributes.attribute(Attribute.of("org.gradle.jvm.environment", String::class.java), "standard-jvm")
@@ -105,7 +105,7 @@ bundledDependencies {
     }
     create("mockito") {
         destinationDir = layout.projectDirectory.dir("com.mbeddr.mpsutil/solutions/org.mockito/lib")
-        dependency("org.mockito:mockito-core:5.23.0")
+        dependency("org.mockito:mockito-core:5.24.0")
     }
     create("ecore") {
         destinationDir = layout.projectDirectory.dir("com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecore.stubs/lib")
