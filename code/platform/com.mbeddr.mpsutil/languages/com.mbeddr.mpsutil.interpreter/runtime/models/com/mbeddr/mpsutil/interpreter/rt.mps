@@ -357,6 +357,7 @@
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -5498,7 +5499,7 @@
       <node concept="3clFbS" id="VFjlN7oekN" role="3clF47" />
       <node concept="3Tm1VV" id="VFjlN7oekO" role="1B3o_S" />
       <node concept="3bZ5Sz" id="VFjlN7oeg6" role="3clF45" />
-      <node concept="3UR2Jj" id="6TnxZGmFg8T" role="lGtFl">
+      <node concept="P$JXv" id="2zySNzi6cQz" role="lGtFl">
         <node concept="TZ5HA" id="6TnxZGmFg8U" role="TZ5H$">
           <node concept="1dT_AC" id="6TnxZGmFg8V" role="1dT_Ay">
             <property role="1dT_AB" value="The concept whose instances this evaluator can match, or null when it can match a node of any concept. An interpreter calls matchesEvaluator only for nodes of this concept and its subconcepts. " />
@@ -18360,7 +18361,7 @@
           </node>
         </node>
       </node>
-      <node concept="3UR2Jj" id="4KEpWPzEbup" role="lGtFl">
+      <node concept="P$JXv" id="2zySNzi6cQ$" role="lGtFl">
         <node concept="TZ5HA" id="4KEpWPzEbuq" role="TZ5H$">
           <node concept="1dT_AC" id="4KEpWPzEbur" role="1dT_Ay">
             <property role="1dT_AB" value="The presentation of the traced node. It is computed at the first call that has read access to the node and shows the node as it is then. A call without read access takes no lock and returns the concept name. " />
@@ -18747,21 +18748,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="2zySNzeg$cP" role="3cqZAp">
-          <node concept="3cpWsn" id="2zySNzeg$cS" role="3cpWs9">
-            <property role="TrG5h" value="frame" />
-            <node concept="10P_77" id="2zySNzeg$cU" role="1tU5fm" />
-            <node concept="3clFbT" id="2zySNzeg$cV" role="33vP2m">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2zySNzeg$cW" role="3cqZAp">
-          <node concept="3cpWsn" id="2zySNzeg$cZ" role="3cpWs9">
-            <property role="TrG5h" value="s" />
-            <node concept="17QB3L" id="2zySNzeg$d1" role="1tU5fm" />
-          </node>
-        </node>
         <node concept="3clFbJ" id="4KEpWPzDIw0" role="3cqZAp">
           <node concept="1Wc70l" id="4KEpWPzDIw3" role="3clFbw">
             <node concept="2OqwBi" id="4KEpWPzDIw6" role="3uHU7B">
@@ -18792,7 +18778,7 @@
             <node concept="3clFbF" id="4KEpWPzDIwn" role="3cqZAp">
               <node concept="37vLTI" id="4KEpWPzDIwp" role="3clFbG">
                 <node concept="37vLTw" id="4KEpWPzDIws" role="37vLTJ">
-                  <ref role="3cqZAo" node="2zySNzeg$cS" resolve="frame" />
+                  <ref role="3cqZAo" node="1FJItaveDg9" resolve="isFrame" />
                 </node>
                 <node concept="3clFbT" id="4KEpWPzDIwt" role="37vLTx">
                   <property role="3clFbU" value="true" />
@@ -18802,7 +18788,7 @@
             <node concept="3clFbF" id="4KEpWPzDIwu" role="3cqZAp">
               <node concept="37vLTI" id="4KEpWPzDIww" role="3clFbG">
                 <node concept="37vLTw" id="4KEpWPzDIwz" role="37vLTJ">
-                  <ref role="3cqZAo" node="2zySNzeg$cZ" resolve="s" />
+                  <ref role="3cqZAo" node="5Beavy0K8Ii" resolve="syntax" />
                 </node>
                 <node concept="2OqwBi" id="4KEpWPzDIw$" role="37vLTx">
                   <node concept="1PxgMI" id="4KEpWPzDIwB" role="2Oq$k0">
@@ -18825,7 +18811,7 @@
               <node concept="3clFbF" id="4KEpWPzKXYI" role="3cqZAp">
                 <node concept="37vLTI" id="4KEpWPzKXYK" role="3clFbG">
                   <node concept="37vLTw" id="4KEpWPzKXYN" role="37vLTJ">
-                    <ref role="3cqZAo" node="2zySNzeg$cZ" resolve="s" />
+                    <ref role="3cqZAo" node="5Beavy0K8Ii" resolve="syntax" />
                   </node>
                   <node concept="2OqwBi" id="4KEpWPzKXYO" role="37vLTx">
                     <node concept="37vLTw" id="4KEpWPzKXYR" role="2Oq$k0">
@@ -18837,33 +18823,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="2zySNzeg$d2" role="3cqZAp">
-          <node concept="37vLTw" id="2zySNzeg$d5" role="3clFbw">
-            <ref role="3cqZAo" node="2zySNzeg$cS" resolve="frame" />
-          </node>
-          <node concept="3clFbS" id="2zySNzeg$d6" role="3clFbx">
-            <node concept="3clFbF" id="2zySNzeg$d7" role="3cqZAp">
-              <node concept="37vLTI" id="2zySNzeg$d9" role="3clFbG">
-                <node concept="37vLTw" id="2zySNzeg$dc" role="37vLTJ">
-                  <ref role="3cqZAo" node="1FJItaveDg9" resolve="isFrame" />
-                </node>
-                <node concept="3clFbT" id="2zySNzeg$dd" role="37vLTx">
-                  <property role="3clFbU" value="true" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2zySNzeg$de" role="3cqZAp">
-          <node concept="37vLTI" id="2zySNzeg$dg" role="3clFbG">
-            <node concept="37vLTw" id="2zySNzeg$dj" role="37vLTJ">
-              <ref role="3cqZAo" node="5Beavy0K8Ii" resolve="syntax" />
-            </node>
-            <node concept="37vLTw" id="2zySNzeg$dk" role="37vLTx">
-              <ref role="3cqZAo" node="2zySNzeg$cZ" resolve="s" />
             </node>
           </node>
         </node>
@@ -20524,7 +20483,7 @@
     <node concept="3UR2Jj" id="7UBudSKfE0E" role="lGtFl">
       <node concept="TZ5HA" id="7UBudSKfE0F" role="TZ5H$">
         <node concept="1dT_AC" id="7UBudSKfE0G" role="1dT_Ay">
-          <property role="1dT_AB" value="Stands in for &quot;no trace&quot; where code needs a non-null trace. The interpreter treats it like null, and it keeps no state: a dummy may be shared by a whole evaluation, so it must not hold on to the values written to it.  " />
+          <property role="1dT_AB" value="Stands in for &quot;no trace&quot; where code needs a non-null trace. The interpreter treats it like null. A dummy may be shared by a whole evaluation, so it keeps none of the values, constraint failures and reveal marks written to it. " />
         </node>
       </node>
     </node>

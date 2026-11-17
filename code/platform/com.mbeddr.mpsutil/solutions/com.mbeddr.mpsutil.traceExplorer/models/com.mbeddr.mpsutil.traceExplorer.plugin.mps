@@ -407,7 +407,6 @@
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
-      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
@@ -8328,7 +8327,7 @@
     </node>
     <node concept="3clFb_" id="4KEpWP$9Jyj" role="jymVt">
       <property role="TrG5h" value="initialize" />
-      <node concept="3UR2Jj" id="4KEpWP$9Jyn" role="lGtFl">
+      <node concept="P$JXv" id="2zySNzi6cQ_" role="lGtFl">
         <node concept="TZ5HA" id="4KEpWP$9Jyo" role="TZ5H$">
           <node concept="1dT_AC" id="4KEpWP$9Jyp" role="1dT_Ay">
             <property role="1dT_AB" value="Computes everything this record needs read access for. The trace explorer calls it in a read action before it shows the record, because Swing can ask for the record's text outside a read action. Does nothing by default. " />
