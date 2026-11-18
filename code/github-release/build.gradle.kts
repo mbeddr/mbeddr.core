@@ -12,14 +12,13 @@ val releaseArtifacts by configurations.registering {
 
 dependencies {
     releaseArtifacts(project(":tutorial"))
-    releaseArtifacts(project(path = ":com.mbeddr:platform", configuration = "githubReleaseArtifact"))
 }
 
 val buildNumber = rootProject.findProperty("build.number")?.toString() ?: ""
 
 val t = LocalDateTime.now();
 
-val releaseNotes = """Automated Nighly build from ${t}."""
+val releaseNotes = """Automated nightly build from ${t}. Platform distributions are available from https://github.com/JetBrains/MPS-extensions/releases."""
 
 githubRelease {
     owner = "mbeddr"
