@@ -3,35 +3,11 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="doc">
+        <entry key="mbeddr.platform">
           <value>
             <Library>
-              <option name="name" value="doc" />
-              <option name="path" value="$PROJECT_DIR$/../../platform/com.mbeddr.doc" />
-            </Library>
-          </value>
-        </entry>
-        <entry key="doc.aspect">
-          <value>
-            <Library>
-              <option name="name" value="doc.aspect" />
-              <option name="path" value="$PROJECT_DIR$/../../platform/com.mbeddr.doc.aspect" />
-            </Library>
-          </value>
-        </entry>
-        <entry key="mpsutil">
-          <value>
-            <Library>
-              <option name="name" value="mpsutil" />
-              <option name="path" value="$PROJECT_DIR$/../../platform/com.mbeddr.mpsutil" />
-            </Library>
-          </value>
-        </entry>
-        <entry key="mps.extensions">
-          <value>
-            <Library>
-              <option name="name" value="mps.extensions" />
-              <option name="path" value="$PROJECT_DIR$/../../platform/build/dependencies/de.itemis.mps.extensions" />
+              <option name="name" value="mbeddr.platform" />
+              <option name="path" value="$PROJECT_DIR$/../../build/dependencies/com.mbeddr.platform" />
             </Library>
           </value>
         </entry>
