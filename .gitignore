@@ -16,8 +16,6 @@ source_gen.caches/
 test_gen/
 test_gen.caches/
 
-gradle.properties
-
 # -----------------------------------------------------------
 # Visual Studio Code settings
 .vscode
