@@ -61,7 +61,9 @@ val platformZip by configurations.resolvable("platformZip") {
 }
 
 dependencies {
-    platformDependency(libs.mbeddrPlatform)
+    platformDependency(libs.mbeddrPlatform) {
+        providers.gradleProperty("mbeddrPlatformVersion").orNull?.let { version { require(it) } }
+    }
 }
 
 val extractPlatformZip = tasks.register<Sync>("extractPlatformZip") {
