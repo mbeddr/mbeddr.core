@@ -93,7 +93,7 @@ object Mbeddr : BuildType({
     steps {
         gradle {
             tasks = "com.mbeddr:languages:test_mbeddr com.mbeddr:languages:publish"
-            gradleParams = "--continue -Dorg.gradle.internal.http.socketTimeout=120000 -PmpsExtensionsVersion=%dep.Mbeddr2_Mbeddr_Gradle_MpsExtenstions.build.number%"
+            gradleParams = "--continue -Dorg.gradle.internal.http.socketTimeout=120000 -PmpsExtensionsVersion=%dep.Mbeddr2_Mbeddr_Gradle_MpsExtensions_Publish.build.number%"
             jdkHome = "%env.JDK_17_0_x64%"
         }
     }
@@ -106,7 +106,7 @@ object Mbeddr : BuildType({
             """.trimIndent()
         }
         finishBuildTrigger {
-            buildType = "Mbeddr2_Mbeddr_Gradle_MpsExtenstions"
+            buildType = "Mbeddr2_Mbeddr_Gradle_MpsExtensions_Publish"
             successfulOnly = true
             branchFilter = """
                 +:<default>
@@ -155,7 +155,7 @@ object Mbeddr : BuildType({
     }
 
     dependencies {
-        snapshot(AbsoluteId("Mbeddr2_Mbeddr_Gradle_MpsExtenstions")) {
+        snapshot(AbsoluteId("Mbeddr2_Mbeddr_Gradle_MpsExtensions_Publish")) {
             synchronizeRevisions = false
             onDependencyFailure = FailureAction.FAIL_TO_START
         }
