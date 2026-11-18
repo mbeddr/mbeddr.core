@@ -36,7 +36,7 @@ public class StatemachineComponentAdapter_Constraints extends BaseConstraintsDes
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -61,7 +61,7 @@ public class StatemachineComponentAdapter_Constraints extends BaseConstraintsDes
   private static boolean staticCanBeAnAncestor(SNode node, SNode childNode, SAbstractConcept childConcept, SNode parentNode, SContainmentLink link) {
     return childConcept != CONCEPTS.CFunctionBinding$Fc;
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:7f8a94e2-0d34-400f-9588-c485b38a295d(com.mbeddr.ext.components.statemachine.constraints)", "8237807170236483622");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:7f8a94e2-0d34-400f-9588-c485b38a295d(com.mbeddr.ext.components.statemachine.constraints)", "8237807170236483622");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept StatemachineComponentAdapter$MO = MetaAdapterFactory.getConcept(0x13a36f9083c54bf6L, 0x9dd670e455f1ef36L, 0x783bc1284defb6e4L, "com.mbeddr.ext.components.statemachine.structure.StatemachineComponentAdapter");

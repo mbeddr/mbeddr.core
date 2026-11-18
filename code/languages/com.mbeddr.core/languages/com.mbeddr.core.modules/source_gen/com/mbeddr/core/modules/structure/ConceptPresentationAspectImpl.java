@@ -145,7 +145,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a function argument");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a4b0vd);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_Argument = cpb.create();
         }
         return props_Argument;
@@ -211,7 +211,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_EmptyModuleContent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a31b0vd);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_EmptyModuleContent = cpb.create();
         }
         return props_EmptyModuleContent;
@@ -234,7 +234,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("module representing external H and O files");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a61b0vd);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_ExternalModule = cpb.create();
         }
         return props_ExternalModule;
@@ -250,7 +250,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a C function");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a81b0vd);
+          cpb.icon(IconContainer.RESOURCE_3);
           props_Function = cpb.create();
         }
         return props_Function;
@@ -267,7 +267,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a function prototype");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a02b0vd);
+          cpb.icon(IconContainer.RESOURCE_4);
           props_FunctionPrototype = cpb.create();
         }
         return props_FunctionPrototype;
@@ -314,7 +314,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a global constant definition");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a62b0vd);
+          cpb.icon(IconContainer.RESOURCE_5);
           props_GlobalConstantDeclaration = cpb.create();
         }
         return props_GlobalConstantDeclaration;
@@ -330,7 +330,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a global macro definition");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a82b0vd);
+          cpb.icon(IconContainer.RESOURCE_6);
           props_GlobalConstantFunctionDeclaration = cpb.create();
         }
         return props_GlobalConstantFunctionDeclaration;
@@ -370,7 +370,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a global variable declaration");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a33b0vd);
+          cpb.icon(IconContainer.RESOURCE_7);
           props_GlobalVariableDeclaration = cpb.create();
         }
         return props_GlobalVariableDeclaration;
@@ -558,7 +558,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("module encapsulating implementation code");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a36b0vd);
+          cpb.icon(IconContainer.RESOURCE_8);
           props_ImplementationModule = cpb.create();
         }
         return props_ImplementationModule;

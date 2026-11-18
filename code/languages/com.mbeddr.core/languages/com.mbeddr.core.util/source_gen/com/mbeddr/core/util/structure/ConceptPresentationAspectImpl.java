@@ -576,7 +576,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a collection of messages for reporting");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a26b0ge);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_MessageDefinitionTable = cpb.create();
         }
         return props_MessageDefinitionTable;
