@@ -58,12 +58,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
-    if (nodeCondition_lmvut8_a0a_0()) {
+    if (nodeCondition_lmvut8_a0a()) {
       editorCell.addEditorCell(createCollection_1());
     }
     return editorCell;
   }
-  private boolean nodeCondition_lmvut8_a0a_0() {
+  private boolean nodeCondition_lmvut8_a0a() {
     return VarEditorModeHelper.modeIs(VarEditorModeHelper.CONCISE);
   }
   private EditorCell createCollection_1() {
