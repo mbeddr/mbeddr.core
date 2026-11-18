@@ -15,6 +15,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -118,7 +121,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -280,7 +282,7 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="5CkU_dHigAB" role="2OqNvi">
+                                <node concept="3zqWPK" id="4qMlRGRqzLo" role="2OqNvi">
                                   <ref role="37wK5l" to="hwgx:5aNdPeN2Pp4" resolve="isCurrentlyVisible" />
                                 </node>
                               </node>
@@ -295,22 +297,22 @@
                       <node concept="37vLTw" id="5CkU_dHigAE" role="2Oq$k0">
                         <ref role="3cqZAo" node="5CkU_dHig_P" resolve="scopeProvider" />
                       </node>
-                      <node concept="2qgKlT" id="5CkU_dHigAF" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRqzLq" role="2OqNvi">
                         <ref role="37wK5l" to="rj8d:2tBHhziI8iF" resolve="getLocalVarScope" />
-                        <node concept="1eOMI4" id="5CkU_dHigAN" role="37wK5m">
-                          <node concept="3K4zz7" id="5CkU_dHigAO" role="1eOMHV">
-                            <node concept="2rP1CM" id="5CkU_dHigAP" role="3K4E3e" />
-                            <node concept="2OqwBi" id="5CkU_dHigAQ" role="3K4Cdx">
-                              <node concept="3kakTB" id="5CkU_dHigAR" role="2Oq$k0" />
-                              <node concept="3w_OXm" id="5CkU_dHigAS" role="2OqNvi" />
+                        <node concept="1eOMI4" id="4qMlRGRqzLs" role="37wK5m">
+                          <node concept="3K4zz7" id="4qMlRGRqzLt" role="1eOMHV">
+                            <node concept="2rP1CM" id="4qMlRGRqzLu" role="3K4E3e" />
+                            <node concept="2OqwBi" id="4qMlRGRqzLv" role="3K4Cdx">
+                              <node concept="3kakTB" id="4qMlRGRqzLw" role="2Oq$k0" />
+                              <node concept="3w_OXm" id="4qMlRGRqzLx" role="2OqNvi" />
                             </node>
-                            <node concept="2OqwBi" id="5CkU_dHigAT" role="3K4GZi">
-                              <node concept="3kakTB" id="5CkU_dHigAU" role="2Oq$k0" />
-                              <node concept="1mfA1w" id="5CkU_dHigAV" role="2OqNvi" />
+                            <node concept="2OqwBi" id="4qMlRGRqzLy" role="3K4GZi">
+                              <node concept="3kakTB" id="4qMlRGRqzLz" role="2Oq$k0" />
+                              <node concept="1mfA1w" id="4qMlRGRqzL$" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
-                        <node concept="$OBjv" id="5CkU_dHigAH" role="37wK5m" />
+                        <node concept="$OBjv" id="4qMlRGRqzL_" role="37wK5m" />
                       </node>
                     </node>
                     <node concept="liA8E" id="5CkU_dHigAI" role="2OqNvi">
@@ -388,7 +390,7 @@
           <node concept="3clFbF" id="4JF77iuSisc" role="3cqZAp">
             <node concept="2OqwBi" id="4JF77iuSise" role="3clFbG">
               <node concept="EsrRn" id="4JF77iuSisd" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4JF77iuSisi" role="2OqNvi">
+              <node concept="3zqWPK" id="4qMlRGRqzLA" role="2OqNvi">
                 <ref role="37wK5l" to="hwgx:4JF77iuPRBw" resolve="shortDescriptionForCCMenu" />
               </node>
             </node>
