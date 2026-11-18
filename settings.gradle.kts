@@ -26,7 +26,7 @@ rootProject.name = "mbeddr.core"
 dependencyResolutionManagement {
     providers.gradleProperty("mpsExtensionsVersion").orNull?.let { publishedVersion ->
         versionCatalogs.create("libs") {
-            version("platform241", publishedVersion)
+            version("platform251", publishedVersion)
         }
     }
     repositoriesMode = RepositoriesMode.FAIL_ON_PROJECT_REPOS
