@@ -11,7 +11,6 @@ include(":com.mbeddr")
 project(":com.mbeddr").projectDir = file("code")
 
 include(":com.mbeddr:languages")
-include(":com.mbeddr:platform")
 
 include(":BigProject")
 project(":BigProject").projectDir = file("tools/BigProject")
@@ -25,6 +24,11 @@ project(":tutorial").projectDir = file("code/applications/tutorial")
 rootProject.name = "mbeddr.core"
 
 dependencyResolutionManagement {
+    providers.gradleProperty("mpsExtensionsVersion").orNull?.let { publishedVersion ->
+        versionCatalogs.create("libs") {
+            version("platform261", publishedVersion)
+        }
+    }
     repositoriesMode = RepositoriesMode.FAIL_ON_PROJECT_REPOS
     repositories {
         maven("https://artifacts.itemis.cloud/repository/maven-mps")

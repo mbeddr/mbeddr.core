@@ -29,17 +29,19 @@ ant.withGroovyBuilder {
 }
 
 val junitAnt by configurations.creating
-val platformZip by configurations.creating {
-    isCanBeConsumed = false
+val platformDependency by configurations.dependencyScope("platformDependency")
+val platformZip by configurations.resolvable("platformZip") {
+    extendsFrom(platformDependency)
+    isTransitive = false
 }
-val platformArtifacts by configurations.creating {
-    isCanBeConsumed = false
+val platformArtifactDependency by configurations.dependencyScope("platformArtifactDependency")
+val platformArtifacts by configurations.resolvable("platformArtifacts") {
+    extendsFrom(platformArtifactDependency)
 }
-
-val ciBuild: Boolean by project
-val usePrebuiltPlatform = ciBuild && !project.hasProperty("forceBuildPlatform")
 
 dependencies {
+    platformDependency(libs.mbeddrPlatform)
+    platformArtifactDependency(project(path = ":com.mbeddr", configuration = "platformArtifacts"))
     junitAnt("junit:junit:4.13.2")
     junitAnt("org.apache.ant:ant-junit:1.10.18") {
         isTransitive = false
@@ -48,25 +50,6 @@ dependencies {
         isTransitive = false
     }
 
-}
-
-// By default, on CI we don't build the platform but take it from Nexus, unless overridden by `-PforceBuildPlatform`.
-if (usePrebuiltPlatform) {
-    val extractPlatformZip = tasks.register<Copy>("extractPlatformZip") {
-        description = "Extract the mbeddr platform ZIP into the mbeddr build."
-        dependsOn(platformZip)
-        from(platformZip.elements.map { elements -> elements.map(project::zipTree) })
-        into(artifactsDir)
-    }
-
-    dependencies {
-        platformZip("com.mbeddr:platform:${project.version}")
-        platformArtifacts(files(extractPlatformZip.map { File(artifactsDir, "com.mbeddr.platform") }))
-    }
-} else {
-    dependencies {
-        platformArtifacts(project(path = ":com.mbeddr:platform", configuration = "platformArtifacts"))
-    }
 }
 
 tasks.withType<RunAntScript>().configureEach {
@@ -84,15 +67,9 @@ val build_allScripts by tasks.registering(MpsGenerate::class) {
 
     projectLocation = rootProject.file("code/languages/com.mbeddr.build")
 
-    pluginRoots.from(platformArtifacts)
-    pluginRoots.from(mpsHome.dir("plugins"))
+    pluginRoots.from(platformArtifacts, mpsHome.dir("plugins"))
 
     folderMacros.put("mbeddr.github.core.home", rootProject.layout.projectDirectory)
-
-    // Note that MpsGenerate loads project libraries defined in the project (in this case com.mbeddr.build). In case we
-    // are using a pre-built mbeddr platform, the project library dependency should, strictly speaking, be replaced with
-    // the plugin/library dependency on the pre-built artifact. However, this is difficult to do and probably not worth
-    // implementing just yet.
 }
 
 val copy_logConfig by tasks.registering(Copy::class) {
@@ -267,22 +244,12 @@ publishing {
             artifact(package_mbeddr)
             pom.withXml {
                 val dependenciesNode = asNode().appendNode("dependencies")
-                if (usePrebuiltPlatform) {
-                    platformZip.resolvedConfiguration.firstLevelModuleDependencies.forEach {
-                        val dependencyNode = dependenciesNode.appendNode("dependency")
-                        dependencyNode.appendNode("groupId", it.moduleGroup)
-                        dependencyNode.appendNode("artifactId", it.moduleName)
-                        dependencyNode.appendNode("version", it.moduleVersion)
-                        dependencyNode.appendNode("type", it.moduleArtifacts.first().type)
-                    }
-                } else {
-                    platformArtifacts.allDependencies.forEach {
-                        val dependencyNode = dependenciesNode.appendNode("dependency")
-                        dependencyNode.appendNode("groupId", it.group)
-                        dependencyNode.appendNode("artifactId", it.name)
-                        dependencyNode.appendNode("version", it.version)
-                        dependencyNode.appendNode("type", "zip")
-                    }
+                platformZip.resolvedConfiguration.firstLevelModuleDependencies.forEach {
+                    val dependencyNode = dependenciesNode.appendNode("dependency")
+                    dependencyNode.appendNode("groupId", it.moduleGroup)
+                    dependencyNode.appendNode("artifactId", it.moduleName)
+                    dependencyNode.appendNode("version", it.moduleVersion)
+                    dependencyNode.appendNode("type", it.moduleArtifacts.first().type)
                 }
             }
             pom {
@@ -321,7 +288,7 @@ tasks.register<MpsMigrate>("migrate") {
     mpsHome = mpsHomeProvider
     projectDirectories.from(projectDirectoriesInDependencyOrder)
     folderMacros.put("mbeddr.github.core.home", rootProject.layout.projectDirectory)
-    pluginRoots.from(mpsHome.dir("plugins"))
+    pluginRoots.from(mpsHome.dir("plugins"), platformArtifacts)
     maxHeapSize = "4G"
 }
 
@@ -334,6 +301,6 @@ tasks.register<Remigrate>("remigrate") {
     mpsHome = mpsHomeProvider
     projectDirectories.from(projectDirectoriesInDependencyOrder)
     folderMacros.put("mbeddr.github.core.home", rootProject.layout.projectDirectory)
-    pluginRoots.from(mpsHome.dir("plugins"))
+    pluginRoots.from(mpsHome.dir("plugins"), platformArtifacts)
     maxHeapSize = "4G"
 }
