@@ -21,7 +21,7 @@ public final class GlobalConstantFunctionArgument__BehaviorDescriptor extends Ba
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x539093cd74798b55L, "com.mbeddr.core.modules.structure.GlobalConstantFunctionArgument");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.type$sXU3, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x75739ed9f39e388dL, "com.mbeddr.core.expressions.structure.Int64tType")));

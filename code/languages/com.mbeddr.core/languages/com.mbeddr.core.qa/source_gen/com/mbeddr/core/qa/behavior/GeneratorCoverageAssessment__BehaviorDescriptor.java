@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.project.Project;
 import org.jetbrains.mps.openapi.model.SModel;
@@ -30,7 +29,6 @@ import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.generator.GenerationTrace;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -41,13 +39,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class GeneratorCoverageAssessment__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc8e0d19c3cf4b31L, 0xaf77531227edbce8L, 0x6f5413347356d83cL, "com.mbeddr.core.qa.structure.GeneratorCoverageAssessment");
 
-  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, ""));
-  /*package*/ static final SMethod<Void> doCollectUsedGeneratorFragments_id6Xk4NhNx02I = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("doCollectUsedGeneratorFragments").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(8022057952250953902L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter((Class<SModel>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(TemplatesCollector.class, ""), SMethodBuilder.createJavaParameter(TransientModelsProvider.class, ""));
+  public static final SMethod<List<SNode>> runQuery_id4WjNWxKJWaq = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5698126413345833626L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(Project.class, "mpsProject"));
+  /*package*/ static final SMethod<Void> doCollectUsedGeneratorFragments_id6Xk4NhNx02I = new SMethodBuilder<>(Void.TYPE).name("doCollectUsedGeneratorFragments").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(8022057952250953902L).languageId(0xaf77531227edbce8L, 0xc8e0d19c3cf4b31L).build2(SMethodBuilder.createJavaParameter(SModel.class, "transientModel"), SMethodBuilder.createJavaParameter(TemplatesCollector.class, "collector"), SMethodBuilder.createJavaParameter(TransientModelsProvider.class, "tmp"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id4WjNWxKJWaq, doCollectUsedGeneratorFragments_id6Xk4NhNx02I);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id4WjNWxKJWaq, doCollectUsedGeneratorFragments_id6Xk4NhNx02I);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> runQuery_id4WjNWxKJWaq(@NotNull SNode __thisNode__, Project mpsProject) {
     Iterable<Language> allLangs = Utils.collectAllLanguagesStartingWithPrefix(SLinkOperations.getChildren(__thisNode__, LINKS.langs$fTp0));
@@ -112,10 +108,6 @@ public final class GeneratorCoverageAssessment__BehaviorDescriptor extends BaseB
   /*package*/ GeneratorCoverageAssessment__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

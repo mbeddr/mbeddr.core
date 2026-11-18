@@ -21,7 +21,7 @@ public class EnumerationDescriptor_VariablAssignmentType extends EnumerationDesc
   private final EnumerationDescriptor.MemberDescriptor myMember_append_0 = new EnumerationDescriptor.MemberDescriptor("append", "+=", 0x272b8f429972955bL, "r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)/1172442816835258986");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xf93d1dbebfd142ddL, 0x932af375fa6f5373L, 0x514244ca3ba6e800L, 0x6968eace2bad9f01L, 0x6968eace2bad9f2eL, 0x6968eace2bad9f8bL, 0x272b8f429972955bL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_assign_0, myMember_expand_0, myMember_conditional_0, myMember_append_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_assign_0, myMember_expand_0, myMember_conditional_0, myMember_append_0);
 
   @Nullable
   @Override

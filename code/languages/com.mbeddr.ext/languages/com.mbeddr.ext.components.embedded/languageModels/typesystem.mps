@@ -20,6 +20,9 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -125,7 +128,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -258,7 +260,7 @@
             <node concept="1YBJjd" id="3F9kUG9$IuA" role="2Oq$k0">
               <ref role="1YBMHb" node="16gyj4ArNdH" resolve="interruptRunnableMapping" />
             </node>
-            <node concept="2qgKlT" id="3F9kUG9$IuB" role="2OqNvi">
+            <node concept="3zqWPK" id="4qMlRGRq_VZ" role="2OqNvi">
               <ref role="37wK5l" to="ifwr:16gyj4ArSLw" resolve="getVisibleCompanions" />
             </node>
           </node>
@@ -336,7 +338,7 @@
                 <ref role="3Tt5mk" to="v7ag:3TmmsQkDdTR" resolve="component" />
               </node>
             </node>
-            <node concept="2qgKlT" id="RL5s9UOtb2" role="2OqNvi">
+            <node concept="3zqWPK" id="4qMlRGRq_W1" role="2OqNvi">
               <ref role="37wK5l" to="eup9:78Ts1skoVf2" resolve="runnables" />
             </node>
           </node>
@@ -470,9 +472,9 @@
             <node concept="1YBJjd" id="3F9kUGauqLF" role="2Oq$k0">
               <ref role="1YBMHb" node="3F9kUGaugSo" resolve="buildConfiguration" />
             </node>
-            <node concept="2qgKlT" id="3F9kUGauscn" role="2OqNvi">
+            <node concept="3zqWPK" id="4qMlRGRq_W3" role="2OqNvi">
               <ref role="37wK5l" to="hwgx:3R$6B6bL1DB" resolve="findItemOfType" />
-              <node concept="3TUQnm" id="to$mQWqpXw" role="37wK5m">
+              <node concept="3TUQnm" id="4qMlRGRq_W5" role="37wK5m">
                 <ref role="3TV0OU" to="v7ag:1OLGDVfeZ18" resolve="ComponentsConfigItem" />
               </node>
             </node>

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -26,14 +24,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class OnInitTrigger__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x4070c9f3cc58752aL, "com.mbeddr.ext.components.structure.OnInitTrigger");
 
-  public static final SMethod<Boolean> allowsAbstractRunnable_id5basnX2kJ0$ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowsAbstractRunnable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5965705447793160228L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Boolean> enforcesName_id3MbWJkY1d$O = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("enforcesName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4362847799159871796L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Void> synchronizeParentRunnable_id18l4N2Qxdck = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("synchronizeParentRunnable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1302968767135142676L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> allowsAbstractRunnable_id5basnX2kJ0$ = new SMethodBuilder<>(Boolean.TYPE).name("allowsAbstractRunnable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5965705447793160228L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> enforcesName_id3MbWJkY1d$O = new SMethodBuilder<>(Boolean.TYPE).name("enforcesName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4362847799159871796L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Void> synchronizeParentRunnable_id18l4N2Qxdck = new SMethodBuilder<>(Void.TYPE).name("synchronizeParentRunnable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1302968767135142676L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowsAbstractRunnable_id5basnX2kJ0$, enforcesName_id3MbWJkY1d$O, synchronizeParentRunnable_id18l4N2Qxdck);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowsAbstractRunnable_id5basnX2kJ0$, enforcesName_id3MbWJkY1d$O, synchronizeParentRunnable_id18l4N2Qxdck);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean allowsAbstractRunnable_id5basnX2kJ0$(@NotNull SNode __thisNode__) {
     return false;
@@ -50,10 +46,6 @@ public final class OnInitTrigger__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ OnInitTrigger__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IAllowsIncompleteTypes__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x6602642fc0a74a1dL, "com.mbeddr.core.statements.structure.IAllowsIncompleteTypes");
 
-  public static final SMethod<Boolean> isIncompleteTypeAllowed_id3_EX3WibiOp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isIncompleteTypeAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4137387759418289433L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Boolean> isIncompleteTypeAllowed_id3_EX3WibiOp = new SMethodBuilder<>(Boolean.TYPE).name("isIncompleteTypeAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4137387759418289433L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isIncompleteTypeAllowed_id3_EX3WibiOp);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isIncompleteTypeAllowed_id3_EX3WibiOp);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isIncompleteTypeAllowed_id3_EX3WibiOp(@NotNull SNode __thisNode__) {
     return true;
@@ -34,10 +30,6 @@ public final class IAllowsIncompleteTypes__BehaviorDescriptor extends BaseBHDesc
   /*package*/ IAllowsIncompleteTypes__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

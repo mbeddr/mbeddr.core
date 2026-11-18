@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -25,12 +23,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class TagPortCharacteristic__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x155c88e867d00d26L, "com.mbeddr.ext.components.structure.TagPortCharacteristic");
 
-  public static final SMethod<String> isCompatibleImpl_id1lsyexBNOog = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("isCompatibleImpl").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(1539255704409294352L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<String> isCompatibleImpl_id1lsyexBNOog = new SMethodBuilder<>(String.class).name("isCompatibleImpl").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(1539255704409294352L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "requiredSideChars"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "providedSideChars"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCompatibleImpl_id1lsyexBNOog);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCompatibleImpl_id1lsyexBNOog);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String isCompatibleImpl_id1lsyexBNOog(@NotNull SNode __thisNode__, Iterable<SNode> requiredSideChars, Iterable<SNode> providedSideChars) {
     Iterable<SNode> rsTags = SNodeOperations.ofConcept(requiredSideChars, CONCEPTS.TagPortCharacteristic$T);
@@ -41,10 +37,6 @@ public final class TagPortCharacteristic__BehaviorDescriptor extends BaseBHDescr
   /*package*/ TagPortCharacteristic__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

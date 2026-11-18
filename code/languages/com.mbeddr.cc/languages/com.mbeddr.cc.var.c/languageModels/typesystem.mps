@@ -10,6 +10,9 @@
     <import index="kmnf" ref="r:e1ae1b28-1a87-4465-9845-f4edf139cc0b(com.mbeddr.cc.var.c.behavior)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -91,7 +94,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -124,7 +126,7 @@
           <node concept="1YBJjd" id="5aNdPeN2_zl" role="2Oq$k0">
             <ref role="1YBMHb" node="5aNdPeN2_zh" resolve="vat" />
           </node>
-          <node concept="2qgKlT" id="5aNdPeN2_zK" role="2OqNvi">
+          <node concept="3zqWPK" id="4qMlRGRqAgF" role="2OqNvi">
             <ref role="37wK5l" to="kmnf:5aNdPeN2d9e" resolve="showBaseCase" />
           </node>
         </node>
@@ -161,7 +163,7 @@
                   <node concept="1YBJjd" id="5aNdPeN2LWH" role="2Oq$k0">
                     <ref role="1YBMHb" node="5aNdPeN2_zh" resolve="vat" />
                   </node>
-                  <node concept="2qgKlT" id="5aNdPeN2LWI" role="2OqNvi">
+                  <node concept="3zqWPK" id="4qMlRGRqAgH" role="2OqNvi">
                     <ref role="37wK5l" to="kmnf:5aNdPeN2_xh" resolve="getApplicableCase" />
                   </node>
                 </node>
@@ -237,7 +239,7 @@
               <node concept="1YBJjd" id="5aNdPeN2J0J" role="2Oq$k0">
                 <ref role="1YBMHb" node="5aNdPeN2IZr" resolve="va" />
               </node>
-              <node concept="2qgKlT" id="5aNdPeN2J1a" role="2OqNvi">
+              <node concept="3zqWPK" id="4qMlRGRqAgJ" role="2OqNvi">
                 <ref role="37wK5l" to="kmnf:5aNdPeN2Iws" resolve="getCaseNodes" />
               </node>
             </node>
@@ -280,7 +282,7 @@
           <node concept="1YBJjd" id="5aNdPeN2JRe" role="2Oq$k0">
             <ref role="1YBMHb" node="5aNdPeN2JQ_" resolve="vae" />
           </node>
-          <node concept="2qgKlT" id="5aNdPeN2JQD" role="2OqNvi">
+          <node concept="3zqWPK" id="4qMlRGRqAgL" role="2OqNvi">
             <ref role="37wK5l" to="kmnf:5aNdPeN2d9e" resolve="showBaseCase" />
           </node>
         </node>
@@ -317,7 +319,7 @@
                   <node concept="1YBJjd" id="5aNdPeN2LXE" role="2Oq$k0">
                     <ref role="1YBMHb" node="5aNdPeN2JQ_" resolve="vae" />
                   </node>
-                  <node concept="2qgKlT" id="5aNdPeN2LXk" role="2OqNvi">
+                  <node concept="3zqWPK" id="4qMlRGRqAgN" role="2OqNvi">
                     <ref role="37wK5l" to="kmnf:5aNdPeN2_xh" resolve="getApplicableCase" />
                   </node>
                 </node>

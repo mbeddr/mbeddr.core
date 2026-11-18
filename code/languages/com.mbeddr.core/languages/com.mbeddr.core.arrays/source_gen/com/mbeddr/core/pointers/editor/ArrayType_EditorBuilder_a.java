@@ -95,7 +95,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
@@ -105,7 +105,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_0() {
     SingleRoleCellProvider provider = new baseTypeSingleRoleHandler_5rfjfg_a0a0a(myNode, LINKS.baseType$zMGV, getEditorContext());
@@ -218,7 +218,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell;
   }
   private EditorCell createCustomFactory_5() {
-    return createCustomFactory_4(getEditorContext(), myNode);
+    return createCustomFactory_4(getEditorContext(), getNode());
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "[");
@@ -323,7 +323,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell;
   }
   private EditorCell createCustomFactory_7() {
-    return createCustomFactory_6(getEditorContext(), myNode);
+    return createCustomFactory_6(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_1() {
     SingleRoleCellProvider provider = new sizeExprSingleRoleHandler_5rfjfg_a2a0(myNode, LINKS.sizeExpr$S0Eu, getEditorContext());
@@ -436,7 +436,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell;
   }
   private EditorCell createCustomFactory_9() {
-    return createCustomFactory_8(getEditorContext(), myNode);
+    return createCustomFactory_8(getEditorContext(), getNode());
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "]");
@@ -459,7 +459,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell;
   }
   private EditorCell createCustomFactory_11() {
-    return createCustomFactory_10(getEditorContext(), myNode);
+    return createCustomFactory_10(getEditorContext(), getNode());
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
@@ -504,7 +504,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell;
   }
   private EditorCell createCustomFactory_13() {
-    return createCustomFactory_12(getEditorContext(), myNode);
+    return createCustomFactory_12(getEditorContext(), getNode());
   }
   private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "volatile");
@@ -580,7 +580,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell;
   }
   private EditorCell createCustomFactory_15() {
-    return createCustomFactory_14(getEditorContext(), myNode);
+    return createCustomFactory_14(getEditorContext(), getNode());
   }
   private EditorCell createAlternation_1() {
     boolean alternationCondition = true;
@@ -625,7 +625,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell;
   }
   private EditorCell createCustomFactory_17() {
-    return createCustomFactory_16(getEditorContext(), myNode);
+    return createCustomFactory_16(getEditorContext(), getNode());
   }
   private EditorCell createConstant_3() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "const");

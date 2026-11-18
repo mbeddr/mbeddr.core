@@ -149,21 +149,18 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createCompartment_1());
+    editorCell.addEditorCell(createCompartment_0());
     editorCell.addEditorCell(createCollection_4());
     return editorCell;
   }
-  private EditorCell createCompartment_0(EditorContext editorContext, SNode node) {
-    CompartmentCell editorCell = new CompartmentCell(editorContext, node);
+  private EditorCell createCompartment_0() {
+    CompartmentCell editorCell = new CompartmentCell(getEditorContext(), getNode());
     editorCell.setCellId("Compartment_n8afc3_a1a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-color"), getStyleRegistry().getSimpleColor(_StyleParameter_QueryFunction_n8afc3_a0a1a()));
     style.set(StyleAttributes.getInstance().<LineStyle>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-style"), _StyleParameter_QueryFunction_n8afc3_a1a1a());
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createCompartment_1() {
-    return createCompartment_0(getEditorContext(), myNode);
   }
   private Color _StyleParameter_QueryFunction_n8afc3_a0a1a() {
     return DiagramColors.STATE_BORDER;

@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -17,7 +16,6 @@ import com.mbeddr.core.base.behavior.IRequiresConfigItem__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -27,16 +25,14 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ScheduleSpecification__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb879012d402b40e0L, 0x8df7e6fa93b9b711L, 0x61ba2b0867d146d8L, "com.mbeddr.ext.concurrency.structure.ScheduleSpecification");
 
-  public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> genStartFunctionName_id2dxXn_m$rjH = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genStartFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2549588765560648941L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
-  public static final SMethod<Iterable<SNode>> declaredTasks_id2ajpxDX4Kqd = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("declaredTasks").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2491447282819597965L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
-  public static final SMethod<Iterable<SNode>> taskDeclarations_id4hMIGYxhy4M = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("taskDeclarations").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4932209942850838834L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
-  public static final SMethod<Iterable<SNode>> cyclicConstraints_id6sFonkC3hVg = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("cyclicConstraints").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7434142765716152016L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<List<SNode>> getConfigItem_id5HxjapwgqMb = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getConfigItem").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574667L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> genStartFunctionName_id2dxXn_m$rjH = new SMethodBuilder<>(String.class).name("genStartFunctionName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2549588765560648941L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<Iterable<SNode>> declaredTasks_id2ajpxDX4Kqd = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("declaredTasks").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2491447282819597965L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<Iterable<SNode>> taskDeclarations_id4hMIGYxhy4M = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("taskDeclarations").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4932209942850838834L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
+  public static final SMethod<Iterable<SNode>> cyclicConstraints_id6sFonkC3hVg = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("cyclicConstraints").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7434142765716152016L).languageId(0x8df7e6fa93b9b711L, 0xb879012d402b40e0L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConfigItem_id5HxjapwgqMb, genStartFunctionName_id2dxXn_m$rjH, declaredTasks_id2ajpxDX4Kqd, taskDeclarations_id4hMIGYxhy4M, cyclicConstraints_id6sFonkC3hVg);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConfigItem_id5HxjapwgqMb, genStartFunctionName_id2dxXn_m$rjH, declaredTasks_id2ajpxDX4Kqd, taskDeclarations_id4hMIGYxhy4M, cyclicConstraints_id6sFonkC3hVg);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> getConfigItem_id5HxjapwgqMb(@NotNull SAbstractConcept __thisConcept__) {
     List<SNode> res = IRequiresConfigItem__BehaviorDescriptor.getConfigItem_id5HxjapwgqMb.invoke0(__thisConcept__, CONCEPTS.IRequiresConfigItem$Ys);
@@ -59,10 +55,6 @@ public final class ScheduleSpecification__BehaviorDescriptor extends BaseBHDescr
   /*package*/ ScheduleSpecification__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

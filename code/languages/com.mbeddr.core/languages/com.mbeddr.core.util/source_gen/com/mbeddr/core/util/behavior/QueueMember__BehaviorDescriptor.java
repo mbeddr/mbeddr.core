@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,13 +24,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class QueueMember__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x731f80cb06135be0L, "com.mbeddr.core.util.structure.QueueMember");
 
-  public static final SMethod<SNode> ctxExpression_id7cvwcG65pmR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("ctxExpression").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8295490648108537271L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
-  public static final SMethod<SNode> ctxRingBuffer_id7cvwcG65pn2 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("ctxRingBuffer").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8295490648108537282L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<SNode> ctxExpression_id7cvwcG65pmR = new SMethodBuilder<>(SNode.class).name("ctxExpression").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8295490648108537271L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
+  public static final SMethod<SNode> ctxRingBuffer_id7cvwcG65pn2 = new SMethodBuilder<>(SNode.class).name("ctxRingBuffer").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8295490648108537282L).languageId(0xab13f57227d675f2L, 0x2693fc719b0e4b05L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(ctxExpression_id7cvwcG65pmR, ctxRingBuffer_id7cvwcG65pn2);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(ctxExpression_id7cvwcG65pmR, ctxRingBuffer_id7cvwcG65pn2);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode ctxExpression_id7cvwcG65pmR(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(__thisNode__), CONCEPTS.UnaryExpression$lH), LINKS.expression$PfNq);
@@ -44,10 +40,6 @@ public final class QueueMember__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ QueueMember__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

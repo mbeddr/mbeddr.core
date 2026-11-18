@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -16,24 +15,21 @@ import org.jetbrains.annotations.NotNull;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class BooleanType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x7af69e2e83a1ba3aL, "com.mbeddr.core.expressions.structure.BooleanType");
 
-  public static final SMethod<String> getPrintfFormatSpecifier_id4XMHJL4FDjg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPrintfFormatSpecifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5724839270941627600L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<String> computeBooleanValue_id4ln$YqgQe0T = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("computeBooleanValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4996624930072748089L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> getDefaultValue_id4jc_TWT4LGD = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4957503999941221161L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> createSignedCompanion_id5Xnv3$QEJss = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createSignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6870096341749135132L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> createNextBiggerSignedCompanion_id6cGRlFg47bM = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createNextBiggerSignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7146330090837668594L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> getPrintfFormatSpecifier_id4XMHJL4FDjg = new SMethodBuilder<>(String.class).name("getPrintfFormatSpecifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5724839270941627600L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> computeBooleanValue_id4ln$YqgQe0T = new SMethodBuilder<>(String.class).name("computeBooleanValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4996624930072748089L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(String.class, "cValueRepresentation"));
+  public static final SMethod<SNode> getDefaultValue_id4jc_TWT4LGD = new SMethodBuilder<>(SNode.class).name("getDefaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4957503999941221161L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<>(Integer.TYPE).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> createSignedCompanion_id5Xnv3$QEJss = new SMethodBuilder<>(SNode.class).name("createSignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6870096341749135132L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> createNextBiggerSignedCompanion_id6cGRlFg47bM = new SMethodBuilder<>(SNode.class).name("createNextBiggerSignedCompanion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7146330090837668594L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPrintfFormatSpecifier_id4XMHJL4FDjg, computeBooleanValue_id4ln$YqgQe0T, getDefaultValue_id4jc_TWT4LGD, getUsedBytes_id61lw97FtLtJ, createSignedCompanion_id5Xnv3$QEJss, createNextBiggerSignedCompanion_id6cGRlFg47bM);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPrintfFormatSpecifier_id4XMHJL4FDjg, computeBooleanValue_id4ln$YqgQe0T, getDefaultValue_id4jc_TWT4LGD, getUsedBytes_id61lw97FtLtJ, createSignedCompanion_id5Xnv3$QEJss, createNextBiggerSignedCompanion_id6cGRlFg47bM);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPrintfFormatSpecifier_id4XMHJL4FDjg(@NotNull SNode __thisNode__) {
     return "%d";
@@ -74,10 +70,6 @@ public final class BooleanType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ BooleanType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

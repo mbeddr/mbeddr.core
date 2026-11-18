@@ -20,7 +20,7 @@ public final class UniqueIncludeGuards__BehaviorDescriptor extends BaseBHDescrip
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x157e3481ef921764L, "com.mbeddr.core.util.structure.UniqueIncludeGuards");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.preffix$Qb__, "_");

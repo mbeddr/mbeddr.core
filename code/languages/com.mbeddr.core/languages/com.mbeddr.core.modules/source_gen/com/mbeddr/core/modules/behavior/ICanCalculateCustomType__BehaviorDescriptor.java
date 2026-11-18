@@ -7,35 +7,27 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ICanCalculateCustomType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x2173ceeae071465bL, "com.mbeddr.core.modules.structure.ICanCalculateCustomType");
 
-  public static final SMethod<Boolean> needsToCalculateCustomType_id25NNIFwsktH = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("needsToCalculateCustomType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2410497733756536685L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(ICustomTypeCalculationContext.class, ""));
-  public static final SMethod<SNode> calculateCustomType_id25NNIFwsku7 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("calculateCustomType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2410497733756536711L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(ICustomTypeCalculationContext.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> needsToCalculateCustomType_id25NNIFwsktH = new SMethodBuilder<>(Boolean.TYPE).name("needsToCalculateCustomType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2410497733756536685L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(ICustomTypeCalculationContext.class, "ctx"));
+  public static final SMethod<SNode> calculateCustomType_id25NNIFwsku7 = new SMethodBuilder<>(SNode.class).name("calculateCustomType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2410497733756536711L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(ICustomTypeCalculationContext.class, "ctx"), SMethodBuilder.createJavaParameter(SNode.class, "original"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(needsToCalculateCustomType_id25NNIFwsktH, calculateCustomType_id25NNIFwsku7);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(needsToCalculateCustomType_id25NNIFwsktH, calculateCustomType_id25NNIFwsku7);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ ICanCalculateCustomType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

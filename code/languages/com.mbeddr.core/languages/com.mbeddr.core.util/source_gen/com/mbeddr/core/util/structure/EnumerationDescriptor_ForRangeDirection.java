@@ -19,7 +19,7 @@ public class EnumerationDescriptor_ForRangeDirection extends EnumerationDescript
   private final EnumerationDescriptor.MemberDescriptor myMember_backward_0 = new EnumerationDescriptor.MemberDescriptor("backward", "--", 0x2b85e2bc8d7fc849L, "r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)/1214029888595741894");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x2693fc719b0e4b05L, 0xab13f57227d675f2L, 0x2b85e2bc8d7fc847L, 0x2b85e2bc8d7fc848L, 0x2b85e2bc8d7fc849L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_forward_0, myMember_backward_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_forward_0, myMember_backward_0);
 
   @Nullable
   @Override

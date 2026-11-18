@@ -176,7 +176,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();

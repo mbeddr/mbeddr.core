@@ -27,9 +27,6 @@ public class superTypeOfSSizeT_SubtypingRule extends SubtypingRule_Runtime imple
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept SSizeT$uP = MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x35b3514992236519L, "com.mbeddr.core.expressions.structure.SSizeT");

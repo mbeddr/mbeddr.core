@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -17,7 +16,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.expressions.behavior.Type__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -26,17 +24,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ComponentType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x7c8320896c8aa448L, "com.mbeddr.ext.components.structure.ComponentType");
 
-  public static final SMethod<Boolean> canBeVolatile_id2zhwXA_2SdW = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeVolatile").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002449781628L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> canBeConst_id2zhwXA$TG$3 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeConst").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002447374595L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getDeclaration_id59zzgFRcVlN = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDeclaration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5936743812040996211L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Boolean> isDotCapable_id5jCi3tJb0Wn = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDotCapable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6118219496708378391L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> canBeVolatile_id2zhwXA_2SdW = new SMethodBuilder<>(Boolean.TYPE).name("canBeVolatile").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002449781628L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> canBeConst_id2zhwXA$TG$3 = new SMethodBuilder<>(Boolean.TYPE).name("canBeConst").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002447374595L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<>(Integer.TYPE).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getDeclaration_id59zzgFRcVlN = new SMethodBuilder<>(SNode.class).name("getDeclaration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5936743812040996211L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> isDotCapable_id5jCi3tJb0Wn = new SMethodBuilder<>(Boolean.TYPE).name("isDotCapable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6118219496708378391L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeVolatile_id2zhwXA_2SdW, canBeConst_id2zhwXA$TG$3, getPresentation_idhEwIMiw, getUsedBytes_id61lw97FtLtJ, getDeclaration_id59zzgFRcVlN, isDotCapable_id5jCi3tJb0Wn);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeVolatile_id2zhwXA_2SdW, canBeConst_id2zhwXA$TG$3, getPresentation_idhEwIMiw, getUsedBytes_id61lw97FtLtJ, getDeclaration_id59zzgFRcVlN, isDotCapable_id5jCi3tJb0Wn);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canBeVolatile_id2zhwXA_2SdW(@NotNull SNode __thisNode__) {
     return false;
@@ -60,10 +56,6 @@ public final class ComponentType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ComponentType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

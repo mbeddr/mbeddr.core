@@ -32,9 +32,6 @@ public class superTypeOfStatemachineType_SubtypingRule extends SubtypingRule_Run
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept StatemachineType$wP = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x6cf6e22eb96bd531L, "com.mbeddr.ext.statemachines.structure.StatemachineType");

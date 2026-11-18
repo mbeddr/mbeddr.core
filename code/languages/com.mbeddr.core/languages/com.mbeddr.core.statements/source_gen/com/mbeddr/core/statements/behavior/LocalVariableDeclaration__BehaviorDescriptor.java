@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,20 +23,18 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class LocalVariableDeclaration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x3a16e3a9c7ad96e6L, "com.mbeddr.core.statements.structure.LocalVariableDeclaration");
 
-  public static final SMethod<SNode> getInitExpression_id5O5ERJtHyWT = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInitExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6702952168899882809L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getType_id67hg1wL_GfW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7048485364466893820L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> isCommentable_id3RtPbXKOu_B = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCommentable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457953124863306087L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isIncompleteTypeAllowed_id3_EX3WibiOp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isIncompleteTypeAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4137387759418289433L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<SNode> getTypeComputationNode_id7kDeEuVjSvB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTypeComputationNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8442343468559206375L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<SNode> getStaticallyEvaluatableNode_id3fs$L2LZpYI = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getStaticallyEvaluatableNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3737023490725617582L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<SNode> getDeclaredType_id1LDGRqyYkTX = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDeclaredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361469L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getInitExpression_id1LDGRqyYkU1 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInitExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361473L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> canBeStatic_id58TcxRGFbfJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeStatic").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5924821888888779759L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<SNode> getInitExpression_id5O5ERJtHyWT = new SMethodBuilder<>(SNode.class).name("getInitExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6702952168899882809L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getType_id67hg1wL_GfW = new SMethodBuilder<>(SNode.class).name("getType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7048485364466893820L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> isCommentable_id3RtPbXKOu_B = new SMethodBuilder<>(Boolean.TYPE).name("isCommentable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457953124863306087L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "node"));
+  public static final SMethod<Boolean> isIncompleteTypeAllowed_id3_EX3WibiOp = new SMethodBuilder<>(Boolean.TYPE).name("isIncompleteTypeAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4137387759418289433L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<SNode> getTypeComputationNode_id7kDeEuVjSvB = new SMethodBuilder<>(SNode.class).name("getTypeComputationNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8442343468559206375L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<SNode> getStaticallyEvaluatableNode_id3fs$L2LZpYI = new SMethodBuilder<>(SNode.class).name("getStaticallyEvaluatableNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3737023490725617582L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<SNode> getDeclaredType_id1LDGRqyYkTX = new SMethodBuilder<>(SNode.class).name("getDeclaredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361469L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getInitExpression_id1LDGRqyYkU1 = new SMethodBuilder<>(SNode.class).name("getInitExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2047364827738361473L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> canBeStatic_id58TcxRGFbfJ = new SMethodBuilder<>(Boolean.TYPE).name("canBeStatic").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5924821888888779759L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getInitExpression_id5O5ERJtHyWT, getType_id67hg1wL_GfW, isCommentable_id3RtPbXKOu_B, isIncompleteTypeAllowed_id3_EX3WibiOp, getTypeComputationNode_id7kDeEuVjSvB, getStaticallyEvaluatableNode_id3fs$L2LZpYI, getDeclaredType_id1LDGRqyYkTX, getInitExpression_id1LDGRqyYkU1, canBeStatic_id58TcxRGFbfJ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getInitExpression_id5O5ERJtHyWT, getType_id67hg1wL_GfW, isCommentable_id3RtPbXKOu_B, isIncompleteTypeAllowed_id3_EX3WibiOp, getTypeComputationNode_id7kDeEuVjSvB, getStaticallyEvaluatableNode_id3fs$L2LZpYI, getDeclaredType_id1LDGRqyYkTX, getInitExpression_id1LDGRqyYkU1, canBeStatic_id58TcxRGFbfJ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getInitExpression_id5O5ERJtHyWT(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.init$$i$n);
@@ -72,10 +68,6 @@ public final class LocalVariableDeclaration__BehaviorDescriptor extends BaseBHDe
   /*package*/ LocalVariableDeclaration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

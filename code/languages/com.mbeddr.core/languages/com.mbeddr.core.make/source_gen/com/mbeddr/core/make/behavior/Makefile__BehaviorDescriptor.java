@@ -20,7 +20,7 @@ public final class Makefile__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf93d1dbebfd142ddL, 0x932af375fa6f5373L, 0x52941adca602a0dfL, "com.mbeddr.core.make.structure.Makefile");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.name$MnvL, "makefile");

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -26,19 +24,17 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class Port__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x3e5659cd94a25d82L, "com.mbeddr.ext.components.structure.Port");
 
-  public static final SMethod<Boolean> isInPort_id2IZ2bWs0yDx = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInPort").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3152247881084316257L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<String> protocolStateVarName_id5oFMniD9Osh = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("protocolStateVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014151673617L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<String> characteristicString_id58NNGt3bEdV = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("characteristicString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5923305290143277947L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<String> genStructMemberName_id28AiFOmViAS = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genStructMemberName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460736422398470584L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<String> createNameFromInterface_id4YmSJdK70C = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("createNameFromInterface").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(89609698604511272L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SAbstractConcept> getConceptToBeCounted_id6brBMefSzRs = new SMethodBuilder<SAbstractConcept>(new SJavaCompoundTypeImpl((Class<SAbstractConcept>) ((Class) Object.class))).name("getConceptToBeCounted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210703211996L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> getMemberName_idctKDnnao9U = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMemberName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(224549505254130298L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> isInPort_id2IZ2bWs0yDx = new SMethodBuilder<>(Boolean.TYPE).name("isInPort").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3152247881084316257L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> protocolStateVarName_id5oFMniD9Osh = new SMethodBuilder<>(String.class).name("protocolStateVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6209278014151673617L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> characteristicString_id58NNGt3bEdV = new SMethodBuilder<>(String.class).name("characteristicString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5923305290143277947L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> genStructMemberName_id28AiFOmViAS = new SMethodBuilder<>(String.class).name("genStructMemberName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460736422398470584L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> createNameFromInterface_id4YmSJdK70C = new SMethodBuilder<>(String.class).name("createNameFromInterface").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(89609698604511272L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "interfaze"));
+  public static final SMethod<SAbstractConcept> getConceptToBeCounted_id6brBMefSzRs = new SMethodBuilder<>(SAbstractConcept.class).name("getConceptToBeCounted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7123462210703211996L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getMemberName_idctKDnnao9U = new SMethodBuilder<>(String.class).name("getMemberName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(224549505254130298L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<SNode> createType_id3o2OLGv7CoR = new SMethodBuilder<>(SNode.class).name("createType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3891905141441201719L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isInPort_id2IZ2bWs0yDx, protocolStateVarName_id5oFMniD9Osh, characteristicString_id58NNGt3bEdV, genStructMemberName_id28AiFOmViAS, createNameFromInterface_id4YmSJdK70C, getConceptToBeCounted_id6brBMefSzRs, getMemberName_idctKDnnao9U, createType_id3o2OLGv7CoR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isInPort_id2IZ2bWs0yDx, protocolStateVarName_id5oFMniD9Osh, characteristicString_id58NNGt3bEdV, genStructMemberName_id28AiFOmViAS, createNameFromInterface_id4YmSJdK70C, getConceptToBeCounted_id6brBMefSzRs, getMemberName_idctKDnnao9U, createType_id3o2OLGv7CoR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String protocolStateVarName_id5oFMniD9Osh(@NotNull SNode __thisNode__) {
     return "___" + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + "__protocolState";
@@ -68,10 +64,6 @@ public final class Port__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Port__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

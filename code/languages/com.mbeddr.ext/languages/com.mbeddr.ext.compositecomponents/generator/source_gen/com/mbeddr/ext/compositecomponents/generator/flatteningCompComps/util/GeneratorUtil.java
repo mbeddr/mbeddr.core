@@ -134,7 +134,7 @@ public class GeneratorUtil {
 
   }
   /**
-   * In case if a composite component we find the instance/port pairs to wich the port is delegated to. 
+   * In case if a composite component we find the instance/port pairs to wich the port is delegated to.
    * In case of an atomic compoent the port cannot be delegated, so we return an empty list
    * 
    * @param comp the (composite) component to search for delegations in
@@ -152,7 +152,7 @@ public class GeneratorUtil {
    * Resolves the ultimate source or target of a port taking into account delegation
    * inside composite componetns. Essentially it follows the chain of delegating instances
    * until a non-delegating instance is found. It builds the qualified name of that instance
-   * once it is not part of a composite component anymore ("flachklopfen"). There may be several 
+   * once it is not part of a composite component anymore ("flachklopfen"). There may be several
    * endpoints because of potentially several delegations for the same port
    * 
    * @param instance the current instance

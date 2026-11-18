@@ -7,14 +7,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -22,13 +20,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class GenForeignExtModuleImport__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x62296a07bc3846d2L, 0x8034198c24063588L, 0x1ce029ba57dfd02eL, "com.mbeddr.core.modules.gen.structure.GenForeignExtModuleImport");
 
-  public static final SMethod<Boolean> isReexported_id6clJcrKt_a0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isReexported").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346889622144L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<SNode> chunk_id6clJcrJZN1z = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("chunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881814627L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> isReexported_id6clJcrKt_a0 = new SMethodBuilder<>(Boolean.TYPE).name("isReexported").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346889622144L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> chunk_id6clJcrJZN1z = new SMethodBuilder<>(SNode.class).name("chunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881814627L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isReexported_id6clJcrKt_a0, chunk_id6clJcrJZN1z);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isReexported_id6clJcrKt_a0, chunk_id6clJcrJZN1z);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isReexported_id6clJcrKt_a0(@NotNull SNode __thisNode__) {
     return false;
@@ -40,10 +36,6 @@ public final class GenForeignExtModuleImport__BehaviorDescriptor extends BaseBHD
   /*package*/ GenForeignExtModuleImport__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

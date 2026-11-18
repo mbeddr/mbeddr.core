@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.expressions.behavior.Type__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -30,21 +28,19 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class InterfaceType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x97d2424451db4e2eL, 0x97fc7bd73b1f5f40L, 0x707ac195dd613e9cL, "com.mbeddr.ext.components.structure.InterfaceType");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Boolean> canBeVolatile_id2zhwXA_2SdW = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeVolatile").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002449781628L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Boolean> canBeConst_id2zhwXA$TG$3 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeConst").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002447374595L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
-  public static final SMethod<SNode> getValueStructure_idIPRL99KNBQ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getValueStructure").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(843825774841772534L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
-  public static final SMethod<SNode> getDeclaration_id59zzgFRcVlN = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDeclaration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5936743812040996211L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Boolean> isMultiple_id6phvXa0RvzK = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isMultiple").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7372814607064103152L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
-  public static final SMethod<Boolean> isAllowedInExpression_id2Qo$Q2I7Rfr = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isAllowedInExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3285537971614217179L).languageId(0x97545a516023bfaaL, 0x3bf5377ae9044dedL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getTypeOfOperation_id2Qo$Q2I7Rfy = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTypeOfOperation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3285537971614217186L).languageId(0x97545a516023bfaaL, 0x3bf5377ae9044dedL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> interfaceCountVarName_id73HHpfbmH1B = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("interfaceCountVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8137359748104900711L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Boolean> canBeVolatile_id2zhwXA_2SdW = new SMethodBuilder<>(Boolean.TYPE).name("canBeVolatile").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002449781628L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Boolean> canBeConst_id2zhwXA$TG$3 = new SMethodBuilder<>(Boolean.TYPE).name("canBeConst").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2941277002447374595L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<Integer> getUsedBytes_id61lw97FtLtJ = new SMethodBuilder<>(Integer.TYPE).name("getUsedBytes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6941595764870551407L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<SNode> getValueStructure_idIPRL99KNBQ = new SMethodBuilder<>(SNode.class).name("getValueStructure").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(843825774841772534L).languageId(0xba1436af2f213ecfL, 0xefda956e491e4f00L).build2();
+  public static final SMethod<SNode> getDeclaration_id59zzgFRcVlN = new SMethodBuilder<>(SNode.class).name("getDeclaration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5936743812040996211L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Boolean> isMultiple_id6phvXa0RvzK = new SMethodBuilder<>(Boolean.TYPE).name("isMultiple").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7372814607064103152L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
+  public static final SMethod<Boolean> isAllowedInExpression_id2Qo$Q2I7Rfr = new SMethodBuilder<>(Boolean.TYPE).name("isAllowedInExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3285537971614217179L).languageId(0x97545a516023bfaaL, 0x3bf5377ae9044dedL).build2(SMethodBuilder.createJavaParameter(SNode.class, "aae"));
+  public static final SMethod<SNode> getTypeOfOperation_id2Qo$Q2I7Rfy = new SMethodBuilder<>(SNode.class).name("getTypeOfOperation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3285537971614217186L).languageId(0x97545a516023bfaaL, 0x3bf5377ae9044dedL).build2(SMethodBuilder.createJavaParameter(SNode.class, "aae"));
+  public static final SMethod<String> interfaceCountVarName_id73HHpfbmH1B = new SMethodBuilder<>(String.class).name("interfaceCountVarName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8137359748104900711L).languageId(0x97fc7bd73b1f5f40L, 0x97d2424451db4e2eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canBeVolatile_id2zhwXA_2SdW, canBeConst_id2zhwXA$TG$3, getUsedBytes_id61lw97FtLtJ, getValueStructure_idIPRL99KNBQ, getDeclaration_id59zzgFRcVlN, isMultiple_id6phvXa0RvzK, isAllowedInExpression_id2Qo$Q2I7Rfr, getTypeOfOperation_id2Qo$Q2I7Rfy, interfaceCountVarName_id73HHpfbmH1B);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canBeVolatile_id2zhwXA_2SdW, canBeConst_id2zhwXA$TG$3, getUsedBytes_id61lw97FtLtJ, getValueStructure_idIPRL99KNBQ, getDeclaration_id59zzgFRcVlN, isMultiple_id6phvXa0RvzK, isAllowedInExpression_id2Qo$Q2I7Rfr, getTypeOfOperation_id2Qo$Q2I7Rfy, interfaceCountVarName_id73HHpfbmH1B);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     String result = SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)) + "<" + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invokeSuper(__thisNode__, CONCEPTS.InterfaceType$7N) + ">";
@@ -88,10 +84,6 @@ public final class InterfaceType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ InterfaceType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

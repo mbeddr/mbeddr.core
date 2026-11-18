@@ -20,7 +20,7 @@ public final class ExternalSourcePath__BehaviorDescriptor extends BaseBHDescript
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2d7fadf533f64e80L, 0xa78f0f739add2bdeL, 0x50591c21bb9755b0L, "com.mbeddr.core.buildconfig.structure.ExternalSourcePath");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.namePattern$6Qjk, "*.c");

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -15,7 +14,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -24,12 +22,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class MessageCountExpr__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d68b77b6994918L, 0x83b8857e63787800L, 0x24263512a7a650c1L, "com.mbeddr.core.unittest.structure.MessageCountExpr");
 
-  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
+  public static final SMethod<String> renderReadable_id1VQvajLb13M = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2231107713271337202L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id1VQvajLb13M);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id1VQvajLb13M);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id1VQvajLb13M(@NotNull SNode __thisNode__) {
     return "messagecount(" + SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.msgTable$w23j), PROPS.name$MnvL) + "." + SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.msgDef$w2ik), PROPS.name$MnvL) + ")";
@@ -38,10 +34,6 @@ public final class MessageCountExpr__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ MessageCountExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import com.mbeddr.core.base.behavior.Metric__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -24,12 +22,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ExpressionDepth__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x493bdfd3ae5dd635L, "com.mbeddr.core.modules.structure.ExpressionDepth");
 
-  public static final SMethod<Void> update_id4$VRXeHdE9I = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("update").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5277057488631800430L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> update_id4$VRXeHdE9I = new SMethodBuilder<>(Void.TYPE).name("update").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5277057488631800430L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(update_id4$VRXeHdE9I);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(update_id4$VRXeHdE9I);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void update_id4$VRXeHdE9I(@NotNull SNode __thisNode__, SNode n) {
     if (SNodeOperations.isInstanceOf(n, CONCEPTS.Expression$bT) && !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(n), CONCEPTS.Expression$bT))) {
@@ -41,10 +37,6 @@ public final class ExpressionDepth__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ ExpressionDepth__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
