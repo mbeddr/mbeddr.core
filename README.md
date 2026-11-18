@@ -28,10 +28,10 @@ For more details please visit the [mbeddr landing page](https://github.com/mbedd
 
 ### Maven Dependencies
 
-To use mbeddr or the mbeddr platform in your own project, you one of the following dependencies in your maven or gradle build script. The latest support MPS version is 2024.1:
+Use `com.mbeddr:mbeddr` in your Maven or Gradle build. The supported MPS version is 2024.1. The [mbeddr platform](https://github.com/JetBrains/MPS-extensions) is built and published by MPS-extensions as `com.mbeddr:platform`, using the same version as `de.itemis.mps:extensions`. Mbeddr has its own independent version.
 
 [![mbeddr](https://img.shields.io/badge/Github%20pages-mbeddr-success)](https://github.com/orgs/mbeddr/packages?tab=packages&q=com.mbeddr.mbeddr)
-[![mbeddr platform](https://img.shields.io/badge/Github%20pages-mbeddr.platform-success)](https://github.com/orgs/mbeddr/packages?tab=packages&q=com.mbeddr.platform)
+[Platform packages](https://github.com/JetBrains/MPS-extensions/packages)
 
 #### Mbeddr
 
@@ -50,41 +50,14 @@ To use mbeddr or the mbeddr platform in your own project, you one of the followi
 | 2019.3 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/mbeddr/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2019.3')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:com%2Fmbeddr%2Fmbeddr) |
 
 
-#### Mbeddr platform
+#### Platform builds and contributions
 
+Platform sources, issues, changelog, Maven publications, and release distributions are maintained in [MPS-extensions](https://github.com/JetBrains/MPS-extensions). See its [platform changelog](https://github.com/JetBrains/MPS-extensions/blob/maintenance/mps20241/code/platform/CHANGELOG.md) and [releases](https://github.com/JetBrains/MPS-extensions/releases).
 
-| MPS version | nexus status |
-| --------------- | --------------- | 
-| 2024.1 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/platform/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/latest)](https://artifacts.itemis.cloud/#browse/browse:maven-mps:com%2Fmbeddr%2Fplatform) | 
-| 2023.2 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/platform/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2023.2')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:com%2Fmbeddr%2Fplatform) | 
-| 2022.3 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/platform/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2022.3')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:com%2Fmbeddr%2Fplatform) | 
-| 2022.2 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/platform/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2022.2')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:com%2Fmbeddr%2Fplatform) | 
-| 2021.3 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/platform/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2021.3')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:com%2Fmbeddr%2Fplatform) | 
-| 2021.2 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/platform/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2021.2')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:com%2Fmbeddr%2Fplatform) | 
-| 2021.1 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/platform/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2021.1')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:com%2Fmbeddr%2Fplatform) | 
-| 2020.3 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/platform/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2020.3')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:com%2Fmbeddr%2Fplatform) | 
-| 2020.2 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/platform/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2020.2')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:com%2Fmbeddr%2Fplatform) | 
-| 2020.1 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/platform/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2020.1')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:com%2Fmbeddr%2Fplatform) | 
-| 2019.3 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/platform/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2019.3')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:com%2Fmbeddr%2Fplatform) | 
+### Building mbeddr
 
-### Contributing to the mbeddr.platform
+Run `./gradlew build` to build and test mbeddr. The build downloads the published platform ZIP and extracts it under `code/build/dependencies/com.mbeddr.platform` for language builds and MPS project libraries. `./gradlew :com.mbeddr:extractPlatformZip` prepares those libraries before opening a source project in MPS. To consume a particular MPS-extensions publication, pass `-PmpsExtensionsVersion=<published-version>`; this selects the platform dependency and leaves mbeddr's own version unchanged.
 
-To contribute your module to the mbeddr platform for reuse, you probably want to add it to the mps utils (`com.mbeddr.mpsutils`). After some incubation time, it may be considered to move it to the MPS-extensions, if the motivation, and implementation have grown mature.
+By default the build uses the platform version pinned as `platform241` in `gradle/libs.versions.toml`.
 
-- name your language "com.mbeddr.mpsutil.$yourLanguageName"
-- add it to the MPS project in `code/languages/com.mbeddr.mpsutil` inside a virtual folder "$yourLanguageName"
-- all dedicated modules (like the ones you create below) should go into this virtual folder "$yourLanguageName"
-- add a test solution with automated tests, named "test.com.mbeddr.mpsutil.$yourLanguageName" and make sure they pass
-- if your module is an extension to an MPS language
-     - add a language named "com.mbeddr.mpsutil.$yourLanguageName.sandbox" that demos how to use your language
-     - add a "com.mbeddr.mpsutil.$yourLanguageName.sandbox.sandbox" solution that demonstrates the effect of what the sandbox language implemented
-- open the MPS project "code/languages/com.mbeddr.platform.build"
-    - open the build script at "com.mbeddr.platform" named "com.mbeddr.platform"
-    - add a group named "group.$yourLanguageName"
-    - add a plugin that bundles your extension based on this group with the needed dependencies
-    - add your plugin to the default layout
-    - open the test build script at "platform/com.mbeddr.platform/com.mbeddr.platform.mpsutils.ts.tests.build" and add your tests
-    - add your test solution and its dependencies to the group "com.mbeddr.platform.tests"
-    - add it to the default layout
-    - add it to the test modules configuration
-- run the build locally with `./gradlew :com.mbeddr:platform:build` and check if your project functions with it
+Run `./gradlew migrate remigrate` for migrations of the mbeddr C project. The tutorial source ZIP remains part of mbeddr releases; platform distribution assets are available from MPS-extensions releases.

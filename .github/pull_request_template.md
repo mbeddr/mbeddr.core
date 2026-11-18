@@ -3,13 +3,13 @@
 ## Checklist for creating a good PR (can be deleted)
 
 - [ ] I've described my user-visible change in exactly one authoritative changelog (**mandatory**):
-  - `code/platform/CHANGELOG.md` for platform modules, builds, publications, or distributions.
+  - Platform changes belong in [MPS-extensions](https://github.com/JetBrains/MPS-extensions), including its platform changelog.
   - `CHANGELOG.md` for the rest of mbeddr, including mbeddr C languages, tests, applications, tutorials, releases, and distributions.
 - [ ] I've selected the correct [base branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-base-branch-of-a-pull-request).
 - [ ] I have checked my code (edge cases, no errors) and corrected any misspellings.
 - [ ] I have added comments to my code in areas where the code is hard to understand.
 - [ ] I've created a new language/solution.
-    - [ ] I've added the language/solution to the build script ([tutorial in readme](https://github.com/mbeddr/mbeddr.core#contributing-to-the-mbeddrplatform))
+    - [ ] I've added the language/solution to the build script.
     - [ ] I've added a sandbox that showcases the language.
     - [ ] There is some kind of documentation available in the repository or somewhere else [e.g. [MPS Platform Docs](http://mbeddr.com/mps-platform-docs/platform_essentials/com_mbeddr_mpsutil/)].
  - [ ] I've introduced a breaking change.
