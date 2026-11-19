@@ -11,6 +11,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -150,7 +153,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -229,7 +231,7 @@
                 </node>
               </node>
             </node>
-            <node concept="2qgKlT" id="4YQM_89vh5l" role="2OqNvi">
+            <node concept="3zqWPK" id="4qMlRGRqAmr" role="2OqNvi">
               <ref role="37wK5l" to="zlmb:4YQM_89uRDd" resolve="getContextParticipant" />
             </node>
           </node>
@@ -336,9 +338,9 @@
               <node concept="37vLTw" id="2AZbPfMaNvD" role="2Oq$k0">
                 <ref role="3cqZAo" node="4YQM_89vh5d" resolve="src" />
               </node>
-              <node concept="2qgKlT" id="4YQM_89vjUP" role="2OqNvi">
+              <node concept="3zqWPK" id="4qMlRGRqAmt" role="2OqNvi">
                 <ref role="37wK5l" to="zlmb:4YQM_89vjS3" resolve="collaboratesWith" />
-                <node concept="37vLTw" id="2AZbPfMaNxl" role="37wK5m">
+                <node concept="37vLTw" id="4qMlRGRqAmv" role="37wK5m">
                   <ref role="3cqZAo" node="4YQM_89vjQW" resolve="target" />
                 </node>
               </node>
@@ -531,7 +533,7 @@
                         <ref role="3Tt5mk" to="4l29:4YQM_89uPHZ" resolve="capability" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="5YVZL2k_FFC" role="2OqNvi">
+                    <node concept="3zqWPK" id="4qMlRGRqAmw" role="2OqNvi">
                       <ref role="37wK5l" to="zlmb:4YQM_89vvUS" resolve="signature" />
                     </node>
                   </node>
@@ -587,7 +589,7 @@
                           <ref role="cht4Q" to="4l29:5_PV_QzOPyz" resolve="IDataInstance" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="5YVZL2k_FFW" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRqAmy" role="2OqNvi">
                         <ref role="37wK5l" to="zlmb:5YVZL2k_jnw" resolve="data" />
                       </node>
                     </node>
@@ -626,7 +628,7 @@
                           <ref role="3Tt5mk" to="4l29:4YQM_89uPHZ" resolve="capability" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="4YQM_89vvVY" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRqAm$" role="2OqNvi">
                         <ref role="37wK5l" to="zlmb:4YQM_89vvUS" resolve="signature" />
                       </node>
                     </node>
@@ -728,7 +730,7 @@
                   </node>
                   <node concept="1uHKPH" id="5YZjOkv$EkF" role="2OqNvi" />
                 </node>
-                <node concept="2qgKlT" id="5YZjOkv$EkG" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAmA" role="2OqNvi">
                   <ref role="37wK5l" to="zlmb:4YQM_89uRDd" resolve="getContextParticipant" />
                 </node>
               </node>
@@ -753,7 +755,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2qgKlT" id="5YZjOkv$Elh" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAmC" role="2OqNvi">
                   <ref role="37wK5l" to="zlmb:4YQM_89uRDd" resolve="getContextParticipant" />
                 </node>
               </node>
