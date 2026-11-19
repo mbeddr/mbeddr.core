@@ -1,7 +1,7 @@
 # Changelog
 
 All notable changes to the mbeddr project will be documented in this file.
-Changes to the mbeddr platform are documented in the [MPS-extensions platform changelog](https://github.com/JetBrains/MPS-extensions/blob/maintenance/mps20261/code/platform/CHANGELOG.md).
+Changes to the mbeddr platform are documented in the [MPS-extensions platform changelog](https://github.com/JetBrains/MPS-extensions/blob/master/code/platform/CHANGELOG.md).
 
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.

@@ -25,7 +25,7 @@ For some more information about the project, visit http://mbeddr.com/mps-platfor
 
 ## Mbeddr Platform
 
-Platform sources, issues, changelog, Maven publications, and release distributions are maintained in [MPS-extensions](https://github.com/JetBrains/MPS-extensions). See its [platform changelog](https://github.com/JetBrains/MPS-extensions/blob/maintenance/mps20261/code/platform/CHANGELOG.md) and [releases](https://github.com/JetBrains/MPS-extensions/releases).
+Platform sources, issues, changelog, Maven publications, and release distributions are maintained in [MPS-extensions](https://github.com/JetBrains/MPS-extensions). See its [platform changelog](https://github.com/JetBrains/MPS-extensions/blob/master/code/platform/CHANGELOG.md) and [releases](https://github.com/JetBrains/MPS-extensions/releases).
 
 ## Project Structure
 
@@ -42,7 +42,7 @@ The `code/solutions` folder contains some examples for the mbeddr C languages.
 
 ## Maven Dependencies
 
-Use `com.mbeddr:mbeddr` in your Maven or Gradle build. The supported MPS version is 2026.1. The [mbeddr platform](https://github.com/JetBrains/MPS-extensions) is built and published by MPS-extensions as `com.mbeddr:platform`, using the same version as `de.itemis.mps:extensions`. Mbeddr has its own independent version.
+Use `com.mbeddr:mbeddr` in your Maven or Gradle build. The master branch builds against the MPS master. The [mbeddr platform](https://github.com/JetBrains/MPS-extensions) is built and published by MPS-extensions as `com.mbeddr:platform`, using the same version as `de.itemis.mps:extensions`. Mbeddr has its own independent version.
 
 [![mbeddr](https://img.shields.io/badge/Github%20pages-mbeddr-success)](https://github.com/orgs/mbeddr/packages?tab=packages&q=com.mbeddr.mbeddr)
 [Platform packages](https://github.com/JetBrains/MPS-extensions/packages)
