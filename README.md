@@ -67,9 +67,9 @@ Use `com.mbeddr:mbeddr` in your Maven or Gradle build. The supported MPS version
 
 ## Building mbeddr
 
-Run `./gradlew build` to build and test mbeddr. The build downloads the published platform ZIP and extracts it under `code/build/dependencies/com.mbeddr.platform` for language builds and MPS project libraries. `./gradlew :com.mbeddr:extractPlatformZip` prepares those libraries before opening a source project in MPS. To consume a particular MPS-extensions publication, pass `-PmpsExtensionsVersion=<published-version>`; this selects the platform dependency and leaves mbeddr's own version unchanged.
+Run `./gradlew build` to build and test mbeddr. The build downloads the published platform ZIP and extracts it under `code/build/dependencies/com.mbeddr.platform` for language builds and MPS project libraries. `./gradlew :com.mbeddr:extractPlatformZip` prepares those libraries before opening a source project in MPS. To consume a particular MPS-extensions publication, pass `-PmbeddrPlatformVersion=<published-version>`; this selects the platform dependency and leaves mbeddr's own version unchanged.
 
-By default the build uses the platform version pinned as `platform251` in `gradle/libs.versions.toml`.
+By default the build uses the platform version that the `mbeddrPlatform` library pins in `gradle/libs.versions.toml`.
 
 Run `./gradlew migrate remigrate` for migrations of the mbeddr C project. The tutorial source ZIP remains part of mbeddr releases; platform distribution assets are available from MPS-extensions releases.
 

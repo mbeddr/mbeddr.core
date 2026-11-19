@@ -24,11 +24,6 @@ project(":tutorial").projectDir = file("code/applications/tutorial")
 rootProject.name = "mbeddr.core"
 
 dependencyResolutionManagement {
-    providers.gradleProperty("mpsExtensionsVersion").orNull?.let { publishedVersion ->
-        versionCatalogs.create("libs") {
-            version("platform251", publishedVersion)
-        }
-    }
     repositoriesMode = RepositoriesMode.FAIL_ON_PROJECT_REPOS
     repositories {
         maven("https://artifacts.itemis.cloud/repository/maven-mps")
