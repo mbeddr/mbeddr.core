@@ -40,7 +40,9 @@ val platformArtifacts by configurations.resolvable("platformArtifacts") {
 }
 
 dependencies {
-    platformDependency(libs.mbeddrPlatform)
+    platformDependency(libs.mbeddrPlatform) {
+        providers.gradleProperty("mbeddrPlatformVersion").orNull?.let { version { require(it) } }
+    }
     platformArtifactDependency(project(path = ":com.mbeddr", configuration = "platformArtifacts"))
     junitAnt("junit:junit:4.13.2")
     junitAnt("org.apache.ant:ant-junit:1.10.18") {
