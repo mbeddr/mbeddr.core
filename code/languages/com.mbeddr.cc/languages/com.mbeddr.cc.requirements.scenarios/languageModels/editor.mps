@@ -11,6 +11,9 @@
     <import index="zlmb" ref="r:3cbf80ca-1cd1-479c-afbf-95b69356a6d3(com.mbeddr.cc.requirements.scenarios.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ngI" index="22mbnS">
@@ -212,7 +215,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7835263205327057228" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenAndChildAttributesOperation" flags="ng" index="Bykcj" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="5168775467716640652" name="jetbrains.mps.lang.smodel.structure.OperationParm_LinkQualifier" flags="ng" index="1aIX9F">
@@ -1222,7 +1224,7 @@
                   <node concept="3clFbF" id="5_PV_QzP8ud" role="3cqZAp">
                     <node concept="2OqwBi" id="5_PV_QzP8uz" role="3clFbG">
                       <node concept="pncrf" id="5_PV_QzP8ue" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="5_PV_QzP8uD" role="2OqNvi">
+                      <node concept="3zqWPK" id="4qMlRGRqAmj" role="2OqNvi">
                         <ref role="37wK5l" to="zlmb:5_PV_QzOYs3" resolve="getRefName" />
                       </node>
                     </node>
@@ -1239,7 +1241,7 @@
                 <node concept="3clFbF" id="2oITgcLXoff" role="3cqZAp">
                   <node concept="2OqwBi" id="2oITgcLXofg" role="3clFbG">
                     <node concept="1NM5Ph" id="2oITgcLXofj" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="2oITgcLXofi" role="2OqNvi">
+                    <node concept="3zqWPK" id="4qMlRGRqAml" role="2OqNvi">
                       <ref role="37wK5l" to="zlmb:5_PV_QzOYs3" resolve="getRefName" />
                     </node>
                   </node>
@@ -1409,7 +1411,7 @@
                     <node concept="1xIGOp" id="3cUcim$a$9K" role="1xVPHs" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="3cUcim$a$9L" role="2OqNvi">
+                <node concept="3zqWPK" id="4qMlRGRqAmn" role="2OqNvi">
                   <ref role="37wK5l" to="zlmb:4YQM_89uRDd" resolve="getContextParticipant" />
                 </node>
               </node>

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,7 +20,6 @@ import java.util.HashSet;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -31,13 +29,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class GenericUnitInitializer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe3420481604b464eL, 0xbc1b06ecfc1f9dfcL, 0x6cd771c4ddf6ff00L, "com.mbeddr.ext.components.units.structure.GenericUnitInitializer");
 
-  public static final SMethod<Iterable<SNode>> getGenericUnits_id5W7baqyUyho = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getGenericUnits").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6847490852649575512L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
-  public static final SMethod<Iterable<SNode>> getGenericUnits_idqWsmfOQfLa = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getGenericUnits").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(485387533972733002L).languageId(0xbc1b06ecfc1f9dfcL, 0xe3420481604b464eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> getGenericUnits_id5W7baqyUyho = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getGenericUnits").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6847490852649575512L).languageId(0xb9b011884b2ff1c8L, 0xd04a6cc773e4069L).build2();
+  public static final SMethod<Iterable<SNode>> getGenericUnits_idqWsmfOQfLa = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getGenericUnits").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(485387533972733002L).languageId(0xbc1b06ecfc1f9dfcL, 0xe3420481604b464eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "component"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGenericUnits_id5W7baqyUyho, getGenericUnits_idqWsmfOQfLa);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGenericUnits_id5W7baqyUyho, getGenericUnits_idqWsmfOQfLa);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getGenericUnits_id5W7baqyUyho(@NotNull SNode __thisNode__) {
     SNode instance = SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.ComponentInstance$zN, true, false);
@@ -60,10 +56,6 @@ public final class GenericUnitInitializer__BehaviorDescriptor extends BaseBHDesc
   /*package*/ GenericUnitInitializer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

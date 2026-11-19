@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -17,7 +16,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -27,12 +25,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ConflictsConstraint__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe401b44780194ccdL, 0xa72cbfb0230f5782L, 0x7508f2ac3aa833d1L, "com.mbeddr.cc.var.fm.structure.ConflictsConstraint");
 
-  public static final SMethod<String> validateFor_id5MNZoCA09v1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("validateFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6679961442105464769L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> validateFor_id5MNZoCA09v1 = new SMethodBuilder<>(String.class).name("validateFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6679961442105464769L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2(SMethodBuilder.createJavaParameter(SNode.class, "sf"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(validateFor_id5MNZoCA09v1);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(validateFor_id5MNZoCA09v1);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String validateFor_id5MNZoCA09v1(@NotNull final SNode __thisNode__, SNode sf) {
     SNode cm = SNodeOperations.getNodeAncestor(sf, CONCEPTS.ConfigurationModel$F$, false, false);
@@ -45,10 +41,6 @@ public final class ConflictsConstraint__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ ConflictsConstraint__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class OutEvent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x4070c9f3cc4f831eL, "com.mbeddr.ext.statemachines.structure.OutEvent");
 
-  public static final SMethod<Boolean> canBeSent_id3TJMuIJYFrK = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeSent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4499036566873356016L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<Boolean> canBeSent_id3TJMuIJYFrK = new SMethodBuilder<>(Boolean.TYPE).name("canBeSent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4499036566873356016L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeSent_id3TJMuIJYFrK);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeSent_id3TJMuIJYFrK);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canBeSent_id3TJMuIJYFrK(@NotNull SNode __thisNode__) {
     return true;
@@ -34,10 +30,6 @@ public final class OutEvent__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ OutEvent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

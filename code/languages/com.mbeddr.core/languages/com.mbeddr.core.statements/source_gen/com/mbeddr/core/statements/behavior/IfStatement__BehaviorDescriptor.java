@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -25,12 +24,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class IfStatement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa9d696470840491eL, 0xbf392eb0805d2011L, 0x5718179e5b1bb7d7L, "com.mbeddr.core.statements.structure.IfStatement");
 
-  public static final SMethod<String> getEndLabel_id5Xsg2EBpPwD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEndLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6871437683401906217L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> forceMultiLines_id5oX1Q_zkX36 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("forceMultiLines").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6214131210060550342L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<Boolean> isCommentable_id3RtPbXKOu_B = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCommentable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457953124863306087L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<List<SAbstractConcept>> getCommentConcept_id5HxjapwgqLb = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getCommentConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574603L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getEndLabel_id5Xsg2EBpPwD = new SMethodBuilder<>(String.class).name("getEndLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6871437683401906217L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "statementList"));
+  public static final SMethod<Boolean> forceMultiLines_id5oX1Q_zkX36 = new SMethodBuilder<>(Boolean.TYPE).name("forceMultiLines").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6214131210060550342L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<Boolean> isCommentable_id3RtPbXKOu_B = new SMethodBuilder<>(Boolean.TYPE).name("isCommentable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4457953124863306087L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "trigger"));
+  public static final SMethod<List<SAbstractConcept>> getCommentConcept_id5HxjapwgqLb = new SMethodBuilder<>((Class<List<SAbstractConcept>>) ((Class) Object.class)).name("getCommentConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6584628407655574603L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEndLabel_id5Xsg2EBpPwD, forceMultiLines_id5oX1Q_zkX36, isCommentable_id3RtPbXKOu_B, getCommentConcept_id5HxjapwgqLb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEndLabel_id5Xsg2EBpPwD, forceMultiLines_id5oX1Q_zkX36, isCommentable_id3RtPbXKOu_B, getCommentConcept_id5HxjapwgqLb);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.thenPart$f_ts, null);

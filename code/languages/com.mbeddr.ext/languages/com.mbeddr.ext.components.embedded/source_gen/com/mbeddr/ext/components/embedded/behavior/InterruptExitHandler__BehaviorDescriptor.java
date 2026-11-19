@@ -22,7 +22,7 @@ public final class InterruptExitHandler__BehaviorDescriptor extends BaseBHDescri
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x28899e1bfee4db6L, 0xb470ed0f9ee5f662L, 0x1190893126260ac1L, "com.mbeddr.ext.components.embedded.structure.InterruptExitHandler");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.body$J$$A, createStatementList_e4tptg_a0a0a());

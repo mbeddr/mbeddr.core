@@ -13,7 +13,7 @@
       <unit at="11,0,40,0" name="com.mbeddr.ext.components.test.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,30,0" name="com.mbeddr.ext.components.test.structure.LanguageConceptSwitch" />
+      <unit at="12,0,38,0" name="com.mbeddr.ext.components.test.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,83,0" name="com.mbeddr.ext.components.test.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="572633089222371456" at="20,51,27,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="572633089222371456" at="12,0,13,0" concept="6" trace="DirectFieldAccess" />
-      <node id="572633089222371456" at="16,116,17,55" concept="0" />
+      <node id="572633089222371456" at="14,0,15,0" concept="6" trace="DirectFieldAccess" />
+      <node id="572633089222371456" at="18,116,19,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="572633089222371456" at="15,0,16,0" concept="1" trace="myConceptDirectFieldAccess" />
@@ -74,8 +74,8 @@
       <scope id="8230733038424928674" at="28,52,35,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8230733038424928674" at="13,0,14,0" concept="6" trace="DirectRunnableCall" />
-      <node id="8230733038424928674" at="17,55,18,57" concept="0" />
+      <node id="8230733038424928674" at="15,0,16,0" concept="6" trace="DirectRunnableCall" />
+      <node id="8230733038424928674" at="19,55,20,57" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8230733038424928674" at="16,0,17,0" concept="1" trace="myConceptDirectRunnableCall" />

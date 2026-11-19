@@ -8,25 +8,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class DerivedFeature__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe401b44780194ccdL, 0xa72cbfb0230f5782L, 0x1e95874e0e6fd41aL, "com.mbeddr.cc.var.fm.structure.DerivedFeature");
 
-  public static final SMethod<Iterable<SNode>> attributes_id6Ce4x7LmZjI = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("attributes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7642065485967389934L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
+  public static final SMethod<Iterable<SNode>> attributes_id6Ce4x7LmZjI = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("attributes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7642065485967389934L).languageId(0xa72cbfb0230f5782L, 0xe401b44780194ccdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(attributes_id6Ce4x7LmZjI);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(attributes_id6Ce4x7LmZjI);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> attributes_id6Ce4x7LmZjI(@NotNull SNode __thisNode__) {
     return new ArrayList<SNode>();
@@ -35,10 +31,6 @@ public final class DerivedFeature__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ DerivedFeature__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -21,7 +21,7 @@ public class EnumerationDescriptor_EffortConfidence extends EnumerationDescripto
   private final EnumerationDescriptor.MemberDescriptor myMember_High_0 = new EnumerationDescriptor.MemberDescriptor("High", "High", 0xcc60c4bfeb4a1e4L, "r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)/7781501729894695240");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0xcc60c4bfeb4a1e1L, 0xcc60c4bfeb4a1e5L, 0xcc60c4bfeb4a1e2L, 0xcc60c4bfeb4a1e3L, 0xcc60c4bfeb4a1e4L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember___0, myMember_Low_0, myMember_Med_0, myMember_High_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember___0, myMember_Low_0, myMember_Med_0, myMember_High_0);
 
   @Nullable
   @Override

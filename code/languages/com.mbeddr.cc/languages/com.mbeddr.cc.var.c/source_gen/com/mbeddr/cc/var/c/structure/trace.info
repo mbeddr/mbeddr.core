@@ -13,7 +13,7 @@
       <unit at="11,0,54,0" name="com.mbeddr.cc.var.c.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,34,0" name="com.mbeddr.cc.var.c.structure.LanguageConceptSwitch" />
+      <unit at="12,0,42,0" name="com.mbeddr.cc.var.c.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,104,0" name="com.mbeddr.cc.var.c.structure.StructureAspectDescriptor" />
@@ -32,8 +32,8 @@
       <scope id="5959167564566749003" at="30,47,35,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5959167564566749003" at="13,0,14,0" concept="6" trace="IVariantAware" />
-      <node id="5959167564566749003" at="19,61,20,52" concept="0" />
+      <node id="5959167564566749003" at="15,0,16,0" concept="6" trace="IVariantAware" />
+      <node id="5959167564566749003" at="21,61,22,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5959167564566749003" at="16,0,17,0" concept="1" trace="myConceptIVariantAware" />
@@ -68,8 +68,8 @@
       <scope id="5959167564566749004" at="43,50,49,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5959167564566749004" at="15,0,16,0" concept="6" trace="VariantAwareType" />
-      <node id="5959167564566749004" at="21,61,22,55" concept="0" />
+      <node id="5959167564566749004" at="17,0,18,0" concept="6" trace="VariantAwareType" />
+      <node id="5959167564566749004" at="23,61,24,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5959167564566749004" at="18,0,19,0" concept="1" trace="myConceptVariantAwareType" />
@@ -105,8 +105,8 @@
       <scope id="5959167564566953249" at="36,56,42,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5959167564566953249" at="14,0,15,0" concept="6" trace="VariantAwareExpression" />
-      <node id="5959167564566953249" at="20,52,21,61" concept="0" />
+      <node id="5959167564566953249" at="16,0,17,0" concept="6" trace="VariantAwareExpression" />
+      <node id="5959167564566953249" at="22,52,23,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5959167564566953249" at="17,0,18,0" concept="1" trace="myConceptVariantAwareExpression" />
@@ -143,8 +143,8 @@
       <scope id="5959167564567389862" at="22,56,29,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5959167564567389862" at="12,0,13,0" concept="6" trace="CVariabilityConfigItem" />
-      <node id="5959167564567389862" at="18,116,19,61" concept="0" />
+      <node id="5959167564567389862" at="14,0,15,0" concept="6" trace="CVariabilityConfigItem" />
+      <node id="5959167564567389862" at="20,116,21,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5959167564567389862" at="15,0,16,0" concept="1" trace="myConceptCVariabilityConfigItem" />

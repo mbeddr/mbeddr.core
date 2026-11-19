@@ -150,7 +150,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   }
   private EditorCell createTable_1() {
-    return createTable_0(getEditorContext(), myNode);
+    return createTable_0(getEditorContext(), getNode());
   }
   public HeaderGrid createHeadQuery_6kxgu4_a0a(final EditorContext editorContext, final SNode node) {
     Object queryResult = new Object() {
@@ -556,7 +556,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return editorCell;
     }
     private EditorCell createCustomFactory_1() {
-      return createCustomFactory_0(getEditorContext(), myNode);
+      return createCustomFactory_0(getEditorContext(), getNode());
     }
     private EditorCell createConstant_0() {
       EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");

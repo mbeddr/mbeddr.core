@@ -308,23 +308,20 @@ import com.mbeddr.core.base.editor.basicStyles_StyleSheet.grayStyleClass;
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createTooltip_1());
+    editorCell.addEditorCell(createTooltip_0());
     editorCell.addEditorCell(createConstant_3());
     editorCell.addEditorCell(createRefNode_0());
     editorCell.addEditorCell(createConstant_4());
     editorCell.addEditorCell(createRefNodeList_0());
     return editorCell;
   }
-  private EditorCell createTooltip_0(final EditorContext editorContext, final SNode node) {
-    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "com.mbeddr.cc.requirements.editor.GeneratedHints.tooltipHint_yqzqtw_a1c3a", true);
+  private EditorCell createTooltip_0() {
+    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "com.mbeddr.cc.requirements.editor.GeneratedHints.tooltipHint_yqzqtw_a1c3a", true);
     EditorCell visibleCell = createProperty_1();
 
-    TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+    TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
     editorCell.setCellId("Tooltip_yqzqtw_a1c3a");
     return editorCell;
-  }
-  private EditorCell createTooltip_1() {
-    return createTooltip_0(getEditorContext(), myNode);
   }
   private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();
@@ -969,7 +966,7 @@ import com.mbeddr.core.base.editor.basicStyles_StyleSheet.grayStyleClass;
     return editorCell;
   }
   private boolean nodeCondition_yqzqtw_a0c1f0() {
-    return ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.additionalData$Mhbk)).count() == 1 && check_n4s8ne_a0a0ed(SNodeOperations.getConcept(ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.additionalData$Mhbk)).first()));
+    return ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.additionalData$Mhbk)).count() == 1 && check_n4s8ne_a0a0dd(SNodeOperations.getConcept(ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.additionalData$Mhbk)).first()));
   }
   private EditorCell createConstant_8() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Data Items:");
@@ -1150,9 +1147,9 @@ import com.mbeddr.core.base.editor.basicStyles_StyleSheet.grayStyleClass;
       if (ListSequence.fromList(SLinkOperations.getChildren(rm, LINKS.filters$6dAC)).isEmpty()) {
         return true;
       }
-      return FilterHelper.mustBeShown(childNode, ListSequence.fromList(SLinkOperations.getChildren(rm, LINKS.filters$6dAC)).where((it) -> !(check_n4s8ne_a0a0a0a1a2a61jd(SNodeOperations.getConcept(it)).equals("ReqProjFilter"))));
+      return FilterHelper.mustBeShown(childNode, ListSequence.fromList(SLinkOperations.getChildren(rm, LINKS.filters$6dAC)).where((it) -> !(check_n4s8ne_a0a0a0a1a2a61id(SNodeOperations.getConcept(it)).equals("ReqProjFilter"))));
     }
-    private static String check_n4s8ne_a0a0a0a1a2a61jd(SConcept checkedDotOperand) {
+    private static String check_n4s8ne_a0a0a0a1a2a61id(SConcept checkedDotOperand) {
       if (null != checkedDotOperand) {
         return checkedDotOperand.getName();
       }
@@ -1170,12 +1167,12 @@ import com.mbeddr.core.base.editor.basicStyles_StyleSheet.grayStyleClass;
       if (ListSequence.fromList(SLinkOperations.getChildren(rm, LINKS.filters$6dAC)).isEmpty()) {
         return true;
       }
-      return FilterHelper.mustBeShown(childNode, ListSequence.fromList(SLinkOperations.getChildren(rm, LINKS.filters$6dAC)).where((it) -> !(check_n4s8ne_a0a0a0a1a2a3kd(SNodeOperations.getConcept(it)).equals("ReqProjFilter"))));
+      return FilterHelper.mustBeShown(childNode, ListSequence.fromList(SLinkOperations.getChildren(rm, LINKS.filters$6dAC)).where((it) -> !(check_n4s8ne_a0a0a0a1a2a3jd(SNodeOperations.getConcept(it)).equals("ReqProjFilter"))));
     }
     public String getModuleReference() {
       return "e865cad2-7cc8-437a-951a-665bcbcb8b1a(com.mbeddr.cc.requirements)";
     }
-    private static String check_n4s8ne_a0a0a0a1a2a3kd(SConcept checkedDotOperand) {
+    private static String check_n4s8ne_a0a0a0a1a2a3jd(SConcept checkedDotOperand) {
       if (null != checkedDotOperand) {
         return checkedDotOperand.getName();
       }
@@ -1198,7 +1195,7 @@ import com.mbeddr.core.base.editor.basicStyles_StyleSheet.grayStyleClass;
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
-  private static boolean check_n4s8ne_a0a0ed(SConcept checkedDotOperand) {
+  private static boolean check_n4s8ne_a0a0dd(SConcept checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.isAbstract();
     }

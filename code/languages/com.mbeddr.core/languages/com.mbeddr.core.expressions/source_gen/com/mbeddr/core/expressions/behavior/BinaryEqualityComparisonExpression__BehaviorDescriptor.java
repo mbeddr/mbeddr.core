@@ -7,14 +7,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -22,12 +20,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class BinaryEqualityComparisonExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x61c69711ed614850L, 0x81d97714ff227fb0L, 0x379915b561ca989fL, "com.mbeddr.core.expressions.structure.BinaryEqualityComparisonExpression");
 
-  public static final SMethod<Boolean> requiresParensAroundArgument_id3_qrK00j4rM = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requiresParensAroundArgument").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4132737653861533426L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> requiresParensAroundArgument_id3_qrK00j4rM = new SMethodBuilder<>(Boolean.TYPE).name("requiresParensAroundArgument").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4132737653861533426L).languageId(0x81d97714ff227fb0L, 0x61c69711ed614850L).build2(SMethodBuilder.createJavaParameter(SNode.class, "argument"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(requiresParensAroundArgument_id3_qrK00j4rM);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(requiresParensAroundArgument_id3_qrK00j4rM);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean requiresParensAroundArgument_id3_qrK00j4rM(@NotNull SNode __thisNode__, SNode argument) {
     return SNodeOperations.isInstanceOf(argument, CONCEPTS.BitwiseAndExpression$HN) || SNodeOperations.isInstanceOf(argument, CONCEPTS.BitwiseORExpression$vE) || SNodeOperations.isInstanceOf(argument, CONCEPTS.BitwiseXORExpression$ht);
@@ -36,10 +32,6 @@ public final class BinaryEqualityComparisonExpression__BehaviorDescriptor extend
   /*package*/ BinaryEqualityComparisonExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

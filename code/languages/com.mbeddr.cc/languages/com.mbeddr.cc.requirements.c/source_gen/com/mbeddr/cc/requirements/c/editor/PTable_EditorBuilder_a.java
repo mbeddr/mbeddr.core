@@ -136,7 +136,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   }
   private EditorCell createTable_1() {
-    return createTable_0(getEditorContext(), myNode);
+    return createTable_0(getEditorContext(), getNode());
   }
   public HeaderGrid createHeaderGroup_mp1lfr_a0(final EditorContext editorContext, final SNode node) {
 

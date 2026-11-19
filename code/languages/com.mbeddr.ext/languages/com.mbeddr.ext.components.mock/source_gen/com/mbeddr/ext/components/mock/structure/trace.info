@@ -16,7 +16,7 @@
       <unit at="8,0,15,0" name="com.mbeddr.ext.components.mock.structure.IconContainer" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,70,0" name="com.mbeddr.ext.components.mock.structure.LanguageConceptSwitch" />
+      <unit at="12,0,78,0" name="com.mbeddr.ext.components.mock.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="15,0,358,0" name="com.mbeddr.ext.components.mock.structure.StructureAspectDescriptor" />
@@ -38,8 +38,8 @@
       <scope id="2151335435833216353" at="70,47,78,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2151335435833216353" at="16,0,17,0" concept="6" trace="MockComponent" />
-      <node id="2151335435833216353" at="40,50,41,52" concept="0" />
+      <node id="2151335435833216353" at="18,0,19,0" concept="6" trace="MockComponent" />
+      <node id="2151335435833216353" at="42,50,43,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2151335435833216353" at="20,0,21,0" concept="1" trace="myConceptMockComponent" />
@@ -75,8 +75,8 @@
       <scope id="2151335435833308544" at="63,45,69,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2151335435833308544" at="15,0,16,0" concept="6" trace="Expectation" />
-      <node id="2151335435833308544" at="39,59,40,50" concept="0" />
+      <node id="2151335435833308544" at="17,0,18,0" concept="6" trace="Expectation" />
+      <node id="2151335435833308544" at="41,59,42,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2151335435833308544" at="19,0,20,0" concept="1" trace="myConceptExpectation" />
@@ -111,8 +111,8 @@
       <scope id="2151335435833308548" at="46,46,53,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2151335435833308548" at="13,0,14,0" concept="6" trace="ExpectNoCall" />
-      <node id="2151335435833308548" at="37,54,38,51" concept="0" />
+      <node id="2151335435833308548" at="15,0,16,0" concept="6" trace="ExpectNoCall" />
+      <node id="2151335435833308548" at="39,54,40,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2151335435833308548" at="17,0,18,0" concept="1" trace="myConceptExpectNoCall" />
@@ -148,8 +148,8 @@
       <scope id="2151335435833463260" at="201,46,208,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2151335435833463260" at="33,0,34,0" concept="6" trace="ValidateMock" />
-      <node id="2151335435833463260" at="57,56,58,51" concept="0" />
+      <node id="2151335435833463260" at="35,0,36,0" concept="6" trace="ValidateMock" />
+      <node id="2151335435833463260" at="59,56,60,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2151335435833463260" at="37,0,38,0" concept="1" trace="myConceptValidateMock" />
@@ -186,8 +186,8 @@
       <scope id="2319970887606630628" at="186,43,192,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2319970887606630628" at="31,0,32,0" concept="6" trace="StubPhase" />
-      <node id="2319970887606630628" at="55,54,56,48" concept="0" />
+      <node id="2319970887606630628" at="33,0,34,0" concept="6" trace="StubPhase" />
+      <node id="2319970887606630628" at="57,54,58,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2319970887606630628" at="35,0,36,0" concept="1" trace="myConceptStubPhase" />
@@ -220,8 +220,8 @@
       <scope id="2319970887606630668" at="109,49,115,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2319970887606630668" at="21,0,22,0" concept="6" trace="PhaseExpression" />
-      <node id="2319970887606630668" at="45,57,46,54" concept="0" />
+      <node id="2319970887606630668" at="23,0,24,0" concept="6" trace="PhaseExpression" />
+      <node id="2319970887606630668" at="47,57,48,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2319970887606630668" at="25,0,26,0" concept="1" trace="myConceptPhaseExpression" />
@@ -257,8 +257,8 @@
       <scope id="2319970887606685453" at="95,54,101,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2319970887606685453" at="19,0,20,0" concept="6" trace="PhaseChangeStatement" />
-      <node id="2319970887606685453" at="43,56,44,59" concept="0" />
+      <node id="2319970887606685453" at="21,0,22,0" concept="6" trace="PhaseChangeStatement" />
+      <node id="2319970887606685453" at="45,56,46,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2319970887606685453" at="23,0,24,0" concept="1" trace="myConceptPhaseChangeStatement" />
@@ -296,8 +296,8 @@
       <scope id="4331139697889290796" at="79,52,86,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4331139697889290796" at="17,0,18,0" concept="6" trace="ParamRefExpression" />
-      <node id="4331139697889290796" at="41,52,42,57" concept="0" />
+      <node id="4331139697889290796" at="19,0,20,0" concept="6" trace="ParamRefExpression" />
+      <node id="4331139697889290796" at="43,52,44,57" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4331139697889290796" at="21,0,22,0" concept="1" trace="myConceptParamRefExpression" />
@@ -335,8 +335,8 @@
       <scope id="4957503999940758571" at="54,54,62,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4957503999940758571" at="14,0,15,0" concept="6" trace="ExpectTotalNoOfCalls" />
-      <node id="4957503999940758571" at="38,51,39,59" concept="0" />
+      <node id="4957503999940758571" at="16,0,17,0" concept="6" trace="ExpectTotalNoOfCalls" />
+      <node id="4957503999940758571" at="40,51,41,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4957503999940758571" at="18,0,19,0" concept="1" trace="myConceptExpectTotalNoOfCalls" />
@@ -373,8 +373,8 @@
       <scope id="4957503999940784579" at="130,53,137,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4957503999940784579" at="24,0,25,0" concept="6" trace="SequenceExpectation" />
-      <node id="4957503999940784579" at="48,48,49,58" concept="0" />
+      <node id="4957503999940784579" at="26,0,27,0" concept="6" trace="SequenceExpectation" />
+      <node id="4957503999940784579" at="50,48,51,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4957503999940784579" at="28,0,29,0" concept="1" trace="myConceptSequenceExpectation" />
@@ -412,8 +412,8 @@
       <scope id="4957503999940784581" at="138,38,146,26" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4957503999940784581" at="25,0,26,0" concept="6" trace="Step" />
-      <node id="4957503999940784581" at="49,58,50,43" concept="0" />
+      <node id="4957503999940784581" at="27,0,28,0" concept="6" trace="Step" />
+      <node id="4957503999940784581" at="51,58,52,43" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4957503999940784581" at="29,0,30,0" concept="1" trace="myConceptStep" />
@@ -456,8 +456,8 @@
       <scope id="4957503999941447492" at="87,51,94,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4957503999941447492" at="18,0,19,0" concept="6" trace="ParamterAssertion" />
-      <node id="4957503999941447492" at="42,57,43,56" concept="0" />
+      <node id="4957503999941447492" at="20,0,21,0" concept="6" trace="ParamterAssertion" />
+      <node id="4957503999941447492" at="44,57,45,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4957503999941447492" at="22,0,23,0" concept="1" trace="myConceptParamterAssertion" />
@@ -495,8 +495,8 @@
       <scope id="4957503999941447512" at="147,47,154,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4957503999941447512" at="26,0,27,0" concept="6" trace="StepAssertion" />
-      <node id="4957503999941447512" at="50,43,51,52" concept="0" />
+      <node id="4957503999941447512" at="28,0,29,0" concept="6" trace="StepAssertion" />
+      <node id="4957503999941447512" at="52,43,53,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4957503999941447512" at="30,0,31,0" concept="1" trace="myConceptStepAssertion" />
@@ -529,8 +529,8 @@
       <scope id="5528592168124376299" at="40,49,45,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5528592168124376299" at="12,0,13,0" concept="6" trace="CallExpectation" />
-      <node id="5528592168124376299" at="36,116,37,54" concept="0" />
+      <node id="5528592168124376299" at="14,0,15,0" concept="6" trace="CallExpectation" />
+      <node id="5528592168124376299" at="38,116,39,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5528592168124376299" at="16,0,17,0" concept="1" trace="myConceptCallExpectation" />
@@ -565,8 +565,8 @@
       <scope id="6307143892175591011" at="163,47,170,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6307143892175591011" at="28,0,29,0" concept="6" trace="StubComponent" />
-      <node id="6307143892175591011" at="52,56,53,52" concept="0" />
+      <node id="6307143892175591011" at="30,0,31,0" concept="6" trace="StubComponent" />
+      <node id="6307143892175591011" at="54,56,55,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6307143892175591011" at="32,0,33,0" concept="1" trace="myConceptStubComponent" />
@@ -602,8 +602,8 @@
       <scope id="6307143892175683226" at="171,49,177,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6307143892175683226" at="29,0,30,0" concept="6" trace="StubCounterExpr" />
-      <node id="6307143892175683226" at="53,52,54,54" concept="0" />
+      <node id="6307143892175683226" at="31,0,32,0" concept="6" trace="StubCounterExpr" />
+      <node id="6307143892175683226" at="55,52,56,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6307143892175683226" at="33,0,34,0" concept="1" trace="myConceptStubCounterExpr" />
@@ -638,8 +638,8 @@
       <scope id="6307143892175683228" at="178,49,185,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6307143892175683228" at="30,0,31,0" concept="6" trace="StubOpCallCount" />
-      <node id="6307143892175683228" at="54,54,55,54" concept="0" />
+      <node id="6307143892175683228" at="32,0,33,0" concept="6" trace="StubOpCallCount" />
+      <node id="6307143892175683228" at="56,54,57,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6307143892175683228" at="34,0,35,0" concept="1" trace="myConceptStubOpCallCount" />
@@ -675,8 +675,8 @@
       <scope id="6307143892175683233" at="193,51,200,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6307143892175683233" at="32,0,33,0" concept="6" trace="StubPortCallCount" />
-      <node id="6307143892175683233" at="56,48,57,56" concept="0" />
+      <node id="6307143892175683233" at="34,0,35,0" concept="6" trace="StubPortCallCount" />
+      <node id="6307143892175683233" at="58,48,59,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6307143892175683233" at="36,0,37,0" concept="1" trace="myConceptStubPortCallCount" />
@@ -712,8 +712,8 @@
       <scope id="6307143892175683235" at="155,51,162,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6307143892175683235" at="27,0,28,0" concept="6" trace="StubCompCallCount" />
-      <node id="6307143892175683235" at="51,52,52,56" concept="0" />
+      <node id="6307143892175683235" at="29,0,30,0" concept="6" trace="StubCompCallCount" />
+      <node id="6307143892175683235" at="53,52,54,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6307143892175683235" at="31,0,32,0" concept="1" trace="myConceptStubCompCallCount" />
@@ -748,8 +748,8 @@
       <scope id="6329057548770953988" at="102,52,108,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6329057548770953988" at="20,0,21,0" concept="6" trace="PhaseChangeTrigger" />
-      <node id="6329057548770953988" at="44,59,45,57" concept="0" />
+      <node id="6329057548770953988" at="22,0,23,0" concept="6" trace="PhaseChangeTrigger" />
+      <node id="6329057548770953988" at="46,59,47,57" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6329057548770953988" at="24,0,25,0" concept="1" trace="myConceptPhaseChangeTrigger" />
@@ -784,8 +784,8 @@
       <scope id="6329057548770953993" at="123,43,129,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6329057548770953993" at="23,0,24,0" concept="6" trace="PhaseType" />
-      <node id="6329057548770953993" at="47,57,48,48" concept="0" />
+      <node id="6329057548770953993" at="25,0,26,0" concept="6" trace="PhaseType" />
+      <node id="6329057548770953993" at="49,57,50,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6329057548770953993" at="27,0,28,0" concept="1" trace="myConceptPhaseType" />
@@ -821,8 +821,8 @@
       <scope id="6329057548771013571" at="116,52,122,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6329057548771013571" at="22,0,23,0" concept="6" trace="PhaseRefExpression" />
-      <node id="6329057548771013571" at="46,54,47,57" concept="0" />
+      <node id="6329057548771013571" at="24,0,25,0" concept="6" trace="PhaseRefExpression" />
+      <node id="6329057548771013571" at="48,54,49,57" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6329057548771013571" at="26,0,27,0" concept="1" trace="myConceptPhaseRefExpression" />

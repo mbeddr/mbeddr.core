@@ -21,7 +21,7 @@ public class EnumerationDescriptor_TraceStatus extends EnumerationDescriptorBase
   private final EnumerationDescriptor.MemberDescriptor myMember_tested_0 = new EnumerationDescriptor.MemberDescriptor("tested", "tested", 0x4421adca52de272dL, "r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)/7781501729894695163");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0x4421adca52de272aL, 0x4421adca52de95e0L, 0x4421adca52de272bL, 0x4421adca52de272cL, 0x4421adca52de272dL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_untraced_0, myMember_traced_0, myMember_implemented_0, myMember_tested_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_untraced_0, myMember_traced_0, myMember_implemented_0, myMember_tested_0);
 
   @Nullable
   @Override

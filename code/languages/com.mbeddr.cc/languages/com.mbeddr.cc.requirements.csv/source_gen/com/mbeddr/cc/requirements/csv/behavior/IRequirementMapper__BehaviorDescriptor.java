@@ -7,29 +7,25 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IRequirementMapper__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x698eb129303c4c1cL, 0xb3979e30753d40b2L, 0x47b8f3058e15bec1L, "com.mbeddr.cc.requirements.csv.structure.IRequirementMapper");
 
-  public static final SMethod<String> extractID_id4uSWKme5rV5 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("extractID").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5168147777591819973L).languageId(0xb3979e30753d40b2L, 0x698eb129303c4c1cL).build2(SMethodBuilder.createJavaParameter(String[].class, ""), SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
-  public static final SMethod<Boolean> map_id4uSWKme5t8$ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("map").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5168147777591824932L).languageId(0xb3979e30753d40b2L, 0x698eb129303c4c1cL).build2(SMethodBuilder.createJavaParameter(String[].class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getParentRequirement_id5liZiKqPIOk = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getParentRequirement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6148254807184829716L).languageId(0xb3979e30753d40b2L, 0x698eb129303c4c1cL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String[].class, ""));
-  public static final SMethod<String> firstNCharacters_id5liZiKqPNyU = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("firstNCharacters").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6148254807184849082L).languageId(0xb3979e30753d40b2L, 0x698eb129303c4c1cL).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<String> makeValidID_id5liZiKqPWgD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("makeValidID").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6148254807184884777L).languageId(0xb3979e30753d40b2L, 0x698eb129303c4c1cL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> extractID_id4uSWKme5rV5 = new SMethodBuilder<>(String.class).name("extractID").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5168147777591819973L).languageId(0xb3979e30753d40b2L, 0x698eb129303c4c1cL).build2(SMethodBuilder.createJavaParameter(String[].class, "elements"), SMethodBuilder.createJavaParameter(Boolean.TYPE, "dummy"));
+  public static final SMethod<Boolean> map_id4uSWKme5t8$ = new SMethodBuilder<>(Boolean.TYPE).name("map").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5168147777591824932L).languageId(0xb3979e30753d40b2L, 0x698eb129303c4c1cL).build2(SMethodBuilder.createJavaParameter(String[].class, "elements"), SMethodBuilder.createJavaParameter(SNode.class, "req"));
+  public static final SMethod<SNode> getParentRequirement_id5liZiKqPIOk = new SMethodBuilder<>(SNode.class).name("getParentRequirement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6148254807184829716L).languageId(0xb3979e30753d40b2L, 0x698eb129303c4c1cL).build2(SMethodBuilder.createJavaParameter(SNode.class, "rm"), SMethodBuilder.createJavaParameter(SNode.class, "req"), SMethodBuilder.createJavaParameter(String[].class, "elements"));
+  public static final SMethod<String> firstNCharacters_id5liZiKqPNyU = new SMethodBuilder<>(String.class).name("firstNCharacters").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6148254807184849082L).languageId(0xb3979e30753d40b2L, 0x698eb129303c4c1cL).build2(SMethodBuilder.createJavaParameter(String.class, "s"), SMethodBuilder.createJavaParameter(Integer.TYPE, "n"));
+  public static final SMethod<String> makeValidID_id5liZiKqPWgD = new SMethodBuilder<>(String.class).name("makeValidID").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6148254807184884777L).languageId(0xb3979e30753d40b2L, 0x698eb129303c4c1cL).build2(SMethodBuilder.createJavaParameter(String.class, "s"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(extractID_id4uSWKme5rV5, map_id4uSWKme5t8$, getParentRequirement_id5liZiKqPIOk, firstNCharacters_id5liZiKqPNyU, makeValidID_id5liZiKqPWgD);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(extractID_id4uSWKme5rV5, map_id4uSWKme5t8$, getParentRequirement_id5liZiKqPIOk, firstNCharacters_id5liZiKqPNyU, makeValidID_id5liZiKqPWgD);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String extractID_id4uSWKme5rV5(@NotNull SNode __thisNode__, String[] elements, boolean dummy) {
     return elements[0];
@@ -61,10 +57,6 @@ public final class IRequirementMapper__BehaviorDescriptor extends BaseBHDescript
   /*package*/ IRequirementMapper__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

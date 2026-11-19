@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
+import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -22,12 +20,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class TimingReqKind__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe865cad27cc8437aL, 0x951a665bcbcb8b1aL, 0x2f37dd3a4d611a91L, "com.mbeddr.cc.requirements.structure.TimingReqKind");
 
-  public static final SMethod<List<SAbstractConcept>> getRequiredDataKind_id2AZbPfMcvYE = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getRequiredDataKind").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3008175113698934698L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
+  public static final SMethod<List<SAbstractConcept>> getRequiredDataKind_id2AZbPfMcvYE = new SMethodBuilder<>((Class<List<SAbstractConcept>>) ((Class) Object.class)).name("getRequiredDataKind").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3008175113698934698L).languageId(0x951a665bcbcb8b1aL, 0xe865cad27cc8437aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getRequiredDataKind_id2AZbPfMcvYE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getRequiredDataKind_id2AZbPfMcvYE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SAbstractConcept> getRequiredDataKind_id2AZbPfMcvYE(@NotNull SAbstractConcept __thisConcept__) {
     List<SAbstractConcept> result = RequirementsKind__BehaviorDescriptor.getRequiredDataKind_id2AZbPfMcvYE.invoke0(__thisConcept__, CONCEPTS.RequirementsKind$O_);
@@ -38,10 +34,6 @@ public final class TimingReqKind__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TimingReqKind__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

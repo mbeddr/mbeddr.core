@@ -12,8 +12,9 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="52,0,55,0" name="com.mbeddr.ext.components.textGen.TextGenAspectDescriptor$CONCEPTS" />
-      <unit at="16,0,56,0" name="com.mbeddr.ext.components.textGen.TextGenAspectDescriptor" />
+      <unit at="55,0,58,0" name="com.mbeddr.ext.components.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="59,0,62,0" name="com.mbeddr.ext.components.textGen.TextGenAspectDescriptor$PROPS" />
+      <unit at="18,0,63,0" name="com.mbeddr.ext.components.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:34c22766-f23d-4187-999d-c7c74593a678(com.mbeddr.ext.components.textGen)/7798021607625280403">
@@ -45,28 +46,29 @@
       <unit id="7798021607625280403" at="14,0,35,0" name="com.mbeddr.ext.components.textGen.ComponentMappingDebugHelper_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7798021607625280403" at="26,61,27,57" concept="6" />
-      <node id="7798021607625280403" at="37,78,38,69" concept="5" />
-      <node id="7798021607625280403" at="38,69,39,72" concept="5" />
-      <node id="7798021607625280403" at="39,72,40,84" concept="1" />
-      <node id="7798021607625280403" at="40,84,41,17" concept="0" />
-      <node id="7798021607625280403" at="45,77,46,26" concept="6" />
-      <node id="7798021607625280410" at="48,82,49,19" concept="6" />
-      <node id="7798021607625280403" at="45,0,48,0" concept="9" trace="getFileName_ComponentMappingDebugHelper#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="7798021607625280403" at="48,0,51,0" concept="9" trace="getFileExtension_ComponentMappingDebugHelper#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="7798021607625280403" at="36,58,42,7" concept="3" />
-      <scope id="7798021607625280403" at="26,61,27,57" />
-      <scope id="7798021607625280403" at="45,77,46,26" />
-      <scope id="7798021607625280403" at="48,82,49,19" />
-      <scope id="7798021607625280403" at="45,0,48,0">
+      <node id="7798021607625280403" at="28,61,29,57" concept="6" />
+      <node id="7798021607625280403" at="39,78,40,69" concept="5" />
+      <node id="7798021607625280403" at="40,69,41,72" concept="5" />
+      <node id="7798021607625280403" at="41,72,42,84" concept="1" />
+      <node id="7798021607625280403" at="42,84,43,17" concept="0" />
+      <node id="7798021607625280403" at="47,77,48,64" concept="6" />
+      <node id="7798021607625280403" at="48,64,49,0" concept="7" />
+      <node id="7798021607625280410" at="51,82,52,19" concept="6" />
+      <node id="7798021607625280403" at="51,0,54,0" concept="9" trace="getFileExtension_ComponentMappingDebugHelper#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="7798021607625280403" at="47,0,51,0" concept="9" trace="getFileName_ComponentMappingDebugHelper#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="7798021607625280403" at="38,58,44,7" concept="3" />
+      <scope id="7798021607625280403" at="28,61,29,57" />
+      <scope id="7798021607625280403" at="51,82,52,19" />
+      <scope id="7798021607625280403" at="47,77,49,0" />
+      <scope id="7798021607625280403" at="51,0,54,0">
         <var name="node" id="7798021607625280403" />
       </scope>
-      <scope id="7798021607625280403" at="48,0,51,0">
-        <var name="node" id="7798021607625280403" />
-      </scope>
-      <scope id="7798021607625280403" at="37,78,41,17">
+      <scope id="7798021607625280403" at="39,78,43,17">
         <var name="ext" id="7798021607625280403" />
         <var name="fname" id="7798021607625280403" />
+      </scope>
+      <scope id="7798021607625280403" at="47,0,51,0">
+        <var name="node" id="7798021607625280403" />
       </scope>
     </file>
   </root>
@@ -105,8 +107,8 @@
       <unit id="7798021607625433044" at="12,0,42,0" name="com.mbeddr.ext.components.textGen.InterfaceToImplementationMapping_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7798021607625433044" at="28,66,29,62" concept="6" />
-      <scope id="7798021607625433044" at="28,66,29,62" />
+      <node id="7798021607625433044" at="30,66,31,62" concept="6" />
+      <scope id="7798021607625433044" at="30,66,31,62" />
     </file>
   </root>
 </debug-info>

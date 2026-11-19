@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,16 +23,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class Transition__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x564e97d68fb741f5L, 0xbfc1c7ed376efd62L, 0x50315072219db2bbL, "com.mbeddr.ext.statemachines.structure.Transition");
 
-  public static final SMethod<String> triggerAsString_id16ykm_McdaJ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("triggerAsString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1270667558201119407L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
-  public static final SMethod<String> getEndLabel_id5Xsg2EBpPwD = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEndLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6871437683401906217L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> forceMultiLines_id5oX1Q_zkX36 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("forceMultiLines").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6214131210060550342L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
-  public static final SMethod<SNode> getTrigger_id4CnBdUFzcHv = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTrigger").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5338908363445816159L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
-  public static final SMethod<Boolean> isEpsilon_id16ykm_MicVJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEpsilon").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1270667558202691311L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<String> triggerAsString_id16ykm_McdaJ = new SMethodBuilder<>(String.class).name("triggerAsString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1270667558201119407L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<String> getEndLabel_id5Xsg2EBpPwD = new SMethodBuilder<>(String.class).name("getEndLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6871437683401906217L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "statementList"));
+  public static final SMethod<Boolean> forceMultiLines_id5oX1Q_zkX36 = new SMethodBuilder<>(Boolean.TYPE).name("forceMultiLines").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6214131210060550342L).languageId(0xbf392eb0805d2011L, 0xa9d696470840491eL).build2();
+  public static final SMethod<SNode> getTrigger_id4CnBdUFzcHv = new SMethodBuilder<>(SNode.class).name("getTrigger").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5338908363445816159L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
+  public static final SMethod<Boolean> isEpsilon_id16ykm_MicVJ = new SMethodBuilder<>(Boolean.TYPE).name("isEpsilon").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1270667558202691311L).languageId(0xbfc1c7ed376efd62L, 0x564e97d68fb741f5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(triggerAsString_id16ykm_McdaJ, getEndLabel_id5Xsg2EBpPwD, forceMultiLines_id5oX1Q_zkX36, getTrigger_id4CnBdUFzcHv, isEpsilon_id16ykm_MicVJ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(triggerAsString_id16ykm_McdaJ, getEndLabel_id5Xsg2EBpPwD, forceMultiLines_id5oX1Q_zkX36, getTrigger_id4CnBdUFzcHv, isEpsilon_id16ykm_MicVJ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String triggerAsString_id16ykm_McdaJ(@NotNull SNode __thisNode__) {
     return (String) Trigger__BehaviorDescriptor.readableString_id3t79XWtEc3h.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.trigger$GAf9));
@@ -55,10 +51,6 @@ public final class Transition__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Transition__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

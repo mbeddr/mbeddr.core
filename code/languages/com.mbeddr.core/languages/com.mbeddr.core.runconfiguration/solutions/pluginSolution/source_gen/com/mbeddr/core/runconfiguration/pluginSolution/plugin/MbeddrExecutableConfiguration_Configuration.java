@@ -24,12 +24,7 @@ import com.intellij.execution.configurations.RunProfileState;
 import com.intellij.execution.Executor;
 import com.intellij.execution.runners.ExecutionEnvironment;
 import com.intellij.execution.ExecutionException;
-import com.intellij.openapi.options.SettingsEditor;
-import com.intellij.execution.configurations.ConfigurationPerRunnerSettings;
-import com.intellij.execution.runners.ProgramRunner;
-import com.intellij.execution.configurations.ConfigurationInfoProvider;
 import jetbrains.mps.execution.api.settings.SettingsEditorEx;
-import jetbrains.mps.ide.project.ProjectHelper;
 import com.intellij.openapi.util.Key;
 import com.intellij.execution.BeforeRunTask;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -69,18 +64,12 @@ public final class MbeddrExecutableConfiguration_Configuration extends BaseMpsRu
     }
   }
 
-  @Override
-  @Deprecated
-  public MbeddrExecutableConfiguration_Configuration clone() {
-    return copy();
-  }
 
   @Override
+  @NotNull
   public MbeddrExecutableConfiguration_Configuration copy() {
     MbeddrExecutableConfiguration_Configuration cloneTemplate = createCloneTemplate();
-    // beware, PersistenceConfiguration.this of newly created MyState instance would be the same as
-    // the value of myState, and != clone as regular Java passer-by would expect.
-    cloneTemplate.myState = myState.copy();
+    myState.copyInto(cloneTemplate);
     cloneTemplate.myBinary = ((Copyable<NodeByConcept_Configuration>) myBinary).copy();
     return cloneTemplate;
   }
@@ -99,24 +88,14 @@ public final class MbeddrExecutableConfiguration_Configuration extends BaseMpsRu
     myBinary = value;
   }
 
-  public final class MyState implements Copyable<MyState>, Cloneable {
+  public final class MyState {
     public MbeddrSettings mySettings = new MbeddrSettings(1200, 500);
 
-    @Deprecated
-    @Override
-    public MyState clone() {
-      try {
-        MyState state = (MyState) super.clone();
-        state.mySettings = mySettings;
-        return state;
-      } catch (CloneNotSupportedException ex) {
-        throw new IllegalStateException("Shall not happen", ex);
-      }
-    }
+    /*package*/ void copyInto(MbeddrExecutableConfiguration_Configuration enclosingInstance) {
+      enclosingInstance.myState = enclosingInstance.new MyState();
+      final MyState state = enclosingInstance.myState;
 
-    @Override
-    public MyState copy() {
-      return clone();
+      state.mySettings = mySettings;
     }
   }
   public MbeddrExecutableConfiguration_Configuration(Project project, ConfigurationFactory factory, String name) {
@@ -126,26 +105,21 @@ public final class MbeddrExecutableConfiguration_Configuration extends BaseMpsRu
   public RunProfileState getState(@NotNull Executor executor, @NotNull ExecutionEnvironment environment) throws ExecutionException {
     return new MbeddrExecutableConfiguration_Configuration_RunProfileState(this, executor, environment);
   }
-  @Nullable
-  public SettingsEditor<ConfigurationPerRunnerSettings> getRunnerSettingsEditor(ProgramRunner runner) {
-    return null;
-  }
-  public ConfigurationPerRunnerSettings createRunnerSettings(ConfigurationInfoProvider provider) {
-    return null;
-  }
+  @NotNull
   public SettingsEditorEx<MbeddrExecutableConfiguration_Configuration> getConfigurationEditor() {
     return (SettingsEditorEx<MbeddrExecutableConfiguration_Configuration>) getEditor();
   }
+  @Override
+  public MbeddrExecutableConfiguration_Configuration clone() {
+    return copy();
+  }
+  @Override
   public MbeddrExecutableConfiguration_Configuration createCloneTemplate() {
     return (MbeddrExecutableConfiguration_Configuration) super.clone();
   }
+  @Override
   public SettingsEditorEx<? extends IPersistentConfiguration> getEditor() {
     return new MbeddrExecutableConfiguration_Configuration_Editor(myBinary.getEditor());
-  }
-  @Override
-  public void checkConfiguration() throws RuntimeConfigurationException {
-    final jetbrains.mps.project.Project mpsProject = ProjectHelper.fromIdeaProject(getProject());
-    checkConfiguration(() -> mpsProject);
   }
   @Override
   public boolean canExecute(String executorId) {

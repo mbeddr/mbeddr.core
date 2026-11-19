@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.editor.runtime.style.StyledTextPrinter;
 import java.util.List;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -28,16 +26,14 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IFunctionLike__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x6d11763d483d4b2bL, 0x8efc09336c1b0001L, 0x707ac195dd5d51f2L, "com.mbeddr.core.modules.structure.IFunctionLike");
 
-  public static final SMethod<SNode> getStatementList_id71UKpntnl7S = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getStatementList").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8105003328814797304L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> presentation_id2$xXL4HsOsB = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("presentation").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2963921682935531303L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(StyledTextPrinter.class, ""));
-  public static final SMethod<String> signatureInfo_id7GUSN23Vq8 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("signatureInfo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(138744678325401224L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
-  public static final SMethod<String> signatureInfo_id7GUSN23Vqf = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("signatureInfo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(138744678325401231L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
+  public static final SMethod<SNode> getStatementList_id71UKpntnl7S = new SMethodBuilder<>(SNode.class).name("getStatementList").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8105003328814797304L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> presentation_id2$xXL4HsOsB = new SMethodBuilder<>(Void.TYPE).name("presentation").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2963921682935531303L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(SNode.class, "paramObj"), SMethodBuilder.createJavaParameter(SNode.class, "selectedArg"), SMethodBuilder.createJavaParameter(StyledTextPrinter.class, "styledText"));
+  public static final SMethod<String> signatureInfo_id7GUSN23Vq8 = new SMethodBuilder<>(String.class).name("signatureInfo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(138744678325401224L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2();
+  public static final SMethod<String> signatureInfo_id7GUSN23Vqf = new SMethodBuilder<>(String.class).name("signatureInfo").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(138744678325401231L).languageId(0x8efc09336c1b0001L, 0x6d11763d483d4b2bL).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, "prependReturnType"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStatementList_id71UKpntnl7S, getUniquelyNamedElements_id4qSf1u1TRfj, presentation_id2$xXL4HsOsB, signatureInfo_id7GUSN23Vq8, signatureInfo_id7GUSN23Vqf);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStatementList_id71UKpntnl7S, getUniquelyNamedElements_id4qSf1u1TRfj, presentation_id2$xXL4HsOsB, signatureInfo_id7GUSN23Vq8, signatureInfo_id7GUSN23Vqf);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getUniquelyNamedElements_id4qSf1u1TRfj(@NotNull SNode __thisNode__) {
     return SLinkOperations.getChildren(__thisNode__, LINKS.arguments$6da0);
@@ -103,10 +99,6 @@ public final class IFunctionLike__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IFunctionLike__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
