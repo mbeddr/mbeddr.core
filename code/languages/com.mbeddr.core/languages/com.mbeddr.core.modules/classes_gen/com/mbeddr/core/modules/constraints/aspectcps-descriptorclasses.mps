@@ -11287,7 +11287,7 @@
                               <ref role="37wK5l" to="ze1i:~CheckingNodeContext.setBreakingNode(org.jetbrains.mps.openapi.model.SNodeReference)" resolve="setBreakingNode" />
                               <uo k="s:originTrace" v="n:5569318043966946755" />
                               <node concept="1dyn4i" id="K2" role="37wK5m">
-                                <property role="1dyqJU" value="canBeRootBreakingPoint" />
+                                <property role="1dyqJU" value="canBeAncestorBreakingPoint" />
                                 <uo k="s:originTrace" v="n:5569318043966946755" />
                                 <node concept="2ShNRf" id="K3" role="1dyrYi">
                                   <uo k="s:originTrace" v="n:5569318043966946755" />

@@ -1,5 +1,5 @@
 // Dependency versions
-val mpsVersion = "3.4.2"
+val mpsVersion = "2024.3.2"
 val mbeddrVersion = "1.0.+"
 // Location where resolved dependencies are stored
 val artifactsDir = File(rootDir, "artifacts")

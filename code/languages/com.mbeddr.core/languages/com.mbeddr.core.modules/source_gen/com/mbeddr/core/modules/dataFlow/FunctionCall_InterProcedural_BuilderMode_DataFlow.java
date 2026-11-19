@@ -41,10 +41,10 @@ public class FunctionCall_InterProcedural_BuilderMode_DataFlow extends DataFlowB
       {
         InterProcMapInstruction instruction = new InterProcMapInstruction("r:2462c642-dc5b-476a-b684-01d77df4913e(com.mbeddr.core.modules.dataFlow)/2583851084315056425", formal, actual);
         _context.getBuilder().addInstruction(instruction, null);
-        SNode source_ce361w_e0c0a = source;
-        if (source_ce361w_e0c0a != null) {
-          new IAttributeDescriptor.NodeAttribute(CONCEPTS.VirtualAttribute$US).set(source_ce361w_e0c0a, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x57416e5beba54910L, 0xade842ad18cb5f4dL, 0x378878b8f06d09faL, "com.mbeddr.mpsutil.dataflow.structure.VirtualAttribute")));
-          instruction.setSource(source_ce361w_e0c0a);
+        SNode source_e0c0a = source;
+        if (source_e0c0a != null) {
+          new IAttributeDescriptor.NodeAttribute(CONCEPTS.VirtualAttribute$US).set(source_e0c0a, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x57416e5beba54910L, 0xade842ad18cb5f4dL, 0x378878b8f06d09faL, "com.mbeddr.mpsutil.dataflow.structure.VirtualAttribute")));
+          instruction.setSource(source_e0c0a);
         }
       }
     }

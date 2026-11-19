@@ -123,7 +123,7 @@
       <node id="8663730687027762061" at="27,53,28,52" concept="9" />
       <node id="8663730687027762061" at="35,130,36,161" concept="4" />
       <node id="8663730687027762061" at="36,161,37,0" concept="6" />
-      <node id="8663730687027762061" at="38,55,39,70" concept="1" />
+      <node id="8663730687027762061" at="38,55,39,74" concept="1" />
       <node id="8663730687027762061" at="40,9,41,0" concept="6" />
       <node id="8663730687027762061" at="41,0,42,22" concept="5" />
       <node id="8663730687027762062" at="47,59,48,60" concept="9" />
@@ -132,7 +132,7 @@
       <node id="8663730687027762062" at="57,119,58,61" concept="1" />
       <node id="8663730687027762061" at="58,61,59,22" concept="5" />
       <node id="8237807170236483624" at="61,149,62,56" concept="5" />
-      <node id="8663730687027762061" at="64,0,65,0" concept="7" trace="canBeRootBreakingPoint" />
+      <node id="8663730687027762061" at="64,0,65,0" concept="7" trace="canBeAncestorBreakingPoint" />
       <node id="8663730687027762061" at="67,0,68,0" concept="7" trace="StatemachineComponentAdapter$MO" />
       <node id="8663730687027762061" at="68,0,69,0" concept="7" trace="CFunctionBinding$Fc" />
       <node id="8663730687027762061" at="72,0,73,0" concept="7" trace="name$MnvL" />
@@ -147,7 +147,7 @@
       <node id="8663730687027762061" at="32,109,44,6" concept="5" />
       <node id="8663730687027762061" at="31,0,46,0" concept="3" trace="calculateCanBeAncestorConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
       <scope id="8663730687027762061" at="27,53,28,52" />
-      <scope id="8663730687027762061" at="38,55,39,70" />
+      <scope id="8663730687027762061" at="38,55,39,74" />
       <scope id="8663730687027762062" at="47,59,48,60" />
       <scope id="8663730687027762064" at="51,40,52,113" />
       <scope id="8237807170236483623" at="61,149,62,56" />

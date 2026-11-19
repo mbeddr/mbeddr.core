@@ -6,5 +6,5 @@ import javax.swing.Icon;
 import jetbrains.mps.ide.icons.IconLoadingUtil;
 
 public class IconContainer {
-  protected static Icon ICON_b0a0a0c0d = IconLoadingUtil.loadIcon("mbeddr-runconfig.png", IconContainer.class);
+  protected static Icon ICON0 = IconLoadingUtil.loadIcon("/icons/mbeddr-runconfig.png", IconContainer.class);
 }

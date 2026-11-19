@@ -277,7 +277,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a test case");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a03b0ob);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_TestCase = cpb.create();
         }
         return props_TestCase;
