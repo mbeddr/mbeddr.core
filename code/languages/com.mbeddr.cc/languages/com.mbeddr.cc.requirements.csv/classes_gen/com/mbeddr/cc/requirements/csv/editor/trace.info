@@ -21,17 +21,17 @@
   </root>
   <root nodeRef="r:49330941-8eaa-442a-baa4-c3b07af7a98a(com.mbeddr.cc.requirements.csv.editor)/561942466025368081">
     <file name="CvsImportAnnotation_Editor.java">
-      <node id="561942466025368081" at="11,79,12,85" concept="8" />
+      <node id="561942466025368081" at="11,79,12,83" concept="8" />
       <node id="561942466025368081" at="11,0,14,0" concept="6" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="561942466025368081" at="11,79,12,85" />
+      <scope id="561942466025368081" at="11,79,12,83" />
       <scope id="561942466025368081" at="11,0,14,0">
         <var name="editorContext" id="561942466025368081" />
         <var name="node" id="561942466025368081" />
       </scope>
       <unit id="561942466025368081" at="10,0,15,0" name="com.mbeddr.cc.requirements.csv.editor.CvsImportAnnotation_Editor" />
     </file>
-    <file name="CvsImportAnnotation_EditorBuilder_a.java">
-      <node id="561942466025368081" at="47,99,48,19" concept="11" />
+    <file name="CvsImportAnnotation_EditorBuilder.java">
+      <node id="561942466025368081" at="47,97,48,19" concept="11" />
       <node id="561942466025368081" at="48,19,49,18" concept="3" />
       <node id="561942466025368081" at="54,26,55,18" concept="8" />
       <node id="561942466025368081" at="58,39,59,32" concept="8" />
@@ -257,7 +257,7 @@
       <node id="561942466025368081" at="256,0,259,0" concept="6" trace="getNoTargetText#()Ljava/lang/String;" />
       <node id="561942466025368158" at="324,63,327,5" concept="5" />
       <node id="6148254807184827725" at="370,63,373,5" concept="5" />
-      <node id="561942466025368081" at="47,0,51,0" concept="1" trace="CvsImportAnnotation_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="561942466025368081" at="47,0,51,0" concept="1" trace="CvsImportAnnotation_EditorBuilder#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="561942466025368081" at="205,0,209,0" concept="6" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="561942466025368081" at="213,0,217,0" concept="1" trace="mapperSingleRoleHandler_ajhvv0_b3a0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="561942466025368081" at="52,0,57,0" concept="6" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -318,7 +318,7 @@
       <scope id="561942466025368171" at="325,161,326,23" />
       <scope id="561942466025368081" at="366,15,367,40" />
       <scope id="6148254807184827738" at="371,161,372,23" />
-      <scope id="561942466025368081" at="47,99,49,18" />
+      <scope id="561942466025368081" at="47,97,49,18" />
       <scope id="561942466025368089" at="113,74,115,145">
         <var name="manager" id="561942466025368089" />
       </scope>
@@ -497,11 +497,11 @@
       <scope id="561942466025368081" at="346,41,368,5" />
       <scope id="561942466025368081" at="300,0,324,0" />
       <scope id="561942466025368081" at="346,0,370,0" />
-      <unit id="561942466025368081" at="396,0,399,0" name="com.mbeddr.cc.requirements.csv.editor.CvsImportAnnotation_EditorBuilder_a$CONCEPTS" />
-      <unit id="561942466025368081" at="400,0,403,0" name="com.mbeddr.cc.requirements.csv.editor.CvsImportAnnotation_EditorBuilder_a$LINKS" />
-      <unit id="561942466025368081" at="388,0,395,0" name="com.mbeddr.cc.requirements.csv.editor.CvsImportAnnotation_EditorBuilder_a$PROPS" />
-      <unit id="561942466025368081" at="209,0,260,0" name="com.mbeddr.cc.requirements.csv.editor.CvsImportAnnotation_EditorBuilder_a$mapperSingleRoleHandler_ajhvv0_b3a0" />
-      <unit id="561942466025368081" at="43,0,404,0" name="com.mbeddr.cc.requirements.csv.editor.CvsImportAnnotation_EditorBuilder_a" />
+      <unit id="561942466025368081" at="396,0,399,0" name="com.mbeddr.cc.requirements.csv.editor.CvsImportAnnotation_EditorBuilder$CONCEPTS" />
+      <unit id="561942466025368081" at="400,0,403,0" name="com.mbeddr.cc.requirements.csv.editor.CvsImportAnnotation_EditorBuilder$LINKS" />
+      <unit id="561942466025368081" at="388,0,395,0" name="com.mbeddr.cc.requirements.csv.editor.CvsImportAnnotation_EditorBuilder$PROPS" />
+      <unit id="561942466025368081" at="209,0,260,0" name="com.mbeddr.cc.requirements.csv.editor.CvsImportAnnotation_EditorBuilder$mapperSingleRoleHandler_ajhvv0_b3a0" />
+      <unit id="561942466025368081" at="43,0,404,0" name="com.mbeddr.cc.requirements.csv.editor.CvsImportAnnotation_EditorBuilder" />
     </file>
   </root>
   <root nodeRef="r:49330941-8eaa-442a-baa4-c3b07af7a98a(com.mbeddr.cc.requirements.csv.editor)/561942466025368770">

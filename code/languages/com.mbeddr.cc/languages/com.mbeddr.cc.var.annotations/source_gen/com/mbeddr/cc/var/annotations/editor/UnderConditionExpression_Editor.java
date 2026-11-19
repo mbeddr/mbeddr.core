@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class UnderConditionExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new UnderConditionExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new UnderConditionExpression_EditorBuilder(editorContext, node).createCell();
   }
 }

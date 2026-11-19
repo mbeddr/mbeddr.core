@@ -18,28 +18,29 @@
     },
 
     {
-      // Versioning for itemis dependencies: match the typical version number: 2024.1.234.abcdef12, but do not treat
-      // commit hashes with 'a' or 'b' as pre-releases. Only treat a `-something` suffix as a pre-release.
-      "matchPackageNames": ["de.itemis.mps*"],
+      // Versioning for itemis dependencies and the mbeddr platform: match the typical version number:
+      // 2024.1.234.abcdef12, but do not treat commit hashes with 'a' or 'b' as pre-releases. Only treat a `-something`
+      // suffix as a pre-release.
+      "matchPackageNames": ["de.itemis.mps:*", "com.mbeddr:platform"],
       "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\.[0-9a-f]+(?:-(?<prerelease>.*))?$",
     },
 
     {
-      // MPS-extensions: allow unstable versions on master (snapshots)
+      // MPS-extensions and the mbeddr platform: allow unstable versions on master (snapshots)
       "matchBaseBranches": ["master"],
-      "matchPackageNames": ["de.itemis.mps:extensions"],
+      "matchPackageNames": ["de.itemis.mps:extensions", "com.mbeddr:platform"],
       "ignoreUnstable": false,
     },
 
     {
       // MPS and libraries: separate minor and patch updates in order to disable minor but leave patch updates enabled
-      "matchPackageNames": ["de.itemis.mps:extensions", "com.jetbrains:mps"],
+      "matchPackageNames": ["de.itemis.mps:extensions", "com.mbeddr:platform", "com.jetbrains:mps"],
       "separateMinorPatch": true,
     },
 
     {
       // MPS and libraries: disable major and minor updates, only enable patch updates
-      "matchPackageNames": ["de.itemis.mps:extensions", "com.jetbrains:mps"],
+      "matchPackageNames": ["de.itemis.mps:extensions", "com.mbeddr:platform", "com.jetbrains:mps"],
       "matchUpdateTypes": ["major", "minor"],
       "enabled": false
     },
@@ -59,9 +60,16 @@
     {
       // Group all minor/patch third-party dependencies together (overrides the grouping above for minor and patch updates)
       "matchManagers": ["gradle"],
-      "matchPackageNames": ["!com.jetbrains*", "!de.itemis.mps:extensions"], // Exclude MPS, JBR, and MPS-extensions.
+      "matchPackageNames": ["!com.jetbrains*", "!de.itemis.mps:extensions", "!com.mbeddr:platform"], // Exclude MPS, JBR, MPS-extensions and the mbeddr platform.
       "matchUpdateTypes": ["minor", "patch"],
       "groupName": "third-party-minor",
+    },
+
+    {
+      // Disable EMF and xtext updates for 2024.1. They need a newer Java than what 2024.1 runs on.
+      "matchBaseBranches": ["maintenance/mps20241"],
+      "matchPackageNames": ["org.eclipse.emf:*", "org.eclipse.xtext:*"],
+      "enabled": false
     },
 
     {
@@ -70,8 +78,8 @@
       "groupName": "github-actions"
     },
 
-    // Updates to the earliest supported maintenance branch do not need approval.
     {
+      // Updates to the earliest supported maintenance branch do not need approval.
       "matchBaseBranches": ["maintenance/mps20241"],
       "dependencyDashboardApproval": false
     },
@@ -81,7 +89,7 @@
       // - schedule updates at any time
       // - merge PRs on Wednesday morning
       // - do not require dashboard approval (since versions are branch-specific)
-      "matchPackageNames": ["de.itemis.mps:extensions", "com.jetbrains:mps", "com.jetbrains.mps:mps-prerelease"],
+      "matchPackageNames": ["de.itemis.mps:extensions", "com.mbeddr:platform", "com.jetbrains:mps", "com.jetbrains.mps:mps-prerelease"],
       "schedule": ["at any time"],
       "automerge": true,
       "platformAutomerge": false,

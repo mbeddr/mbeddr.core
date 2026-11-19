@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class KindFilter_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new KindFilter_EditorBuilder_a(editorContext, node).createCell();
+    return new KindFilter_EditorBuilder(editorContext, node).createCell();
   }
 }

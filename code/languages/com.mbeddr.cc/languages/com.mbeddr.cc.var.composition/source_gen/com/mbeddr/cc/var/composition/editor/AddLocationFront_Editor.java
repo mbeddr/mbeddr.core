@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AddLocationFront_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AddLocationFront_EditorBuilder_a(editorContext, node).createCell();
+    return new AddLocationFront_EditorBuilder(editorContext, node).createCell();
   }
 }

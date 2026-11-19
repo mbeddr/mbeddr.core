@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class GotoSectionStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new GotoSectionStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new GotoSectionStatement_EditorBuilder(editorContext, node).createCell();
   }
 }

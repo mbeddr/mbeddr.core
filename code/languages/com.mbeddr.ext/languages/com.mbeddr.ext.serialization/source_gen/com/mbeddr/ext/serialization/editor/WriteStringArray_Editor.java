@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class WriteStringArray_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new WriteStringArray_EditorBuilder_a(editorContext, node).createCell();
+    return new WriteStringArray_EditorBuilder(editorContext, node).createCell();
   }
 }

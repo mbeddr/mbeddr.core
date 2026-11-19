@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ReqStatusQuery_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ReqStatusQuery_EditorBuilder_a(editorContext, node).createCell();
+    return new ReqStatusQuery_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PortType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PortType_EditorBuilder_a(editorContext, node).createCell();
+    return new PortType_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new PortType_InspectorBuilder_a(editorContext, node).createCell();
+    return new PortType_InspectorBuilder(editorContext, node).createCell();
   }
 }

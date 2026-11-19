@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RParam_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RParam_EditorBuilder_a(editorContext, node).createCell();
+    return new RParam_EditorBuilder(editorContext, node).createCell();
   }
 }

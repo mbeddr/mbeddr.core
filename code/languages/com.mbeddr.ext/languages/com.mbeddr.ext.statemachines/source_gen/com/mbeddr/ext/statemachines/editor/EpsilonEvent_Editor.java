@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class EpsilonEvent_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new EpsilonEvent_EditorBuilder_a(editorContext, node).createCell();
+    return new EpsilonEvent_EditorBuilder(editorContext, node).createCell();
   }
 }

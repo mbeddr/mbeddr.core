@@ -17,12 +17,12 @@ public class ComponentStyles_StyleSheet {
 
     @Override
     public void apply(Style style, EditorCell editorCell) {
-      style.set(StyleAttributes.getInstance().<String>getAttribute("de.itemis.mps.editor.celllayout.styles", "_font-family"), matchingNode_kjugwf_a0a());
+      style.set(StyleAttributes.getInstance().<String>getAttribute("de.itemis.mps.editor.celllayout.styles", "_font-family"), matchingNode0());
       style.set(StyleAttributes.FONT_SIZE, 16);
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.PLAIN);
     }
 
-    private String matchingNode_kjugwf_a0a() {
+    private String matchingNode0() {
       return "Segoe UI";
     }
   }

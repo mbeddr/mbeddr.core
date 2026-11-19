@@ -16,6 +16,6 @@ public class volatileFlag implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new volatileFlag_ComponentBuilder_a(editorContext, node).createCell();
+    return new volatileFlag_ComponentBuilder(editorContext, node).createCell();
   }
 }

@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RParamRef_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RParamRef_EditorBuilder_a(editorContext, node).createCell();
+    return new RParamRef_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new RParamRef_InspectorBuilder_a(editorContext, node).createCell();
+    return new RParamRef_InspectorBuilder(editorContext, node).createCell();
   }
 }

@@ -16,6 +16,6 @@ public class debugOptions implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new debugOptions_ComponentBuilder_a(editorContext, node).createCell();
+    return new debugOptions_ComponentBuilder(editorContext, node).createCell();
   }
 }

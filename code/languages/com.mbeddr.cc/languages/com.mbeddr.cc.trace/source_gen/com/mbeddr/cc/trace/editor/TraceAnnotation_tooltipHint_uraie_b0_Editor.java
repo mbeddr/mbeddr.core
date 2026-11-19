@@ -18,6 +18,6 @@ public class TraceAnnotation_tooltipHint_uraie_b0_Editor extends DefaultNodeEdit
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TraceAnnotation_tooltipHint_uraie_b0_EditorBuilder_a(editorContext, node).createCell();
+    return new TraceAnnotation_tooltipHint_uraie_b0_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -16,6 +16,6 @@ public class ActsAsMainFlag implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ActsAsMainFlag_ComponentBuilder_a(editorContext, node).createCell();
+    return new ActsAsMainFlag_ComponentBuilder(editorContext, node).createCell();
   }
 }

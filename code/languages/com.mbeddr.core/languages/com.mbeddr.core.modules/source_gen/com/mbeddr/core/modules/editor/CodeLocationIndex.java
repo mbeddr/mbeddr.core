@@ -16,6 +16,6 @@ public class CodeLocationIndex implements ConceptEditorComponent {
     return Collections.emptyList();
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CodeLocationIndex_ComponentBuilder_a(editorContext, node).createCell();
+    return new CodeLocationIndex_ComponentBuilder(editorContext, node).createCell();
   }
 }

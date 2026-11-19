@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ReleaseLockStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ReleaseLockStatement_EditorBuilder_a(editorContext, node).createCell();
+    return new ReleaseLockStatement_EditorBuilder(editorContext, node).createCell();
   }
 }

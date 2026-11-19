@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ConflictsConstraint_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ConflictsConstraint_EditorBuilder_a(editorContext, node).createCell();
+    return new ConflictsConstraint_EditorBuilder(editorContext, node).createCell();
   }
 }

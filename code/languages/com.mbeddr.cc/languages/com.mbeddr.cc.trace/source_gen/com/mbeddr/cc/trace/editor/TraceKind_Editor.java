@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class TraceKind_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TraceKind_EditorBuilder_a(editorContext, node).createCell();
+    return new TraceKind_EditorBuilder(editorContext, node).createCell();
   }
 }

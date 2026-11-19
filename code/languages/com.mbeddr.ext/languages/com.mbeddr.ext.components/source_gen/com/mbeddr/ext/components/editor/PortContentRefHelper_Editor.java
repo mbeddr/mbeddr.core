@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PortContentRefHelper_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PortContentRefHelper_EditorBuilder_a(editorContext, node).createCell();
+    return new PortContentRefHelper_EditorBuilder(editorContext, node).createCell();
   }
 }

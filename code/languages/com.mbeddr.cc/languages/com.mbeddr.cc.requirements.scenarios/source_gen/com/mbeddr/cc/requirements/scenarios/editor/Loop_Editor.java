@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class Loop_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Loop_EditorBuilder_a(editorContext, node).createCell();
+    return new Loop_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class StripUnitExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new StripUnitExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new StripUnitExpression_EditorBuilder(editorContext, node).createCell();
   }
 }

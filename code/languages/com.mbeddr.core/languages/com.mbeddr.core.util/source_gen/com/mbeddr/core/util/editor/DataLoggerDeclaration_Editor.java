@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class DataLoggerDeclaration_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DataLoggerDeclaration_EditorBuilder_a(editorContext, node).createCell();
+    return new DataLoggerDeclaration_EditorBuilder(editorContext, node).createCell();
   }
 }

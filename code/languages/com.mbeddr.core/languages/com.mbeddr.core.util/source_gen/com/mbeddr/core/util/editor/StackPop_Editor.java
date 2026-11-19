@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class StackPop_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new StackPop_EditorBuilder_a(editorContext, node).createCell();
+    return new StackPop_EditorBuilder(editorContext, node).createCell();
   }
 }

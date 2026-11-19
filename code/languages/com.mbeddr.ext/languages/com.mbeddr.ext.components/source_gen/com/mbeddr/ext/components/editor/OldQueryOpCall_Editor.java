@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class OldQueryOpCall_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new OldQueryOpCall_EditorBuilder_a(editorContext, node).createCell();
+    return new OldQueryOpCall_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new OldQueryOpCall_InspectorBuilder_a(editorContext, node).createCell();
+    return new OldQueryOpCall_InspectorBuilder(editorContext, node).createCell();
   }
 }

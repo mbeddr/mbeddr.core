@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RunProcessProcessor_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RunProcessProcessor_EditorBuilder_a(editorContext, node).createCell();
+    return new RunProcessProcessor_EditorBuilder(editorContext, node).createCell();
   }
 }

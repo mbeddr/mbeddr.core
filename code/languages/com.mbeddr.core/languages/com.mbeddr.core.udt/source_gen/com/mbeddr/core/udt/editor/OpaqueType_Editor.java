@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class OpaqueType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new OpaqueType_EditorBuilder_a(editorContext, node).createCell();
+    return new OpaqueType_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new OpaqueType_InspectorBuilder_a(editorContext, node).createCell();
+    return new OpaqueType_InspectorBuilder(editorContext, node).createCell();
   }
 }

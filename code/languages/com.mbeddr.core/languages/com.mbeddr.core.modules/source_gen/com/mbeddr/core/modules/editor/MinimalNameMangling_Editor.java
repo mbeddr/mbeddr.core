@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class MinimalNameMangling_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new MinimalNameMangling_EditorBuilder_a(editorContext, node).createCell();
+    return new MinimalNameMangling_EditorBuilder(editorContext, node).createCell();
   }
 }

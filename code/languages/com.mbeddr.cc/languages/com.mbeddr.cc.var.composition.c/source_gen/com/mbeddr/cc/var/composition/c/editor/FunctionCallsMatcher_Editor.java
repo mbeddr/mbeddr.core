@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class FunctionCallsMatcher_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new FunctionCallsMatcher_EditorBuilder_a(editorContext, node).createCell();
+    return new FunctionCallsMatcher_EditorBuilder(editorContext, node).createCell();
   }
 }

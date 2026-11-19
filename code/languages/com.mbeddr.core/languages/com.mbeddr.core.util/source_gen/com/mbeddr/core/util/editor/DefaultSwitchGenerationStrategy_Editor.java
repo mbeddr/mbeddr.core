@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class DefaultSwitchGenerationStrategy_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new DefaultSwitchGenerationStrategy_EditorBuilder_a(editorContext, node).createCell();
+    return new DefaultSwitchGenerationStrategy_EditorBuilder(editorContext, node).createCell();
   }
 }

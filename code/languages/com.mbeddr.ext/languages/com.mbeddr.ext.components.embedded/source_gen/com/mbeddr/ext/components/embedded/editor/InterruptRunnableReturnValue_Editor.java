@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class InterruptRunnableReturnValue_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new InterruptRunnableReturnValue_EditorBuilder_a(editorContext, node).createCell();
+    return new InterruptRunnableReturnValue_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new InterruptRunnableReturnValue_InspectorBuilder_a(editorContext, node).createCell();
+    return new InterruptRunnableReturnValue_InspectorBuilder(editorContext, node).createCell();
   }
 }

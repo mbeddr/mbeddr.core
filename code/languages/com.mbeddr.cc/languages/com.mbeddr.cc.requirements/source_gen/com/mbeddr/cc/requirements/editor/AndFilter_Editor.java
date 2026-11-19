@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AndFilter_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AndFilter_EditorBuilder_a(editorContext, node).createCell();
+    return new AndFilter_EditorBuilder(editorContext, node).createCell();
   }
 }

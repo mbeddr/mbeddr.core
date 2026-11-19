@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RtFeatureModelType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RtFeatureModelType_EditorBuilder_a(editorContext, node).createCell();
+    return new RtFeatureModelType_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -18,6 +18,6 @@ public class CompositeComponentInstanceConfig_graphicalWiring_Editor extends Def
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new CompositeComponentInstanceConfig_graphicalWiring_EditorBuilder_a(editorContext, node).createCell();
+    return new CompositeComponentInstanceConfig_graphicalWiring_EditorBuilder(editorContext, node).createCell();
   }
 }

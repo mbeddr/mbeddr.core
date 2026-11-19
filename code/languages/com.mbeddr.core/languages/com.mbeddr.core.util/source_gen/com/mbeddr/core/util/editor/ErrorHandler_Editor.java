@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ErrorHandler_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ErrorHandler_EditorBuilder_a(editorContext, node).createCell();
+    return new ErrorHandler_EditorBuilder(editorContext, node).createCell();
   }
 }

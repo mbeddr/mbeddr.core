@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class RegisterConfigurationItem_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RegisterConfigurationItem_EditorBuilder_a(editorContext, node).createCell();
+    return new RegisterConfigurationItem_EditorBuilder(editorContext, node).createCell();
   }
 }

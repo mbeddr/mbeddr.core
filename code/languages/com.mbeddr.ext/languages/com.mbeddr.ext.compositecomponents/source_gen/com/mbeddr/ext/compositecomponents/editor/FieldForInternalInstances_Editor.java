@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class FieldForInternalInstances_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new FieldForInternalInstances_EditorBuilder_a(editorContext, node).createCell();
+    return new FieldForInternalInstances_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class PragmaPrefix_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PragmaPrefix_EditorBuilder_a(editorContext, node).createCell();
+    return new PragmaPrefix_EditorBuilder(editorContext, node).createCell();
   }
 }

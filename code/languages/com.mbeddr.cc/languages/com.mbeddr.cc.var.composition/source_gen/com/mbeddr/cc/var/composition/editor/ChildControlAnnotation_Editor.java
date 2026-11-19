@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class ChildControlAnnotation_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ChildControlAnnotation_EditorBuilder_a(editorContext, node).createCell();
+    return new ChildControlAnnotation_EditorBuilder(editorContext, node).createCell();
   }
 }

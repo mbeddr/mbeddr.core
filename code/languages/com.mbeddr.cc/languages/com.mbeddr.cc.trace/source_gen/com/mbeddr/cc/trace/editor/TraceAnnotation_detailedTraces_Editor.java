@@ -18,6 +18,6 @@ public class TraceAnnotation_detailedTraces_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TraceAnnotation_detailedTraces_EditorBuilder_a(editorContext, node).createCell();
+    return new TraceAnnotation_detailedTraces_EditorBuilder(editorContext, node).createCell();
   }
 }

@@ -9,9 +9,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class UnparsedExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new UnparsedExpression_EditorBuilder_a(editorContext, node).createCell();
+    return new UnparsedExpression_EditorBuilder(editorContext, node).createCell();
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return new UnparsedExpression_InspectorBuilder_a(editorContext, node).createCell();
+    return new UnparsedExpression_InspectorBuilder(editorContext, node).createCell();
   }
 }

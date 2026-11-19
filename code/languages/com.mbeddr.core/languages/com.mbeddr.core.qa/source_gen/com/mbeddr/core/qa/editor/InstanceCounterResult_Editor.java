@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class InstanceCounterResult_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new InstanceCounterResult_EditorBuilder_a(editorContext, node).createCell();
+    return new InstanceCounterResult_EditorBuilder(editorContext, node).createCell();
   }
 }

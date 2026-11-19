@@ -9,6 +9,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class AbstractDataElementRefTarget_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new AbstractDataElementRefTarget_EditorBuilder_a(editorContext, node).createCell();
+    return new AbstractDataElementRefTarget_EditorBuilder(editorContext, node).createCell();
   }
 }
