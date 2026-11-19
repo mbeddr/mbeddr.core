@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-90d02r0ag0p1glu81ily54onxo8io49">
-  <files names="CommandWord_Editor.java:CommandWord_EditorBuilder.java:EditorAspectDescriptorImpl.java:EmptyLine_Editor.java:EmptyLine_EditorBuilder.java:LatexDocument_Editor.java:LatexDocument_EditorBuilder.java:LatexIncludable_Editor.java:LatexIncludable_EditorBuilder.java:LineList_Editor.java:LineList_EditorBuilder.java:SimpleTextualLine_Editor.java:SimpleTextualLine_EditorBuilder.java:TextWord_Editor.java:TextWord_EditorBuilder.java:WordLine_Editor.java:WordLine_EditorBuilder.java:WordLine_InspectorBuilder.java:WordList_Editor.java:WordList_EditorBuilder.java" />
-</product>
-

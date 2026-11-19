@@ -1,10 +1,20 @@
 # Changelog
 
 All notable changes to the mbeddr project will be documented in this file.
-Changes to the mbeddr platform are documented in the [platform changelog](code/platform/CHANGELOG.md).
+Changes to the mbeddr platform are documented in the [MPS-extensions platform changelog](https://github.com/JetBrains/MPS-extensions/blob/master/code/platform/CHANGELOG.md).
 
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
+
+# November 2026
+
+## mbeddr distributions
+
+### Changed
+
+- 🚨 The mbeddr platform moved to [MPS-extensions](https://github.com/JetBrains/MPS-extensions). MPS-extensions now
+  builds and publishes `com.mbeddr:platform`, with the same version as `de.itemis.mps:extensions`. mbeddr consumes the
+  published platform and no longer attaches the platform distribution to its GitHub releases.
 
 # September 2024
 

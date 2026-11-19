@@ -11,7 +11,6 @@ include(":com.mbeddr")
 project(":com.mbeddr").projectDir = file("code")
 
 include(":com.mbeddr:languages")
-include(":com.mbeddr:platform")
 
 include(":BigProject")
 project(":BigProject").projectDir = file("tools/BigProject")

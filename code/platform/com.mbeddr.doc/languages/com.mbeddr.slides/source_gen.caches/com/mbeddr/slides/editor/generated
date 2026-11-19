@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-3cvgay48oxc08jtubw7r5ouowc4bsua">
-  <files names="AbstractParagraphSlideContent_Editor.java:AbstractParagraphSlideContent_EditorBuilder.java:EditorAspectDescriptorImpl.java:ImageSlideContent_Editor.java:ImageSlideContent_EditorBuilder.java:LinkWord_Editor.java:LinkWord_EditorBuilder.java:LinkWord_InspectorBuilder.java:LinkWord_presentationMode_Editor.java:LinkWord_presentationMode_EditorBuilder.java:SlideDeck_Editor.java:SlideDeck_EditorBuilder.java:SlideWord_Editor.java:SlideWord_EditorBuilder.java:Slide_Editor.java:Slide_EditorBuilder.java" />
-</product>
-
