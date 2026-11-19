@@ -12,7 +12,7 @@ platform251 = "2025.1.27001.ffa7ea4"
 # Versions for the 2026.1 branch
 jbr261 = "25.0.2-b329.117"
 mps261 = "2026.1.2"
-platform261 = "2026.1.27003.9281cf8"
+platform261 = "2026.1.27006.12d0b55"
 
 [plugins]
 common = "de.itemis.mps.gradle.common:1.32.0"
