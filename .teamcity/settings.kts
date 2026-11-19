@@ -43,7 +43,6 @@ project {
 
     vcsRoot(MbeddrVcsRoot)
 
-    buildType(Platform)
     buildType(Mbeddr)
     buildType(PublishGithub)
     buildType(PullRequestsBuild)
@@ -70,7 +69,7 @@ project {
             clientSecret = "credentialsJSON:94fa375b-afe5-43d8-9eda-8be6718c5dde"
         }
     }
-    buildTypesOrder = arrayListOf(Platform, Mbeddr, PublishGithub, PullRequestsBuild)
+    buildTypesOrder = arrayListOf(Mbeddr, PublishGithub, PullRequestsBuild)
 }
 
 object Mbeddr : BuildType({
@@ -78,10 +77,10 @@ object Mbeddr : BuildType({
     name = "mbeddr"
 
     artifactRules = "artifacts/mbeddr => mbeddr"
-    buildNumberPattern = "${Platform.depParamRefs["build.counter"]}"
+    buildNumberPattern = "%build.counter%"
 
     params {
-        param("system.mbeddrBuildCounter", "${Platform.depParamRefs["system.mbeddrBuildCounter"]}")
+        param("system.mbeddrBuildCounter", "%build.counter%")
         param("env.JAVA_TOOL_OPTIONS", "-Dfile.encoding=UTF8")
     }
 
@@ -94,7 +93,7 @@ object Mbeddr : BuildType({
     steps {
         gradle {
             tasks = "com.mbeddr:languages:test_mbeddr com.mbeddr:languages:publish"
-            gradleParams = "--continue -Dorg.gradle.internal.http.socketTimeout=120000"
+            gradleParams = "--continue -Dorg.gradle.internal.http.socketTimeout=120000 -PmbeddrPlatformVersion=%dep.Mbeddr2_Mbeddr_Gradle_MpsExtensions_Publish.build.number%"
             jdkHome = "%env.JDK_17_0_x64%"
         }
     }
@@ -107,7 +106,7 @@ object Mbeddr : BuildType({
             """.trimIndent()
         }
         finishBuildTrigger {
-            buildType = "Mbeddr2_Mbeddr_Gradle_MpsExtenstions"
+            buildType = "Mbeddr2_Mbeddr_Gradle_MpsExtensions_Publish"
             successfulOnly = true
             branchFilter = """
                 +:<default>
@@ -156,80 +155,9 @@ object Mbeddr : BuildType({
     }
 
     dependencies {
-        snapshot(Platform) {
-        }
-    }
-
-    cleanup {
-        baseRule {
-            history(days = 365)
-        }
-    }
-})
-
-object Platform : BuildType({
-    templates(AbsoluteId("RequiresMpsExtions"))
-    name = "platform"
-
-    artifactRules = """
-        code/platform/build/artifacts/com.mbeddr.platform => com.mbeddr.platform
-    """.trimIndent()
-
-    params {
-        param("system.mbeddrBuildCounter", "%build.counter%")
-    }
-
-    vcs {
-        root(MbeddrVcsRoot)
-
-        showDependenciesChanges = true
-    }
-
-    steps {
-        gradle {
-            tasks = ":com.mbeddr:platform:build :com.mbeddr:platform:publish"
-            gradleParams = "--continue --refresh-dependencies -i dependencies -Dorg.gradle.internal.http.socketTimeout=120000"
-            enableStacktrace = true
-            jdkHome = "%env.JDK_17_0_x64%"
-        }
-    }
-
-    failureConditions {
-        failOnMetricChange {
-            metric = BuildFailureOnMetric.MetricType.TEST_COUNT
-            threshold = 10
-            units = BuildFailureOnMetric.MetricUnit.PERCENTS
-            comparison = BuildFailureOnMetric.MetricComparison.LESS
-            compareTo = build {
-                buildRule = lastSuccessful()
-            }
-        }
-    }
-
-    features {
-        xmlReport {
-            reportType = XmlReport.XmlReportType.JUNIT
-            rules = """
-                +:**/TEST-*.xml
-                +:**/TestResult.xml
-                -:**/TEST-junit-jupiter.xml
-                -:**/TEST-junit-vintage.xml
-            """.trimIndent()
-        }
-        commitStatusPublisher {
-            vcsRootExtId = "${MbeddrVcsRoot.id}"
-            publisher = github {
-                githubUrl = "https://api.github.com"
-                authType = personalToken {
-                    token = "credentialsJSON:e73108bc-b944-4fe3-bf2c-b83988c1a21a"
-                }
-            }
-        }
-    }
-
-    dependencies {
-        snapshot(AbsoluteId("Mbeddr2_Mbeddr_Gradle_MpsExtenstions")) {
+        snapshot(AbsoluteId("Mbeddr2_Mbeddr_Gradle_MpsExtensions_Publish")) {
             synchronizeRevisions = false
+            onDependencyFailure = FailureAction.FAIL_TO_START
         }
     }
 
@@ -247,7 +175,7 @@ object PublishGithub : BuildType({
     buildNumberPattern = "${Mbeddr.depParamRefs["build.counter"]}"
 
     params {
-        param("system.mbeddrBuildCounter", "${Platform.depParamRefs["build.counter"]}")
+        param("system.mbeddrBuildCounter", "${Mbeddr.depParamRefs["system.mbeddrBuildCounter"]}")
     }
 
     vcs {
@@ -327,7 +255,7 @@ object PullRequestsBuild : BuildType({
             scriptContent = DslContext.baseDir.resolve("prek-checks.sh").readText()
         }
         gradle {
-            tasks = "checkPlatformTests test_mbeddr publish migrate remigrate -PforceBuildPlatform"
+            tasks = "test_mbeddr publish migrate remigrate"
             gradleParams = "--continue --info"
             jdkHome = "%env.JDK_17_0_x64%"
         }

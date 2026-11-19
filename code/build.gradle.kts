@@ -54,18 +54,33 @@ val mpsPluginsDir: Provider<String> by extra(provider {
     }
 })
 
-val actionsfilterInstallation by configurations.dependencyScope("actionsfilterInstallation")
-val actionsfilterArtifacts by configurations.resolvable("actionsfilterArtifacts") {
-    extendsFrom(actionsfilterInstallation)
+val platformDependency by configurations.dependencyScope("platformDependency")
+val platformZip by configurations.resolvable("platformZip") {
+    extendsFrom(platformDependency)
+    isTransitive = false
 }
 
 dependencies {
-    actionsfilterInstallation(project(path = ":com.mbeddr:platform", configuration = "actionsfilterArtifacts"))
+    platformDependency(libs.mbeddrPlatform) {
+        providers.gradleProperty("mbeddrPlatformVersion").orNull?.let { version { require(it) } }
+    }
+}
+
+val extractPlatformZip = tasks.register<Sync>("extractPlatformZip") {
+    description = "Extract the published platform for mbeddr builds and project libraries."
+    from(configurations.named("platformZip").map { cfg -> cfg.map(project::zipTree) })
+    into(layout.buildDirectory.dir("dependencies"))
+}
+
+val platformDirectory = extractPlatformZip.map { it.destinationDir.resolve("com.mbeddr.platform") }
+
+configurations.consumable("platformArtifacts") {
+    outgoing.artifact(platformDirectory) { builtBy(extractPlatformZip) }
 }
 
 val installActionsfilter = tasks.register<Copy>("install_actionsfilter") {
     description = "Copy the actions filter IntelliJ plugin to the MPS plugin's directory"
-    from(actionsfilterArtifacts)
+    from(platformDirectory)
     include("com.mbeddr.mpsutil.actionsfilter/")
     into(mpsPluginsDir)
 }
@@ -130,8 +145,3 @@ tasks.register("printVersions") {
     }
 }
 
-val languagesProject = project(":com.mbeddr:languages")
-
-languagesProject.tasks.matching { it.name == "migrate" || it.name == "remigrate" }.configureEach {
-    mustRunAfter(":com.mbeddr:platform:migrate", ":com.mbeddr:platform:remigrate")
-}
