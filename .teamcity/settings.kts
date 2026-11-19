@@ -93,7 +93,7 @@ object Mbeddr : BuildType({
     steps {
         gradle {
             tasks = "com.mbeddr:languages:test_mbeddr com.mbeddr:languages:publish"
-            gradleParams = "--continue -Dorg.gradle.internal.http.socketTimeout=120000 -PmpsExtensionsVersion=%dep.Mbeddr2_Mbeddr_Gradle_MpsExtensions_Publish.build.number%"
+            gradleParams = "--continue -Dorg.gradle.internal.http.socketTimeout=120000 -PmbeddrPlatformVersion=%dep.Mbeddr2_Mbeddr_Gradle_MpsExtensions_Publish.build.number%"
             jdkHome = "%env.JDK_17_0_x64%"
         }
     }
