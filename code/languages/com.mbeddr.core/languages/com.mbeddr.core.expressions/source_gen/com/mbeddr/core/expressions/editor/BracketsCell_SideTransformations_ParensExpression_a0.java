@@ -27,7 +27,7 @@ public class BracketsCell_SideTransformations_ParensExpression_a0 extends Transf
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), GrammarCellsMenuLocations.BEFORE).contains(_context.getMenuLocation())) {
-      result.add(new GenericMenuPart_a0());
+      result.add(new GenericMenuPart_a0_0());
     }
     if (ListSequence.fromListAndArray(new ArrayList<String>(), GrammarCellsMenuLocations.AFTER).contains(_context.getMenuLocation())) {
       result.add(new GenericMenuPart_a1());
@@ -35,7 +35,7 @@ public class BracketsCell_SideTransformations_ParensExpression_a0 extends Transf
     return result;
   }
 
-  private class GenericMenuPart_a0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a0_0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override
