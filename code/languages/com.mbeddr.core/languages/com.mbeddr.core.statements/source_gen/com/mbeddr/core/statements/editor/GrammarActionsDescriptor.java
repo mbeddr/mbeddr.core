@@ -342,29 +342,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
           return result;
         }
       }.query()));
-      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
-        public Iterable<SubstituteMenuItem> query() {
-          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
-
-          {
-            final SConcept outputConcept = CONCEPTS.ForVarDecl$b5;
-
-            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConceptExactly))) {
-              final SNode parentNode = _context.getParentNode();
-              final SNode substitutedNode = _context.getCurrentTargetNode();
-              for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(outputConcept, _context.getModel(), ForVarDecl_Editor.class, _context.getEditorContext())) {
-                EditorContext editorContext = _context.getEditorContext();
-                boolean applicable = GrammarCellsUtil.canBeChild(subconcept, _context);
-                if (applicable) {
-                  ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "register", _context, new DefaultFlagModelAccess(PROPS.storeInRegister$k44L)) {});
-                }
-              }
-            }
-          }
-
-          return result;
-        }
-      }.query()));
+      ListSequence.fromList(result).addSequence(ListSequence.fromList(GrammarCellsUtil.createFlagSubstituteMenuItems(CONCEPTS.ForVarDecl$b5, _context, expectedOutputConceptExactly, ForVarDecl_Editor.class, "register", new DefaultFlagModelAccess(PROPS.storeInRegister$k44L))));
       ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
         public Iterable<SubstituteMenuItem> query() {
           List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
