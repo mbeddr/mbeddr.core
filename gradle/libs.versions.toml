@@ -17,7 +17,7 @@ platform261 = "2026.1.27003.9281cf8"
 # Versions for the master branch
 jbrMaster = "25.0.2-b329.117"
 mpsMaster = "263.7307.336"
-platformMaster = "9999.9.27008.84b2e35-SNAPSHOT"
+platformMaster = "9999.9.27014.8ec23a3-SNAPSHOT"
 
 [plugins]
 common = "de.itemis.mps.gradle.common:1.32.0"
