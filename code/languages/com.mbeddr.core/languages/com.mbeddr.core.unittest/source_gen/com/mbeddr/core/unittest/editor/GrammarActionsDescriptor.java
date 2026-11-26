@@ -12,18 +12,16 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import org.jetbrains.mps.openapi.language.SConcept;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
-import jetbrains.mps.openapi.editor.EditorContext;
-import com.mbeddr.mpsutil.grammarcells.runtime.FlagSubstituteMenuItem;
 import com.mbeddr.mpsutil.grammarcells.runtime.DefaultFlagModelAccess;
 import jetbrains.mps.smodel.SNodePointer;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.jetbrains.mps.openapi.language.SConcept;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuItem;
 import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem;
@@ -66,29 +64,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
           return result;
         }
       }.query()));
-      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
-        public Iterable<SubstituteMenuItem> query() {
-          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
-
-          {
-            final SConcept outputConcept = CONCEPTS.TestCollection$pU;
-
-            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConceptExactly))) {
-              final SNode parentNode = _context.getParentNode();
-              final SNode substitutedNode = _context.getCurrentTargetNode();
-              for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(outputConcept, _context.getModel(), TestCollection_Editor.class, _context.getEditorContext())) {
-                EditorContext editorContext = _context.getEditorContext();
-                boolean applicable = GrammarCellsUtil.canBeChild(subconcept, _context);
-                if (applicable) {
-                  ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "entrypoint", _context, new DefaultFlagModelAccess(PROPS.entrypoint$RdMb)) {});
-                }
-              }
-            }
-          }
-
-          return result;
-        }
-      }.query()));
+      ListSequence.fromList(result).addSequence(ListSequence.fromList(GrammarCellsUtil.createFlagSubstituteMenuItems(CONCEPTS.TestCollection$pU, _context, expectedOutputConceptExactly, TestCollection_Editor.class, "entrypoint", new DefaultFlagModelAccess(PROPS.entrypoint$RdMb))));
       ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
         public Iterable<SubstituteMenuItem> query() {
           List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());

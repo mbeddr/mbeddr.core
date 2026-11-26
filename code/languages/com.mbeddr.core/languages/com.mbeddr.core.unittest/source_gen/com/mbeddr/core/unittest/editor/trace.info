@@ -20,12 +20,12 @@
       <unit at="19,0,199,0" name="com.mbeddr.core.unittest.editor.EditorAspectDescriptorImpl" />
     </file>
     <file name="GrammarActionsDescriptor.java">
-      <unit at="212,0,216,0" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$CONCEPTS" />
-      <unit at="217,0,221,0" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$PROPS" />
-      <unit at="53,74,60,7" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$1" />
-      <unit at="61,74,68,7" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$2" />
-      <unit at="174,78,185,11" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$5" />
-      <unit at="42,0,222,0" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor" />
+      <unit at="188,0,192,0" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$CONCEPTS" />
+      <unit at="193,0,197,0" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$PROPS" />
+      <unit at="51,74,58,7" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$1" />
+      <unit at="59,74,66,7" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$2" />
+      <unit at="150,78,161,11" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$4" />
+      <unit at="40,0,198,0" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor" />
     </file>
     <file name="GrammarCellsSubstituteMenu_AbstractStructuredBinOpAssertStatement.java">
       <unit at="44,0,47,0" name="com.mbeddr.core.unittest.editor.GrammarCellsSubstituteMenu_AbstractStructuredBinOpAssertStatement$CONCEPTS" />
@@ -1968,90 +1968,90 @@
   </root>
   <root nodeRef="r:f1c0ef54-05cb-4745-9566-9bb6676c1165(com.mbeddr.core.unittest.editor)/3241057742990113744">
     <file name="GrammarActionsDescriptor.java">
-      <node id="3241057742995137743" at="93,53,94,103" concept="7" />
-      <node id="3241057742995137743" at="94,103,95,56" concept="2" />
-      <node id="3241057742995137743" at="95,56,96,228" concept="2" />
-      <node id="3241057742995137743" at="98,122,99,143" concept="7" />
-      <node id="3241057742995137743" at="99,143,100,0" concept="10" />
-      <node id="3241057742995137743" at="101,201,102,71" concept="7" />
-      <node id="3241057742995137743" at="102,71,103,0" concept="10" />
-      <node id="3241057742995137743" at="104,150,105,91" concept="7" />
-      <node id="3241057742995137743" at="108,0,109,0" concept="3" trace="myProperty" />
-      <node id="3241057742995137743" at="110,69,111,39" concept="8" />
-      <node id="3241057742995137743" at="115,73,116,39" concept="8" />
-      <node id="3241057742995137743" at="117,25,118,120" concept="8" />
-      <node id="3241057742995137743" at="121,82,122,51" concept="8" />
-      <node id="3241057742995137743" at="126,72,127,113" concept="7" />
-      <node id="3241057742995137743" at="127,113,128,141" concept="2" />
-      <node id="3241057742995137743" at="128,141,129,0" concept="10" />
-      <node id="3241057742995137743" at="129,0,130,39" concept="8" />
-      <node id="3241057742995137743" at="135,91,136,55" concept="2" />
-      <node id="3241057742995137743" at="140,66,141,47" concept="8" />
-      <node id="3241057742995137743" at="145,17,146,0" concept="10" />
-      <node id="3241057742995137743" at="149,21,150,57" concept="2" />
-      <node id="3241057742995137743" at="151,11,152,82" concept="8" />
-      <node id="3241057742995137743" at="110,0,113,0" concept="6" trace="getMatchingText#(Ljava/lang/String;)Ljava/lang/String;" />
-      <node id="3241057742995137743" at="114,74,117,25" concept="5" />
-      <node id="3241057742995137743" at="120,0,124,0" concept="6" trace="canExecuteStrictly#(Ljava/lang/String;)Z" />
-      <node id="3241057742995137743" at="134,0,138,0" concept="6" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
-      <node id="3241057742995137743" at="139,0,143,0" concept="6" trace="getOutputConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="3241057742995137743" at="113,0,120,0" concept="6" trace="canExecute#(Ljava/lang/String;)Z" />
-      <node id="3241057742995137743" at="125,0,132,0" concept="6" trace="createNode#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="3241057742995137743" at="106,37,143,23" concept="2" />
-      <node id="3241057742995137743" at="105,91,144,19" concept="5" />
-      <node id="3241057742995137743" at="103,0,145,17" concept="5" />
-      <node id="3241057742995137743" at="100,0,147,15" concept="4" />
-      <node id="3241057742995137743" at="97,15,148,13" concept="5" />
-      <node id="3241057742995137743" at="96,228,151,11" concept="14" />
-      <node id="3241057742995137743" at="93,0,154,0" concept="6" trace="query#()Ljava/lang/Iterable;" />
-      <node id="3241057742995137743" at="91,18,154,18" concept="2" />
-      <scope id="3241057742995137743" at="110,69,111,39" />
-      <scope id="3241057742995137743" at="115,73,116,39" />
-      <scope id="3241057742995137743" at="121,82,122,51" />
-      <scope id="3241057742995137743" at="135,91,136,55" />
-      <scope id="3241057742995137743" at="140,66,141,47" />
-      <scope id="3241057742995137743" at="149,21,150,57" />
-      <scope id="3241057742995137743" at="110,0,113,0">
+      <node id="3241057742995137743" at="69,53,70,103" concept="7" />
+      <node id="3241057742995137743" at="70,103,71,56" concept="2" />
+      <node id="3241057742995137743" at="71,56,72,228" concept="2" />
+      <node id="3241057742995137743" at="74,122,75,143" concept="7" />
+      <node id="3241057742995137743" at="75,143,76,0" concept="10" />
+      <node id="3241057742995137743" at="77,201,78,71" concept="7" />
+      <node id="3241057742995137743" at="78,71,79,0" concept="10" />
+      <node id="3241057742995137743" at="80,150,81,91" concept="7" />
+      <node id="3241057742995137743" at="84,0,85,0" concept="3" trace="myProperty" />
+      <node id="3241057742995137743" at="86,69,87,39" concept="8" />
+      <node id="3241057742995137743" at="91,73,92,39" concept="8" />
+      <node id="3241057742995137743" at="93,25,94,120" concept="8" />
+      <node id="3241057742995137743" at="97,82,98,51" concept="8" />
+      <node id="3241057742995137743" at="102,72,103,113" concept="7" />
+      <node id="3241057742995137743" at="103,113,104,141" concept="2" />
+      <node id="3241057742995137743" at="104,141,105,0" concept="10" />
+      <node id="3241057742995137743" at="105,0,106,39" concept="8" />
+      <node id="3241057742995137743" at="111,91,112,55" concept="2" />
+      <node id="3241057742995137743" at="116,66,117,47" concept="8" />
+      <node id="3241057742995137743" at="121,17,122,0" concept="10" />
+      <node id="3241057742995137743" at="125,21,126,57" concept="2" />
+      <node id="3241057742995137743" at="127,11,128,82" concept="8" />
+      <node id="3241057742995137743" at="86,0,89,0" concept="6" trace="getMatchingText#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="3241057742995137743" at="90,74,93,25" concept="5" />
+      <node id="3241057742995137743" at="96,0,100,0" concept="6" trace="canExecuteStrictly#(Ljava/lang/String;)Z" />
+      <node id="3241057742995137743" at="110,0,114,0" concept="6" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="3241057742995137743" at="115,0,119,0" concept="6" trace="getOutputConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3241057742995137743" at="89,0,96,0" concept="6" trace="canExecute#(Ljava/lang/String;)Z" />
+      <node id="3241057742995137743" at="101,0,108,0" concept="6" trace="createNode#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3241057742995137743" at="82,37,119,23" concept="2" />
+      <node id="3241057742995137743" at="81,91,120,19" concept="5" />
+      <node id="3241057742995137743" at="79,0,121,17" concept="5" />
+      <node id="3241057742995137743" at="76,0,123,15" concept="4" />
+      <node id="3241057742995137743" at="73,15,124,13" concept="5" />
+      <node id="3241057742995137743" at="72,228,127,11" concept="14" />
+      <node id="3241057742995137743" at="69,0,130,0" concept="6" trace="query#()Ljava/lang/Iterable;" />
+      <node id="3241057742995137743" at="67,281,130,18" concept="2" />
+      <scope id="3241057742995137743" at="86,69,87,39" />
+      <scope id="3241057742995137743" at="91,73,92,39" />
+      <scope id="3241057742995137743" at="97,82,98,51" />
+      <scope id="3241057742995137743" at="111,91,112,55" />
+      <scope id="3241057742995137743" at="116,66,117,47" />
+      <scope id="3241057742995137743" at="125,21,126,57" />
+      <scope id="3241057742995137743" at="86,0,89,0">
         <var name="pattern" id="3241057742995137743" />
       </scope>
-      <scope id="3241057742995137743" at="114,74,118,120" />
-      <scope id="3241057742995137743" at="120,0,124,0">
+      <scope id="3241057742995137743" at="90,74,94,120" />
+      <scope id="3241057742995137743" at="96,0,100,0">
         <var name="pattern" id="3241057742995137743" />
       </scope>
-      <scope id="3241057742995137743" at="126,72,130,39">
+      <scope id="3241057742995137743" at="102,72,106,39">
         <var name="newNode" id="3241057742995137743" />
       </scope>
-      <scope id="3241057742995137743" at="134,0,138,0">
+      <scope id="3241057742995137743" at="110,0,114,0">
         <var name="newNode" id="3241057742995137743" />
         <var name="pattern" id="3241057742995137743" />
       </scope>
-      <scope id="3241057742995137743" at="139,0,143,0" />
-      <scope id="3241057742995137743" at="113,0,120,0">
+      <scope id="3241057742995137743" at="115,0,119,0" />
+      <scope id="3241057742995137743" at="89,0,96,0">
         <var name="pattern" id="3241057742995137743" />
       </scope>
-      <scope id="3241057742995137743" at="125,0,132,0">
+      <scope id="3241057742995137743" at="101,0,108,0">
         <var name="pattern" id="3241057742995137743" />
       </scope>
-      <scope id="3241057742995137743" at="106,37,143,23" />
-      <scope id="3241057742995137743" at="104,150,144,19">
+      <scope id="3241057742995137743" at="82,37,119,23" />
+      <scope id="3241057742995137743" at="80,150,120,19">
         <var name="isApplicable" id="3241057742995137743" />
       </scope>
-      <scope id="3241057742995137743" at="101,201,146,0">
+      <scope id="3241057742995137743" at="77,201,122,0">
         <var name="outputConcept" id="3241057742995137743" />
       </scope>
-      <scope id="3241057742995137743" at="100,0,147,15">
+      <scope id="3241057742995137743" at="76,0,123,15">
         <var name="subconcept" id="3241057742995137743" />
       </scope>
-      <scope id="3241057742995137743" at="98,122,147,15">
+      <scope id="3241057742995137743" at="74,122,123,15">
         <var name="expectedOutputConcept" id="3241057742995137743" />
       </scope>
-      <scope id="3241057742995137743" at="97,15,148,13" />
-      <scope id="3241057742995137743" at="93,53,152,82">
+      <scope id="3241057742995137743" at="73,15,124,13" />
+      <scope id="3241057742995137743" at="69,53,128,82">
         <var name="result" id="3241057742995137743" />
       </scope>
-      <scope id="3241057742995137743" at="93,0,154,0" />
-      <unit id="3241057742995137743" at="107,65,143,21" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$4$1" />
-      <unit id="3241057742995137743" at="92,74,154,7" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$4" />
+      <scope id="3241057742995137743" at="69,0,130,0" />
+      <unit id="3241057742995137743" at="83,65,119,21" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$3$1" />
+      <unit id="3241057742995137743" at="68,74,130,7" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$3" />
     </file>
     <file name="Tag_Editor.java">
       <node id="3241057742990113744" at="11,79,12,67" concept="8" />
@@ -4614,44 +4614,7 @@
   </root>
   <root nodeRef="r:f1c0ef54-05cb-4745-9566-9bb6676c1165(com.mbeddr.core.unittest.editor)/7955188678846770583">
     <file name="GrammarActionsDescriptor.java">
-      <node id="8499024683960415683" at="70,53,71,103" concept="7" />
-      <node id="8499024683960415683" at="71,103,72,0" concept="10" />
-      <node id="8499024683960415683" at="73,11,74,70" concept="7" />
-      <node id="8499024683960415683" at="74,70,75,0" concept="10" />
-      <node id="8499024683960415683" at="76,148,77,64" concept="7" />
-      <node id="8499024683960415683" at="77,64,78,76" concept="7" />
-      <node id="8499024683960415683" at="79,201,80,74" concept="7" />
-      <node id="8499024683960415683" at="80,74,81,87" concept="7" />
-      <node id="8499024683960415683" at="82,33,83,222" concept="2" />
-      <node id="8499024683960415683" at="87,11,88,0" concept="10" />
-      <node id="8499024683960415683" at="88,0,89,24" concept="8" />
-      <node id="8499024683960415683" at="81,87,84,17" concept="5" />
-      <node id="8499024683960415683" at="78,76,85,15" concept="4" />
-      <node id="8499024683960415683" at="75,0,86,13" concept="5" />
-      <node id="8499024683960415683" at="72,0,87,11" concept="0" />
-      <node id="8499024683960415683" at="70,0,91,0" concept="6" trace="query#()Ljava/lang/Iterable;" />
-      <node id="8499024683960415683" at="68,18,91,18" concept="2" />
-      <scope id="8499024683960415683" at="82,33,83,222" />
-      <scope id="8499024683960415683" at="79,201,84,17">
-        <var name="applicable" id="8499024683960415683" />
-        <var name="editorContext" id="8499024683960415683" />
-      </scope>
-      <scope id="8499024683960415683" at="78,76,85,15">
-        <var name="subconcept" id="8499024683960415683" />
-      </scope>
-      <scope id="8499024683960415683" at="76,148,85,15">
-        <var name="parentNode" id="8499024683960415683" />
-        <var name="substitutedNode" id="8499024683960415683" />
-      </scope>
-      <scope id="8499024683960415683" at="73,11,86,13">
-        <var name="outputConcept" id="8499024683960415683" />
-      </scope>
-      <scope id="8499024683960415683" at="70,53,89,24">
-        <var name="result" id="8499024683960415683" />
-      </scope>
-      <scope id="8499024683960415683" at="70,0,91,0" />
-      <unit id="8499024683960415683" at="83,63,83,220" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$3$1" />
-      <unit id="8499024683960415683" at="69,74,91,7" name="com.mbeddr.core.unittest.editor.GrammarActionsDescriptor$3" />
+      <node id="8499024683960415683" at="66,18,67,281" concept="2" />
     </file>
     <file name="TestCollection_Editor.java">
       <node id="7955188678846770583" at="11,79,12,78" concept="8" />
